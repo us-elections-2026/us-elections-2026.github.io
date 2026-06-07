@@ -1,0 +1,40 @@
+project:
+  type: website
+  execute-dir: project
+  output-dir: _site
+
+lang: ko
+
+website:
+  title: "미국 중간선거 한국어 브리핑"
+  description: "2026 미국 중간선거를 데이터와 해석으로 — 한국 독자를 위한 주간 브리핑"
+  site-url: "https://woochangkang.github.io/us_elections.github.io"
+  navbar:
+    left:
+      - href: index.qmd
+        text: 홈
+      - href: trackers.qmd
+        text: 트래커
+      - href: about.qmd
+        text: 소개
+    right:
+      - icon: github
+        href: https://github.com/woochangkang/us_elections.github.io
+  page-footer:
+    center: "데이터 기준 시각은 각 표 상단에 표기됩니다. · 예측시장 가격은 확률의 근사일 뿐입니다."
+
+format:
+  html:
+    theme:
+      - litera
+      - theme/custom.scss
+    toc: true
+    toc-title: 목차
+    code-tools: false
+    smooth-scroll: true
+
+execute:
+  echo: false
+  warning: false
+  message: false
+  freeze: false   # 데이터가 바뀌면 매 빌드 다시 실행 (트래커 신선도 보장)

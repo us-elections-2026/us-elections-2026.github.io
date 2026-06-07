@@ -1,0 +1,47 @@
+---
+title: "트래커"
+subtitle: "예보·여론조사·경합주 — 빌드 시점 최신 스냅샷"
+---
+
+```{r}
+#| include: false
+source(file.path("R", "helpers.R"))
+```
+
+이 페이지의 표는 `data/`의 정규화 파일에서 **빌드 때마다 자동 생성**됩니다. Mac mini 수집 파이프라인이 `data/`에 새 파일을 커밋하면 사이트가 다시 빌드되어 갱신됩니다.
+
+## 예보 종합 {#forecast}
+
+```{r}
+gt_forecast()
+```
+
+> 같은 "확률"이라도 **시장(market) / 모델(model) / 등급(rating)** 은 성격이 다릅니다. 등급은 확률이 아니므로 같은 잣대로 비교하지 마세요.
+
+## 제너릭 밸럿 {#generic}
+
+```{r}
+gt_generic()
+```
+
+```{r}
+gt_generic_spread()
+```
+
+## 대통령 지지율 {#approval}
+
+```{r}
+gt_approval()
+```
+
+## 상원 경합주 {#senate}
+
+```{r}
+gt_senate()
+```
+
+## 신규 여론조사 로그 {#polls}
+
+```{r}
+gt_polls_log()
+```

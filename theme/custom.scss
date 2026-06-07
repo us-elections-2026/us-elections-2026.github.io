@@ -1,0 +1,39 @@
+/*-- scss:defaults --*/
+$font-family-sans-serif: "IBM Plex Sans KR", -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+$primary: #1f3a5f;
+$link-color: #1f3a5f;
+$body-color: #1a1a1a;
+$font-size-root: 17px;
+$line-height-base: 1.7;
+$h1-font-size: 2.0rem;
+$h2-font-size: 1.45rem;
+$h3-font-size: 1.15rem;
+
+/*-- scss:rules --*/
+h1, h2, h3 {
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+h2 {
+  border-bottom: 1px solid #e6e8eb;
+  padding-bottom: 0.3rem;
+  margin-top: 2.4rem;
+}
+table {
+  font-variant-numeric: tabular-nums;
+}
+blockquote {
+  border-left: 3px solid $primary;
+  background: #f7f8fa;
+  color: #3a3a3a;
+  padding: 0.6rem 1rem;
+  font-size: 0.96rem;
+}
+.navbar-brand {
+  font-weight: 700;
+}
+/* "기준 시각" 같은 메타 텍스트 */
+.as-of {
+  color: #6b7280;
+  font-size: 0.85rem;
+}

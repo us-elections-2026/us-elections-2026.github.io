@@ -1,0 +1,35 @@
+---
+title: "미국 중간선거 한국어 브리핑"
+subtitle: "2026 미국 중간선거를 데이터와 해석으로 — 한국 독자를 위해"
+listing:
+  id: issues
+  contents: "issues/*.qmd"
+  type: default
+  sort: "date desc"
+  fields: [date, title, description]
+  date-format: "YYYY.MM.DD"
+---
+
+```{r}
+#| include: false
+source(file.path("R", "helpers.R"))
+```
+
+미국 선거 속보는 어디에나 있습니다. 이곳이 채우려는 빈칸은 다릅니다 — **한국어로 된 해석, 여론조사 리터러시, 그리고 한국 정책 함의**. 매주 데이터 절반, 분석 절반으로 발행합니다.
+
+## 지금 환경 (한눈에)
+
+```{r}
+gt_generic()
+```
+
+```{r}
+gt_approval()
+```
+
+> 모든 수치는 표 상단 **기준 시각**의 스냅샷입니다. 정적 사이트라 데이터가 빌드 시점에 고정되며, 단일 조사보다 집계 평균·추세를 우선합니다.
+
+## 발행 호
+
+::: {#issues}
+:::
