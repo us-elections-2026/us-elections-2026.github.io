@@ -1,0 +1,12 @@
+{
+  "as_of": "2026-06-05",
+  "rows": [
+    {"state": "ME", "event": "민주당 경선", "date": "2026-06-09", "status": "예정", "detail": "Platner 우세 관측 (스캔들에도 경선 1위 유지)"},
+    {"state": "GA", "event": "공화당 결선", "date": "2026-06-16", "status": "예정", "detail": "Collins 40.5% vs Dooley 30.2% (1차 5/19, Carter 탈락)"},
+    {"state": "MI", "event": "민주당 경선", "date": "2026-08-04", "status": "예정", "detail": "El-Sayed 34 / Stevens 31 / McMorrow — 3파전 (RacetotheWH 6월)"},
+    {"state": "TX", "event": "공화당 경선", "date": null, "status": "완료", "detail": "Paxton 63.8%로 현직 Cornyn 격파 → Cook, Likely R→Lean R 하향"},
+    {"state": "NC", "event": "양당 경선", "date": null, "status": "【수집】", "detail": null},
+    {"state": "AK", "event": "통합 경선(top-4)", "date": null, "status": "【수집】", "detail": null},
+    {"state": "OH", "event": "양당 경선", "date": null, "status": "【수집】", "detail": null}
+  ]
+}

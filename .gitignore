@@ -8,3 +8,7 @@
 .DS_Store
 
 **/*.quarto_ipynb
+
+# 로컬 전용 노트 (커밋 금지)
+NOTES_LOCAL.md
+handoff.md

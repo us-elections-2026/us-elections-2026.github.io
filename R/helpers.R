@@ -140,6 +140,24 @@ gt_senate <- function() {
     .tbl_opts()
 }
 
+# 1.4b 상원 경선 캘린더 ------------------------------------------------------
+gt_senate_primaries <- function() {
+  d <- .load_json("senate_primaries")
+  r <- d$rows
+  tibble(
+    주 = r$state,
+    경선 = r$event,
+    일자 = ifelse(is.na(r$date), "【수집】", r$date),
+    상태 = r$status,
+    내용 = ifelse(is.na(r$detail), "—", r$detail)
+  ) |>
+    arrange(일자 == "【수집】", 일자) |>
+    gt() |>
+    tab_header(title = "경선 캘린더 — 본선 대진 확정 일정",
+               subtitle = paste0("기준 ", d$as_of)) |>
+    .tbl_opts()
+}
+
 # 1.5 신규 여론조사 로그 ----------------------------------------------------
 gt_polls_log <- function() {
   readr::read_csv(file.path("data", "polls_log.csv"), show_col_types = FALSE) |>

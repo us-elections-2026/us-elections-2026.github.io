@@ -15,6 +15,8 @@ website:
         text: 홈
       - href: trackers.qmd
         text: 트래커
+      - href: senate.qmd
+        text: 상원
       - href: about.qmd
         text: 소개
     right:
