@@ -8,7 +8,7 @@ lang: ko
 website:
   title: "미국 중간선거 한국어 브리핑"
   description: "2026 미국 중간선거를 데이터와 해석으로 — 한국 독자를 위한 주간 브리핑"
-  site-url: "https://woochangkang.github.io/us_elections.github.io"
+  site-url: "https://us-elections-2026.github.io"
   navbar:
     left:
       - href: index.qmd
@@ -19,7 +19,7 @@ website:
         text: 소개
     right:
       - icon: github
-        href: https://github.com/woochangkang/us_elections.github.io
+        href: https://github.com/us-elections-2026/us-elections-2026.github.io
   page-footer:
     center: "데이터 기준 시각은 각 표 상단에 표기됩니다. · 예측시장 가격은 확률의 근사일 뿐입니다."
 
