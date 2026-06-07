@@ -207,6 +207,12 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./dashboard.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">전망 대시보드</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./trackers.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">트래커 (전체 표)</span></a>
   </div>
@@ -214,7 +220,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./senate.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">상원 대시보드</span></a>
+ <span class="menu-text">상원 경합주 표</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -305,7 +311,8 @@ window.Quarto = {
     <h2 id="toc-title">목차</h2>
    
   <ul>
-  <li><a href="#지금-환경-한눈에" id="toc-지금-환경-한눈에" class="nav-link active" data-scroll-target="#지금-환경-한눈에">지금 환경 (한눈에)</a></li>
+  <li><a href="#model-summary" id="toc-model-summary" class="nav-link active" data-scroll-target="#model-summary">상원 전망 요약</a></li>
+  <li><a href="#지금-환경-한눈에" id="toc-지금-환경-한눈에" class="nav-link" data-scroll-target="#지금-환경-한눈에">지금 환경 (한눈에)</a></li>
   <li><a href="#발행-호" id="toc-발행-호" class="nav-link" data-scroll-target="#발행-호">발행 호</a></li>
   </ul>
 </nav>
@@ -334,28 +341,49 @@ window.Quarto = {
 
 
 <p>미국 선거 속보는 어디에나 있습니다. 이곳이 채우려는 빈칸은 다릅니다 — <strong>한국어로 된 해석, 여론조사 리터러시, 그리고 한국 정책 함의</strong>. 매주 데이터 절반, 분석 절반으로 발행합니다.</p>
+<section id="model-summary" class="level2">
+<h2 class="anchored" data-anchor-id="model-summary">상원 전망 요약</h2>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>자체 분석 모델</strong> (기준 2026-05-29 · 사실 2026-06-05) — 현재 의석 <strong>R 53 / D 47</strong>, 민주 다수당까지 순 <strong>+4석</strong>.</p>
+<ul>
+<li>경합주 7곳 중 민주 우세 <strong>4곳</strong> · 평균 D 승리확률 <strong>48.6%</strong></li>
+<li>다수당 탈환 확률 <strong>32%</strong> · 순 기대의석 <strong>+1.4석</strong> · Base Case <strong>D 48 — R 52</strong></li>
+</ul>
+<p>👉 <a href="./dashboard.html"><strong>전망 대시보드 전체 보기</strong></a> — 주별 확률·시나리오·경선 일정</p>
+</div>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>위 확률은 시장·집계기관 수치가 아닌 <strong>자체 프레임워크의 모델 추정치</strong>입니다. 아래 “지금 환경” 표(집계기관 평균)와 성격이 다릅니다.</p>
+</blockquote>
+</section>
 <section id="지금-환경-한눈에" class="level2">
 <h2 class="anchored" data-anchor-id="지금-환경-한눈에">지금 환경 (한눈에)</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="qyhxeqzxpu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="ymbfqxtzmh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#qyhxeqzxpu table {
+#ymbfqxtzmh table {
   font-family: 'IBM Plex Sans KR', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#qyhxeqzxpu thead, #qyhxeqzxpu tbody, #qyhxeqzxpu tfoot, #qyhxeqzxpu tr, #qyhxeqzxpu td, #qyhxeqzxpu th {
+#ymbfqxtzmh thead, #ymbfqxtzmh tbody, #ymbfqxtzmh tfoot, #ymbfqxtzmh tr, #ymbfqxtzmh td, #ymbfqxtzmh th {
   border-style: none;
 }
 
-#qyhxeqzxpu p {
+#ymbfqxtzmh p {
   margin: 0;
   padding: 0;
 }
 
-#qyhxeqzxpu .gt_table {
+#ymbfqxtzmh .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -381,12 +409,12 @@ window.Quarto = {
   border-left-color: #D3D3D3;
 }
 
-#qyhxeqzxpu .gt_caption {
+#ymbfqxtzmh .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#qyhxeqzxpu .gt_title {
+#ymbfqxtzmh .gt_title {
   color: #333333;
   font-size: 16px;
   font-weight: initial;
@@ -398,7 +426,7 @@ window.Quarto = {
   border-bottom-width: 0;
 }
 
-#qyhxeqzxpu .gt_subtitle {
+#ymbfqxtzmh .gt_subtitle {
   color: #333333;
   font-size: 12px;
   font-weight: initial;
@@ -410,7 +438,7 @@ window.Quarto = {
   border-top-width: 0;
 }
 
-#qyhxeqzxpu .gt_heading {
+#ymbfqxtzmh .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -422,13 +450,13 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#qyhxeqzxpu .gt_bottom_border {
+#ymbfqxtzmh .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#qyhxeqzxpu .gt_col_headings {
+#ymbfqxtzmh .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -443,7 +471,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#qyhxeqzxpu .gt_col_heading {
+#ymbfqxtzmh .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -463,7 +491,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#qyhxeqzxpu .gt_column_spanner_outer {
+#ymbfqxtzmh .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -475,15 +503,15 @@ window.Quarto = {
   padding-right: 4px;
 }
 
-#qyhxeqzxpu .gt_column_spanner_outer:first-child {
+#ymbfqxtzmh .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#qyhxeqzxpu .gt_column_spanner_outer:last-child {
+#ymbfqxtzmh .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#qyhxeqzxpu .gt_column_spanner {
+#ymbfqxtzmh .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -495,11 +523,11 @@ window.Quarto = {
   width: 100%;
 }
 
-#qyhxeqzxpu .gt_spanner_row {
+#ymbfqxtzmh .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#qyhxeqzxpu .gt_group_heading {
+#ymbfqxtzmh .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -525,7 +553,7 @@ window.Quarto = {
   text-align: left;
 }
 
-#qyhxeqzxpu .gt_empty_group_heading {
+#ymbfqxtzmh .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -540,15 +568,15 @@ window.Quarto = {
   vertical-align: middle;
 }
 
-#qyhxeqzxpu .gt_from_md > :first-child {
+#ymbfqxtzmh .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#qyhxeqzxpu .gt_from_md > :last-child {
+#ymbfqxtzmh .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#qyhxeqzxpu .gt_row {
+#ymbfqxtzmh .gt_row {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 5px;
@@ -567,7 +595,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#qyhxeqzxpu .gt_stub {
+#ymbfqxtzmh .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -580,7 +608,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#qyhxeqzxpu .gt_stub_row_group {
+#ymbfqxtzmh .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -594,15 +622,15 @@ window.Quarto = {
   vertical-align: top;
 }
 
-#qyhxeqzxpu .gt_row_group_first td {
+#ymbfqxtzmh .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#qyhxeqzxpu .gt_row_group_first th {
+#ymbfqxtzmh .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#qyhxeqzxpu .gt_summary_row {
+#ymbfqxtzmh .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -612,16 +640,16 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#qyhxeqzxpu .gt_first_summary_row {
+#ymbfqxtzmh .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#qyhxeqzxpu .gt_first_summary_row.thick {
+#ymbfqxtzmh .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#qyhxeqzxpu .gt_last_summary_row {
+#ymbfqxtzmh .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -631,7 +659,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#qyhxeqzxpu .gt_grand_summary_row {
+#ymbfqxtzmh .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -641,7 +669,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#qyhxeqzxpu .gt_first_grand_summary_row {
+#ymbfqxtzmh .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -651,7 +679,7 @@ window.Quarto = {
   border-top-color: #D3D3D3;
 }
 
-#qyhxeqzxpu .gt_last_grand_summary_row_top {
+#ymbfqxtzmh .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -661,11 +689,11 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#qyhxeqzxpu .gt_striped {
+#ymbfqxtzmh .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#qyhxeqzxpu .gt_table_body {
+#ymbfqxtzmh .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -674,7 +702,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#qyhxeqzxpu .gt_footnotes {
+#ymbfqxtzmh .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -688,7 +716,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#qyhxeqzxpu .gt_footnote {
+#ymbfqxtzmh .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -697,7 +725,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#qyhxeqzxpu .gt_sourcenotes {
+#ymbfqxtzmh .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -711,7 +739,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#qyhxeqzxpu .gt_sourcenote {
+#ymbfqxtzmh .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -719,72 +747,72 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#qyhxeqzxpu .gt_left {
+#ymbfqxtzmh .gt_left {
   text-align: left;
 }
 
-#qyhxeqzxpu .gt_center {
+#ymbfqxtzmh .gt_center {
   text-align: center;
 }
 
-#qyhxeqzxpu .gt_right {
+#ymbfqxtzmh .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#qyhxeqzxpu .gt_font_normal {
+#ymbfqxtzmh .gt_font_normal {
   font-weight: normal;
 }
 
-#qyhxeqzxpu .gt_font_bold {
+#ymbfqxtzmh .gt_font_bold {
   font-weight: bold;
 }
 
-#qyhxeqzxpu .gt_font_italic {
+#ymbfqxtzmh .gt_font_italic {
   font-style: italic;
 }
 
-#qyhxeqzxpu .gt_super {
+#ymbfqxtzmh .gt_super {
   font-size: 65%;
 }
 
-#qyhxeqzxpu .gt_footnote_marks {
+#ymbfqxtzmh .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#qyhxeqzxpu .gt_asterisk {
+#ymbfqxtzmh .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#qyhxeqzxpu .gt_indent_1 {
+#ymbfqxtzmh .gt_indent_1 {
   text-indent: 5px;
 }
 
-#qyhxeqzxpu .gt_indent_2 {
+#ymbfqxtzmh .gt_indent_2 {
   text-indent: 10px;
 }
 
-#qyhxeqzxpu .gt_indent_3 {
+#ymbfqxtzmh .gt_indent_3 {
   text-indent: 15px;
 }
 
-#qyhxeqzxpu .gt_indent_4 {
+#ymbfqxtzmh .gt_indent_4 {
   text-indent: 20px;
 }
 
-#qyhxeqzxpu .gt_indent_5 {
+#ymbfqxtzmh .gt_indent_5 {
   text-indent: 25px;
 }
 
-#qyhxeqzxpu .katex-display {
+#ymbfqxtzmh .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#qyhxeqzxpu div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#ymbfqxtzmh div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -847,24 +875,24 @@ window.Quarto = {
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div id="ogasxrrvei" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="rxsajkrmql" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#ogasxrrvei table {
+#rxsajkrmql table {
   font-family: 'IBM Plex Sans KR', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ogasxrrvei thead, #ogasxrrvei tbody, #ogasxrrvei tfoot, #ogasxrrvei tr, #ogasxrrvei td, #ogasxrrvei th {
+#rxsajkrmql thead, #rxsajkrmql tbody, #rxsajkrmql tfoot, #rxsajkrmql tr, #rxsajkrmql td, #rxsajkrmql th {
   border-style: none;
 }
 
-#ogasxrrvei p {
+#rxsajkrmql p {
   margin: 0;
   padding: 0;
 }
 
-#ogasxrrvei .gt_table {
+#rxsajkrmql .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -890,12 +918,12 @@ window.Quarto = {
   border-left-color: #D3D3D3;
 }
 
-#ogasxrrvei .gt_caption {
+#rxsajkrmql .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ogasxrrvei .gt_title {
+#rxsajkrmql .gt_title {
   color: #333333;
   font-size: 16px;
   font-weight: initial;
@@ -907,7 +935,7 @@ window.Quarto = {
   border-bottom-width: 0;
 }
 
-#ogasxrrvei .gt_subtitle {
+#rxsajkrmql .gt_subtitle {
   color: #333333;
   font-size: 12px;
   font-weight: initial;
@@ -919,7 +947,7 @@ window.Quarto = {
   border-top-width: 0;
 }
 
-#ogasxrrvei .gt_heading {
+#rxsajkrmql .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -931,13 +959,13 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#ogasxrrvei .gt_bottom_border {
+#rxsajkrmql .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ogasxrrvei .gt_col_headings {
+#rxsajkrmql .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -952,7 +980,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#ogasxrrvei .gt_col_heading {
+#rxsajkrmql .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -972,7 +1000,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#ogasxrrvei .gt_column_spanner_outer {
+#rxsajkrmql .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -984,15 +1012,15 @@ window.Quarto = {
   padding-right: 4px;
 }
 
-#ogasxrrvei .gt_column_spanner_outer:first-child {
+#rxsajkrmql .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ogasxrrvei .gt_column_spanner_outer:last-child {
+#rxsajkrmql .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ogasxrrvei .gt_column_spanner {
+#rxsajkrmql .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1004,11 +1032,11 @@ window.Quarto = {
   width: 100%;
 }
 
-#ogasxrrvei .gt_spanner_row {
+#rxsajkrmql .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ogasxrrvei .gt_group_heading {
+#rxsajkrmql .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1034,7 +1062,7 @@ window.Quarto = {
   text-align: left;
 }
 
-#ogasxrrvei .gt_empty_group_heading {
+#rxsajkrmql .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1049,15 +1077,15 @@ window.Quarto = {
   vertical-align: middle;
 }
 
-#ogasxrrvei .gt_from_md > :first-child {
+#rxsajkrmql .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ogasxrrvei .gt_from_md > :last-child {
+#rxsajkrmql .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ogasxrrvei .gt_row {
+#rxsajkrmql .gt_row {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 5px;
@@ -1076,7 +1104,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#ogasxrrvei .gt_stub {
+#rxsajkrmql .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1089,7 +1117,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#ogasxrrvei .gt_stub_row_group {
+#rxsajkrmql .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1103,15 +1131,15 @@ window.Quarto = {
   vertical-align: top;
 }
 
-#ogasxrrvei .gt_row_group_first td {
+#rxsajkrmql .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ogasxrrvei .gt_row_group_first th {
+#rxsajkrmql .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ogasxrrvei .gt_summary_row {
+#rxsajkrmql .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1121,16 +1149,16 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#ogasxrrvei .gt_first_summary_row {
+#rxsajkrmql .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ogasxrrvei .gt_first_summary_row.thick {
+#rxsajkrmql .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ogasxrrvei .gt_last_summary_row {
+#rxsajkrmql .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1140,7 +1168,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#ogasxrrvei .gt_grand_summary_row {
+#rxsajkrmql .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1150,7 +1178,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#ogasxrrvei .gt_first_grand_summary_row {
+#rxsajkrmql .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1160,7 +1188,7 @@ window.Quarto = {
   border-top-color: #D3D3D3;
 }
 
-#ogasxrrvei .gt_last_grand_summary_row_top {
+#rxsajkrmql .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1170,11 +1198,11 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#ogasxrrvei .gt_striped {
+#rxsajkrmql .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ogasxrrvei .gt_table_body {
+#rxsajkrmql .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1183,7 +1211,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#ogasxrrvei .gt_footnotes {
+#rxsajkrmql .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1197,7 +1225,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#ogasxrrvei .gt_footnote {
+#rxsajkrmql .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1206,7 +1234,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#ogasxrrvei .gt_sourcenotes {
+#rxsajkrmql .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1220,7 +1248,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#ogasxrrvei .gt_sourcenote {
+#rxsajkrmql .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1228,72 +1256,72 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#ogasxrrvei .gt_left {
+#rxsajkrmql .gt_left {
   text-align: left;
 }
 
-#ogasxrrvei .gt_center {
+#rxsajkrmql .gt_center {
   text-align: center;
 }
 
-#ogasxrrvei .gt_right {
+#rxsajkrmql .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ogasxrrvei .gt_font_normal {
+#rxsajkrmql .gt_font_normal {
   font-weight: normal;
 }
 
-#ogasxrrvei .gt_font_bold {
+#rxsajkrmql .gt_font_bold {
   font-weight: bold;
 }
 
-#ogasxrrvei .gt_font_italic {
+#rxsajkrmql .gt_font_italic {
   font-style: italic;
 }
 
-#ogasxrrvei .gt_super {
+#rxsajkrmql .gt_super {
   font-size: 65%;
 }
 
-#ogasxrrvei .gt_footnote_marks {
+#rxsajkrmql .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ogasxrrvei .gt_asterisk {
+#rxsajkrmql .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ogasxrrvei .gt_indent_1 {
+#rxsajkrmql .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ogasxrrvei .gt_indent_2 {
+#rxsajkrmql .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ogasxrrvei .gt_indent_3 {
+#rxsajkrmql .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ogasxrrvei .gt_indent_4 {
+#rxsajkrmql .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ogasxrrvei .gt_indent_5 {
+#rxsajkrmql .gt_indent_5 {
   text-indent: 25px;
 }
 
-#ogasxrrvei .katex-display {
+#rxsajkrmql .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#ogasxrrvei div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#rxsajkrmql div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1354,7 +1382,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="발행-호">발행 호</h2>
 <div id="listing-issues" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1780790400000" data-listing-file-modified-sort="1780871421669" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="455">
+<div class="quarto-post image-right" data-index="0" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1780790400000" data-listing-file-modified-sort="1780871471343" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="455">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./issues/2026-06-07.html" class="no-external">주간 브리핑 — 6월 7일호</a>
