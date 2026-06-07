@@ -158,6 +158,36 @@ gt_senate_primaries <- function() {
     .tbl_opts()
 }
 
+# 1.4c 주별 상세 카드 (State Focus 페이지용) ---------------------------------
+gt_state_detail <- function(code) {
+  d <- .load_json("senate_races")
+  r <- d$races[d$races$state == code, ]
+  p <- .load_json("senate_primaries")$rows
+  p <- p[p$state == code, ]
+
+  poll <- if (is.na(r$latest_poll)) "【수집】" else
+    paste0(r$latest_poll, if (!is.na(r$poll_source)) paste0(" (", r$poll_source, ")") else "")
+  rows <- tibble(
+    항목 = c("구도", "현직/구도", "등급", "최신 폴", "모금(현금)", "한국 관심"),
+    내용 = c(ifelse(r$defense == "D", "민주 방어", "공화 방어"),
+           r$incumbent, r$rating, poll,
+           ifelse(is.na(r$cash_on_hand), "—", r$cash_on_hand),
+           r$kr_relevance)
+  )
+  if (nrow(p) > 0) {
+    rows <- bind_rows(rows, tibble(
+      항목 = paste0("경선 — ", p$event),
+      내용 = paste0(ifelse(is.na(p$date), p$status, paste0(p$date, " ", p$status)),
+                  ifelse(is.na(p$detail), "", paste0(" · ", p$detail)))
+    ))
+  }
+  rows |>
+    gt() |>
+    tab_header(title = paste0(code, " 레이스 카드"),
+               subtitle = paste0("기준 ", d$as_of)) |>
+    .tbl_opts()
+}
+
 # 1.5 신규 여론조사 로그 ----------------------------------------------------
 gt_polls_log <- function() {
   readr::read_csv(file.path("data", "polls_log.csv"), show_col_types = FALSE) |>

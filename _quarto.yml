@@ -13,15 +13,37 @@ website:
     left:
       - href: index.qmd
         text: 홈
-      - href: trackers.qmd
-        text: 트래커
-      - href: senate.qmd
-        text: 상원
       - href: about.qmd
         text: 소개
     right:
       - icon: github
         href: https://github.com/us-elections-2026/us-elections-2026.github.io
+  sidebar:
+    style: docked
+    collapse-level: 1
+    contents:
+      - section: "Overview"
+        contents:
+          - text: "홈 — 환경 스냅샷"
+            href: index.qmd
+          - text: "트래커 (전체 표)"
+            href: trackers.qmd
+          - text: "상원 대시보드"
+            href: senate.qmd
+          - text: "소개"
+            href: about.qmd
+      - section: "Weekly Report"
+        contents:
+          - auto: "issues/*.qmd"
+      - section: "State Focus"
+        contents:
+          - states/ga.qmd
+          - states/mi.qmd
+          - states/me.qmd
+          - states/nc.qmd
+          - states/tx.qmd
+          - states/oh.qmd
+          - states/ak.qmd
   page-footer:
     center: "데이터 기준 시각은 각 표 상단에 표기됩니다. · 예측시장 가격은 확률의 근사일 뿐입니다."
 

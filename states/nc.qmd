@@ -1,0 +1,24 @@
+---
+title: "노스캐롤라이나 North Carolina"
+---
+
+```{r}
+#| include: false
+source(file.path("R", "helpers.R"))
+```
+
+```{r}
+gt_state_detail("NC")
+```
+
+## 구도 요약
+
+Tillis 의석의 공화 방어전. 등급은 Toss Up~Lean R 사이. 양당 대진·경선 일정 상세는 【수집】 단계입니다.
+
+## 최근 동향
+
+_【수집】 — 신뢰할 만한 집계·조사 확보 후 갱신._
+
+## 한국 함의
+
+【수집】

@@ -1,0 +1,26 @@
+---
+title: "미시간 Michigan"
+---
+
+```{r}
+#| include: false
+source(file.path("R", "helpers.R"))
+```
+
+```{r}
+gt_state_detail("MI")
+```
+
+## 구도 요약
+
+Peters 은퇴로 **민주당이 방어해야 하는 공개석**. 민주당 경선(8/4)이 진보(El-Sayed)·온건(Stevens)·풀뿌리(McMorrow) 3파전으로 늦게까지 이어져, 공화당(Rogers 유력)보다 본선 전환이 늦다는 점이 리스크입니다.
+
+## 최근 동향
+
+- 민주 경선 조사(6월): El-Sayed 34 / Stevens 31 / McMorrow 3위 (출처: Race to the WH)
+- 격전주 분류로 타주 기부자 유입 가속 (출처: Bridge Michigan)
+- El-Sayed는 아랍계·무슬림 커뮤니티 결집 전략 — 미시간 인구 구성의 특수성
+
+## 한국 함의
+
+자동차·배터리 산업의 본진. **관세·EV 보조금 정책**이 한국 완성차·배터리 기업에 직접 영향 — 후보별 입장 추적 필요.
