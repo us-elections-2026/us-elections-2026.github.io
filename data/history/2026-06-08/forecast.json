@@ -1,0 +1,12 @@
+{
+  "as_of": "2026-06-07",
+  "next_update": "2026-06-14",
+  "rows": [
+    {"source": "Polymarket", "type": "market", "house_dem": 0.81, "senate_dem": 0.46, "house_delta": null, "senate_delta": null, "note": "6/7 시장가에서 역산 (D양원 44.5% + D하원·R상원 36.5%)"},
+    {"source": "The Economist", "type": "model", "house_dem": null, "senate_dem": null, "house_delta": null, "senate_delta": null, "note": "민주 하원 heavy favorite (25,001회 시뮬레이션). 수치 확인 필요"},
+    {"source": "RacetotheWH", "type": "model", "house_dem": null, "senate_dem": null, "house_delta": null, "senate_delta": null, "note": "5만회 시뮬레이션. 최신 톱라인 확인 필요"},
+    {"source": "Silver Bulletin", "type": "model", "house_dem": null, "senate_dem": null, "house_delta": null, "senate_delta": null, "note": "538 후속격. 본선 모델 수치 확인 필요"},
+    {"source": "Cook Political", "type": "rating", "house_dem": null, "senate_dem": null, "house_delta": null, "senate_delta": null, "note": "확률 아님 — 등급(Toss Up/Lean) 집계"},
+    {"source": "Sabato's Crystal Ball", "type": "rating", "house_dem": null, "senate_dem": null, "house_delta": null, "senate_delta": null, "note": "확률 아님 — 6/3 재획정 반영 등급 변동"}
+  ]
+}

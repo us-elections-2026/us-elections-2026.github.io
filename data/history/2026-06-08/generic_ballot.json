@@ -1,0 +1,13 @@
+{
+  "as_of": "2026-06-07",
+  "aggregators": [
+    {"source": "Silver Bulletin", "dem": null, "rep": null, "margin": 6.8, "agg_as_of": "2026-05-18", "population": "LV 가중"},
+    {"source": "FiftyPlusOne", "dem": 49.3, "rep": 43.4, "margin": 5.9, "agg_as_of": "2026-06-06", "population": "품질·최신성 가중"},
+    {"source": "RealClearPolling", "dem": null, "rep": null, "margin": 5.0, "agg_as_of": "2026-06-01", "population": "단순평균 성격"},
+    {"source": "Morning Consult", "dem": 46, "rep": 42, "margin": 3.0, "agg_as_of": "2026-05-30", "population": "등록유권자(RV)"}
+  ],
+  "spread_examples": [
+    {"pollster": "Marist (PBS/NPR)", "dem": 55, "rep": 41, "margin": 14, "population": "RV", "note": "상단 이상치 — 무당층 D+33"},
+    {"pollster": "Emerson", "dem": 44, "rep": 40, "margin": 4, "population": "—", "note": "하단 — 미결정 16%"}
+  ]
+}
