@@ -1,1 +1,1 @@
-Sitemap: https://woochangkang.github.io/us_elections.github.io/sitemap.xml
+Sitemap: https://us-elections-2026.github.io/sitemap.xml
