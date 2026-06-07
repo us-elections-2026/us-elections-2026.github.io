@@ -17,6 +17,26 @@ source(file.path("R", "helpers.R"))
 
 미국 선거 속보는 어디에나 있습니다. 이곳이 채우려는 빈칸은 다릅니다 — **한국어로 된 해석, 여론조사 리터러시, 그리고 한국 정책 함의**. 매주 데이터 절반, 분석 절반으로 발행합니다.
 
+## 상원 전망 요약 {#model-summary}
+
+```{r}
+#| output: asis
+k <- model_kpi()
+cat(sprintf(
+"::: {.callout-note appearance=\"minimal\"}
+**자체 분석 모델** (기준 %s · 사실 %s) — 현재 의석 **%s**, 민주 다수당까지 순 **+%d석**.
+
+- 경합주 7곳 중 민주 우세 **%d곳** · 평균 D 승리확률 **%s%%**
+- 다수당 탈환 확률 **%s%%** · 순 기대의석 **+%s석** · Base Case **%s**
+
+👉 [**전망 대시보드 전체 보기**](dashboard.qmd) — 주별 확률·시나리오·경선 일정
+:::\n",
+k$as_of, k$facts, k$balance, k$needed,
+k$dem_wins, k$avg, k$majority, k$net, k$base_seats))
+```
+
+> 위 확률은 시장·집계기관 수치가 아닌 **자체 프레임워크의 모델 추정치**입니다. 아래 "지금 환경" 표(집계기관 평균)와 성격이 다릅니다.
+
 ## 지금 환경 (한눈에)
 
 ```{r}

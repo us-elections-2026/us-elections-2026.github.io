@@ -1,0 +1,62 @@
+---
+title: "전망 대시보드"
+subtitle: "2026 상원 — 경합주 승리확률·시나리오·일정 (자체 분석 모델)"
+include-in-header:
+  - text: |
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1"></script>
+      <link rel="stylesheet" href="assets/dashboard.css">
+---
+
+```{r}
+#| include: false
+source(file.path("R", "helpers.R"))
+```
+
+::: {.callout-warning appearance="simple"}
+이 페이지의 확률은 **시장·집계기관 수치가 아니라 자체 프레임워크(Universal Causal Framework V2)의 모델 추정치**입니다. Cook·Sabato 등급이나 예측시장과 같은 잣대로 비교하지 마세요. 데이터를 갱신하려면 `data/model_dashboard.json` 한 파일만 고쳐 push하면 사이트가 다시 빌드되어 자동 반영됩니다.
+:::
+
+::: {#dash-root}
+
+<p id="dash-stamp" class="text-muted" style="font-size:.85rem;"></p>
+
+### 핵심 지표
+::: {#dash-kpis}
+:::
+
+### 주별 민주당 승리 확률
+::: {.chart-wrap}
+<canvas id="probChart" height="180"></canvas>
+:::
+
+### 시나리오별 전망
+::: {#dash-scenarios}
+:::
+
+### 경합주 상세
+::: {#dash-states}
+:::
+
+### 향후 주요 일정
+::: {#dash-timeline}
+:::
+
+<p id="dash-note" class="text-muted" style="font-size:.78rem; margin-top:1rem;"></p>
+
+:::
+
+<script src="assets/dashboard.js"></script>
+
+---
+
+## 정적 표 (인쇄·접근성용)
+
+위 인터랙티브 카드와 동일한 데이터입니다. JavaScript가 막힌 환경에서도 보이도록 빌드 시점에 표로도 렌더링합니다.
+
+```{r}
+gt_model_states()
+```
+
+```{r}
+gt_model_scenarios()
+```

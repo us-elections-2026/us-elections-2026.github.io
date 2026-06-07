@@ -188,6 +188,58 @@ gt_state_detail <- function(code) {
     .tbl_opts()
 }
 
+# 1.6 자체 모델 대시보드 (정적 폴백 표) -------------------------------------
+gt_model_states <- function() {
+  d <- .load_json("model_dashboard")
+  s <- d$states
+  tibble(
+    주 = s$name,
+    구도 = ifelse(s$defense == "D", "민주 방어", "공화 방어"),
+    대결 = s$matchup,
+    `D 승리확률` = paste0(s$prob, "%"),
+    등급 = s$rating,
+    `핵심 변수` = s$key_var
+  ) |>
+    gt() |>
+    tab_header(
+      title = "경합주 민주당 승리확률 — 자체 분석 모델",
+      subtitle = paste0(d$source_label, " · 확률 기준 ", d$as_of, " · 사실 ", d$facts_updated)
+    ) |>
+    tab_source_note(d$provenance_note) |>
+    .tbl_opts()
+}
+
+gt_model_scenarios <- function() {
+  d <- .load_json("model_dashboard")
+  s <- d$scenarios
+  tibble(
+    시나리오 = paste0(s$name, " (", s$subname, ")"),
+    확률 = paste0(s$prob, "%"),
+    `의석 결과` = s$seats,
+    다수당 = s$majority,
+    설명 = s$desc
+  ) |>
+    gt() |>
+    tab_header(title = "상원 시나리오 — 자체 분석 모델",
+               subtitle = paste0("다수당 탈환 확률 ", d$dem_majority_prob, "% · 순 기대의석 +", d$net_expected_seats)) |>
+    .tbl_opts()
+}
+
+# 홈 요약용 KPI 값 (리스트 반환)
+model_kpi <- function() {
+  d <- .load_json("model_dashboard")
+  probs <- d$states$prob
+  dem_wins <- sum(probs >= 50)
+  list(
+    as_of = d$as_of, facts = d$facts_updated,
+    balance = d$current_balance, needed = d$dem_needed_net,
+    majority = d$dem_majority_prob, net = d$net_expected_seats,
+    dem_wins = dem_wins, n = length(probs),
+    avg = sprintf("%.1f", mean(probs)),
+    base_seats = d$scenarios$seats[d$scenarios$id == "base"]
+  )
+}
+
 # 1.5 신규 여론조사 로그 ----------------------------------------------------
 gt_polls_log <- function() {
   readr::read_csv(file.path("data", "polls_log.csv"), show_col_types = FALSE) |>

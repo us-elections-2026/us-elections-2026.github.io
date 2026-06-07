@@ -2,6 +2,8 @@ project:
   type: website
   execute-dir: project
   output-dir: _site
+  resources:
+    - data/model_dashboard.json
 
 lang: ko
 
@@ -26,9 +28,11 @@ website:
         contents:
           - text: "홈 — 환경 스냅샷"
             href: index.qmd
+          - text: "전망 대시보드"
+            href: dashboard.qmd
           - text: "트래커 (전체 표)"
             href: trackers.qmd
-          - text: "상원 대시보드"
+          - text: "상원 경합주 표"
             href: senate.qmd
           - text: "소개"
             href: about.qmd

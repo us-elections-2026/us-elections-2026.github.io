@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  주간 스냅샷 + 배포 launchd 잡 (Mac mini 용)
+  설치:
+    1) 경로를 본인 환경에 맞게 수정 (REPO 경로)
+    2) cp 본파일 ~/Library/LaunchAgents/com.us-elections.snapshot.plist
+    3) launchctl load ~/Library/LaunchAgents/com.us-elections.snapshot.plist
+  매주 월요일 09:10 에 실행. 로그: ~/.cache/us-elections/snapshot.log
+  ※ TCC 주의: CloudStorage(Dropbox) 안의 .sh 를 launchd가 직접 실행 못 할 수 있음 →
+     필요시 work_dashboard 패턴처럼 래퍼를 ~/.local 에 두고 거기서 이 스크립트를 호출.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.us-elections.snapshot</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/kang/Library/CloudStorage/Dropbox/gitpages/us_elections.github.io/scripts/snapshot_and_publish.sh</string>
+  </array>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Weekday</key><integer>1</integer>
+    <key>Hour</key><integer>9</integer>
+    <key>Minute</key><integer>10</integer>
+  </dict>
+  <key>StandardOutPath</key>
+  <string>/Users/kang/.cache/us-elections/snapshot.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/kang/.cache/us-elections/snapshot.log</string>
+</dict>
+</plist>
