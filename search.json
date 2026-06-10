@@ -1,5 +1,377 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "미국 중간선거 한국어 브리핑",
+    "section": "",
+    "text": "미국 선거 속보는 어디에나 있습니다. 이곳이 채우려는 빈칸은 다릅니다 — 한국어로 된 해석, 여론조사 리터러시, 그리고 한국 정책 함의. 매주 데이터 절반, 분석 절반으로 발행합니다.",
+    "crumbs": [
+      "홈",
+      "Overview",
+      "홈 — 환경 스냅샷"
+    ]
+  },
+  {
+    "objectID": "index.html#model-summary",
+    "href": "index.html#model-summary",
+    "title": "미국 중간선거 한국어 브리핑",
+    "section": "상원 전망 요약",
+    "text": "상원 전망 요약\n\n\n\n\n\n\n자체 분석 모델 (기준 2026-05-29 · 사실 2026-06-05) — 현재 의석 R 53 / D 47, 민주 다수당까지 순 +4석.\n\n경합주 7곳 중 민주 우세 4곳 · 평균 D 승리확률 48.6%\n다수당 탈환 확률 32% · 순 기대의석 +1.4석 · Base Case D 48 — R 52\n\n👉 전망 대시보드 전체 보기 — 주별 확률·시나리오·경선 일정\n\n\n\n\n위 확률은 시장·집계기관 수치가 아닌 자체 프레임워크의 모델 추정치입니다. 아래 “지금 환경” 표(집계기관 평균)와 성격이 다릅니다.",
+    "crumbs": [
+      "홈",
+      "Overview",
+      "홈 — 환경 스냅샷"
+    ]
+  },
+  {
+    "objectID": "index.html#지금-환경-한눈에",
+    "href": "index.html#지금-환경-한눈에",
+    "title": "미국 중간선거 한국어 브리핑",
+    "section": "지금 환경 (한눈에)",
+    "text": "지금 환경 (한눈에)\n\n\n\n\n\n\n\n\n제너릭 밸럿 — 집계기관 평균\n\n\n기준 2026-06-07 · 양수는 민주 우위\n\n\n집계기관\n민주\n공화\n마진\n기준일\n모집단\n\n\n\n\nSilver Bulletin\n—\n—\nD+6.8\n2026-05-18\nLV 가중\n\n\nFiftyPlusOne\n49.3\n43.4\nD+5.9\n2026-06-06\n품질·최신성 가중\n\n\nRealClearPolling\n—\n—\nD+5\n2026-06-01\n단순평균 성격\n\n\nMorning Consult\n46\n42\nD+3\n2026-05-30\n등록유권자(RV)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n트럼프 국정지지율\n\n\n기준 2026-06-07\n\n\n집계\n승인\n비승인\n순지지\n기준일\n비고\n\n\n\n\nSilver Bulletin\n—\n—\n-19.1\n2026-06-06\n동시점 바이든(-13.6)·트럼프 1기(-10.6)보다 낮음\n\n\nUSPollingData\n38.7\n58.3\n-19.6\n2026-06-01\nGallup·Ipsos·YouGov·Quinnipiac·MC 종합\n\n\nActiVote\n39.7\n55\n-15.3\n2026-06-01\n5점척도 변환\n\n\n\n\n\n\n\n\n모든 수치는 표 상단 기준 시각의 스냅샷입니다. 정적 사이트라 데이터가 빌드 시점에 고정되며, 단일 조사보다 집계 평균·추세를 우선합니다.",
+    "crumbs": [
+      "홈",
+      "Overview",
+      "홈 — 환경 스냅샷"
+    ]
+  },
+  {
+    "objectID": "index.html#발행-호",
+    "href": "index.html#발행-호",
+    "title": "미국 중간선거 한국어 브리핑",
+    "section": "발행 호",
+    "text": "발행 호\n\n\n\n\n\n주간 브리핑 — 6월 7일호\n\n\n하원 민주 우세 지속, 상원은 50/50 진검승부. 트럼프 지지율 임기 최저 부근.\n\n\n\n\n\n2026.06.07\n\n\n\n\n\n일치 없음",
+    "crumbs": [
+      "홈",
+      "Overview",
+      "홈 — 환경 스냅샷"
+    ]
+  },
+  {
+    "objectID": "states/ak.html",
+    "href": "states/ak.html",
+    "title": "알래스카 Alaska",
+    "section": "",
+    "text": "AK 레이스 카드\n\n\n기준 2026-06-05\n\n\n항목\n내용\n\n\n\n\n구도\n공화 방어\n\n\n현직/구도\n—\n\n\n등급\nLikely R\n\n\n최신 폴\n【수집】\n\n\n모금(현금)\n—\n\n\n한국 관심\n—\n\n\n경선 — 통합 경선(top-4)\n【수집】",
+    "crumbs": [
+      "홈",
+      "State Focus",
+      "알래스카 Alaska"
+    ]
+  },
+  {
+    "objectID": "states/ak.html#구도-요약",
+    "href": "states/ak.html#구도-요약",
+    "title": "알래스카 Alaska",
+    "section": "구도 요약",
+    "text": "구도 요약\nLikely R — 경합 하단. 공화 현직 Dan Sullivan을, 2022년 최초의 알래스카 원주민(Yup’ik) 연방의원이 된 Mary Peltola(D)가 도전합니다. top-4 통합 경선(8/18) + 순위선택투표(RCV) 라는 독특한 제도 탓에 이변 여지가 상대적으로 큰 주입니다(2022년 Peltola가 RCV로 Palin을 꺾은 전례).",
+    "crumbs": [
+      "홈",
+      "State Focus",
+      "알래스카 Alaska"
+    ]
+  },
+  {
+    "objectID": "states/ak.html#후보자-프로필",
+    "href": "states/ak.html#후보자-프로필",
+    "title": "알래스카 Alaska",
+    "section": "후보자 프로필",
+    "text": "후보자 프로필\n\n\n\n\n\n메리 펠톨라 Mary Peltola민주\n\n\n1973년생(53세) · 전 연방 하원의원(2022~2025) · 어업인 · Yup’ik 원주민 지도자\n\n\n\n학력 University of Northern Colorado 초등교육 전공(1991~1993), 알래스카대 수강(1994~1998), 학위 미취득\n\n\n가족 사별·이혼 포함 세 번 결혼(현 배우자 故 Gene Peltola Jr.), 친자녀 4명·의붓자녀 3명\n\n\n과거 선거 알래스카 주 하원의원(1999~2009) · 2022 하원 특별·정기선거 승리(RCV로 Palin 격파) · 2024 하원 낙선(48.8% vs Begich 51.2%, R+2.4)\n\n\n펀드레이징 2026 1분기 약 890만 달러(알래스카 상원 후보 역대 최대, Sullivan의 4배+), 단 가용현금 약 560만 달러로 열세\n\n\n\n\n강점\n\n\n보수 주에서 이례적으로 높은 개인 호감도(46~52%)\n\n\n2022년 RCV 승리 경험·제도 숙련도\n\n\n초당파·에너지 개발 지지로 보수표 흡수, 원주민 투표율 견인\n\n\n\n\n약점\n\n\n2024년 하원 낙선 이력\n\n\n트럼프 +14 주의 민주당 레이블\n\n\n가용현금 열세·Murkowski의 Sullivan 지지 전환\n\n\n\n\n\n정책 생활비 절감(중위소득 이하 소득세 면제 등) · 어업 보호·알래스카 수산 · 에너지 개발(Willow 찬성, Pebble 반대) · 원주민 권리·반부패\n\n\n🇰🇷 한국 함의 직접적 대한국 정책·발언은 공개 출처 없음. 하원 시절 알래스카 명태(pollock) 산업 보호에 주력 — 명태 알(roe)이 한국 시장에서 소비되는 연결고리는 존재\n\n\n사진: U.S. House (public domain)   출처 [1] [2] [3]\n\n\n\n\n\n\n\n댄 설리번 Dan Sullivan공화 · 현직\n\n\n1964년생(62세) · 현직 연방 상원의원(2015~) · 변호사 · 예비역 해병 대령\n\n\n\n학력 Harvard University 경제학 학사(1987, magna cum laude), Georgetown University J.D.·외교학 석사(1993)\n\n\n가족 부인 Julie Fate Sullivan(30년+ 결혼), 딸 3명. 처가는 알래스카 원주민(Athabascan) Fate 가문\n\n\n과거 선거 2014 상원 당선(47.96% vs Begich 45.83%) · 2020 상원 재선(약 54% vs Gross 41%)\n\n\n펀드레이징 2026 1분기 약 200~210만 달러(Peltola에 4배 열세)이나 가용현금 약 750만 달러로 우위. SLF가 약 1,500만 달러 외부 지원\n\n\n\n\n강점\n\n\n현직 프리미엄·구조적 공화 우위(트럼프 +14 주)\n\n\n해병 군 경력(알래스카 군사기지 연계)\n\n\n트럼프·Murkowski 동시 지지·가용현금 우위\n\n\n\n\n약점\n\n\nPeltola 대비 개인 호감도 열세(약 39%)\n\n\n워싱턴 기득권 이미지\n\n\n동명이인(Dan J. Sullivan)으로 인한 1차 집계 보수표 분산 가능성\n\n\n\n\n\n정책 에너지 개발(Alaska LNG, Willow, ANWR) · 국방·군사기지 강화 · 어업 보호 · 트럼프 어젠다 협조\n\n\n🇰🇷 한국 함의 한국 직접 연계 존재. Alaska LNG의 핵심 지지자로 한국·일본 대상 LNG 수출을 미국 에너지 안보·동맹 강화 수단으로 추진(한·일은 美 LNG 누적 최대 수출시장)\n\n\n사진: U.S. Senate (public domain)   출처 [1] [2] [3]",
+    "crumbs": [
+      "홈",
+      "State Focus",
+      "알래스카 Alaska"
+    ]
+  },
+  {
+    "objectID": "states/ak.html#경선-과정",
+    "href": "states/ak.html#경선-과정",
+    "title": "알래스카 Alaska",
+    "section": "경선 과정",
+    "text": "경선 과정\n알래스카는 비당파 예비선거(8/18, 정당 구분 없이 상위 4명 진출)와 11월 본선 순위선택투표(RCV) 를 씁니다. 과반 득표자가 없으면 최하위를 탈락시켜 2순위 표를 재배분하는 라운드를 반복합니다. 등록 마감 직전 현직과 이름이 같은 ‘Dan J. Sullivan’ 이 출마해, 현직 측은 “민주당 공작”이라 주장(근거 비공개)하고 관련자들은 부인했으며, 선관위는 가운데 이니셜로 구분할 예정입니다. RCV 1차 집계에서 보수표 분산 가능성을 키우는 변수입니다. (CNN)",
+    "crumbs": [
+      "홈",
+      "State Focus",
+      "알래스카 Alaska"
+    ]
+  },
+  {
+    "objectID": "states/ak.html#한국-함의",
+    "href": "states/ak.html#한국-함의",
+    "title": "알래스카 Alaska",
+    "section": "한국 함의",
+    "text": "한국 함의\nDan Sullivan은 한국과 직접 연계됩니다. Alaska LNG 프로젝트의 핵심 지지자로, 한국·일본 등 인도-태평양 동맹에 대한 LNG 수출을 미국 에너지 안보·동맹 강화 수단으로 추진합니다(한·일은 미국 LNG 누적 최대 수출시장). (Sullivan 상원) Peltola는 알래스카 명태(pollock) 산업 보호에 주력했고 명태 알(roe)이 한국 시장에서 소비되는 연결고리는 있으나, 본인의 한국 직접 언급은 확인되지 않습니다.",
+    "crumbs": [
+      "홈",
+      "State Focus",
+      "알래스카 Alaska"
+    ]
+  },
+  {
+    "objectID": "states/tx.html",
+    "href": "states/tx.html",
+    "title": "텍사스 Texas",
+    "section": "",
+    "text": "TX 레이스 카드\n\n\n기준 2026-06-05\n\n\n항목\n내용\n\n\n\n\n구도\n공화 방어\n\n\n현직/구도\nCornyn 경선 탈락 → Paxton (R) 후보\n\n\n등급\nLean R (Cook 하향)\n\n\n최신 폴\n【수집】\n\n\n모금(현금)\n—\n\n\n한국 관심\n블루웨이브 시 도전\n\n\n경선 — 공화당 경선\n완료 · Paxton 63.8%로 현직 Cornyn 격파 → Cook, Likely R→Lean R 하향",
+    "crumbs": [
+      "홈",
+      "State Focus",
+      "텍사스 Texas"
+    ]
+  },
+  {
+    "objectID": "states/tx.html#구도-요약",
+    "href": "states/tx.html#구도-요약",
+    "title": "텍사스 Texas",
+    "section": "구도 요약",
+    "text": "구도 요약\n이번 사이클 최대의 와일드카드. Paxton이 현직 Cornyn을 5/26 결선에서 63.8%로 격파하면서 Cook Political이 Likely R → Lean R로 하향 — 구조적 공화 우위(R+8 안팎) 주가 후보 요인으로 경합권에 들어온 사례입니다. 1994년 이후 30년간 민주당이 주 전체 선거에서 이긴 적이 없다는 점이 천장입니다.",
+    "crumbs": [
+      "홈",
+      "State Focus",
+      "텍사스 Texas"
+    ]
+  },
+  {
+    "objectID": "states/tx.html#후보자-프로필",
+    "href": "states/tx.html#후보자-프로필",
+    "title": "텍사스 Texas",
+    "section": "후보자 프로필",
+    "text": "후보자 프로필\n\n\n\n\n\n제임스 탈라리코 James Talarico민주\n\n\n1989년생(37세) · 텍사스 주 하원의원(오스틴) · 전 공립학교 교사\n\n\n\n학력 텍사스대 오스틴 정치학 학사(2011), 하버드대 교육정책 석사(2016), 오스틴 장로교 신학교 신학 석사\n\n\n가족 Round Rock 출신; 공개 출처상 배우자·자녀 정보 없음\n\n\n과거 선거 2018 TX 하원 HD-52 당선(최연소) · 2022·2024 HD-50 재선(2024 무경쟁) · 2026 민주 경선 57%로 Crockett(43%) 압승\n\n\n펀드레이징 누적 약 4,030만 달러(Paxton 대비 압도; 1분기 약 2,700만 달러)\n\n\n\n\n강점\n\n\n세대교체 이미지(36세)\n\n\n교사·신학생 배경의 진정성·신앙 기반 중도 확장\n\n\n압도적 모금력·높은 호감도\n\n\n\n\n약점\n\n\n텍사스 30년 민주 주 전체 무승\n\n\n전국 인지도 부족\n\n\n히스패닉 외 지지 기반 확장 과제\n\n\n\n\n\n정책 공교육 투자 · 의료보험 접근성 확대 · 총기 안전 · 경제적 기회\n\n\n🇰🇷 한국 함의 옛 지역구(HD-52)에 삼성 Taylor 반도체 팹이 위치하나, 한국 기업·통상에 대한 명시적 입장은 공개 출처 미확인\n\n\n사진: Antonioaesparza, CC BY-SA 4.0   출처 [1] [2] [3]\n\n\n\n\n\n\n\n켄 팩스턴 Ken Paxton공화\n\n\n1962년생(64세) · 텍사스 법무장관(2015~) · 변호사\n\n\n\n학력 베일러대 심리학 학사(1985)·MBA(1986), 버지니아대 로스쿨 J.D.(1991)\n\n\n가족 배우자 Angela Paxton(TX 주 상원의원), 자녀 4명. 2025년 7월 Angela가 이혼 소송 제기\n\n\n과거 선거 TX 하원(2003~2013)·주 상원(2013~2015) · 법무장관 2018(50.6%)·2022(53.5%) · 2026 공화 경선 결선 63.8%로 현역 Cornyn 격파\n\n\n펀드레이징 약 760만 달러(Talarico 대비 열세)\n\n\n\n\n강점\n\n\n트럼프 공개 지지\n\n\nMAGA 기반의 열렬한 지지층\n\n\n‘싸우는 법무장관’ 이미지\n\n\n텍사스 구조적 공화 우세\n\n\n\n\n약점\n\n\n법적·윤리 스캔들 누적(증권사기 기소·2023 탄핵·연방 수사)\n\n\n이혼 소송 노출\n\n\n모금 열세·무당파 이탈 위험\n\n\n\n\n\n정책 이민 단속 · 선거 무결성 · 낙태 규제 · 트럼프 어젠다 수호·연방 권한 견제 소송\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: Gage Skidmore, CC BY-SA 3.0   출처 [1] [2] [3]",
+    "crumbs": [
+      "홈",
+      "State Focus",
+      "텍사스 Texas"
+    ]
+  },
+  {
+    "objectID": "states/tx.html#경선-과정",
+    "href": "states/tx.html#경선-과정",
+    "title": "텍사스 Texas",
+    "section": "경선 과정",
+    "text": "경선 과정\n3/3 1차 경선에서 Cornyn(약 43%)·Paxton(약 41%)이 과반 미달로 결선에 올랐고, 5/19 트럼프가 “Cornyn은 힘든 시기에 나를 지지하지 않았다”며 Paxton을 공개 지지한 것이 결정타가 됐습니다. 5/26 결선에서 Paxton이 63.8% 대 36.2%로 압도했고, Cornyn은 1970년 이후 경선에서 탈락한 첫 텍사스 현역 상원의원이 됐습니다. 양 진영에 1억6,500만 달러가 투입된 역대 최고가 경선이었습니다. (NPR)",
+    "crumbs": [
+      "홈",
+      "State Focus",
+      "텍사스 Texas"
+    ]
+  },
+  {
+    "objectID": "states/tx.html#한국-함의",
+    "href": "states/tx.html#한국-함의",
+    "title": "텍사스 Texas",
+    "section": "한국 함의",
+    "text": "한국 함의\n삼성전자 Taylor 반도체 팹(170억 달러, 2026년 가동 예정)이 위치한 곳으로, 공교롭게 Talarico가 2018~2022년 대표했던 옛 지역구(HD-52)에 자리합니다. 다만 양 후보 모두 한국 기업·통상에 대한 명시적 공개 입장은 확인되지 않습니다(지역구 연고는 사실이나 정책 입장으로 추정하지 않음).",
+    "crumbs": [
+      "홈",
+      "State Focus",
+      "텍사스 Texas"
+    ]
+  },
+  {
+    "objectID": "states/nc.html",
+    "href": "states/nc.html",
+    "title": "노스캐롤라이나 North Carolina",
+    "section": "",
+    "text": "NC 레이스 카드\n\n\n기준 2026-06-05\n\n\n항목\n내용\n\n\n\n\n구도\n공화 방어\n\n\n현직/구도\n(Tillis 석)\n\n\n등급\nToss Up / Lean R\n\n\n최신 폴\n【수집】\n\n\n모금(현금)\n—\n\n\n한국 관심\n—\n\n\n경선 — 양당 경선\n【수집】",
+    "crumbs": [
+      "홈",
+      "State Focus",
+      "노스캐롤라이나 North Carolina"
+    ]
+  },
+  {
+    "objectID": "states/nc.html#구도-요약",
+    "href": "states/nc.html#구도-요약",
+    "title": "노스캐롤라이나 North Carolina",
+    "section": "구도 요약",
+    "text": "구도 요약\nTillis 은퇴로 생긴 공개석(공화 방어). 전 주지사 Roy Cooper(D)가 인지도·모금에서 전 RNC 위원장 Michael Whatley(R)를 앞서며, 봄 내내 한 자릿수 후반~두 자릿수 초반 리드를 일관 유지했습니다(예측시장 약 83%). NC는 대선에선 공화 우위지만 주지사로 Cooper를 두 번 배출한 대표적 분할투표 주입니다.",
+    "crumbs": [
+      "홈",
+      "State Focus",
+      "노스캐롤라이나 North Carolina"
+    ]
+  },
+  {
+    "objectID": "states/nc.html#후보자-프로필",
+    "href": "states/nc.html#후보자-프로필",
+    "title": "노스캐롤라이나 North Carolina",
+    "section": "후보자 프로필",
+    "text": "후보자 프로필\n\n\n\n\n\n로이 쿠퍼 Roy Cooper민주\n\n\n1957년생(69세) · 전 NC 주지사(2017~2025, 2선) · 변호사\n\n\n\n학력 UNC Chapel Hill 정치학 학사(1979, Morehead 장학생), UNC 로스쿨 J.D.(1982)\n\n\n가족 부인 Kristin Bernhardt(위탁아동 후견인); 세 딸 모두 UNC 졸업\n\n\n과거 선거 NC 법무장관 4선(2000~2012) · 주지사 2016(49.0%, McCrory 격파)·2020(51.5%) · 주 전체 선거 통산 무패\n\n\n펀드레이징 Q1 2026 1,380만 달러 모금, 보유현금 1,850만 달러, 누적 약 3,600만 달러(Whatley 2배+)\n\n\n\n\n강점\n\n\n97% 수준 인지도·검증된 행정 실적\n\n\n트럼프 승리 연도에도 당선한 분할투표 호소력\n\n\n50세 이하·무당파 강세\n\n\n\n\n약점\n\n\n68세 고령\n\n\n8년 주지사 재임 피로감\n\n\n진보 기반 열정 부족 우려\n\n\n\n\n\n정책 메디케이드 확대(2023, 약 60만 명 신규 수혜) · 클린에너지·첨단제조 일자리 유치 · 교육 투자\n\n\n🇰🇷 한국 함의 NC 첨단제조 유치는 일본(Toyota)·베트남(VinFast) 중심이고 한국 대형 투자 사례·대한 정책 입장은 공개 출처 미확인\n\n\n사진: NCDOT, CC BY 2.0   출처 [1] [2] [3]\n\n\n\n\n\n\n\n마이클 워틀리 Michael Whatley공화\n\n\n1968년생(58세) · 전 RNC 위원장 · 전 에너지 산업 로비스트 · 변호사\n\n\n\n학력 UNC Charlotte 역사학 학사(1991), Wake Forest 종교학 석사(1993), Notre Dame 신학 석사(1994)·로스쿨 J.D.(1997)\n\n\n가족 부인 Suzanne(Gaston 카운티 거주); 쌍둥이 아들, 딸 Mary Kate\n\n\n과거 선거 선출직 경험 없음 · 2026 공화 프라이머리 64.6%로 본선 진출\n\n\n펀드레이징 Q1 2026 500만 달러 모금, 보유현금 약 250만 달러. 슈퍼팩 SLF가 7,100만 달러 지원 약속\n\n\n\n\n강점\n\n\n트럼프 즉시 지지로 보수 기반 결집\n\n\n전국 당 조직 운영 경험(RNC·NC GOP 위원장)\n\n\n대규모 외부지출 후원\n\n\n\n\n약점\n\n\n인지도 극히 낮음(과반이 ‘모름’)\n\n\n선출직 경험 전무\n\n\n미시간 출생·워싱턴 이력으로 ‘카펫배거’ 공격 노출\n\n\n\n\n\n정책 선거 무결성·이민 단속 · 트럼프 어젠다 수호 · 중산층 감세·팁·초과근무 비과세\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: Glenn Youngkin, CC BY 2.0   출처 [1] [2] [3]",
+    "crumbs": [
+      "홈",
+      "State Focus",
+      "노스캐롤라이나 North Carolina"
+    ]
+  },
+  {
+    "objectID": "states/nc.html#경선-과정",
+    "href": "states/nc.html#경선-과정",
+    "title": "노스캐롤라이나 North Carolina",
+    "section": "경선 과정",
+    "text": "경선 과정\n양당 경선은 3/3에 이미 종료됐습니다(민주 Cooper 92%, 공화 Whatley 64.6%). 본선 대진이 일찍 확정돼 양 캠프 모두 본선 체제로 전환했습니다. 최대 변수는 Whatley의 낮은 인지도(과반이 ‘모름’)를 둘러싼 정의(定義) 싸움과, 공화 슈퍼팩 SLF의 7,100만 달러 광고전입니다. (WRAL)",
+    "crumbs": [
+      "홈",
+      "State Focus",
+      "노스캐롤라이나 North Carolina"
+    ]
+  },
+  {
+    "objectID": "states/nc.html#한국-함의",
+    "href": "states/nc.html#한국-함의",
+    "title": "노스캐롤라이나 North Carolina",
+    "section": "한국 함의",
+    "text": "한국 함의\nNC의 대형 첨단제조 유치는 일본(Toyota 배터리)·베트남(VinFast)·핀란드(Kempower) 중심으로, 한국의 대형 NC 투자 사례나 양 후보의 대한 정책 입장은 공개 출처에서 확인되지 않습니다(한국 배터리 투자는 조지아·테네시·켄터키에 집중). 추정으로 빈 칸을 채우지 않습니다.",
+    "crumbs": [
+      "홈",
+      "State Focus",
+      "노스캐롤라이나 North Carolina"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "소개 — 미국 중간선거 기초",
+    "section": "",
+    "text": "이 페이지는 매주 바뀌는 트래커와 달리, 미국 중간선거의 고정된 구조를 다룹니다. 미국 정치 배경지식을 전제하지 않고 설명합니다.",
+    "crumbs": [
+      "홈",
+      "Overview",
+      "소개"
+    ]
+  },
+  {
+    "objectID": "about.html#what",
+    "href": "about.html#what",
+    "title": "소개 — 미국 중간선거 기초",
+    "section": "중간선거란",
+    "text": "중간선거란\n대통령 4년 임기의 한가운데에 치러지는 연방 선거입니다. 대선이 없는 짝수 해 11월(첫 월요일 다음 화요일)에 열리며, 하원 전체(435석)와 상원의 약 3분의 1이 한꺼번에 새로 선출됩니다. 같은 날 다수 주에서 주지사·주의회·지방 선거도 함께 치러집니다.\n대통령 이름이 투표용지에 없지만, 중간선거는 사실상 집권 행정부에 대한 중간 평가로 작동합니다. 역사적으로 대통령 소속 정당은 중간선거에서 하원 의석을 잃는 경우가 압도적으로 많습니다 — 그래서 트래커가 추적하는 대통령 지지율·제너릭 밸럿 같은 “환경 지표”가 의석 변동의 선행지표로 중요합니다. 2026년 선거는 트럼프 2기의 중간선거입니다.",
+    "crumbs": [
+      "홈",
+      "Overview",
+      "소개"
+    ]
+  },
+  {
+    "objectID": "about.html#congress",
+    "href": "about.html#congress",
+    "title": "소개 — 미국 중간선거 기초",
+    "section": "의회 구조: 상원과 하원",
+    "text": "의회 구조: 상원과 하원\n미국 의회는 성격이 다른 두 원으로 나뉘고, 법은 양원을 모두 통과해야 합니다.\n\n하원(House): 435석, 2년 임기, 인구 비례(주별 의석 수가 인구에 따라 배분). 과반 218석이면 다수당이 되어 의장(Speaker)을 내고 의사일정을 장악합니다. 2년마다 전원을 새로 뽑으므로 그해의 정치 환경이 가장 민감하게 반영됩니다. 세입·세출 법안이 먼저 발의되는 곳도 하원입니다.\n상원(Senate): 100석, 6년 임기, 인구와 무관하게 주당 2석으로 균등. 임기가 엇갈리게 설계돼 2년마다 약 3분의 1(2026년 정기 선거 대상은 33석)만 교체됩니다. 과반은 51석이며, 50-50일 때는 부통령이 캐스팅보트를 행사해 소속 정당이 다수당이 됩니다. 다만 대부분의 법안은 토론 종결(filibuster 차단)에 60표가 필요해, 단순 과반만으로 입법을 밀어붙이기는 어렵습니다.\n\n요약하면, 하원은 환경에 민감하고 상원은 지도(어느 주가 이번에 선거를 치르는가)에 좌우됩니다. 이 비대칭이 매 사이클 판세의 핵심입니다.",
+    "crumbs": [
+      "홈",
+      "Overview",
+      "소개"
+    ]
+  },
+  {
+    "objectID": "about.html#why-kr",
+    "href": "about.html#why-kr",
+    "title": "소개 — 미국 중간선거 기초",
+    "section": "왜 한국 독자에게 중요한가",
+    "text": "왜 한국 독자에게 중요한가\n중간선거 결과는 단순한 미국 국내 정치 이벤트가 아니라, 대한(對韓) 통상·방위·대북 입법 환경을 좌우합니다.\n\n인준권(상원): 주한 미국대사, USTR(무역대표부), 국무·국방 고위직 등 행정부 인사는 상원의 인준을 거칩니다. 상원 다수당이 누구냐에 따라 인사 환경의 연속성·마찰이 달라집니다.\n위원회 구성: 다수당이 모든 상임위 위원장을 차지합니다. 특히 군사위(Armed Services)·외교위(Foreign Relations) 위원장이 NDAA(국방수권법)의 인도·태평양·대북 조항 협상 톤을 좌우합니다.\n세출 지렛대(하원): 예산·세출 권한이 하원에 있어, 통상·방위 관련 예산과 권한 위임의 향방이 하원 다수당 손에 달려 있습니다.\n감독·조사권: 분점정부(대통령과 의회 다수당이 다른 경우)에서는 야당이 청문·조사권으로 행정부를 견제 — 관세·통상 정책에 대한 청문이 늘면 한국 기업의 통상 리스크 시계가 길어질 수 있습니다.\n\n구체적인 사이클별 함의는 매주 트래커의 ‘한국 함의’ 코너에서 다룹니다.",
+    "crumbs": [
+      "홈",
+      "Overview",
+      "소개"
+    ]
+  },
+  {
+    "objectID": "about.html#polling-literacy",
+    "href": "about.html#polling-literacy",
+    "title": "소개 — 미국 중간선거 기초",
+    "section": "여론조사를 읽는 법",
+    "text": "여론조사를 읽는 법\n여론조사 수치는 그냥 받아들이면 안 됩니다. 같은 시점·같은 질문이라도 기관마다 결과가 크게 벌어지는데, 그 편차의 3대 출처는 다음과 같습니다.\n\n모집단(population): 누구에게 물었는가. A(adults, 전체 성인) → RV(registered voters, 등록 유권자) → LV(likely voters, 적극 투표층) 순으로 좁아지며, 좁힐수록 결과가 달라집니다. 특히 “누가 실제로 투표할 사람인가”를 가르는 LV 스크린은 기관마다 기준이 달라 편차의 큰 원인입니다.\n하우스 이펙트(house effect): 특정 조사기관이 구조적으로 한쪽으로 치우치는 경향. 한 기관의 단일 수치보다 여러 기관의 평균이 안전한 이유입니다.\n집계 가중(aggregation): 여러 조사를 묶을 때 단순 평균이냐, 표본 품질·최신성으로 가중하느냐에 따라 결과가 달라집니다.\n\n실무 규칙은 하나입니다 — 단일 조사(특히 눈에 띄는 이상치)에 반응하지 말고, 집계 평균과 추세를 보라. 이 섹션은 매주 트래커의 ‘방법론 노트’가 한 토막씩 쌓여 만들어지는 아카이브입니다.",
+    "crumbs": [
+      "홈",
+      "Overview",
+      "소개"
+    ]
+  },
+  {
+    "objectID": "senate.html",
+    "href": "senate.html",
+    "title": "상원 대시보드",
+    "section": "",
+    "text": "현재 R 53 / D 47. 민주당이 다수당(51석)을 탈환하려면 순증 +4석이 필요합니다. 35개 개선 의석 중 실질 경합은 아래 7개 주에 압축되어 있습니다 — 민주 방어 2곳(GA·MI), 공화 방어 5곳.\n\n순증 +4는 높은 문턱입니다. 경합주 전부가 박빙이어도, 공화 방어석 다수는 구조적으로 공화 우위(R+8 이상) 주에 있다는 점이 민주당 시나리오의 제약 조건입니다.",
+    "crumbs": [
+      "홈",
+      "Overview",
+      "상원 경합주 표"
+    ]
+  },
+  {
+    "objectID": "senate.html#balance",
+    "href": "senate.html#balance",
+    "title": "상원 대시보드",
+    "section": "",
+    "text": "현재 R 53 / D 47. 민주당이 다수당(51석)을 탈환하려면 순증 +4석이 필요합니다. 35개 개선 의석 중 실질 경합은 아래 7개 주에 압축되어 있습니다 — 민주 방어 2곳(GA·MI), 공화 방어 5곳.\n\n순증 +4는 높은 문턱입니다. 경합주 전부가 박빙이어도, 공화 방어석 다수는 구조적으로 공화 우위(R+8 이상) 주에 있다는 점이 민주당 시나리오의 제약 조건입니다.",
+    "crumbs": [
+      "홈",
+      "Overview",
+      "상원 경합주 표"
+    ]
+  },
+  {
+    "objectID": "senate.html#races",
+    "href": "senate.html#races",
+    "title": "상원 대시보드",
+    "section": "경합주 트래커",
+    "text": "경합주 트래커\n\n\n\n\n\n\n\n\n상원 경합주 트래커\n\n\nR 53 / D 47 · 민주 다수당까지 순증 +4\n\n\n주\n구도\n현직/구도\n등급\n최신 폴\n출처\n모금(현금)\n한국 관심\n\n\n\n\nGA\n민주 방어\nOssoff (D) 재선\nToss Up\nOssoff 48–43 Collins\nEmerson 2/28–3/2\nOssoff $32M+\n통상·반도체\n\n\nMI\n민주 방어\n공개석 (Peters 은퇴)\nToss Up\n【수집】\n—\n—\n자동차·관세\n\n\nME\n공화 방어\nCollins (R)\nLean R / Toss Up\n【수집】\n—\n—\n민주 최우선 탈환 표적\n\n\nNC\n공화 방어\n(Tillis 석)\nToss Up / Lean R\n【수집】\n—\n—\n—\n\n\nTX\n공화 방어\nCornyn 경선 탈락 → Paxton (R) 후보\nLean R (Cook 하향)\n【수집】\n—\n—\n블루웨이브 시 도전\n\n\nOH\n공화 방어\nHusted (R) 임명직 vs Brown (D)\n【수집】\nBrown 53–45 Husted\nFox News 5/28–6/1\n—\n철강·제조업\n\n\nAK\n공화 방어\n—\nLikely R\n【수집】\n—\n—\n—\n\n\n\n\n\n\n\n\n등급은 확률이 아닙니다. Cook·Sabato 등의 등급(Toss Up/Lean)은 전문가 판정이며, 모델·시장의 확률과 같은 잣대로 비교하지 마세요.\n【수집】은 아직 신뢰할 만한 집계·조사가 확보되지 않은 슬롯입니다. 추정치로 채우지 않습니다.",
+    "crumbs": [
+      "홈",
+      "Overview",
+      "상원 경합주 표"
+    ]
+  },
+  {
+    "objectID": "senate.html#primaries",
+    "href": "senate.html#primaries",
+    "title": "상원 대시보드",
+    "section": "경선 캘린더",
+    "text": "경선 캘린더\n본선 여론조사가 의미를 갖기 시작하는 시점은 양당 대진이 확정된 이후입니다. 대진 미정 주의 가상대결 조사는 참고 수준으로만 보세요.\n\n\n\n\n\n\n\n\n경선 캘린더 — 본선 대진 확정 일정\n\n\n기준 2026-06-05\n\n\n주\n경선\n일자\n상태\n내용\n\n\n\n\nME\n민주당 경선\n2026-06-09\n예정\nPlatner 우세 관측 (스캔들에도 경선 1위 유지)\n\n\nGA\n공화당 결선\n2026-06-16\n예정\nCollins 40.5% vs Dooley 30.2% (1차 5/19, Carter 탈락)\n\n\nMI\n민주당 경선\n2026-08-04\n예정\nEl-Sayed 34 / Stevens 31 / McMorrow — 3파전 (RacetotheWH 6월)\n\n\nTX\n공화당 경선\n【수집】\n완료\nPaxton 63.8%로 현직 Cornyn 격파 → Cook, Likely R→Lean R 하향\n\n\nNC\n양당 경선\n【수집】\n【수집】\n—\n\n\nAK\n통합 경선(top-4)\n【수집】\n【수집】\n—\n\n\nOH\n양당 경선\n【수집】\n【수집】\n—",
+    "crumbs": [
+      "홈",
+      "Overview",
+      "상원 경합주 표"
+    ]
+  },
+  {
+    "objectID": "senate.html#watch",
+    "href": "senate.html#watch",
+    "title": "상원 대시보드",
+    "section": "이번 주 관전 포인트",
+    "text": "이번 주 관전 포인트\n기준 2026-06-05 (출처: 각 항목 병기)\n\n텍사스가 ’경합주’가 됐다 — Paxton이 현직 Cornyn을 경선에서 꺾자 Cook Political이 TX를 Likely R → Lean R로 하향했습니다. 등급 하향이 곧 민주 우세를 뜻하진 않지만, 공화당이 방어 자원을 써야 하는 지도가 넓어졌다는 신호입니다.\n오하이오의 이례적 조사 — Fox News 조사(5/28–6/1)에서 Brown이 Husted를 53–45로 앞섰습니다. 단일 조사이므로 추세 확인 전까지는 과대해석 금물 — 다만 임명직 현직 대 전직 상원의원 구도라는 특수성은 주목할 만합니다.\n조지아의 시간표 비대칭 — 공화당 후보가 6/16 결선까지 미정인 동안, Ossoff는 현금 $32M+로 정의(定義) 광고를 선점하는 구도입니다. 결선 후 공화당의 통합 속도가 1차 변수.\n\n\n이 페이지의 표는 data/의 정규화 파일에서 빌드 시점에 자동 생성됩니다. 기준 시각은 각 표 상단에 표기.",
+    "crumbs": [
+      "홈",
+      "Overview",
+      "상원 경합주 표"
+    ]
+  },
+  {
+    "objectID": "dashboard.html",
+    "href": "dashboard.html",
+    "title": "전망 대시보드",
+    "section": "",
+    "text": "이 페이지의 확률은 시장·집계기관 수치가 아니라 자체 프레임워크(Universal Causal Framework V2)의 모델 추정치입니다. Cook·Sabato 등급이나 예측시장과 같은 잣대로 비교하지 마세요. 데이터를 갱신하려면 data/model_dashboard.json 한 파일만 고쳐 push하면 사이트가 다시 빌드되어 자동 반영됩니다.",
+    "crumbs": [
+      "홈",
+      "Overview",
+      "전망 대시보드"
+    ]
+  },
+  {
+    "objectID": "dashboard.html#정적-표-인쇄접근성용",
+    "href": "dashboard.html#정적-표-인쇄접근성용",
+    "title": "전망 대시보드",
+    "section": "정적 표 (인쇄·접근성용)",
+    "text": "정적 표 (인쇄·접근성용)\n위 인터랙티브 카드와 동일한 데이터입니다. JavaScript가 막힌 환경에서도 보이도록 빌드 시점에 표로도 렌더링합니다.\n\n\n\n\n\n\n\n\n경합주 민주당 승리확률 — 자체 분석 모델\n\n\n자체 분석 모델 (Universal Causal Framework V2) · 확률 기준 2026-05-29 · 사실 2026-06-05\n\n\n주\n구도\n대결\nD 승리확률\n등급\n핵심 변수\n\n\n\n\n메인\n공화 방어\nPlatner (D) vs Collins (R·5선)\n63%\nLean D\n세대 대결, Collins 초당파 브랜드, 트럼프 역풍\n\n\n노스캐롤라이나\n공화 방어\nCooper (D·전 주지사) vs Whatley (R)\n62%\nLean D\nCooper 97% 인지도 vs Whatley 인지도 열세, 슈퍼팩 $71M\n\n\n조지아\n민주 방어\nOssoff (D·현직) vs Collins/Dooley (R)\n61%\nLean D\n공화 결선 분열, Ossoff 자금 우위, 메트로 애틀랜타\n\n\n미시간\n민주 방어\nTBD (D) vs Rogers (R)\n50%\nToss-up\n민주 경선 통합 여부(8/4), 자동차·관세, 아랍계 커뮤니티\n\n\n오하이오\n공화 방어\nBrown (D·전 상원) vs Husted (R·임명직)\n38%\nLean R\n특별선거 투표율, 임명직 정당성, 블루칼라 구조\n\n\n알래스카\n공화 방어\nPeltola (D) vs Sullivan (R·현직)\n37%\nLean R\n순위선택투표(RCV), 원주민 투표율, 설리번 현직 강점\n\n\n텍사스\n공화 방어\nTalarico (D) vs Paxton (R)\n29%\nLean R\n구조적 R+8, Paxton 스캔들·기소, 자금 비대칭\n\n\n\n여기 확률은 시장·집계기관 수치가 아니라 내부 프레임워크의 모델 추정치입니다. Cook/Sabato 등급·예측시장과 같은 잣대로 비교하지 마세요. 확률 기준일 5/29, 후보·경선 사실은 6/5 브리핑 반영.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n상원 시나리오 — 자체 분석 모델\n\n\n다수당 탈환 확률 32% · 순 기대의석 +1.4\n\n\n시나리오\n확률\n의석 결과\n다수당\n설명\n\n\n\n\nBase Case (부분 만회)\n42%\nD 48 — R 52\n공화당 유지\n트럼프 역풍 지속하나 공화당 10월 결집. ME·NC 확보, GA 방어, 나머지 R 방어\n\n\nBull Case (다수당 접근)\n28%\nD 50~51 — R 50~49\n동률 또는 D 탈환\n트럼프 추가 하락(-22pt+), 경제 악화, MI·OH 선전으로 +3~4석\n\n\nBear Case (현상 유지)\n22%\nD 47 — R 53\n공화당 유지\nMI 경선 분열, OH 구조 우위, 10월 분쟁 해소로 트럼프 반등 → 순 0석\n\n\nTail Risk (극단 충격)\n8%\nD 46- ~ D 52+\n양극단\n상승 4%(트럼프 -25pt 돌파·TX 뒤집기) / 하락 4%(국제분쟁 격화·민주 분열)",
+    "crumbs": [
+      "홈",
+      "Overview",
+      "전망 대시보드"
+    ]
+  },
+  {
     "objectID": "issues/2026-06-07.html",
     "href": "issues/2026-06-07.html",
     "title": "주간 브리핑 — 6월 7일호",
@@ -144,246 +516,6 @@
     ]
   },
   {
-    "objectID": "states/ak.html",
-    "href": "states/ak.html",
-    "title": "알래스카 Alaska",
-    "section": "",
-    "text": "AK 레이스 카드\n\n\n기준 2026-06-05\n\n\n항목\n내용\n\n\n\n\n구도\n공화 방어\n\n\n현직/구도\n—\n\n\n등급\nLikely R\n\n\n최신 폴\n【수집】\n\n\n모금(현금)\n—\n\n\n한국 관심\n—\n\n\n경선 — 통합 경선(top-4)\n【수집】",
-    "crumbs": [
-      "홈",
-      "State Focus",
-      "알래스카 Alaska"
-    ]
-  },
-  {
-    "objectID": "states/ak.html#구도-요약",
-    "href": "states/ak.html#구도-요약",
-    "title": "알래스카 Alaska",
-    "section": "구도 요약",
-    "text": "구도 요약\nLikely R — 경합 하단. 공화 현직 Dan Sullivan을, 2022년 최초의 알래스카 원주민(Yup’ik) 연방의원이 된 Mary Peltola(D)가 도전합니다. top-4 통합 경선(8/18) + 순위선택투표(RCV) 라는 독특한 제도 탓에 이변 여지가 상대적으로 큰 주입니다(2022년 Peltola가 RCV로 Palin을 꺾은 전례).",
-    "crumbs": [
-      "홈",
-      "State Focus",
-      "알래스카 Alaska"
-    ]
-  },
-  {
-    "objectID": "states/ak.html#후보자-프로필",
-    "href": "states/ak.html#후보자-프로필",
-    "title": "알래스카 Alaska",
-    "section": "후보자 프로필",
-    "text": "후보자 프로필\n\n\n\n\n\n메리 펠톨라 Mary Peltola민주\n\n\n1973년생(53세) · 전 연방 하원의원(2022~2025) · 어업인 · Yup’ik 원주민 지도자\n\n\n\n학력 University of Northern Colorado 초등교육 전공(1991~1993), 알래스카대 수강(1994~1998), 학위 미취득\n\n\n가족 사별·이혼 포함 세 번 결혼(현 배우자 故 Gene Peltola Jr.), 친자녀 4명·의붓자녀 3명\n\n\n과거 선거 알래스카 주 하원의원(1999~2009) · 2022 하원 특별·정기선거 승리(RCV로 Palin 격파) · 2024 하원 낙선(48.8% vs Begich 51.2%, R+2.4)\n\n\n펀드레이징 2026 1분기 약 890만 달러(알래스카 상원 후보 역대 최대, Sullivan의 4배+), 단 가용현금 약 560만 달러로 열세\n\n\n\n\n강점\n\n\n보수 주에서 이례적으로 높은 개인 호감도(46~52%)\n\n\n2022년 RCV 승리 경험·제도 숙련도\n\n\n초당파·에너지 개발 지지로 보수표 흡수, 원주민 투표율 견인\n\n\n\n\n약점\n\n\n2024년 하원 낙선 이력\n\n\n트럼프 +14 주의 민주당 레이블\n\n\n가용현금 열세·Murkowski의 Sullivan 지지 전환\n\n\n\n\n\n정책 생활비 절감(중위소득 이하 소득세 면제 등) · 어업 보호·알래스카 수산 · 에너지 개발(Willow 찬성, Pebble 반대) · 원주민 권리·반부패\n\n\n🇰🇷 한국 함의 직접적 대한국 정책·발언은 공개 출처 없음. 하원 시절 알래스카 명태(pollock) 산업 보호에 주력 — 명태 알(roe)이 한국 시장에서 소비되는 연결고리는 존재\n\n\n사진: U.S. House (public domain)   출처 [1] [2] [3]\n\n\n\n\n\n\n\n댄 설리번 Dan Sullivan공화 · 현직\n\n\n1964년생(62세) · 현직 연방 상원의원(2015~) · 변호사 · 예비역 해병 대령\n\n\n\n학력 Harvard University 경제학 학사(1987, magna cum laude), Georgetown University J.D.·외교학 석사(1993)\n\n\n가족 부인 Julie Fate Sullivan(30년+ 결혼), 딸 3명. 처가는 알래스카 원주민(Athabascan) Fate 가문\n\n\n과거 선거 2014 상원 당선(47.96% vs Begich 45.83%) · 2020 상원 재선(약 54% vs Gross 41%)\n\n\n펀드레이징 2026 1분기 약 200~210만 달러(Peltola에 4배 열세)이나 가용현금 약 750만 달러로 우위. SLF가 약 1,500만 달러 외부 지원\n\n\n\n\n강점\n\n\n현직 프리미엄·구조적 공화 우위(트럼프 +14 주)\n\n\n해병 군 경력(알래스카 군사기지 연계)\n\n\n트럼프·Murkowski 동시 지지·가용현금 우위\n\n\n\n\n약점\n\n\nPeltola 대비 개인 호감도 열세(약 39%)\n\n\n워싱턴 기득권 이미지\n\n\n동명이인(Dan J. Sullivan)으로 인한 1차 집계 보수표 분산 가능성\n\n\n\n\n\n정책 에너지 개발(Alaska LNG, Willow, ANWR) · 국방·군사기지 강화 · 어업 보호 · 트럼프 어젠다 협조\n\n\n🇰🇷 한국 함의 한국 직접 연계 존재. Alaska LNG의 핵심 지지자로 한국·일본 대상 LNG 수출을 미국 에너지 안보·동맹 강화 수단으로 추진(한·일은 美 LNG 누적 최대 수출시장)\n\n\n사진: U.S. Senate (public domain)   출처 [1] [2] [3]",
-    "crumbs": [
-      "홈",
-      "State Focus",
-      "알래스카 Alaska"
-    ]
-  },
-  {
-    "objectID": "states/ak.html#경선-과정",
-    "href": "states/ak.html#경선-과정",
-    "title": "알래스카 Alaska",
-    "section": "경선 과정",
-    "text": "경선 과정\n알래스카는 비당파 예비선거(8/18, 정당 구분 없이 상위 4명 진출)와 11월 본선 순위선택투표(RCV) 를 씁니다. 과반 득표자가 없으면 최하위를 탈락시켜 2순위 표를 재배분하는 라운드를 반복합니다. 등록 마감 직전 현직과 이름이 같은 ‘Dan J. Sullivan’ 이 출마해, 현직 측은 “민주당 공작”이라 주장(근거 비공개)하고 관련자들은 부인했으며, 선관위는 가운데 이니셜로 구분할 예정입니다. RCV 1차 집계에서 보수표 분산 가능성을 키우는 변수입니다. (CNN)",
-    "crumbs": [
-      "홈",
-      "State Focus",
-      "알래스카 Alaska"
-    ]
-  },
-  {
-    "objectID": "states/ak.html#한국-함의",
-    "href": "states/ak.html#한국-함의",
-    "title": "알래스카 Alaska",
-    "section": "한국 함의",
-    "text": "한국 함의\nDan Sullivan은 한국과 직접 연계됩니다. Alaska LNG 프로젝트의 핵심 지지자로, 한국·일본 등 인도-태평양 동맹에 대한 LNG 수출을 미국 에너지 안보·동맹 강화 수단으로 추진합니다(한·일은 미국 LNG 누적 최대 수출시장). (Sullivan 상원) Peltola는 알래스카 명태(pollock) 산업 보호에 주력했고 명태 알(roe)이 한국 시장에서 소비되는 연결고리는 있으나, 본인의 한국 직접 언급은 확인되지 않습니다.",
-    "crumbs": [
-      "홈",
-      "State Focus",
-      "알래스카 Alaska"
-    ]
-  },
-  {
-    "objectID": "states/me.html",
-    "href": "states/me.html",
-    "title": "메인 Maine",
-    "section": "",
-    "text": "ME 레이스 카드\n\n\n기준 2026-06-05\n\n\n항목\n내용\n\n\n\n\n구도\n공화 방어\n\n\n현직/구도\nCollins (R)\n\n\n등급\nLean R / Toss Up\n\n\n최신 폴\n【수집】\n\n\n모금(현금)\n—\n\n\n한국 관심\n민주 최우선 탈환 표적\n\n\n경선 — 민주당 경선\n2026-06-09 예정 · Platner 우세 관측 (스캔들에도 경선 1위 유지)",
-    "crumbs": [
-      "홈",
-      "State Focus",
-      "메인 Maine"
-    ]
-  },
-  {
-    "objectID": "states/me.html#구도-요약",
-    "href": "states/me.html#구도-요약",
-    "title": "메인 Maine",
-    "section": "구도 요약",
-    "text": "구도 요약\n민주당의 최우선 탈환 표적. 5선 현직 Collins(R)는 바이든·해리스가 이긴 주에서 살아남아온 생존자지만, 이번 사이클의 전국 역풍이 변수입니다. 민주당 경선(6/9)에서 Graham Platner가 성적 문자 메시지 등 논란에도 77.7%로 압승해 본선 대진이 확정됐습니다.",
-    "crumbs": [
-      "홈",
-      "State Focus",
-      "메인 Maine"
-    ]
-  },
-  {
-    "objectID": "states/me.html#후보자-프로필",
-    "href": "states/me.html#후보자-프로필",
-    "title": "메인 Maine",
-    "section": "후보자 프로필",
-    "text": "후보자 프로필\n\n\n\n\n\n그레이엄 플래트너 Graham Platner민주\n\n\n1984년생(42세) · 굴 양식업자 · 미 해병대 참전용사\n\n\n\n학력 John Bapst Memorial High School 졸업; George Washington University 수학(중퇴·미졸업)\n\n\n가족 2023년 Amy Gertner와 결혼(아내는 양식회사 비즈니스 매니저)\n\n\n과거 선거 2026 민주당 상원 경선(6/9) 승리: Platner 77.7% vs Mills 16.7% vs Costello 5.6%\n\n\n펀드레이징 캠페인 전체 5/20까지 $1,630만 모금(약 60%가 $200 미만 소액), 현금 $220만\n\n\n\n\n강점\n\n\n군 경력이 무소속 비중 큰 메인 유권자에 호소\n\n\n압도적 소액 모금·풀뿌리 열기\n\n\n본선 가상대결서 6선 현직을 앞서는 이례적 리드\n\n\n\n\n약점\n\n\n선출직 경험 전무\n\n\n문신·과거 Reddit 게시물·혼외 성적 문자 메시지 등 논란\n\n\n전 여자친구의 학대성 행동 주장(주장 단계)\n\n\n\n\n\n정책 메디케어 확대 · 기후변화 대응 · 노동자 권리 · 반독점·반금권정치\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: MAINEiac4434, CC BY-SA 4.0   출처 [1] [2] [3]\n\n\n\n\n\n\n\n수전 콜린스 Susan Collins공화 · 현직\n\n\n1952년생(74세) · 현직 상원의원(1997~) · 상원 세출위원장\n\n\n\n학력 St. Lawrence University 정치학 학사(magna cum laude, 1975)\n\n\n가족 남편 Thomas Daffron(2012년 결혼); 부모 모두 Caribou 시장 역임, 5대째 목재 가문\n\n\n과거 선거 2008: Collins 61.5% vs Allen(D) 38.5% (R+23.0) · 2014: Collins 68.5% vs Bellows(D) 31.5% (R+37.0) · 2020: Collins 51.0% vs Gideon(D) 42.4% (R+8.6)\n\n\n펀드레이징 5/20까지 $1,220만 모금, 현금 $970만 보유(무경선 현직)\n\n\n\n\n강점\n\n\n30년 의정·세출위원장 시니어리티(메인 예산 유치력)\n\n\n초당파 브랜드(Lugar Center 2023 초당파성 1위)\n\n\n2020년 열세 뒤집고 +8.6 재선\n\n\n\n\n약점\n\n\n2024년 해리스 +7 승리 주의 유일한 공화 현직(구조적 불리)\n\n\n73세 고령\n\n\nKavanaugh 인준 찬성표가 진보·여성층 결집 동력\n\n\n\n\n\n정책 인프라투자고용법(IIJA) 협상 주도 · Respect for Marriage Act(2022) 찬성 · 메인 방산(Bath Iron Works DDG-51) 옹호\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: U.S. Senate (public domain)   출처 [1] [2] [3]",
-    "crumbs": [
-      "홈",
-      "State Focus",
-      "메인 Maine"
-    ]
-  },
-  {
-    "objectID": "states/me.html#경선-과정",
-    "href": "states/me.html#경선-과정",
-    "title": "메인 Maine",
-    "section": "경선 과정",
-    "text": "경선 과정\n민주당 경선은 Platner(아웃사이더·압도 선두) vs Janet Mills(전 주지사, 4/30 캠페인 중단·투표용지 잔존) vs David Costello 구도였습니다. 문신·과거 Reddit 게시물·혼외 성적 문자 메시지 논란이 5~6월 집중 보도됐으나 Sanders·Schumer 등이 공개 옹호했고, 6/9 경선에서 Platner 77.7% / Mills 16.7% / Costello 5.6%로 RCV 추가 집계 없이 압승이 확정됐습니다. (Bangor Daily News)\n\n주의: 본선 가상대결 조사(UMass Lowell 6/4 Platner +5 등)는 성적 문자 메시지 본격 보도 이전 조사라, 스캔들의 본선 타격 여부는 6/9 이후 신규 조사로 확인이 필요합니다.",
-    "crumbs": [
-      "홈",
-      "State Focus",
-      "메인 Maine"
-    ]
-  },
-  {
-    "objectID": "states/me.html#한국-함의",
-    "href": "states/me.html#한국-함의",
-    "title": "메인 Maine",
-    "section": "한국 함의",
-    "text": "한국 함의\n양 후보 모두 한국 관련 직접 입장은 공개 출처에서 확인되지 않습니다. 다만 Collins는 상원 세출위원장으로 메인 방산(Bath Iron Works 구축함) 을 옹호해, 미·한 조선·철강 협력이 닿는 정책 환경에 있습니다(후보 본인의 한국 직접 언급은 미확인 — 추정으로 기술하지 않음).",
-    "crumbs": [
-      "홈",
-      "State Focus",
-      "메인 Maine"
-    ]
-  },
-  {
-    "objectID": "states/mi.html",
-    "href": "states/mi.html",
-    "title": "미시간 Michigan",
-    "section": "",
-    "text": "MI 레이스 카드\n\n\n기준 2026-06-05\n\n\n항목\n내용\n\n\n\n\n구도\n민주 방어\n\n\n현직/구도\n공개석 (Peters 은퇴)\n\n\n등급\nToss Up\n\n\n최신 폴\n【수집】\n\n\n모금(현금)\n—\n\n\n한국 관심\n자동차·관세\n\n\n경선 — 민주당 경선\n2026-08-04 예정 · El-Sayed 34 / Stevens 31 / McMorrow — 3파전 (RacetotheWH 6월)",
-    "crumbs": [
-      "홈",
-      "State Focus",
-      "미시간 Michigan"
-    ]
-  },
-  {
-    "objectID": "states/mi.html#구도-요약",
-    "href": "states/mi.html#구도-요약",
-    "title": "미시간 Michigan",
-    "section": "구도 요약",
-    "text": "구도 요약\nPeters 은퇴로 민주당이 방어해야 하는 공개석. 7개 경합주 중 본선이 공화당에 가장 유리한(오차범위 내) 유일한 주로, Cook·Sabato 모두 Toss-up으로 분류합니다. 민주당 경선(8/4)이 진보(El-Sayed)·온건(Stevens)·풀뿌리(McMorrow) 3파전으로 늦게까지 이어져, 공화당 Rogers보다 본선 전환이 늦다는 점이 리스크입니다.",
-    "crumbs": [
-      "홈",
-      "State Focus",
-      "미시간 Michigan"
-    ]
-  },
-  {
-    "objectID": "states/mi.html#후보자-프로필",
-    "href": "states/mi.html#후보자-프로필",
-    "title": "미시간 Michigan",
-    "section": "후보자 프로필",
-    "text": "후보자 프로필\n\n\n\n\n\n헤일리 스티븐스 Haley Stevens민주\n\n\n1983년생(43세) · 연방 하원의원(MI-11) · 전 오바마 행정부 자동차산업 구제 태스크포스\n\n\n\n학력 American University 정치학·철학 학사(2005), 사회정책·철학 석사(2007)\n\n\n가족 자영업 가정 성장; 2021년 결혼 후 2022년 이혼(현재 미혼)\n\n\n과거 선거 2018 MI-11 당선 · 2020·2022·2024 재선(교외 경합지 3회 연속)\n\n\n펀드레이징 Q1 2026 개인기부 $1.73M, 현금 보유 약 $3.3M(3인 중 최다)\n\n\n\n\n강점\n\n\n본선 경쟁력 최강(Rogers 대비 +5)\n\n\n상원 지도부 비공식 지지\n\n\n교외 경합지 승리 실적\n\n\n\n\n약점\n\n\n경선 지지율 추세 열세\n\n\n풀뿌리 열기 부족\n\n\n진보 진영 냉담\n\n\n\n\n\n정책 제조업·자동차산업 보호 · 대중국 커넥티드 차량 수입 차단(No Chinese Cars Act) · UAW 노동 친화\n\n\n🇰🇷 한국 함의 미시간 후보 중 한국 산업과 가장 직접 연관 — 대중국 자동차 공세가 미시간 내 LG에너지솔루션·SK온 등 한국 배터리 생산기지 보호와 이해 일치(한국 완성차 통상과는 별개). 한국 직접 거명 입장은 공개 출처 없음\n\n\n사진: U.S. House (public domain)   출처 [1] [2] [3]\n\n\n\n\n\n\n\n맬러리 매크모로 Mallory McMorrow민주\n\n\n1990년생(36세) · 미시간 주 상원의원(2019~) · 전 산업 디자이너\n\n\n\n학력 University of Notre Dame 산업디자인 학사(2008)\n\n\n가족 남편 Ray Wert(전 Jalopnik 편집자, 2017 결혼), 딸 Noa(2021년생)\n\n\n과거 선거 2018 미시간 주 상원 초선(공화 현직 격파) · 이후 재선\n\n\n펀드레이징 Q1 2026 분기 모금 1위 $2.96M, 현금 $3.69M, 소액 기부 동력 강함\n\n\n\n\n강점\n\n\n풀뿌리 열기·밀레니얼 대표성\n\n\n소셜미디어 활용력\n\n\n2022 바이럴 연설 전국 인지도\n\n\n\n\n약점\n\n\n연방 경험 부재\n\n\n전주적 조직력 미검증\n\n\n\n\n\n정책 교육·LGBTQ 권리·총기 규제 · EV 전환 대비 경제 전환 사무소 설치 · 무차별 관세 반대·동맹 협력형 전략 무역\n\n\n🇰🇷 한국 함의 무차별 관세 대신 동맹 협력형 ‘사려 깊은 관세’ 주장 — 한국 등 동맹 공급망에 우호적 함의이나 한국 직접 거명 입장은 공개 출처 없음\n\n\n사진: City of Detroit (public domain)   출처 [1] [2] [3]\n\n\n\n\n\n\n\n압둘 엘사이드 Abdul El-Sayed민주\n\n\n1984년생(42세) · 전 디트로이트 보건국장 · 역학자·의사 · 미시간대 교수\n\n\n\n학력 University of Michigan 생물학 학사, Columbia University MD·역학 PhD, Oxford University 공중보건 DPhil(2011, 로즈 장학생)\n\n\n가족 이집트 이민자 아버지·미시간 토박이 계모 슬하 성장; 아내 Sarah Jukaku(정신과 의사), 두 딸\n\n\n과거 선거 2018 미시간 주지사 민주 경선 출마(Whitmer에 패배)\n\n\n펀드레이징 Q1 2026 모금 $2.27M, 현금 $2.52M\n\n\n\n\n강점\n\n\n30세 이하 유권자 최고 지지\n\n\n아랍계·무슬림 커뮤니티(디어본) 연대\n\n\n5~6월 경선 선두 부상\n\n\n\n\n약점\n\n\n본선 경쟁력 최약(Rogers와 동률)\n\n\n무당파 지지 약함\n\n\n진보 노선의 스윙 유권자 이탈 위험\n\n\n\n\n\n정책 메디케어 포 올 · 그린 뉴딜·부유세 · ICE 폐지 · 이스라엘 공세적 군사원조 중단 요구\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: Conlan Houston, CC BY-SA 4.0   출처 [1] [2] [3]\n\n\n\n\n\n\n\n마이크 로저스 Mike Rogers공화\n\n\n1963년생(63세) · 전 연방 하원의원(MI-8) · 전 하원 정보위원장 · 전 FBI 특수요원\n\n\n\n학력 Adrian College 형사사법·사회학 학사(1985), University of Michigan ROTC 육군 임관\n\n\n가족 노동계급 가정 출생; 부인 Kristi Rogers(2010 결혼), 첫 결혼 자녀 2명; 형 Bill은 전 미시간 주 하원의원\n\n\n과거 선거 MI-8 하원 7선(2000~2012) · 2024 미시간 상원 출마 → Slotkin에 0.34%p 석패\n\n\n펀드레이징 외부지출 약 $45M 지원, 본인 현금 약 $4.2M(5월 기준)\n\n\n\n\n강점\n\n\n국가안보·정보 전문성\n\n\n전주적 인지도(2024 출마)\n\n\n민주 경선 장기화 동안 본선 선점\n\n\n\n\n약점\n\n\n2024 패배 이력\n\n\n트럼프와의 관계 미묘\n\n\n‘중국 연루’ 사업 이력 공격\n\n\n\n\n\n정책 대중국 강경·국가안보 · 트럼프 관세 지지(전략적 도구) · 법과 질서·제조업 보호\n\n\n🇰🇷 한국 함의 대중국 통상·제조업 보호가 핵심; 한국·동맹 직접 거명 입장은 공개 출처 없음(트럼프식 전략적 관세 지지)\n\n\n사진: U.S. House (public domain)   출처 [1] [2]",
-    "crumbs": [
-      "홈",
-      "State Focus",
-      "미시간 Michigan"
-    ]
-  },
-  {
-    "objectID": "states/mi.html#경선-과정",
-    "href": "states/mi.html#경선-과정",
-    "title": "미시간 Michigan",
-    "section": "경선 과정",
-    "text": "경선 과정\n8/4 민주당 경선은 외교정책(가자/이스라엘)·당 지도부 노선을 둘러싼 3파전입니다. 초기 McMorrow가 선두였으나 5~6월 들어 El-Sayed가 부상(RCP 평균 El-Sayed 24.3 / McMorrow·Stevens 각 19.8, 미결정 36%), 분기 모금은 McMorrow가 1위입니다. 본선 경쟁력(Stevens 최강)과 경선 모멘텀(El-Sayed)이 엇갈리는 전형적 딜레마로, 5/28 매키낙 당 대회에서 3후보가 공개 토론했습니다. (Michigan Advance)",
-    "crumbs": [
-      "홈",
-      "State Focus",
-      "미시간 Michigan"
-    ]
-  },
-  {
-    "objectID": "states/mi.html#한국-함의",
-    "href": "states/mi.html#한국-함의",
-    "title": "미시간 Michigan",
-    "section": "한국 함의",
-    "text": "한국 함의\n미시간은 자동차·EV 배터리 산업의 본진으로, LG에너지솔루션·SK온·삼성SDI 한국 배터리 기업의 대미 생산기지가 집중돼 있습니다. Haley Stevens가 가장 직접 연관 — ‘No Chinese Cars Act’ 등 대중국 자동차 공세가 미시간 내 한국 배터리 거점 보호와 이해가 일치합니다(단 한국 완성차 통상과는 별개). 관세·EV 보조금 정책의 향배가 한국 기업에 직접 영향을 줍니다.",
-    "crumbs": [
-      "홈",
-      "State Focus",
-      "미시간 Michigan"
-    ]
-  },
-  {
-    "objectID": "states/nc.html",
-    "href": "states/nc.html",
-    "title": "노스캐롤라이나 North Carolina",
-    "section": "",
-    "text": "NC 레이스 카드\n\n\n기준 2026-06-05\n\n\n항목\n내용\n\n\n\n\n구도\n공화 방어\n\n\n현직/구도\n(Tillis 석)\n\n\n등급\nToss Up / Lean R\n\n\n최신 폴\n【수집】\n\n\n모금(현금)\n—\n\n\n한국 관심\n—\n\n\n경선 — 양당 경선\n【수집】",
-    "crumbs": [
-      "홈",
-      "State Focus",
-      "노스캐롤라이나 North Carolina"
-    ]
-  },
-  {
-    "objectID": "states/nc.html#구도-요약",
-    "href": "states/nc.html#구도-요약",
-    "title": "노스캐롤라이나 North Carolina",
-    "section": "구도 요약",
-    "text": "구도 요약\nTillis 은퇴로 생긴 공개석(공화 방어). 전 주지사 Roy Cooper(D)가 인지도·모금에서 전 RNC 위원장 Michael Whatley(R)를 앞서며, 봄 내내 한 자릿수 후반~두 자릿수 초반 리드를 일관 유지했습니다(예측시장 약 83%). NC는 대선에선 공화 우위지만 주지사로 Cooper를 두 번 배출한 대표적 분할투표 주입니다.",
-    "crumbs": [
-      "홈",
-      "State Focus",
-      "노스캐롤라이나 North Carolina"
-    ]
-  },
-  {
-    "objectID": "states/nc.html#후보자-프로필",
-    "href": "states/nc.html#후보자-프로필",
-    "title": "노스캐롤라이나 North Carolina",
-    "section": "후보자 프로필",
-    "text": "후보자 프로필\n\n\n\n\n\n로이 쿠퍼 Roy Cooper민주\n\n\n1957년생(69세) · 전 NC 주지사(2017~2025, 2선) · 변호사\n\n\n\n학력 UNC Chapel Hill 정치학 학사(1979, Morehead 장학생), UNC 로스쿨 J.D.(1982)\n\n\n가족 부인 Kristin Bernhardt(위탁아동 후견인); 세 딸 모두 UNC 졸업\n\n\n과거 선거 NC 법무장관 4선(2000~2012) · 주지사 2016(49.0%, McCrory 격파)·2020(51.5%) · 주 전체 선거 통산 무패\n\n\n펀드레이징 Q1 2026 1,380만 달러 모금, 보유현금 1,850만 달러, 누적 약 3,600만 달러(Whatley 2배+)\n\n\n\n\n강점\n\n\n97% 수준 인지도·검증된 행정 실적\n\n\n트럼프 승리 연도에도 당선한 분할투표 호소력\n\n\n50세 이하·무당파 강세\n\n\n\n\n약점\n\n\n68세 고령\n\n\n8년 주지사 재임 피로감\n\n\n진보 기반 열정 부족 우려\n\n\n\n\n\n정책 메디케이드 확대(2023, 약 60만 명 신규 수혜) · 클린에너지·첨단제조 일자리 유치 · 교육 투자\n\n\n🇰🇷 한국 함의 NC 첨단제조 유치는 일본(Toyota)·베트남(VinFast) 중심이고 한국 대형 투자 사례·대한 정책 입장은 공개 출처 미확인\n\n\n사진: NCDOT, CC BY 2.0   출처 [1] [2] [3]\n\n\n\n\n\n\n\n마이클 워틀리 Michael Whatley공화\n\n\n1968년생(58세) · 전 RNC 위원장 · 전 에너지 산업 로비스트 · 변호사\n\n\n\n학력 UNC Charlotte 역사학 학사(1991), Wake Forest 종교학 석사(1993), Notre Dame 신학 석사(1994)·로스쿨 J.D.(1997)\n\n\n가족 부인 Suzanne(Gaston 카운티 거주); 쌍둥이 아들, 딸 Mary Kate\n\n\n과거 선거 선출직 경험 없음 · 2026 공화 프라이머리 64.6%로 본선 진출\n\n\n펀드레이징 Q1 2026 500만 달러 모금, 보유현금 약 250만 달러. 슈퍼팩 SLF가 7,100만 달러 지원 약속\n\n\n\n\n강점\n\n\n트럼프 즉시 지지로 보수 기반 결집\n\n\n전국 당 조직 운영 경험(RNC·NC GOP 위원장)\n\n\n대규모 외부지출 후원\n\n\n\n\n약점\n\n\n인지도 극히 낮음(과반이 ‘모름’)\n\n\n선출직 경험 전무\n\n\n미시간 출생·워싱턴 이력으로 ‘카펫배거’ 공격 노출\n\n\n\n\n\n정책 선거 무결성·이민 단속 · 트럼프 어젠다 수호 · 중산층 감세·팁·초과근무 비과세\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: Glenn Youngkin, CC BY 2.0   출처 [1] [2] [3]",
-    "crumbs": [
-      "홈",
-      "State Focus",
-      "노스캐롤라이나 North Carolina"
-    ]
-  },
-  {
-    "objectID": "states/nc.html#경선-과정",
-    "href": "states/nc.html#경선-과정",
-    "title": "노스캐롤라이나 North Carolina",
-    "section": "경선 과정",
-    "text": "경선 과정\n양당 경선은 3/3에 이미 종료됐습니다(민주 Cooper 92%, 공화 Whatley 64.6%). 본선 대진이 일찍 확정돼 양 캠프 모두 본선 체제로 전환했습니다. 최대 변수는 Whatley의 낮은 인지도(과반이 ‘모름’)를 둘러싼 정의(定義) 싸움과, 공화 슈퍼팩 SLF의 7,100만 달러 광고전입니다. (WRAL)",
-    "crumbs": [
-      "홈",
-      "State Focus",
-      "노스캐롤라이나 North Carolina"
-    ]
-  },
-  {
-    "objectID": "states/nc.html#한국-함의",
-    "href": "states/nc.html#한국-함의",
-    "title": "노스캐롤라이나 North Carolina",
-    "section": "한국 함의",
-    "text": "한국 함의\nNC의 대형 첨단제조 유치는 일본(Toyota 배터리)·베트남(VinFast)·핀란드(Kempower) 중심으로, 한국의 대형 NC 투자 사례나 양 후보의 대한 정책 입장은 공개 출처에서 확인되지 않습니다(한국 배터리 투자는 조지아·테네시·켄터키에 집중). 추정으로 빈 칸을 채우지 않습니다.",
-    "crumbs": [
-      "홈",
-      "State Focus",
-      "노스캐롤라이나 North Carolina"
-    ]
-  },
-  {
     "objectID": "trackers.html",
     "href": "trackers.html",
     "title": "트래커",
@@ -456,66 +588,6 @@
     ]
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "소개 — 미국 중간선거 기초",
-    "section": "",
-    "text": "이 페이지는 매주 바뀌는 트래커와 달리, 미국 중간선거의 고정된 구조를 다룹니다. 미국 정치 배경지식을 전제하지 않고 설명합니다.",
-    "crumbs": [
-      "홈",
-      "Overview",
-      "소개"
-    ]
-  },
-  {
-    "objectID": "about.html#what",
-    "href": "about.html#what",
-    "title": "소개 — 미국 중간선거 기초",
-    "section": "중간선거란",
-    "text": "중간선거란\n대통령 4년 임기의 한가운데에 치러지는 연방 선거입니다. 대선이 없는 짝수 해 11월(첫 월요일 다음 화요일)에 열리며, 하원 전체(435석)와 상원의 약 3분의 1이 한꺼번에 새로 선출됩니다. 같은 날 다수 주에서 주지사·주의회·지방 선거도 함께 치러집니다.\n대통령 이름이 투표용지에 없지만, 중간선거는 사실상 집권 행정부에 대한 중간 평가로 작동합니다. 역사적으로 대통령 소속 정당은 중간선거에서 하원 의석을 잃는 경우가 압도적으로 많습니다 — 그래서 트래커가 추적하는 대통령 지지율·제너릭 밸럿 같은 “환경 지표”가 의석 변동의 선행지표로 중요합니다. 2026년 선거는 트럼프 2기의 중간선거입니다.",
-    "crumbs": [
-      "홈",
-      "Overview",
-      "소개"
-    ]
-  },
-  {
-    "objectID": "about.html#congress",
-    "href": "about.html#congress",
-    "title": "소개 — 미국 중간선거 기초",
-    "section": "의회 구조: 상원과 하원",
-    "text": "의회 구조: 상원과 하원\n미국 의회는 성격이 다른 두 원으로 나뉘고, 법은 양원을 모두 통과해야 합니다.\n\n하원(House): 435석, 2년 임기, 인구 비례(주별 의석 수가 인구에 따라 배분). 과반 218석이면 다수당이 되어 의장(Speaker)을 내고 의사일정을 장악합니다. 2년마다 전원을 새로 뽑으므로 그해의 정치 환경이 가장 민감하게 반영됩니다. 세입·세출 법안이 먼저 발의되는 곳도 하원입니다.\n상원(Senate): 100석, 6년 임기, 인구와 무관하게 주당 2석으로 균등. 임기가 엇갈리게 설계돼 2년마다 약 3분의 1(2026년 정기 선거 대상은 33석)만 교체됩니다. 과반은 51석이며, 50-50일 때는 부통령이 캐스팅보트를 행사해 소속 정당이 다수당이 됩니다. 다만 대부분의 법안은 토론 종결(filibuster 차단)에 60표가 필요해, 단순 과반만으로 입법을 밀어붙이기는 어렵습니다.\n\n요약하면, 하원은 환경에 민감하고 상원은 지도(어느 주가 이번에 선거를 치르는가)에 좌우됩니다. 이 비대칭이 매 사이클 판세의 핵심입니다.",
-    "crumbs": [
-      "홈",
-      "Overview",
-      "소개"
-    ]
-  },
-  {
-    "objectID": "about.html#why-kr",
-    "href": "about.html#why-kr",
-    "title": "소개 — 미국 중간선거 기초",
-    "section": "왜 한국 독자에게 중요한가",
-    "text": "왜 한국 독자에게 중요한가\n중간선거 결과는 단순한 미국 국내 정치 이벤트가 아니라, 대한(對韓) 통상·방위·대북 입법 환경을 좌우합니다.\n\n인준권(상원): 주한 미국대사, USTR(무역대표부), 국무·국방 고위직 등 행정부 인사는 상원의 인준을 거칩니다. 상원 다수당이 누구냐에 따라 인사 환경의 연속성·마찰이 달라집니다.\n위원회 구성: 다수당이 모든 상임위 위원장을 차지합니다. 특히 군사위(Armed Services)·외교위(Foreign Relations) 위원장이 NDAA(국방수권법)의 인도·태평양·대북 조항 협상 톤을 좌우합니다.\n세출 지렛대(하원): 예산·세출 권한이 하원에 있어, 통상·방위 관련 예산과 권한 위임의 향방이 하원 다수당 손에 달려 있습니다.\n감독·조사권: 분점정부(대통령과 의회 다수당이 다른 경우)에서는 야당이 청문·조사권으로 행정부를 견제 — 관세·통상 정책에 대한 청문이 늘면 한국 기업의 통상 리스크 시계가 길어질 수 있습니다.\n\n구체적인 사이클별 함의는 매주 트래커의 ‘한국 함의’ 코너에서 다룹니다.",
-    "crumbs": [
-      "홈",
-      "Overview",
-      "소개"
-    ]
-  },
-  {
-    "objectID": "about.html#polling-literacy",
-    "href": "about.html#polling-literacy",
-    "title": "소개 — 미국 중간선거 기초",
-    "section": "여론조사를 읽는 법",
-    "text": "여론조사를 읽는 법\n여론조사 수치는 그냥 받아들이면 안 됩니다. 같은 시점·같은 질문이라도 기관마다 결과가 크게 벌어지는데, 그 편차의 3대 출처는 다음과 같습니다.\n\n모집단(population): 누구에게 물었는가. A(adults, 전체 성인) → RV(registered voters, 등록 유권자) → LV(likely voters, 적극 투표층) 순으로 좁아지며, 좁힐수록 결과가 달라집니다. 특히 “누가 실제로 투표할 사람인가”를 가르는 LV 스크린은 기관마다 기준이 달라 편차의 큰 원인입니다.\n하우스 이펙트(house effect): 특정 조사기관이 구조적으로 한쪽으로 치우치는 경향. 한 기관의 단일 수치보다 여러 기관의 평균이 안전한 이유입니다.\n집계 가중(aggregation): 여러 조사를 묶을 때 단순 평균이냐, 표본 품질·최신성으로 가중하느냐에 따라 결과가 달라집니다.\n\n실무 규칙은 하나입니다 — 단일 조사(특히 눈에 띄는 이상치)에 반응하지 말고, 집계 평균과 추세를 보라. 이 섹션은 매주 트래커의 ‘방법론 노트’가 한 토막씩 쌓여 만들어지는 아카이브입니다.",
-    "crumbs": [
-      "홈",
-      "Overview",
-      "소개"
-    ]
-  },
-  {
     "objectID": "worklogs/worklog_2026-06-08.html",
     "href": "worklogs/worklog_2026-06-08.html",
     "title": "미국 중간선거 한국어 브리핑",
@@ -528,114 +600,6 @@
     "title": "미국 중간선거 한국어 브리핑",
     "section": "",
     "text": "NIS 폴더(_NIS/2026_senate_election) 내용 파악 및 참조 기록\n그 안의 대시보드를 사이트에 구현 + 주기적 반영 자동화\n/bye 세션 종료\n\n\n\n\n\ngit init + 첫 커밋 → GitHub public repo 생성(woochangkang/us_elections.github.io) → Pages 배포\nGitHub org us-elections-2026 생성 → repo 이전·이름 변경 → URL https://us-elections-2026.github.io/\n왼쪽 docked 사이드바 신설(Overview/Weekly Report/State Focus) — _quarto.yml\nState Focus 7개 주 페이지: states/{ga,mi,me,nc,tx,oh,ak}.qmd\n상원 경합주 표 페이지 senate.qmd + data/senate_primaries.json + gt_senate_primaries()\nNIS 폴더 구조·내용 파악 → NOTES_LOCAL.md(gitignored) 작성\n자체 모델 인터랙티브 대시보드: dashboard.qmd + assets/dashboard.{js,css} + data/model_dashboard.json\n\nChart.js KPI·확률차트·시나리오·경합주 카드·타임라인\n홈(index.qmd)에 요약 KPI 블록 + 링크\n\n주기적 스냅샷: scripts/snapshot_and_publish.sh + launchd plist (Mac mini용)\nCI 보강: RSPM 장애 대비 apt 시스템 헤더 선설치 (libcurl 등)\n\n\n\n\n\n\n\n\n\n\n\n파일\n변경 내용\n\n\n\n\n_quarto.yml\norg URL·sidebar·resources 추가\n\n\nR/helpers.R\ngt_senate_primaries/gt_state_detail/gt_model_states/gt_model_scenarios/model_kpi 추가\n\n\nindex.qmd\n상원 전망 요약 KPI 블록 삽입\n\n\ndata/senate_races.json\n7개 주·6/5 사실 반영(OH 추가, TX Paxton 확정)\n\n\ndata/senate_primaries.json\n신설\n\n\ndata/model_dashboard.json\n신설 — 자체 모델 확률(5/29+6/5)\n\n\ndata/history/2026-06-08/\n첫 스냅샷\n\n\ndashboard.qmd\n신설\n\n\nassets/dashboard.{js,css}\n신설\n\n\nsenate.qmd\n신설\n\n\nstates/*.qmd\n신설 (7개)\n\n\nscripts/*.sh, *.plist\n신설\n\n\n.github/workflows/publish.yml\napt 의존성 추가\n\n\nCLAUDE.md\n디렉토리·구조 문서화\n\n\nNOTES_LOCAL.md\n신설 (gitignored)\n\n\n\n\n\n\n\nissues/2026-06-14.qmd 작성 — ME 6/9 경선 결과, GA 6/16 결선 직전 동향\nGA 결선(6/16) 후 data/senate_races.json·data/model_dashboard.json·states/ga.qmd 갱신\nlaunchd 활성화 (Mac mini): cp scripts/com.us-elections.snapshot.plist ~/Library/LaunchAgents/ && launchctl load ...\nNC·AK·OH 【수집】 슬롯 채우기\nabout.qmd 실제 콘텐츠 작성\nActions actions/checkout@v4 → Node 24 대응 (2026-06-16 강제)\n\n\n\n\n\n상세 인계 정보: handoff.md 참조\n사이트: https://us-elections-2026.github.io/ 라이브\n대시보드 확률은 NIS 자체 분석 — 공개 발행 전 수치 검토 권장"
-  },
-  {
-    "objectID": "senate.html",
-    "href": "senate.html",
-    "title": "상원 대시보드",
-    "section": "",
-    "text": "현재 R 53 / D 47. 민주당이 다수당(51석)을 탈환하려면 순증 +4석이 필요합니다. 35개 개선 의석 중 실질 경합은 아래 7개 주에 압축되어 있습니다 — 민주 방어 2곳(GA·MI), 공화 방어 5곳.\n\n순증 +4는 높은 문턱입니다. 경합주 전부가 박빙이어도, 공화 방어석 다수는 구조적으로 공화 우위(R+8 이상) 주에 있다는 점이 민주당 시나리오의 제약 조건입니다.",
-    "crumbs": [
-      "홈",
-      "Overview",
-      "상원 경합주 표"
-    ]
-  },
-  {
-    "objectID": "senate.html#balance",
-    "href": "senate.html#balance",
-    "title": "상원 대시보드",
-    "section": "",
-    "text": "현재 R 53 / D 47. 민주당이 다수당(51석)을 탈환하려면 순증 +4석이 필요합니다. 35개 개선 의석 중 실질 경합은 아래 7개 주에 압축되어 있습니다 — 민주 방어 2곳(GA·MI), 공화 방어 5곳.\n\n순증 +4는 높은 문턱입니다. 경합주 전부가 박빙이어도, 공화 방어석 다수는 구조적으로 공화 우위(R+8 이상) 주에 있다는 점이 민주당 시나리오의 제약 조건입니다.",
-    "crumbs": [
-      "홈",
-      "Overview",
-      "상원 경합주 표"
-    ]
-  },
-  {
-    "objectID": "senate.html#races",
-    "href": "senate.html#races",
-    "title": "상원 대시보드",
-    "section": "경합주 트래커",
-    "text": "경합주 트래커\n\n\n\n\n\n\n\n\n상원 경합주 트래커\n\n\nR 53 / D 47 · 민주 다수당까지 순증 +4\n\n\n주\n구도\n현직/구도\n등급\n최신 폴\n출처\n모금(현금)\n한국 관심\n\n\n\n\nGA\n민주 방어\nOssoff (D) 재선\nToss Up\nOssoff 48–43 Collins\nEmerson 2/28–3/2\nOssoff $32M+\n통상·반도체\n\n\nMI\n민주 방어\n공개석 (Peters 은퇴)\nToss Up\n【수집】\n—\n—\n자동차·관세\n\n\nME\n공화 방어\nCollins (R)\nLean R / Toss Up\n【수집】\n—\n—\n민주 최우선 탈환 표적\n\n\nNC\n공화 방어\n(Tillis 석)\nToss Up / Lean R\n【수집】\n—\n—\n—\n\n\nTX\n공화 방어\nCornyn 경선 탈락 → Paxton (R) 후보\nLean R (Cook 하향)\n【수집】\n—\n—\n블루웨이브 시 도전\n\n\nOH\n공화 방어\nHusted (R) 임명직 vs Brown (D)\n【수집】\nBrown 53–45 Husted\nFox News 5/28–6/1\n—\n철강·제조업\n\n\nAK\n공화 방어\n—\nLikely R\n【수집】\n—\n—\n—\n\n\n\n\n\n\n\n\n등급은 확률이 아닙니다. Cook·Sabato 등의 등급(Toss Up/Lean)은 전문가 판정이며, 모델·시장의 확률과 같은 잣대로 비교하지 마세요.\n【수집】은 아직 신뢰할 만한 집계·조사가 확보되지 않은 슬롯입니다. 추정치로 채우지 않습니다.",
-    "crumbs": [
-      "홈",
-      "Overview",
-      "상원 경합주 표"
-    ]
-  },
-  {
-    "objectID": "senate.html#primaries",
-    "href": "senate.html#primaries",
-    "title": "상원 대시보드",
-    "section": "경선 캘린더",
-    "text": "경선 캘린더\n본선 여론조사가 의미를 갖기 시작하는 시점은 양당 대진이 확정된 이후입니다. 대진 미정 주의 가상대결 조사는 참고 수준으로만 보세요.\n\n\n\n\n\n\n\n\n경선 캘린더 — 본선 대진 확정 일정\n\n\n기준 2026-06-05\n\n\n주\n경선\n일자\n상태\n내용\n\n\n\n\nME\n민주당 경선\n2026-06-09\n예정\nPlatner 우세 관측 (스캔들에도 경선 1위 유지)\n\n\nGA\n공화당 결선\n2026-06-16\n예정\nCollins 40.5% vs Dooley 30.2% (1차 5/19, Carter 탈락)\n\n\nMI\n민주당 경선\n2026-08-04\n예정\nEl-Sayed 34 / Stevens 31 / McMorrow — 3파전 (RacetotheWH 6월)\n\n\nTX\n공화당 경선\n【수집】\n완료\nPaxton 63.8%로 현직 Cornyn 격파 → Cook, Likely R→Lean R 하향\n\n\nNC\n양당 경선\n【수집】\n【수집】\n—\n\n\nAK\n통합 경선(top-4)\n【수집】\n【수집】\n—\n\n\nOH\n양당 경선\n【수집】\n【수집】\n—",
-    "crumbs": [
-      "홈",
-      "Overview",
-      "상원 경합주 표"
-    ]
-  },
-  {
-    "objectID": "senate.html#watch",
-    "href": "senate.html#watch",
-    "title": "상원 대시보드",
-    "section": "이번 주 관전 포인트",
-    "text": "이번 주 관전 포인트\n기준 2026-06-05 (출처: 각 항목 병기)\n\n텍사스가 ’경합주’가 됐다 — Paxton이 현직 Cornyn을 경선에서 꺾자 Cook Political이 TX를 Likely R → Lean R로 하향했습니다. 등급 하향이 곧 민주 우세를 뜻하진 않지만, 공화당이 방어 자원을 써야 하는 지도가 넓어졌다는 신호입니다.\n오하이오의 이례적 조사 — Fox News 조사(5/28–6/1)에서 Brown이 Husted를 53–45로 앞섰습니다. 단일 조사이므로 추세 확인 전까지는 과대해석 금물 — 다만 임명직 현직 대 전직 상원의원 구도라는 특수성은 주목할 만합니다.\n조지아의 시간표 비대칭 — 공화당 후보가 6/16 결선까지 미정인 동안, Ossoff는 현금 $32M+로 정의(定義) 광고를 선점하는 구도입니다. 결선 후 공화당의 통합 속도가 1차 변수.\n\n\n이 페이지의 표는 data/의 정규화 파일에서 빌드 시점에 자동 생성됩니다. 기준 시각은 각 표 상단에 표기.",
-    "crumbs": [
-      "홈",
-      "Overview",
-      "상원 경합주 표"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "미국 중간선거 한국어 브리핑",
-    "section": "",
-    "text": "미국 선거 속보는 어디에나 있습니다. 이곳이 채우려는 빈칸은 다릅니다 — 한국어로 된 해석, 여론조사 리터러시, 그리고 한국 정책 함의. 매주 데이터 절반, 분석 절반으로 발행합니다.",
-    "crumbs": [
-      "홈",
-      "Overview",
-      "홈 — 환경 스냅샷"
-    ]
-  },
-  {
-    "objectID": "index.html#model-summary",
-    "href": "index.html#model-summary",
-    "title": "미국 중간선거 한국어 브리핑",
-    "section": "상원 전망 요약",
-    "text": "상원 전망 요약\n\n\n\n\n\n\n자체 분석 모델 (기준 2026-05-29 · 사실 2026-06-05) — 현재 의석 R 53 / D 47, 민주 다수당까지 순 +4석.\n\n경합주 7곳 중 민주 우세 4곳 · 평균 D 승리확률 48.6%\n다수당 탈환 확률 32% · 순 기대의석 +1.4석 · Base Case D 48 — R 52\n\n👉 전망 대시보드 전체 보기 — 주별 확률·시나리오·경선 일정\n\n\n\n\n위 확률은 시장·집계기관 수치가 아닌 자체 프레임워크의 모델 추정치입니다. 아래 “지금 환경” 표(집계기관 평균)와 성격이 다릅니다.",
-    "crumbs": [
-      "홈",
-      "Overview",
-      "홈 — 환경 스냅샷"
-    ]
-  },
-  {
-    "objectID": "index.html#지금-환경-한눈에",
-    "href": "index.html#지금-환경-한눈에",
-    "title": "미국 중간선거 한국어 브리핑",
-    "section": "지금 환경 (한눈에)",
-    "text": "지금 환경 (한눈에)\n\n\n\n\n\n\n\n\n제너릭 밸럿 — 집계기관 평균\n\n\n기준 2026-06-07 · 양수는 민주 우위\n\n\n집계기관\n민주\n공화\n마진\n기준일\n모집단\n\n\n\n\nSilver Bulletin\n—\n—\nD+6.8\n2026-05-18\nLV 가중\n\n\nFiftyPlusOne\n49.3\n43.4\nD+5.9\n2026-06-06\n품질·최신성 가중\n\n\nRealClearPolling\n—\n—\nD+5\n2026-06-01\n단순평균 성격\n\n\nMorning Consult\n46\n42\nD+3\n2026-05-30\n등록유권자(RV)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n트럼프 국정지지율\n\n\n기준 2026-06-07\n\n\n집계\n승인\n비승인\n순지지\n기준일\n비고\n\n\n\n\nSilver Bulletin\n—\n—\n-19.1\n2026-06-06\n동시점 바이든(-13.6)·트럼프 1기(-10.6)보다 낮음\n\n\nUSPollingData\n38.7\n58.3\n-19.6\n2026-06-01\nGallup·Ipsos·YouGov·Quinnipiac·MC 종합\n\n\nActiVote\n39.7\n55\n-15.3\n2026-06-01\n5점척도 변환\n\n\n\n\n\n\n\n\n모든 수치는 표 상단 기준 시각의 스냅샷입니다. 정적 사이트라 데이터가 빌드 시점에 고정되며, 단일 조사보다 집계 평균·추세를 우선합니다.",
-    "crumbs": [
-      "홈",
-      "Overview",
-      "홈 — 환경 스냅샷"
-    ]
-  },
-  {
-    "objectID": "index.html#발행-호",
-    "href": "index.html#발행-호",
-    "title": "미국 중간선거 한국어 브리핑",
-    "section": "발행 호",
-    "text": "발행 호\n\n\n\n\n\n주간 브리핑 — 6월 7일호\n\n\n하원 민주 우세 지속, 상원은 50/50 진검승부. 트럼프 지지율 임기 최저 부근.\n\n\n\n\n\n2026.06.07\n\n\n\n\n\n일치 없음",
-    "crumbs": [
-      "홈",
-      "Overview",
-      "홈 — 환경 스냅샷"
-    ]
   },
   {
     "objectID": "states/oh.html",
@@ -770,87 +734,123 @@
     ]
   },
   {
-    "objectID": "states/tx.html",
-    "href": "states/tx.html",
-    "title": "텍사스 Texas",
+    "objectID": "states/mi.html",
+    "href": "states/mi.html",
+    "title": "미시간 Michigan",
     "section": "",
-    "text": "TX 레이스 카드\n\n\n기준 2026-06-05\n\n\n항목\n내용\n\n\n\n\n구도\n공화 방어\n\n\n현직/구도\nCornyn 경선 탈락 → Paxton (R) 후보\n\n\n등급\nLean R (Cook 하향)\n\n\n최신 폴\n【수집】\n\n\n모금(현금)\n—\n\n\n한국 관심\n블루웨이브 시 도전\n\n\n경선 — 공화당 경선\n완료 · Paxton 63.8%로 현직 Cornyn 격파 → Cook, Likely R→Lean R 하향",
+    "text": "MI 레이스 카드\n\n\n기준 2026-06-05\n\n\n항목\n내용\n\n\n\n\n구도\n민주 방어\n\n\n현직/구도\n공개석 (Peters 은퇴)\n\n\n등급\nToss Up\n\n\n최신 폴\n【수집】\n\n\n모금(현금)\n—\n\n\n한국 관심\n자동차·관세\n\n\n경선 — 민주당 경선\n2026-08-04 예정 · El-Sayed 34 / Stevens 31 / McMorrow — 3파전 (RacetotheWH 6월)",
     "crumbs": [
       "홈",
       "State Focus",
-      "텍사스 Texas"
+      "미시간 Michigan"
     ]
   },
   {
-    "objectID": "states/tx.html#구도-요약",
-    "href": "states/tx.html#구도-요약",
-    "title": "텍사스 Texas",
+    "objectID": "states/mi.html#구도-요약",
+    "href": "states/mi.html#구도-요약",
+    "title": "미시간 Michigan",
     "section": "구도 요약",
-    "text": "구도 요약\n이번 사이클 최대의 와일드카드. Paxton이 현직 Cornyn을 5/26 결선에서 63.8%로 격파하면서 Cook Political이 Likely R → Lean R로 하향 — 구조적 공화 우위(R+8 안팎) 주가 후보 요인으로 경합권에 들어온 사례입니다. 1994년 이후 30년간 민주당이 주 전체 선거에서 이긴 적이 없다는 점이 천장입니다.",
+    "text": "구도 요약\nPeters 은퇴로 민주당이 방어해야 하는 공개석. 7개 경합주 중 본선이 공화당에 가장 유리한(오차범위 내) 유일한 주로, Cook·Sabato 모두 Toss-up으로 분류합니다. 민주당 경선(8/4)이 진보(El-Sayed)·온건(Stevens)·풀뿌리(McMorrow) 3파전으로 늦게까지 이어져, 공화당 Rogers보다 본선 전환이 늦다는 점이 리스크입니다.",
     "crumbs": [
       "홈",
       "State Focus",
-      "텍사스 Texas"
+      "미시간 Michigan"
     ]
   },
   {
-    "objectID": "states/tx.html#후보자-프로필",
-    "href": "states/tx.html#후보자-프로필",
-    "title": "텍사스 Texas",
+    "objectID": "states/mi.html#후보자-프로필",
+    "href": "states/mi.html#후보자-프로필",
+    "title": "미시간 Michigan",
     "section": "후보자 프로필",
-    "text": "후보자 프로필\n\n\n\n\n\n제임스 탈라리코 James Talarico민주\n\n\n1989년생(37세) · 텍사스 주 하원의원(오스틴) · 전 공립학교 교사\n\n\n\n학력 텍사스대 오스틴 정치학 학사(2011), 하버드대 교육정책 석사(2016), 오스틴 장로교 신학교 신학 석사\n\n\n가족 Round Rock 출신; 공개 출처상 배우자·자녀 정보 없음\n\n\n과거 선거 2018 TX 하원 HD-52 당선(최연소) · 2022·2024 HD-50 재선(2024 무경쟁) · 2026 민주 경선 57%로 Crockett(43%) 압승\n\n\n펀드레이징 누적 약 4,030만 달러(Paxton 대비 압도; 1분기 약 2,700만 달러)\n\n\n\n\n강점\n\n\n세대교체 이미지(36세)\n\n\n교사·신학생 배경의 진정성·신앙 기반 중도 확장\n\n\n압도적 모금력·높은 호감도\n\n\n\n\n약점\n\n\n텍사스 30년 민주 주 전체 무승\n\n\n전국 인지도 부족\n\n\n히스패닉 외 지지 기반 확장 과제\n\n\n\n\n\n정책 공교육 투자 · 의료보험 접근성 확대 · 총기 안전 · 경제적 기회\n\n\n🇰🇷 한국 함의 옛 지역구(HD-52)에 삼성 Taylor 반도체 팹이 위치하나, 한국 기업·통상에 대한 명시적 입장은 공개 출처 미확인\n\n\n사진: Antonioaesparza, CC BY-SA 4.0   출처 [1] [2] [3]\n\n\n\n\n\n\n\n켄 팩스턴 Ken Paxton공화\n\n\n1962년생(64세) · 텍사스 법무장관(2015~) · 변호사\n\n\n\n학력 베일러대 심리학 학사(1985)·MBA(1986), 버지니아대 로스쿨 J.D.(1991)\n\n\n가족 배우자 Angela Paxton(TX 주 상원의원), 자녀 4명. 2025년 7월 Angela가 이혼 소송 제기\n\n\n과거 선거 TX 하원(2003~2013)·주 상원(2013~2015) · 법무장관 2018(50.6%)·2022(53.5%) · 2026 공화 경선 결선 63.8%로 현역 Cornyn 격파\n\n\n펀드레이징 약 760만 달러(Talarico 대비 열세)\n\n\n\n\n강점\n\n\n트럼프 공개 지지\n\n\nMAGA 기반의 열렬한 지지층\n\n\n‘싸우는 법무장관’ 이미지\n\n\n텍사스 구조적 공화 우세\n\n\n\n\n약점\n\n\n법적·윤리 스캔들 누적(증권사기 기소·2023 탄핵·연방 수사)\n\n\n이혼 소송 노출\n\n\n모금 열세·무당파 이탈 위험\n\n\n\n\n\n정책 이민 단속 · 선거 무결성 · 낙태 규제 · 트럼프 어젠다 수호·연방 권한 견제 소송\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: Gage Skidmore, CC BY-SA 3.0   출처 [1] [2] [3]",
+    "text": "후보자 프로필\n\n\n\n\n\n헤일리 스티븐스 Haley Stevens민주\n\n\n1983년생(43세) · 연방 하원의원(MI-11) · 전 오바마 행정부 자동차산업 구제 태스크포스\n\n\n\n학력 American University 정치학·철학 학사(2005), 사회정책·철학 석사(2007)\n\n\n가족 자영업 가정 성장; 2021년 결혼 후 2022년 이혼(현재 미혼)\n\n\n과거 선거 2018 MI-11 당선 · 2020·2022·2024 재선(교외 경합지 3회 연속)\n\n\n펀드레이징 Q1 2026 개인기부 $1.73M, 현금 보유 약 $3.3M(3인 중 최다)\n\n\n\n\n강점\n\n\n본선 경쟁력 최강(Rogers 대비 +5)\n\n\n상원 지도부 비공식 지지\n\n\n교외 경합지 승리 실적\n\n\n\n\n약점\n\n\n경선 지지율 추세 열세\n\n\n풀뿌리 열기 부족\n\n\n진보 진영 냉담\n\n\n\n\n\n정책 제조업·자동차산업 보호 · 대중국 커넥티드 차량 수입 차단(No Chinese Cars Act) · UAW 노동 친화\n\n\n🇰🇷 한국 함의 미시간 후보 중 한국 산업과 가장 직접 연관 — 대중국 자동차 공세가 미시간 내 LG에너지솔루션·SK온 등 한국 배터리 생산기지 보호와 이해 일치(한국 완성차 통상과는 별개). 한국 직접 거명 입장은 공개 출처 없음\n\n\n사진: U.S. House (public domain)   출처 [1] [2] [3]\n\n\n\n\n\n\n\n맬러리 매크모로 Mallory McMorrow민주\n\n\n1990년생(36세) · 미시간 주 상원의원(2019~) · 전 산업 디자이너\n\n\n\n학력 University of Notre Dame 산업디자인 학사(2008)\n\n\n가족 남편 Ray Wert(전 Jalopnik 편집자, 2017 결혼), 딸 Noa(2021년생)\n\n\n과거 선거 2018 미시간 주 상원 초선(공화 현직 격파) · 이후 재선\n\n\n펀드레이징 Q1 2026 분기 모금 1위 $2.96M, 현금 $3.69M, 소액 기부 동력 강함\n\n\n\n\n강점\n\n\n풀뿌리 열기·밀레니얼 대표성\n\n\n소셜미디어 활용력\n\n\n2022 바이럴 연설 전국 인지도\n\n\n\n\n약점\n\n\n연방 경험 부재\n\n\n전주적 조직력 미검증\n\n\n\n\n\n정책 교육·LGBTQ 권리·총기 규제 · EV 전환 대비 경제 전환 사무소 설치 · 무차별 관세 반대·동맹 협력형 전략 무역\n\n\n🇰🇷 한국 함의 무차별 관세 대신 동맹 협력형 ‘사려 깊은 관세’ 주장 — 한국 등 동맹 공급망에 우호적 함의이나 한국 직접 거명 입장은 공개 출처 없음\n\n\n사진: City of Detroit (public domain)   출처 [1] [2] [3]\n\n\n\n\n\n\n\n압둘 엘사이드 Abdul El-Sayed민주\n\n\n1984년생(42세) · 전 디트로이트 보건국장 · 역학자·의사 · 미시간대 교수\n\n\n\n학력 University of Michigan 생물학 학사, Columbia University MD·역학 PhD, Oxford University 공중보건 DPhil(2011, 로즈 장학생)\n\n\n가족 이집트 이민자 아버지·미시간 토박이 계모 슬하 성장; 아내 Sarah Jukaku(정신과 의사), 두 딸\n\n\n과거 선거 2018 미시간 주지사 민주 경선 출마(Whitmer에 패배)\n\n\n펀드레이징 Q1 2026 모금 $2.27M, 현금 $2.52M\n\n\n\n\n강점\n\n\n30세 이하 유권자 최고 지지\n\n\n아랍계·무슬림 커뮤니티(디어본) 연대\n\n\n5~6월 경선 선두 부상\n\n\n\n\n약점\n\n\n본선 경쟁력 최약(Rogers와 동률)\n\n\n무당파 지지 약함\n\n\n진보 노선의 스윙 유권자 이탈 위험\n\n\n\n\n\n정책 메디케어 포 올 · 그린 뉴딜·부유세 · ICE 폐지 · 이스라엘 공세적 군사원조 중단 요구\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: Conlan Houston, CC BY-SA 4.0   출처 [1] [2] [3]\n\n\n\n\n\n\n\n마이크 로저스 Mike Rogers공화\n\n\n1963년생(63세) · 전 연방 하원의원(MI-8) · 전 하원 정보위원장 · 전 FBI 특수요원\n\n\n\n학력 Adrian College 형사사법·사회학 학사(1985), University of Michigan ROTC 육군 임관\n\n\n가족 노동계급 가정 출생; 부인 Kristi Rogers(2010 결혼), 첫 결혼 자녀 2명; 형 Bill은 전 미시간 주 하원의원\n\n\n과거 선거 MI-8 하원 7선(2000~2012) · 2024 미시간 상원 출마 → Slotkin에 0.34%p 석패\n\n\n펀드레이징 외부지출 약 $45M 지원, 본인 현금 약 $4.2M(5월 기준)\n\n\n\n\n강점\n\n\n국가안보·정보 전문성\n\n\n전주적 인지도(2024 출마)\n\n\n민주 경선 장기화 동안 본선 선점\n\n\n\n\n약점\n\n\n2024 패배 이력\n\n\n트럼프와의 관계 미묘\n\n\n‘중국 연루’ 사업 이력 공격\n\n\n\n\n\n정책 대중국 강경·국가안보 · 트럼프 관세 지지(전략적 도구) · 법과 질서·제조업 보호\n\n\n🇰🇷 한국 함의 대중국 통상·제조업 보호가 핵심; 한국·동맹 직접 거명 입장은 공개 출처 없음(트럼프식 전략적 관세 지지)\n\n\n사진: U.S. House (public domain)   출처 [1] [2]",
     "crumbs": [
       "홈",
       "State Focus",
-      "텍사스 Texas"
+      "미시간 Michigan"
     ]
   },
   {
-    "objectID": "states/tx.html#경선-과정",
-    "href": "states/tx.html#경선-과정",
-    "title": "텍사스 Texas",
+    "objectID": "states/mi.html#경선-과정",
+    "href": "states/mi.html#경선-과정",
+    "title": "미시간 Michigan",
     "section": "경선 과정",
-    "text": "경선 과정\n3/3 1차 경선에서 Cornyn(약 43%)·Paxton(약 41%)이 과반 미달로 결선에 올랐고, 5/19 트럼프가 “Cornyn은 힘든 시기에 나를 지지하지 않았다”며 Paxton을 공개 지지한 것이 결정타가 됐습니다. 5/26 결선에서 Paxton이 63.8% 대 36.2%로 압도했고, Cornyn은 1970년 이후 경선에서 탈락한 첫 텍사스 현역 상원의원이 됐습니다. 양 진영에 1억6,500만 달러가 투입된 역대 최고가 경선이었습니다. (NPR)",
+    "text": "경선 과정\n8/4 민주당 경선은 외교정책(가자/이스라엘)·당 지도부 노선을 둘러싼 3파전입니다. 초기 McMorrow가 선두였으나 5~6월 들어 El-Sayed가 부상(RCP 평균 El-Sayed 24.3 / McMorrow·Stevens 각 19.8, 미결정 36%), 분기 모금은 McMorrow가 1위입니다. 본선 경쟁력(Stevens 최강)과 경선 모멘텀(El-Sayed)이 엇갈리는 전형적 딜레마로, 5/28 매키낙 당 대회에서 3후보가 공개 토론했습니다. (Michigan Advance)",
     "crumbs": [
       "홈",
       "State Focus",
-      "텍사스 Texas"
+      "미시간 Michigan"
     ]
   },
   {
-    "objectID": "states/tx.html#한국-함의",
-    "href": "states/tx.html#한국-함의",
-    "title": "텍사스 Texas",
+    "objectID": "states/mi.html#한국-함의",
+    "href": "states/mi.html#한국-함의",
+    "title": "미시간 Michigan",
     "section": "한국 함의",
-    "text": "한국 함의\n삼성전자 Taylor 반도체 팹(170억 달러, 2026년 가동 예정)이 위치한 곳으로, 공교롭게 Talarico가 2018~2022년 대표했던 옛 지역구(HD-52)에 자리합니다. 다만 양 후보 모두 한국 기업·통상에 대한 명시적 공개 입장은 확인되지 않습니다(지역구 연고는 사실이나 정책 입장으로 추정하지 않음).",
+    "text": "한국 함의\n미시간은 자동차·EV 배터리 산업의 본진으로, LG에너지솔루션·SK온·삼성SDI 한국 배터리 기업의 대미 생산기지가 집중돼 있습니다. Haley Stevens가 가장 직접 연관 — ‘No Chinese Cars Act’ 등 대중국 자동차 공세가 미시간 내 한국 배터리 거점 보호와 이해가 일치합니다(단 한국 완성차 통상과는 별개). 관세·EV 보조금 정책의 향배가 한국 기업에 직접 영향을 줍니다.",
     "crumbs": [
       "홈",
       "State Focus",
-      "텍사스 Texas"
+      "미시간 Michigan"
     ]
   },
   {
-    "objectID": "dashboard.html",
-    "href": "dashboard.html",
-    "title": "전망 대시보드",
+    "objectID": "states/me.html",
+    "href": "states/me.html",
+    "title": "메인 Maine",
     "section": "",
-    "text": "이 페이지의 확률은 시장·집계기관 수치가 아니라 자체 프레임워크(Universal Causal Framework V2)의 모델 추정치입니다. Cook·Sabato 등급이나 예측시장과 같은 잣대로 비교하지 마세요. 데이터를 갱신하려면 data/model_dashboard.json 한 파일만 고쳐 push하면 사이트가 다시 빌드되어 자동 반영됩니다.",
+    "text": "ME 레이스 카드\n\n\n기준 2026-06-05\n\n\n항목\n내용\n\n\n\n\n구도\n공화 방어\n\n\n현직/구도\nCollins (R)\n\n\n등급\nLean R / Toss Up\n\n\n최신 폴\n【수집】\n\n\n모금(현금)\n—\n\n\n한국 관심\n민주 최우선 탈환 표적\n\n\n경선 — 민주당 경선\n2026-06-09 예정 · Platner 우세 관측 (스캔들에도 경선 1위 유지)",
     "crumbs": [
       "홈",
-      "Overview",
-      "전망 대시보드"
+      "State Focus",
+      "메인 Maine"
     ]
   },
   {
-    "objectID": "dashboard.html#정적-표-인쇄접근성용",
-    "href": "dashboard.html#정적-표-인쇄접근성용",
-    "title": "전망 대시보드",
-    "section": "정적 표 (인쇄·접근성용)",
-    "text": "정적 표 (인쇄·접근성용)\n위 인터랙티브 카드와 동일한 데이터입니다. JavaScript가 막힌 환경에서도 보이도록 빌드 시점에 표로도 렌더링합니다.\n\n\n\n\n\n\n\n\n경합주 민주당 승리확률 — 자체 분석 모델\n\n\n자체 분석 모델 (Universal Causal Framework V2) · 확률 기준 2026-05-29 · 사실 2026-06-05\n\n\n주\n구도\n대결\nD 승리확률\n등급\n핵심 변수\n\n\n\n\n메인\n공화 방어\nPlatner (D) vs Collins (R·5선)\n63%\nLean D\n세대 대결, Collins 초당파 브랜드, 트럼프 역풍\n\n\n노스캐롤라이나\n공화 방어\nCooper (D·전 주지사) vs Whatley (R)\n62%\nLean D\nCooper 97% 인지도 vs Whatley 인지도 열세, 슈퍼팩 $71M\n\n\n조지아\n민주 방어\nOssoff (D·현직) vs Collins/Dooley (R)\n61%\nLean D\n공화 결선 분열, Ossoff 자금 우위, 메트로 애틀랜타\n\n\n미시간\n민주 방어\nTBD (D) vs Rogers (R)\n50%\nToss-up\n민주 경선 통합 여부(8/4), 자동차·관세, 아랍계 커뮤니티\n\n\n오하이오\n공화 방어\nBrown (D·전 상원) vs Husted (R·임명직)\n38%\nLean R\n특별선거 투표율, 임명직 정당성, 블루칼라 구조\n\n\n알래스카\n공화 방어\nPeltola (D) vs Sullivan (R·현직)\n37%\nLean R\n순위선택투표(RCV), 원주민 투표율, 설리번 현직 강점\n\n\n텍사스\n공화 방어\nTalarico (D) vs Paxton (R)\n29%\nLean R\n구조적 R+8, Paxton 스캔들·기소, 자금 비대칭\n\n\n\n여기 확률은 시장·집계기관 수치가 아니라 내부 프레임워크의 모델 추정치입니다. Cook/Sabato 등급·예측시장과 같은 잣대로 비교하지 마세요. 확률 기준일 5/29, 후보·경선 사실은 6/5 브리핑 반영.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n상원 시나리오 — 자체 분석 모델\n\n\n다수당 탈환 확률 32% · 순 기대의석 +1.4\n\n\n시나리오\n확률\n의석 결과\n다수당\n설명\n\n\n\n\nBase Case (부분 만회)\n42%\nD 48 — R 52\n공화당 유지\n트럼프 역풍 지속하나 공화당 10월 결집. ME·NC 확보, GA 방어, 나머지 R 방어\n\n\nBull Case (다수당 접근)\n28%\nD 50~51 — R 50~49\n동률 또는 D 탈환\n트럼프 추가 하락(-22pt+), 경제 악화, MI·OH 선전으로 +3~4석\n\n\nBear Case (현상 유지)\n22%\nD 47 — R 53\n공화당 유지\nMI 경선 분열, OH 구조 우위, 10월 분쟁 해소로 트럼프 반등 → 순 0석\n\n\nTail Risk (극단 충격)\n8%\nD 46- ~ D 52+\n양극단\n상승 4%(트럼프 -25pt 돌파·TX 뒤집기) / 하락 4%(국제분쟁 격화·민주 분열)",
+    "objectID": "states/me.html#구도-요약",
+    "href": "states/me.html#구도-요약",
+    "title": "메인 Maine",
+    "section": "구도 요약",
+    "text": "구도 요약\n민주당의 최우선 탈환 표적. 5선 현직 Collins(R)는 바이든·해리스가 이긴 주에서 살아남아온 생존자지만, 이번 사이클의 전국 역풍이 변수입니다. 민주당 경선(6/9)에서 Graham Platner가 성적 문자 메시지 등 논란에도 77.7%로 압승해 본선 대진이 확정됐습니다.",
     "crumbs": [
       "홈",
-      "Overview",
-      "전망 대시보드"
+      "State Focus",
+      "메인 Maine"
+    ]
+  },
+  {
+    "objectID": "states/me.html#후보자-프로필",
+    "href": "states/me.html#후보자-프로필",
+    "title": "메인 Maine",
+    "section": "후보자 프로필",
+    "text": "후보자 프로필\n\n\n\n\n\n그레이엄 플래트너 Graham Platner민주\n\n\n1984년생(42세) · 굴 양식업자 · 미 해병대 참전용사\n\n\n\n학력 John Bapst Memorial High School 졸업; George Washington University 수학(중퇴·미졸업)\n\n\n가족 2023년 Amy Gertner와 결혼(아내는 양식회사 비즈니스 매니저)\n\n\n과거 선거 2026 민주당 상원 경선(6/9) 승리: Platner 77.7% vs Mills 16.7% vs Costello 5.6%\n\n\n펀드레이징 캠페인 전체 5/20까지 $1,630만 모금(약 60%가 $200 미만 소액), 현금 $220만\n\n\n\n\n강점\n\n\n군 경력이 무소속 비중 큰 메인 유권자에 호소\n\n\n압도적 소액 모금·풀뿌리 열기\n\n\n본선 가상대결서 6선 현직을 앞서는 이례적 리드\n\n\n\n\n약점\n\n\n선출직 경험 전무\n\n\n문신·과거 Reddit 게시물·혼외 성적 문자 메시지 등 논란\n\n\n전 여자친구의 학대성 행동 주장(주장 단계)\n\n\n\n\n\n정책 메디케어 확대 · 기후변화 대응 · 노동자 권리 · 반독점·반금권정치\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: MAINEiac4434, CC BY-SA 4.0   출처 [1] [2] [3]\n\n\n\n\n\n\n\n수전 콜린스 Susan Collins공화 · 현직\n\n\n1952년생(74세) · 현직 상원의원(1997~) · 상원 세출위원장\n\n\n\n학력 St. Lawrence University 정치학 학사(magna cum laude, 1975)\n\n\n가족 남편 Thomas Daffron(2012년 결혼); 부모 모두 Caribou 시장 역임, 5대째 목재 가문\n\n\n과거 선거 2008: Collins 61.5% vs Allen(D) 38.5% (R+23.0) · 2014: Collins 68.5% vs Bellows(D) 31.5% (R+37.0) · 2020: Collins 51.0% vs Gideon(D) 42.4% (R+8.6)\n\n\n펀드레이징 5/20까지 $1,220만 모금, 현금 $970만 보유(무경선 현직)\n\n\n\n\n강점\n\n\n30년 의정·세출위원장 시니어리티(메인 예산 유치력)\n\n\n초당파 브랜드(Lugar Center 2023 초당파성 1위)\n\n\n2020년 열세 뒤집고 +8.6 재선\n\n\n\n\n약점\n\n\n2024년 해리스 +7 승리 주의 유일한 공화 현직(구조적 불리)\n\n\n73세 고령\n\n\nKavanaugh 인준 찬성표가 진보·여성층 결집 동력\n\n\n\n\n\n정책 인프라투자고용법(IIJA) 협상 주도 · Respect for Marriage Act(2022) 찬성 · 메인 방산(Bath Iron Works DDG-51) 옹호\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: U.S. Senate (public domain)   출처 [1] [2] [3]",
+    "crumbs": [
+      "홈",
+      "State Focus",
+      "메인 Maine"
+    ]
+  },
+  {
+    "objectID": "states/me.html#경선-과정",
+    "href": "states/me.html#경선-과정",
+    "title": "메인 Maine",
+    "section": "경선 과정",
+    "text": "경선 과정\n민주당 경선은 Platner(아웃사이더·압도 선두) vs Janet Mills(전 주지사, 4/30 캠페인 중단·투표용지 잔존) vs David Costello 구도였습니다. 문신·과거 Reddit 게시물·혼외 성적 문자 메시지 논란이 5~6월 집중 보도됐으나 Sanders·Schumer 등이 공개 옹호했고, 6/9 경선에서 Platner 77.7% / Mills 16.7% / Costello 5.6%로 RCV 추가 집계 없이 압승이 확정됐습니다. (Bangor Daily News)\n\n주의: 본선 가상대결 조사(UMass Lowell 6/4 Platner +5 등)는 성적 문자 메시지 본격 보도 이전 조사라, 스캔들의 본선 타격 여부는 6/9 이후 신규 조사로 확인이 필요합니다.",
+    "crumbs": [
+      "홈",
+      "State Focus",
+      "메인 Maine"
+    ]
+  },
+  {
+    "objectID": "states/me.html#한국-함의",
+    "href": "states/me.html#한국-함의",
+    "title": "메인 Maine",
+    "section": "한국 함의",
+    "text": "한국 함의\n양 후보 모두 한국 관련 직접 입장은 공개 출처에서 확인되지 않습니다. 다만 Collins는 상원 세출위원장으로 메인 방산(Bath Iron Works 구축함) 을 옹호해, 미·한 조선·철강 협력이 닿는 정책 환경에 있습니다(후보 본인의 한국 직접 언급은 미확인 — 추정으로 기술하지 않음).",
+    "crumbs": [
+      "홈",
+      "State Focus",
+      "메인 Maine"
     ]
   }
 ]
