@@ -38,6 +38,20 @@ blockquote {
   font-size: 0.85rem;
 }
 
+/* 경합주 등급 분포 타일 (홈 상원 전망 요약) */
+.rating-tiles { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin: 10px 0 16px; }
+.rtile { border-radius: 10px; padding: 14px 8px; text-align: center; border: 1px solid #e6e8eb; }
+.rt-num { font-size: 1.8rem; font-weight: 800; line-height: 1; }
+.rt-lab { font-size: 0.8rem; font-weight: 700; margin-top: 5px; }
+.rt-sd { background: #1971c2; color: #fff; border-color: #1971c2; }
+.rt-ld { background: #d0e3f7; color: #1e40af; border-color: #b6d4f0; }
+.rt-tu { background: #fff3bf; color: #92400e; border-color: #ffe8a3; }
+.rt-lr { background: #ffd9d9; color: #991b1b; border-color: #ffc9c9; }
+.rt-sr { background: #c92a2a; color: #fff; border-color: #c92a2a; }
+@media (max-width: 560px) {
+  .rating-tiles { grid-template-columns: repeat(3, 1fr); }
+}
+
 /* 후보자 프로필 카드 — 민주(좌)·공화(우) 2단, 같은 항목을 같은 높이로(subgrid) */
 .cand-wrap {
   display: grid;

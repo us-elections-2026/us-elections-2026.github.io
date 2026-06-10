@@ -357,6 +357,17 @@ model_rating_counts <- function() {
   setNames(vapply(cats, function(k) sum(b == k), integer(1)), cats)
 }
 
+# 등급 분포를 5개 타일 HTML로 (홈 요약용)
+rating_tiles_html <- function() {
+  rc <- model_rating_counts()
+  defs <- list(c("Solid D", "rt-sd"), c("Lean D", "rt-ld"), c("Toss-up", "rt-tu"),
+               c("Lean R", "rt-lr"), c("Solid R", "rt-sr"))
+  tiles <- vapply(defs, function(x) sprintf(
+    '<div class="rtile %s"><div class="rt-num">%d</div><div class="rt-lab">%s</div></div>',
+    x[2], rc[[x[1]]], x[1]), character(1))
+  paste0('<div class="rating-tiles">', paste(tiles, collapse = ""), "</div>")
+}
+
 # 홈 요약용 KPI 값 (리스트 반환)
 model_kpi <- function() {
   d <- .load_json("model_dashboard")
