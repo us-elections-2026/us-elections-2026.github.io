@@ -1,0 +1,97 @@
+---
+title: "1주차 · 03/23~03/29"
+date: 2026-03-23
+description: "트럼프 지지율 2기 사상 최저. Nate Silver 종합 순지지도 −16.7(3/26)로 2기 최저. Reuters/Ipsos 지지율은 36%로 전주(40%)"
+categories: [주간브리핑]
+---
+
+> 이번 주는 일일 브리핑이 단 1건(3/27)뿐인 **시즌 개막 호**다. 본 주간 브리핑은 3/27 단일 브리핑을 기준으로 작성됐다. 뉴스 기준: 미 동부시간 3월 26일까지의 보도. 모든 마진은 **양수 = 민주 우위**(D+/R−). 여론조사 평균·추세를 단일 조사보다 우선하며, 모델·등급·예측시장은 성격이 달라 직접 비교하지 않는다.
+
+## 이번 주 핵심 (TL;DR)
+
+- **트럼프 지지율 2기 사상 최저.** Nate Silver 종합 순지지도 **−16.7**(3/26)로 2기 최저. Reuters/Ipsos 지지율은 36%로 전주(40%) 대비 4%p 급락. 이란전쟁 후 유가 급등과 관세 불확실성이 경제·물가 이슈에서 집중 타격(물가 순지지 −32.7).
+- **메인 민주당 경선, Platner 압도.** Emerson(3/26)에서 Platner 55 vs Mills 28로 **27%p 차** 선두. 본선 가상대결에서도 **Platner 48 vs Collins 41(+7)**. NPR이 메인 경선을 "고비용 전쟁"으로 보도.
+- **노스캐롤라이나 본선 대진 확정, Cooper +8.** Cooper(D, 전 주지사) vs Whatley(R) 양당 후보 확정. 최신 조사 Cooper 49 vs Whatley 41(**D+8**). 민주당 상원 탈환의 핵심 경합주.
+- **텍사스 공화당 결선(5/26)으로 향하는 접전.** 3/3 예비선거에서 Cornyn 42.1 vs Paxton 40.9로 결선 확정. 트럼프 지지 표명은 아직 미발표. 민주당 Talarico는 양 후보 대비 근소 우위(vs Cornyn +1, vs Paxton +2).
+- **거시 환경은 민주당 우호.** 역대급 트럼프 역풍 속 6개 경합주 전반에서 민주당이 리드 또는 접전 유지.
+
+## 트럼프 지지율 추이
+
+| 조사기관 | 지지 | 반대 | 순지지도 |
+|---|---|---|---|
+| Reuters/Ipsos(3월 넷째 주) | 36% | ~58% | ~−22 |
+| Verasight/SIN(3월) | 37% | — | — |
+| 등록유권자 조사 | 40% | 58% | −18 |
+| **Nate Silver 종합(3/26)** | — | — | **−16.7**(2기 최저) |
+
+- 이슈별 순지지도: 경제 −21.3, **물가/인플레이션 −32.7**로 경제가 최대 악재.
+- 하락 요인: 이란전쟁 후 유가 급등 + 관세 정책 불확실성. 공화당 내부에서도 하락세 감지(Newsweek). _(추세 판단 유보: 단일 시점 급락이라 노이즈 가능성 — 이 시기는 비교할 직전 주 데이터가 없음.)_
+
+## 일반투표 의향 (Generic Ballot)
+
+_해당 주 신규 없음._ (3/27 일간 브리핑에 일반투표 수치 미수록.)
+
+## 경합주 동향
+
+### 조지아 (Georgia) — 민주 방어
+- **구도**: Ossoff(D·현직) vs Collins / Carter / Dooley(R) — **5/19 예비선거**.
+- Ossoff가 공화당 모든 후보에 우위(vs Carter +3, vs Collins +5, vs Dooley +8). 공화당 경선은 Collins 25% / Carter 20% / Dooley 7%로 Collins 선두([WSAV](https://www.wsav.com/news/your-local-election-hq/new-poll-shows-ossoff-leading-gop-primary-breaks-to-collins/)). Dooley는 Kemp 주지사 지지로 출마([FOX 5 Atlanta](https://www.fox5atlanta.com/news/derek-dooley-announces-2026-georgia-senate-bid-against-ossoff)). Emerson은 Ossoff가 약 50% 근접으로 유리한 출발이라 평가([Emerson](https://emersoncollegepolling.com/georgia-2026-poll-senator-ossoff-starts-re-election-near-50-and-outpaces-gop-field/)).
+- **자금**: Ossoff $2,550만(압도) / Carter $420만 / Collins $230만 / Dooley $210만.
+
+### 미시간 (Michigan) — 민주 방어(공개석)
+- **구도**: 민주당 **8/4 경선**(McMorrow / Stevens / El-Sayed) vs Mike Rogers(R).
+- 첫 공개 포럼에서 **기업 PAC 자금 수용 여부**가 핵심 쟁점. Stevens는 Ford·GM 등 기업 PAC 수용, McMorrow·El-Sayed는 거부([NBC](https://www.nbcnews.com/politics/2026-election/democrats-vying-michigan-senate-seat-clash-corporate-money-first-forum-rcna258221)). 진보(McMorrow·El-Sayed) vs 중도(Stevens) 노선 차이가 차별화 축([Michigan Public](https://www.michiganpublic.org/politics-government/2026-03-22/differences-within-democratic-party-separate-us-senate-candidates)). McMorrow는 자원봉사 동원으로 3만 서명 목표 달성([Michigan Advance](https://michiganadvance.com/2026/03/23/mcmorrow-touts-volunteer-push-to-reach-30k-petition-signatures-in-u-s-senate-race/)). 'toss up' 분류로 타주 기부금 유입, Rogers는 자금력 확보([Bridge Michigan](https://bridgemi.com/michigan-government/michigans-toss-up-us-senate-race-draws-donors-from-other-states/)).
+- 여론조사: Stevens +5 / McMorrow +3 / El-Sayed 동률 vs Rogers — 본선은 오차범위 내.
+
+### 메인 (Maine) — 공화 방어
+- **구도**: 민주당 **6/9 경선**(Platner vs Mills) vs Susan Collins(R·현역).
+- 이번 주 최대 이벤트. Bernie Sanders 지지의 Platner(진보) vs Schumer·DSCC 지지의 Mills(중도) 구도로 "고비용 선거전" 전개([NPR](https://www.npr.org/2026/03/26/nx-s1-5757659/midterms-collins-maine-democrats-platner-mills-senate)). Emerson(3/26): **경선 Platner 55 vs Mills 28(+27)**([Spectrum News](https://spectrumlocalnews.com/me/maine/politics/2026/03/26/new-poll-shows-platner-leading-mills-in-maine-u-s--senate-democratic-primary)). 본선 가상대결 **Platner 48 vs Collins 41(+7)** / Mills 46 vs Collins 43(+3)로 Collins 의석 탈환 기대감 고조([Newsweek](https://www.newsweek.com/midterm-elections-maine-senate-democrats-chances-flipping-susan-collins-graham-platner-janet-mills-11738846)). Platner는 두 번째 현직 상원의원 지지 확보([Washington Post](https://www.washingtonpost.com/politics/2026/03/02/platner-maine-mills-collins-senate/)).
+
+### 노스캐롤라이나 (North Carolina) — 공화 방어(공개석)
+- **구도**: Roy Cooper(D·전 주지사) vs Michael Whatley(R) — **본선 대진 확정**(3/3 예비선거 Cooper 92%, Whatley 64.6%, [WUNC](https://www.wunc.org/term/news/2026-03-03/roy-cooper-michael-whatley-north-carolina-senate)).
+- 최신 조사 **Cooper 49 vs Whatley 41(+8)**로 안정적 리드([The Hill](https://thehill.com/homenews/campaign/5803338-roy-cooper-michael-whatley-north-carolina-senate-poll/)). Thom Tillis 불출마로 생긴 공석. Cooper는 트럼프 승리주에서 2016·2020 주지사 당선 이력으로 교차 지지 능력 입증, 노스캐롤라이나 정치 지형의 '진정한 시험대'로 평가([WRAL](https://www.wral.com/news/nccapitol/election-primary-north-carolina-us-senate-cooper-whately-march-2026/)).
+
+### 텍사스 (Texas) — 공화 방어
+- **구도**: James Talarico(D·주 하원의원) vs Cornyn / Paxton(R) — **공화당 결선 5/26**.
+- 3/3 예비선거: Talarico 53 vs Crockett 46으로 민주당 후보 확정. 공화당은 **Cornyn 42.1 vs Paxton 40.9**로 결선행([NBC](https://www.nbcnews.com/politics/2026-election/texas-senate-primary-cornyn-paxton-hunt-talarico-crockett-rcna261447)). 트럼프는 결선 후보 중 한 명 지지를 암시했으나 공식 표명은 미정([NPR](https://www.npr.org/2026/03/03/nx-s1-5734515/texas-primary-election-results-james-talarico-jasmine-crockett-john-cornyn-ken-paxton)). 조사상 Talarico가 Cornyn에 +1, Paxton에 +2 근소 우위([FOX 7 Austin](https://www.fox7austin.com/election/talarcio-cronyn-paxton-texas-senate-poll-march-2026)), Senate Majority PAC 조사도 동률~근소 우위([Houston Public Media](https://www.houstonpublicmedia.org/articles/news/politics/election-2026/2026/03/10/545755/as-republicans-await-trumps-endorsement-democrats-float-poll-showing-talarico-tied-with-cornyn-and-paxton/)).
+- **배경**: 텍사스 민주당 상원 마지막 승리 1988년. Paxton은 Cornyn의 우크라이나 지원 지지를 '보수 이탈'로 공격. 공화당 경선에 약 $1억 광고비 투입.
+
+### 알래스카 (Alaska) — 공화 방어
+- **구도**: Mary Peltola(D·전 하원의원) vs Dan Sullivan(R·현역), **8/18 정글 프라이머리 → RCV 본선**.
+- 알래스카 원주민 최초 연방의원 출신 Peltola의 출마로 민주당 사정권 진입([19th News](https://19thnews.org/2026/01/mary-peltola-alaska-senate-2026/)). Cook Political Report는 'Solid R' → **'Lean R'**로 등급 변경([Cook](https://www.cookpolitical.com/analysis/senate/alaska-senate/peltola-announcement-alaska-senate-moves-lean-republican)). 단 알래스카 자체는 공화 성향(트럼프 +14)이라 Peltola 인지도·호감도와 긴장([Alaska Public](https://alaskapublic.org/news/politics/washington-d-c/2026-01-16/democrats-say-peltola-can-win-alaskas-u-s-senate-seat-really-though/)). Sullivan은 $600만 모금 + 트럼프·Murkowski 지지 확보. 캠페인 구축 단계로 신규 뉴스 적음.
+- 여론조사: Peltola 49 vs Sullivan 47(+2, PPP) — 오차범위 내 접전.
+
+## 이번 주 신규 여론조사
+
+| 주 | 조사(기간) | 결과 | 마진 |
+|---|---|---|---|
+| 메인(경선) | Emerson(3/26) | Platner 55 / Mills 28 | **Platner +27** |
+| 메인(본선) | Emerson(3/26) | Platner 48 / Collins 41 | **D+7** |
+| 메인(본선) | Emerson(3/26) | Mills 46 / Collins 43 | D+3 |
+| 노스캐롤라이나(본선) | 최신 조사 | Cooper 49 / Whatley 41 | **D+8** |
+| 조지아(본선) | Emerson | Ossoff 49 / Dooley 41 | D+8 |
+| 조지아(본선) | Emerson | Ossoff 48 / Collins(R) 43 | D+5 |
+| 조지아(본선) | Emerson | Ossoff 47 / Carter 44 | D+3 |
+| 미시간(본선) | Emerson | Stevens 47 / Rogers 42 | D+5 |
+| 미시간(본선) | Emerson | McMorrow 46 / Rogers 43 | D+3 |
+| 미시간(본선) | Emerson | El-Sayed 43 / Rogers 43 | 동률 |
+| 알래스카(본선) | PPP | Peltola 49 / Sullivan 47 | D+2 |
+| 텍사스(본선) | SMP/3월 | Talarico / Cornyn | D+1 |
+| 텍사스(본선) | SMP/3월 | Talarico / Paxton | D+2 |
+| 트럼프 순지지 | Nate Silver 종합(3/26) | — | **−16.7** |
+
+## 다음 주 관전 포인트
+
+1. **트럼프 지지율 바닥 여부** — 이란전쟁·관세발 급락이 이어질지, "rally around the flag"로 반등할지.
+2. **메인 경선 흐름** — Platner의 27%p 격차가 6/9 경선까지 유지되는지.
+3. **텍사스 결선(5/26) 구도** — 트럼프의 Cornyn vs Paxton 지지 표명 시점과 민주당 Talarico의 접전 유지 여부.
+4. **조지아 공화당 단일화** — 5/19 예비선거에서 후보 압축 시 Ossoff 상대 강화 여부.
+
+## 시나리오 영향 (시즌 개막 기준선)
+
+- **Bull(민주 상원 탈환) 강화**: 트럼프 순지지 −16.7이라는 역대급 역풍 속 6개 경합주 전반에서 민주당 리드·접전. 메인(+7)·노스캐롤라이나(+8)는 민주 확보 가능 범위 진입. 텍사스까지 경합권이 되며 민주 4석 이상 순증 경로가 넓어짐.
+- **Bear(공화 다수 유지) 주의**: 알래스카(+2)·텍사스(+1~2)는 오차범위 내. 미시간 민주당 3파전 분열이 본선 경쟁력을 약화시킬 가능성. 조지아 공화 단일화 시 Ossoff 도전 강화. 이란전쟁 장기화 시 트럼프 반등 가능성도 상존.
+
+---
+
+*출처: 일일 브리핑(3/27) 기준. 원 기사 링크는 각 항목에 인라인 표기. 트럼프 지지율은 [Silver Bulletin](https://www.natesilver.net/p/trump-approval-ratings-nate-silver-bulletin) 종합 및 [Ipsos](https://www.ipsos.com/en-us/president-trump-approval-rating-march-2026) 기준.*

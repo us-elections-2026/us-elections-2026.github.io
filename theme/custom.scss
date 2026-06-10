@@ -72,9 +72,31 @@ blockquote {
 .cand-credit { font-size: 0.72rem; color: #adb5bd; margin: 8px 0 0; }
 .cand-credit .cand-src a { color: #adb5bd; text-decoration: none; }
 .cand-credit .cand-src a:hover { text-decoration: underline; }
-.cand-card .muted { color: #adb5bd; }
+.cand-card .muted, .muted { color: #adb5bd; }
 @media (max-width: 600px) {
   .cand-card { grid-template-columns: 1fr; }
   .cand-photo { width: 120px; height: 150px; }
   .cand-cols { grid-template-columns: 1fr; }
 }
+
+/* 후보 미정 플레이스홀더 카드 */
+.cand-ph { border-style: dashed; background: #fbfcfd; align-items: center; }
+.cand-ph-mark { font-size: 44px; text-align: center; align-self: center; opacity: .5; }
+.cand-ph .cand-name { font-size: 1.05rem; }
+
+/* 경선 후보 가로 배치 (하단) */
+.cand-mini-wrap { display: flex; flex-wrap: wrap; gap: 16px; margin: 12px 0; }
+.cand-mini {
+  flex: 1 1 240px; min-width: 230px; max-width: 320px;
+  border: 1px solid #e6e8eb; border-radius: 12px; padding: 14px;
+  border-top: 4px solid #adb5bd; background: #fff;
+}
+.cand-mini.cand-D { border-top-color: #1971c2; }
+.cand-mini.cand-R { border-top-color: #c92a2a; }
+.cand-mini-photo { width: 96px; height: 120px; object-fit: cover; border-radius: 8px; background: #f1f3f5; display: block; margin-bottom: 8px; }
+.cand-mini-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; }
+.cand-mini .cand-name { font-size: 1.05rem; font-weight: 700; }
+.cand-mini .cand-en { color: #868e96; font-size: 0.82rem; margin: 1px 0 6px; }
+.cand-mini .cand-sub { font-size: 0.84rem; margin: 0 0 8px; }
+.cand-mini .cand-facts { font-size: 0.82rem; margin-bottom: 8px; }
+.cand-mini .cand-line { font-size: 0.82rem; margin: 5px 0; }

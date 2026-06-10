@@ -1,0 +1,90 @@
+---
+title: "12주차 · 06/08~06/14"
+date: 2026-06-08
+description: "메인 민주당 경선일(6/9). 굴 양식업자·재향군인 Graham Platner가 성적 문자 메시지 논란에도 압도적 선두(5월 말 경선 유력 투표자 약 76%)로"
+categories: [주간브리핑]
+---
+
+> 일간 브리핑 3건 종합 (6/8·6/9·6/10). 뉴스 기준: 미 동부시간 6월 9일 저녁까지. 모든 마진은 **양수 = 민주 우위**(D+/R−). 여론조사 평균·추세를 단일 조사보다 우선하며, 모델·등급·예측시장은 성격이 달라 직접 비교하지 않는다.
+
+## 이번 주 핵심 (TL;DR)
+
+- **메인 민주당 경선일(6/9).** 굴 양식업자·재향군인 Graham Platner가 성적 문자 메시지 논란에도 압도적 선두(5월 말 경선 유력 투표자 약 76%)로 본선행 유력. 현역 Susan Collins(6선 도전)와 맞붙는 구도. 사퇴한 Janet Mills 주지사는 투표용지에 잔존, RCV 집계로 최종 확정은 지연 가능.
+- **노스캐롤라이나 본선 대진 확정.** 양당 경선 종료 — Cooper(D, 92%) vs Whatley(R, 64.6%). 신규 조사에서 Cooper가 11%p 우위(이전 Emerson +6에서 확대).
+- **텍사스가 계속 '경합'으로 이동.** 친(親)Talarico 슈퍼팩 'Moment of Truth'가 6,200만 달러 지출 목표로 출범. 직전 주 Paxton의 탄핵 변호인 Dan Cogdell의 Talarico 지지에 이은 흐름. Quantus(6/3~4) 조사 Paxton 45 vs Talarico 43(R+2), 모금은 Talarico 4,030만 vs Paxton 760만 달러로 압도.
+- **다음 임박 일정은 조지아 공화당 결선(6/16).** Mike Collins(5/19 약 41%) vs Derek Dooley(약 30%), Buddy Carter 탈락. 트럼프계 vs Kemp계 대리전. 승자가 Ossoff(보유 현금 약 3,200만 달러)에 도전.
+- **거시 환경은 여전히 민주당 우호.** 트럼프 순지지도 약 −18.7(Silver Bulletin)로 5월 말 2기 최저 −21.2에서 소폭 반등했으나, 1기 동기(−11.2)·바이든(−13.5)보다 저조. 일반투표 의향 D+7 수준 유지.
+
+## 트럼프 지지율 추이
+
+| 시점 | 순지지도 | 비고 |
+|---|---|---|
+| 5월 말(2기 최저) | **−21.2** | 관세발 물가 상승이 저점 견인 |
+| 6/7 | −19.1 | Silver Bulletin 평균 |
+| 6/8~6/9 | **−18.7** | 저점 대비 소폭 반등 |
+
+- 지지율 40% 미만 / 반대 60% 근접. 이슈별 순지지도는 이민 약 −10, **경제 −30 이하(2기 최초)**, 인플레이션 지지 20~30%대로 경제가 최대 악재.
+- 동기간 비교에서 1기(−11.2)·바이든(−13.5)을 모두 하회하는 역대급 약세가 이어짐. 저점 반등은 추세 전환이라기보다 노이즈 범위로 보는 것이 안전.
+
+## 일반투표 의향 (Generic Ballot)
+
+- 민주당 **D+7** 수준 지속(직전 48.1 vs 41.1). 트래커(Silver Bulletin, Race to the WH)가 한 자릿수 중반 민주 우세를 일관되게 표시 — 중간선거 역풍 환경의 핵심 신호.
+
+## 경합주 동향
+
+### 조지아 (Georgia) — 민주 방어
+- **구도**: Ossoff(D·현직) vs 공화당 **6/16 결선**(Mike Collins vs Derek Dooley).
+- 결선까지 공화당이 분열 경쟁하는 동안 Ossoff가 자금(약 3,200만 달러)·조직 우위로 시간 확보. Collins는 의회 자금 유용 의혹으로 **하원 윤리위 조사** 중 — 본선 약점으로 부각([NOTUS](https://www.notus.org/campaigns/mike-collins-derek-dooley-republicans-georgia-runoff-senate-jon-ossoff-2026-primary-election)). 트럼프는 경선 중립, Dooley는 Kemp 주지사 전폭 지지([The Hill](https://thehill.com/homenews/campaign/5886066-georgia-senate-gop-runoff-collins-dooley/)).
+
+### 미시간 (Michigan) — 민주 방어(공개석)
+- **구도**: 민주당 **8/4 경선**(Stevens vs McMorrow vs El-Sayed) vs Mike Rogers(R).
+- 외교정책·당 지도부를 둘러싼 3파전 격화, El-Sayed는 좌측 노선(전 국민 메디케어·ICE 폐지)([Michigan Advance](https://michiganadvance.com/2026/06/09/stevens-mcmorrow-el-sayed-clash-over-foreign-policy-party-leadership-as-primary-approaches/)). 여론조사 박빙(RCP 평균 El-Sayed 24.3 / McMorrow·Stevens 각 19.8, 미결정 36%). Rogers는 외부지출 약 4,500만 달러 지원. **7개 주 중 본선이 유일하게 오차범위 내인 공화당 최대 방어선.**
+
+### 메인 (Maine) — 공화 방어
+- **구도**: 민주당 **6/9 경선**(Platner 유력) vs Susan Collins(R·현역, 6선 도전).
+- 이번 주 최대 이벤트. WSJ·NYT가 Platner의 결혼 초기 성적 문자 메시지를 보도했으나, Schumer·Sanders 등은 공개 옹호([NBC](https://www.nbcnews.com/politics/congress/bernie-sanders-defends-graham-platner-sexually-explicit-text-messages-rcna347976)). 논란에도 경선 선두 유지([WBUR](https://www.wbur.org/news/2026/06/02/scandal-platner-maine-democrat-senate-primary)). 본선 가상대결은 **Platner 48 vs Collins 43(+5)**([UMass Lowell, 6/4](https://www.uml.edu/news/press-releases/2026/06042026-maine-senate-poll.aspx)) — 문자 보도 이전 조사라 본선 타격 여부가 관전 포인트.
+
+### 노스캐롤라이나 (North Carolina) — 공화 방어(공개석)
+- **구도**: Roy Cooper(D·전 주지사) vs Michael Whatley(R·전 RNC 의장) — **본선 대진 확정**(Cooper 92%, Whatley 64.6%, [NBC](https://www.nbcnews.com/politics/2026-primary-elections/north-carolina-senate-results)).
+- 신규 조사에서 **Cooper +11**(약 49.8 vs 38.7, Carolina Journal/Harper)로 3월(+7.8)·이전 Emerson(+6) 대비 격차 확대([The Hill](https://thehill.com/homenews/state-watch/5884320-roy-cooper-leads-senate-race-whatley-north-carolina-poll/)). Whatley의 낮은 인지도(과반이 모름)가 발목. 공화당 슈퍼팩 대규모 광고전이 향후 변수.
+
+### 텍사스 (Texas) — 공화 방어
+- **구도**: James Talarico(D·주 하원의원) vs Ken Paxton(R·주 법무장관) — 양당 확정(Cornyn 결선 패배).
+- 친Talarico 슈퍼팩 'Moment of Truth' **6,200만 달러** 지출 목표로 Paxton의 법적·윤리 스캔들 공략([Texas Tribune](https://www.texastribune.org/2026/06/09/james-talarico-new-super-pac-texas-senate-race-2026-paxton/)). Paxton 탄핵 변호인 Dan Cogdell의 Talarico 지지까지([Texas Tribune](https://www.texastribune.org/2026/06/08/texas-ken-paxton-impeachment-lawyer-dan-cogdell-james-talarico-endorsement-senate/)). 조사 **Paxton 45 vs Talarico 43(R+2)**, 모금 Talarico 압도 — 안전 공화 의석을 의외의 접전으로.
+
+### 오하이오 (Ohio) — 공화 방어(특별선거)
+- **구도**: Sherrod Brown(D·전 3선 상원의원) vs Jon Husted(R·임명직 현역), 11/3 특별선거(승자 2028 재선 필요).
+- Fox News(5/28~6/1) **Brown 53 vs Husted 45(+8)**, 민주 결집 98% vs 공화 86%·교차지지 확보. 단 **RCP 평균은 훨씬 접전**(Husted 48.5 / Brown 47.5)으로 기관 편차 큼([Daily Caller](https://dailycaller.com/2026/06/04/sherrod-brown-jon-husted-ohio-senate-race-fox-news-poll/)). 양 캠프가 엡스타인 연루 후원자로 네거티브 광고전([PolitiFact](https://www.politifact.com/article/2026/jun/08/epstein-ohio-senate-husted-brown-donations/)). 유권자 46%가 Husted를 "트럼프와 너무 가깝다"고 우려.
+
+### 알래스카 (Alaska) — 공화 방어
+- **구도**: Mary Peltola(D·전 하원의원) vs Dan Sullivan(R·현역), **8/18 top-4 예비선거** 후 11월 RCV.
+- 투표용지에 **동명의 두 번째 "Dan Sullivan"** 등장 → 현역이 민주당 공작 주장(근거 미공개), 선관위는 가운데 이니셜로 구분 예정([NBC](https://www.nbcnews.com/politics/2026-election/sen-dan-sullivan-accuses-democrats-recruiting-alaska-senate-candidate-rcna348131)). Peltola는 연방의 태풍 할롱 복구비 분담 거부를 두고 Sullivan 비판([Native News Online](https://nativenewsonline.net/currents/mary-peltola-blasts-denial-of-federal-typhoon-relief-funding-criticizes-sen-dan-sullivan/)). '다수당 결정자'로 지목.
+
+## 이번 주 신규 여론조사
+
+| 주 | 조사(기간) | 결과 | 마진 |
+|---|---|---|---|
+| 메인(본선) | UMass Lowell/YouGov(6/4) | Platner 48 / Collins 43 | **D+5** |
+| 노스캐롤라이나(본선) | Carolina Journal/Harper | Cooper 49.8 / Whatley 38.7 | **D+11** |
+| 텍사스(본선) | Quantus(6/3~4) | Paxton 45 / Talarico 43 | R+2 |
+| 오하이오(특별) | Fox News(5/28~6/1) | Brown 53 / Husted 45 | **D+8** |
+| 오하이오(특별) | RCP 평균 | Husted 48.5 / Brown 47.5 | R+1 |
+| 트럼프 순지지 | Silver Bulletin(~6/9) | — | **−18.7** |
+
+## 다음 주 관전 포인트
+
+1. **메인 경선 최종 결과(6/9 집계)** — Platner 본선 확정 여부와 득표율(스캔들 타격 가늠자). RCV로 확정 지연 가능.
+2. **조지아 공화당 결선(6/16)** — Collins(윤리 의혹) vs Dooley(Kemp 지지) 중 누가 Ossoff 상대가 되느냐가 의석 경합도를 좌우.
+3. **텍사스 슈퍼팩 효과** — 6,200만 달러 투입이 R+2 접전을 더 좁히는지.
+4. **오하이오 기관 편차 해소** — Fox(+8)와 RCP 평균(R+1)의 간극을 메울 신규 조사.
+
+## 시나리오 영향 (이전 브리핑 프레임 계승)
+
+- **Base → Bull(민주) 우세 유지**: 트럼프 순지지 −19 부근 고착 + 일반투표 D+7 + 트럼프 승리주 오하이오 Brown +8·NC Cooper +11 → 환경은 민주 의석 확대에 기울어짐.
+- **단기 분수령은 메인(6/9)·조지아(6/16)** 두 경선/결선.
+- **텍사스가 Bull 상방을 추가**(슈퍼팩+스캔들+접전), **Bear의 핵심은 여전히 미시간**(오차범위 내 유일, 8/4까지 미확정).
+- **리스크**: 오하이오 기관 편차, NC 공화 슈퍼팩 광고전, 알래스카 RCV·동명이인 혼란 → 단일 조사 과신 경계.
+
+---
+
+*출처: 일일 브리핑(6/8·6/9·6/10) 종합. 원 기사 링크는 각 항목에 인라인 표기. 트럼프 지지율은 [Silver Bulletin](https://www.natesilver.net/p/trump-approval-ratings-nate-silver-bulletin) 평균 기준.*

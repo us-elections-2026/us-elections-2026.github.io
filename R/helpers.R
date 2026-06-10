@@ -189,74 +189,116 @@ gt_state_detail <- function(code) {
 }
 
 # 1.4d 후보자 프로필 카드 (HTML) --------------------------------------------
-# data/candidates.json 을 읽어 해당 주 후보들의 HTML 카드 문자열을 반환.
-# qmd 청크에서 `#| output: asis` 와 함께 cat() 으로 출력한다.
+# data/candidates.json 을 읽어 HTML 카드 문자열을 반환. qmd 청크에서
+# `#| output: asis` 와 함께 cat() 으로 출력한다. status="primary"는 경선 후보(하단 가로),
+# 그 외는 확정 후보(상단 정식 카드)로 분리 렌더한다.
 .party_kr <- c(D = "민주", R = "공화")
 
+.c_ul <- function(v) { v <- v[!is.na(v) & nzchar(v)]
+  if (!length(v)) "" else paste0("<ul>", paste0("<li>", v, "</li>", collapse = ""), "</ul>") }
+.c_inline <- function(v) { v <- v[!is.na(v) & nzchar(v)]; if (!length(v)) "—" else paste(v, collapse = " · ") }
+.c_srcs <- function(v) { v <- v[!is.na(v) & nzchar(v)]; if (!length(v)) return("")
+  links <- vapply(seq_along(v), function(i) { u <- v[i]
+    if (grepl("^https?://", u)) sprintf('<a href="%s" target="_blank" rel="noopener">[%d]</a>', u, i)
+    else sprintf('<span>[%d] %s</span>', i, u) }, character(1))
+  paste0('<span class="cand-src">출처 ', paste(links, collapse = " "), "</span>") }
+.c_badge <- function(r) paste0(.party_kr[[r$party]], if (isTRUE(r$incumbent)) " · 현직" else "")
+.c_credit <- function(r) if (!is.na(r$photo_credit) && nzchar(r$photo_credit)) paste0("사진: ", r$photo_credit) else "사진 미확보"
+.c_age <- function(r) if (!is.na(r$born)) paste0(r$born, "년생(", 2026 - r$born, "세) · ") else ""
+
+# 정식(전체) 카드
+.full_card <- function(r) {
+  kr <- if (!is.na(r$kr_note) && nzchar(r$kr_note)) r$kr_note else
+    "<span class='muted'>한국 관련 직접 입장은 공개 출처에서 확인되지 않음</span>"
+  paste0(
+    '<div class="cand-card cand-', r$party, '">',
+    '<img class="cand-photo" src="/', r$photo, '" alt="', r$name, '" loading="lazy">',
+    '<div class="cand-body">',
+      '<div class="cand-head"><span class="cand-name">', r$name_kr, ' <em>', r$name, '</em></span>',
+        '<span class="cand-badge b-', r$party, '">', .c_badge(r), '</span></div>',
+      '<p class="cand-sub">', .c_age(r), r$occupation, '</p>',
+      '<ul class="cand-facts">',
+        if (!is.na(r$education)) paste0('<li><b>학력</b> ', r$education, '</li>') else "",
+        if (!is.na(r$family)) paste0('<li><b>가족</b> ', r$family, '</li>') else "",
+        paste0('<li><b>과거 선거</b> ', .c_inline(r$past_elections[[1]]), '</li>'),
+        if (!is.na(r$fundraising)) paste0('<li><b>펀드레이징</b> ', r$fundraising, '</li>') else "",
+      '</ul>',
+      '<div class="cand-cols">',
+        '<div class="cand-col"><b class="t-str">강점</b>', .c_ul(r$strengths[[1]]), '</div>',
+        '<div class="cand-col"><b class="t-wk">약점</b>', .c_ul(r$weaknesses[[1]]), '</div>',
+      '</div>',
+      '<p class="cand-line"><b>정책</b> ', .c_inline(r$policy[[1]]), '</p>',
+      '<p class="cand-kr"><b>🇰🇷 한국 함의</b> ', kr, '</p>',
+      '<p class="cand-credit">', .c_credit(r), ' &nbsp; ', .c_srcs(r$sources[[1]]), '</p>',
+    '</div></div>'
+  )
+}
+
+# 경선용 컴팩트(세로형, 가로 나열) 카드
+.mini_card <- function(r) {
+  paste0(
+    '<div class="cand-mini cand-', r$party, '">',
+    '<img class="cand-mini-photo" src="/', r$photo, '" alt="', r$name, '" loading="lazy">',
+    '<div class="cand-mini-head"><span class="cand-name">', r$name_kr, '</span>',
+      '<span class="cand-badge b-', r$party, '">', .c_badge(r), '</span></div>',
+    '<p class="cand-en">', r$name, '</p>',
+    '<p class="cand-sub">', .c_age(r), r$occupation, '</p>',
+    '<ul class="cand-facts">',
+      if (!is.na(r$education)) paste0('<li><b>학력</b> ', r$education, '</li>') else "",
+      if (!is.na(r$fundraising)) paste0('<li><b>펀드레이징</b> ', r$fundraising, '</li>') else "",
+    '</ul>',
+    '<p class="cand-line"><b class="t-str">강점</b> ', .c_inline(r$strengths[[1]]), '</p>',
+    '<p class="cand-line"><b class="t-wk">약점</b> ', .c_inline(r$weaknesses[[1]]), '</p>',
+    '<p class="cand-line"><b>정책</b> ', .c_inline(r$policy[[1]]), '</p>',
+    '<p class="cand-credit">', .c_credit(r), ' &nbsp; ', .c_srcs(r$sources[[1]]), '</p>',
+    '</div>'
+  )
+}
+
+.c_status <- function(cc) { s <- cc$status; if (is.null(s)) rep(NA_character_, nrow(cc)) else s }
+
+# 상단: 확정 후보 정식 카드 + (경선중인 당) 플레이스홀더
 candidate_cards_html <- function(code) {
   d <- .load_json("candidates")
   cc <- d$candidates[d$candidates$state == code, ]
   if (nrow(cc) == 0) return("")
-
-  ul <- function(v) {
-    v <- v[!is.na(v) & nzchar(v)]
-    if (length(v) == 0) return("")
-    paste0("<ul>", paste0("<li>", v, "</li>", collapse = ""), "</ul>")
+  st <- .c_status(cc)
+  is_prim <- !is.na(st) & st == "primary"
+  nom <- cc[!is_prim, ]; prim <- cc[is_prim, ]
+  cards <- if (nrow(nom)) vapply(seq_len(nrow(nom)), function(i) .full_card(nom[i, ]), character(1)) else character(0)
+  pr <- .load_json("senate_primaries")$rows
+  for (pty in c("D", "R")) {
+    if (any(prim$party == pty) && !any(nom$party == pty)) {
+      cand_names <- paste(prim$name_kr[prim$party == pty], collapse = " · ")
+      kw <- if (pty == "D") "민주" else "공화"
+      prow <- pr[pr$state == code & grepl(kw, pr$event), ]
+      meta <- if (nrow(prow))
+        paste0(ifelse(is.na(prow$date[1]), "", paste0(prow$date[1], " ")), prow$event[1]) else "경선 진행 중"
+      cards <- c(cards, paste0(
+        '<div class="cand-card cand-', pty, ' cand-ph">',
+        '<div class="cand-ph-mark">🗳️</div>',
+        '<div class="cand-body"><div class="cand-head">',
+          '<span class="cand-name">', .party_kr[[pty]], '당 후보 — 미정</span>',
+          '<span class="cand-badge b-', pty, '">경선 중</span></div>',
+        '<p class="cand-sub">', meta, '</p>',
+        '<p class="cand-line">경쟁 후보: <b>', cand_names, '</b></p>',
+        '<p class="cand-line muted">↓ 페이지 하단 <b>경선 후보</b>에서 상세 프로필을 확인하세요.</p>',
+        '</div></div>'))
+    }
   }
-  inline <- function(v) {
-    v <- v[!is.na(v) & nzchar(v)]
-    if (length(v) == 0) return("—")
-    paste(v, collapse = " · ")
-  }
-  srcs <- function(v) {
-    v <- v[!is.na(v) & nzchar(v)]
-    if (length(v) == 0) return("")
-    links <- vapply(seq_along(v), function(i) {
-      u <- v[i]
-      if (grepl("^https?://", u))
-        sprintf('<a href="%s" target="_blank" rel="noopener">[%d]</a>', u, i)
-      else sprintf('<span>[%d] %s</span>', i, u)
-    }, character(1))
-    paste0('<span class="cand-src">출처 ', paste(links, collapse = " "), "</span>")
-  }
-
-  cards <- vapply(seq_len(nrow(cc)), function(i) {
-    r <- cc[i, ]
-    party <- r$party
-    age <- if (!is.na(r$born)) paste0("(", 2026 - r$born, "세)") else ""
-    badge <- paste0(.party_kr[[party]], if (isTRUE(r$incumbent)) " · 현직" else "")
-    credit <- if (!is.na(r$photo_credit) && nzchar(r$photo_credit))
-      paste0("사진: ", r$photo_credit) else "사진 미확보 — 자리표시"
-    kr <- if (!is.na(r$kr_note) && nzchar(r$kr_note)) r$kr_note else
-      "<span class='muted'>한국 관련 직접 입장은 공개 출처에서 확인되지 않음</span>"
-
-    paste0(
-      '<div class="cand-card cand-', party, '">',
-      '<img class="cand-photo" src="/', r$photo, '" alt="', r$name, '" loading="lazy">',
-      '<div class="cand-body">',
-        '<div class="cand-head"><span class="cand-name">', r$name_kr,
-          ' <em>', r$name, '</em></span>',
-          '<span class="cand-badge b-', party, '">', badge, '</span></div>',
-        '<p class="cand-sub">', if (!is.na(r$born)) paste0(r$born, "년생", age, " · ") else "",
-          r$occupation, '</p>',
-        '<ul class="cand-facts">',
-          if (!is.na(r$education)) paste0('<li><b>학력</b> ', r$education, '</li>') else "",
-          if (!is.na(r$family)) paste0('<li><b>가족</b> ', r$family, '</li>') else "",
-          paste0('<li><b>과거 선거</b> ', inline(r$past_elections[[1]]), '</li>'),
-          if (!is.na(r$fundraising)) paste0('<li><b>펀드레이징</b> ', r$fundraising, '</li>') else "",
-        '</ul>',
-        '<div class="cand-cols">',
-          '<div class="cand-col"><b class="t-str">강점</b>', ul(r$strengths[[1]]), '</div>',
-          '<div class="cand-col"><b class="t-wk">약점</b>', ul(r$weaknesses[[1]]), '</div>',
-        '</div>',
-        '<p class="cand-line"><b>정책</b> ', inline(r$policy[[1]]), '</p>',
-        '<p class="cand-kr"><b>🇰🇷 한국 함의</b> ', kr, '</p>',
-        '<p class="cand-credit">', credit, ' &nbsp; ', srcs(r$sources[[1]]), '</p>',
-      '</div></div>'
-    )
-  }, character(1))
-
   paste0('<div class="cand-wrap">', paste(cards, collapse = ""), "</div>")
+}
+
+# 하단: 경선 후보를 가로로 배치 (없으면 빈 문자열)
+primary_cards_html <- function(code) {
+  d <- .load_json("candidates")
+  cc <- d$candidates[d$candidates$state == code, ]
+  if (nrow(cc) == 0) return("")
+  st <- .c_status(cc)
+  prim <- cc[!is.na(st) & st == "primary", ]
+  if (nrow(prim) == 0) return("")
+  minis <- vapply(seq_len(nrow(prim)), function(i) .mini_card(prim[i, ]), character(1))
+  paste0('<div class="cand-mini-wrap">', paste(minis, collapse = ""), "</div>")
 }
 
 # 1.6 자체 모델 대시보드 (정적 폴백 표) -------------------------------------

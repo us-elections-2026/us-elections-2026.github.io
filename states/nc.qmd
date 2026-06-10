@@ -7,25 +7,21 @@ title: "노스캐롤라이나 North Carolina"
 source(file.path("R", "helpers.R"))
 ```
 
-```{r}
-gt_state_detail("NC")
-```
-
-## 구도 요약
-
-Tillis 은퇴로 생긴 **공개석**(공화 방어). 전 주지사 Roy Cooper(D)가 인지도·모금에서 전 RNC 위원장 Michael Whatley(R)를 앞서며, 봄 내내 한 자릿수 후반~두 자릿수 초반 리드를 일관 유지했습니다(예측시장 약 83%). NC는 대선에선 공화 우위지만 주지사로 Cooper를 두 번 배출한 대표적 **분할투표** 주입니다.
-
-## 후보자 프로필
+## 후보자
 
 ```{r}
 #| output: asis
 cat(candidate_cards_html("NC"))
 ```
 
-## 경선 과정
+## 구도 요약
 
-양당 경선은 **3/3에 이미 종료**됐습니다(민주 Cooper 92%, 공화 Whatley 64.6%). 본선 대진이 일찍 확정돼 양 캠프 모두 본선 체제로 전환했습니다. 최대 변수는 Whatley의 낮은 인지도(과반이 '모름')를 둘러싼 정의(定義) 싸움과, 공화 슈퍼팩 SLF의 **7,100만 달러** 광고전입니다. ([WRAL](https://www.wral.com/news/nccapitol/nc-senate-cooper-whatley-spending-election-2026-republican-slf-march-2026/))
+```{r}
+gt_state_detail("NC")
+```
+
+Tillis 은퇴로 생긴 **공개석**(공화 방어). 전 주지사 Roy Cooper(D)가 인지도·모금에서 전 RNC 위원장 Michael Whatley(R)를 앞서며, 봄 내내 한 자릿수 후반~두 자릿수 초반 리드를 일관 유지했습니다(예측시장 약 83%). 양당 경선은 **3/3에 이미 종료**돼(민주 Cooper 92%, 공화 Whatley 64.6%) 본선 체제로 전환했습니다. 최대 변수는 Whatley의 낮은 인지도(과반이 '모름')를 둘러싼 정의(定義) 싸움과, 공화 슈퍼팩 SLF의 **7,100만 달러** 광고전입니다. ([WRAL](https://www.wral.com/news/nccapitol/nc-senate-cooper-whatley-spending-election-2026-republican-slf-march-2026/))
 
 ## 한국 함의
 
-NC의 대형 첨단제조 유치는 일본(Toyota 배터리)·베트남(VinFast)·핀란드(Kempower) 중심으로, **한국의 대형 NC 투자 사례나 양 후보의 대한 정책 입장은 공개 출처에서 확인되지 않습니다**(한국 배터리 투자는 조지아·테네시·켄터키에 집중). 추정으로 빈 칸을 채우지 않습니다.
+NC는 대선에선 공화 우위지만 주지사로 Cooper를 두 번 배출한 대표적 **분할투표** 주입니다. 다만 NC의 대형 첨단제조 유치는 일본(Toyota 배터리)·베트남(VinFast)·핀란드(Kempower) 중심으로, **한국의 대형 NC 투자 사례나 양 후보의 대한 정책 입장은 공개 출처에서 확인되지 않습니다**(한국 배터리 투자는 조지아·테네시·켄터키에 집중). 추정으로 빈 칸을 채우지 않습니다.

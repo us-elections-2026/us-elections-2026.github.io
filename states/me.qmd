@@ -7,24 +7,20 @@ title: "메인 Maine"
 source(file.path("R", "helpers.R"))
 ```
 
-```{r}
-gt_state_detail("ME")
-```
-
-## 구도 요약
-
-민주당의 **최우선 탈환 표적**. 5선 현직 Collins(R)는 바이든·해리스가 이긴 주에서 살아남아온 생존자지만, 이번 사이클의 전국 역풍이 변수입니다. 민주당 경선(6/9)에서 Graham Platner가 성적 문자 메시지 등 논란에도 **77.7%로 압승**해 본선 대진이 확정됐습니다.
-
-## 후보자 프로필
+## 후보자
 
 ```{r}
 #| output: asis
 cat(candidate_cards_html("ME"))
 ```
 
-## 경선 과정
+## 구도 요약
 
-민주당 경선은 Platner(아웃사이더·압도 선두) vs Janet Mills(전 주지사, 4/30 캠페인 중단·투표용지 잔존) vs David Costello 구도였습니다. 문신·과거 Reddit 게시물·혼외 성적 문자 메시지 논란이 5~6월 집중 보도됐으나 Sanders·Schumer 등이 공개 옹호했고, **6/9 경선에서 Platner 77.7% / Mills 16.7% / Costello 5.6%**로 RCV 추가 집계 없이 압승이 확정됐습니다. ([Bangor Daily News](https://www.bangordailynews.com/2026/06/09/politics/elections/maine-senate-democratic-primary-results-graham-platner/))
+```{r}
+gt_state_detail("ME")
+```
+
+민주당의 **최우선 탈환 표적**. 5선 현직 Collins(R)는 바이든·해리스가 이긴 주에서 살아남아온 생존자지만, 이번 사이클의 전국 역풍이 변수입니다. 민주당 경선(6/9)에서 Graham Platner가 성적 문자 메시지 등 논란에도 **77.7%로 압승**(Mills 16.7% / Costello 5.6%, RCV 추가 집계 불필요)해 본선 대진이 확정됐습니다. ([Bangor Daily News](https://www.bangordailynews.com/2026/06/09/politics/elections/maine-senate-democratic-primary-results-graham-platner/))
 
 > 주의: 본선 가상대결 조사(UMass Lowell 6/4 Platner +5 등)는 성적 문자 메시지 본격 보도 **이전** 조사라, 스캔들의 본선 타격 여부는 6/9 이후 신규 조사로 확인이 필요합니다.
 

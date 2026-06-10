@@ -7,11 +7,18 @@ title: "조지아 Georgia"
 source(file.path("R", "helpers.R"))
 ```
 
+## 후보자
+
 ```{r}
-gt_state_detail("GA")
+#| output: asis
+cat(candidate_cards_html("GA"))
 ```
 
 ## 구도 요약
+
+```{r}
+gt_state_detail("GA")
+```
 
 민주당의 **최우선 방어석**. Ossoff는 2021년 결선에서 1.2%p 차로 당선된 취약 의석이지만, 공화당 후보가 6/16 결선(Collins vs Dooley)까지 미정인 동안 보유 현금 $32M+로 광고전을 선점하고 있습니다. 2024년 트럼프가 GA를 다시 가져간 만큼 기초 지형은 민주당에 불리 — 결선 이후 공화당의 통합 속도가 1차 변수입니다.
 
@@ -22,17 +29,17 @@ gt_state_detail("GA")
 - **한국 투자의 거점**: 조지아는 한국 기업 대미 투자의 최대 목적지 중 하나로, 150개 이상의 한국 기업이 제조 시설을 운영합니다. **현대차 메타플랜트**(브라이언 카운티, 76억 달러 EV 공장), **현대–SK On 배터리 합작공장**(바토우 카운티, 50억 달러), **한화 큐셀** 태양광(달턴·카터스빌, 25억 달러), 기아 웨스트포인트 공장이 대표적입니다.
 - **2025년 9월 ICE 단속**: 2025-09-04 사바나 인근 현대-LG 배터리 건설현장에서 ICE가 약 475명을 구금, 그중 한국 국적자 300명 이상이 포함된 단일 사업장 사상 최대 이민단속이 발생했습니다. 9/12 300여 명이 전세기로 귀국했고, 이 사건은 조지아 레이스의 **한국 통상·이민 정책 시금석**이 됐습니다. ([Wikipedia](https://en.wikipedia.org/wiki/2025_Georgia_Hyundai_plant_immigration_raid) · [NPR](https://www.npr.org/2025/09/12/nx-s1-5535657/a-look-at-the-political-fallout-from-the-immigration-raid-at-a-georgia-hyundai-plant))
 
-## 후보자 프로필
-
-```{r}
-#| output: asis
-cat(candidate_cards_html("GA"))
-```
-
-## 경선 과정
-
-5/19 1차 경선에서 과반 득표자가 없어(Collins ≈40.5%, Dooley ≈30.2%, Carter ≈25.1%) Carter가 3위로 탈락하고 **Collins vs Dooley 결선이 6/16**로 확정됐습니다. 사실상 **트럼프계(Collins) vs Kemp계(Dooley) 대리전**으로, 트럼프는 1·2차 모두 중립을 유지했고 Kemp는 Dooley를 전폭 지지합니다. 공화당이 결선까지 자원을 소모하는 동안 무경선의 Ossoff는 본선 준비에 집중하고 있습니다. ([The Hill](https://thehill.com/homenews/campaign/5886066-georgia-senate-gop-runoff-collins-dooley/))
-
 ## 한국 함의
 
 2025년 9월 ICE 단속을 두고 **Ossoff(미·한 정부 협력으로 공장 완공 강조)** 와 **Collins('단속 지지')** 의 대조가 한국 독자에게 가장 선명한 후크입니다. 의석 향배보다 양당 후보의 **대(對)한국 통상·이민 입장**이 반도체·배터리 투자 환경에 직접 닿아 있습니다.
+
+## 공화당 경선 후보 (6/16 결선)
+
+```{r}
+#| output: asis
+cat(primary_cards_html("GA"))
+```
+
+## 경선 구도 요약
+
+5/19 1차 경선에서 과반 득표자가 없어(Collins ≈40.5%, Dooley ≈30.2%, Carter ≈25.1%) Carter가 3위로 탈락하고 **Collins vs Dooley 결선이 6/16**로 확정됐습니다. 사실상 **트럼프계(Collins) vs Kemp계(Dooley) 대리전**으로, 트럼프는 1·2차 모두 중립을 유지했고 Kemp는 Dooley를 전폭 지지합니다. 공화당이 결선까지 자원을 소모하는 동안 무경선의 Ossoff는 본선 준비에 집중하고 있습니다. ([The Hill](https://thehill.com/homenews/campaign/5886066-georgia-senate-gop-runoff-collins-dooley/))

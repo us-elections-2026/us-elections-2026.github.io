@@ -1,0 +1,100 @@
+---
+title: "7주차 · 05/04~05/10"
+date: 2026-05-04
+description: "오하이오 본선 대진 확정(5/5 경선). Sherrod Brown이 민주당 후보로 확정(Husted는 무경쟁) — 양자 대결 성립. 여론조사상 사실상 동률(에머슨"
+categories: [주간브리핑]
+---
+
+> 일간 브리핑 2건 종합 (5/4·5/8). 뉴스 기준: 미 동부시간 5월 8일까지. 모든 마진은 **양수 = 민주 우위**(D+/R−). 여론조사 평균·추세를 단일 조사보다 우선하며, 모델·등급·예측시장은 성격이 달라 직접 비교하지 않는다.
+
+## 이번 주 핵심 (TL;DR)
+
+- **오하이오 본선 대진 확정(5/5 경선).** Sherrod Brown이 민주당 후보로 확정(Husted는 무경쟁) — 양자 대결 성립. 여론조사상 사실상 동률(에머슨 초기 Husted +6 → DDHQ 집계 4월 기준 동률, BGSU Husted 50 vs Brown 47)로 **상원 다수당 향방의 핵심 격전지**로 부상. 공화 Senate Leadership Fund 7,900만 달러 투입 예고.
+- **메인 단일화 굳어짐.** Janet Mills 주지사가 4월 30일 경선 사퇴, Graham Platner가 Susan Collins(6선 도전)와 1대1 대결로 전환. 에머슨 본선 가상대결 **Platner 48 vs Collins 41(+7)**, 경선에서 33%p 차 압도적 선두. Schumer·Sanders 등 지도부 지원.
+- **텍사스 공화 결선(5/26)이 단기 최대 변수.** UH 조사(5/5) **Paxton 48 vs Cornyn 45**로 Paxton 소폭 우세. 트럼프 미개입 속 고비용 공방. 민주 Talarico는 두 후보 모두에 우세(Cornyn +3~7, Paxton +5~8)이나 텍사스 구조적 한계 고려 필요.
+- **알래스카 민주 우위 지속.** Alaska Survey Research(4/16~19) **Peltola 50 vs Sullivan 43**, 2025년 10월 이후 6연속 Peltola 우세. 1분기 모금 약 900만 달러로 Sullivan의 4배.
+- **거시 환경은 민주당 우호.** 트럼프 지지율 약 34~39% 수준 하락세(2기 최저권), Silver Bulletin 순지지 약 −18.4. 공화·공화성향 무당파 내 지지율 73%→68%로 동반 하락 — 경합주 공화 후보에 부담.
+
+## 트럼프 지지율 추이
+
+| 시점 | 기관 | 지지율 | 순지지 |
+|---|---|---|---|
+| 4/20~26 | 퓨리서치 | **34%** (2기 최저) | — |
+| 5/1 | FiftyThirtyOne 집계 | 36.7% | −22.7 |
+| 5/3 | WaPo/ABC/Ipsos | 37% | — |
+| 5월 초 | CNN/SSRS | 35% | **−29** |
+| 5월 초 | RCP 평균 | 38.9% | — |
+| 최근 | Silver Bulletin 평균 | — | **−18.4** |
+
+- 이란 전쟁 비인기·식품/유가 상승이 하락 견인. "약속을 지킨다" 평가는 취임 초 51% → 38%로 급락.
+- 기관 편차 큼(라스무센 43% vs CNN 35%). 단일 조사보다 집계 평균(RCP 38.9%, Silver Bulletin 순지지 −18.4) 기준이 안전. 순지지 −18~−29 범위.
+
+## 일반투표 의향 (Generic Ballot)
+
+_해당 주 신규 수치 없음_ — 일간 브리핑에 별도 일반투표 의향 수치는 등장하지 않음. 전반적으로 민주당 자금 우위·환경 우호가 반복 확인됨.
+
+## 경합주 동향
+
+### 조지아 (Georgia) — 민주 방어
+- **구도**: Ossoff(D·현직) vs 공화당 경선(**5/19 1차 → 6/16 결선 예상**). Buddy Carter·Mike Collins·Derek Dooley·Jonathan McCollum 등 다자 혼전.
+- 에머슨 본선 가상대결 **Ossoff 47 vs Carter 44**, **Ossoff 48 vs M. Collins 43**로 소폭 우세. Ossoff 보유 현금 약 3,170만 달러(소액 기부 중심) vs 공화 후보 대액 의존. 트럼프 지지 보류가 경선 혼전의 핵심. Cook·Sabato 모두 "Leans Democratic" 평가([AGC](https://advocacy.agc.org/georgia-senate-race-locked-in-a-dead-heat/), [WSAV](https://www.wsav.com/news/your-local-election-hq/new-poll-shows-ossoff-leading-gop-primary-breaks-to-collins/)).
+
+### 미시간 (Michigan) — 민주 방어(공개석)
+- **구도**: 민주당 **8/4 경선**(McMorrow vs Stevens vs El-Sayed 3파전) vs Mike Rogers(R).
+- 경선 사실상 박빙: 에머슨 McMorrow 22 / Stevens 17 / El-Sayed 16, Data for Progress는 Stevens 23 / El-Sayed 22 / McMorrow 22로 순서가 엇갈림([Newsweek](https://www.newsweek.com/michigan-senate-race-abdul-el-sayed-polls-mike-rogers-11910192)). McMorrow의 과거 SNS(중서부 농촌 비하·삭제 게시물) 논란이 변수([CNN](https://www.cnn.com/2026/05/03/politics/mallory-mcmorrow-tweets-senate-democratic-michigan-primary)). Rogers는 현금 약 420만 달러로 자금 우위, 경선 무난 통과 전망. "Toss-up" 분류로 타주 기부 유입([Bridge Michigan](https://bridgemi.com/michigan-government/michigans-toss-up-us-senate-race-draws-donors-from-other-states/)).
+
+### 메인 (Maine) — 공화 방어
+- **구도**: Graham Platner(D, 사실상 단독) vs Susan Collins(R·현역, 6선 도전).
+- **이번 주 흐름의 출발점.** Mills 주지사가 4월 30일 "재정 자원 부족"을 이유로 사퇴, Platner의 33%p 차 리드가 Mills를 밀어낸 구도([NBC](https://www.nbcnews.com/politics/2026-election/maine-gov-janet-mills-suspends-senate-campaign-rcna342859), [CNN](https://www.cnn.com/2026/04/30/politics/janet-mills-maine-senate)). Sanders 지지 등 진보 결집이 부상 배경. 본선 가상대결 **Platner 48 vs Collins 41(+7)**(에머슨, 3월)([Press Herald](https://www.pressherald.com/2026/04/30/an-early-look-at-susan-collins-versus-graham-platner-by-the-numbers/)). 현재 민주당 최대 기회 지역 중 하나.
+
+### 노스캐롤라이나 (North Carolina) — 공화 방어(공개석)
+- **구도**: Roy Cooper(D·전 주지사) vs Michael Whatley(R·전 RNC 의장) — 본선 확정(3/3 경선, Cooper 92%, Whatley 64.6%, 트럼프 지지)([WUNC](https://www.wunc.org/term/news/2026-03-03/roy-cooper-michael-whatley-north-carolina-senate)).
+- 신규 조사 **Cooper 50 vs Whatley 41(+9)**(RightCount 의뢰), 집계 평균 **Cooper 49.0 vs Whatley 42.2(+6.8)**로 주 초(에머슨 +6) 대비 소폭 확대([Carolina Journal](https://www.carolinajournal.com/cooper-holds-9-point-edge-over-whatley-in-latest-us-senate-poll/)). Cooper 모금 2,110만 vs Whatley 630만 달러. Whatley의 낮은 인지도(과반이 모름)가 약점([Breaking Battlegrounds](https://breakingbattlegrounds.vote/north-carolina-senate-race-2026/)).
+
+### 텍사스 (Texas) — 공화 방어
+- **구도**: James Talarico(D·확정) vs 공화당 **5/26 결선**(Paxton vs Cornyn).
+- UH 조사(5/5) **Paxton 48 vs Cornyn 45**로 Paxton 결선 직전 소폭 우세([Texas Tribune](https://www.texastribune.org/2026/05/05/texas-us-senate-gop-runoff-cornyn-paxton-university-of-houston-poll-attorney-general/)). 트럼프 미개입 속 고비용 공방, "혼란"으로 묘사([CNN](https://www.cnn.com/2026/04/30/politics/texas-senate-runoff-john-cornyn-ken-paxton-donald-trump)). Talarico는 본선 가상대결 두 후보 모두에 우세(Cornyn +3~7, Paxton +5~8), 1분기 2,700만 달러 모금([Texas Tribune](https://www.texastribune.org/2026/04/28/texas-us-senate-poll-talarico-cornyn-paxton-2026-midterms/)). 단 텍사스 구조적 공화 우위 고려 필요.
+
+### 오하이오 (Ohio) — 공화 방어(특별선거)
+- **구도**: Sherrod Brown(D) vs Jon Husted(R·임명직 현역) — **본선 대진 확정**(5/5 경선, Brown 민주 후보 확정, Husted 무경쟁)([NBC](https://www.nbcnews.com/politics/2026-election/sherrod-brown-wins-ohio-senate-democratic-primary-jon-husted-rcna343049)).
+- 여론조사 **사실상 동률**: 에머슨 초기 Husted +6 → DDHQ 집계 4월 기준 동률, BGSU Husted 50 vs Brown 47(오차범위 내). Brown 1분기 모금 1,250만 vs Husted 약 290만 달러(4배 이상)·현금 1,650만 vs 900만 달러로 자금 압도. 공화 Senate Leadership Fund **7,900만 달러** 투입 예고([CBS](https://www.cbsnews.com/news/ohio-senate-primary-results-jon-husted-sherrod-brown/), [Emerson](https://emersoncollegepolling.com/ohio-2026/)). **상원 다수당 최대 격전지.**
+
+### 알래스카 (Alaska) — 공화 방어
+- **구도**: Mary Peltola(D·전 하원의원) vs Dan Sullivan(R·현역), **8/18 비당파 1차(top-4)** 후 11월 RCV.
+- Alaska Survey Research(4/16~19) **Peltola 50 vs Sullivan 43(+7)**, 2025년 10월 이후 6연속 Peltola 우세([RealClearPolling](https://www.realclearpolling.com/polls/senate/general/2026/alaska/peltola-vs-sullivan)). 1분기 모금 약 900만 달러로 Sullivan의 4배. 단 Murkowski가 이번엔 Sullivan 지지로 선회한 점이 Peltola에 불리. Sullivan 지원 외부 광고 시작([Axios](https://www.axios.com/2026/03/09/alaska-senate-dan-sullivan-peltola-ads)).
+
+## 이번 주 신규 여론조사
+
+| 주 | 조사(기간) | 결과 | 마진 |
+|---|---|---|---|
+| 오하이오 | BGSU(4월) | Husted 50 / Brown 47 | R+3 |
+| 오하이오 | DDHQ 집계(4월) | 사실상 동률 | ~Even |
+| 텍사스(공화 결선) | UH(5/5) | Paxton 48 / Cornyn 45 | (공화 내) |
+| 노스캐롤라이나(본선) | RightCount | Cooper 50 / Whatley 41 | **D+9** |
+| 노스캐롤라이나(본선) | 집계 평균 | Cooper 49.0 / Whatley 42.2 | **D+6.8** |
+| 미시간(민주 경선) | 에머슨 | McMorrow 22 / Stevens 17 / El-Sayed 16 | (경선) |
+| 알래스카(본선) | AK Survey Research(4/16~19) | Peltola 50 / Sullivan 43 | **D+7** |
+| 조지아(본선) | 에머슨 | Ossoff 48 / M. Collins 43 | **D+5** |
+| 메인(본선) | 에머슨(3월) | Platner 48 / Collins 41 | **D+7** |
+| 텍사스(본선) | TPOR(4/17~20) | Talarico 44 / Cornyn 41 | **D+3** |
+| 트럼프 순지지 | Silver Bulletin | — | **−18.4** |
+
+_(메인·텍사스·조지아 본선 수치는 직전 일간에서 이월된 에머슨·TPOR 조사. 5/4·5/8 주에 함께 인용됨.)_
+
+## 다음 주 관전 포인트
+
+1. **조지아 공화 1차 경선(5/19)** — 결선(6/16) 진출 2인 확정. Ossoff 상대가 누구로 좁혀지는지.
+2. **텍사스 공화 결선(5/26)** — Paxton vs Cornyn. Paxton 당선 시 본선에서 Talarico에 더 유리할 수 있다는 전망.
+3. **오하이오 기관 편차 추이** — Husted +6/+3과 DDHQ 동률의 간극, SLF 7,900만 달러 투입 효과.
+4. **트럼프 지지율 저점 여부** — 퓨 34%·CNN 순지지 −29가 더 내려가는지.
+
+## 시나리오 영향 (이전 브리핑 프레임 계승)
+
+- **Base(민주 상원 탈환) 가능성 소폭 상승**: 오하이오 Brown 확정 + 메인 Platner 단일화 + 텍사스 공화 내홍 + 트럼프 지지율 하락(~34~39%) 등 긍정 신호 누적.
+- **Bull(민주 대형 승리) 조건**: 텍사스 Talarico 우위 유지 + 알래스카 Peltola 리드 지속. 단 텍사스 구조적 한계·알래스카 RCV 변수 상존.
+- **Bear(공화 다수 유지) 가능성 가장 낮음**: 공화 SLF의 오하이오 7,900만 달러 투입은 방어 시도의 반영. **Bear의 핵심은 미시간**(8/4 경선까지 미확정)과 오하이오 접전.
+- **리스크**: 트럼프 지지율 기관 편차(34~43%), 오하이오 동률 공방, 알래스카 Murkowski의 Sullivan 지지 선회 → 단일 조사 과신 경계.
+
+---
+
+*출처: 일일 브리핑(5/4·5/8) 종합. 원 기사 링크는 각 항목에 인라인 표기. 트럼프 지지율은 [Silver Bulletin](https://www.natesilver.net/p/trump-approval-ratings-nate-silver-bulletin) 평균 및 RCP 평균 기준.*
