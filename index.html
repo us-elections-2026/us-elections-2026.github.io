@@ -44,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-272da20cee89f9cbdb9d004244f8bacd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6b0ca71d53c981bd7abc9b193139e533.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -426,7 +426,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p><strong>경합주 7곳 등급 분포</strong> <em>(나머지 개선 의석은 안전 의석)</em></p>
+<p><strong>경합주 7곳 등급 분포</strong> <em>(타일=전망 우세, 주명 옆 배지=현 보유 정당)</em></p>
 <div class="rating-tiles">
 <div class="rtile rt-sd">
 <div class="rt-num">
@@ -447,7 +447,15 @@ Solid D
 Lean D
 </div>
 <div class="rt-states">
-<a href="./states/me.html">메인</a><a href="./states/nc.html">노스캐롤라이나</a><a href="./states/ga.html">조지아</a>
+<div class="rt-st">
+<a href="./states/me.html">메인</a><span class="rt-hold rt-hold-r">R</span>
+</div>
+<div class="rt-st">
+<a href="./states/nc.html">노스캐롤라이나</a><span class="rt-hold rt-hold-r">R</span>
+</div>
+<div class="rt-st">
+<a href="./states/ga.html">조지아</a><span class="rt-hold rt-hold-d">D</span>
+</div>
 </div>
 </div>
 <div class="rtile rt-tu">
@@ -458,7 +466,9 @@ Lean D
 Toss-up
 </div>
 <div class="rt-states">
-<a href="./states/mi.html">미시간</a>
+<div class="rt-st">
+<a href="./states/mi.html">미시간</a><span class="rt-hold rt-hold-d">D</span>
+</div>
 </div>
 </div>
 <div class="rtile rt-lr">
@@ -469,7 +479,15 @@ Toss-up
 Lean R
 </div>
 <div class="rt-states">
-<a href="./states/oh.html">오하이오</a><a href="./states/ak.html">알래스카</a><a href="./states/tx.html">텍사스</a>
+<div class="rt-st">
+<a href="./states/oh.html">오하이오</a><span class="rt-hold rt-hold-r">R</span>
+</div>
+<div class="rt-st">
+<a href="./states/ak.html">알래스카</a><span class="rt-hold rt-hold-r">R</span>
+</div>
+<div class="rt-st">
+<a href="./states/tx.html">텍사스</a><span class="rt-hold rt-hold-r">R</span>
+</div>
 </div>
 </div>
 <div class="rtile rt-sr">
@@ -484,6 +502,9 @@ Solid R
 </div>
 </div>
 </div>
+<p class="holder-note">
+<span class="hold-chip hold-d">현 민주 2석</span> 조지아 · 미시간 &nbsp; <span class="hold-chip hold-r">현 공화 5석</span> 메인 · 노스캐롤라이나 · 오하이오 · 알래스카 · 텍사스. 이 중 <b>공화 보유이면서 민주 우세(Lean D)</b>인 <b>메인·노스캐롤라이나</b>가 민주당 탈환 1순위 — 각 타일의 <span class="rt-hold rt-hold-d">D</span>/<span class="rt-hold rt-hold-r">R</span> 배지가 현 보유 정당입니다.
+</p>
 <blockquote class="blockquote">
 <p>위 확률은 시장·집계기관 수치가 아닌 <strong>자체 프레임워크의 모델 추정치</strong>입니다. 아래 “지금 환경” 표(집계기관 평균)와 성격이 다릅니다.</p>
 </blockquote>
@@ -520,24 +541,24 @@ Solid R
 <h2 class="anchored" data-anchor-id="지금-환경-한눈에">지금 환경 (한눈에)</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="lqgpdetxcn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="ckvnpzrgvh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#lqgpdetxcn table {
+#ckvnpzrgvh table {
   font-family: 'IBM Plex Sans KR', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#lqgpdetxcn thead, #lqgpdetxcn tbody, #lqgpdetxcn tfoot, #lqgpdetxcn tr, #lqgpdetxcn td, #lqgpdetxcn th {
+#ckvnpzrgvh thead, #ckvnpzrgvh tbody, #ckvnpzrgvh tfoot, #ckvnpzrgvh tr, #ckvnpzrgvh td, #ckvnpzrgvh th {
   border-style: none;
 }
 
-#lqgpdetxcn p {
+#ckvnpzrgvh p {
   margin: 0;
   padding: 0;
 }
 
-#lqgpdetxcn .gt_table {
+#ckvnpzrgvh .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -563,12 +584,12 @@ Solid R
   border-left-color: #D3D3D3;
 }
 
-#lqgpdetxcn .gt_caption {
+#ckvnpzrgvh .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#lqgpdetxcn .gt_title {
+#ckvnpzrgvh .gt_title {
   color: #333333;
   font-size: 16px;
   font-weight: initial;
@@ -580,7 +601,7 @@ Solid R
   border-bottom-width: 0;
 }
 
-#lqgpdetxcn .gt_subtitle {
+#ckvnpzrgvh .gt_subtitle {
   color: #333333;
   font-size: 12px;
   font-weight: initial;
@@ -592,7 +613,7 @@ Solid R
   border-top-width: 0;
 }
 
-#lqgpdetxcn .gt_heading {
+#ckvnpzrgvh .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -604,13 +625,13 @@ Solid R
   border-right-color: #D3D3D3;
 }
 
-#lqgpdetxcn .gt_bottom_border {
+#ckvnpzrgvh .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#lqgpdetxcn .gt_col_headings {
+#ckvnpzrgvh .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -625,7 +646,7 @@ Solid R
   border-right-color: #D3D3D3;
 }
 
-#lqgpdetxcn .gt_col_heading {
+#ckvnpzrgvh .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -645,7 +666,7 @@ Solid R
   overflow-x: hidden;
 }
 
-#lqgpdetxcn .gt_column_spanner_outer {
+#ckvnpzrgvh .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -657,15 +678,15 @@ Solid R
   padding-right: 4px;
 }
 
-#lqgpdetxcn .gt_column_spanner_outer:first-child {
+#ckvnpzrgvh .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#lqgpdetxcn .gt_column_spanner_outer:last-child {
+#ckvnpzrgvh .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#lqgpdetxcn .gt_column_spanner {
+#ckvnpzrgvh .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -677,11 +698,11 @@ Solid R
   width: 100%;
 }
 
-#lqgpdetxcn .gt_spanner_row {
+#ckvnpzrgvh .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#lqgpdetxcn .gt_group_heading {
+#ckvnpzrgvh .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -707,7 +728,7 @@ Solid R
   text-align: left;
 }
 
-#lqgpdetxcn .gt_empty_group_heading {
+#ckvnpzrgvh .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -722,15 +743,15 @@ Solid R
   vertical-align: middle;
 }
 
-#lqgpdetxcn .gt_from_md > :first-child {
+#ckvnpzrgvh .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#lqgpdetxcn .gt_from_md > :last-child {
+#ckvnpzrgvh .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#lqgpdetxcn .gt_row {
+#ckvnpzrgvh .gt_row {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 5px;
@@ -749,7 +770,7 @@ Solid R
   overflow-x: hidden;
 }
 
-#lqgpdetxcn .gt_stub {
+#ckvnpzrgvh .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -762,7 +783,7 @@ Solid R
   padding-right: 5px;
 }
 
-#lqgpdetxcn .gt_stub_row_group {
+#ckvnpzrgvh .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -776,15 +797,15 @@ Solid R
   vertical-align: top;
 }
 
-#lqgpdetxcn .gt_row_group_first td {
+#ckvnpzrgvh .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#lqgpdetxcn .gt_row_group_first th {
+#ckvnpzrgvh .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#lqgpdetxcn .gt_summary_row {
+#ckvnpzrgvh .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -794,16 +815,16 @@ Solid R
   padding-right: 5px;
 }
 
-#lqgpdetxcn .gt_first_summary_row {
+#ckvnpzrgvh .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#lqgpdetxcn .gt_first_summary_row.thick {
+#ckvnpzrgvh .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#lqgpdetxcn .gt_last_summary_row {
+#ckvnpzrgvh .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -813,7 +834,7 @@ Solid R
   border-bottom-color: #D3D3D3;
 }
 
-#lqgpdetxcn .gt_grand_summary_row {
+#ckvnpzrgvh .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -823,7 +844,7 @@ Solid R
   padding-right: 5px;
 }
 
-#lqgpdetxcn .gt_first_grand_summary_row {
+#ckvnpzrgvh .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -833,7 +854,7 @@ Solid R
   border-top-color: #D3D3D3;
 }
 
-#lqgpdetxcn .gt_last_grand_summary_row_top {
+#ckvnpzrgvh .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -843,11 +864,11 @@ Solid R
   border-bottom-color: #D3D3D3;
 }
 
-#lqgpdetxcn .gt_striped {
+#ckvnpzrgvh .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#lqgpdetxcn .gt_table_body {
+#ckvnpzrgvh .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -856,7 +877,7 @@ Solid R
   border-bottom-color: #D3D3D3;
 }
 
-#lqgpdetxcn .gt_footnotes {
+#ckvnpzrgvh .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -870,7 +891,7 @@ Solid R
   border-right-color: #D3D3D3;
 }
 
-#lqgpdetxcn .gt_footnote {
+#ckvnpzrgvh .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -879,7 +900,7 @@ Solid R
   padding-right: 5px;
 }
 
-#lqgpdetxcn .gt_sourcenotes {
+#ckvnpzrgvh .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -893,7 +914,7 @@ Solid R
   border-right-color: #D3D3D3;
 }
 
-#lqgpdetxcn .gt_sourcenote {
+#ckvnpzrgvh .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -901,72 +922,72 @@ Solid R
   padding-right: 5px;
 }
 
-#lqgpdetxcn .gt_left {
+#ckvnpzrgvh .gt_left {
   text-align: left;
 }
 
-#lqgpdetxcn .gt_center {
+#ckvnpzrgvh .gt_center {
   text-align: center;
 }
 
-#lqgpdetxcn .gt_right {
+#ckvnpzrgvh .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#lqgpdetxcn .gt_font_normal {
+#ckvnpzrgvh .gt_font_normal {
   font-weight: normal;
 }
 
-#lqgpdetxcn .gt_font_bold {
+#ckvnpzrgvh .gt_font_bold {
   font-weight: bold;
 }
 
-#lqgpdetxcn .gt_font_italic {
+#ckvnpzrgvh .gt_font_italic {
   font-style: italic;
 }
 
-#lqgpdetxcn .gt_super {
+#ckvnpzrgvh .gt_super {
   font-size: 65%;
 }
 
-#lqgpdetxcn .gt_footnote_marks {
+#ckvnpzrgvh .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#lqgpdetxcn .gt_asterisk {
+#ckvnpzrgvh .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#lqgpdetxcn .gt_indent_1 {
+#ckvnpzrgvh .gt_indent_1 {
   text-indent: 5px;
 }
 
-#lqgpdetxcn .gt_indent_2 {
+#ckvnpzrgvh .gt_indent_2 {
   text-indent: 10px;
 }
 
-#lqgpdetxcn .gt_indent_3 {
+#ckvnpzrgvh .gt_indent_3 {
   text-indent: 15px;
 }
 
-#lqgpdetxcn .gt_indent_4 {
+#ckvnpzrgvh .gt_indent_4 {
   text-indent: 20px;
 }
 
-#lqgpdetxcn .gt_indent_5 {
+#ckvnpzrgvh .gt_indent_5 {
   text-indent: 25px;
 }
 
-#lqgpdetxcn .katex-display {
+#ckvnpzrgvh .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#lqgpdetxcn div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#ckvnpzrgvh div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1029,24 +1050,24 @@ Solid R
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div id="jclldrjexc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="bkaolvxptf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#jclldrjexc table {
+#bkaolvxptf table {
   font-family: 'IBM Plex Sans KR', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#jclldrjexc thead, #jclldrjexc tbody, #jclldrjexc tfoot, #jclldrjexc tr, #jclldrjexc td, #jclldrjexc th {
+#bkaolvxptf thead, #bkaolvxptf tbody, #bkaolvxptf tfoot, #bkaolvxptf tr, #bkaolvxptf td, #bkaolvxptf th {
   border-style: none;
 }
 
-#jclldrjexc p {
+#bkaolvxptf p {
   margin: 0;
   padding: 0;
 }
 
-#jclldrjexc .gt_table {
+#bkaolvxptf .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1072,12 +1093,12 @@ Solid R
   border-left-color: #D3D3D3;
 }
 
-#jclldrjexc .gt_caption {
+#bkaolvxptf .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#jclldrjexc .gt_title {
+#bkaolvxptf .gt_title {
   color: #333333;
   font-size: 16px;
   font-weight: initial;
@@ -1089,7 +1110,7 @@ Solid R
   border-bottom-width: 0;
 }
 
-#jclldrjexc .gt_subtitle {
+#bkaolvxptf .gt_subtitle {
   color: #333333;
   font-size: 12px;
   font-weight: initial;
@@ -1101,7 +1122,7 @@ Solid R
   border-top-width: 0;
 }
 
-#jclldrjexc .gt_heading {
+#bkaolvxptf .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1113,13 +1134,13 @@ Solid R
   border-right-color: #D3D3D3;
 }
 
-#jclldrjexc .gt_bottom_border {
+#bkaolvxptf .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#jclldrjexc .gt_col_headings {
+#bkaolvxptf .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1134,7 +1155,7 @@ Solid R
   border-right-color: #D3D3D3;
 }
 
-#jclldrjexc .gt_col_heading {
+#bkaolvxptf .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1154,7 +1175,7 @@ Solid R
   overflow-x: hidden;
 }
 
-#jclldrjexc .gt_column_spanner_outer {
+#bkaolvxptf .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1166,15 +1187,15 @@ Solid R
   padding-right: 4px;
 }
 
-#jclldrjexc .gt_column_spanner_outer:first-child {
+#bkaolvxptf .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#jclldrjexc .gt_column_spanner_outer:last-child {
+#bkaolvxptf .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#jclldrjexc .gt_column_spanner {
+#bkaolvxptf .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1186,11 +1207,11 @@ Solid R
   width: 100%;
 }
 
-#jclldrjexc .gt_spanner_row {
+#bkaolvxptf .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#jclldrjexc .gt_group_heading {
+#bkaolvxptf .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1216,7 +1237,7 @@ Solid R
   text-align: left;
 }
 
-#jclldrjexc .gt_empty_group_heading {
+#bkaolvxptf .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1231,15 +1252,15 @@ Solid R
   vertical-align: middle;
 }
 
-#jclldrjexc .gt_from_md > :first-child {
+#bkaolvxptf .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#jclldrjexc .gt_from_md > :last-child {
+#bkaolvxptf .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#jclldrjexc .gt_row {
+#bkaolvxptf .gt_row {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 5px;
@@ -1258,7 +1279,7 @@ Solid R
   overflow-x: hidden;
 }
 
-#jclldrjexc .gt_stub {
+#bkaolvxptf .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1271,7 +1292,7 @@ Solid R
   padding-right: 5px;
 }
 
-#jclldrjexc .gt_stub_row_group {
+#bkaolvxptf .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1285,15 +1306,15 @@ Solid R
   vertical-align: top;
 }
 
-#jclldrjexc .gt_row_group_first td {
+#bkaolvxptf .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#jclldrjexc .gt_row_group_first th {
+#bkaolvxptf .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#jclldrjexc .gt_summary_row {
+#bkaolvxptf .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1303,16 +1324,16 @@ Solid R
   padding-right: 5px;
 }
 
-#jclldrjexc .gt_first_summary_row {
+#bkaolvxptf .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#jclldrjexc .gt_first_summary_row.thick {
+#bkaolvxptf .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#jclldrjexc .gt_last_summary_row {
+#bkaolvxptf .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1322,7 +1343,7 @@ Solid R
   border-bottom-color: #D3D3D3;
 }
 
-#jclldrjexc .gt_grand_summary_row {
+#bkaolvxptf .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1332,7 +1353,7 @@ Solid R
   padding-right: 5px;
 }
 
-#jclldrjexc .gt_first_grand_summary_row {
+#bkaolvxptf .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1342,7 +1363,7 @@ Solid R
   border-top-color: #D3D3D3;
 }
 
-#jclldrjexc .gt_last_grand_summary_row_top {
+#bkaolvxptf .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1352,11 +1373,11 @@ Solid R
   border-bottom-color: #D3D3D3;
 }
 
-#jclldrjexc .gt_striped {
+#bkaolvxptf .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#jclldrjexc .gt_table_body {
+#bkaolvxptf .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1365,7 +1386,7 @@ Solid R
   border-bottom-color: #D3D3D3;
 }
 
-#jclldrjexc .gt_footnotes {
+#bkaolvxptf .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1379,7 +1400,7 @@ Solid R
   border-right-color: #D3D3D3;
 }
 
-#jclldrjexc .gt_footnote {
+#bkaolvxptf .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1388,7 +1409,7 @@ Solid R
   padding-right: 5px;
 }
 
-#jclldrjexc .gt_sourcenotes {
+#bkaolvxptf .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1402,7 +1423,7 @@ Solid R
   border-right-color: #D3D3D3;
 }
 
-#jclldrjexc .gt_sourcenote {
+#bkaolvxptf .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1410,72 +1431,72 @@ Solid R
   padding-right: 5px;
 }
 
-#jclldrjexc .gt_left {
+#bkaolvxptf .gt_left {
   text-align: left;
 }
 
-#jclldrjexc .gt_center {
+#bkaolvxptf .gt_center {
   text-align: center;
 }
 
-#jclldrjexc .gt_right {
+#bkaolvxptf .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#jclldrjexc .gt_font_normal {
+#bkaolvxptf .gt_font_normal {
   font-weight: normal;
 }
 
-#jclldrjexc .gt_font_bold {
+#bkaolvxptf .gt_font_bold {
   font-weight: bold;
 }
 
-#jclldrjexc .gt_font_italic {
+#bkaolvxptf .gt_font_italic {
   font-style: italic;
 }
 
-#jclldrjexc .gt_super {
+#bkaolvxptf .gt_super {
   font-size: 65%;
 }
 
-#jclldrjexc .gt_footnote_marks {
+#bkaolvxptf .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#jclldrjexc .gt_asterisk {
+#bkaolvxptf .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#jclldrjexc .gt_indent_1 {
+#bkaolvxptf .gt_indent_1 {
   text-indent: 5px;
 }
 
-#jclldrjexc .gt_indent_2 {
+#bkaolvxptf .gt_indent_2 {
   text-indent: 10px;
 }
 
-#jclldrjexc .gt_indent_3 {
+#bkaolvxptf .gt_indent_3 {
   text-indent: 15px;
 }
 
-#jclldrjexc .gt_indent_4 {
+#bkaolvxptf .gt_indent_4 {
   text-indent: 20px;
 }
 
-#jclldrjexc .gt_indent_5 {
+#bkaolvxptf .gt_indent_5 {
   text-indent: 25px;
 }
 
-#jclldrjexc .katex-display {
+#bkaolvxptf .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#jclldrjexc div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#bkaolvxptf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1536,7 +1557,7 @@ Solid R
 <h2 class="anchored" data-anchor-id="발행-호">발행 호</h2>
 <div id="listing-issues" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1780876800000" data-listing-file-modified-sort="1781091708993" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="894">
+<div class="quarto-post image-right" data-index="0" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1780876800000" data-listing-file-modified-sort="1781099857929" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="894">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./issues/2026-06-08.html" class="no-external">12주차 · 06/08~06/14</a>
@@ -1553,7 +1574,7 @@ Solid R
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1780272000000" data-listing-file-modified-sort="1781091708993" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1193">
+<div class="quarto-post image-right" data-index="1" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1780272000000" data-listing-file-modified-sort="1781099857928" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1193">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./issues/2026-06-01.html" class="no-external">11주차 · 06/01~06/07</a>
@@ -1570,7 +1591,7 @@ Solid R
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1779667200000" data-listing-file-modified-sort="1781091708993" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1163">
+<div class="quarto-post image-right" data-index="2" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1779667200000" data-listing-file-modified-sort="1781099857928" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1163">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./issues/2026-05-25.html" class="no-external">10주차 · 05/25~05/31</a>
@@ -1587,7 +1608,7 @@ Solid R
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1779062400000" data-listing-file-modified-sort="1781091708993" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1097">
+<div class="quarto-post image-right" data-index="3" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1779062400000" data-listing-file-modified-sort="1781099857928" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1097">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./issues/2026-05-18.html" class="no-external">9주차 · 05/18~05/24</a>
@@ -1604,7 +1625,7 @@ Solid R
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1778457600000" data-listing-file-modified-sort="1781091708993" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1298">
+<div class="quarto-post image-right" data-index="4" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1778457600000" data-listing-file-modified-sort="1781099857928" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1298">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./issues/2026-05-11.html" class="no-external">8주차 · 05/11~05/17</a>
@@ -1621,7 +1642,7 @@ Solid R
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1777852800000" data-listing-file-modified-sort="1781091708993" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1090">
+<div class="quarto-post image-right" data-index="5" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1777852800000" data-listing-file-modified-sort="1781099857928" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1090">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./issues/2026-05-04.html" class="no-external">7주차 · 05/04~05/10</a>
@@ -1638,7 +1659,7 @@ Solid R
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1777248000000" data-listing-file-modified-sort="1781091708992" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1250">
+<div class="quarto-post image-right" data-index="6" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1777248000000" data-listing-file-modified-sort="1781099857928" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1250">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./issues/2026-04-27.html" class="no-external">6주차 · 04/27~05/03</a>
@@ -1655,7 +1676,7 @@ Solid R
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1776643200000" data-listing-file-modified-sort="1781091708992" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1242">
+<div class="quarto-post image-right" data-index="7" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1776643200000" data-listing-file-modified-sort="1781099857928" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1242">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./issues/2026-04-20.html" class="no-external">5주차 · 04/20~04/26</a>
@@ -1672,7 +1693,7 @@ Solid R
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1776038400000" data-listing-file-modified-sort="1781091708992" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1203">
+<div class="quarto-post image-right" data-index="8" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1776038400000" data-listing-file-modified-sort="1781099857928" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1203">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./issues/2026-04-13.html" class="no-external">4주차 · 04/13~04/19</a>
@@ -1689,7 +1710,7 @@ Solid R
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1775433600000" data-listing-file-modified-sort="1781091708992" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1175">
+<div class="quarto-post image-right" data-index="9" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1775433600000" data-listing-file-modified-sort="1781099857928" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1175">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./issues/2026-04-06.html" class="no-external">3주차 · 04/06~04/12</a>
@@ -1706,7 +1727,7 @@ Solid R
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1774828800000" data-listing-file-modified-sort="1781091708992" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1111">
+<div class="quarto-post image-right" data-index="10" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1774828800000" data-listing-file-modified-sort="1781099857928" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1111">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./issues/2026-03-30.html" class="no-external">2주차 · 03/30~04/05</a>
@@ -1723,7 +1744,7 @@ Solid R
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1774224000000" data-listing-file-modified-sort="1781091708992" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1010">
+<div class="quarto-post image-right" data-index="11" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1774224000000" data-listing-file-modified-sort="1781099857927" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1010">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./issues/2026-03-23.html" class="no-external">1주차 · 03/23~03/29</a>
