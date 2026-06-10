@@ -222,7 +222,7 @@ gt_state_detail <- function(code) {
     '<div class="cand-fact"><b>학력</b> ', .c_val(r$education), '</div>',
     '<div class="cand-fact"><b>경력</b> ', .c_inline(r$past_elections[[1]]), '</div>',
     '<div class="cand-fact"><b>펀드레이징</b> ', .c_val(r$fundraising), '</div>',
-    '<div class="cand-fact"><b class="t-str">강점</b>', .c_ul(r$strengths[[1]]), '</div>',
+    '<div class="cand-fact cand-divide"><b class="t-str">강점</b>', .c_ul(r$strengths[[1]]), '</div>',
     '<div class="cand-fact"><b class="t-wk">약점</b>', .c_ul(r$weaknesses[[1]]), '</div>',
     '<div class="cand-fact"><b>정책</b> ', .c_inline(r$policy[[1]]), '</div>',
     '<div class="cand-fact cand-kr"><b>🇰🇷 한국 함의</b> ', kr, '</div>',

@@ -75,8 +75,11 @@ blockquote {
 .cand-fact ul { margin: 3px 0 0; padding-left: 18px; }
 .cand-fact li { line-height: 1.5; }
 .cand-fact.cand-kr { background: #f8f9fa; border-radius: 6px; padding: 7px 10px; font-size: 0.88rem; }
-.t-str { color: #2b8a3e; font-size: 0.86rem; }
-.t-wk { color: #c92a2a; font-size: 0.86rem; }
+/* 가족~펀드레이징 묶음과 강점/약점 사이 구분선 (강점 행 위) */
+.cand-fact.cand-divide { border-top: 1px solid #e6e8eb; padding-top: 10px; margin-top: 3px; }
+/* 강점=초록 / 약점=빨강 라벨 (.cand-fact b 보다 우선) */
+.cand-fact b.t-str, .t-str { color: #2b8a3e; font-size: 0.86rem; }
+.cand-fact b.t-wk, .t-wk { color: #c92a2a; font-size: 0.86rem; }
 .cand-credit { grid-column: 1 / -1; font-size: 0.72rem; color: #adb5bd; align-self: end; margin-top: 2px; }
 .cand-credit .cand-src a { color: #adb5bd; text-decoration: none; }
 .cand-credit .cand-src a:hover { text-decoration: underline; }
