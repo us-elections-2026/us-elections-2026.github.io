@@ -4,6 +4,7 @@ project:
   output-dir: _site
   resources:
     - data/model_dashboard.json
+    - data/trends.json
     - assets/candidates
 
 lang: ko

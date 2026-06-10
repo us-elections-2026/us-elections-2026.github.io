@@ -341,6 +341,22 @@ gt_model_scenarios <- function() {
     .tbl_opts()
 }
 
+# 경합주 등급 분포 (Solid D / Lean D / Toss-up / Lean R / Solid R) 카운트
+model_rating_counts <- function() {
+  d <- .load_json("model_dashboard")
+  bucket <- function(x) {
+    if (grepl("Solid D|Safe D|Likely D", x, ignore.case = TRUE)) "Solid D"
+    else if (grepl("Lean", x, ignore.case = TRUE) && grepl("D", x)) "Lean D"
+    else if (grepl("Toss", x, ignore.case = TRUE)) "Toss-up"
+    else if (grepl("Lean", x, ignore.case = TRUE) && grepl("R", x)) "Lean R"
+    else if (grepl("Solid R|Safe R|Likely R", x, ignore.case = TRUE)) "Solid R"
+    else "기타"
+  }
+  b <- vapply(d$states$rating, bucket, character(1))
+  cats <- c("Solid D", "Lean D", "Toss-up", "Lean R", "Solid R")
+  setNames(vapply(cats, function(k) sum(b == k), integer(1)), cats)
+}
+
 # 홈 요약용 KPI 값 (리스트 반환)
 model_kpi <- function() {
   d <- .load_json("model_dashboard")

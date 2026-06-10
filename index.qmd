@@ -8,6 +8,9 @@ listing:
   sort: "date desc"
   fields: [date, title, description]
   date-format: "YYYY.MM.DD"
+include-in-header:
+  - text: |
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1"></script>
 ---
 
 ```{r}
@@ -22,20 +25,49 @@ source(file.path("R", "helpers.R"))
 ```{r}
 #| output: asis
 k <- model_kpi()
+rc <- model_rating_counts()
 cat(sprintf(
 "::: {.callout-note appearance=\"minimal\"}
-**자체 분석 모델** (기준 %s · 사실 %s) — 현재 의석 **%s**, 민주 다수당까지 순 **+%d석**.
+**자체 분석 모델** (기준 %s · 사실 %s) — 현재 의석 **%s**, 민주 다수당까지 순 **+%d석**. 이번 가을 개선 의석 **35석**(정규 33 + 특별선거).
 
 - 경합주 7곳 중 민주 우세 **%d곳** · 평균 D 승리확률 **%s%%**
 - 다수당 탈환 확률 **%s%%** · 순 기대의석 **+%s석** · Base Case **%s**
+- **경합주 등급 분포**: Solid D %d · Lean D %d · Toss-up %d · Lean R %d · Solid R %d _(나머지 개선 의석은 안전 의석)_
 
 👉 [**전망 대시보드 전체 보기**](dashboard.qmd) — 주별 확률·시나리오·경선 일정
 :::\n",
 k$as_of, k$facts, k$balance, k$needed,
-k$dem_wins, k$avg, k$majority, k$net, k$base_seats))
+k$dem_wins, k$avg, k$majority, k$net, k$base_seats,
+rc[["Solid D"]], rc[["Lean D"]], rc[["Toss-up"]], rc[["Lean R"]], rc[["Solid R"]]))
 ```
 
 > 위 확률은 시장·집계기관 수치가 아닌 **자체 프레임워크의 모델 추정치**입니다. 아래 "지금 환경" 표(집계기관 평균)와 성격이 다릅니다.
+
+## 추이 — 트럼프 지지율·일반투표 {#trends}
+
+주간 브리핑(3월 말~현재) 누적 추세입니다. **양수=민주 우위** 기준 — 트럼프 순지지도가 낮을수록, 일반투표 D 마진이 높을수록 민주당에 우호적입니다.
+
+::: {#trends-root}
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+**트럼프 순지지도** (Silver Bulletin 평균)
+<div style="height:240px"><canvas id="trumpChart"></canvas></div>
+:::
+
+::: {.g-col-12 .g-col-md-6}
+**일반투표 — 민주 마진** (D+)
+<div style="height:240px"><canvas id="genericChart"></canvas></div>
+:::
+
+:::
+
+<p id="trends-note" class="text-muted" style="font-size:.78rem; margin-top:.5rem;"></p>
+
+:::
+
+<script src="assets/trends.js"></script>
 
 ## 지금 환경 (한눈에)
 
