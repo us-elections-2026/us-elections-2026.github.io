@@ -206,33 +206,28 @@ gt_state_detail <- function(code) {
 .c_credit <- function(r) if (!is.na(r$photo_credit) && nzchar(r$photo_credit)) paste0("사진: ", r$photo_credit) else "사진 미확보"
 .c_age <- function(r) if (!is.na(r$born)) paste0(r$born, "년생(", 2026 - r$born, "세) · ") else ""
 
-# 정식(전체) 카드
+# 정식(전체) 카드 — 행 단위 평탄 구조(두 카드 간 subgrid 정렬용).
+# 정렬을 위해 비어 있어도 모든 행(가족/학력/경력/펀드레이징…)을 항상 출력한다.
+.c_val <- function(x) if (length(x) == 0 || is.na(x) || !nzchar(x)) "—" else x
 .full_card <- function(r) {
   kr <- if (!is.na(r$kr_note) && nzchar(r$kr_note)) r$kr_note else
     "<span class='muted'>한국 관련 직접 입장은 공개 출처에서 확인되지 않음</span>"
   paste0(
     '<div class="cand-card cand-', r$party, '">',
     '<img class="cand-photo" src="/', r$photo, '" alt="', r$name, '" loading="lazy">',
-    '<div class="cand-intro">',
-      '<div class="cand-head"><span class="cand-name">', r$name_kr, ' <em>', r$name, '</em></span>',
-        '<span class="cand-badge b-', r$party, '">', .c_badge(r), '</span></div>',
-      '<p class="cand-sub">', .c_age(r), r$occupation, '</p>',
-    '</div>',
-    '<div class="cand-detail">',
-      '<ul class="cand-facts">',
-        if (!is.na(r$family)) paste0('<li><b>가족</b> ', r$family, '</li>') else "",
-        if (!is.na(r$education)) paste0('<li><b>학력</b> ', r$education, '</li>') else "",
-        paste0('<li><b>경력</b> ', .c_inline(r$past_elections[[1]]), '</li>'),
-        if (!is.na(r$fundraising)) paste0('<li><b>펀드레이징</b> ', r$fundraising, '</li>') else "",
-      '</ul>',
-      '<div class="cand-cols">',
-        '<div class="cand-col"><b class="t-str">강점</b>', .c_ul(r$strengths[[1]]), '</div>',
-        '<div class="cand-col"><b class="t-wk">약점</b>', .c_ul(r$weaknesses[[1]]), '</div>',
-      '</div>',
-      '<p class="cand-line"><b>정책</b> ', .c_inline(r$policy[[1]]), '</p>',
-      '<p class="cand-kr"><b>🇰🇷 한국 함의</b> ', kr, '</p>',
-      '<p class="cand-credit">', .c_credit(r), ' &nbsp; ', .c_srcs(r$sources[[1]]), '</p>',
-    '</div></div>'
+    '<div class="cand-intro"><div class="cand-head"><span class="cand-name">', r$name_kr,
+      ' <em>', r$name, '</em></span><span class="cand-badge b-', r$party, '">', .c_badge(r),
+      '</span></div><p class="cand-sub">', .c_age(r), r$occupation, '</p></div>',
+    '<div class="cand-fact"><b>가족</b> ', .c_val(r$family), '</div>',
+    '<div class="cand-fact"><b>학력</b> ', .c_val(r$education), '</div>',
+    '<div class="cand-fact"><b>경력</b> ', .c_inline(r$past_elections[[1]]), '</div>',
+    '<div class="cand-fact"><b>펀드레이징</b> ', .c_val(r$fundraising), '</div>',
+    '<div class="cand-fact"><b class="t-str">강점</b>', .c_ul(r$strengths[[1]]), '</div>',
+    '<div class="cand-fact"><b class="t-wk">약점</b>', .c_ul(r$weaknesses[[1]]), '</div>',
+    '<div class="cand-fact"><b>정책</b> ', .c_inline(r$policy[[1]]), '</div>',
+    '<div class="cand-fact cand-kr"><b>🇰🇷 한국 함의</b> ', kr, '</div>',
+    '<div class="cand-credit">', .c_credit(r), ' &nbsp; ', .c_srcs(r$sources[[1]]), '</div>',
+    '</div>'
   )
 }
 

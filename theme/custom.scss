@@ -38,27 +38,29 @@ blockquote {
   font-size: 0.85rem;
 }
 
-/* 후보자 프로필 카드 (states/*.qmd) — 민주(좌)·공화(우) 2단 나란히 */
+/* 후보자 프로필 카드 — 민주(좌)·공화(우) 2단, 같은 항목을 같은 높이로(subgrid) */
 .cand-wrap {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  gap: 18px; margin: 12px 0 8px; align-items: start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* 행: 사진+소개 / 가족 / 학력 / 경력 / 펀드레이징 / 강점 / 약점 / 정책 / 한국함의 / 출처 */
+  grid-template-rows: repeat(10, auto);
+  gap: 18px; margin: 12px 0 8px;
 }
-/* 사진+한 줄 소개는 위, 학력(가족)부터는 사진 아래까지 전체 폭 */
 .cand-card {
-  display: grid; grid-template-columns: 112px 1fr;
-  grid-template-areas: "photo intro" "detail detail";
-  column-gap: 16px; row-gap: 8px;
+  grid-row: 1 / -1;
+  display: grid; grid-template-rows: subgrid; grid-template-columns: 112px 1fr;
+  column-gap: 16px; row-gap: 7px;
   border: 1px solid #e6e8eb; border-radius: 12px; padding: 16px 18px;
   border-top: 5px solid #adb5bd; background: #fff;
 }
-.cand-D { border-top-color: #1971c2; }
-.cand-R { border-top-color: #c92a2a; }
+.cand-D { grid-column: 1; border-top-color: #1971c2; }
+.cand-R { grid-column: 2; border-top-color: #c92a2a; }
 .cand-photo {
-  grid-area: photo; width: 112px; height: 140px; object-fit: cover; border-radius: 8px;
+  grid-column: 1; grid-row: 1;
+  width: 112px; height: 140px; object-fit: cover; border-radius: 8px;
   background: #f1f3f5; align-self: start;
 }
-.cand-intro { grid-area: intro; align-self: center; min-width: 0; }
-.cand-detail { grid-area: detail; min-width: 0; }
+.cand-intro { grid-column: 2; grid-row: 1; align-self: center; min-width: 0; }
 .cand-body { min-width: 0; }
 .cand-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; }
 .cand-name { font-size: 1.18rem; font-weight: 700; }
@@ -66,24 +68,35 @@ blockquote {
 .cand-badge { font-size: 0.74rem; font-weight: 700; padding: 2px 9px; border-radius: 999px; }
 .b-D { background: #dbeafe; color: #1e40af; }
 .b-R { background: #fee2e2; color: #991b1b; }
-.cand-sub { color: #495057; font-size: 0.9rem; margin: 4px 0 8px; }
-.cand-facts { list-style: none; padding: 0; margin: 0 0 10px; font-size: 0.9rem; }
-.cand-facts li { padding: 2px 0; line-height: 1.55; }
-.cand-facts b, .cand-line b, .cand-kr b { color: #1f3a5f; margin-right: 4px; }
-.cand-cols { display: grid; grid-template-columns: 1fr; gap: 8px; margin-bottom: 8px; }
-.cand-col ul { margin: 4px 0 0; padding-left: 18px; font-size: 0.86rem; }
-.cand-col li { line-height: 1.5; }
+.cand-sub { color: #495057; font-size: 0.9rem; margin: 4px 0 0; }
+/* 항목 행 — 카드 전체 폭, 두 카드 같은 행에 정렬 */
+.cand-fact { grid-column: 1 / -1; min-width: 0; font-size: 0.9rem; line-height: 1.55; align-self: start; }
+.cand-fact b { color: #1f3a5f; margin-right: 4px; }
+.cand-fact ul { margin: 3px 0 0; padding-left: 18px; }
+.cand-fact li { line-height: 1.5; }
+.cand-fact.cand-kr { background: #f8f9fa; border-radius: 6px; padding: 7px 10px; font-size: 0.88rem; }
 .t-str { color: #2b8a3e; font-size: 0.86rem; }
 .t-wk { color: #c92a2a; font-size: 0.86rem; }
-.cand-line, .cand-kr { font-size: 0.88rem; margin: 6px 0; }
-.cand-kr { background: #f8f9fa; border-radius: 6px; padding: 7px 10px; }
-.cand-credit { font-size: 0.72rem; color: #adb5bd; margin: 8px 0 0; }
+.cand-credit { grid-column: 1 / -1; font-size: 0.72rem; color: #adb5bd; align-self: end; margin-top: 2px; }
 .cand-credit .cand-src a { color: #adb5bd; text-decoration: none; }
 .cand-credit .cand-src a:hover { text-decoration: underline; }
 .cand-card .muted, .muted { color: #adb5bd; }
+/* 경선 미니카드 공통 */
+.cand-facts { list-style: none; padding: 0; margin: 0 0 8px; font-size: 0.9rem; }
+.cand-facts li { padding: 2px 0; line-height: 1.55; }
+.cand-facts b { color: #1f3a5f; margin-right: 4px; }
+.cand-line { font-size: 0.88rem; margin: 6px 0; }
+.cand-line b { color: #1f3a5f; margin-right: 4px; }
+/* 모바일: 1열로 쌓고 subgrid 해제 */
+@media (max-width: 700px) {
+  .cand-wrap { grid-template-columns: 1fr; grid-template-rows: none; }
+  .cand-card { grid-row: auto; grid-template-rows: none; }
+  .cand-D, .cand-R { grid-column: 1; }
+  .cand-ph { grid-row: auto; }
+}
 
 /* 후보 미정 플레이스홀더 카드 */
-.cand-ph { border-style: dashed; background: #fbfcfd; display: flex; align-items: center; gap: 16px; }
+.cand-ph { grid-row: 1 / -1; border-style: dashed; background: #fbfcfd; display: flex; align-items: center; gap: 16px; }
 .cand-ph-mark { font-size: 44px; opacity: .5; flex: 0 0 auto; }
 .cand-ph .cand-name { font-size: 1.05rem; }
 
