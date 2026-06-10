@@ -38,11 +38,12 @@ k$as_of, k$facts, k$balance, k$needed,
 k$dem_wins, k$avg, k$majority, k$net, k$base_seats))
 ```
 
-**경합주 7곳 등급 분포** _(나머지 개선 의석은 안전 의석)_
+**경합주 7곳 등급 분포** _(타일=전망 우세, 주명 옆 배지=현 보유 정당)_
 
 ```{r}
 #| output: asis
 cat(rating_tiles_html())
+cat(holder_note_html())
 ```
 
 > 위 확률은 시장·집계기관 수치가 아닌 **자체 프레임워크의 모델 추정치**입니다. 아래 "지금 환경" 표(집계기관 평균)와 성격이 다릅니다.

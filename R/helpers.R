@@ -367,13 +367,31 @@ rating_tiles_html <- function() {
   tiles <- vapply(defs, function(x) {
     idx <- which(b == x[1])
     states <- if (length(idx) == 0) '<span class="rt-empty">—</span>' else
-      paste0(vapply(idx, function(i)
-        sprintf('<a href="/states/%s.html">%s</a>', s$id[i], s$name[i]), character(1)),
+      paste0(vapply(idx, function(i) sprintf(
+        '<div class="rt-st"><a href="/states/%s.html">%s</a><span class="rt-hold rt-hold-%s">%s</span></div>',
+        s$id[i], s$name[i], tolower(s$defense[i]), s$defense[i]), character(1)),
         collapse = "")
     sprintf('<div class="rtile %s"><div class="rt-num">%d</div><div class="rt-lab">%s</div><div class="rt-states">%s</div></div>',
             x[2], length(idx), x[1], states)
   }, character(1))
   paste0('<div class="rating-tiles">', paste(tiles, collapse = ""), "</div>")
+}
+
+# 현 보유 정당 요약 (defense 기준) + 탈환 표적
+holder_note_html <- function() {
+  d <- .load_json("model_dashboard"); s <- d$states
+  dh <- s$name[s$defense == "D"]; rh <- s$name[s$defense == "R"]
+  b <- vapply(s$rating, .rating_bucket, character(1))
+  flip <- s$name[s$defense == "R" & b %in% c("Lean D", "Solid D")]
+  paste0(
+    '<p class="holder-note">',
+    '<span class="hold-chip hold-d">현 민주 ', length(dh), '석</span> ', paste(dh, collapse = " · "),
+    ' &nbsp; <span class="hold-chip hold-r">현 공화 ', length(rh), '석</span> ', paste(rh, collapse = " · "), '.',
+    if (length(flip) > 0) paste0(
+      ' 이 중 <b>공화 보유이면서 민주 우세(Lean D)</b>인 <b>', paste(flip, collapse = "·"),
+      '</b>가 민주당 탈환 1순위 — 각 타일의 <span class="rt-hold rt-hold-d">D</span>/',
+      '<span class="rt-hold rt-hold-r">R</span> 배지가 현 보유 정당입니다.') else "",
+    '</p>')
 }
 
 # 홈 요약용 KPI 값 (리스트 반환)
