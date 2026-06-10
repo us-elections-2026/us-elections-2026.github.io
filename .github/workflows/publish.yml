@@ -36,7 +36,7 @@ jobs:
       - name: Install R packages
         shell: Rscript {0}
         run: |
-          install.packages(c("jsonlite", "dplyr", "gt", "readr"))
+          install.packages(c("rmarkdown", "knitr", "jsonlite", "dplyr", "gt", "readr"))
 
       - name: Render and publish to gh-pages
         uses: quarto-dev/quarto-actions/publish@v2
