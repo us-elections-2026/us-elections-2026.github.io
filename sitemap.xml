@@ -1,59 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://us-elections-2026.github.io/index.html</loc>
-    <lastmod>2026-06-10T09:15:57.059Z</lastmod>
+    <loc>https://us-elections-2026.github.io/issues/2026-04-20.html</loc>
+    <lastmod>2026-06-10T09:33:02.262Z</lastmod>
   </url>
   <url>
-    <loc>https://us-elections-2026.github.io/states/ak.html</loc>
-    <lastmod>2026-06-10T09:15:57.060Z</lastmod>
+    <loc>https://us-elections-2026.github.io/issues/2026-04-06.html</loc>
+    <lastmod>2026-06-10T09:33:02.262Z</lastmod>
   </url>
   <url>
-    <loc>https://us-elections-2026.github.io/states/tx.html</loc>
-    <lastmod>2026-06-10T09:15:57.060Z</lastmod>
+    <loc>https://us-elections-2026.github.io/issues/2026-06-01.html</loc>
+    <lastmod>2026-06-10T09:33:02.262Z</lastmod>
   </url>
   <url>
-    <loc>https://us-elections-2026.github.io/states/nc.html</loc>
-    <lastmod>2026-06-10T09:15:57.060Z</lastmod>
+    <loc>https://us-elections-2026.github.io/issues/2026-04-13.html</loc>
+    <lastmod>2026-06-10T09:33:02.262Z</lastmod>
   </url>
   <url>
-    <loc>https://us-elections-2026.github.io/about.html</loc>
-    <lastmod>2026-06-10T09:15:57.055Z</lastmod>
+    <loc>https://us-elections-2026.github.io/issues/2026-05-04.html</loc>
+    <lastmod>2026-06-10T09:33:02.262Z</lastmod>
   </url>
   <url>
-    <loc>https://us-elections-2026.github.io/senate.html</loc>
-    <lastmod>2026-06-10T09:15:57.060Z</lastmod>
+    <loc>https://us-elections-2026.github.io/issues/2026-04-27.html</loc>
+    <lastmod>2026-06-10T09:33:02.262Z</lastmod>
   </url>
   <url>
     <loc>https://us-elections-2026.github.io/dashboard.html</loc>
-    <lastmod>2026-06-10T09:15:57.058Z</lastmod>
+    <lastmod>2026-06-10T09:33:02.259Z</lastmod>
   </url>
   <url>
-    <loc>https://us-elections-2026.github.io/issues/2026-06-07.html</loc>
-    <lastmod>2026-06-10T09:15:57.059Z</lastmod>
-  </url>
-  <url>
-    <loc>https://us-elections-2026.github.io/trackers.html</loc>
-    <lastmod>2026-06-10T09:15:57.060Z</lastmod>
-  </url>
-  <url>
-    <loc>https://us-elections-2026.github.io/worklogs/worklog_2026-06-08.html</loc>
-    <lastmod>2026-06-10T09:15:57.060Z</lastmod>
-  </url>
-  <url>
-    <loc>https://us-elections-2026.github.io/states/oh.html</loc>
-    <lastmod>2026-06-10T09:15:57.060Z</lastmod>
+    <loc>https://us-elections-2026.github.io/states/tx.html</loc>
+    <lastmod>2026-06-10T09:33:02.263Z</lastmod>
   </url>
   <url>
     <loc>https://us-elections-2026.github.io/states/ga.html</loc>
-    <lastmod>2026-06-10T09:15:57.060Z</lastmod>
+    <lastmod>2026-06-10T09:33:02.263Z</lastmod>
+  </url>
+  <url>
+    <loc>https://us-elections-2026.github.io/states/oh.html</loc>
+    <lastmod>2026-06-10T09:33:02.263Z</lastmod>
+  </url>
+  <url>
+    <loc>https://us-elections-2026.github.io/index.html</loc>
+    <lastmod>2026-06-10T09:33:02.261Z</lastmod>
+  </url>
+  <url>
+    <loc>https://us-elections-2026.github.io/senate.html</loc>
+    <lastmod>2026-06-10T09:33:02.263Z</lastmod>
+  </url>
+  <url>
+    <loc>https://us-elections-2026.github.io/worklogs/worklog_2026-06-08.html</loc>
+    <lastmod>2026-06-10T09:33:02.263Z</lastmod>
+  </url>
+  <url>
+    <loc>https://us-elections-2026.github.io/about.html</loc>
+    <lastmod>2026-06-10T09:33:02.256Z</lastmod>
+  </url>
+  <url>
+    <loc>https://us-elections-2026.github.io/trackers.html</loc>
+    <lastmod>2026-06-10T09:33:02.263Z</lastmod>
+  </url>
+  <url>
+    <loc>https://us-elections-2026.github.io/states/nc.html</loc>
+    <lastmod>2026-06-10T09:33:02.263Z</lastmod>
   </url>
   <url>
     <loc>https://us-elections-2026.github.io/states/mi.html</loc>
-    <lastmod>2026-06-10T09:15:57.060Z</lastmod>
+    <lastmod>2026-06-10T09:33:02.263Z</lastmod>
   </url>
   <url>
     <loc>https://us-elections-2026.github.io/states/me.html</loc>
-    <lastmod>2026-06-10T09:15:57.060Z</lastmod>
+    <lastmod>2026-06-10T09:33:02.263Z</lastmod>
+  </url>
+  <url>
+    <loc>https://us-elections-2026.github.io/states/ak.html</loc>
+    <lastmod>2026-06-10T09:33:02.263Z</lastmod>
+  </url>
+  <url>
+    <loc>https://us-elections-2026.github.io/issues/2026-05-25.html</loc>
+    <lastmod>2026-06-10T09:33:02.262Z</lastmod>
+  </url>
+  <url>
+    <loc>https://us-elections-2026.github.io/issues/2026-03-23.html</loc>
+    <lastmod>2026-06-10T09:33:02.261Z</lastmod>
+  </url>
+  <url>
+    <loc>https://us-elections-2026.github.io/issues/2026-03-30.html</loc>
+    <lastmod>2026-06-10T09:33:02.262Z</lastmod>
+  </url>
+  <url>
+    <loc>https://us-elections-2026.github.io/issues/2026-06-08.html</loc>
+    <lastmod>2026-06-10T09:33:02.262Z</lastmod>
+  </url>
+  <url>
+    <loc>https://us-elections-2026.github.io/issues/2026-05-11.html</loc>
+    <lastmod>2026-06-10T09:33:02.262Z</lastmod>
+  </url>
+  <url>
+    <loc>https://us-elections-2026.github.io/issues/2026-05-18.html</loc>
+    <lastmod>2026-06-10T09:33:02.262Z</lastmod>
   </url>
 </urlset>
