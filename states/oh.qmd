@@ -13,13 +13,19 @@ gt_state_detail("OH")
 
 ## 구도 요약
 
-Vance 부통령 승계로 임명된 **Husted(R)의 특별선거** — 전직 상원의원 Brown(D)이 도전하는 구도. 2024년 트럼프가 크게 이긴 주지만, 임명직 현직 vs 높은 인지도의 전직이라는 비대칭이 변수입니다.
+Vance 부통령 승계로 임명된 **Husted(R)의 특별선거** — 전 3선 상원의원 Brown(D)이 도전하는 구도입니다. 2024년 트럼프가 약 +11pt로 이긴 주지만, **임명직 현역 vs 높은 인지도의 전직**이라는 비대칭이 변수입니다. 승자는 잔여임기만 채우고 2028년 정규 임기를 두고 다시 재선에 나서야 합니다.
 
-## 최근 동향
+## 후보자 프로필
 
-- Fox News 조사(5/28–6/1): **Brown 53 – Husted 45** — 단일 조사이므로 추세 확인 전 과대해석 금물
-- 등급(Cook/Sabato) 【수집】
+```{r}
+#| output: asis
+cat(candidate_cards_html("OH"))
+```
+
+## 경선 과정
+
+1954년 이후 오하이오 첫 상원 특별선거입니다. Husted는 2025-01-17 DeWine 주지사가 Vance 공석에 **임명**(선거 아님)했으므로 11/3이 그의 첫 연방 단위 본선입니다. 양 캠프가 'Epstein 연루 후원자' 자금을 두고 네거티브 광고전을 벌이고 있습니다. ([PolitiFact](https://www.politifact.com/article/2026/jun/08/epstein-ohio-senate-husted-brown-donations/)) 조사 기관 편차가 커(Fox +8 ↔ RCP 평균 R+1) 단일 조사 과신은 금물입니다.
 
 ## 한국 함의
 
-철강·제조업 벨트. Brown은 전통적 보호무역 성향 — 당선 시에도 한국 철강에 우호적이지 않을 수 있다는 점이 역설.
+오하이오는 철강·제조업 벨트로, **Brown은 전통적 보호무역 성향**입니다. 그는 **한미 FTA(KORUS) 비준에 반대표**를 던졌고, 한국 비관세장벽·환율개입 비판, 한국산 유정용 강관(OCTG) 덤핑 문제 제기 등 대(對)한 통상에 강경했습니다 — 당선 시에도 한국 철강에 우호적이지 않을 수 있다는 점이 역설입니다. ([OnTheIssues](https://ontheissues.org/International/Sherrod_Brown_Free_Trade.htm)) Husted의 한국 직접 입장은 공개 출처에서 확인되지 않습니다.

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="138" viewBox="0 0 110 138" role="img" aria-label="사진 없음">
+  <rect width="110" height="138" fill="#e9ecef"/>
+  <circle cx="55" cy="52" r="24" fill="#ced4da"/>
+  <path d="M20 124c0-22 16-34 35-34s35 12 35 34z" fill="#ced4da"/>
+  <text x="55" y="134" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#868e96">사진 없음</text>
+</svg>

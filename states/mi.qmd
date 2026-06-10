@@ -13,14 +13,19 @@ gt_state_detail("MI")
 
 ## 구도 요약
 
-Peters 은퇴로 **민주당이 방어해야 하는 공개석**. 민주당 경선(8/4)이 진보(El-Sayed)·온건(Stevens)·풀뿌리(McMorrow) 3파전으로 늦게까지 이어져, 공화당(Rogers 유력)보다 본선 전환이 늦다는 점이 리스크입니다.
+Peters 은퇴로 **민주당이 방어해야 하는 공개석**. 7개 경합주 중 본선이 공화당에 가장 유리한(오차범위 내) 유일한 주로, Cook·Sabato 모두 **Toss-up**으로 분류합니다. 민주당 경선(8/4)이 진보(El-Sayed)·온건(Stevens)·풀뿌리(McMorrow) 3파전으로 늦게까지 이어져, 공화당 Rogers보다 본선 전환이 늦다는 점이 리스크입니다.
 
-## 최근 동향
+## 후보자 프로필
 
-- 민주 경선 조사(6월): El-Sayed 34 / Stevens 31 / McMorrow 3위 (출처: Race to the WH)
-- 격전주 분류로 타주 기부자 유입 가속 (출처: Bridge Michigan)
-- El-Sayed는 아랍계·무슬림 커뮤니티 결집 전략 — 미시간 인구 구성의 특수성
+```{r}
+#| output: asis
+cat(candidate_cards_html("MI"))
+```
+
+## 경선 과정
+
+8/4 민주당 경선은 외교정책(가자/이스라엘)·당 지도부 노선을 둘러싼 3파전입니다. 초기 McMorrow가 선두였으나 5~6월 들어 El-Sayed가 부상(RCP 평균 El-Sayed 24.3 / McMorrow·Stevens 각 19.8, 미결정 36%), 분기 모금은 McMorrow가 1위입니다. **본선 경쟁력(Stevens 최강)과 경선 모멘텀(El-Sayed)이 엇갈리는** 전형적 딜레마로, 5/28 매키낙 당 대회에서 3후보가 공개 토론했습니다. ([Michigan Advance](https://michiganadvance.com/2026/06/09/stevens-mcmorrow-el-sayed-clash-over-foreign-policy-party-leadership-as-primary-approaches/))
 
 ## 한국 함의
 
-자동차·배터리 산업의 본진. **관세·EV 보조금 정책**이 한국 완성차·배터리 기업에 직접 영향 — 후보별 입장 추적 필요.
+미시간은 자동차·EV 배터리 산업의 본진으로, **LG에너지솔루션·SK온·삼성SDI** 한국 배터리 기업의 대미 생산기지가 집중돼 있습니다. **Haley Stevens**가 가장 직접 연관 — 'No Chinese Cars Act' 등 대중국 자동차 공세가 미시간 내 한국 배터리 거점 보호와 이해가 일치합니다(단 한국 완성차 통상과는 별개). **관세·EV 보조금 정책**의 향배가 한국 기업에 직접 영향을 줍니다.

@@ -188,6 +188,77 @@ gt_state_detail <- function(code) {
     .tbl_opts()
 }
 
+# 1.4d 후보자 프로필 카드 (HTML) --------------------------------------------
+# data/candidates.json 을 읽어 해당 주 후보들의 HTML 카드 문자열을 반환.
+# qmd 청크에서 `#| output: asis` 와 함께 cat() 으로 출력한다.
+.party_kr <- c(D = "민주", R = "공화")
+
+candidate_cards_html <- function(code) {
+  d <- .load_json("candidates")
+  cc <- d$candidates[d$candidates$state == code, ]
+  if (nrow(cc) == 0) return("")
+
+  ul <- function(v) {
+    v <- v[!is.na(v) & nzchar(v)]
+    if (length(v) == 0) return("")
+    paste0("<ul>", paste0("<li>", v, "</li>", collapse = ""), "</ul>")
+  }
+  inline <- function(v) {
+    v <- v[!is.na(v) & nzchar(v)]
+    if (length(v) == 0) return("—")
+    paste(v, collapse = " · ")
+  }
+  srcs <- function(v) {
+    v <- v[!is.na(v) & nzchar(v)]
+    if (length(v) == 0) return("")
+    links <- vapply(seq_along(v), function(i) {
+      u <- v[i]
+      if (grepl("^https?://", u))
+        sprintf('<a href="%s" target="_blank" rel="noopener">[%d]</a>', u, i)
+      else sprintf('<span>[%d] %s</span>', i, u)
+    }, character(1))
+    paste0('<span class="cand-src">출처 ', paste(links, collapse = " "), "</span>")
+  }
+
+  cards <- vapply(seq_len(nrow(cc)), function(i) {
+    r <- cc[i, ]
+    party <- r$party
+    age <- if (!is.na(r$born)) paste0("(", 2026 - r$born, "세)") else ""
+    badge <- paste0(.party_kr[[party]], if (isTRUE(r$incumbent)) " · 현직" else "")
+    credit <- if (!is.na(r$photo_credit) && nzchar(r$photo_credit))
+      paste0("사진: ", r$photo_credit) else "사진 미확보 — 자리표시"
+    kr <- if (!is.na(r$kr_note) && nzchar(r$kr_note)) r$kr_note else
+      "<span class='muted'>한국 관련 직접 입장은 공개 출처에서 확인되지 않음</span>"
+
+    paste0(
+      '<div class="cand-card cand-', party, '">',
+      '<img class="cand-photo" src="', r$photo, '" alt="', r$name, '" loading="lazy">',
+      '<div class="cand-body">',
+        '<div class="cand-head"><span class="cand-name">', r$name_kr,
+          ' <em>', r$name, '</em></span>',
+          '<span class="cand-badge b-', party, '">', badge, '</span></div>',
+        '<p class="cand-sub">', if (!is.na(r$born)) paste0(r$born, "년생", age, " · ") else "",
+          r$occupation, '</p>',
+        '<ul class="cand-facts">',
+          if (!is.na(r$education)) paste0('<li><b>학력</b> ', r$education, '</li>') else "",
+          if (!is.na(r$family)) paste0('<li><b>가족</b> ', r$family, '</li>') else "",
+          paste0('<li><b>과거 선거</b> ', inline(r$past_elections[[1]]), '</li>'),
+          if (!is.na(r$fundraising)) paste0('<li><b>펀드레이징</b> ', r$fundraising, '</li>') else "",
+        '</ul>',
+        '<div class="cand-cols">',
+          '<div class="cand-col"><b class="t-str">강점</b>', ul(r$strengths[[1]]), '</div>',
+          '<div class="cand-col"><b class="t-wk">약점</b>', ul(r$weaknesses[[1]]), '</div>',
+        '</div>',
+        '<p class="cand-line"><b>정책</b> ', inline(r$policy[[1]]), '</p>',
+        '<p class="cand-kr"><b>🇰🇷 한국 함의</b> ', kr, '</p>',
+        '<p class="cand-credit">', credit, ' &nbsp; ', srcs(r$sources[[1]]), '</p>',
+      '</div></div>'
+    )
+  }, character(1))
+
+  paste0('<div class="cand-wrap">', paste(cards, collapse = ""), "</div>")
+}
+
 # 1.6 자체 모델 대시보드 (정적 폴백 표) -------------------------------------
 gt_model_states <- function() {
   d <- .load_json("model_dashboard")

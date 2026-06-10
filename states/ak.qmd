@@ -13,12 +13,19 @@ gt_state_detail("AK")
 
 ## 구도 요약
 
-Likely R — 경합 하단. 다만 알래스카는 **top-4 통합 경선 + 순위선택투표(RCV)** 라는 독특한 제도 탓에 이변 여지가 상대적으로 큰 주입니다 (2022년 하원 Peltola 사례).
+Likely R — 경합 하단. 공화 현직 Dan Sullivan을, 2022년 최초의 알래스카 원주민(Yup'ik) 연방의원이 된 Mary Peltola(D)가 도전합니다. **top-4 통합 경선(8/18) + 순위선택투표(RCV)** 라는 독특한 제도 탓에 이변 여지가 상대적으로 큰 주입니다(2022년 Peltola가 RCV로 Palin을 꺾은 전례).
 
-## 최근 동향
+## 후보자 프로필
 
-_【수집】 — 경선 일정·후보 구도 확보 후 갱신._
+```{r}
+#| output: asis
+cat(candidate_cards_html("AK"))
+```
+
+## 경선 과정
+
+알래스카는 비당파 예비선거(8/18, 정당 구분 없이 상위 4명 진출)와 11월 본선 **순위선택투표(RCV)** 를 씁니다. 과반 득표자가 없으면 최하위를 탈락시켜 2순위 표를 재배분하는 라운드를 반복합니다. 등록 마감 직전 현직과 **이름이 같은 'Dan J. Sullivan'** 이 출마해, 현직 측은 "민주당 공작"이라 주장(근거 비공개)하고 관련자들은 부인했으며, 선관위는 가운데 이니셜로 구분할 예정입니다. RCV 1차 집계에서 보수표 분산 가능성을 키우는 변수입니다. ([CNN](https://www.cnn.com/2026/06/07/politics/dan-sullivan-alaska-senate-ballot))
 
 ## 한국 함의
 
-LNG 프로젝트(Alaska LNG) 관련 한국 참여 논의가 변수로 부상할 수 있음 — 【수집】.
+**Dan Sullivan은 한국과 직접 연계**됩니다. **Alaska LNG 프로젝트**의 핵심 지지자로, 한국·일본 등 인도-태평양 동맹에 대한 LNG 수출을 미국 에너지 안보·동맹 강화 수단으로 추진합니다(한·일은 미국 LNG 누적 최대 수출시장). ([Sullivan 상원](https://www.sullivan.senate.gov/newsroom/press-releases/president-trump-announces-joint-venture-on-alaska-lng-project-with-japan)) Peltola는 알래스카 명태(pollock) 산업 보호에 주력했고 명태 알(roe)이 한국 시장에서 소비되는 연결고리는 있으나, 본인의 한국 직접 언급은 확인되지 않습니다.
