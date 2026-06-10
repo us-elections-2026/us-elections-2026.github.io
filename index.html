@@ -44,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-800d6ff7eb146c8b172f0dd1de306b49.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d7e5ef4b1afb82743e1bbfcec2e3a16f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -102,6 +102,7 @@ ul.task-list li input[type="checkbox"] {
   })
   </script>
 <style>html{ scroll-behavior: smooth; }</style>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1"></script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -378,6 +379,7 @@ window.Quarto = {
    
   <ul>
   <li><a href="#model-summary" id="toc-model-summary" class="nav-link active" data-scroll-target="#model-summary">상원 전망 요약</a></li>
+  <li><a href="#trends" id="toc-trends" class="nav-link" data-scroll-target="#trends">추이 — 트럼프 지지율·일반투표</a></li>
   <li><a href="#지금-환경-한눈에" id="toc-지금-환경-한눈에" class="nav-link" data-scroll-target="#지금-환경-한눈에">지금 환경 (한눈에)</a></li>
   <li><a href="#발행-호" id="toc-발행-호" class="nav-link" data-scroll-target="#발행-호">발행 호</a></li>
   </ul>
@@ -415,10 +417,11 @@ window.Quarto = {
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<p><strong>자체 분석 모델</strong> (기준 2026-05-29 · 사실 2026-06-05) — 현재 의석 <strong>R 53 / D 47</strong>, 민주 다수당까지 순 <strong>+4석</strong>.</p>
+<p><strong>자체 분석 모델</strong> (기준 2026-05-29 · 사실 2026-06-05) — 현재 의석 <strong>R 53 / D 47</strong>, 민주 다수당까지 순 <strong>+4석</strong>. 이번 가을 개선 의석 <strong>35석</strong>(정규 33 + 특별선거).</p>
 <ul>
 <li>경합주 7곳 중 민주 우세 <strong>4곳</strong> · 평균 D 승리확률 <strong>48.6%</strong></li>
 <li>다수당 탈환 확률 <strong>32%</strong> · 순 기대의석 <strong>+1.4석</strong> · Base Case <strong>D 48 — R 52</strong></li>
+<li><strong>경합주 등급 분포</strong>: Solid D 0 · Lean D 3 · Toss-up 1 · Lean R 3 · Solid R 0 <em>(나머지 개선 의석은 안전 의석)</em></li>
 </ul>
 <p>👉 <a href="./dashboard.html"><strong>전망 대시보드 전체 보기</strong></a> — 주별 확률·시나리오·경선 일정</p>
 </div>
@@ -428,28 +431,53 @@ window.Quarto = {
 <p>위 확률은 시장·집계기관 수치가 아닌 <strong>자체 프레임워크의 모델 추정치</strong>입니다. 아래 “지금 환경” 표(집계기관 평균)와 성격이 다릅니다.</p>
 </blockquote>
 </section>
+<section id="trends" class="level2">
+<h2 class="anchored" data-anchor-id="trends">추이 — 트럼프 지지율·일반투표</h2>
+<p>주간 브리핑(3월 말~현재) 누적 추세입니다. <strong>양수=민주 우위</strong> 기준 — 트럼프 순지지도가 낮을수록, 일반투표 D 마진이 높을수록 민주당에 우호적입니다.</p>
+<div id="trends-root">
+<div class="grid">
+<div class="g-col-12 g-col-md-6">
+<strong>트럼프 순지지도</strong> (Silver Bulletin 평균)
+<div style="height:240px">
+<canvas id="trumpChart">
+</canvas>
+</div>
+</div>
+<div class="g-col-12 g-col-md-6">
+<strong>일반투표 — 민주 마진</strong> (D+)
+<div style="height:240px">
+<canvas id="genericChart">
+</canvas>
+</div>
+</div>
+</div>
+<p id="trends-note" class="text-muted" style="font-size:.78rem; margin-top:.5rem;">
+</p>
+</div>
+<script src="assets/trends.js"></script>
+</section>
 <section id="지금-환경-한눈에" class="level2">
 <h2 class="anchored" data-anchor-id="지금-환경-한눈에">지금 환경 (한눈에)</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="xuqfguvolc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="qxrmnykuwg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#xuqfguvolc table {
+#qxrmnykuwg table {
   font-family: 'IBM Plex Sans KR', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#xuqfguvolc thead, #xuqfguvolc tbody, #xuqfguvolc tfoot, #xuqfguvolc tr, #xuqfguvolc td, #xuqfguvolc th {
+#qxrmnykuwg thead, #qxrmnykuwg tbody, #qxrmnykuwg tfoot, #qxrmnykuwg tr, #qxrmnykuwg td, #qxrmnykuwg th {
   border-style: none;
 }
 
-#xuqfguvolc p {
+#qxrmnykuwg p {
   margin: 0;
   padding: 0;
 }
 
-#xuqfguvolc .gt_table {
+#qxrmnykuwg .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -475,12 +503,12 @@ window.Quarto = {
   border-left-color: #D3D3D3;
 }
 
-#xuqfguvolc .gt_caption {
+#qxrmnykuwg .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#xuqfguvolc .gt_title {
+#qxrmnykuwg .gt_title {
   color: #333333;
   font-size: 16px;
   font-weight: initial;
@@ -492,7 +520,7 @@ window.Quarto = {
   border-bottom-width: 0;
 }
 
-#xuqfguvolc .gt_subtitle {
+#qxrmnykuwg .gt_subtitle {
   color: #333333;
   font-size: 12px;
   font-weight: initial;
@@ -504,7 +532,7 @@ window.Quarto = {
   border-top-width: 0;
 }
 
-#xuqfguvolc .gt_heading {
+#qxrmnykuwg .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -516,13 +544,13 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#xuqfguvolc .gt_bottom_border {
+#qxrmnykuwg .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#xuqfguvolc .gt_col_headings {
+#qxrmnykuwg .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -537,7 +565,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#xuqfguvolc .gt_col_heading {
+#qxrmnykuwg .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -557,7 +585,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#xuqfguvolc .gt_column_spanner_outer {
+#qxrmnykuwg .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -569,15 +597,15 @@ window.Quarto = {
   padding-right: 4px;
 }
 
-#xuqfguvolc .gt_column_spanner_outer:first-child {
+#qxrmnykuwg .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#xuqfguvolc .gt_column_spanner_outer:last-child {
+#qxrmnykuwg .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#xuqfguvolc .gt_column_spanner {
+#qxrmnykuwg .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -589,11 +617,11 @@ window.Quarto = {
   width: 100%;
 }
 
-#xuqfguvolc .gt_spanner_row {
+#qxrmnykuwg .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#xuqfguvolc .gt_group_heading {
+#qxrmnykuwg .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -619,7 +647,7 @@ window.Quarto = {
   text-align: left;
 }
 
-#xuqfguvolc .gt_empty_group_heading {
+#qxrmnykuwg .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -634,15 +662,15 @@ window.Quarto = {
   vertical-align: middle;
 }
 
-#xuqfguvolc .gt_from_md > :first-child {
+#qxrmnykuwg .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#xuqfguvolc .gt_from_md > :last-child {
+#qxrmnykuwg .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#xuqfguvolc .gt_row {
+#qxrmnykuwg .gt_row {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 5px;
@@ -661,7 +689,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#xuqfguvolc .gt_stub {
+#qxrmnykuwg .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -674,7 +702,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#xuqfguvolc .gt_stub_row_group {
+#qxrmnykuwg .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -688,15 +716,15 @@ window.Quarto = {
   vertical-align: top;
 }
 
-#xuqfguvolc .gt_row_group_first td {
+#qxrmnykuwg .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#xuqfguvolc .gt_row_group_first th {
+#qxrmnykuwg .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#xuqfguvolc .gt_summary_row {
+#qxrmnykuwg .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -706,16 +734,16 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#xuqfguvolc .gt_first_summary_row {
+#qxrmnykuwg .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#xuqfguvolc .gt_first_summary_row.thick {
+#qxrmnykuwg .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#xuqfguvolc .gt_last_summary_row {
+#qxrmnykuwg .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -725,7 +753,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#xuqfguvolc .gt_grand_summary_row {
+#qxrmnykuwg .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -735,7 +763,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#xuqfguvolc .gt_first_grand_summary_row {
+#qxrmnykuwg .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -745,7 +773,7 @@ window.Quarto = {
   border-top-color: #D3D3D3;
 }
 
-#xuqfguvolc .gt_last_grand_summary_row_top {
+#qxrmnykuwg .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -755,11 +783,11 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#xuqfguvolc .gt_striped {
+#qxrmnykuwg .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#xuqfguvolc .gt_table_body {
+#qxrmnykuwg .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -768,7 +796,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#xuqfguvolc .gt_footnotes {
+#qxrmnykuwg .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -782,7 +810,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#xuqfguvolc .gt_footnote {
+#qxrmnykuwg .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -791,7 +819,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#xuqfguvolc .gt_sourcenotes {
+#qxrmnykuwg .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -805,7 +833,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#xuqfguvolc .gt_sourcenote {
+#qxrmnykuwg .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -813,72 +841,72 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#xuqfguvolc .gt_left {
+#qxrmnykuwg .gt_left {
   text-align: left;
 }
 
-#xuqfguvolc .gt_center {
+#qxrmnykuwg .gt_center {
   text-align: center;
 }
 
-#xuqfguvolc .gt_right {
+#qxrmnykuwg .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#xuqfguvolc .gt_font_normal {
+#qxrmnykuwg .gt_font_normal {
   font-weight: normal;
 }
 
-#xuqfguvolc .gt_font_bold {
+#qxrmnykuwg .gt_font_bold {
   font-weight: bold;
 }
 
-#xuqfguvolc .gt_font_italic {
+#qxrmnykuwg .gt_font_italic {
   font-style: italic;
 }
 
-#xuqfguvolc .gt_super {
+#qxrmnykuwg .gt_super {
   font-size: 65%;
 }
 
-#xuqfguvolc .gt_footnote_marks {
+#qxrmnykuwg .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#xuqfguvolc .gt_asterisk {
+#qxrmnykuwg .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#xuqfguvolc .gt_indent_1 {
+#qxrmnykuwg .gt_indent_1 {
   text-indent: 5px;
 }
 
-#xuqfguvolc .gt_indent_2 {
+#qxrmnykuwg .gt_indent_2 {
   text-indent: 10px;
 }
 
-#xuqfguvolc .gt_indent_3 {
+#qxrmnykuwg .gt_indent_3 {
   text-indent: 15px;
 }
 
-#xuqfguvolc .gt_indent_4 {
+#qxrmnykuwg .gt_indent_4 {
   text-indent: 20px;
 }
 
-#xuqfguvolc .gt_indent_5 {
+#qxrmnykuwg .gt_indent_5 {
   text-indent: 25px;
 }
 
-#xuqfguvolc .katex-display {
+#qxrmnykuwg .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#xuqfguvolc div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#qxrmnykuwg div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -941,24 +969,24 @@ window.Quarto = {
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div id="ryueunuzpx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="kzrcoxbvlu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#ryueunuzpx table {
+#kzrcoxbvlu table {
   font-family: 'IBM Plex Sans KR', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ryueunuzpx thead, #ryueunuzpx tbody, #ryueunuzpx tfoot, #ryueunuzpx tr, #ryueunuzpx td, #ryueunuzpx th {
+#kzrcoxbvlu thead, #kzrcoxbvlu tbody, #kzrcoxbvlu tfoot, #kzrcoxbvlu tr, #kzrcoxbvlu td, #kzrcoxbvlu th {
   border-style: none;
 }
 
-#ryueunuzpx p {
+#kzrcoxbvlu p {
   margin: 0;
   padding: 0;
 }
 
-#ryueunuzpx .gt_table {
+#kzrcoxbvlu .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -984,12 +1012,12 @@ window.Quarto = {
   border-left-color: #D3D3D3;
 }
 
-#ryueunuzpx .gt_caption {
+#kzrcoxbvlu .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ryueunuzpx .gt_title {
+#kzrcoxbvlu .gt_title {
   color: #333333;
   font-size: 16px;
   font-weight: initial;
@@ -1001,7 +1029,7 @@ window.Quarto = {
   border-bottom-width: 0;
 }
 
-#ryueunuzpx .gt_subtitle {
+#kzrcoxbvlu .gt_subtitle {
   color: #333333;
   font-size: 12px;
   font-weight: initial;
@@ -1013,7 +1041,7 @@ window.Quarto = {
   border-top-width: 0;
 }
 
-#ryueunuzpx .gt_heading {
+#kzrcoxbvlu .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1025,13 +1053,13 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#ryueunuzpx .gt_bottom_border {
+#kzrcoxbvlu .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ryueunuzpx .gt_col_headings {
+#kzrcoxbvlu .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1046,7 +1074,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#ryueunuzpx .gt_col_heading {
+#kzrcoxbvlu .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1066,7 +1094,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#ryueunuzpx .gt_column_spanner_outer {
+#kzrcoxbvlu .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1078,15 +1106,15 @@ window.Quarto = {
   padding-right: 4px;
 }
 
-#ryueunuzpx .gt_column_spanner_outer:first-child {
+#kzrcoxbvlu .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ryueunuzpx .gt_column_spanner_outer:last-child {
+#kzrcoxbvlu .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ryueunuzpx .gt_column_spanner {
+#kzrcoxbvlu .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1098,11 +1126,11 @@ window.Quarto = {
   width: 100%;
 }
 
-#ryueunuzpx .gt_spanner_row {
+#kzrcoxbvlu .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ryueunuzpx .gt_group_heading {
+#kzrcoxbvlu .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1128,7 +1156,7 @@ window.Quarto = {
   text-align: left;
 }
 
-#ryueunuzpx .gt_empty_group_heading {
+#kzrcoxbvlu .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1143,15 +1171,15 @@ window.Quarto = {
   vertical-align: middle;
 }
 
-#ryueunuzpx .gt_from_md > :first-child {
+#kzrcoxbvlu .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ryueunuzpx .gt_from_md > :last-child {
+#kzrcoxbvlu .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ryueunuzpx .gt_row {
+#kzrcoxbvlu .gt_row {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 5px;
@@ -1170,7 +1198,7 @@ window.Quarto = {
   overflow-x: hidden;
 }
 
-#ryueunuzpx .gt_stub {
+#kzrcoxbvlu .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1183,7 +1211,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#ryueunuzpx .gt_stub_row_group {
+#kzrcoxbvlu .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1197,15 +1225,15 @@ window.Quarto = {
   vertical-align: top;
 }
 
-#ryueunuzpx .gt_row_group_first td {
+#kzrcoxbvlu .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ryueunuzpx .gt_row_group_first th {
+#kzrcoxbvlu .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ryueunuzpx .gt_summary_row {
+#kzrcoxbvlu .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1215,16 +1243,16 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#ryueunuzpx .gt_first_summary_row {
+#kzrcoxbvlu .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ryueunuzpx .gt_first_summary_row.thick {
+#kzrcoxbvlu .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ryueunuzpx .gt_last_summary_row {
+#kzrcoxbvlu .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1234,7 +1262,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#ryueunuzpx .gt_grand_summary_row {
+#kzrcoxbvlu .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1244,7 +1272,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#ryueunuzpx .gt_first_grand_summary_row {
+#kzrcoxbvlu .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1254,7 +1282,7 @@ window.Quarto = {
   border-top-color: #D3D3D3;
 }
 
-#ryueunuzpx .gt_last_grand_summary_row_top {
+#kzrcoxbvlu .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1264,11 +1292,11 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#ryueunuzpx .gt_striped {
+#kzrcoxbvlu .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ryueunuzpx .gt_table_body {
+#kzrcoxbvlu .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1277,7 +1305,7 @@ window.Quarto = {
   border-bottom-color: #D3D3D3;
 }
 
-#ryueunuzpx .gt_footnotes {
+#kzrcoxbvlu .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1291,7 +1319,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#ryueunuzpx .gt_footnote {
+#kzrcoxbvlu .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1300,7 +1328,7 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#ryueunuzpx .gt_sourcenotes {
+#kzrcoxbvlu .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1314,7 +1342,7 @@ window.Quarto = {
   border-right-color: #D3D3D3;
 }
 
-#ryueunuzpx .gt_sourcenote {
+#kzrcoxbvlu .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1322,72 +1350,72 @@ window.Quarto = {
   padding-right: 5px;
 }
 
-#ryueunuzpx .gt_left {
+#kzrcoxbvlu .gt_left {
   text-align: left;
 }
 
-#ryueunuzpx .gt_center {
+#kzrcoxbvlu .gt_center {
   text-align: center;
 }
 
-#ryueunuzpx .gt_right {
+#kzrcoxbvlu .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ryueunuzpx .gt_font_normal {
+#kzrcoxbvlu .gt_font_normal {
   font-weight: normal;
 }
 
-#ryueunuzpx .gt_font_bold {
+#kzrcoxbvlu .gt_font_bold {
   font-weight: bold;
 }
 
-#ryueunuzpx .gt_font_italic {
+#kzrcoxbvlu .gt_font_italic {
   font-style: italic;
 }
 
-#ryueunuzpx .gt_super {
+#kzrcoxbvlu .gt_super {
   font-size: 65%;
 }
 
-#ryueunuzpx .gt_footnote_marks {
+#kzrcoxbvlu .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ryueunuzpx .gt_asterisk {
+#kzrcoxbvlu .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ryueunuzpx .gt_indent_1 {
+#kzrcoxbvlu .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ryueunuzpx .gt_indent_2 {
+#kzrcoxbvlu .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ryueunuzpx .gt_indent_3 {
+#kzrcoxbvlu .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ryueunuzpx .gt_indent_4 {
+#kzrcoxbvlu .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ryueunuzpx .gt_indent_5 {
+#kzrcoxbvlu .gt_indent_5 {
   text-indent: 25px;
 }
 
-#ryueunuzpx .katex-display {
+#kzrcoxbvlu .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#ryueunuzpx div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#kzrcoxbvlu div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1448,7 +1476,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="발행-호">발행 호</h2>
 <div id="listing-issues" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1780876800000" data-listing-file-modified-sort="1781088850924" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="894">
+<div class="quarto-post image-right" data-index="0" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1780876800000" data-listing-file-modified-sort="1781089280181" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="894">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./issues/2026-06-08.html" class="no-external">12주차 · 06/08~06/14</a>
@@ -1465,7 +1493,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1780272000000" data-listing-file-modified-sort="1781088850924" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1193">
+<div class="quarto-post image-right" data-index="1" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1780272000000" data-listing-file-modified-sort="1781089280181" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1193">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./issues/2026-06-01.html" class="no-external">11주차 · 06/01~06/07</a>
@@ -1482,7 +1510,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1779667200000" data-listing-file-modified-sort="1781088850924" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1163">
+<div class="quarto-post image-right" data-index="2" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1779667200000" data-listing-file-modified-sort="1781089280181" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1163">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./issues/2026-05-25.html" class="no-external">10주차 · 05/25~05/31</a>
@@ -1499,7 +1527,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1779062400000" data-listing-file-modified-sort="1781088850924" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1097">
+<div class="quarto-post image-right" data-index="3" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1779062400000" data-listing-file-modified-sort="1781089280181" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1097">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./issues/2026-05-18.html" class="no-external">9주차 · 05/18~05/24</a>
@@ -1516,7 +1544,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1778457600000" data-listing-file-modified-sort="1781088850924" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1298">
+<div class="quarto-post image-right" data-index="4" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1778457600000" data-listing-file-modified-sort="1781089280181" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1298">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./issues/2026-05-11.html" class="no-external">8주차 · 05/11~05/17</a>
@@ -1533,7 +1561,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1777852800000" data-listing-file-modified-sort="1781088850924" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1090">
+<div class="quarto-post image-right" data-index="5" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1777852800000" data-listing-file-modified-sort="1781089280181" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1090">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./issues/2026-05-04.html" class="no-external">7주차 · 05/04~05/10</a>
@@ -1550,7 +1578,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1777248000000" data-listing-file-modified-sort="1781088850924" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1250">
+<div class="quarto-post image-right" data-index="6" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1777248000000" data-listing-file-modified-sort="1781089280181" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1250">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./issues/2026-04-27.html" class="no-external">6주차 · 04/27~05/03</a>
@@ -1567,7 +1595,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1776643200000" data-listing-file-modified-sort="1781088850924" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1242">
+<div class="quarto-post image-right" data-index="7" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1776643200000" data-listing-file-modified-sort="1781089280181" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1242">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./issues/2026-04-20.html" class="no-external">5주차 · 04/20~04/26</a>
@@ -1584,7 +1612,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1776038400000" data-listing-file-modified-sort="1781088850924" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1203">
+<div class="quarto-post image-right" data-index="8" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1776038400000" data-listing-file-modified-sort="1781089280181" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1203">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./issues/2026-04-13.html" class="no-external">4주차 · 04/13~04/19</a>
@@ -1601,7 +1629,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1775433600000" data-listing-file-modified-sort="1781088850924" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1175">
+<div class="quarto-post image-right" data-index="9" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1775433600000" data-listing-file-modified-sort="1781089280181" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1175">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./issues/2026-04-06.html" class="no-external">3주차 · 04/06~04/12</a>
@@ -1618,7 +1646,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1774828800000" data-listing-file-modified-sort="1781088850924" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1111">
+<div class="quarto-post image-right" data-index="10" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1774828800000" data-listing-file-modified-sort="1781089280181" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1111">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./issues/2026-03-30.html" class="no-external">2주차 · 03/30~04/05</a>
@@ -1635,7 +1663,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1774224000000" data-listing-file-modified-sort="1781088850923" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1010">
+<div class="quarto-post image-right" data-index="11" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1774224000000" data-listing-file-modified-sort="1781089280181" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1010">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./issues/2026-03-23.html" class="no-external">1주차 · 03/23~03/29</a>
