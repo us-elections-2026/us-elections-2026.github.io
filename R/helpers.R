@@ -232,7 +232,7 @@ candidate_cards_html <- function(code) {
 
     paste0(
       '<div class="cand-card cand-', party, '">',
-      '<img class="cand-photo" src="', r$photo, '" alt="', r$name, '" loading="lazy">',
+      '<img class="cand-photo" src="/', r$photo, '" alt="', r$name, '" loading="lazy">',
       '<div class="cand-body">',
         '<div class="cand-head"><span class="cand-name">', r$name_kr,
           ' <em>', r$name, '</em></span>',
