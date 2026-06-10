@@ -257,33 +257,39 @@ gt_state_detail <- function(code) {
 
 .c_status <- function(cc) { s <- cc$status; if (is.null(s)) rep(NA_character_, nrow(cc)) else s }
 
-# 상단: 확정 후보 정식 카드 + (경선중인 당) 플레이스홀더
+# 상단: 정당별 1장씩(민주 좌 · 공화 우) — 확정 후보는 정식 카드,
+# 경선중인 당은 '후보 미정' 플레이스홀더.
 candidate_cards_html <- function(code) {
   d <- .load_json("candidates")
   cc <- d$candidates[d$candidates$state == code, ]
   if (nrow(cc) == 0) return("")
   st <- .c_status(cc)
   is_prim <- !is.na(st) & st == "primary"
-  nom <- cc[!is_prim, ]; prim <- cc[is_prim, ]
-  cards <- if (nrow(nom)) vapply(seq_len(nrow(nom)), function(i) .full_card(nom[i, ]), character(1)) else character(0)
   pr <- .load_json("senate_primaries")$rows
+  cards <- character(0)
   for (pty in c("D", "R")) {
-    if (any(prim$party == pty) && !any(nom$party == pty)) {
-      cand_names <- paste(prim$name_kr[prim$party == pty], collapse = " · ")
-      kw <- if (pty == "D") "민주" else "공화"
-      prow <- pr[pr$state == code & grepl(kw, pr$event), ]
-      meta <- if (nrow(prow))
-        paste0(ifelse(is.na(prow$date[1]), "", paste0(prow$date[1], " ")), prow$event[1]) else "경선 진행 중"
-      cards <- c(cards, paste0(
-        '<div class="cand-card cand-', pty, ' cand-ph">',
-        '<div class="cand-ph-mark">🗳️</div>',
-        '<div class="cand-body"><div class="cand-head">',
-          '<span class="cand-name">', .party_kr[[pty]], '당 후보 — 미정</span>',
-          '<span class="cand-badge b-', pty, '">경선 중</span></div>',
-        '<p class="cand-sub">', meta, '</p>',
-        '<p class="cand-line">경쟁 후보: <b>', cand_names, '</b></p>',
-        '<p class="cand-line muted">↓ 페이지 하단 <b>경선 후보</b>에서 상세 프로필을 확인하세요.</p>',
-        '</div></div>'))
+    nom_p <- cc[!is_prim & cc$party == pty, ]
+    if (nrow(nom_p) > 0) {
+      for (i in seq_len(nrow(nom_p))) cards <- c(cards, .full_card(nom_p[i, ]))
+    } else {
+      prim_p <- cc[is_prim & cc$party == pty, ]
+      if (nrow(prim_p) > 0) {
+        cand_names <- paste(prim_p$name_kr, collapse = " · ")
+        kw <- if (pty == "D") "민주" else "공화"
+        prow <- pr[pr$state == code & grepl(kw, pr$event), ]
+        meta <- if (nrow(prow))
+          paste0(ifelse(is.na(prow$date[1]), "", paste0(prow$date[1], " ")), prow$event[1]) else "경선 진행 중"
+        cards <- c(cards, paste0(
+          '<div class="cand-card cand-', pty, ' cand-ph">',
+          '<div class="cand-ph-mark">🗳️</div>',
+          '<div class="cand-body"><div class="cand-head">',
+            '<span class="cand-name">', .party_kr[[pty]], '당 후보 — 미정</span>',
+            '<span class="cand-badge b-', pty, '">경선 중</span></div>',
+          '<p class="cand-sub">', meta, '</p>',
+          '<p class="cand-line">경쟁 후보: <b>', cand_names, '</b></p>',
+          '<p class="cand-line muted">↓ 페이지 하단 <b>경선 후보</b>에서 상세 프로필을 확인하세요.</p>',
+          '</div></div>'))
+      }
     }
   }
   paste0('<div class="cand-wrap">', paste(cards, collapse = ""), "</div>")

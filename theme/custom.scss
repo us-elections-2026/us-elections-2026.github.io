@@ -38,17 +38,20 @@ blockquote {
   font-size: 0.85rem;
 }
 
-/* 후보자 프로필 카드 (states/*.qmd) */
-.cand-wrap { display: flex; flex-direction: column; gap: 18px; margin: 12px 0 8px; }
-.cand-card {
-  display: grid; grid-template-columns: 132px 1fr; gap: 18px;
-  border: 1px solid #e6e8eb; border-radius: 12px; padding: 16px 18px;
-  border-left: 5px solid #adb5bd; background: #fff;
+/* 후보자 프로필 카드 (states/*.qmd) — 민주(좌)·공화(우) 2단 나란히 */
+.cand-wrap {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 18px; margin: 12px 0 8px; align-items: start;
 }
-.cand-D { border-left-color: #1971c2; }
-.cand-R { border-left-color: #c92a2a; }
+.cand-card {
+  display: grid; grid-template-columns: 112px 1fr; gap: 16px;
+  border: 1px solid #e6e8eb; border-radius: 12px; padding: 16px 18px;
+  border-top: 5px solid #adb5bd; background: #fff;
+}
+.cand-D { border-top-color: #1971c2; }
+.cand-R { border-top-color: #c92a2a; }
 .cand-photo {
-  width: 132px; height: 165px; object-fit: cover; border-radius: 8px;
+  width: 112px; height: 140px; object-fit: cover; border-radius: 8px;
   background: #f1f3f5; align-self: start;
 }
 .cand-body { min-width: 0; }
@@ -62,7 +65,7 @@ blockquote {
 .cand-facts { list-style: none; padding: 0; margin: 0 0 10px; font-size: 0.9rem; }
 .cand-facts li { padding: 2px 0; line-height: 1.55; }
 .cand-facts b, .cand-line b, .cand-kr b { color: #1f3a5f; margin-right: 4px; }
-.cand-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 8px; }
+.cand-cols { display: grid; grid-template-columns: 1fr; gap: 8px; margin-bottom: 8px; }
 .cand-col ul { margin: 4px 0 0; padding-left: 18px; font-size: 0.86rem; }
 .cand-col li { line-height: 1.5; }
 .t-str { color: #2b8a3e; font-size: 0.86rem; }
