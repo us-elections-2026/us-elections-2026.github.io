@@ -341,30 +341,38 @@ gt_model_scenarios <- function() {
     .tbl_opts()
 }
 
-# 경합주 등급 분포 (Solid D / Lean D / Toss-up / Lean R / Solid R) 카운트
+# 등급 → 버킷 분류 (Solid D / Lean D / Toss-up / Lean R / Solid R)
+.rating_bucket <- function(x) {
+  if (grepl("Solid D|Safe D|Likely D", x, ignore.case = TRUE)) "Solid D"
+  else if (grepl("Lean", x, ignore.case = TRUE) && grepl("D", x)) "Lean D"
+  else if (grepl("Toss", x, ignore.case = TRUE)) "Toss-up"
+  else if (grepl("Lean", x, ignore.case = TRUE) && grepl("R", x)) "Lean R"
+  else if (grepl("Solid R|Safe R|Likely R", x, ignore.case = TRUE)) "Solid R"
+  else "기타"
+}
+
 model_rating_counts <- function() {
   d <- .load_json("model_dashboard")
-  bucket <- function(x) {
-    if (grepl("Solid D|Safe D|Likely D", x, ignore.case = TRUE)) "Solid D"
-    else if (grepl("Lean", x, ignore.case = TRUE) && grepl("D", x)) "Lean D"
-    else if (grepl("Toss", x, ignore.case = TRUE)) "Toss-up"
-    else if (grepl("Lean", x, ignore.case = TRUE) && grepl("R", x)) "Lean R"
-    else if (grepl("Solid R|Safe R|Likely R", x, ignore.case = TRUE)) "Solid R"
-    else "기타"
-  }
-  b <- vapply(d$states$rating, bucket, character(1))
+  b <- vapply(d$states$rating, .rating_bucket, character(1))
   cats <- c("Solid D", "Lean D", "Toss-up", "Lean R", "Solid R")
   setNames(vapply(cats, function(k) sum(b == k), integer(1)), cats)
 }
 
-# 등급 분포를 5개 타일 HTML로 (홈 요약용)
+# 등급 분포를 5개 타일 HTML로 (각 타일에 해당 주 명칭 + 링크)
 rating_tiles_html <- function() {
-  rc <- model_rating_counts()
+  d <- .load_json("model_dashboard"); s <- d$states
+  b <- vapply(s$rating, .rating_bucket, character(1))
   defs <- list(c("Solid D", "rt-sd"), c("Lean D", "rt-ld"), c("Toss-up", "rt-tu"),
                c("Lean R", "rt-lr"), c("Solid R", "rt-sr"))
-  tiles <- vapply(defs, function(x) sprintf(
-    '<div class="rtile %s"><div class="rt-num">%d</div><div class="rt-lab">%s</div></div>',
-    x[2], rc[[x[1]]], x[1]), character(1))
+  tiles <- vapply(defs, function(x) {
+    idx <- which(b == x[1])
+    states <- if (length(idx) == 0) '<span class="rt-empty">—</span>' else
+      paste0(vapply(idx, function(i)
+        sprintf('<a href="/states/%s.html">%s</a>', s$id[i], s$name[i]), character(1)),
+        collapse = "")
+    sprintf('<div class="rtile %s"><div class="rt-num">%d</div><div class="rt-lab">%s</div><div class="rt-states">%s</div></div>',
+            x[2], length(idx), x[1], states)
+  }, character(1))
   paste0('<div class="rating-tiles">', paste(tiles, collapse = ""), "</div>")
 }
 

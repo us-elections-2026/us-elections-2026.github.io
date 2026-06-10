@@ -73,6 +73,8 @@ cat(rating_tiles_html())
 
 <script src="assets/trends.js"></script>
 
+> **결측 구간 참조** — 본 그래프는 주간 브리핑에 기재된 값만 점으로 표시하고 그 사이는 선으로 이었습니다(특히 일반투표는 보고된 주만 실측점). 누락 주의 수치는 외부 집계를 직접 참조하세요: 트럼프 순지지도 [Silver Bulletin](https://www.natesilver.net/p/trump-approval-ratings-nate-silver-bulletin) · [RealClearPolling 지지율](https://www.realclearpolling.com/polls/approval/donald-trump/approval-rating) / 일반투표 [RealClearPolling 일반투표](https://www.realclearpolling.com/polls/generic-congressional-vote). 추정으로 빈 칸을 채우지 않습니다.
+
 ## 지금 환경 (한눈에)
 
 ```{r}

@@ -43,6 +43,10 @@ blockquote {
 .rtile { border-radius: 10px; padding: 14px 8px; text-align: center; border: 1px solid #e6e8eb; }
 .rt-num { font-size: 1.8rem; font-weight: 800; line-height: 1; }
 .rt-lab { font-size: 0.8rem; font-weight: 700; margin-top: 5px; }
+.rt-states { margin-top: 8px; display: flex; flex-direction: column; gap: 3px; }
+.rt-states a { color: inherit; font-size: 0.78rem; font-weight: 600; text-decoration: underline; text-underline-offset: 2px; word-break: keep-all; }
+.rt-states a:hover { opacity: 0.75; }
+.rt-empty { font-size: 0.85rem; opacity: 0.55; }
 .rt-sd { background: #1971c2; color: #fff; border-color: #1971c2; }
 .rt-ld { background: #d0e3f7; color: #1e40af; border-color: #b6d4f0; }
 .rt-tu { background: #fff3bf; color: #92400e; border-color: #ffe8a3; }
