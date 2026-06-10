@@ -44,15 +44,15 @@ blockquote {
   gap: 18px; margin: 12px 0 8px; align-items: start;
 }
 .cand-card {
-  display: grid; grid-template-columns: 112px 1fr; gap: 16px;
   border: 1px solid #e6e8eb; border-radius: 12px; padding: 16px 18px;
-  border-top: 5px solid #adb5bd; background: #fff;
+  border-top: 5px solid #adb5bd; background: #fff; overflow: hidden;
 }
 .cand-D { border-top-color: #1971c2; }
 .cand-R { border-top-color: #c92a2a; }
+/* 사진을 띄워(float) 이름·직업은 옆에, 학력부터는 사진 아래까지 전체 폭 활용 */
 .cand-photo {
-  width: 112px; height: 140px; object-fit: cover; border-radius: 8px;
-  background: #f1f3f5; align-self: start;
+  float: left; width: 112px; height: 140px; object-fit: cover; border-radius: 8px;
+  background: #f1f3f5; margin: 2px 16px 8px 0;
 }
 .cand-body { min-width: 0; }
 .cand-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; }
@@ -83,8 +83,8 @@ blockquote {
 }
 
 /* 후보 미정 플레이스홀더 카드 */
-.cand-ph { border-style: dashed; background: #fbfcfd; align-items: center; }
-.cand-ph-mark { font-size: 44px; text-align: center; align-self: center; opacity: .5; }
+.cand-ph { border-style: dashed; background: #fbfcfd; display: flex; align-items: center; gap: 16px; }
+.cand-ph-mark { font-size: 44px; opacity: .5; flex: 0 0 auto; }
 .cand-ph .cand-name { font-size: 1.05rem; }
 
 /* 경선 후보 가로 배치 (하단) */
