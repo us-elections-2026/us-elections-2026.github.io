@@ -418,3 +418,58 @@ gt_polls_log <- function() {
                subtitle = "모집단(A/RV/LV)·방식·스폰서를 항상 병기") |>
     .tbl_opts()
 }
+
+# 2.1 하원 경합구 트래커 ------------------------------------------------------
+# data/house_races.json — Cook 토스업 명단 중심. 빈 값은 — / 【수집】 렌더.
+gt_house_races <- function() {
+  d <- .load_json("house_races")
+  r <- d$races
+  tibble(
+    지역구 = r$district,
+    `현역` = r$incumbent,
+    보유 = ifelse(r$party == "D", "민주", "공화"),
+    `등급(Cook)` = r$rating_cook,
+    `전주 대비` = ifelse(is.na(r$rating_delta), "—", r$rating_delta),
+    `2024 마진` = ifelse(is.na(r$margin_2024), "【수집】", .fmt_margin(r$margin_2024)),
+    비고 = ifelse(is.na(r$note), "—", r$note)
+  ) |>
+    arrange(보유, 지역구) |>
+    gt(groupname_col = "보유") |>
+    tab_header(
+      title = "하원 경합구 트래커 — Cook 토스업",
+      subtitle = paste0("기준 ", d$as_of, " · ", d$cook_outlook, " · ", d$source_label)
+    ) |>
+    .tbl_opts()
+}
+
+# 2.2 Korea Watch 동향 표 ------------------------------------------------------
+# data/korea_watch.csv — 누적 DB. 스키마 고정(열 추가·변경 금지):
+# date,type,actor,affiliation,state_or_district,event,detail,race_link,significance,source_url
+gt_korea_watch <- function(n = 30) {
+  kw <- readr::read_csv(file.path("data", "korea_watch.csv"),
+                        show_col_types = FALSE,
+                        col_types = readr::cols(.default = readr::col_character(),
+                                                significance = readr::col_integer()))
+  if (nrow(kw) == 0) {
+    return(tibble(안내 = "수집된 항목이 아직 없습니다 — Korea Watch 일일 수집 시작 후 이 표가 채워집니다.") |>
+             gt() |> tab_header(title = "Korea Watch — 한국 관련 동향") |> .tbl_opts())
+  }
+  kw |>
+    arrange(desc(date)) |>
+    head(n) |>
+    mutate(중요도 = strrep("★", significance)) |>
+    transmute(
+      날짜 = date, 유형 = type, 행위자 = actor,
+      소속 = ifelse(is.na(affiliation), "—", affiliation),
+      내용 = event,
+      `선거 연관` = ifelse(is.na(race_link), "—", race_link),
+      중요도,
+      출처 = ifelse(is.na(source_url), "—",
+                  paste0("<a href='", source_url, "'>링크</a>"))
+    ) |>
+    gt() |>
+    fmt_markdown(columns = "출처") |>
+    tab_header(title = "Korea Watch — 한국 관련 동향 (최신순)",
+               subtitle = paste0("누적 ", nrow(kw), "건 중 최근 ", min(n, nrow(kw)), "건 표시")) |>
+    .tbl_opts()
+}

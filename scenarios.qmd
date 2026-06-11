@@ -1,0 +1,58 @@
+---
+title: "상원 시나리오"
+subtitle: "민주 소수 유지 · 50:50 · 민주 다수 — 경로와 확률"
+---
+
+```{r}
+#| include: false
+source(file.path("R", "helpers.R"))
+k <- model_kpi()
+md <- jsonlite::read_json(file.path("data", "model_dashboard.json"), simplifyVector = TRUE)
+```
+
+현재 의석 **`r k$balance`**. 부통령이 공화당(타이브레이크)이므로 민주당의 다수는 **51석**, 즉 **순증 +`r k$needed`석**부터입니다. 50:50은 다수가 아니라는 점이 이 사이클 분석의 출발점입니다.
+
+> 아래 확률은 자체 모델(기준 `r k$as_of`) 추정치입니다. 집계기관 평균·예측시장과 성격이 다릅니다 — [방법론](methodology.qmd) 참조.
+
+## 시나리오 분포 {#dist}
+
+```{r}
+gt_model_scenarios()
+```
+
+## 경로 분석 — 민주당의 +4 산수 {#paths}
+
+```{r}
+#| output: asis
+s <- md$states
+ld <- s[s$defense == "R" & s$prob >= 50, ]
+def <- s[s$defense == "D", ]
+rest <- s[s$defense == "R" & s$prob < 50, ]
+cat(sprintf(
+"1. **방어**: %s — 민주 보유 %d석을 지키는 것이 전제. 한 곳이라도 잃으면 필요 순증이 +%d석으로 늘어납니다.\n2. **1차 탈환 (현재 민주 우세)**: %s — 모델 확률 %s. 둘 다 이겨야 +2.\n3. **추가 +2 (현재 공화 우세)**: %s 중 두 곳 — 각각 모델 확률 %s. **여기가 다수당의 병목**입니다.\n",
+paste(def$name, collapse = "·"), nrow(def), k$needed + 1,
+paste(ld$name, collapse = "·"),
+paste(paste0(ld$name, " ", ld$prob, "%"), collapse = " / "),
+paste(rest$name, collapse = "·"),
+paste(paste0(rest$name, " ", rest$prob, "%"), collapse = " / ")))
+```
+
+**Tipping-point**: 공화 우위 주 가운데 민주 승리확률이 가장 높은 주가 사실상 51석째를 결정합니다. 이 주의 확률 변화가 다수당 확률(현재 **`r k$majority`%**)을 가장 크게 움직입니다 — 주간 브리핑에서 매주 갱신.
+
+## 50:50의 의미 {#fifty}
+
+::: {.callout-note}
+**50:50 = 공화 다수.** 부통령 캐스팅보트로 공화당이 조직권을 유지합니다. 다만 2001년 50:50 상원의 권력공유 협상(위원회 동수 배분) 선례가 있어, 실제 운영은 협상 결과에 따라 달라질 수 있습니다. 단독 과반(51) 도달 전까지 민주당의 입법 지렛대는 필리버스터(60표 규칙)와 인준 표결 견제에 한정됩니다.
+:::
+
+## 시나리오별 한국 함의 {#korea}
+
+| 시나리오 | 의회 지형 | 한국 정책 환경 |
+|---|---|---|
+| 민주 소수 유지 | 공화 상원 단독 운영 | 현 기조 지속 — 관세·방위비 협상에서 의회 견제 약함 |
+| 50:50 | 공화 다수(타이브레이크) · 협상 운영 | 인준·예산에서 개별 의원 영향력 급증 — 지한파 의원 가치 상승 |
+| 민주 다수 (51+) | 외교위·군사위·세입위 위원장 교체 | 청문회·NDAA 조항·통상 감독 강화 — 동맹 비용분담 담론 변화 가능 |
+
+: {.striped}
+
+구체 함의는 확인된 표결·발언 기반으로만 기술합니다 — 인물별 상세는 [Korea Watch](korea-watch.qmd)에서 누적.

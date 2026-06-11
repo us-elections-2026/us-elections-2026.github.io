@@ -8,12 +8,17 @@ on:
 permissions:
   contents: write   # gh-pages 브랜치 push 용
 
+# 2026-06-16 GitHub Actions Node 24 강제 전환 대응:
+# checkout을 v5(Node 24 네이티브)로 올리고, 다른 JS 액션도 Node 24로 강제.
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2

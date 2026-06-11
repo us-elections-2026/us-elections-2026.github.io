@@ -1,0 +1,42 @@
+---
+title: "하원 경합구 트래커"
+subtitle: "2026 하원 — 토스업 일일 추적 + 전체 경합구 주간 등급표"
+---
+
+```{r}
+#| include: false
+source(file.path("R", "helpers.R"))
+hr <- jsonlite::read_json(file.path("data", "house_races.json"), simplifyVector = TRUE)
+```
+
+하원 435석 전체를 추적하지 않습니다. **Cook 기준 토스업(현재 `r nrow(hr$races)`개구)을 상시 추적**하고, Lean 등급 경합구는 주간 등급표에서만 관리하는 2단 구조입니다. 상원과 달리 지역구 단위 여론조사가 희소하므로, 하원 전망은 **제너릭 밸럿 + 등급 변동 + 자금 흐름**이 주된 신호입니다.
+
+> 등급(Toss Up/Lean)은 확률이 아닙니다. 등급 명단의 출처는 표 상단에 표기하며, 빈 칸은 추정으로 채우지 않습니다.
+
+## 토스업 트래커 {#tossups}
+
+```{r}
+gt_house_races()
+```
+
+## 구조 변수 — 재획정 {#redistricting}
+
+2026 하원의 최대 구조 변수는 **중간 재획정(mid-decade redistricting)**입니다. 2025~26년에 TX·CA·MO·NC·OH·UT·LA 등이 새 지도를 채택했고, 캘리포니아의 새 지도는 2026년 2월 연방대법원이 사용을 허용했습니다([NPR](https://www.npr.org/2026/02/04/nx-s1-5691890/supreme-court-california-redistricting-map)). 이 때문에 **2024년 결과 기반의 직관이 다수 지역구에서 무효**가 됐습니다 — 표의 2024 마진은 신구 지도 차이를 확인한 뒤에만 채웁니다.
+
+【수집】 재획정 주별 의석 기댓값 변화 표 — 주간 브리핑에서 보강 예정.
+
+## 주목 레이스 {#featured}
+
+선별 기준: 전국적 상징성, 다수당 결정 기여도, 한국 함의. 카드 형식은 상원 State Focus의 축소판으로 순차 작성합니다.
+
+- **ME-02 Golden / WA-03 Gluesenkamp Perez** — 트럼프 승리 지역구의 민주 현역 생존 모델
+- **TX-34 Gonzalez** — 리오그란데밸리 라티노 표심 재편의 시험대
+- **NE-02 Bacon** — 도시 교외 공화 현역의 역풍 방어
+- **AZ-01·06, PA-07·10** — 다수당 향배를 가를 선벨트·러스트벨트 균형추
+
+【수집】 개별 레이스 카드 — 하원 일일 브리핑 누적 후 작성.
+
+## 데이터 갱신 규약
+
+- 토스업 명단·등급: **주 1회** (Cook/Sabato 교차 확인) → `data/house_races.json`
+- `rating_delta`: 전주 스냅샷 대비 변동 (`data/history/` 보관 후 자동화 예정)

@@ -17,6 +17,14 @@ website:
     left:
       - href: index.qmd
         text: 홈
+      - href: senate.qmd
+        text: 상원
+      - href: house.qmd
+        text: 하원
+      - href: national.qmd
+        text: 전국
+      - href: korea-watch.qmd
+        text: Korea Watch
       - href: about.qmd
         text: 소개
     right:
@@ -34,13 +42,16 @@ website:
             href: dashboard.qmd
           - text: "트래커 (전체 표)"
             href: trackers.qmd
-          - text: "상원 경합주 표"
-            href: senate.qmd
+          - text: "방법론"
+            href: methodology.qmd
           - text: "소개"
             href: about.qmd
-      - section: "Weekly Report"
+      - section: "상원 Senate"
         contents:
-          - auto: "issues/*.qmd"
+          - text: "경합주 표"
+            href: senate.qmd
+          - text: "시나리오 — 민주 소수·50:50·다수"
+            href: scenarios.qmd
       - section: "State Focus"
         contents:
           - states/ga.qmd
@@ -50,6 +61,22 @@ website:
           - states/tx.qmd
           - states/oh.qmd
           - states/ak.qmd
+      - section: "하원 House"
+        contents:
+          - text: "경합구 트래커"
+            href: house.qmd
+      - section: "전국 National"
+        contents:
+          - text: "환경 — 정치·경제·외교"
+            href: national.qmd
+      - section: "Korea Watch"
+        contents:
+          - text: "한국 관련 동향"
+            href: korea-watch.qmd
+      - section: "Weekly Report"
+        contents:
+          - text: "아카이브 (전체 호)"
+            href: archive.qmd
   page-footer:
     center: "데이터 기준 시각은 각 표 상단에 표기됩니다. · 예측시장 가격은 확률의 근사일 뿐입니다."
 

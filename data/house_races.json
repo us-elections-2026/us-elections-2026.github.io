@@ -1,0 +1,26 @@
+{
+  "as_of": "2026-06-11",
+  "source_label": "Cook Political Report (토스업 명단) · Sabato 교차확인 예정",
+  "cook_outlook": "D 우세 206 / R 우세 211 / Toss-up 18",
+  "provenance_note": "등급은 확률이 아닙니다. 토스업 명단은 Cook Political Report 기준이며 주간 단위로 갱신합니다. 빈 값(—/【수집】)은 추정으로 채우지 않습니다.",
+  "races": [
+    { "district": "CA-13", "incumbent": "Adam Gray", "party": "D", "rating_cook": "Toss Up", "rating_delta": null, "margin_2024": null, "rating_sabato": null, "note": null },
+    { "district": "CA-45", "incumbent": "Derek Tran", "party": "D", "rating_cook": "Toss Up", "rating_delta": null, "margin_2024": null, "rating_sabato": null, "note": null },
+    { "district": "ME-02", "incumbent": "Jared Golden", "party": "D", "rating_cook": "Toss Up", "rating_delta": null, "margin_2024": null, "rating_sabato": null, "note": "트럼프 승리 지역구의 민주 현역" },
+    { "district": "NM-02", "incumbent": "Gabe Vasquez", "party": "D", "rating_cook": "Toss Up", "rating_delta": null, "margin_2024": null, "rating_sabato": null, "note": null },
+    { "district": "NY-04", "incumbent": "Laura Gillen", "party": "D", "rating_cook": "Toss Up", "rating_delta": null, "margin_2024": null, "rating_sabato": null, "note": null },
+    { "district": "NC-01", "incumbent": "Don Davis", "party": "D", "rating_cook": "Toss Up", "rating_delta": null, "margin_2024": null, "rating_sabato": null, "note": "NC 재획정 영향권" },
+    { "district": "OH-09", "incumbent": "Marcy Kaptur", "party": "D", "rating_cook": "Toss Up", "rating_delta": null, "margin_2024": null, "rating_sabato": null, "note": "OH 신규 지도" },
+    { "district": "OH-13", "incumbent": "Emilia Sykes", "party": "D", "rating_cook": "Toss Up", "rating_delta": null, "margin_2024": null, "rating_sabato": null, "note": "OH 신규 지도" },
+    { "district": "TX-34", "incumbent": "Vicente Gonzalez", "party": "D", "rating_cook": "Toss Up", "rating_delta": null, "margin_2024": null, "rating_sabato": null, "note": "리오그란데밸리 — 라티노 표심 재편 시험대" },
+    { "district": "WA-03", "incumbent": "Marie Gluesenkamp Perez", "party": "D", "rating_cook": "Toss Up", "rating_delta": null, "margin_2024": null, "rating_sabato": null, "note": "트럼프 승리 지역구의 민주 현역" },
+    { "district": "AZ-01", "incumbent": "David Schweikert", "party": "R", "rating_cook": "Toss Up", "rating_delta": null, "margin_2024": null, "rating_sabato": null, "note": null },
+    { "district": "AZ-06", "incumbent": "Juan Ciscomani", "party": "R", "rating_cook": "Toss Up", "rating_delta": null, "margin_2024": null, "rating_sabato": null, "note": null },
+    { "district": "CO-08", "incumbent": "Gabe Evans", "party": "R", "rating_cook": "Toss Up", "rating_delta": null, "margin_2024": null, "rating_sabato": null, "note": null },
+    { "district": "IA-01", "incumbent": "Mariannette Miller-Meeks", "party": "R", "rating_cook": "Toss Up", "rating_delta": null, "margin_2024": null, "rating_sabato": null, "note": null },
+    { "district": "MI-07", "incumbent": "Tom Barrett", "party": "R", "rating_cook": "Toss Up", "rating_delta": null, "margin_2024": null, "rating_sabato": null, "note": null },
+    { "district": "NE-02", "incumbent": "Don Bacon", "party": "R", "rating_cook": "Toss Up", "rating_delta": null, "margin_2024": null, "rating_sabato": null, "note": null },
+    { "district": "PA-07", "incumbent": "Ryan Mackenzie", "party": "R", "rating_cook": "Toss Up", "rating_delta": null, "margin_2024": null, "rating_sabato": null, "note": null },
+    { "district": "PA-10", "incumbent": "Scott Perry", "party": "R", "rating_cook": "Toss Up", "rating_delta": null, "margin_2024": null, "rating_sabato": null, "note": null }
+  ]
+}

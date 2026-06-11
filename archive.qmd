@@ -1,0 +1,20 @@
+---
+title: "주간 리포트 아카이브"
+subtitle: "발행된 모든 호 — 최신순"
+listing:
+  id: all-issues
+  contents: "issues/*.qmd"
+  type: table
+  sort: "date desc"
+  fields: [date, title, description]
+  date-format: "YYYY.MM.DD"
+  field-display-names:
+    date: "발행일"
+    title: "호"
+    description: "핵심 내용"
+---
+
+매주 월요일 기준으로 발행됩니다. 각 호는 발행 시점의 스냅샷이며, 최신 수치는 [트래커](trackers.qmd)와 [전망 대시보드](dashboard.qmd)를 참조하세요.
+
+::: {#all-issues}
+:::
