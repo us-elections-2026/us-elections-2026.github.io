@@ -325,6 +325,14 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#다음-세션-todo" id="toc-다음-세션-todo" class="nav-link" data-scroll-target="#다음-세션-todo">다음 세션 TODO</a></li>
   <li><a href="#컨텍스트" id="toc-컨텍스트" class="nav-link" data-scroll-target="#컨텍스트">컨텍스트</a></li>
   </ul></li>
+  <li><a href="#세션-종료-세션-종료-macbook-pro-2026-06-11" id="toc-세션-종료-세션-종료-macbook-pro-2026-06-11" class="nav-link" data-scroll-target="#세션-종료-세션-종료-macbook-pro-2026-06-11">[세션 종료] 세션 종료 @ MacBook Pro (2026-06-11)</a>
+  <ul class="collapse">
+  <li><a href="#마지막-3개-요청-1" id="toc-마지막-3개-요청-1" class="nav-link" data-scroll-target="#마지막-3개-요청-1">마지막 3개 요청</a></li>
+  <li><a href="#완료한-작업-1" id="toc-완료한-작업-1" class="nav-link" data-scroll-target="#완료한-작업-1">완료한 작업</a></li>
+  <li><a href="#주요-변경-파일" id="toc-주요-변경-파일" class="nav-link" data-scroll-target="#주요-변경-파일">주요 변경 파일</a></li>
+  <li><a href="#다음-세션-todo-1" id="toc-다음-세션-todo-1" class="nav-link" data-scroll-target="#다음-세션-todo-1">다음 세션 TODO</a></li>
+  <li><a href="#컨텍스트-1" id="toc-컨텍스트-1" class="nav-link" data-scroll-target="#컨텍스트-1">컨텍스트</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -456,6 +464,110 @@ ul.task-list li input[type="checkbox"] {
 <li>상세 인계 정보: <code>handoff.md</code> 참조</li>
 <li>사이트: https://us-elections-2026.github.io/ 라이브</li>
 <li>대시보드 확률은 NIS 자체 분석 — 공개 발행 전 수치 검토 권장</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="세션-종료-세션-종료-macbook-pro-2026-06-11" class="level2">
+<h2 class="anchored" data-anchor-id="세션-종료-세션-종료-macbook-pro-2026-06-11">[세션 종료] 세션 종료 @ MacBook Pro (2026-06-11)</h2>
+<section id="마지막-3개-요청-1" class="level3">
+<h3 class="anchored" data-anchor-id="마지막-3개-요청-1">마지막 3개 요청</h3>
+<ol type="1">
+<li>타일에 해당 주 명칭 + 링크, 추이 결측 구간 외부 집계 참조 기록</li>
+<li>7개 주 현 보유 정당(D/R 배지) 타일에 표시</li>
+<li>/bye 세션 종료</li>
+</ol>
+</section>
+<section id="완료한-작업-1" class="level3">
+<h3 class="anchored" data-anchor-id="완료한-작업-1">완료한 작업</h3>
+<ul>
+<li>후보 카드 전면 재설계: 사진+한줄소개/가족→학력→경력→펀드레이징/구분선/강점(초록)·약점(빨강)/정책/한국함의
+<ul>
+<li>CSS subgrid로 D·R 두 카드 같은 항목을 같은 높이에 정렬</li>
+<li>이미지 경로 수정(깨진 사진 해결), 사진 17명 완비(PD/CC), Platner CC BY-SA 4.0 추가</li>
+</ul></li>
+<li>상단 D|R 2열 나란히 + 경선 당 플레이스홀더 + 경선 후보 하단 가로 미니카드</li>
+<li>섹션 순서: 후보자→구도요약→주의특징→(경선)경선후보→경선구도요약</li>
+<li>Weekly Report: 주간브리핑 12편 issues/*.qmd 변환, 사이드바 자동 등재</li>
+<li>홈 추이 그래프 2개(트럼프 순지지도·일반투표), data/trends.json + assets/trends.js</li>
+<li>경합주 등급 분포 5개 타일: 주 수 + 명칭 + 링크 + D/R 보유 배지 + 탈환 1순위 설명</li>
+<li>NIS 후보자 보고서(2026_상원_후보자_상세프로필.md) 작성</li>
+<li>CI: rmarkdown·knitr 명시 설치, RSPM 폴백 대비 apt 헤더 선설치</li>
+</ul>
+</section>
+<section id="주요-변경-파일" class="level3">
+<h3 class="anchored" data-anchor-id="주요-변경-파일">주요 변경 파일</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 37%">
+<col style="width: 62%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>파일</th>
+<th>변경 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>R/helpers.R</code></td>
+<td>candidate_cards_html/primary_cards_html/rating_tiles_html/holder_note_html 추가·수정</td>
+</tr>
+<tr class="even">
+<td><code>theme/custom.scss</code></td>
+<td>subgrid, D/R 배지, 타일 링크, 구분선, 강점/약점 색 등</td>
+</tr>
+<tr class="odd">
+<td><code>data/candidates.json</code></td>
+<td>17명 status(nominee/primary) 추가</td>
+</tr>
+<tr class="even">
+<td><code>data/trends.json</code></td>
+<td>신설 — 12주 추이 시계열</td>
+</tr>
+<tr class="odd">
+<td><code>assets/trends.js</code></td>
+<td>신설 — Chart.js 라인차트</td>
+</tr>
+<tr class="even">
+<td><code>assets/candidates/*.jpg</code></td>
+<td>17명 사진 완비</td>
+</tr>
+<tr class="odd">
+<td><code>states/*.qmd</code></td>
+<td>7개 주 섹션 순서·구조 재작성</td>
+</tr>
+<tr class="even">
+<td><code>issues/2026-03-*.qmd ~ 2026-06-08.qmd</code></td>
+<td>12편 신설 (주간브리핑 변환)</td>
+</tr>
+<tr class="odd">
+<td><code>index.qmd</code></td>
+<td>타일·추이 차트·holder_note 추가</td>
+</tr>
+<tr class="even">
+<td><code>.github/workflows/publish.yml</code></td>
+<td>rmarkdown·knitr·apt 헤더 추가</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="다음-세션-todo-1" class="level3">
+<h3 class="anchored" data-anchor-id="다음-세션-todo-1">다음 세션 TODO</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">actions/checkout@v4 → Node 24 대응 (마감 6/16)</label></li>
+<li><label><input type="checkbox">GA 결선(6/16) 후 data/ 갱신</label></li>
+<li><label><input type="checkbox">ME 경선 결과(Platner 77.7%) states/me.qmd 반영</label></li>
+<li><label><input type="checkbox">issues/2026-06-14.qmd 작성</label></li>
+<li><label><input type="checkbox">data/trends.json 일반투표 null 주 보강</label></li>
+<li><label><input type="checkbox">launchd 스냅샷 스케줄러 등록</label></li>
+</ul>
+</section>
+<section id="컨텍스트-1" class="level3">
+<h3 class="anchored" data-anchor-id="컨텍스트-1">컨텍스트</h3>
+<ul>
+<li>상세 인계 정보: <code>handoff.md</code> 참조</li>
+<li>사이트: https://us-elections-2026.github.io/ 라이브</li>
 </ul>
 
 
