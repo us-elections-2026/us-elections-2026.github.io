@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>전망 대시보드 – 미국 중간선거 한국어 브리핑</title>
+<title>전국 환경 – 미국 중간선거 한국어 브리핑</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -71,8 +71,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1"></script>
-<link rel="stylesheet" href="assets/dashboard.css">
 
 
 </head>
@@ -136,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Overview</a></li><li class="breadcrumb-item"><a href="./dashboard.html">전망 대시보드</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./national.html">전국 National</a></li><li class="breadcrumb-item"><a href="./national.html">환경 — 정치·경제·외교</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -150,13 +148,13 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Overview</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
@@ -165,7 +163,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./dashboard.html" class="sidebar-item-text sidebar-link active">
+  <a href="./dashboard.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">전망 대시보드</span></a>
   </div>
 </li>
@@ -290,16 +288,16 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
  <span class="menu-text">전국 National</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="토글 섹션">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./national.html" class="sidebar-item-text sidebar-link">
+  <a href="./national.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">환경 — 정치·경제·외교</span></a>
   </div>
 </li>
@@ -349,17 +347,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">목차</h2>
    
   <ul>
-  <li><a href="#정적-표-인쇄접근성용" id="toc-정적-표-인쇄접근성용" class="nav-link active" data-scroll-target="#정적-표-인쇄접근성용">정적 표 (인쇄·접근성용)</a></li>
+  <li><a href="#approval" id="toc-approval" class="nav-link active" data-scroll-target="#approval">트럼프 국정지지율</a></li>
+  <li><a href="#generic" id="toc-generic" class="nav-link" data-scroll-target="#generic">제너릭 밸럿</a></li>
+  <li><a href="#economy" id="toc-economy" class="nav-link" data-scroll-target="#economy">경제 지표</a></li>
+  <li><a href="#foreign" id="toc-foreign" class="nav-link" data-scroll-target="#foreign">외교·안보</a></li>
+  <li><a href="#baseline" id="toc-baseline" class="nav-link" data-scroll-target="#baseline">역사적 기준선</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Overview</a></li><li class="breadcrumb-item"><a href="./dashboard.html">전망 대시보드</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./national.html">전국 National</a></li><li class="breadcrumb-item"><a href="./national.html">환경 — 정치·경제·외교</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">전망 대시보드</h1>
-<p class="subtitle lead">2026 상원 — 경합주 승리확률·시나리오·일정 (자체 분석 모델)</p>
+<h1 class="title">전국 환경</h1>
+<p class="subtitle lead">정치·경제·외교·트럼프 지지율 — 선거를 움직이는 거시 변수</p>
 </div>
 
 
@@ -376,78 +378,29 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="callout callout-style-simple callout-warning">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>이 페이지의 확률은 <strong>시장·집계기관 수치가 아니라 자체 프레임워크(Universal Causal Framework V2)의 모델 추정치</strong>입니다. Cook·Sabato 등급이나 예측시장과 같은 잣대로 비교하지 마세요. 데이터를 갱신하려면 <code>data/model_dashboard.json</code> 한 파일만 고쳐 push하면 사이트가 다시 빌드되어 자동 반영됩니다.</p>
-</div>
-</div>
-</div>
-<div id="dash-root">
-<p id="dash-stamp" class="text-muted" style="font-size:.85rem;">
-</p>
-<section id="핵심-지표" class="level3">
-<h3 class="anchored" data-anchor-id="핵심-지표">핵심 지표</h3>
-<div id="dash-kpis">
-
-</div>
-</section>
-<section id="주별-민주당-승리-확률" class="level3">
-<h3 class="anchored" data-anchor-id="주별-민주당-승리-확률">주별 민주당 승리 확률</h3>
-<div class="chart-wrap">
-<canvas id="probChart" height="180">
-</canvas>
-</div>
-</section>
-<section id="시나리오별-전망" class="level3">
-<h3 class="anchored" data-anchor-id="시나리오별-전망">시나리오별 전망</h3>
-<div id="dash-scenarios">
-
-</div>
-</section>
-<section id="경합주-상세" class="level3">
-<h3 class="anchored" data-anchor-id="경합주-상세">경합주 상세</h3>
-<div id="dash-states">
-
-</div>
-</section>
-<section id="향후-주요-일정" class="level3">
-<h3 class="anchored" data-anchor-id="향후-주요-일정">향후 주요 일정</h3>
-<div id="dash-timeline">
-
-</div>
-<p id="dash-note" class="text-muted" style="font-size:.78rem; margin-top:1rem;">
-</p>
-</section>
-</div>
-<script src="assets/dashboard.js"></script>
-<hr>
-<section id="정적-표-인쇄접근성용" class="level2">
-<h2 class="anchored" data-anchor-id="정적-표-인쇄접근성용">정적 표 (인쇄·접근성용)</h2>
-<p>위 인터랙티브 카드와 동일한 데이터입니다. JavaScript가 막힌 환경에서도 보이도록 빌드 시점에 표로도 렌더링합니다.</p>
+<p>중간선거는 대체로 <strong>대통령에 대한 국민투표</strong>의 성격을 띱니다. 이 페이지는 개별 레이스 위에 놓인 전국 단위 환경 변수를 한곳에 모읍니다 — 표는 빌드 시점 스냅샷이며, 추세 그래프는 <a href="./index.html#trends">홈</a>에 있습니다.</p>
+<section id="approval" class="level2">
+<h2 class="anchored" data-anchor-id="approval">트럼프 국정지지율</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="rpbzazoovx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="hwrcocxaii" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#rpbzazoovx table {
+#hwrcocxaii table {
   font-family: 'IBM Plex Sans KR', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#rpbzazoovx thead, #rpbzazoovx tbody, #rpbzazoovx tfoot, #rpbzazoovx tr, #rpbzazoovx td, #rpbzazoovx th {
+#hwrcocxaii thead, #hwrcocxaii tbody, #hwrcocxaii tfoot, #hwrcocxaii tr, #hwrcocxaii td, #hwrcocxaii th {
   border-style: none;
 }
 
-#rpbzazoovx p {
+#hwrcocxaii p {
   margin: 0;
   padding: 0;
 }
 
-#rpbzazoovx .gt_table {
+#hwrcocxaii .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -473,12 +426,12 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
-#rpbzazoovx .gt_caption {
+#hwrcocxaii .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#rpbzazoovx .gt_title {
+#hwrcocxaii .gt_title {
   color: #333333;
   font-size: 16px;
   font-weight: initial;
@@ -490,7 +443,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-#rpbzazoovx .gt_subtitle {
+#hwrcocxaii .gt_subtitle {
   color: #333333;
   font-size: 12px;
   font-weight: initial;
@@ -502,7 +455,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-#rpbzazoovx .gt_heading {
+#hwrcocxaii .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -514,13 +467,13 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#rpbzazoovx .gt_bottom_border {
+#hwrcocxaii .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#rpbzazoovx .gt_col_headings {
+#hwrcocxaii .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -535,7 +488,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#rpbzazoovx .gt_col_heading {
+#hwrcocxaii .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -555,7 +508,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#rpbzazoovx .gt_column_spanner_outer {
+#hwrcocxaii .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -567,15 +520,15 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 4px;
 }
 
-#rpbzazoovx .gt_column_spanner_outer:first-child {
+#hwrcocxaii .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#rpbzazoovx .gt_column_spanner_outer:last-child {
+#hwrcocxaii .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#rpbzazoovx .gt_column_spanner {
+#hwrcocxaii .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -587,11 +540,11 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-#rpbzazoovx .gt_spanner_row {
+#hwrcocxaii .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#rpbzazoovx .gt_group_heading {
+#hwrcocxaii .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -617,7 +570,7 @@ ul.task-list li input[type="checkbox"] {
   text-align: left;
 }
 
-#rpbzazoovx .gt_empty_group_heading {
+#hwrcocxaii .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -632,15 +585,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-#rpbzazoovx .gt_from_md > :first-child {
+#hwrcocxaii .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#rpbzazoovx .gt_from_md > :last-child {
+#hwrcocxaii .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#rpbzazoovx .gt_row {
+#hwrcocxaii .gt_row {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 5px;
@@ -659,7 +612,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#rpbzazoovx .gt_stub {
+#hwrcocxaii .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -672,553 +625,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#rpbzazoovx .gt_stub_row_group {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-  vertical-align: top;
-}
-
-#rpbzazoovx .gt_row_group_first td {
-  border-top-width: 2px;
-}
-
-#rpbzazoovx .gt_row_group_first th {
-  border-top-width: 2px;
-}
-
-#rpbzazoovx .gt_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#rpbzazoovx .gt_first_summary_row {
-  border-top-style: solid;
-  border-top-color: #D3D3D3;
-}
-
-#rpbzazoovx .gt_first_summary_row.thick {
-  border-top-width: 2px;
-}
-
-#rpbzazoovx .gt_last_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#rpbzazoovx .gt_grand_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#rpbzazoovx .gt_first_grand_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-style: double;
-  border-top-width: 6px;
-  border-top-color: #D3D3D3;
-}
-
-#rpbzazoovx .gt_last_grand_summary_row_top {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: double;
-  border-bottom-width: 6px;
-  border-bottom-color: #D3D3D3;
-}
-
-#rpbzazoovx .gt_striped {
-  background-color: rgba(128, 128, 128, 0.05);
-}
-
-#rpbzazoovx .gt_table_body {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#rpbzazoovx .gt_footnotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#rpbzazoovx .gt_footnote {
-  margin: 0px;
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#rpbzazoovx .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#rpbzazoovx .gt_sourcenote {
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#rpbzazoovx .gt_left {
-  text-align: left;
-}
-
-#rpbzazoovx .gt_center {
-  text-align: center;
-}
-
-#rpbzazoovx .gt_right {
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-
-#rpbzazoovx .gt_font_normal {
-  font-weight: normal;
-}
-
-#rpbzazoovx .gt_font_bold {
-  font-weight: bold;
-}
-
-#rpbzazoovx .gt_font_italic {
-  font-style: italic;
-}
-
-#rpbzazoovx .gt_super {
-  font-size: 65%;
-}
-
-#rpbzazoovx .gt_footnote_marks {
-  font-size: 75%;
-  vertical-align: 0.4em;
-  position: initial;
-}
-
-#rpbzazoovx .gt_asterisk {
-  font-size: 100%;
-  vertical-align: 0;
-}
-
-#rpbzazoovx .gt_indent_1 {
-  text-indent: 5px;
-}
-
-#rpbzazoovx .gt_indent_2 {
-  text-indent: 10px;
-}
-
-#rpbzazoovx .gt_indent_3 {
-  text-indent: 15px;
-}
-
-#rpbzazoovx .gt_indent_4 {
-  text-indent: 20px;
-}
-
-#rpbzazoovx .gt_indent_5 {
-  text-indent: 25px;
-}
-
-#rpbzazoovx .katex-display {
-  display: inline-flex !important;
-  margin-bottom: 0.75em !important;
-}
-
-#rpbzazoovx div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
-  height: 0px !important;
-}
-</style>
-
-<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
-<thead>
-<tr class="gt_heading header">
-<td colspan="6" class="gt_heading gt_title gt_font_normal">경합주 민주당 승리확률 — 자체 분석 모델</td>
-</tr>
-<tr class="gt_heading even">
-<td colspan="6" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">자체 분석 모델 (Universal Causal Framework V2) · 확률 기준 2026-05-29 · 사실 2026-06-11</td>
-</tr>
-<tr class="gt_col_headings header">
-<th id="a주" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">주</th>
-<th id="a구도" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">구도</th>
-<th id="a대결" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">대결</th>
-<th id="D-승리확률" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">D 승리확률</th>
-<th id="a등급" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">등급</th>
-<th id="a핵심-변수" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">핵심 변수</th>
-</tr>
-</thead>
-<tbody class="gt_table_body">
-<tr class="odd">
-<td class="gt_row gt_left" headers="주">메인</td>
-<td class="gt_row gt_left" headers="구도">공화 방어</td>
-<td class="gt_row gt_left" headers="대결">Platner (D) vs Collins (R·5선)</td>
-<td class="gt_row gt_left" headers="D 승리확률">63%</td>
-<td class="gt_row gt_left" headers="등급">Lean D</td>
-<td class="gt_row gt_left" headers="핵심 변수">세대 대결, Collins 초당파 브랜드, 트럼프 역풍</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="주">노스캐롤라이나</td>
-<td class="gt_row gt_left" headers="구도">공화 방어</td>
-<td class="gt_row gt_left" headers="대결">Cooper (D·전 주지사) vs Whatley (R)</td>
-<td class="gt_row gt_left" headers="D 승리확률">62%</td>
-<td class="gt_row gt_left" headers="등급">Lean D</td>
-<td class="gt_row gt_left" headers="핵심 변수">Cooper 97% 인지도 vs Whatley 인지도 열세, 슈퍼팩 $71M</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="주">조지아</td>
-<td class="gt_row gt_left" headers="구도">민주 방어</td>
-<td class="gt_row gt_left" headers="대결">Ossoff (D·현직) vs Collins/Dooley (R)</td>
-<td class="gt_row gt_left" headers="D 승리확률">61%</td>
-<td class="gt_row gt_left" headers="등급">Lean D</td>
-<td class="gt_row gt_left" headers="핵심 변수">공화 결선 분열, Ossoff 자금 우위, 메트로 애틀랜타</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="주">미시간</td>
-<td class="gt_row gt_left" headers="구도">민주 방어</td>
-<td class="gt_row gt_left" headers="대결">TBD (D) vs Rogers (R)</td>
-<td class="gt_row gt_left" headers="D 승리확률">50%</td>
-<td class="gt_row gt_left" headers="등급">Toss-up</td>
-<td class="gt_row gt_left" headers="핵심 변수">민주 경선 통합 여부(8/4), 자동차·관세, 아랍계 커뮤니티</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="주">뉴햄프셔</td>
-<td class="gt_row gt_left" headers="구도">민주 방어</td>
-<td class="gt_row gt_left" headers="대결">Pappas (D) vs 공화 경선 중 (Sununu·Brown)</td>
-<td class="gt_row gt_left" headers="D 승리확률">산정 전</td>
-<td class="gt_row gt_left" headers="등급">Lean D</td>
-<td class="gt_row gt_left" headers="핵심 변수">공화 후보 확정(9/8 경선) · 무당파 표심</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="주">오하이오</td>
-<td class="gt_row gt_left" headers="구도">공화 방어</td>
-<td class="gt_row gt_left" headers="대결">Brown (D·전 상원) vs Husted (R·임명직)</td>
-<td class="gt_row gt_left" headers="D 승리확률">38%</td>
-<td class="gt_row gt_left" headers="등급">Lean R</td>
-<td class="gt_row gt_left" headers="핵심 변수">특별선거 투표율, 임명직 정당성, 블루칼라 구조</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="주">알래스카</td>
-<td class="gt_row gt_left" headers="구도">공화 방어</td>
-<td class="gt_row gt_left" headers="대결">Peltola (D) vs Sullivan (R·현직)</td>
-<td class="gt_row gt_left" headers="D 승리확률">37%</td>
-<td class="gt_row gt_left" headers="등급">Lean R</td>
-<td class="gt_row gt_left" headers="핵심 변수">순위선택투표(RCV), 원주민 투표율, 설리번 현직 강점</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="주">텍사스</td>
-<td class="gt_row gt_left" headers="구도">공화 방어</td>
-<td class="gt_row gt_left" headers="대결">Talarico (D) vs Paxton (R)</td>
-<td class="gt_row gt_left" headers="D 승리확률">29%</td>
-<td class="gt_row gt_left" headers="등급">Lean R</td>
-<td class="gt_row gt_left" headers="핵심 변수">구조적 R+8, Paxton 스캔들·기소, 자금 비대칭</td>
-</tr>
-</tbody><tfoot>
-<tr class="gt_sourcenotes odd">
-<td colspan="6" class="gt_sourcenote">여기 확률은 시장·집계기관 수치가 아니라 내부 프레임워크의 모델 추정치입니다. Cook/Sabato 등급·예측시장과 같은 잣대로 비교하지 마세요. 확률 기준일 5/29, 후보·경선 사실은 6/5 브리핑 반영.</td>
-</tr>
-</tfoot>
-
-</table>
-
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div id="qwxbfbkbbn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#qwxbfbkbbn table {
-  font-family: 'IBM Plex Sans KR', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#qwxbfbkbbn thead, #qwxbfbkbbn tbody, #qwxbfbkbbn tfoot, #qwxbfbkbbn tr, #qwxbfbkbbn td, #qwxbfbkbbn th {
-  border-style: none;
-}
-
-#qwxbfbkbbn p {
-  margin: 0;
-  padding: 0;
-}
-
-#qwxbfbkbbn .gt_table {
-  display: table;
-  border-collapse: collapse;
-  line-height: normal;
-  margin-left: auto;
-  margin-right: auto;
-  color: #333333;
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  background-color: #FFFFFF;
-  width: auto;
-  border-top-style: none;
-  border-top-width: 2px;
-  border-top-color: #A8A8A8;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #A8A8A8;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-}
-
-#qwxbfbkbbn .gt_caption {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-#qwxbfbkbbn .gt_title {
-  color: #333333;
-  font-size: 16px;
-  font-weight: initial;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-color: #FFFFFF;
-  border-bottom-width: 0;
-}
-
-#qwxbfbkbbn .gt_subtitle {
-  color: #333333;
-  font-size: 12px;
-  font-weight: initial;
-  padding-top: 3px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-color: #FFFFFF;
-  border-top-width: 0;
-}
-
-#qwxbfbkbbn .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#qwxbfbkbbn .gt_bottom_border {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#qwxbfbkbbn .gt_col_headings {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#qwxbfbkbbn .gt_col_heading {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: bold;
-  text-transform: inherit;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  padding-left: 5px;
-  padding-right: 5px;
-  overflow-x: hidden;
-}
-
-#qwxbfbkbbn .gt_column_spanner_outer {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: bold;
-  text-transform: inherit;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-#qwxbfbkbbn .gt_column_spanner_outer:first-child {
-  padding-left: 0;
-}
-
-#qwxbfbkbbn .gt_column_spanner_outer:last-child {
-  padding-right: 0;
-}
-
-#qwxbfbkbbn .gt_column_spanner {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  overflow-x: hidden;
-  display: inline-block;
-  width: 100%;
-}
-
-#qwxbfbkbbn .gt_spanner_row {
-  border-bottom-style: hidden;
-}
-
-#qwxbfbkbbn .gt_group_heading {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  text-align: left;
-}
-
-#qwxbfbkbbn .gt_empty_group_heading {
-  padding: 0.5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: middle;
-}
-
-#qwxbfbkbbn .gt_from_md > :first-child {
-  margin-top: 0;
-}
-
-#qwxbfbkbbn .gt_from_md > :last-child {
-  margin-bottom: 0;
-}
-
-#qwxbfbkbbn .gt_row {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 10px;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  overflow-x: hidden;
-}
-
-#qwxbfbkbbn .gt_stub {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#qwxbfbkbbn .gt_stub_row_group {
+#hwrcocxaii .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1232,15 +639,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-#qwxbfbkbbn .gt_row_group_first td {
+#hwrcocxaii .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#qwxbfbkbbn .gt_row_group_first th {
+#hwrcocxaii .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#qwxbfbkbbn .gt_summary_row {
+#hwrcocxaii .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1250,16 +657,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#qwxbfbkbbn .gt_first_summary_row {
+#hwrcocxaii .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#qwxbfbkbbn .gt_first_summary_row.thick {
+#hwrcocxaii .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#qwxbfbkbbn .gt_last_summary_row {
+#hwrcocxaii .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1269,7 +676,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#qwxbfbkbbn .gt_grand_summary_row {
+#hwrcocxaii .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1279,7 +686,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#qwxbfbkbbn .gt_first_grand_summary_row {
+#hwrcocxaii .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1289,7 +696,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D3D3D3;
 }
 
-#qwxbfbkbbn .gt_last_grand_summary_row_top {
+#hwrcocxaii .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1299,11 +706,11 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#qwxbfbkbbn .gt_striped {
+#hwrcocxaii .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#qwxbfbkbbn .gt_table_body {
+#hwrcocxaii .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1312,7 +719,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#qwxbfbkbbn .gt_footnotes {
+#hwrcocxaii .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1326,7 +733,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#qwxbfbkbbn .gt_footnote {
+#hwrcocxaii .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1335,7 +742,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#qwxbfbkbbn .gt_sourcenotes {
+#hwrcocxaii .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1349,7 +756,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#qwxbfbkbbn .gt_sourcenote {
+#hwrcocxaii .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1357,72 +764,72 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#qwxbfbkbbn .gt_left {
+#hwrcocxaii .gt_left {
   text-align: left;
 }
 
-#qwxbfbkbbn .gt_center {
+#hwrcocxaii .gt_center {
   text-align: center;
 }
 
-#qwxbfbkbbn .gt_right {
+#hwrcocxaii .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#qwxbfbkbbn .gt_font_normal {
+#hwrcocxaii .gt_font_normal {
   font-weight: normal;
 }
 
-#qwxbfbkbbn .gt_font_bold {
+#hwrcocxaii .gt_font_bold {
   font-weight: bold;
 }
 
-#qwxbfbkbbn .gt_font_italic {
+#hwrcocxaii .gt_font_italic {
   font-style: italic;
 }
 
-#qwxbfbkbbn .gt_super {
+#hwrcocxaii .gt_super {
   font-size: 65%;
 }
 
-#qwxbfbkbbn .gt_footnote_marks {
+#hwrcocxaii .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#qwxbfbkbbn .gt_asterisk {
+#hwrcocxaii .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#qwxbfbkbbn .gt_indent_1 {
+#hwrcocxaii .gt_indent_1 {
   text-indent: 5px;
 }
 
-#qwxbfbkbbn .gt_indent_2 {
+#hwrcocxaii .gt_indent_2 {
   text-indent: 10px;
 }
 
-#qwxbfbkbbn .gt_indent_3 {
+#hwrcocxaii .gt_indent_3 {
   text-indent: 15px;
 }
 
-#qwxbfbkbbn .gt_indent_4 {
+#hwrcocxaii .gt_indent_4 {
   text-indent: 20px;
 }
 
-#qwxbfbkbbn .gt_indent_5 {
+#hwrcocxaii .gt_indent_5 {
   text-indent: 25px;
 }
 
-#qwxbfbkbbn .katex-display {
+#hwrcocxaii .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#qwxbfbkbbn div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#hwrcocxaii div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1430,47 +837,44 @@ ul.task-list li input[type="checkbox"] {
 <table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
 <thead>
 <tr class="gt_heading header">
-<td colspan="5" class="gt_heading gt_title gt_font_normal">상원 시나리오 — 자체 분석 모델</td>
+<td colspan="6" class="gt_heading gt_title gt_font_normal">트럼프 국정지지율</td>
 </tr>
 <tr class="gt_heading even">
-<td colspan="5" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">다수당 탈환 확률 32% · 순 기대의석 +1.4</td>
+<td colspan="6" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">기준 2026-06-07</td>
 </tr>
 <tr class="gt_col_headings header">
-<th id="a시나리오" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">시나리오</th>
-<th id="a확률" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">확률</th>
-<th id="a의석-결과" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">의석 결과</th>
-<th id="a다수당" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">다수당</th>
-<th id="a설명" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">설명</th>
+<th id="a집계" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">집계</th>
+<th id="a승인" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">승인</th>
+<th id="a비승인" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">비승인</th>
+<th id="a순지지" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">순지지</th>
+<th id="a기준일" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">기준일</th>
+<th id="a비고" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">비고</th>
 </tr>
 </thead>
 <tbody class="gt_table_body">
 <tr class="odd">
-<td class="gt_row gt_left" headers="시나리오">Base Case (부분 만회)</td>
-<td class="gt_row gt_right" headers="확률">42%</td>
-<td class="gt_row gt_left" headers="의석 결과">D 48 — R 52</td>
-<td class="gt_row gt_left" headers="다수당">공화당 유지</td>
-<td class="gt_row gt_left" headers="설명">트럼프 역풍 지속하나 공화당 10월 결집. ME·NC 확보, GA 방어, 나머지 R 방어</td>
+<td class="gt_row gt_left" headers="집계">Silver Bulletin</td>
+<td class="gt_row gt_left" headers="승인">—</td>
+<td class="gt_row gt_left" headers="비승인">—</td>
+<td class="gt_row gt_right" headers="순지지">-19.1</td>
+<td class="gt_row gt_right" headers="기준일">2026-06-06</td>
+<td class="gt_row gt_left" headers="비고">동시점 바이든(-13.6)·트럼프 1기(-10.6)보다 낮음</td>
 </tr>
 <tr class="even">
-<td class="gt_row gt_left" headers="시나리오">Bull Case (다수당 접근)</td>
-<td class="gt_row gt_right" headers="확률">28%</td>
-<td class="gt_row gt_left" headers="의석 결과">D 50~51 — R 50~49</td>
-<td class="gt_row gt_left" headers="다수당">동률 또는 D 탈환</td>
-<td class="gt_row gt_left" headers="설명">트럼프 추가 하락(-22pt+), 경제 악화, MI·OH 선전으로 +3~4석</td>
+<td class="gt_row gt_left" headers="집계">USPollingData</td>
+<td class="gt_row gt_left" headers="승인">38.7</td>
+<td class="gt_row gt_left" headers="비승인">58.3</td>
+<td class="gt_row gt_right" headers="순지지">-19.6</td>
+<td class="gt_row gt_right" headers="기준일">2026-06-01</td>
+<td class="gt_row gt_left" headers="비고">Gallup·Ipsos·YouGov·Quinnipiac·MC 종합</td>
 </tr>
 <tr class="odd">
-<td class="gt_row gt_left" headers="시나리오">Bear Case (현상 유지)</td>
-<td class="gt_row gt_right" headers="확률">22%</td>
-<td class="gt_row gt_left" headers="의석 결과">D 47 — R 53</td>
-<td class="gt_row gt_left" headers="다수당">공화당 유지</td>
-<td class="gt_row gt_left" headers="설명">MI 경선 분열, OH 구조 우위, 10월 분쟁 해소로 트럼프 반등 → 순 0석</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="시나리오">Tail Risk (극단 충격)</td>
-<td class="gt_row gt_right" headers="확률">8%</td>
-<td class="gt_row gt_left" headers="의석 결과">D 46- ~ D 52+</td>
-<td class="gt_row gt_left" headers="다수당">양극단</td>
-<td class="gt_row gt_left" headers="설명">상승 4%(트럼프 -25pt 돌파·TX 뒤집기) / 하락 4%(국제분쟁 격화·민주 분열)</td>
+<td class="gt_row gt_left" headers="집계">ActiVote</td>
+<td class="gt_row gt_left" headers="승인">39.7</td>
+<td class="gt_row gt_left" headers="비승인">55</td>
+<td class="gt_row gt_right" headers="순지지">-15.3</td>
+<td class="gt_row gt_right" headers="기준일">2026-06-01</td>
+<td class="gt_row gt_left" headers="비고">5점척도 변환</td>
 </tr>
 </tbody>
 </table>
@@ -1478,6 +882,1062 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+<p>이슈별 지지율(경제·인플레이션·이민·외교)은 발표 주기가 불규칙해 주간 브리핑에서 추적합니다. 핵심 패턴: <strong>경제·물가 순지지도가 종합 순지지도보다 일관되게 낮다</strong> — 중간선거 역풍의 주동력.</p>
+</section>
+<section id="generic" class="level2">
+<h2 class="anchored" data-anchor-id="generic">제너릭 밸럿</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div id="yfbabqkutb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#yfbabqkutb table {
+  font-family: 'IBM Plex Sans KR', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#yfbabqkutb thead, #yfbabqkutb tbody, #yfbabqkutb tfoot, #yfbabqkutb tr, #yfbabqkutb td, #yfbabqkutb th {
+  border-style: none;
+}
+
+#yfbabqkutb p {
+  margin: 0;
+  padding: 0;
+}
+
+#yfbabqkutb .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#yfbabqkutb .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#yfbabqkutb .gt_title {
+  color: #333333;
+  font-size: 16px;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#yfbabqkutb .gt_subtitle {
+  color: #333333;
+  font-size: 12px;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#yfbabqkutb .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#yfbabqkutb .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#yfbabqkutb .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#yfbabqkutb .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#yfbabqkutb .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#yfbabqkutb .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#yfbabqkutb .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#yfbabqkutb .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#yfbabqkutb .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#yfbabqkutb .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#yfbabqkutb .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#yfbabqkutb .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#yfbabqkutb .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#yfbabqkutb .gt_row {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#yfbabqkutb .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#yfbabqkutb .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#yfbabqkutb .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#yfbabqkutb .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#yfbabqkutb .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#yfbabqkutb .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#yfbabqkutb .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#yfbabqkutb .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#yfbabqkutb .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#yfbabqkutb .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#yfbabqkutb .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#yfbabqkutb .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#yfbabqkutb .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#yfbabqkutb .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#yfbabqkutb .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#yfbabqkutb .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#yfbabqkutb .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#yfbabqkutb .gt_left {
+  text-align: left;
+}
+
+#yfbabqkutb .gt_center {
+  text-align: center;
+}
+
+#yfbabqkutb .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#yfbabqkutb .gt_font_normal {
+  font-weight: normal;
+}
+
+#yfbabqkutb .gt_font_bold {
+  font-weight: bold;
+}
+
+#yfbabqkutb .gt_font_italic {
+  font-style: italic;
+}
+
+#yfbabqkutb .gt_super {
+  font-size: 65%;
+}
+
+#yfbabqkutb .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#yfbabqkutb .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#yfbabqkutb .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#yfbabqkutb .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#yfbabqkutb .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#yfbabqkutb .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#yfbabqkutb .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#yfbabqkutb .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#yfbabqkutb div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_heading header">
+<td colspan="6" class="gt_heading gt_title gt_font_normal">제너릭 밸럿 — 집계기관 평균</td>
+</tr>
+<tr class="gt_heading even">
+<td colspan="6" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">기준 2026-06-07 · 양수는 민주 우위</td>
+</tr>
+<tr class="gt_col_headings header">
+<th id="a집계기관" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">집계기관</th>
+<th id="a민주" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">민주</th>
+<th id="a공화" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">공화</th>
+<th id="a마진" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">마진</th>
+<th id="a기준일" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">기준일</th>
+<th id="a모집단" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">모집단</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="집계기관">Silver Bulletin</td>
+<td class="gt_row gt_left" headers="민주">—</td>
+<td class="gt_row gt_left" headers="공화">—</td>
+<td class="gt_row gt_left" headers="마진">D+6.8</td>
+<td class="gt_row gt_right" headers="기준일">2026-05-18</td>
+<td class="gt_row gt_left" headers="모집단">LV 가중</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="집계기관">FiftyPlusOne</td>
+<td class="gt_row gt_left" headers="민주">49.3</td>
+<td class="gt_row gt_left" headers="공화">43.4</td>
+<td class="gt_row gt_left" headers="마진">D+5.9</td>
+<td class="gt_row gt_right" headers="기준일">2026-06-06</td>
+<td class="gt_row gt_left" headers="모집단">품질·최신성 가중</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="집계기관">RealClearPolling</td>
+<td class="gt_row gt_left" headers="민주">—</td>
+<td class="gt_row gt_left" headers="공화">—</td>
+<td class="gt_row gt_left" headers="마진">D+5</td>
+<td class="gt_row gt_right" headers="기준일">2026-06-01</td>
+<td class="gt_row gt_left" headers="모집단">단순평균 성격</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="집계기관">Morning Consult</td>
+<td class="gt_row gt_left" headers="민주">46</td>
+<td class="gt_row gt_left" headers="공화">42</td>
+<td class="gt_row gt_left" headers="마진">D+3</td>
+<td class="gt_row gt_right" headers="기준일">2026-05-30</td>
+<td class="gt_row gt_left" headers="모집단">등록유권자(RV)</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="iworojsdre" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#iworojsdre table {
+  font-family: 'IBM Plex Sans KR', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#iworojsdre thead, #iworojsdre tbody, #iworojsdre tfoot, #iworojsdre tr, #iworojsdre td, #iworojsdre th {
+  border-style: none;
+}
+
+#iworojsdre p {
+  margin: 0;
+  padding: 0;
+}
+
+#iworojsdre .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#iworojsdre .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#iworojsdre .gt_title {
+  color: #333333;
+  font-size: 16px;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#iworojsdre .gt_subtitle {
+  color: #333333;
+  font-size: 12px;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#iworojsdre .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#iworojsdre .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#iworojsdre .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#iworojsdre .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#iworojsdre .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#iworojsdre .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#iworojsdre .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#iworojsdre .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#iworojsdre .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#iworojsdre .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#iworojsdre .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#iworojsdre .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#iworojsdre .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#iworojsdre .gt_row {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#iworojsdre .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#iworojsdre .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#iworojsdre .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#iworojsdre .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#iworojsdre .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#iworojsdre .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#iworojsdre .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#iworojsdre .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#iworojsdre .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#iworojsdre .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#iworojsdre .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#iworojsdre .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#iworojsdre .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#iworojsdre .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#iworojsdre .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#iworojsdre .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#iworojsdre .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#iworojsdre .gt_left {
+  text-align: left;
+}
+
+#iworojsdre .gt_center {
+  text-align: center;
+}
+
+#iworojsdre .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#iworojsdre .gt_font_normal {
+  font-weight: normal;
+}
+
+#iworojsdre .gt_font_bold {
+  font-weight: bold;
+}
+
+#iworojsdre .gt_font_italic {
+  font-style: italic;
+}
+
+#iworojsdre .gt_super {
+  font-size: 65%;
+}
+
+#iworojsdre .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#iworojsdre .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#iworojsdre .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#iworojsdre .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#iworojsdre .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#iworojsdre .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#iworojsdre .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#iworojsdre .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#iworojsdre div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_heading header">
+<td colspan="6" class="gt_heading gt_title gt_font_normal">개별조사 스프레드 — 왜 평균만 봐야 하는가</td>
+</tr>
+<tr class="gt_heading even">
+<td colspan="6" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">같은 시점, 같은 질문 — 그래도 이만큼 벌어진다</td>
+</tr>
+<tr class="gt_col_headings header">
+<th id="a조사기관" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">조사기관</th>
+<th id="a민주" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">민주</th>
+<th id="a공화" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">공화</th>
+<th id="a마진" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">마진</th>
+<th id="a모집단" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">모집단</th>
+<th id="a메모" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">메모</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="조사기관">Marist (PBS/NPR)</td>
+<td class="gt_row gt_right" headers="민주">55</td>
+<td class="gt_row gt_right" headers="공화">41</td>
+<td class="gt_row gt_left" headers="마진">D+14</td>
+<td class="gt_row gt_left" headers="모집단">RV</td>
+<td class="gt_row gt_left" headers="메모">상단 이상치 — 무당층 D+33</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="조사기관">Emerson</td>
+<td class="gt_row gt_right" headers="민주">44</td>
+<td class="gt_row gt_right" headers="공화">40</td>
+<td class="gt_row gt_left" headers="마진">D+4</td>
+<td class="gt_row gt_left" headers="모집단">—</td>
+<td class="gt_row gt_left" headers="메모">하단 — 미결정 16%</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="economy" class="level2">
+<h2 class="anchored" data-anchor-id="economy">경제 지표</h2>
+<p>선거 환경에 직결되는 지표만 추립니다. 체감 물가(장바구니·주거)가 거시 수치보다 투표에 가깝게 작동한다는 점에 유의.</p>
+<table class="table-striped caption-top table">
+<thead>
+<tr class="header">
+<th>지표</th>
+<th>최신값</th>
+<th>기준월</th>
+<th>선거 함의</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CPI (전년 대비)</td>
+<td>【수집】</td>
+<td>—</td>
+<td>물가는 현 사이클 최대 악재</td>
+</tr>
+<tr class="even">
+<td>실업률</td>
+<td>【수집】</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>미시간대 소비자심리</td>
+<td>【수집】</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>관세 관련 주요 조치</td>
+<td>【수집】</td>
+<td>—</td>
+<td>물가 전가 경로 주시</td>
+</tr>
+</tbody>
+</table>
+<p>【수집】 위 표는 전국 일일 브리핑 누적 후 <code>data/national_econ.json</code>으로 정규화 예정.</p>
+</section>
+<section id="foreign" class="level2">
+<h2 class="anchored" data-anchor-id="foreign">외교·안보</h2>
+<p>선거 쟁점화 가능성이 있는 사건 중심으로 주간 단위 정리. 한반도 관련 사안은 <a href="./korea-watch.html">Korea Watch</a>에서 상세 추적합니다.</p>
+<p>【수집】 주간 브리핑 발행 시 타임라인 보강.</p>
+</section>
+<section id="baseline" class="level2">
+<h2 class="anchored" data-anchor-id="baseline">역사적 기준선</h2>
+<p>대통령 정당은 2차 대전 이후 중간선거에서 하원 의석을 평균 두 자릿수로 잃었습니다. 지지율 40% 미만 대통령의 정당은 손실 폭이 더 컸다는 것이 일반적 패턴입니다. 다만 2026년은 <strong>중간 재획정으로 의석-득표 환산 구조 자체가 변형</strong>된 사이클이라, 과거 평균의 기계적 적용은 위험합니다.</p>
 
 
 </section>

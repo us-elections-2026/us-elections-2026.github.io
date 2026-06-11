@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>worklog_2026-06-08 – 미국 중간선거 한국어 브리핑</title>
+<title>주간 리포트 아카이브 – 미국 중간선거 한국어 브리핑</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,23 +26,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-6b0ca71d53c981bd7abc9b193139e533.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-09d53a36f9ca8c3ad3d0add6057e654c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,8 +72,66 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "검색"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-all-issues .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-all-issues'] = new List('listing-all-issues', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -82,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">미국 중간선거 한국어 브리핑</span>
     </a>
   </div>
@@ -93,11 +153,27 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../index.html" aria-current="page"> 
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">홈</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
+    <a class="nav-link" href="./senate.html"> 
+<span class="menu-text">상원</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./house.html"> 
+<span class="menu-text">하원</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./national.html"> 
+<span class="menu-text">전국</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./korea-watch.html"> 
+<span class="menu-text">Korea Watch</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">소개</span></a>
   </li>  
 </ul>
@@ -118,7 +194,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./archive.html">Weekly Report</a></li><li class="breadcrumb-item"><a href="./archive.html">아카이브 (전체 호)</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -141,31 +217,31 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">홈 — 환경 스냅샷</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../dashboard.html" class="sidebar-item-text sidebar-link">
+  <a href="./dashboard.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">전망 대시보드</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../trackers.html" class="sidebar-item-text sidebar-link">
+  <a href="./trackers.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">트래커 (전체 표)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../senate.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">상원 경합주 표</span></a>
+  <a href="./methodology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">방법론</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../about.html" class="sidebar-item-text sidebar-link">
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">소개</span></a>
   </div>
 </li>
@@ -174,7 +250,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
- <span class="menu-text">Weekly Report</span></a>
+ <span class="menu-text">상원 Senate</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -182,74 +258,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../issues/2026-03-23.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1주차 · 03/23~03/29</span></a>
+  <a href="./senate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">경합주 표</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../issues/2026-03-30.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2주차 · 03/30~04/05</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../issues/2026-04-06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3주차 · 04/06~04/12</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../issues/2026-04-13.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4주차 · 04/13~04/19</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../issues/2026-04-20.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5주차 · 04/20~04/26</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../issues/2026-04-27.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6주차 · 04/27~05/03</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../issues/2026-05-04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">7주차 · 05/04~05/10</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../issues/2026-05-11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">8주차 · 05/11~05/17</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../issues/2026-05-18.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">9주차 · 05/18~05/24</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../issues/2026-05-25.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">10주차 · 05/25~05/31</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../issues/2026-06-01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">11주차 · 06/01~06/07</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../issues/2026-06-08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">12주차 · 06/08~06/14</span></a>
+  <a href="./scenarios.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">시나리오 — 민주 소수·50:50·다수</span></a>
   </div>
 </li>
       </ul>
@@ -265,44 +281,118 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../states/ga.html" class="sidebar-item-text sidebar-link">
+  <a href="./states/ga.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">조지아 Georgia</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../states/mi.html" class="sidebar-item-text sidebar-link">
+  <a href="./states/mi.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">미시간 Michigan</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../states/me.html" class="sidebar-item-text sidebar-link">
+  <a href="./states/nh.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">뉴햄프셔 New Hampshire</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./states/me.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">메인 Maine</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../states/nc.html" class="sidebar-item-text sidebar-link">
+  <a href="./states/nc.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">노스캐롤라이나 North Carolina</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../states/tx.html" class="sidebar-item-text sidebar-link">
+  <a href="./states/tx.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">텍사스 Texas</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../states/oh.html" class="sidebar-item-text sidebar-link">
+  <a href="./states/oh.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">오하이오 Ohio</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../states/ak.html" class="sidebar-item-text sidebar-link">
+  <a href="./states/ak.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">알래스카 Alaska</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">하원 House</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./house.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">경합구 트래커</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+ <span class="menu-text">전국 National</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./national.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">환경 — 정치·경제·외교</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+ <span class="menu-text">Korea Watch</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./korea-watch.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">한국 관련 동향</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Weekly Report</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./archive.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">아카이브 (전체 호)</span></a>
   </div>
 </li>
       </ul>
@@ -312,267 +402,239 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">목차</h2>
-   
-  <ul>
-  <li><a href="#세션-종료-세션-종료-macbook-pro" id="toc-세션-종료-세션-종료-macbook-pro" class="nav-link active" data-scroll-target="#세션-종료-세션-종료-macbook-pro">[세션 종료] 세션 종료 @ MacBook Pro</a>
-  <ul class="collapse">
-  <li><a href="#마지막-3개-요청" id="toc-마지막-3개-요청" class="nav-link" data-scroll-target="#마지막-3개-요청">마지막 3개 요청</a></li>
-  <li><a href="#완료한-작업" id="toc-완료한-작업" class="nav-link" data-scroll-target="#완료한-작업">완료한 작업</a></li>
-  <li><a href="#변경된-파일" id="toc-변경된-파일" class="nav-link" data-scroll-target="#변경된-파일">변경된 파일</a></li>
-  <li><a href="#다음-세션-todo" id="toc-다음-세션-todo" class="nav-link" data-scroll-target="#다음-세션-todo">다음 세션 TODO</a></li>
-  <li><a href="#컨텍스트" id="toc-컨텍스트" class="nav-link" data-scroll-target="#컨텍스트">컨텍스트</a></li>
-  </ul></li>
-  <li><a href="#세션-종료-세션-종료-macbook-pro-2026-06-11" id="toc-세션-종료-세션-종료-macbook-pro-2026-06-11" class="nav-link" data-scroll-target="#세션-종료-세션-종료-macbook-pro-2026-06-11">[세션 종료] 세션 종료 @ MacBook Pro (2026-06-11)</a>
-  <ul class="collapse">
-  <li><a href="#마지막-3개-요청-1" id="toc-마지막-3개-요청-1" class="nav-link" data-scroll-target="#마지막-3개-요청-1">마지막 3개 요청</a></li>
-  <li><a href="#완료한-작업-1" id="toc-완료한-작업-1" class="nav-link" data-scroll-target="#완료한-작업-1">완료한 작업</a></li>
-  <li><a href="#주요-변경-파일" id="toc-주요-변경-파일" class="nav-link" data-scroll-target="#주요-변경-파일">주요 변경 파일</a></li>
-  <li><a href="#다음-세션-todo-1" id="toc-다음-세션-todo-1" class="nav-link" data-scroll-target="#다음-세션-todo-1">다음 세션 TODO</a></li>
-  <li><a href="#컨텍스트-1" id="toc-컨텍스트-1" class="nav-link" data-scroll-target="#컨텍스트-1">컨텍스트</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./archive.html">Weekly Report</a></li><li class="breadcrumb-item"><a href="./archive.html">아카이브 (전체 호)</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">주간 리포트 아카이브</h1>
+<p class="subtitle lead">발행된 모든 호 — 최신순</p>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="세션-종료-세션-종료-macbook-pro" class="level2">
-<h2 class="anchored" data-anchor-id="세션-종료-세션-종료-macbook-pro">[세션 종료] 세션 종료 @ MacBook Pro</h2>
-<section id="마지막-3개-요청" class="level3">
-<h3 class="anchored" data-anchor-id="마지막-3개-요청">마지막 3개 요청</h3>
-<ol type="1">
-<li>NIS 폴더(<code>_NIS/2026_senate_election</code>) 내용 파악 및 참조 기록</li>
-<li>그 안의 대시보드를 사이트에 구현 + 주기적 반영 자동화</li>
-<li>/bye 세션 종료</li>
-</ol>
-</section>
-<section id="완료한-작업" class="level3">
-<h3 class="anchored" data-anchor-id="완료한-작업">완료한 작업</h3>
-<ul>
-<li>git init + 첫 커밋 → GitHub public repo 생성(<code>woochangkang/us_elections.github.io</code>) → Pages 배포</li>
-<li>GitHub org <code>us-elections-2026</code> 생성 → repo 이전·이름 변경 → URL <code>https://us-elections-2026.github.io/</code></li>
-<li>왼쪽 docked 사이드바 신설(Overview/Weekly Report/State Focus) — <code>_quarto.yml</code></li>
-<li>State Focus 7개 주 페이지: <code>states/{ga,mi,me,nc,tx,oh,ak}.qmd</code></li>
-<li>상원 경합주 표 페이지 <code>senate.qmd</code> + <code>data/senate_primaries.json</code> + <code>gt_senate_primaries()</code></li>
-<li>NIS 폴더 구조·내용 파악 → <code>NOTES_LOCAL.md</code>(gitignored) 작성</li>
-<li>자체 모델 인터랙티브 대시보드: <code>dashboard.qmd</code> + <code>assets/dashboard.{js,css}</code> + <code>data/model_dashboard.json</code>
-<ul>
-<li>Chart.js KPI·확률차트·시나리오·경합주 카드·타임라인</li>
-<li>홈(index.qmd)에 요약 KPI 블록 + 링크</li>
-</ul></li>
-<li>주기적 스냅샷: <code>scripts/snapshot_and_publish.sh</code> + launchd plist (Mac mini용)</li>
-<li>CI 보강: RSPM 장애 대비 apt 시스템 헤더 선설치 (<code>libcurl</code> 등)</li>
-</ul>
-</section>
-<section id="변경된-파일" class="level3">
-<h3 class="anchored" data-anchor-id="변경된-파일">변경된 파일</h3>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 37%">
-<col style="width: 62%">
-</colgroup>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>매주 월요일 기준으로 발행됩니다. 각 호는 발행 시점의 스냅샷이며, 최신 수치는 <a href="./trackers.html">트래커</a>와 <a href="./dashboard.html">전망 대시보드</a>를 참조하세요.</p>
+<div id="listing-all-issues" class="quarto-listing quarto-listing-container-table">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-all-issues-sort" class="form-select" aria-label="정렬" onchange="window['quarto-listings']['listing-all-issues'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">정렬</option>
+      <option value="index" data-direction="asc">디폴트</option>
+      <option value="listing-date-sort" data-direction="asc">
+        발행일 - 날짜(오름차순)
+      </option>
+      <option value="listing-date-sort" data-direction="desc">
+        발행일 - 날짜(내림차순)
+      </option>
+      <option value="listing-title-sort" data-direction="asc">
+        호
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="필터">
+    </div>
+</div>
+<table class="quarto-listing-table table">
 <thead>
-<tr class="header">
-<th>파일</th>
-<th>변경 내용</th>
+<tr>
+
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">발행일</a>
+</th>
+
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">호</a>
+</th>
+
+<th>
+핵심 내용
+</th>
+
 </tr>
 </thead>
-<tbody>
-<tr class="odd">
-<td><code>_quarto.yml</code></td>
-<td>org URL·sidebar·resources 추가</td>
+<tbody class="list">
+
+<tr data-index="0" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1780876800000" data-listing-file-modified-sort="1781185218457" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="894" data-listing-title-sort="12주차 · 06/08~06/14" data-listing-filename-sort="2026-06-08.qmd">
+<td>
+<span class="listing-date">2026.06.08</span>
+</td>
+<td>
+<a href="./issues/2026-06-08.html" class="title listing-title">12주차 · 06/08~06/14</a>
+</td>
+<td>
+<span class="listing-description">메인 민주당 경선일(6/9). 굴 양식업자·재향군인 Graham Platner가 성적 문자 메시지 논란에도 압도적 선두(5월 말 경선 유력 투표자 약 76%)로</span>
+</td>
+
 </tr>
-<tr class="even">
-<td><code>R/helpers.R</code></td>
-<td>gt_senate_primaries/gt_state_detail/gt_model_states/gt_model_scenarios/model_kpi 추가</td>
+
+<tr data-index="1" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1780272000000" data-listing-file-modified-sort="1781185218457" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1193" data-listing-title-sort="11주차 · 06/01~06/07" data-listing-filename-sort="2026-06-01.qmd">
+<td>
+<span class="listing-date">2026.06.01</span>
+</td>
+<td>
+<a href="./issues/2026-06-01.html" class="title listing-title">11주차 · 06/01~06/07</a>
+</td>
+<td>
+<span class="listing-description">텍사스 등급 하향 확정. Ken Paxton(R)이 5/26 결선에서 현역 John Cornyn을 63.8%로 격파한 여파로, 이번 주 Cook Political</span>
+</td>
+
 </tr>
-<tr class="odd">
-<td><code>index.qmd</code></td>
-<td>상원 전망 요약 KPI 블록 삽입</td>
+
+<tr data-index="2" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1779667200000" data-listing-file-modified-sort="1781185218457" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1163" data-listing-title-sort="10주차 · 05/25~05/31" data-listing-filename-sort="2026-05-25.qmd">
+<td>
+<span class="listing-date">2026.05.25</span>
+</td>
+<td>
+<a href="./issues/2026-05-25.html" class="title listing-title">10주차 · 05/25~05/31</a>
+</td>
+<td>
+<span class="listing-description">텍사스 대이변 — Paxton, 현역 Cornyn 격파(5/26). GOP 결선투표에서 Ken Paxton(주 법무장관)이 4선 현역 John Cornyn을 63</span>
+</td>
+
 </tr>
-<tr class="even">
-<td><code>data/senate_races.json</code></td>
-<td>7개 주·6/5 사실 반영(OH 추가, TX Paxton 확정)</td>
+
+<tr data-index="3" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1779062400000" data-listing-file-modified-sort="1781185218457" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1097" data-listing-title-sort="9주차 · 05/18~05/24" data-listing-filename-sort="2026-05-18.qmd">
+<td>
+<span class="listing-date">2026.05.18</span>
+</td>
+<td>
+<a href="./issues/2026-05-18.html" class="title listing-title">9주차 · 05/18~05/24</a>
+</td>
+<td>
+<span class="listing-description">조지아 공화당 경선 실시(5/19) → 결선 확정. 과반 득표자 없이 Mike Collins와 Derek Dooley가 6월 16일 결선투표 진출, Buddy C</span>
+</td>
+
 </tr>
-<tr class="odd">
-<td><code>data/senate_primaries.json</code></td>
-<td>신설</td>
+
+<tr data-index="4" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1778457600000" data-listing-file-modified-sort="1781185218457" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1298" data-listing-title-sort="8주차 · 05/11~05/17" data-listing-filename-sort="2026-05-11.qmd">
+<td>
+<span class="listing-date">2026.05.11</span>
+</td>
+<td>
+<a href="./issues/2026-05-11.html" class="title listing-title">8주차 · 05/11~05/17</a>
+</td>
+<td>
+<span class="listing-description">조지아 공화당 경선 D-4로 임박(5/19). Buddy Carter가 Mike Collins를 겨냥한 첫 공격 광고(약 200만 달러)를 집행하며 혼전 가속.</span>
+</td>
+
 </tr>
-<tr class="even">
-<td><code>data/model_dashboard.json</code></td>
-<td>신설 — 자체 모델 확률(5/29+6/5)</td>
+
+<tr data-index="5" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1777852800000" data-listing-file-modified-sort="1781185218457" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1090" data-listing-title-sort="7주차 · 05/04~05/10" data-listing-filename-sort="2026-05-04.qmd">
+<td>
+<span class="listing-date">2026.05.04</span>
+</td>
+<td>
+<a href="./issues/2026-05-04.html" class="title listing-title">7주차 · 05/04~05/10</a>
+</td>
+<td>
+<span class="listing-description">오하이오 본선 대진 확정(5/5 경선). Sherrod Brown이 민주당 후보로 확정(Husted는 무경쟁) — 양자 대결 성립. 여론조사상 사실상 동률(에머슨</span>
+</td>
+
 </tr>
-<tr class="odd">
-<td><code>data/history/2026-06-08/</code></td>
-<td>첫 스냅샷</td>
+
+<tr data-index="6" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1777248000000" data-listing-file-modified-sort="1781185218457" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1250" data-listing-title-sort="6주차 · 04/27~05/03" data-listing-filename-sort="2026-04-27.qmd">
+<td>
+<span class="listing-date">2026.04.27</span>
+</td>
+<td>
+<a href="./issues/2026-04-27.html" class="title listing-title">6주차 · 04/27~05/03</a>
+</td>
+<td>
+<span class="listing-description">메인 민주당 단일화 완성(4/30). 재닛 Mills 주지사가 자금 부족을 이유로 경선 중단을 선언, Graham Platner의 독주 체제 확립. 경선 여론조사</span>
+</td>
+
 </tr>
-<tr class="even">
-<td><code>dashboard.qmd</code></td>
-<td>신설</td>
+
+<tr data-index="7" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1776643200000" data-listing-file-modified-sort="1781185218457" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1242" data-listing-title-sort="5주차 · 04/20~04/26" data-listing-filename-sort="2026-04-20.qmd">
+<td>
+<span class="listing-date">2026.04.20</span>
+</td>
+<td>
+<a href="./issues/2026-04-20.html" class="title listing-title">5주차 · 04/20~04/26</a>
+</td>
+<td>
+<span class="listing-description">트럼프 지지율이 2기 최저점을 주중 거듭 경신. 주 초 NBC/Decision Desk 37%(비지지 63%)에서, 주 중반 AP-NORC 33%까지 떨어진 수치</span>
+</td>
+
 </tr>
-<tr class="odd">
-<td><code>assets/dashboard.{js,css}</code></td>
-<td>신설</td>
+
+<tr data-index="8" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1776038400000" data-listing-file-modified-sort="1781185218457" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1203" data-listing-title-sort="4주차 · 04/13~04/19" data-listing-filename-sort="2026-04-13.qmd">
+<td>
+<span class="listing-date">2026.04.13</span>
+</td>
+<td>
+<a href="./issues/2026-04-13.html" class="title listing-title">4주차 · 04/13~04/19</a>
+</td>
+<td>
+<span class="listing-description">Cook Political Report 등급 변동(4/13). 조지아·노스캐롤라이나를 Toss-up → Lean Democrat으로, 오하이오를 Lean R →</span>
+</td>
+
 </tr>
-<tr class="even">
-<td><code>senate.qmd</code></td>
-<td>신설</td>
+
+<tr data-index="9" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1775433600000" data-listing-file-modified-sort="1781185218457" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1175" data-listing-title-sort="3주차 · 04/06~04/12" data-listing-filename-sort="2026-04-06.qmd">
+<td>
+<span class="listing-date">2026.04.06</span>
+</td>
+<td>
+<a href="./issues/2026-04-06.html" class="title listing-title">3주차 · 04/06~04/12</a>
+</td>
+<td>
+<span class="listing-description">트럼프 지지율, 2기 임기 최초로 40% 아래 하락. 주 초 Silver Bulletin 순지지 −16.9, 주 말 RCP 평균 41.4% 지지/56.1% 반대(</span>
+</td>
+
 </tr>
-<tr class="odd">
-<td><code>states/*.qmd</code></td>
-<td>신설 (7개)</td>
+
+<tr data-index="10" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1774828800000" data-listing-file-modified-sort="1781185218457" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1111" data-listing-title-sort="2주차 · 03/30~04/05" data-listing-filename-sort="2026-03-30.qmd">
+<td>
+<span class="listing-date">2026.03.30</span>
+</td>
+<td>
+<a href="./issues/2026-03-30.html" class="title listing-title">2주차 · 03/30~04/05</a>
+</td>
+<td>
+<span class="listing-description">트럼프 지지율이 2기 최저치를 거듭 경신. Silver Bulletin 순지지도가 약 −16.7로 2주 전(−13.9)에서 급락했고, 주중 일부 단일 조사는 지지</span>
+</td>
+
 </tr>
-<tr class="even">
-<td><code>scripts/*.sh, *.plist</code></td>
-<td>신설</td>
+
+<tr data-index="11" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1774224000000" data-listing-file-modified-sort="1781185218455" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1010" data-listing-title-sort="1주차 · 03/23~03/29" data-listing-filename-sort="2026-03-23.qmd">
+<td>
+<span class="listing-date">2026.03.23</span>
+</td>
+<td>
+<a href="./issues/2026-03-23.html" class="title listing-title">1주차 · 03/23~03/29</a>
+</td>
+<td>
+<span class="listing-description">트럼프 지지율 2기 사상 최저. Nate Silver 종합 순지지도 −16.7(3/26)로 2기 최저. Reuters/Ipsos 지지율은 36%로 전주(40%)</span>
+</td>
+
 </tr>
-<tr class="odd">
-<td><code>.github/workflows/publish.yml</code></td>
-<td>apt 의존성 추가</td>
-</tr>
-<tr class="even">
-<td><code>CLAUDE.md</code></td>
-<td>디렉토리·구조 문서화</td>
-</tr>
-<tr class="odd">
-<td><code>NOTES_LOCAL.md</code></td>
-<td>신설 (gitignored)</td>
-</tr>
+
 </tbody>
 </table>
-</section>
-<section id="다음-세션-todo" class="level3">
-<h3 class="anchored" data-anchor-id="다음-세션-todo">다음 세션 TODO</h3>
-<ul class="task-list">
-<li><label><input type="checkbox"><code>issues/2026-06-14.qmd</code> 작성 — ME 6/9 경선 결과, GA 6/16 결선 직전 동향</label></li>
-<li><label><input type="checkbox">GA 결선(6/16) 후 <code>data/senate_races.json</code>·<code>data/model_dashboard.json</code>·<code>states/ga.qmd</code> 갱신</label></li>
-<li><label><input type="checkbox">launchd 활성화 (Mac mini): <code>cp scripts/com.us-elections.snapshot.plist ~/Library/LaunchAgents/ &amp;&amp; launchctl load ...</code></label></li>
-<li><label><input type="checkbox">NC·AK·OH 【수집】 슬롯 채우기</label></li>
-<li><label><input type="checkbox"><code>about.qmd</code> 실제 콘텐츠 작성</label></li>
-<li><label><input type="checkbox">Actions <code>actions/checkout@v4</code> → Node 24 대응 (2026-06-16 강제)</label></li>
-</ul>
-</section>
-<section id="컨텍스트" class="level3">
-<h3 class="anchored" data-anchor-id="컨텍스트">컨텍스트</h3>
-<ul>
-<li>상세 인계 정보: <code>handoff.md</code> 참조</li>
-<li>사이트: https://us-elections-2026.github.io/ 라이브</li>
-<li>대시보드 확률은 NIS 자체 분석 — 공개 발행 전 수치 검토 권장</li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="세션-종료-세션-종료-macbook-pro-2026-06-11" class="level2">
-<h2 class="anchored" data-anchor-id="세션-종료-세션-종료-macbook-pro-2026-06-11">[세션 종료] 세션 종료 @ MacBook Pro (2026-06-11)</h2>
-<section id="마지막-3개-요청-1" class="level3">
-<h3 class="anchored" data-anchor-id="마지막-3개-요청-1">마지막 3개 요청</h3>
-<ol type="1">
-<li>타일에 해당 주 명칭 + 링크, 추이 결측 구간 외부 집계 참조 기록</li>
-<li>7개 주 현 보유 정당(D/R 배지) 타일에 표시</li>
-<li>/bye 세션 종료</li>
-</ol>
-</section>
-<section id="완료한-작업-1" class="level3">
-<h3 class="anchored" data-anchor-id="완료한-작업-1">완료한 작업</h3>
-<ul>
-<li>후보 카드 전면 재설계: 사진+한줄소개/가족→학력→경력→펀드레이징/구분선/강점(초록)·약점(빨강)/정책/한국함의
-<ul>
-<li>CSS subgrid로 D·R 두 카드 같은 항목을 같은 높이에 정렬</li>
-<li>이미지 경로 수정(깨진 사진 해결), 사진 17명 완비(PD/CC), Platner CC BY-SA 4.0 추가</li>
-</ul></li>
-<li>상단 D|R 2열 나란히 + 경선 당 플레이스홀더 + 경선 후보 하단 가로 미니카드</li>
-<li>섹션 순서: 후보자→구도요약→주의특징→(경선)경선후보→경선구도요약</li>
-<li>Weekly Report: 주간브리핑 12편 issues/*.qmd 변환, 사이드바 자동 등재</li>
-<li>홈 추이 그래프 2개(트럼프 순지지도·일반투표), data/trends.json + assets/trends.js</li>
-<li>경합주 등급 분포 5개 타일: 주 수 + 명칭 + 링크 + D/R 보유 배지 + 탈환 1순위 설명</li>
-<li>NIS 후보자 보고서(2026_상원_후보자_상세프로필.md) 작성</li>
-<li>CI: rmarkdown·knitr 명시 설치, RSPM 폴백 대비 apt 헤더 선설치</li>
-</ul>
-</section>
-<section id="주요-변경-파일" class="level3">
-<h3 class="anchored" data-anchor-id="주요-변경-파일">주요 변경 파일</h3>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 37%">
-<col style="width: 62%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>파일</th>
-<th>변경 내용</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>R/helpers.R</code></td>
-<td>candidate_cards_html/primary_cards_html/rating_tiles_html/holder_note_html 추가·수정</td>
-</tr>
-<tr class="even">
-<td><code>theme/custom.scss</code></td>
-<td>subgrid, D/R 배지, 타일 링크, 구분선, 강점/약점 색 등</td>
-</tr>
-<tr class="odd">
-<td><code>data/candidates.json</code></td>
-<td>17명 status(nominee/primary) 추가</td>
-</tr>
-<tr class="even">
-<td><code>data/trends.json</code></td>
-<td>신설 — 12주 추이 시계열</td>
-</tr>
-<tr class="odd">
-<td><code>assets/trends.js</code></td>
-<td>신설 — Chart.js 라인차트</td>
-</tr>
-<tr class="even">
-<td><code>assets/candidates/*.jpg</code></td>
-<td>17명 사진 완비</td>
-</tr>
-<tr class="odd">
-<td><code>states/*.qmd</code></td>
-<td>7개 주 섹션 순서·구조 재작성</td>
-</tr>
-<tr class="even">
-<td><code>issues/2026-03-*.qmd ~ 2026-06-08.qmd</code></td>
-<td>12편 신설 (주간브리핑 변환)</td>
-</tr>
-<tr class="odd">
-<td><code>index.qmd</code></td>
-<td>타일·추이 차트·holder_note 추가</td>
-</tr>
-<tr class="even">
-<td><code>.github/workflows/publish.yml</code></td>
-<td>rmarkdown·knitr·apt 헤더 추가</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="다음-세션-todo-1" class="level3">
-<h3 class="anchored" data-anchor-id="다음-세션-todo-1">다음 세션 TODO</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">actions/checkout@v4 → Node 24 대응 (마감 6/16)</label></li>
-<li><label><input type="checkbox">GA 결선(6/16) 후 data/ 갱신</label></li>
-<li><label><input type="checkbox">ME 경선 결과(Platner 77.7%) states/me.qmd 반영</label></li>
-<li><label><input type="checkbox">issues/2026-06-14.qmd 작성</label></li>
-<li><label><input type="checkbox">data/trends.json 일반투표 null 주 보강</label></li>
-<li><label><input type="checkbox">launchd 스냅샷 스케줄러 등록</label></li>
-</ul>
-</section>
-<section id="컨텍스트-1" class="level3">
-<h3 class="anchored" data-anchor-id="컨텍스트-1">컨텍스트</h3>
-<ul>
-<li>상세 인계 정보: <code>handoff.md</code> 참조</li>
-<li>사이트: https://us-elections-2026.github.io/ 라이브</li>
-</ul>
+<div class="listing-no-matching d-none">일치 없음</div>
+</div>
 
 
-</section>
-</section>
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -993,5 +1055,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

@@ -14,19 +14,21 @@
   }
 
   function renderKPIs(root, d) {
-    const probs = d.states.map((s) => s.prob);
-    const demWins = d.states.filter((s) => s.prob >= 50).length;
-    const repWins = d.states.length - demWins;
+    // prob=null(확률 미산정 주)은 집계에서 제외 — 표시되는 모수는 산정 주 수
+    const scored = d.states.filter((s) => s.prob != null);
+    const probs = scored.map((s) => s.prob);
+    const demWins = scored.filter((s) => s.prob >= 50).length;
+    const repWins = scored.length - demWins;
     const avg = (probs.reduce((a, b) => a + b, 0) / probs.length).toFixed(1);
-    const tossups = d.states.filter((s) => s.prob >= 45 && s.prob <= 55).length;
+    const tossups = scored.filter((s) => s.prob >= 45 && s.prob <= 55).length;
     const projDem =
       47 +
-      d.states.filter((s) => s.defense === "R" && s.prob >= 50).length -
-      d.states.filter((s) => s.defense === "D" && s.prob < 50).length;
+      scored.filter((s) => s.defense === "R" && s.prob >= 50).length -
+      scored.filter((s) => s.defense === "D" && s.prob < 50).length;
 
     const cards = [
-      ["경합주 민주 우세", `${demWins}석`, `${d.states.length}개 주 중 · 전체 전망 ${projDem}석`, "#1971c2"],
-      ["경합주 공화 우세", `${repWins}석`, `${d.states.length}개 주 중 · 전체 전망 ${100 - projDem}석`, "#c92a2a"],
+      ["경합주 민주 우세", `${demWins}석`, `산정 ${scored.length}개 주 중 · 전체 전망 ${projDem}석`, "#1971c2"],
+      ["경합주 공화 우세", `${repWins}석`, `산정 ${scored.length}개 주 중 · 전체 전망 ${100 - projDem}석`, "#c92a2a"],
       ["초접전(45~55%)", `${tossups}개`, "경합도 최고 구간", "#f59e0b"],
       ["다수당 탈환 확률", `${d.dem_majority_prob}%`, `순 기대의석 +${d.net_expected_seats}`, "#7c3aed"],
     ];
@@ -106,15 +108,18 @@
           `<span class="state-name">${s.name}</span><span class="state-rating ${rc}">${s.rating}</span>`)
       );
       card.appendChild(el("div", "state-matchup", s.matchup));
+      const hasProb = s.prob != null;
       const bar = el("div", "prob-bar");
       const fill = el("div", "prob-fill");
-      fill.style.width = s.prob + "%";
-      fill.style.background = probColor(s.prob);
+      fill.style.width = (hasProb ? s.prob : 0) + "%";
+      if (hasProb) fill.style.background = probColor(s.prob);
       bar.appendChild(fill);
       card.appendChild(bar);
       card.appendChild(
         el("div", "prob-row",
-          `<span>민주 ${s.prob}%</span><span class="muted">공화 ${100 - s.prob}%</span>`)
+          hasProb
+            ? `<span>민주 ${s.prob}%</span><span class="muted">공화 ${100 - s.prob}%</span>`
+            : `<span class="muted">모델 확률 산정 전</span>`)
       );
       card.appendChild(el("div", "state-note", `<strong>핵심 변수</strong> ${s.key_var}<br><span class="muted">${s.note}</span>`));
       wrap.appendChild(card);

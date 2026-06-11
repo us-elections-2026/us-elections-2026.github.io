@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>전망 대시보드 – 미국 중간선거 한국어 브리핑</title>
+<title>Korea Watch – 미국 중간선거 한국어 브리핑</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -71,8 +71,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1"></script>
-<link rel="stylesheet" href="assets/dashboard.css">
 
 
 </head>
@@ -136,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Overview</a></li><li class="breadcrumb-item"><a href="./dashboard.html">전망 대시보드</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./korea-watch.html">Korea Watch</a></li><li class="breadcrumb-item"><a href="./korea-watch.html">한국 관련 동향</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -150,13 +148,13 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Overview</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
@@ -165,7 +163,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./dashboard.html" class="sidebar-item-text sidebar-link active">
+  <a href="./dashboard.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">전망 대시보드</span></a>
   </div>
 </li>
@@ -307,16 +305,16 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
  <span class="menu-text">Korea Watch</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="토글 섹션">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./korea-watch.html" class="sidebar-item-text sidebar-link">
+  <a href="./korea-watch.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">한국 관련 동향</span></a>
   </div>
 </li>
@@ -349,17 +347,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">목차</h2>
    
   <ul>
-  <li><a href="#정적-표-인쇄접근성용" id="toc-정적-표-인쇄접근성용" class="nav-link active" data-scroll-target="#정적-표-인쇄접근성용">정적 표 (인쇄·접근성용)</a></li>
+  <li><a href="#추적-체계" id="toc-추적-체계" class="nav-link active" data-scroll-target="#추적-체계">추적 체계</a></li>
+  <li><a href="#db" id="toc-db" class="nav-link" data-scroll-target="#db">동향 DB</a></li>
+  <li><a href="#people" id="toc-people" class="nav-link" data-scroll-target="#people">인물 추적</a></li>
+  <li><a href="#scenarios" id="toc-scenarios" class="nav-link" data-scroll-target="#scenarios">시나리오 함의</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Overview</a></li><li class="breadcrumb-item"><a href="./dashboard.html">전망 대시보드</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./korea-watch.html">Korea Watch</a></li><li class="breadcrumb-item"><a href="./korea-watch.html">한국 관련 동향</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">전망 대시보드</h1>
-<p class="subtitle lead">2026 상원 — 경합주 승리확률·시나리오·일정 (자체 분석 모델)</p>
+<h1 class="title">Korea Watch</h1>
+<p class="subtitle lead">미국 정치권의 한국 관련 동향 — 법안·표결·발언·인사·통상·안보</p>
 </div>
 
 
@@ -376,624 +377,77 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="callout callout-style-simple callout-warning">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>이 페이지의 확률은 <strong>시장·집계기관 수치가 아니라 자체 프레임워크(Universal Causal Framework V2)의 모델 추정치</strong>입니다. Cook·Sabato 등급이나 예측시장과 같은 잣대로 비교하지 마세요. 데이터를 갱신하려면 <code>data/model_dashboard.json</code> 한 파일만 고쳐 push하면 사이트가 다시 빌드되어 자동 반영됩니다.</p>
-</div>
-</div>
-</div>
-<div id="dash-root">
-<p id="dash-stamp" class="text-muted" style="font-size:.85rem;">
-</p>
-<section id="핵심-지표" class="level3">
-<h3 class="anchored" data-anchor-id="핵심-지표">핵심 지표</h3>
-<div id="dash-kpis">
-
-</div>
-</section>
-<section id="주별-민주당-승리-확률" class="level3">
-<h3 class="anchored" data-anchor-id="주별-민주당-승리-확률">주별 민주당 승리 확률</h3>
-<div class="chart-wrap">
-<canvas id="probChart" height="180">
-</canvas>
-</div>
-</section>
-<section id="시나리오별-전망" class="level3">
-<h3 class="anchored" data-anchor-id="시나리오별-전망">시나리오별 전망</h3>
-<div id="dash-scenarios">
-
-</div>
-</section>
-<section id="경합주-상세" class="level3">
-<h3 class="anchored" data-anchor-id="경합주-상세">경합주 상세</h3>
-<div id="dash-states">
-
-</div>
-</section>
-<section id="향후-주요-일정" class="level3">
-<h3 class="anchored" data-anchor-id="향후-주요-일정">향후 주요 일정</h3>
-<div id="dash-timeline">
-
-</div>
-<p id="dash-note" class="text-muted" style="font-size:.78rem; margin-top:1rem;">
-</p>
-</section>
-</div>
-<script src="assets/dashboard.js"></script>
-<hr>
-<section id="정적-표-인쇄접근성용" class="level2">
-<h2 class="anchored" data-anchor-id="정적-표-인쇄접근성용">정적 표 (인쇄·접근성용)</h2>
-<p>위 인터랙티브 카드와 동일한 데이터입니다. JavaScript가 막힌 환경에서도 보이도록 빌드 시점에 표로도 렌더링합니다.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="rpbzazoovx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#rpbzazoovx table {
-  font-family: 'IBM Plex Sans KR', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#rpbzazoovx thead, #rpbzazoovx tbody, #rpbzazoovx tfoot, #rpbzazoovx tr, #rpbzazoovx td, #rpbzazoovx th {
-  border-style: none;
-}
-
-#rpbzazoovx p {
-  margin: 0;
-  padding: 0;
-}
-
-#rpbzazoovx .gt_table {
-  display: table;
-  border-collapse: collapse;
-  line-height: normal;
-  margin-left: auto;
-  margin-right: auto;
-  color: #333333;
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  background-color: #FFFFFF;
-  width: auto;
-  border-top-style: none;
-  border-top-width: 2px;
-  border-top-color: #A8A8A8;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #A8A8A8;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-}
-
-#rpbzazoovx .gt_caption {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-#rpbzazoovx .gt_title {
-  color: #333333;
-  font-size: 16px;
-  font-weight: initial;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-color: #FFFFFF;
-  border-bottom-width: 0;
-}
-
-#rpbzazoovx .gt_subtitle {
-  color: #333333;
-  font-size: 12px;
-  font-weight: initial;
-  padding-top: 3px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-color: #FFFFFF;
-  border-top-width: 0;
-}
-
-#rpbzazoovx .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#rpbzazoovx .gt_bottom_border {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#rpbzazoovx .gt_col_headings {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#rpbzazoovx .gt_col_heading {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: bold;
-  text-transform: inherit;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  padding-left: 5px;
-  padding-right: 5px;
-  overflow-x: hidden;
-}
-
-#rpbzazoovx .gt_column_spanner_outer {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: bold;
-  text-transform: inherit;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-#rpbzazoovx .gt_column_spanner_outer:first-child {
-  padding-left: 0;
-}
-
-#rpbzazoovx .gt_column_spanner_outer:last-child {
-  padding-right: 0;
-}
-
-#rpbzazoovx .gt_column_spanner {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  overflow-x: hidden;
-  display: inline-block;
-  width: 100%;
-}
-
-#rpbzazoovx .gt_spanner_row {
-  border-bottom-style: hidden;
-}
-
-#rpbzazoovx .gt_group_heading {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  text-align: left;
-}
-
-#rpbzazoovx .gt_empty_group_heading {
-  padding: 0.5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: middle;
-}
-
-#rpbzazoovx .gt_from_md > :first-child {
-  margin-top: 0;
-}
-
-#rpbzazoovx .gt_from_md > :last-child {
-  margin-bottom: 0;
-}
-
-#rpbzazoovx .gt_row {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 10px;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  overflow-x: hidden;
-}
-
-#rpbzazoovx .gt_stub {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#rpbzazoovx .gt_stub_row_group {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-  vertical-align: top;
-}
-
-#rpbzazoovx .gt_row_group_first td {
-  border-top-width: 2px;
-}
-
-#rpbzazoovx .gt_row_group_first th {
-  border-top-width: 2px;
-}
-
-#rpbzazoovx .gt_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#rpbzazoovx .gt_first_summary_row {
-  border-top-style: solid;
-  border-top-color: #D3D3D3;
-}
-
-#rpbzazoovx .gt_first_summary_row.thick {
-  border-top-width: 2px;
-}
-
-#rpbzazoovx .gt_last_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#rpbzazoovx .gt_grand_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#rpbzazoovx .gt_first_grand_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-style: double;
-  border-top-width: 6px;
-  border-top-color: #D3D3D3;
-}
-
-#rpbzazoovx .gt_last_grand_summary_row_top {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: double;
-  border-bottom-width: 6px;
-  border-bottom-color: #D3D3D3;
-}
-
-#rpbzazoovx .gt_striped {
-  background-color: rgba(128, 128, 128, 0.05);
-}
-
-#rpbzazoovx .gt_table_body {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#rpbzazoovx .gt_footnotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#rpbzazoovx .gt_footnote {
-  margin: 0px;
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#rpbzazoovx .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#rpbzazoovx .gt_sourcenote {
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#rpbzazoovx .gt_left {
-  text-align: left;
-}
-
-#rpbzazoovx .gt_center {
-  text-align: center;
-}
-
-#rpbzazoovx .gt_right {
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-
-#rpbzazoovx .gt_font_normal {
-  font-weight: normal;
-}
-
-#rpbzazoovx .gt_font_bold {
-  font-weight: bold;
-}
-
-#rpbzazoovx .gt_font_italic {
-  font-style: italic;
-}
-
-#rpbzazoovx .gt_super {
-  font-size: 65%;
-}
-
-#rpbzazoovx .gt_footnote_marks {
-  font-size: 75%;
-  vertical-align: 0.4em;
-  position: initial;
-}
-
-#rpbzazoovx .gt_asterisk {
-  font-size: 100%;
-  vertical-align: 0;
-}
-
-#rpbzazoovx .gt_indent_1 {
-  text-indent: 5px;
-}
-
-#rpbzazoovx .gt_indent_2 {
-  text-indent: 10px;
-}
-
-#rpbzazoovx .gt_indent_3 {
-  text-indent: 15px;
-}
-
-#rpbzazoovx .gt_indent_4 {
-  text-indent: 20px;
-}
-
-#rpbzazoovx .gt_indent_5 {
-  text-indent: 25px;
-}
-
-#rpbzazoovx .katex-display {
-  display: inline-flex !important;
-  margin-bottom: 0.75em !important;
-}
-
-#rpbzazoovx div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
-  height: 0px !important;
-}
-</style>
-
-<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
+<p>이 사이트의 차별점은 <strong>선거와 한국 정책의 연결</strong>입니다. Korea Watch는 미 의회·행정부·캠페인에서 발생하는 한국 관련 사건을 고정 스키마의 누적 DB로 기록하고, 경합 레이스와의 연관을 표시합니다.</p>
+<section id="추적-체계" class="level2">
+<h2 class="anchored" data-anchor-id="추적-체계">추적 체계</h2>
+<table class="table-striped caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
-<tr class="gt_heading header">
-<td colspan="6" class="gt_heading gt_title gt_font_normal">경합주 민주당 승리확률 — 자체 분석 모델</td>
-</tr>
-<tr class="gt_heading even">
-<td colspan="6" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">자체 분석 모델 (Universal Causal Framework V2) · 확률 기준 2026-05-29 · 사실 2026-06-11</td>
-</tr>
-<tr class="gt_col_headings header">
-<th id="a주" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">주</th>
-<th id="a구도" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">구도</th>
-<th id="a대결" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">대결</th>
-<th id="D-승리확률" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">D 승리확률</th>
-<th id="a등급" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">등급</th>
-<th id="a핵심-변수" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">핵심 변수</th>
+<tr class="header">
+<th>유형</th>
+<th>범위</th>
 </tr>
 </thead>
-<tbody class="gt_table_body">
+<tbody>
 <tr class="odd">
-<td class="gt_row gt_left" headers="주">메인</td>
-<td class="gt_row gt_left" headers="구도">공화 방어</td>
-<td class="gt_row gt_left" headers="대결">Platner (D) vs Collins (R·5선)</td>
-<td class="gt_row gt_left" headers="D 승리확률">63%</td>
-<td class="gt_row gt_left" headers="등급">Lean D</td>
-<td class="gt_row gt_left" headers="핵심 변수">세대 대결, Collins 초당파 브랜드, 트럼프 역풍</td>
+<td>안보</td>
+<td>주한미군, 방위비분담(SMA), 확장억제, 전작권</td>
 </tr>
 <tr class="even">
-<td class="gt_row gt_left" headers="주">노스캐롤라이나</td>
-<td class="gt_row gt_left" headers="구도">공화 방어</td>
-<td class="gt_row gt_left" headers="대결">Cooper (D·전 주지사) vs Whatley (R)</td>
-<td class="gt_row gt_left" headers="D 승리확률">62%</td>
-<td class="gt_row gt_left" headers="등급">Lean D</td>
-<td class="gt_row gt_left" headers="핵심 변수">Cooper 97% 인지도 vs Whatley 인지도 열세, 슈퍼팩 $71M</td>
+<td>통상</td>
+<td>관세, KORUS, 무역합의, 환율</td>
 </tr>
 <tr class="odd">
-<td class="gt_row gt_left" headers="주">조지아</td>
-<td class="gt_row gt_left" headers="구도">민주 방어</td>
-<td class="gt_row gt_left" headers="대결">Ossoff (D·현직) vs Collins/Dooley (R)</td>
-<td class="gt_row gt_left" headers="D 승리확률">61%</td>
-<td class="gt_row gt_left" headers="등급">Lean D</td>
-<td class="gt_row gt_left" headers="핵심 변수">공화 결선 분열, Ossoff 자금 우위, 메트로 애틀랜타</td>
+<td>산업</td>
+<td>조선 협력, 반도체·배터리 투자, IRA·CHIPS</td>
 </tr>
 <tr class="even">
-<td class="gt_row gt_left" headers="주">미시간</td>
-<td class="gt_row gt_left" headers="구도">민주 방어</td>
-<td class="gt_row gt_left" headers="대결">TBD (D) vs Rogers (R)</td>
-<td class="gt_row gt_left" headers="D 승리확률">50%</td>
-<td class="gt_row gt_left" headers="등급">Toss-up</td>
-<td class="gt_row gt_left" headers="핵심 변수">민주 경선 통합 여부(8/4), 자동차·관세, 아랍계 커뮤니티</td>
+<td>북한</td>
+<td>제재·비핵화 관련 의회 동향</td>
 </tr>
 <tr class="odd">
-<td class="gt_row gt_left" headers="주">뉴햄프셔</td>
-<td class="gt_row gt_left" headers="구도">민주 방어</td>
-<td class="gt_row gt_left" headers="대결">Pappas (D) vs 공화 경선 중 (Sununu·Brown)</td>
-<td class="gt_row gt_left" headers="D 승리확률">산정 전</td>
-<td class="gt_row gt_left" headers="등급">Lean D</td>
-<td class="gt_row gt_left" headers="핵심 변수">공화 후보 확정(9/8 경선) · 무당파 표심</td>
+<td>법안·표결</td>
+<td>한국 관련 법안·결의·NDAA 조항</td>
 </tr>
 <tr class="even">
-<td class="gt_row gt_left" headers="주">오하이오</td>
-<td class="gt_row gt_left" headers="구도">공화 방어</td>
-<td class="gt_row gt_left" headers="대결">Brown (D·전 상원) vs Husted (R·임명직)</td>
-<td class="gt_row gt_left" headers="D 승리확률">38%</td>
-<td class="gt_row gt_left" headers="등급">Lean R</td>
-<td class="gt_row gt_left" headers="핵심 변수">특별선거 투표율, 임명직 정당성, 블루칼라 구조</td>
+<td>인사</td>
+<td>주한대사, 국무부·NSC·USTR 한국 라인</td>
 </tr>
 <tr class="odd">
-<td class="gt_row gt_left" headers="주">알래스카</td>
-<td class="gt_row gt_left" headers="구도">공화 방어</td>
-<td class="gt_row gt_left" headers="대결">Peltola (D) vs Sullivan (R·현직)</td>
-<td class="gt_row gt_left" headers="D 승리확률">37%</td>
-<td class="gt_row gt_left" headers="등급">Lean R</td>
-<td class="gt_row gt_left" headers="핵심 변수">순위선택투표(RCV), 원주민 투표율, 설리번 현직 강점</td>
+<td>선거 연계</td>
+<td>한국계 후보, Korea Caucus, 경합주·경합구 후보의 한국 발언</td>
 </tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="주">텍사스</td>
-<td class="gt_row gt_left" headers="구도">공화 방어</td>
-<td class="gt_row gt_left" headers="대결">Talarico (D) vs Paxton (R)</td>
-<td class="gt_row gt_left" headers="D 승리확률">29%</td>
-<td class="gt_row gt_left" headers="등급">Lean R</td>
-<td class="gt_row gt_left" headers="핵심 변수">구조적 R+8, Paxton 스캔들·기소, 자금 비대칭</td>
-</tr>
-</tbody><tfoot>
-<tr class="gt_sourcenotes odd">
-<td colspan="6" class="gt_sourcenote">여기 확률은 시장·집계기관 수치가 아니라 내부 프레임워크의 모델 추정치입니다. Cook/Sabato 등급·예측시장과 같은 잣대로 비교하지 마세요. 확률 기준일 5/29, 후보·경선 사실은 6/5 브리핑 반영.</td>
-</tr>
-</tfoot>
-
+</tbody>
 </table>
-
-</div>
-</div>
-</div>
+<blockquote class="blockquote">
+<p>원칙: 확인된 발언·표결·문서만 기록합니다. 추정 함의는 추정임을 명시하고, 미확인은 “미확인”으로 둡니다.</p>
+</blockquote>
+</section>
+<section id="db" class="level2">
+<h2 class="anchored" data-anchor-id="db">동향 DB</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="qwxbfbkbbn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="nejqllcmss" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#qwxbfbkbbn table {
+#nejqllcmss table {
   font-family: 'IBM Plex Sans KR', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#qwxbfbkbbn thead, #qwxbfbkbbn tbody, #qwxbfbkbbn tfoot, #qwxbfbkbbn tr, #qwxbfbkbbn td, #qwxbfbkbbn th {
+#nejqllcmss thead, #nejqllcmss tbody, #nejqllcmss tfoot, #nejqllcmss tr, #nejqllcmss td, #nejqllcmss th {
   border-style: none;
 }
 
-#qwxbfbkbbn p {
+#nejqllcmss p {
   margin: 0;
   padding: 0;
 }
 
-#qwxbfbkbbn .gt_table {
+#nejqllcmss .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1019,12 +473,12 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
-#qwxbfbkbbn .gt_caption {
+#nejqllcmss .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#qwxbfbkbbn .gt_title {
+#nejqllcmss .gt_title {
   color: #333333;
   font-size: 16px;
   font-weight: initial;
@@ -1036,7 +490,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-#qwxbfbkbbn .gt_subtitle {
+#nejqllcmss .gt_subtitle {
   color: #333333;
   font-size: 12px;
   font-weight: initial;
@@ -1048,7 +502,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-#qwxbfbkbbn .gt_heading {
+#nejqllcmss .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1060,13 +514,13 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#qwxbfbkbbn .gt_bottom_border {
+#nejqllcmss .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#qwxbfbkbbn .gt_col_headings {
+#nejqllcmss .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1081,7 +535,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#qwxbfbkbbn .gt_col_heading {
+#nejqllcmss .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1101,7 +555,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#qwxbfbkbbn .gt_column_spanner_outer {
+#nejqllcmss .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1113,15 +567,15 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 4px;
 }
 
-#qwxbfbkbbn .gt_column_spanner_outer:first-child {
+#nejqllcmss .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#qwxbfbkbbn .gt_column_spanner_outer:last-child {
+#nejqllcmss .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#qwxbfbkbbn .gt_column_spanner {
+#nejqllcmss .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1133,11 +587,11 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-#qwxbfbkbbn .gt_spanner_row {
+#nejqllcmss .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#qwxbfbkbbn .gt_group_heading {
+#nejqllcmss .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1163,7 +617,7 @@ ul.task-list li input[type="checkbox"] {
   text-align: left;
 }
 
-#qwxbfbkbbn .gt_empty_group_heading {
+#nejqllcmss .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1178,15 +632,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-#qwxbfbkbbn .gt_from_md > :first-child {
+#nejqllcmss .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#qwxbfbkbbn .gt_from_md > :last-child {
+#nejqllcmss .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#qwxbfbkbbn .gt_row {
+#nejqllcmss .gt_row {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 5px;
@@ -1205,7 +659,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#qwxbfbkbbn .gt_stub {
+#nejqllcmss .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1218,7 +672,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#qwxbfbkbbn .gt_stub_row_group {
+#nejqllcmss .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1232,15 +686,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-#qwxbfbkbbn .gt_row_group_first td {
+#nejqllcmss .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#qwxbfbkbbn .gt_row_group_first th {
+#nejqllcmss .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#qwxbfbkbbn .gt_summary_row {
+#nejqllcmss .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1250,16 +704,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#qwxbfbkbbn .gt_first_summary_row {
+#nejqllcmss .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#qwxbfbkbbn .gt_first_summary_row.thick {
+#nejqllcmss .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#qwxbfbkbbn .gt_last_summary_row {
+#nejqllcmss .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1269,7 +723,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#qwxbfbkbbn .gt_grand_summary_row {
+#nejqllcmss .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1279,7 +733,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#qwxbfbkbbn .gt_first_grand_summary_row {
+#nejqllcmss .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1289,7 +743,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D3D3D3;
 }
 
-#qwxbfbkbbn .gt_last_grand_summary_row_top {
+#nejqllcmss .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1299,11 +753,11 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#qwxbfbkbbn .gt_striped {
+#nejqllcmss .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#qwxbfbkbbn .gt_table_body {
+#nejqllcmss .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1312,7 +766,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#qwxbfbkbbn .gt_footnotes {
+#nejqllcmss .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1326,7 +780,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#qwxbfbkbbn .gt_footnote {
+#nejqllcmss .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1335,7 +789,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#qwxbfbkbbn .gt_sourcenotes {
+#nejqllcmss .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1349,7 +803,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#qwxbfbkbbn .gt_sourcenote {
+#nejqllcmss .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1357,72 +811,72 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#qwxbfbkbbn .gt_left {
+#nejqllcmss .gt_left {
   text-align: left;
 }
 
-#qwxbfbkbbn .gt_center {
+#nejqllcmss .gt_center {
   text-align: center;
 }
 
-#qwxbfbkbbn .gt_right {
+#nejqllcmss .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#qwxbfbkbbn .gt_font_normal {
+#nejqllcmss .gt_font_normal {
   font-weight: normal;
 }
 
-#qwxbfbkbbn .gt_font_bold {
+#nejqllcmss .gt_font_bold {
   font-weight: bold;
 }
 
-#qwxbfbkbbn .gt_font_italic {
+#nejqllcmss .gt_font_italic {
   font-style: italic;
 }
 
-#qwxbfbkbbn .gt_super {
+#nejqllcmss .gt_super {
   font-size: 65%;
 }
 
-#qwxbfbkbbn .gt_footnote_marks {
+#nejqllcmss .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#qwxbfbkbbn .gt_asterisk {
+#nejqllcmss .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#qwxbfbkbbn .gt_indent_1 {
+#nejqllcmss .gt_indent_1 {
   text-indent: 5px;
 }
 
-#qwxbfbkbbn .gt_indent_2 {
+#nejqllcmss .gt_indent_2 {
   text-indent: 10px;
 }
 
-#qwxbfbkbbn .gt_indent_3 {
+#nejqllcmss .gt_indent_3 {
   text-indent: 15px;
 }
 
-#qwxbfbkbbn .gt_indent_4 {
+#nejqllcmss .gt_indent_4 {
   text-indent: 20px;
 }
 
-#qwxbfbkbbn .gt_indent_5 {
+#nejqllcmss .gt_indent_5 {
   text-indent: 25px;
 }
 
-#qwxbfbkbbn .katex-display {
+#nejqllcmss .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#qwxbfbkbbn div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#nejqllcmss div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1430,47 +884,15 @@ ul.task-list li input[type="checkbox"] {
 <table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
 <thead>
 <tr class="gt_heading header">
-<td colspan="5" class="gt_heading gt_title gt_font_normal">상원 시나리오 — 자체 분석 모델</td>
+<td class="gt_heading gt_title gt_font_normal gt_bottom_border">Korea Watch — 한국 관련 동향</td>
 </tr>
-<tr class="gt_heading even">
-<td colspan="5" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">다수당 탈환 확률 32% · 순 기대의석 +1.4</td>
-</tr>
-<tr class="gt_col_headings header">
-<th id="a시나리오" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">시나리오</th>
-<th id="a확률" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">확률</th>
-<th id="a의석-결과" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">의석 결과</th>
-<th id="a다수당" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">다수당</th>
-<th id="a설명" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">설명</th>
+<tr class="gt_col_headings even">
+<th id="a안내" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">안내</th>
 </tr>
 </thead>
 <tbody class="gt_table_body">
 <tr class="odd">
-<td class="gt_row gt_left" headers="시나리오">Base Case (부분 만회)</td>
-<td class="gt_row gt_right" headers="확률">42%</td>
-<td class="gt_row gt_left" headers="의석 결과">D 48 — R 52</td>
-<td class="gt_row gt_left" headers="다수당">공화당 유지</td>
-<td class="gt_row gt_left" headers="설명">트럼프 역풍 지속하나 공화당 10월 결집. ME·NC 확보, GA 방어, 나머지 R 방어</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="시나리오">Bull Case (다수당 접근)</td>
-<td class="gt_row gt_right" headers="확률">28%</td>
-<td class="gt_row gt_left" headers="의석 결과">D 50~51 — R 50~49</td>
-<td class="gt_row gt_left" headers="다수당">동률 또는 D 탈환</td>
-<td class="gt_row gt_left" headers="설명">트럼프 추가 하락(-22pt+), 경제 악화, MI·OH 선전으로 +3~4석</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="시나리오">Bear Case (현상 유지)</td>
-<td class="gt_row gt_right" headers="확률">22%</td>
-<td class="gt_row gt_left" headers="의석 결과">D 47 — R 53</td>
-<td class="gt_row gt_left" headers="다수당">공화당 유지</td>
-<td class="gt_row gt_left" headers="설명">MI 경선 분열, OH 구조 우위, 10월 분쟁 해소로 트럼프 반등 → 순 0석</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="시나리오">Tail Risk (극단 충격)</td>
-<td class="gt_row gt_right" headers="확률">8%</td>
-<td class="gt_row gt_left" headers="의석 결과">D 46- ~ D 52+</td>
-<td class="gt_row gt_left" headers="다수당">양극단</td>
-<td class="gt_row gt_left" headers="설명">상승 4%(트럼프 -25pt 돌파·TX 뒤집기) / 하락 4%(국제분쟁 격화·민주 분열)</td>
+<td class="gt_row gt_left" headers="안내">수집된 항목이 아직 없습니다 — Korea Watch 일일 수집 시작 후 이 표가 채워집니다.</td>
 </tr>
 </tbody>
 </table>
@@ -1478,6 +900,18 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+</section>
+<section id="people" class="level2">
+<h2 class="anchored" data-anchor-id="people">인물 추적</h2>
+<ul>
+<li><strong>경합 레이스 후보의 한국 접점</strong>: 각 <a href="./states/ga.html">State Focus</a> 페이지의 🇰🇷 한국 함의 섹션과 상호 연동</li>
+<li><strong>한국계 연방 의원·후보</strong>: 【수집】 (현역·2026 출마자 명단 — 경합구 여부 표기)</li>
+<li><strong>Korea Caucus·지한파 의원</strong>: 【수집】</li>
+</ul>
+</section>
+<section id="scenarios" class="level2">
+<h2 class="anchored" data-anchor-id="scenarios">시나리오 함의</h2>
+<p>선거 결과별 한국 정책 환경 변화(위원회 지형·인준·통상 입법)는 <a href="./scenarios.html#korea">상원 시나리오</a> 페이지에서 함께 다룹니다.</p>
 
 
 </section>

@@ -1,6 +1,6 @@
 {
   "as_of": "2026-05-29",
-  "facts_updated": "2026-06-05",
+  "facts_updated": "2026-06-11",
   "source_label": "자체 분석 모델 (Universal Causal Framework V2)",
   "provenance_note": "여기 확률은 시장·집계기관 수치가 아니라 내부 프레임워크의 모델 추정치입니다. Cook/Sabato 등급·예측시장과 같은 잣대로 비교하지 마세요. 확률 기준일 5/29, 후보·경선 사실은 6/5 브리핑 반영.",
   "current_balance": "R 53 / D 47",
@@ -8,52 +8,189 @@
   "dem_majority_prob": 32,
   "net_expected_seats": 1.4,
   "states": [
-    {"id": "me", "name": "메인", "nameEn": "Maine", "defense": "R", "rating": "Lean D",
-     "prob": 63, "matchup": "Platner (D) vs Collins (R·5선)",
-     "key_var": "세대 대결, Collins 초당파 브랜드, 트럼프 역풍",
-     "note": "민주 경선 6/9 — Platner 우세, Mills 사퇴로 단일화 진행"},
-    {"id": "nc", "name": "노스캐롤라이나", "nameEn": "North Carolina", "defense": "R", "rating": "Lean D",
-     "prob": 62, "matchup": "Cooper (D·전 주지사) vs Whatley (R)",
-     "key_var": "Cooper 97% 인지도 vs Whatley 인지도 열세, 슈퍼팩 $71M",
-     "note": "Cooper 모금 $13.8M vs Whatley $5M, 공화 슈퍼팩 반격 변수"},
-    {"id": "ga", "name": "조지아", "nameEn": "Georgia", "defense": "D", "rating": "Lean D",
-     "prob": 61, "matchup": "Ossoff (D·현직) vs Collins/Dooley (R)",
-     "key_var": "공화 결선 분열, Ossoff 자금 우위, 메트로 애틀랜타",
-     "note": "공화 결선 6/16 (Collins 40.5 vs Dooley 30.2), Ossoff 현금 $32M+"},
-    {"id": "mi", "name": "미시간", "nameEn": "Michigan", "defense": "D", "rating": "Toss-up",
-     "prob": 50, "matchup": "TBD (D) vs Rogers (R)",
-     "key_var": "민주 경선 통합 여부(8/4), 자동차·관세, 아랍계 커뮤니티",
-     "note": "민주 경선 8/4 3파전 (El-Sayed 34 / Stevens 31 / McMorrow)"},
-    {"id": "oh", "name": "오하이오", "nameEn": "Ohio", "defense": "R", "rating": "Lean R",
-     "prob": 38, "matchup": "Brown (D·전 상원) vs Husted (R·임명직)",
-     "key_var": "특별선거 투표율, 임명직 정당성, 블루칼라 구조",
-     "note": "Fox News 5/28–6/1 Brown 53–45 Husted — 단일 조사, 추세 확인 필요"},
-    {"id": "ak", "name": "알래스카", "nameEn": "Alaska", "defense": "R", "rating": "Lean R",
-     "prob": 37, "matchup": "Peltola (D) vs Sullivan (R·현직)",
-     "key_var": "순위선택투표(RCV), 원주민 투표율, 설리번 현직 강점",
-     "note": "정글 프라이머리 8/18 top-4 → RCV 본선, Peltola 2022 RCV 승리 경험"},
-    {"id": "tx", "name": "텍사스", "nameEn": "Texas", "defense": "R", "rating": "Lean R",
-     "prob": 29, "matchup": "Talarico (D) vs Paxton (R)",
-     "key_var": "구조적 R+8, Paxton 스캔들·기소, 자금 비대칭",
-     "note": "Paxton이 현직 Cornyn 경선 격파(63.8%) → Cook, Likely R→Lean R 하향"}
+    {
+      "id": "me",
+      "name": "메인",
+      "nameEn": "Maine",
+      "defense": "R",
+      "rating": "Lean D",
+      "prob": 63,
+      "matchup": "Platner (D) vs Collins (R·5선)",
+      "key_var": "세대 대결, Collins 초당파 브랜드, 트럼프 역풍",
+      "note": "민주 경선 6/9 — Platner 우세, Mills 사퇴로 단일화 진행"
+    },
+    {
+      "id": "nc",
+      "name": "노스캐롤라이나",
+      "nameEn": "North Carolina",
+      "defense": "R",
+      "rating": "Lean D",
+      "prob": 62,
+      "matchup": "Cooper (D·전 주지사) vs Whatley (R)",
+      "key_var": "Cooper 97% 인지도 vs Whatley 인지도 열세, 슈퍼팩 $71M",
+      "note": "Cooper 모금 $13.8M vs Whatley $5M, 공화 슈퍼팩 반격 변수"
+    },
+    {
+      "id": "ga",
+      "name": "조지아",
+      "nameEn": "Georgia",
+      "defense": "D",
+      "rating": "Lean D",
+      "prob": 61,
+      "matchup": "Ossoff (D·현직) vs Collins/Dooley (R)",
+      "key_var": "공화 결선 분열, Ossoff 자금 우위, 메트로 애틀랜타",
+      "note": "공화 결선 6/16 (Collins 40.5 vs Dooley 30.2), Ossoff 현금 $32M+"
+    },
+    {
+      "id": "mi",
+      "name": "미시간",
+      "nameEn": "Michigan",
+      "defense": "D",
+      "rating": "Toss-up",
+      "prob": 50,
+      "matchup": "TBD (D) vs Rogers (R)",
+      "key_var": "민주 경선 통합 여부(8/4), 자동차·관세, 아랍계 커뮤니티",
+      "note": "민주 경선 8/4 3파전 (El-Sayed 34 / Stevens 31 / McMorrow)"
+    },
+    {
+      "id": "nh",
+      "name": "뉴햄프셔",
+      "nameEn": "New Hampshire",
+      "defense": "D",
+      "rating": "Lean D",
+      "prob": null,
+      "matchup": "Pappas (D) vs 공화 경선 중 (Sununu·Brown)",
+      "key_var": "공화 후보 확정(9/8 경선) · 무당파 표심",
+      "note": "Shaheen 은퇴 오픈시트 — 모델 확률은 차기 주간 갱신 때 산정 예정(산정 전)"
+    },
+    {
+      "id": "oh",
+      "name": "오하이오",
+      "nameEn": "Ohio",
+      "defense": "R",
+      "rating": "Lean R",
+      "prob": 38,
+      "matchup": "Brown (D·전 상원) vs Husted (R·임명직)",
+      "key_var": "특별선거 투표율, 임명직 정당성, 블루칼라 구조",
+      "note": "Fox News 5/28–6/1 Brown 53–45 Husted — 단일 조사, 추세 확인 필요"
+    },
+    {
+      "id": "ak",
+      "name": "알래스카",
+      "nameEn": "Alaska",
+      "defense": "R",
+      "rating": "Lean R",
+      "prob": 37,
+      "matchup": "Peltola (D) vs Sullivan (R·현직)",
+      "key_var": "순위선택투표(RCV), 원주민 투표율, 설리번 현직 강점",
+      "note": "정글 프라이머리 8/18 top-4 → RCV 본선, Peltola 2022 RCV 승리 경험"
+    },
+    {
+      "id": "tx",
+      "name": "텍사스",
+      "nameEn": "Texas",
+      "defense": "R",
+      "rating": "Lean R",
+      "prob": 29,
+      "matchup": "Talarico (D) vs Paxton (R)",
+      "key_var": "구조적 R+8, Paxton 스캔들·기소, 자금 비대칭",
+      "note": "Paxton이 현직 Cornyn 경선 격파(63.8%) → Cook, Likely R→Lean R 하향"
+    }
   ],
   "scenarios": [
-    {"id": "base", "name": "Base Case", "subname": "부분 만회", "prob": 42, "seats": "D 48 — R 52", "majority": "공화당 유지",
-     "desc": "트럼프 역풍 지속하나 공화당 10월 결집. ME·NC 확보, GA 방어, 나머지 R 방어"},
-    {"id": "bull", "name": "Bull Case", "subname": "다수당 접근", "prob": 28, "seats": "D 50~51 — R 50~49", "majority": "동률 또는 D 탈환",
-     "desc": "트럼프 추가 하락(-22pt+), 경제 악화, MI·OH 선전으로 +3~4석"},
-    {"id": "bear", "name": "Bear Case", "subname": "현상 유지", "prob": 22, "seats": "D 47 — R 53", "majority": "공화당 유지",
-     "desc": "MI 경선 분열, OH 구조 우위, 10월 분쟁 해소로 트럼프 반등 → 순 0석"},
-    {"id": "tail", "name": "Tail Risk", "subname": "극단 충격", "prob": 8, "seats": "D 46- ~ D 52+", "majority": "양극단",
-     "desc": "상승 4%(트럼프 -25pt 돌파·TX 뒤집기) / 하락 4%(국제분쟁 격화·민주 분열)"}
+    {
+      "id": "base",
+      "name": "Base Case",
+      "subname": "부분 만회",
+      "prob": 42,
+      "seats": "D 48 — R 52",
+      "majority": "공화당 유지",
+      "desc": "트럼프 역풍 지속하나 공화당 10월 결집. ME·NC 확보, GA 방어, 나머지 R 방어"
+    },
+    {
+      "id": "bull",
+      "name": "Bull Case",
+      "subname": "다수당 접근",
+      "prob": 28,
+      "seats": "D 50~51 — R 50~49",
+      "majority": "동률 또는 D 탈환",
+      "desc": "트럼프 추가 하락(-22pt+), 경제 악화, MI·OH 선전으로 +3~4석"
+    },
+    {
+      "id": "bear",
+      "name": "Bear Case",
+      "subname": "현상 유지",
+      "prob": 22,
+      "seats": "D 47 — R 53",
+      "majority": "공화당 유지",
+      "desc": "MI 경선 분열, OH 구조 우위, 10월 분쟁 해소로 트럼프 반등 → 순 0석"
+    },
+    {
+      "id": "tail",
+      "name": "Tail Risk",
+      "subname": "극단 충격",
+      "prob": 8,
+      "seats": "D 46- ~ D 52+",
+      "majority": "양극단",
+      "desc": "상승 4%(트럼프 -25pt 돌파·TX 뒤집기) / 하락 4%(국제분쟁 격화·민주 분열)"
+    }
   ],
   "timeline": [
-    {"date": "완료", "event": "TX 공화당 경선", "detail": "Paxton이 현직 Cornyn 격파 → 본선 후보 확정", "party": "rep", "status": "done"},
-    {"date": "6/9", "event": "ME 민주당 경선", "detail": "Platner 공식 후보 확정 시 ME D 확률 상향", "party": "dem", "status": "upcoming"},
-    {"date": "6/16", "event": "GA 공화당 결선", "detail": "Collins vs Dooley — Ossoff 상대 결정", "party": "rep", "status": "upcoming"},
-    {"date": "8/4", "event": "MI 민주당 경선", "detail": "3파전 결과 → 본선 경쟁력·MI 확률 큰 폭 조정", "party": "dem", "status": "upcoming"},
-    {"date": "8/18", "event": "AK 정글 프라이머리", "detail": "상위 4명 → RCV 본선 구도 확정", "party": "neutral", "status": "upcoming"},
-    {"date": "9~10월", "event": "본선 토론·광고전", "detail": "슈퍼팩 투입 효과 가시화, 10월 서프라이즈", "party": "neutral", "status": "upcoming"},
-    {"date": "11/3", "event": "선거일", "detail": "2026 중간선거 투표일", "party": "neutral", "status": "upcoming"}
+    {
+      "date": "완료",
+      "event": "TX 공화당 경선",
+      "detail": "Paxton이 현직 Cornyn 격파 → 본선 후보 확정",
+      "party": "rep",
+      "status": "done"
+    },
+    {
+      "date": "6/9",
+      "event": "ME 민주당 경선",
+      "detail": "Platner 공식 후보 확정 시 ME D 확률 상향",
+      "party": "dem",
+      "status": "upcoming"
+    },
+    {
+      "date": "6/16",
+      "event": "GA 공화당 결선",
+      "detail": "Collins vs Dooley — Ossoff 상대 결정",
+      "party": "rep",
+      "status": "upcoming"
+    },
+    {
+      "date": "8/4",
+      "event": "MI 민주당 경선",
+      "detail": "3파전 결과 → 본선 경쟁력·MI 확률 큰 폭 조정",
+      "party": "dem",
+      "status": "upcoming"
+    },
+    {
+      "date": "8/18",
+      "event": "AK 정글 프라이머리",
+      "detail": "상위 4명 → RCV 본선 구도 확정",
+      "party": "neutral",
+      "status": "upcoming"
+    },
+    {
+      "date": "9/8",
+      "event": "NH 양당 경선",
+      "detail": "공화 Sununu vs Brown · 민주 Pappas 우위 — 8개 주 중 가장 늦은 경선",
+      "party": "rep",
+      "status": "upcoming"
+    },
+    {
+      "date": "9~10월",
+      "event": "본선 토론·광고전",
+      "detail": "슈퍼팩 투입 효과 가시화, 10월 서프라이즈",
+      "party": "neutral",
+      "status": "upcoming"
+    },
+    {
+      "date": "11/3",
+      "event": "선거일",
+      "detail": "2026 중간선거 투표일",
+      "party": "neutral",
+      "status": "upcoming"
+    }
   ]
 }
