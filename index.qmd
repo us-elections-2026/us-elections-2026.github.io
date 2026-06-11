@@ -29,16 +29,18 @@ cat(sprintf(
 "::: {.callout-note appearance=\"minimal\"}
 **자체 분석 모델** (기준 %s · 사실 %s) — 현재 의석 **%s**, 민주 다수당까지 순 **+%d석**. 이번 가을 개선 의석 **35석**(정규 33 + 특별선거).
 
-- 경합주 7곳 중 민주 우세 **%d곳** · 평균 D 승리확률 **%s%%**
+- 경합주 %d곳 중 민주 우세 **%d곳** · 평균 D 승리확률 **%s%%**%s
 - 다수당 탈환 확률 **%s%%** · 순 기대의석 **+%s석** · Base Case **%s**
 
 👉 [**전망 대시보드 전체 보기**](dashboard.qmd) — 주별 확률·시나리오·경선 일정
 :::\n",
 k$as_of, k$facts, k$balance, k$needed,
-k$dem_wins, k$avg, k$majority, k$net, k$base_seats))
+k$n, k$dem_wins, k$avg,
+if (k$n_scored < k$n) sprintf(" _(모델 확률 산정 %d곳 기준 — 나머지는 산정 전)_", k$n_scored) else "",
+k$majority, k$net, k$base_seats))
 ```
 
-**경합주 7곳 등급 분포** _(타일=전망 우세, 주명 옆 배지=현 보유 정당)_
+**경합주 8곳 등급 분포** _(타일=전망 우세, 주명 옆 배지=현 보유 정당)_
 
 ```{r}
 #| output: asis

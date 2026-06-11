@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-06-10",
+  "as_of": "2026-06-11",
   "note": "후보 프로필. 출처가 분명한 사실만 수록. null=공개 출처 미확인. 사진은 공개도메인(공식 상·하원 초상) 또는 CC 라이선스만 사용하며 photo_credit에 출처·라이선스 표기.",
   "candidates": [
     {
@@ -277,6 +277,133 @@
         "https://rogersforsenate.com/meet-mike"
       ],
       "status": "nominee"
+    },
+    {
+      "state": "NH",
+      "party": "D",
+      "name": "Chris Pappas",
+      "name_kr": "크리스 파파스",
+      "incumbent": false,
+      "photo": "assets/candidates/nh_pappas.jpg",
+      "photo_credit": "U.S. House 공식 초상 (public domain)",
+      "born": 1980,
+      "occupation": "연방 하원의원(NH-01, 2019~) · 가족 레스토랑 Puritan Backroom 공동운영자",
+      "education": "하버드대 정치학(government) 학사(2002)",
+      "family": "2023년 2월 Vann Bentley와 결혼 — NH 첫 공개 성소수자 연방의원. 1917년 증조부가 창업한 레스토랑 가업 4대",
+      "past_elections": [
+        "NH 주하원(2002–06) · 힐스버러 카운티 재무관(2007–11) · 행정평의회(2013–19)",
+        "2018 NH-01 하원 당선 후 4선 — 전국 대표적 스윙 지역구 수성",
+        "2025-04-03 상원 출마 선언 (Shaheen 은퇴 직후, Shaheen 지지)"
+      ],
+      "fundraising": "누적 모금 986만 달러, 보유현금 422만 달러 (3/31 FEC) — 공화 양 후보 합계 상회",
+      "strengths": [
+        "스윙 지역구(NH-01) 4연승의 검증된 본선 경쟁력",
+        "압도적 자금 우위",
+        "경선 사실상 단일 구도(집계 66%) — 본선 직행 체제"
+      ],
+      "weaknesses": [
+        "주 전체 선거 첫 도전",
+        "오픈시트 — Shaheen의 현직 프리미엄 소멸",
+        "vs Sununu 가상대결 오차범위 내 (Emerson 3월 45–44)"
+      ],
+      "policy": [
+        "보훈 정책(하원 보훈위)",
+        "처방약가·의료 접근성",
+        "낙태권 보호",
+        "New Democrat 계열 중도 브랜드"
+      ],
+      "kr_note": null,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chris_Pappas_(American_politician)",
+        "https://ballotpedia.org/Chris_Pappas",
+        "https://emersoncollegepolling.com/new-hampshire-2026-sununu-leads-gop-nomination-ties-pappas-for-senate/"
+      ],
+      "status": "primary"
+    },
+    {
+      "state": "NH",
+      "party": "R",
+      "name": "John E. Sununu",
+      "name_kr": "존 E. 수누누",
+      "incumbent": false,
+      "photo": "assets/candidates/nh_sununu.jpg",
+      "photo_credit": "U.S. Senate 공식 사진 (public domain)",
+      "born": 1964,
+      "occupation": "전 연방 상원의원(NH, 2003–09) · 기업 이사·칼럼니스트",
+      "education": "MIT 기계공학 학사(1986)·석사(1987), 하버드 MBA(1991)",
+      "family": "부인 Catherine(Kitty), 자녀 3명. 부친 John H. Sununu 전 주지사·백악관 비서실장, 동생 Chris Sununu 전 주지사(2017–25)",
+      "past_elections": [
+        "1996 NH-01 하원 당선, 3선(1997–2003)",
+        "2002 상원 당선 — 당시 주지사 Shaheen 격파",
+        "2008 상원 재선 실패 — Shaheen에 45 vs 52 패배 (바로 이 의석)"
+      ],
+      "fundraising": "누적 모금 248만 달러, 보유현금 189만 달러 (3/31 FEC)",
+      "strengths": [
+        "수누누 가문 브랜드 — 주 정치 명문가 인지도",
+        "경선 압도적 선두 (Emerson 3월 48–19, 4월 집계 평균 51–21)",
+        "본선 가상대결 Pappas와 오차범위 내 동률 (Emerson 45–44)",
+        "온건·재정보수 이미지로 무당파 소구"
+      ],
+      "weaknesses": [
+        "2008년 같은 의석에서 Shaheen에 패배한 전력",
+        "18년 선출직 공백",
+        "트럼프 시대 공화 기반과의 온도차",
+        "자금 열세 (Pappas의 절반 이하)"
+      ],
+      "policy": [
+        "재정 보수·감세",
+        "규제 완화",
+        "과거 자유무역 지지 기록 (현 관세 국면 입장은 공개 출처 미확인)"
+      ],
+      "kr_note": null,
+      "sources": [
+        "https://en.wikipedia.org/wiki/John_E._Sununu",
+        "https://ballotpedia.org/John_E._Sununu",
+        "https://emersoncollegepolling.com/new-hampshire-2026-sununu-leads-gop-nomination-ties-pappas-for-senate/"
+      ],
+      "status": "primary"
+    },
+    {
+      "state": "NH",
+      "party": "R",
+      "name": "Scott Brown",
+      "name_kr": "스콧 브라운",
+      "incumbent": false,
+      "photo": "assets/candidates/nh_brown.jpg",
+      "photo_credit": "U.S. State Department (public domain)",
+      "born": 1959,
+      "occupation": "전 연방 상원의원(MA, 2010–13) · 전 주뉴질랜드 대사(2017–20)",
+      "education": "터프츠대 학사(1981), 보스턴칼리지 로스쿨 J.D.(1985) · 주방위군 35년 복무(대령 전역)",
+      "family": "부인 Gail Huff(전 방송기자), 두 딸",
+      "past_elections": [
+        "2010 MA 상원 보궐 당선 — 케네디 의석 탈환 이변",
+        "2012 MA 상원 Warren에 패배",
+        "2014 NH 상원 Shaheen에 48 vs 52 석패"
+      ],
+      "fundraising": "누적 모금 166만 달러, 보유현금 78만 달러 (3/31 FEC) — 3인 중 최하",
+      "strengths": [
+        "전국적 인지도·검증된 선거 운동력",
+        "트럼프 1기 대사 경력 — MAGA 기반 친화",
+        "2014년 Shaheen 상대 3%p대 접전 경험"
+      ],
+      "weaknesses": [
+        "두 주에 걸친 상원 도전 — '카펫배거' 공격 재연 위험",
+        "경선 큰 열세 (집계 평균 21%)",
+        "본선 가상대결 Pappas에 9%p 열세 (Emerson 48–39)",
+        "자금 최하위"
+      ],
+      "policy": [
+        "이민 강경·국경 보안",
+        "트럼프 어젠다 지지",
+        "보훈·군 복무 배경"
+      ],
+      "kr_note": null,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Scott_Brown_(politician)",
+        "https://ballotpedia.org/Scott_Brown_(New_Hampshire)",
+        "https://emersoncollegepolling.com/new-hampshire-2026-sununu-leads-gop-nomination-ties-pappas-for-senate/"
+      ],
+      "status": "primary"
     },
     {
       "state": "ME",

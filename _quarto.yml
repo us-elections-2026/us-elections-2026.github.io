@@ -56,6 +56,7 @@ website:
         contents:
           - states/ga.qmd
           - states/mi.qmd
+          - states/nh.qmd
           - states/me.qmd
           - states/nc.qmd
           - states/tx.qmd

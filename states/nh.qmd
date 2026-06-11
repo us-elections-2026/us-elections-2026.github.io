@@ -1,0 +1,44 @@
+---
+title: "뉴햄프셔 New Hampshire"
+---
+
+```{r}
+#| include: false
+source(file.path("R", "helpers.R"))
+```
+
+## 후보자
+
+```{r}
+#| output: asis
+cat(candidate_cards_html("NH"))
+```
+
+## 구도 요약
+
+```{r}
+gt_state_detail("NH")
+```
+
+민주당의 **수성 레이스**. 5선 [Jeanne Shaheen의 은퇴](https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire)로 이 의석으로는 1990년 이후 처음인 완전 오픈시트가 됐습니다. 등급은 Cook **Lean D**(1/12)·Sabato **Leans Democratic**으로 메인·노스캐롤라이나와 같지만, 방향이 반대입니다 — 탈환이 아닌 **방어**. 민주당의 "+4 산수"에서 NH는 필수 수성 3석(GA·MI·NH) 중 하나로, 이곳을 잃으면 다수당 경로가 공화 보유 5곳 전승으로 좁아집니다([시나리오](../scenarios.qmd) 참조).
+
+본선 가상대결은 공화 후보에 따라 갈립니다. [Emerson(3/21–23, LV 1,000, ±2.9)](https://emersoncollegepolling.com/new-hampshire-2026-sununu-leads-gop-nomination-ties-pappas-for-senate/) 기준 **Pappas 45 vs Sununu 44**(오차범위 내) / **Pappas 48 vs Brown 39**. UNH 조사(1월·4월)에서는 Pappas가 양자 모두에 리드했습니다. 즉 9/8 공화 경선에서 Sununu가 확정되면 접전, Brown이면 민주 우위가 현재 데이터의 요약입니다.
+
+뉴햄프셔는 **무당파(undeclared) 등록이 최대 블록**인 주로, 연방 선거에서는 민주(2004년 이후 대선 전승), 주 선거에서는 공화(Ayotte 주지사·주의회)가 강한 분할 투표 전통이 있습니다. 2024 대선은 Harris +2.8로, 2020년 Biden +7.3에서 우경화했습니다. 직전 상원 선거는 2020 Shaheen +15.6, 2022 Hassan +9.1로 민주가 여유 있게 이겼지만, 둘 다 현직 프리미엄이 있던 선거라 오픈시트인 이번과는 구조가 다릅니다.
+
+## 한국 함의
+
+세 후보 모두 한국 관련 직접 입장은 공개 출처에서 확인되지 않습니다(확인 시 [Korea Watch](../korea-watch.qmd)에 기록). 구조적으로는 방산 전자 산업 — BAE Systems 전자부문 본사(나슈아)가 주 최대급 제조업 고용주 — 이 주 경제의 축이라는 점이 잠재 접점이나, 한미 방산 협력과의 직접 연관은 미확인이므로 추정으로 기술하지 않습니다.
+
+## 경선 후보 (9/8 경선 — 8개 경합주 중 가장 늦음)
+
+```{r}
+#| output: asis
+cat(primary_cards_html("NH"))
+```
+
+## 경선 구도 요약
+
+**민주당 경선은 사실상 단일 구도**입니다 — Pappas가 [집계 평균 66 vs Manzur 13(4/23)](https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire)으로, Shaheen 은퇴 발표 직후(2025-04-03) 출마를 선언하고 당 조직을 빠르게 정리했습니다.
+
+**공화당 경선은 Sununu 우위의 2파전**입니다. Emerson(3월) Sununu 48 vs Brown 19(미결정 33), 4월 집계 평균 Sununu 51 vs Brown 21로 격차가 유지·확대되는 추세이며, Chris Sununu 전 주지사와 Kelly Ayotte 현 주지사는 불출마했습니다. 다만 경선일(9/8)이 8개 경합주 중 가장 늦어, 공화당은 본선 체제 전환이 두 달 가까이 늦습니다 — 미시간(8/4 민주 경선)과 반대 방향의 같은 리스크입니다.

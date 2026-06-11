@@ -312,7 +312,7 @@ gt_model_states <- function() {
     주 = s$name,
     구도 = ifelse(s$defense == "D", "민주 방어", "공화 방어"),
     대결 = s$matchup,
-    `D 승리확률` = paste0(s$prob, "%"),
+    `D 승리확률` = ifelse(is.na(s$prob), "산정 전", paste0(s$prob, "%")),
     등급 = s$rating,
     `핵심 변수` = s$key_var
   ) |>
@@ -397,13 +397,15 @@ holder_note_html <- function() {
 # 홈 요약용 KPI 값 (리스트 반환)
 model_kpi <- function() {
   d <- .load_json("model_dashboard")
+  n_states <- nrow(d$states)
   probs <- d$states$prob
+  probs <- probs[!is.na(probs)]   # 확률 미산정 주(prob=null)는 평균·우세 집계에서 제외
   dem_wins <- sum(probs >= 50)
   list(
     as_of = d$as_of, facts = d$facts_updated,
     balance = d$current_balance, needed = d$dem_needed_net,
     majority = d$dem_majority_prob, net = d$net_expected_seats,
-    dem_wins = dem_wins, n = length(probs),
+    dem_wins = dem_wins, n = n_states, n_scored = length(probs),
     avg = sprintf("%.1f", mean(probs)),
     base_seats = d$scenarios$seats[d$scenarios$id == "base"]
   )
