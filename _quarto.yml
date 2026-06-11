@@ -2,6 +2,14 @@ project:
   type: website
   execute-dir: project
   output-dir: _site
+  render:        # 내부 문서(인계·메모·워크로그)는 사이트로 렌더하지 않음
+    - "*.qmd"
+    - "issues/"
+    - "states/"
+    - "!handoff.md"
+    - "!NOTES_LOCAL.md"
+    - "!README.md"
+    - "!worklogs/"
   resources:
     - data/model_dashboard.json
     - data/trends.json
