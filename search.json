@@ -1403,7 +1403,7 @@
     "href": "national.html#economy",
     "title": "전국 환경",
     "section": "경제 지표",
-    "text": "경제 지표\n선거 환경에 직결되는 지표만 추립니다. 체감 물가(장바구니·주거)가 거시 수치보다 투표에 가깝게 작동한다는 점에 유의.\n\n\n\n\n\n\n\n\n경제 지표 — 선거 환경 직결분\n\n\n기준 2026-06-11 · FRED (St. Louis Fed) — BLS·미시간대 원자료\n\n\n지표\n최신값\n기준월\n선거 함의\n\n\n\n\nCPI (전년 대비)\n4.2%\n2026-05\n물가는 현 사이클 최대 악재\n\n\n실업률\n4.3%\n2026-05\n고용 악화 시 현직당 부담 가중\n\n\n미시간대 소비자심리\n49.8\n2026-04\n체감 경기 — 지지율 선행 지표 성격\n\n\n\n\n\n\n\n데이터는 scripts/fetch_national_econ.py(FRED API)가 주 1회 data/national_econ.json으로 갱신합니다. 관세 관련 조치는 API가 없어 주간 브리핑(뉴스 기반)에서 추적합니다.",
+    "text": "경제 지표\n선거 환경에 직결되는 지표만 추립니다. 체감 물가(장바구니·주거)가 거시 수치보다 투표에 가깝게 작동한다는 점에 유의.\n\n\n\n\n\n\n\n\n경제 지표 — 선거 환경 직결분\n\n\n기준 2026-06-12 · FRED (St. Louis Fed) — BLS·미시간대 원자료\n\n\n지표\n최신값\n기준월\n선거 함의\n\n\n\n\nCPI (전년 대비)\n4.2%\n2026-05\n물가는 현 사이클 최대 악재\n\n\n실업률\n4.3%\n2026-05\n고용 악화 시 현직당 부담 가중\n\n\n미시간대 소비자심리\n49.8\n2026-04\n체감 경기 — 지지율 선행 지표 성격\n\n\n\n\n\n\n\n\n월별 추이 (1월~)\n\n\n\nCPI — 전년 동월 대비\n\n\n\n\n\n\n실업률\n\n\n\n\n\n\n미시간대 소비자심리\n\n\n\n\n\n\n\n\n\n\n데이터는 scripts/fetch_national_econ.py(FRED API)가 주 1회 data/national_econ.json으로 갱신합니다(표=최신 스냅샷, 그래프=1월 이후 월별). 관세 관련 조치는 API가 없어 주간 브리핑(뉴스 기반)에서 추적합니다.",
     "crumbs": [
       "홈",
       "전국 National",
