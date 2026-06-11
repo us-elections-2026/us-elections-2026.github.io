@@ -34,9 +34,39 @@ gt_korea_watch()
 
 ## 인물 추적 {#people}
 
-- **경합 레이스 후보의 한국 접점**: 각 [State Focus](states/ga.qmd) 페이지의 🇰🇷 한국 함의 섹션과 상호 연동
-- **한국계 연방 의원·후보**: 【수집】 (현역·2026 출마자 명단 — 경합구 여부 표기)
-- **Korea Caucus·지한파 의원**: 【수집】
+기준: 119대 의회 · 자체 분석(CMO 공식 명단 + 의원 웹사이트 전수조사). 하원 Korea Caucus 소속 21명, 상원은 "Korea Caucus" 명시 의원 0명(CICLT 기준 Co-Chair 2·Member 2).
+
+### 핵심 인물 — 지위·한국 접점
+
+| 의원 | 소속 | 지위 | 한국 접점 |
+|---|---|---|---|
+| Young Kim | R · CA-40 | KC Study Group Co-Chair | 한국계 · 한국 법안 발의 2건(HR5959 북한인권법 재승인, HR4687 Partner with Korea Act) |
+| Marilyn Strickland | D · WA-10 | KC Co-Chair | 한국계(모계) |
+| Dave Min | D · CA-47 | KC Member | 한국계 2세 · 공동발의 6건 |
+| Andy Kim | D · NJ 상원 | CICLT Member | 한국계 · SRES20 발의, 초선임에도 적극적 |
+| Tim Kaine | D · VA 상원 | CICLT Member | S555(이산가족 등록부법) 본회의 상정 단계까지 진행 |
+| John Boozman / Ed Markey | R·AR / D·MA 상원 | CICLT Co-Chair | 직위 대비 입법활동 저조 — 명목상 직위 |
+
+: {.striped}
+
+### 2026 경합 레이스와의 교차
+
+- **Tom Barrett (R · MI-07)** — Korea Caucus 멤버이면서 **Cook 토스업 현역**. KC 멤버 중 유일하게 최상위 경합구 → [하원 트래커](house.qmd#tossups)와 연동, 낙선 시 KC 의석 1 감소
+- **Michael Lawler (R · NY-17)** — KC 멤버, 경합 등급 【수집】
+- **Ken Calvert (R · CA-41)** — KC 멤버, CA 재획정 영향권 【수집】
+- 상원 경합주 8곳 후보 중 한국 관련 직접 입장이 확인된 인물은 현재 없음 — 각 State Focus의 🇰🇷 섹션에서 추적
+
+### 주시 법안 (119대 — 진행 단계 높은 순)
+
+| 법안 | 내용 | 발의 | 상태 (기준 6/11) |
+|---|---|---|---|
+| [HR3429](https://www.congress.gov/bill/119th-congress/house-bill/3429) | 한미일 3자협력법 (의회간 3자 대화 설치) | Ami Bera (D-CA) | 위원회 47-3 → **하원 본회의 통과(6/8)** → 상원 계류 |
+| [S555](https://www.congress.gov/bill/119th-congress/senate-bill/555) | 한국계 이산가족 국가등록부법 | Kaine (D-VA)·Cruz (R-TX) | 위원회 통과 → 본회의 상정 대기 |
+| NDAA FY2026 한국 조항 | 주한미군 등 | — | 진행 중 |
+
+: {.striped}
+
+상세(전체 법안 58건 분류·공동발의 네트워크)는 별도 분석 프로젝트에서 관리하며, 신규 동향은 위 동향 DB에 누적합니다.
 
 ## 시나리오 함의 {#scenarios}
 

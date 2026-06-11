@@ -444,6 +444,30 @@ gt_house_races <- function() {
     .tbl_opts()
 }
 
+# 2.1b 전국 경제 지표 ---------------------------------------------------------
+# data/national_econ.json — scripts/fetch_national_econ.py(FRED)가 생성.
+# 파일이 없으면 【수집】 안내만 렌더 (빌드 실패 방지).
+gt_national_econ <- function() {
+  path <- file.path("data", "national_econ.json")
+  if (!file.exists(path)) {
+    return(tibble(안내 = "data/national_econ.json 미생성 — scripts/fetch_national_econ.py 실행 후 채워집니다.") |>
+             gt() |> tab_header(title = "경제 지표") |> .tbl_opts())
+  }
+  d <- jsonlite::read_json(path, simplifyVector = TRUE)
+  r <- d$rows
+  tibble(
+    지표 = r$indicator,
+    최신값 = ifelse(is.na(r$value), "【수집】",
+                 paste0(r$value, ifelse(r$unit == "%", "%", ""))),
+    기준월 = ifelse(is.na(r$period), "—", r$period),
+    `선거 함의` = r$election_note
+  ) |>
+    gt() |>
+    tab_header(title = "경제 지표 — 선거 환경 직결분",
+               subtitle = paste0("기준 ", d$as_of, " · ", d$source_label)) |>
+    .tbl_opts()
+}
+
 # 2.2 Korea Watch 동향 표 ------------------------------------------------------
 # data/korea_watch.csv — 누적 DB. 스키마 고정(열 추가·변경 금지):
 # date,type,actor,affiliation,state_or_district,event,detail,race_link,significance,source_url
