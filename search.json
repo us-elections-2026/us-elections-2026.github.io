@@ -1343,7 +1343,7 @@
     "href": "korea-watch.html#people",
     "title": "Korea Watch",
     "section": "인물 추적",
-    "text": "인물 추적\n\n경합 레이스 후보의 한국 접점: 각 State Focus 페이지의 🇰🇷 한국 함의 섹션과 상호 연동\n한국계 연방 의원·후보: 【수집】 (현역·2026 출마자 명단 — 경합구 여부 표기)\nKorea Caucus·지한파 의원: 【수집】",
+    "text": "인물 추적\n기준: 119대 의회 · 자체 분석(CMO 공식 명단 + 의원 웹사이트 전수조사). 하원 Korea Caucus 소속 21명, 상원은 “Korea Caucus” 명시 의원 0명(CICLT 기준 Co-Chair 2·Member 2).\n\n핵심 인물 — 지위·한국 접점\n\n\n\n\n\n\n\n\n\n의원\n소속\n지위\n한국 접점\n\n\n\n\nYoung Kim\nR · CA-40\nKC Study Group Co-Chair\n한국계 · 한국 법안 발의 2건(HR5959 북한인권법 재승인, HR4687 Partner with Korea Act)\n\n\nMarilyn Strickland\nD · WA-10\nKC Co-Chair\n한국계(모계)\n\n\nDave Min\nD · CA-47\nKC Member\n한국계 2세 · 공동발의 6건\n\n\nAndy Kim\nD · NJ 상원\nCICLT Member\n한국계 · SRES20 발의, 초선임에도 적극적\n\n\nTim Kaine\nD · VA 상원\nCICLT Member\nS555(이산가족 등록부법) 본회의 상정 단계까지 진행\n\n\nJohn Boozman / Ed Markey\nR·AR / D·MA 상원\nCICLT Co-Chair\n직위 대비 입법활동 저조 — 명목상 직위\n\n\n\n\n\n2026 경합 레이스와의 교차\n\nTom Barrett (R · MI-07) — Korea Caucus 멤버이면서 Cook 토스업 현역. KC 멤버 중 유일하게 최상위 경합구 → 하원 트래커와 연동, 낙선 시 KC 의석 1 감소\nMichael Lawler (R · NY-17) — KC 멤버, 경합 등급 【수집】\nKen Calvert (R · CA-41) — KC 멤버, CA 재획정 영향권 【수집】\n상원 경합주 8곳 후보 중 한국 관련 직접 입장이 확인된 인물은 현재 없음 — 각 State Focus의 🇰🇷 섹션에서 추적\n\n\n\n주시 법안 (119대 — 진행 단계 높은 순)\n\n\n\n법안\n내용\n발의\n상태 (기준 6/11)\n\n\n\n\nHR3429\n한미일 3자협력법 (의회간 3자 대화 설치)\nAmi Bera (D-CA)\n위원회 47-3 → 하원 본회의 통과(6/8) → 상원 계류\n\n\nS555\n한국계 이산가족 국가등록부법\nKaine (D-VA)·Cruz (R-TX)\n위원회 통과 → 본회의 상정 대기\n\n\nNDAA FY2026 한국 조항\n주한미군 등\n—\n진행 중\n\n\n\n상세(전체 법안 58건 분류·공동발의 네트워크)는 별도 분석 프로젝트에서 관리하며, 신규 동향은 위 동향 DB에 누적합니다.",
     "crumbs": [
       "홈",
       "Korea Watch",
@@ -1403,7 +1403,7 @@
     "href": "national.html#economy",
     "title": "전국 환경",
     "section": "경제 지표",
-    "text": "경제 지표\n선거 환경에 직결되는 지표만 추립니다. 체감 물가(장바구니·주거)가 거시 수치보다 투표에 가깝게 작동한다는 점에 유의.\n\n\n\n지표\n최신값\n기준월\n선거 함의\n\n\n\n\nCPI (전년 대비)\n【수집】\n—\n물가는 현 사이클 최대 악재\n\n\n실업률\n【수집】\n—\n—\n\n\n미시간대 소비자심리\n【수집】\n—\n—\n\n\n관세 관련 주요 조치\n【수집】\n—\n물가 전가 경로 주시\n\n\n\n【수집】 위 표는 전국 일일 브리핑 누적 후 data/national_econ.json으로 정규화 예정.",
+    "text": "경제 지표\n선거 환경에 직결되는 지표만 추립니다. 체감 물가(장바구니·주거)가 거시 수치보다 투표에 가깝게 작동한다는 점에 유의.\n\n\n\n\n\n\n\n\n경제 지표 — 선거 환경 직결분\n\n\n기준 2026-06-11 · FRED (St. Louis Fed) — BLS·미시간대 원자료\n\n\n지표\n최신값\n기준월\n선거 함의\n\n\n\n\nCPI (전년 대비)\n4.2%\n2026-05\n물가는 현 사이클 최대 악재\n\n\n실업률\n4.3%\n2026-05\n고용 악화 시 현직당 부담 가중\n\n\n미시간대 소비자심리\n49.8\n2026-04\n체감 경기 — 지지율 선행 지표 성격\n\n\n\n\n\n\n\n데이터는 scripts/fetch_national_econ.py(FRED API)가 주 1회 data/national_econ.json으로 갱신합니다. 관세 관련 조치는 API가 없어 주간 브리핑(뉴스 기반)에서 추적합니다.",
     "crumbs": [
       "홈",
       "전국 National",
