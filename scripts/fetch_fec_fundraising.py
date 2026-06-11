@@ -41,15 +41,24 @@ def fetch_state(state: str, key: str):
     for c in res:
         if not c.get("receipts"):
             continue
+        # /candidates/totals/ 엔드포인트의 현금 필드는 cash_on_hand_end_period.
+        # (last_cash_on_hand_end_period는 committee /totals/ 계열 필드 — 여기서는 항상 null)
+        coh = c.get("cash_on_hand_end_period")
+        if coh is None:
+            coh = c.get("last_cash_on_hand_end_period")
+        if coh is not None:
+            try:
+                coh = float(coh)
+            except (TypeError, ValueError):
+                coh = None
         rows.append({
             "name": c.get("name"),
             "party": (c.get("party") or "")[:3],
             "candidate_id": c.get("candidate_id"),
             "receipts": round(c.get("receipts", 0) / 1e6, 2),          # $M
             "disbursements": round(c.get("disbursements", 0) / 1e6, 2),
-            "cash_on_hand": (round(c["last_cash_on_hand_end_period"] / 1e6, 2)
-                             if c.get("last_cash_on_hand_end_period") is not None else None),
-            "coverage_end": c.get("coverage_end_date", "")[:10] or None,
+            "cash_on_hand": round(coh / 1e6, 2) if coh is not None else None,
+            "coverage_end": (c.get("coverage_end_date") or "")[:10] or None,
         })
     return rows
 

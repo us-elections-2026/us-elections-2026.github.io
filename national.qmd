@@ -1,6 +1,9 @@
 ---
 title: "전국 환경"
 subtitle: "정치·경제·외교·트럼프 지지율 — 선거를 움직이는 거시 변수"
+include-in-header:
+  - text: |
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1"></script>
 ---
 
 ```{r}
@@ -36,7 +39,36 @@ gt_generic_spread()
 gt_national_econ()
 ```
 
-데이터는 `scripts/fetch_national_econ.py`(FRED API)가 주 1회 `data/national_econ.json`으로 갱신합니다. 관세 관련 조치는 API가 없어 주간 브리핑(뉴스 기반)에서 추적합니다.
+### 월별 추이 (1월~) {#econ-trends}
+
+::: {#econ-root}
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+**CPI — 전년 동월 대비**
+<div style="height:220px"><canvas id="cpiChart"></canvas></div>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+**실업률**
+<div style="height:220px"><canvas id="unrateChart"></canvas></div>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+**미시간대 소비자심리**
+<div style="height:220px"><canvas id="umcsentChart"></canvas></div>
+:::
+
+:::
+
+<p id="econ-note" class="text-muted" style="font-size:.78rem; margin-top:.5rem;"></p>
+
+:::
+
+<script src="assets/econ.js"></script>
+
+데이터는 `scripts/fetch_national_econ.py`(FRED API)가 주 1회 `data/national_econ.json`으로 갱신합니다(표=최신 스냅샷, 그래프=1월 이후 월별). 관세 관련 조치는 API가 없어 주간 브리핑(뉴스 기반)에서 추적합니다.
 
 ## 외교·안보 {#foreign}
 

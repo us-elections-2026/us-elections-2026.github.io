@@ -13,6 +13,7 @@ project:
   resources:
     - data/model_dashboard.json
     - data/trends.json
+    - data/national_econ.json
     - assets/candidates
 
 lang: ko
