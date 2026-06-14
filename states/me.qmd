@@ -7,23 +7,54 @@ title: "메인 Maine"
 source(file.path("R", "helpers.R"))
 ```
 
-## 후보자
-
-```{r}
-#| output: asis
-cat(candidate_cards_html("ME"))
-```
-
-## 구도 요약
-
 ```{r}
 gt_state_detail("ME")
 ```
 
 민주당의 **최우선 탈환 표적**. 5선 현직 Collins(R)는 바이든·해리스가 이긴 주에서 살아남아온 생존자지만, 이번 사이클의 전국 역풍이 변수입니다. 민주당 경선(6/9)에서 Graham Platner가 성적 문자 메시지 등 논란에도 **77.7%로 압승**(Mills 16.7% / Costello 5.6%, RCV 추가 집계 불필요)해 본선 대진이 확정됐습니다. ([Bangor Daily News](https://www.bangordailynews.com/2026/06/09/politics/elections/maine-senate-democratic-primary-results-graham-platner/))
 
+## 1. 주 개요
+
+- **유권자 구성**: 인구 약 140만 명. 백인(non-Hispanic) 비중 약 91%로 전국 최고 수준이며, **미국에서 가장 농촌(rural) 비율이 높은 주**(약 61%가 비도시). **무당파(unenrolled) 등록 비중이 매우 높습니다**(출처별 33~36%). ([Point2Homes](https://www.point2homes.com/US/Neighborhood/ME-Demographics.html))
+- **선거사 — split-ticket의 주**: 2024 대선은 주 전체 **Harris +6.9**(메인은 선거인단 분할주로 Harris 3 / Trump 1 — 2지역구). 그런데 **Collins는 같은 민주 우위 주에서 반복 당선**해 왔습니다(2020 재선 +8.6, 1차 과반으로 RCV 불필요). 이 괴리가 레이스의 핵심 — 주는 민주, 현역은 공화. ([Bangor Daily News](https://www.bangordailynews.com/2024/11/06/politics/elections/kamala-harris-wins-maine-statewide-president/) · [Ballotpedia 2020](https://ballotpedia.org/United_States_Senate_election_in_Maine,_2020))
+
+## 2. 선거 제도
+
+- **RCV(순위선택투표) — 연방선거 전용**: 2016년 주민발의로 도입. **연방 예비·본선거(상·하원·대선)에만 적용**되고, 주지사 등 주 단위 본선거는 일반 다수제입니다. 1차 과반 미달 시 최하위 후보를 탈락시켜 차순위로 재배분합니다. ([Ballotpedia](https://ballotpedia.org/Electoral_systems_in_Maine))
+- **반개방형 예비선거**: 2024년부터 무당파도 정당 등록 없이 경선 투표 가능. 2026 예선은 **6/9 완료**(Platner 1차 과반으로 RCV 추가 라운드 없이 확정), 본선 11/3. ([Press Herald](https://www.pressherald.com/2024/02/13/unenrolled-voters-get-to-cast-ballots-in-maine-primaries-but-little-sign-of-mass-registration-changes/))
+- 사유 불문 부재자투표(no-excuse absentee) 시행 주(2026 구체 기간은 【수집】).
+
+## 3. 후보자
+
+```{r}
+#| output: asis
+cat(candidate_cards_html("ME"))
+```
+
 > 주의: 본선 가상대결 조사(UMass Lowell 6/4 Platner +5 등)는 성적 문자 메시지 본격 보도 **이전** 조사라, 스캔들의 본선 타격 여부는 6/9 이후 신규 조사로 확인이 필요합니다.
 
-## 한국 함의
+## 4. roll-call / 입법 관심사
 
-양 후보 모두 한국 관련 직접 입장은 공개 출처에서 확인되지 않습니다. 다만 Collins는 상원 세출위원장으로 **메인 방산(Bath Iron Works 구축함)** 을 옹호해, 미·한 조선·철강 협력이 닿는 정책 환경에 있습니다(후보 본인의 한국 직접 언급은 미확인 — 추정으로 기술하지 않음).
+**Susan Collins (R, 5선 현역)** — **상원 세출위원장**(2025-01 취임, 세출위원장에 오른 첫 공화 여성). 재선 캠페인의 핵심 메시지가 "세출위원장으로서 메인에 연방 예산을 끌어오는 seniority"입니다. ([Press Herald](https://www.pressherald.com/2025/01/07/susan-collins-officially-named-chair-of-powerful-senate-committee/))
+
+- **반도체/CHIPS**: 2021년 King(I-ME)과 함께 CHIPS for America Act 이행 예산 확보를 촉구하는 초당 서한에 동참(미국 내 반도체 제조 지원 일반론). ([King 상원실](https://www.king.senate.gov/newsroom/press-releases/collins-king-urge-administration-to-support-us-semiconductor-manufacturing-industry))
+- **대북**: 과거 유엔 대북 제재 강화를 환영하는 성명(연도·표결은 성명 수준만 확인).
+
+> **직접 한국 관련 표결/법안은 미확인**입니다. 통상(한미 FTA)·주한미군·한국기업 거명 표결은 1차 증거가 확인되지 않았습니다. Platner(굴양식업자·재향군인)는 연방 의정 기록이 없습니다.
+
+## 5. 펀드레이징 (FEC)
+
+| 후보 | 정당 | Q1 모금 | 보유현금 |
+|---|---|---:|---:|
+| Graham Platner | D | **$4.1M** | $2.7M (Q1말) |
+| Susan Collins | R | 약 $3.0M | **$9.7M** (5/20 누적) |
+
+: {.striped}
+
+**Platner가 분기·누적 모금(사이클 $16.3M, 8.8만 소액 기부자)에서 Collins를 앞섰지만, 보유현금은 Collins가 4배 이상**(전 캠페인 이월 포함 약 $9.7M)입니다. 소액 기반의 도전자 vs 이월·seniority의 현역 구도. (Q1 Collins 모금은 보도별 $3.0M~$2.3M 상이 — FEC 원본 대조 권장.) ([Bangor Daily News](https://www.bangordailynews.com/2026/05/29/politics/elections/maine-graham-platner-fundraising-spending-senate-primary/) · [Wikipedia(FEC 인용)](https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine))
+
+## 6. 한국 함의
+
+- **직접 확인**: 양 후보 모두 한국 관련 직접 입장은 공개 출처에서 확인되지 않습니다.
+- **추정 연결고리(사실 아님)**: ① Collins가 지지한 CHIPS법의 대중국 투자제한 가드레일은 삼성·SK하이닉스의 중국 사업에 영향을 주지만, Collins가 **한국 기업을 거명한 적은 미확인** — 정책의 2차 효과입니다. ② Collins는 세출위원장으로 **메인 방산(Bath Iron Works 구축함)**을 옹호해 미·한 조선·철강 협력(MASGA 맥락)이 닿는 환경에 있으나, 후보 본인의 한국 직접 언급은 미확인이므로 단정하지 않습니다.
+- 신규 동향은 [Korea Watch](../korea-watch.qmd)에 기록합니다.

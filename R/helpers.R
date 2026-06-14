@@ -431,6 +431,7 @@ gt_house_races <- function() {
     `현역` = r$incumbent,
     보유 = ifelse(r$party == "D", "민주", "공화"),
     `등급(Cook)` = r$rating_cook,
+    `등급(Sabato)` = ifelse(is.na(r$rating_sabato), "【수집】", r$rating_sabato),
     `전주 대비` = ifelse(is.na(r$rating_delta), "—", r$rating_delta),
     `2024 마진` = ifelse(is.na(r$margin_2024), "【수집】", .fmt_margin(r$margin_2024)),
     비고 = ifelse(is.na(r$note), "—", r$note)

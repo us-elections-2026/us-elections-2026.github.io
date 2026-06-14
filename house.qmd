@@ -9,7 +9,7 @@ source(file.path("R", "helpers.R"))
 hr <- jsonlite::read_json(file.path("data", "house_races.json"), simplifyVector = TRUE)
 ```
 
-하원 435석 전체를 추적하지 않습니다. **Cook 기준 토스업(현재 `r nrow(hr$races)`개구)을 상시 추적**하고, Lean 등급 경합구는 주간 등급표에서만 관리하는 2단 구조입니다. 상원과 달리 지역구 단위 여론조사가 희소하므로, 하원 전망은 **제너릭 밸럿 + 등급 변동 + 자금 흐름**이 주된 신호입니다.
+하원 435석 전체를 추적하지 않습니다. **6월 초 Cook 토스업이던 `r nrow(hr$races)`개구를 출발선으로 상시 추적**합니다 — 이후 일부는 Leans·Likely로 이동했으므로, 아래 표의 **Cook·Sabato 두 열에 현재 등급을 함께** 표기해 차이를 드러냅니다. Lean 등급 경합구는 주간 등급표에서만 관리하는 2단 구조입니다. 상원과 달리 지역구 단위 여론조사가 희소하므로, 하원 전망은 **제너릭 밸럿 + 등급 변동 + 자금 흐름**이 주된 신호입니다.
 
 > 등급(Toss Up/Lean)은 확률이 아닙니다. 등급 명단의 출처는 표 상단에 표기하며, 빈 칸은 추정으로 채우지 않습니다.
 
@@ -27,14 +27,45 @@ gt_house_races()
 
 ## 주목 레이스 {#featured}
 
-선별 기준: 전국적 상징성, 다수당 결정 기여도, 한국 함의. 카드 형식은 상원 State Focus의 축소판으로 순차 작성합니다.
+선별 기준: 전국적 상징성, 다수당 결정 기여도, 한국 함의. 마진은 양수=민주 우위(D+), 재획정 4개구는 신지도 기준입니다.
 
-- **ME-02 Golden / WA-03 Gluesenkamp Perez** — 트럼프 승리 지역구의 민주 현역 생존 모델
-- **TX-34 Gonzalez** — 리오그란데밸리 라티노 표심 재편의 시험대
-- **NE-02 Bacon** — 도시 교외 공화 현역의 역풍 방어
-- **AZ-01·06, PA-07·10** — 다수당 향배를 가를 선벨트·러스트벨트 균형추
+### 공석 픽업 표적 — 은퇴가 만든 빈자리
 
-【수집】 개별 레이스 카드 — 하원 일일 브리핑 누적 후 작성.
+**NE-02 (오마하) — 민주 픽업 1순위**
+구도: 공석(Bacon 2025-06-30 은퇴) · R 보유 → **Sabato Leans D / Cook Lean D** · 2024 대선 **D+4.6**(Harris).
+공화당이 보유한 지역구 중 **전국에서 가장 민주적인 대선 성향**입니다. 온건파 Bacon이라는 개인 브랜드가 빠지면서 기초 지형(Harris 승리)이 그대로 노출됐고, 민주당은 Denise Powell이 경선을 통과했습니다. 다수당 산식에서 가장 비용 대비 효율이 높은 표적. ([Cook](https://www.cookpolitical.com/analysis/house/nebraska-house/don-bacons-retirement-moves-nebraskas-2nd-district-lean-democrat) · [Nebraska Examiner](https://nebraskaexaminer.com/2025/06/30/nebraska-u-s-rep-don-bacon-announces-he-wont-run-again-in-ne-02/))
+
+**ME-02 (메인 북부) — 반대 방향 공석**
+구도: 공석(Golden 2025-11-05 은퇴) · D 보유 → **Cook Likely R / Sabato Leans–Likely R** · 2024 대선 **R+9**(Trump).
+NE-02의 거울상입니다. 트럼프가 9%p 이긴 지역을 지켜온 Golden의 개인 생존 모델이 사라지자 등급이 곧바로 공화 쪽으로 크게 이동했고, Paul LePage 전 주지사가 공화 후보로 나섰습니다. 민주당 방어선의 약한 고리. ([Cook](https://www.cookpolitical.com/analysis/house/maine-house/goldens-exit-moves-me-02-toss-likely-republican) · [Roll Call](https://rollcall.com/2025/11/05/jared-golden-maine-reelection-democrats-republicans/))
+
+### 러스트벨트·선벨트 현역 방어
+
+**MI-07 (랜싱) — 🇰🇷 한국 단서가 있는 유일 토스업**
+구도: Tom Barrett(R) 현역 · **Cook Toss Up / Sabato Leans R** · 2024 대선 약 **R+1**.
+18개 추적 구 중 **확인된 한국 연결이 있는 유일한 지역구**입니다. 핵심 카운티 Ingham(랜싱)에 LG에너지솔루션 생산기지와 Tesla–LG의 43억 달러 LFP 배터리 공장이 들어섭니다 — 즉 이 지역구의 제조업 일자리·외국인투자 서사가 한국 배터리 산업과 직접 맞닿아 있습니다. 민주당은 전 주(駐)우크라이나 대사 Bridget Brink가 도전. ([Supply Chain Dive](https://www.supplychaindive.com/news/tesla-lg-to-build-43b-lfp-battery-plant-in-michigan/814976/))
+
+**IA-01 (아이오와 남동부) — 799표의 재대결**
+구도: Mariannette Miller-Meeks(R) 현역 · **Cook Toss Up / Sabato Leans R** · 2024 대선 **R+8.5**.
+2024년 Christina Bohannan(D)에게 **799표차**로 신승한 현역과의 재대결. 대선 R+8.5와 하원 0.19%p차의 극단적 split-ticket이 이 구의 성격을 말해줍니다 — 후보 개인기와 낙태 이슈가 기초 지형을 상쇄. ([Ballotpedia](https://ballotpedia.org/Mariannette_Miller-Meeks))
+
+**AZ-06 (투손 교외) · PA-07 (리하이밸리) — Cook/Sabato가 갈리는 균형추**
+AZ-06: Juan Ciscomani(R) 현역 · 2024 대선 약 R+1 · **Cook Toss Up / Sabato Leans R**.
+PA-07: Ryan Mackenzie(R) 현역(2024년 50.5–49.5 신승) · PVI **R+1**(정밀 대선마진 【수집】) · **Cook Toss Up / Sabato Leans R**.
+두 구 모두 **Cook은 완전 경합, Sabato는 공화 우위**로 평가가 엇갈립니다. 박빙 대선구에서 두 평가기관이 갈리는 전형 — 어느 쪽을 믿느냐가 다수당 시나리오를 가릅니다.
+
+### 캘리포니아 재획정 클러스터 (Prop 50)
+
+2026년 2월 연방대법원이 사용을 허용한 캘리포니아 신지도(Prop 50)가 공화 보유구를 일제히 민주 쪽으로 밀었습니다. **신지도 정밀 대선 마진은 아직 공표되지 않아 마진은 【수집】**으로 두되, 방향성(민주 이동)은 확인됩니다.
+
+- **CA-45 (오렌지카운티)** — Derek Tran(D) 현역 · **Cook·Sabato 모두 Leans D**로 상향. OC 아시아계 밀집 지역(한인 인구 상당 — 소프트 단서).
+- **CA-40 — 🇰🇷 한국계 현역의 공화 동족 대결**(추적표 외 주목구): Prop 50 재획정으로 한국계 현역 **Young Kim**과 6선 **Ken Calvert**가 같은 신설구에 묶여 둘 다 본선 진출. 신설구가 2024 대선 기준 더 공화 성향이라 **민주 픽업 대상은 아니며**, 공화 내부 의석 재배치 성격. Young Kim은 Korea Caucus 공동의장으로 한국 법안을 다수 발의([Korea Watch](korea-watch.qmd) 참조). ([NOTUS](https://www.notus.org/2026-election/two-house-republicans-california-40th-district))
+- **CA-22 (센트럴밸리)** — David Valadao(R), Harris가 이긴 지역구의 공화 현역으로 상시 최상위 표적. **2026 신지도 기준 등급·마진·도전자 【수집】.**
+
+### 리오그란데밸리 — 라티노 표심 재편의 시험대
+
+**TX-34 (텍사스 남부)** — Vicente Gonzalez(D) 현역 · **Cook·Sabato 모두 Toss-up** · 신지도 2024 대선 **R+10**(구지도 R+4.5에서 텍사스 재획정으로 확대).
+2020년 Biden +15.5에서 불과 4년 만에 공화로 기운 밸리 라티노 표심의 상징. 2024년 맞붙은 **Mayra Flores(R)와 재대결**이며, 재획정으로 Hidalgo를 잃고 Nueces(코퍼스크리스티)를 편입해 지형이 더 험해졌습니다. 민주당이 밸리를 지킬 수 있는지의 풍향계. ([Center for Politics](https://centerforpolitics.org/crystalball/texasredistricting/) · [Washington Examiner](https://www.washingtonexaminer.com/news/campaigns/congressional/3781961/mayra-flores-ditches-cuellar-run-against-gonzalez-texas-redistricting/))
 
 ## 데이터 갱신 규약
 

@@ -7,39 +7,65 @@ title: "조지아 Georgia"
 source(file.path("R", "helpers.R"))
 ```
 
-## 후보자
+```{r}
+gt_state_detail("GA")
+```
+
+민주당의 **최우선 방어석**. Ossoff는 2021년 결선에서 1.2%p 차로 당선된 취약 의석이지만, 공화당 후보가 6/16 결선(Collins vs Dooley)까지 미정인 동안 보유 현금 $31M으로 광고전을 선점하고 있습니다. 2024년 트럼프가 GA를 다시 가져간 만큼 기초 지형은 민주당에 불리 — 결선 이후 공화당의 통합 속도가 1차 변수입니다.
+
+## 1. 주 개요
+
+- **인구·경제**: 인구 약 1,100만 명(2025 추정)으로 미국에서 가장 빠르게 성장하는 주 중 하나. 주도 애틀랜타는 코카콜라·델타항공·홈디포·UPS 본사가 있는 남부 상업 수도로, 물류·미디어 제작·핀테크·사이버보안이 집약돼 있습니다. ([Britannica](https://www.britannica.com/place/Georgia-state))
+- **정치 지형**: 2020년 바이든이 0.2%p로 신승하며 1992년 이후 첫 민주 대선 승리, 같은 해 결선에서 Ossoff·Warnock이 상원 두 석을 모두 가져갔습니다. 그러나 2024년 트럼프가 약 2%p로 재탈환했고, 공화당 Kemp 주지사는 트럼프보다 높은 개인 인기를 유지하는 **분할투표(split-ticket)의 주**입니다. 메트로 애틀랜타 교외의 민주화 vs 농촌 결집이 승부를 가릅니다.
+- **한국 투자의 거점**: 조지아는 한국 기업 대미 투자의 최대 목적지 중 하나로, 150개 이상의 한국 기업이 제조 시설을 운영합니다. **현대차 메타플랜트**(브라이언 카운티, 76억 달러 EV 공장), **현대–SK On 배터리 합작공장**(바토우 카운티, 50억 달러), **한화 큐셀** 태양광(달턴·카터스빌, 25억 달러), 기아 웨스트포인트 공장이 대표적입니다.
+
+## 2. 선거 제도
+
+- **과반-결선(majority-runoff) 제도**: 조지아는 어떤 선거든 후보가 **과반(50%+1)** 에 미달하면 상위 2인이 결선에 갑니다. 2026년 본예선(5/19) 공화 상원 경선에서 과반 득표자가 없어 **Collins vs Dooley 결선이 6/16**로 잡혔습니다. 예선 미투표자도 결선 참여가 가능하나, 두 정당 예선 교차투표는 불가합니다. ([AJC](https://images.ajc.com/politics/2026/05/whats-the-deal-with-runoffs-in-georgia/))
+- **본선도 결선 가능**: 조지아는 본선(11/3)에서도 과반 미달 시 결선을 치르는 드문 주로, 2020·2022 상원선거가 이 규칙으로 이듬해 1월 결선까지 갔습니다. ([Georgia Recorder](https://georgiarecorder.com/voter-guides/voter-guide-2026-runoffs/))
+- **SB 202(2021)** — Kemp 주지사 2021-03-25 서명. 본선~결선 간격을 **9주 → 4주**로, 결선 조기투표를 **3주 → 1주**로 단축했고, **본선·결선 사이 신규 등록을 봉쇄**했으며, 부재자 투표에 신분증 요건을 신설하고 드롭박스를 카운티당 제한했습니다. 결선까지 가는 레이스에서 공화당의 단기 통합·동원에 유리한 구조 변화입니다. ([GPB](https://www.gpb.org/news/2021/03/27/what-does-georgias-new-voting-law-sb-202-do/) · [LWV](https://www.lwv.org/legal-center/ga-state-conference-naacp-v-raffensperger-consolidated-re-georgia-senate-bill-202))
+
+## 3. 후보자
 
 ```{r}
 #| output: asis
 cat(candidate_cards_html("GA"))
 ```
 
-## 구도 요약
-
-```{r}
-gt_state_detail("GA")
-```
-
-민주당의 **최우선 방어석**. Ossoff는 2021년 결선에서 1.2%p 차로 당선된 취약 의석이지만, 공화당 후보가 6/16 결선(Collins vs Dooley)까지 미정인 동안 보유 현금 $32M+로 광고전을 선점하고 있습니다. 2024년 트럼프가 GA를 다시 가져간 만큼 기초 지형은 민주당에 불리 — 결선 이후 공화당의 통합 속도가 1차 변수입니다.
-
-## 조지아 들여다보기
-
-- **인구·경제**: 인구 약 1,100만 명(2025 추정)으로 미국에서 가장 빠르게 성장하는 주 중 하나. 주도 애틀랜타는 코카콜라·델타항공·홈디포·UPS 본사가 있는 남부 상업 수도로, 물류·미디어 제작·핀테크·사이버보안이 집약돼 있습니다. ([Britannica](https://www.britannica.com/place/Georgia-state))
-- **정치 지형**: 2020년 바이든이 0.2%p로 신승하며 1992년 이후 첫 민주 대선 승리, 같은 해 결선에서 Ossoff·Warnock이 상원 두 석을 모두 가져갔습니다. 그러나 2024년 트럼프가 약 2%p로 재탈환했고, 공화당 Kemp 주지사는 트럼프보다 높은 개인 인기를 유지하는 **분할투표(split-ticket)의 주**입니다. 메트로 애틀랜타 교외의 민주화 vs 농촌 결집이 승부를 가릅니다.
-- **한국 투자의 거점**: 조지아는 한국 기업 대미 투자의 최대 목적지 중 하나로, 150개 이상의 한국 기업이 제조 시설을 운영합니다. **현대차 메타플랜트**(브라이언 카운티, 76억 달러 EV 공장), **현대–SK On 배터리 합작공장**(바토우 카운티, 50억 달러), **한화 큐셀** 태양광(달턴·카터스빌, 25억 달러), 기아 웨스트포인트 공장이 대표적입니다.
-- **2025년 9월 ICE 단속**: 2025-09-04 사바나 인근 현대-LG 배터리 건설현장에서 ICE가 약 475명을 구금, 그중 한국 국적자 300명 이상이 포함된 단일 사업장 사상 최대 이민단속이 발생했습니다. 9/12 300여 명이 전세기로 귀국했고, 이 사건은 조지아 레이스의 **한국 통상·이민 정책 시금석**이 됐습니다. ([Wikipedia](https://en.wikipedia.org/wiki/2025_Georgia_Hyundai_plant_immigration_raid) · [NPR](https://www.npr.org/2025/09/12/nx-s1-5535657/a-look-at-the-political-fallout-from-the-immigration-raid-at-a-georgia-hyundai-plant))
-
-## 한국 함의
-
-2025년 9월 ICE 단속을 두고 **Ossoff(미·한 정부 협력으로 공장 완공 강조)** 와 **Collins('단속 지지')** 의 대조가 한국 독자에게 가장 선명한 후크입니다. 의석 향배보다 양당 후보의 **대(對)한국 통상·이민 입장**이 반도체·배터리 투자 환경에 직접 닿아 있습니다.
-
-## 공화당 경선 후보 (6/16 결선)
+### 공화당 경선 후보 (6/16 결선)
 
 ```{r}
 #| output: asis
 cat(primary_cards_html("GA"))
 ```
 
-## 경선 구도 요약
-
 5/19 1차 경선에서 과반 득표자가 없어(Collins ≈40.5%, Dooley ≈30.2%, Carter ≈25.1%) Carter가 3위로 탈락하고 **Collins vs Dooley 결선이 6/16**로 확정됐습니다. 사실상 **트럼프계(Collins) vs Kemp계(Dooley) 대리전**으로, 트럼프는 1·2차 모두 중립을 유지했고 Kemp는 Dooley를 전폭 지지합니다. 공화당이 결선까지 자원을 소모하는 동안 무경선의 Ossoff는 본선 준비에 집중하고 있습니다. ([The Hill](https://thehill.com/homenews/campaign/5886066-georgia-senate-gop-runoff-collins-dooley/))
+
+## 4. roll-call / 입법 관심사
+
+**Jon Ossoff (D, 현역)** — 상원 정보위·규칙위·**세출위** 소속(119대). 8개 경합주 현역·후보를 통틀어 **한국 관련 직접 활동이 가장 풍부한 인물**입니다.
+
+- **Partner with Korea Act** 추진 — 한국 전문직 대상 **E-4 비자 연 최대 15,000건** 신설. 본인 보도자료에 초당적 통과 추진을 명시(단, 공동발의·표결 여부는 "working to pass" 표현만 확인 — congress.gov 확인 권장). ([Ossoff 상원실](https://www.ossoff.senate.gov/press-releases/sen-ossoff-working-to-strengthen-u-s-rok-trade-partnership/))
+- **상원 Korea Caucus 창설** — Sullivan(R-AK)·Schatz(D-HI)·Young(R-IN)과 공동 출범.
+- **한국전 75주년 기념 상원 결의안** 통과에 참여(직접 확인된 한국 관련 본회의 표결).
+- **DMZ 시찰** + 조지아 출신 주한미군 장병 라운드테이블, **조태용 주미대사 면담**(북핵 논의), 한·한 산업분쟁 중재(조지아 Commerce의 $2.6B 배터리 공장 위협 분쟁 합의 중개), 한국계 이산가족 상봉 입법.
+
+> roll-call(본회의 표결) 자체는 한국전 75주년 결의안 외 통상·반도체·주한미군 개별 표결은 미확인 — Ossoff의 한국 관여는 대부분 입법 발의·외교 관여·투자 유치 형태입니다.
+
+## 5. 펀드레이징 (FEC, 2026 Q1 · 3/31 마감)
+
+| 후보 | 정당 | Q1 모금 | 보유현금 |
+|---|---|---:|---:|
+| Jon Ossoff | D (현역) | **$14M+** | **$31M** |
+| Derek Dooley | R | $660K | $2.2M |
+| Mike Collins | R | 약 $1.0M | $2.1M |
+
+: {.striped}
+
+Ossoff의 Q1 기여는 **99% 이상이 $200 미만 소액**(40.8만 건 이상, 평균 $38)으로, 대액 기부 의존도가 높은 공화 후보들과 대조됩니다. 무경선 현역이 결선을 치르는 공화 후보들보다 **약 15배 많은 보유현금**으로 광고전을 선점한 구도. ([AJC](https://www.ajc.com/politics/2026/04/jon-ossoff-posts-record-14m-haul-in-high-stakes-georgia-senate-race/) · [OpenSecrets](https://www.opensecrets.org/news/2026/04/small-donors-vs-big-checks-fundraising-divide-shapes-georgia-senate-race/))
+
+## 6. 한국 함의
+
+- **직접 확인**: Ossoff는 위 4절의 입법·외교 활동으로 **한국 통상·안보에 직접 관여**해 왔습니다. 2025년 9월 현대-LG 배터리 공장 ICE 단속(475명 구금, 약 300명 한국 국적) 당시 그는 *"미국과 한국 정부 간 고위급 관여로 수천 개 제조 일자리를 약속한 이 시설이 완공되도록 보장해야 한다"* 며 **단속 규탄보다 경제·완공 보장 프레임**으로 대응했습니다(발언 전문·정확 일자는 FOX 5 원본 대조 권장). ([Wikipedia](https://en.wikipedia.org/wiki/2025_Georgia_Hyundai_plant_immigration_raid))
+- **대조 후크**: 한국 독자에게 가장 선명한 대비는 **Ossoff(미·한 협력으로 공장 완공 강조)** 와 **Collins('단속 지지')** 의 입장 차이입니다. 의석 향배보다 양당 후보의 대(對)한국 통상·이민 입장이 **반도체·배터리 투자 환경에 직접** 닿아 있습니다.
+- 신규 동향은 [Korea Watch](../korea-watch.qmd)에 누적합니다.

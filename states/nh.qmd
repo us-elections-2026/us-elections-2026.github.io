@@ -7,38 +7,68 @@ title: "뉴햄프셔 New Hampshire"
 source(file.path("R", "helpers.R"))
 ```
 
-## 후보자
+```{r}
+gt_state_detail("NH")
+```
+
+민주당의 **수성 레이스**. 5선 [Jeanne Shaheen의 은퇴](https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire)로 이 의석은 1990년 이후 처음인 완전 오픈시트가 됐습니다. 등급은 Cook **Lean D**(1/12)·Sabato **Leans Democratic**으로, 민주당의 "+4 산수"에서 NH는 필수 수성 3석(GA·MI·NH) 중 하나입니다. 이곳을 잃으면 다수당 경로가 공화 보유 5곳 전승으로 좁아집니다([시나리오](../scenarios.qmd) 참조).
+
+## 1. 주 개요
+
+- **유권자 구성 — 무당파가 최대 블록**: 뉴햄프셔는 **무당파(undeclared) 등록이 최대 블록**인 주로, 연방 선거에서는 민주(2004년 이후 대선 전승), 주 선거에서는 공화(Ayotte 주지사·주의회)가 강한 분할 투표 전통이 있습니다.
+- **선거사**: 2024 대선은 **Harris +2.8**로, 2020년 Biden +7.3에서 우경화했습니다. 직전 상원 선거는 2020 Shaheen +15.6, 2022 Hassan +9.1로 민주가 여유 있게 이겼지만, 둘 다 현직 프리미엄이 있던 선거라 오픈시트인 이번과는 구조가 다릅니다.
+- **경제**: 방산 전자 산업이 축으로, **BAE Systems 전자부문 본사**(나슈아)가 주 최대급 제조업 고용주입니다.
+
+## 2. 선거 제도
+
+- **경선 9/8 — 8개 경합주 중 가장 늦음**: 양당 경선 동시 실시(본선 11/3). 결선 없는 단순다수제. ([Ballotpedia](https://ballotpedia.org/United_States_Senate_election_in_New_Hampshire,_2026))
+- **준폐쇄형(semi-closed) — 무당파의 선택권**: 등록 당원은 자기 당 경선만 투표하나, **무당파는 경선 당일 어느 당 투표용지든 선택**할 수 있습니다. 단 투표용지를 받으면 등록이 자동으로 해당 당으로 변경되며, 같은 날 투표소에서 즉시 undeclared로 복귀할 수 있습니다. 사전 당적 변경 마감은 **2026-06-02**(이 시점 이후 경선 전까지 당적 변경 차단, 무당파의 당일 선택권은 유지). ([NH SOS](https://www.sos.nh.gov/elections/frequently-asked-questions/voting-party-primaries))
+- **조기투표 없음 — 부재자만**: NH는 대면 조기투표 제도가 없고 사전 투표는 **사유 한정형 부재자(absentee)** 로만 가능(출타·장애·종교·고용 등). 우편 제출은 선거일 오후 5시 도착 필수. 대신 **선거 당일 등록(same-day registration)** 이 가능합니다. ([NH SOS 부재자](https://www.sos.nh.gov/elections/absentee-ballots) · [Vote.org](https://www.vote.org/new-hampshire/))
+
+> 참고(미확정 입법): 2025년 공화당이 무당파의 "당일 당적 선택"을 막는 법안을 발의했으나, 검색 시점 기준 2026 경선에는 적용되지 않습니다(당일 선택권 유지 확인). 향후 변동은 추적 대상입니다.
+
+## 3. 후보자
 
 ```{r}
 #| output: asis
 cat(candidate_cards_html("NH"))
 ```
 
-## 구도 요약
-
-```{r}
-gt_state_detail("NH")
-```
-
-민주당의 **수성 레이스**. 5선 [Jeanne Shaheen의 은퇴](https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire)로 이 의석으로는 1990년 이후 처음인 완전 오픈시트가 됐습니다. 등급은 Cook **Lean D**(1/12)·Sabato **Leans Democratic**으로 메인·노스캐롤라이나와 같지만, 방향이 반대입니다 — 탈환이 아닌 **방어**. 민주당의 "+4 산수"에서 NH는 필수 수성 3석(GA·MI·NH) 중 하나로, 이곳을 잃으면 다수당 경로가 공화 보유 5곳 전승으로 좁아집니다([시나리오](../scenarios.qmd) 참조).
-
 본선 가상대결은 공화 후보에 따라 갈립니다. [Emerson(3/21–23, LV 1,000, ±2.9)](https://emersoncollegepolling.com/new-hampshire-2026-sununu-leads-gop-nomination-ties-pappas-for-senate/) 기준 **Pappas 45 vs Sununu 44**(오차범위 내) / **Pappas 48 vs Brown 39**. UNH 조사(1월·4월)에서는 Pappas가 양자 모두에 리드했습니다. 즉 9/8 공화 경선에서 Sununu가 확정되면 접전, Brown이면 민주 우위가 현재 데이터의 요약입니다.
 
-뉴햄프셔는 **무당파(undeclared) 등록이 최대 블록**인 주로, 연방 선거에서는 민주(2004년 이후 대선 전승), 주 선거에서는 공화(Ayotte 주지사·주의회)가 강한 분할 투표 전통이 있습니다. 2024 대선은 Harris +2.8로, 2020년 Biden +7.3에서 우경화했습니다. 직전 상원 선거는 2020 Shaheen +15.6, 2022 Hassan +9.1로 민주가 여유 있게 이겼지만, 둘 다 현직 프리미엄이 있던 선거라 오픈시트인 이번과는 구조가 다릅니다.
+> **인물 주의**: 공화 선두 "Sununu"는 **John E. Sununu 전 연방상원의원**(2003–2009 재임, 2008년 Shaheen에게 패배)입니다. 그의 동생 **Chris Sununu 전 주지사**와 Kelly Ayotte 현 주지사는 이번 상원 경선에 **불출마**했습니다. (초기 여론조사의 "Sununu" 명성 측정이 두 인물 중 누구를 가리켰는지는 조사별 확인 필요 — 실제 출마·FEC 보고 후보는 John E. Sununu.)
 
-## 한국 함의
-
-세 후보 모두 한국 관련 직접 입장은 공개 출처에서 확인되지 않습니다(확인 시 [Korea Watch](../korea-watch.qmd)에 기록). 구조적으로는 방산 전자 산업 — BAE Systems 전자부문 본사(나슈아)가 주 최대급 제조업 고용주 — 이 주 경제의 축이라는 점이 잠재 접점이나, 한미 방산 협력과의 직접 연관은 미확인이므로 추정으로 기술하지 않습니다.
-
-## 경선 후보 (9/8 경선 — 8개 경합주 중 가장 늦음)
+### 경선 후보 (9/8 경선)
 
 ```{r}
 #| output: asis
 cat(primary_cards_html("NH"))
 ```
 
-## 경선 구도 요약
+**민주당 경선은 사실상 단일 구도**입니다 — Pappas가 [집계 평균 66 vs Manzur 13(4/23)](https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire)으로, Shaheen 은퇴 발표 직후(2025-04-03) 출마를 선언하고 당 조직을 빠르게 정리했습니다. **공화당 경선은 Sununu 우위의 2파전**입니다(Emerson 3월 Sununu 48 vs Brown 19, 4월 집계 평균 Sununu 51 vs Brown 21). 경선일(9/8)이 8개 경합주 중 가장 늦어 공화당은 본선 체제 전환이 두 달 가까이 늦습니다 — 미시간(8/4 민주 경선)과 반대 방향의 같은 리스크입니다.
 
-**민주당 경선은 사실상 단일 구도**입니다 — Pappas가 [집계 평균 66 vs Manzur 13(4/23)](https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire)으로, Shaheen 은퇴 발표 직후(2025-04-03) 출마를 선언하고 당 조직을 빠르게 정리했습니다.
+## 4. roll-call / 입법 관심사
 
-**공화당 경선은 Sununu 우위의 2파전**입니다. Emerson(3월) Sununu 48 vs Brown 19(미결정 33), 4월 집계 평균 Sununu 51 vs Brown 21로 격차가 유지·확대되는 추세이며, Chris Sununu 전 주지사와 Kelly Ayotte 현 주지사는 불출마했습니다. 다만 경선일(9/8)이 8개 경합주 중 가장 늦어, 공화당은 본선 체제 전환이 두 달 가까이 늦습니다 — 미시간(8/4 민주 경선)과 반대 방향의 같은 리스크입니다.
+**Chris Pappas (D, 연방하원 NH-01)** — **교통·인프라위(T&I)** 와 **보훈위(Veterans' Affairs)** 소속(보훈위 경제기회 소위 소수당 간사). GovTrack 입법 초점은 국방·안보(32%)·법집행(21%)·보건·국제관계 순입니다.
+
+- **반도체·공급망**: **CHIPS and Science Act(2022) 통과에 참여·찬성**, USICA/CHIPS의 하원 상정을 촉구하는 초당 서한에 동참. 핵심 광물 공급망 관련 **SECURE Minerals Act**를 하원 최초의 민주당 지지자로 backing, 외국의 핵심 인프라 매입을 막는 법안도 발의(대중국 견제 맥락). ([Pappas 하원실](https://pappas.house.gov/media/press-releases/pappas-helps-pass-legislation-support-granite-state-manufacturers-boost) · [GovTrack](https://www.govtrack.us/congress/members/chris_pappas/412795))
+- **공화 후보**: **John E. Sununu** — 전 연방상원의원(2003–2009), 대테러·예산 이력. **Scott Brown** — 전 MA 연방상원의원(2010–2013), 전 트럼프 행정부 뉴질랜드 대사. 둘 다 현재 공직 비보유로 현행 표결기록은 없습니다.
+
+> **한국 관련 직접 표결/법안/발언은 미확인**입니다. Pappas의 CHIPS·대중국 견제는 한국 반도체·공급망과 간접적으로 연결되나, "한국"을 적시한 표결·발언 근거는 확인되지 않았습니다.
+
+## 5. 펀드레이징 (FEC, 2026 Q1 · 3/31 마감)
+
+| 후보 | 정당 | Q1 모금 | 보유현금 |
+|---|---|---:|---:|
+| Chris Pappas | D | **$3.3M** | **$4.2M+** |
+| John E. Sununu | R | $1.5M+ | 약 $1.9M (5월 진입) |
+| Scott Brown | R | 약 $298K | 약 $780K |
+
+: {.striped}
+
+Pappas는 기부의 97%가 $100 이하(평균 온라인 $29.56, 기업 PAC $0)이며 양 공화 후보 합산보다 많은 보유현금으로, 9/8부터 본선 TV 광고 약 $9M을 예약했습니다. 공화 경선은 **Sununu가 모금·현금 모두 Brown을 크게 앞서** 사실상 선두입니다. (Sununu·Brown 보유현금의 정확 FEC 기준일은 원본 대조 권장.) ([Pappas 캠프](https://chrispappas.org/2026/04/chris-pappas-for-senate-announces-q1-fundraising-haul-of-3-3-million-general-election-tv-ad-reservations/) · [NH Journal](https://nhjournal.com/sununus-cash-edge-grows-while-brown-falls-behind-in-q1-fundraising/))
+
+## 6. 한국 함의
+
+- **직접 확인**: 세 후보 모두 **한국 관련 직접 입장은 공개 출처에서 확인되지 않습니다**(확인 시 [Korea Watch](../korea-watch.qmd)에 기록).
+- **추정 연결고리(사실 아님)**: Pappas의 CHIPS·핵심광물·대중국 공급망 입법은 한국 반도체·배터리 공급망과 **간접 연관**될 수 있으나, 한국을 적시한 활동이 아니라 정책 파급효과 차원의 추정입니다. 구조적으로는 BAE Systems 전자부문(나슈아)이 주 경제의 축이라는 점이 잠재 접점이나, 한미 방산 협력과의 직접 연관은 미확인이므로 단정하지 않습니다.

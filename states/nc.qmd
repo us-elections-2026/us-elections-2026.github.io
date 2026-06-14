@@ -7,21 +7,51 @@ title: "노스캐롤라이나 North Carolina"
 source(file.path("R", "helpers.R"))
 ```
 
-## 후보자
+```{r}
+gt_state_detail("NC")
+```
+
+Tillis 은퇴로 생긴 **공개석**(공화 방어). 전 주지사 Roy Cooper(D)가 인지도·모금에서 전 RNC 위원장 Michael Whatley(R)를 앞서며, 봄 내내 한 자릿수 후반~두 자릿수 초반 리드를 일관 유지했습니다(예측시장 약 83%). 양당 경선은 **3/3에 이미 종료**돼(민주 Cooper 92%, 공화 Whatley 64.6%) 본선 체제로 전환했고, **6/11 Cook이 Toss-up → Lean D로 하향**했습니다. 최대 변수는 Whatley의 낮은 인지도(과반이 '모름')를 둘러싼 정의(定義) 싸움과, 공화 슈퍼팩 SLF의 **7,100만 달러** 광고전입니다. ([WRAL](https://www.wral.com/news/nccapitol/nc-senate-cooper-whatley-spending-election-2026-republican-slf-march-2026/) · [Carolina Journal](https://www.carolinajournal.com/cook-political-report-shifts-nc-senate-race-from-toss-up-to-lean-democrat/))
+
+## 1. 주 개요
+
+- **공석의 배경**: Thom Tillis(R)는 2025-06-29 3선 불출마를 발표했습니다 — 트럼프의 "big beautiful bill"(메디케이드 삭감) 표결에 반대한 직후, 트럼프가 경선 도전자 지원을 위협한 지 수 시간 뒤였습니다. ([Axios](https://axios.com/2025/06/29/thom-tillis-retire-senate-north-carolina))
+- **선거사**: 2024 대선 **Trump +3.2**(약 18.3만 표), NC는 직전 3회 연속 공화 대선 승리(마지막 민주 승리는 2008 Obama). 대선은 공화지만 **주지사로 Cooper를 두 번 배출한 대표적 분할투표 주**입니다.
+- **유권자 구성**: 2026-01 기준 등록 약 770만 중 **무당파(unaffiliated) 38.9%**가 최대 블록이며, 같은 달 **공화(30.24%)가 사상 처음 민주(30.21%)를 추월**했습니다(신규 등록의 약 70%가 무당파 선택). ([WRAL](https://www.wral.com/news/local/republican-voters-outnumber-democrats-nc-history-jan-2026/))
+- **경제**: Wolfspeed의 Siler City 실리콘카바이드 반도체 공장($50억, CHIPS 보조 최대 $7.5억), Cooper 주지사 재임 중 유치한 Toyota 배터리 공장(Randolph County, 누적 $139억·5,000+ 일자리, 2025 양산)이 대표적입니다. ([NC Commerce](https://www.commerce.nc.gov/news/press-releases/2023/10/31/toyota-announces-additional-3000-jobs-8-billion-investment-randolph-county-battery-manufacturing))
+
+## 2. 선거 제도
+
+- **결선(second primary) 규칙**: 최다 득표자가 **30% 미만**이면 차점자가 서면으로 결선을 요청할 수 있습니다(자동 아님). 임계값은 2017년 SB656으로 40%→30% 하향됐습니다. 본선 Cooper vs Whatley는 양강이라 결선 변수는 적습니다. ([Ballotpedia](https://ballotpedia.org/Primary_elections_in_North_Carolina))
+- 본선 11/3. 조기·부재자 절차·최근 선거법 세부는 【수집】(NC State Board of Elections 1차 출처 확인 예정).
+
+## 3. 후보자
 
 ```{r}
 #| output: asis
 cat(candidate_cards_html("NC"))
 ```
 
-## 구도 요약
+## 4. roll-call / 입법 관심사
 
-```{r}
-gt_state_detail("NC")
-```
+공석이라 **양 후보 모두 연방 의회 표결 기록이 없습니다.**
 
-Tillis 은퇴로 생긴 **공개석**(공화 방어). 전 주지사 Roy Cooper(D)가 인지도·모금에서 전 RNC 위원장 Michael Whatley(R)를 앞서며, 봄 내내 한 자릿수 후반~두 자릿수 초반 리드를 일관 유지했습니다(예측시장 약 83%). 양당 경선은 **3/3에 이미 종료**돼(민주 Cooper 92%, 공화 Whatley 64.6%) 본선 체제로 전환했습니다. 최대 변수는 Whatley의 낮은 인지도(과반이 '모름')를 둘러싼 정의(定義) 싸움과, 공화 슈퍼팩 SLF의 **7,100만 달러** 광고전입니다. ([WRAL](https://www.wral.com/news/nccapitol/nc-senate-cooper-whatley-spending-election-2026-republican-slf-march-2026/))
+- **Roy Cooper (D)** — NC 주지사(2017–2025)·법무장관(2001–2017, 4선)·주 상·하원. 30년 무패. 주지사 정책은 교육·의료·경제개발·재난복구 중심으로, **Toyota 배터리 공장을 재임 중 유치**한 제조 투자 실적을 캠페인에 활용합니다. ([Ballotpedia](https://ballotpedia.org/Roy_Cooper))
+- **Michael Whatley (R)** — NCGOP 의장 후 **RNC 의장(2024–2025, 트럼프 지명)**, 상원 출마 위해 사임. 트럼프 공개 지지(2025-07). 'Helene 복구 차르' 직함이 캠페인 쟁점입니다. ([Roll Call](https://rollcall.com/2025/07/31/north-carolina-senate-election-michael-whatley/))
 
-## 한국 함의
+> **한국 관련 직접 입장·발언은 양 후보 모두 미확인**입니다.
 
-NC는 대선에선 공화 우위지만 주지사로 Cooper를 두 번 배출한 대표적 **분할투표** 주입니다. 다만 NC의 대형 첨단제조 유치는 일본(Toyota 배터리)·베트남(VinFast)·핀란드(Kempower) 중심으로, **한국의 대형 NC 투자 사례나 양 후보의 대한 정책 입장은 공개 출처에서 확인되지 않습니다**(한국 배터리 투자는 조지아·테네시·켄터키에 집중). 추정으로 빈 칸을 채우지 않습니다.
+## 5. 펀드레이징 (FEC, 2026 Q1 · 3/31 마감)
+
+| 후보 | 정당 | Q1 모금 | 보유현금 |
+|---|---|---:|---:|
+| Roy Cooper | D | **$13.8M** | **$18.5M** |
+| Michael Whatley | R | $5.0M | $2.5M+ |
+
+: {.striped}
+
+Cooper 모금의 **95% 이상이 $100 이하 소액**으로, 보유현금에서 Whatley의 **7배 이상** 우위입니다(입후보 후 누적 $36M+ vs 약 $16M). 다만 공화 슈퍼팩 SLF의 $71M 외부지출이 이 현금 격차를 상쇄하는 구조입니다. (FEC 원본 대조 권장.) ([Carolina Journal](https://www.carolinajournal.com/cooper-outraises-whatley-in-q1-13-8m-to-5m/) · [AOL](https://www.aol.com/articles/election-2026-cooper-cash-advantage-221900221.html))
+
+## 6. 한국 함의
+
+NC는 대선에선 공화 우위지만 주지사로 Cooper를 두 번 배출한 대표적 **분할투표** 주입니다. 다만 NC의 대형 첨단제조 유치는 일본(Toyota 배터리)·베트남(VinFast)·핀란드(Kempower) 중심으로, **한국의 대형 NC 직접 투자 사례나 양 후보의 대한 정책 입장은 공개 출처에서 확인되지 않습니다**(한국 배터리 대형 투자는 조지아에 집중). 추정으로 빈 칸을 채우지 않으며, 신규 동향은 [Korea Watch](../korea-watch.qmd)에 기록합니다.
