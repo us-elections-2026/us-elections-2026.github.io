@@ -1,0 +1,156 @@
+---
+title: "재획정 — 2026 중간선거의 숨은 구조 변수"
+subtitle: "왜 선거 도중에 선거구를 다시 그릴 수 있는가 — 한국 독자를 위한 설명"
+---
+
+::: {.summary}
+- **재획정(redistricting)은 미국에서 본질적으로 주(州)의 권한**입니다. 한국처럼 단일 중앙기구가 전국 선거구를 그리는 구조가 아니라, 50개 주가 제각기 다른 절차로 자기 주의 연방 하원 선거구를 정합니다.
+- 보통 10년에 한 번(인구총조사 직후) 그리지만, **2025~26년에는 주기 밖에서 다시 그리는 "중간 재획정(mid-decade redistricting)"이 이례적으로 번졌습니다.**
+- 발단은 **얇은 하원 다수**와 트럼프 대통령의 공화 우세 주 재획정 요청. 텍사스(R)와 캘리포니아(D)가 맞불을 놓아 초기엔 상쇄됐으나, **연방대법원의 *Louisiana v. Callais*(2026-04-29) 판결**이 남부에서 2차 파동을 촉발하며 공화 쪽으로 기울었습니다.
+- 이 페이지는 **제도(왜 가능한가) → 정치(왜 지금) → 데이터(무엇이 바뀌었나)**를 순서대로 풉니다. ③~⑤(주별 현황·지도 비교·득표율 변화)는 데이터 정비 후 보강합니다.
+:::
+
+이 페이지가 메우려는 빈칸은 분명합니다. 한국 독자에게 가장 낯선 지점은 **"왜 선거를 코앞에 두고 선거구를 다시 그릴 수 있는가"**입니다. 한국은 중앙선거관리위원회와 국회가 단일 절차로 선거구를 획정하므로, "주지사가 의회를 소집해 며칠 만에 새 지도를 통과시킨다", "주민투표로 새 지도를 정한다", "주 대법원이 지도를 무효화한다" 같은 미국식 분권 구조가 직관에 반합니다. 그 구조부터 설명합니다.
+
+## ① 왜 재획정이 가능한가 — 권한 배분과 절차의 차이 {#why-possible}
+
+### 연방 vs 주 — 선거 실시 권한의 분권
+
+미국 헌법 **1조 4절(Elections Clause)**은 연방 하원 선거의 "시간·장소·방법(times, places and manner)"을 **1차적으로 각 주의 의회**가 정하도록 하고, 연방의회가 사후에 개입·수정할 수 있게 합니다. 즉 선거구 획정은 출발점부터 **주의 권한**입니다. 한국처럼 전국을 관장하는 단일 연방 획정기구는 존재하지 않습니다.
+
+```{=html}
+<figure class="redist-diagram" style="margin:1.2rem 0;">
+<svg viewBox="0 0 760 360" width="100%" style="height:auto;max-width:760px;display:block;margin:0 auto;font-family:'IBM Plex Sans KR',sans-serif;" role="img" aria-labelledby="rd-title rd-desc">
+  <title id="rd-title">미국 연방 하원 선거구 획정 권한의 배분</title>
+  <desc id="rd-desc">연방 헌법이 1차 권한을 각 주 의회에 부여하고, 주마다 획정 주체가 주의회·독립위원회·법원의 세 유형으로 갈리며, 연방의회와 주 법원이 견제하는 구조</desc>
+
+  <!-- 최상단: 연방 헌법 -->
+  <rect x="230" y="14" width="300" height="56" rx="9" fill="#1f3a5f"/>
+  <text x="380" y="38" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">연방 헌법 1조 4절</text>
+  <text x="380" y="58" text-anchor="middle" fill="#cdd8e6" font-size="12">Elections Clause — 선거의 시간·장소·방법</text>
+
+  <!-- 화살표 -->
+  <line x1="380" y1="70" x2="380" y2="100" stroke="#8a97a6" stroke-width="2"/>
+  <polygon points="380,108 375,98 385,98" fill="#8a97a6"/>
+
+  <!-- 2단: 각 주 의회 1차 권한 -->
+  <rect x="210" y="108" width="340" height="54" rx="9" fill="#e7edf5" stroke="#b8c6d8"/>
+  <text x="380" y="131" text-anchor="middle" fill="#1f3a5f" font-size="14.5" font-weight="700">각 주(州)가 1차 획정 권한 보유</text>
+  <text x="380" y="150" text-anchor="middle" fill="#5a6672" font-size="11.5">→ 절차가 주마다 다름 (아래 3유형)</text>
+
+  <!-- 연방의회 사후개입 (우측 주석) -->
+  <rect x="576" y="104" width="172" height="62" rx="8" fill="#fbfcfd" stroke="#dbe1e8" stroke-dasharray="4 3"/>
+  <text x="662" y="126" text-anchor="middle" fill="#5a6672" font-size="11" font-weight="700">연방의회</text>
+  <text x="662" y="143" text-anchor="middle" fill="#6b7280" font-size="10.5">사후 개입·수정 가능</text>
+  <text x="662" y="158" text-anchor="middle" fill="#6b7280" font-size="10.5">(2조: 단 거의 미사용)</text>
+  <line x1="550" y1="135" x2="576" y2="135" stroke="#c2cad4" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <!-- 화살표 3갈래 -->
+  <line x1="380" y1="162" x2="380" y2="184" stroke="#8a97a6" stroke-width="2"/>
+  <line x1="140" y1="184" x2="620" y2="184" stroke="#8a97a6" stroke-width="2"/>
+  <line x1="140" y1="184" x2="140" y2="206" stroke="#8a97a6" stroke-width="2"/>
+  <line x1="380" y1="184" x2="380" y2="206" stroke="#8a97a6" stroke-width="2"/>
+  <line x1="620" y1="184" x2="620" y2="206" stroke="#8a97a6" stroke-width="2"/>
+
+  <!-- 유형 1: 주의회 직접 -->
+  <rect x="24" y="206" width="232" height="92" rx="9" fill="#fff" stroke="#c92a2a" stroke-width="1.5"/>
+  <text x="140" y="231" text-anchor="middle" fill="#991b1b" font-size="13.5" font-weight="700">① 주의회 직접 획정</text>
+  <text x="140" y="252" text-anchor="middle" fill="#3a3a3a" font-size="11.5">TX · MO · NC · FL · TN 등 다수</text>
+  <text x="140" y="270" text-anchor="middle" fill="#5a6672" font-size="11">집권당이 통제하면 빠르게</text>
+  <text x="140" y="285" text-anchor="middle" fill="#5a6672" font-size="11">당파적으로 그릴 수 있음</text>
+
+  <!-- 유형 2: 독립 위원회 -->
+  <rect x="264" y="206" width="232" height="92" rx="9" fill="#fff" stroke="#1971c2" stroke-width="1.5"/>
+  <text x="380" y="231" text-anchor="middle" fill="#1e40af" font-size="13.5" font-weight="700">② 독립·초당파 위원회</text>
+  <text x="380" y="252" text-anchor="middle" fill="#3a3a3a" font-size="11.5">CA · AZ · OH 등</text>
+  <text x="380" y="270" text-anchor="middle" fill="#5a6672" font-size="11">정치인이 못 그리게 막은 구조</text>
+  <text x="380" y="285" text-anchor="middle" fill="#5a6672" font-size="11">→ 우회하려면 주민투표 필요</text>
+
+  <!-- 유형 3: 법원 -->
+  <rect x="504" y="206" width="232" height="92" rx="9" fill="#fff" stroke="#7048a8" stroke-width="1.5"/>
+  <text x="620" y="231" text-anchor="middle" fill="#5f3dc4" font-size="13.5" font-weight="700">③ 법원·특별조정관</text>
+  <text x="620" y="252" text-anchor="middle" fill="#3a3a3a" font-size="11.5">UT · LA 등</text>
+  <text x="620" y="270" text-anchor="middle" fill="#5a6672" font-size="11">소송 결과로 지도가 그려지거나</text>
+  <text x="620" y="285" text-anchor="middle" fill="#5a6672" font-size="11">무효화됨</text>
+
+  <!-- 하단 견제: 주 법원·주헌법 -->
+  <rect x="210" y="318" width="340" height="34" rx="8" fill="#f3eefa" stroke="#d0bfea"/>
+  <text x="380" y="340" text-anchor="middle" fill="#5f3dc4" font-size="11.5" font-weight="700">주 법원·주헌법이 견제 (Moore v. Harper, 2023)</text>
+</svg>
+<figcaption class="as-of" style="text-align:center;">획정 권한의 흐름: 연방 헌법이 1차 권한을 주에 주고, 주마다 획정 주체가 세 유형으로 갈린다.</figcaption>
+</figure>
+```
+
+::: {.kr-box}
+한국: **중앙선관위·국회의 단일 절차**로 전국 선거구를 한 번에 획정. 미국: **50개 주가 제각기**, 위 세 유형 중 하나로 자기 주만 획정. 그래서 "어떤 주는 며칠 만에 새 지도를 통과시키고, 어떤 주는 주민투표를 거쳐야 하는" 차이가 생깁니다.
+:::
+
+### 획정 주체의 3유형 — "왜 텍사스는 빠른데 캘리포니아는 주민투표를 했나"
+
+| 유형 | 누가 그리나 | 예 | 특징 |
+|---|---|---|---|
+| **주의회 직접** | 주 의회(다수당) | TX·MO·NC·FL·TN | 집권당이 양원·주지사를 쥐면 빠르고 당파적으로 가능 |
+| **독립·초당파 위원회** | 정치인과 분리된 위원회 | CA·AZ·OH | 당파 개입을 막아둔 구조. 캘리포니아는 위원회 지도를 우회하려고 **주민투표(Prop 50)**로 일시적 권한을 새로 만들어야 했음 |
+| **법원·특별조정관** | 주/연방 법원 | UT·LA | 소송 결과로 지도가 정해지거나 무효화됨 |
+
+: {.striped}
+
+캘리포니아 사례가 이 차이를 압축합니다. 캘리포니아는 정치인이 선거구를 못 그리게 **독립 위원회**에 맡겨 두었기 때문에, 민주당이 맞불 재획정을 하려면 위원회를 우회할 **새 권한을 주민투표로 만들어야** 했습니다 — 그것이 2025년 11월 통과된 **Prop 50**입니다. 반대로 텍사스는 주 의회가 직접 그리므로 주지사가 의회를 소집해 곧바로 새 지도를 통과시킬 수 있었습니다.
+
+### 10년 주기 원칙과 "중간 재획정"의 이례성
+
+선거구는 보통 **10년에 한 번**, 연방 인구총조사(census) 직후에 다시 그립니다. 다음 정규 시점은 2030년 센서스 이후입니다. 주기 밖에서 지도를 다시 그리는 **중간 재획정(mid-decade redistricting)**은 위법은 아니지만 과거엔 매우 드물었습니다 — 2003년 텍사스, 2005년 조지아의 당파적 중간 재획정이 대표적 예외로 꼽힐 정도였습니다. 2025~26년처럼 여러 주가 동시에 중간 재획정에 뛰어든 것은 **현대 들어 이례적인 현상**입니다([Voting Rights Lab](https://votingrightslab.org/2026/05/11/an-emerging-trend-mid-decade-redistricting/) · [Congress.gov CRS](https://www.congress.gov/crs-product/IF13082)).
+
+### 사법적 제약 — 무엇은 되고 무엇은 안 되나
+
+당파적 재획정이 어디까지 허용되는지는 세 판례로 요약됩니다.
+
+- ***Rucho v. Common Cause* (2019)** — **당파적** 게리맨더링은 연방법원이 심사하지 않는다(non-justiciable)고 판시. 사실상 당파적 재획정의 문을 연 분기점입니다.
+- ***Moore v. Harper* (2023)** — 주 의회가 견제 없이 선거규칙을 정할 수 있다는 "독립 주의회(independent state legislature)" 이론을 기각. 즉 **주 법원·주헌법이 여전히 견제**할 수 있습니다(버지니아 사례에서 실제로 작동).
+- **VRA §2 / 인종적 게리맨더링** — 당파는 되더라도 **인종**을 기준으로 한 획정엔 제약이 있었습니다. 그런데 이 제약이 2026년 ***Louisiana v. Callais*** 판결로 크게 약화됐고, 이것이 ②·③의 2차 파동과 직결됩니다.
+
+## ② 왜 이번 선거에서 재획정이 진행되는가 — 배경 {#why-now}
+
+### 발단 — 얇은 다수와 대통령의 요청
+
+동기는 단순합니다. **하원 다수당 마진이 극도로 얇기** 때문입니다. 공화당이 근소한 차로 다수당이고, 민주당은 **순증 약 +3석**이면 하원을 탈환합니다. 2025년 여름, 트럼프 대통령이 공화 우세 주들에 GOP 의석을 늘리도록 지도를 다시 그릴 것을 요청하면서 **텍사스가 먼저 +5석을 노린 새 지도**로 응수했습니다.
+
+### 확전 — 텍사스 vs 캘리포니아 맞불
+
+텍사스의 선공에 캘리포니아 유권자가 **Prop 50**(2025년 11월, 약 29%p 차 가결)으로 민주 +5석을 노리며 맞불을 놓아, 두 거대 주의 효과가 **서로 상쇄**됐습니다. 텍사스 신지도는 인종 게리맨더 논란으로 하급심에서 한때 사용이 막혔으나, **연방대법원이 2025년 12월 사용을 허용(6-3 stay)하고 2026년 4월 이를 영구화**해 2026 본선에 사용됩니다([Texas Tribune](https://www.texastribune.org/2026/04/27/texas-redistricting-map-ruling-us-supreme-court-upheld-2026-midterms/)). 캘리포니아 신지도도 2026년 2월 연방대법원이 사용을 허용했습니다([NPR](https://www.npr.org/2026/02/04/nx-s1-5691890/supreme-court-california-redistricting-map)). 이후 미주리·노스캐롤라이나(각 R+1), 오하이오(R+2, 위원회), 유타(법원, D+1) 등으로 번졌습니다.
+
+### 2차 파동 — *Callais* 이후 남부
+
+2026년 4월 29일, 연방대법원은 ***Louisiana v. Callais***에서 루이지애나 지도를 위헌적 인종 게리맨더로 보고 **6-3으로 파기**하면서, VRA §2에 따른 소수인종 보호 지역구의 근거를 크게 좁혔습니다([대법원 판결문](https://www.supremecourt.gov/opinions/25pdf/24-109_21o3.pdf) · [Congress.gov CRS](https://www.congress.gov/crs-product/LSB11431)). 이 판결을 계기로 남부 공화 주들이 소수인종 지역구를 겨냥한 재획정에 착수했습니다 — **플로리다**(R+4, DeSantis 2026-05-04 서명), **테네시**(2026-05-07 서명, 9R-0D 구도), 그리고 **앨라배마·사우스캐롤라이나** 진행, **루이지애나**는 판결 후 새 지도를 재작성 중입니다([Ballotpedia News](https://news.ballotpedia.org/2026/05/11/new-congressional-maps-in-florida-tennessee-aim-to-shift-five-more-districts-to-republicans-ahead-of-2026-midterms/)). 반대로 민주당이 추진한 **버지니아** 신지도는 주 대법원에서 막혔습니다([Democracy Docket](https://www.democracydocket.com/news-alerts/after-callais-and-virginia-republicans-are-ahead-in-trumps-gerrymandering-war/)).
+
+정리하면 이번 사이클은 **1차(당파적 확전, TX↔CA 상쇄)와 2차(Callais로 VRA가 약화되며 남부 추가 재편)**의 두 국면으로 나뉘며, 2차를 거치며 순효과가 **공화 쪽으로 기울었습니다.**
+
+::: {.caveat}
+- 의석 **순효과는 추정치**이며 출처·시점마다 다릅니다. 초기엔 양당이 거의 상쇄(대략 R+9 / D+10)로 평가됐으나, *Callais*·버지니아 차단·플로리다·테네시를 거치며 공화 우위로 기운 것으로 분석됩니다. 정확한 주별 수치는 ③에서 **범위 + 출처 병기**로 정리합니다.
+- 소송이 진행 중인 주(텍사스·미주리 등)는 **선거 전 추가 변동 가능성**이 남아 있습니다.
+- 여기 날짜·판결은 보도·1차 출처로 확인했으나, 진행 중 사안은 **기준일(2026-06) 이후 갱신될 수 있습니다.**
+:::
+
+## ③ 관련 주 및 현황 {#states}
+
+주별 획정 주체·통과 시점·현 상태·예상 순효과를 상태 칩으로 표준화해 정리할 예정입니다(데이터 소스: 주 입법부 공식 발표 + Ballotpedia + Sabato's Crystal Ball). [하원 경합구 트래커](house.qmd#redistricting)의 재획정 메모와 같은 데이터를 공유합니다.
+
+【수집】 주별 현황표 + 순효과 다이버징 바 — 데이터 정비 후 보강.
+
+## ④ 옛 지도와 현 지도 비교 {#maps}
+
+텍사스·캘리포니아·오하이오·노스캐롤라이나를 우선으로, 신·구 지도를 나란히 비교하고 변경 지역구를 하이라이트할 예정입니다(소스: 각 주 공식 district shapefile / Redistricting Data Hub).
+
+【수집】 신·구 지도 비교 — 데이터 정비 후 보강.
+
+## ⑤ 2024 결과 기반 — 지역구별 R 득표율 변화 {#vote-shift}
+
+**선거를 다시 한 것이 아니라, 같은 2024년 대선 표를 새 선거구 경계로 다시 집계해** 트럼프(R) 2당 득표율의 변화량(Δ)을 보여줄 예정입니다(소스: Daily Kos Elections의 신·구 선거구별 대선 결과). 이 값이 [하원 트래커](house.qmd)의 "2024 마진【수집】" 칸들을 채우는 단일 소스가 됩니다.
+
+【수집】 지역구별 R 득표율 변화(덤벨/화살표 차트) — 데이터 정비 후 보강.
+
+---
+
+::: {.as-of}
+관련 페이지: [하원 경합구 트래커](house.qmd) · [방법론](methodology.qmd) · [Korea Watch](korea-watch.qmd). 기준일 2026-06. 진행 중 소송으로 일부 지도는 선거 전 변동될 수 있습니다.
+:::

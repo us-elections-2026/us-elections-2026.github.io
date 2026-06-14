@@ -72,6 +72,8 @@ website:
         contents:
           - text: "경합구 트래커 — 토스업·재획정"
             href: house.qmd
+          - text: "재획정 — 왜·어디서 (설명)"
+            href: redistricting.qmd
       - section: "전국 환경"
         contents:
           - text: "지지율·경제·외교"
