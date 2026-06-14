@@ -234,39 +234,52 @@ main .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .kr-box.kr-industry::before { content: "🇰🇷 한국 함의 · 산업"; }
 
 /* ============================================================
-   홈 컨트롤 패널 — 첫 화면 KPI + 모듈
+   홈 컨트롤 패널 — 30초 상황판 (조용한 분석 브리핑 스타일)
    ============================================================ */
-.kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 16px 0 10px; }
-.kpi { border: 1px solid #e6e8eb; border-radius: 12px; padding: 14px 16px; background: #fff; }
+
+/* 상황판 메타바 — 기준 시각 + 최신 브리핑 링크 */
+.situ-meta {
+  display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: baseline;
+  margin: 6px 0 2px; font-size: 0.85rem; color: #6b7280;
+}
+.situ-meta .latest-link { font-weight: 700; }
+
+/* KPI 카드 4장 — 큰 숫자 + 짧은 라벨 + 해석 한 줄 */
+.kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 12px 0 10px; }
+.kpi { border: 1px solid #e6e8eb; border-radius: 8px; padding: 13px 15px; background: #fff; }
 .kpi-num { font-size: 1.95rem; font-weight: 800; line-height: 1.05; }
 .kpi-lab { font-size: 0.82rem; font-weight: 700; color: #343a40; margin-top: 4px; }
-.kpi-sub { font-size: 0.72rem; color: #868e96; margin-top: 3px; }
+.kpi-sub { font-size: 0.72rem; color: #adb5bd; margin-top: 2px; }
+.kpi-interp { font-size: 0.74rem; color: #5a6672; line-height: 1.4; margin-top: 7px; padding-top: 6px; border-top: 1px solid #f1f3f5; }
 .kpi-d .kpi-num { color: $dem-fg; }
 .kpi-r .kpi-num { color: $rep-fg; }
 @media (max-width: 680px) { .kpis { grid-template-columns: repeat(2, 1fr); } }
 
-/* 모듈 2열 그리드 */
-.panels { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 10px 0 4px; }
-.panel { border: 1px solid #e6e8eb; border-radius: 12px; padding: 15px 17px 13px; background: #fff; }
-.panel > h3:first-child {
-  margin: 0 0 8px; font-size: 1.02rem; border: 0; padding: 0;
-}
-.panel .more { font-size: 0.8rem; display: inline-block; margin-top: 8px; }
-@media (max-width: 760px) { .panels { grid-template-columns: 1fr; } }
+/* "이번 주" 변화 — 3 카드 (제목·한 문장·링크) */
+.ccards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 8px 0 4px; }
+.ccard { border: 1px solid #e6e8eb; border-radius: 8px; padding: 12px 14px; background: #fff; }
+.ccard.acc-d { border-top: 3px solid $dem; }
+.ccard.acc-r { border-top: 3px solid $rep; }
+.ccard .cc-title { font-weight: 700; font-size: 0.95rem; margin: 0 0 4px; }
+.ccard .cc-sum { font-size: 0.86rem; color: #3a3a3a; line-height: 1.5; margin: 0 0 7px; }
+.ccard .cc-link { font-size: 0.8rem; }
+@media (max-width: 760px) { .ccards { grid-template-columns: 1fr; } }
 
-/* 한국 함의 Top 미니 리스트 */
-.ktop { list-style: none; padding: 0; margin: 2px 0 0; }
-.ktop li { padding: 7px 0; border-top: 1px solid #f1f3f5; font-size: 0.9rem; line-height: 1.5; }
-.ktop li:first-child { border-top: 0; }
-.ktop .kw-type { margin-right: 6px; }
-.ktop a.ktop-src { color: #adb5bd; text-decoration: none; margin-left: 4px; }
-.ktop a.ktop-src:hover { color: #495057; }
+/* "한국 함의" — 3 테마 컴팩트 카드 */
+.kwatch { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 8px 0 4px; }
+.kw-item { border: 1px solid #ffe3c2; border-left: 3px solid #e8590c; border-radius: 8px; padding: 11px 13px; background: #fff9f0; }
+.kw-item .kw-theme { font-size: 0.72rem; font-weight: 700; color: #e8590c; margin-bottom: 4px; }
+.kw-item .kw-body { font-size: 0.85rem; line-height: 1.5; color: #3a3a3a; }
+.kw-item .kw-body a { font-size: 0.78rem; }
+@media (max-width: 760px) { .kwatch { grid-template-columns: 1fr; } }
 
-/* 이번 주 변화 타임라인 미니 */
-.changes { list-style: none; padding: 0; margin: 2px 0 0; }
-.changes li { padding: 6px 0; border-top: 1px solid #f1f3f5; font-size: 0.9rem; line-height: 1.5; }
-.changes li:first-child { border-top: 0; }
-.changes .ch-date { font-weight: 700; color: #1f3a5f; margin-right: 6px; font-variant-numeric: tabular-nums; }
+/* 전국 환경 — 미니 통계 칩 (풀 테이블 대체) */
+.mini-sum { display: flex; flex-wrap: wrap; gap: 10px; margin: 6px 0 8px; }
+.mini-stat { border: 1px solid #e6e8eb; border-radius: 8px; padding: 9px 14px; background: #fff; min-width: 120px; }
+.mini-stat .ms-num { font-size: 1.15rem; font-weight: 800; }
+.mini-stat .ms-d { color: $dem-fg; }
+.mini-stat .ms-r { color: $rep-fg; }
+.mini-stat .ms-lab { font-size: 0.73rem; color: #6b7280; margin-top: 2px; }
 
 /* ============================================================
    주간 브리핑 카드 — 레이스별 스캔용(현 상태·이번 주·왜 중요·한국·다음)
