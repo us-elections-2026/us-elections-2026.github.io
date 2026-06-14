@@ -9,6 +9,7 @@ project:
     - "!handoff.md"
     - "!NOTES_LOCAL.md"
     - "!README.md"
+    - "!AGENTS.md"
     - "!worklogs/"
   resources:
     - data/model_dashboard.json
