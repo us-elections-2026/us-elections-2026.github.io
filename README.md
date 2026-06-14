@@ -18,21 +18,37 @@ Mac mini (수집 + 정규화 → data/ 에 JSON/CSV 커밋)
 
 ```
 .
-├── _quarto.yml            # 사이트 설정 (execute-dir: project 로 작업경로=루트 고정)
-├── index.qmd              # 홈: 환경 스냅샷 + 이슈 목록(listing)
-├── trackers.qmd           # 트래커: 최신 데이터 표 모음
-├── about.qmd              # 소개(evergreen) 해설
-├── issues/
-│   └── 2026-06-07.qmd     # 주간 호 (데이터=함수 렌더링, 분석=프로즈)
-├── data/                  # ★ 정규화 데이터 — Mac mini가 여기에 커밋
-│   ├── forecast.json
-│   ├── generic_ballot.json
-│   ├── approval.json
-│   ├── senate_races.json
-│   └── polls_log.csv
-├── R/helpers.R            # 로딩·정규화·gt 표 렌더링 헬퍼
+├── _quarto.yml            # 사이트 설정 (execute-dir: project, freeze: false)
+├── index.qmd              # 홈: 상원 전망 KPI + 환경 스냅샷 + 추이 차트 + 이슈 listing + 데이터 유의사항
+├── dashboard.qmd          # ★ 자체 모델 대시보드 (Chart.js, model_dashboard.json 런타임 fetch)
+├── house.qmd              # ★ 하원 경합구 트래커 (house_races.json)
+├── national.qmd           # ★ 전국 환경 (지지율·제너릭·경제·외교)
+├── korea-watch.qmd        # ★ Korea Watch (korea_watch.csv + 인물·법안 표)
+├── methodology.qmd        # ★ 방법론 (수치 3종 구분·모델 개요·여론조사 리터러시)
+├── scenarios.qmd          # ★ 상원 시나리오 (소수/50:50/다수, tipping-point, 한국 함의)
+├── senate.qmd             # 상원 경합주 표
+├── trackers.qmd           # 최신 데이터 표 모음
+├── archive.qmd            # 주간 호 아카이브 listing
+├── about.qmd              # 소개(evergreen)
+├── issues/                # 주간 호 (데이터=함수 렌더링, 분석=프로즈). 홈·archive listing.
+├── states/                # 경합 8주 State Focus (6섹션 표준 + gt_state_detail 카드)
+│   └── {ga,mi,nh,me,nc,tx,oh,ak}.qmd
+├── data/                  # ★ 정규화 데이터 — Mac mini가 여기에 커밋. 스키마는 data/README.md
+│   ├── forecast.json  generic_ballot.json  approval.json  trends.json  national_econ.json
+│   ├── senate_races.json  senate_primaries.json  candidates.json  fec_fundraising.json
+│   ├── model_dashboard.json  house_races.json
+│   ├── korea_watch.csv  polls_log.csv
+│   ├── README.md          # 데이터 스키마 문서 (필드·nullable·부호 규약·소비처)
+│   └── history/<YYYY-MM-DD>/   # 주간 스냅샷 (delta 추적)
+├── assets/                # dashboard.{js,css}, trends.js, econ.js, candidates/ (후보 사진 PD·CC)
+├── R/helpers.R            # 로딩·정규화·gt 표·카드 렌더링 헬퍼
+├── scripts/
+│   ├── validate_data.R    # ★ data/ 스키마·파싱 검증 (CI publish 전 실행)
+│   ├── fetch_national_econ.py   # FRED → national_econ.json
+│   ├── fetch_fec_fundraising.py # FEC → fec_fundraising.json (스테이징)
+│   └── snapshot_and_publish.sh  # 주간 스냅샷 + launchd
 ├── theme/custom.scss      # 테마
-└── .github/workflows/publish.yml
+└── .github/workflows/publish.yml   # 검증 → Quarto render → gh-pages 배포
 ```
 
 ## 로컬에서 보기
@@ -43,12 +59,19 @@ Mac mini (수집 + 정규화 → data/ 에 JSON/CSV 커밋)
 # R 패키지 (최초 1회)
 Rscript -e 'install.packages(c("jsonlite","dplyr","gt","readr"))'
 
+# 데이터 검증 (파싱·필수 필드·부호/범위 규약) — 커밋·렌더 전 권장
+Rscript scripts/validate_data.R
+
 # 미리보기 (자동 새로고침)
 quarto preview
 
 # 전체 빌드
 quarto render
 ```
+
+> `scripts/validate_data.R`는 CI(`publish.yml`)에서도 Quarto render 직전에 실행되어,
+> 깨진 JSON/CSV·필수 필드 누락·부호 규약 위반이 공개 페이지로 나가기 전에 빌드를 멈춥니다.
+> 데이터 파일별 필드·nullable·부호 규약은 **[`data/README.md`](data/README.md)** 참조.
 
 ## 배포 (GitHub Pages)
 

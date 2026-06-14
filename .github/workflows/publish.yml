@@ -43,6 +43,10 @@ jobs:
         run: |
           install.packages(c("rmarkdown", "knitr", "jsonlite", "dplyr", "gt", "readr"))
 
+      # data/ 스키마·파싱 검증. 깨진 데이터가 공개 페이지로 렌더되기 전에 빌드를 멈춘다.
+      - name: Validate data schemas
+        run: Rscript scripts/validate_data.R
+
       - name: Render and publish to gh-pages
         uses: quarto-dev/quarto-actions/publish@v2
         with:
