@@ -36,6 +36,103 @@ categories: [주간브리핑]
 
 ## 경합주 동향
 
+::: {.lookfor}
+각 카드를 30초에 훑고, 깊이 보려면 아래 '레이스별 상세'(출처 포함)로 내려가세요.
+:::
+
+::: {.bcards}
+
+::: {.bcard .def-d}
+**조지아 — 민주 방어**
+
+- **현 상태**: Ossoff(D·현직) vs 공화 5/19 경선·6/16 결선
+- **이번 주**: Kemp가 Dooley 지지 유세; 첫 네거티브 광고(Carter 겨냥) 등장
+- **왜 중요**: 민주 수성 의석
+
+::: {.bc-kr}
+🇰🇷 현대차 단속·통상 — Ossoff 직접 관여 풍부
+:::
+::: {.bc-next}
+**다음** 5/19 공화 경선
+:::
+:::
+
+::: {.bcard .def-d}
+**미시간 — 민주 방어(공개석)**
+
+- **현 상태**: 민주 8/4 경선(McMorrow·Stevens·El-Sayed) vs Rogers(R)
+- **이번 주**: 전당대회서 Stevens 야유(이스라엘·팔레스타인 균열); McMorrow·El-Sayed 공동선두 24%
+- **왜 중요**: 민주 수성·공개석
+
+::: {.bc-kr}
+🇰🇷 배터리 본진(LG·SK·삼성) — 후보 직접 입장 미확인
+:::
+::: {.bc-next}
+**다음** 8/4 민주 경선
+:::
+:::
+
+::: {.bcard .def-r}
+**메인 — 공화 방어**
+
+- **현 상태**: 민주 6/9 경선(Platner 대세) vs Collins(R·6선)
+- **이번 주**: Warren이 Platner 지지 유세(진보 결집); 본선 Platner +5~9
+- **왜 중요**: 민주 탈환 표적
+
+::: {.bc-kr}
+🇰🇷 Collins CHIPS·세출은 추정 연결 — 직접 미확인
+:::
+::: {.bc-next}
+**다음** 6/9 민주 경선
+:::
+:::
+
+::: {.bcard .def-r}
+**노스캐롤라이나 — 공화 방어(공개석)**
+
+- **현 상태**: Cooper(D·전 주지사) vs Whatley(R·전 RNC) 확정
+- **이번 주**: 공화 주의회가 Cooper 조사 착수(정치적 의도 논란); 조사 +7~14
+- **왜 중요**: 민주 픽업 표적
+
+::: {.bc-kr}
+🇰🇷 한국 대형 직접 투자 없음(조지아 집중)
+:::
+:::
+
+::: {.bcard .def-r}
+**텍사스 — 공화 방어**
+
+- **현 상태**: Talarico(D·확정) vs 공화 5/26 결선(Cornyn vs Paxton)
+- **이번 주**: Talarico 1분기 $27M(코닌의 3배); 트럼프 결선 후 지지 시사
+- **왜 중요**: 민주 탈환 표적
+
+::: {.bc-kr}
+🇰🇷 삼성 Taylor 팹은 구조적 후크 — 직접 발언 미확인
+:::
+::: {.bc-next}
+**다음** 5/26 공화 결선
+:::
+:::
+
+::: {.bcard .def-r}
+**알래스카 — 공화 방어**
+
+- **현 상태**: Peltola(D·전 하원) vs Sullivan(R·현역), 8/18 top-4→11월 RCV
+- **이번 주**: Peltola 1분기 $8.9M(4배); 현금은 우위 보기 어려움; Murkowski Sullivan 지지
+- **왜 중요**: 민주 픽업 표적
+
+::: {.bc-kr}
+🇰🇷 Sullivan 인도태평양법(한국)·한화 조선(직접)
+:::
+::: {.bc-next}
+**다음** 8/18 top-4 예비선거
+:::
+:::
+
+:::
+
+### 레이스별 상세
+
 ### 조지아 (Georgia) — 민주 방어
 - **구도**: Ossoff(D·현직) vs 공화당 **5/19 경선**(Buddy Carter·Mike Collins·Derek Dooley 3파전, 결선 6/16 예정). Cook **Lean Democrat**으로 상향.
 - 신규 조사에서 Ossoff가 Carter에 47:44, Collins에 48:43, Dooley에 49:41로 **5~8%p 우위**(Emerson). 주중 첫 네거티브 광고가 등장(Buddy Carter 투입)했고, 4/20 Kemp 주지사가 Derek Dooley 지지 유세에 나섬([Georgia Recorder](https://georgiarecorder.com/2026/04/20/georgia-governor-stumps-for-dooley-in-closely-watched-u-s-senate-race/), [NBC](https://www.nbcnews.com/politics/2026-election/first-attack-ad-churns-georgias-uncertain-republican-senate-primary-rcna341210)). 모금은 Ossoff 3,170만 달러로 압도(Collins 100만·Dooley 66만·Carter 47만). 공화당 단일화가 늦어질수록 Ossoff에 유리.

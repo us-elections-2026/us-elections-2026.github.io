@@ -32,6 +32,118 @@ categories: [주간브리핑]
 
 ## 경합주 동향
 
+::: {.lookfor}
+각 카드를 30초에 훑고, 깊이 보려면 아래 '레이스별 상세'(출처 포함)로 내려가세요.
+:::
+
+::: {.bcards}
+
+::: {.bcard .def-d}
+**조지아 — 민주 방어**
+
+- **현 상태**: Ossoff(D·현직) vs 공화 경선(Collins·Carter·Dooley)
+- **이번 주**: 4/27 토론서 Carter가 Collins 윤리조사 공격; 4/26 사전투표 개시
+- **왜 중요**: 민주 수성 의석
+
+::: {.bc-kr}
+🇰🇷 현대차 단속·통상 — Ossoff 직접 관여 풍부
+:::
+::: {.bc-next}
+**다음** 5/19 공화 경선
+:::
+:::
+
+::: {.bcard .def-d}
+**미시간 — 민주 방어(공개석)**
+
+- **현 상태**: 민주 8/4 경선(McMorrow·Stevens·El-Sayed) vs Rogers(R)
+- **이번 주**: Q1 모금서 McMorrow·El-Sayed가 Stevens 앞질러 경선 재편
+- **왜 중요**: 민주 수성·공개석
+
+::: {.bc-kr}
+🇰🇷 배터리 본진(LG·SK·삼성) — 후보 직접 입장 미확인
+:::
+::: {.bc-next}
+**다음** 8/4 민주 경선
+:::
+:::
+
+::: {.bcard .def-r}
+**메인 — 공화 방어**
+
+- **현 상태**: 민주 6/9 경선(Mills 사퇴로 Platner 확정) vs Collins(R)
+- **이번 주**: 4/30 Mills 자금 부족으로 사퇴, 민주 Platner로 결집
+- **왜 중요**: 민주 탈환 표적
+
+::: {.bc-kr}
+🇰🇷 Collins CHIPS·세출은 추정 연결 — 직접 미확인
+:::
+::: {.bc-next}
+**다음** 6/9 민주 경선
+:::
+:::
+
+::: {.bcard .def-r}
+**노스캐롤라이나 — 공화 방어(공개석)**
+
+- **현 상태**: Cooper(D·전 주지사) vs Whatley(R·전 RNC) 확정
+- **이번 주**: Cooper +6; 등급 Leans D↔Toss-up 엇갈림; 신규 동향 없음
+- **왜 중요**: 민주 픽업 표적
+
+::: {.bc-kr}
+🇰🇷 한국 대형 직접 투자 없음(조지아 집중)
+:::
+:::
+
+::: {.bcard .def-r}
+**알래스카 — 공화 방어**
+
+- **현 상태**: Peltola(D·전 하원) vs Sullivan(R·현역), 8/18 top-4→11월 RCV
+- **이번 주**: ASR Peltola 50.2–43.6; PPP는 +2 접전(기관 편차 큼)
+- **왜 중요**: 민주 픽업 표적
+
+::: {.bc-kr}
+🇰🇷 Sullivan 인도태평양법(한국)·한화 조선(직접)
+:::
+::: {.bc-next}
+**다음** 8/18 top-4 예비선거
+:::
+:::
+
+::: {.bcard .def-r}
+**텍사스 — 공화 방어**
+
+- **현 상태**: Talarico(D·확정) vs 공화 5/26 결선(Cornyn vs Paxton)
+- **이번 주**: 다수 조사가 Talarico 우위로 수렴(+3~8); 트럼프 중립 유지
+- **왜 중요**: 민주 탈환 표적
+
+::: {.bc-kr}
+🇰🇷 삼성 Taylor 팹은 구조적 후크 — 직접 발언 미확인
+:::
+::: {.bc-next}
+**다음** 5/26 공화 결선
+:::
+:::
+
+::: {.bcard .def-r}
+**오하이오 — 공화 방어(특별선거)**
+
+- **현 상태**: Brown(D·전 3선) vs Husted(R·임명직), 5/5 예비→11/3 특별
+- **이번 주**: 기관 편차 큼(Emerson Husted +6 / BGSU 동률); 일부 Lean R→Toss-up
+- **왜 중요**: 민주 픽업 표적
+
+::: {.bc-kr}
+🇰🇷 Brown은 KORUS 반대표(직접) — 통상 강경 가능성
+:::
+::: {.bc-next}
+**다음** 5/5 예비선거
+:::
+:::
+
+:::
+
+### 레이스별 상세
+
 ### 조지아 (Georgia) — 민주 방어
 - **구도**: Ossoff(D·현직) vs 공화당 경선(Collins / Carter / Dooley) — **Leans Democratic**.
 - 4/27 Atlanta Press Club 토론(Carter·Collins·Dooley·Coyne·McColumn 5인)에서 Carter가 Collins의 연방 윤리 조사를 정면 공격, Collins는 "nothing burger"로 받아침([GPB](https://www.gpb.org/news/2026/04/27/georgia-us-senate-republican-candidates-face-off-in-debate), [The Hill](https://thehill.com/homenews/campaign/5850187-gop-primary-georgia-senate-race/)). 4/26 사전투표 개시([Georgia Recorder](https://georgiarecorder.com/2026/04/26/as-early-voting-starts-gop-senate-hopefuls-make-appeals-to-georgia-voters-spar-with-each-other/)).

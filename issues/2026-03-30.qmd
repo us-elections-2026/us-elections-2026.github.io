@@ -35,6 +35,103 @@ categories: [주간브리핑]
 
 ## 경합주 동향
 
+::: {.lookfor}
+각 카드를 30초에 훑고, 깊이 보려면 아래 '레이스별 상세'(출처 포함)로 내려가세요.
+:::
+
+::: {.bcards}
+
+::: {.bcard .def-r}
+**노스캐롤라이나 — 공화 방어(공개석)**
+
+- **현 상태**: Cooper(D·전 주지사) vs Whatley(R·전 RNC) 본선 확정
+- **이번 주**: 신규 조사 일관 두 자릿수 리드(Catawba-YouGov 3/31 +14)
+- **왜 중요**: 민주 픽업 표적
+
+::: {.bc-kr}
+🇰🇷 한국 대형 직접 투자 없음(조지아 집중)
+:::
+:::
+
+::: {.bcard .def-r}
+**메인 — 공화 방어**
+
+- **현 상태**: 민주 6/9 경선(Platner 유력) vs Collins(R·현역)
+- **이번 주**: 경선 Platner 55–28(+27) 압도; Mills 측 Platner SNS 논란 공략
+- **왜 중요**: 민주 탈환 표적
+
+::: {.bc-kr}
+🇰🇷 Collins CHIPS·세출은 추정 연결 — 직접 미확인
+:::
+::: {.bc-next}
+**다음** 6/9 민주 경선
+:::
+:::
+
+::: {.bcard .def-r}
+**텍사스 — 공화 방어**
+
+- **현 상태**: Talarico(D) vs 공화 5/26 결선(Cornyn vs Paxton)
+- **이번 주**: Talarico가 양 공화 후보 모두에 근소 우위; 트럼프 지지 미발
+- **왜 중요**: 민주 탈환 표적
+
+::: {.bc-kr}
+🇰🇷 삼성 Taylor 팹은 구조적 후크 — 직접 발언 미확인
+:::
+::: {.bc-next}
+**다음** 5/26 공화 결선
+:::
+:::
+
+::: {.bcard .def-d}
+**조지아 — 민주 방어**
+
+- **현 상태**: Ossoff(D·현직) vs 공화 5/19 경선(Mike Collins 선두)
+- **이번 주**: Ossoff 전 공화 후보에 우위; 보유현금 $25M+ 자금 압도
+- **왜 중요**: 민주 수성 의석
+
+::: {.bc-kr}
+🇰🇷 현대차 단속·통상 — Ossoff 직접 관여 풍부
+:::
+::: {.bc-next}
+**다음** 5/19 공화 경선
+:::
+:::
+
+::: {.bcard .def-d}
+**미시간 — 민주 방어(공개석)**
+
+- **현 상태**: 민주 8/4 경선(McMorrow·Stevens·El-Sayed) vs Rogers(R)
+- **이번 주**: 경선 박빙(McMorrow 22 / Stevens 17 / El-Sayed 16); Rogers 현금 1위
+- **왜 중요**: 민주 수성·공개석
+
+::: {.bc-kr}
+🇰🇷 배터리 본진(LG·SK·삼성) — 후보 직접 입장 미확인
+:::
+::: {.bc-next}
+**다음** 8/4 민주 경선
+:::
+:::
+
+::: {.bcard .def-r}
+**알래스카 — 공화 방어**
+
+- **현 상태**: Peltola(D·전 하원) vs Sullivan(R·현역), 8월 예비→11월 RCV
+- **이번 주**: PPP Peltola 49–47(+2) 접전; 등급 Solid R→Lean R 이동
+- **왜 중요**: 민주 픽업 표적
+
+::: {.bc-kr}
+🇰🇷 Sullivan 인도태평양법(한국)·한화 조선(직접)
+:::
+::: {.bc-next}
+**다음** 8월 비당파 예비선거
+:::
+:::
+
+:::
+
+### 레이스별 상세
+
 ### 노스캐롤라이나 (North Carolina) — 공화 방어(공개석)
 - **구도**: Roy Cooper(D·전 주지사, 경선 92%) vs Michael Whatley(R·전 RNC 의장, 64.6%) — **본선 대진 확정**([NPR](https://www.npr.org/2026/03/03/nx-s1-5734513/north-carolina-congress-election-results-cooper-whatley)).
 - 신규 조사가 일관되게 두 자릿수 리드로 확대: Carolina Journal **Cooper +8**(49–41), Healthier United(3/8–9) **+18**(50–32), 주 말 **Catawba-YouGov(3/31) +14**(48–34)([NC Newsline](https://ncnewsline.com/2026/03/31/cooper-holds-double-digit-lead-over-whatley-in-latest-u-s-senate-poll/)). 조사 간 편차는 크지만 방향은 한결같이 Cooper 우위.

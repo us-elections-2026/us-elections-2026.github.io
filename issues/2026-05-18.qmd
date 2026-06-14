@@ -32,6 +32,120 @@ categories: [주간브리핑]
 
 ## 경합주 동향
 
+::: {.lookfor}
+각 카드를 30초에 훑고, 깊이 보려면 아래 '레이스별 상세'(출처 포함)로 내려가세요.
+:::
+
+::: {.bcards}
+
+::: {.bcard .def-d}
+**조지아 — 민주 방어**
+
+- **현 상태**: Ossoff(D·현직) vs 공화당 6/16 결선(Mike Collins vs Derek Dooley)
+- **이번 주**: 5/19 경선에서 과반 득표자 없이 Collins·Dooley 결선 진출, Carter 탈락 확정
+- **왜 중요**: 민주 수성 의석
+
+::: {.bc-kr}
+🇰🇷 현대차 단속·통상 — Ossoff 직접 관여 풍부
+:::
+
+::: {.bc-next}
+**다음** 6/16 조지아 공화당 결선
+:::
+:::
+
+::: {.bcard .def-d}
+**미시간 — 민주 방어**
+
+- **현 상태**: 민주당 8/4 경선(Stevens vs McMorrow vs El-Sayed) vs Mike Rogers(R)
+- **이번 주**: Glengariff에서 Rogers가 Stevens·McMorrow 모두에 오차범위 내 우위, 민주 경선은 El-Sayed가 첫 선두
+- **왜 중요**: 민주 수성 의석
+
+::: {.bc-kr}
+🇰🇷 배터리 본진(LG·SK·삼성) — 후보 직접 입장 미확인
+:::
+
+::: {.bc-next}
+**다음** 8/4 미시간 예비선거
+:::
+:::
+
+::: {.bcard .def-r}
+**메인 — 공화 방어**
+
+- **현 상태**: 민주당 6/9 경선(Platner 유력, RCV 적용) vs Susan Collins(R·현역, 6선 도전)
+- **이번 주**: Mills 사퇴로 Platner 사실상 독주, 본선 가상대결 Platner 48 vs Collins 41(+7)
+- **왜 중요**: 민주 탈환 표적
+
+::: {.bc-kr}
+🇰🇷 Collins CHIPS·세출은 추정 연결 — 직접 미확인
+:::
+
+::: {.bc-next}
+**다음** 6/9 메인 예비선거
+:::
+:::
+
+::: {.bcard .def-r}
+**노스캐롤라이나 — 공화 방어(오픈시트)**
+
+- **현 상태**: Roy Cooper(D·전 주지사) vs Michael Whatley(R·전 RNC 의장), Tillis 은퇴로 오픈시트
+- **이번 주**: Cooper +11.1(49.8 vs 38.7, Harper 5/10~11)로 3월 +7.8에서 격차 확대
+- **왜 중요**: 민주 픽업 표적
+
+::: {.bc-kr}
+🇰🇷 한국 대형 직접 투자 없음(조지아 집중)
+:::
+:::
+
+::: {.bcard .def-r}
+**알래스카 — 공화 방어**
+
+- **현 상태**: Mary Peltola(D·전 하원의원) vs Dan Sullivan(R·현역), 8/18 비당파 top-4 예비선거 후 11월 RCV
+- **이번 주**: Peltola가 1분기 890만 달러 모금·자원봉사자 4,500명, Murkowski가 Sullivan 지지 선언
+- **왜 중요**: 민주 탈환 표적
+
+::: {.bc-kr}
+🇰🇷 Sullivan 인도태평양법(한국)·한화 조선(직접)
+:::
+
+::: {.bc-next}
+**다음** 8/18 알래스카 비당파 예비선거
+:::
+:::
+
+::: {.bcard .def-r}
+**텍사스 — 공화 방어**
+
+- **현 상태**: James Talarico(D·주 하원의원) vs 공화당 5/26 결선(Cornyn vs Paxton)
+- **이번 주**: 5/19 트럼프가 Paxton 공개 지지 — 결선 판세에 결정적 영향 예상
+- **왜 중요**: 민주 탈환 표적
+
+::: {.bc-kr}
+🇰🇷 삼성 Taylor 팹은 구조적 후크 — 직접 발언 미확인
+:::
+
+::: {.bc-next}
+**다음** 5/26 텍사스 공화당 결선
+:::
+:::
+
+::: {.bcard .def-r}
+**오하이오 — 공화 방어(특별선거)**
+
+- **현 상태**: Sherrod Brown(D·전 3선 상원의원) vs Jon Husted(R·임명직 현역), Vance 사임 잔여임기 보궐선거
+- **이번 주**: Emerson 초기 Husted +6에서 RCP 평균 Husted +1 이내로 급격히 수렴
+- **왜 중요**: 민주 탈환 표적
+
+::: {.bc-kr}
+🇰🇷 Brown은 KORUS 반대표(직접) — 통상 강경 가능성
+:::
+:::
+
+:::
+
+### 레이스별 상세
+
 ### 조지아 (Georgia) — 민주 방어 (Leans Democratic)
 - **구도**: Ossoff(D·현직) vs 공화당 **6/16 결선**(Mike Collins vs Derek Dooley).
 - **이번 주 최대 이벤트.** 5/19 경선에서 과반 득표자가 없어 **Collins·Dooley 결선 진출, Carter 탈락** 확정([NBC](https://www.nbcnews.com/politics/2026-election/georgia-senate-republican-primary-winners-election-race-ossoff-rcna345008), [Georgia Recorder](https://georgiarecorder.com/2026/05/20/georgia-u-s-senate-race-continues-with-collins-dooley-runoff-on-gop-side/)). 주 초 보도는 5파전(Collins·Carter·Dooley·Coyne·McColumn)·트럼프 무지지·미결정 다수의 혼전이었고([Washington Times](https://www.washingtontimes.com/news/2026/may/16/georgia-gop-senate-primary-five-candidates-zero-trump-endorsements/)), "유망 플립 기회 → 혼전"으로 평가가 굳어짐([Time](https://time.com/article/2026/05/18/georgia-republicans-brace-for-bruising-senate-runoff-in-key-2026-battleground/)). Emerson 본선 가상대결은 Ossoff 약 50%로 Collins(48 vs 43)·Carter(47 vs 44) 모두에 우위([Newsweek](https://www.newsweek.com/mike-collins-vs-buddy-carters-chances-of-beating-jon-ossoff-in-georgia-11858803)). Q1 모금: Collins 100만+, Dooley 66만, Carter 47만 달러([WABE](https://www.wabe.org/five-things-to-know-about-the-upcoming-senate-election-in-georgia/)). Sabato·Cook 모두 "Leans Democratic" 유지([ABC](https://abcnews.com/Politics/georgia-2026-live-primary-election-results/story?id=132581033)).

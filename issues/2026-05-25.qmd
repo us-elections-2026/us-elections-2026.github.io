@@ -33,6 +33,120 @@ categories: [주간브리핑]
 
 ## 경합주 동향
 
+::: {.lookfor}
+각 카드를 30초에 훑고, 깊이 보려면 아래 '레이스별 상세'(출처 포함)로 내려가세요.
+:::
+
+::: {.bcards}
+
+::: {.bcard .def-r}
+**텍사스 — 공화 방어**
+
+- **현 상태**: James Talarico(D·주 하원의원) vs Ken Paxton(R·주 법무장관), 양당 확정
+- **이번 주**: 5/26 결선에서 Paxton 63.8% vs Cornyn 36.2%로 현역 압도, 트럼프 막판 지지가 결정타
+- **왜 중요**: 민주 탈환 표적
+
+::: {.bc-kr}
+🇰🇷 삼성 Taylor 팹은 구조적 후크 — 직접 발언 미확인
+:::
+:::
+
+::: {.bcard .def-r}
+**메인 — 공화 방어**
+
+- **현 상태**: 민주당 6/9 경선(Platner 사실상 단독) vs Susan Collins(R·현역, 6선 도전)
+- **이번 주**: Mills 사퇴 이후 반-Collins 표 결집, 본선 가상대결 Platner +7~9
+- **왜 중요**: 민주 탈환 표적
+
+::: {.bc-kr}
+🇰🇷 Collins CHIPS·세출은 추정 연결 — 직접 미확인
+:::
+
+::: {.bc-next}
+**다음** 6/9 메인 경선
+:::
+:::
+
+::: {.bcard .def-r}
+**노스캐롤라이나 — 공화 방어(공개석)**
+
+- **현 상태**: Roy Cooper(D·전 주지사) vs Michael Whatley(R·전 RNC 의장), 본선 대진 확정
+- **이번 주**: Carolina Journal 5월 Cooper +11.1, 별도 Carolina Forward는 Cooper +7로 기관 편차
+- **왜 중요**: 민주 픽업 표적
+
+::: {.bc-kr}
+🇰🇷 한국 대형 직접 투자 없음(조지아 집중)
+:::
+:::
+
+::: {.bcard .def-r}
+**알래스카 — 공화 방어**
+
+- **현 상태**: Mary Peltola(D·전 하원의원) vs Dan Sullivan(R·현역), 8/18 비당파 예비선거 후 11월 RCV
+- **이번 주**: 최신 조사 Peltola +5~7(ASR), 단 Data for Progress는 Sullivan +1로 초박빙
+- **왜 중요**: 민주 탈환 표적
+
+::: {.bc-kr}
+🇰🇷 Sullivan 인도태평양법(한국)·한화 조선(직접)
+:::
+
+::: {.bc-next}
+**다음** 8/18 알래스카 비당파 예비선거
+:::
+:::
+
+::: {.bcard .def-d}
+**조지아 — 민주 방어**
+
+- **현 상태**: Ossoff(D·현직) vs 공화당 6/16 결선(Mike Collins vs Derek Dooley)
+- **이번 주**: Emerson 조사 Ossoff +5(48 vs 43)로 결선 어느 후보에도 우위, 자금 우위가 최대 강점
+- **왜 중요**: 민주 수성 의석
+
+::: {.bc-kr}
+🇰🇷 현대차 단속·통상 — Ossoff 직접 관여 풍부
+:::
+
+::: {.bc-next}
+**다음** 6/16 조지아 공화당 결선
+:::
+:::
+
+::: {.bcard .def-r}
+**오하이오 — 공화 방어(특별선거)**
+
+- **현 상태**: Sherrod Brown(D·전 3선 상원의원) vs Jon Husted(R·임명직 현역), 11/3 특별선거
+- **이번 주**: RCP 평균 Husted +1(사실상 Toss-up), Emerson은 Husted +6으로 기관 편차 큼
+- **왜 중요**: 민주 탈환 표적
+
+::: {.bc-kr}
+🇰🇷 Brown은 KORUS 반대표(직접) — 통상 강경 가능성
+:::
+
+::: {.bc-next}
+**다음** 11/3 특별선거
+:::
+:::
+
+::: {.bcard .def-d}
+**미시간 — 민주 방어(공개석)**
+
+- **현 상태**: 민주당 8/4 경선(Stevens vs McMorrow vs El-Sayed) vs Mike Rogers(R)
+- **이번 주**: Detroit News(5/12) Rogers +2로 오차범위 내 동률, 5/28 매키낙 당 대회 3후보 공개 토론
+- **왜 중요**: 민주 수성 의석
+
+::: {.bc-kr}
+🇰🇷 배터리 본진(LG·SK·삼성) — 후보 직접 입장 미확인
+:::
+
+::: {.bc-next}
+**다음** 8/4 미시간 경선
+:::
+:::
+
+:::
+
+### 레이스별 상세
+
 ### 텍사스 (Texas) — 공화 방어 *(이번 주 최대 이벤트)*
 - **구도**: James Talarico(D·주 하원의원) vs **Ken Paxton(R·주 법무장관)** — 양당 확정.
 - **5/26 결선 결과**: Paxton **63.8%** vs Cornyn **36.2%**. 약 138만 표 중 Paxton 압승([Texas Standard](https://texasstandard.org/stories/texas-senate-runoff-results-cornyn-paxton/)). 트럼프가 5/19 "Cornyn은 힘든 시기에 나를 지지하지 않았다"며 Paxton 공개 지지한 것이 결정타([NBC](https://www.nbcnews.com/politics/2026-election/trump-endorses-ken-paxton-sen-john-cornyn-ahead-texas-republican-senat-rcna345898)). $1억6,500만이 투입된 역대 최고가 상원 경선.

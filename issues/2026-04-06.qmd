@@ -37,6 +37,100 @@ categories: [주간브리핑]
 
 ## 경합주 동향
 
+::: {.lookfor}
+각 카드를 30초에 훑고, 깊이 보려면 아래 '레이스별 상세'(출처 포함)로 내려가세요.
+:::
+
+::: {.bcards}
+
+::: {.bcard .def-r}
+**노스캐롤라이나 — 공화 방어(공개석)**
+
+- **현 상태**: Cooper(D·전 주지사) vs Whatley(R·전 RNC) 본선 확정
+- **이번 주**: Catawba-YouGov +14·RCP 평균 약 +10; Whatley 낮은 인지도
+- **왜 중요**: 민주 픽업 표적
+
+::: {.bc-kr}
+🇰🇷 한국 대형 직접 투자 없음(조지아 집중)
+:::
+:::
+
+::: {.bcard .def-r}
+**메인 — 공화 방어**
+
+- **현 상태**: 민주 6/9 경선(Platner 압도) vs Collins(R·6선)
+- **이번 주**: Platner 27%p차로 "경선 종료" 선언, Collins 공격 광고 개시
+- **왜 중요**: 민주 탈환 표적
+
+::: {.bc-kr}
+🇰🇷 Collins CHIPS·세출은 추정 연결 — 직접 미확인
+:::
+::: {.bc-next}
+**다음** 6/9 민주 경선
+:::
+:::
+
+::: {.bcard .def-r}
+**텍사스 — 공화 방어**
+
+- **현 상태**: Talarico(D·확정) vs 공화 5/26 결선(Cornyn vs Paxton)
+- **이번 주**: Talarico가 양 공화 후보에 +1~2; 트럼프 인선이 결선 분수령
+- **왜 중요**: 민주 탈환 표적
+
+::: {.bc-kr}
+🇰🇷 삼성 Taylor 팹은 구조적 후크 — 직접 발언 미확인
+:::
+::: {.bc-next}
+**다음** 5/26 공화 결선
+:::
+:::
+
+::: {.bcard .def-d}
+**미시간 — 민주 방어(공개석)**
+
+- **현 상태**: 민주 8/4 경선(Stevens·McMorrow·El-Sayed) vs Rogers(R)
+- **이번 주**: SLF가 Rogers에 $45M(역대 최대·최조기); 본선 박빙
+- **왜 중요**: 민주 수성·공개석
+
+::: {.bc-kr}
+🇰🇷 배터리 본진(LG·SK·삼성) — 후보 직접 입장 미확인
+:::
+::: {.bc-next}
+**다음** 8/4 민주 경선
+:::
+:::
+
+::: {.bcard .def-d}
+**조지아 — 민주 방어**
+
+- **현 상태**: Ossoff(D·현직) vs 공화 5/19 경선(Mike Collins 선두)
+- **이번 주**: Ossoff 전 시나리오 우위(+3~8); 소액 93% 자금 압도
+- **왜 중요**: 민주 수성 의석
+
+::: {.bc-kr}
+🇰🇷 현대차 단속·통상 — Ossoff 직접 관여 풍부
+:::
+::: {.bc-next}
+**다음** 5/19 공화 경선
+:::
+:::
+
+::: {.bcard .def-r}
+**알래스카 — 공화 방어**
+
+- **현 상태**: Peltola(D·전 하원) vs Sullivan(R·현역), RCV 제도
+- **이번 주**: ASR/PPP Peltola +1~5; 등급 Solid/Safe R→Lean R 격상
+- **왜 중요**: 민주 픽업 표적
+
+::: {.bc-kr}
+🇰🇷 Sullivan 인도태평양법(한국)·한화 조선(직접)
+:::
+:::
+
+:::
+
+### 레이스별 상세
+
 ### 노스캐롤라이나 (North Carolina) — 공화 방어(공개석)
 - **구도**: Roy Cooper(D·전 주지사, 경선 92%) vs Michael Whatley(R·전 RNC 의장, 경선 64.6%) — 본선 대진 확정.
 - 이번 주 최강 민주 신호. Catawba-YouGov **Cooper 48 vs Whatley 34(+14)**, 무당파 +19([NC Newsline](https://ncnewsline.com/2026/03/31/cooper-holds-double-digit-lead-over-whatley-in-latest-u-s-senate-poll/)). RCP 평균으로도 약 +10(Cooper 47.2 / Whatley 37.6)([Emerson](https://emersoncollegepolling.com/north-carolina-2026-poll-cooper-starts-us-senate-race-with-six-point-lead-and-clear-name-recognition-advantage-over-whatley/)). 출마 경험 없는 Whatley의 낮은 인지도가 발목. 자금도 Cooper 2,110만 vs Whatley 630만 달러로 우위.
