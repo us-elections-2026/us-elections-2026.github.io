@@ -32,6 +32,121 @@ categories: [주간브리핑]
 
 ## 경합주 동향
 
+::: {.lookfor}
+각 카드를 30초에 훑고, 깊이 보려면 아래 '레이스별 상세'(출처 포함)로 내려가세요.
+:::
+
+::: {.bcards}
+
+::: {.bcard .def-d}
+**조지아 — 민주 방어**
+
+- **현 상태**: Ossoff(D·현직) vs 공화 6/16 결선(Collins·Dooley)
+- **이번 주**: 공화 분열 경쟁 중 Ossoff 자금·조직 우위; Collins 하원 윤리위 조사 부각
+- **왜 중요**: 민주 최우선 방어석
+
+::: {.bc-kr}
+🇰🇷 현대차 단속·통상 — Ossoff 직접 관여 풍부
+:::
+::: {.bc-next}
+**다음** 6/16 공화 결선
+:::
+:::
+
+::: {.bcard .def-d}
+**미시간 — 민주 방어(공개석)**
+
+- **현 상태**: 민주 8/4 경선(Stevens·McMorrow·El-Sayed) vs Rogers(R)
+- **이번 주**: 3파전 격화 — RCP El-Sayed 24.3 / 두 후보 19.8
+- **왜 중요**: 본선이 유일하게 오차범위 내(공화 최대 방어선)
+
+::: {.bc-kr}
+🇰🇷 배터리 본진(LG·SK·삼성) — 후보 직접 입장 미확인
+:::
+::: {.bc-next}
+**다음** 8/4 민주 경선
+:::
+:::
+
+::: {.bcard .def-r}
+**메인 — 공화 방어**
+
+- **현 상태**: Platner(D, 6/9 경선 유력) vs Collins(R·6선)
+- **이번 주**: 성적 문자 논란에도 선두; 본선 Platner +5(UMass 6/4, 보도 이전)
+- **왜 중요**: 민주 최우선 탈환 표적
+
+::: {.bc-kr}
+🇰🇷 Collins CHIPS·세출은 추정 연결 — 직접 미확인
+:::
+::: {.bc-next}
+**다음** 6/9 경선 최종 집계(RCV)
+:::
+:::
+
+::: {.bcard .def-r}
+**노스캐롤라이나 — 공화 방어(공개석)**
+
+- **현 상태**: Cooper(D·전 주지사) vs Whatley(R·전 RNC) 확정
+- **이번 주**: Cooper +11(Carolina Journal); Whatley 낮은 인지도
+- **왜 중요**: 픽업 표적 — 이후 Cook Lean D 이동
+
+::: {.bc-kr}
+🇰🇷 한국 대형 직접 투자 없음(조지아 집중)
+:::
+::: {.bc-next}
+**다음** 공화 슈퍼팩 광고전
+:::
+:::
+
+::: {.bcard .def-r}
+**텍사스 — 공화 방어**
+
+- **현 상태**: Talarico(D) vs Paxton(R) 확정(Cornyn 결선 패배)
+- **이번 주**: 친Talarico 슈퍼팩 $62M; 조사 Paxton 45–Talarico 43(R+2)
+- **왜 중요**: 안전 공화석을 의외의 접전으로
+
+::: {.bc-kr}
+🇰🇷 삼성 Taylor 팹은 구조적 후크 — 직접 발언 미확인
+:::
+::: {.bc-next}
+**다음** 슈퍼팩 효과·2분기 모금
+:::
+:::
+
+::: {.bcard .def-r}
+**오하이오 — 공화 방어(특별선거)**
+
+- **현 상태**: Brown(D·전 3선) vs Husted(R·임명직), 11/3 특별
+- **이번 주**: Fox +8 ↔ RCP R+1 기관 편차; 네거티브 광고전
+- **왜 중요**: 트럼프 +11 주의 민주 기회
+
+::: {.bc-kr}
+🇰🇷 Brown은 KORUS 반대표(직접) — 통상 강경 가능성
+:::
+::: {.bc-next}
+**다음** 기관 편차 해소 신규 조사
+:::
+:::
+
+::: {.bcard .def-r}
+**알래스카 — 공화 방어**
+
+- **현 상태**: Peltola(D·전 하원) vs Sullivan(R·현역), 8/18 top-4
+- **이번 주**: 동명이인 'Dan Sullivan' 투표용지 논란
+- **왜 중요**: '다수당 결정자' 지목 — 본선 RCV 변수
+
+::: {.bc-kr}
+🇰🇷 Sullivan 인도태평양법(한국)·한화 조선(직접)
+:::
+::: {.bc-next}
+**다음** 8/18 예비선거
+:::
+:::
+
+:::
+
+### 레이스별 상세
+
 ### 조지아 (Georgia) — 민주 방어
 - **구도**: Ossoff(D·현직) vs 공화당 **6/16 결선**(Mike Collins vs Derek Dooley).
 - 결선까지 공화당이 분열 경쟁하는 동안 Ossoff가 자금(약 3,200만 달러)·조직 우위로 시간 확보. Collins는 의회 자금 유용 의혹으로 **하원 윤리위 조사** 중 — 본선 약점으로 부각([NOTUS](https://www.notus.org/campaigns/mike-collins-derek-dooley-republicans-georgia-runoff-senate-jon-ossoff-2026-primary-election)). 트럼프는 경선 중립, Dooley는 Kemp 주지사 전폭 지지([The Hill](https://thehill.com/homenews/campaign/5886066-georgia-senate-gop-runoff-collins-dooley/)).

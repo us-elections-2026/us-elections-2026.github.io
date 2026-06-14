@@ -500,3 +500,64 @@ gt_korea_watch <- function(n = 30) {
                subtitle = paste0("누적 ", nrow(kw), "건 중 최근 ", min(n, nrow(kw)), "건 표시")) |>
     .tbl_opts()
 }
+
+# ============================================================================
+# 홈 컨트롤 패널 — 첫 화면 KPI 카드 + 모듈. 기존 데이터만 사용, 추정 없음.
+# 데이터 이상 시 빈 문자열로 graceful degrade (빌드 안전).
+# ============================================================================
+
+# KPI 카드 4장: 다수당 확률 · 순 기대의석 · 트럼프 순지지 · 일반투표 마진
+home_kpis <- function() {
+  tryCatch({
+    k  <- model_kpi()
+    td <- .load_json("trends")
+    tn <- td$weeks$trump_net[!is.na(td$weeks$trump_net)]
+    gb <- td$weeks$generic[!is.na(td$weeks$generic)]
+    tn <- if (length(tn)) tn[length(tn)] else NA
+    gb <- if (length(gb)) gb[length(gb)] else NA
+    paste0(
+      '<div class="kpis">',
+      sprintf('<div class="kpi kpi-d"><div class="kpi-num">%s%%</div><div class="kpi-lab">민주 다수당 탈환 확률</div><div class="kpi-sub">자체 모델 · %s</div></div>',
+              k$majority, k$as_of),
+      sprintf('<div class="kpi kpi-d"><div class="kpi-num">+%s</div><div class="kpi-lab">순 기대의석 (민주)</div><div class="kpi-sub">다수까지 +%d 필요</div></div>',
+              k$net, k$needed),
+      sprintf('<div class="kpi kpi-r"><div class="kpi-num">%s</div><div class="kpi-lab">트럼프 순지지도</div><div class="kpi-sub">Silver Bulletin 추이 · ~%s</div></div>',
+              ifelse(is.na(tn), "—", sprintf("%+.1f", tn)), td$as_of),
+      sprintf('<div class="kpi kpi-d"><div class="kpi-num">%s</div><div class="kpi-lab">일반투표 마진</div><div class="kpi-sub">보고 주 기준 · ~%s</div></div>',
+              .fmt_margin(gb), td$as_of),
+      '</div>'
+    )
+  }, error = function(e) "")
+}
+
+# 한국 함의 Top N — korea_watch.csv에서 중요도·최신순
+home_korea_top <- function(n = 3) {
+  tryCatch({
+    kw <- readr::read_csv(file.path("data", "korea_watch.csv"), show_col_types = FALSE,
+                          col_types = readr::cols(.default = readr::col_character(),
+                                                  significance = readr::col_integer()))
+    if (nrow(kw) == 0) return("<p class='muted'>수집된 항목이 아직 없습니다.</p>")
+    kw <- kw[order(kw$significance, kw$date, decreasing = TRUE), ]
+    it <- utils::head(kw, n)
+    li <- vapply(seq_len(nrow(it)), function(i) {
+      src <- it$source_url[i]
+      a <- if (!is.na(src) && nzchar(src)) sprintf(" <a class='ktop-src' href='%s'>↗</a>", src) else ""
+      sprintf('<li><span class="kw-type">%s</span>%s%s</li>', it$type[i], it$event[i], a)
+    }, character(1))
+    paste0('<ul class="ktop">', paste(li, collapse = ""), '</ul>')
+  }, error = function(e) "<p class='muted'>—</p>")
+}
+
+# 분기점(최근·다가오는) — model_dashboard.json 타임라인의 근시점 창
+home_changes <- function(idx = 2:5) {
+  tryCatch({
+    tl <- .load_json("model_dashboard")$timeline
+    idx <- idx[idx >= 1 & idx <= nrow(tl)]
+    it <- tl[idx, ]
+    li <- vapply(seq_len(nrow(it)), function(i)
+      sprintf('<li><span class="ch-date">%s</span>%s — <span class="muted">%s</span></li>',
+              it$date[i], it$event[i], it$detail[i]),
+      character(1))
+    paste0('<ul class="changes">', paste(li, collapse = ""), '</ul>')
+  }, error = function(e) "")
+}

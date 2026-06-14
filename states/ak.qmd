@@ -13,6 +13,12 @@ gt_state_detail("AK")
 
 Likely R — 경합 하단. 공화 현직 Dan Sullivan을, 2022년 최초의 알래스카 원주민(Yup'ik) 연방의원이 된 Mary Peltola(D)가 도전합니다. 8/18 통합 예비선거(top-4)를 거쳐 11월 본선 RCV로 갑니다. 여론조사 편차가 큽니다(ASR D+6.6 ↔ Data for Progress R+1), 예측시장은 Peltola 약 60%.
 
+::: {.summary}
+- **구도**: 공화 방어 — 현역 Sullivan(R, 군사위) vs Peltola(D, 전 하원의원). Likely R, 경합 하단.
+- **변화**: 동명이인 'Dan J. Sullivan' 투표용지 논란(6/12 예비 제외 결정), top-4 경선+본선 RCV.
+- **한국 함의**: **Sullivan 인도태평양법(한국 명시)·한화 필리 조선소·Alaska LNG-POSCO**(직접 풍부).
+:::
+
 ## 1. 주 개요
 
 - **선거사**: 2024 대선 **Trump +13.1**. 현재 양 상원 의석 모두 공화(Murkowski·Sullivan)이며, Sullivan은 2014년 초선(현역 Begich 격파)·2020년 재선으로 **이번이 3선 도전**. 이 의석에서 민주당이 마지막으로 이긴 것은 2008년 Begich입니다. ([Senate Majority](https://senatemajority.com/states/alaska/))

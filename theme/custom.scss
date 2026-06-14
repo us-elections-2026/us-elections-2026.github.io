@@ -183,3 +183,106 @@ main .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .cand-mini .cand-sub { font-size: 0.84rem; margin: 0 0 8px; }
 .cand-mini .cand-facts { font-size: 0.82rem; margin-bottom: 8px; }
 .cand-mini .cand-line { font-size: 0.82rem; margin: 5px 0; }
+
+/* ============================================================
+   읽기 계층 컴포넌트 — 30초 / 3분 / 15분 독해 경로
+   요약(Summary) · 근거 앞 안내(Look-for) · 유의(Caveat) · 한국 함의 태그
+   ============================================================ */
+
+/* 1분 요약 — 페이지·섹션 머리의 핵심 3~5줄 */
+.summary {
+  border: 1px solid #cfe0f3;
+  border-left: 4px solid $dem;
+  background: #f4f8fd;
+  border-radius: 8px;
+  padding: 0.75rem 1rem 0.45rem;
+  margin: 0.9rem 0 1.2rem;
+}
+.summary::before {
+  content: "⏱ 1분 요약";
+  display: block; font-weight: 700; font-size: 0.78rem;
+  color: $dem-fg; letter-spacing: 0.02em; margin-bottom: 6px;
+}
+.summary ul { margin: 0; padding-left: 1.15rem; }
+.summary li { margin: 3px 0; line-height: 1.55; }
+
+/* 표·차트 앞 "무엇을 볼까" 한 줄 안내 */
+.lookfor {
+  font-size: 0.86rem; color: #5a6672;
+  border-left: 3px solid #ced4da; padding: 1px 0 1px 10px;
+  margin: 0.2rem 0 0.6rem;
+}
+.lookfor::before { content: "👁 무엇을 볼까 — "; font-weight: 700; color: #495057; }
+
+/* 데이터 유의 묶음 — callout보다 가벼운 차분한 앰버 */
+.caveat {
+  border: 1px solid #f0e0c0; background: #fdf9f0; border-radius: 8px;
+  padding: 0.7rem 1rem 0.45rem; margin: 1rem 0; font-size: 0.9rem; color: #6b5b3e;
+}
+.caveat::before {
+  content: "⚠ 데이터 유의"; display: block; font-weight: 700;
+  font-size: 0.78rem; color: #b07d2b; margin-bottom: 5px;
+}
+.caveat ul { margin: 0; padding-left: 1.1rem; }
+.caveat li { margin: 3px 0; line-height: 1.5; }
+
+/* 한국 함의 태그 변형 — 라벨만 교체해 일관 스캔(배터리/안보/북한/통상/산업) */
+.kr-box.kr-battery::before { content: "🇰🇷 한국 함의 · 배터리"; }
+.kr-box.kr-defense::before { content: "🇰🇷 한국 함의 · 안보"; }
+.kr-box.kr-nk::before      { content: "🇰🇷 한국 함의 · 북한"; }
+.kr-box.kr-trade::before   { content: "🇰🇷 한국 함의 · 통상"; }
+.kr-box.kr-industry::before { content: "🇰🇷 한국 함의 · 산업"; }
+
+/* ============================================================
+   홈 컨트롤 패널 — 첫 화면 KPI + 모듈
+   ============================================================ */
+.kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 16px 0 10px; }
+.kpi { border: 1px solid #e6e8eb; border-radius: 12px; padding: 14px 16px; background: #fff; }
+.kpi-num { font-size: 1.95rem; font-weight: 800; line-height: 1.05; }
+.kpi-lab { font-size: 0.82rem; font-weight: 700; color: #343a40; margin-top: 4px; }
+.kpi-sub { font-size: 0.72rem; color: #868e96; margin-top: 3px; }
+.kpi-d .kpi-num { color: $dem-fg; }
+.kpi-r .kpi-num { color: $rep-fg; }
+@media (max-width: 680px) { .kpis { grid-template-columns: repeat(2, 1fr); } }
+
+/* 모듈 2열 그리드 */
+.panels { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 10px 0 4px; }
+.panel { border: 1px solid #e6e8eb; border-radius: 12px; padding: 15px 17px 13px; background: #fff; }
+.panel > h3:first-child {
+  margin: 0 0 8px; font-size: 1.02rem; border: 0; padding: 0;
+}
+.panel .more { font-size: 0.8rem; display: inline-block; margin-top: 8px; }
+@media (max-width: 760px) { .panels { grid-template-columns: 1fr; } }
+
+/* 한국 함의 Top 미니 리스트 */
+.ktop { list-style: none; padding: 0; margin: 2px 0 0; }
+.ktop li { padding: 7px 0; border-top: 1px solid #f1f3f5; font-size: 0.9rem; line-height: 1.5; }
+.ktop li:first-child { border-top: 0; }
+.ktop .kw-type { margin-right: 6px; }
+.ktop a.ktop-src { color: #adb5bd; text-decoration: none; margin-left: 4px; }
+.ktop a.ktop-src:hover { color: #495057; }
+
+/* 이번 주 변화 타임라인 미니 */
+.changes { list-style: none; padding: 0; margin: 2px 0 0; }
+.changes li { padding: 6px 0; border-top: 1px solid #f1f3f5; font-size: 0.9rem; line-height: 1.5; }
+.changes li:first-child { border-top: 0; }
+.changes .ch-date { font-weight: 700; color: #1f3a5f; margin-right: 6px; font-variant-numeric: tabular-nums; }
+
+/* ============================================================
+   주간 브리핑 카드 — 레이스별 스캔용(현 상태·이번 주·왜 중요·한국·다음)
+   ============================================================ */
+.bcards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 12px 0 8px; }
+.bcard {
+  border: 1px solid #e6e8eb; border-radius: 12px; padding: 14px 16px;
+  background: #fff; border-top: 4px solid #adb5bd;
+}
+.bcard.def-d { border-top-color: $dem; }
+.bcard.def-r { border-top-color: $rep; }
+.bcard > p:first-child { font-weight: 700; font-size: 1.02rem; margin: 0 0 8px; }
+.bcard ul { margin: 0; padding-left: 0; list-style: none; }
+.bcard li { font-size: 0.87rem; line-height: 1.5; padding: 2px 0; }
+.bcard li b { color: #1f3a5f; }
+.bcard .bc-kr { background: #fff9f0; border-radius: 6px; padding: 4px 9px; margin: 5px 0 2px; font-size: 0.86rem; }
+.bcard .bc-next { font-size: 0.84rem; color: #495057; border-top: 1px solid #f1f3f5; padding-top: 6px; margin-top: 6px; }
+.bcard .bc-kr p, .bcard .bc-next p { margin: 0; }
+@media (max-width: 720px) { .bcards { grid-template-columns: 1fr; } }

@@ -13,6 +13,12 @@ gt_state_detail("ME")
 
 민주당의 **최우선 탈환 표적**. 5선 현직 Collins(R)는 바이든·해리스가 이긴 주에서 살아남아온 생존자지만, 이번 사이클의 전국 역풍이 변수입니다. 민주당 경선(6/9)에서 Graham Platner가 성적 문자 메시지 등 논란에도 **77.7%로 압승**(Mills 16.7% / Costello 5.6%, RCV 추가 집계 불필요)해 본선 대진이 확정됐습니다. ([Bangor Daily News](https://www.bangordailynews.com/2026/06/09/politics/elections/maine-senate-democratic-primary-results-graham-platner/))
 
+::: {.summary}
+- **구도**: 민주 최우선 탈환 표적 — 5선 Collins(R, 세출위원장) vs Platner(D, 6/9 경선 압승).
+- **변화**: 성적 문자 논란에도 Platner 압승으로 본선 대진 확정(스캔들 본선 영향은 신규 조사 필요).
+- **한국 함의**: Collins의 CHIPS·세출위는 추정 연결고리; 직접 한국 표결은 미확인.
+:::
+
 ## 1. 주 개요
 
 - **유권자 구성**: 인구 약 140만 명. 백인(non-Hispanic) 비중 약 91%로 전국 최고 수준이며, **미국에서 가장 농촌(rural) 비율이 높은 주**(약 61%가 비도시). **무당파(unenrolled) 등록 비중이 매우 높습니다**(출처별 33~36%). ([Point2Homes](https://www.point2homes.com/US/Neighborhood/ME-Demographics.html))

@@ -16,31 +16,66 @@ include-in-header:
 ```{r}
 #| include: false
 source(file.path("R", "helpers.R"))
+k  <- model_kpi()
+td <- .load_json("trends")
+trump_now <- tail(td$weeks$trump_net[!is.na(td$weeks$trump_net)], 1)
+gen_now   <- tail(td$weeks$generic[!is.na(td$weeks$generic)], 1)
 ```
 
-미국 선거 속보는 어디에나 있습니다. 이곳이 채우려는 빈칸은 다릅니다 — **한국어로 된 해석, 여론조사 리터러시, 그리고 한국 정책 함의**. 매주 데이터 절반, 분석 절반으로 발행합니다.
-
-## 상원 전망 요약 {#model-summary}
+미국 선거 속보는 어디에나 있습니다. 이곳이 채우려는 빈칸은 **한국어 해석 · 여론조사 리터러시 · 한국 정책 함의**입니다. 아래는 이번 주를 **30초에 훑는 컨트롤 패널** — 더 깊이 보려면 각 모듈의 링크를 따라가세요.
 
 ```{r}
 #| output: asis
-k <- model_kpi()
-cat(sprintf(
-"::: {.callout-note appearance=\"minimal\"}
-**자체 분석 모델** (기준 %s · 사실 %s) — 현재 의석 **%s**, 민주 다수당까지 순 **+%d석**. 이번 가을 개선 의석 **35석**(정규 33 + 특별선거).
-
-- 경합주 %d곳 중 민주 우세 **%d곳** · 평균 D 승리확률 **%s%%**%s
-- 다수당 탈환 확률 **%s%%** · 순 기대의석 **+%s석** · Base Case **%s**
-
-👉 [**전망 대시보드 전체 보기**](dashboard.qmd) — 주별 확률·시나리오·경선 일정
-:::\n",
-k$as_of, k$facts, k$balance, k$needed,
-k$n, k$dem_wins, k$avg,
-if (k$n_scored < k$n) sprintf(" _(모델 확률 산정 %d곳 기준 — 나머지는 산정 전)_", k$n_scored) else "",
-k$majority, k$net, k$base_seats))
+cat(home_kpis())
 ```
 
-**경합주 8곳 등급 분포** _(타일=전망 우세, 주명 옆 배지=현 보유 정당)_
+::: {.panels}
+
+::: {.panel}
+### 🏛 상원 전망
+
+현재 **`r k$balance`**, 민주 다수까지 **순 +`r k$needed`석**. 자체 모델 다수당 확률 **`r k$majority`%** · 순 기대의석 **+`r k$net`석**(Base `r k$base_seats`). 경합 `r k$n`주 중 모델 우세 **`r k$dem_wins`곳**.
+
+[전망 대시보드 — 주별 확률·시나리오 →](dashboard.qmd){.more}
+:::
+
+::: {.panel}
+### 🌐 전국 환경
+
+트럼프 순지지 **`r sprintf("%+.1f", trump_now)`**(Silver Bulletin 추이), 일반투표 **`r .fmt_margin(gen_now)`**. 거시 환경은 민주 우위가 이어지지만, 경제 심리·체감물가는 약세 혼조입니다.
+
+[전국 환경 — 지지율·경제·외교 →](national.qmd){.more}
+:::
+
+::: {.panel}
+### 🗓 분기점 — 최근·다가오는
+
+```{r}
+#| output: asis
+cat(home_changes())
+```
+
+[상원 시나리오 — 소수·50:50·다수 →](scenarios.qmd){.more}
+:::
+
+::: {.panel}
+### 🇰🇷 한국 함의 Top 3
+
+```{r}
+#| output: asis
+cat(home_korea_top(3))
+```
+
+[Korea Watch — 전체 동향 →](korea-watch.qmd){.more}
+:::
+
+:::
+
+## 상원 — 경합주 지형 {#senate-geo}
+
+::: {.lookfor}
+타일 = 전망 우세 등급, 주명 옆 배지 = 현 보유 정당. 탈환 표적(현 R)과 수성(현 D)을 나눠 보세요.
+:::
 
 ```{r}
 #| output: asis
@@ -48,7 +83,7 @@ cat(rating_tiles_html())
 cat(holder_note_html())
 ```
 
-> 위 확률은 시장·집계기관 수치가 아닌 **자체 프레임워크의 모델 추정치**입니다. 아래 "지금 환경" 표(집계기관 평균)와 성격이 다릅니다.
+> 위 확률·등급은 시장·집계기관 수치가 아닌 **자체 프레임워크의 모델 추정치**입니다. 아래 "핵심 표"(집계기관 평균)와 성격이 다릅니다.
 
 ## 추이 — 트럼프 지지율·일반투표 {#trends}
 
@@ -78,7 +113,11 @@ cat(holder_note_html())
 
 > **결측 구간 참조** — 본 그래프는 주간 브리핑에 기재된 값만 점으로 표시하고 그 사이는 선으로 이었습니다(특히 일반투표는 보고된 주만 실측점). 누락 주의 수치는 외부 집계를 직접 참조하세요: 트럼프 순지지도 [Silver Bulletin](https://www.natesilver.net/p/trump-approval-ratings-nate-silver-bulletin) · [RealClearPolling 지지율](https://www.realclearpolling.com/polls/approval/donald-trump/approval-rating) / 일반투표 [RealClearPolling 일반투표](https://www.realclearpolling.com/polls/generic-congressional-vote). 추정으로 빈 칸을 채우지 않습니다.
 
-## 지금 환경 (한눈에)
+## 지금 환경 — 핵심 표 {#tables}
+
+::: {.lookfor}
+단일 조사보다 **집계 평균·추세**를 우선하세요. 표 상단의 기준 시각이 곧 데이터의 신선도입니다.
+:::
 
 ```{r}
 gt_generic()
@@ -88,23 +127,23 @@ gt_generic()
 gt_approval()
 ```
 
-> 모든 수치는 표 상단 **기준 시각**의 스냅샷입니다. 정적 사이트라 데이터가 빌드 시점에 고정되며, 단일 조사보다 집계 평균·추세를 우선합니다.
+> 모든 수치는 표 상단 **기준 시각**의 스냅샷입니다. 정적 사이트라 데이터가 빌드 시점에 고정됩니다.
 
-## 발행 호
+## 발행 호 {#issues}
 
 ::: {#issues}
 :::
 
 ## 데이터 유의사항 {#caveats}
 
-전문 독자에게 staleness·오류는 가장 큰 리스크입니다. 추정으로 빈 칸을 채우지 않는 것이 이 사이트의 원칙이며, 현재 **확인 중이거나 출처 강도가 약한 항목**을 아래에 공개합니다.
+전문 독자에게 staleness·오류는 가장 큰 리스크입니다. 추정으로 빈 칸을 채우지 않는 것이 이 사이트의 원칙이며, 현재 **확인 중이거나 출처 강도가 약한 항목**을 모아 둡니다.
 
-::: {.callout-warning appearance="minimal"}
+::: {.caveat}
 **알려진 한계 (기준 2026-06-14)**
 
-- **Barrett(MI-07) Korea Caucus 멤버** 표기 — 의원 공식 사이트 접근 차단으로 **1차 출처 미검증**(2차 요약 의존). 재확인 중이며, 사실이면 "KC 멤버 중 유일한 최상위 경합구" 후크가 됩니다. → [Korea Watch](korea-watch.qmd) · [하원 트래커](house.qmd)
+- **Barrett(MI-07) Korea Caucus 멤버** 표기 — 의원 공식 사이트 접근 차단으로 **1차 출처 미검증**(2차 요약 의존). 재확인 중. → [Korea Watch](korea-watch.qmd) · [하원 트래커](house.qmd)
 - **메인 6/9 경선 Platner 77.7%** — 보도 인용치로, **최종 인증 결과는 독립 검증 전**(개표 중 시점 약 72%만 별도 확인). → [메인 State Focus](states/me.qmd)
-- **FEC 모금·보유현금 수치** — 일부는 언론 보도 기준이라 FEC.gov 원장과 미세 차이가 가능합니다(각 주 페이지에 기준일 병기). **NC 등급(Lean D, Cook 6/11)**은 주별 카드에 반영했으나, 자체 모델 [대시보드](dashboard.qmd) 확률에는 아직 미반영입니다.
+- **FEC 모금·보유현금 수치** — 일부는 언론 보도 기준이라 FEC.gov 원장과 미세 차이가 가능합니다(각 주 페이지에 기준일 병기). **NC 등급(Lean D)**은 주별 카드에 반영했으나 자체 모델 [대시보드](dashboard.qmd) 확률에는 아직 미반영입니다.
 
-각 항목은 확인되는 대로 갱신합니다. 직접 확인된 사실과 추정 연결고리는 본문에서 구분해 표기합니다.
+각 항목은 확인되는 대로 갱신하며, 직접 확인된 사실과 추정 연결고리는 본문에서 구분해 표기합니다.
 :::

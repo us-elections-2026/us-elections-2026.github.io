@@ -13,6 +13,12 @@ gt_state_detail("TX")
 
 이번 사이클 최대의 와일드카드. **Paxton이 현직 Cornyn을 5/26 결선에서 63.8%로 격파**(Cornyn은 1970년 이후 경선 탈락한 첫 텍사스 현역 상원의원)하면서 Cook Political이 Likely R → **Lean R**로 하향 — 구조적 공화 우위(R+8 안팎) 주가 후보 요인으로 경합권에 들어온 사례입니다. 5/19 트럼프의 Paxton 공개 지지가 결선의 결정타였고, 양 진영에 1억6,500만 달러가 투입된 역대 최고가 경선이었습니다. 1994년 이후 30년간 민주당이 주 전체 선거에서 이긴 적이 없다는 점이 천장입니다. ([NPR](https://www.npr.org/2026/05/26/nx-s1-5835745/paxton-republican-texas-senate-nominee-trump-cornyn-talarico))
 
+::: {.summary}
+- **구도**: 공화 방어 — Paxton(AG, 현역 Cornyn 격파) vs Talarico(D). Cook **Leans R**.
+- **변화**: Cornyn 경선 패배(5/26, 1970년 이후 첫 현역 탈락), Talarico 역대급 모금($19.6M).
+- **한국 함의**: 삼성 Taylor $44B 팹이 구조적 후크이나, 후보 직접 발언은 미확인.
+:::
+
 ## 1. 주 개요
 
 - **선거사 — 높은 천장**: 2024 대선 **Trump +13.8**(2012년 이후 최대), 상원도 1988년 이후 민주당이 이긴 적이 없습니다. 다만 추세선은 좁아져 왔습니다 — 2018 Cruz +2.6(O'Rourke), 2024 Cruz +8.5(Allred). ([Wikipedia](https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas))

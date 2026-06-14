@@ -13,6 +13,12 @@ gt_state_detail("MI")
 
 Peters 은퇴로 **민주당이 방어해야 하는 공개석**. 8개 경합주 중 본선이 공화당에 가장 유리한(오차범위 내) 유일한 주로, Cook·Sabato 모두 **Toss-up**으로 분류합니다. 민주당 경선(8/4)이 진보(El-Sayed)·온건(Stevens)·풀뿌리(McMorrow) 3파전으로 늦게까지 이어져, 공화당 Rogers보다 본선 전환이 늦다는 점이 리스크입니다.
 
+::: {.summary}
+- **구도**: 민주 방어 공개석(Peters 은퇴) — 8개 경합주 중 본선이 공화에 가장 유리(Cook·Sabato Toss-up).
+- **변화**: 민주 경선(8/4) 3파전이 늦게까지 — El-Sayed 부상·McMorrow 모금 1위·Stevens 본선 최강의 엇갈림.
+- **한국 함의**: LG·SK·삼성 배터리 본진이나 후보의 직접 한국 입장은 미확인(추정 연결고리만).
+:::
+
 ## 1. 주 개요
 
 - **경제 — 자동차·EV 배터리 본진**: 미시간 상원 레이스의 경제 서사는 EV 배터리에 묶여 있습니다. GM과 한국 **LG에너지솔루션**의 Ultium Cells 합작이 Lansing·Orion Township에 약 70억 달러 규모로 들어섰고, 2025년 5월 GM이 Lansing의 41GWh 공장 지분을 LG에 매각해 **LG 단독 소유**로 전환했습니다. 다만 연방 EV 보조금($7,500)이 2025년 9월 종료되자 북미 EV 수요가 급감 — LG는 Lansing 양산을 하반기로 연기했고, GM은 2025년 10월 배터리·EV 시설에서 3,400명 이상 감원을 발표했습니다. ([American Progress](https://www.americanprogress.org/article/gm-ev-and-battery-investment-in-michigan/) · [Bridge MI](https://bridgemi.com/business-watch/gm-sells-stake-michigan-ev-battery-factory-subsidized-state/))

@@ -13,6 +13,12 @@ gt_state_detail("NH")
 
 민주당의 **수성 레이스**. 5선 [Jeanne Shaheen의 은퇴](https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire)로 이 의석은 1990년 이후 처음인 완전 오픈시트가 됐습니다. 등급은 Cook **Lean D**(1/12)·Sabato **Leans Democratic**으로, 민주당의 "+4 산수"에서 NH는 필수 수성 3석(GA·MI·NH) 중 하나입니다. 이곳을 잃으면 다수당 경로가 공화 보유 5곳 전승으로 좁아집니다([시나리오](../scenarios.qmd) 참조).
 
+::: {.summary}
+- **구도**: 민주 수성 공개석(Shaheen 은퇴) — Cook **Lean D**, 민주 필수 3석 중 하나.
+- **변화**: 민주 Pappas 사실상 단독, 공화 **John E. Sununu** 우위 2파전(9/8 — 8주 중 최늦 경선).
+- **한국 함의**: 후보 직접 한국 입장 미확인. BAE 방산 전자가 구조적 접점(추정).
+:::
+
 ## 1. 주 개요
 
 - **유권자 구성 — 무당파가 최대 블록**: 뉴햄프셔는 **무당파(undeclared) 등록이 최대 블록**인 주로, 연방 선거에서는 민주(2004년 이후 대선 전승), 주 선거에서는 공화(Ayotte 주지사·주의회)가 강한 분할 투표 전통이 있습니다.
