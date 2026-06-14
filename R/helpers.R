@@ -501,6 +501,96 @@ gt_korea_watch <- function(n = 30) {
     .tbl_opts()
 }
 
+# 2.3 재획정 주별 현황 --------------------------------------------------------
+# data/redistricting_states.json — 양수=민주 순증(D+), 음수=공화 순증(R+).
+.seat_lab <- function(x) ifelse(is.na(x) | x == 0, "—",
+                         ifelse(x > 0, paste0("D+", x), paste0("R+", abs(x))))
+
+gt_redistricting_states <- function() {
+  d <- .load_json("redistricting_states")
+  s <- d$states
+  grp <- c(enacted = "시행 (2026 사용)", blocked = "차단", failed = "무산·정체")
+  net_disp <- ifelse(s$category == "blocked",
+                     paste0("— (의도 ", .seat_lab(s$intended_d), ")"),
+                     .seat_lab(s$net_d))
+  tibble(
+    구분 = grp[s$category],
+    주 = paste0(s$name, " (", s$state, ")"),
+    획정주체 = s$drawer,
+    상태 = s$status,
+    순효과 = net_disp,
+    `시행·근거` = s$enacted,
+    출처 = paste0("<a href='", s$source_url, "'>", s$source, "</a>")
+  ) |>
+    gt(groupname_col = "구분") |>
+    fmt_markdown(columns = "출처") |>
+    tab_header(title = "재획정 주별 현황 — 누가·어떻게·순효과",
+               subtitle = paste0("기준 ", d$as_of, " · ", d$net_enacted_label,
+                                 " · 양수=민주 순증(D+)")) |>
+    tab_source_note(d$note) |>
+    .tbl_opts()
+}
+
+# 순효과 다이버징 바 (인라인 SVG) — `#| output: asis` 청크에서 cat() 으로 출력.
+# 시행·차단 지도만 표시(차단은 의도 의석을 흐리게). enacted=net_d, blocked=intended_d.
+svg_redistricting_bar <- function() {
+  d <- .load_json("redistricting_states")
+  s <- d$states[d$states$category %in% c("enacted", "blocked"), ]
+  val <- ifelse(s$category == "blocked", s$intended_d, s$net_d)
+  blocked <- s$category == "blocked"
+  ord <- order(val, decreasing = TRUE)
+  s <- s[ord, ]; val <- val[ord]; blocked <- blocked[ord]
+  n <- nrow(s)
+  rowh <- 28; top <- 34; bot <- 14; cx <- 270; per <- 30; W <- 560
+  H <- top + n * rowh + bot
+  dem <- "#1971c2"; rep <- "#c92a2a"
+  p <- sprintf('<svg viewBox="0 0 %d %d" width="100%%" style="height:auto;max-width:%dpx;display:block;margin:8px auto;font-family:\'IBM Plex Sans KR\',sans-serif;" role="img" aria-label="재획정 주별 순효과 다이버징 바">', W, H, W)
+  p <- c(p, sprintf('<line x1="%d" y1="%d" x2="%d" y2="%.0f" stroke="#ced4da" stroke-width="1"/>', cx, top - 4, cx, H - bot + 2))
+  p <- c(p, sprintf('<text x="%d" y="%d" text-anchor="end" font-size="10" fill="%s">← 공화 순증(R+)</text>', cx - 8, top - 12, rep))
+  p <- c(p, sprintf('<text x="%d" y="%d" text-anchor="start" font-size="10" fill="%s">민주 순증(D+) →</text>', cx + 8, top - 12, dem))
+  for (i in seq_len(n)) {
+    y <- top + (i - 1) * rowh
+    v <- val[i]; w <- abs(v) * per
+    col <- if (v >= 0) dem else rep
+    op <- if (blocked[i]) "0.35" else "1"
+    x0 <- if (v >= 0) cx else cx - w
+    p <- c(p, sprintf('<rect x="%.1f" y="%d" width="%.1f" height="16" rx="2" fill="%s" fill-opacity="%s"/>', x0, y, w, col, op))
+    lab <- paste0(s$state[i], " ", .seat_lab(v), if (blocked[i]) " (차단)" else "")
+    if (v >= 0) {
+      p <- c(p, sprintf('<text x="%.1f" y="%d" text-anchor="start" font-size="11" fill="#3a3a3a">%s</text>', cx + w + 6, y + 12, lab))
+    } else {
+      p <- c(p, sprintf('<text x="%.1f" y="%d" text-anchor="end" font-size="11" fill="#3a3a3a">%s</text>', cx - w - 6, y + 12, lab))
+    }
+  }
+  paste(c(p, '</svg>'), collapse = "")
+}
+
+# 2.4 지역구별 2024 대선 마진 변화 (재획정) ----------------------------------
+# data/redistricting_pres.json — 같은 2024 표를 신·구 경계로 재집계. 양수=민주(D+).
+gt_redistricting_pres <- function() {
+  d <- .load_json("redistricting_pres")
+  r <- d$districts
+  dm <- r$new_margin - r$old_margin
+  delta <- ifelse(is.na(dm), "【수집】",
+            ifelse(dm < 0, paste0("R+", abs(round(dm, 1)), "p 이동"),
+            ifelse(dm > 0, paste0("D+", round(dm, 1), "p 이동"), "변화 없음")))
+  tibble(
+    지역구 = paste0(r$district, " — ", r$name),
+    현역 = r$incumbent,
+    `구지도(2024)` = ifelse(is.na(r$old_margin), "【수집】", .fmt_margin(r$old_margin)),
+    `신지도(2024)` = ifelse(is.na(r$new_margin), "【수집】", .fmt_margin(r$new_margin)),
+    `변화(Δ)` = delta,
+    출처 = paste0("<a href='", r$source_url, "'>", r$source, "</a>")
+  ) |>
+    gt() |>
+    fmt_markdown(columns = "출처") |>
+    tab_header(title = "지역구별 2024 대선 마진 — 구지도 vs 신지도",
+               subtitle = paste0("기준 ", d$as_of,
+                                 " · 양수=민주 우위(D+) · 같은 2024년 표를 새 경계로 재집계")) |>
+    tab_source_note(d$note) |>
+    .tbl_opts()
+}
+
 # ============================================================================
 # 홈 컨트롤 패널 — 첫 화면 KPI 카드 + 모듈. 기존 데이터만 사용, 추정 없음.
 # 데이터 이상 시 빈 문자열로 graceful degrade (빌드 안전).

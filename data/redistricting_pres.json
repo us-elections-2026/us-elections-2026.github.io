@@ -1,0 +1,9 @@
+{
+  "as_of": "2026-06-15",
+  "note": "2024년 대선 표를 신·구 선거구 경계로 재집계한 트럼프(R) 마진의 변화. 양수=민주 우위(D+), 음수=공화 우위(R+). 선거를 다시 한 것이 아니라 같은 2024년 표를 새 경계로 다시 집계한 값. 전체 지역구 데이터셋 출처: The Downballot (the-db.co/presbycd) — 수집 후 보강.",
+  "districts": [
+    {"district": "TX-34", "name": "텍사스 남부(밸리)", "incumbent": "Vicente Gonzalez (D)", "old_margin": -4.5, "new_margin": -10.0, "source": "Center for Politics", "source_url": "https://centerforpolitics.org/crystalball/texasredistricting/", "memo": "2020 Biden +15.5 → 구지도 R+4.5 → 신지도 R+10. Hidalgo 분리·Nueces 편입."},
+    {"district": "NC-01", "name": "노스캐롤라이나 동부", "incumbent": "Don Davis (D)", "old_margin": null, "new_margin": -12.0, "source": "house.qmd (Cook)", "source_url": "https://www.cookpolitical.com/", "memo": "신지도 R+12. 구지도 정밀 마진 【수집】."},
+    {"district": "OH-09", "name": "오하이오 북서부(톨레도)", "incumbent": "Marcy Kaptur (D)", "old_margin": null, "new_margin": -10.0, "source": "house.qmd", "source_url": "https://ballotpedia.org/Redistricting_ahead_of_the_2026_elections", "memo": "신지도 Trump+10. 구지도 정밀 마진 【수집】."}
+  ]
+}
