@@ -118,6 +118,28 @@ if (!is.null(d$races) && is.data.frame(d$races) && "margin_2024" %in% names(d$ra
     err("house_races.json", sprintf("margin_2024는 숫자 또는 null이어야 함 (현재 타입: %s)", class(m)[1]))
 }
 
+# ---- 재획정 (redistricting 설명 페이지 데이터) -------------------------------
+d <- load_json("redistricting_states.json")
+require_keys("redistricting_states.json", d, c("as_of", "states"))
+require_cols("redistricting_states.json", d$states, c("state", "category", "net_d"))
+if (!is.null(d$states) && is.data.frame(d$states) && "net_d" %in% names(d$states)) {
+  if (!is.numeric(d$states$net_d) && !all(is.na(d$states$net_d)))
+    err("redistricting_states.json", "net_d는 숫자(양수=민주 순증) 또는 null이어야 함")
+}
+
+d <- load_json("redistricting_pres.json")
+require_keys("redistricting_pres.json", d, c("as_of", "districts"))
+require_cols("redistricting_pres.json", d$districts, c("district", "new_margin"))
+if (!is.null(d$districts) && is.data.frame(d$districts)) {
+  for (col in c("old_margin", "new_margin")) {
+    if (col %in% names(d$districts)) {
+      v <- d$districts[[col]]
+      if (!is.numeric(v) && !all(is.na(v)))
+        err("redistricting_pres.json", sprintf("%s는 숫자(양수=민주 우위) 또는 null이어야 함", col))
+    }
+  }
+}
+
 # ---- Korea Watch CSV (스키마 고정) -------------------------------------------
 kw_cols <- c("date", "type", "actor", "affiliation", "state_or_district",
              "event", "detail", "race_link", "significance", "source_url")

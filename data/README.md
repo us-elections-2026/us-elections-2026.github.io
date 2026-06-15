@@ -108,6 +108,20 @@
   - `rating_sabato`/`rating_delta`/`korea_clue`/`note` nullable.
 - 소비: `gt_house_races()` → `house.qmd`.
 
+### `redistricting_states.json` — 2026 중간 재획정 주별 현황
+- 최상위: `as_of`, `net_enacted_label`, `note`, **`states`**.
+- `states[]`: `state`, `name`, `drawer`(작성 주체), `party`, `category`, `status`, **`net_d`**, `intended_d`, `enacted`, `source`, `source_url`.
+  - `category`: enacted / blocked / failed.
+  - **`net_d`**: 의석 순효과 추정, **양수=민주 순증(D+)** / 음수=공화 순증. `intended_d`=의도한 순효과(차단 시 net과 다름).
+- 소비: `gt_redistricting_states()` + `svg_redistricting_bar()`(다이버징 바) → `redistricting.qmd`.
+
+### `redistricting_pres.json` — 지역구별 신·구 대선 마진(2024 재집계)
+- 최상위: `as_of`, `note`, **`districts`**.
+- `districts[]`: `district`, `name`, `incumbent`, **`old_margin`**, **`new_margin`**, `source`, `source_url`, `memo`.
+  - 마진: **숫자(양수=민주 우위) 또는 `null`**(신·구 정밀 마진 미공표 시 【수집】). 같은 2024 표를 새 경계로 재집계한 값.
+  - 전체 데이터셋 소스: The Downballot (the-db.co/presbycd) — 수집 후 보강.
+- 소비: `gt_redistricting_pres()` → `redistricting.qmd`. `house_races.json`의 `margin_2024` 단일 소스 역할.
+
 ---
 
 ## CSV (스키마 고정 — 열 정의 변경 금지)
