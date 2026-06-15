@@ -591,6 +591,54 @@ gt_redistricting_pres <- function() {
     .tbl_opts()
 }
 
+# 지역구 마진 이동 덤벨 (인라인 SVG) — old·new 둘 다 있는 구만 표시.
+# `#| output: asis` 청크에서 cat()으로 출력. 완전 쌍이 없으면 빈 문자열.
+svg_redistricting_dumbbell <- function() {
+  d <- .load_json("redistricting_pres")
+  r <- d$districts
+  keep <- !is.na(r$old_margin) & !is.na(r$new_margin)
+  r <- r[keep, , drop = FALSE]
+  n <- nrow(r)
+  if (n == 0) return("")
+  r <- r[order(r$new_margin), , drop = FALSE]   # 가장 공화(음수) 위로
+  lim <- max(5, ceiling(max(abs(c(r$old_margin, r$new_margin))) / 5) * 5)
+  W <- 600; padL <- 84; padR <- 64; plotW <- W - padL - padR
+  cx <- padL + plotW / 2
+  sc <- function(m) cx + (m / lim) * (plotW / 2)
+  rowh <- 36; top <- 46; bot <- 24
+  H <- top + n * rowh + bot
+  dem <- "#1971c2"; rep <- "#c92a2a"; gray <- "#adb5bd"
+  fmtm <- function(m) ifelse(m >= 0, paste0("D+", abs(round(m, 1))), paste0("R+", abs(round(m, 1))))
+  p <- sprintf('<svg viewBox="0 0 %d %d" width="100%%" style="height:auto;max-width:%dpx;display:block;margin:8px auto;font-family:\'IBM Plex Sans KR\',sans-serif;" role="img" aria-label="지역구 2024 대선 마진 구→신 이동 덤벨">', W, H, W)
+  # 중앙 0선 + 축 라벨
+  p <- c(p, sprintf('<line x1="%.0f" y1="%d" x2="%.0f" y2="%.0f" stroke="#ced4da" stroke-width="1"/>', cx, top - 6, cx, H - bot + 2))
+  p <- c(p, sprintf('<text x="%.0f" y="%d" text-anchor="middle" font-size="10" fill="#868e96">0</text>', cx, top - 12))
+  p <- c(p, sprintf('<text x="%.0f" y="%d" text-anchor="middle" font-size="10" fill="%s">← 공화(R+)</text>', cx - plotW / 4, top - 12, rep))
+  p <- c(p, sprintf('<text x="%.0f" y="%d" text-anchor="middle" font-size="10" fill="%s">민주(D+) →</text>', cx + plotW / 4, top - 12, dem))
+  for (i in seq_len(n)) {
+    y <- top + (i - 1) * rowh + rowh / 2
+    xo <- sc(r$old_margin[i]); xn <- sc(r$new_margin[i])
+    ncol <- if (r$new_margin[i] >= 0) dem else rep
+    # 구역명 라벨(좌측 거터)
+    p <- c(p, sprintf('<text x="%d" y="%.0f" text-anchor="end" font-size="11" font-weight="700" fill="#3a3a3a">%s</text>', padL - 10, y + 4, r$district[i]))
+    # 연결선
+    p <- c(p, sprintf('<line x1="%.1f" y1="%.0f" x2="%.1f" y2="%.0f" stroke="%s" stroke-width="2"/>', xo, y, xn, y, gray))
+    # old 점(빈 원) + new 점(채운 원)
+    p <- c(p, sprintf('<circle cx="%.1f" cy="%.0f" r="5" fill="#fff" stroke="%s" stroke-width="2"/>', xo, y, gray))
+    p <- c(p, sprintf('<circle cx="%.1f" cy="%.0f" r="5.5" fill="%s"/>', xn, y, ncol))
+    # 값 라벨: old(작게 위), new(바깥쪽)
+    p <- c(p, sprintf('<text x="%.1f" y="%.0f" text-anchor="middle" font-size="9" fill="%s">%s</text>', xo, y - 9, gray, fmtm(r$old_margin[i])))
+    nx <- if (r$new_margin[i] <= r$old_margin[i]) xn - 9 else xn + 9
+    anc <- if (r$new_margin[i] <= r$old_margin[i]) "end" else "start"
+    p <- c(p, sprintf('<text x="%.1f" y="%.0f" text-anchor="%s" font-size="10" font-weight="700" fill="%s">%s</text>', nx, y + 4, anc, ncol, fmtm(r$new_margin[i])))
+  }
+  # 범례
+  ly <- H - 8
+  p <- c(p, sprintf('<circle cx="%d" cy="%.0f" r="5" fill="#fff" stroke="%s" stroke-width="2"/><text x="%d" y="%.0f" font-size="10" fill="#5a6672">구지도</text>', padL, ly - 4, gray, padL + 10, ly))
+  p <- c(p, sprintf('<circle cx="%d" cy="%.0f" r="5.5" fill="%s"/><text x="%d" y="%.0f" font-size="10" fill="#5a6672">신지도(2024 재집계)</text>', padL + 80, ly - 4, rep, padL + 92, ly))
+  paste(c(p, '</svg>'), collapse = "")
+}
+
 # ============================================================================
 # 홈 컨트롤 패널 — 첫 화면 KPI 카드 + 모듈. 기존 데이터만 사용, 추정 없음.
 # 데이터 이상 시 빈 문자열로 graceful degrade (빌드 안전).
