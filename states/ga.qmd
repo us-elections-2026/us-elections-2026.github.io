@@ -11,11 +11,11 @@ source(file.path("R", "helpers.R"))
 gt_state_detail("GA")
 ```
 
-민주당의 **최우선 방어석**. Ossoff는 2021년 결선에서 1.2%p 차로 당선된 취약 의석이지만, 공화당 후보가 6/16 결선(Collins vs Dooley)까지 미정인 동안 보유 현금 $31M으로 광고전을 선점하고 있습니다. 2024년 트럼프가 GA를 다시 가져간 만큼 기초 지형은 민주당에 불리 — 결선 이후 공화당의 통합 속도가 1차 변수입니다.
+민주당의 **최우선 방어석**. Ossoff는 2021년 결선에서 1.2%p 차로 당선된 취약 의석입니다. 공화당은 6/16 결선에서 **Mike Collins를 후보로 확정**(트럼프 막판 지지)했고, 무경선의 Ossoff는 보유 현금 $31M+로 광고전을 선점해 왔습니다. 2024년 트럼프가 GA를 다시 가져간 만큼 기초 지형은 민주당에 불리 — 공화당이 결선 분열을 얼마나 빨리 봉합하느냐가 1차 변수입니다.
 
 ::: {.summary}
-- **구도**: 민주 최우선 방어석 — 현역 Ossoff(D) vs 공화 결선(6/16 Collins/Dooley) 승자.
-- **변화**: 현역이 무경선·자금 압도($31M, 소액 99%)로 선점, 공화는 결선까지 자원 소모.
+- **구도**: 민주 최우선 방어석 — 현역 Ossoff(D) vs **Collins(R)**. 6/16 공화 결선서 Collins(트럼프 지지)가 Dooley를 꺾고 확정.
+- **변화**: 현역이 무경선·자금 압도($31M, 소액 99%)로 선점, 공화는 결선까지 자원 소모 후 6/16 후보 확정.
 - **한국 함의**: 8개 경합주 중 **한국 직접 관여가 가장 풍부**(Partner with Korea Act·DMZ·현대차 단속 대응).
 :::
 
@@ -38,14 +38,9 @@ gt_state_detail("GA")
 cat(candidate_cards_html("GA"))
 ```
 
-### 공화당 경선 후보 (6/16 결선)
+### 공화당 결선 결과 (6/16)
 
-```{r}
-#| output: asis
-cat(primary_cards_html("GA"))
-```
-
-5/19 1차 경선에서 과반 득표자가 없어(Collins ≈40.5%, Dooley ≈30.2%, Carter ≈25.1%) Carter가 3위로 탈락하고 **Collins vs Dooley 결선이 6/16**로 확정됐습니다. 사실상 **트럼프계(Collins) vs Kemp계(Dooley) 대리전**으로, 트럼프는 1·2차 모두 중립을 유지했고 Kemp는 Dooley를 전폭 지지합니다. 공화당이 결선까지 자원을 소모하는 동안 무경선의 Ossoff는 본선 준비에 집중하고 있습니다. ([The Hill](https://thehill.com/homenews/campaign/5886066-georgia-senate-gop-runoff-collins-dooley/))
+6/16 결선에서 **Mike Collins가 Derek Dooley를 꺾고 공화당 후보로 확정**됐습니다. 5/19 1차 경선에서 과반 득표자가 없어(Collins ≈40.5%, Dooley ≈30.2%, Carter ≈25.1% — Carter 3위 탈락) 결선으로 넘어갔고, 사실상 **트럼프계(Collins) vs Kemp계(Dooley) 대리전**이었습니다. 1·2차에서 중립을 지키던 트럼프가 결선 직전 Collins를 지지하며 승부를 갈랐고, Dooley는 Kemp 주지사의 전폭 지지에도 패했습니다. 이로써 본선은 **Ossoff(D) vs Collins(R)** 구도로 확정됐습니다. ([CBS](https://www.cbsnews.com/news/georgia-senate-republican-runoff-primary-results-mike-collins-derek-dooley-trump-ossoff/) · [The Hill](https://thehill.com/homenews/campaign/5886066-georgia-senate-gop-runoff-collins-dooley/))
 
 ## 4. roll-call / 입법 관심사
 

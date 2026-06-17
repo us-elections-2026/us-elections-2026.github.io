@@ -1,6 +1,6 @@
 {
   "as_of": "2026-05-29",
-  "facts_updated": "2026-06-11",
+  "facts_updated": "2026-06-17",
   "source_label": "자체 분석 모델 (Universal Causal Framework V2)",
   "provenance_note": "여기 확률은 시장·집계기관 수치가 아니라 내부 프레임워크의 모델 추정치입니다. Cook/Sabato 등급·예측시장과 같은 잣대로 비교하지 마세요. 확률 기준일 5/29, 후보·경선 사실은 6/5 브리핑 반영.",
   "current_balance": "R 53 / D 47",
@@ -37,9 +37,9 @@
       "defense": "D",
       "rating": "Lean D",
       "prob": 61,
-      "matchup": "Ossoff (D·현직) vs Collins/Dooley (R)",
-      "key_var": "공화 결선 분열, Ossoff 자금 우위, 메트로 애틀랜타",
-      "note": "공화 결선 6/16 (Collins 40.5 vs Dooley 30.2), Ossoff 현금 $32M+"
+      "matchup": "Ossoff (D·현직) vs Collins (R)",
+      "key_var": "Trump계 Collins 결선 승리로 공화 후보 확정, Ossoff 자금 우위($32M+), 메트로 애틀랜타 교외",
+      "note": "공화 결선 6/16 Collins 승리(Trump 막판 지지). 본선 Ossoff vs Collins 확정. Ossoff 현금 $32M+. 확률은 결선 결과 반영 후 재산정 예정."
     },
     {
       "id": "mi",

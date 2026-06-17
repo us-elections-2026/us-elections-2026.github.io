@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-06-11",
+  "as_of": "2026-06-17",
   "rows": [
     {
       "state": "ME",
@@ -12,8 +12,8 @@
       "state": "GA",
       "event": "공화당 결선",
       "date": "2026-06-16",
-      "status": "예정",
-      "detail": "Collins 40.5% vs Dooley 30.2% (1차 5/19, Carter 탈락)"
+      "status": "완료",
+      "detail": "6/16 결선 Collins 승리(Trump 막판 지지, Dooley 패배) → 본선 Ossoff(D) vs Collins(R) 확정. (1차 5/19: Collins 40.5·Dooley 30.2·Carter 탈락)"
     },
     {
       "state": "NH",
