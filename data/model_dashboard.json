@@ -1,8 +1,8 @@
 {
   "as_of": "2026-05-29",
-  "facts_updated": "2026-06-11",
+  "facts_updated": "2026-06-20",
   "source_label": "자체 분석 모델 (Universal Causal Framework V2)",
-  "provenance_note": "여기 확률은 시장·집계기관 수치가 아니라 내부 프레임워크의 모델 추정치입니다. Cook/Sabato 등급·예측시장과 같은 잣대로 비교하지 마세요. 확률 기준일 5/29, 후보·경선 사실은 6/5 브리핑 반영.",
+  "provenance_note": "여기 확률은 시장·집계기관 수치가 아니라 내부 프레임워크의 모델 추정치입니다. Cook/Sabato 등급·예측시장과 같은 잣대로 비교하지 마세요. 확률 기준일 5/29(GA 결선·ME 경선 결과 등 후보 확정 사실은 6/20 반영, 확률 재산정 전).",
   "current_balance": "R 53 / D 47",
   "dem_needed_net": 4,
   "dem_majority_prob": 32,
@@ -17,7 +17,7 @@
       "prob": 63,
       "matchup": "Platner (D) vs Collins (R·5선)",
       "key_var": "세대 대결, Collins 초당파 브랜드, 트럼프 역풍",
-      "note": "민주 경선 6/9 — Platner 우세, Mills 사퇴로 단일화 진행"
+      "note": "민주 경선 종료(6/9 Platner 77.7%) — 본선 양자 구도 확정"
     },
     {
       "id": "nc",
@@ -37,9 +37,9 @@
       "defense": "D",
       "rating": "Lean D",
       "prob": 61,
-      "matchup": "Ossoff (D·현직) vs Collins/Dooley (R)",
-      "key_var": "공화 결선 분열, Ossoff 자금 우위, 메트로 애틀랜타",
-      "note": "공화 결선 6/16 (Collins 40.5 vs Dooley 30.2), Ossoff 현금 $32M+"
+      "matchup": "Ossoff (D·현직) vs Collins (R)",
+      "key_var": "본선 양자 구도 확정, Ossoff 자금 우위, 메트로 애틀랜타",
+      "note": "공화 결선 종료(6/16 Collins 55.5 vs Dooley 44.5), Ossoff 현금 $32M+"
     },
     {
       "id": "mi",
@@ -146,16 +146,16 @@
     {
       "date": "6/9",
       "event": "ME 민주당 경선",
-      "detail": "Platner 공식 후보 확정 시 ME D 확률 상향",
+      "detail": "Platner 77.7% 승리 → 본선 후보 확정",
       "party": "dem",
-      "status": "upcoming"
+      "status": "done"
     },
     {
       "date": "6/16",
       "event": "GA 공화당 결선",
-      "detail": "Collins vs Dooley — Ossoff 상대 결정",
+      "detail": "Collins 55.5% 승리 → Ossoff 상대 확정",
       "party": "rep",
-      "status": "upcoming"
+      "status": "done"
     },
     {
       "date": "8/4",

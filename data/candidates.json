@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-06-11",
+  "as_of": "2026-06-20",
   "note": "후보 프로필. 출처가 분명한 사실만 수록. null=공개 출처 미확인. 사진은 공개도메인(공식 상·하원 초상) 또는 CC 라이선스만 사용하며 photo_credit에 출처·라이선스 표기.",
   "candidates": [
     {
@@ -57,11 +57,12 @@
       "past_elections": [
         "2014 GA-10 하원 결선 낙선",
         "2022 GA-10 하원 당선",
-        "2026 공화 경선 1위(약 40.5%) → 6/16 결선"
+        "2026 공화 경선 1위(약 40.5%, 5/19) → 6/16 결선 승리 55.5% vs Dooley 44.5% → 본선 진출"
       ],
       "fundraising": "1분기 100만+ 달러 모금, 결선 국면 보유현금 약 230만 달러",
       "strengths": [
-        "경선 1위·MAGA 기반 결집력",
+        "결선 55.5% 승리·MAGA 기반 결집력",
+        "트럼프 막판 지지(결선 이틀 전)",
         "농촌 강세",
         "부친 인지도 후광"
       ],
@@ -81,44 +82,7 @@
         "https://collins.house.gov/about",
         "https://www.ajc.com/politics/2026/01/ethics-committee-reviewing-claims-us-rep-mike-collins-misused-funds/"
       ],
-      "status": "primary"
-    },
-    {
-      "state": "GA",
-      "party": "R",
-      "name": "Derek Dooley",
-      "name_kr": "데릭 둘리",
-      "incumbent": false,
-      "photo": "assets/candidates/ga_dooley.jpg",
-      "photo_credit": "Wikimedia Commons (public domain)",
-      "born": 1968,
-      "occupation": "전 대학 미식축구 감독(테네시대·루이지애나공대) · 변호사",
-      "education": "버지니아대 국제관계·정치학, 조지아대 로스쿨 J.D.(1994)",
-      "family": "부인 Allison Dooley, 성인 자녀 3명; 부친 Vince Dooley(조지아대 전설적 감독)",
-      "past_elections": [
-        "선출직 경험 없음(정치 신인)",
-        "2026 공화 경선 2위(약 30.2%) → 6/16 결선"
-      ],
-      "fundraising": "1분기 약 66만 달러 모금, 결선 국면 보유현금 약 210만 달러",
-      "strengths": [
-        "Brian Kemp 주지사 전폭 지지",
-        "스포츠 유명인 인지도",
-        "MAGA와 거리 둔 비즈니스 보수 이미지"
-      ],
-      "weaknesses": [
-        "선출직 경험 전무",
-        "MAGA 결집력 Collins에 열세"
-      ],
-      "policy": [
-        "Kemp계 온건·기업 친화 보수",
-        "트럼프와 일정 거리"
-      ],
-      "kr_note": null,
-      "sources": [
-        "https://ballotpedia.org/Derek_Dooley",
-        "https://www.ajc.com/politics/2025/06/who-is-derek-dooley-the-football-coach-weighing-us-senate-run-in-georgia/"
-      ],
-      "status": "primary"
+      "status": "nominee"
     },
     {
       "state": "MI",

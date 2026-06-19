@@ -44,10 +44,10 @@ cat(home_kpis())
 
 ::: {.ccard .acc-d}
 ::: {.cc-title}
-조지아 결선 D-1
+조지아 본선 확정
 :::
 ::: {.cc-sum}
-6/16 공화 결선(Collins vs Dooley) — 승자가 현역 Ossoff(D)에 도전. 민주 최우선 방어석.
+6/16 공화 결선서 Collins 55.5% 승리 — 본선은 현역 Ossoff(D) vs Collins(R) 양자 구도로 확정. 민주 최우선 방어석.
 :::
 [조지아 State Focus →](states/ga.qmd){.cc-link}
 :::

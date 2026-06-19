@@ -11,11 +11,11 @@ source(file.path("R", "helpers.R"))
 gt_state_detail("GA")
 ```
 
-민주당의 **최우선 방어석**. Ossoff는 2021년 결선에서 1.2%p 차로 당선된 취약 의석이지만, 공화당 후보가 6/16 결선(Collins vs Dooley)까지 미정인 동안 보유 현금 $31M으로 광고전을 선점하고 있습니다. 2024년 트럼프가 GA를 다시 가져간 만큼 기초 지형은 민주당에 불리 — 결선 이후 공화당의 통합 속도가 1차 변수입니다.
+민주당의 **최우선 방어석**. Ossoff는 2021년 결선에서 1.2%p 차로 당선된 취약 의석입니다. 공화당은 **6/16 결선에서 Mike Collins가 Derek Dooley를 55.5% 대 44.5%로 꺾고 본선에 진출**했습니다 — 본선은 이제 **Ossoff(D) vs Collins(R)** 양자 구도로 확정. 무경선 현역 Ossoff는 보유 현금 $31M으로 광고전을 선점한 반면 공화당은 결선까지 자원을 소모했고, 2024년 트럼프가 GA를 다시 가져간 만큼 기초 지형은 민주당에 불리 — 이제 트럼프계 Collins로의 공화당 통합 속도가 1차 변수입니다.
 
 ::: {.summary}
-- **구도**: 민주 최우선 방어석 — 현역 Ossoff(D) vs 공화 결선(6/16 Collins/Dooley) 승자.
-- **변화**: 현역이 무경선·자금 압도($31M, 소액 99%)로 선점, 공화는 결선까지 자원 소모.
+- **구도**: 민주 최우선 방어석 — 현역 Ossoff(D) vs Collins(R) 양자 확정(공화 결선 6/16 종료, Collins 55.5%).
+- **변화**: 현역이 무경선·자금 압도($31M, 소액 99%)로 선점, 공화는 결선까지 자원 소모 후 통합 국면.
 - **한국 함의**: 8개 경합주 중 **한국 직접 관여가 가장 풍부**(Partner with Korea Act·DMZ·현대차 단속 대응).
 :::
 
@@ -38,14 +38,9 @@ gt_state_detail("GA")
 cat(candidate_cards_html("GA"))
 ```
 
-### 공화당 경선 후보 (6/16 결선)
+### 공화당 결선 결과 (6/16)
 
-```{r}
-#| output: asis
-cat(primary_cards_html("GA"))
-```
-
-5/19 1차 경선에서 과반 득표자가 없어(Collins ≈40.5%, Dooley ≈30.2%, Carter ≈25.1%) Carter가 3위로 탈락하고 **Collins vs Dooley 결선이 6/16**로 확정됐습니다. 사실상 **트럼프계(Collins) vs Kemp계(Dooley) 대리전**으로, 트럼프는 1·2차 모두 중립을 유지했고 Kemp는 Dooley를 전폭 지지합니다. 공화당이 결선까지 자원을 소모하는 동안 무경선의 Ossoff는 본선 준비에 집중하고 있습니다. ([The Hill](https://thehill.com/homenews/campaign/5886066-georgia-senate-gop-runoff-collins-dooley/))
+5/19 1차 경선에서 과반 득표자가 없어(Collins ≈40.5%, Dooley ≈30.2%, Carter ≈25.1%) Carter가 3위로 탈락했고, **6/16 결선에서 Collins가 Dooley를 55.5% 대 44.5%로 꺾고 본선에 진출**했습니다. 사실상 **트럼프계(Collins) vs Kemp계(Dooley) 대리전**이었는데, 1차에서 중립을 지키던 트럼프가 **결선 이틀 전 Collins를 공개 지지**(Kemp는 Dooley 지지)하며 승부를 갈랐습니다. 공화당이 결선까지 자원을 소모하는 동안 무경선의 Ossoff는 본선 준비에 집중해 왔습니다. ([AP/ABC](https://abcnews.com/Politics/trumps-minute-endorsement-prevail-georgias-high-stakes-senate/story?id=133829876) · [The Hill](https://thehill.com/homenews/campaign/5886066-georgia-senate-gop-runoff-collins-dooley/))
 
 ## 4. roll-call / 입법 관심사
 
