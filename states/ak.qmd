@@ -8,6 +8,11 @@ source(file.path("R", "helpers.R"))
 ```
 
 ```{r}
+#| output: asis
+cat(candidate_cards_html("AK"))
+```
+
+```{r}
 gt_state_detail("AK")
 ```
 
@@ -30,14 +35,7 @@ Likely R — 경합 하단. 공화 현직 Dan Sullivan을, 2022년 최초의 알
 - **Top-Four 오픈 경선 + 본선 RCV**: 2024년 RCV 폐지안(Ballot Measure 2)이 **743표(0.25%p) 차로 부결**돼 제도가 존치됐습니다. 8/18 통합 예비선거에서 정당 무관 상위 4명이 본선에 오르고, 11월 본선은 **순위선택투표(RCV)** — 과반 미달 시 최하위를 탈락시켜 차순위로 재배분합니다. Peltola가 2022년 이 방식으로 Palin을 꺾은 전례가 강점입니다. ([KTOO](https://www.ktoo.org/2024/12/10/the-recount-is-over-alaska-will-keep-ranked-choice-voting/))
 - **동명이인 'Dan J. Sullivan' 논란**: 현역(Dan S., Anchorage)과 이름·당이 같은 **Dan J. Sullivan**(Petersburg)이 출마했습니다. 현역 측·NRSC는 "민주 공작"이라 주장(부정), 선관위는 미들 이니셜로 구분하기로 했고 **2026-06-12 Dan J.를 투표용지에서 제외할 예비 결정**을 통지했습니다(최종 미확정). RCV 1차 집계에서 보수표 분산을 키울 변수였습니다. ([Alaska Public](https://alaskapublic.org/news/politics/2026-06-12/alaska-division-of-elections-intends-to-strike-u-s-senate-challenger-dan-sullivan-from-the-ballot))
 
-## 3. 후보자
-
-```{r}
-#| output: asis
-cat(candidate_cards_html("AK"))
-```
-
-## 4. roll-call / 입법 관심사
+## 3. roll-call / 입법 관심사
 
 **Dan S. Sullivan (R, 현역)** — **군사위(SASC)·상무위(Commerce)** 소속(상무위 연안경비·해양·수산 소위원장으로 조선 청문회 주재). 8개 경합주 현역 중 **인도태평양·한국 안보에 가장 직접 관여**하는 인물입니다.
 
@@ -47,7 +45,7 @@ cat(candidate_cards_html("AK"))
 
 **Mary Peltola (D, 전 하원의원)** — Bristol Bay 어업 보호(Pebble Mine 차단 법안)·자원개발에 집중. ANWR 시추법엔 위원회 찬성·본회의 기권의 복합 입장. **한국·인도태평양 관련 직접 표결은 미확인**(의정 초점이 어업·자원·원주민). ([ADN](https://www.adn.com/politics/2024/05/03/in-election-year-us-rep-mary-peltola-walks-a-complicated-path-on-fisheries-and-oil-drilling/))
 
-## 5. 펀드레이징 (FEC, 2026 Q1 · 3/31 마감)
+## 4. 펀드레이징 (FEC, 2026 Q1 · 3/31 마감)
 
 | 후보 | 정당 | Q1 모금 | 보유현금 |
 |---|---|---:|---:|
@@ -58,7 +56,7 @@ cat(candidate_cards_html("AK"))
 
 **Peltola가 신규 모금에서 약 5대 1로 Sullivan을 압도**(알래스카 상원 사상 분기 최대)했으나, **보유현금은 현역 Sullivan이 우위**($7.1M vs $5.7M)입니다 — 누적 적립 효과. 출처별 수치 편차가 있어(ADN vs 캠프 발표) FEC 원본 대조를 권합니다. ([ADN](https://www.adn.com/politics/2026/04/16/peltola-posts-massive-campaign-fundraising-but-republicans-maintain-cash-advantage-in-alaska-congressional-races/))
 
-## 6. 한국 함의
+## 5. 한국 함의
 
 알래스카는 **GA·OH와 함께 한국 함의가 가장 깊은 주**입니다.
 

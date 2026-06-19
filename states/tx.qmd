@@ -8,6 +8,11 @@ source(file.path("R", "helpers.R"))
 ```
 
 ```{r}
+#| output: asis
+cat(candidate_cards_html("TX"))
+```
+
+```{r}
 gt_state_detail("TX")
 ```
 
@@ -31,11 +36,6 @@ gt_state_detail("TX")
 - 본선 11/3. 조기·부재자 세부 일정은 【수집】(SOS 추후 공지).
 
 ## 3. 후보자
-
-```{r}
-#| output: asis
-cat(candidate_cards_html("TX"))
-```
 
 > Paxton 결선 승리 후 Cook·Sabato 모두 Likely R → **Leans R**로 하향. 외부지출은 6/1 기준 합산 $18.6M(Paxton 반대 $14.0M + Talarico 지지 $4.09M)입니다.
 

@@ -8,6 +8,11 @@ source(file.path("R", "helpers.R"))
 ```
 
 ```{r}
+#| output: asis
+cat(candidate_cards_html("MI"))
+```
+
+```{r}
 gt_state_detail("MI")
 ```
 
@@ -32,11 +37,6 @@ Peters 은퇴로 **민주당이 방어해야 하는 공개석**. 8개 경합주 
 - **조기·부재자 투표(2022 Prop 2)**: 헌법 개정으로 모든 연방 선거마다 **최소 9일 연속 조기 대면투표**가 보장되고, 단일 신청으로 향후 선거 자동 부재자투표(영구 명부)가 명문화됐으며, **선거 당일 오후 8시까지 동시등록** 후 투표가 가능합니다. ([Ballotpedia Prop 2](https://ballotpedia.org/Michigan_Proposal_2,_Voting_Policies_in_Constitution_Amendment_(2022)))
 
 ## 3. 후보자
-
-```{r}
-#| output: asis
-cat(candidate_cards_html("MI"))
-```
 
 ### 민주당 경선 후보 (8/4 경선)
 

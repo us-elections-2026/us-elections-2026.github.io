@@ -8,6 +8,11 @@ source(file.path("R", "helpers.R"))
 ```
 
 ```{r}
+#| output: asis
+cat(candidate_cards_html("GA"))
+```
+
+```{r}
 gt_state_detail("GA")
 ```
 
@@ -32,11 +37,6 @@ gt_state_detail("GA")
 - **SB 202(2021)** — Kemp 주지사 2021-03-25 서명. 본선~결선 간격을 **9주 → 4주**로, 결선 조기투표를 **3주 → 1주**로 단축했고, **본선·결선 사이 신규 등록을 봉쇄**했으며, 부재자 투표에 신분증 요건을 신설하고 드롭박스를 카운티당 제한했습니다. 결선까지 가는 레이스에서 공화당의 단기 통합·동원에 유리한 구조 변화입니다. ([GPB](https://www.gpb.org/news/2021/03/27/what-does-georgias-new-voting-law-sb-202-do/) · [LWV](https://www.lwv.org/legal-center/ga-state-conference-naacp-v-raffensperger-consolidated-re-georgia-senate-bill-202))
 
 ## 3. 후보자
-
-```{r}
-#| output: asis
-cat(candidate_cards_html("GA"))
-```
 
 ### 공화당 결선 결과 (6/16)
 

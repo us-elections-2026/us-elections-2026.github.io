@@ -8,6 +8,11 @@ source(file.path("R", "helpers.R"))
 ```
 
 ```{r}
+#| output: asis
+cat(candidate_cards_html("NH"))
+```
+
+```{r}
 gt_state_detail("NH")
 ```
 
@@ -34,11 +39,6 @@ gt_state_detail("NH")
 > 참고(미확정 입법): 2025년 공화당이 무당파의 "당일 당적 선택"을 막는 법안을 발의했으나, 검색 시점 기준 2026 경선에는 적용되지 않습니다(당일 선택권 유지 확인). 향후 변동은 추적 대상입니다.
 
 ## 3. 후보자
-
-```{r}
-#| output: asis
-cat(candidate_cards_html("NH"))
-```
 
 본선 가상대결은 공화 후보에 따라 갈립니다. [Emerson(3/21–23, LV 1,000, ±2.9)](https://emersoncollegepolling.com/new-hampshire-2026-sununu-leads-gop-nomination-ties-pappas-for-senate/) 기준 **Pappas 45 vs Sununu 44**(오차범위 내) / **Pappas 48 vs Brown 39**. UNH 조사(1월·4월)에서는 Pappas가 양자 모두에 리드했습니다. 즉 9/8 공화 경선에서 Sununu가 확정되면 접전, Brown이면 민주 우위가 현재 데이터의 요약입니다.
 

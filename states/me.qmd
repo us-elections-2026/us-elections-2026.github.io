@@ -8,6 +8,11 @@ source(file.path("R", "helpers.R"))
 ```
 
 ```{r}
+#| output: asis
+cat(candidate_cards_html("ME"))
+```
+
+```{r}
 gt_state_detail("ME")
 ```
 
@@ -31,11 +36,6 @@ gt_state_detail("ME")
 - 사유 불문 부재자투표(no-excuse absentee) 시행 주(2026 구체 기간은 【수집】).
 
 ## 3. 후보자
-
-```{r}
-#| output: asis
-cat(candidate_cards_html("ME"))
-```
 
 > 주의: 본선 가상대결 조사(UMass Lowell 6/4 Platner +5 등)는 성적 문자 메시지 본격 보도 **이전** 조사라, 스캔들의 본선 타격 여부는 6/9 이후 신규 조사로 확인이 필요합니다.
 
