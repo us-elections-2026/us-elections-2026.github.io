@@ -915,7 +915,7 @@
     "href": "index.html",
     "title": "미국 중간선거 한국어 브리핑",
     "section": "",
-    "text": "미국 선거 속보가 아니라, 한국 독자를 위한 해석 · 여론조사 리터러시 · 한국 정책 함의 브리핑입니다. 아래는 이번 주를 30초에 읽는 상황판 — 더 깊이 보려면 각 링크로.",
+    "text": "미국 선거 속보가 아니라, 한국 독자를 위한 해석 · 여론조사 리터러시 · 한국 정책 함의 브리핑입니다. 이 홈은 ① 전국 환경 · ② 상원 · ③ 하원 · ④ Korea Watch 네 영역을 30초에 훑는 상황판 — 더 깊이 보려면 각 섹션의 링크로.",
     "crumbs": [
       "홈",
       "시작",
@@ -923,11 +923,11 @@
     ]
   },
   {
-    "objectID": "index.html#이번-주",
-    "href": "index.html#이번-주",
+    "objectID": "index.html#national",
+    "href": "index.html#national",
     "title": "미국 중간선거 한국어 브리핑",
-    "section": "이번 주",
-    "text": "이번 주\n\n\n\n조지아 본선 확정\n\n\n6/16 공화 결선서 Collins 55.5% 승리 — 본선은 현역 Ossoff(D) vs Collins(R) 양자 구도로 확정. 민주 최우선 방어석.\n\n조지아 State Focus →\n\n\n\n메인 본선 확정\n\n\n민주 경선서 Platner 압승, 6선 Collins(R)와 맞대결 확정 — 민주 최우선 탈환 표적.\n\n메인 State Focus →\n\n\n\n노스캐롤라이나 이동\n\n\nCook이 Toss-up→Lean D 하향(6/11), Cooper(D) 우세 — 픽업 가능성 상승.\n\nNC State Focus →",
+    "section": "1. 전국 환경",
+    "text": "1. 전국 환경\n트럼프 순지지 -18.7, 일반투표 D+7 — 거시 환경은 민주 우위가 이어지나 경제 심리·체감물가는 약세 혼조입니다. 양수 = 민주 우위 기준의 누적 추세:\n\n\n\n트럼프 순지지도 (Silver Bulletin 평균)\n\n\n\n\n\n\n일반투표 — 민주 마진 (D+)\n\n\n\n\n\n\n\n\n\n\n지지율·제너릭 밸럿·경제 지표 집계표와 외교 동향은 → 전국 환경 · 전체 데이터 트래커. (결측 구간은 추정으로 채우지 않으며, 외부 집계 링크를 병기합니다.)",
     "crumbs": [
       "홈",
       "시작",
@@ -935,11 +935,11 @@
     ]
   },
   {
-    "objectID": "index.html#한국-함의",
-    "href": "index.html#한국-함의",
+    "objectID": "index.html#senate",
+    "href": "index.html#senate",
     "title": "미국 중간선거 한국어 브리핑",
-    "section": "한국 함의",
-    "text": "한국 함의\n이 사이트의 차별점입니다 — 선거와 한국 정책의 연결을 위에 둡니다.\n\n\n\n🔋 배터리·EV\n\n\n조지아·미시간·오하이오의 LG·SK·삼성 배터리 거점이 선거 경제 서사의 중심. MI-07은 한국 연결이 확인된 유일 토스업. 하원 →\n\n\n\n\n🛡 북한·안보\n\n\n행정부가 NSS에서 북핵 비핵화 목표 문구 삭제 — 의회·UN 제재 트랙과 충돌. OH 후보 Brown은 KORUS 반대 이력. Korea Watch →\n\n\n\n\n⚖ 통상·관세\n\n\n트럼프, 10월 한미 무역합의 미비준 시 25% 관세 재인상 위협. 대(對)한 통상 마찰이 투자·물가에 직결. Korea Watch →\n\n\n\nKorea Watch 전체 동향 DB →",
+    "section": "2. 상원",
+    "text": "2. 상원\n현재 R 53 / D 47, 민주 다수까지 순 +4석. 타일 = 전망 우세 등급, 주명 옆 배지 = 현 보유 정당 — 탈환 표적(현 R)과 수성(현 D)을 나눠 보세요.\n\n등급은 자체 모델 추정치로 시장·집계기관과 잣대가 다릅니다.\n\n\n\n\n0\n\n\nSolid D\n\n\n—\n\n\n\n\n4\n\n\nLean D\n\n\n\n메인R\n\n\n노스캐롤라이나R\n\n\n조지아D\n\n\n뉴햄프셔D\n\n\n\n\n\n1\n\n\nToss-up\n\n\n\n미시간D\n\n\n\n\n\n3\n\n\nLean R\n\n\n\n오하이오R\n\n\n알래스카R\n\n\n텍사스R\n\n\n\n\n\n0\n\n\nSolid R\n\n\n—\n\n\n\n\n현 민주 3석 조지아 · 미시간 · 뉴햄프셔   현 공화 5석 메인 · 노스캐롤라이나 · 오하이오 · 알래스카 · 텍사스. 이 중 공화 보유이면서 민주 우세(Lean D)인 메인·노스캐롤라이나가 민주당 탈환 1순위 — 각 타일의 D/R 배지가 현 보유 정당입니다.\n\n전망 대시보드 — 주별 확률·시나리오 → · 경합주 표 · 시나리오 — 소수·50:50·다수",
     "crumbs": [
       "홈",
       "시작",
@@ -947,11 +947,11 @@
     ]
   },
   {
-    "objectID": "index.html#상원",
-    "href": "index.html#상원",
+    "objectID": "index.html#house",
+    "href": "index.html#house",
     "title": "미국 중간선거 한국어 브리핑",
-    "section": "상원",
-    "text": "상원\n\n타일 = 전망 우세 등급, 주명 옆 배지 = 현 보유 정당. 탈환 표적(현 R)과 수성(현 D)을 나눠 보세요.\n\n\n\n\n0\n\n\nSolid D\n\n\n—\n\n\n\n\n4\n\n\nLean D\n\n\n\n메인R\n\n\n노스캐롤라이나R\n\n\n조지아D\n\n\n뉴햄프셔D\n\n\n\n\n\n1\n\n\nToss-up\n\n\n\n미시간D\n\n\n\n\n\n3\n\n\nLean R\n\n\n\n오하이오R\n\n\n알래스카R\n\n\n텍사스R\n\n\n\n\n\n0\n\n\nSolid R\n\n\n—\n\n\n\n\n현 민주 3석 조지아 · 미시간 · 뉴햄프셔   현 공화 5석 메인 · 노스캐롤라이나 · 오하이오 · 알래스카 · 텍사스. 이 중 공화 보유이면서 민주 우세(Lean D)인 메인·노스캐롤라이나가 민주당 탈환 1순위 — 각 타일의 D/R 배지가 현 보유 정당입니다.\n\n현재 R 53 / D 47, 민주 다수까지 순 +4석. 등급은 자체 모델 추정치로 시장·집계기관과 잣대가 다릅니다. 전망 대시보드 — 주별 확률·시나리오 →",
+    "section": "3. 하원",
+    "text": "3. 하원\n추적 경합구 18개 — 민주 보유 10 · 공화 보유 8. 6월 초 Cook 토스업을 출발선으로 상시 추적하며, 일부는 Lean·Likely로 이동했습니다. 지역구 여론조사가 희소해 하원 전망은 제너릭 밸럿 + 등급 변동 + 자금 흐름이 주 신호입니다.\n2026 하원의 최대 구조 변수는 중간 재획정(TX·CA·NC·OH 등 신지도)으로, 2024년 결과 기반 직관이 다수 지역구에서 무효가 됐습니다.\n경합구 트래커 — 토스업·재획정 → · 재획정 — 왜·어디서 (설명)",
     "crumbs": [
       "홈",
       "시작",
@@ -959,11 +959,11 @@
     ]
   },
   {
-    "objectID": "index.html#전국-환경",
-    "href": "index.html#전국-환경",
+    "objectID": "index.html#korea",
+    "href": "index.html#korea",
     "title": "미국 중간선거 한국어 브리핑",
-    "section": "전국 환경",
-    "text": "전국 환경\n트럼프 순지지 -18.7, 일반투표 D+7 — 거시 환경은 민주 우위가 이어지나 경제 심리·체감물가는 약세 혼조입니다. 양수=민주 우위 기준의 누적 추세:\n\n\n\n트럼프 순지지도 (Silver Bulletin 평균)\n\n\n\n\n\n\n일반투표 — 민주 마진 (D+)\n\n\n\n\n\n\n\n\n\n\n지지율·제너릭 밸럿·경제 지표 집계표와 외교 동향은 → 전국 환경 · 전체 데이터 트래커. (결측 구간은 추정으로 채우지 않으며, 외부 집계 링크를 병기합니다.)",
+    "section": "4. Korea Watch — 한국 관련",
+    "text": "4. Korea Watch — 한국 관련\n이 사이트의 차별점입니다 — 선거와 한국 정책의 연결을 정면에 둡니다.\n\n\n\n🔋 배터리·EV\n\n\n조지아·미시간·오하이오의 LG·SK·삼성 배터리 거점이 선거 경제 서사의 중심. MI-07은 한국 연결이 확인된 유일 토스업. 하원 →\n\n\n\n\n🛡 북한·안보\n\n\n행정부가 NSS에서 북핵 비핵화 목표 문구 삭제 — 의회·UN 제재 트랙과 충돌. OH 후보 Brown은 KORUS 반대 이력.\n\n\n\n\n⚖ 통상·관세\n\n\n트럼프, 10월 한미 무역합의 미비준 시 25% 관세 재인상 위협. 대(對)한 통상 마찰이 투자·물가에 직결.\n\n\n\nKorea Watch 전체 동향 DB →",
     "crumbs": [
       "홈",
       "시작",
@@ -971,23 +971,23 @@
     ]
   },
   {
-    "objectID": "index.html#최신-브리핑",
-    "href": "index.html#최신-브리핑",
-    "title": "미국 중간선거 한국어 브리핑",
-    "section": "최신 브리핑",
-    "text": "최신 브리핑\n주간 호는 경합주별 브리핑 카드 + 상세 프로즈의 2층 구조입니다. 최근 6편:\n\n\n\n\n\n13주차 · 06/15~06/21\n\n\n조지아 공화당 상원 결선(6/16) — Mike Collins가 Derek Dooley를 꺾고 본선행. 트럼프 막판 지지가 갈랐다. 본선은 Ossoff(D) vs Collins(R) 확정.\n\n\n\n\n\n2026.06.15\n\n\n\n\n\n\n\n12주차 · 06/08~06/14\n\n\n메인 민주당 경선일(6/9). 굴 양식업자·재향군인 Graham Platner가 성적 문자 메시지 논란에도 압도적 선두(5월 말 경선 유력 투표자 약 76%)로\n\n\n\n\n\n2026.06.08\n\n\n\n\n\n\n\n11주차 · 06/01~06/07\n\n\n텍사스 등급 하향 확정. Ken Paxton(R)이 5/26 결선에서 현역 John Cornyn을 63.8%로 격파한 여파로, 이번 주 Cook Political\n\n\n\n\n\n2026.06.01\n\n\n\n\n\n\n\n10주차 · 05/25~05/31\n\n\n텍사스 대이변 — Paxton, 현역 Cornyn 격파(5/26). GOP 결선투표에서 Ken Paxton(주 법무장관)이 4선 현역 John Cornyn을 63\n\n\n\n\n\n2026.05.25\n\n\n\n\n\n\n\n9주차 · 05/18~05/24\n\n\n조지아 공화당 경선 실시(5/19) → 결선 확정. 과반 득표자 없이 Mike Collins와 Derek Dooley가 6월 16일 결선투표 진출, Buddy C\n\n\n\n\n\n2026.05.18\n\n\n\n\n\n\n\n8주차 · 05/11~05/17\n\n\n조지아 공화당 경선 D-4로 임박(5/19). Buddy Carter가 Mike Collins를 겨냥한 첫 공격 광고(약 200만 달러)를 집행하며 혼전 가속.\n\n\n\n\n\n2026.05.11\n\n\n\n\n\n일치 없음\n\n브리핑 전체 아카이브 →",
-    "crumbs": [
-      "홈",
-      "시작",
-      "홈 — 컨트롤 패널"
-    ]
-  },
-  {
-    "objectID": "index.html#알려진-한계",
-    "href": "index.html#알려진-한계",
+    "objectID": "index.html#caveats",
+    "href": "index.html#caveats",
     "title": "미국 중간선거 한국어 브리핑",
     "section": "알려진 한계",
     "text": "알려진 한계\n\n투명성 차원에서 확인 중이거나 출처가 약한 항목을 공개합니다(추정으로 빈 칸을 채우지 않는 것이 원칙).\n\nBarrett(MI-07) Korea Caucus 멤버 — 1차 출처 미검증, 재확인 중\n메인 6/9 경선 Platner 77.7% — 최종 인증 결과 독립 검증 전\nFEC 일부 수치 보도 기반(원장과 미세 차이 가능) · NC 등급(Lean D)은 주별 카드 반영, 모델 대시보드 확률엔 미반영",
+    "crumbs": [
+      "홈",
+      "시작",
+      "홈 — 컨트롤 패널"
+    ]
+  },
+  {
+    "objectID": "index.html#archive",
+    "href": "index.html#archive",
+    "title": "미국 중간선거 한국어 브리핑",
+    "section": "주간 브리핑 아카이브",
+    "text": "주간 브리핑 아카이브\n주간 호는 한 호에 전국 환경 → 상원 → 하원 → Korea Watch 4개 영역을 모두 담는 통합 리포트입니다(경합주별 브리핑 카드 + 상세 프로즈의 2층 구조). 최근 6편:\n\n\n\n\n\n13주차 · 06/15~06/21\n\n\n조지아 공화당 상원 결선(6/16) — Mike Collins가 Derek Dooley를 꺾고 본선행. 트럼프 막판 지지가 갈랐다. 본선은 Ossoff(D) vs Collins(R) 확정.\n\n\n\n\n\n2026.06.15\n\n\n\n\n\n\n\n12주차 · 06/08~06/14\n\n\n메인 민주당 경선일(6/9). 굴 양식업자·재향군인 Graham Platner가 성적 문자 메시지 논란에도 압도적 선두(5월 말 경선 유력 투표자 약 76%)로\n\n\n\n\n\n2026.06.08\n\n\n\n\n\n\n\n11주차 · 06/01~06/07\n\n\n텍사스 등급 하향 확정. Ken Paxton(R)이 5/26 결선에서 현역 John Cornyn을 63.8%로 격파한 여파로, 이번 주 Cook Political\n\n\n\n\n\n2026.06.01\n\n\n\n\n\n\n\n10주차 · 05/25~05/31\n\n\n텍사스 대이변 — Paxton, 현역 Cornyn 격파(5/26). GOP 결선투표에서 Ken Paxton(주 법무장관)이 4선 현역 John Cornyn을 63\n\n\n\n\n\n2026.05.25\n\n\n\n\n\n\n\n9주차 · 05/18~05/24\n\n\n조지아 공화당 경선 실시(5/19) → 결선 확정. 과반 득표자 없이 Mike Collins와 Derek Dooley가 6월 16일 결선투표 진출, Buddy C\n\n\n\n\n\n2026.05.18\n\n\n\n\n\n\n\n8주차 · 05/11~05/17\n\n\n조지아 공화당 경선 D-4로 임박(5/19). Buddy Carter가 Mike Collins를 겨냥한 첫 공격 광고(약 200만 달러)를 집행하며 혼전 가속.\n\n\n\n\n\n2026.05.11\n\n\n\n\n\n일치 없음\n\n브리핑 전체 아카이브 →",
     "crumbs": [
       "홈",
       "시작",
@@ -1083,7 +1083,7 @@
     "href": "archive.html",
     "title": "주간 리포트 아카이브",
     "section": "",
-    "text": "매주 월요일 기준으로 발행됩니다. 각 호는 발행 시점의 스냅샷이며, 최신 수치는 트래커와 전망 대시보드를 참조하세요.\n\n\n   \n    \n    \n      정렬\n      디폴트\n      \n        발행일 - 날짜(오름차순)\n      \n      \n        발행일 - 날짜(내림차순)\n      \n      \n        호\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n발행일\n\n\n\n호\n\n\n\n핵심 내용\n\n\n\n\n\n\n\n\n2026.06.15\n\n\n13주차 · 06/15~06/21\n\n\n조지아 공화당 상원 결선(6/16) — Mike Collins가 Derek Dooley를 꺾고 본선행. 트럼프 막판 지지가 갈랐다. 본선은 Ossoff(D) vs Collins(R) 확정.\n\n\n\n\n\n\n2026.06.08\n\n\n12주차 · 06/08~06/14\n\n\n메인 민주당 경선일(6/9). 굴 양식업자·재향군인 Graham Platner가 성적 문자 메시지 논란에도 압도적 선두(5월 말 경선 유력 투표자 약 76%)로\n\n\n\n\n\n\n2026.06.01\n\n\n11주차 · 06/01~06/07\n\n\n텍사스 등급 하향 확정. Ken Paxton(R)이 5/26 결선에서 현역 John Cornyn을 63.8%로 격파한 여파로, 이번 주 Cook Political\n\n\n\n\n\n\n2026.05.25\n\n\n10주차 · 05/25~05/31\n\n\n텍사스 대이변 — Paxton, 현역 Cornyn 격파(5/26). GOP 결선투표에서 Ken Paxton(주 법무장관)이 4선 현역 John Cornyn을 63\n\n\n\n\n\n\n2026.05.18\n\n\n9주차 · 05/18~05/24\n\n\n조지아 공화당 경선 실시(5/19) → 결선 확정. 과반 득표자 없이 Mike Collins와 Derek Dooley가 6월 16일 결선투표 진출, Buddy C\n\n\n\n\n\n\n2026.05.11\n\n\n8주차 · 05/11~05/17\n\n\n조지아 공화당 경선 D-4로 임박(5/19). Buddy Carter가 Mike Collins를 겨냥한 첫 공격 광고(약 200만 달러)를 집행하며 혼전 가속.\n\n\n\n\n\n\n2026.05.04\n\n\n7주차 · 05/04~05/10\n\n\n오하이오 본선 대진 확정(5/5 경선). Sherrod Brown이 민주당 후보로 확정(Husted는 무경쟁) — 양자 대결 성립. 여론조사상 사실상 동률(에머슨\n\n\n\n\n\n\n2026.04.27\n\n\n6주차 · 04/27~05/03\n\n\n메인 민주당 단일화 완성(4/30). 재닛 Mills 주지사가 자금 부족을 이유로 경선 중단을 선언, Graham Platner의 독주 체제 확립. 경선 여론조사\n\n\n\n\n\n\n2026.04.20\n\n\n5주차 · 04/20~04/26\n\n\n트럼프 지지율이 2기 최저점을 주중 거듭 경신. 주 초 NBC/Decision Desk 37%(비지지 63%)에서, 주 중반 AP-NORC 33%까지 떨어진 수치\n\n\n\n\n\n\n2026.04.13\n\n\n4주차 · 04/13~04/19\n\n\nCook Political Report 등급 변동(4/13). 조지아·노스캐롤라이나를 Toss-up → Lean Democrat으로, 오하이오를 Lean R →\n\n\n\n\n\n\n2026.04.06\n\n\n3주차 · 04/06~04/12\n\n\n트럼프 지지율, 2기 임기 최초로 40% 아래 하락. 주 초 Silver Bulletin 순지지 −16.9, 주 말 RCP 평균 41.4% 지지/56.1% 반대(\n\n\n\n\n\n\n2026.03.30\n\n\n2주차 · 03/30~04/05\n\n\n트럼프 지지율이 2기 최저치를 거듭 경신. Silver Bulletin 순지지도가 약 −16.7로 2주 전(−13.9)에서 급락했고, 주중 일부 단일 조사는 지지\n\n\n\n\n\n\n2026.03.23\n\n\n1주차 · 03/23~03/29\n\n\n트럼프 지지율 2기 사상 최저. Nate Silver 종합 순지지도 −16.7(3/26)로 2기 최저. Reuters/Ipsos 지지율은 36%로 전주(40%)\n\n\n\n\n\n\n일치 없음",
+    "text": "매주 월요일 기준으로 발행됩니다. 각 호는 ① 전국 환경 · ② 상원 · ③ 하원 · ④ Korea Watch 네 영역을 한 호에 담는 통합 리포트이며, 발행 시점의 스냅샷입니다. 최신 수치는 트래커와 전망 대시보드를 참조하세요.\n\n\n   \n    \n    \n      정렬\n      디폴트\n      \n        발행일 - 날짜(오름차순)\n      \n      \n        발행일 - 날짜(내림차순)\n      \n      \n        호\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n발행일\n\n\n\n호\n\n\n\n핵심 내용\n\n\n\n\n\n\n\n\n2026.06.15\n\n\n13주차 · 06/15~06/21\n\n\n조지아 공화당 상원 결선(6/16) — Mike Collins가 Derek Dooley를 꺾고 본선행. 트럼프 막판 지지가 갈랐다. 본선은 Ossoff(D) vs Collins(R) 확정.\n\n\n\n\n\n\n2026.06.08\n\n\n12주차 · 06/08~06/14\n\n\n메인 민주당 경선일(6/9). 굴 양식업자·재향군인 Graham Platner가 성적 문자 메시지 논란에도 압도적 선두(5월 말 경선 유력 투표자 약 76%)로\n\n\n\n\n\n\n2026.06.01\n\n\n11주차 · 06/01~06/07\n\n\n텍사스 등급 하향 확정. Ken Paxton(R)이 5/26 결선에서 현역 John Cornyn을 63.8%로 격파한 여파로, 이번 주 Cook Political\n\n\n\n\n\n\n2026.05.25\n\n\n10주차 · 05/25~05/31\n\n\n텍사스 대이변 — Paxton, 현역 Cornyn 격파(5/26). GOP 결선투표에서 Ken Paxton(주 법무장관)이 4선 현역 John Cornyn을 63\n\n\n\n\n\n\n2026.05.18\n\n\n9주차 · 05/18~05/24\n\n\n조지아 공화당 경선 실시(5/19) → 결선 확정. 과반 득표자 없이 Mike Collins와 Derek Dooley가 6월 16일 결선투표 진출, Buddy C\n\n\n\n\n\n\n2026.05.11\n\n\n8주차 · 05/11~05/17\n\n\n조지아 공화당 경선 D-4로 임박(5/19). Buddy Carter가 Mike Collins를 겨냥한 첫 공격 광고(약 200만 달러)를 집행하며 혼전 가속.\n\n\n\n\n\n\n2026.05.04\n\n\n7주차 · 05/04~05/10\n\n\n오하이오 본선 대진 확정(5/5 경선). Sherrod Brown이 민주당 후보로 확정(Husted는 무경쟁) — 양자 대결 성립. 여론조사상 사실상 동률(에머슨\n\n\n\n\n\n\n2026.04.27\n\n\n6주차 · 04/27~05/03\n\n\n메인 민주당 단일화 완성(4/30). 재닛 Mills 주지사가 자금 부족을 이유로 경선 중단을 선언, Graham Platner의 독주 체제 확립. 경선 여론조사\n\n\n\n\n\n\n2026.04.20\n\n\n5주차 · 04/20~04/26\n\n\n트럼프 지지율이 2기 최저점을 주중 거듭 경신. 주 초 NBC/Decision Desk 37%(비지지 63%)에서, 주 중반 AP-NORC 33%까지 떨어진 수치\n\n\n\n\n\n\n2026.04.13\n\n\n4주차 · 04/13~04/19\n\n\nCook Political Report 등급 변동(4/13). 조지아·노스캐롤라이나를 Toss-up → Lean Democrat으로, 오하이오를 Lean R →\n\n\n\n\n\n\n2026.04.06\n\n\n3주차 · 04/06~04/12\n\n\n트럼프 지지율, 2기 임기 최초로 40% 아래 하락. 주 초 Silver Bulletin 순지지 −16.9, 주 말 RCP 평균 41.4% 지지/56.1% 반대(\n\n\n\n\n\n\n2026.03.30\n\n\n2주차 · 03/30~04/05\n\n\n트럼프 지지율이 2기 최저치를 거듭 경신. Silver Bulletin 순지지도가 약 −16.7로 2주 전(−13.9)에서 급락했고, 주중 일부 단일 조사는 지지\n\n\n\n\n\n\n2026.03.23\n\n\n1주차 · 03/23~03/29\n\n\n트럼프 지지율 2기 사상 최저. Nate Silver 종합 순지지도 −16.7(3/26)로 2기 최저. Reuters/Ipsos 지지율은 36%로 전주(40%)\n\n\n\n\n\n\n일치 없음",
     "crumbs": [
       "홈",
       "시작",
