@@ -473,7 +473,21 @@ house_cook_bar_html <- function() {
 gt_house_races <- function() {
   d <- .load_json("house_races")
   r <- d$races
-  tibble(
+  # Cook 등급 정규화 → 스펙트럼 순서·색(270towin 팔레트와 동일)
+  norm_rating <- function(x) {
+    x <- gsub("Leans", "Lean", x)
+    x <- gsub("Toss[ -]?Up", "Toss-up", x, ignore.case = TRUE)
+    trimws(x)
+  }
+  spec <- c("Solid D" = 1, "Likely D" = 2, "Lean D" = 3, "Toss-up" = 4,
+            "Lean R" = 5, "Likely R" = 6, "Solid R" = 7)
+  rcol <- c("Solid D" = "#949BB3", "Likely D" = "#577CCC", "Lean D" = "#8AAFFF",
+            "Toss-up" = "#C9C09B", "Lean R" = "#FF8B98", "Likely R" = "#FF5865",
+            "Solid R" = "#CF8980")
+  ck  <- norm_rating(r$rating_cook)
+  ord <- ifelse(ck %in% names(spec), spec[ck], 99L)
+  tib <- tibble(
+    .ck = ck, .ord = as.integer(ord),
     지역구 = r$district,
     `현역` = r$incumbent,
     보유 = ifelse(r$party == "D", "민주", "공화"),
@@ -483,13 +497,23 @@ gt_house_races <- function() {
     `2024 마진` = ifelse(is.na(r$margin_2024), "【수집】", .fmt_margin(r$margin_2024)),
     비고 = ifelse(is.na(r$note), "—", r$note)
   ) |>
-    arrange(보유, 지역구) |>
-    gt(groupname_col = "보유") |>
+    arrange(.ord, 지역구)
+  g <- tib |>
+    gt() |>
+    cols_hide(c(".ck", ".ord")) |>
     tab_header(
-      title = "하원 경합구 트래커 — Cook 토스업",
+      title = "하원 경합구 트래커 — Lean D → Toss-up → Lean R 순",
       subtitle = paste0("기준 ", d$as_of, " · ", d$cook_outlook, " · ", d$source_label)
     ) |>
     .tbl_opts()
+  # 등급(Cook) 셀을 등급 색으로 채움 (Lean·Likely 등 밝은 색이라 본문 텍스트 유지)
+  for (rt in names(rcol)) {
+    rows <- which(tib$.ck == rt)
+    if (length(rows))
+      g <- g |> tab_style(style = cell_fill(color = rcol[[rt]]),
+                          locations = cells_body(columns = "등급(Cook)", rows = rows))
+  }
+  g
 }
 
 # 2.1b 전국 경제 지표 ---------------------------------------------------------
