@@ -1,6 +1,6 @@
 ---
 title: "미국 중간선거 한국어 브리핑"
-subtitle: "2026 중간선거 — 데이터·해석·한국 함의 (전문 독자용 주간 상황판)"
+subtitle: "2026 중간선거 — 데이터·해석·한국 함의 (전문 독자용 상황판)"
 listing:
   id: issues
   contents: "issues/*.qmd"
@@ -26,7 +26,7 @@ latest_slug <- sub("\\.qmd$", "", tail(iss, 1))
 latest_lab  <- sub("^2026-", "", latest_slug)
 ```
 
-미국 선거 속보가 아니라, 한국 독자를 위한 **해석 · 여론조사 리터러시 · 한국 정책 함의** 브리핑입니다. 아래는 이번 주를 **30초에 읽는 상황판** — 더 깊이 보려면 각 링크로.
+미국 선거 속보가 아니라, 한국 독자를 위한 **해석 · 여론조사 리터러시 · 한국 정책 함의** 브리핑입니다. 이 홈은 **① 전국 환경 · ② 상원 · ③ 하원 · ④ Korea Watch** 네 영역을 30초에 훑는 상황판 — 더 깊이 보려면 각 섹션의 링크로.
 
 ::: {.situ-meta}
 모델 기준 `r k$as_of` · 트럼프 지지율 ~`r td$as_of` · 현재 의석 `r k$balance`
@@ -38,96 +38,9 @@ latest_lab  <- sub("^2026-", "", latest_slug)
 cat(home_kpis())
 ```
 
-## 이번 주
+## 1. 전국 환경 {#national}
 
-::: {.ccards}
-
-::: {.ccard .acc-d}
-::: {.cc-title}
-조지아 본선 확정
-:::
-::: {.cc-sum}
-6/16 공화 결선서 Collins 55.5% 승리 — 본선은 현역 Ossoff(D) vs Collins(R) 양자 구도로 확정. 민주 최우선 방어석.
-:::
-[조지아 State Focus →](states/ga.qmd){.cc-link}
-:::
-
-::: {.ccard .acc-r}
-::: {.cc-title}
-메인 본선 확정
-:::
-::: {.cc-sum}
-민주 경선서 Platner 압승, 6선 Collins(R)와 맞대결 확정 — 민주 최우선 탈환 표적.
-:::
-[메인 State Focus →](states/me.qmd){.cc-link}
-:::
-
-::: {.ccard .acc-r}
-::: {.cc-title}
-노스캐롤라이나 이동
-:::
-::: {.cc-sum}
-Cook이 Toss-up→Lean D 하향(6/11), Cooper(D) 우세 — 픽업 가능성 상승.
-:::
-[NC State Focus →](states/nc.qmd){.cc-link}
-:::
-
-:::
-
-## 한국 함의
-
-이 사이트의 차별점입니다 — 선거와 한국 정책의 연결을 위에 둡니다.
-
-::: {.kwatch}
-
-::: {.kw-item}
-::: {.kw-theme}
-🔋 배터리·EV
-:::
-::: {.kw-body}
-조지아·미시간·오하이오의 LG·SK·삼성 배터리 거점이 선거 경제 서사의 중심. MI-07은 한국 연결이 확인된 유일 토스업. [하원 →](house.qmd)
-:::
-:::
-
-::: {.kw-item}
-::: {.kw-theme}
-🛡 북한·안보
-:::
-::: {.kw-body}
-행정부가 NSS에서 북핵 비핵화 목표 문구 삭제 — 의회·UN 제재 트랙과 충돌. OH 후보 Brown은 KORUS 반대 이력. [Korea Watch →](korea-watch.qmd)
-:::
-:::
-
-::: {.kw-item}
-::: {.kw-theme}
-⚖ 통상·관세
-:::
-::: {.kw-body}
-트럼프, 10월 한미 무역합의 미비준 시 25% 관세 재인상 위협. 대(對)한 통상 마찰이 투자·물가에 직결. [Korea Watch →](korea-watch.qmd)
-:::
-:::
-
-:::
-
-[Korea Watch 전체 동향 DB →](korea-watch.qmd)
-
-## 상원
-
-::: {.lookfor}
-타일 = 전망 우세 등급, 주명 옆 배지 = 현 보유 정당. 탈환 표적(현 R)과 수성(현 D)을 나눠 보세요.
-:::
-
-```{r}
-#| output: asis
-cat(rating_tiles_html())
-cat(holder_note_html())
-```
-
-현재 **`r k$balance`**, 민주 다수까지 **순 +`r k$needed`석**. 등급은 자체 모델 추정치로 시장·집계기관과 잣대가 다릅니다. [**전망 대시보드 — 주별 확률·시나리오 →**](dashboard.qmd)
-
-## 전국 환경
-
-트럼프 순지지 **`r sprintf("%+.1f", trump_now)`**, 일반투표 **`r .fmt_margin(gen_now)`** — 거시 환경은 민주 우위가 이어지나 경제 심리·체감물가는 약세 혼조입니다. **양수=민주 우위** 기준의 누적 추세:
+트럼프 순지지 **`r sprintf("%+.1f", trump_now)`**, 일반투표 **`r .fmt_margin(gen_now)`** — 거시 환경은 민주 우위가 이어지나 경제 심리·체감물가는 약세 혼조입니다. **양수 = 민주 우위** 기준의 누적 추세:
 
 ::: {#trends-root}
 
@@ -151,18 +64,79 @@ cat(holder_note_html())
 
 <script src="assets/trends.js"></script>
 
-지지율·제너릭 밸럿·경제 지표 **집계표**와 외교 동향은 → [**전국 환경**](national.qmd) · [**전체 데이터 트래커**](trackers.qmd). (결측 구간은 추정으로 채우지 않으며, 외부 집계 링크를 병기합니다.)
+지지율·제너릭 밸럿·경제 지표 **집계표**와 외교 동향은 → [**전국 환경**](national.qmd) · [전체 데이터 트래커](trackers.qmd). (결측 구간은 추정으로 채우지 않으며, 외부 집계 링크를 병기합니다.)
 
-## 최신 브리핑
+## 2. 상원 {#senate}
 
-주간 호는 경합주별 **브리핑 카드 + 상세 프로즈**의 2층 구조입니다. 최근 6편:
+현재 **`r k$balance`**, 민주 다수까지 **순 +`r k$needed`석**. 타일 = 전망 우세 등급, 주명 옆 배지 = 현 보유 정당 — 탈환 표적(현 R)과 수성(현 D)을 나눠 보세요.
 
-::: {#issues}
+::: {.lookfor}
+등급은 자체 모델 추정치로 시장·집계기관과 잣대가 다릅니다.
 :::
 
-[브리핑 전체 아카이브 →](archive.qmd)
+```{r}
+#| output: asis
+cat(rating_tiles_html())
+cat(holder_note_html())
+```
 
-## 알려진 한계
+[**전망 대시보드 — 주별 확률·시나리오 →**](dashboard.qmd) · [경합주 표](senate.qmd) · [시나리오 — 소수·50:50·다수](scenarios.qmd)
+
+## 3. 하원 {#house}
+
+```{r}
+#| output: asis
+hr <- jsonlite::read_json(file.path("data", "house_races.json"), simplifyVector = TRUE)
+ndh <- sum(hr$races$party == "D"); nrh <- sum(hr$races$party == "R")
+cat(sprintf(
+  paste0("추적 경합구 **%d개** — 민주 보유 **%d** · 공화 보유 **%d**. ",
+         "6월 초 Cook 토스업을 출발선으로 상시 추적하며, 일부는 Lean·Likely로 이동했습니다. ",
+         "지역구 여론조사가 희소해 하원 전망은 **제너릭 밸럿 + 등급 변동 + 자금 흐름**이 주 신호입니다."),
+  nrow(hr$races), ndh, nrh))
+```
+
+2026 하원의 최대 구조 변수는 **중간 재획정**(TX·CA·NC·OH 등 신지도)으로, 2024년 결과 기반 직관이 다수 지역구에서 무효가 됐습니다.
+
+[**경합구 트래커 — 토스업·재획정 →**](house.qmd) · [재획정 — 왜·어디서 (설명)](redistricting.qmd)
+
+## 4. Korea Watch — 한국 관련 {#korea}
+
+이 사이트의 차별점입니다 — 선거와 한국 정책의 연결을 정면에 둡니다.
+
+::: {.kwatch}
+
+::: {.kw-item}
+::: {.kw-theme}
+🔋 배터리·EV
+:::
+::: {.kw-body}
+조지아·미시간·오하이오의 LG·SK·삼성 배터리 거점이 선거 경제 서사의 중심. MI-07은 한국 연결이 확인된 유일 토스업. [하원 →](house.qmd)
+:::
+:::
+
+::: {.kw-item}
+::: {.kw-theme}
+🛡 북한·안보
+:::
+::: {.kw-body}
+행정부가 NSS에서 북핵 비핵화 목표 문구 삭제 — 의회·UN 제재 트랙과 충돌. OH 후보 Brown은 KORUS 반대 이력.
+:::
+:::
+
+::: {.kw-item}
+::: {.kw-theme}
+⚖ 통상·관세
+:::
+::: {.kw-body}
+트럼프, 10월 한미 무역합의 미비준 시 25% 관세 재인상 위협. 대(對)한 통상 마찰이 투자·물가에 직결.
+:::
+:::
+
+:::
+
+[**Korea Watch 전체 동향 DB →**](korea-watch.qmd)
+
+## 알려진 한계 {#caveats}
 
 ::: {.caveat}
 투명성 차원에서 **확인 중이거나 출처가 약한 항목**을 공개합니다(추정으로 빈 칸을 채우지 않는 것이 원칙).
@@ -171,3 +145,12 @@ cat(holder_note_html())
 - **메인 6/9 경선 Platner 77.7%** — 최종 인증 결과 독립 검증 전
 - **FEC 일부 수치** 보도 기반(원장과 미세 차이 가능) · **NC 등급(Lean D)**은 주별 카드 반영, 모델 [대시보드](dashboard.qmd) 확률엔 미반영
 :::
+
+## 주간 브리핑 아카이브 {#archive}
+
+주간 호는 한 호에 **전국 환경 → 상원 → 하원 → Korea Watch** 4개 영역을 모두 담는 통합 리포트입니다(경합주별 **브리핑 카드 + 상세 프로즈**의 2층 구조). 최근 6편:
+
+::: {#issues}
+:::
+
+[브리핑 전체 아카이브 →](archive.qmd)
