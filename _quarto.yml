@@ -48,8 +48,6 @@ website:
         contents:
           - text: "홈 — 컨트롤 패널"
             href: index.qmd
-          - text: "주간 브리핑 (아카이브)"
-            href: archive.qmd
       - section: "전국 환경"
         contents:
           - text: "지지율·경제·외교"
@@ -90,6 +88,10 @@ website:
             href: methodology.qmd
           - text: "소개"
             href: about.qmd
+      - section: "주간 브리핑"
+        contents:
+          - text: "아카이브 — 발행된 모든 호"
+            href: archive.qmd
   page-footer:
     center: "데이터 기준 시각은 각 표 상단에 표기됩니다. · 예측시장 가격은 확률의 근사일 뿐입니다."
 
