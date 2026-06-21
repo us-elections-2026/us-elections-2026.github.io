@@ -421,6 +421,31 @@ gt_polls_log <- function() {
     .tbl_opts()
 }
 
+# 2.0 Cook 하원 등급 토플라인 (수동 갱신, 하원 페이지 맨 위) ------------------
+# data/house_cook_ratings.json — 270towin Cook 페이지 수치를 사람이 주기적으로 옮김.
+gt_house_cook_ratings <- function() {
+  d <- .load_json("house_cook_ratings")
+  cg <- d$categories
+  dfav <- sum(cg$seats[cg$party == "D"])
+  rfav <- sum(cg$seats[cg$party == "R"])
+  toss <- sum(cg$seats[cg$party == "T"])
+  tibble(
+    등급 = cg$label,
+    진영 = ifelse(cg$party == "D", "민주 우세", ifelse(cg$party == "R", "공화 우세", "경합")),
+    의석수 = cg$seats
+  ) |>
+    gt() |>
+    tab_header(
+      title = "Cook Political Report — 2026 하원 등급",
+      subtitle = sprintf("기준일 %s · 민주 우세 %d · Toss-up %d · 공화 우세 %d (과반 %d)",
+                         d$as_of, dfav, toss, rfav, d$majority)
+    ) |>
+    tab_source_note(html(sprintf(
+      "출처: <a href='%s'>%s</a> · 등급은 확률이 아니며 270towin Cook 페이지 수치를 주기적으로 수동 반영합니다.",
+      d$source_url, d$source_label))) |>
+    .tbl_opts()
+}
+
 # 2.1 하원 경합구 트래커 ------------------------------------------------------
 # data/house_races.json — Cook 토스업 명단 중심. 빈 값은 — / 【수집】 렌더.
 gt_house_races <- function() {

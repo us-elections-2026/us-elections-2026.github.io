@@ -1,0 +1,16 @@
+{
+  "as_of": "2026-06-18",
+  "source_label": "Cook Political Report (270towin 집계)",
+  "source_url": "https://www.270towin.com/2026-house-election/index_show_table.php?map_title=cook-political-report-2026-house-ratings",
+  "majority": 218,
+  "note": "수동 갱신. 갱신 시 270towin Cook 페이지의 'Updated' 일자와 등급 카테고리 수치를 그대로 옮긴다. Likely·Leans·Toss-up은 270towin 범례에서 직접 인용, Solid는 토플라인(민주 우세 206·공화 우세 211)에서 Likely·Leans를 뺀 값으로 합계 435·과반 218에 정합한다(범례에 Solid 수치가 별도 표기되지 않음). 등급은 확률이 아니다.",
+  "categories": [
+    { "key": "solid_d",  "label": "Solid D",  "party": "D", "seats": 183 },
+    { "key": "likely_d", "label": "Likely D", "party": "D", "seats": 11 },
+    { "key": "lean_d",   "label": "Lean D",   "party": "D", "seats": 12 },
+    { "key": "tossup",   "label": "Toss-up",  "party": "T", "seats": 18 },
+    { "key": "lean_r",   "label": "Lean R",   "party": "R", "seats": 8 },
+    { "key": "likely_r", "label": "Likely R", "party": "R", "seats": 18 },
+    { "key": "solid_r",  "label": "Solid R",  "party": "R", "seats": 185 }
+  ]
+}

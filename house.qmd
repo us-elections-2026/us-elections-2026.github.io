@@ -9,6 +9,14 @@ source(file.path("R", "helpers.R"))
 hr <- jsonlite::read_json(file.path("data", "house_races.json"), simplifyVector = TRUE)
 ```
 
+## 전체 판세 — Cook 등급 {#cook}
+
+```{r}
+gt_house_cook_ratings()
+```
+
+> Cook Political Report의 2026 하원 등급 토플라인을 사이트 톤으로 정리한 표입니다. [270towin Cook 페이지](https://www.270towin.com/2026-house-election/index_show_table.php?map_title=cook-political-report-2026-house-ratings)의 'Updated' 일자·카테고리 수치를 주기적으로 **수동 반영**합니다(등급은 확률이 아님). 아래 트래커는 이 중 **토스업·Lean 개별 경합구**를 깊이 다룹니다.
+
 하원 435석 전체를 추적하지 않습니다. **6월 초 Cook 토스업이던 `r nrow(hr$races)`개구를 출발선으로 상시 추적**합니다 — 이후 일부는 Leans·Likely로 이동했으므로, 아래 표의 **Cook·Sabato 두 열에 현재 등급을 함께** 표기해 차이를 드러냅니다. Lean 등급 경합구는 주간 등급표에서만 관리하는 2단 구조입니다. 상원과 달리 지역구 단위 여론조사가 희소하므로, 하원 전망은 **제너릭 밸럿 + 등급 변동 + 자금 흐름**이 주된 신호입니다.
 
 > 등급(Toss Up/Lean)은 확률이 아닙니다. 등급 명단의 출처는 표 상단에 표기하며, 빈 칸은 추정으로 채우지 않습니다.

@@ -118,6 +118,19 @@ if (!is.null(d$races) && is.data.frame(d$races) && "margin_2024" %in% names(d$ra
     err("house_races.json", sprintf("margin_2024는 숫자 또는 null이어야 함 (현재 타입: %s)", class(m)[1]))
 }
 
+# Cook 하원 등급 토플라인(수동 갱신) — 카테고리 합계가 435·과반 미만인지 검증
+d <- load_json("house_cook_ratings.json", optional = TRUE)
+if (!is.null(d)) {
+  require_keys("house_cook_ratings.json", d, c("as_of", "majority", "categories"))
+  require_cols("house_cook_ratings.json", d$categories, c("label", "party", "seats"))
+  enum_ok("house_cook_ratings.json", d$categories, "party", c("D", "R", "T"))
+  if (!is.null(d$categories) && is.data.frame(d$categories) && "seats" %in% names(d$categories)) {
+    s <- suppressWarnings(as.numeric(d$categories$seats))
+    if (any(is.na(s)))            err("house_cook_ratings.json", "seats에 비숫자/결측 값 존재")
+    else if (sum(s) != 435)       err("house_cook_ratings.json", sprintf("seats 합계가 435가 아님 (현재 %d)", sum(s)))
+  }
+}
+
 # ---- 재획정 (redistricting 설명 페이지 데이터) -------------------------------
 d <- load_json("redistricting_states.json")
 require_keys("redistricting_states.json", d, c("as_of", "states"))
