@@ -29,12 +29,12 @@ website:
         text: 홈
       - href: archive.qmd
         text: 브리핑
+      - href: national.qmd
+        text: 전국 환경
       - href: senate.qmd
         text: 상원
       - href: house.qmd
         text: 하원
-      - href: national.qmd
-        text: 전국 환경
       - href: korea-watch.qmd
         text: Korea Watch
     right:
@@ -50,6 +50,10 @@ website:
             href: index.qmd
           - text: "주간 브리핑 (아카이브)"
             href: archive.qmd
+      - section: "전국 환경"
+        contents:
+          - text: "지지율·경제·외교"
+            href: national.qmd
       - section: "상원 Senate"
         contents:
           - text: "전망 대시보드 — 주별 확률"
@@ -74,10 +78,6 @@ website:
             href: house.qmd
           - text: "재획정 — 왜·어디서 (설명)"
             href: redistricting.qmd
-      - section: "전국 환경"
-        contents:
-          - text: "지지율·경제·외교"
-            href: national.qmd
       - section: "Korea Watch"
         contents:
           - text: "한국 정책 함의"
