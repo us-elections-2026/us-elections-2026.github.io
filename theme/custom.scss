@@ -318,3 +318,17 @@ main .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 /* 재획정 부호 규약 안내 — R 이동(빨강)·D 이동(파랑) 셀 */
 .shift-r { color: $rep-fg; font-weight: 700; }
 .shift-d { color: $dem-fg; font-weight: 700; }
+
+/* Cook 하원 등급 가로 막대 (색은 270towin 원본 팔레트, 헬퍼 인라인) */
+.cook-bar-wrap { margin: 10px 0 18px; }
+.cook-legend {
+  display: flex; flex-wrap: wrap; gap: 6px 14px;
+  margin: 6px 0 4px; font-size: 0.82rem; color: #3a3a3a;
+}
+.cook-leg { display: inline-flex; align-items: center; white-space: nowrap; }
+.cook-leg i {
+  width: 12px; height: 12px; border-radius: 2px;
+  display: inline-block; margin-right: 5px; flex: 0 0 auto;
+}
+.cook-leg b { margin-left: 4px; font-variant-numeric: tabular-nums; }
+.cook-src { font-size: 0.76rem; color: #6c757d; margin: 2px 0 0; }

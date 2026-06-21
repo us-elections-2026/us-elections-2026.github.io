@@ -421,29 +421,51 @@ gt_polls_log <- function() {
     .tbl_opts()
 }
 
-# 2.0 Cook 하원 등급 토플라인 (수동 갱신, 하원 페이지 맨 위) ------------------
+# 2.0 Cook 하원 등급 토플라인 — 가로 누적 막대 (수동 갱신, 하원 페이지 맨 위) ---
 # data/house_cook_ratings.json — 270towin Cook 페이지 수치를 사람이 주기적으로 옮김.
-gt_house_cook_ratings <- function() {
+# 색은 270towin 원본 팔레트(styles-responsive.css의 fill-d1/d2/d3/t/r1/r2/r3)에 맞춤.
+house_cook_bar_html <- function() {
   d <- .load_json("house_cook_ratings")
   cg <- d$categories
-  dfav <- sum(cg$seats[cg$party == "D"])
-  rfav <- sum(cg$seats[cg$party == "R"])
-  toss <- sum(cg$seats[cg$party == "T"])
-  tibble(
-    등급 = cg$label,
-    진영 = ifelse(cg$party == "D", "민주 우세", ifelse(cg$party == "R", "공화 우세", "경합")),
-    의석수 = cg$seats
-  ) |>
-    gt() |>
-    tab_header(
-      title = "Cook Political Report — 2026 하원 등급",
-      subtitle = sprintf("기준일 %s · 민주 우세 %d · Toss-up %d · 공화 우세 %d (과반 %d)",
-                         d$as_of, dfav, toss, rfav, d$majority)
-    ) |>
-    tab_source_note(html(sprintf(
-      "출처: <a href='%s'>%s</a> · 등급은 확률이 아니며 270towin Cook 페이지 수치를 주기적으로 수동 반영합니다.",
-      d$source_url, d$source_label))) |>
-    .tbl_opts()
+  pal <- c(solid_d = "#949BB3", likely_d = "#577CCC", lean_d = "#8AAFFF",
+           tossup = "#C9C09B", lean_r = "#FF8B98", likely_r = "#FF5865", solid_r = "#CF8980")
+  seats <- cg$seats; keys <- cg$key; labs <- cg$label
+  total <- sum(seats); maj <- d$majority
+  dfav <- sum(seats[cg$party == "D"]); rfav <- sum(seats[cg$party == "R"])
+  W <- 720; padx <- 10; barW <- W - 2 * padx; barY <- 34L; barH <- 34L
+  sc <- barW / total
+  x <- padx; rects <- character(0); inlab <- character(0)
+  for (i in seq_along(seats)) {
+    w <- seats[i] * sc; col <- pal[[keys[i]]]
+    rects <- c(rects, sprintf('<rect x="%.1f" y="%d" width="%.1f" height="%d" fill="%s"/>',
+                              x, barY, w, barH, col))
+    if (w >= 26) inlab <- c(inlab, sprintf(
+      '<text x="%.1f" y="%d" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">%d</text>',
+      x + w / 2, barY + barH / 2 + 5L, seats[i]))
+    x <- x + w
+  }
+  majx <- padx + maj * sc
+  marker <- sprintf(paste0(
+    '<line x1="%.1f" y1="%d" x2="%.1f" y2="%d" stroke="#212529" stroke-width="1.5" stroke-dasharray="3,2"/>',
+    '<text x="%.1f" y="%d" text-anchor="middle" font-size="11" fill="#212529">과반 %d</text>'),
+    majx, barY - 6L, majx, barY + barH + 6L, majx, barY - 11L, maj)
+  ends <- sprintf(paste0(
+    '<text x="%d" y="%d" text-anchor="start" font-size="12" font-weight="700" fill="#1971c2">민주 우세 %d</text>',
+    '<text x="%d" y="%d" text-anchor="end" font-size="12" font-weight="700" fill="#c92a2a">공화 우세 %d</text>'),
+    padx, barY - 11L, dfav, W - padx, barY - 11L, rfav)
+  svg <- sprintf(paste0(
+    '<svg viewBox="0 0 %d 84" width="100%%" style="height:auto;display:block;margin:6px 0;',
+    'font-family:\'IBM Plex Sans KR\',sans-serif;" role="img" ',
+    'aria-label="Cook 하원 등급 가로 막대 — 민주 우세 %d, Toss-up %d, 공화 우세 %d">%s%s%s%s</svg>'),
+    W, dfav, total - dfav - rfav, rfav, paste(rects, collapse = ""),
+    paste(inlab, collapse = ""), ends, marker)
+  legitems <- sprintf('<span class="cook-leg"><i style="background:%s"></i>%s <b>%d</b></span>',
+                      vapply(keys, function(k) pal[[k]], ""), labs, seats)
+  legend <- paste0('<div class="cook-legend">', paste(legitems, collapse = ""), '</div>')
+  src <- sprintf(paste0('<p class="cook-src">출처: <a href="%s">%s</a> · 기준일 %s · ',
+                        '등급은 확률이 아니며 270towin Cook 페이지 수치를 주기적으로 수동 반영합니다.</p>'),
+                 d$source_url, d$source_label, d$as_of)
+  paste0('<figure class="cook-bar-wrap">', svg, legend, src, '</figure>')
 }
 
 # 2.1 하원 경합구 트래커 ------------------------------------------------------

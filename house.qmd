@@ -12,7 +12,8 @@ hr <- jsonlite::read_json(file.path("data", "house_races.json"), simplifyVector 
 ## 전체 판세 — Cook 등급 {#cook}
 
 ```{r}
-gt_house_cook_ratings()
+#| output: asis
+cat(house_cook_bar_html())
 ```
 
 > Cook Political Report의 2026 하원 등급 토플라인을 사이트 톤으로 정리한 표입니다. [270towin Cook 페이지](https://www.270towin.com/2026-house-election/index_show_table.php?map_title=cook-political-report-2026-house-ratings)의 'Updated' 일자·카테고리 수치를 주기적으로 **수동 반영**합니다(등급은 확률이 아님). 아래 트래커는 이 중 **토스업·Lean 개별 경합구**를 깊이 다룹니다.
