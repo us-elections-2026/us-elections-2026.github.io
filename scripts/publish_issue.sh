@@ -21,10 +21,14 @@ cd "$REPO" || { echo "[publish] repo 접근 불가: $REPO"; exit 1; }
 br=$(git branch --show-current)
 [ "$br" = "main" ] || { echo "[publish] main 브랜치가 아님(현재 '$br') — 중단"; exit 1; }
 
+echo "[publish] 데이터 무결성 검증(validate_data.R)"
+Rscript scripts/validate_data.R || { echo "[publish] 데이터 검증 실패 — 발행 중단"; exit 1; }
+
 echo "[publish] 렌더 검증: $ISSUE"
 quarto render "$ISSUE" || { echo "[publish] 렌더 실패 — 발행 중단"; exit 1; }
 
-git add "$ISSUE"
+# 이슈 + 이번 주 갱신된 data/ 파일(전국 환경 등)을 함께 스테이징
+git add "$ISSUE" data/
 if git diff --cached --quiet; then
   echo "[publish] 커밋할 변경 없음 — 종료(이미 발행됨)"; exit 0
 fi
