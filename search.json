@@ -28,7 +28,7 @@
     "href": "trackers.html#generic",
     "title": "트래커",
     "section": "제너릭 밸럿",
-    "text": "제너릭 밸럿\n\n\n\n\n\n\n\n\n제너릭 밸럿 — 집계기관 평균\n\n\n기준 2026-06-07 · 양수는 민주 우위\n\n\n집계기관\n민주\n공화\n마진\n기준일\n모집단\n\n\n\n\nSilver Bulletin\n—\n—\nD+6.8\n2026-05-18\nLV 가중\n\n\nFiftyPlusOne\n49.3\n43.4\nD+5.9\n2026-06-06\n품질·최신성 가중\n\n\nRealClearPolling\n—\n—\nD+5\n2026-06-01\n단순평균 성격\n\n\nMorning Consult\n46\n42\nD+3\n2026-05-30\n등록유권자(RV)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n개별조사 스프레드 — 왜 평균만 봐야 하는가\n\n\n같은 시점, 같은 질문 — 그래도 이만큼 벌어진다\n\n\n조사기관\n민주\n공화\n마진\n모집단\n메모\n\n\n\n\nMarist (PBS/NPR)\n55\n41\nD+14\nRV\n상단 이상치 — 무당층 D+33\n\n\nEmerson\n44\n40\nD+4\n—\n하단 — 미결정 16%",
+    "text": "제너릭 밸럿\n\n\n\n\n\n\n\n\n제너릭 밸럿 — 집계기관 평균\n\n\n기준 2026-06-28 · 양수는 민주 우위\n\n\n집계기관\n민주\n공화\n마진\n기준일\n모집단\n\n\n\n\nUSPollingData\n48.1\n41.1\nD+7\n2026-06-25\n종합 (품질·최신성 가중)\n\n\nSilver Bulletin\n—\n—\nD+6.2\n2026-06-19\nLV 가중\n\n\nFiftyPlusOne\n48.9\n43.3\nD+6\n2026-06-12\n품질·최신성 가중\n\n\nRealClearPolling\n48.1\n42.3\nD+5.8\n2026-06-15\n단순평균 성격\n\n\nMorning Consult\n46\n42\nD+4\n2026-06-20\n등록유권자(RV)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n개별조사 스프레드 — 왜 평균만 봐야 하는가\n\n\n같은 시점, 같은 질문 — 그래도 이만큼 벌어진다\n\n\n조사기관\n민주\n공화\n마진\n모집단\n메모\n\n\n\n\nEmerson\n50.3\n39.5\nD+10.8\nLV\n상단 — 무당파 D+15·히스패닉 D+34\n\n\nMorning Consult\n46.0\n42.0\nD+4\nRV\n하단 — 집계기관 간 하우스 이펙트",
     "crumbs": [
       "홈",
       "데이터·방법론 (부록)",
@@ -40,7 +40,7 @@
     "href": "trackers.html#approval",
     "title": "트래커",
     "section": "대통령 지지율",
-    "text": "대통령 지지율\n\n\n\n\n\n\n\n\n트럼프 국정지지율\n\n\n기준 2026-06-07\n\n\n집계\n승인\n비승인\n순지지\n기준일\n비고\n\n\n\n\nSilver Bulletin\n—\n—\n-19.1\n2026-06-06\n동시점 바이든(-13.6)·트럼프 1기(-10.6)보다 낮음\n\n\nUSPollingData\n38.7\n58.3\n-19.6\n2026-06-01\nGallup·Ipsos·YouGov·Quinnipiac·MC 종합\n\n\nActiVote\n39.7\n55\n-15.3\n2026-06-01\n5점척도 변환",
+    "text": "대통령 지지율\n\n\n\n\n\n\n\n\n트럼프 국정지지율\n\n\n기준 2026-06-28\n\n\n집계\n승인\n비승인\n순지지\n기준일\n비고\n\n\n\n\nSilver Bulletin\n—\n—\n-18.9\n2026-06-25\n한 주 완전 횡보. 1기(~-9)·바이든(~-13.5) 동기보다 5~10p 낮음\n\n\nFiftyPlusOne\n39.4\n57.5\n-18.1\n2026-06-23\nSB와 일치\n\n\nUSPollingData\n38.6\n58\n-19.4\n2026-06-12\nGallup·Ipsos·YouGov·Quinnipiac·MC 종합",
     "crumbs": [
       "홈",
       "데이터·방법론 (부록)",
@@ -473,7 +473,7 @@
     "href": "national.html#approval",
     "title": "전국 환경",
     "section": "트럼프 국정지지율",
-    "text": "트럼프 국정지지율\n\n\n\n\n\n\n\n\n트럼프 국정지지율\n\n\n기준 2026-06-07\n\n\n집계\n승인\n비승인\n순지지\n기준일\n비고\n\n\n\n\nSilver Bulletin\n—\n—\n-19.1\n2026-06-06\n동시점 바이든(-13.6)·트럼프 1기(-10.6)보다 낮음\n\n\nUSPollingData\n38.7\n58.3\n-19.6\n2026-06-01\nGallup·Ipsos·YouGov·Quinnipiac·MC 종합\n\n\nActiVote\n39.7\n55\n-15.3\n2026-06-01\n5점척도 변환\n\n\n\n\n\n\n\n이슈별 지지율(경제·인플레이션·이민·외교)은 발표 주기가 불규칙해 주간 브리핑에서 추적합니다. 핵심 패턴: 경제·물가 순지지도가 종합 순지지도보다 일관되게 낮다 — 중간선거 역풍의 주동력.",
+    "text": "트럼프 국정지지율\n\n\n\n\n\n\n\n\n트럼프 국정지지율\n\n\n기준 2026-06-28\n\n\n집계\n승인\n비승인\n순지지\n기준일\n비고\n\n\n\n\nSilver Bulletin\n—\n—\n-18.9\n2026-06-25\n한 주 완전 횡보. 1기(~-9)·바이든(~-13.5) 동기보다 5~10p 낮음\n\n\nFiftyPlusOne\n39.4\n57.5\n-18.1\n2026-06-23\nSB와 일치\n\n\nUSPollingData\n38.6\n58\n-19.4\n2026-06-12\nGallup·Ipsos·YouGov·Quinnipiac·MC 종합\n\n\n\n\n\n\n\n이슈별 지지율(경제·인플레이션·이민·외교)은 발표 주기가 불규칙해 주간 브리핑에서 추적합니다. 핵심 패턴: 경제·물가 순지지도가 종합 순지지도보다 일관되게 낮다 — 중간선거 역풍의 주동력.",
     "crumbs": [
       "홈",
       "전국 환경",
@@ -485,7 +485,7 @@
     "href": "national.html#generic",
     "title": "전국 환경",
     "section": "제너릭 밸럿",
-    "text": "제너릭 밸럿\n\n\n\n\n\n\n\n\n제너릭 밸럿 — 집계기관 평균\n\n\n기준 2026-06-07 · 양수는 민주 우위\n\n\n집계기관\n민주\n공화\n마진\n기준일\n모집단\n\n\n\n\nSilver Bulletin\n—\n—\nD+6.8\n2026-05-18\nLV 가중\n\n\nFiftyPlusOne\n49.3\n43.4\nD+5.9\n2026-06-06\n품질·최신성 가중\n\n\nRealClearPolling\n—\n—\nD+5\n2026-06-01\n단순평균 성격\n\n\nMorning Consult\n46\n42\nD+3\n2026-05-30\n등록유권자(RV)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n개별조사 스프레드 — 왜 평균만 봐야 하는가\n\n\n같은 시점, 같은 질문 — 그래도 이만큼 벌어진다\n\n\n조사기관\n민주\n공화\n마진\n모집단\n메모\n\n\n\n\nMarist (PBS/NPR)\n55\n41\nD+14\nRV\n상단 이상치 — 무당층 D+33\n\n\nEmerson\n44\n40\nD+4\n—\n하단 — 미결정 16%",
+    "text": "제너릭 밸럿\n\n\n\n\n\n\n\n\n제너릭 밸럿 — 집계기관 평균\n\n\n기준 2026-06-28 · 양수는 민주 우위\n\n\n집계기관\n민주\n공화\n마진\n기준일\n모집단\n\n\n\n\nUSPollingData\n48.1\n41.1\nD+7\n2026-06-25\n종합 (품질·최신성 가중)\n\n\nSilver Bulletin\n—\n—\nD+6.2\n2026-06-19\nLV 가중\n\n\nFiftyPlusOne\n48.9\n43.3\nD+6\n2026-06-12\n품질·최신성 가중\n\n\nRealClearPolling\n48.1\n42.3\nD+5.8\n2026-06-15\n단순평균 성격\n\n\nMorning Consult\n46\n42\nD+4\n2026-06-20\n등록유권자(RV)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n개별조사 스프레드 — 왜 평균만 봐야 하는가\n\n\n같은 시점, 같은 질문 — 그래도 이만큼 벌어진다\n\n\n조사기관\n민주\n공화\n마진\n모집단\n메모\n\n\n\n\nEmerson\n50.3\n39.5\nD+10.8\nLV\n상단 — 무당파 D+15·히스패닉 D+34\n\n\nMorning Consult\n46.0\n42.0\nD+4\nRV\n하단 — 집계기관 간 하우스 이펙트",
     "crumbs": [
       "홈",
       "전국 환경",
@@ -497,7 +497,7 @@
     "href": "national.html#economy",
     "title": "전국 환경",
     "section": "경제 지표",
-    "text": "경제 지표\n선거 환경에 직결되는 지표만 추립니다. 체감 물가(장바구니·주거)가 거시 수치보다 투표에 가깝게 작동한다는 점에 유의.\n\n\n\n\n\n\n\n\n경제 지표 — 선거 환경 직결분\n\n\n기준 2026-06-12 · FRED (St. Louis Fed) — BLS·미시간대 원자료\n\n\n지표\n최신값\n기준월\n선거 함의\n\n\n\n\nCPI (전년 대비)\n4.2%\n2026-05\n물가는 현 사이클 최대 악재\n\n\n실업률\n4.3%\n2026-05\n고용 악화 시 현직당 부담 가중\n\n\n미시간대 소비자심리\n49.8\n2026-04\n체감 경기 — 지지율 선행 지표 성격\n\n\n\n\n\n\n\n\n월별 추이 (1월~)\n\n\n\nCPI — 전년 동월 대비\n\n\n\n\n\n\n실업률\n\n\n\n\n\n\n미시간대 소비자심리\n\n\n\n\n\n\n\n\n\n\n데이터는 scripts/fetch_national_econ.py(FRED API)가 주 1회 data/national_econ.json으로 갱신합니다(표=최신 스냅샷, 그래프=1월 이후 월별). 관세 관련 조치는 API가 없어 주간 브리핑(뉴스 기반)에서 추적합니다.",
+    "text": "경제 지표\n선거 환경에 직결되는 지표만 추립니다. 체감 물가(장바구니·주거)가 거시 수치보다 투표에 가깝게 작동한다는 점에 유의.\n\n\n\n\n\n\n\n\n경제 지표 — 선거 환경 직결분\n\n\n기준 2026-06-28 · FRED (St. Louis Fed) — BLS·미시간대 원자료\n\n\n지표\n최신값\n기준월\n선거 함의\n\n\n\n\nCPI (전년 대비)\n4.2%\n2026-05\n물가는 현 사이클 최대 악재\n\n\n실업률\n4.3%\n2026-05\n고용 악화 시 현직당 부담 가중\n\n\n미시간대 소비자심리\n48.9\n2026-06\n체감 경기 — 지지율 선행 지표 성격. 6월 예비치는 유가 진정으로 5월 사상 최저(44.8)서 반등하나 전년比 침체적\n\n\n\n\n\n\n\n\n월별 추이 (1월~)\n\n\n\nCPI — 전년 동월 대비\n\n\n\n\n\n\n실업률\n\n\n\n\n\n\n미시간대 소비자심리\n\n\n\n\n\n\n\n\n\n\n데이터는 scripts/fetch_national_econ.py(FRED API)가 주 1회 data/national_econ.json으로 갱신합니다(표=최신 스냅샷, 그래프=1월 이후 월별). 관세 관련 조치는 API가 없어 주간 브리핑(뉴스 기반)에서 추적합니다.",
     "crumbs": [
       "홈",
       "전국 환경",
@@ -1172,7 +1172,7 @@
     "href": "index.html#national",
     "title": "미국 중간선거 한국어 브리핑",
     "section": "1. 전국 환경",
-    "text": "1. 전국 환경\n트럼프 순지지 -18.7, 일반투표 D+7 — 거시 환경은 민주 우위가 이어지나 경제 심리·체감물가는 약세 혼조입니다. 양수 = 민주 우위 기준의 누적 추세:\n\n\n\n트럼프 순지지도 (Silver Bulletin 평균)\n\n\n\n\n\n\n일반투표 — 민주 마진 (D+)\n\n\n\n\n\n\n\n\n\n\n지지율·제너릭 밸럿·경제 지표 집계표와 외교 동향은 → 전국 환경 · 전체 데이터 트래커. (결측 구간은 추정으로 채우지 않으며, 외부 집계 링크를 병기합니다.)",
+    "text": "1. 전국 환경\n트럼프 순지지 -18.9, 일반투표 D+6.2 — 거시 환경은 민주 우위가 이어지나 경제 심리·체감물가는 약세 혼조입니다. 양수 = 민주 우위 기준의 누적 추세:\n\n\n\n트럼프 순지지도 (Silver Bulletin 평균)\n\n\n\n\n\n\n일반투표 — 민주 마진 (D+)\n\n\n\n\n\n\n\n\n\n\n지지율·제너릭 밸럿·경제 지표 집계표와 외교 동향은 → 전국 환경 · 전체 데이터 트래커. (결측 구간은 추정으로 채우지 않으며, 외부 집계 링크를 병기합니다.)",
     "crumbs": [
       "홈",
       "시작",
