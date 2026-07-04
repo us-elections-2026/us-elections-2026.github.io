@@ -1,0 +1,38 @@
+#!/bin/zsh
+# 주간호 자동 발행 헬퍼 — Cowork '월요일 로직'이 issue .qmd를 작성한 뒤 호출한다.
+#   렌더 검증 → 커밋 → 최신 main 동기화(rebase) → push(main) → GitHub Actions 자동 배포.
+#
+# 사용: scripts/publish_issue.sh issues/2026-07-06.qmd
+#
+# 설계 원칙:
+#   - 렌더가 깨지면 발행하지 않는다(깨진 페이지가 라이브로 나가지 않게).
+#   - main 브랜치에서만 동작(오발행 방지). 커밋은 자동 발행이므로 main 직접(→자동배포).
+#   - push 전 origin/main을 rebase로 흡수(병렬 커밋과 충돌 최소화). 충돌 시 중단하고 로컬 커밋 보존.
+set -u
+export LANG=en_US.UTF-8
+export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
+REPO="$HOME/Library/CloudStorage/Dropbox/gitpages/us_elections.github.io"
+
+ISSUE="${1:-}"
+[ -n "$ISSUE" ] || { echo "[publish] 사용법: publish_issue.sh <issue.qmd>"; exit 2; }
+cd "$REPO" || { echo "[publish] repo 접근 불가: $REPO"; exit 1; }
+[ -f "$ISSUE" ] || { echo "[publish] 파일 없음: $ISSUE"; exit 1; }
+
+br=$(git branch --show-current)
+[ "$br" = "main" ] || { echo "[publish] main 브랜치가 아님(현재 '$br') — 중단"; exit 1; }
+
+echo "[publish] 렌더 검증: $ISSUE"
+quarto render "$ISSUE" || { echo "[publish] 렌더 실패 — 발행 중단"; exit 1; }
+
+git add "$ISSUE"
+if git diff --cached --quiet; then
+  echo "[publish] 커밋할 변경 없음 — 종료(이미 발행됨)"; exit 0
+fi
+git commit -m "주간호 자동 발행: $(basename "$ISSUE" .qmd)" || { echo "[publish] 커밋 실패"; exit 1; }
+
+echo "[publish] 최신 main 동기화(rebase)"
+git fetch origin main && git rebase origin/main || {
+  echo "[publish] rebase 충돌 — 수동 해결 필요(로컬 커밋은 보존됨)"; exit 1; }
+
+git push origin main && echo "[publish] ✅ 발행·배포 트리거 완료: $ISSUE" || {
+  echo "[publish] push 실패"; exit 1; }
