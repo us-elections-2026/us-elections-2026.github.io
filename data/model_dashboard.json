@@ -1,8 +1,8 @@
 {
   "as_of": "2026-05-29",
-  "facts_updated": "2026-06-20",
+  "facts_updated": "2026-06-28",
   "source_label": "자체 분석 모델 (Universal Causal Framework V2)",
-  "provenance_note": "여기 확률은 시장·집계기관 수치가 아니라 내부 프레임워크의 모델 추정치입니다. Cook/Sabato 등급·예측시장과 같은 잣대로 비교하지 마세요. 확률 기준일 5/29(GA 결선·ME 경선 결과 등 후보 확정 사실은 6/20 반영, 확률 재산정 전).",
+  "provenance_note": "여기 확률은 시장·집계기관 수치가 아니라 내부 프레임워크의 모델 추정치입니다. Cook/Sabato 등급·예측시장과 같은 잣대로 비교하지 마세요. 확률 기준일 5/29. 후보 확정·6/28 주간 신규 여론조사(TX R+1·NC D+14·AK D+6.6·ME D+1~4 등)는 각 주 note에 반영했으나, 확률·등급 재산정은 다음 모델 실행 예정.",
   "current_balance": "R 53 / D 47",
   "dem_needed_net": 4,
   "dem_majority_prob": 32,
@@ -17,7 +17,7 @@
       "prob": 63,
       "matchup": "Platner (D) vs Collins (R·5선)",
       "key_var": "세대 대결, Collins 초당파 브랜드, 트럼프 역풍",
-      "note": "민주 경선 종료(6/9 Platner 77.7%) — 본선 양자 구도 확정"
+      "note": "본선 양자 구도(Platner vs Collins). 6월 조사 D+1~4로 축소, Cook Toss-up. 낙태권 프레임(6/22 PP 지지) 부상 vs 후보 자질 논란"
     },
     {
       "id": "nc",
@@ -28,7 +28,7 @@
       "prob": 62,
       "matchup": "Cooper (D·전 주지사) vs Whatley (R)",
       "key_var": "Cooper 97% 인지도 vs Whatley 인지도 열세, 슈퍼팩 $71M",
-      "note": "Cooper 모금 $13.8M vs Whatley $5M, 공화 슈퍼팩 반격 변수"
+      "note": "Catawba/YouGov(6/24) Cooper 48–34(D+14)로 강화. Cook·Sabato 모두 Lean D. 공화 SLF $71M+ 반격 변수"
     },
     {
       "id": "ga",
@@ -72,7 +72,7 @@
       "prob": 38,
       "matchup": "Brown (D·전 상원) vs Husted (R·임명직)",
       "key_var": "특별선거 투표율, 임명직 정당성, 블루칼라 구조",
-      "note": "Fox News 5/28–6/1 Brown 53–45 Husted — 단일 조사, 추세 확인 필요"
+      "note": "기관 편차 미해소 — RCP 평균 Husted +1 vs Fox Brown +8. Cook Lean R / Sabato Toss-up으로 갈림"
     },
     {
       "id": "ak",
@@ -83,7 +83,7 @@
       "prob": 37,
       "matchup": "Peltola (D) vs Sullivan (R·현직)",
       "key_var": "순위선택투표(RCV), 원주민 투표율, 설리번 현직 강점",
-      "note": "정글 프라이머리 8/18 top-4 → RCV 본선, Peltola 2022 RCV 승리 경험"
+      "note": "ASR 트래킹 Peltola 49.1–42.5(D+6.6). 8/18 top-4 → RCV 본선. Cook Lean R / Sabato Toss-up. 동명이인 자격 박탈(소송 중)"
     },
     {
       "id": "tx",
@@ -94,7 +94,7 @@
       "prob": 29,
       "matchup": "Talarico (D) vs Paxton (R)",
       "key_var": "구조적 R+8, Paxton 스캔들·기소, 자금 비대칭",
-      "note": "Paxton이 현직 Cornyn 경선 격파(63.8%) → Cook, Likely R→Lean R 하향"
+      "note": "UT오스틴(6/23) Paxton 43–42(R+1)로 우위 회귀 — 결선 후 공화 결집 84%. 가장 쉬워 보이던 전환지가 식는 중"
     }
   ],
   "scenarios": [
