@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-06-20",
+  "as_of": "2026-07-12",
   "rows": [
     {
       "state": "ME",
-      "event": "민주당 경선",
+      "event": "민주당 경선(→후보 교체)",
       "date": "2026-06-09",
-      "status": "완료",
-      "detail": "Platner 77.7% vs Mills 16.7% vs Costello 5.6% → 본선 진출(현역 Collins 상대)"
+      "status": "완료→교체",
+      "detail": "Platner 77.7% 경선 승리(6/9) → 성폭행 의혹으로 7/10 공식 사퇴 → 7/25 지명전당대회·7/27 인증으로 교체후보 선출(Shah·Jackson·Bellows 등 거론). 교체후보 콜린스와 통계적 접전"
     },
     {
       "state": "GA",
@@ -34,7 +34,7 @@
       "event": "민주당 경선",
       "date": "2026-08-04",
       "status": "예정",
-      "detail": "El-Sayed 34 / Stevens 31 / McMorrow — 3파전 (RacetotheWH 6월)"
+      "detail": "El-Sayed vs Stevens 2파전 통계적 동률 (McMorrow 이탈 7/5; Tavern 7/8, AIPAC 자금 대리전)"
     },
     {
       "state": "TX",

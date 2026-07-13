@@ -1,8 +1,8 @@
 {
-  "as_of": "2026-06-28",
+  "as_of": "2026-07-12",
   "rows": [
-    {"source": "Silver Bulletin", "approve": null, "disapprove": null, "net": -18.9, "row_as_of": "2026-06-25", "note": "한 주 완전 횡보. 1기(~-9)·바이든(~-13.5) 동기보다 5~10p 낮음"},
-    {"source": "FiftyPlusOne", "approve": 39.4, "disapprove": 57.5, "net": -18.1, "row_as_of": "2026-06-23", "note": "SB와 일치"},
+    {"source": "Silver Bulletin", "approve": null, "disapprove": null, "net": -17.0, "row_as_of": "2026-07-08", "note": "-18.9→-17로 4월 중순 이후 최고(이상치 견인). 1기 ~-11.3·바이든 ~-16.5 동기 하회. 주말 개별조사 -23~-26 저점"},
+    {"source": "FiftyPlusOne", "approve": 39.4, "disapprove": 57.5, "net": -18.1, "row_as_of": "2026-06-23", "note": "직전 갱신치(이후 신규 반영 대기)"},
     {"source": "USPollingData", "approve": 38.6, "disapprove": 58.0, "net": -19.4, "row_as_of": "2026-06-12", "note": "Gallup·Ipsos·YouGov·Quinnipiac·MC 종합"}
   ]
 }

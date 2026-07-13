@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-06-28",
+  "as_of": "2026-07-12",
   "dem_needed_net": 4,
   "current_balance": "R 53 / D 47",
   "races": [
@@ -8,18 +8,18 @@
       "defense": "D",
       "incumbent": "Ossoff (D·현직) vs Collins (R)",
       "rating": "Lean D",
-      "latest_poll": "Ossoff +4~9",
-      "poll_source": "Emerson·Echelon 6월",
+      "latest_poll": "Ossoff +13 (Fox)",
+      "poll_source": "Fox/Beacon·Shaw 6/23–27",
       "cash_on_hand": "Ossoff $32M+ vs Collins ~$1.2M",
       "kr_relevance": "통상·반도체"
     },
     {
       "state": "MI",
       "defense": "D",
-      "incumbent": "공개석 (Peters 은퇴) — 민주 8/4 경선 vs Rogers (R)",
+      "incumbent": "공개석 (Peters 은퇴) — Stevens vs El-Sayed (8/4 예비) vs Rogers (R)",
       "rating": "Toss Up",
-      "latest_poll": "민주 3파전 (El-Sayed 24 · McMorrow 21 · Stevens 21)",
-      "poll_source": "Emerson 6월",
+      "latest_poll": "Stevens–El-Sayed 통계적 동률 (McMorrow 이탈 후 2파전)",
+      "poll_source": "Tavern Research 7/8",
       "cash_on_hand": null,
       "kr_relevance": "자동차·관세"
     },
@@ -27,19 +27,19 @@
       "state": "NH",
       "defense": "D",
       "incumbent": "공개석 (Shaheen 은퇴) — Pappas (D) vs Sununu (R)",
-      "rating": "Likely D",
-      "latest_poll": "Pappas 45–44 Sununu (동률)",
-      "poll_source": "UNH·Emerson 6월",
+      "rating": "Lean D",
+      "latest_poll": "Pappas 47–44 Sununu (D+3)",
+      "poll_source": "UNH 7/1",
       "cash_on_hand": "Pappas $4.2M (3/31 FEC)",
       "kr_relevance": "민주 수성 필수 3석 중 하나"
     },
     {
       "state": "ME",
       "defense": "R",
-      "incumbent": "Platner (D) vs Collins (R·6선)",
+      "incumbent": "Platner 사퇴(7/10) → 민주 후보 공석 vs Collins (R·6선)",
       "rating": "Toss Up",
-      "latest_poll": "Platner +1~4",
-      "poll_source": "Quantus·Tavern·PPP 6월",
+      "latest_poll": "교체후보 콜린스와 접전 (Shah 47–46 Collins 등)",
+      "poll_source": "Z to A 7/7–8 (친-Shah 외곽조직); 7/25 지명전당대회",
       "cash_on_hand": null,
       "kr_relevance": "민주 최우선 탈환 표적"
     },
@@ -48,8 +48,8 @@
       "defense": "R",
       "incumbent": "공석 — Cooper (D) vs Whatley (R)",
       "rating": "Lean D",
-      "latest_poll": "Cooper 48–34 Whatley (D+14)",
-      "poll_source": "Catawba/YouGov 6/24",
+      "latest_poll": "Cooper +7~14 (Catawba D+14 · NYT/Siena D+7)",
+      "poll_source": "Catawba 6/24 · NYT/Siena 6/15–29",
       "cash_on_hand": "Cooper $13.8M (1Q)",
       "kr_relevance": "—"
     },
@@ -58,9 +58,9 @@
       "defense": "R",
       "incumbent": "Talarico (D) vs Paxton (R)",
       "rating": "Lean R",
-      "latest_poll": "Paxton 43–42 Talarico (R+1)",
-      "poll_source": "UT오스틴 6/23",
-      "cash_on_hand": null,
+      "latest_poll": "Paxton 47–47 Talarico (동률)",
+      "poll_source": "NYT/Siena 6/19–27",
+      "cash_on_hand": "Talarico Q2 $30M (팩스턴 3배+)",
       "kr_relevance": "블루웨이브 시 도전"
     },
     {
@@ -68,8 +68,8 @@
       "defense": "R",
       "incumbent": "Brown (D) vs Husted (R·임명직)",
       "rating": "Lean R / Toss Up",
-      "latest_poll": "Husted +1 (RCP) / Brown +8 (Fox)",
-      "poll_source": "RCP·Fox 6월",
+      "latest_poll": "Brown 48–45 Husted (D+3, AARP)",
+      "poll_source": "AARP/파브리지오 6/14–16",
       "cash_on_hand": null,
       "kr_relevance": "철강·제조업"
     },
@@ -77,10 +77,10 @@
       "state": "AK",
       "defense": "R",
       "incumbent": "Peltola (D) vs Sullivan (R·현직)",
-      "rating": "Lean R / Toss Up",
-      "latest_poll": "Peltola 49.1–42.5 (D+6.6)",
-      "poll_source": "ASR 트래킹 6월",
-      "cash_on_hand": null,
+      "rating": "Toss Up (Cook 7/1 이동)",
+      "latest_poll": "Sullivan 47–45 Peltola (R−2)",
+      "poll_source": "NYT/Siena 6/15–29; '두 명의 댄 설리번' 투표혼란·RCV",
+      "cash_on_hand": "Peltola Q2 $7M (주 사상 최대)",
       "kr_relevance": "—"
     }
   ]

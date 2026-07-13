@@ -1,14 +1,13 @@
 {
-  "as_of": "2026-06-28",
+  "as_of": "2026-07-12",
   "aggregators": [
-    {"source": "USPollingData", "dem": 48.1, "rep": 41.1, "margin": 7.0, "agg_as_of": "2026-06-25", "population": "종합 (품질·최신성 가중)"},
-    {"source": "Silver Bulletin", "dem": null, "rep": null, "margin": 6.2, "agg_as_of": "2026-06-19", "population": "LV 가중"},
-    {"source": "FiftyPlusOne", "dem": 48.9, "rep": 43.3, "margin": 6.0, "agg_as_of": "2026-06-12", "population": "품질·최신성 가중"},
-    {"source": "RealClearPolling", "dem": 48.1, "rep": 42.3, "margin": 5.8, "agg_as_of": "2026-06-15", "population": "단순평균 성격"},
-    {"source": "Morning Consult", "dem": 46, "rep": 42, "margin": 4.0, "agg_as_of": "2026-06-20", "population": "등록유권자(RV)"}
+    {"source": "USPollingData", "dem": null, "rep": null, "margin": 7.0, "agg_as_of": "2026-07-10", "population": "종합 (품질·최신성 가중)"},
+    {"source": "Silver Bulletin", "dem": null, "rep": null, "margin": 6.3, "agg_as_of": "2026-07-08", "population": "LV 가중"},
+    {"source": "FiftyPlusOne", "dem": 49.3, "rep": 43.5, "margin": 6.0, "agg_as_of": "2026-07-09", "population": "품질·최신성 가중"},
+    {"source": "Morning Consult", "dem": 46, "rep": 42, "margin": 4.0, "agg_as_of": "2026-07-08", "population": "등록유권자(RV)"}
   ],
   "spread_examples": [
-    {"pollster": "Emerson", "dem": 50.3, "rep": 39.5, "margin": 10.8, "population": "LV", "note": "상단 — 무당파 D+15·히스패닉 D+34"},
-    {"pollster": "Morning Consult", "dem": 46, "rep": 42, "margin": 4, "population": "RV", "note": "하단 — 집계기관 간 하우스 이펙트"}
+    {"pollster": "Emerson", "dem": 50.3, "rep": 39.5, "margin": 10.8, "population": "LV", "note": "상단 예시 — 7월 단일조사 상단은 D+7~11대(Focaldata·Quinnipiac·Emerson 등)"},
+    {"pollster": "Morning Consult", "dem": 46, "rep": 42, "margin": 4, "population": "RV", "note": "하단 — D+3~4(YouGov·MC), 집계기관 간 하우스 이펙트"}
   ]
 }
