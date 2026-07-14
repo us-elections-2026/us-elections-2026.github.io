@@ -1,6 +1,6 @@
 {
   "as_of": "2026-07-12",
-  "facts_updated": "2026-07-12",
+  "facts_updated": "2026-07-14",
   "source_label": "자체 분석 모델 (Universal Causal Framework V2 · SICAF)",
   "provenance_note": "여기 확률은 시장·집계기관 수치가 아니라 내부 프레임워크의 모델 추정치입니다. Cook/Sabato 등급·예측시장과 같은 잣대로 비교하지 마세요. 확률 기준일 7/12. 각 주 확률은 등급·최신 조사 종합 가중 추정(SICAF/UCF 주간 브리핑 기반: Solid/Likely=확정, Lean≈0.75, Toss-up≈0.5 출발 후 조사·자금·구조로 보정)이며, 8개 감시 주 민주 기대승리 약 4.6석 → 비경합 기저 합산 시 민주 총 48~49석 중앙값, 다수 탈환(51석) 확률 대략 20~30%.",
   "current_balance": "R 53 / D 47",
@@ -28,7 +28,7 @@
       "prob": 75,
       "matchup": "Cooper (D·전 주지사) vs Whatley (R)",
       "key_var": "Cooper 교차투표 소구력, Whatley 인지도 열세, 대규모 지출",
-      "note": "쿠퍼 +7~14 우위 지속(Catawba/YouGov D+14 6/24 · NYT/Siena D+7). Cook·Sabato 모두 Lean D — 민주 최선 탈환지"
+      "note": "쿠퍼 우위이나 PPP(7/13) D+4로 좁혀짐(공화 부동층 결집) — 기존 Catawba D+14·NYT/Siena D+7보다 축소. Cook·Sabato 모두 Lean D 유지. 확률은 등급 기준, 좁힘세는 관전 포인트"
     },
     {
       "id": "nh",
@@ -169,6 +169,13 @@
       "event": "MI 민주당 경선",
       "detail": "Stevens vs El-Sayed 2파전 → 본선 경쟁력·MI 확률 조정",
       "party": "dem",
+      "status": "upcoming"
+    },
+    {
+      "date": "8/11",
+      "event": "SC 특별 예비선거",
+      "detail": "Graham(R) 별세(7/11)로 급조된 '9번째' 레이스 — 안전 공화이나 8월 혼돈 예비(결선 8/25 가능). 감시 8주 밖 꼬리 리스크",
+      "party": "rep",
       "status": "upcoming"
     },
     {
