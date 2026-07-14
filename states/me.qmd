@@ -16,11 +16,11 @@ cat(candidate_cards_html("ME"))
 gt_state_detail("ME")
 ```
 
-민주당의 **최우선 탈환 표적**. 5선 현직 Collins(R)는 바이든·해리스가 이긴 주에서 살아남아온 생존자지만, 이번 사이클의 전국 역풍이 변수입니다. 민주당 경선(6/9)에서 Graham Platner가 성적 문자 메시지 등 논란에도 **77.7%로 압승**(Mills 16.7% / Costello 5.6%, RCV 추가 집계 불필요)해 본선 대진이 확정됐습니다. ([Bangor Daily News](https://www.bangordailynews.com/2026/06/09/politics/elections/maine-senate-democratic-primary-results-graham-platner/))
+민주당의 **최우선 탈환 표적**. 5선 현직 Collins(R)는 바이든·해리스가 이긴 주에서 살아남아온 생존자지만, 이번 사이클의 전국 역풍이 변수입니다. 6/9 민주 경선에서 **77.7%로 압승**했던 Graham Platner는 성폭행 의혹(콘돔 무단 제거 주장 포함)으로 **7/10 공식 사퇴**했고, 민주 후보는 이제 **7/25 뱅고어 지명전당대회**(대의원 601명의 다회전 투표)에서 새로 선출됩니다(7/27 인증). 선두권은 **니라브 샤(Nirav Shah, 전 메인 CDC 국장)·셰나 벨로우스(Shenna Bellows, 국무장관)·트로이 잭슨(Troy Jackson, 전 주상원의장)**으로, 샤가 7/13 서명요건(500명)을 가장 먼저 충족했습니다. 당파 후원 조사(Z to A)에서 세 후보 모두 콜린스와 통계적 접전(47–46~48)을 보여 "붕괴 아닌 접전"으로 평가됩니다. ([BDN(교체전)](https://www.bangordailynews.com/2026/07/11/politics/elections/fight-replace-platner-1-day-in-bangor/) · [Press Herald(샤 요건 충족)](https://www.pressherald.com/2026/07/13/nirav-shah-campaign-hits-signature-threshold-to-qualify-for-senate-race/))
 
 ::: {.summary}
-- **구도**: 민주 최우선 탈환 표적 — 5선 Collins(R, 세출위원장) vs Platner(D, 6/9 경선 압승).
-- **변화**: 성적 문자 논란에도 Platner 압승으로 본선 대진 확정(스캔들 본선 영향은 신규 조사 필요).
+- **구도**: 민주 최우선 탈환 표적 — 5선 Collins(R, 세출위원장) vs **민주 후보 미정**(7/25 전당대회에서 선출).
+- **변화**: Platner가 성폭행 의혹으로 **7/10 사퇴** → 7/25 지명전당대회 체제. 선두 Shah·Bellows·Jackson, 콜린스와 접전(당파조사).
 - **한국 함의**: Collins의 CHIPS·세출위는 추정 연결고리; 직접 한국 표결은 미확인.
 :::
 
@@ -32,12 +32,12 @@ gt_state_detail("ME")
 ## 2. 선거 제도
 
 - **RCV(순위선택투표) — 연방선거 전용**: 2016년 주민발의로 도입. **연방 예비·본선거(상·하원·대선)에만 적용**되고, 주지사 등 주 단위 본선거는 일반 다수제입니다. 1차 과반 미달 시 최하위 후보를 탈락시켜 차순위로 재배분합니다. ([Ballotpedia](https://ballotpedia.org/Electoral_systems_in_Maine))
-- **반개방형 예비선거**: 2024년부터 무당파도 정당 등록 없이 경선 투표 가능. 2026 예선은 **6/9 완료**(Platner 1차 과반으로 RCV 추가 라운드 없이 확정), 본선 11/3. ([Press Herald](https://www.pressherald.com/2024/02/13/unenrolled-voters-get-to-cast-ballots-in-maine-primaries-but-little-sign-of-mass-registration-changes/))
+- **반개방형 예비선거 → 후보 사퇴 시 전당대회 지명**: 2024년부터 무당파도 정당 등록 없이 경선 투표 가능. 2026 민주 예선은 6/9 완료(Platner 압승)됐으나 **Platner 사퇴(7/10)로 무효화**됐고, 메인주법상 후보 교체는 **7/25 지명전당대회**(대의원 601명 다회전 투표)로 진행됩니다(출마선언 7/15·서명 500명 7/21·인증 7/27). 본선 11/3. ([Maine Dems](https://mainedems.org/senate-race/senate-delegate-process/))
 - 사유 불문 부재자투표(no-excuse absentee) 시행 주(2026 구체 기간은 【수집】).
 
 ## 3. 후보자
 
-> 주의: 본선 가상대결 조사(UMass Lowell 6/4 Platner +5 등)는 성적 문자 메시지 본격 보도 **이전** 조사라, 스캔들의 본선 타격 여부는 6/9 이후 신규 조사로 확인이 필요합니다.
+> 주의: **민주 본선 후보는 7/25 전당대회 전까지 미확정**입니다. 선두권은 니라브 샤(전 CDC 국장)·셰나 벨로우스(국무장관)·트로이 잭슨(전 주상원의장) — 셋 다 최근 주지사 예비선거 출신입니다. 현재까지의 교체후보 대 콜린스 조사(Z to A 7/7–8: 샤 47–46, 벨로우스 47–47, 잭슨 47–48)는 **모두 당파 후원 조사**로, 독립 기관의 첫 조사는 7/15 출마선언 마감 이후 나올 전망입니다. Platner의 6/9 압승 이전 가상대결(UMass Lowell 6/4 +5 등)은 사퇴로 무의미해졌습니다.
 
 ## 4. roll-call / 입법 관심사
 
@@ -46,21 +46,21 @@ gt_state_detail("ME")
 - **반도체/CHIPS**: 2021년 King(I-ME)과 함께 CHIPS for America Act 이행 예산 확보를 촉구하는 초당 서한에 동참(미국 내 반도체 제조 지원 일반론). ([King 상원실](https://www.king.senate.gov/newsroom/press-releases/collins-king-urge-administration-to-support-us-semiconductor-manufacturing-industry))
 - **대북**: 과거 유엔 대북 제재 강화를 환영하는 성명(연도·표결은 성명 수준만 확인).
 
-> **직접 한국 관련 표결/법안은 미확인**입니다. 통상(한미 FTA)·주한미군·한국기업 거명 표결은 1차 증거가 확인되지 않았습니다. Platner(굴양식업자·재향군인)는 연방 의정 기록이 없습니다.
+> **직접 한국 관련 표결/법안은 미확인**입니다. 통상(한미 FTA)·주한미군·한국기업 거명 표결은 1차 증거가 확인되지 않았습니다. 민주 교체후보들(Shah·Bellows·Jackson)은 연방 의정 기록이 없어 한국 관련 표결 이력도 없습니다.
 
 ## 5. 펀드레이징 (FEC)
 
 | 후보 | 정당 | Q1 모금 | 보유현금 |
 |---|---|---:|---:|
-| Graham Platner | D | **$4.1M** | $2.7M (Q1말) |
+| 민주 후보 (미정, 7/25 전당대회) | D | 【수집】(교체후보 Q2 FEC 7/15) | 【수집】 |
 | Susan Collins | R | 약 $3.0M | **$9.7M** (5/20 누적) |
 
 : {.striped}
 
-**Platner가 분기·누적 모금(사이클 $16.3M, 8.8만 소액 기부자)에서 Collins를 앞섰지만, 보유현금은 Collins가 4배 이상**(전 캠페인 이월 포함 약 $9.7M)입니다. 소액 기반의 도전자 vs 이월·seniority의 현역 구도. (Q1 Collins 모금은 보도별 $3.0M~$2.3M 상이 — FEC 원본 대조 권장.) ([Bangor Daily News](https://www.bangordailynews.com/2026/05/29/politics/elections/maine-graham-platner-fundraising-spending-senate-primary/) · [Wikipedia(FEC 인용)](https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine))
+**사퇴한 Platner는 분기·누적 모금(사이클 $16.3M, 8.8만 소액 기부자)에서 Collins를 앞섰으나, 7/10 사퇴로 본선 모금 구도는 초기화**됐습니다. 교체후보(Shah·Bellows·Jackson)는 7/13~15 출마 단계라 모금 실적이 아직 없고, 7/15 Q2 FEC 보고 이후 윤곽이 잡힙니다. 반면 Collins는 이월 포함 약 $9.7M의 현금 우위를 유지합니다. (Q1 Collins 모금은 보도별 $3.0M~$2.3M 상이 — FEC 원본 대조 권장.) ([Press Herald(샤 요건 충족)](https://www.pressherald.com/2026/07/13/nirav-shah-campaign-hits-signature-threshold-to-qualify-for-senate-race/))
 
 ## 6. 한국 함의
 
-- **직접 확인**: 양 후보 모두 한국 관련 직접 입장은 공개 출처에서 확인되지 않습니다.
+- **직접 확인**: Collins 및 민주 교체후보(Shah·Bellows·Jackson) 모두 한국 관련 직접 입장은 공개 출처에서 확인되지 않습니다.
 - **추정 연결고리(사실 아님)**: ① Collins가 지지한 CHIPS법의 대중국 투자제한 가드레일은 삼성·SK하이닉스의 중국 사업에 영향을 주지만, Collins가 **한국 기업을 거명한 적은 미확인** — 정책의 2차 효과입니다. ② Collins는 세출위원장으로 **메인 방산(Bath Iron Works 구축함)**을 옹호해 미·한 조선·철강 협력(MASGA 맥락)이 닿는 환경에 있으나, 후보 본인의 한국 직접 언급은 미확인이므로 단정하지 않습니다.
 - 신규 동향은 [Korea Watch](../korea-watch.qmd)에 기록합니다.

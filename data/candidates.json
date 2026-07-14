@@ -372,42 +372,95 @@
     {
       "state": "ME",
       "party": "D",
-      "name": "Graham Platner",
-      "name_kr": "그레이엄 플래트너",
+      "name": "Nirav Shah",
+      "name_kr": "니라브 샤",
       "incumbent": false,
-      "photo": "assets/candidates/me_platner.jpg",
-      "photo_credit": "MAINEiac4434, CC BY-SA 4.0",
-      "born": 1984,
-      "occupation": "굴 양식업자 · 미 해병대 참전용사",
-      "education": "John Bapst Memorial High School 졸업; George Washington University 수학(중퇴·미졸업)",
-      "family": "2023년 Amy Gertner와 결혼(아내는 양식회사 비즈니스 매니저)",
+      "photo": null,
+      "photo_credit": null,
+      "born": null,
+      "occupation": "전 메인주 CDC 국장 · 전 미 CDC 수석부국장",
+      "education": null,
+      "family": null,
       "past_elections": [
-        "2026 민주당 상원 경선(6/9) 승리: Platner 77.7% vs Mills 16.7% vs Costello 5.6%"
+        "2026 메인 주지사 민주 예비 RCV 결선 2위(Pingree에 패)",
+        "2026 상원 경선: 7/13 지명전당대회 진출 서명요건(500명) 최초 충족"
       ],
-      "fundraising": "캠페인 전체 5/20까지 $1,630만 모금(약 60%가 $200 미만 소액), 현금 $220만",
+      "fundraising": null,
       "strengths": [
-        "군 경력이 무소속 비중 큰 메인 유권자에 호소",
-        "압도적 소액 모금·풀뿌리 열기",
-        "본선 가상대결서 6선 현직을 앞서는 이례적 리드"
+        "팬데믹 대응 인지도",
+        "서명요건 첫 충족 — 조직력 우위",
+        "Z to A(당파) 47–46 Collins"
       ],
       "weaknesses": [
-        "선출직 경험 전무",
-        "문신·과거 Reddit 게시물·혼외 성적 문자 메시지 등 논란",
-        "전 여자친구의 학대성 행동 주장(주장 단계)"
+        "짧은 캠페인(7/25 전당대회)",
+        "선출직 경험 제한"
       ],
-      "policy": [
-        "메디케어 확대",
-        "기후변화 대응",
-        "노동자 권리",
-        "반독점·반금권정치"
-      ],
+      "policy": [],
       "kr_note": null,
       "sources": [
-        "https://en.wikipedia.org/wiki/Graham_Platner",
-        "https://www.britannica.com/biography/Graham-Platner",
-        "https://www.bangordailynews.com/2026/06/09/politics/elections/maine-senate-democratic-primary-results-graham-platner/"
+        "https://www.pressherald.com/2026/07/13/nirav-shah-campaign-hits-signature-threshold-to-qualify-for-senate-race/"
       ],
-      "status": "nominee"
+      "status": "primary"
+    },
+    {
+      "state": "ME",
+      "party": "D",
+      "name": "Shenna Bellows",
+      "name_kr": "셰나 벨로우스",
+      "incumbent": false,
+      "photo": null,
+      "photo_credit": null,
+      "born": null,
+      "occupation": "메인주 국무장관(Secretary of State)",
+      "education": null,
+      "family": null,
+      "past_elections": [
+        "2026 상원 지명전당대회(7/25) 출마 선언 — 선두권"
+      ],
+      "fundraising": null,
+      "strengths": [
+        "주 전역 선출직 경험",
+        "Z to A(당파) 47–47 Collins"
+      ],
+      "weaknesses": [
+        "짧은 캠페인 기간"
+      ],
+      "policy": [],
+      "kr_note": null,
+      "sources": [
+        "https://www.notus.org/2026-election/platner-replacements-poll-maine-senate"
+      ],
+      "status": "primary"
+    },
+    {
+      "state": "ME",
+      "party": "D",
+      "name": "Troy Jackson",
+      "name_kr": "트로이 잭슨",
+      "incumbent": false,
+      "photo": null,
+      "photo_credit": null,
+      "born": null,
+      "occupation": "전 메인주 상원의장 · 벌목노동자",
+      "education": null,
+      "family": null,
+      "past_elections": [
+        "2026 상원 지명전당대회(7/25) 출마 선언 — 선두권"
+      ],
+      "fundraising": null,
+      "strengths": [
+        "노동계 기반",
+        "Z to A(당파) 47–48 Collins"
+      ],
+      "weaknesses": [
+        "짧은 캠페인 기간"
+      ],
+      "policy": [],
+      "kr_note": null,
+      "sources": [
+        "https://www.notus.org/2026-election/platner-replacements-poll-maine-senate"
+      ],
+      "status": "primary"
     },
     {
       "state": "ME",
