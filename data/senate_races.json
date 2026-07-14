@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-07-12",
+  "as_of": "2026-07-14",
   "dem_needed_net": 4,
   "current_balance": "R 53 / D 47",
   "races": [
@@ -48,8 +48,8 @@
       "defense": "R",
       "incumbent": "공석 — Cooper (D) vs Whatley (R)",
       "rating": "Lean D",
-      "latest_poll": "Cooper +7~14 (Catawba D+14 · NYT/Siena D+7)",
-      "poll_source": "Catawba 6/24 · NYT/Siena 6/15–29",
+      "latest_poll": "Cooper +4~14 (PPP D+4 7/13로 좁혀짐 · Catawba D+14 · NYT/Siena D+7)",
+      "poll_source": "PPP 7/13 · Catawba 6/24 · NYT/Siena 6/15–29",
       "cash_on_hand": "Cooper $13.8M (1Q)",
       "kr_relevance": "—"
     },

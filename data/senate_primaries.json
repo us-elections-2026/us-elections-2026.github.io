@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-07-12",
+  "as_of": "2026-07-14",
   "rows": [
     {
       "state": "ME",
@@ -63,6 +63,13 @@
       "date": null,
       "status": "【수집】",
       "detail": null
+    },
+    {
+      "state": "SC",
+      "event": "공화 특별 예비선거 (신규·감시 8주 밖)",
+      "date": "2026-08-11",
+      "status": "예정(신규)",
+      "detail": "Graham(R) 별세(7/11)로 공석 → McMaster 주지사 임시 지명(트럼프가 여동생 Darlene Graham Nordone 추천) 후 8/11 특별 예비(결선 8/25 가능, 후보 등록 7/21~28). 민주 Annie Andrews. 안전 공화이나 8월 혼돈 예비 = 꼬리 리스크"
     }
   ]
 }
