@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-07-12",
-  "facts_updated": "2026-07-14",
+  "as_of": "2026-07-26",
+  "facts_updated": "2026-07-26",
   "source_label": "자체 분석 모델 (Universal Causal Framework V2 · SICAF)",
-  "provenance_note": "여기 확률은 시장·집계기관 수치가 아니라 내부 프레임워크의 모델 추정치입니다. Cook/Sabato 등급·예측시장과 같은 잣대로 비교하지 마세요. 확률 기준일 7/12. 각 주 확률은 등급·최신 조사 종합 가중 추정(SICAF/UCF 주간 브리핑 기반: Solid/Likely=확정, Lean≈0.75, Toss-up≈0.5 출발 후 조사·자금·구조로 보정)이며, 8개 감시 주 민주 기대승리 약 4.6석 → 비경합 기저 합산 시 민주 총 48~49석 중앙값, 다수 탈환(51석) 확률 대략 20~30%.",
+  "provenance_note": "여기 확률은 시장·집계기관 수치가 아니라 내부 프레임워크의 모델 추정치입니다. Cook/Sabato 등급·예측시장과 같은 잣대로 비교하지 마세요. 확률 기준일 7/26. 각 주 확률은 등급·최신 조사 종합 가중 추정(SICAF/UCF 주간 브리핑 기반: Solid/Likely=확정, Lean≈0.75, Toss-up≈0.5 출발 후 조사·자금·구조로 보정)이며, 8개 감시 주 민주 기대승리 약 4.7석 → 비경합 기저 합산 시 민주 총 48~49석 중앙값, 다수 탈환(51석) 확률 대략 13~17%(RaceToTheWH ~13% ↔ DDHQ 50–50 이견).",
   "current_balance": "R 53 / D 47",
   "dem_needed_net": 4,
-  "dem_majority_prob": 25,
-  "net_expected_seats": 1.6,
+  "dem_majority_prob": 15,
+  "net_expected_seats": 1.8,
   "states": [
     {
       "id": "ga",
@@ -14,10 +14,10 @@
       "nameEn": "Georgia",
       "defense": "D",
       "rating": "Lean D",
-      "prob": 80,
+      "prob": 88,
       "matchup": "Ossoff (D·현직) vs Collins (R)",
-      "key_var": "본선 양자 확정, Ossoff 자금 압도, 인플레 이슈 우위",
-      "note": "Fox/Beacon·Shaw(6/23–27) Ossoff 56–43(D+13). 자금(현금 $32M+ vs $1.2M)·토론 공세. 사수 의석 강한 신호"
+      "key_var": "수성 굳힘, Ossoff 자금 압도($40M 격차), 콜린스 스캔들",
+      "note": "AARP(7/13–16) Ossoff 52–43(+9), Fox+13·Wick+3.8과 일관. 트럼프 마리에타 유세에 콜린스 불참·사위 네오나치 의혹. 예측시장 오소프 재선 ~80%"
     },
     {
       "id": "nc",
@@ -27,8 +27,8 @@
       "rating": "Lean D",
       "prob": 75,
       "matchup": "Cooper (D·전 주지사) vs Whatley (R)",
-      "key_var": "Cooper 교차투표 소구력, Whatley 인지도 열세, 대규모 지출",
-      "note": "쿠퍼 우위이나 PPP(7/13) D+4로 좁혀짐(공화 부동층 결집) — 기존 Catawba D+14·NYT/Siena D+7보다 축소. Cook·Sabato 모두 Lean D 유지. 확률은 등급 기준, 좁힘세는 관전 포인트"
+      "key_var": "쿠퍼 우위이나 접전화, SLF $70M+ 회귀 압력",
+      "note": "공개 조사 쿠퍼 +4(PPP 하단)~+24, RCP ~+9.6. Q2 $14.8M vs $5M(~3:1). 공화 초반 네거티브로 봄철 +11~14서 축소. Cook·Sabato Lean D"
     },
     {
       "id": "nh",
@@ -36,10 +36,10 @@
       "nameEn": "New Hampshire",
       "defense": "D",
       "rating": "Lean D",
-      "prob": 75,
-      "matchup": "Pappas (D) vs Sununu (R 예비 우세)",
-      "key_var": "공화 후보 확정(9/8 경선) · 무당파 표심 · 슬리퍼 레이스",
-      "note": "UNH(7/1) 본선 Pappas 47–Sununu 44(D+3). 공화 예비 수누누 59–20 우세. Cook Lean D"
+      "prob": 72,
+      "matchup": "Pappas (D) vs Sununu (R 예비 압도)",
+      "key_var": "접전화 지속, 무당파 표심, 외부 자금전",
+      "note": "UNH Pappas 47–44(4월 +7서 축소), NRSC 내부 D+1. One Nation $6M vs SMP $10.2M. 수누누 예비 59–20. Lean/Likely D"
     },
     {
       "id": "mi",
@@ -47,10 +47,10 @@
       "nameEn": "Michigan",
       "defense": "D",
       "rating": "Toss-up",
-      "prob": 53,
+      "prob": 65,
       "matchup": "Stevens vs El-Sayed (8/4 예비) vs Rogers (R)",
-      "key_var": "민주 예비 향배(8/4), AIPAC 자금 대리전, 자동차·관세",
-      "note": "McMorrow 이탈(7/5) → Stevens–El-Sayed 2파전 통계적 동률(Tavern 7/8). 친이스라엘 자금 $30M+ 대리전"
+      "key_var": "주류 vs 좌파 대리전, AIPAC 자금, 투표율 우려",
+      "note": "AIPAC ~$30M(단일 경선 최대)·친스티븐스 TV 12:1 vs 엘사예드 Q2 모금 1위. 로저스 통화 유출. 네슬 등 투표율 이탈 경고(Bear 자산). Fox2 토론 7/27"
     },
     {
       "id": "me",
@@ -58,10 +58,10 @@
       "nameEn": "Maine",
       "defense": "R",
       "rating": "Toss-up",
-      "prob": 48,
-      "matchup": "민주 후보 공석(Platner 사퇴) vs Collins (R·6선)",
-      "key_var": "7/25 지명전당대회 교체후보, Collins 초당파 브랜드, 트럼프 역풍",
-      "note": "Platner 성폭행 의혹으로 7/10 사퇴 → 7/25 전당대회·7/27 인증. 교체후보(Shah·Jackson·Bellows)가 콜린스와 통계적 접전(Z to A 7/7–8) — '붕괴 아닌 접전'"
+      "prob": 50,
+      "matchup": "Jackson (D, 7/25 인준) vs Collins (R·6선)",
+      "key_var": "잭슨 검증(다혈질·세금유치권), Collins 초당파 브랜드",
+      "note": "잭슨 566–5 인준(7/25)으로 3주 혼란 종결. 사퇴 후 첫 조사 UNH(7/15–20) 잭슨 49–콜린스 46(무당파 46–42) — '붕괴 아닌 검증받는 경쟁력'. 이스라엘/AIPAC 침묵 논란 지속"
     },
     {
       "id": "ak",
@@ -69,21 +69,21 @@
       "nameEn": "Alaska",
       "defense": "R",
       "rating": "Toss-up (Cook 7/1)",
-      "prob": 45,
+      "prob": 50,
       "matchup": "Peltola (D) vs Sullivan (R·현직)",
-      "key_var": "순위선택투표(RCV), '두 명의 댄 설리번' 투표혼란, 원주민 투표율",
-      "note": "NYT/Siena 설리번 47–펠톨라 45(R−2). Cook 7/1 Lean R→토스업 이동. 동명 후보 8/18 투표용지 확정·검찰 수사. 펠톨라 Q2 $7M(주 사상 최대)"
+      "key_var": "순위선택투표(RCV), '두 명의 댄 설리번' 혼동, 현금 격차",
+      "note": "NYT/Siena 설리번 47–45 vs ASR 펠톨라 +5~6. Q2 펠톨라 $6.9M vs 설리번 $2M(현금은 설리번 $8.3M 우위). 16명 후보·동명이인 FBI·주 수사. 8/18 top-4 예비"
     },
     {
       "id": "oh",
       "name": "오하이오",
       "nameEn": "Ohio",
       "defense": "R",
-      "rating": "Lean R",
-      "prob": 43,
+      "rating": "Toss-up",
+      "prob": 48,
       "matchup": "Brown (D·전 상원) vs Husted (R·임명직)",
-      "key_var": "특별선거 투표율, 임명직 정당성, 블루칼라 구조",
-      "note": "AARP/파브리지오(6/14–16) Brown 48–45(D+3). 예측시장 Brown 우세(Kalshi ~56%). Cook Lean R / Sabato Toss-up으로 갈림"
+      "key_var": "데이터센터·전기요금 쐐기 vs 건설노조 이탈, 현금 격차",
+      "note": "Cook 7/19 토스업. 진성 토스업(Fox Brown+8 vs Emerson Husted+6). 예측시장 브라운 우위(Kalshi 56%·Polymarket 59%). Q2 $17.1M vs $7.7M(4분기 연속), 단 허스티드 현금 $11M"
     },
     {
       "id": "tx",
@@ -91,10 +91,10 @@
       "nameEn": "Texas",
       "defense": "R",
       "rating": "Lean R",
-      "prob": 40,
+      "prob": 25,
       "matchup": "Talarico (D) vs Paxton (R)",
-      "key_var": "구조적 R lean, Paxton 비호감·기소, 선거자금 판결 후 자금 완화",
-      "note": "NYT/Siena(6/19–27) 47–47 동률. 탈라리코 Q2 $30M(팩스턴 3배+, 누적 $70M+). 팩스턴 인성 평가 부정(38 vs 56). 예측시장은 여전히 팩스턴 우위"
+      "key_var": "구조적 R lean, Paxton 비호감·검증, 토론 무대",
+      "note": "NYT/Siena 47–47 동률(무당파 +27). 탈라리코 Q2 $30M(누적 $70M+, 팩스턴 3배+)·흑인 유권자 $25M·RGV 유세. 팩스턴 첫 토론 수락(기피 관행 반전). 30년+ 민주 미승리 주"
     }
   ],
   "scenarios": [
@@ -102,28 +102,28 @@
       "id": "base",
       "name": "Base Case",
       "subname": "공화 유지 (모달)",
-      "prob": 44,
+      "prob": 50,
       "seats": "D 48 — R 52",
       "majority": "공화당 유지",
-      "desc": "NC 전환 + 1~2곳 추가 전환에 그쳐 공화 51–49~52–48 유지. 사수 3곳(GA·MI·NH) 대체로 방어. 확장 표적(TX·OH·AK)이 R lean 유지"
+      "desc": "확장 표적이 Lean R/토스업 유지되고 공화 실탄(허스티드 $11M·설리번 $8.3M·콜린스 $11M)+SLF 안전판(GA·NC·OH $70M+)이 설계대로 작동. RaceToTheWH ~87%가 modal"
     },
     {
       "id": "bull",
       "name": "Bull Case",
       "subname": "동률·다수 접근",
-      "prob": 28,
+      "prob": 20,
       "seats": "D 50~51 — R 50~49",
       "majority": "동률 또는 D 탈환",
-      "desc": "메인 교체후보 안착 + AK 혼동 극복·TX 확장 성공. 7/25 전당대회·기록 모금(TX $30M·AK $7M)으로 소폭 회복. 사수 3곳 전원 방어 전제"
+      "desc": "메인 잭슨 검증 통과 + 텍사스·오하이오 리치 타깃 1곳 이상 전환 + 알래스카 RCV 역학. 잭슨 인준·조지아 수성·DDHQ 50–50이 상방 꼬리를 두껍게"
     },
     {
       "id": "bear",
       "name": "Bear Case",
       "subname": "공화 확대",
-      "prob": 21,
+      "prob": 23,
       "seats": "D 46~47 — R 54~53",
       "majority": "공화당 확대",
-      "desc": "메인 교체 실패 + 확장 전패, MI 사수 흔들림. 선거자금 판결(공화 자금 조직력)·재획정 우위가 확장 표적 R lean 보강"
+      "desc": "미시간 분열발 약체 후보(엘사예드 지명+투표율 이탈) + 메인 잭슨 검증 붕괴 + 확장 전패. 다만 조지아(+9)·NC(쿠퍼 우위)는 Bear 신호 없어 본류 진전 제한"
     },
     {
       "id": "tail",
@@ -132,63 +132,56 @@
       "prob": 7,
       "seats": "D 45- ~ D 52+",
       "majority": "양극단",
-      "desc": "상승(트럼프 추가 급락·TX 뒤집기·CPI 쇼크) / 하락(국제분쟁 안보 결집·민주 분열)"
+      "desc": "상승(유가 $100·전쟁 페널티 톱라인 침투·TX 뒤집기) / 하락(미시간 붕괴+안보 결집)"
     }
   ],
   "timeline": [
     {
-      "date": "6/9",
-      "event": "ME 민주당 경선",
-      "detail": "Platner 77.7% 승리 → 7/10 성폭행 의혹으로 사퇴",
+      "date": "7/15",
+      "event": "Q2 FEC 보고",
+      "detail": "민주 전면적 현금 우위 확정 (Ossoff $42M·Talarico $30M·Brown $17.1M)",
       "party": "dem",
       "status": "done"
     },
     {
-      "date": "6/16",
-      "event": "GA 공화당 결선",
-      "detail": "Collins 55.5% 승리 → Ossoff 상대 확정",
-      "party": "rep",
+      "date": "7/25",
+      "event": "ME 민주 지명전당대회",
+      "detail": "Troy Jackson 566–5 인준 → Collins 도전 확정 (3주 혼란 종결)",
+      "party": "dem",
       "status": "done"
     },
     {
-      "date": "7/15",
-      "event": "Q2 FEC 보고 마감",
-      "detail": "8개 경합주 모금 확정 (Talarico $30M·Peltola $7M 검증)",
-      "party": "neutral",
-      "status": "upcoming"
-    },
-    {
-      "date": "7/25",
-      "event": "ME 민주 지명전당대회",
-      "detail": "7/27 인증 — 교체후보 확정(콜린스 대항마)",
+      "date": "7/27",
+      "event": "MI Fox 2 토론",
+      "detail": "Stevens vs El-Sayed 마지막 대형 이벤트 (예비 8일 전)",
       "party": "dem",
       "status": "upcoming"
     },
     {
       "date": "8/4",
-      "event": "MI 민주당 경선",
-      "detail": "Stevens vs El-Sayed 2파전 → 본선 경쟁력·MI 확률 조정",
+      "event": "MI 민주당 예비",
+      "detail": "AIPAC·슈머 vs 샌더스 대리전 결판 — 투표율(네슬 우려)이 관건",
       "party": "dem",
       "status": "upcoming"
     },
     {
       "date": "8/11",
-      "event": "SC 특별 예비선거",
-      "detail": "Graham(R) 별세(7/11)로 급조된 '9번째' 레이스 — 안전 공화이나 8월 혼돈 예비(결선 8/25 가능). 감시 8주 밖 꼬리 리스크",
+      "event": "SC 특별 공화 경선",
+      "detail": "Graham 급서(7/11)로 세 번째 특별선거 — 안전 공화(결선 8/25 가능). 판도 확장 꼬리 리스크",
       "party": "rep",
       "status": "upcoming"
     },
     {
       "date": "8/18",
-      "event": "AK 정글 프라이머리",
-      "detail": "상위 4명 → RCV 본선 구도 확정 ('두 명의 댄 설리번' 전개)",
+      "event": "AK top-4 예비",
+      "detail": "16명 후보·'두 명의 댄 설리번' → RCV 본선 구도 확정",
       "party": "neutral",
       "status": "upcoming"
     },
     {
       "date": "9/8",
       "event": "NH 양당 경선",
-      "detail": "공화 Sununu vs Brown · 민주 Pappas 우위 — 8개 주 중 가장 늦은 경선",
+      "detail": "공화 Sununu(예비 압도) · 민주 Pappas — 8개 주 중 가장 늦은 경선",
       "party": "rep",
       "status": "upcoming"
     },
