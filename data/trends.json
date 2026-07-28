@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-07-12",
+  "as_of": "2026-07-26",
   "source": "주간 브리핑 종합 — 트럼프 순지지도: Silver Bulletin 평균(주중 대표치). 일반투표(D 마진): 집계 평균 대표치(Silver Bulletin 등). 주중 범위가 있는 경우 대표값 사용. 4/13값은 브리핑 기재 범위의 대표치. 6/29·7/6은 15·16주차 전국 주간(national_weekly)의 대표치.",
   "weeks": [
     {"date": "2026-03-23", "label": "3/23", "trump_net": -16.7, "generic": null},
@@ -17,6 +17,8 @@
     {"date": "2026-06-15", "label": "6/15", "trump_net": -18.7, "generic": 6.6},
     {"date": "2026-06-22", "label": "6/22", "trump_net": -18.9, "generic": 6.2},
     {"date": "2026-06-29", "label": "6/29", "trump_net": -17.8, "generic": 6.1},
-    {"date": "2026-07-06", "label": "7/6",  "trump_net": -17.0, "generic": 6.3}
+    {"date": "2026-07-06", "label": "7/6",  "trump_net": -17.0, "generic": 6.3},
+    {"date": "2026-07-13", "label": "7/13", "trump_net": -17.4, "generic": 6.3},
+    {"date": "2026-07-20", "label": "7/20", "trump_net": -17.4, "generic": 6.1}
   ]
 }

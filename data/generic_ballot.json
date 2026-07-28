@@ -1,13 +1,13 @@
 {
-  "as_of": "2026-07-12",
+  "as_of": "2026-07-26",
   "aggregators": [
-    {"source": "USPollingData", "dem": null, "rep": null, "margin": 7.0, "agg_as_of": "2026-07-10", "population": "종합 (품질·최신성 가중)"},
-    {"source": "Silver Bulletin", "dem": null, "rep": null, "margin": 6.3, "agg_as_of": "2026-07-08", "population": "LV 가중"},
-    {"source": "FiftyPlusOne", "dem": 49.3, "rep": 43.5, "margin": 6.0, "agg_as_of": "2026-07-09", "population": "품질·최신성 가중"},
-    {"source": "Morning Consult", "dem": 46, "rep": 42, "margin": 4.0, "agg_as_of": "2026-07-08", "population": "등록유권자(RV)"}
+    {"source": "USPollingData", "dem": null, "rep": null, "margin": 7.0, "agg_as_of": "2026-07-24", "population": "종합 (2018.8 이후 최대 폭)"},
+    {"source": "Silver Bulletin", "dem": null, "rep": null, "margin": 6.1, "agg_as_of": "2026-07-24", "population": "LV 가중"},
+    {"source": "FiftyPlusOne", "dem": null, "rep": null, "margin": 5.7, "agg_as_of": "2026-07-23", "population": "품질·최신성 가중"},
+    {"source": "Morning Consult", "dem": 46, "rep": 42, "margin": 4.0, "agg_as_of": "2026-07-24", "population": "등록유권자(RV)"}
   ],
   "spread_examples": [
-    {"pollster": "Emerson", "dem": 50.3, "rep": 39.5, "margin": 10.8, "population": "LV", "note": "상단 예시 — 7월 단일조사 상단은 D+7~11대(Focaldata·Quinnipiac·Emerson 등)"},
-    {"pollster": "Morning Consult", "dem": 46, "rep": 42, "margin": 4, "population": "RV", "note": "하단 — D+3~4(YouGov·MC), 집계기관 간 하우스 이펙트"}
+    {"pollster": "Emerson", "dem": null, "rep": null, "margin": 11, "population": "LV", "note": "상단 아웃라이어 — 과독 금물"},
+    {"pollster": "Morning Consult·RCP", "dem": 46, "rep": 42, "margin": 4, "population": "RV", "note": "하단 — D+4대(RCP D+4.7), 집계기관 간 하우스 이펙트"}
   ]
 }

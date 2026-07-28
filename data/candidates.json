@@ -372,95 +372,40 @@
     {
       "state": "ME",
       "party": "D",
-      "name": "Nirav Shah",
-      "name_kr": "니라브 샤",
-      "incumbent": false,
-      "photo": null,
-      "photo_credit": null,
-      "born": null,
-      "occupation": "전 메인주 CDC 국장 · 전 미 CDC 수석부국장",
-      "education": null,
-      "family": null,
-      "past_elections": [
-        "2026 메인 주지사 민주 예비 RCV 결선 2위(Pingree에 패)",
-        "2026 상원 경선: 7/13 지명전당대회 진출 서명요건(500명) 최초 충족"
-      ],
-      "fundraising": null,
-      "strengths": [
-        "팬데믹 대응 인지도",
-        "서명요건 첫 충족 — 조직력 우위",
-        "Z to A(당파) 47–46 Collins"
-      ],
-      "weaknesses": [
-        "짧은 캠페인(7/25 전당대회)",
-        "선출직 경험 제한"
-      ],
-      "policy": [],
-      "kr_note": null,
-      "sources": [
-        "https://www.pressherald.com/2026/07/13/nirav-shah-campaign-hits-signature-threshold-to-qualify-for-senate-race/"
-      ],
-      "status": "primary"
-    },
-    {
-      "state": "ME",
-      "party": "D",
-      "name": "Shenna Bellows",
-      "name_kr": "셰나 벨로우스",
-      "incumbent": false,
-      "photo": null,
-      "photo_credit": null,
-      "born": null,
-      "occupation": "메인주 국무장관(Secretary of State)",
-      "education": null,
-      "family": null,
-      "past_elections": [
-        "2026 상원 지명전당대회(7/25) 출마 선언 — 선두권"
-      ],
-      "fundraising": null,
-      "strengths": [
-        "주 전역 선출직 경험",
-        "Z to A(당파) 47–47 Collins"
-      ],
-      "weaknesses": [
-        "짧은 캠페인 기간"
-      ],
-      "policy": [],
-      "kr_note": null,
-      "sources": [
-        "https://www.notus.org/2026-election/platner-replacements-poll-maine-senate"
-      ],
-      "status": "primary"
-    },
-    {
-      "state": "ME",
-      "party": "D",
       "name": "Troy Jackson",
       "name_kr": "트로이 잭슨",
       "incumbent": false,
       "photo": null,
       "photo_credit": null,
-      "born": null,
+      "born": 1968,
       "occupation": "전 메인주 상원의장 · 벌목노동자",
       "education": null,
       "family": null,
       "past_elections": [
-        "2026 상원 지명전당대회(7/25) 출마 선언 — 선두권"
+        "2026 상원 민주 지명전당대회(7/25) 566–5 인준 — Platner 사퇴 후 교체후보 확정",
+        "전 메인주 상원의장(Senate President)"
       ],
       "fundraising": null,
       "strengths": [
-        "노동계 기반",
-        "Z to A(당파) 47–48 Collins"
+        "노동계 기반·주 상원 지도부 경험",
+        "사퇴 후 첫 조사 UNH 잭슨 49–콜린스 46(D+3, 무당파 46–42)",
+        "비드포드 ICE 총격 대(對)콜린스 정서적 동력"
       ],
       "weaknesses": [
-        "짧은 캠페인 기간"
+        "짧은 캠페인·낮은 초기 인지도",
+        "주 상원의장 시절 '다혈질' 논란·2025년 세금 유치권(이후 납부)",
+        "이스라엘/AIPAC 입장 침묵 논란(JTA)"
       ],
-      "policy": [],
+      "policy": [
+        "노동자 권리·벌목·농촌 경제",
+        "메디케어·처방약가"
+      ],
       "kr_note": null,
       "sources": [
-        "https://www.notus.org/2026-election/platner-replacements-poll-maine-senate"
+        "https://mainemorningstar.com/2026/07/25/troy-jackson-officially-clinches-maine-democratic-u-s-senate-nomination/",
+        "https://thehill.com/homenews/5983301-jackson-leads-collins-poll/"
       ],
-      "status": "primary"
+      "status": "nominee"
     },
     {
       "state": "ME",

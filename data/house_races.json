@@ -1,6 +1,6 @@
 {
-  "as_of": "2026-07-12",
-  "source_label": "Cook Political Report · Sabato's Crystal Ball 교차 (6월 초 토스업 출발선 + 이후 등급 이동 반영; Cook 6/18 인쇄판이 7/12 현재 최신·무변)",
+  "as_of": "2026-07-26",
+  "source_label": "Cook Political Report · Sabato's Crystal Ball 교차 (6월 초 토스업 출발선 + 이후 등급 이동 반영; Cook 마지막 조정 7/16, 토스업 18곳 무변)",
   "cook_outlook": "D 우세 206 / R 우세 211 / Toss-up 18 (6월 초 Cook 토플라인)",
   "provenance_note": "등급은 확률이 아닙니다. 명단은 6월 초 Cook 토스업을 출발선으로 추적하며, 이후 일부 구는 등급이 이동해 Cook/Sabato 열에 현재 등급을 표기합니다. 재획정 4개구(NC-01·OH-09·OH-13·TX-34)의 '2024 마진'은 신(新)지도 기준이며, 신지도 정밀 마진이 미공표된 CA-13·CA-45와 지역구 정밀값 미확보 PA-07은 추정으로 채우지 않고 【수집】으로 둡니다.",
   "races": [
@@ -14,7 +14,7 @@
     { "district": "OH-13", "incumbent": "Emilia Sykes", "party": "D", "rating_cook": "Leans D", "rating_sabato": "Likely D", "rating_delta": null, "margin_2024": 3, "map_status": "신지도(재획정)", "status": "현역재출마", "korea_clue": null, "note": "신지도서 약간 민주 이동 · Cook Leans D / Sabato Likely D 불일치" },
     { "district": "TX-34", "incumbent": "Vicente Gonzalez", "party": "D", "rating_cook": "Toss Up", "rating_sabato": "Toss-up", "rating_delta": null, "margin_2024": -10, "map_status": "신지도(재획정)", "status": "현역재출마", "korea_clue": null, "note": "리오그란데밸리 · 신지도 Trump+10로 확대 · Mayra Flores(R) 재대결" },
     { "district": "WA-03", "incumbent": "Marie Gluesenkamp Perez", "party": "D", "rating_cook": "Toss Up", "rating_sabato": "Leans D", "rating_delta": null, "margin_2024": -3.3, "map_status": "기존지도", "status": "현역재출마", "korea_clue": null, "note": "트럼프 승리구 민주현역 · Cook Toss Up / Sabato Leans D 불일치 · vs Braun(R)" },
-    { "district": "AZ-01", "incumbent": "공석 (Schweikert 주지사 출마)", "party": "R", "rating_cook": "Toss Up", "rating_sabato": "Toss-up", "rating_delta": null, "margin_2024": -3.1, "map_status": "기존지도", "status": "공석(주지사 경선 출마)", "korea_clue": null, "note": "공석 — Schweikert 애리조나 주지사 경선 출마(현역 아님)" },
+    { "district": "AZ-01", "incumbent": "공석 (Schweikert 주지사 출마)", "party": "R", "rating_cook": "Toss Up", "rating_sabato": "Toss-up", "rating_delta": null, "margin_2024": -3.1, "map_status": "기존지도", "status": "공석(주지사 경선 출마)", "korea_clue": null, "note": "공석(Schweikert 주지사 출마) · 7/21 예선 본선 확정 — Amish Shah(D, DCCC 낙점 갈란-우즈 39.5–34.3 제압) vs Jay Feely(R, 트럼프 지지 49%+) · '당 기득권 vs 유권자' 구도" },
     { "district": "AZ-06", "incumbent": "Juan Ciscomani", "party": "R", "rating_cook": "Toss Up", "rating_sabato": "Leans R", "rating_delta": null, "margin_2024": -1, "map_status": "기존지도", "status": "현역재출마", "korea_clue": null, "note": "Cook Toss Up / Sabato Leans R 불일치 · Mendoza 47–Ciscomani 45(D+2, HMP 6/8–11, D성향)" },
     { "district": "CO-08", "incumbent": "Gabe Evans", "party": "R", "rating_cook": "Toss Up", "rating_sabato": "Leans R", "rating_delta": null, "margin_2024": -2, "map_status": "기존지도", "status": "현역재출마", "korea_clue": null, "note": "Cook Toss Up / Sabato Leans R 불일치 · 2024년 ~2,600표차 신승 · Rutinel(D) 대진 확정(중도 후보 ~30%p 격파) · DCCC Red to Blue" },
     { "district": "IA-01", "incumbent": "Mariannette Miller-Meeks", "party": "R", "rating_cook": "Toss Up", "rating_sabato": "Leans R", "rating_delta": null, "margin_2024": -8.5, "map_status": "기존지도", "status": "현역재출마", "korea_clue": null, "note": "Cook Toss Up / Sabato Leans R 불일치 · Bohannan(D) 재대결(2024 799표차) · 큰 split-ticket 괴리" },
