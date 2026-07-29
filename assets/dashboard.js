@@ -1,4 +1,5 @@
-// 자체 모델 대시보드 — data/model_dashboard.json 을 빌드 산출물에서 fetch 하여 렌더.
+// 외부 예측 종합 대시보드 — data/model_dashboard.json 을 빌드 산출물에서 fetch 하여 렌더.
+// 등급(Cook·Sabato)·예측시장 가격·외부 모델(RtWH·DDHQ)을 종류 구분해 표시.
 // 데이터 갱신 = JSON만 고쳐 push → Actions 재빌드 → 자동 반영.
 (function () {
   const DATA_URL = "data/model_dashboard.json";
@@ -14,23 +15,16 @@
   }
 
   function renderKPIs(root, d) {
-    // prob=null(확률 미산정 주)은 집계에서 제외 — 표시되는 모수는 산정 주 수
-    const scored = d.states.filter((s) => s.prob != null);
-    const probs = scored.map((s) => s.prob);
-    const demWins = scored.filter((s) => s.prob >= 50).length;
-    const repWins = scored.length - demWins;
-    const avg = (probs.reduce((a, b) => a + b, 0) / probs.length).toFixed(1);
-    const tossups = scored.filter((s) => s.prob >= 45 && s.prob <= 55).length;
-    const projDem =
-      47 +
-      scored.filter((s) => s.defense === "R" && s.prob >= 50).length -
-      scored.filter((s) => s.defense === "D" && s.prob < 50).length;
+    // 등급(Cook·Sabato) 기반 집계 — 등급은 확률이 아니므로 개수만 센다
+    const leanD = d.states.filter((s) => s.rating.includes("Lean D")).length;
+    const toss = d.states.filter((s) => s.rating.includes("Toss")).length;
+    const leanR = d.states.length - leanD - toss;
 
     const cards = [
-      ["경합주 민주 우세", `${demWins}석`, `산정 ${scored.length}개 주 중 · 전체 전망 ${projDem}석`, "#1971c2"],
-      ["경합주 공화 우세", `${repWins}석`, `산정 ${scored.length}개 주 중 · 전체 전망 ${100 - projDem}석`, "#c92a2a"],
-      ["초접전(45~55%)", `${tossups}개`, "경합도 최고 구간", "#f59e0b"],
-      ["다수당 탈환 확률", `${d.dem_majority_prob}%`, `순 기대의석 +${d.net_expected_seats}`, "#7c3aed"],
+      ["등급 민주 우위 (Lean D)", `${leanD}석`, "Cook·Sabato 종합 — 등급은 확률이 아님", "#1971c2"],
+      ["등급 토스업", `${toss}석`, "다수 향배를 좌우하는 구간", "#f59e0b"],
+      ["등급 공화 우위 (Lean R)", `${leanR}석`, "확장 표적(토스업 경계 포함)", "#c92a2a"],
+      ["민주 다수 확률 — 외부 모델", `${d.dem_majority_prob}%`, d.majority_note || "", "#7c3aed"],
     ];
     const wrap = el("div", "kpi-grid");
     cards.forEach(([label, val, sub, color]) => {
@@ -48,14 +42,16 @@
   function renderProbChart(d) {
     const ctx = document.getElementById("probChart");
     if (!ctx || !window.Chart) return;
+    // 예측시장 가격이 확인된 주만 표시 — 나머지는 추정으로 채우지 않는다
+    const priced = d.states.filter((s) => s.prob != null);
     new Chart(ctx, {
       type: "bar",
       data: {
-        labels: d.states.map((s) => s.name),
+        labels: priced.map((s) => s.name),
         datasets: [
           {
-            data: d.states.map((s) => s.prob),
-            backgroundColor: d.states.map((s) => probColor(s.prob)),
+            data: priced.map((s) => s.prob),
+            backgroundColor: priced.map((s) => probColor(s.prob)),
             borderRadius: 6,
             borderSkipped: false,
           },
@@ -83,7 +79,7 @@
     const wrap = el("div", "scenario-grid");
     d.scenarios.forEach((s) => {
       const c = el("div", "scenario-card sc-" + s.id);
-      c.appendChild(el("div", "sc-prob", s.prob + "%"));
+      c.appendChild(el("div", "sc-prob", s.prob != null ? s.prob + "%" : (s.prob_label || "—")));
       c.appendChild(el("div", "sc-name", `${s.name} <span>· ${s.subname}</span>`));
       c.appendChild(el("div", "sc-seats", s.seats));
       c.appendChild(el("div", "sc-majority", s.majority));
@@ -118,8 +114,8 @@
       card.appendChild(
         el("div", "prob-row",
           hasProb
-            ? `<span>민주 ${s.prob}%</span><span class="muted">공화 ${100 - s.prob}%</span>`
-            : `<span class="muted">모델 확률 산정 전</span>`)
+            ? `<span>시장가 민주 ${s.prob}%</span><span class="muted">공화 ${100 - s.prob}%</span>`
+            : `<span class="muted">예측시장 가격 미확인 — 등급 참조</span>`)
       );
       card.appendChild(el("div", "state-note", `<strong>핵심 변수</strong> ${s.key_var}<br><span class="muted">${s.note}</span>`));
       wrap.appendChild(card);

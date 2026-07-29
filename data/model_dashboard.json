@@ -1,56 +1,58 @@
 {
   "as_of": "2026-07-26",
   "facts_updated": "2026-07-26",
-  "source_label": "자체 분석 모델 (Universal Causal Framework V2 · SICAF)",
-  "provenance_note": "여기 확률은 시장·집계기관 수치가 아니라 내부 프레임워크의 모델 추정치입니다. Cook/Sabato 등급·예측시장과 같은 잣대로 비교하지 마세요. 확률 기준일 7/26. 각 주 확률은 등급·최신 조사 종합 가중 추정(SICAF/UCF 주간 브리핑 기반: Solid/Likely=확정, Lean≈0.75, Toss-up≈0.5 출발 후 조사·자금·구조로 보정)이며, 8개 감시 주 민주 기대승리 약 4.7석 → 비경합 기저 합산 시 민주 총 48~49석 중앙값, 다수 탈환(51석) 확률 대략 13~17%(RaceToTheWH ~13% ↔ DDHQ 50–50 이견).",
+  "source_label": "외부 예측 종합 — Cook·Sabato 등급 · 예측시장 · 외부 모델(RaceToTheWH·DDHQ)",
+  "provenance_note": "이 대시보드는 자체 정성 추정 대신 외부 예측을 종합해 표시합니다(2026-07-29 전환). 세 종류는 성격이 다릅니다 — 등급(Cook·Sabato)은 확률이 아닌 서수적 전문가 판단, 예측시장 가격(Kalshi·Polymarket)은 확률의 근사일 뿐(유동성·편향 혼입), 모델 확률(RaceToTheWH·DDHQ)은 각 기관 방법론의 산출물입니다. 같은 잣대로 직접 비교하지 마세요. 주별 % 막대는 예측시장 가격이 확인된 주(GA·OH)만 표시하며, 나머지는 등급만 제공합니다(추정으로 빈 칸을 채우지 않음). 기준일 7/26, 수치는 주간 브리핑 인용.",
   "current_balance": "R 53 / D 47",
   "dem_needed_net": 4,
-  "dem_majority_prob": 15,
-  "net_expected_seats": 1.8,
+  "dem_majority_prob": 13,
+  "majority_note": "RaceToTheWH 기준 · DDHQ는 50–50 이견 · 순증 컨센서스 +1~+3 (Inside Elections)",
+  "net_expected_seats": 2,
+  "net_display": "+1~+3",
   "states": [
     {
       "id": "ga",
       "name": "조지아",
       "nameEn": "Georgia",
       "defense": "D",
-      "rating": "Lean D",
-      "prob": 88,
+      "rating": "Lean D (Cook·Sabato)",
+      "prob": 80,
       "matchup": "Ossoff (D·현직) vs Collins (R)",
       "key_var": "수성 굳힘, Ossoff 자금 압도($40M 격차), 콜린스 스캔들",
-      "note": "AARP(7/13–16) Ossoff 52–43(+9), Fox+13·Wick+3.8과 일관. 트럼프 마리에타 유세에 콜린스 불참·사위 네오나치 의혹. 예측시장 오소프 재선 ~80%"
+      "note": "% = 예측시장 오소프 재선 ~80%. AARP(7/13–16) 52–43(+9)·Fox +13·Wick +3.8 일관 우위. 트럼프 마리에타 유세 콜린스 불참·사위 네오나치 의혹"
     },
     {
       "id": "nc",
       "name": "노스캐롤라이나",
       "nameEn": "North Carolina",
       "defense": "R",
-      "rating": "Lean D",
-      "prob": 75,
+      "rating": "Lean D (Cook·Sabato)",
+      "prob": null,
       "matchup": "Cooper (D·전 주지사) vs Whatley (R)",
       "key_var": "쿠퍼 우위이나 접전화, SLF $70M+ 회귀 압력",
-      "note": "공개 조사 쿠퍼 +4(PPP 하단)~+24, RCP ~+9.6. Q2 $14.8M vs $5M(~3:1). 공화 초반 네거티브로 봄철 +11~14서 축소. Cook·Sabato Lean D"
+      "note": "예측시장 가격 미확인. 공개 조사 쿠퍼 +4(PPP 하단)~+24, RCP ~+9.6. Q2 $14.8M vs $5M(~3:1)"
     },
     {
       "id": "nh",
       "name": "뉴햄프셔",
       "nameEn": "New Hampshire",
       "defense": "D",
-      "rating": "Lean D",
-      "prob": 72,
+      "rating": "Lean D (Cook)",
+      "prob": null,
       "matchup": "Pappas (D) vs Sununu (R 예비 압도)",
       "key_var": "접전화 지속, 무당파 표심, 외부 자금전",
-      "note": "UNH Pappas 47–44(4월 +7서 축소), NRSC 내부 D+1. One Nation $6M vs SMP $10.2M. 수누누 예비 59–20. Lean/Likely D"
+      "note": "예측시장 가격 미확인. UNH 파파스 47–44(4월 +7서 축소)·NRSC 내부 D+1. Likely D 평가 병존. One Nation $6M vs SMP $10.2M"
     },
     {
       "id": "mi",
       "name": "미시간",
       "nameEn": "Michigan",
       "defense": "D",
-      "rating": "Toss-up",
-      "prob": 65,
+      "rating": "Toss-up (Cook·Sabato)",
+      "prob": null,
       "matchup": "Stevens vs El-Sayed (8/4 예비) vs Rogers (R)",
-      "key_var": "주류 vs 좌파 대리전, AIPAC 자금, 투표율 우려",
-      "note": "AIPAC ~$30M(단일 경선 최대)·친스티븐스 TV 12:1 vs 엘사예드 Q2 모금 1위. 로저스 통화 유출. 네슬 등 투표율 이탈 경고(Bear 자산). Fox2 토론 7/27"
+      "key_var": "주류 vs 좌파 대리전, AIPAC $30M, 투표율 우려",
+      "note": "예측시장 가격 미확인(예비 미결). AIPAC ~$30M(단일 경선 최대)·친스티븐스 TV 12:1. 로저스 통화 유출·네슬 투표율 경고. 예비 8/4"
     },
     {
       "id": "me",
@@ -58,10 +60,10 @@
       "nameEn": "Maine",
       "defense": "R",
       "rating": "Toss-up",
-      "prob": 50,
+      "prob": null,
       "matchup": "Jackson (D, 7/25 인준) vs Collins (R·6선)",
       "key_var": "잭슨 검증(다혈질·세금유치권), Collins 초당파 브랜드",
-      "note": "잭슨 566–5 인준(7/25)으로 3주 혼란 종결. 사퇴 후 첫 조사 UNH(7/15–20) 잭슨 49–콜린스 46(무당파 46–42) — '붕괴 아닌 검증받는 경쟁력'. 이스라엘/AIPAC 침묵 논란 지속"
+      "note": "예측시장 가격 미확인. 잭슨 566–5 인준(7/25)으로 3주 혼란 종결. 사퇴 후 첫 조사 UNH 잭슨 49–콜린스 46(무당파 46–42)"
     },
     {
       "id": "ak",
@@ -69,70 +71,74 @@
       "nameEn": "Alaska",
       "defense": "R",
       "rating": "Toss-up (Cook 7/1)",
-      "prob": 50,
+      "prob": null,
       "matchup": "Peltola (D) vs Sullivan (R·현직)",
       "key_var": "순위선택투표(RCV), '두 명의 댄 설리번' 혼동, 현금 격차",
-      "note": "NYT/Siena 설리번 47–45 vs ASR 펠톨라 +5~6. Q2 펠톨라 $6.9M vs 설리번 $2M(현금은 설리번 $8.3M 우위). 16명 후보·동명이인 FBI·주 수사. 8/18 top-4 예비"
+      "note": "예측시장 가격 미확인. NYT/Siena 설리번 47–45 vs ASR 펠톨라 +5~6. Q2 펠톨라 $6.9M vs 설리번 $2M(현금은 설리번 $8.3M). 8/18 top-4 예비"
     },
     {
       "id": "oh",
       "name": "오하이오",
       "nameEn": "Ohio",
       "defense": "R",
-      "rating": "Toss-up",
-      "prob": 48,
+      "rating": "Toss-up (Cook 7/19)",
+      "prob": 56,
       "matchup": "Brown (D·전 상원) vs Husted (R·임명직)",
       "key_var": "데이터센터·전기요금 쐐기 vs 건설노조 이탈, 현금 격차",
-      "note": "Cook 7/19 토스업. 진성 토스업(Fox Brown+8 vs Emerson Husted+6). 예측시장 브라운 우위(Kalshi 56%·Polymarket 59%). Q2 $17.1M vs $7.7M(4분기 연속), 단 허스티드 현금 $11M"
+      "note": "% = Kalshi 브라운 ~56%(Polymarket ~59%). 조사 진성 토스업(Fox Brown+8 vs Emerson Husted+6). Q2 $17.1M vs $7.7M, 허스티드 현금 $11M"
     },
     {
       "id": "tx",
       "name": "텍사스",
       "nameEn": "Texas",
       "defense": "R",
-      "rating": "Lean R",
-      "prob": 25,
+      "rating": "Lean R (토스업 경계)",
+      "prob": null,
       "matchup": "Talarico (D) vs Paxton (R)",
       "key_var": "구조적 R lean, Paxton 비호감·검증, 토론 무대",
-      "note": "NYT/Siena 47–47 동률(무당파 +27). 탈라리코 Q2 $30M(누적 $70M+, 팩스턴 3배+)·흑인 유권자 $25M·RGV 유세. 팩스턴 첫 토론 수락(기피 관행 반전). 30년+ 민주 미승리 주"
+      "note": "예측시장은 팩스턴 우위(가격 수치 미수집). NYT/Siena 47–47 동률(무당파 +27). 탈라리코 Q2 $30M(누적 $70M+)·토론 수락. 30년+ 민주 미승리 주"
     }
   ],
   "scenarios": [
     {
-      "id": "base",
-      "name": "Base Case",
-      "subname": "공화 유지 (모달)",
+      "id": "rtwh",
+      "name": "RaceToTheWH",
+      "subname": "확률 모델",
+      "prob": 13,
+      "prob_label": "13%",
+      "seats": "≈ R 51.3 – D 48.7",
+      "majority": "공화 유지 ~87%",
+      "desc": "주별 시뮬레이션 기반 외부 모델. 7월 내내 공화 유지 85~87%로 안정 — 이번 사이클의 모달(modal) 전망"
+    },
+    {
+      "id": "ddhq",
+      "name": "Decision Desk HQ",
+      "subname": "확률 모델 · 이견",
       "prob": 50,
-      "seats": "D 48 — R 52",
-      "majority": "공화당 유지",
-      "desc": "확장 표적이 Lean R/토스업 유지되고 공화 실탄(허스티드 $11M·설리번 $8.3M·콜린스 $11M)+SLF 안전판(GA·NC·OH $70M+)이 설계대로 작동. RaceToTheWH ~87%가 modal"
+      "prob_label": "50%",
+      "seats": "50 – 50",
+      "majority": "동률 경로",
+      "desc": "주류 모델 중 처음으로 민주 동률 경로 제시(7월). RtWH와의 격차(87% vs 50%)는 메인 후보 확정·조지아 수성을 가중하는 방법론 차이"
     },
     {
-      "id": "bull",
-      "name": "Bull Case",
-      "subname": "동률·다수 접근",
-      "prob": 20,
-      "seats": "D 50~51 — R 50~49",
-      "majority": "동률 또는 D 탈환",
-      "desc": "메인 잭슨 검증 통과 + 텍사스·오하이오 리치 타깃 1곳 이상 전환 + 알래스카 RCV 역학. 잭슨 인준·조지아 수성·DDHQ 50–50이 상방 꼬리를 두껍게"
+      "id": "inside",
+      "name": "Inside Elections",
+      "subname": "순증 컨센서스",
+      "prob": null,
+      "prob_label": "+1~+3석",
+      "seats": "민주 순증 +1 ~ +3",
+      "majority": "다수 문턱(+4) 미달",
+      "desc": "등급 기반 컨센서스. 상방은 열려 있으나 토스업 3~4석(ME·MI·AK·OH)의 향배가 다수 여부를 좌우"
     },
     {
-      "id": "bear",
-      "name": "Bear Case",
-      "subname": "공화 확대",
-      "prob": 23,
-      "seats": "D 46~47 — R 54~53",
-      "majority": "공화당 확대",
-      "desc": "미시간 분열발 약체 후보(엘사예드 지명+투표율 이탈) + 메인 잭슨 검증 붕괴 + 확장 전패. 다만 조지아(+9)·NC(쿠퍼 우위)는 Bear 신호 없어 본류 진전 제한"
-    },
-    {
-      "id": "tail",
-      "name": "Tail Risk",
-      "subname": "극단 충격",
-      "prob": 7,
-      "seats": "D 45- ~ D 52+",
-      "majority": "양극단",
-      "desc": "상승(유가 $100·전쟁 페널티 톱라인 침투·TX 뒤집기) / 하락(미시간 붕괴+안보 결집)"
+      "id": "market",
+      "name": "예측시장",
+      "subname": "Kalshi·Polymarket",
+      "prob": null,
+      "prob_label": "주별만",
+      "seats": "GA 오소프 ~80% · OH 브라운 ~56–59%",
+      "majority": "상원 다수 가격 【수집】",
+      "desc": "가격은 확률의 근사일 뿐(유동성·편향 혼입). 주별 가격이 확인된 곳만 표시. 참고: 하원 다수는 시장 ~85%"
     }
   ],
   "timeline": [
@@ -155,7 +161,7 @@
       "event": "MI Fox 2 토론",
       "detail": "Stevens vs El-Sayed 마지막 대형 이벤트 (예비 8일 전)",
       "party": "dem",
-      "status": "upcoming"
+      "status": "done"
     },
     {
       "date": "8/4",

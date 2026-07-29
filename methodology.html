@@ -368,7 +368,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#세-종류의-수치" id="toc-세-종류의-수치" class="nav-link active" data-scroll-target="#세-종류의-수치">1. 세 종류의 수치</a></li>
-  <li><a href="#자체-모델-프레임워크-개요" id="toc-자체-모델-프레임워크-개요" class="nav-link" data-scroll-target="#자체-모델-프레임워크-개요">2. 자체 모델 — 프레임워크 개요</a></li>
+  <li><a href="#분석-프레임워크-ucfsicaf-주간-브리핑의-분석-틀" id="toc-분석-프레임워크-ucfsicaf-주간-브리핑의-분석-틀" class="nav-link" data-scroll-target="#분석-프레임워크-ucfsicaf-주간-브리핑의-분석-틀">2. 분석 프레임워크 (UCF·SICAF) — 주간 브리핑의 분석 틀</a></li>
   <li><a href="#데이터-편집-3원칙" id="toc-데이터-편집-3원칙" class="nav-link" data-scroll-target="#데이터-편집-3원칙">3. 데이터 편집 3원칙</a></li>
   <li><a href="#여론조사를-읽는-법-요약" id="toc-여론조사를-읽는-법-요약" class="nav-link" data-scroll-target="#여론조사를-읽는-법-요약">4. 여론조사를 읽는 법 (요약)</a></li>
   <li><a href="#갱신-주기" id="toc-갱신-주기" class="nav-link" data-scroll-target="#갱신-주기">5. 갱신 주기</a></li>
@@ -430,30 +430,38 @@ ul.task-list li input[type="checkbox"] {
 <td><strong>확률이 아님</strong> — 모델·시장과 직접 비교 금지</td>
 </tr>
 <tr class="odd">
-<td>자체 모델 확률</td>
-<td>“민주 다수 32%” 등</td>
-<td>아래 프레임워크 기반 내부 추정</td>
-<td>추정 주체가 우리 자신 — 가장 큰 회의가 필요</td>
+<td>외부 모델 확률</td>
+<td>RaceToTheWH ~13% · DDHQ 50–50</td>
+<td>외부 예측기관 모델의 산출물 인용</td>
+<td>모델 간 이견 자체가 정보 — 단일 모델 맹신 금지</td>
+</tr>
+<tr class="even">
+<td>예측시장 가격</td>
+<td>Kalshi·Polymarket (GA·OH 등)</td>
+<td>베팅 가격 = 확률의 근사</td>
+<td>유동성·편향 혼입 — 참고 지표로만</td>
 </tr>
 </tbody>
 </table>
-<p>예측시장 가격은 확률의 근사일 뿐이며(유동성·편향 혼입), 참고 지표로만 씁니다.</p>
 </section>
-<section id="자체-모델-프레임워크-개요" class="level2">
-<h2 class="anchored" data-anchor-id="자체-모델-프레임워크-개요">2. 자체 모델 — 프레임워크 개요</h2>
-<p>자체 확률은 <strong>인과 분석 프레임워크(Universal Causal Framework)</strong>와 <strong>전략·제도 분석(SICAF)</strong>을 결합해 산출합니다.</p>
+<section id="분석-프레임워크-ucfsicaf-주간-브리핑의-분석-틀" class="level2">
+<h2 class="anchored" data-anchor-id="분석-프레임워크-ucfsicaf-주간-브리핑의-분석-틀">2. 분석 프레임워크 (UCF·SICAF) — 주간 브리핑의 분석 틀</h2>
+<blockquote class="blockquote">
+<p><strong>2026-07-29 전환</strong>: <a href="./dashboard.html">대시보드</a>의 확률 수치는 자체 정성 추정 게재를 중단하고 <strong>외부 예측 종합</strong>(Cook·Sabato 등급 / 예측시장 가격 / RaceToTheWH·DDHQ 모델 / Inside Elections 순증 컨센서스)으로 전환했습니다. 아래 프레임워크는 확률 산출용이 아니라 <strong>주간 브리핑의 정성 분석 틀</strong>로 계속 사용됩니다. (자체 확률의 알고리즘화 — 몬테카를로·회귀 기반 — 는 검토 중이며, 도입 시 이 페이지에 방법을 공개합니다.)</p>
+</blockquote>
+<p>주간 브리핑의 판세 서술은 <strong>인과 분석 프레임워크(Universal Causal Framework)</strong>와 <strong>전략·제도 분석(SICAF)</strong>을 결합합니다.</p>
 <ol type="1">
 <li><strong>계층적 신호 분류</strong>: 일일 수집 뉴스를 단기 신호(L1) → 중기 드라이버(L2: 물가·지지율·자금) → 구조 요인(L3: 재획정·주별 당파 지형)으로 분류하고, 단기 노이즈가 구조 판단을 오염시키지 않도록 분리합니다.</li>
-<li><strong>제도적 상한</strong>: 선거제도(RCV·결선·top-4), 주별 당파 지형이 확률의 상한·하한을 설정합니다. 예: 구조적 R+8 주에서는 환경이 아무리 우호적이어도 민주 승리확률에 상한을 둡니다.</li>
-<li><strong>베이지안 업데이트</strong>: 주간 단위로 사전확률 대비 새 증거(여론조사·경선 결과·자금 보고)의 방향과 강도를 평가해 갱신합니다. 단일 조사보다 평균·추세를 우선하고, <strong>가설을 반박하는 증거를 의무적으로 수집</strong>합니다(확증 편향 방지).</li>
-<li><strong>시나리오 합성</strong>: 주별 확률에서 의석 분포 시나리오(Base/Bull/Bear)를 구성합니다. 주별 결과 간 상관(전국 환경 공통 충격)을 반영해, 독립 가정의 단순 곱보다 꼬리 시나리오에 더 큰 확률을 부여합니다.</li>
+<li><strong>제도적 상한</strong>: 선거제도(RCV·결선·top-4), 주별 당파 지형이 판단의 상한·하한을 설정합니다. 예: 구조적 R+8 주에서는 환경이 아무리 우호적이어도 민주 승리 전망에 상한을 둡니다.</li>
+<li><strong>베이지안 업데이트</strong>: 주간 단위로 사전 판단 대비 새 증거(여론조사·경선 결과·자금 보고)의 방향과 강도를 평가해 갱신합니다. 단일 조사보다 평균·추세를 우선하고, <strong>가설을 반박하는 증거를 의무적으로 수집</strong>합니다(확증 편향 방지).</li>
+<li><strong>시나리오 합성</strong>: 주별 판세에서 의석 분포 시나리오(Base/Bull/Bear)를 서술합니다. 주별 결과 간 상관(전국 환경 공통 충격)을 반영해, 독립 가정보다 꼬리 시나리오를 무겁게 봅니다.</li>
 </ol>
 </section>
 <section id="데이터-편집-3원칙" class="level2">
 <h2 class="anchored" data-anchor-id="데이터-편집-3원칙">3. 데이터 편집 3원칙</h2>
 <ol type="1">
 <li><strong>정규화</strong> — 기관마다 다른 등급·표본을 한 기준으로. 마진은 항상 양수 = 민주 우위(D+/R+).</li>
-<li><strong>변화추적</strong> — 모든 표에 “지난 주 대비” 자리. 직전 스냅샷은 <code>data/history/</code>에 보관.</li>
+<li><strong>변화추적</strong> — 모든 표에 “지난 주 대비” 자리. 직전 스냅샷은 <code>data/history/</code>에 보관(자동화 재정비 중 — 현재 수동).</li>
 <li><strong>출처라벨</strong> — 종류(시장/모델/등급/집계), 모집단(A/RV/LV), 기준일을 항상 보존.</li>
 </ol>
 <p>그리고 하나의 금지: <strong>추정으로 빈 칸을 채우지 않습니다.</strong> 모르는 값은 — 또는 【수집】으로 표시됩니다. 어떤 표가 비어 있다면, 그것은 우리가 아직 확인하지 못했다는 정직한 신호입니다.</p>
@@ -482,7 +490,7 @@ ul.task-list li input[type="checkbox"] {
 <td>매일</td>
 </tr>
 <tr class="even">
-<td>주간 브리핑·등급표·모델 확률</td>
+<td>주간 브리핑·등급표·외부 예측 종합</td>
 <td>주 1회 (월요일)</td>
 </tr>
 <tr class="odd">
