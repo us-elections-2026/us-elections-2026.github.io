@@ -1,6 +1,6 @@
 ---
 title: "전망 대시보드"
-subtitle: "2026 상원 — 경합주 승리확률·시나리오·일정 (자체 분석 모델)"
+subtitle: "2026 상원 — 경합주 판세·외부 예측·일정 (Cook·Sabato / 예측시장 / 외부 모델)"
 include-in-header:
   - text: |
       <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1"></script>
@@ -13,7 +13,7 @@ source(file.path("R", "helpers.R"))
 ```
 
 ::: {.callout-warning appearance="simple"}
-이 페이지의 확률은 **시장·집계기관 수치가 아니라 자체 프레임워크(Universal Causal Framework V2)의 모델 추정치**입니다. Cook·Sabato 등급이나 예측시장과 같은 잣대로 비교하지 마세요. 데이터를 갱신하려면 `data/model_dashboard.json` 한 파일만 고쳐 push하면 사이트가 다시 빌드되어 자동 반영됩니다.
+이 페이지는 **성격이 다른 세 종류의 외부 예측**을 종류 구분해 종합합니다 — **등급**(Cook·Sabato: 확률이 아닌 서수적 판단), **예측시장 가격**(Kalshi·Polymarket: 확률의 근사일 뿐, 유동성·편향 혼입), **모델 확률**(RaceToTheWH·DDHQ: 각 기관 방법론의 산출물). 같은 잣대로 직접 비교하지 마세요. 주별 % 막대는 시장 가격이 **확인된 주만** 표시합니다(추정으로 채우지 않음). 데이터를 갱신하려면 `data/model_dashboard.json` 한 파일만 고쳐 push하면 사이트가 다시 빌드되어 자동 반영됩니다.
 :::
 
 ::: {#dash-root}
@@ -24,12 +24,12 @@ source(file.path("R", "helpers.R"))
 ::: {#dash-kpis}
 :::
 
-### 주별 민주당 승리 확률
+### 예측시장 가격 — 민주 승리 (가격 확인 주만)
 ::: {.chart-wrap}
 <canvas id="probChart" height="180"></canvas>
 :::
 
-### 시나리오별 전망
+### 외부 예측기관 비교
 ::: {#dash-scenarios}
 :::
 

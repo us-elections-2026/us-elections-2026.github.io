@@ -312,13 +312,13 @@ gt_model_states <- function() {
     주 = s$name,
     구도 = ifelse(s$defense == "D", "민주 방어", "공화 방어"),
     대결 = s$matchup,
-    `D 승리확률` = ifelse(is.na(s$prob), "산정 전", paste0(s$prob, "%")),
+    `시장 가격(D)` = ifelse(is.na(s$prob), "미확인", paste0(s$prob, "%")),
     등급 = s$rating,
     `핵심 변수` = s$key_var
   ) |>
     gt() |>
     tab_header(
-      title = "경합주 민주당 승리확률 — 자체 분석 모델",
+      title = "경합주 판세 — 외부 예측 종합 (등급·예측시장)",
       subtitle = paste0(d$source_label, " · 확률 기준 ", d$as_of, " · 사실 ", d$facts_updated)
     ) |>
     tab_source_note(d$provenance_note) |>
@@ -329,15 +329,15 @@ gt_model_scenarios <- function() {
   d <- .load_json("model_dashboard")
   s <- d$scenarios
   tibble(
-    시나리오 = paste0(s$name, " (", s$subname, ")"),
-    확률 = paste0(s$prob, "%"),
+    예측기관 = paste0(s$name, " (", s$subname, ")"),
+    수치 = ifelse(is.na(s$prob), s$prob_label, paste0(s$prob, "%")),
     `의석 결과` = s$seats,
     다수당 = s$majority,
     설명 = s$desc
   ) |>
     gt() |>
-    tab_header(title = "상원 시나리오 — 자체 분석 모델",
-               subtitle = paste0("다수당 탈환 확률 ", d$dem_majority_prob, "% · 순 기대의석 +", d$net_expected_seats)) |>
+    tab_header(title = "외부 예측기관 비교 — 상원 다수",
+               subtitle = paste0("민주 다수 확률 ", d$dem_majority_prob, "% (", d$majority_note, ")")) |>
     .tbl_opts()
 }
 
@@ -405,6 +405,8 @@ model_kpi <- function() {
     as_of = d$as_of, facts = d$facts_updated,
     balance = d$current_balance, needed = d$dem_needed_net,
     majority = d$dem_majority_prob, net = d$net_expected_seats,
+    net_display = if (!is.null(d$net_display)) d$net_display else paste0("+", d$net_expected_seats),
+    majority_note = if (!is.null(d$majority_note)) d$majority_note else "",
     dem_wins = dem_wins, n = n_states, n_scored = length(probs),
     avg = sprintf("%.1f", mean(probs)),
     base_seats = d$scenarios$seats[d$scenarios$id == "base"]
@@ -732,11 +734,11 @@ home_kpis <- function() {
               cls, num, lab, sub, interp)
     paste0('<div class="kpis">',
       card("kpi-d", paste0(k$majority, "%"), "민주 다수당 탈환 확률",
-           paste0("자체 모델 · ", k$as_of),
-           sprintf("다수까지 순 +%d석 필요 — 모델상 경합권", k$needed)),
-      card("kpi-d", paste0("+", k$net), "순 기대의석 (민주)",
-           "자체 모델 기대값",
-           "공화 표적 5곳 · 민주 수성 3곳의 순증"),
+           paste0("외부 모델 RaceToTheWH · ", k$as_of),
+           sprintf("다수까지 순 +%d석 필요 — DDHQ는 50–50 이견", k$needed)),
+      card("kpi-d", k$net_display, "순증 컨센서스 (민주)",
+           "Inside Elections",
+           "공화 표적 5곳 · 민주 수성 3곳의 순증 — 문턱 +4 미달"),
       card("kpi-r", ifelse(is.na(tn), "—", sprintf("%+.1f", tn)), "트럼프 순지지도",
            paste0("Silver Bulletin · ~", td$as_of),
            "낮을수록 민주 우호 — 2기 최저권"),

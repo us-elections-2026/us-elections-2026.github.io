@@ -12,7 +12,7 @@ md <- jsonlite::read_json(file.path("data", "model_dashboard.json"), simplifyVec
 
 현재 의석 **`r k$balance`**. 부통령이 공화당(타이브레이크)이므로 민주당의 다수는 **51석**, 즉 **순증 +`r k$needed`석**부터입니다. 50:50은 다수가 아니라는 점이 이 사이클 분석의 출발점입니다.
 
-> 아래 확률은 자체 모델(기준 `r k$as_of`) 추정치입니다. 집계기관 평균·예측시장과 성격이 다릅니다 — [방법론](methodology.qmd) 참조.
+> 아래 확률은 **외부 예측기관 인용**(RaceToTheWH·DDHQ·Inside Elections, 기준 `r k$as_of`)입니다. 등급·집계기관 평균·예측시장과 성격이 다릅니다 — [방법론](methodology.qmd) 참조.
 
 ## 시나리오 분포 {#dist}
 
