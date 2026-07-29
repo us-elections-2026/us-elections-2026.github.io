@@ -33,6 +33,12 @@ source(file.path("R", "helpers.R"))
 ::: {#dash-scenarios}
 :::
 
+### 주별 예측 비교 (Cook · Sabato · 시장 · 자체 모델)
+
+```{r}
+gt_forecast_compare()
+```
+
 ### 경합주 상세
 ::: {#dash-states}
 :::

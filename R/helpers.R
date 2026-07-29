@@ -325,6 +325,33 @@ gt_model_states <- function() {
     .tbl_opts()
 }
 
+# 주별 예측 비교 — Cook·Sabato 등급 / 예측시장 가격 / 자체 모델 v0를 한 표에 (종류 구분)
+gt_forecast_compare <- function() {
+  d <- .load_json("model_dashboard"); s <- d$states
+  v0 <- tryCatch(.load_json("model_v0"), error = function(e) NULL)
+  v0p <- if (!is.null(v0)) setNames(v0$states$p_blend, v0$states$state) else NULL
+  self_col <- if (!is.null(v0p)) paste0(round(v0p[toupper(s$id)] * 100), "%") else rep("—", nrow(s))
+  tibble(
+    `주(방어)` = paste0(s$name, " (", ifelse(s$defense == "D", "민주", "공화"), ")"),
+    대결 = s$matchup,
+    `Cook` = s$rating_cook,
+    `Sabato` = s$rating_sabato,
+    `예측시장(D)` = ifelse(is.na(s$prob), "미확인", paste0(s$prob, "%")),
+    `자체 모델 v0(D)` = self_col
+  ) |>
+    gt() |>
+    tab_header(
+      title = "경합주 판세 — 주별 예측 비교",
+      subtitle = paste0("등급(Cook·Sabato) / 예측시장 가격 / 자체 몬테카를로 v0 · 기준 ", d$as_of,
+                        if (!is.null(v0)) paste0(" (v0 실행 ", v0$run_date, ")") else "")
+    ) |>
+    tab_source_note(paste0(
+      "종류 구분: 등급은 확률이 아닌 서수적 판단 · 시장가는 확률의 근사(확인된 주만, 미확인은 추정으로 채우지 않음) · ",
+      "자체 v0는 등급+시장+조사 블렌드 몬테카를로(방법론 페이지 공개, 재현 가능). ",
+      "Sabato '—'는 개별 등급 미확인.")) |>
+    .tbl_opts()
+}
+
 gt_model_scenarios <- function() {
   d <- .load_json("model_dashboard")
   s <- d$scenarios
