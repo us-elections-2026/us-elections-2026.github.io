@@ -368,7 +368,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#세-종류의-수치" id="toc-세-종류의-수치" class="nav-link active" data-scroll-target="#세-종류의-수치">1. 세 종류의 수치</a></li>
-  <li><a href="#분석-프레임워크-ucfsicaf-주간-브리핑의-분석-틀" id="toc-분석-프레임워크-ucfsicaf-주간-브리핑의-분석-틀" class="nav-link" data-scroll-target="#분석-프레임워크-ucfsicaf-주간-브리핑의-분석-틀">2. 분석 프레임워크 (UCF·SICAF) — 주간 브리핑의 분석 틀</a></li>
+  <li><a href="#분석-프레임워크-ucfsicaf-주간-브리핑의-분석-틀" id="toc-분석-프레임워크-ucfsicaf-주간-브리핑의-분석-틀" class="nav-link" data-scroll-target="#분석-프레임워크-ucfsicaf-주간-브리핑의-분석-틀">2. 분석 프레임워크 (UCF·SICAF) — 주간 브리핑의 분석 틀</a>
+  <ul class="collapse">
+  <li><a href="#자체-모델-v0-몬테카를로-재현-가능한-계산-모델" id="toc-자체-모델-v0-몬테카를로-재현-가능한-계산-모델" class="nav-link" data-scroll-target="#자체-모델-v0-몬테카를로-재현-가능한-계산-모델">2-1. 자체 모델 v0 (몬테카를로) — 재현 가능한 계산 모델</a></li>
+  </ul></li>
   <li><a href="#데이터-편집-3원칙" id="toc-데이터-편집-3원칙" class="nav-link" data-scroll-target="#데이터-편집-3원칙">3. 데이터 편집 3원칙</a></li>
   <li><a href="#여론조사를-읽는-법-요약" id="toc-여론조사를-읽는-법-요약" class="nav-link" data-scroll-target="#여론조사를-읽는-법-요약">4. 여론조사를 읽는 법 (요약)</a></li>
   <li><a href="#갱신-주기" id="toc-갱신-주기" class="nav-link" data-scroll-target="#갱신-주기">5. 갱신 주기</a></li>
@@ -447,8 +450,16 @@ ul.task-list li input[type="checkbox"] {
 <section id="분석-프레임워크-ucfsicaf-주간-브리핑의-분석-틀" class="level2">
 <h2 class="anchored" data-anchor-id="분석-프레임워크-ucfsicaf-주간-브리핑의-분석-틀">2. 분석 프레임워크 (UCF·SICAF) — 주간 브리핑의 분석 틀</h2>
 <blockquote class="blockquote">
-<p><strong>2026-07-29 전환</strong>: <a href="./dashboard.html">대시보드</a>의 확률 수치는 자체 정성 추정 게재를 중단하고 <strong>외부 예측 종합</strong>(Cook·Sabato 등급 / 예측시장 가격 / RaceToTheWH·DDHQ 모델 / Inside Elections 순증 컨센서스)으로 전환했습니다. 아래 프레임워크는 확률 산출용이 아니라 <strong>주간 브리핑의 정성 분석 틀</strong>로 계속 사용됩니다. (자체 확률의 알고리즘화 — 몬테카를로·회귀 기반 — 는 검토 중이며, 도입 시 이 페이지에 방법을 공개합니다.)</p>
+<p><strong>2026-07-29 전환</strong>: <a href="./dashboard.html">대시보드</a>의 확률 수치는 자체 정성 추정 게재를 중단하고 <strong>외부 예측 종합</strong>(Cook·Sabato 등급 / 예측시장 가격 / RaceToTheWH·DDHQ 모델 / Inside Elections 순증 컨센서스)으로 전환했습니다. 아래 프레임워크는 확률 산출용이 아니라 <strong>주간 브리핑의 정성 분석 틀</strong>로 계속 사용됩니다.</p>
 </blockquote>
+<section id="자체-모델-v0-몬테카를로-재현-가능한-계산-모델" class="level3">
+<h3 class="anchored" data-anchor-id="자체-모델-v0-몬테카를로-재현-가능한-계산-모델">2-1. 자체 모델 v0 (몬테카를로) — 재현 가능한 계산 모델</h3>
+<p>같은 날 <strong>알고리즘 기반 자체 모델 v0</strong>를 도입했습니다(대시보드 예측기관 비교에 외부 모델과 나란히 표시). 코드는 <code>scripts/model/run_model.R</code>, 산출물은 <code>data/model_v0.json</code> — <strong>고정 시드로 누구나 재실행·재현 가능</strong>합니다.</p>
+<ul>
+<li><strong>주별 확률</strong>: 등급 사전확률(Lean=0.75·Toss-up=0.50 등) + 예측시장 가격(확인 주만) + 여론조사 함의확률(Φ(마진/σ), σ=6pt)을 가중 블렌드. 조사는 시간감쇠(반감기 21일)·당파 후원 보정(×0.5), DB는 <code>data/senate_polls.csv</code>(출처·모집단·실사기간 전 행 기록).</li>
+<li><strong>상관 몬테카를로</strong>: 가우시안 코퓰러 — 전국 공통 충격 δ를 전 주가 공유(ρ=0.5)해 1만 회 시뮬레이션. “전국 파도” 시나리오가 독립 가정보다 무겁게 계산됩니다.</li>
+<li><strong>정직한 한계</strong>: σ·ρ·가중치는 문서화된 <strong>가정</strong>이며(역사적 수준 참고), 검증 기회는 11월 단 한 번이라 확률의 캘리브레이션을 사전 입증할 수 없습니다. 조사가 없는 주(예: 미시간 — 본선 조사 부재)는 등급만 사용하고, 사퇴 후보 시절의 조사는 제외합니다(메인=Jackson 대진만). 단일 수치보다 <strong>의석 구간(90%)</strong>을 보세요.</li>
+</ul>
 <p>주간 브리핑의 판세 서술은 <strong>인과 분석 프레임워크(Universal Causal Framework)</strong>와 <strong>전략·제도 분석(SICAF)</strong>을 결합합니다.</p>
 <ol type="1">
 <li><strong>계층적 신호 분류</strong>: 일일 수집 뉴스를 단기 신호(L1) → 중기 드라이버(L2: 물가·지지율·자금) → 구조 요인(L3: 재획정·주별 당파 지형)으로 분류하고, 단기 노이즈가 구조 판단을 오염시키지 않도록 분리합니다.</li>
@@ -456,6 +467,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>베이지안 업데이트</strong>: 주간 단위로 사전 판단 대비 새 증거(여론조사·경선 결과·자금 보고)의 방향과 강도를 평가해 갱신합니다. 단일 조사보다 평균·추세를 우선하고, <strong>가설을 반박하는 증거를 의무적으로 수집</strong>합니다(확증 편향 방지).</li>
 <li><strong>시나리오 합성</strong>: 주별 판세에서 의석 분포 시나리오(Base/Bull/Bear)를 서술합니다. 주별 결과 간 상관(전국 환경 공통 충격)을 반영해, 독립 가정보다 꼬리 시나리오를 무겁게 봅니다.</li>
 </ol>
+</section>
 </section>
 <section id="데이터-편집-3원칙" class="level2">
 <h2 class="anchored" data-anchor-id="데이터-편집-3원칙">3. 데이터 편집 3원칙</h2>
