@@ -24,14 +24,18 @@ source(file.path("R", "helpers.R"))
 ::: {#dash-kpis}
 :::
 
-### 예측시장 가격 — 민주 승리 (가격 확인 주만)
-::: {.chart-wrap}
-<canvas id="probChart" height="180"></canvas>
-:::
+### 민주 다수 확률 — 모델별 위치
 
-### 외부 예측기관 비교
+한 축 위의 위치가 곧 이견의 크기입니다. RaceToTheWH·자체 모델·DDHQ가 같은 질문("민주 다수 확률")에 얼마나 다르게 답하는지 보세요.
+
 ::: {#dash-scenarios}
 :::
+
+### 주별 민주 승리 전망 — 모델 막대 × 시장가 ◆
+
+막대 = 자체 모델 v0(등급+시장+조사 블렌드), ◆ = 예측시장 가격(확인된 주만). 점선 = 50%.
+
+<div style="height:420px; position:relative;"><canvas id="probChart"></canvas></div>
 
 ### 주별 예측 비교 (Cook · Sabato · 시장 · 자체 모델)
 

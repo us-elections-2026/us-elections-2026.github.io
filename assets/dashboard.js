@@ -39,53 +39,91 @@
     root.appendChild(wrap);
   }
 
-  function renderProbChart(d) {
+  // 8개 주 가로 막대(자체 모델 v0) × 예측시장가 마커(◆) 오버레이 — 50% 기준선 포함
+  function renderStateOutlook(d, m) {
     const ctx = document.getElementById("probChart");
     if (!ctx || !window.Chart) return;
-    // 예측시장 가격이 확인된 주만 표시 — 나머지는 추정으로 채우지 않는다
-    const priced = d.states.filter((s) => s.prob != null);
+    const v0 = {};
+    if (m && m.states) m.states.forEach((s) => { v0[s.state] = Math.round(s.p_blend * 100); });
+    const rows = d.states
+      .map((s) => ({ name: s.name, v: v0[s.id.toUpperCase()], mk: s.prob }))
+      .filter((r) => r.v != null)
+      .sort((a, b) => b.v - a.v);
+    const fiftyLine = {
+      id: "fifty",
+      afterDatasetsDraw(chart) {
+        const { ctx: c, chartArea, scales } = chart;
+        if (!scales.x) return;
+        const x = scales.x.getPixelForValue(50);
+        c.save(); c.strokeStyle = "#9ca3af"; c.setLineDash([4, 4]);
+        c.beginPath(); c.moveTo(x, chartArea.top); c.lineTo(x, chartArea.bottom); c.stroke(); c.restore();
+      },
+    };
     new Chart(ctx, {
-      type: "bar",
       data: {
-        labels: priced.map((s) => s.name),
+        labels: rows.map((r) => r.name),
         datasets: [
           {
-            data: priced.map((s) => s.prob),
-            backgroundColor: priced.map((s) => probColor(s.prob)),
-            borderRadius: 6,
-            borderSkipped: false,
+            type: "bar", label: "자체 모델 v0",
+            data: rows.map((r) => r.v),
+            backgroundColor: rows.map((r) => probColor(r.v)),
+            borderRadius: 6, borderSkipped: false, maxBarThickness: 26,
+          },
+          {
+            type: "scatter", label: "예측시장가 (확인 주만)",
+            data: rows.filter((r) => r.mk != null).map((r) => ({ x: r.mk, y: r.name })),
+            pointStyle: "rectRot", radius: 8, hoverRadius: 9,
+            backgroundColor: "#111827", borderColor: "#ffffff", borderWidth: 1.5,
           },
         ],
       },
       options: {
-        responsive: true,
+        indexAxis: "y", responsive: true, maintainAspectRatio: false,
         plugins: {
-          legend: { display: false },
-          tooltip: {
-            callbacks: {
-              label: (c) => `민주 ${c.parsed.y}% / 공화 ${100 - c.parsed.y}%`,
-            },
-          },
+          legend: { display: true, position: "bottom", labels: { boxWidth: 12, font: { size: 11 } } },
+          tooltip: { callbacks: { label: (c) => `${c.dataset.label}: 민주 ${c.parsed.x}%` } },
         },
         scales: {
-          y: { min: 0, max: 100, ticks: { callback: (v) => v + "%" }, grid: { color: "#f3f4f6" } },
-          x: { grid: { display: false } },
+          x: { min: 0, max: 100, ticks: { callback: (v) => v + "%" }, grid: { color: "#f3f4f6" } },
+          y: { grid: { display: false } },
         },
       },
+      plugins: [fiftyLine],
     });
   }
 
-  function renderScenarios(root, d) {
-    const wrap = el("div", "scenario-grid");
-    d.scenarios.forEach((s) => {
-      const c = el("div", "scenario-card sc-" + s.id);
-      c.appendChild(el("div", "sc-prob", s.prob != null ? s.prob + "%" : (s.prob_label || "—")));
-      c.appendChild(el("div", "sc-name", `${s.name} <span>· ${s.subname}</span>`));
-      c.appendChild(el("div", "sc-seats", s.seats));
-      c.appendChild(el("div", "sc-majority", s.majority));
-      c.appendChild(el("div", "sc-desc", s.desc));
-      wrap.appendChild(c);
+  // 민주 다수 확률 — 0~100% 스펙트럼 축 위에 모델별 위치 표시 + 설명 리스트
+  function renderMajoritySpectrum(root, d, m) {
+    const marks = [];
+    (d.scenarios || []).forEach((s) => {
+      if (s.prob != null) marks.push({ v: s.prob, name: s.id === "ddhq" ? "DDHQ" : s.name });
     });
+    if (m && m.dem_majority_prob != null)
+      marks.push({ v: Math.round(m.dem_majority_prob), name: "자체 " + (m.version || "v0") });
+    marks.sort((a, b) => a.v - b.v);
+
+    const wrap = el("div", "spec-wrap");
+    wrap.appendChild(el("div", "spec-axis",
+      "<span>0% — 공화 유지 확실</span><span>50%</span><span>100% — 민주 탈환 확실</span>"));
+    const bar = el("div", "spec-bar");
+    bar.appendChild(el("div", "spec-mid"));
+    marks.forEach((mk, i) => {
+      const dot = el("div", "spec-mark"); dot.style.left = mk.v + "%"; bar.appendChild(dot);
+      const lab = el("div", "spec-lab " + (i % 2 ? "below" : "above"),
+        `<span class="spec-val">${mk.v}%</span><span class="spec-name">${mk.name}</span>`);
+      lab.style.left = mk.v + "%"; bar.appendChild(lab);
+    });
+    wrap.appendChild(bar);
+
+    const ul = el("ul", "spec-notes");
+    (d.scenarios || []).forEach((s) => {
+      const val = s.prob != null ? s.prob + "%" : (s.prob_label || "—");
+      ul.appendChild(el("li", null, `<b>${s.name}</b> <span class="spec-sub">${s.subname} · ${val}</span> — ${s.desc}`));
+    });
+    if (m && m.dem_majority_prob != null)
+      ul.appendChild(el("li", null,
+        `<b>자체 모델 ${m.version || "v0"}</b> <span class="spec-sub">몬테카를로·재현 가능 · ${Math.round(m.dem_majority_prob)}%</span> — 의석 중앙값 D ${m.seats.median} (90% 구간 ${m.seats.p05}–${m.seats.p95}) · 등급+시장+조사 블렌드, 코드 scripts/model/run_model.R (${m.run_date})`));
+    wrap.appendChild(ul);
     root.appendChild(wrap);
   }
 
@@ -134,7 +172,7 @@
     root.appendChild(wrap);
   }
 
-  function mount(d) {
+  function mount(d, m) {
     const stamp = document.getElementById("dash-stamp");
     if (stamp)
       stamp.textContent = `${d.source_label} · 확률 기준 ${d.as_of} · 사실 ${d.facts_updated} · ${d.current_balance} (다수당까지 +${d.dem_needed_net})`;
@@ -143,9 +181,9 @@
 
     const k = document.getElementById("dash-kpis");
     if (k) renderKPIs(k, d);
-    renderProbChart(d);
     const sc = document.getElementById("dash-scenarios");
-    if (sc) renderScenarios(sc, d);
+    if (sc) renderMajoritySpectrum(sc, d, m);
+    renderStateOutlook(d, m);
     const st = document.getElementById("dash-states");
     if (st) renderStateCards(st, d);
     const tl = document.getElementById("dash-timeline");
@@ -162,21 +200,7 @@
       fetch(DATA_URL).then((r) => (r.ok ? r.json() : Promise.reject(r.status))),
       fetch("data/model_v0.json").then((r) => (r.ok ? r.json() : null)).catch(() => null),
     ])
-      .then(([d, m]) => {
-        // 자체 모델 v0(몬테카를로)가 있으면 예측기관 비교에 카드로 추가 — 외부 모델과 나란히, 방법 공개
-        if (m && m.dem_majority_prob != null) {
-          d.scenarios.push({
-            id: "selfv0",
-            name: "자체 모델 " + (m.version || "v0"),
-            subname: "몬테카를로 · 재현 가능",
-            prob: Math.round(m.dem_majority_prob),
-            seats: `중앙값 D ${m.seats.median} (90% 구간 ${m.seats.p05}–${m.seats.p95})`,
-            majority: "등급+시장+조사 블렌드",
-            desc: `상관 시뮬 ρ=${m.assumptions.rho} · ${m.n_sims.toLocaleString()}회 · 시드 고정. 코드 scripts/model/run_model.R — 방법·가정은 방법론 페이지 공개 (${m.run_date})`,
-          });
-        }
-        mount(d);
-      })
+      .then(([d, m]) => mount(d, m))
       .catch(fail);
   });
 })();

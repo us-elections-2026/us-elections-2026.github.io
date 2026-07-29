@@ -55,3 +55,21 @@
 .tl-done { opacity: .6; }
 
 .chart-wrap { border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; background: #fff; max-width: 760px; }
+
+/* 다수 확률 스펙트럼 (기관별 위치) */
+.spec-wrap { margin: .4rem 0 1.2rem; }
+.spec-axis { display: flex; justify-content: space-between; font-size: .72rem; color: #6b7280; margin-bottom: 44px; }
+.spec-bar { position: relative; height: 14px; border-radius: 7px; margin: 0 6px 52px;
+  background: linear-gradient(90deg, #d6604d 0%, #f4a582 30%, #f3f4f6 50%, #4393c3 70%, #2166ac 100%); }
+.spec-mid { position: absolute; left: 50%; top: -7px; bottom: -7px; width: 2px; background: #6b7280; opacity: .55; }
+.spec-mark { position: absolute; top: 50%; transform: translate(-50%, -50%); width: 15px; height: 15px;
+  border-radius: 50%; background: #111827; border: 2.5px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,.4); }
+.spec-lab { position: absolute; transform: translateX(-50%); text-align: center; font-size: .76rem; line-height: 1.25; white-space: nowrap; }
+.spec-lab.above { bottom: calc(100% + 8px); }
+.spec-lab.below { top: calc(100% + 8px); }
+.spec-val { display: block; font-weight: 800; font-size: .95rem; }
+.spec-name { display: block; font-size: .7rem; color: #6b7280; }
+.spec-notes { list-style: none; padding: 0; margin: 0; font-size: .82rem; color: #374151; }
+.spec-notes li { padding: 6px 0; border-top: 1px solid #f3f4f6; }
+.spec-notes li:first-child { border-top: 0; }
+.spec-sub { color: #6b7280; font-weight: 600; font-size: .76rem; }
