@@ -34,6 +34,12 @@ else echo "[weekly] ! FEC_API_KEY 없음 — fec_fundraising 건너뜀"; fi
 echo "[weekly] Korea Watch 동기화"
 python3 scripts/sync_korea_watch.py || echo "[weekly] ! KW 동기화 경고(계속)"
 
+# 2.5) 자체 모델 v0 재실행 (senate_polls.csv·등급·시장가 최신분 반영 → data/model_v0.json)
+if [ -f scripts/model/run_model.R ]; then
+  echo "[weekly] 자체 모델 v0 실행"
+  Rscript scripts/model/run_model.R || echo "[weekly] ! 모델 실행 실패(건너뜀 — 직전 산출물 유지)"
+fi
+
 # 3) 데이터 무결성 검증 — 하드 게이트
 echo "[weekly] 데이터 검증(validate_data.R)"
 Rscript scripts/validate_data.R || { echo "[weekly] 데이터 검증 실패 — 발행 중단"; exit 1; }

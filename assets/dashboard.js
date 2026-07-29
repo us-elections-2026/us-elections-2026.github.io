@@ -158,9 +158,25 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
-    fetch(DATA_URL)
-      .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
-      .then(mount)
+    Promise.all([
+      fetch(DATA_URL).then((r) => (r.ok ? r.json() : Promise.reject(r.status))),
+      fetch("data/model_v0.json").then((r) => (r.ok ? r.json() : null)).catch(() => null),
+    ])
+      .then(([d, m]) => {
+        // 자체 모델 v0(몬테카를로)가 있으면 예측기관 비교에 카드로 추가 — 외부 모델과 나란히, 방법 공개
+        if (m && m.dem_majority_prob != null) {
+          d.scenarios.push({
+            id: "selfv0",
+            name: "자체 모델 " + (m.version || "v0"),
+            subname: "몬테카를로 · 재현 가능",
+            prob: Math.round(m.dem_majority_prob),
+            seats: `중앙값 D ${m.seats.median} (90% 구간 ${m.seats.p05}–${m.seats.p95})`,
+            majority: "등급+시장+조사 블렌드",
+            desc: `상관 시뮬 ρ=${m.assumptions.rho} · ${m.n_sims.toLocaleString()}회 · 시드 고정. 코드 scripts/model/run_model.R — 방법·가정은 방법론 페이지 공개 (${m.run_date})`,
+          });
+        }
+        mount(d);
+      })
       .catch(fail);
   });
 })();

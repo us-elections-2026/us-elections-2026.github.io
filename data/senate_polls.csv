@@ -1,0 +1,17 @@
+state,pollster,sponsor,partisan,population,n,start_date,end_date,dem_candidate,rep_candidate,dem_pct,rep_pct,margin,note,source_url
+GA,Fox News/Beacon·Shaw,,none,RV,1002,2026-06-23,2026-06-27,Ossoff,Collins,56,43,13,,https://www.foxnews.com/politics/fox-news-poll-early-look-georgia-senate-race
+GA,AARP/Fabrizio·Impact,AARP,none,LV,1060,2026-07-13,2026-07-16,Ossoff,Collins,52,43,9,유력투표층,https://thehill.com/homenews/campaign/5986198-ossoff-leads-collins-ga-poll/amp/
+NC,NYT/Siena,,none,LV,,2026-06-15,2026-06-29,Cooper,Whatley,50,43,7,6개 주 패키지,https://sri.siena.edu/2026/07/01/new-york-times-siena-polls-in-alaska-iowa-north-carolina-and-ohio/
+NC,Catawba/YouGov,,none,,,,2026-06-24,Cooper,Whatley,48,34,14,발표일 기준,https://www.wfae.org/politics/2026-06-24/poll-shows-cooper-leading-whatley-by-wide-margin-in-nc-senate-race
+NC,Public Policy Polling,,D,,,,2026-07-13,Cooper,Whatley,48,44,4,민주 성향·공개일 기준,https://www.publicpolicypolling.com/polls/cooper-leads-but-whatley-has-a-path/
+TX,NYT/Siena,,none,LV,656,2026-06-19,2026-06-27,Talarico,Paxton,47,47,0,±4.5,https://thehill.com/homenews/campaign/5946853-texas-senate-race-james-talarico-ken-paxton-tied-survey/
+TX,UT Austin/Texas Politics Project,,none,,,,2026-06-23,Talarico,Paxton,42,43,-1,발표일 기준,https://www.texastribune.org/2026/06/23/texas-us-senate-poll-ken-paxton-james-talarico-ut-austin/
+OH,NYT/Siena,,none,LV,,2026-06-15,2026-06-29,Brown,Husted,47,50,-3,6개 주 패키지,https://sri.siena.edu/2026/07/01/new-york-times-siena-polls-in-alaska-iowa-north-carolina-and-ohio/
+OH,AARP/Fabrizio·Impact,AARP,none,LV,800,2026-06-14,2026-06-16,Brown,Husted,48,45,3,±3.5,https://www.aarp.org/press/releases/2026-06-25-ohio-poll-50-voters-key-tight-senate-governor-races/
+OH,Emerson College,,none,,,,2026-07-02,Brown,Husted,44,50,-6,게시일 기준,https://emersoncollegepolling.com/ohio-2026/
+OH,Fox News,,none,,,2026-05-28,2026-06-01,Brown,Husted,53,45,8,,https://www.newsweek.com/sherrod-brown-jon-husted-ohio-senate-race-poll-12122669
+AK,NYT/Siena,,none,LV,593,2026-06-15,2026-06-29,Peltola,Sullivan,45,47,-2,RCV 1차 의향,https://sri.siena.edu/2026/07/01/new-york-times-siena-polls-in-alaska-iowa-north-carolina-and-ohio/
+ME,NYT/Siena,,none,LV,,2026-06-19,2026-06-26,Platner,Collins,49,47,2,±4.8·사퇴 전 후보(모델 제외),https://sri.siena.edu/2026/07/01/new-york-times-siena-polls-in-alaska-iowa-north-carolina-and-ohio/
+ME,UNH Survey Center,,none,LV,1236,2026-07-15,2026-07-20,Jackson,Collins,49,46,3,사퇴 후 첫 조사 ±2.8,https://thehill.com/homenews/5983301-jackson-leads-collins-poll/
+NH,UNH Survey Center,,none,,,,2026-07-01,Pappas,Sununu,47,44,3,발표일 기준,https://scholars.unh.edu/survey_center_polls/944/
+NH,NRSC/Peak Insights,NRSC,R,,,,2026-07-10,Pappas,Sununu,43,42,1,내부 조사·공개일 기준,https://www.nrsc.org/press-releases/john-sununu-tied-with-chris-pappas-in-new-nrsc-poll-2026-07-10/
