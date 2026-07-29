@@ -21,7 +21,8 @@
       "key_var": "수성 굳힘, Ossoff 자금 압도($40M 격차), 콜린스 스캔들",
       "note": "% = 예측시장 오소프 재선 ~80%. AARP(7/13–16) 52–43(+9)·Fox +13·Wick +3.8 일관 우위. 트럼프 마리에타 유세 콜린스 불참·사위 네오나치 의혹",
       "rating_cook": "Lean D",
-      "rating_sabato": "Lean D"
+      "rating_sabato": "Lean D",
+      "rating_as_of": "7/26 확인 (변동 없음)"
     },
     {
       "id": "nc",
@@ -34,7 +35,8 @@
       "key_var": "쿠퍼 우위이나 접전화, SLF $70M+ 회귀 압력",
       "note": "예측시장 가격 미확인. 공개 조사 쿠퍼 +4(PPP 하단)~+24, RCP ~+9.6. Q2 $14.8M vs $5M(~3:1)",
       "rating_cook": "Lean D",
-      "rating_sabato": "Lean D"
+      "rating_sabato": "Lean D",
+      "rating_as_of": "7/26 확인 (변동 없음)"
     },
     {
       "id": "nh",
@@ -47,7 +49,8 @@
       "key_var": "접전화 지속, 무당파 표심, 외부 자금전",
       "note": "예측시장 가격 미확인. UNH 파파스 47–44(4월 +7서 축소)·NRSC 내부 D+1. Likely D 평가 병존. One Nation $6M vs SMP $10.2M",
       "rating_cook": "Lean D",
-      "rating_sabato": "—"
+      "rating_sabato": "—",
+      "rating_as_of": "7/26 확인 (변동 없음)"
     },
     {
       "id": "mi",
@@ -60,7 +63,8 @@
       "key_var": "주류 vs 좌파 대리전, AIPAC $30M, 투표율 우려",
       "note": "예측시장 가격 미확인(예비 미결). AIPAC ~$30M(단일 경선 최대)·친스티븐스 TV 12:1. 로저스 통화 유출·네슬 투표율 경고. 예비 8/4",
       "rating_cook": "Toss-up",
-      "rating_sabato": "Toss-up"
+      "rating_sabato": "Toss-up",
+      "rating_as_of": "7/26 확인 (변동 없음)"
     },
     {
       "id": "me",
@@ -73,7 +77,8 @@
       "key_var": "잭슨 검증(다혈질·세금유치권), Collins 초당파 브랜드",
       "note": "예측시장 가격 미확인. 잭슨 566–5 인준(7/25)으로 3주 혼란 종결. 사퇴 후 첫 조사 UNH 잭슨 49–콜린스 46(무당파 46–42)",
       "rating_cook": "Toss-up",
-      "rating_sabato": "—"
+      "rating_sabato": "—",
+      "rating_as_of": "7/26 확인 · Almanac 7/6 토스업"
     },
     {
       "id": "ak",
@@ -86,7 +91,8 @@
       "key_var": "순위선택투표(RCV), '두 명의 댄 설리번' 혼동, 현금 격차",
       "note": "예측시장 가격 미확인. NYT/Siena 설리번 47–45 vs ASR 펠톨라 +5~6. Q2 펠톨라 $6.9M vs 설리번 $2M(현금은 설리번 $8.3M). 8/18 top-4 예비",
       "rating_cook": "Toss-up (7/1)",
-      "rating_sabato": "Toss-up"
+      "rating_sabato": "Toss-up",
+      "rating_as_of": "Cook 7/1 Lean R→토스업 이동"
     },
     {
       "id": "oh",
@@ -99,7 +105,8 @@
       "key_var": "데이터센터·전기요금 쐐기 vs 건설노조 이탈, 현금 격차",
       "note": "% = Kalshi 브라운 ~56%(Polymarket ~59%). 조사 진성 토스업(Fox Brown+8 vs Emerson Husted+6). Q2 $17.1M vs $7.7M, 허스티드 현금 $11M",
       "rating_cook": "Toss-up (7/19)",
-      "rating_sabato": "Toss-up"
+      "rating_sabato": "Toss-up",
+      "rating_as_of": "Cook 7/19 토스업 유지 확인"
     },
     {
       "id": "tx",
@@ -112,7 +119,8 @@
       "key_var": "구조적 R lean, Paxton 비호감·검증, 토론 무대",
       "note": "예측시장은 팩스턴 우위(가격 수치 미수집). NYT/Siena 47–47 동률(무당파 +27). 탈라리코 Q2 $30M(누적 $70M+)·토론 수락. 30년+ 민주 미승리 주",
       "rating_cook": "Lean R",
-      "rating_sabato": "Lean R"
+      "rating_sabato": "Lean R",
+      "rating_as_of": "경선 후 Likely R→Lean R 하향 · 7/26 확인"
     }
   ],
   "scenarios": [

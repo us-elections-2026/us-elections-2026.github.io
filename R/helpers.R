@@ -336,6 +336,7 @@ gt_forecast_compare <- function() {
     대결 = s$matchup,
     `Cook` = s$rating_cook,
     `Sabato` = s$rating_sabato,
+    `등급 기준` = s$rating_as_of,
     `예측시장(D)` = ifelse(is.na(s$prob), "미확인", paste0(s$prob, "%")),
     `자체 모델 v0(D)` = self_col
   ) |>
@@ -348,7 +349,8 @@ gt_forecast_compare <- function() {
     tab_source_note(paste0(
       "종류 구분: 등급은 확률이 아닌 서수적 판단 · 시장가는 확률의 근사(확인된 주만, 미확인은 추정으로 채우지 않음) · ",
       "자체 v0는 등급+시장+조사 블렌드 몬테카를로(방법론 페이지 공개, 재현 가능). ",
-      "Sabato '—'는 개별 등급 미확인.")) |>
+      "등급 기준: 기관은 등급을 상시 갱신하므로 발표 원문 일자가 확인된 변동(AK 7/1·OH 7/19)만 그 날짜를, ",
+      "나머지는 주간 브리핑 확인 시점(7/26)을 기록. Sabato '—'는 개별 등급 미확인.")) |>
     .tbl_opts()
 }
 
