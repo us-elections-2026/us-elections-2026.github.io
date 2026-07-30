@@ -325,32 +325,26 @@ gt_model_states <- function() {
     .tbl_opts()
 }
 
-# 주별 예측 비교 — Cook·Sabato 등급 / 예측시장 가격 / 자체 모델 v0를 한 표에 (종류 구분)
+# 경합주 등급 — Cook·Sabato 현재 등급 + 올해 변동 이력 (아카이브에서 확인된 이동만)
 gt_forecast_compare <- function() {
   d <- .load_json("model_dashboard"); s <- d$states
-  v0 <- tryCatch(.load_json("model_v0"), error = function(e) NULL)
-  v0p <- if (!is.null(v0)) setNames(v0$states$p_blend, v0$states$state) else NULL
-  self_col <- if (!is.null(v0p)) paste0(round(v0p[toupper(s$id)] * 100), "%") else rep("—", nrow(s))
   tibble(
     `주(방어)` = paste0(s$name, " (", ifelse(s$defense == "D", "민주", "공화"), ")"),
     대결 = s$matchup,
-    `Cook` = s$rating_cook,
-    `Sabato` = s$rating_sabato,
-    `등급 기준` = s$rating_as_of,
-    `예측시장(D)` = ifelse(is.na(s$prob), "미확인", paste0(s$prob, "%")),
-    `자체 모델 v0(D)` = self_col
+    `Cook (현재)` = s$rating_cook,
+    `Sabato (현재)` = s$rating_sabato,
+    `올해 등급 변동` = s$rating_history
   ) |>
     gt() |>
     tab_header(
-      title = "경합주 판세 — 주별 예측 비교",
-      subtitle = paste0("등급(Cook·Sabato) / 예측시장 가격 / 자체 몬테카를로 v0 · 기준 ", d$as_of,
-                        if (!is.null(v0)) paste0(" (v0 실행 ", v0$run_date, ")") else "")
+      title = "경합주 등급 — Cook · Sabato 현재와 올해 변동",
+      subtitle = paste0("현재 등급 기준 ", d$as_of, " · 변동 이력은 주간 브리핑 아카이브(3/23~)에서 확인된 이동만 기록")
     ) |>
     tab_source_note(paste0(
-      "종류 구분: 등급은 확률이 아닌 서수적 판단 · 시장가는 확률의 근사(확인된 주만, 미확인은 추정으로 채우지 않음) · ",
-      "자체 v0는 등급+시장+조사 블렌드 몬테카를로(방법론 페이지 공개, 재현 가능). ",
-      "등급 기준: 기관은 등급을 상시 갱신하므로 발표 원문 일자가 확인된 변동(AK 7/1·OH 7/19)만 그 날짜를, ",
-      "나머지는 주간 브리핑 확인 시점(7/26)을 기록. Sabato '—'는 개별 등급 미확인.")) |>
+      "등급은 확률이 아닌 서수적 판단(모델·시장과 직접 비교 금지). ",
+      "화살표 날짜는 기관 발표가 원문·보도로 확인된 이동일이며, 일자 미확인 이동은 '확인 시점'으로 구분 표기(추정 금지). ",
+      "'—'는 해당 기관의 개별 등급 미확인. 주요 이동: 4/13 Cook GA·NC를 Lean D로 상향 + OH Toss-up, ",
+      "5/31 Cook TX Likely R→Lean R(팩스턴 경선승), 6/11 Sabato NC Lean D·AK/OH Toss-up, 7/1 Cook AK Toss-up.")) |>
     .tbl_opts()
 }
 

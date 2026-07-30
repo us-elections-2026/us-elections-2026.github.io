@@ -37,7 +37,7 @@ source(file.path("R", "helpers.R"))
 
 <div style="height:420px; position:relative;"><canvas id="probChart"></canvas></div>
 
-### 주별 예측 비교 (Cook · Sabato · 시장 · 자체 모델)
+### 경합주 등급 — Cook · Sabato 현재와 올해 변동
 
 ```{r}
 gt_forecast_compare()
@@ -56,17 +56,3 @@ gt_forecast_compare()
 :::
 
 <script src="assets/dashboard.js"></script>
-
----
-
-## 정적 표 (인쇄·접근성용)
-
-위 인터랙티브 카드와 동일한 데이터입니다. JavaScript가 막힌 환경에서도 보이도록 빌드 시점에 표로도 렌더링합니다.
-
-```{r}
-gt_model_states()
-```
-
-```{r}
-gt_model_scenarios()
-```
