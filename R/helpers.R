@@ -325,27 +325,68 @@ gt_model_states <- function() {
     .tbl_opts()
 }
 
-# 경합주 등급 — Cook·Sabato 현재 등급 + 올해 변동 이력 (아카이브에서 확인된 이동만)
-gt_forecast_compare <- function() {
-  d <- .load_json("model_dashboard"); s <- d$states
-  tibble(
-    `주(방어)` = paste0(s$name, " (", ifelse(s$defense == "D", "민주", "공화"), ")"),
-    대결 = s$matchup,
-    `Cook (현재)` = s$rating_cook,
-    `Sabato (현재)` = s$rating_sabato,
-    `올해 등급 변동` = s$rating_history
-  ) |>
-    gt() |>
-    tab_header(
-      title = "경합주 등급 — Cook · Sabato 현재와 올해 변동",
-      subtitle = paste0("현재 등급 기준 ", d$as_of, " · 변동 이력은 주간 브리핑 아카이브(3/23~)에서 확인된 이동만 기록")
-    ) |>
-    tab_source_note(paste0(
-      "등급은 확률이 아닌 서수적 판단(모델·시장과 직접 비교 금지). ",
-      "화살표 날짜는 기관 발표가 원문·보도로 확인된 이동일이며, 일자 미확인 이동은 '확인 시점'으로 구분 표기(추정 금지). ",
-      "'—'는 해당 기관의 개별 등급 미확인. 주요 이동: 4/13 Cook GA·NC를 Lean D로 상향 + OH Toss-up, ",
-      "5/31 Cook TX Likely R→Lean R(팩스턴 경선승), 6/11 Sabato NC Lean D·AK/OH Toss-up, 7/1 Cook AK Toss-up.")) |>
-    .tbl_opts()
+# 등급 변동 매트릭스 — 기관(Cook/Sabato) × 주 × 월. 굵은 테두리 = 그 달의 등급 이동.
+# 데이터: data/rating_history.json (status: confirmed/derived/unknown — 추정으로 채우지 않음)
+rating_matrix_html <- function() {
+  d <- .load_json("rating_history")
+  cls <- function(r) {
+    if (is.null(r) || is.na(r) || r == "") return("rmx-unk")
+    if (grepl("Solid D|Safe D", r)) "rmx-sd"
+    else if (grepl("Likely D", r)) "rmx-kd"
+    else if (grepl("Lean D", r)) "rmx-ld"
+    else if (grepl("Toss", r, ignore.case = TRUE)) "rmx-tu"
+    else if (grepl("Lean R", r)) "rmx-lr"
+    else if (grepl("Likely R", r)) "rmx-kr"
+    else if (grepl("Solid R|Safe R", r)) "rmx-sr"
+    else "rmx-unk"
+  }
+  months <- d$months
+  panels <- vapply(seq_len(nrow(d$agencies)), function(ai) {
+    ag <- d$agencies[ai, ]
+    rows <- ag$rows[[1]]
+    head <- paste0('<div class="rmx-corner"></div>',
+                   paste0('<div class="rmx-mon">', months, '</div>', collapse = ""))
+    body <- vapply(seq_len(nrow(rows)), function(ri) {
+      cells <- rows$cells[[ri]]
+      tds <- vapply(seq_len(nrow(cells)), function(ci) {
+        st <- cells$status[ci]
+        r  <- if (is.na(cells$r[ci])) "" else cells$r[ci]
+        lab <- if (st == "unknown" || r == "") "미확인" else r
+        chg <- !is.na(cells$changed[ci]) && isTRUE(cells$changed[ci])
+        note <- if (!is.null(cells$note) && !is.na(cells$note[ci])) cells$note[ci] else ""
+        sprintf('<div class="rmx-cell %s%s%s" title="%s">%s%s</div>',
+                cls(if (st == "unknown") "" else r),
+                if (chg) " rmx-chg" else "",
+                if (st == "derived") " rmx-drv" else "",
+                htmltools::htmlEscape(note), lab,
+                if (st == "derived") '<span class="rmx-drv-m">*</span>' else "")
+      }, character(1))
+      paste0('<div class="rmx-state" title="', rows$name[ri], '">', rows$state[ri], '</div>',
+             paste(tds, collapse = ""))
+    }, character(1))
+    sprintf('<div class="rmx-panel"><div class="rmx-title">%s</div><div class="rmx-grid">%s%s</div></div>',
+            ag$name, head, paste(body, collapse = ""))
+  }, character(1))
+
+  legend <- paste0(
+    '<div class="rmx-legend">',
+    '<span class="rmx-key rmx-ld"></span>Lean D',
+    '<span class="rmx-key rmx-kd"></span>Likely D',
+    '<span class="rmx-key rmx-tu"></span>Toss-up',
+    '<span class="rmx-key rmx-lr"></span>Lean R',
+    '<span class="rmx-key rmx-kr"></span>Likely R',
+    '<span class="rmx-key rmx-sr"></span>Safe/Solid R',
+    '<span class="rmx-key rmx-chg-key"></span>굵은 테두리 = 그 달 이동',
+    '<span class="rmx-drv-m">*</span>= 역산(이후 이동 서술의 이전 등급)',
+    '</div>')
+  note <- paste0(
+    '<p class="rmx-note">각 칸은 <b>해당 월말 기준</b> 등급입니다. ',
+    '등급은 확률이 아닌 서수적 판단이며, 기관은 상시 갱신하므로 <b>아카이브에서 확인된 것만</b> 표기하고 ',
+    '기록이 없으면 <b>미확인</b>으로 둡니다(추정으로 채우지 않음). ',
+    '주요 이동: <b>4/13</b> Cook GA·NC를 Lean D로, OH를 Toss-up으로 · <b>5/31</b> Cook TX Likely R→Lean R(팩스턴 경선승) · ',
+    '<b>6/11</b> Sabato NC Lean D·AK/OH Toss-up 일괄 이동 · <b>6월 하순</b> Cook OH Lean R 회귀 · <b>7/1</b> Cook AK Toss-up. ',
+    '기준 ', d$as_of, '.</p>')
+  paste0('<div class="rmx-wrap">', paste(panels, collapse = ""), "</div>", legend, note)
 }
 
 gt_model_scenarios <- function() {

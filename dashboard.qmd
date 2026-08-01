@@ -37,10 +37,11 @@ source(file.path("R", "helpers.R"))
 
 <div style="height:420px; position:relative;"><canvas id="probChart"></canvas></div>
 
-### 경합주 등급 — Cook · Sabato 현재와 올해 변동
+### 경합주 등급 — Cook · Sabato 올해 변동 (3월 → 7월)
 
 ```{r}
-gt_forecast_compare()
+#| output: asis
+cat(rating_matrix_html())
 ```
 
 ### 경합주 상세

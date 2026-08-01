@@ -1,0 +1,116 @@
+{
+  "as_of": "2026-07-26",
+  "months": ["3월", "4월", "5월", "6월", "7월"],
+  "cell_note": "각 칸 = 해당 월말 기준 등급. status: confirmed=아카이브에 그 시점 등급 명시 · derived=이후 이동 서술의 '이전 등급'에서 역산 · unknown=기록 없음(추정으로 채우지 않음). changed=true는 그 달에 등급이 이동한 칸.",
+  "source_note": "출처: NIS 상원 주간 브리핑 아카이브 18편(2026-03-23~07-26)의 기관 귀속 서술. Cook 원문 링크가 확인된 이동은 AK(1월 Solid R→Lean R, 7/1 Lean R→Toss-up)·GA/NC/OH(4/13)·TX(5/31). Sabato 6/11 일괄 이동(NC Lean D, AK·OH Toss-up)은 6/20 일일 브리핑이 주체를 명시.",
+  "agencies": [
+    {
+      "key": "cook",
+      "name": "Cook Political Report",
+      "rows": [
+        { "state": "NC", "name": "노스캐롤라이나", "cells": [
+          { "r": "Toss-up", "status": "confirmed" },
+          { "r": "Lean D", "status": "confirmed", "changed": true, "note": "4/13 Toss-up→Lean D" },
+          { "r": "Lean D", "status": "confirmed" },
+          { "r": "Lean D", "status": "confirmed" },
+          { "r": "Lean D", "status": "confirmed" } ] },
+        { "state": "GA", "name": "조지아", "cells": [
+          { "r": "Toss-up", "status": "confirmed" },
+          { "r": "Lean D", "status": "confirmed", "changed": true, "note": "4/13 Toss-up→Lean D" },
+          { "r": "Lean D", "status": "confirmed" },
+          { "r": "Lean D", "status": "confirmed" },
+          { "r": "Lean D", "status": "confirmed" } ] },
+        { "state": "NH", "name": "뉴햄프셔", "cells": [
+          { "r": "Likely D", "status": "derived" },
+          { "r": "Likely D", "status": "derived" },
+          { "r": "Likely D", "status": "confirmed" },
+          { "r": "Likely D", "status": "confirmed", "note": "6/18 일일에 Lean D 병기 — 표기 혼재" },
+          { "r": "Lean D", "status": "confirmed", "changed": true, "note": "7월 중 Lean D로 정리(발표 일자 미확인)" } ] },
+        { "state": "ME", "name": "메인", "cells": [
+          { "r": "Toss-up", "status": "derived" },
+          { "r": "Toss-up", "status": "derived" },
+          { "r": "Toss-up", "status": "derived" },
+          { "r": "Toss-up", "status": "confirmed" },
+          { "r": "Toss-up", "status": "confirmed", "note": "후보 교체(7/10 사퇴→7/25 잭슨 인준)에도 등급 불변" } ] },
+        { "state": "MI", "name": "미시간", "cells": [
+          { "r": "Toss-up", "status": "confirmed" },
+          { "r": "Toss-up", "status": "confirmed" },
+          { "r": "Toss-up", "status": "confirmed" },
+          { "r": "Toss-up", "status": "confirmed" },
+          { "r": "Toss-up", "status": "confirmed" } ] },
+        { "state": "OH", "name": "오하이오", "cells": [
+          { "r": "Lean R", "status": "derived" },
+          { "r": "Toss-up", "status": "confirmed", "changed": true, "note": "4/13 Lean R→Toss-up" },
+          { "r": "Toss-up", "status": "confirmed" },
+          { "r": "Lean R", "status": "confirmed", "changed": true, "note": "6월 하순 Toss-up→Lean R 회귀" },
+          { "r": "Toss-up", "status": "confirmed", "changed": true, "note": "7월 중순 재이동(7/19 확인)" } ] },
+        { "state": "AK", "name": "알래스카", "cells": [
+          { "r": "Lean R", "status": "confirmed", "note": "1월 Solid R→Lean R(펠톨라 출마)" },
+          { "r": "Lean R", "status": "confirmed" },
+          { "r": "Lean R", "status": "confirmed" },
+          { "r": "Lean R", "status": "confirmed", "note": "Sabato 6/11 Toss-up 이동에도 Cook은 Lean R 유지" },
+          { "r": "Toss-up", "status": "confirmed", "changed": true, "note": "7/1 Lean R→Toss-up (Cook 원문)" } ] },
+        { "state": "TX", "name": "텍사스", "cells": [
+          { "r": "Likely R", "status": "confirmed" },
+          { "r": "Likely R", "status": "confirmed" },
+          { "r": "Lean R", "status": "confirmed", "changed": true, "note": "5/31 Likely R→Lean R (팩스턴 5/26 경선승)" },
+          { "r": "Lean R", "status": "confirmed" },
+          { "r": "Lean R", "status": "confirmed", "note": "토스업 경계 평가 병존" } ] }
+      ]
+    },
+    {
+      "key": "sabato",
+      "name": "Sabato's Crystal Ball",
+      "rows": [
+        { "state": "NC", "name": "노스캐롤라이나", "cells": [
+          { "r": "Toss-up", "status": "derived" },
+          { "r": "Toss-up", "status": "derived" },
+          { "r": "Toss-up", "status": "derived" },
+          { "r": "Lean D", "status": "confirmed", "changed": true, "note": "6/11 Toss-up→Lean D" },
+          { "r": "Lean D", "status": "confirmed" } ] },
+        { "state": "GA", "name": "조지아", "cells": [
+          { "r": "", "status": "unknown" },
+          { "r": "", "status": "unknown" },
+          { "r": "Lean D", "status": "confirmed", "note": "5/18 'Lean D 유지' 확인 — 이동 시점 미확인" },
+          { "r": "Lean D", "status": "confirmed" },
+          { "r": "Lean D", "status": "confirmed" } ] },
+        { "state": "NH", "name": "뉴햄프셔", "cells": [
+          { "r": "", "status": "unknown" },
+          { "r": "", "status": "unknown" },
+          { "r": "", "status": "unknown" },
+          { "r": "", "status": "unknown" },
+          { "r": "", "status": "unknown" } ] },
+        { "state": "ME", "name": "메인", "cells": [
+          { "r": "", "status": "unknown" },
+          { "r": "", "status": "unknown" },
+          { "r": "", "status": "unknown" },
+          { "r": "", "status": "unknown" },
+          { "r": "", "status": "unknown", "note": "Almanac(7/6)은 토스업 분류 — Sabato 개별 등급은 미확인" } ] },
+        { "state": "MI", "name": "미시간", "cells": [
+          { "r": "", "status": "unknown" },
+          { "r": "", "status": "unknown" },
+          { "r": "", "status": "unknown" },
+          { "r": "Toss-up", "status": "confirmed" },
+          { "r": "Toss-up", "status": "confirmed" } ] },
+        { "state": "OH", "name": "오하이오", "cells": [
+          { "r": "Lean R", "status": "derived" },
+          { "r": "Lean R", "status": "derived" },
+          { "r": "Lean R", "status": "derived" },
+          { "r": "Toss-up", "status": "confirmed", "changed": true, "note": "6/11 Lean R→Toss-up" },
+          { "r": "Toss-up", "status": "confirmed" } ] },
+        { "state": "AK", "name": "알래스카", "cells": [
+          { "r": "Safe R", "status": "derived" },
+          { "r": "Lean R", "status": "confirmed", "changed": true, "note": "4월 초 Safe R→Lean R" },
+          { "r": "Lean R", "status": "confirmed" },
+          { "r": "Toss-up", "status": "confirmed", "changed": true, "note": "6/11 Lean R→Toss-up" },
+          { "r": "Toss-up", "status": "confirmed" } ] },
+        { "state": "TX", "name": "텍사스", "cells": [
+          { "r": "", "status": "unknown" },
+          { "r": "", "status": "unknown" },
+          { "r": "", "status": "unknown" },
+          { "r": "Lean R", "status": "confirmed", "note": "6/28 확인 — 이동 시점 미확인" },
+          { "r": "Lean R", "status": "confirmed" } ] }
+      ]
+    }
+  ]
+}

@@ -73,3 +73,23 @@
 .spec-notes li { padding: 6px 0; border-top: 1px solid #f3f4f6; }
 .spec-notes li:first-child { border-top: 0; }
 .spec-sub { color: #6b7280; font-weight: 600; font-size: .76rem; }
+
+/* 등급 변동 매트릭스 (기관 × 주 × 월) */
+.rmx-wrap { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; margin: .6rem 0 .4rem; }
+.rmx-title { font-size: .9rem; font-weight: 700; margin-bottom: 6px; }
+.rmx-grid { display: grid; grid-template-columns: 42px repeat(5, 1fr); gap: 3px; }
+.rmx-mon { font-size: .7rem; color: #6b7280; text-align: center; padding-bottom: 2px; }
+.rmx-state { font-size: .74rem; font-weight: 700; color: #374151; display: flex; align-items: center; }
+.rmx-cell { position: relative; font-size: .69rem; text-align: center; padding: 9px 2px; border-radius: 3px;
+  border: 2px solid transparent; white-space: nowrap; }
+.rmx-chg { border-color: #111827; font-weight: 700; }
+.rmx-sd { background: #2166ac; color: #fff; } .rmx-kd { background: #6ba3d6; color: #fff; }
+.rmx-ld { background: #b9d9ee; color: #123a5c; } .rmx-tu { background: #e5e7eb; color: #374151; }
+.rmx-lr { background: #f6b89c; color: #6b2d12; } .rmx-kr { background: #d6604d; color: #fff; }
+.rmx-sr { background: #b2182b; color: #fff; }
+.rmx-unk { background: repeating-linear-gradient(45deg, #f9fafb, #f9fafb 4px, #f1f2f4 4px, #f1f2f4 8px); color: #9ca3af; }
+.rmx-drv-m { font-size: .62rem; vertical-align: super; opacity: .75; }
+.rmx-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 5px 12px; font-size: .7rem; color: #6b7280; margin-top: 10px; }
+.rmx-key { width: 13px; height: 13px; border-radius: 3px; display: inline-block; }
+.rmx-chg-key { width: 13px; height: 13px; border-radius: 3px; border: 2px solid #111827; background: #fff; display: inline-block; }
+.rmx-note { font-size: .74rem; color: #6b7280; margin-top: 8px; line-height: 1.55; }
