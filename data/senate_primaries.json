@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-07-26",
+  "as_of": "2026-08-02",
   "rows": [
     {
       "state": "ME",
@@ -34,7 +34,7 @@
       "event": "민주당 경선",
       "date": "2026-08-04",
       "status": "예정",
-      "detail": "El-Sayed vs Stevens 2파전 통계적 동률 (McMorrow 이탈 7/5; Tavern 7/8, AIPAC 자금 대리전)"
+      "detail": "El-Sayed로 급수렴 — Emerson 7/26–27 54–39(+15), PSI 7/25–29 배분후 +9.6, RCP 경선 평균 +10.2, 예측시장 97%. 7/27 Fox2 마지막 토론 결정타 없음. AIPAC 계열 외부지출 $60M+(El-Sayed ~$4.6M의 12배)에도 판세 못 되돌림. 단 Glengariff 7/22–24 본선 가상은 Rogers가 El-Sayed에 +10.3, Stevens와는 동률 — 본선 경쟁력이 쟁점"
     },
     {
       "state": "TX",
@@ -69,7 +69,7 @@
       "event": "공화 특별 예비선거 (신규·감시 8주 밖)",
       "date": "2026-08-11",
       "status": "예정(신규)",
-      "detail": "Graham(R) 별세(7/11)로 공석 → McMaster 주지사 임시 지명(트럼프가 여동생 Darlene Graham Nordone 추천) 후 8/11 특별 예비(결선 8/25 가능, 후보 등록 7/21~28). 민주 Annie Andrews. 안전 공화이나 8월 혼돈 예비 = 꼬리 리스크"
+      "detail": "Graham(R) 별세(7/11)로 공석 → 여동생 Darline Graham이 잔여 임기 승계 후 정식 6년 임기 도전. 후보 등록 7/28 마감·총 12명(Russell Fry·Ralph Norman 하원의원, Mark Lynch, Duke Buckner, 막판 변수 Mark Sanford 전 주지사; 민주 Annie Andrews). 경선 8/11(사전투표 8/5–7)·결선 8/25 유력. 안전 공화이나 8월 혼돈 예비 = 꼬리 리스크"
     }
   ]
 }

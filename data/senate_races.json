@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-07-26",
+  "as_of": "2026-08-02",
   "dem_needed_net": 4,
   "current_balance": "R 53 / D 47",
   "races": [
@@ -7,10 +7,10 @@
       "state": "GA",
       "defense": "D",
       "incumbent": "Ossoff (D·현직) vs Collins (R)",
-      "rating": "Lean D",
-      "latest_poll": "Ossoff 52–43 (AARP D+9)",
-      "poll_source": "AARP 7/13–16 · Fox D+13",
-      "cash_on_hand": "Ossoff $42M vs Collins $2.1M (~19:1)",
+      "rating": "Lean D (Cook) / Likely D (Sabato 7/30↑)",
+      "latest_poll": "Ossoff 52–43 (AARP D+9) — 이번 주 신규 조사 없음",
+      "poll_source": "AARP 7/13–16 · Fox 6/23–27 D+13; 예측시장 오소프 재선 80%+",
+      "cash_on_hand": "Ossoff 현금 $42M+ (Q2 $20M) vs Collins ~$2M — 양당 상원 후보 최대",
       "kr_relevance": "통상·반도체"
     },
     {
@@ -18,8 +18,8 @@
       "defense": "D",
       "incumbent": "공개석 (Peters 은퇴) — Stevens vs El-Sayed (8/4 예비) vs Rogers (R)",
       "rating": "Toss Up",
-      "latest_poll": "Stevens–El-Sayed 통계적 동률 (조사방식 상충)",
-      "poll_source": "Tavern·글렌개리프 7월; AIPAC $30M 대리전",
+      "latest_poll": "본선 가상 Rogers 49.0–El-Sayed 38.7 (R+10.3) / Stevens 45.5–Rogers 44.7 (동률)",
+      "poll_source": "Glengariff 7/22–24 (본선); 경선 Emerson 7/26–27 El-Sayed +15 · PSI 7/25–29 +9.6 · 시장 97%",
       "cash_on_hand": null,
       "kr_relevance": "자동차·관세"
     },
@@ -28,8 +28,8 @@
       "defense": "D",
       "incumbent": "공개석 (Shaheen 은퇴) — Pappas (D) vs Sununu (R)",
       "rating": "Lean D",
-      "latest_poll": "Pappas 47–44 Sununu (D+3, 4월 +7서 축소)",
-      "poll_source": "UNH 7월 · NRSC 내부 D+1",
+      "latest_poll": "Pappas 47–44 Sununu (D+3, 4월 +7서 축소) — 이번 주 신규 조사 없음",
+      "poll_source": "UNH 7월 · Emerson 45–44 · NRSC 내부 D+1; Sununu 공화 예비 59–20 압도(9/8)",
       "cash_on_hand": "Pappas $5.1M vs Sununu $3M",
       "kr_relevance": "민주 수성 필수 3석 중 하나"
     },
@@ -38,19 +38,19 @@
       "defense": "R",
       "incumbent": "Jackson (D, 7/25 인준) vs Collins (R·6선)",
       "rating": "Toss Up",
-      "latest_poll": "Jackson 49–46 Collins (D+3, 사퇴 후 첫 조사)",
-      "poll_source": "UNH 7/15–20; 566–5 전당대회 인준",
-      "cash_on_hand": "Collins 보유 $11M (Jackson 신규)",
+      "latest_poll": "Jackson 49–46 Collins (D+3, 사퇴 후 첫 조사) — 이번 주 신규 조사 없음",
+      "poll_source": "UNH 7/15–20; 566–5 전당대회 인준·7/27 등재 마감 준수",
+      "cash_on_hand": "Collins Q2 $5.7M·현금 ~$11M vs Jackson 누적 $100만+ 돌파(7/29) — 약 $11M 열세",
       "kr_relevance": "민주 최우선 탈환 표적"
     },
     {
       "state": "NC",
       "defense": "R",
       "incumbent": "공석 — Cooper (D) vs Whatley (R)",
-      "rating": "Lean D",
-      "latest_poll": "Cooper +4~24 (PPP D+4 하단 · NYT/Siena D+7 · Carolina Journal D+11)",
-      "poll_source": "PPP 7/13 · NYT/Siena · Carolina Journal",
-      "cash_on_hand": "Cooper $14.8M vs Whatley $5M (~3:1)",
+      "rating": "Lean D (UVA) / 일부 Lean R",
+      "latest_poll": "Cooper 53–44 Whatley (Fox D+9, 공개 조사 최대 격차)",
+      "poll_source": "Fox News 7/23–27 (RV 1,005명, ±3) · PPP 7/13 D+4 · NYT/Siena D+7",
+      "cash_on_hand": "Cooper $14.8M vs Whatley $5M (현금 $20.7M vs $3.4M); SMP +$11M(총 ~$42M) vs SLF NC 공약 $71M",
       "kr_relevance": "—"
     },
     {
@@ -58,9 +58,9 @@
       "defense": "R",
       "incumbent": "Talarico (D) vs Paxton (R)",
       "rating": "Lean R",
-      "latest_poll": "Talarico 47–47 Paxton (동률)",
-      "poll_source": "NYT/Siena 6/19–27; 팩스턴 토론 수락",
-      "cash_on_hand": "Talarico Q2 $30M (누적 $70M+, 팩스턴 3배+)",
+      "latest_poll": "Talarico 45–40 Paxton (TPOR D+5 — 민주 성향·표본 D+11, 과독 금물)",
+      "poll_source": "TPOR 7/15–17 (LV 1,048명, ±3.4); RCP 평균은 Paxton +0.6",
+      "cash_on_hand": "Talarico Q2 $30M (팩스턴 3배, 가용현금 $21.5M vs $7.5M)",
       "kr_relevance": "블루웨이브 시 도전"
     },
     {
@@ -68,9 +68,9 @@
       "defense": "R",
       "incumbent": "Brown (D) vs Husted (R·임명직)",
       "rating": "Toss Up",
-      "latest_poll": "진성 토스업 (Fox D+8 vs Emerson R+6; 시장 Brown 우세)",
-      "poll_source": "Fox·Emerson·AARP 7월; Kalshi ~56%",
-      "cash_on_hand": "Brown Q2 $17.1M vs Husted $7.7M (현금 Husted $11M)",
+      "latest_poll": "진성 토스업 (Fox D+8 vs Emerson R+6) — 이번 주 신규 조사 없음",
+      "poll_source": "Fox 5/28–6/1 · Emerson · AARP; Kalshi ~56%",
+      "cash_on_hand": "Brown Q2 $17.1M(직접 $14.1M+PAC $3M)·현금 $16.2M vs Husted $7.7M(직접 $3.4M+PAC $4.3M); SMP +$24M → 총 ~$64M(사이클 최고)",
       "kr_relevance": "철강·제조업"
     },
     {
@@ -78,9 +78,9 @@
       "defense": "R",
       "incumbent": "Peltola (D) vs Sullivan (R·현직)",
       "rating": "Toss Up (Cook 7/1 이동)",
-      "latest_poll": "Sullivan 47–45 Peltola (R−2); ASR 펠톨라 +5~6",
-      "poll_source": "NYT/Siena · ASR 트래킹; 16명·동명이인 RCV 수사",
-      "cash_on_hand": "Peltola Q2 $6.9M vs Sullivan $2M (현금 Sullivan $8.3M 우위)",
+      "latest_poll": "Sullivan 47–45 Peltola (R−2); ASR 펠톨라 +5~6 — 이번 주 신규 조사 없음",
+      "poll_source": "NYT/Siena · ASR 트래킹; 동명이인 FBI·연방검찰 수사 심화(7/28)·8/18 top-4 예비 16명",
+      "cash_on_hand": "Peltola Q2 $6.9M vs Sullivan $2M (현금 Sullivan $8.3M > Peltola $6.1M)",
       "kr_relevance": "—"
     }
   ]

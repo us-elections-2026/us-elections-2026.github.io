@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-07-28",
+  "as_of": "2026-08-03",
   "source_label": "FEC (api.open.fec.gov) — 분기 보고 기준, 단위 $M",
   "provenance_note": "coverage_end가 분기 마감일. 슈퍼팩 외부지출은 별도(independent expenditures) — 이 파일에 미포함.",
   "states": {
@@ -317,18 +317,18 @@
         "coverage_end": "2025-12-31"
       },
       {
-        "name": "CALABRESE, CARMEN VINCENT MR.",
+        "name": "CALABRESE, CARMEM VINCENT MR.",
         "party": "REP",
-        "candidate_id": "S6ME00324",
+        "candidate_id": "S6ME00316",
         "receipts": 0.02,
         "disbursements": 0.02,
         "cash_on_hand": -0.0,
         "coverage_end": "2025-09-30"
       },
       {
-        "name": "CALABRESE, CARMEM VINCENT MR.",
+        "name": "CALABRESE, CARMEN VINCENT MR.",
         "party": "REP",
-        "candidate_id": "S6ME00316",
+        "candidate_id": "S6ME00324",
         "receipts": 0.02,
         "disbursements": 0.02,
         "cash_on_hand": -0.0,
@@ -631,7 +631,7 @@
       {
         "name": "VOLPE, CHRISTOPHER",
         "party": "DEM",
-        "candidate_id": "S6OH00353",
+        "candidate_id": "S6OH00346",
         "receipts": 0.0,
         "disbursements": 0.0,
         "cash_on_hand": 0.0,
@@ -640,7 +640,7 @@
       {
         "name": "VOLPE, CHRISTOPHER",
         "party": "DEM",
-        "candidate_id": "S6OH00346",
+        "candidate_id": "S6OH00353",
         "receipts": 0.0,
         "disbursements": 0.0,
         "cash_on_hand": 0.0,

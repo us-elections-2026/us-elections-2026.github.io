@@ -1,8 +1,8 @@
 {
-  "as_of": "2026-07-26",
+  "as_of": "2026-08-02",
   "rows": [
-    {"source": "Silver Bulletin", "approve": null, "disapprove": null, "net": -17.4, "row_as_of": "2026-07-24", "note": "-17.4 완전 횡보. 바이든 동기(-19.2) 첫 상회·5월 저점 -20.2서 회복. 경제 이슈 순지지 -22 사상 최저 고착"},
-    {"source": "FiftyPlusOne", "approve": 39.4, "disapprove": 57.5, "net": -18.1, "row_as_of": "2026-06-23", "note": "직전 갱신치(이후 신규 반영 대기)"},
-    {"source": "USPollingData", "approve": 38.6, "disapprove": 58.0, "net": -19.4, "row_as_of": "2026-06-12", "note": "Gallup·Ipsos·YouGov·Quinnipiac·MC 종합"}
+    {"source": "Silver Bulletin", "approve": 38.2, "disapprove": 58.8, "net": -20.6, "row_as_of": "2026-07-30", "note": "2기 최저 경신 — 5월 저점 -20.2 하향 돌파, 바이든 동기(-19.2) 첫 하회. 주 전반 -17.4 횡보 → 금 7/31 3.2p 급락. SB는 하락 요인으로 휘발유값·이란 전쟁 지목"},
+    {"source": "FiftyPlusOne", "approve": 36.8, "disapprove": 59.8, "net": -23.0, "row_as_of": "2026-07-29", "note": "병행 집계(7/29 일일 브리핑 기재) — SB 평균보다 낮게 산출"},
+    {"source": "USPollingData", "approve": 38.6, "disapprove": 58.0, "net": -19.4, "row_as_of": "2026-06-12", "note": "Gallup·Ipsos·YouGov·Quinnipiac·MC 종합 (이후 신규 반영 대기)"}
   ]
 }
