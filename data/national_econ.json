@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-07-28",
+  "as_of": "2026-08-03",
   "series_start": "2026-01",
   "source_label": "FRED (St. Louis Fed) — BLS·미시간대 원자료",
   "provenance_note": "빌드 시점 스냅샷. null은 수집 실패 — 추정으로 채우지 않음.",
@@ -29,9 +29,9 @@
       "series_id": "UMCSENT",
       "key": "umcsent",
       "unit": "지수",
-      "value": 44.8,
-      "prev": 49.8,
-      "period": "2026-05",
+      "value": 49.5,
+      "prev": 44.8,
+      "period": "2026-06",
       "election_note": "체감 경기 — 지지율 선행 지표 성격"
     }
   ],
@@ -108,6 +108,10 @@
       [
         "2026-05",
         44.8
+      ],
+      [
+        "2026-06",
+        49.5
       ]
     ]
   }

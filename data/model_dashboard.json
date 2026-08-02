@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-07-26",
-  "facts_updated": "2026-07-26",
+  "as_of": "2026-08-02",
+  "facts_updated": "2026-08-02",
   "source_label": "외부 예측 종합 — Cook·Sabato 등급 · 예측시장 · 외부 모델(RaceToTheWH·DDHQ)",
-  "provenance_note": "이 대시보드는 자체 정성 추정 대신 외부 예측을 종합해 표시합니다(2026-07-29 전환). 세 종류는 성격이 다릅니다 — 등급(Cook·Sabato)은 확률이 아닌 서수적 전문가 판단, 예측시장 가격(Kalshi·Polymarket)은 확률의 근사일 뿐(유동성·편향 혼입), 모델 확률(RaceToTheWH·DDHQ)은 각 기관 방법론의 산출물입니다. 같은 잣대로 직접 비교하지 마세요. 주별 % 막대는 예측시장 가격이 확인된 주(GA·OH)만 표시하며, 나머지는 등급만 제공합니다(추정으로 빈 칸을 채우지 않음). 기준일 7/26, 수치는 주간 브리핑 인용.",
+  "provenance_note": "이 대시보드는 자체 정성 추정 대신 외부 예측을 종합해 표시합니다(2026-07-29 전환). 세 종류는 성격이 다릅니다 — 등급(Cook·Sabato)은 확률이 아닌 서수적 전문가 판단, 예측시장 가격(Kalshi·Polymarket)은 확률의 근사일 뿐(유동성·편향 혼입), 모델 확률(RaceToTheWH·DDHQ)은 각 기관 방법론의 산출물입니다. 같은 잣대로 직접 비교하지 마세요. 주별 % 막대는 예측시장 가격이 확인된 주(GA·OH)만 표시하며, 나머지는 등급만 제공합니다(추정으로 빈 칸을 채우지 않음). 기준일 8/2, 수치는 주간 브리핑 인용.",
   "current_balance": "R 53 / D 47",
   "dem_needed_net": 4,
   "dem_majority_prob": 13,
-  "majority_note": "RaceToTheWH 기준 · DDHQ는 50–50 이견 · 순증 컨센서스 +1~+3 (Inside Elections)",
+  "majority_note": "270toWin ~87–88% 공화(≈51.3 R–48.7 D) 기준 · DDHQ는 50–50 이견 · 등급가중 순 기대의석 ≈ +1.8석 · 순증 컨센서스 +1~+3 (Inside Elections)",
   "net_expected_seats": 2,
   "net_display": "+1~+3",
   "states": [
@@ -15,15 +15,15 @@
       "name": "조지아",
       "nameEn": "Georgia",
       "defense": "D",
-      "rating": "Lean D (Cook·Sabato)",
+      "rating": "Lean D (Cook) / Likely D (Sabato)",
       "prob": 80,
       "matchup": "Ossoff (D·현직) vs Collins (R)",
-      "key_var": "수성 굳힘, Ossoff 자금 압도($40M 격차), 콜린스 스캔들",
-      "note": "% = 예측시장 오소프 재선 ~80%. AARP(7/13–16) 52–43(+9)·Fox +13·Wick +3.8 일관 우위. 트럼프 마리에타 유세 콜린스 불참·사위 네오나치 의혹",
+      "key_var": "첫 경합권 이탈, Ossoff 자금 압도($42M vs $2M), 콜린스 자질 악재",
+      "note": "% = 예측시장 오소프 재선 80%+. 사바토 7/30 Likely D 상향 — 8개 감시주 중 첫 경합권 이탈. 근거는 Q2 $20M·현금 $42M+(양당 상원 최대) 대 콜린스 ~$2M, 콜린스 사위 백인민족주의 의혹. 오소프 이란전 미군 사상자 들어 반트럼프 광고 공세(8/1). 이번 주 신규 조사 없음(AARP 7/13–16 52–43 유지)",
       "rating_cook": "Lean D",
-      "rating_sabato": "Lean D",
-      "rating_as_of": "7/26 확인 (변동 없음)",
-      "rating_history": "Cook: Toss-up →(4/13) Lean D · Sabato: Lean D(5/18 확인, 이동일 미확인)"
+      "rating_sabato": "Likely D",
+      "rating_as_of": "사바토 7/30 Lean D→Likely D 상향 (Cook은 Lean D 유지)",
+      "rating_history": "Cook: Toss-up →(4/13) Lean D · Sabato: Lean D(5/18 확인, 이동일 미확인) →(7/30) Likely D"
     },
     {
       "id": "nc",
@@ -33,8 +33,8 @@
       "rating": "Lean D (Cook·Sabato)",
       "prob": null,
       "matchup": "Cooper (D·전 주지사) vs Whatley (R)",
-      "key_var": "쿠퍼 우위이나 접전화, SLF $70M+ 회귀 압력",
-      "note": "예측시장 가격 미확인. 공개 조사 쿠퍼 +4(PPP 하단)~+24, RCP ~+9.6. Q2 $14.8M vs $5M(~3:1)",
+      "key_var": "쿠퍼 우위 확대(폭스 +9), SLF $71M 회귀 압력",
+      "note": "예측시장 가격 미확인. 폭스뉴스(7/23–27, RV 1,005명, ±3) 쿠퍼 53–와틀리 44(+9) — 공개 조사 최대 격차. 48% \"와틀리가 트럼프와 너무 가깝다\", 적극지지 84% vs 52%. Q2 $14.8M vs $5M(현금 $20.7M vs $3.4M). SMP +$11M(총 ~$42M) vs SLF NC 공약 $71M",
       "rating_cook": "Lean D",
       "rating_sabato": "Lean D",
       "rating_as_of": "7/26 확인 (변동 없음)",
@@ -49,7 +49,7 @@
       "prob": null,
       "matchup": "Pappas (D) vs Sununu (R 예비 압도)",
       "key_var": "접전화 지속, 무당파 표심, 외부 자금전",
-      "note": "예측시장 가격 미확인. UNH 파파스 47–44(4월 +7서 축소)·NRSC 내부 D+1. Likely D 평가 병존. One Nation $6M vs SMP $10.2M",
+      "note": "예측시장 가격 미확인. 이번 주 신규 조사 없음 — UNH 파파스 47–44(4월 +7서 축소)·에머슨 45–44 유지. 수누누 공화 예비 스콧 브라운 59–20 압도(9/8)·트럼프 지지 확보. Likely D 평가 병존",
       "rating_cook": "Lean D",
       "rating_sabato": "—",
       "rating_as_of": "7/26 확인 (변동 없음)",
@@ -63,8 +63,8 @@
       "rating": "Toss-up (Cook·Sabato)",
       "prob": null,
       "matchup": "Stevens vs El-Sayed (8/4 예비) vs Rogers (R)",
-      "key_var": "주류 vs 좌파 대리전, AIPAC $30M, 투표율 우려",
-      "note": "예측시장 가격 미확인(예비 미결). AIPAC ~$30M(단일 경선 최대)·친스티븐스 TV 12:1. 로저스 통화 유출·네슬 투표율 경고. 예비 8/4",
+      "key_var": "엘사예드 경선 확정 유력(97%) vs 본선 경쟁력(로저스 +10.3)",
+      "note": "예측시장 경선 엘사예드 97%(본선 가격 미확인). 경선 에머슨(7/26–27) 54–39·PSI(7/25–29) 배분후 +9.6·RCP 평균 +10.2. **본선 가상 글렌개리프(7/22–24): 로저스 49.0–엘사예드 38.7(R+10.3), 스티븐스 45.5–로저스 44.7(동률)** — CNN 유출 로저스 통화를 데이터가 뒷받침. AIPAC 계열 $60M+에도 판세 미반전. 예비 8/4",
       "rating_cook": "Toss-up",
       "rating_sabato": "Toss-up",
       "rating_as_of": "7/26 확인 (변동 없음)",
@@ -79,7 +79,7 @@
       "prob": null,
       "matchup": "Jackson (D, 7/25 인준) vs Collins (R·6선)",
       "key_var": "잭슨 검증(다혈질·세금유치권), Collins 초당파 브랜드",
-      "note": "예측시장 가격 미확인. 잭슨 566–5 인준(7/25)으로 3주 혼란 종결. 사퇴 후 첫 조사 UNH 잭슨 49–콜린스 46(무당파 46–42)",
+      "note": "예측시장 가격 미확인. 잭슨 566–5 인준(7/25)·7/27 등재 마감 준수. 지명 후 72시간 $60만+·7/8 출마 후 누적 $100만+ 돌파(7/29), 콜린스 현금 ~$11M로 약 $11M 열세. SLF $42M 공세가 좌파 이력(억만장자 증세·메디케어 포 올·ICE 폐지) 공격. 조사는 UNH(7/15–20) 잭슨 49–46 유지",
       "rating_cook": "Toss-up",
       "rating_sabato": "—",
       "rating_as_of": "7/26 확인 · Almanac 7/6 토스업",
@@ -94,7 +94,7 @@
       "prob": null,
       "matchup": "Peltola (D) vs Sullivan (R·현직)",
       "key_var": "순위선택투표(RCV), '두 명의 댄 설리번' 혼동, 현금 격차",
-      "note": "예측시장 가격 미확인. NYT/Siena 설리번 47–45 vs ASR 펠톨라 +5~6. Q2 펠톨라 $6.9M vs 설리번 $2M(현금은 설리번 $8.3M). 8/18 top-4 예비",
+      "note": "예측시장 가격 미확인. 이번 주 신규 조사 없음(NYT/Siena 설리번 47–45 vs ASR 펠톨라 +5~6 유지). Q2 펠톨라 $6.9M(95%가 $100 미만) vs 설리번 $2M, 현금은 설리번 $8.3M > 펠톨라 $6.1M. 동명이인 \"댄 J. 설리번\" FBI·주법무장관·연방검찰 수사 심화(NBC 7/28). 8/18 top-4 예비 16명",
       "rating_cook": "Toss-up (7/1)",
       "rating_sabato": "Toss-up",
       "rating_as_of": "Cook 7/1 Lean R→토스업 이동",
@@ -109,7 +109,7 @@
       "prob": 56,
       "matchup": "Brown (D·전 상원) vs Husted (R·임명직)",
       "key_var": "데이터센터·전기요금 쐐기 vs 건설노조 이탈, 현금 격차",
-      "note": "% = Kalshi 브라운 ~56%(Polymarket ~59%). 조사 진성 토스업(Fox Brown+8 vs Emerson Husted+6). Q2 $17.1M vs $7.7M, 허스티드 현금 $11M",
+      "note": "% = Kalshi 브라운 ~56%(Polymarket ~59%, 7/26 확인치 이월). 이번 주 신규 조사 없음(Fox Brown+8 vs Emerson Husted+6). Q2 브라운 $17.1M·현금 $16.2M vs 허스티드 $7.7M. SMP +$24M로 오하이오 총 ~$64M(사이클 최고, 타주 2배+)",
       "rating_cook": "Toss-up (7/19)",
       "rating_sabato": "Toss-up",
       "rating_as_of": "Cook 7/19 토스업 유지 확인",
@@ -124,7 +124,7 @@
       "prob": null,
       "matchup": "Talarico (D) vs Paxton (R)",
       "key_var": "구조적 R lean, Paxton 비호감·검증, 토론 무대",
-      "note": "예측시장은 팩스턴 우위(가격 수치 미수집). NYT/Siena 47–47 동률(무당파 +27). 탈라리코 Q2 $30M(누적 $70M+)·토론 수락. 30년+ 민주 미승리 주",
+      "note": "예측시장은 팩스턴 우위(가격 수치 미수집). TPOR(7/15–17, LV 1,048명) 탈라리코 45–팩스턴 40 — **조사기관 민주 성향·표본 D+11이라 과독 금물, RCP 평균은 팩스턴 +0.6**. Q2 $30M(팩스턴 3배, 가용현금 $21.5M vs $7.5M). 30년+ 민주 주 전역 미승리",
       "rating_cook": "Lean R",
       "rating_sabato": "Lean R",
       "rating_as_of": "경선 후 Likely R→Lean R 하향 · 7/26 확인",
@@ -140,7 +140,7 @@
       "prob_label": "13%",
       "seats": "≈ R 51.3 – D 48.7",
       "majority": "공화 유지 ~87%",
-      "desc": "주별 시뮬레이션 기반 외부 모델. 7월 내내 공화 유지 85~87%로 안정 — 이번 사이클의 모달(modal) 전망"
+      "desc": "주별 시뮬레이션 기반 외부 모델. 공화 유지 우세 유지 — 270toWin 컨센서스는 7/30판 ~87–88%(≈51.2 R–48.8 D → 주말 ≈51.3 R–48.7 D). 이번 사이클의 모달(modal) 전망"
     },
     {
       "id": "ddhq",
@@ -150,7 +150,7 @@
       "prob_label": "50%",
       "seats": "50 – 50",
       "majority": "동률 경로",
-      "desc": "주류 모델 중 처음으로 민주 동률 경로 제시(7월). RtWH와의 격차(87% vs 50%)는 메인 후보 확정·조지아 수성을 가중하는 방법론 차이"
+      "desc": "주류 모델 중 처음으로 민주 동률 경로 제시(7월), 8/2 기준 이견 유지. RtWH와의 격차는 메인 후보 확정·조지아 수성을 가중하는 방법론 차이"
     },
     {
       "id": "inside",
@@ -160,7 +160,7 @@
       "prob_label": "+1~+3석",
       "seats": "민주 순증 +1 ~ +3",
       "majority": "다수 문턱(+4) 미달",
-      "desc": "등급 기반 컨센서스. 상방은 열려 있으나 토스업 3~4석(ME·MI·AK·OH)의 향배가 다수 여부를 좌우"
+      "desc": "등급 기반 컨센서스. 등급가중 순 기대의석 ≈ +1.8석(확장 NC·ME·AK·OH·TX ≈ +2.48 / 방어 손실 MI·NH·GA ≈ −0.71)으로 문턱 +4에 미달. 토스업 3~4석(ME·MI·AK·OH)의 향배가 다수 여부를 좌우"
     },
     {
       "id": "market",
@@ -170,7 +170,7 @@
       "prob_label": "주별만",
       "seats": "GA 오소프 ~80% · OH 브라운 ~56–59%",
       "majority": "상원 다수 가격 【수집】",
-      "desc": "가격은 확률의 근사일 뿐(유동성·편향 혼입). 주별 가격이 확인된 곳만 표시. 참고: 하원 다수는 시장 ~85%"
+      "desc": "가격은 확률의 근사일 뿐(유동성·편향 혼입). 주별 가격이 확인된 곳만 표시. 미시간 엘사예드 경선 승리 폴리마켓·칼시 97%(경선 가격, 본선 아님). 참고: 하원 다수는 시장 ~85.5%"
     }
   ],
   "timeline": [
