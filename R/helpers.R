@@ -389,6 +389,33 @@ rating_matrix_html <- function() {
   paste0('<div class="rmx-wrap">', paste(panels, collapse = ""), "</div>", legend, note)
 }
 
+# Cook 현행 토스업 명단(자동 취득) + 사이트 상시 추적구와의 차집합을 함께 표기.
+# 두 목록이 다른 이유를 숨기지 않는 것이 목적 — 독자가 트래커를 'Cook 토스업'으로 오해하지 않게.
+gt_cook_tossups <- function() {
+  d <- .load_json("house_cook_districts")
+  ts <- d$districts[d$districts$key == "tossup", ]
+  tracked <- .load_json("house_races")$races$district
+  norm <- function(x) sub("^([A-Z]{2})-0*(\\d+)$", "\\1-\\2", x)   # PA-07 -> PA-7
+  ts$tracked <- ifelse(norm(ts$district) %in% norm(tracked), "○ 추적 중", "— 미추적")
+  inc <- if (!is.null(ts$incumbent)) ifelse(is.na(ts$incumbent), "—", ts$incumbent) else rep("—", nrow(ts))
+  only_tracked <- setdiff(norm(tracked), norm(ts$district))
+  tibble(
+    지역구 = ts$district,
+    `현역/공석` = inc,
+    `사이트 추적` = ts$tracked
+  ) |>
+    gt() |>
+    tab_header(
+      title = paste0("Cook 현행 토스업 ", nrow(ts), "개구"),
+      subtitle = paste0("자동 취득 · 기준 ", d$as_of, " · 등급은 확률이 아님")
+    ) |>
+    tab_source_note(paste0(
+      "‘사이트 추적’은 아래 트래커(6월 초 토스업 출발선)에 포함돼 있는지 여부입니다. ",
+      "반대로 트래커에는 있으나 Cook 현행 토스업이 아닌 곳: ",
+      paste(only_tracked, collapse = " · "), " — 이들은 이후 Lean/Likely로 이동했거나 명단에서 빠진 구입니다.")) |>
+    .tbl_opts()
+}
+
 gt_model_scenarios <- function() {
   d <- .load_json("model_dashboard")
   s <- d$scenarios
@@ -529,7 +556,7 @@ house_cook_bar_html <- function() {
                       vapply(keys, function(k) pal[[k]], ""), labs, seats)
   legend <- paste0('<div class="cook-legend">', paste(legitems, collapse = ""), '</div>')
   src <- sprintf(paste0('<p class="cook-src">출처: <a href="%s">%s</a> · 기준일 %s · ',
-                        '등급은 확률이 아니며 270towin Cook 페이지 수치를 주기적으로 수동 반영합니다.</p>'),
+                        '등급은 확률이 아닙니다. 435개 지역구 등급을 <code>scripts/fetch_cook_house.py</code>가 주 1회 자동 취득해 집계합니다.</p>'),
                  d$source_url, d$source_label, d$as_of)
   paste0('<figure class="cook-bar-wrap">', svg, legend, src, '</figure>')
 }

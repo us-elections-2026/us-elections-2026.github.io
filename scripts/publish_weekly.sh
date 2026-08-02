@@ -30,6 +30,10 @@ if [ -n "${FEC_API_KEY:-}" ]; then
   echo "[weekly] FEC 모금 취득(스테이징)"; python3 scripts/fetch_fec_fundraising.py || echo "[weekly] ! FEC 실패(건너뜀)"
 else echo "[weekly] ! FEC_API_KEY 없음 — fec_fundraising 건너뜀"; fi
 
+# 1.5) Cook 하원 등급 자동 취득(270towin 재게시분 · 435개구 해독) — 실패해도 계속
+echo "[weekly] Cook 하원 등급 취득"
+python3 scripts/fetch_cook_house.py || echo "[weekly] ! Cook 취득 실패(건너뜀 — 직전 데이터 유지)"
+
 # 2) Korea Watch 동기화(_NIS DB → data/korea_watch.csv, idempotent)
 echo "[weekly] Korea Watch 동기화"
 python3 scripts/sync_korea_watch.py || echo "[weekly] ! KW 동기화 경고(계속)"

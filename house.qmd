@@ -16,17 +16,47 @@ hr <- jsonlite::read_json(file.path("data", "house_races.json"), simplifyVector 
 cat(house_cook_bar_html())
 ```
 
-> Cook Political Report의 2026 하원 등급 토플라인을 사이트 톤으로 정리한 표입니다. [270towin Cook 페이지](https://www.270towin.com/2026-house-election/index_show_table.php?map_title=cook-political-report-2026-house-ratings)의 'Updated' 일자·카테고리 수치를 주기적으로 **수동 반영**합니다(등급은 확률이 아님). 아래 트래커는 이 중 **토스업·Lean 개별 경합구**를 깊이 다룹니다.
+> Cook Political Report의 2026 하원 등급입니다. cookpolitical.com은 직접 접근이 막혀 있어(403), Cook 등급을 재게시하는 [270towin](https://www.270towin.com/2026-house-election/index_show_table.php?map_title=cook-political-report-2026-house-ratings)에서 **435개 지역구 등급을 주 1회 자동 취득**해 집계합니다(`scripts/fetch_cook_house.py`). Solid 의석수도 토플라인 역산이 아니라 **지역구별 등급의 직접 집계**입니다.
 
-하원 435석 전체를 추적하지 않습니다. **6월 초 Cook 토스업이던 `r nrow(hr$races)`개구를 출발선으로 상시 추적**합니다 — 이후 일부는 Leans·Likely로 이동했으므로, 아래 표의 **Cook·Sabato 두 열에 현재 등급을 함께** 표기해 차이를 드러냅니다. Lean 등급 경합구는 주간 등급표에서만 관리하는 2단 구조입니다. 상원과 달리 지역구 단위 여론조사가 희소하므로, 하원 전망은 **제너릭 밸럿 + 등급 변동 + 자금 흐름**이 주된 신호입니다.
+::: {.callout-note appearance="simple"}
+**Cook 7/16 등급을 의석 범위로 옮기면** — 민주 우세 205 / 공화 우세 212 / 토스업 18. Cook은 같은 날 첫 "결과 범위"로 **공화 유지 ~221석 · 민주 호조 ~228석**을 제시했습니다. 과반은 218석.
+:::
 
-> 등급(Toss Up/Lean)은 확률이 아닙니다. 등급 명단의 출처는 표 상단에 표기하며, 빈 칸은 추정으로 채우지 않습니다.
+## Cook 현행 토스업 {#cook-tossups}
+
+```{r}
+gt_cook_tossups()
+```
 
 ## 토스업 트래커 {#tossups}
+
+아래 트래커는 **6월 초 Cook 토스업이던 `r nrow(hr$races)`개구를 출발선으로 상시 추적**하는 별도 목록입니다 — 위 Cook 현행 명단과 **의도적으로 다릅니다**(일부는 이후 Leans·Likely로 이동했고, 새로 토스업에 들어온 구는 아직 추적 대상이 아님). 각 구의 **Cook·Sabato 두 열에 현재 등급을 함께** 표기해 기관 간 차이를 드러냅니다. 상원과 달리 지역구 단위 여론조사가 희소하므로, 하원 전망은 **제너릭 밸럿 + 등급 변동 + 자금 흐름**이 주된 신호입니다.
+
+> 등급(Toss Up/Lean)은 확률이 아닙니다. 등급 명단의 출처는 표 상단에 표기하며, 빈 칸은 추정으로 채우지 않습니다.
 
 ```{r}
 gt_house_races()
 ```
+
+## 다수당 산식 — "명목 +3, 실질 +8" {#math}
+
+하원 다수는 218석이고 민주당의 **명목 필요 순증은 +3석**입니다. 그러나 중간 재획정이 지도를 바꾼 뒤로는 이 숫자가 실제 난도를 말해주지 않습니다.
+
+- **재획정 보정 실질 필요 순증 ≈ +8석** — Decision Desk HQ는 신지도의 공화 순효과를 **약 +5석**으로, Cook은 공화의 실효 쿠션을 **8~9석**으로 각각 독립 추정했고, 두 값이 같은 결론으로 수렴합니다. NBC·PBS 집계도 map effect를 **공화 ~16석 vs 민주 ~6석**으로 봅니다.
+- **정태 등급 vs 환경 반영 모델의 간극** — 등급만 가중하면 민주 **약 214석**(218에 4석 미달)이지만, 제너릭 밸럿 D+6대를 얹은 예측 모델들은 **민주 220~228석**을 봅니다. 이 간극이 2026 하원 논쟁의 정량적 형태입니다.
+
+| 구분 | 민주 다수 확률 | 성격 |
+|---|---|---|
+| Decision Desk HQ | 61% | 지역구 모델 (하단) |
+| Vote-Scope | 71% | 지역구 모델 |
+| Race to the WH | ~73% | 지역구 모델 |
+| Smarter.vote | 81~82% | 지역구 모델 (상단) |
+| Kalshi | 81% | 예측시장 가격 |
+| Polymarket | ~85% | 예측시장 가격 |
+
+: {.striped}
+
+> **"시장은 파도를, 지역구 모델은 박빙을 본다"** — 시장 가격(81~85%)이 모델 중앙값(~70%대)보다 일관되게 높습니다. 종류가 다른 수치이므로 같은 잣대로 비교하지 마세요(가격은 확률의 근사일 뿐이며 유동성·편향이 섞입니다). 기준: 2026년 7월 하순 주간 브리핑 인용.
 
 ## 구조 변수 — 재획정 {#redistricting}
 
@@ -56,6 +86,12 @@ NE-02의 거울상입니다. 트럼프가 9%p 이긴 지역을 지켜온 Golden�
 구도: Tom Barrett(R) 현역 · **Cook Toss Up / Sabato Leans R** · 2024 대선 약 **R+1**.
 18개 추적 구 중 **확인된 한국 연결이 있는 유일한 지역구**입니다. 핵심 카운티 Ingham(랜싱)에 LG에너지솔루션 생산기지와 Tesla–LG의 43억 달러 LFP 배터리 공장이 들어섭니다 — 즉 이 지역구의 제조업 일자리·외국인투자 서사가 한국 배터리 산업과 직접 맞닿아 있습니다. 민주당은 전 주(駐)우크라이나 대사 Bridget Brink가 도전. ([Supply Chain Dive](https://www.supplychaindive.com/news/tesla-lg-to-build-43b-lfp-battery-plant-in-michigan/814976/))
 
+7월 하순 배럿은 **이란 전쟁권한 결의안에 찬성표**를 던졌습니다(하원 214–208 가결, 찬성한 공화 4인 중 최취약 지역구). 인기 없는 전쟁에서 트럼프와 거리를 두는 전형적 방어 포지셔닝으로, 8/4 예선을 거쳐 허텔과의 리매치를 앞둔 포석입니다.
+
+**AZ-01 · AZ-06 (애리조나) — 7/21 예선으로 대진 확정**
+AZ-01(공석): 민주 **아미시 샤**가 DCCC가 지지한 갈란-우즈를 **39.5–34.3**으로 제압, 공화는 트럼프가 지지한 **제이 필리**가 49%대로 승리 → 본선 확정. 상원 메인·미시간과 같은 **"당 기득권 vs 유권자" 구도가 하원에서도 반복**된 사례입니다.
+AZ-06: 시스코마니(R) vs 멘도자(D) **리매치 공식화**. 6월 조사(House Majority PAC·민주 성향)에서 멘도자 47–시스코마니 45.
+
 ::: {.kr-box .kr-battery}
 MI-07은 18개 토스업 중 **한국 연결이 확인된 유일한 지역구**입니다. 지역 일자리·외국인투자 서사가 LG에너지솔루션 배터리 거점과 직접 맞닿아, 선거 결과가 한국 배터리 산업 환경의 정치적 변수로 이어집니다.
 :::
@@ -82,7 +118,12 @@ PA-07: Ryan Mackenzie(R) 현역(2024년 50.5–49.5 신승) · PVI **R+1**(정�
 **TX-34 (텍사스 남부)** — Vicente Gonzalez(D) 현역 · **Cook·Sabato 모두 Toss-up** · 신지도 2024 대선 **R+10**(구지도 R+4.5에서 텍사스 재획정으로 확대).
 2020년 Biden +15.5에서 불과 4년 만에 공화로 기운 밸리 라티노 표심의 상징. 2024년 맞붙은 **Mayra Flores(R)와 재대결**이며, 재획정으로 Hidalgo를 잃고 Nueces(코퍼스크리스티)를 편입해 지형이 더 험해졌습니다. 민주당이 밸리를 지킬 수 있는지의 풍향계. ([Center for Politics](https://centerforpolitics.org/crystalball/texasredistricting/) · [Washington Examiner](https://www.washingtonexaminer.com/news/campaigns/congressional/3781961/mayra-flores-ditches-cuellar-run-against-gonzalez-texas-redistricting/))
 
+## 자금 지형 (Q2 FEC) {#money}
+
+7/15 마감된 2분기 보고에서 **공화 현역 25명 이상이 민주 도전자에게 모금액을 역전당했습니다**(넌·페리·시스코마니·로울러·키건스 등 토스업 전면). 다만 역전은 분기 모금액 기준이고, **현역의 누적 현금 쿠션**(로울러 $4.8M·시스코마니 $4.1M)이 아직 방어선으로 남아 있습니다. VA-02에서는 루리아(D)가 3개 분기 연속 현역을 앞섰습니다.
+
 ## 데이터 갱신 규약
 
-- 토스업 명단·등급: **주 1회** (Cook/Sabato 교차 확인) → `data/house_races.json`
+- **Cook 등급(435개구)**: **자동** — `scripts/fetch_cook_house.py`가 270towin에서 취득 → `data/house_cook_ratings.json` + `data/house_cook_districts.json`. 주간 발행(`publish_weekly.sh`)에 포함.
+- 토스업 트래커 상세(현역·마진·한국 단서): **주 1회 수동** (Cook/Sabato 교차 확인) → `data/house_races.json`
 - `rating_delta`: 전주 스냅샷 대비 변동 (`data/history/` 보관 후 자동화 예정)

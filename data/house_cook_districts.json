@@ -1,0 +1,2692 @@
+{
+ "as_of": "2026-07-16",
+ "source_label": "Cook Political Report (270towin 재게시 · 자동 취득)",
+ "source_url": "https://www.270towin.com/2026-house-election/index_show_table.php?map_title=cook-political-report-2026-house-ratings",
+ "decode_note": "0=Toss-up 1=Solid D 2=Solid R 3=Likely D 4=Likely R 5=Leans D 6=Leans R · 주 약자순×지역구번호순",
+ "counts": {
+  "solid_d": 184,
+  "likely_d": 11,
+  "lean_d": 10,
+  "tossup": 18,
+  "lean_r": 9,
+  "likely_r": 18,
+  "solid_r": 185
+ },
+ "districts": [
+  {
+   "district": "AK-1",
+   "rating": "Likely R",
+   "key": "likely_r",
+   "party": "R",
+   "incumbent": "Begich"
+  },
+  {
+   "district": "AL-1",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "AL-2",
+   "rating": "Likely R",
+   "key": "likely_r",
+   "party": "R",
+   "incumbent": "Figures"
+  },
+  {
+   "district": "AL-3",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "AL-4",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "AL-5",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "AL-6",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "AL-7",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "AR-1",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "AR-2",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "AR-3",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "AR-4",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "AZ-1",
+   "rating": "Toss-up",
+   "key": "tossup",
+   "party": "T",
+   "incumbent": "OPEN"
+  },
+  {
+   "district": "AZ-2",
+   "rating": "Likely R",
+   "key": "likely_r",
+   "party": "R",
+   "incumbent": "Crane"
+  },
+  {
+   "district": "AZ-3",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "AZ-4",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "AZ-5",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "AZ-6",
+   "rating": "Toss-up",
+   "key": "tossup",
+   "party": "T",
+   "incumbent": "Ciscomani"
+  },
+  {
+   "district": "AZ-7",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "AZ-8",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "AZ-9",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "CA-1",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-2",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-3",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-4",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-5",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "CA-6",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-7",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-8",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-9",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-10",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-11",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-12",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-13",
+   "rating": "Lean D",
+   "key": "lean_d",
+   "party": "D",
+   "incumbent": "Gray"
+  },
+  {
+   "district": "CA-14",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-15",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-16",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-17",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-18",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-19",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-20",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "CA-21",
+   "rating": "Likely D",
+   "key": "likely_d",
+   "party": "D",
+   "incumbent": "Costa"
+  },
+  {
+   "district": "CA-22",
+   "rating": "Toss-up",
+   "key": "tossup",
+   "party": "T",
+   "incumbent": "Valadao"
+  },
+  {
+   "district": "CA-23",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "CA-24",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-25",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-26",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-27",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-28",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-29",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-30",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-31",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-32",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-33",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-34",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-35",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-36",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-37",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-38",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-39",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-40",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "CA-41",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-42",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-43",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-44",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-45",
+   "rating": "Likely D",
+   "key": "likely_d",
+   "party": "D",
+   "incumbent": "Tran"
+  },
+  {
+   "district": "CA-46",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-47",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-48",
+   "rating": "Lean D",
+   "key": "lean_d",
+   "party": "D",
+   "incumbent": "OPEN"
+  },
+  {
+   "district": "CA-49",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-50",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-51",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CA-52",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CO-1",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CO-2",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CO-3",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "CO-4",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "CO-5",
+   "rating": "Likely R",
+   "key": "likely_r",
+   "party": "R",
+   "incumbent": "Crank"
+  },
+  {
+   "district": "CO-6",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CO-7",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CO-8",
+   "rating": "Toss-up",
+   "key": "tossup",
+   "party": "T",
+   "incumbent": "Evans"
+  },
+  {
+   "district": "CT-1",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CT-2",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CT-3",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CT-4",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "CT-5",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "DE-1",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "FL-1",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "FL-2",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "FL-3",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "FL-4",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "FL-5",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "FL-6",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "FL-7",
+   "rating": "Likely R",
+   "key": "likely_r",
+   "party": "R",
+   "incumbent": "Mills"
+  },
+  {
+   "district": "FL-8",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "FL-9",
+   "rating": "Likely R",
+   "key": "likely_r",
+   "party": "R",
+   "incumbent": "Soto"
+  },
+  {
+   "district": "FL-10",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "FL-11",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "FL-12",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "FL-13",
+   "rating": "Likely R",
+   "key": "likely_r",
+   "party": "R",
+   "incumbent": "Luna"
+  },
+  {
+   "district": "FL-14",
+   "rating": "Lean R",
+   "key": "lean_r",
+   "party": "R",
+   "incumbent": "Castor"
+  },
+  {
+   "district": "FL-15",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "FL-16",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "FL-17",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "FL-18",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "FL-19",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "FL-20",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "FL-21",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "FL-22",
+   "rating": "Lean R",
+   "key": "lean_r",
+   "party": "R",
+   "incumbent": "Frankel"
+  },
+  {
+   "district": "FL-23",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "FL-24",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "FL-25",
+   "rating": "Toss-up",
+   "key": "tossup",
+   "party": "T",
+   "incumbent": "Wasserman Schultz"
+  },
+  {
+   "district": "FL-26",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "FL-27",
+   "rating": "Likely R",
+   "key": "likely_r",
+   "party": "R",
+   "incumbent": "Salazar"
+  },
+  {
+   "district": "FL-28",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "GA-1",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "GA-2",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "GA-3",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "GA-4",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "GA-5",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "GA-6",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "GA-7",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "GA-8",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "GA-9",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "GA-10",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "GA-11",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "GA-12",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "GA-13",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "GA-14",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "HI-1",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "HI-2",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "IA-1",
+   "rating": "Toss-up",
+   "key": "tossup",
+   "party": "T",
+   "incumbent": "Miller-Meeks"
+  },
+  {
+   "district": "IA-2",
+   "rating": "Lean R",
+   "key": "lean_r",
+   "party": "R",
+   "incumbent": "OPEN"
+  },
+  {
+   "district": "IA-3",
+   "rating": "Toss-up",
+   "key": "tossup",
+   "party": "T",
+   "incumbent": "Nunn"
+  },
+  {
+   "district": "IA-4",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "ID-1",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "ID-2",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "IL-1",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "IL-2",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "IL-3",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "IL-4",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "IL-5",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "IL-6",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "IL-7",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "IL-8",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "IL-9",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "IL-10",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "IL-11",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "IL-12",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "IL-13",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "IL-14",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "IL-15",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "IL-16",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "IL-17",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "IN-1",
+   "rating": "Likely D",
+   "key": "likely_d",
+   "party": "D",
+   "incumbent": "Mrvan"
+  },
+  {
+   "district": "IN-2",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "IN-3",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "IN-4",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "IN-5",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "IN-6",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "IN-7",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "IN-8",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "IN-9",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "KS-1",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "KS-2",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "KS-3",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "KS-4",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "KY-1",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "KY-2",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "KY-3",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "KY-4",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "KY-5",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "KY-6",
+   "rating": "Likely R",
+   "key": "likely_r",
+   "party": "R",
+   "incumbent": "OPEN"
+  },
+  {
+   "district": "LA-1",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "LA-2",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "LA-3",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "LA-4",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "LA-5",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "LA-6",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "MA-1",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "MA-2",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "MA-3",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "MA-4",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "MA-5",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "MA-6",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "MA-7",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "MA-8",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "MA-9",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "MD-1",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "MD-2",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "MD-3",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "MD-4",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "MD-5",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "MD-6",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "MD-7",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "MD-8",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "ME-1",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "ME-2",
+   "rating": "Likely R",
+   "key": "likely_r",
+   "party": "R",
+   "incumbent": "OPEN"
+  },
+  {
+   "district": "MI-1",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "MI-2",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "MI-3",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "MI-4",
+   "rating": "Lean R",
+   "key": "lean_r",
+   "party": "R",
+   "incumbent": "Huizenga"
+  },
+  {
+   "district": "MI-5",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "MI-6",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "MI-7",
+   "rating": "Toss-up",
+   "key": "tossup",
+   "party": "T",
+   "incumbent": "Barrett"
+  },
+  {
+   "district": "MI-8",
+   "rating": "Lean D",
+   "key": "lean_d",
+   "party": "D",
+   "incumbent": "McDonald Rivet"
+  },
+  {
+   "district": "MI-9",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "MI-10",
+   "rating": "Lean R",
+   "key": "lean_r",
+   "party": "R",
+   "incumbent": "OPEN"
+  },
+  {
+   "district": "MI-11",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "MI-12",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "MI-13",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "MN-1",
+   "rating": "Likely R",
+   "key": "likely_r",
+   "party": "R",
+   "incumbent": "Finstad"
+  },
+  {
+   "district": "MN-2",
+   "rating": "Likely D",
+   "key": "likely_d",
+   "party": "D",
+   "incumbent": "OPEN"
+  },
+  {
+   "district": "MN-3",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "MN-4",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "MN-5",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "MN-6",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "MN-7",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "MN-8",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "MO-1",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "MO-2",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "MO-3",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "MO-4",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "MO-5",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "MO-6",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "MO-7",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "MO-8",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "MS-1",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "MS-2",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "MS-3",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "MS-4",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "MT-1",
+   "rating": "Likely R",
+   "key": "likely_r",
+   "party": "R",
+   "incumbent": "OPEN"
+  },
+  {
+   "district": "MT-2",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "NC-1",
+   "rating": "Lean R",
+   "key": "lean_r",
+   "party": "R",
+   "incumbent": "Davis"
+  },
+  {
+   "district": "NC-2",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NC-3",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "NC-4",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NC-5",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "NC-6",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "NC-7",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "NC-8",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "NC-9",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "NC-10",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "NC-11",
+   "rating": "Lean R",
+   "key": "lean_r",
+   "party": "R",
+   "incumbent": "Edwards"
+  },
+  {
+   "district": "NC-12",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NC-13",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "NC-14",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "ND-1",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "NE-1",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "NE-2",
+   "rating": "Lean D",
+   "key": "lean_d",
+   "party": "D",
+   "incumbent": "OPEN"
+  },
+  {
+   "district": "NE-3",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "NH-1",
+   "rating": "Likely D",
+   "key": "likely_d",
+   "party": "D",
+   "incumbent": "OPEN"
+  },
+  {
+   "district": "NH-2",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NJ-1",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NJ-2",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "NJ-3",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NJ-4",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "NJ-5",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NJ-6",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NJ-7",
+   "rating": "Toss-up",
+   "key": "tossup",
+   "party": "T",
+   "incumbent": "Kean"
+  },
+  {
+   "district": "NJ-8",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NJ-9",
+   "rating": "Likely D",
+   "key": "likely_d",
+   "party": "D",
+   "incumbent": "Pou"
+  },
+  {
+   "district": "NJ-10",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NJ-11",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NJ-12",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NM-1",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NM-2",
+   "rating": "Lean D",
+   "key": "lean_d",
+   "party": "D",
+   "incumbent": "Vasquez"
+  },
+  {
+   "district": "NM-3",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NV-1",
+   "rating": "Likely D",
+   "key": "likely_d",
+   "party": "D",
+   "incumbent": "Titus"
+  },
+  {
+   "district": "NV-2",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "NV-3",
+   "rating": "Lean D",
+   "key": "lean_d",
+   "party": "D",
+   "incumbent": "Lee"
+  },
+  {
+   "district": "NV-4",
+   "rating": "Likely D",
+   "key": "likely_d",
+   "party": "D",
+   "incumbent": "Horsford"
+  },
+  {
+   "district": "NY-1",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "NY-2",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "NY-3",
+   "rating": "Lean D",
+   "key": "lean_d",
+   "party": "D",
+   "incumbent": "Suozzi"
+  },
+  {
+   "district": "NY-4",
+   "rating": "Lean D",
+   "key": "lean_d",
+   "party": "D",
+   "incumbent": "Gillen"
+  },
+  {
+   "district": "NY-5",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NY-6",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NY-7",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NY-8",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NY-9",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NY-10",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NY-11",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "NY-12",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NY-13",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NY-14",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NY-15",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NY-16",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NY-17",
+   "rating": "Toss-up",
+   "key": "tossup",
+   "party": "T",
+   "incumbent": "Lawler"
+  },
+  {
+   "district": "NY-18",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NY-19",
+   "rating": "Likely D",
+   "key": "likely_d",
+   "party": "D",
+   "incumbent": "Riley"
+  },
+  {
+   "district": "NY-20",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NY-21",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "NY-22",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NY-23",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "NY-24",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "NY-25",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "NY-26",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "OH-1",
+   "rating": "Lean D",
+   "key": "lean_d",
+   "party": "D",
+   "incumbent": "Landsman"
+  },
+  {
+   "district": "OH-2",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "OH-3",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "OH-4",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "OH-5",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "OH-6",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "OH-7",
+   "rating": "Likely R",
+   "key": "likely_r",
+   "party": "R",
+   "incumbent": "Miller"
+  },
+  {
+   "district": "OH-8",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "OH-9",
+   "rating": "Toss-up",
+   "key": "tossup",
+   "party": "T",
+   "incumbent": "Kaptur"
+  },
+  {
+   "district": "OH-10",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "OH-11",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "OH-12",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "OH-13",
+   "rating": "Likely D",
+   "key": "likely_d",
+   "party": "D",
+   "incumbent": "Sykes"
+  },
+  {
+   "district": "OH-14",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "OH-15",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "OK-1",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "OK-2",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "OK-3",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "OK-4",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "OK-5",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "OR-1",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "OR-2",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "OR-3",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "OR-4",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "OR-5",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "OR-6",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "PA-1",
+   "rating": "Likely R",
+   "key": "likely_r",
+   "party": "R",
+   "incumbent": "Fitzpatrick"
+  },
+  {
+   "district": "PA-2",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "PA-3",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "PA-4",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "PA-5",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "PA-6",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "PA-7",
+   "rating": "Toss-up",
+   "key": "tossup",
+   "party": "T",
+   "incumbent": "Mackenzie"
+  },
+  {
+   "district": "PA-8",
+   "rating": "Toss-up",
+   "key": "tossup",
+   "party": "T",
+   "incumbent": "Bresnahan"
+  },
+  {
+   "district": "PA-9",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "PA-10",
+   "rating": "Toss-up",
+   "key": "tossup",
+   "party": "T",
+   "incumbent": "Perry"
+  },
+  {
+   "district": "PA-11",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "PA-12",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "PA-13",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "PA-14",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "PA-15",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "PA-16",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "PA-17",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "RI-1",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "RI-2",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "SC-1",
+   "rating": "Likely R",
+   "key": "likely_r",
+   "party": "R",
+   "incumbent": "OPEN"
+  },
+  {
+   "district": "SC-2",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "SC-3",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "SC-4",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "SC-5",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "SC-6",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "SC-7",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "SD-1",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TN-1",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TN-2",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TN-3",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TN-4",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TN-5",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TN-6",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TN-7",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TN-8",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TN-9",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TX-1",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TX-2",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TX-3",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TX-4",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TX-5",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TX-6",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TX-7",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "TX-8",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TX-9",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TX-10",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TX-11",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TX-12",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TX-13",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TX-14",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TX-15",
+   "rating": "Lean R",
+   "key": "lean_r",
+   "party": "R",
+   "incumbent": "De La Cruz"
+  },
+  {
+   "district": "TX-16",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "TX-17",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TX-18",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "TX-19",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TX-20",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "TX-21",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TX-22",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TX-23",
+   "rating": "Likely R",
+   "key": "likely_r",
+   "party": "R",
+   "incumbent": "OPEN"
+  },
+  {
+   "district": "TX-24",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TX-25",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TX-26",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TX-27",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TX-28",
+   "rating": "Lean D",
+   "key": "lean_d",
+   "party": "D",
+   "incumbent": "Cuellar"
+  },
+  {
+   "district": "TX-29",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "TX-30",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "TX-31",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TX-32",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TX-33",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "TX-34",
+   "rating": "Toss-up",
+   "key": "tossup",
+   "party": "T",
+   "incumbent": "Gonzalez"
+  },
+  {
+   "district": "TX-35",
+   "rating": "Likely R",
+   "key": "likely_r",
+   "party": "R",
+   "incumbent": "OPEN (Casar)"
+  },
+  {
+   "district": "TX-36",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "TX-37",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "TX-38",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "UT-1",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "UT-2",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "UT-3",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "UT-4",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "VA-1",
+   "rating": "Lean R",
+   "key": "lean_r",
+   "party": "R",
+   "incumbent": "Wittman"
+  },
+  {
+   "district": "VA-2",
+   "rating": "Toss-up",
+   "key": "tossup",
+   "party": "T",
+   "incumbent": "Kiggans"
+  },
+  {
+   "district": "VA-3",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "VA-4",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "VA-5",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "VA-6",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "VA-7",
+   "rating": "Likely D",
+   "key": "likely_d",
+   "party": "D",
+   "incumbent": "Vindman"
+  },
+  {
+   "district": "VA-8",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "VA-9",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "VA-10",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "VA-11",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "VT-1",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "WA-1",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "WA-2",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "WA-3",
+   "rating": "Toss-up",
+   "key": "tossup",
+   "party": "T",
+   "incumbent": "Perez"
+  },
+  {
+   "district": "WA-4",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "WA-5",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "WA-6",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "WA-7",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "WA-8",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "WA-9",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "WA-10",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "WI-1",
+   "rating": "Likely R",
+   "key": "likely_r",
+   "party": "R"
+  },
+  {
+   "district": "WI-2",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "WI-3",
+   "rating": "Toss-up",
+   "key": "tossup",
+   "party": "T",
+   "incumbent": "Van Orden"
+  },
+  {
+   "district": "WI-4",
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
+  },
+  {
+   "district": "WI-5",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "WI-6",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "WI-7",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "WI-8",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "WV-1",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "WV-2",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  },
+  {
+   "district": "WY-1",
+   "rating": "Solid R",
+   "key": "solid_r",
+   "party": "R"
+  }
+ ]
+}
