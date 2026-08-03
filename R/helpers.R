@@ -389,6 +389,86 @@ rating_matrix_html <- function() {
   paste0('<div class="rmx-wrap">', paste(panels, collapse = ""), "</div>", legend, note)
 }
 
+# 1.6b 타일 격자 지도 (상원·주지사) -------------------------------------------
+# 지리 지도는 RI·DE·NH 같은 작은 주가 보이지 않아 선거 지도로 부적합하다.
+# 각 주를 같은 크기 칸으로 배치하는 타일 격자(tile grid)로 그려 모든 주를 동등하게 읽게 한다.
+# 외부 CDN·토폴로지 의존 없음(인라인 SVG) — 오프라인·인쇄에서도 동일하게 렌더된다.
+.TILE <- list(
+  AK=c(0,0), ME=c(0,10),
+  VT=c(1,9), NH=c(1,10),
+  WA=c(2,0), ID=c(2,1), MT=c(2,2), ND=c(2,3), MN=c(2,4), IL=c(2,5), WI=c(2,6), MI=c(2,7), NY=c(2,8), RI=c(2,9), MA=c(2,10),
+  OR=c(3,0), NV=c(3,1), WY=c(3,2), SD=c(3,3), IA=c(3,4), IN=c(3,5), OH=c(3,6), PA=c(3,7), NJ=c(3,8), CT=c(3,9),
+  CA=c(4,0), UT=c(4,1), CO=c(4,2), NE=c(4,3), MO=c(4,4), KY=c(4,5), WV=c(4,6), VA=c(4,7), MD=c(4,8), DE=c(4,9),
+  AZ=c(5,1), NM=c(5,2), KS=c(5,3), AR=c(5,4), TN=c(5,5), NC=c(5,6), SC=c(5,7),
+  OK=c(6,3), LA=c(6,4), MS=c(6,5), AL=c(6,6), GA=c(6,7),
+  HI=c(7,0), TX=c(7,3), FL=c(7,8)
+)
+.RATING_FILL <- c("Solid D" = "#2166ac", "Likely D" = "#6ba3d6", "Lean D" = "#b9d9ee",
+                  "Toss-up" = "#e5e7eb", "Lean R" = "#f6b89c", "Likely R" = "#d6604d",
+                  "Solid R" = "#b2182b")
+.RATING_INK <- c("Solid D" = "#ffffff", "Likely D" = "#0c2c47", "Lean D" = "#123a5c",
+                 "Toss-up" = "#374151", "Lean R" = "#6b2d12", "Likely R" = "#ffffff",
+                 "Solid R" = "#ffffff")
+
+# kind: "senate" | "governor" · 등급 원천은 270towin 재게시 피드(자동 취득)
+us_tile_map_html <- function(kind = c("senate", "governor"),
+                             primary = "270toWin Consensus") {
+  kind <- match.arg(kind)
+  d <- .load_json(if (kind == "senate") "senate_ratings_feed" else "governor_ratings")
+  src <- d$sources; rt <- src$ratings
+  ip <- which(src$label == primary)
+  if (!length(ip)) ip <- 1
+  ip <- ip[1]
+  get1 <- function(i, ab) {
+    if (is.na(i) || !(ab %in% names(rt))) return(NA_character_)
+    v <- rt[i, ab]; if (is.null(v) || length(v) == 0 || is.na(v)) NA_character_ else as.character(v)
+  }
+  i_cook <- which(src$label == "Cook Political Report"); i_cook <- if (length(i_cook)) i_cook[1] else NA
+  i_sab <- which(grepl("Sabato", src$label)); i_sab <- if (length(i_sab)) i_sab[1] else NA
+
+  S <- 46; G <- 5; PAD <- 6            # 타일 크기·간격·여백
+  W <- PAD * 2 + 11 * S + 10 * G
+  H <- PAD * 2 + 8 * S + 7 * G
+  tiles <- character(0)
+  n_race <- 0
+  for (ab in names(.TILE)) {
+    rc <- .TILE[[ab]]
+    x <- PAD + rc[2] * (S + G); y <- PAD + rc[1] * (S + G)
+    r <- get1(ip, ab)
+    has <- !is.na(r)
+    if (has) n_race <- n_race + 1
+    fill <- if (has && r %in% names(.RATING_FILL)) .RATING_FILL[[r]] else "#f7f7f6"
+    ink <- if (has && r %in% names(.RATING_INK)) .RATING_INK[[r]] else "#b9b9b6"
+    ck <- get1(i_cook, ab); sb <- get1(i_sab, ab)
+    tip <- if (!has) paste0(ab, " — 2026 ", if (kind == "senate") "상원" else "주지사", " 선거 없음")
+           else paste0(ab, " · ", primary, ": ", r,
+                       if (!is.na(ck)) paste0(" · Cook: ", ck) else "",
+                       if (!is.na(sb)) paste0(" · Sabato: ", sb) else "")
+    stroke <- if (has) "#ffffff" else "#ececeb"
+    tiles <- c(tiles, sprintf(
+      paste0('<g><title>%s</title>',
+             '<rect x="%d" y="%d" width="%d" height="%d" rx="4" fill="%s" stroke="%s" stroke-width="1.5"/>',
+             '<text x="%d" y="%d" text-anchor="middle" font-size="13" font-weight="700" fill="%s">%s</text>',
+             '</g>'),
+      htmltools::htmlEscape(tip), x, y, S, S, fill, stroke,
+      x + S %/% 2, y + S %/% 2 + 5L, ink, ab))
+  }
+  legend <- paste0('<div class="tilemap-legend">',
+    paste0(vapply(names(.RATING_FILL), function(k)
+      sprintf('<span class="tm-key"><i style="background:%s"></i>%s</span>', .RATING_FILL[[k]], k),
+      character(1)), collapse = ""),
+    '<span class="tm-key"><i style="background:#f7f7f6;border:1px solid #e1e0d9"></i>선거 없음</span></div>')
+  as_of <- src$as_of[ip]
+  cap <- sprintf(paste0('<p class="tilemap-cap">각 칸 = 한 개 주(면적이 아닌 <b>같은 크기</b>로 그려 작은 주도 동등하게 보이게 함). ',
+                        '색은 <b>%s</b> 등급(기준 %s) · 칸에 마우스를 올리면 Cook·Sabato 등급이 함께 표시됩니다. ',
+                        '2026년 선거가 있는 주 <b>%d곳</b>. 등급은 확률이 아닙니다.</p>'),
+                 primary, as_of, n_race)
+  sprintf(paste0('<div class="tilemap"><svg viewBox="0 0 %d %d" width="100%%" style="height:auto;display:block;',
+                 'font-family:\'IBM Plex Sans KR\',sans-serif;" role="img" aria-label="%s 2026 선거 타일 지도 — %s 등급 기준 %s">%s</svg></div>%s%s'),
+          W, H, if (kind == "senate") "상원" else "주지사", primary, as_of,
+          paste(tiles, collapse = ""), legend, cap)
+}
+
 # 상원 감시 8주 — 10개 기관 등급을 한 표에 (270towin 재게시 피드 자동 취득)
 gt_senate_rating_sources <- function() {
   d <- .load_json("senate_ratings_feed"); src <- d$sources

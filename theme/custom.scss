@@ -332,3 +332,12 @@ main .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 }
 .cook-leg b { margin-left: 4px; font-variant-numeric: tabular-nums; }
 .cook-src { font-size: 0.76rem; color: #6c757d; margin: 2px 0 0; }
+
+/* 타일 격자 지도 (상원·주지사) */
+.tilemap { max-width: 760px; margin: .6rem 0 .3rem; }
+.tilemap svg text { pointer-events: none; }
+.tilemap g:hover rect { stroke: #111827; stroke-width: 2.5; }
+.tilemap-legend { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: .72rem; color: #6b7280; margin: 2px 0 6px; }
+.tilemap-legend .tm-key { display: inline-flex; align-items: center; gap: 4px; }
+.tilemap-legend i { width: 13px; height: 13px; border-radius: 3px; display: inline-block; }
+.tilemap-cap { font-size: .76rem; color: #6b7280; line-height: 1.55; margin-top: 4px; }

@@ -9,6 +9,15 @@ source(file.path("R", "helpers.R"))
 sen <- jsonlite::read_json(file.path("data", "senate_races.json"), simplifyVector = TRUE)
 ```
 
+## 전국 지도 — 어디서 선거가 열리나 {#map}
+
+```{r}
+#| output: asis
+cat(us_tile_map_html("senate"))
+```
+
+100석 중 **35석**만 이번에 개선됩니다(6년 임기가 3분의 1씩 돌아가는 구조 + 플로리다·오하이오 특별선거). 지도에서 **회색 빈 칸은 이번에 선거가 없는 주** — 즉 판세를 바꿀 수 있는 무대 자체가 이만큼으로 한정돼 있고, 그중 진짜 접전은 아래 8곳입니다.
+
 ## 의석 구도 {#balance}
 
 현재 **`r sen$current_balance`**. 민주당이 다수당(51석)을 탈환하려면 **순증 +`r sen$dem_needed_net`석**이 필요합니다. 35개 개선 의석 중 실질 경합은 아래 `r nrow(sen$races)`개 주에 압축되어 있습니다 — 민주 방어 2곳(GA·MI), 공화 방어 `r nrow(sen$races) - 2`곳.
