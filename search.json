@@ -1126,15 +1126,87 @@
     ]
   },
   {
-    "objectID": "dashboard.html",
-    "href": "dashboard.html",
-    "title": "전망 대시보드",
+    "objectID": "governors.html",
+    "href": "governors.html",
+    "title": "주지사 선거",
     "section": "",
-    "text": "이 페이지는 성격이 다른 세 종류의 외부 예측을 종류 구분해 종합합니다 — 등급(Cook·Sabato: 확률이 아닌 서수적 판단), 예측시장 가격(Kalshi·Polymarket: 확률의 근사일 뿐, 유동성·편향 혼입), 모델 확률(RaceToTheWH·DDHQ: 각 기관 방법론의 산출물). 같은 잣대로 직접 비교하지 마세요. 주별 % 막대는 시장 가격이 확인된 주만 표시합니다(추정으로 채우지 않음). 데이터를 갱신하려면 data/model_dashboard.json 한 파일만 고쳐 push하면 사이트가 다시 빌드되어 자동 반영됩니다.\n\n\n\n\n\n\n\n핵심 지표\n\n\n\n\n\n민주 다수 확률 — 모델별 위치\n한 축 위의 위치가 곧 이견의 크기입니다. RaceToTheWH·자체 모델·DDHQ가 같은 질문(“민주 다수 확률”)에 얼마나 다르게 답하는지 보세요.\n\n\n\n\n\n주별 민주 승리 전망 — 모델 막대 × 시장가 ◆\n막대 = 자체 모델 v0(등급+시장+조사 블렌드), ◆ = 예측시장 가격(확인된 주만). 점선 = 50%.\n\n\n\n\n\n\n경합주 등급 — Cook · Sabato 올해 변동 (3월 → 7월)\n\n\n\nCook Political Report\n\n\n\n\n\n\n3월\n\n\n4월\n\n\n5월\n\n\n6월\n\n\n7월\n\n\nNC\n\n\nToss-up\n\n\nLean D\n\n\nLean D\n\n\nLean D\n\n\nLean D\n\n\nGA\n\n\nToss-up\n\n\nLean D\n\n\nLean D\n\n\nLean D\n\n\nLean D\n\n\nNH\n\n\nLikely D*\n\n\nLikely D*\n\n\nLikely D\n\n\nLikely D\n\n\nLean D\n\n\nME\n\n\nToss-up*\n\n\nToss-up*\n\n\nToss-up*\n\n\nToss-up\n\n\nToss-up\n\n\nMI\n\n\nToss-up\n\n\nToss-up\n\n\nToss-up\n\n\nToss-up\n\n\nToss-up\n\n\nOH\n\n\nLean R*\n\n\nToss-up\n\n\nToss-up\n\n\nLean R\n\n\nToss-up\n\n\nAK\n\n\nLean R\n\n\nLean R\n\n\nLean R\n\n\nLean R\n\n\nToss-up\n\n\nTX\n\n\nLikely R\n\n\nLikely R\n\n\nLean R\n\n\nLean R\n\n\nLean R\n\n\n\n\n\nSabato’s Crystal Ball\n\n\n\n\n\n\n3월\n\n\n4월\n\n\n5월\n\n\n6월\n\n\n7월\n\n\nNC\n\n\nToss-up*\n\n\nToss-up*\n\n\nToss-up*\n\n\nLean D\n\n\nLean D\n\n\nGA\n\n\n미확인\n\n\n미확인\n\n\nLean D\n\n\nLean D\n\n\nLean D\n\n\nNH\n\n\n미확인\n\n\n미확인\n\n\n미확인\n\n\n미확인\n\n\n미확인\n\n\nME\n\n\n미확인\n\n\n미확인\n\n\n미확인\n\n\n미확인\n\n\n미확인\n\n\nMI\n\n\n미확인\n\n\n미확인\n\n\n미확인\n\n\nToss-up\n\n\nToss-up\n\n\nOH\n\n\nLean R*\n\n\nLean R*\n\n\nLean R*\n\n\nToss-up\n\n\nToss-up\n\n\nAK\n\n\nSafe R*\n\n\nLean R\n\n\nLean R\n\n\nToss-up\n\n\nToss-up\n\n\nTX\n\n\n미확인\n\n\n미확인\n\n\n미확인\n\n\nLean R\n\n\nLean R\n\n\n\n\n\nLean DLikely DToss-upLean RLikely RSafe/Solid R굵은 테두리 = 그 달 이동*= 역산(이후 이동 서술의 이전 등급)\n\n\n각 칸은 해당 월말 기준 등급입니다. 등급은 확률이 아닌 서수적 판단이며, 기관은 상시 갱신하므로 아카이브에서 확인된 것만 표기하고 기록이 없으면 미확인으로 둡니다(추정으로 채우지 않음). 주요 이동: 4/13 Cook GA·NC를 Lean D로, OH를 Toss-up으로 · 5/31 Cook TX Likely R→Lean R(팩스턴 경선승) · 6/11 Sabato NC Lean D·AK/OH Toss-up 일괄 이동 · 6월 하순 Cook OH Lean R 회귀 · 7/1 Cook AK Toss-up. 기준 2026-07-26.\n\n\n\n경합주 상세\n\n\n\n\n\n향후 주요 일정",
+    "text": "2026년에는 36개 주에서 주지사 선거가 열립니다. 상·하원만큼 조명받지 않지만, 한국 독자에게는 오히려 더 직접적인 선거입니다 — 배터리·반도체 공장의 인허가와 인센티브, 주 단위 통상·노동 정책, 그리고 2030년 선거구를 그릴 권한이 주지사와 주의회에 걸려 있기 때문입니다.",
     "crumbs": [
       "홈",
-      "상원 Senate",
-      "전망 대시보드 — 주별 확률"
+      "주지사·주의회",
+      "주지사 — 36개 주 경합"
+    ]
+  },
+  {
+    "objectID": "governors.html#competitive",
+    "href": "governors.html#competitive",
+    "title": "주지사 선거",
+    "section": "경합주 — Cook · Sabato",
+    "text": "경합주 — Cook · Sabato\n\n\n\n\n\n\n\n\n2026 주지사 경합주 — Cook · Sabato\n\n\nCook 기준 2026-07-10 · Sabato 기준 2026-07-23 · 등급은 확률이 아님\n\n\n주\nCook\nSabato\n기관 분기\n\n\n\n\n애리조나 (AZ)\nLean D\nLean D\n\n\n\n조지아 (GA)\nToss-up\nToss-up\n\n\n\n아이오와 (IA)\nToss-up\nToss-up\n\n\n\n캔자스 (KS)\nLean R\nLean R\n\n\n\n미시간 (MI)\nLean D\nLean D\n\n\n\n네바다 (NV)\nToss-up\nLean R\n◆ 갈림\n\n\n오하이오 (OH)\nToss-up\nLean R\n◆ 갈림\n\n\n위스콘신 (WI)\nToss-up\nToss-up\n\n\n\n\n총 36개 주지사 선거 중 두 기관 어느 한 쪽이라도 Toss-up/Lean으로 본 주만 표시. '◆ 갈림'은 두 기관 평가가 다른 곳 — 판세 해석이 갈리는 지점입니다. 출처: 270towin 재게시분 자동 취득(scripts/fetch_governor_ratings.py).\n\n\n\n\n\n\n\n\n\n읽는 법: 등급(Toss-up/Lean)은 확률이 아니라 전문가의 서수적 판단입니다. ◆ 갈림은 두 기관이 다르게 본 주 — 상원의 오하이오·알래스카처럼, 평가가 갈리는 곳이 곧 판세의 실제 불확실성이 모여 있는 지점입니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "주지사 — 36개 주 경합"
+    ]
+  },
+  {
+    "objectID": "governors.html#sources",
+    "href": "governors.html#sources",
+    "title": "주지사 선거",
+    "section": "기관별 비교",
+    "text": "기관별 비교\n\n\n\n\n\n\n\n\n주지사 경합 8주 — 기관별 등급\n\n\n같은 주를 기관마다 어떻게 보는지 (등급은 확률이 아님)\n\n\n예측기관\n기준일\n애리조나\n조지아\n아이오와\n캔자스\n미시간\n네바다\n오하이오\n위스콘신\n\n\n\n\nCook Political Report\n2026-07-10\nLean D\nToss-up\nToss-up\nLean R\nLean D\nToss-up\nToss-up\nToss-up\n\n\nSabato's Crystal Ball\n2026-07-23\nLean D\nToss-up\nToss-up\nLean R\nLean D\nLean R\nLean R\nToss-up\n\n\nInside Elections\n2026-06-30\nToss-up\nToss-up\nToss-up\nToss-up\n—\n—\nLean R\nToss-up\n\n\nAlmanac of American Politics\n2026-07-13\nLean D\nToss-up\nToss-up\nLean R\nLean D\nLean R\nToss-up\nToss-up\n\n\nFox News Power Rankings\n2026-07-23\nLean D\nToss-up\nLean D\nLean R\nLean D\nToss-up\nToss-up\nToss-up\n\n\nRace to the WH\n2026-07-21\nLean D\nToss-up\nLean D\n—\nLean D\n—\nToss-up\nToss-up\n\n\nKalshi (예측시장 가격)\n2026-08-03\nLikely D\n—\n—\nLean R\nLikely D\n—\nToss-up\nToss-up\n\n\n270toWin Consensus\n2026-07-23\nLean D\nToss-up\nToss-up\nLean R\nLean D\nToss-up\nToss-up\nToss-up\n\n\n\nKalshi는 예측시장 가격을 등급 구간으로 환산한 것으로 성격이 다릅니다. '—'는 해당 기관이 경합으로 분류하지 않았거나 코드 미확인.\n\n\n\n\n\n\n\n\n여덟 기관을 한 표에 놓으면 두 가지가 보입니다. 첫째, 조지아·아이오와·위스콘신은 거의 모든 기관이 토스업으로 봅니다 — 이견 없는 진짜 접전. 둘째, 오하이오·네바다는 기관마다 갈립니다(Cook 토스업 vs Sabato Lean R). 단일 기관만 인용하면 이 불확실성이 지워지므로, 이 사이트는 항상 복수 기관을 병기합니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "주지사 — 36개 주 경합"
+    ]
+  },
+  {
+    "objectID": "governors.html#featured",
+    "href": "governors.html#featured",
+    "title": "주지사 선거",
+    "section": "주목 레이스",
+    "text": "주목 레이스\n조지아 — 트럼프 보증이 처음 꺾인 곳 Kemp 주지사의 임기 제한으로 열린 공석. 6/16 공화 결선에서 Rick Jackson(억만장자·자기자금 1억 달러+, 트럼프 미보증)이 Burt Jones(트럼프·Kemp 지지)를 52.8–47.3으로 제압했습니다. 조지아 역사상 최고가 비방전(약 1.6억 달러) 끝의 결과로, “트럼프 보증은 여전히 강하지만 더는 무적이 아니다”라는 해석을 낳았습니다. 같은 주에서 상원(오소프)도 동시에 치러져 한 주에서 상원·주지사가 함께 걸린 최대 격전지입니다.\n위스콘신 — 재획정이 만든 3중 접전 주지사가 토스업인 동시에, 재획정 신지도로 주 상·하원이 모두 경합권에 들어왔습니다. 세 선거가 같은 방향으로 움직이면 트라이펙타(주지사+양원 독점)가 통째로 바뀔 수 있는, 이번 사이클에서 구조 변화 폭이 가장 큰 주입니다.\n미시간 · 애리조나 — 민주 방어(Lean D) 두 곳 모두 민주 주지사 자리를 지키는 싸움이며, 동시에 주의회 다수도 걸려 있습니다. 미시간은 상원 선거(8/4 예비)까지 겹쳐 한 주에서 세 층위가 동시에 결정됩니다.\n오하이오 · 네바다 — 기관이 갈리는 두 곳 Cook은 토스업, Sabato는 Lean R. 오하이오는 상원(브라운 vs 허스티드)도 진성 토스업이라, 주 전체가 상·하위 선거 모두에서 접전인 드문 사례입니다.\n\n한국 함의 — 공장이 있는 주가 곧 경합주 경합 8주 중 미시간(LG에너지솔루션·Tesla-LG LFP 공장)·조지아(SK온·현대차 메타플랜트)·오하이오(한화 등 제조 투자)·애리조나(반도체 클러스터)가 한국 기업의 대미 투자처와 겹칩니다. 주지사는 인허가·세제 인센티브·전력 요금 같은 투자 환경의 실질 결정권자이므로, 연방 통상정책보다 개별 프로젝트에 더 빨리 영향을 줍니다. 다만 후보들의 한국 관련 직접 발언·공약은 아직 확인되지 않았습니다 — 확인되는 대로 Korea Watch에 기록합니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "주지사 — 36개 주 경합"
+    ]
+  },
+  {
+    "objectID": "governors.html#legislature",
+    "href": "governors.html#legislature",
+    "title": "주지사 선거",
+    "section": "주의회와 함께 보기",
+    "text": "주의회와 함께 보기\n주지사만으로는 정책이 완성되지 않습니다. 같은 날 치러지는 주의회 선거가 트라이펙타(주지사+상·하원)를 가르고, 그 조합이 2030년 선거구 획정 권한으로 이어집니다 — 재획정 페이지의 주의회 절에서 다룹니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "주지사 — 36개 주 경합"
+    ]
+  },
+  {
+    "objectID": "governors.html#데이터-갱신-규약",
+    "href": "governors.html#데이터-갱신-규약",
+    "title": "주지사 선거",
+    "section": "데이터 갱신 규약",
+    "text": "데이터 갱신 규약\n\n주지사 등급: 자동 — scripts/fetch_governor_ratings.py가 270towin 재게시분에서 8개 기관 등급을 취득 → data/governor_ratings.json. 주간 발행(publish_weekly.sh)에 포함.\n주목 레이스 프로즈·한국 함의: 주간 브리핑에서 수동 보강.\n빈 칸은 추정으로 채우지 않습니다(— 또는 【수집】).",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "주지사 — 36개 주 경합"
+    ]
+  },
+  {
+    "objectID": "archive.html",
+    "href": "archive.html",
+    "title": "주간 리포트 아카이브",
+    "section": "",
+    "text": "매주 월요일 기준으로 발행됩니다. 각 호는 ① 전국 환경 · ② 상원 · ③ 하원 · ④ Korea Watch 네 영역을 한 호에 담는 통합 리포트이며, 발행 시점의 스냅샷입니다. 최신 수치는 트래커와 전망 대시보드를 참조하세요.\n\n\n   \n    \n    \n      정렬\n      디폴트\n      \n        발행일 - 날짜(오름차순)\n      \n      \n        발행일 - 날짜(내림차순)\n      \n      \n        호\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n발행일\n\n\n\n호\n\n\n\n핵심 내용\n\n\n\n\n\n\n\n\n2026.07.27\n\n\n19주차 · 07/27~08/02\n\n\n트럼프 순지지가 2기 최저 −20.6으로 붕괴해 바이든 동기(−19.2)를 처음 하회했으나 제너릭 밸럿은 D+6에서 미동 — 지지율 급락의 의석 미침투가 이번 주 최대 반증. 미–이란 전쟁은 중단(유가 $85)→붕괴→미 본토 직접 타격으로 재확전되며 브렌트 $90~91 복귀. 상원은 사바토가 조지아를 Likely D로 상향(8개 감시주 중 첫 경합권 이탈)하고 NC 폭스 쿠퍼 +9가 나왔으나, 미시간 엘사예드 본선 경쟁력이라는 새 하방으로 민주 다수 확률 1217% 사실상 정체.\n\n\n\n\n\n\n2026.07.20\n\n\n18주차 · 07/20~07/26\n\n\nD+6 박스권 고착 위에 유가 $100 터치·섹션301 관세라는 하방 충격과 주말 완화(공습 중단·유가 반락)가 맞물린 ‘진동한 주’. 트럼프 순지지 −17.4로 바이든 동기(−19.2) 첫 상회. 상원은 메인 트로이 잭슨 566–5 인준으로 3주 혼란 종결·조지아 수성 굳힘으로 민주 다수 확률 1317% 상단 소폭 확대(DDHQ 50–50 첫 이견).\n\n\n\n\n\n\n2026.07.13\n\n\n17주차 · 07/13~07/19\n\n\n미–이란 전쟁 완전 격화와 첫 미군 전사(요르단 2명)가 새 최대 변수로 등장했으나 아직 지지율 톱라인에 미침투한 ‘혼재된 주’. 브렌트유 $88(+14%)·휘발유 $3.99로 8월 물가 전이 리스크. 트럼프 순지지 −17.4·제너릭 D+6.3 미동. 상원은 메인 8인 토론 혹평·NC 쿠퍼 +4 접전화로 민주 다수 확률 1316% 하단 이동.\n\n\n\n\n\n\n2026.07.06\n\n\n16주차 · 07/06~07/12\n\n\n미–이란 휴전 붕괴로 유가 급등 후 반락, FOMC 의사록 매파 분열(9월 인상 확률 시장 ~70%)로 6월 CPI(7/14)를 앞두고 에너지·금리 리스크 재점화. 트럼프 순지지 −17로 소폭 개선(이상치 견인). 상원은 메인 플래트너 사퇴→7/25 전당대회, 텍사스·알래스카 기록 모금으로 확장 표적 강화(그러나 Base=공화 유지).\n\n\n\n\n\n\n2026.06.29\n\n\n15주차 · 06/29~07/05\n\n\n6월 고용 +5.7만 쇼크(4~5월 −7.4만 하향수정)로 노동 냉각이 ‘노이즈 아닌 시그널’로 확정 — 5월 PCE +4.1% 위에 스태그플레이션 조합. 대법원이 선거자금 조정지출 한도를 철폐(6-3)해 자금 지형 재편. 상원은 텍사스 47–47 동률·조지아 D+13에도 다수 산식 병목은 미해소(Base=공화 유지), 알래스카 ’두 명의 댄 설리번’ 사태로 변동성 급등.\n\n\n\n\n\n\n2026.06.22\n\n\n14주차 · 06/22~06/28\n\n\n판세를 바꿀 빅뉴스 없이 직전 주 구도가 한 주 내내 유지된 ‘조용한 고착 주’. 트럼프 순지지 −18.9 완전 횡보, 5월 PCE +4.1%로 인플레 악재 재확인, 유가 −21.7% 급락이 반전 변수. 상원은 텍사스가 식고 NC가 굳음.\n\n\n\n\n\n\n2026.06.15\n\n\n13주차 · 06/15~06/21\n\n\n조지아 공화당 상원 결선(6/16) — Mike Collins가 Derek Dooley를 꺾고 본선행. 트럼프 막판 지지가 갈랐다. 본선은 Ossoff(D) vs Collins(R) 확정.\n\n\n\n\n\n\n2026.06.08\n\n\n12주차 · 06/08~06/14\n\n\n메인 민주당 경선일(6/9). 굴 양식업자·재향군인 Graham Platner가 성적 문자 메시지 논란에도 압도적 선두(5월 말 경선 유력 투표자 약 76%)로\n\n\n\n\n\n\n2026.06.01\n\n\n11주차 · 06/01~06/07\n\n\n텍사스 등급 하향 확정. Ken Paxton(R)이 5/26 결선에서 현역 John Cornyn을 63.8%로 격파한 여파로, 이번 주 Cook Political\n\n\n\n\n\n\n2026.05.25\n\n\n10주차 · 05/25~05/31\n\n\n텍사스 대이변 — Paxton, 현역 Cornyn 격파(5/26). GOP 결선투표에서 Ken Paxton(주 법무장관)이 4선 현역 John Cornyn을 63\n\n\n\n\n\n\n2026.05.18\n\n\n9주차 · 05/18~05/24\n\n\n조지아 공화당 경선 실시(5/19) → 결선 확정. 과반 득표자 없이 Mike Collins와 Derek Dooley가 6월 16일 결선투표 진출, Buddy C\n\n\n\n\n\n\n2026.05.11\n\n\n8주차 · 05/11~05/17\n\n\n조지아 공화당 경선 D-4로 임박(5/19). Buddy Carter가 Mike Collins를 겨냥한 첫 공격 광고(약 200만 달러)를 집행하며 혼전 가속.\n\n\n\n\n\n\n2026.05.04\n\n\n7주차 · 05/04~05/10\n\n\n오하이오 본선 대진 확정(5/5 경선). Sherrod Brown이 민주당 후보로 확정(Husted는 무경쟁) — 양자 대결 성립. 여론조사상 사실상 동률(에머슨\n\n\n\n\n\n\n2026.04.27\n\n\n6주차 · 04/27~05/03\n\n\n메인 민주당 단일화 완성(4/30). 재닛 Mills 주지사가 자금 부족을 이유로 경선 중단을 선언, Graham Platner의 독주 체제 확립. 경선 여론조사\n\n\n\n\n\n\n2026.04.20\n\n\n5주차 · 04/20~04/26\n\n\n트럼프 지지율이 2기 최저점을 주중 거듭 경신. 주 초 NBC/Decision Desk 37%(비지지 63%)에서, 주 중반 AP-NORC 33%까지 떨어진 수치\n\n\n\n\n\n\n2026.04.13\n\n\n4주차 · 04/13~04/19\n\n\nCook Political Report 등급 변동(4/13). 조지아·노스캐롤라이나를 Toss-up → Lean Democrat으로, 오하이오를 Lean R →\n\n\n\n\n\n\n2026.04.06\n\n\n3주차 · 04/06~04/12\n\n\n트럼프 지지율, 2기 임기 최초로 40% 아래 하락. 주 초 Silver Bulletin 순지지 −16.9, 주 말 RCP 평균 41.4% 지지/56.1% 반대(\n\n\n\n\n\n\n2026.03.30\n\n\n2주차 · 03/30~04/05\n\n\n트럼프 지지율이 2기 최저치를 거듭 경신. Silver Bulletin 순지지도가 약 −16.7로 2주 전(−13.9)에서 급락했고, 주중 일부 단일 조사는 지지\n\n\n\n\n\n\n2026.03.23\n\n\n1주차 · 03/23~03/29\n\n\n트럼프 지지율 2기 사상 최저. Nate Silver 종합 순지지도 −16.7(3/26)로 2기 최저. Reuters/Ipsos 지지율은 36%로 전주(40%)\n\n\n\n\n\n\n일치 없음",
+    "crumbs": [
+      "홈",
+      "주간 브리핑",
+      "아카이브 — 발행된 모든 호"
     ]
   },
   {
@@ -1198,15 +1270,15 @@
     ]
   },
   {
-    "objectID": "archive.html",
-    "href": "archive.html",
-    "title": "주간 리포트 아카이브",
+    "objectID": "dashboard.html",
+    "href": "dashboard.html",
+    "title": "전망 대시보드",
     "section": "",
-    "text": "매주 월요일 기준으로 발행됩니다. 각 호는 ① 전국 환경 · ② 상원 · ③ 하원 · ④ Korea Watch 네 영역을 한 호에 담는 통합 리포트이며, 발행 시점의 스냅샷입니다. 최신 수치는 트래커와 전망 대시보드를 참조하세요.\n\n\n   \n    \n    \n      정렬\n      디폴트\n      \n        발행일 - 날짜(오름차순)\n      \n      \n        발행일 - 날짜(내림차순)\n      \n      \n        호\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n발행일\n\n\n\n호\n\n\n\n핵심 내용\n\n\n\n\n\n\n\n\n2026.07.27\n\n\n19주차 · 07/27~08/02\n\n\n트럼프 순지지가 2기 최저 −20.6으로 붕괴해 바이든 동기(−19.2)를 처음 하회했으나 제너릭 밸럿은 D+6에서 미동 — 지지율 급락의 의석 미침투가 이번 주 최대 반증. 미–이란 전쟁은 중단(유가 $85)→붕괴→미 본토 직접 타격으로 재확전되며 브렌트 $90~91 복귀. 상원은 사바토가 조지아를 Likely D로 상향(8개 감시주 중 첫 경합권 이탈)하고 NC 폭스 쿠퍼 +9가 나왔으나, 미시간 엘사예드 본선 경쟁력이라는 새 하방으로 민주 다수 확률 1217% 사실상 정체.\n\n\n\n\n\n\n2026.07.20\n\n\n18주차 · 07/20~07/26\n\n\nD+6 박스권 고착 위에 유가 $100 터치·섹션301 관세라는 하방 충격과 주말 완화(공습 중단·유가 반락)가 맞물린 ‘진동한 주’. 트럼프 순지지 −17.4로 바이든 동기(−19.2) 첫 상회. 상원은 메인 트로이 잭슨 566–5 인준으로 3주 혼란 종결·조지아 수성 굳힘으로 민주 다수 확률 1317% 상단 소폭 확대(DDHQ 50–50 첫 이견).\n\n\n\n\n\n\n2026.07.13\n\n\n17주차 · 07/13~07/19\n\n\n미–이란 전쟁 완전 격화와 첫 미군 전사(요르단 2명)가 새 최대 변수로 등장했으나 아직 지지율 톱라인에 미침투한 ‘혼재된 주’. 브렌트유 $88(+14%)·휘발유 $3.99로 8월 물가 전이 리스크. 트럼프 순지지 −17.4·제너릭 D+6.3 미동. 상원은 메인 8인 토론 혹평·NC 쿠퍼 +4 접전화로 민주 다수 확률 1316% 하단 이동.\n\n\n\n\n\n\n2026.07.06\n\n\n16주차 · 07/06~07/12\n\n\n미–이란 휴전 붕괴로 유가 급등 후 반락, FOMC 의사록 매파 분열(9월 인상 확률 시장 ~70%)로 6월 CPI(7/14)를 앞두고 에너지·금리 리스크 재점화. 트럼프 순지지 −17로 소폭 개선(이상치 견인). 상원은 메인 플래트너 사퇴→7/25 전당대회, 텍사스·알래스카 기록 모금으로 확장 표적 강화(그러나 Base=공화 유지).\n\n\n\n\n\n\n2026.06.29\n\n\n15주차 · 06/29~07/05\n\n\n6월 고용 +5.7만 쇼크(4~5월 −7.4만 하향수정)로 노동 냉각이 ‘노이즈 아닌 시그널’로 확정 — 5월 PCE +4.1% 위에 스태그플레이션 조합. 대법원이 선거자금 조정지출 한도를 철폐(6-3)해 자금 지형 재편. 상원은 텍사스 47–47 동률·조지아 D+13에도 다수 산식 병목은 미해소(Base=공화 유지), 알래스카 ’두 명의 댄 설리번’ 사태로 변동성 급등.\n\n\n\n\n\n\n2026.06.22\n\n\n14주차 · 06/22~06/28\n\n\n판세를 바꿀 빅뉴스 없이 직전 주 구도가 한 주 내내 유지된 ‘조용한 고착 주’. 트럼프 순지지 −18.9 완전 횡보, 5월 PCE +4.1%로 인플레 악재 재확인, 유가 −21.7% 급락이 반전 변수. 상원은 텍사스가 식고 NC가 굳음.\n\n\n\n\n\n\n2026.06.15\n\n\n13주차 · 06/15~06/21\n\n\n조지아 공화당 상원 결선(6/16) — Mike Collins가 Derek Dooley를 꺾고 본선행. 트럼프 막판 지지가 갈랐다. 본선은 Ossoff(D) vs Collins(R) 확정.\n\n\n\n\n\n\n2026.06.08\n\n\n12주차 · 06/08~06/14\n\n\n메인 민주당 경선일(6/9). 굴 양식업자·재향군인 Graham Platner가 성적 문자 메시지 논란에도 압도적 선두(5월 말 경선 유력 투표자 약 76%)로\n\n\n\n\n\n\n2026.06.01\n\n\n11주차 · 06/01~06/07\n\n\n텍사스 등급 하향 확정. Ken Paxton(R)이 5/26 결선에서 현역 John Cornyn을 63.8%로 격파한 여파로, 이번 주 Cook Political\n\n\n\n\n\n\n2026.05.25\n\n\n10주차 · 05/25~05/31\n\n\n텍사스 대이변 — Paxton, 현역 Cornyn 격파(5/26). GOP 결선투표에서 Ken Paxton(주 법무장관)이 4선 현역 John Cornyn을 63\n\n\n\n\n\n\n2026.05.18\n\n\n9주차 · 05/18~05/24\n\n\n조지아 공화당 경선 실시(5/19) → 결선 확정. 과반 득표자 없이 Mike Collins와 Derek Dooley가 6월 16일 결선투표 진출, Buddy C\n\n\n\n\n\n\n2026.05.11\n\n\n8주차 · 05/11~05/17\n\n\n조지아 공화당 경선 D-4로 임박(5/19). Buddy Carter가 Mike Collins를 겨냥한 첫 공격 광고(약 200만 달러)를 집행하며 혼전 가속.\n\n\n\n\n\n\n2026.05.04\n\n\n7주차 · 05/04~05/10\n\n\n오하이오 본선 대진 확정(5/5 경선). Sherrod Brown이 민주당 후보로 확정(Husted는 무경쟁) — 양자 대결 성립. 여론조사상 사실상 동률(에머슨\n\n\n\n\n\n\n2026.04.27\n\n\n6주차 · 04/27~05/03\n\n\n메인 민주당 단일화 완성(4/30). 재닛 Mills 주지사가 자금 부족을 이유로 경선 중단을 선언, Graham Platner의 독주 체제 확립. 경선 여론조사\n\n\n\n\n\n\n2026.04.20\n\n\n5주차 · 04/20~04/26\n\n\n트럼프 지지율이 2기 최저점을 주중 거듭 경신. 주 초 NBC/Decision Desk 37%(비지지 63%)에서, 주 중반 AP-NORC 33%까지 떨어진 수치\n\n\n\n\n\n\n2026.04.13\n\n\n4주차 · 04/13~04/19\n\n\nCook Political Report 등급 변동(4/13). 조지아·노스캐롤라이나를 Toss-up → Lean Democrat으로, 오하이오를 Lean R →\n\n\n\n\n\n\n2026.04.06\n\n\n3주차 · 04/06~04/12\n\n\n트럼프 지지율, 2기 임기 최초로 40% 아래 하락. 주 초 Silver Bulletin 순지지 −16.9, 주 말 RCP 평균 41.4% 지지/56.1% 반대(\n\n\n\n\n\n\n2026.03.30\n\n\n2주차 · 03/30~04/05\n\n\n트럼프 지지율이 2기 최저치를 거듭 경신. Silver Bulletin 순지지도가 약 −16.7로 2주 전(−13.9)에서 급락했고, 주중 일부 단일 조사는 지지\n\n\n\n\n\n\n2026.03.23\n\n\n1주차 · 03/23~03/29\n\n\n트럼프 지지율 2기 사상 최저. Nate Silver 종합 순지지도 −16.7(3/26)로 2기 최저. Reuters/Ipsos 지지율은 36%로 전주(40%)\n\n\n\n\n\n\n일치 없음",
+    "text": "이 페이지는 성격이 다른 세 종류의 외부 예측을 종류 구분해 종합합니다 — 등급(Cook·Sabato: 확률이 아닌 서수적 판단), 예측시장 가격(Kalshi·Polymarket: 확률의 근사일 뿐, 유동성·편향 혼입), 모델 확률(RaceToTheWH·DDHQ: 각 기관 방법론의 산출물). 같은 잣대로 직접 비교하지 마세요. 주별 % 막대는 시장 가격이 확인된 주만 표시합니다(추정으로 채우지 않음). 데이터를 갱신하려면 data/model_dashboard.json 한 파일만 고쳐 push하면 사이트가 다시 빌드되어 자동 반영됩니다.\n\n\n\n\n\n\n\n핵심 지표\n\n\n\n\n\n민주 다수 확률 — 모델별 위치\n한 축 위의 위치가 곧 이견의 크기입니다. RaceToTheWH·자체 모델·DDHQ가 같은 질문(“민주 다수 확률”)에 얼마나 다르게 답하는지 보세요.\n\n\n\n\n\n주별 민주 승리 전망 — 모델 막대 × 시장가 ◆\n막대 = 자체 모델 v0(등급+시장+조사 블렌드), ◆ = 예측시장 가격(확인된 주만). 점선 = 50%.\n\n\n\n\n\n\n경합주 등급 — Cook · Sabato 올해 변동 (3월 → 7월)\n\n\n\nCook Political Report\n\n\n\n\n\n\n3월\n\n\n4월\n\n\n5월\n\n\n6월\n\n\n7월\n\n\nNC\n\n\nToss-up\n\n\nLean D\n\n\nLean D\n\n\nLean D\n\n\nLean D\n\n\nGA\n\n\nToss-up\n\n\nLean D\n\n\nLean D\n\n\nLean D\n\n\nLean D\n\n\nNH\n\n\nLikely D*\n\n\nLikely D*\n\n\nLikely D\n\n\nLikely D\n\n\nLean D\n\n\nME\n\n\nToss-up*\n\n\nToss-up*\n\n\nToss-up*\n\n\nToss-up\n\n\nToss-up\n\n\nMI\n\n\nToss-up\n\n\nToss-up\n\n\nToss-up\n\n\nToss-up\n\n\nToss-up\n\n\nOH\n\n\nLean R*\n\n\nToss-up\n\n\nToss-up\n\n\nLean R\n\n\nToss-up\n\n\nAK\n\n\nLean R\n\n\nLean R\n\n\nLean R\n\n\nLean R\n\n\nToss-up\n\n\nTX\n\n\nLikely R\n\n\nLikely R\n\n\nLean R\n\n\nLean R\n\n\nLean R\n\n\n\n\n\nSabato’s Crystal Ball\n\n\n\n\n\n\n3월\n\n\n4월\n\n\n5월\n\n\n6월\n\n\n7월\n\n\nNC\n\n\nToss-up*\n\n\nToss-up*\n\n\nToss-up*\n\n\nLean D\n\n\nLean D\n\n\nGA\n\n\n미확인\n\n\n미확인\n\n\nLean D\n\n\nLean D\n\n\nLean D\n\n\nNH\n\n\n미확인\n\n\n미확인\n\n\n미확인\n\n\n미확인\n\n\n미확인\n\n\nME\n\n\n미확인\n\n\n미확인\n\n\n미확인\n\n\n미확인\n\n\n미확인\n\n\nMI\n\n\n미확인\n\n\n미확인\n\n\n미확인\n\n\nToss-up\n\n\nToss-up\n\n\nOH\n\n\nLean R*\n\n\nLean R*\n\n\nLean R*\n\n\nToss-up\n\n\nToss-up\n\n\nAK\n\n\nSafe R*\n\n\nLean R\n\n\nLean R\n\n\nToss-up\n\n\nToss-up\n\n\nTX\n\n\n미확인\n\n\n미확인\n\n\n미확인\n\n\nLean R\n\n\nLean R\n\n\n\n\n\nLean DLikely DToss-upLean RLikely RSafe/Solid R굵은 테두리 = 그 달 이동*= 역산(이후 이동 서술의 이전 등급)\n\n\n각 칸은 해당 월말 기준 등급입니다. 등급은 확률이 아닌 서수적 판단이며, 기관은 상시 갱신하므로 아카이브에서 확인된 것만 표기하고 기록이 없으면 미확인으로 둡니다(추정으로 채우지 않음). 주요 이동: 4/13 Cook GA·NC를 Lean D로, OH를 Toss-up으로 · 5/31 Cook TX Likely R→Lean R(팩스턴 경선승) · 6/11 Sabato NC Lean D·AK/OH Toss-up 일괄 이동 · 6월 하순 Cook OH Lean R 회귀 · 7/1 Cook AK Toss-up. 기준 2026-07-26.\n\n\n\n경합주 상세\n\n\n\n\n\n향후 주요 일정",
     "crumbs": [
       "홈",
-      "주간 브리핑",
-      "아카이브 — 발행된 모든 호"
+      "상원 Senate",
+      "전망 대시보드 — 주별 확률"
     ]
   },
   {
@@ -1979,7 +2051,19 @@
     "href": "redistricting.html#vote-shift",
     "title": "재획정 — 2026 중간선거의 숨은 구조 변수",
     "section": "⑤ 2024 결과 기반 — 지역구별 R 득표율 변화",
-    "text": "⑤ 2024 결과 기반 — 지역구별 R 득표율 변화\n선거를 다시 한 것이 아니라, 같은 2024년 대선 표를 새 선거구 경계로 다시 집계해 트럼프(R) 마진의 변화(Δ)를 봅니다. 이 값이 하원 트래커의 “2024 마진” 칸들과 같은 기준입니다.\n\n빈 원(구지도) → 채운 원(신지도)의 이동 방향이 주마다 다르다 — 텍사스·CA-40은 공화로(R 의석 증식), CA-01은 민주로 크게(공화 보유구를 D로 전환). 캘리포니아는 안전 민주구(CA-06·35)를 살짝 깎아 그 표를 전환에 쓴 흔적도 보인다.\n\n\n0← 공화(R+)민주(D+) →CA-40R+2R+12TX-28R+7R+10TX-34R+4.5R+10CA-35D+10.3D+7.8CA-06D+13.9D+8.4CA-01R+25D+12구지도신지도(2024 재집계)\n\n\n\n\n\n\n\n\n\n지역구별 2024 대선 마진 — 구지도 vs 신지도\n\n\n기준 2026-06-15 · 양수=민주 우위(D+) · 같은 2024년 표를 새 경계로 재집계\n\n\n지역구\n현역\n구지도(2024)\n신지도(2024)\n변화(Δ)\n출처\n\n\n\n\nCA-01 — 캘리포니아 북부\nDoug LaMalfa (R)\nR+25\nD+12\nD+37p 이동\nKQED\n\n\nCA-40 — 캘리포니아 남부(OC 내륙)\nYoung Kim (R)\nR+2\nR+12\nR+10p 이동\nBallotpedia\n\n\nCA-06 — 캘리포니아(새크라멘토 교외)\n민주 현역\nD+13.9\nD+8.4\nR+5.5p 이동\nBallotpedia\n\n\nCA-35 — 캘리포니아(인랜드 엠파이어)\n민주 현역\nD+10.3\nD+7.8\nR+2.5p 이동\nBallotpedia\n\n\nTX-28 — 텍사스 남부(라레도·히달고)\nHenry Cuellar (D)\nR+7\nR+10\nR+3p 이동\nTexas Tribune\n\n\nTX-34 — 텍사스 남부(밸리)\nVicente Gonzalez (D)\nR+4.5\nR+10\nR+5.5p 이동\nCenter for Politics\n\n\nTX-35 — 샌안토니오 동·남부 exurb\n— (재편)\n【수집】\nR+10\n【수집】\nCenter for Politics\n\n\nTX-09 — 휴스턴\n— (재편 · Al Green→TX-18)\n【수집】\nR+15\n【수집】\nTexas Tribune\n\n\nNC-01 — 노스캐롤라이나 동부\nDon Davis (D)\n【수집】\nR+12\n【수집】\nCook Political\n\n\nOH-09 — 오하이오 북서부(톨레도)\nMarcy Kaptur (D)\n【수집】\nR+10\n【수집】\nBallotpedia\n\n\n\n2024년 대선 표를 신·구 선거구 경계로 재집계한 트럼프(R) 마진. 양수=민주 우위(D+), 음수=공화 우위(R+). 선거를 다시 한 것이 아니라 같은 2024년 표를 새 경계로 다시 집계한 값.\n\n\n\n\n\n\n\n\n\n\nThe Downballot의 전수 시트는 “2024 당시 지도”만 담아(신지도 미반영) 단일 파일로 신·구 비교가 안 됩니다. 그래서 신지도 마진은 주별 분석(Ballotpedia·Center for Politics·KQED·Texas Tribune)에서 검증된 구만 가져왔습니다.\n덤벨은 구·신 정밀치가 모두 확인된 구(현재 6곳: CA-01·CA-06·CA-35·CA-40·TX-28·TX-34)만 그립니다. 구지도 정밀 마진이 미확인인 구(TX-35·TX-09·NC-01·OH-09)는 표에 신지도값만 표기하고 구 마진은 【수집】.\n캘리포니아의 추가 민주 전환구(CA-03·CA-41·CA-48 등)는 신지도값이 “두 자릿수” 식 정성적 보도뿐이라 정밀 마진 확인 시 보강합니다 — 그 전까지 덤벨은 공화 이동 쪽이 다소 과대표집됩니다.\n데이터가 확장되면 같은 차트·표가 자동으로 채워집니다(스키마·렌더러 고정).\n\n\n\n\n관련 페이지: 하원 경합구 트래커 · 방법론 · Korea Watch. 기준일 2026-06. 진행 중 소송으로 일부 지도는 선거 전 변동될 수 있습니다.",
+    "text": "⑤ 2024 결과 기반 — 지역구별 R 득표율 변화\n선거를 다시 한 것이 아니라, 같은 2024년 대선 표를 새 선거구 경계로 다시 집계해 트럼프(R) 마진의 변화(Δ)를 봅니다. 이 값이 하원 트래커의 “2024 마진” 칸들과 같은 기준입니다.\n\n빈 원(구지도) → 채운 원(신지도)의 이동 방향이 주마다 다르다 — 텍사스·CA-40은 공화로(R 의석 증식), CA-01은 민주로 크게(공화 보유구를 D로 전환). 캘리포니아는 안전 민주구(CA-06·35)를 살짝 깎아 그 표를 전환에 쓴 흔적도 보인다.\n\n\n0← 공화(R+)민주(D+) →CA-40R+2R+12TX-28R+7R+10TX-34R+4.5R+10CA-35D+10.3D+7.8CA-06D+13.9D+8.4CA-01R+25D+12구지도신지도(2024 재집계)\n\n\n\n\n\n\n\n\n\n지역구별 2024 대선 마진 — 구지도 vs 신지도\n\n\n기준 2026-06-15 · 양수=민주 우위(D+) · 같은 2024년 표를 새 경계로 재집계\n\n\n지역구\n현역\n구지도(2024)\n신지도(2024)\n변화(Δ)\n출처\n\n\n\n\nCA-01 — 캘리포니아 북부\nDoug LaMalfa (R)\nR+25\nD+12\nD+37p 이동\nKQED\n\n\nCA-40 — 캘리포니아 남부(OC 내륙)\nYoung Kim (R)\nR+2\nR+12\nR+10p 이동\nBallotpedia\n\n\nCA-06 — 캘리포니아(새크라멘토 교외)\n민주 현역\nD+13.9\nD+8.4\nR+5.5p 이동\nBallotpedia\n\n\nCA-35 — 캘리포니아(인랜드 엠파이어)\n민주 현역\nD+10.3\nD+7.8\nR+2.5p 이동\nBallotpedia\n\n\nTX-28 — 텍사스 남부(라레도·히달고)\nHenry Cuellar (D)\nR+7\nR+10\nR+3p 이동\nTexas Tribune\n\n\nTX-34 — 텍사스 남부(밸리)\nVicente Gonzalez (D)\nR+4.5\nR+10\nR+5.5p 이동\nCenter for Politics\n\n\nTX-35 — 샌안토니오 동·남부 exurb\n— (재편)\n【수집】\nR+10\n【수집】\nCenter for Politics\n\n\nTX-09 — 휴스턴\n— (재편 · Al Green→TX-18)\n【수집】\nR+15\n【수집】\nTexas Tribune\n\n\nNC-01 — 노스캐롤라이나 동부\nDon Davis (D)\n【수집】\nR+12\n【수집】\nCook Political\n\n\nOH-09 — 오하이오 북서부(톨레도)\nMarcy Kaptur (D)\n【수집】\nR+10\n【수집】\nBallotpedia\n\n\n\n2024년 대선 표를 신·구 선거구 경계로 재집계한 트럼프(R) 마진. 양수=민주 우위(D+), 음수=공화 우위(R+). 선거를 다시 한 것이 아니라 같은 2024년 표를 새 경계로 다시 집계한 값.\n\n\n\n\n\n\n\n\n\n\nThe Downballot의 전수 시트는 “2024 당시 지도”만 담아(신지도 미반영) 단일 파일로 신·구 비교가 안 됩니다. 그래서 신지도 마진은 주별 분석(Ballotpedia·Center for Politics·KQED·Texas Tribune)에서 검증된 구만 가져왔습니다.\n덤벨은 구·신 정밀치가 모두 확인된 구(현재 6곳: CA-01·CA-06·CA-35·CA-40·TX-28·TX-34)만 그립니다. 구지도 정밀 마진이 미확인인 구(TX-35·TX-09·NC-01·OH-09)는 표에 신지도값만 표기하고 구 마진은 【수집】.\n캘리포니아의 추가 민주 전환구(CA-03·CA-41·CA-48 등)는 신지도값이 “두 자릿수” 식 정성적 보도뿐이라 정밀 마진 확인 시 보강합니다 — 그 전까지 덤벨은 공화 이동 쪽이 다소 과대표집됩니다.\n데이터가 확장되면 같은 차트·표가 자동으로 채워집니다(스키마·렌더러 고정).",
+    "crumbs": [
+      "홈",
+      "하원 House",
+      "재획정 — 왜·어디서 (설명)"
+    ]
+  },
+  {
+    "objectID": "redistricting.html#legislature",
+    "href": "redistricting.html#legislature",
+    "title": "재획정 — 2026 중간선거의 숨은 구조 변수",
+    "section": "⑥ 다음 지도를 그리는 주체 — 2026 주의회 선거",
+    "text": "⑥ 다음 지도를 그리는 주체 — 2026 주의회 선거\n지금까지는 이미 그려진 지도의 이야기였습니다. 그런데 다음 지도를 그릴 권한도 이번에 함께 걸려 있습니다 — 대부분의 주에서 선거구를 확정하는 주체가 주의회이고(위 ①의 획정 주체 3유형 참조), 주지사가 거부권을 갖기 때문입니다. 즉 2026년 주의회·주지사 선거의 결과가 2030년 인구총조사 이후의 지도를 결정합니다.\n규모 — 2026년에는 46개 주에서 전국 99개 의회 중 88개 의회, 약 약 5,800석이 개선됩니다. 연방 선거의 그늘에 가려 거의 보도되지 않지만, 실제 통치와 규제는 이 층위에서 이뤄집니다.\n\n\n\n\n\n\n\n\n2026 주의회 — 경합 의회\n\n\nSabato 초기 등급 기준 · 토스업 9개 의회(5개 주) · 기준 2026-08-03\n\n\n주\n의회\n현 통제\n등급\n메모\n\n\n\n\n애리조나\n하원\nR\nToss-up\n민주 주지사(홉스) + 공화 양원 → 분점 해소 여부\n\n\n애리조나\n상원\nR\nToss-up\n민주 주지사(홉스) + 공화 양원 → 분점 해소 여부\n\n\n미시간\n하원\nR\nToss-up\n주지사 선거(Lean D)와 동시 — 민주 트라이펙타 복원 경로\n\n\n미시간\n상원\nD\nToss-up\n민주 방어\n\n\n미네소타\n하원\n동수(tied)\nToss-up\n현재 동수 — 한 석이 통제를 가름\n\n\n미네소타\n상원\nD\nToss-up\n민주 방어\n\n\n위스콘신\n하원\nR\nToss-up\n재획정 신지도로 오랜만에 양원 경합권 진입\n\n\n위스콘신\n상원\nR\nToss-up\n재획정 신지도 효과 · 주지사 선거도 Toss-up\n\n\n뉴햄프셔\n하원\nR\nToss-up\n400석 초대형 하원 — 전국 환경에 민감\n\n\n펜실베이니아\n하원\nD\nLean D\n1석 차 초박빙 구조로 알려진 의회\n\n\n펜실베이니아\n상원\nR\nLean R\n민주 트라이펙타의 마지막 관문\n\n\n뉴햄프셔\n상원\nR\nLean R\n하원과 동반 이동 가능성\n\n\n메인\n하원\nD\nLean D(공화 표적)\n상원 선거(잭슨 vs 콜린스)와 같은 주 — 하향식 효과 주시\n\n\n\n주의회 등급은 상·하원·주지사와 달리 270towin 자동 피드가 없어 수동으로 정리합니다. 등급은 확률이 아니며, 각 항목의 출처는 아래 표기를 따릅니다. 의석수·통제 정당은 선거 전 현재 기준이고, 확인되지 않은 항목은 채우지 않습니다. 출처: Sabato's Crystal Ball — 2026 주의회 지도 초기 등급 · MultiState — 2026 주 선거와 트라이펙타 · Ballotpedia — State legislative elections, 2026\n\n\n\n\n\n\n\n\n구도 — Sabato 초기 등급 기준 경합 15개 의회 중 공화 보유가 8개, 민주가 4개로, 대통령 정당인 공화가 수세입니다. 중간선거 역풍의 전형적 배치입니다.\n\n트라이펙타(trifecta)가 진짜 상금 — 주지사 + 상원 + 하원을 한 정당이 모두 쥐면 재획정·예산·규제를 사실상 단독으로 결정합니다. 이번에 그 향배가 걸린 곳은 애리조나 · 미시간 · 미네소타 · 위스콘신 · 펜실베이니아. 특히 위스콘신은 주지사(토스업) + 주 상·하원(둘 다 토스업)이 동시에 걸려, 재획정 신지도가 만든 변화가 한 번에 나타날 수 있는 주입니다.\n\n한국 독자를 위한 연결 — 주의회는 선거구만 그리는 게 아니라 공장 인센티브·전력 요금·노동 규제를 정하는 곳이기도 합니다. 미시간·애리조나·위스콘신처럼 한국 기업 투자가 몰린 주에서 주지사와 주의회가 함께 바뀌면, 연방 정책과 무관하게 사업 환경이 달라질 수 있습니다. 주지사 쪽 판세는 주지사 선거 페이지에서 다룹니다.\n\n주의회 등급은 상·하원·주지사와 달리 자동 취득 피드가 없어 수동 큐레이션입니다(출처: Sabato’s Crystal Ball 초기 등급 · MultiState · Ballotpedia). 그래서 갱신 주기가 상대적으로 느리고, 개별 의석 단위 추적은 하지 않습니다. 등급은 확률이 아니며, 의석수·통제 정당은 선거 전 현재 기준입니다.\n\n\n\n관련 페이지: 하원 경합구 트래커 · 주지사 선거 · 방법론 · Korea Watch. 기준일 2026-06(재획정 현황) · 2026-08(주의회 절). 진행 중 소송으로 일부 지도는 선거 전 변동될 수 있습니다.",
     "crumbs": [
       "홈",
       "하원 House",
