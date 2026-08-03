@@ -44,6 +44,14 @@ source(file.path("R", "helpers.R"))
 cat(rating_matrix_html())
 ```
 
+### 현재 등급 — 10개 기관 비교
+
+```{r}
+gt_senate_rating_sources()
+```
+
+한 기관만 인용하면 판세가 단정적으로 보이지만, 열 곳을 나란히 놓으면 **어디가 진짜 불확실한지**가 드러납니다. 메인·미시간·알래스카는 대부분 토스업으로 일치하는 반면, **오하이오는 Toss-up(Cook·Sabato)에서 Lean D(Split Ticket)·Lean R(Almanac)까지 벌어지고**, 텍사스도 Likely R(Inside Elections)에서 Toss-up(DDHQ·RtWH)까지 걸쳐 있습니다.
+
 ### 경합주 상세
 ::: {#dash-states}
 :::

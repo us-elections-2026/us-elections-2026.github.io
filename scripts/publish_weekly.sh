@@ -38,6 +38,8 @@ python3 scripts/fetch_cook_house.py || echo "[weekly] ! Cook 취득 실패(건�
 echo "[weekly] 상원·주지사 등급 취득"
 python3 scripts/fetch_senate_ratings.py || echo "[weekly] ! 상원 등급 취득 실패(건너뜀)"
 python3 scripts/fetch_governor_ratings.py || echo "[weekly] ! 주지사 등급 취득 실패(건너뜀)"
+# 등급이 바뀐 주만 이력에 축적(동일하면 미기록) — 주지사 변동 매트릭스의 원천
+python3 scripts/snapshot_ratings.py || echo "[weekly] ! 등급 스냅샷 실패(건너뜀)"
 
 # 2) Korea Watch 동기화(_NIS DB → data/korea_watch.csv, idempotent)
 echo "[weekly] Korea Watch 동기화"

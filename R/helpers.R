@@ -389,6 +389,30 @@ rating_matrix_html <- function() {
   paste0('<div class="rmx-wrap">', paste(panels, collapse = ""), "</div>", legend, note)
 }
 
+# 상원 감시 8주 — 10개 기관 등급을 한 표에 (270towin 재게시 피드 자동 취득)
+gt_senate_rating_sources <- function() {
+  d <- .load_json("senate_ratings_feed"); src <- d$sources
+  rt <- src$ratings   # data.frame: 행=기관, 열=주 약자
+  key <- c("GA", "NC", "NH", "MI", "ME", "AK", "OH", "TX")
+  kr <- c(GA = "조지아", NC = "NC", NH = "NH", MI = "미시간", ME = "메인",
+          AK = "알래스카", OH = "오하이오", TX = "텍사스")
+  cell <- function(i, ab) {
+    if (!(ab %in% names(rt))) return("—")
+    v <- rt[i, ab]; if (is.null(v) || length(v) == 0 || is.na(v)) "—" else as.character(v)
+  }
+  cols <- lapply(key, function(ab) vapply(seq_len(nrow(src)), cell, character(1), ab = ab))
+  names(cols) <- kr[key]
+  bind_cols(tibble(예측기관 = src$label, 기준일 = src$as_of), as_tibble(cols)) |>
+    gt() |>
+    tab_header(title = "상원 감시 8주 — 기관별 등급",
+               subtitle = "270towin 재게시 피드 자동 취득 · 등급은 확률이 아님") |>
+    tab_source_note(paste0(
+      "같은 주를 기관마다 어떻게 보는지 비교합니다. Kalshi는 예측시장 가격을 등급 구간으로 환산한 것이라 성격이 다릅니다. ",
+      "'—'는 해당 기관이 경합으로 분류하지 않았거나 코드 의미가 확인되지 않은 칸(추정으로 채우지 않음). ",
+      "취득: scripts/fetch_senate_ratings.py")) |>
+    .tbl_opts()
+}
+
 # 1.7 주지사·주의회 -----------------------------------------------------------
 # 주지사 경합주 — Cook·Sabato 등급을 나란히, 기관이 갈리는 곳을 드러낸다.
 gt_governor_races <- function() {
@@ -443,6 +467,36 @@ gt_governor_sources <- function() {
                subtitle = "같은 주를 기관마다 어떻게 보는지 (등급은 확률이 아님)") |>
     tab_source_note("Kalshi는 예측시장 가격을 등급 구간으로 환산한 것으로 성격이 다릅니다. '—'는 해당 기관이 경합으로 분류하지 않았거나 코드 미확인.") |>
     .tbl_opts()
+}
+
+# 주지사 등급 변동 이력 — snapshot_ratings.py가 쌓은 스냅샷에서 '바뀐 것만' 표시.
+# 축적 초기에는 스냅샷이 1건뿐이라 안내문만 렌더한다(빈 표를 만들지 않음).
+governor_history_html <- function() {
+  p <- file.path("data", "history", "governor_rating_snapshots.json")
+  if (!file.exists(p)) return("")
+  h <- jsonlite::read_json(p, simplifyVector = FALSE)
+  snaps <- h$snapshots
+  n <- length(snaps)
+  if (n <= 1) {
+    return(paste0(
+      '<div class="caveat"><p><b>등급 변동 이력 — 축적 중</b>. 주지사 등급은 ',
+      snaps[[1]]$captured,
+      ' 첫 스냅샷을 기록했습니다. 이후 <b>등급이 실제로 바뀐 주만</b> 이 자리에 시점과 함께 쌓입니다',
+      '(매주 자동 확인, 변동이 없으면 기록하지 않음). 상원과 같은 월별 변동 매트릭스는 ',
+      '이력이 몇 주 쌓인 뒤 제공합니다 — 지금 만들면 과거를 추정으로 채워야 하므로 그렇게 하지 않습니다.</p></div>'))
+  }
+  items <- character(0)
+  for (i in seq(n, 2)) {
+    ch <- unlist(snaps[[i]]$changes)
+    if (!length(ch)) next
+    items <- c(items, paste0(
+      '<li><b>', snaps[[i]]$captured, '</b> — ',
+      paste0(vapply(ch, function(x) paste0("<code>", x, "</code>"), character(1)), collapse = " · "),
+      '</li>'))
+  }
+  if (!length(items)) return("")
+  paste0('<div class="gov-hist"><p><b>등급 변동 이력</b> (바뀐 시점만 기록)</p><ul>',
+         paste(items, collapse = ""), '</ul></div>')
 }
 
 # 주의회 — 경합 의회(수동 큐레이션)
