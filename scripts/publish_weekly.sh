@@ -34,6 +34,11 @@ else echo "[weekly] ! FEC_API_KEY 없음 — fec_fundraising 건너뜀"; fi
 echo "[weekly] Cook 하원 등급 취득"
 python3 scripts/fetch_cook_house.py || echo "[weekly] ! Cook 취득 실패(건너뜀 — 직전 데이터 유지)"
 
+# 1.6) 상원·주지사 등급 피드 취득(270towin 재게시분) — 실패해도 계속
+echo "[weekly] 상원·주지사 등급 취득"
+python3 scripts/fetch_senate_ratings.py || echo "[weekly] ! 상원 등급 취득 실패(건너뜀)"
+python3 scripts/fetch_governor_ratings.py || echo "[weekly] ! 주지사 등급 취득 실패(건너뜀)"
+
 # 2) Korea Watch 동기화(_NIS DB → data/korea_watch.csv, idempotent)
 echo "[weekly] Korea Watch 동기화"
 python3 scripts/sync_korea_watch.py || echo "[weekly] ! KW 동기화 경고(계속)"

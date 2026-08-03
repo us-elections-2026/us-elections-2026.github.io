@@ -36,6 +36,8 @@ website:
         text: 상원
       - href: house.qmd
         text: 하원
+      - href: governors.qmd
+        text: 주지사
       - href: korea-watch.qmd
         text: Korea Watch
     right:
@@ -77,6 +79,12 @@ website:
             href: house.qmd
           - text: "재획정 — 왜·어디서 (설명)"
             href: redistricting.qmd
+      - section: "주지사·주의회"
+        contents:
+          - text: "주지사 — 36개 주 경합"
+            href: governors.qmd
+          - text: "주의회 — 다음 지도를 그리는 주체"
+            href: redistricting.qmd#legislature
       - section: "Korea Watch"
         contents:
           - text: "한국 정책 함의"

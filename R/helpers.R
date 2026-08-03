@@ -389,6 +389,81 @@ rating_matrix_html <- function() {
   paste0('<div class="rmx-wrap">', paste(panels, collapse = ""), "</div>", legend, note)
 }
 
+# 1.7 주지사·주의회 -----------------------------------------------------------
+# 주지사 경합주 — Cook·Sabato 등급을 나란히, 기관이 갈리는 곳을 드러낸다.
+gt_governor_races <- function() {
+  d <- .load_json("governor_ratings")
+  src <- d$sources
+  # ratings는 data.frame(행=기관, 열=주 약자)으로 역직렬화된다
+  rt <- src$ratings
+  row_of <- function(name) { i <- which(src$label == name); if (length(i)) i[1] else NA_integer_ }
+  ic <- row_of("Cook Political Report"); is_ <- row_of("Sabato's Crystal Ball")
+  if (is.na(ic) || is.na(is_)) return(invisible(NULL))
+  kr <- d$state_names_kr
+  g <- function(i, ab) {
+    if (!(ab %in% names(rt))) return("—")
+    v <- rt[i, ab]; if (is.null(v) || length(v) == 0 || is.na(v)) "—" else as.character(v)
+  }
+  abbrs <- names(rt)
+  is_comp <- function(i) abbrs[vapply(abbrs, function(a) grepl("Toss|Lean", g(i, a)), logical(1))]
+  states <- sort(union(is_comp(ic), is_comp(is_)))
+  ck_v <- vapply(states, function(a) g(ic, a), character(1))
+  sb_v <- vapply(states, function(a) g(is_, a), character(1))
+  ck <- list(as_of = src$as_of[ic]); sb <- list(as_of = src$as_of[is_])
+  tibble(
+    주 = vapply(states, function(a) paste0(kr[[a]], " (", a, ")"), character(1)),
+    Cook = ck_v,
+    Sabato = sb_v,
+    `기관 분기` = ifelse(ck_v == sb_v, "", "◆ 갈림")
+  ) |>
+    gt() |>
+    tab_header(title = "2026 주지사 경합주 — Cook · Sabato",
+               subtitle = paste0("Cook 기준 ", ck$as_of, " · Sabato 기준 ", sb$as_of,
+                                 " · 등급은 확률이 아님")) |>
+    tab_source_note(paste0("총 ", d$n_races, "개 주지사 선거 중 두 기관 어느 한 쪽이라도 Toss-up/Lean으로 본 주만 표시. ",
+                           "'◆ 갈림'은 두 기관 평가가 다른 곳 — 판세 해석이 갈리는 지점입니다. ",
+                           "출처: 270towin 재게시분 자동 취득(scripts/fetch_governor_ratings.py).")) |>
+    .tbl_opts()
+}
+
+# 주지사 — 8개 기관 등급 비교(경합주 한정)
+gt_governor_sources <- function() {
+  d <- .load_json("governor_ratings"); src <- d$sources; kr <- d$state_names_kr
+  key <- c("AZ", "GA", "IA", "KS", "MI", "NV", "OH", "WI")
+  rt <- src$ratings   # data.frame: 행=기관, 열=주 약자
+  cell <- function(i, ab) {
+    if (!(ab %in% names(rt))) return("—")
+    v <- rt[i, ab]; if (is.null(v) || length(v) == 0 || is.na(v)) "—" else as.character(v)
+  }
+  cols <- lapply(key, function(ab) vapply(seq_len(nrow(src)), cell, character(1), ab = ab))
+  names(cols) <- vapply(key, function(a) kr[[a]], character(1))
+  bind_cols(tibble(예측기관 = src$label, 기준일 = src$as_of), as_tibble(cols)) |>
+    gt() |>
+    tab_header(title = "주지사 경합 8주 — 기관별 등급",
+               subtitle = "같은 주를 기관마다 어떻게 보는지 (등급은 확률이 아님)") |>
+    tab_source_note("Kalshi는 예측시장 가격을 등급 구간으로 환산한 것으로 성격이 다릅니다. '—'는 해당 기관이 경합으로 분류하지 않았거나 코드 미확인.") |>
+    .tbl_opts()
+}
+
+# 주의회 — 경합 의회(수동 큐레이션)
+gt_state_legislatures <- function() {
+  d <- .load_json("state_legislatures"); c_ <- d$chambers
+  tibble(
+    주 = c_$state,
+    의회 = c_$chamber,
+    `현 통제` = c_$control,
+    등급 = c_$rating,
+    메모 = c_$trifecta_note
+  ) |>
+    gt() |>
+    tab_header(title = "2026 주의회 — 경합 의회",
+               subtitle = paste0("Sabato 초기 등급 기준 · 토스업 ", d$competitive_summary$tossup_chambers,
+                                 "개 의회(", d$competitive_summary$tossup_states, "개 주) · 기준 ", d$as_of)) |>
+    tab_source_note(paste0(d$provenance_note, " 출처: ",
+                           paste(d$sources$label, collapse = " · "))) |>
+    .tbl_opts()
+}
+
 # Cook 현행 토스업 명단(자동 취득) + 사이트 상시 추적구와의 차집합을 함께 표기.
 # 두 목록이 다른 이유를 숨기지 않는 것이 목적 — 독자가 트래커를 'Cook 토스업'으로 오해하지 않게.
 gt_cook_tossups <- function() {

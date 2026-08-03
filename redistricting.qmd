@@ -197,8 +197,35 @@ gt_redistricting_pres()
 - 데이터가 확장되면 같은 차트·표가 자동으로 채워집니다(스키마·렌더러 고정).
 :::
 
+## ⑥ 다음 지도를 그리는 주체 — 2026 주의회 선거 {#legislature}
+
+지금까지는 **이미 그려진 지도**의 이야기였습니다. 그런데 다음 지도를 그릴 권한도 이번에 함께 걸려 있습니다 — 대부분의 주에서 선거구를 확정하는 주체가 **주의회**이고(위 ①의 획정 주체 3유형 참조), 주지사가 거부권을 갖기 때문입니다. 즉 **2026년 주의회·주지사 선거의 결과가 2030년 인구총조사 이후의 지도를 결정**합니다.
+
+```{r}
+#| include: false
+sl <- jsonlite::read_json(file.path("data", "state_legislatures.json"), simplifyVector = TRUE)
+```
+
+**규모** — 2026년에는 `r sl$scope$states`개 주에서 전국 99개 의회 중 **`r sl$scope$chambers_up`개 의회**, 약 **`r sl$scope$seats`석**이 개선됩니다. 연방 선거의 그늘에 가려 거의 보도되지 않지만, 실제 통치와 규제는 이 층위에서 이뤄집니다.
+
+```{r}
+gt_state_legislatures()
+```
+
+**구도** — Sabato 초기 등급 기준 경합 `r sl$competitive_summary$competitive_total`개 의회 중 **공화 보유가 `r sl$competitive_summary$held_by_r`개, 민주가 `r sl$competitive_summary$held_by_d`개**로, 대통령 정당인 공화가 수세입니다. 중간선거 역풍의 전형적 배치입니다.
+
+::: {.lookfor}
+**트라이펙타(trifecta)가 진짜 상금** — 주지사 + 상원 + 하원을 한 정당이 모두 쥐면 재획정·예산·규제를 사실상 단독으로 결정합니다. 이번에 그 향배가 걸린 곳은 **`r paste(sl$trifecta_watch, collapse = " · ")`**. 특히 **위스콘신은 주지사(토스업) + 주 상·하원(둘 다 토스업)**이 동시에 걸려, 재획정 신지도가 만든 변화가 한 번에 나타날 수 있는 주입니다.
+:::
+
+**한국 독자를 위한 연결** — 주의회는 선거구만 그리는 게 아니라 **공장 인센티브·전력 요금·노동 규제**를 정하는 곳이기도 합니다. 미시간·애리조나·위스콘신처럼 한국 기업 투자가 몰린 주에서 주지사와 주의회가 함께 바뀌면, 연방 정책과 무관하게 사업 환경이 달라질 수 있습니다. 주지사 쪽 판세는 [주지사 선거](governors.qmd) 페이지에서 다룹니다.
+
+::: {.caveat}
+주의회 등급은 상·하원·주지사와 달리 **자동 취득 피드가 없어 수동 큐레이션**입니다(출처: Sabato's Crystal Ball 초기 등급 · MultiState · Ballotpedia). 그래서 갱신 주기가 상대적으로 느리고, 개별 의석 단위 추적은 하지 않습니다. 등급은 확률이 아니며, 의석수·통제 정당은 선거 전 현재 기준입니다.
+:::
+
 ---
 
 ::: {.as-of}
-관련 페이지: [하원 경합구 트래커](house.qmd) · [방법론](methodology.qmd) · [Korea Watch](korea-watch.qmd). 기준일 2026-06. 진행 중 소송으로 일부 지도는 선거 전 변동될 수 있습니다.
+관련 페이지: [하원 경합구 트래커](house.qmd) · [주지사 선거](governors.qmd) · [방법론](methodology.qmd) · [Korea Watch](korea-watch.qmd). 기준일 2026-06(재획정 현황) · 2026-08(주의회 절). 진행 중 소송으로 일부 지도는 선거 전 변동될 수 있습니다.
 :::
