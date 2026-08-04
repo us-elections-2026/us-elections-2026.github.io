@@ -16,11 +16,11 @@ cat(candidate_cards_html("AK"))
 gt_state_detail("AK")
 ```
 
-Likely R — 경합 하단. 공화 현직 Dan Sullivan을, 2022년 최초의 알래스카 원주민(Yup'ik) 연방의원이 된 Mary Peltola(D)가 도전합니다. 8/18 통합 예비선거(top-4)를 거쳐 11월 본선 RCV로 갑니다. 여론조사 편차가 큽니다(ASR D+6.6 ↔ Data for Progress R+1), 예측시장은 Peltola 약 60%.
+**Toss-up** — 올해 가장 크게 움직인 주입니다. 공화 현직 Dan Sullivan을, 2022년 최초의 알래스카 원주민(Yup'ik) 연방의원이 된 Mary Peltola(D)가 도전합니다. Cook은 **1월 Solid R → Lean R**(펠톨라 출마), 다시 **7/1 Lean R → Toss-up**으로 두 단계 올렸고 Sabato도 6/11에 Toss-up으로 옮겼습니다. 8/18 통합 예비선거(top-4)를 거쳐 11월 본선 RCV로 갑니다. 조사는 기관별 편차가 큽니다(아래 표) — 벤치마크는 NYT/Siena, 트래킹은 ASR.
 
 ::: {.summary}
-- **구도**: 공화 방어 — 현역 Sullivan(R, 군사위) vs Peltola(D, 전 하원의원). Likely R, 경합 하단.
-- **변화**: 동명이인 'Dan J. Sullivan' 투표용지 논란(6/12 예비 제외 결정), top-4 경선+본선 RCV.
+- **구도**: 공화 방어 — 현역 Sullivan(R, 군사위) vs Peltola(D, 전 하원의원). **Cook·Sabato 모두 Toss-up**(Cook 7/1 이동).
+- **변화**: 동명이인 'Dan J. Sullivan'이 주 대법원 판결로 **8/18 투표용지 등재 확정**(6월의 예비 제외 결정이 뒤집힘) — FBI·주법무장관·연방검찰 수사 진행. top-4 경선+본선 RCV에서 유권자 혼동이 살아있는 변수.
 - **한국 함의**: **Sullivan 인도태평양법(한국 명시)·한화 필리 조선소·Alaska LNG-POSCO**(직접 풍부).
 :::
 
@@ -45,7 +45,22 @@ Likely R — 경합 하단. 공화 현직 Dan Sullivan을, 2022년 최초의 알
 
 **Mary Peltola (D, 전 하원의원)** — Bristol Bay 어업 보호(Pebble Mine 차단 법안)·자원개발에 집중. ANWR 시추법엔 위원회 찬성·본회의 기권의 복합 입장. **한국·인도태평양 관련 직접 표결은 미확인**(의정 초점이 어업·자원·원주민). ([ADN](https://www.adn.com/politics/2024/05/03/in-election-year-us-rep-mary-peltola-walks-a-complicated-path-on-fisheries-and-oil-drilling/))
 
-## 4. 펀드레이징 (FEC, 2026 Q1 · 3/31 마감)
+## 4. 최신 여론조사 {#polls}
+
+```{r}
+gt_state_polls("AK")
+```
+
+> 이 표는 `data/senate_polls.csv`에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 **여러 조사의 방향**을 보세요.
+
+## 5. 펀드레이징
+
+```{r}
+#| output: asis
+cat(state_money_html("AK"))
+```
+
+**직전 분기(2026 Q1 · 3/31 마감) 상세** — 아래 표는 Q1 시점 기록이며, 최신 수치는 위 상자를 보세요.
 
 | 후보 | 정당 | Q1 모금 | 보유현금 |
 |---|---|---:|---:|
@@ -56,7 +71,7 @@ Likely R — 경합 하단. 공화 현직 Dan Sullivan을, 2022년 최초의 알
 
 **Peltola가 신규 모금에서 약 5대 1로 Sullivan을 압도**(알래스카 상원 사상 분기 최대)했으나, **보유현금은 현역 Sullivan이 우위**($7.1M vs $5.7M)입니다 — 누적 적립 효과. 출처별 수치 편차가 있어(ADN vs 캠프 발표) FEC 원본 대조를 권합니다. ([ADN](https://www.adn.com/politics/2026/04/16/peltola-posts-massive-campaign-fundraising-but-republicans-maintain-cash-advantage-in-alaska-congressional-races/))
 
-## 5. 한국 함의
+## 6. 한국 함의
 
 알래스카는 **GA·OH와 함께 한국 함의가 가장 깊은 주**입니다.
 

@@ -188,6 +188,54 @@ gt_state_detail <- function(code) {
     .tbl_opts()
 }
 
+# 1.4c-2 주별 여론조사 표 (State Focus용) ------------------------------------
+# data/senate_polls.csv 를 그대로 렌더 — 프로즈에 수치를 박지 않고 데이터에서 끌어오므로
+# 주간 발행 때 조사가 추가되면 각 주 페이지가 자동으로 최신화된다.
+gt_state_polls <- function(code) {
+  p <- readr::read_csv(file.path("data", "senate_polls.csv"), show_col_types = FALSE)
+  p <- p[p$state == code, ]
+  if (nrow(p) == 0) {
+    return(gt(tibble(안내 = "이 주의 본선 여론조사가 아직 데이터베이스에 없습니다(추정으로 채우지 않음).")) |>
+             tab_header(title = "최신 여론조사") |> .tbl_opts())
+  }
+  p <- p[order(p$end_date, decreasing = TRUE), ]
+  fld <- function(x, alt = "—") ifelse(is.na(x) | x == "", alt, as.character(x))
+  period <- ifelse(is.na(p$start_date) | p$start_date == "",
+                   paste0("~", fld(p$end_date)),
+                   paste0(fld(p$start_date), " ~ ", fld(p$end_date)))
+  house <- ifelse(is.na(p$partisan) | p$partisan == "none", "",
+                  paste0(" (", p$partisan, " 성향)"))
+  res <- paste0(fld(p$dem_candidate), " ", fld(p$dem_pct), " – ",
+                fld(p$rep_pct), " ", fld(p$rep_candidate))
+  tibble(
+    조사기관 = paste0(p$pollster, house),
+    실사기간 = period,
+    모집단 = fld(p$population),
+    표본 = fld(p$n),
+    결과 = res,
+    마진 = .fmt_margin(suppressWarnings(as.numeric(p$margin))),
+    비고 = fld(p$note, "")
+  ) |>
+    gt() |>
+    tab_header(title = "최신 여론조사",
+               subtitle = paste0("최신순 · ", nrow(p), "건 · 양수 = 민주 우위(D+)")) |>
+    tab_source_note(paste0(
+      "출처 URL은 `data/senate_polls.csv`에 행별로 보관합니다. 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 ",
+      "단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.")) |>
+    .tbl_opts()
+}
+
+# 최신 자금 상황 한 줄 (senate_races.json의 cash_on_hand — 매주 자동 갱신되는 값)
+state_money_html <- function(code) {
+  d <- .load_json("senate_races")
+  r <- d$races[d$races$state == code, ]
+  v <- if (nrow(r) && !is.na(r$cash_on_hand)) r$cash_on_hand else NA
+  body <- if (is.na(v))
+    "이 주의 최신 분기 자금 요약은 아직 데이터에 없습니다(【수집】 — 추정으로 채우지 않음)."
+  else v
+  paste0('<div class="lookfor"><p><b>최신 자금 상황</b> (기준 ', d$as_of, ') — ', body, '</p></div>')
+}
+
 # 1.4d 후보자 프로필 카드 (HTML) --------------------------------------------
 # data/candidates.json 을 읽어 HTML 카드 문자열을 반환. qmd 청크에서
 # `#| output: asis` 와 함께 cat() 으로 출력한다. status="primary"는 경선 후보(하단 가로),

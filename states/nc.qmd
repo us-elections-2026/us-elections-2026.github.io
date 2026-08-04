@@ -45,7 +45,22 @@ Tillis 은퇴로 생긴 **공개석**(공화 방어). 전 주지사 Roy Cooper(D
 
 > **한국 관련 직접 입장·발언은 양 후보 모두 미확인**입니다.
 
-## 4. 펀드레이징 (FEC, 2026 Q1 · 3/31 마감)
+## 4. 최신 여론조사 {#polls}
+
+```{r}
+gt_state_polls("NC")
+```
+
+> 이 표는 `data/senate_polls.csv`에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 **여러 조사의 방향**을 보세요.
+
+## 5. 펀드레이징
+
+```{r}
+#| output: asis
+cat(state_money_html("NC"))
+```
+
+**직전 분기(2026 Q1 · 3/31 마감) 상세** — 아래 표는 Q1 시점 기록이며, 최신 수치는 위 상자를 보세요.
 
 | 후보 | 정당 | Q1 모금 | 보유현금 |
 |---|---|---:|---:|
@@ -56,6 +71,6 @@ Tillis 은퇴로 생긴 **공개석**(공화 방어). 전 주지사 Roy Cooper(D
 
 Cooper 모금의 **95% 이상이 $100 이하 소액**으로, 보유현금에서 Whatley의 **7배 이상** 우위입니다(입후보 후 누적 $36M+ vs 약 $16M). 다만 공화 슈퍼팩 SLF의 $71M 외부지출이 이 현금 격차를 상쇄하는 구조입니다. (FEC 원본 대조 권장.) ([Carolina Journal](https://www.carolinajournal.com/cooper-outraises-whatley-in-q1-13-8m-to-5m/) · [AOL](https://www.aol.com/articles/election-2026-cooper-cash-advantage-221900221.html))
 
-## 5. 한국 함의
+## 6. 한국 함의
 
 NC는 대선에선 공화 우위지만 주지사로 Cooper를 두 번 배출한 대표적 **분할투표** 주입니다. 다만 NC의 대형 첨단제조 유치는 일본(Toyota 배터리)·베트남(VinFast)·핀란드(Kempower) 중심으로, **한국의 대형 NC 직접 투자 사례나 양 후보의 대한 정책 입장은 공개 출처에서 확인되지 않습니다**(한국 배터리 대형 투자는 조지아에 집중). 추정으로 빈 칸을 채우지 않으며, 신규 동향은 [Korea Watch](../korea-watch.qmd)에 기록합니다.

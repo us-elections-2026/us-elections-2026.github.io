@@ -53,7 +53,22 @@ gt_state_detail("GA")
 
 > roll-call(본회의 표결) 자체는 한국전 75주년 결의안 외 통상·반도체·주한미군 개별 표결은 미확인 — Ossoff의 한국 관여는 대부분 입법 발의·외교 관여·투자 유치 형태입니다.
 
-## 5. 펀드레이징 (FEC, 2026 Q1 · 3/31 마감)
+## 5. 최신 여론조사 {#polls}
+
+```{r}
+gt_state_polls("GA")
+```
+
+> 이 표는 `data/senate_polls.csv`에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 **여러 조사의 방향**을 보세요.
+
+## 6. 펀드레이징
+
+```{r}
+#| output: asis
+cat(state_money_html("GA"))
+```
+
+**직전 분기(2026 Q1 · 3/31 마감) 상세** — 아래 표는 Q1 시점 기록이며, 최신 수치는 위 상자를 보세요.
 
 | 후보 | 정당 | Q1 모금 | 보유현금 |
 |---|---|---:|---:|
@@ -65,7 +80,7 @@ gt_state_detail("GA")
 
 Ossoff의 Q1 기여는 **99% 이상이 $200 미만 소액**(40.8만 건 이상, 평균 $38)으로, 대액 기부 의존도가 높은 공화 후보들과 대조됩니다. 무경선 현역이 결선을 치르는 공화 후보들보다 **약 15배 많은 보유현금**으로 광고전을 선점한 구도. ([AJC](https://www.ajc.com/politics/2026/04/jon-ossoff-posts-record-14m-haul-in-high-stakes-georgia-senate-race/) · [OpenSecrets](https://www.opensecrets.org/news/2026/04/small-donors-vs-big-checks-fundraising-divide-shapes-georgia-senate-race/))
 
-## 6. 한국 함의
+## 7. 한국 함의
 
 - **직접 확인**: Ossoff는 위 4절의 입법·외교 활동으로 **한국 통상·안보에 직접 관여**해 왔습니다. 2025년 9월 현대-LG 배터리 공장 ICE 단속(475명 구금, 약 300명 한국 국적) 당시 그는 *"미국과 한국 정부 간 고위급 관여로 수천 개 제조 일자리를 약속한 이 시설이 완공되도록 보장해야 한다"* 며 **단속 규탄보다 경제·완공 보장 프레임**으로 대응했습니다(발언 전문·정확 일자는 FOX 5 원본 대조 권장). ([Wikipedia](https://en.wikipedia.org/wiki/2025_Georgia_Hyundai_plant_immigration_raid))
 - **대조 후크**: 한국 독자에게 가장 선명한 대비는 **Ossoff(미·한 협력으로 공장 완공 강조)** 와 **Collins('단속 지지')** 의 입장 차이입니다. 의석 향배보다 양당 후보의 대(對)한국 통상·이민 입장이 **반도체·배터리 투자 환경에 직접** 닿아 있습니다.

@@ -48,7 +48,22 @@ gt_state_detail("TX")
 
 > **한국·삼성 관련 직접 발언은 양 후보 모두 미확인**입니다. (탈락한 현역 Cornyn은 재임 중 삼성 Taylor 투자를 공개 환영한 텍사스 정치인 중 하나로 거론되나, 구체 발언 전문은 미확인.)
 
-## 5. 펀드레이징 (FEC, 2026 Q1 · 3/31 마감)
+## 5. 최신 여론조사 {#polls}
+
+```{r}
+gt_state_polls("TX")
+```
+
+> 이 표는 `data/senate_polls.csv`에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 **여러 조사의 방향**을 보세요.
+
+## 6. 펀드레이징
+
+```{r}
+#| output: asis
+cat(state_money_html("TX"))
+```
+
+**직전 분기(2026 Q1 · 3/31 마감) 상세** — 아래 표는 Q1 시점 기록이며, 최신 수치는 위 상자를 보세요.
 
 | 후보 | 정당 | Q1 모금 | 보유현금 |
 |---|---|---:|---:|
@@ -59,7 +74,7 @@ gt_state_detail("TX")
 
 Talarico는 분기 역대급 모금에 더해 **결선 다음날 24시간 만에 $3M+**를 모았습니다(5/28 기준). Paxton은 같은 분기 Cornyn($9M)에 모금에서 밀렸으나 결선에서 승리했습니다 — **돈이 아니라 트럼프 지지가 결정 변수**였던 경선입니다. 2분기(4–6월) FEC 보고는 마감 전이라 결선 후 Talarico 누계 현금은 미확정. ([Texas Tribune](https://www.texastribune.org/2026/04/15/john-cornyn-ken-paxton-runoff-first-quarter-fundraising/) · [CNN](https://www.cnn.com/2026/05/28/politics/james-talarico-texas-senate-fundraising))
 
-## 6. 한국 함의
+## 7. 한국 함의
 
 - **구조적 후크**: **삼성전자 Taylor 반도체 팹**($44B, 2026년 가동)이 텍사스 첨단제조의 간판이며, 공교롭게 Talarico가 **2018~2022년 대표했던 옛 지역구(HD-52, Williamson County)**에 자리합니다.
 - **직접 확인 vs 추정**: 다만 재획정 후 Talarico의 현 지역구는 오스틴(HD-50)으로 Taylor를 직접 대표하지 않으며, **양 후보 모두 삼성·한국 통상에 대한 명시적 공개 입장은 확인되지 않습니다**. 지역구 연고는 사실이나 정책 입장으로 추정하지 않습니다. 신규 동향은 [Korea Watch](../korea-watch.qmd)에 기록합니다.

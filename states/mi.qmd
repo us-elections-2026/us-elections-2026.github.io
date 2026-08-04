@@ -57,7 +57,22 @@ cat(primary_cards_html("MI"))
 
 > roll-call ID·날짜(Voteview/Congress.gov)는 현재 보도·하원 보도자료 수준만 확보 — 정확한 표결 번호는 보강 예정입니다(【수집】).
 
-## 5. 펀드레이징 (FEC, 2026 Q1 · 3/31 마감)
+## 5. 최신 여론조사 {#polls}
+
+```{r}
+gt_state_polls("MI")
+```
+
+> 이 표는 `data/senate_polls.csv`에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 **여러 조사의 방향**을 보세요.
+
+## 6. 펀드레이징
+
+```{r}
+#| output: asis
+cat(state_money_html("MI"))
+```
+
+**직전 분기(2026 Q1 · 3/31 마감) 상세** — 아래 표는 Q1 시점 기록이며, 최신 수치는 위 상자를 보세요.
 
 | 후보 | 정당 | Q1 모금 | 보유현금 |
 |---|---|---:|---:|
@@ -70,7 +85,7 @@ cat(primary_cards_html("MI"))
 
 **McMorrow가 Q1 모금 1위**(캠프 누적 $8.6M), **Rogers가 보유현금 1위**입니다. Stevens는 모금의 약 84%를 소진해 burn rate가 가장 높습니다. Rogers는 외부지출(outside spending) 약 $45M 확보가 보도됐으나, 이는 후보 캠프 직접 모금과 구분되는 외부 PAC 지출입니다(FEC 1차 확인 권장). ([Michigan Advance](https://michiganadvance.com/2026/04/28/michigan-u-s-senate-primary-tightens-as-mcmorrow-el-sayed-outpace-stevens-in-q1-fundraising/) · [Detroit News](https://www.detroitnews.com/story/news/politics/2026/04/15/mallory-mcmorrow-fundraising-lead-michigan-u-s-senate-race-mike-rogers-cash-stevens-el-sayed/89630523007/))
 
-## 6. 한국 함의
+## 7. 한국 함의
 
 미시간은 **LG에너지솔루션·SK온·삼성SDI** 한국 배터리 기업의 대미 생산기지가 집중된 EV 산업 본진입니다. 특히 Lansing의 LG 단독 소유 공장은 이 레이스의 경제 서사 한복판에 있습니다.
 
