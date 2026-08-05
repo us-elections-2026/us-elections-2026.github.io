@@ -341,3 +341,7 @@ main .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .tilemap-legend .tm-key { display: inline-flex; align-items: center; gap: 4px; }
 .tilemap-legend i { width: 13px; height: 13px; border-radius: 3px; display: inline-block; }
 .tilemap-cap { font-size: .76rem; color: #6b7280; line-height: 1.55; margin-top: 4px; }
+
+/* 등급 타일 — 기관 분기 표시·출처 */
+.rt-div { color: #b45309; font-size: .72em; margin-left: 2px; }
+.rt-src { font-size: .74rem; color: #6b7280; margin-top: 6px; line-height: 1.5; }

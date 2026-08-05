@@ -524,18 +524,27 @@ gt_senate_rating_sources <- function() {
   key <- c("GA", "NC", "NH", "MI", "ME", "AK", "OH", "TX")
   kr <- c(GA = "조지아", NC = "NC", NH = "NH", MI = "미시간", ME = "메인",
           AK = "알래스카", OH = "오하이오", TX = "텍사스")
+  is_mkt <- grepl("Kalshi|예측시장", src$label)
   cell <- function(i, ab) {
     if (!(ab %in% names(rt))) return("—")
-    v <- rt[i, ab]; if (is.null(v) || length(v) == 0 || is.na(v)) "—" else as.character(v)
+    v <- rt[i, ab]
+    if (is.null(v) || length(v) == 0 || is.na(v)) return("—")
+    v <- as.character(v)
+    # 예측시장은 '가격'을 같은 7단계 눈금으로 환산한 값이라 전문가 등급과 뜻이 다르다.
+    # 같은 칸에 섞여 보이면 오해를 낳으므로 셀 자체에 성격을 표시한다.
+    if (is_mkt[i]) paste0(v, " (가격)") else v
   }
   cols <- lapply(key, function(ab) vapply(seq_len(nrow(src)), cell, character(1), ab = ab))
   names(cols) <- kr[key]
-  bind_cols(tibble(예측기관 = src$label, 기준일 = src$as_of), as_tibble(cols)) |>
+  lbl <- ifelse(is_mkt, paste0(src$label, " ※"), src$label)
+  bind_cols(tibble(예측기관 = lbl, 기준일 = src$as_of), as_tibble(cols)) |>
     gt() |>
     tab_header(title = "상원 감시 8주 — 기관별 등급",
                subtitle = "270towin 재게시 피드 자동 취득 · 등급은 확률이 아님") |>
     tab_source_note(paste0(
-      "같은 주를 기관마다 어떻게 보는지 비교합니다. Kalshi는 예측시장 가격을 등급 구간으로 환산한 것이라 성격이 다릅니다. ",
+      "같은 주를 기관마다 어떻게 보는지 비교합니다. ",
+      "※ 표시한 Kalshi 행은 **전문가 등급이 아니라 예측시장 가격**을 같은 7단계 눈금으로 환산한 값입니다 — ",
+      "가격이 높으면 'Solid D'처럼 보이지만 이는 시장의 확신도이지 Cook·Sabato의 등급 판정이 아닙니다(같은 잣대로 읽지 마세요). ",
       "'—'는 해당 기관이 경합으로 분류하지 않았거나 코드 의미가 확인되지 않은 칸(추정으로 채우지 않음). ",
       "취득: scripts/fetch_senate_ratings.py")) |>
     .tbl_opts()
@@ -699,9 +708,28 @@ gt_model_scenarios <- function() {
   else "기타"
 }
 
+# 분류용 '단일 출처' 등급 벡터. 병기 문자열("Lean D (Cook) / Likely D (Sabato)")을 그대로
+# 버킷에 넣으면 오분류되므로(2026-08-03 조지아 사례), 컨센서스 → Cook 순으로 하나만 고른다.
+.single_rating <- function(s) {
+  cons <- tryCatch({
+    f <- .load_json("senate_ratings_feed")
+    i <- which(f$sources$label == "270toWin Consensus")
+    if (length(i)) list(rt = f$sources$ratings, i = i[1]) else NULL
+  }, error = function(e) NULL)
+  vapply(seq_len(nrow(s)), function(k) {
+    ab <- toupper(s$id[k])
+    if (!is.null(cons) && ab %in% names(cons$rt)) {
+      v <- cons$rt[cons$i, ab]
+      if (!is.null(v) && !is.na(v)) return(as.character(v))
+    }
+    if (!is.null(s$rating_cook) && !is.na(s$rating_cook[k])) return(sub(" \\(.*", "", s$rating_cook[k]))
+    s$rating[k]
+  }, character(1))
+}
+
 model_rating_counts <- function() {
   d <- .load_json("model_dashboard")
-  b <- vapply(d$states$rating, .rating_bucket, character(1))
+  b <- vapply(.single_rating(d$states), .rating_bucket, character(1))
   cats <- c("Solid D", "Lean D", "Toss-up", "Lean R", "Solid R")
   setNames(vapply(cats, function(k) sum(b == k), integer(1)), cats)
 }
@@ -709,27 +737,46 @@ model_rating_counts <- function() {
 # 등급 분포를 5개 타일 HTML로 (각 타일에 해당 주 명칭 + 링크)
 rating_tiles_html <- function() {
   d <- .load_json("model_dashboard"); s <- d$states
-  b <- vapply(s$rating, .rating_bucket, character(1))
-  defs <- list(c("Solid D", "rt-sd"), c("Lean D", "rt-ld"), c("Toss-up", "rt-tu"),
-               c("Lean R", "rt-lr"), c("Solid R", "rt-sr"))
+  # 분류 기준은 **단일 출처**를 쓴다. 과거에 "Lean D (Cook) / Likely D (Sabato)" 같은
+  # 병기 문자열을 그대로 버킷에 넣어 조지아가 Solid 그룹으로 잘못 들어간 적이 있다(2026-08-03 수정).
+  # 지도(us_tile_map_html)와 같은 270toWin 컨센서스를 1순위로, 없으면 Cook 개별 등급으로 폴백.
+  cons <- tryCatch({
+    f <- .load_json("senate_ratings_feed")
+    i <- which(f$sources$label == "270toWin Consensus")
+    if (length(i)) list(rt = f$sources$ratings, i = i[1], as_of = f$sources$as_of[i[1]]) else NULL
+  }, error = function(e) NULL)
+  b <- vapply(.single_rating(s), .rating_bucket, character(1))
+  # Cook과 Sabato가 갈리는 주는 타일에 표시해, 단일 등급으로 보이지 않게 한다.
+  diverge <- rep(FALSE, nrow(s))
+  if (!is.null(s$rating_cook) && !is.null(s$rating_sabato)) {
+    ck <- sub(" \\(.*", "", s$rating_cook); sb <- s$rating_sabato
+    diverge <- !is.na(ck) & !is.na(sb) & sb != "—" & ck != sb
+  }
+  defs <- list(c("Solid D", "rt-sd", "Solid·Likely D"), c("Lean D", "rt-ld", "Lean D"),
+               c("Toss-up", "rt-tu", "Toss-up"), c("Lean R", "rt-lr", "Lean R"),
+               c("Solid R", "rt-sr", "Solid·Likely R"))
   tiles <- vapply(defs, function(x) {
     idx <- which(b == x[1])
     states <- if (length(idx) == 0) '<span class="rt-empty">—</span>' else
       paste0(vapply(idx, function(i) sprintf(
-        '<div class="rt-st"><a href="/states/%s.html">%s</a><span class="rt-hold rt-hold-%s">%s</span></div>',
-        s$id[i], s$name[i], tolower(s$defense[i]), s$defense[i]), character(1)),
+        '<div class="rt-st"><a href="/states/%s.html">%s%s</a><span class="rt-hold rt-hold-%s">%s</span></div>',
+        s$id[i], s$name[i], if (diverge[i]) '<span class="rt-div" title="Cook과 Sabato 평가가 갈림">◆</span>' else "",
+        tolower(s$defense[i]), s$defense[i]), character(1)),
         collapse = "")
     sprintf('<div class="rtile %s"><div class="rt-num">%d</div><div class="rt-lab">%s</div><div class="rt-states">%s</div></div>',
-            x[2], length(idx), x[1], states)
+            x[2], length(idx), x[3], states)
   }, character(1))
-  paste0('<div class="rating-tiles">', paste(tiles, collapse = ""), "</div>")
+  src <- if (!is.null(cons))
+    sprintf('<p class="rt-src">분류 기준: <b>270toWin 컨센서스</b>(기준 %s) — 상원 지도와 같은 출처. ◆는 Cook과 Sabato 평가가 갈리는 주로, 개별 등급은 <a href="/senate.html#races">경합주 표</a>와 <a href="/dashboard.html">대시보드</a>에서 확인하세요.</p>', cons$as_of)
+  else ""
+  paste0('<div class="rating-tiles">', paste(tiles, collapse = ""), "</div>", src)
 }
 
 # 현 보유 정당 요약 (defense 기준) + 탈환 표적
 holder_note_html <- function() {
   d <- .load_json("model_dashboard"); s <- d$states
   dh <- s$name[s$defense == "D"]; rh <- s$name[s$defense == "R"]
-  b <- vapply(s$rating, .rating_bucket, character(1))
+  b <- vapply(.single_rating(s), .rating_bucket, character(1))
   flip <- s$name[s$defense == "R" & b %in% c("Lean D", "Solid D")]
   paste0(
     '<p class="holder-note">',
