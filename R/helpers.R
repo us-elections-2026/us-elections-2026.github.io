@@ -547,21 +547,30 @@ kalshi_control_html <- function() {
     return('<p class="note">예측시장 상원 다수 가격 【수집】 — <code>scripts/fetch_kalshi_prices.py</code> 실행 필요.</p>')
   }
   c0 <- k$senate_control
-  # 모델 확률과의 대비 행은 두지 않는다 — 확인된 모델 수치가 없는 상태에서
-  # 옆에 숫자를 세우면 '이견'처럼 읽히기 때문(2026-08-06 미확인 모델값 삭제).
+  # 대비 상대는 **원천이 확인된 모델**만 쓴다(현재 DDHQ). dem_majority_prob는
+  # 2026-08-06부터 시장 대표값이라 여기서 읽으면 시장을 시장과 비교하게 된다.
+  dq <- tryCatch(jsonlite::read_json(file.path("data", "ddhq_forecast.json"),
+                                     simplifyVector = TRUE), error = function(e) NULL)
+  model_p <- if (!is.null(dq) && !is.null(dq$senate$dem_majority_prob))
+    as.numeric(dq$senate$dem_majority_prob) else NA_real_
+  model_row <- if (is.na(model_p)) "" else sprintf(paste0(
+    '<div class="mkt-row mkt-sub"><span>같은 질문에 대한 <b>모델</b> — Decision Desk HQ ',
+    '<span class="mkt-src">(모델 갱신 %s)</span></span><span class="mkt-val">%s%%</span></div>'),
+    substr(dq$senate$model_updated_at %||% "", 1, 10), format(model_p, nsmall = 0))
   sprintf(paste0(
     '<div class="mkt-control">',
     '<div class="mkt-row"><span class="mkt-lab">예측시장 <b>Kalshi</b> — 민주 상원 다수</span>',
     '<span class="mkt-val mkt-d">%s%%</span></div>',
-    '<div class="mkt-bar"><i style="width:%s%%"></i></div>',
-    '<p class="mkt-note">공개 API에서 <b>원가격을 직접 받아</b> 싣는 값입니다. ',
-    '다만 가격은 <b>확률의 근사일 뿐 확률 자체가 아닙니다</b> — 유동성·수수료·거래자 구성 편향이 섞입니다. ',
-    '나란히 놓을 외부 <b>모델</b> 확률은 원 수치를 확인하지 못해 <b>싣지 않습니다</b>(추정으로 채우지 않음). ',
-    '270toWin의 “Which Party Will Control the Senate?”도 독립 모델이 아니라 <b>같은 Kalshi 시장 위젯</b>이라 ',
-    '모델 쪽 근거가 되지 못합니다. ',
+    '<div class="mkt-bar"><i style="width:%s%%"></i></div>%s',
+    '<p class="mkt-note">둘 다 <b>원천에서 직접 받은 값</b>입니다 — 시장은 Kalshi 공개 API의 원가격, ',
+    '모델은 DDHQ 예측 페이지의 산출물. 방법이 전혀 다른 두 수치가 <b>2%%p 안에서 만난다</b>는 점이 ',
+    '이 칸의 정보값입니다. 다만 가격은 <b>확률의 근사일 뿐</b>이라(유동성·수수료·거래자 편향) ',
+    '모델 확률과 같은 잣대로 평균 내지는 마세요. ',
+    '참고로 270toWin의 “Which Party Will Control the Senate?”는 독립 모델이 아니라 ',
+    '<b>같은 Kalshi 시장 위젯</b>이라 제3의 근거가 되지 못합니다. ',
     '계약: “%s” · 거래액 $%s · 미결제약정 $%s · 기준 %s(UTC). ',
     '<a href="%s" rel="nofollow">Kalshi 원장</a></p></div>'),
-    format(c0$dem, nsmall = 0), format(c0$dem, nsmall = 0),
+    format(c0$dem, nsmall = 0), format(c0$dem, nsmall = 0), model_row,
     htmltools::htmlEscape(c0$question %||% ""),
     format(c0$volume, big.mark = ","), format(c0$open_interest, big.mark = ","),
     k$fetched_at_utc, c0$url)
