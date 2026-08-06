@@ -44,6 +44,8 @@ python3 scripts/snapshot_ratings.py || echo "[weekly] ! 등급 스냅샷 실패(
 # 1.7) 예측시장 원가격(Kalshi 공개 API) — 270towin의 '등급 환산값'이 아니라 가격 자체
 echo "[weekly] Kalshi 예측시장 가격 취득"
 python3 scripts/fetch_kalshi_prices.py || echo "[weekly] ! Kalshi 가격 취득 실패(건너뜀 — 직전 값 유지)"
+# 외부 모델 확률 — 원천이 구조화 데이터로 확인되는 DDHQ만 자동 취득
+python3 scripts/fetch_ddhq_forecast.py || echo "[weekly] ! DDHQ 예측 취득 실패(건너뜀 — 직전 값 유지)"
 
 # 2) Korea Watch 동기화(_NIS DB → data/korea_watch.csv, idempotent)
 echo "[weekly] Korea Watch 동기화"

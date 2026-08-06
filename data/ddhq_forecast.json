@@ -1,0 +1,14 @@
+{
+ "as_of": "2026-08-06",
+ "fetched_at_utc": "2026-08-06T05:21:59Z",
+ "type": "model",
+ "source_label": "Decision Desk HQ",
+ "source_url": "https://votes.decisiondeskhq.com/forecast/2026/senate",
+ "model_updated_at": "2026-08-05 15:05:00.110619",
+ "rating": "Toss Up",
+ "dem_majority_prob": 43.0,
+ "rep_majority_prob": 57.0,
+ "dem_seats_mean": 50,
+ "rep_seats_mean": 50,
+ "note": "seats는 시뮬레이션 **평균 의석**, dem_majority_prob는 **다수당 확률**로 서로 다른 값이다. 50–50 의석은 부통령 캐스팅보트로 공화 다수를 뜻하므로 '민주 50% 확률'이 아니다."
+}
