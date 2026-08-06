@@ -121,51 +121,6 @@ gt_generic_spread()
 원자료는 `data/approval_polls.csv`·`data/generic_polls.csv`에 조사기관·기간·표본·모집단·출처 URL과 함께 전 기간(2025년 1월~) 그대로 보관합니다. 수집은 `scripts/fetch_pollster_polls.py`(VoteHub 공개 API).
 :::
 
-## 경제 지표 {#economy}
-
-선거 환경에 직결되는 지표만 추립니다. 체감 물가(장바구니·주거)가 거시 수치보다 투표에 가깝게 작동한다는 점에 유의.
-
-```{r}
-gt_national_econ()
-```
-
-### 월별 추이 (1월~) {#econ-trends}
-
-::: {#econ-root}
-
-::: {.grid}
-
-::: {.g-col-12 .g-col-md-4}
-**CPI — 전년 동월 대비**
-<div style="height:220px"><canvas id="cpiChart"></canvas></div>
-:::
-
-::: {.g-col-12 .g-col-md-4}
-**실업률**
-<div style="height:220px"><canvas id="unrateChart"></canvas></div>
-:::
-
-::: {.g-col-12 .g-col-md-4}
-**미시간대 소비자심리**
-<div style="height:220px"><canvas id="umcsentChart"></canvas></div>
-:::
-
-:::
-
-<p id="econ-note" class="text-muted" style="font-size:.78rem; margin-top:.5rem;"></p>
-
-:::
-
-<script src="assets/econ.js"></script>
-
-데이터는 `scripts/fetch_national_econ.py`(FRED API)가 주 1회 `data/national_econ.json`으로 갱신합니다(표=최신 스냅샷, 그래프=1월 이후 월별). 관세 관련 조치는 API가 없어 주간 브리핑(뉴스 기반)에서 추적합니다.
-
-## 외교·안보 {#foreign}
-
-선거 쟁점화 가능성이 있는 사건 중심으로 주간 단위 정리. 한반도 관련 사안은 [Korea Watch](korea-watch.qmd)에서 상세 추적합니다.
-
-【수집】 주간 브리핑 발행 시 타임라인 보강.
-
 ## 민주당 내부 지형 — DSA와 좌파 flank {#dsa}
 
 전국 환경을 볼 때 흔히 놓치는 축이 **여당 대 야당이 아니라 야당 내부**입니다. 2026년 경선에서 **미국민주사회주의자(DSA, Democratic Socialists of America)**가 지지한 후보들이 잇달아 현역을 꺾으면서, 민주당이 다수당을 되찾을 경우 그 원내 구성이 2018년이나 2020년과 다를 가능성이 생겼습니다.
@@ -216,6 +171,51 @@ DSA 계열 후보들이 공유하는 의제 가운데 **한국과 직접 맞물�
 ::: {.caveat}
 **이 절에서 싣지 않은 것** — 언론에 도는 "DSA가 150명을 지원해 35명이 경선을 통과했다", "전국에 250명 이상의 DSA 공직자", "지원 레이스의 절반 가까이 승리" 같은 **총계는 원 출처를 확인하지 못해 싣지 않았습니다**. 위 표는 개별 레이스 결과를 하나씩 확인한 것만 담습니다. 공인 주체(전국 조직 vs 지부)가 각각 다르므로 **"DSA 의원 N명"으로 합산하지 마세요.** Chris Rabb(PA-03)·Avila Chevalier의 지역구 번호는 아직 확인되지 않았습니다.
 :::
+
+## 경제 지표 {#economy}
+
+선거 환경에 직결되는 지표만 추립니다. 체감 물가(장바구니·주거)가 거시 수치보다 투표에 가깝게 작동한다는 점에 유의.
+
+```{r}
+gt_national_econ()
+```
+
+### 월별 추이 (1월~) {#econ-trends}
+
+::: {#econ-root}
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+**CPI — 전년 동월 대비**
+<div style="height:220px"><canvas id="cpiChart"></canvas></div>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+**실업률**
+<div style="height:220px"><canvas id="unrateChart"></canvas></div>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+**미시간대 소비자심리**
+<div style="height:220px"><canvas id="umcsentChart"></canvas></div>
+:::
+
+:::
+
+<p id="econ-note" class="text-muted" style="font-size:.78rem; margin-top:.5rem;"></p>
+
+:::
+
+<script src="assets/econ.js"></script>
+
+데이터는 `scripts/fetch_national_econ.py`(FRED API)가 주 1회 `data/national_econ.json`으로 갱신합니다(표=최신 스냅샷, 그래프=1월 이후 월별). 관세 관련 조치는 API가 없어 주간 브리핑(뉴스 기반)에서 추적합니다.
+
+## 외교·안보 {#foreign}
+
+선거 쟁점화 가능성이 있는 사건 중심으로 주간 단위 정리. 한반도 관련 사안은 [Korea Watch](korea-watch.qmd)에서 상세 추적합니다.
+
+【수집】 주간 브리핑 발행 시 타임라인 보강.
 
 ## 역사적 기준선 {#baseline}
 
