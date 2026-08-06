@@ -101,9 +101,17 @@ def main():
             names.setdefault(key, mm.group(2).strip())
     except Exception as e:  # noqa: BLE001
         print(f"[cook] 현역 라벨 보강 실패(등급은 정상): {e}", file=sys.stderr)
+    # 재획정으로 번호가 재배치된 구는 원 피드의 현역 라벨이 옛 지도 기준으로 남아 있다.
+    # 자동 취득분을 그대로 실으면 페이지에 틀린 이름이 뜨므로, 확인된 건만 교정한다.
+    #   FL-25: 신지도(델레이비치~마이애미비치)의 현역은 Jared Moskowitz다. Wasserman
+    #          Schultz는 구지도 기준 — 2026-08-06 복수 매체(WLRN·CBS Miami·Florida
+    #          Politics)가 Moskowitz를 FL-25 현역으로 보도(8/18 경선 상대 Oliver Larkin).
+    INCUMBENT_FIX = {"FL-25": "Moskowitz"}
     for r in rows:
         if r["district"] in names:
             r["incumbent"] = names[r["district"]]
+        if r["district"] in INCUMBENT_FIX:
+            r["incumbent"] = INCUMBENT_FIX[r["district"]]
 
     ratings = {
         "as_of": as_of,
