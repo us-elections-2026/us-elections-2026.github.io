@@ -115,6 +115,42 @@ def drop_exact_dupes(rows):
     return out, n
 
 
+def load_supplement(path, hi_col, lo_col):
+    """수동 보충분 로드 — 피드가 멈춘 구간(2026-07~)을 기관 원본에서 직접 채운 행.
+
+    왜 있나 — VoteHub 피드는 2026-06-29(순지지도)·06-30(일반투표)에서 멈췄지만,
+    상위 기관들은 7월분을 계속 발표했다. 2026-08-06 원본 대조 작업에서 YouGov 탭 PDF·
+    Ipsos 토플라인 PDF·Napolitan 토플라인 PDF·ARG 발표(보도 경유)로 검증해 수집했다.
+    보충 행은 main CSV와 같은 13열 스키마이며 poll_id 가 'supp-' 로 시작한다.
+    """
+    if not os.path.exists(path):
+        return []
+    out = []
+    with open(path, encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            out.append({
+                "date_end": row["date_end"], "date_start": row["date_start"],
+                "pollster": row["pollster"], "sponsor": row["sponsor"],
+                "population": row["population"], "n": row["n"],
+                "hi": float(row[hi_col]), "lo": float(row[lo_col]),
+                "value": float(row["value"]),
+                "partisan": row["partisan"], "internal": row["internal"],
+                "poll_id": row["poll_id"], "source_url": row["source_url"],
+            })
+    return out
+
+
+def merge_supplement(feed, supp):
+    """피드 + 보충 병합. 같은 조사(기관+기간+모집단)가 양쪽에 있으면 **피드가 정본**
+    — 피드가 나중에 그 구간을 따라잡으면 보충 행은 자동으로 밀려난다."""
+    have = {(r["pollster"], r["date_start"], r["date_end"], r["population"]) for r in feed}
+    added = [r for r in supp
+             if (r["pollster"], r["date_start"], r["date_end"], r["population"]) not in have]
+    out = feed + added
+    out.sort(key=lambda r: (r["date_end"], r["pollster"]))
+    return out, len(added), len(supp) - len(added)
+
+
 def one_per_survey(rows):
     """추세·하우스 이펙트용 — 한 조사(기관+현장기간)당 한 행만.
 
@@ -198,8 +234,12 @@ def write_csv(path, rows, hi_col, lo_col):
 def block(rows, since, label):
     """차트용 블록 — since 이후만. 원자료 CSV는 전 기간을 따로 보관한다."""
     win = [r for r in rows if r["date_end"] >= since]
-    # 계산용 표본: 조사 단위로 1행. 그래프의 점(win)은 발표된 값 전부를 그대로 쓴다.
-    calc_all = one_per_survey(rows)
+    # 계산용 표본: 조사 단위로 1행, **그리고 피드 행만**(보충분 'supp-' 제외).
+    # 보충분은 상위 기관 몇 곳만 담아, 계산에 넣으면 7월 이동평균이 여론 변화가 아니라
+    # 표본 구성 변화(ARG 같은 극단 기관의 비중 급증)로 왜곡된다. 그래서 보충 행은
+    # 그래프의 점·기관별 선으로만 쓰고 추세·하우스 이펙트에서는 뺀다.
+    feed_only = [r for r in rows if not r["poll_id"].startswith("supp-")]
+    calc_all = one_per_survey(feed_only)
     calc = [r for r in calc_all if r["date_end"] >= since]
     # 추세는 전 기간(2025~)으로 계산해야 창 왼쪽 끝이 잘리지 않는다. 표시만 since 이후.
     trend = rolling_trend(calc_all, TREND_WINDOW_DAYS, since)
@@ -249,6 +289,17 @@ def main():
     gen, d2 = drop_exact_dupes(gen)
     if d1 or d2:
         print(f"[polls] 피드 중복 제거: 지지율 {d1}행 · 일반투표 {d2}행")
+
+    # 피드 정지 구간(2026-07~)의 수동 보충분 병합 — 피드가 따라잡으면 자동 후퇴
+    appr, a_add, a_skip = merge_supplement(
+        appr, load_supplement(os.path.join(ROOT, "data", "approval_polls_supplement.csv"),
+                              "approve", "disapprove"))
+    gen, g_add, g_skip = merge_supplement(
+        gen, load_supplement(os.path.join(ROOT, "data", "generic_polls_supplement.csv"),
+                             "dem", "rep"))
+    if a_add or g_add:
+        print(f"[polls] 보충분 병합: 지지율 +{a_add}행 · 일반투표 +{g_add}행"
+              + (f" (피드와 중복돼 건너뜀 {a_skip}+{g_skip})" if a_skip or g_skip else ""))
     if not appr or not gen:
         print("[polls] 정규화 결과가 비었다 — API 스키마 변경 의심", file=sys.stderr)
         return 1

@@ -165,6 +165,12 @@
 ### `approval_polls.csv` · `generic_polls.csv` — 개별 조사 원자료 (**선택 파일**)
 - `scripts/fetch_pollster_polls.py`가 생성(VoteHub 공개 API). **차트 구간(2026~)이 아니라
   전 기간(2025년 1월~)을 그대로 보관** — 차트용 축약본은 `pollster_series.json`.
+- **`*_supplement.csv` (수동 보충분)**: 피드가 멈춘 구간(2026-07~)을 상위 기관 원본
+  (YouGov 탭 PDF·Ipsos 토플라인·Napolitan 토플라인·ARG 발표)에서 직접 채운 행.
+  스키마는 main과 동일 13열, `poll_id`가 `supp-` 접두. fetch 스크립트가 병합하되
+  **같은 조사(기관+기간+모집단)가 피드에 생기면 피드가 정본**(보충 행 자동 후퇴).
+  보충 행은 차트의 점·기관별 선에만 쓰이고 **이동평균·하우스 이펙트 계산에서는 제외**
+  — 몇 곳뿐인 부분 표본이 추세를 표본 구성 변화로 왜곡하는 것을 막기 위함.
 - 열(고정 13): `date_end`, `date_start`, `pollster`, `sponsor`, `population`(A/RV/LV), `n`,
   `approve`/`dem`, `disapprove`/`rep`, `value`, `partisan`(DEM/REP), `internal`, `poll_id`, `source_url`.
   - `value` = 7번째 열 − 8번째 열. 순지지도는 `approve − disapprove`,

@@ -95,7 +95,8 @@ if (!is.null(d)) {
   }
 }
 
-for (f in c("approval_polls.csv", "generic_polls.csv")) {
+for (f in c("approval_polls.csv", "generic_polls.csv",
+             "approval_polls_supplement.csv", "generic_polls_supplement.csv")) {
   p <- jpath(f)
   if (!file.exists(p)) { cat(sprintf("  · %s 없음 — 선택 파일이라 건너뜀\n", f)); next }
   x <- load_csv(f)
