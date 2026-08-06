@@ -547,28 +547,21 @@ kalshi_control_html <- function() {
     return('<p class="note">예측시장 상원 다수 가격 【수집】 — <code>scripts/fetch_kalshi_prices.py</code> 실행 필요.</p>')
   }
   c0 <- k$senate_control
-  # 대비 대상은 모델 수치다. dem_majority_prob는 2026-08-06부터 시장 대표값이 됐으므로
-  # 여기서 읽으면 시장을 시장과 비교하게 된다 — 시나리오 배열의 rtwh 항목에서 가져온다.
-  md <- .load_json("model_dashboard")
-  sc <- md$scenarios
-  i <- which(sc$id == "rtwh")
-  model_p <- if (length(i)) suppressWarnings(as.numeric(sc$prob[i[1]])) else NA_real_
+  # 모델 확률과의 대비 행은 두지 않는다 — 확인된 모델 수치가 없는 상태에서
+  # 옆에 숫자를 세우면 '이견'처럼 읽히기 때문(2026-08-06 미확인 모델값 삭제).
   sprintf(paste0(
     '<div class="mkt-control">',
     '<div class="mkt-row"><span class="mkt-lab">예측시장 <b>Kalshi</b> — 민주 상원 다수</span>',
     '<span class="mkt-val mkt-d">%s%%</span></div>',
     '<div class="mkt-bar"><i style="width:%s%%"></i></div>',
-    '<div class="mkt-row mkt-sub"><span>같은 질문에 대한 외부 <b>모델</b> 전망 <b class="mkt-flag">미검증</b></span><span class="mkt-val">%s</span></div>',
-    '<p class="mkt-note">시장은 <b>가격</b>(확률의 근사·유동성과 편향 혼입), 모델은 <b>방법론의 산출물</b>이라 잣대가 다릅니다. ',
-    '위쪽 45%%는 공개 API에서 원가격을 직접 받아 <b>원천까지 확인된 값</b>이지만, 아래 모델 수치는 ',
-    '<b>7월 말 인용치이며 2026-08-06 재확인에 실패했습니다</b>(원 사이트가 스크립트 렌더). ',
-    '두 값을 “모델 대 시장의 이견”으로 단정하기 전에 이 점을 감안하세요. ',
-    '참고로 270toWin의 “Which Party Will Control the Senate?”는 독립 모델이 아니라 <b>같은 Kalshi 시장 위젯</b>이므로 ',
-    '모델 쪽 근거로 쓸 수 없습니다. ',
+    '<p class="mkt-note">공개 API에서 <b>원가격을 직접 받아</b> 싣는 값입니다. ',
+    '다만 가격은 <b>확률의 근사일 뿐 확률 자체가 아닙니다</b> — 유동성·수수료·거래자 구성 편향이 섞입니다. ',
+    '나란히 놓을 외부 <b>모델</b> 확률은 원 수치를 확인하지 못해 <b>싣지 않습니다</b>(추정으로 채우지 않음). ',
+    '270toWin의 “Which Party Will Control the Senate?”도 독립 모델이 아니라 <b>같은 Kalshi 시장 위젯</b>이라 ',
+    '모델 쪽 근거가 되지 못합니다. ',
     '계약: “%s” · 거래액 $%s · 미결제약정 $%s · 기준 %s(UTC). ',
     '<a href="%s" rel="nofollow">Kalshi 원장</a></p></div>'),
     format(c0$dem, nsmall = 0), format(c0$dem, nsmall = 0),
-    if (is.na(model_p)) "—" else paste0(model_p, "%"),
     htmltools::htmlEscape(c0$question %||% ""),
     format(c0$volume, big.mark = ","), format(c0$open_interest, big.mark = ","),
     k$fetched_at_utc, c0$url)
@@ -1250,9 +1243,10 @@ home_kpis <- function() {
                      '<div class="kpi-interp">%s</div></div>'),
               cls, num, lab, sub, interp)
     paste0('<div class="kpis">',
-      card("kpi-d", paste0(k$majority, "%"), "민주 다수당 탈환 확률",
-           paste0("외부 모델 RaceToTheWH · ", k$as_of),
-           sprintf("다수까지 순 +%d석 필요 — DDHQ는 50–50 이견", k$needed)),
+      # 대표값은 시장 가격이다(2026-08-06). 라벨을 '모델'로 두면 값과 성격이 어긋난다.
+      card("kpi-d", paste0(k$majority, "%"), "민주 다수당 탈환 — 시장 가격",
+           paste0("예측시장 Kalshi · ", k$as_of),
+           sprintf("다수까지 순 +%d석 필요 — 가격은 확률의 근사일 뿐", k$needed)),
       card("kpi-d", k$net_display, "순증 컨센서스 (민주)",
            "Inside Elections",
            "공화 표적 5곳 · 민주 수성 3곳의 순증 — 문턱 +4 미달"),
