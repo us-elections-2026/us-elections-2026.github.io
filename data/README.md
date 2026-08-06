@@ -44,6 +44,24 @@
   - `trump_net`(순지지)·`generic`(일반투표 D 마진, 양수=민주)은 보고된 주만 값, 나머지 nullable.
 - 소비: 런타임 `assets/trends.js`가 `fetch` → `index.qmd`. (`_quarto.yml`의 `project.resources` 등록 필요.)
 
+### `pollster_series.json` — 조사기관별 시계열 (차트용, **선택 파일**)
+- `scripts/fetch_pollster_polls.py`가 `approval_polls.csv`·`generic_polls.csv`와 함께 생성.
+  부재 시 `assets/pollsters.js`가 안내문 렌더(빌드 안전).
+- 최상위: `as_of`, `fetched_at_utc`, `type`(=`poll`), `source_label`, `source_url`,
+  `window_start`, `trend_window_days`, `note`, **`approval`**, **`generic`**.
+- 각 블록: `polls[]`, `trend[]`, `top_pollsters[]`, `house_effects[]`,
+  `data_through`, `trend_through`, `n_polls`, `n_pollsters`.
+  - `polls[]`: `d`(종료일), `v`(값), `p`(조사기관), `pop`(A/RV/LV), `n`, `party`(당파 조사 표기), `url`.
+  - `trend[]`: `d`, `v`, `n`(창 안 조사 수) — 비당파 조사의 21일 **중심** 이동평균.
+    창의 절반이 자료 밖으로 나가는 양끝은 잘라내므로 **`trend_through` < `data_through`가 정상**
+    (역전 시 검증 실패). 집계기관 평균과 **산출 방식이 다르므로 섞어 쓰지 말 것**.
+  - `house_effects[]`: `pollster`, `n`, `effect`(이동평균 대비 평균 잔차, 5건 이상 기관만).
+    부호의 뜻이 지표마다 반대 — 순지지도는 +가 트럼프에 후함, 일반투표는 +가 민주 우위.
+- `v` 부호: 순지지도 = `approve − disapprove`, 일반투표 = `dem − rep`(양수=민주 우위).
+- 소비: 런타임 `assets/pollsters.js`가 `fetch` → `national.qmd`. (`project.resources` 등록 필요.)
+- **신선도 주의**: 원천 피드가 실시간이 아니어서 `data_through`가 사이트의 집계표보다
+  수 주 이를 수 있다. 최신값 인용에 쓰지 말고 기관 간 분산을 읽는 데만 쓴다.
+
 ### `national_econ.json` — 경제 지표 (FRED, **선택 파일**)
 - `scripts/fetch_national_econ.py`가 생성. fetch 실패 시 부재 가능 → `gt_national_econ()`이 안내문 렌더(빌드 안전).
 - 최상위: `as_of`, `series_start`, `source_label`, `provenance_note`, **`rows`**, **`series`**.
@@ -137,6 +155,16 @@
 ### `polls_log.csv` — 여론조사 로그
 - 열: `date`, `pollster`, `sponsor`, `race`, `population`(A/RV/LV), `n`, `result`, `rating`.
 - 소비: `gt_polls_log()` → `trackers.qmd`.
+
+### `approval_polls.csv` · `generic_polls.csv` — 개별 조사 원자료 (**선택 파일**)
+- `scripts/fetch_pollster_polls.py`가 생성(VoteHub 공개 API). **차트 구간(2026~)이 아니라
+  전 기간(2025년 1월~)을 그대로 보관** — 차트용 축약본은 `pollster_series.json`.
+- 열(고정 13): `date_end`, `date_start`, `pollster`, `sponsor`, `population`(A/RV/LV), `n`,
+  `approve`/`dem`, `disapprove`/`rep`, `value`, `partisan`(DEM/REP), `internal`, `poll_id`, `source_url`.
+  - `value` = 7번째 열 − 8번째 열. 순지지도는 `approve − disapprove`,
+    일반투표는 `dem − rep`(양수=민주 우위). 검증이 이 항등식을 확인한다.
+  - `partisan`이 채워진 행은 당파(내부) 조사 — 추세·하우스 이펙트 산출에서 제외된다.
+- 소비: 직접 렌더하지 않음(원자료 보관·재현용). 페이지는 `pollster_series.json`만 읽는다.
 
 ---
 

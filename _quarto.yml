@@ -16,6 +16,7 @@ project:
     - data/model_v0.json
     - data/trends.json
     - data/national_econ.json
+    - data/pollster_series.json
     - assets/candidates
 
 lang: ko

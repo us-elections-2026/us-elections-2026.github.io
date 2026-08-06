@@ -76,6 +76,41 @@ d <- load_json("trends.json")
 require_keys("trends.json", d, c("as_of", "weeks"))
 require_cols("trends.json", d$weeks, c("date"))
 
+d <- load_json("pollster_series.json", optional = TRUE)  # fetch 실패 시 부재 가능(빌드 안전)
+if (!is.null(d)) {
+  require_keys("pollster_series.json", d, c("as_of", "type", "window_start", "approval", "generic"))
+  for (blk in c("approval", "generic")) {
+    b <- d[[blk]]
+    if (is.null(b)) { err("pollster_series.json", sprintf("%s 블록 없음", blk)); next }
+    require_cols("pollster_series.json", b$polls, c("d", "v", "p"), sprintf("%s.polls", blk))
+    require_cols("pollster_series.json", b$trend, c("d", "v"), sprintf("%s.trend", blk))
+    # 이동평균은 양끝을 잘라내므로 개별 조사보다 늦게 시작하고 일찍 끝나야 정상.
+    # 역전됐다면 창 절단 로직이 깨진 것 — 마지막 점이 편측평균이 되어 오독을 부른다.
+    if (!is.null(b$trend_through) && !is.null(b$data_through) &&
+        b$trend_through > b$data_through) {
+      err("pollster_series.json",
+          sprintf("%s: 이동평균 종료일(%s)이 조사 종료일(%s)보다 늦음", blk,
+                  b$trend_through, b$data_through))
+    }
+  }
+}
+
+for (f in c("approval_polls.csv", "generic_polls.csv")) {
+  p <- jpath(f)
+  if (!file.exists(p)) { cat(sprintf("  · %s 없음 — 선택 파일이라 건너뜀\n", f)); next }
+  x <- load_csv(f)
+  require_cols(f, x, c("date_end", "pollster", "value", "population", "source_url"))
+  # value = 앞 열 − 뒤 열. 어긋나면 부호 규약(양수=민주/지지 우위)이 깨진 것.
+  if (!is.null(x) && all(c("value") %in% names(x))) {
+    hi <- if ("approve" %in% names(x)) "approve" else "dem"
+    lo <- if ("disapprove" %in% names(x)) "disapprove" else "rep"
+    if (all(c(hi, lo) %in% names(x))) {
+      bad <- sum(abs((x[[hi]] - x[[lo]]) - x$value) > 0.051, na.rm = TRUE)
+      if (bad > 0) err(f, sprintf("value != %s − %s 인 행 %d건", hi, lo, bad))
+    }
+  }
+}
+
 d <- load_json("national_econ.json", optional = TRUE)  # fetch 실패 시 부재 가능(빌드 안전)
 if (!is.null(d)) {
   require_keys("national_econ.json", d, c("as_of", "rows", "series"))

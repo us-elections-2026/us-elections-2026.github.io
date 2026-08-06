@@ -48,6 +48,10 @@ python3 scripts/fetch_kalshi_prices.py || echo "[weekly] ! Kalshi 가격 취득 
 python3 scripts/fetch_ddhq_forecast.py || echo "[weekly] ! DDHQ 예측 취득 실패(건너뜀 — 직전 값 유지)"
 python3 scripts/fetch_rtwh_forecast.py || echo "[weekly] ! RtWH 예측 취득 실패(건너뜀 — 직전 값 유지)"
 
+# 1.8) 개별 조사 원자료(조사기관별 시계열·하우스 이펙트) — 집계기관 평균과는 다른 층
+echo "[weekly] 조사기관별 개별 조사 취득"
+python3 scripts/fetch_pollster_polls.py || echo "[weekly] ! 개별 조사 취득 실패(건너뜀 — 직전 값 유지)"
+
 # 2) Korea Watch 동기화(_NIS DB → data/korea_watch.csv, idempotent)
 echo "[weekly] Korea Watch 동기화"
 python3 scripts/sync_korea_watch.py || echo "[weekly] ! KW 동기화 경고(계속)"
