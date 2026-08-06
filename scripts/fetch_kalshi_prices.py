@@ -7,6 +7,7 @@
 
 취득 대상
   - 상원 다수: CONTROLS-2026-{D,R}  ("Will {party} win the U.S. Senate in 2026?")
+  - 하원 다수: CONTROLH-2026-{D,R}   ("Will {party} win the House in 2026?")
   - 상원 개별 레이스: SENATE{ST} → 없으면 SENATE{ST}S(특별선거) → KXSENATE{ST}
   - 주지사 개별 레이스: GOVPARTY{ST} → 없으면 KXGOVPARTY{ST}
 
@@ -185,18 +186,22 @@ def main():
         return 1
     gov_states = sorted(set(STATE_NAME) - NO_GOV)
 
-    control, ctl = None, {m.get("ticker"): m for m in api_markets("CONTROLS")}
-    if "CONTROLS-2026-D" in ctl:
-        d = ctl["CONTROLS-2026-D"]
-        control = {"dem": cents(d.get("last_price_dollars")),
-                   "rep": cents((ctl.get("CONTROLS-2026-R") or {}).get("last_price_dollars")),
-                   "question": d.get("title"),
-                   "rules": d.get("rules_primary"),
-                   "volume": round(float(d.get("volume_fp") or 0)),
-                   "open_interest": round(float(d.get("open_interest_fp") or 0)),
-                   "url": "https://kalshi.com/markets/controls/senate-winner"}
-    if control is None:
-        print("[kalshi] ! 상원 다수 시장(CONTROLS-2026) 없음", file=sys.stderr)
+    def chamber_control(series, url):
+        ctl = {m.get("ticker"): m for m in api_markets(series)}
+        d = ctl.get(f"{series}-2026-D")
+        if not d:
+            print(f"[kalshi] ! 다수 시장({series}-2026) 없음", file=sys.stderr)
+            return None
+        return {"dem": cents(d.get("last_price_dollars")),
+                "rep": cents((ctl.get(f"{series}-2026-R") or {}).get("last_price_dollars")),
+                "question": d.get("title"),
+                "rules": d.get("rules_primary"),
+                "volume": round(float(d.get("volume_fp") or 0)),
+                "open_interest": round(float(d.get("open_interest_fp") or 0)),
+                "url": url}
+
+    control = chamber_control("CONTROLS", "https://kalshi.com/markets/controls/senate-winner")
+    house_control = chamber_control("CONTROLH", "https://kalshi.com/markets/controlh")
 
     out = {
         "as_of": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d"),
@@ -209,9 +214,12 @@ def main():
                  "민주/공화 값은 서로 다른 계약의 마지막 체결가라 합이 100이 안 될 수 있으며, "
                  "정규화하지 않고 원값 그대로 싣는다. Cook·Sabato의 등급과 같은 잣대로 비교하지 말 것."),
         "senate_control": control,
+        "house_control": house_control,
         "senate": collect("senate", sen_states),
         "governor": collect("governor", gov_states),
     }
+    if house_control:
+        print(f"[kalshi] 하원 다수: 민주 {house_control['dem']}% / 공화 {house_control.get('rep')}%")
     if control:
         print(f"[kalshi] 상원 다수: 민주 {control['dem']}% / 공화 {control.get('rep')}% "
               f"(거래액 {control['volume']:,} · 미결제 {control['open_interest']:,})")
