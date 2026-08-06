@@ -345,3 +345,18 @@ main .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 /* 등급 타일 — 기관 분기 표시·출처 */
 .rt-div { color: #b45309; font-size: .72em; margin-left: 2px; }
 .rt-src { font-size: .74rem; color: #6b7280; margin-top: 6px; line-height: 1.5; }
+
+/* 예측시장(Kalshi) 상원 다수 가격 — 모델 전망과 나란히 */
+.mkt-control {
+  border: 1px solid #e3e0d6; border-left: 4px solid #1d4a70; border-radius: 6px;
+  padding: 12px 14px; margin: .8rem 0 1.1rem; background: #fcfbf7;
+}
+.mkt-row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.mkt-lab { font-size: .92rem; }
+.mkt-val { font-variant-numeric: tabular-nums; font-weight: 700; font-size: 1.5rem; }
+.mkt-val.mkt-d { color: #1d4a70; }
+.mkt-bar { height: 9px; border-radius: 5px; background: #e5e7eb; margin: 7px 0 9px; overflow: hidden; }
+.mkt-bar i { display: block; height: 100%; background: #2166ac; }
+.mkt-sub { border-top: 1px dotted #ddd9cc; padding-top: 7px; color: #4b5563; font-size: .86rem; }
+.mkt-sub .mkt-val { font-size: 1.05rem; font-weight: 600; color: #6b7280; }
+.mkt-note { font-size: .76rem; color: #6b7280; line-height: 1.6; margin: 8px 0 0; }

@@ -16,11 +16,12 @@ cat(candidate_cards_html("MI"))
 gt_state_detail("MI")
 ```
 
-Peters 은퇴로 **민주당이 방어해야 하는 공개석**. 8개 경합주 중 본선이 공화당에 가장 유리한(오차범위 내) 유일한 주로, Cook·Sabato 모두 **Toss-up**으로 분류합니다. 민주당 경선(8/4)이 진보(El-Sayed)·온건(Stevens)·풀뿌리(McMorrow) 3파전으로 늦게까지 이어져, 공화당 Rogers보다 본선 전환이 늦다는 점이 리스크입니다.
+Peters 은퇴로 **민주당이 방어해야 하는 공개석**. 8개 경합주 중 본선이 공화당에 가장 유리한(오차범위 내) 유일한 주로, Cook·Sabato 모두 **Toss-up**으로 분류합니다. **8/4 민주당 경선에서 진보 성향의 Abdul El-Sayed가 온건파 Haley Stevens를 48.5–47.5(1%p)로 제압**해 본선 대진이 확정됐습니다 — 8대 1의 자금 열세와 당 주류의 반대를 뒤집은 결과입니다. 이제 2024년 Slotkin에게 0.3%p로 졌던 공화당 Mike Rogers와 맞붙습니다. ([CNBC](https://www.cnbc.com/2026/08/04/abdul-el-sayed-haley-stevens-michigan-primary.html) · [Detroit News](https://www.detroitnews.com/story/news/politics/2026/08/04/michigan-senate-election-results/91144752007/))
 
 ::: {.summary}
 - **구도**: 민주 방어 공개석(Peters 은퇴) — 8개 경합주 중 본선이 공화에 가장 유리(Cook·Sabato Toss-up).
-- **변화**: 민주 경선(8/4) 3파전이 늦게까지 — El-Sayed 부상·McMorrow 모금 1위·Stevens 본선 최강의 엇갈림.
+- **변화**: **8/4 경선 El-Sayed 48.5–Stevens 47.5로 확정**(McMorrow 4%, 개표 99%). 예비 전 가상대결에서 Rogers에게 가장 약했던 후보가 지명된 구도.
+- **주의**: 예측시장은 엘사예드 59¢로 민주 우위를 보는 반면, 7월 본선 가상 조사는 Rogers +10.3이었습니다 — **시장과 조사가 정면으로 엇갈리는 유일한 주**입니다.
 - **한국 함의**: LG·SK·삼성 배터리 본진이나 후보의 직접 한국 입장은 미확인(추정 연결고리만).
 :::
 
@@ -38,14 +39,16 @@ Peters 은퇴로 **민주당이 방어해야 하는 공개석**. 8개 경합주 
 
 ## 3. 후보자
 
-### 민주당 경선 후보 (8/4 경선)
+### 민주당 경선 결과 (8/4) — El-Sayed 확정
 
 ```{r}
 #| output: asis
 cat(primary_cards_html("MI"))
 ```
 
-8/4 민주당 경선은 외교정책(가자/이스라엘)·당 지도부 노선을 둘러싼 3파전입니다. 초기 McMorrow가 선두였으나 5~6월 들어 El-Sayed가 부상(RCP 평균 El-Sayed 24.3 / McMorrow·Stevens 각 19.8, 미결정 36%), 분기 모금은 McMorrow가 1위입니다. **본선 경쟁력(Stevens 최강)과 경선 모멘텀(El-Sayed)이 엇갈리는** 전형적 딜레마로, 5/28 매키낙 당 대회에서 3후보가 공개 토론했습니다. ([Michigan Advance](https://michiganadvance.com/2026/06/09/stevens-mcmorrow-el-sayed-clash-over-foreign-policy-party-leadership-as-primary-approaches/))
+경선은 외교정책(가자/이스라엘)·당 지도부 노선을 둘러싼 3파전이었습니다. 초기 McMorrow가 선두였으나 5~6월 들어 El-Sayed가 부상했고, McMorrow가 경선 한 달 전 캠페인을 중단하면서 **El-Sayed 48.5 – Stevens 47.5 – McMorrow 4.0**(개표 99%)으로 끝났습니다. **본선 경쟁력(Stevens 최강)과 경선 모멘텀(El-Sayed)이 엇갈리는** 딜레마에서 민주당 유권자가 후자를 택한 셈입니다.
+
+이 선택의 의미는 아직 열려 있습니다. 예비 전 유일한 본선 가상 조사(Glengariff 7/22–24)는 **Rogers 49.0 – El-Sayed 38.7(R+10.3)**인 반면 Stevens로는 45.5–44.7 동률이었습니다. 그런데 경선 직후 예측시장은 오히려 **El-Sayed 59센트**로 민주 우위를 매깁니다. 7월 조사가 이름값 낮은 후보를 과소평가한 것인지, 시장이 경선 승리의 기세를 과대평가한 것인지는 **8월 이후 본선 조사가 나와야 판별**됩니다 — 이 사이트가 8개 주 중 가장 주의해서 볼 지점입니다. ([CNBC](https://www.cnbc.com/2026/08/04/abdul-el-sayed-haley-stevens-michigan-primary.html) · [Michigan Advance](https://michiganadvance.com/2026/06/09/stevens-mcmorrow-el-sayed-clash-over-foreign-policy-party-leadership-as-primary-approaches/))
 
 ## 4. roll-call / 입법 관심사
 

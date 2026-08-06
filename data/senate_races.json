@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-08-02",
+  "as_of": "2026-08-06",
   "dem_needed_net": 4,
   "current_balance": "R 53 / D 47",
   "races": [
@@ -9,17 +9,17 @@
       "incumbent": "Ossoff (D·현직) vs Collins (R)",
       "rating": "Lean D (Cook) / Likely D (Sabato 7/30↑)",
       "latest_poll": "Ossoff 52–43 (AARP D+9) — 이번 주 신규 조사 없음",
-      "poll_source": "AARP 7/13–16 · Fox 6/23–27 D+13; 예측시장 오소프 재선 80%+",
+      "poll_source": "AARP 7/13–16 · Fox 6/23–27 D+13; 예측시장 오소프 재선 91¢(Kalshi 8/6)",
       "cash_on_hand": "Ossoff 현금 $42M+ (Q2 $20M) vs Collins ~$2M — 양당 상원 후보 최대",
       "kr_relevance": "통상·반도체"
     },
     {
       "state": "MI",
       "defense": "D",
-      "incumbent": "공개석 (Peters 은퇴) — Stevens vs El-Sayed (8/4 예비) vs Rogers (R)",
+      "incumbent": "공개석 (Peters 은퇴) — El-Sayed (D, 8/4 예비 승 48.5–47.5) vs Rogers (R)",
       "rating": "Toss Up",
       "latest_poll": "본선 가상 Rogers 49.0–El-Sayed 38.7 (R+10.3) / Stevens 45.5–Rogers 44.7 (동률)",
-      "poll_source": "Glengariff 7/22–24 (본선); 경선 Emerson 7/26–27 El-Sayed +15 · PSI 7/25–29 +9.6 · 시장 97%",
+      "poll_source": "Glengariff 7/22–24 (예비 전 본선 가상); 예비 결과 El-Sayed 48.5–Stevens 47.5 (8/4, 개표 99%)",
       "cash_on_hand": null,
       "kr_relevance": "자동차·관세"
     },
@@ -69,7 +69,7 @@
       "incumbent": "Brown (D) vs Husted (R·임명직)",
       "rating": "Toss Up",
       "latest_poll": "진성 토스업 (Fox D+8 vs Emerson R+6) — 이번 주 신규 조사 없음",
-      "poll_source": "Fox 5/28–6/1 · Emerson · AARP; Kalshi ~56%",
+      "poll_source": "Fox 5/28–6/1 · Emerson · AARP; Kalshi 브라운 53¢(8/6)",
       "cash_on_hand": "Brown Q2 $17.1M(직접 $14.1M+PAC $3M)·현금 $16.2M vs Husted $7.7M(직접 $3.4M+PAC $4.3M); SMP +$24M → 총 ~$64M(사이클 최고)",
       "kr_relevance": "철강·제조업"
     },

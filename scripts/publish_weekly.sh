@@ -41,6 +41,10 @@ python3 scripts/fetch_governor_ratings.py || echo "[weekly] ! 주지사 등급 �
 # 등급이 바뀐 주만 이력에 축적(동일하면 미기록) — 주지사 변동 매트릭스의 원천
 python3 scripts/snapshot_ratings.py || echo "[weekly] ! 등급 스냅샷 실패(건너뜀)"
 
+# 1.7) 예측시장 원가격(Kalshi 공개 API) — 270towin의 '등급 환산값'이 아니라 가격 자체
+echo "[weekly] Kalshi 예측시장 가격 취득"
+python3 scripts/fetch_kalshi_prices.py || echo "[weekly] ! Kalshi 가격 취득 실패(건너뜀 — 직전 값 유지)"
+
 # 2) Korea Watch 동기화(_NIS DB → data/korea_watch.csv, idempotent)
 echo "[weekly] Korea Watch 동기화"
 python3 scripts/sync_korea_watch.py || echo "[weekly] ! KW 동기화 경고(계속)"

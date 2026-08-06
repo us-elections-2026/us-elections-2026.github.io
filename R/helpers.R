@@ -451,12 +451,14 @@ rating_matrix_html <- function() {
   OK=c(6,3), LA=c(6,4), MS=c(6,5), AL=c(6,6), GA=c(6,7),
   HI=c(7,0), TX=c(7,3), FL=c(7,8)
 )
+# 9단계 — Tilt는 Lean보다 **좁은**(더 접전인) 등급이라 Lean과 Toss-up 사이에 놓는다.
+# Inside Elections·RaceToTheWH·Kalshi가 이 눈금을 쓴다(Cook·Sabato는 쓰지 않는다).
 .RATING_FILL <- c("Solid D" = "#2166ac", "Likely D" = "#6ba3d6", "Lean D" = "#b9d9ee",
-                  "Toss-up" = "#e5e7eb", "Lean R" = "#f6b89c", "Likely R" = "#d6604d",
-                  "Solid R" = "#b2182b")
+                  "Tilt D" = "#dceaf5", "Toss-up" = "#e5e7eb", "Tilt R" = "#fce0d2",
+                  "Lean R" = "#f6b89c", "Likely R" = "#d6604d", "Solid R" = "#b2182b")
 .RATING_INK <- c("Solid D" = "#ffffff", "Likely D" = "#0c2c47", "Lean D" = "#123a5c",
-                 "Toss-up" = "#374151", "Lean R" = "#6b2d12", "Likely R" = "#ffffff",
-                 "Solid R" = "#ffffff")
+                 "Tilt D" = "#1d4a70", "Toss-up" = "#374151", "Tilt R" = "#6b2d12",
+                 "Lean R" = "#6b2d12", "Likely R" = "#ffffff", "Solid R" = "#ffffff")
 
 # kind: "senate" | "governor" · 등급 원천은 270towin 재게시 피드(자동 취득)
 us_tile_map_html <- function(kind = c("senate", "governor"),
@@ -517,7 +519,93 @@ us_tile_map_html <- function(kind = c("senate", "governor"),
           paste(tiles, collapse = ""), legend, cap)
 }
 
-# 상원 감시 8주 — 10개 기관 등급을 한 표에 (270towin 재게시 피드 자동 취득)
+# 예측시장(Kalshi) 원가격 ------------------------------------------------------
+# 270towin은 Kalshi 가격을 Cook과 같은 7단계로 '환산'해 재게시한다. 환산값만 보면
+# 91¢가 'Solid D'로 보여 등급과 구분되지 않으므로, 사이트는 원가격을 직접 싣는다.
+# 파일이 없으면 NULL — 호출부는 표를 그리지 않고 안내문을 낸다(빌드 안전).
+.kalshi <- function() {
+  p <- file.path("data", "kalshi_prices.json")
+  if (!file.exists(p)) return(NULL)
+  jsonlite::read_json(p, simplifyVector = TRUE)
+}
+
+# 특정 주의 민주 가격(%) — 없으면 NA
+.kalshi_dem <- function(k, kind, ab) {
+  if (is.null(k)) return(NA_real_)
+  m <- k[[kind]]
+  if (is.null(m) || !(ab %in% names(m))) return(NA_real_)
+  v <- m[[ab]]$dem
+  if (is.null(v) || length(v) == 0 || is.na(v)) NA_real_ else as.numeric(v)
+}
+
+.fmt_price <- function(x) ifelse(is.na(x), "—", paste0(round(x), "¢"))
+
+# 상원 다수 시장 — 모델 전망과 나란히 놓아 '같은 질문, 다른 답'을 드러낸다.
+kalshi_control_html <- function() {
+  k <- .kalshi()
+  if (is.null(k) || is.null(k$senate_control)) {
+    return('<p class="note">예측시장 상원 다수 가격 【수집】 — <code>scripts/fetch_kalshi_prices.py</code> 실행 필요.</p>')
+  }
+  c0 <- k$senate_control
+  md <- .load_json("model_dashboard")
+  model_p <- suppressWarnings(as.numeric(md$dem_majority_prob))
+  sprintf(paste0(
+    '<div class="mkt-control">',
+    '<div class="mkt-row"><span class="mkt-lab">예측시장 <b>Kalshi</b> — 민주 상원 다수</span>',
+    '<span class="mkt-val mkt-d">%s%%</span></div>',
+    '<div class="mkt-bar"><i style="width:%s%%"></i></div>',
+    '<div class="mkt-row mkt-sub"><span>같은 질문에 대한 외부 <b>모델</b> 전망</span><span class="mkt-val">%s</span></div>',
+    '<p class="mkt-note">시장은 <b>가격</b>(확률의 근사·유동성과 편향 혼입), 모델은 <b>방법론의 산출물</b>입니다. ',
+    '두 값의 격차 자체가 이번 사이클의 핵심 쟁점입니다 — 시장은 개별 주에서 민주를 모델보다 후하게 봅니다. ',
+    '계약: “%s” · 거래액 $%s · 미결제약정 $%s · 기준 %s(UTC). ',
+    '<a href="%s" rel="nofollow">Kalshi 원장</a></p></div>'),
+    format(c0$dem, nsmall = 0), format(c0$dem, nsmall = 0),
+    if (is.na(model_p)) "—" else paste0(model_p, "%"),
+    htmltools::htmlEscape(c0$question %||% ""),
+    format(c0$volume, big.mark = ","), format(c0$open_interest, big.mark = ","),
+    k$fetched_at_utc, c0$url)
+}
+
+`%||%` <- function(a, b) if (is.null(a) || length(a) == 0) b else a
+
+# 예측시장 가격표 — 상원/주지사 공용. 등급표와 **분리**해 잣대 혼동을 막는다.
+gt_kalshi_races <- function(kind = c("senate", "governor"), states = NULL, min_dem = NULL) {
+  kind <- match.arg(kind)
+  k <- .kalshi()
+  if (is.null(k)) return(invisible(NULL))
+  m <- k[[kind]]
+  ab <- names(m)
+  if (!is.null(states)) ab <- intersect(states, ab)
+  dem <- vapply(ab, function(a) .kalshi_dem(k, kind, a), numeric(1))
+  if (!is.null(min_dem)) ab <- ab[!is.na(dem) & dem >= min_dem[1] & dem <= min_dem[2]]
+  if (!length(ab)) return(invisible(NULL))
+  kr <- if (kind == "governor") .load_json("governor_ratings")$state_names_kr else NULL
+  nm <- vapply(ab, function(a) if (!is.null(kr) && !is.null(kr[[a]])) paste0(kr[[a]], " (", a, ")") else a,
+               character(1))
+  d <- vapply(ab, function(a) m[[a]]$dem %||% NA_real_, numeric(1))
+  r <- vapply(ab, function(a) m[[a]]$rep %||% NA_real_, numeric(1))
+  lab <- vapply(ab, function(a) {
+    dl <- m[[a]]$dem_label; rl <- m[[a]]$rep_label
+    if (is.null(dl) || is.null(rl) || is.na(dl) || is.na(rl) ||
+        grepl("party", dl, ignore.case = TRUE)) "—" else paste0(dl, " vs ", rl)
+  }, character(1))
+  vol <- vapply(ab, function(a) as.numeric(m[[a]]$volume %||% 0), numeric(1))
+  tibble(주 = nm, 대진 = lab,
+         `민주 가격` = .fmt_price(d), `공화 가격` = .fmt_price(r),
+         `누적 거래액` = paste0("$", format(round(vol), big.mark = ","))) |>
+    arrange(desc(d)) |>
+    gt() |>
+    tab_header(title = paste0("예측시장 Kalshi — ", if (kind == "senate") "상원" else "주지사", " 원가격"),
+               subtitle = paste0("기준 ", k$fetched_at_utc, " · 가격(센트)은 확률의 근사일 뿐 확률이 아님")) |>
+    tab_source_note(paste0(
+      "각 칸은 '해당 정당이 이긴다'는 계약의 마지막 체결가입니다. ",
+      "민주·공화 값은 서로 다른 계약이라 합이 100¢가 아닐 수 있으며(호가 스프레드), 정규화하지 않고 원값을 싣습니다. ",
+      "거래액이 작은 시장의 가격은 소수 거래에 흔들리므로 함께 표시했습니다. ",
+      "Cook·Sabato 등급과 같은 잣대로 비교하지 마세요. 취득: scripts/fetch_kalshi_prices.py")) |>
+    .tbl_opts()
+}
+
+# 상원 감시 8주 — 기관별 등급을 한 표에 (Kalshi 행만 원가격) (270towin 재게시 피드 자동 취득)
 gt_senate_rating_sources <- function() {
   d <- .load_json("senate_ratings_feed"); src <- d$sources
   rt <- src$ratings   # data.frame: 행=기관, 열=주 약자
@@ -525,28 +613,35 @@ gt_senate_rating_sources <- function() {
   kr <- c(GA = "조지아", NC = "NC", NH = "NH", MI = "미시간", ME = "메인",
           AK = "알래스카", OH = "오하이오", TX = "텍사스")
   is_mkt <- grepl("Kalshi|예측시장", src$label)
+  kal <- .kalshi()
   cell <- function(i, ab) {
+    # 예측시장 행은 270towin의 '등급 환산값' 대신 Kalshi 원가격을 싣는다 —
+    # 환산값(91¢→"Solid D")은 전문가 등급과 구분이 안 돼 오독을 부른다.
+    if (is_mkt[i]) {
+      p <- .kalshi_dem(kal, "senate", ab)
+      return(if (is.na(p)) "—" else paste0("민주 ", round(p), "¢"))
+    }
     if (!(ab %in% names(rt))) return("—")
     v <- rt[i, ab]
     if (is.null(v) || length(v) == 0 || is.na(v)) return("—")
-    v <- as.character(v)
-    # 예측시장은 '가격'을 같은 7단계 눈금으로 환산한 값이라 전문가 등급과 뜻이 다르다.
-    # 같은 칸에 섞여 보이면 오해를 낳으므로 셀 자체에 성격을 표시한다.
-    if (is_mkt[i]) paste0(v, " (가격)") else v
+    as.character(v)
   }
   cols <- lapply(key, function(ab) vapply(seq_len(nrow(src)), cell, character(1), ab = ab))
   names(cols) <- kr[key]
   lbl <- ifelse(is_mkt, paste0(src$label, " ※"), src$label)
-  bind_cols(tibble(예측기관 = lbl, 기준일 = src$as_of), as_tibble(cols)) |>
+  as_of <- ifelse(is_mkt & !is.null(kal), substr(kal$fetched_at_utc %||% "", 1, 10), src$as_of)
+  bind_cols(tibble(예측기관 = lbl, 기준일 = as_of), as_tibble(cols)) |>
     gt() |>
     tab_header(title = "상원 감시 8주 — 기관별 등급",
                subtitle = "270towin 재게시 피드 자동 취득 · 등급은 확률이 아님") |>
     tab_source_note(paste0(
       "같은 주를 기관마다 어떻게 보는지 비교합니다. ",
-      "※ 표시한 Kalshi 행은 **전문가 등급이 아니라 예측시장 가격**을 같은 7단계 눈금으로 환산한 값입니다 — ",
-      "가격이 높으면 'Solid D'처럼 보이지만 이는 시장의 확신도이지 Cook·Sabato의 등급 판정이 아닙니다(같은 잣대로 읽지 마세요). ",
-      "'—'는 해당 기관이 경합으로 분류하지 않았거나 코드 의미가 확인되지 않은 칸(추정으로 채우지 않음). ",
-      "취득: scripts/fetch_senate_ratings.py")) |>
+      "※ Kalshi 행만 성격이 다릅니다 — 전문가 등급이 아니라 **예측시장 가격**(민주 승리 계약의 마지막 체결가)이며, ",
+      "Kalshi 공개 API에서 원가격을 직접 받아 싣습니다. 가격은 확률의 근사일 뿐이고(유동성·편향 혼입), ",
+      "Cook·Sabato의 서수적 등급과 같은 잣대로 비교하지 마세요. ",
+      "'Tilt'는 Lean보다 좁은 등급으로 Inside Elections·RaceToTheWH가 씁니다. ",
+      "'—'는 해당 기관이 경합으로 분류하지 않았거나 시장이 없는 칸(추정으로 채우지 않음). ",
+      "취득: scripts/fetch_senate_ratings.py · scripts/fetch_kalshi_prices.py")) |>
     .tbl_opts()
 }
 
@@ -566,7 +661,7 @@ gt_governor_races <- function() {
     v <- rt[i, ab]; if (is.null(v) || length(v) == 0 || is.na(v)) "—" else as.character(v)
   }
   abbrs <- names(rt)
-  is_comp <- function(i) abbrs[vapply(abbrs, function(a) grepl("Toss|Lean", g(i, a)), logical(1))]
+  is_comp <- function(i) abbrs[vapply(abbrs, function(a) grepl("Toss|Lean|Tilt", g(i, a)), logical(1))]
   states <- sort(union(is_comp(ic), is_comp(is_)))
   ck_v <- vapply(states, function(a) g(ic, a), character(1))
   sb_v <- vapply(states, function(a) g(is_, a), character(1))
@@ -592,17 +687,29 @@ gt_governor_sources <- function() {
   d <- .load_json("governor_ratings"); src <- d$sources; kr <- d$state_names_kr
   key <- c("AZ", "GA", "IA", "KS", "MI", "NV", "OH", "WI")
   rt <- src$ratings   # data.frame: 행=기관, 열=주 약자
+  is_mkt <- grepl("Kalshi|예측시장", src$label)
+  kal <- .kalshi()
   cell <- function(i, ab) {
+    if (is_mkt[i]) {   # 등급 환산값 대신 Kalshi 원가격 (상원 표와 같은 규칙)
+      p <- .kalshi_dem(kal, "governor", ab)
+      return(if (is.na(p)) "—" else paste0("민주 ", round(p), "¢"))
+    }
     if (!(ab %in% names(rt))) return("—")
     v <- rt[i, ab]; if (is.null(v) || length(v) == 0 || is.na(v)) "—" else as.character(v)
   }
   cols <- lapply(key, function(ab) vapply(seq_len(nrow(src)), cell, character(1), ab = ab))
   names(cols) <- vapply(key, function(a) kr[[a]], character(1))
-  bind_cols(tibble(예측기관 = src$label, 기준일 = src$as_of), as_tibble(cols)) |>
+  lbl <- ifelse(is_mkt, paste0(src$label, " ※"), src$label)
+  as_of <- ifelse(is_mkt & !is.null(kal), substr(kal$fetched_at_utc %||% "", 1, 10), src$as_of)
+  bind_cols(tibble(예측기관 = lbl, 기준일 = as_of), as_tibble(cols)) |>
     gt() |>
     tab_header(title = "주지사 경합 8주 — 기관별 등급",
                subtitle = "같은 주를 기관마다 어떻게 보는지 (등급은 확률이 아님)") |>
-    tab_source_note("Kalshi는 예측시장 가격을 등급 구간으로 환산한 것으로 성격이 다릅니다. '—'는 해당 기관이 경합으로 분류하지 않았거나 코드 미확인.") |>
+    tab_source_note(paste0(
+      "※ Kalshi 행만 성격이 다릅니다 — 등급이 아니라 **예측시장 가격**(민주 승리 계약의 마지막 체결가)이며 ",
+      "공개 API에서 원가격을 직접 받아 싣습니다. 등급과 같은 잣대로 비교하지 마세요. ",
+      "'Tilt'는 Lean보다 좁은 등급으로 Inside Elections·RaceToTheWH가 씁니다. ",
+      "'—'는 경합으로 분류하지 않았거나 해당 시장이 없는 칸(추정으로 채우지 않음).")) |>
     .tbl_opts()
 }
 
@@ -700,10 +807,12 @@ gt_model_scenarios <- function() {
 
 # 등급 → 버킷 분류 (Solid D / Lean D / Toss-up / Lean R / Solid R)
 .rating_bucket <- function(x) {
+  # Tilt(Lean보다 좁은 등급)는 5칸 타일 지도에서 Lean과 같은 칸에 넣는다 —
+  # 방향은 같고 확신만 더 약하므로 Toss-up으로 밀면 방향 정보가 사라진다.
   if (grepl("Solid D|Safe D|Likely D", x, ignore.case = TRUE)) "Solid D"
-  else if (grepl("Lean", x, ignore.case = TRUE) && grepl("D", x)) "Lean D"
+  else if (grepl("Lean|Tilt", x, ignore.case = TRUE) && grepl("D", x)) "Lean D"
   else if (grepl("Toss", x, ignore.case = TRUE)) "Toss-up"
-  else if (grepl("Lean", x, ignore.case = TRUE) && grepl("R", x)) "Lean R"
+  else if (grepl("Lean|Tilt", x, ignore.case = TRUE) && grepl("R", x)) "Lean R"
   else if (grepl("Solid R|Safe R|Likely R", x, ignore.case = TRUE)) "Solid R"
   else "기타"
 }
@@ -824,8 +933,10 @@ gt_polls_log <- function() {
 house_cook_bar_html <- function() {
   d <- .load_json("house_cook_ratings")
   cg <- d$categories
-  pal <- c(solid_d = "#949BB3", likely_d = "#577CCC", lean_d = "#8AAFFF",
-           tossup = "#C9C09B", lean_r = "#FF8B98", likely_r = "#FF5865", solid_r = "#CF8980")
+  # 270towin 원본 팔레트(map.class.js: D4/D3/D2/T/R2/R3/R4). 종전 solid 자리에
+  # Tilt 색(D1 #949BB3 · R1 #CF8980)이 들어가 양 끝이 가장 흐리게 칠해졌다 — 2026-08-06 정정.
+  pal <- c(solid_d = "#244999", likely_d = "#577CCC", lean_d = "#8AAFFF",
+           tossup = "#C9C09B", lean_r = "#FF8B98", likely_r = "#FF5865", solid_r = "#D22532")
   seats <- cg$seats; keys <- cg$key; labs <- cg$label
   total <- sum(seats); maj <- d$majority
   dfav <- sum(seats[cg$party == "D"]); rfav <- sum(seats[cg$party == "R"])
@@ -878,9 +989,11 @@ gt_house_races <- function() {
   }
   spec <- c("Solid D" = 1, "Likely D" = 2, "Lean D" = 3, "Toss-up" = 4,
             "Lean R" = 5, "Likely R" = 6, "Solid R" = 7)
-  rcol <- c("Solid D" = "#949BB3", "Likely D" = "#577CCC", "Lean D" = "#8AAFFF",
+  # 270towin 원본 팔레트(map.class.js). 종전 Solid D/R 자리에 Tilt 색(#949BB3·#CF8980)이
+  # 들어가 있어 가장 안전한 구가 가장 흐리게 칠해졌다 — 2026-08-06 원본 대조로 정정.
+  rcol <- c("Solid D" = "#244999", "Likely D" = "#577CCC", "Lean D" = "#8AAFFF",
             "Toss-up" = "#C9C09B", "Lean R" = "#FF8B98", "Likely R" = "#FF5865",
-            "Solid R" = "#CF8980")
+            "Solid R" = "#D22532")
   ck  <- norm_rating(r$rating_cook)
   ord <- ifelse(ck %in% names(spec), spec[ck], 99L)
   tib <- tibble(

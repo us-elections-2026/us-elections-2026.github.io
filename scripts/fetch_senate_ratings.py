@@ -7,8 +7,10 @@
   - 코드: 0=Toss-up 1=Solid D 2=Solid R 3=Likely D 4=Likely R 5=Leans D 6=Leans R
 검증(2026-08-03): 페이지 JSON의 seat_status='T' 35석과 非9 위치가 35/35 일치, 오탐 0.
 
-일부 기관(RaceToTheWH·Kalshi·Inside Elections)은 0~6 외 'a','b' 코드를 쓴다 —
-의미가 확인되지 않았으므로 해당 칸은 'unknown'으로 남기고 추정하지 않는다.
+2026-08-06: 미확인이던 'a','b' 코드를 270towin 자체 지도 스크립트
+https://www.270towin.com/js/maps/map.class.js 의 `mapCodeRatings` 표에서 확정 —
+a=D1(Tilt D)·b=R1(Tilt R). 추정이 아니라 출처 원본의 정의를 그대로 옮긴 것이다.
+Inside Elections·RaceToTheWH·Kalshi가 쓰는 'Tilt'(Lean보다 좁은 등급)가 이에 해당한다.
 
 산출물: data/senate_ratings_feed.json (기관별 × 주별 등급 + 갱신일)
 사용: python3 scripts/fetch_senate_ratings.py [--dry-run]
@@ -24,8 +26,11 @@ URL = "https://www.270towin.com/2026-senate-election/"
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# map.class.js `mapCodeRatings` 전사 (0~6·a·b만 등급. 7=I·8=split·9=미선거,
+# c~f=당선/결선은 개표 후 코드라 본선 전에는 나오지 않는다 → 나오면 unknown으로 남는다)
 CODE = {"0": "Toss-up", "1": "Solid D", "2": "Solid R", "3": "Likely D",
-        "4": "Likely R", "5": "Lean D", "6": "Lean R"}
+        "4": "Likely R", "5": "Lean D", "6": "Lean R",
+        "a": "Tilt D", "b": "Tilt R"}
 SOURCES = [
     ("cook-political-report-2026-senate", "Cook Political Report"),
     ("sabatos-crystal-ball-senate-2026", "Sabato's Crystal Ball"),
@@ -76,21 +81,24 @@ def main():
             print(f"[senate] ! {label}: map_string/날짜 이상(건너뜀)", file=sys.stderr); continue
         s, as_of = ms.group(1), dm.group(1)
 
+        # 정렬 검증(양방향) — 선거석은 9가 아니어야 하고, 비선거석은 9여야 한다.
+        # 한쪽만 보면 다른 종류의 지도(예: 100석 전체를 칠한 맵)를 그대로 삼켜 오독한다.
+        race_idx = {abbrs.index(ab) * 2 + (seat - 1) for ab, seat in race.items()}
+        nine = {i for i, c in enumerate(s[:100]) if c == "9"}
+        miss = len(race_idx & nine)
+        extra = len((set(range(100)) - race_idx) - nine)
+        if miss or extra:
+            print(f"[senate] ! {label}: 정렬 불일치(선거석이 9: {miss}석 · 비선거석에 값: {extra}석) "
+                  f"— 다른 종류의 지도로 보임, 건너뜀", file=sys.stderr)
+            continue
         ratings, unknown = {}, 0
-        miss = 0
         for ab, seat in race.items():
-            idx = abbrs.index(ab) * 2 + (seat - 1)
-            c = s[idx]
-            if c == "9":
-                miss += 1
-            elif c in CODE:
+            c = s[abbrs.index(ab) * 2 + (seat - 1)]
+            if c in CODE:
                 ratings[ab] = CODE[c]
             else:
-                ratings[ab] = None   # 미확인 코드(a/b 등) — 추정하지 않음
+                ratings[ab] = None   # 미확인 코드 — 추정하지 않음
                 unknown += 1
-        if miss:
-            print(f"[senate] ! {label}: 선거석 {miss}개가 '미선거'로 나옴 — 정렬 의심, 건너뜀", file=sys.stderr)
-            continue
         out["sources"].append({
             "key": slug, "label": label, "as_of": as_of,
             "ratings": ratings,

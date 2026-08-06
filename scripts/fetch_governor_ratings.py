@@ -6,7 +6,9 @@
 검증(2026-08-03): 9로 표시된 14개 주가 2026 주지사 선거 미실시 주
   (DE·IN·KY·LA·MO·MS·MT·NC·ND·NJ·UT·VA·WA·WV)와 정확히 일치 → 36개 선거.
 
-일부 기관(RaceToTheWH·Kalshi·Inside Elections)의 'a','b' 코드는 의미 미확인 → null 유지(추정 금지).
+2026-08-06: 미확인이던 'a','b'를 270towin 자체 지도 스크립트
+https://www.270towin.com/js/maps/map.class.js 의 `mapCodeRatings` 표에서 확정 —
+a=D1(Tilt D)·b=R1(Tilt R). 출처 원본 정의의 전사이며 추정이 아니다.
 산출물: data/governor_ratings.json
 """
 import argparse, json, os, re, sys, urllib.request
@@ -15,8 +17,10 @@ URL = "https://www.270towin.com/2026-governor-election/"
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# map.class.js `mapCodeRatings` 전사 (9=미선거는 아래에서 따로 처리)
 CODE = {"0": "Toss-up", "1": "Solid D", "2": "Solid R", "3": "Likely D",
-        "4": "Likely R", "5": "Lean D", "6": "Lean R"}
+        "4": "Likely R", "5": "Lean D", "6": "Lean R",
+        "a": "Tilt D", "b": "Tilt R"}
 ABBR = sorted(["AL","AK","AZ","AR","CA","CO","CT","DE","FL","GA","HI","ID","IL","IN","IA","KS","KY","LA","ME",
                "MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ","NM","NY","NC","ND","OH","OK","OR","PA",
                "RI","SC","SD","TN","TX","UT","VT","VA","WA","WV","WI","WY"])
@@ -68,7 +72,8 @@ def main():
                 ratings[ab] = CODE[s[i]]
             else:
                 ratings[ab] = None; unknown += 1
-        comp = {ab: v for ab, v in ratings.items() if v and ("Toss" in v or "Lean" in v)}
+        comp = {ab: v for ab, v in ratings.items()
+                if v and ("Toss" in v or "Lean" in v or "Tilt" in v)}
         out["sources"].append({"key": slug, "label": label, "as_of": as_of,
                                "ratings": ratings, "unknown_codes": unknown, "competitive": comp})
         print(f"[gov] {label:30} {as_of}  경합 {len(comp)}개: " +

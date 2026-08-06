@@ -106,6 +106,21 @@ if (!is.null(d$states) && is.data.frame(d$states) && "prob" %in% names(d$states)
     err("model_dashboard.json", "states.prob는 0–100(%) 범위여야 함")
 }
 
+# 예측시장 원가격 — 가격은 0~100¢. 파일이 없으면 통과(표는 안내문으로 대체).
+d <- load_json("kalshi_prices.json", optional = TRUE)
+if (!is.null(d)) {
+  require_keys("kalshi_prices.json", d, c("as_of", "type", "senate", "governor"))
+  for (kind in c("senate", "governor")) {
+    for (ab in names(d[[kind]])) {
+      for (side in c("dem", "rep")) {
+        v <- d[[kind]][[ab]][[side]]
+        if (!is.null(v) && !is.na(v) && (v < 0 || v > 100))
+          err("kalshi_prices.json", sprintf("%s %s의 %s 가격이 0–100¢ 밖: %s", kind, ab, side, v))
+      }
+    }
+  }
+}
+
 # ---- 하원 --------------------------------------------------------------------
 d <- load_json("house_races.json")
 require_keys("house_races.json", d, c("as_of", "races"))
