@@ -1,6 +1,6 @@
 {
   "version": "v0.1",
-  "run_date": "2026-08-03",
+  "run_date": "2026-08-06",
   "seed": 20261103,
   "n_sims": 10000,
   "assumptions": {
@@ -19,88 +19,94 @@
       "state": "GA",
       "defense": "D",
       "rating": "Lean D (Cook) / Likely D (Sabato 7/30↑)",
-      "p_rating": 0.9,
-      "p_market": 0.8,
+      "p_rating": 0.75,
+      "p_market": 0.91,
       "poll_margin": 10.4,
       "n_polls": 2,
       "p_poll": 0.958,
-      "p_blend": 0.891
+      "p_blend": 0.886
     },
     {
       "state": "MI",
       "defense": "D",
       "rating": "Toss Up",
       "p_rating": 0.5,
-      "poll_margin": -4.8,
-      "n_polls": 2,
-      "p_poll": 0.214,
-      "p_blend": 0.329
+      "p_market": 0.59,
+      "poll_margin": -10.3,
+      "n_polls": 1,
+      "p_poll": 0.043,
+      "p_blend": 0.42
     },
     {
       "state": "NH",
       "defense": "D",
       "rating": "Lean D",
       "p_rating": 0.75,
+      "p_market": 0.88,
       "poll_margin": 2.2,
       "n_polls": 2,
       "p_poll": 0.643,
-      "p_blend": 0.686
+      "p_blend": 0.749
     },
     {
       "state": "ME",
       "defense": "R",
       "rating": "Toss Up",
       "p_rating": 0.5,
+      "p_market": 0.65,
       "poll_margin": 3,
       "n_polls": 1,
       "p_poll": 0.691,
-      "p_blend": 0.582
+      "p_blend": 0.61
     },
     {
       "state": "NC",
       "defense": "R",
       "rating": "Lean D (UVA) / 일부 Lean R",
       "p_rating": 0.75,
+      "p_market": 0.91,
       "poll_margin": 8.7,
       "n_polls": 4,
       "p_poll": 0.926,
-      "p_blend": 0.855
+      "p_blend": 0.873
     },
     {
       "state": "TX",
       "defense": "R",
       "rating": "Lean R",
       "p_rating": 0.25,
+      "p_market": 0.49,
       "poll_margin": 1.4,
       "n_polls": 3,
       "p_poll": 0.592,
-      "p_blend": 0.455
+      "p_blend": 0.466
     },
     {
       "state": "OH",
       "defense": "R",
       "rating": "Toss Up",
       "p_rating": 0.5,
-      "p_market": 0.56,
+      "p_market": 0.53,
       "poll_margin": -1.4,
       "n_polls": 4,
       "p_poll": 0.406,
-      "p_blend": 0.481
+      "p_blend": 0.472
     },
     {
       "state": "AK",
       "defense": "R",
       "rating": "Toss Up (Cook 7/1 이동)",
       "p_rating": 0.5,
+      "p_market": 0.55,
       "poll_margin": -2,
       "n_polls": 1,
       "p_poll": 0.369,
-      "p_blend": 0.444
+      "p_blend": 0.487
     }
   ],
-  "dem_majority_prob": 25.8,
+  "dem_majority_prob": 30,
   "seats": {
-    "mean": 48.73,
+    "mean": 48.97,
     "p05": 45,
     "p25": 47,
     "median": 49,
@@ -108,14 +114,14 @@
     "p95": 52
   },
   "seat_pmf": {
-    "44": 0.0277,
-    "45": 0.06,
-    "46": 0.0981,
-    "47": 0.1176,
-    "48": 0.1432,
-    "49": 0.1525,
-    "50": 0.1429,
-    "51": 0.1338,
-    "52": 0.1242
+    "44": 0.024,
+    "45": 0.0528,
+    "46": 0.0853,
+    "47": 0.106,
+    "48": 0.136,
+    "49": 0.148,
+    "50": 0.1481,
+    "51": 0.1462,
+    "52": 0.1536
   }
 }

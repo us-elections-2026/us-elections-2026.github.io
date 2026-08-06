@@ -72,7 +72,7 @@
             borderRadius: 6, borderSkipped: false, maxBarThickness: 26,
           },
           {
-            type: "scatter", label: "예측시장가 (확인 주만)",
+            type: "scatter", label: "예측시장가 (Kalshi 원가격)",
             data: rows.filter((r) => r.mk != null).map((r) => ({ x: r.mk, y: r.name })),
             pointStyle: "rectRot", radius: 8, hoverRadius: 9,
             backgroundColor: "#111827", borderColor: "#ffffff", borderWidth: 1.5,
