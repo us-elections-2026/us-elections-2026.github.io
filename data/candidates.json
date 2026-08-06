@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-06-20",
+  "as_of": "2026-08-06",
   "note": "후보 프로필. 출처가 분명한 사실만 수록. null=공개 출처 미확인. 사진은 공개도메인(공식 상·하원 초상) 또는 CC 라이선스만 사용하며 photo_credit에 출처·라이선스 표기.",
   "candidates": [
     {
@@ -201,7 +201,7 @@
         "https://abdulforsenate.com/about/",
         "https://fordschool.umich.edu/faculty/abdul-el-sayed"
       ],
-      "status": "primary"
+      "status": "nominee"
     },
     {
       "state": "MI",

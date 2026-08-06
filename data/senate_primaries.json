@@ -1,75 +1,82 @@
 {
-  "as_of": "2026-08-02",
+  "as_of": "2026-08-06",
   "rows": [
     {
-      "state": "ME",
-      "event": "민주 지명전당대회(Platner 사퇴 후)",
-      "date": "2026-07-25",
-      "status": "완료(후보 교체)",
-      "detail": "Platner 6/9 경선 승리 → 성폭행 의혹으로 7/10 사퇴 → 7/25 뱅고어 전당대회에서 Troy Jackson(전 주상원의장) 566–5로 공식 인준(경쟁자 Shah·Bellows 사전 사퇴). 사퇴 후 첫 조사 UNH 잭슨 49–콜린스 46(D+3). 다혈질·세금유치권 검증 상처 안고 출발"
+      "state": "NC",
+      "event": "양당 경선",
+      "date": "2026-03-03",
+      "status": "완료",
+      "detail": "Cooper(D) 92.0% · Whatley(R) 64.6%로 각각 지명 — 본선 대진 확정(Tillis 은퇴 의석). 8개 감시주 중 가장 먼저 대진이 굳은 곳이라 본선 조사의 신뢰도가 높다."
+    },
+    {
+      "state": "OH",
+      "event": "특별선거 양당 경선",
+      "date": "2026-05-05",
+      "status": "완료",
+      "detail": "Brown(D)이 민주 지명 확보, 현직 임명자 Husted(R)는 무경쟁. Vance 사퇴로 생긴 잔여 임기(2년)를 채우는 특별선거."
+    },
+    {
+      "state": "TX",
+      "event": "공화당 결선",
+      "date": "2026-05-26",
+      "status": "완료",
+      "detail": "Paxton 63.8% vs 현직 Cornyn 약 35% — 3/3 1차에서 과반 미달로 간 결선에서 30년 현직을 격파. 이 결과로 Cook이 Likely R→Lean R 하향(5/31)."
     },
     {
       "state": "GA",
       "event": "공화당 결선",
       "date": "2026-06-16",
       "status": "완료",
-      "detail": "Collins 55.5% vs Dooley 44.5% → 본선 진출(현역 Ossoff 상대). 트럼프 막판 Collins 지지, Kemp는 Dooley 지지"
+      "detail": "Collins 55.5% vs Dooley 44.5% → 본선 진출(현역 Ossoff 상대). 트럼프 막판 Collins 지지, Kemp는 Dooley 지지."
     },
     {
-      "state": "NH",
-      "event": "공화당 경선",
-      "date": "2026-09-08",
-      "status": "예정",
-      "detail": "Sununu 48 vs Brown 19 (Emerson 3월; 4월 집계 평균 Sununu 51 vs Brown 21)"
-    },
-    {
-      "state": "NH",
-      "event": "민주당 경선",
-      "date": "2026-09-08",
-      "status": "예정",
-      "detail": "Pappas 사실상 단일 구도 (집계 평균 Pappas 66 vs Manzur 13, 4/23)"
+      "state": "ME",
+      "event": "민주 지명전당대회 (Platner 사퇴 후)",
+      "date": "2026-07-25",
+      "status": "완료(후보 교체)",
+      "detail": "Platner 6/9 경선 승리 → 성폭행 의혹으로 7/10 사퇴 → 7/25 뱅고어 전당대회에서 Troy Jackson(전 주상원의장)을 566–5로 인준. 7/27 등재 마감 준수."
     },
     {
       "state": "MI",
       "event": "민주당 경선",
       "date": "2026-08-04",
-      "status": "예정",
-      "detail": "El-Sayed로 급수렴 — Emerson 7/26–27 54–39(+15), PSI 7/25–29 배분후 +9.6, RCP 경선 평균 +10.2, 예측시장 97%. 7/27 Fox2 마지막 토론 결정타 없음. AIPAC 계열 외부지출 $60M+(El-Sayed ~$4.6M의 12배)에도 판세 못 되돌림. 단 Glengariff 7/22–24 본선 가상은 Rogers가 El-Sayed에 +10.3, Stevens와는 동률 — 본선 경쟁력이 쟁점"
-    },
-    {
-      "state": "TX",
-      "event": "공화당 경선",
-      "date": null,
       "status": "완료",
-      "detail": "Paxton 63.8%로 현직 Cornyn 격파 → Cook, Likely R→Lean R 하향"
-    },
-    {
-      "state": "NC",
-      "event": "양당 경선",
-      "date": null,
-      "status": "【수집】",
-      "detail": null
-    },
-    {
-      "state": "AK",
-      "event": "통합 경선(top-4)",
-      "date": null,
-      "status": "【수집】",
-      "detail": null
-    },
-    {
-      "state": "OH",
-      "event": "양당 경선",
-      "date": null,
-      "status": "【수집】",
-      "detail": null
+      "detail": "El-Sayed 48.5% – Stevens 47.5% – McMorrow 4.0%(개표 99%). 8대 1 자금 열세와 당 주류의 반대를 뒤집은 1%p 신승. 본선은 Rogers(R)와 맞대결 — 예비 전 유일한 본선 가상조사는 Rogers +10.3이었다."
     },
     {
       "state": "SC",
-      "event": "공화 특별 예비선거 (신규·감시 8주 밖)",
+      "event": "공화 특별 예비선거 (감시 8주 밖)",
       "date": "2026-08-11",
-      "status": "예정(신규)",
-      "detail": "Graham(R) 별세(7/11)로 공석 → 여동생 Darline Graham이 잔여 임기 승계 후 정식 6년 임기 도전. 후보 등록 7/28 마감·총 12명(Russell Fry·Ralph Norman 하원의원, Mark Lynch, Duke Buckner, 막판 변수 Mark Sanford 전 주지사; 민주 Annie Andrews). 경선 8/11(사전투표 8/5–7)·결선 8/25 유력. 안전 공화이나 8월 혼돈 예비 = 꼬리 리스크"
+      "status": "예정",
+      "detail": "Graham(R) 별세(7/11)로 생긴 공석. 임명된 여동생 Darline Graham이 잔여 임기 승계 후 정식 임기 도전. 후보 등록 7/28 마감·총 12명. 안전 공화이나 8월 혼돈이 판도 확장의 꼬리 리스크."
+    },
+    {
+      "state": "AK",
+      "event": "통합 예비선거 (top-4)",
+      "date": "2026-08-18",
+      "status": "예정",
+      "detail": "정당 무관 상위 4명이 본선(RCV)에 진출. 출마 16명 확정 — 현역 Dan S. Sullivan(R)·Peltola(D)와 함께 동명이인 'Dan J. Sullivan'도 등재됐다(6월 자격 박탈 결정이 뒤집힘). RCV 1차 집계에서 유권자 혼동이 실질 변수."
+    },
+    {
+      "state": "SC",
+      "event": "공화 특별 예비 결선 (조건부)",
+      "date": "2026-08-25",
+      "status": "조건부",
+      "detail": "8/11에서 과반 득표자가 없을 때만 실시. 12명 난립이라 결선 가능성이 낮지 않다."
+    },
+    {
+      "state": "NH",
+      "event": "공화당 경선",
+      "date": "2026-09-08",
+      "status": "예정",
+      "detail": "Sununu 우세 — Emerson 3월 48 vs Brown 19, 4월 집계 평균 51 vs 21. 트럼프 지지 확보."
+    },
+    {
+      "state": "NH",
+      "event": "민주당 경선",
+      "date": "2026-09-08",
+      "status": "예정",
+      "detail": "Pappas 사실상 단일 구도 (집계 평균 Pappas 66 vs Manzur 13, 4/23)."
     }
   ]
 }
