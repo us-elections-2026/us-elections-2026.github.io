@@ -1,12 +1,12 @@
 {
   "as_of": "2026-08-06",
   "facts_updated": "2026-08-06",
-  "source_label": "외부 예측 종합 — Cook·Sabato 등급 · 예측시장 원가격(Kalshi) · 외부 모델(RaceToTheWH·DDHQ)",
+  "source_label": "외부 예측 종합 — 대표값은 예측시장 원가격(Kalshi) · 등급(Cook·Sabato) · 외부 모델(RaceToTheWH·DDHQ, 미검증)",
   "provenance_note": "이 대시보드는 자체 정성 추정 대신 외부 예측을 종합해 표시합니다(2026-07-29 전환). 세 종류는 성격이 다릅니다 — 등급(Cook·Sabato)은 확률이 아닌 서수적 전문가 판단, 예측시장 가격(Kalshi)은 확률의 근사일 뿐(유동성·편향 혼입), 모델 확률(RaceToTheWH·DDHQ)은 각 기관 방법론의 산출물입니다. 같은 잣대로 직접 비교하지 마세요. 2026-08-06부터 주별 % 는 270towin의 등급 환산값이 아니라 **Kalshi 공개 API의 원가격**을 직접 받아 8개 주 전부에 표시합니다(scripts/fetch_kalshi_prices.py). 기준 2026-08-06T02:47:24Z.",
   "current_balance": "R 53 / D 47",
   "dem_needed_net": 4,
-  "dem_majority_prob": 13,
-  "majority_note": "예측시장 45%(Kalshi 상원 다수 계약, 8/6 확인) · 외부 모델 13%는 **미검증**(RaceToTheWH 원 페이지가 스크립트 렌더라 2026-08-06 재확인 실패, 7월 말 인용치) · DDHQ 50–50(미검증) · 순증 컨센서스 +1~+3(Inside Elections)",
+  "dem_majority_prob": 45,
+  "majority_note": "Kalshi 상원 다수 계약 민주 45¢ · 거래액 $286만·미결제약정 $140만 · 기준 8/6 — 가격은 확률의 근사일 뿐이며 확률 자체가 아니다(유동성·편향 혼입). 외부 모델(RaceToTheWH 13%·DDHQ 50%)은 재확인 실패로 미검증 상태라 대표값에서 내렸다.",
   "net_expected_seats": 2,
   "net_display": "+1~+3",
   "states": [
@@ -165,12 +165,12 @@
     {
       "id": "market",
       "name": "예측시장 (Kalshi)",
-      "subname": "원가격 · 최대 이견",
+      "subname": "원가격 · 대표값",
       "prob": 45,
       "prob_label": "45%",
       "seats": "GA 91¢ · NC 91¢ · NH 88¢ · ME 65¢ · MI 59¢ · AK 55¢ · OH 53¢ · TX 49¢",
       "majority": "민주 다수 45%",
-      "desc": "Kalshi 상원 다수 계약(\"Will Democrats win the U.S. Senate in 2026?\") 민주 45¢ — 거래액 $286만·미결제약정 $140만의 두꺼운 시장이며, **이 페이지에서 원천까지 검증된 유일한 상원 다수 수치**다(공개 API 직접 취득). 주별 가격을 보면 근거가 드러난다 — 시장은 NC 91¢·ME 65¢·AK 55¢·OH 53¢·TX 49¢로 등급기관보다 민주에 후하다. 다만 가격은 확률의 근사일 뿐이며(유동성·편향 혼입) 등급·모델과 같은 잣대로 읽지 말 것."
+      "desc": "Kalshi 상원 다수 계약(\"Will Democrats win the U.S. Senate in 2026?\") 민주 45¢ — 거래액 $286만·미결제약정 $140만의 두꺼운 시장이며, **이 페이지에서 원천까지 검증된 유일한 상원 다수 수치**여서 2026-08-06부터 대표값으로 쓴다(공개 API 직접 취득). 주별 가격을 보면 근거가 드러난다 — 시장은 NC 91¢·ME 65¢·AK 55¢·OH 53¢·TX 49¢로 등급기관보다 민주에 후하다. 다만 가격은 확률의 근사일 뿐이며(유동성·편향 혼입) 등급·모델과 같은 잣대로 읽지 말 것."
     }
   ],
   "timeline": [

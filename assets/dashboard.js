@@ -24,7 +24,9 @@
       ["등급 민주 우위 (Lean D)", `${leanD}석`, "Cook·Sabato 종합 — 등급은 확률이 아님", "#1971c2"],
       ["등급 토스업", `${toss}석`, "다수 향배를 좌우하는 구간", "#f59e0b"],
       ["등급 공화 우위 (Lean R)", `${leanR}석`, "확장 표적(토스업 경계 포함)", "#c92a2a"],
-      ["민주 다수 확률 — 외부 모델", `${d.dem_majority_prob}%`, d.majority_note || "", "#7c3aed"],
+      // 대표값 = 예측시장 원가격(2026-08-06 승격). 모델 수치는 재확인 실패로 미검증이라
+      // 시나리오 카드에만 '미검증' 표시와 함께 남겨둔다.
+      ["민주 다수 — 예측시장 가격", `${d.dem_majority_prob}%`, d.majority_note || "", "#1d4a70"],
     ];
     const wrap = el("div", "kpi-grid");
     cards.forEach(([label, val, sub, color]) => {
