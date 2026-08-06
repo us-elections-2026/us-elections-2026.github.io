@@ -905,19 +905,48 @@ rating_tiles_html <- function() {
   defs <- list(c("Solid D", "rt-sd", "Solid·Likely D"), c("Lean D", "rt-ld", "Lean D"),
                c("Toss-up", "rt-tu", "Toss-up"), c("Lean R", "rt-lr", "Lean R"),
                c("Solid R", "rt-sr", "Solid·Likely R"))
+  # 2026-08-06 — 타일을 **이번 개선 35석 전체** 기준으로 확장. 종전에는 감시 8주만
+  # 세서 양끝 Solid 타일이 늘 0이었다. 양끝은 주명 없이 숫자만 싣고(사용자 요청),
+  # 가운데 경합 타일은 감시 8주는 링크 칩, 감시 밖 경합주(예: 컨센서스가 Lean R로
+  # 보는 아이오와)는 링크 없는 칩으로 구분한다 — 다섯 타일의 합이 35가 되게.
+  # 컨센서스 피드가 없으면 종전대로 감시 8주만 렌더한다(추정으로 채우지 않음).
+  ba <- NULL
+  if (!is.null(cons)) {
+    abbrs <- names(cons$rt)
+    rv <- vapply(abbrs, function(a) {
+      v <- cons$rt[cons$i, a]
+      if (is.null(v) || length(v) == 0 || is.na(v)) NA_character_ else as.character(v)
+    }, character(1))
+    ba <- vapply(rv, function(x) if (is.na(x)) NA_character_ else .rating_bucket(x), character(1))
+    names(ba) <- abbrs
+  }
+  kr <- tryCatch(.load_json("governor_ratings")$state_names_kr, error = function(e) NULL)
+  watch_ab <- toupper(s$id)
   tiles <- vapply(defs, function(x) {
-    idx <- which(b == x[1])
-    states <- if (length(idx) == 0) '<span class="rt-empty">—</span>' else
-      paste0(vapply(idx, function(i) sprintf(
-        '<div class="rt-st"><a href="/states/%s.html">%s%s</a><span class="rt-hold rt-hold-%s">%s</span></div>',
-        s$id[i], s$name[i], if (diverge[i]) '<span class="rt-div" title="Cook과 Sabato 평가가 갈림">◆</span>' else "",
-        tolower(s$defense[i]), s$defense[i]), character(1)),
-        collapse = "")
+    if (x[1] %in% c("Solid D", "Solid R")) {
+      n <- if (is.null(ba)) NA_integer_ else sum(ba == x[1], na.rm = TRUE)
+      return(sprintf(
+        '<div class="rtile %s"><div class="rt-num">%s</div><div class="rt-lab">%s</div><div class="rt-states"><span class="rt-empty">안전권 · 주명 생략</span></div></div>',
+        x[2], if (is.na(n)) "—" else as.character(n), x[3]))
+    }
+    if (is.null(ba)) {                       # 폴백: 감시 8주만
+      idx <- which(b == x[1]); members <- watch_ab[idx]
+    } else members <- names(ba)[!is.na(ba) & ba == x[1]]
+    states <- if (length(members) == 0) '<span class="rt-empty">—</span>' else
+      paste0(vapply(members, function(ab) {
+        i <- match(ab, watch_ab)
+        if (!is.na(i)) sprintf(
+          '<div class="rt-st"><a href="/states/%s.html">%s%s</a><span class="rt-hold rt-hold-%s">%s</span></div>',
+          s$id[i], s$name[i], if (diverge[i]) '<span class="rt-div" title="Cook과 Sabato 평가가 갈림">◆</span>' else "",
+          tolower(s$defense[i]), s$defense[i])
+        else sprintf('<div class="rt-st"><span title="감시 8주 밖 — State Focus 페이지 없음">%s</span></div>',
+                     if (!is.null(kr) && !is.null(kr[[ab]])) kr[[ab]] else ab)
+      }, character(1)), collapse = "")
     sprintf('<div class="rtile %s"><div class="rt-num">%d</div><div class="rt-lab">%s</div><div class="rt-states">%s</div></div>',
-            x[2], length(idx), x[3], states)
+            x[2], length(members), x[3], states)
   }, character(1))
   src <- if (!is.null(cons))
-    sprintf('<p class="rt-src">분류 기준: <b>270toWin 컨센서스</b>(기준 %s) — 상원 지도와 같은 출처. ◆는 Cook과 Sabato 평가가 갈리는 주로, 개별 등급은 <a href="/senate.html#races">경합주 표</a>와 <a href="/dashboard.html">대시보드</a>에서 확인하세요.</p>', cons$as_of)
+    sprintf('<p class="rt-src">분류 기준: <b>270toWin 컨센서스</b>(기준 %s) — 상원 지도와 같은 출처, <b>이번 개선 35석 전체</b>(다섯 타일 합 = 35). 양끝 안전권은 주명을 생략하고 수만 표시합니다. 링크 없는 주는 감시 8주 밖의 경합 판정 주. ◆는 Cook과 Sabato 평가가 갈리는 주로, 개별 등급은 <a href="/senate.html#races">경합주 표</a>와 <a href="/dashboard.html">대시보드</a>에서 확인하세요.</p>', cons$as_of)
   else ""
   paste0('<div class="rating-tiles">', paste(tiles, collapse = ""), "</div>", src)
 }
