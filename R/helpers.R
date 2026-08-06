@@ -547,8 +547,12 @@ kalshi_control_html <- function() {
     return('<p class="note">예측시장 상원 다수 가격 【수집】 — <code>scripts/fetch_kalshi_prices.py</code> 실행 필요.</p>')
   }
   c0 <- k$senate_control
+  # 대비 대상은 모델 수치다. dem_majority_prob는 2026-08-06부터 시장 대표값이 됐으므로
+  # 여기서 읽으면 시장을 시장과 비교하게 된다 — 시나리오 배열의 rtwh 항목에서 가져온다.
   md <- .load_json("model_dashboard")
-  model_p <- suppressWarnings(as.numeric(md$dem_majority_prob))
+  sc <- md$scenarios
+  i <- which(sc$id == "rtwh")
+  model_p <- if (length(i)) suppressWarnings(as.numeric(sc$prob[i[1]])) else NA_real_
   sprintf(paste0(
     '<div class="mkt-control">',
     '<div class="mkt-row"><span class="mkt-lab">예측시장 <b>Kalshi</b> — 민주 상원 다수</span>',
@@ -805,7 +809,8 @@ gt_model_scenarios <- function() {
   ) |>
     gt() |>
     tab_header(title = "외부 예측기관 비교 — 상원 다수",
-               subtitle = paste0("민주 다수 확률 ", d$dem_majority_prob, "% (", d$majority_note, ")")) |>
+               subtitle = paste0("대표값(예측시장 가격) 민주 ", d$dem_majority_prob, "% — ",
+                                 d$majority_note)) |>
     .tbl_opts()
 }
 
