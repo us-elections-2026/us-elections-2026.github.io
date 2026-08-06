@@ -1,0 +1,18 @@
+{
+ "as_of": "2026-08-06",
+ "fetched_at_utc": "2026-08-06T09:17:15Z",
+ "type": "model",
+ "source_label": "Race to the WH",
+ "source_url": "https://www.racetothewh.com/senate/26",
+ "chamber": "senate",
+ "series_refreshed": "2026-08-06T09:16:27.820Z",
+ "last_point_label": "Aug 6",
+ "dem_majority_prob": 56.9,
+ "rep_majority_prob": 43.1,
+ "seats_projected": {
+  "dem": 51.1,
+  "rep": 48.9
+ },
+ "n_points": 128,
+ "note": "Infogram 라이브 시계열의 마지막 관측치. 페이지 본문에 보이는 71.8%·73.4% 같은 수치는 과거 모델 업데이트를 설명하는 서술문이므로 현재 예측이 아니다."
+}
