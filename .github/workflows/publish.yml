@@ -8,6 +8,16 @@ on:
 permissions:
   contents: write   # gh-pages 브랜치 push 용
 
+# 동시 배포 경합 방지 (2026-08-06 실측 사고).
+# 짧은 간격으로 두 커밋을 push하면 두 빌드가 나란히 돌고, gh-pages에 **늦게 쓴 쪽**이
+# 이긴다. 그때 늦게 끝난 빌드가 옛 트리에서 만들어진 것이면 방금 push한 내용이
+# 조용히 사라진다(Actions는 둘 다 'success'로 뜬다 — 그래서 알아채기 어렵다).
+# cancel-in-progress: false = 취소가 아니라 **줄 세우기**. 나중 커밋이 나중에 발행돼
+# 항상 최신 트리가 마지막에 남는다. (GitHub Pages 권장 패턴)
+concurrency:
+  group: pages-publish
+  cancel-in-progress: false
+
 # 2026-06-16 GitHub Actions Node 24 강제 전환 대응:
 # checkout을 v5(Node 24 네이티브)로 올리고, 다른 JS 액션도 Node 24로 강제.
 env:
