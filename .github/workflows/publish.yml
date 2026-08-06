@@ -20,6 +20,18 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v5
 
+      # 러너 이미지에는 Microsoft apt 저장소(azure-cli·prod)가 들어 있다. 이들이 간헐적으로
+      # 403을 반환하면 apt-get update가 exit 100으로 죽고, 그 여파로 setup-r의 R 설치까지
+      # 실패한다 (2026-08-06 실측: "Failed to get R release … exit code 100" — 재실행으로만 통과).
+      # 이 레포는 MS 패키지를 쓰지 않으므로 해당 소스를 먼저 제거해 빌드를 그 장애에서 분리한다.
+      # 주간 자동 발행이 Actions에 의존하므로, 남의 저장소 장애로 발행이 막히지 않게 하는 것이 목적.
+      - name: Drop unused Microsoft apt sources (intermittent 403 breaks apt/setup-r)
+        run: |
+          sudo rm -f /etc/apt/sources.list.d/microsoft-prod.list \
+                     /etc/apt/sources.list.d/azure-cli.list \
+                     /etc/apt/sources.list.d/microsoft.list
+          sudo apt-get update -qq
+
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
