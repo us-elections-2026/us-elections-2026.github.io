@@ -6,7 +6,7 @@
   "current_balance": "R 53 / D 47",
   "dem_needed_net": 4,
   "dem_majority_prob": 13,
-  "majority_note": "외부 모델 13%(RaceToTheWH·270toWin 컨센서스 ~87–88% 공화) 대 예측시장 45%(Kalshi) — 같은 질문에 32%p 이견 · DDHQ는 50–50 · 순증 컨센서스 +1~+3(Inside Elections)",
+  "majority_note": "예측시장 45%(Kalshi 상원 다수 계약, 8/6 확인) · 외부 모델 13%는 **미검증**(RaceToTheWH 원 페이지가 스크립트 렌더라 2026-08-06 재확인 실패, 7월 말 인용치) · DDHQ 50–50(미검증) · 순증 컨센서스 +1~+3(Inside Elections)",
   "net_expected_seats": 2,
   "net_display": "+1~+3",
   "states": [
@@ -135,22 +135,22 @@
     {
       "id": "rtwh",
       "name": "RaceToTheWH",
-      "subname": "확률 모델",
+      "subname": "확률 모델 · 미검증",
       "prob": 13,
-      "prob_label": "13%",
+      "prob_label": "13% (미검증)",
       "seats": "≈ R 51.3 – D 48.7",
-      "majority": "공화 유지 ~87%",
-      "desc": "주별 시뮬레이션 기반 외부 모델. 공화 유지 우세 유지 — 270toWin 컨센서스는 7/30판 ~87–88%(≈51.2 R–48.8 D → 주말 ≈51.3 R–48.7 D). 이번 사이클의 모달(modal) 전망"
+      "majority": "공화 유지 ~87% (미검증)",
+      "desc": "주별 5만 회 시뮬레이션 기반 외부 상원 모델(사이트명이 대선용이나 2026 상원 모델을 따로 운영). **이 13%는 2026-08-06 재확인에 실패했다** — RaceToTheWH의 수치가 스크립트로 렌더돼 정적 요청으로 읽히지 않는다. 종전에 함께 적혀 있던 '270toWin 컨센서스 ~87–88%'는 근거로 쓸 수 없다: 270toWin의 'Which Party Will Control the Senate?'는 모델이 아니라 **Kalshi 시장 위젯**이며(같은 페이지가 'most recent yes trade'라고 밝히고 있다) 현재 공화 55%를 표시한다. 원 사이트에서 확인되는 대로 갱신한다."
     },
     {
       "id": "ddhq",
       "name": "Decision Desk HQ",
-      "subname": "확률 모델 · 이견",
+      "subname": "확률 모델 · 미검증",
       "prob": 50,
-      "prob_label": "50%",
+      "prob_label": "50% (미검증)",
       "seats": "50 – 50",
       "majority": "동률 경로",
-      "desc": "주류 모델 중 처음으로 민주 동률 경로 제시(7월), 8/2 기준 이견 유지. RtWH와의 격차는 메인 후보 확정·조지아 수성을 가중하는 방법론 차이"
+      "desc": "주류 모델 중 처음으로 민주 동률 경로 제시(7월). 7월 말 주간 브리핑 인용치이며 2026-08-06 원 사이트 재확인은 하지 않았다."
     },
     {
       "id": "inside",
@@ -170,7 +170,7 @@
       "prob_label": "45%",
       "seats": "GA 91¢ · NC 91¢ · NH 88¢ · ME 65¢ · MI 59¢ · AK 55¢ · OH 53¢ · TX 49¢",
       "majority": "민주 다수 45%",
-      "desc": "Kalshi 상원 다수 계약(\"Will Democrats win the U.S. Senate in 2026?\") 민주 45¢ — 거래액 $286만·미결제약정 $140만의 두꺼운 시장이다. RaceToTheWH 13%와 32%p 벌어져 이번 사이클 최대 이견. 주별 가격을 보면 이유가 드러난다 — 시장은 NC·ME·AK·OH·TX를 등급기관보다 훨씬 민주에 후하게 매긴다. 가격은 확률의 근사일 뿐이며(유동성·편향 혼입) 등급·모델과 같은 잣대로 읽지 말 것."
+      "desc": "Kalshi 상원 다수 계약(\"Will Democrats win the U.S. Senate in 2026?\") 민주 45¢ — 거래액 $286만·미결제약정 $140만의 두꺼운 시장이며, **이 페이지에서 원천까지 검증된 유일한 상원 다수 수치**다(공개 API 직접 취득). 주별 가격을 보면 근거가 드러난다 — 시장은 NC 91¢·ME 65¢·AK 55¢·OH 53¢·TX 49¢로 등급기관보다 민주에 후하다. 다만 가격은 확률의 근사일 뿐이며(유동성·편향 혼입) 등급·모델과 같은 잣대로 읽지 말 것."
     }
   ],
   "timeline": [
