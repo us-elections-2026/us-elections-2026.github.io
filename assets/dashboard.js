@@ -1,5 +1,5 @@
 // 외부 예측 종합 대시보드 — data/model_dashboard.json 을 빌드 산출물에서 fetch 하여 렌더.
-// 등급(Cook·Sabato)·예측시장 가격·외부 모델(RtWH·DDHQ)을 종류 구분해 표시.
+// 등급(Cook·Sabato)·예측시장 가격·외부 모델(DDHQ)을 종류 구분해 표시.
 // 데이터 갱신 = JSON만 고쳐 push → Actions 재빌드 → 자동 반영.
 (function () {
   const DATA_URL = "data/model_dashboard.json";
@@ -24,8 +24,8 @@
       ["등급 민주 우위 (Lean D)", `${leanD}석`, "Cook·Sabato 종합 — 등급은 확률이 아님", "#1971c2"],
       ["등급 토스업", `${toss}석`, "다수 향배를 좌우하는 구간", "#f59e0b"],
       ["등급 공화 우위 (Lean R)", `${leanR}석`, "확장 표적(토스업 경계 포함)", "#c92a2a"],
-      // 대표값 = 예측시장 원가격(2026-08-06 승격). 모델 수치는 재확인 실패로 미검증이라
-      // 시나리오 카드에만 '미검증' 표시와 함께 남겨둔다.
+      // 대표값 = 예측시장 원가격(2026-08-06 승격). 모델 확률은 시나리오 카드에 따로 둔다
+      // — 라벨과 값의 성격이 어긋나지 않게 하려는 것(값만 바꾸고 라벨을 두면 오독을 부른다).
       ["민주 다수 — 예측시장 가격", `${d.dem_majority_prob}%`, d.majority_note || "", "#1d4a70"],
     ];
     const wrap = el("div", "kpi-grid");
