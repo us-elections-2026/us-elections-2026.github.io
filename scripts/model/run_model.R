@@ -33,19 +33,27 @@ races  <- fromJSON(file.path("data", "senate_races.json"))$races          # stat
 market <- fromJSON(file.path("data", "model_dashboard.json"))$states      # prob = 시장가(확인 주만)
 polls  <- read_csv(file.path("data", "senate_polls.csv"), show_col_types = FALSE)
 
+# 등급 사전확률. rating 문자열은 병기형이 섞여 있다
+#   예: "Lean D (Cook) / Likely D (Sabato 7/30↑)" · "Lean D (UVA) / 일부 Lean R"
+# 종전처럼 패턴을 순서대로 검사하면 뒤쪽 등급이 먼저 걸려 조지아가 Likely D(0.90)로
+# 잡혔다(2026-08-06 발견 — helpers.R의 타일 오분류와 같은 원인). 문자열에 **먼저
+# 나오는** 등급을 쓴다. 이 사이트 표기 규약상 앞이 Cook/컨센서스다.
+.RATING_P <- c("Solid D|Safe D" = 0.97, "Likely D" = 0.90, "Leans? D" = 0.75,
+               "Toss[ -]?Up" = 0.50, "Leans? R" = 0.25, "Likely R" = 0.10,
+               "Solid R|Safe R" = 0.03)
 rating_prior <- function(x) {
-  if (grepl("Solid D|Safe D", x)) 0.97
-  else if (grepl("Likely D", x)) 0.90
-  else if (grepl("Lean", x) && grepl("D", x)) 0.75
-  else if (grepl("Toss", x, ignore.case = TRUE)) 0.50
-  else if (grepl("Lean", x) && grepl("R", x)) 0.25
-  else if (grepl("Likely R", x)) 0.10
-  else if (grepl("Solid R|Safe R", x)) 0.03
-  else 0.50
+  pos <- vapply(names(.RATING_P), function(p) {
+    i <- regexpr(p, x, ignore.case = TRUE)[1]
+    if (i < 0) Inf else i
+  }, numeric(1))
+  if (all(is.infinite(pos))) return(0.50)
+  unname(.RATING_P[which.min(pos)])
 }
 
-# 사퇴 후보 조사 제외 (현 후보 명단)
-CURRENT_DEM <- c(ME = "Jackson")
+# 본선 후보가 아닌 대진의 조사는 제외 (사퇴·경선 탈락)
+#   ME: 플래트너 사퇴(7/10) → 잭슨
+#   MI: 8/4 예비에서 엘사예드 확정 → 스티븐스 가상대결 행은 실현 불가하므로 제외
+CURRENT_DEM <- c(ME = "Jackson", MI = "El-Sayed")
 polls <- polls |>
   filter(!is.na(end_date)) |>
   rowwise() |>
