@@ -729,6 +729,30 @@ gt_governor_sources <- function() {
     .tbl_opts()
 }
 
+# 주지사 경선 캘린더 — 경합 8주만. 상원과 같은 스키마라 렌더 규칙도 같다.
+gt_governor_primaries <- function() {
+  p <- file.path("data", "governor_primaries.json")
+  if (!file.exists(p)) return(invisible(NULL))
+  d <- jsonlite::read_json(p, simplifyVector = TRUE)
+  r <- d$rows
+  kr <- tryCatch(.load_json("governor_ratings")$state_names_kr, error = function(e) NULL)
+  nm <- vapply(r$state, function(a)
+    if (!is.null(kr) && !is.null(kr[[a]])) paste0(kr[[a]], " (", a, ")") else a, character(1))
+  tibble(
+    주 = nm,
+    경선 = r$event,
+    일자 = ifelse(is.na(r$date), "【수집】", r$date),
+    상태 = r$status,
+    내용 = ifelse(is.na(r$detail), "—", r$detail)
+  ) |>
+    arrange(일자 == "【수집】", 일자) |>
+    gt() |>
+    tab_header(title = "주지사 경선 캘린더 — 경합 8주",
+               subtitle = paste0("기준 ", d$as_of, " · 본선 대진이 언제 확정됐는지")) |>
+    tab_source_note(d$source_note) |>
+    .tbl_opts()
+}
+
 # 주지사 등급 변동 이력 — snapshot_ratings.py가 쌓은 스냅샷에서 '바뀐 것만' 표시.
 # 축적 초기에는 스냅샷이 1건뿐이라 안내문만 렌더한다(빈 표를 만들지 않음).
 governor_history_html <- function() {

@@ -92,6 +92,13 @@ d <- load_json("senate_primaries.json")
 require_keys("senate_primaries.json", d, c("as_of", "rows"))
 require_cols("senate_primaries.json", d$rows, c("state", "event"))
 
+# 주지사 경선 캘린더 — 파일이 없으면 통과(표는 렌더되지 않음)
+d <- load_json("governor_primaries.json", optional = TRUE)
+if (!is.null(d)) {
+  require_keys("governor_primaries.json", d, c("as_of", "rows"))
+  require_cols("governor_primaries.json", d$rows, c("state", "event", "date", "status"))
+}
+
 d <- load_json("candidates.json")
 require_keys("candidates.json", d, c("as_of", "candidates"))
 require_cols("candidates.json", d$candidates, c("state", "party", "name"))
