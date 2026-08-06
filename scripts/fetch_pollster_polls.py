@@ -92,6 +92,48 @@ def to_day(s):
     return datetime.date.fromisoformat(s)
 
 
+# 모집단 우선순위 — 같은 조사가 여러 모집단으로 실릴 때 무엇 하나만 남길지.
+# 선거 예측에 가까운 순서(유력투표층 > 등록유권자 > 성인 전체).
+POP_RANK = {"LV": 0, "RV": 1, "A": 2, "V": 3, "": 4}
+
+
+def drop_exact_dupes(rows):
+    """피드 중복 제거 — 기관·기간·모집단·값·표본이 전부 같은데 id만 다른 행.
+
+    2026-08-06 원본 대조에서 확인: VoteHub 피드가 같은 조사를 두 id로 싣는 경우가 있다
+    (Reuters 기사 URL과 Ipsos 토플라인 PDF URL처럼 출처만 다른 경우 포함).
+    """
+    seen, out, n = set(), [], 0
+    for r in rows:
+        k = (r["pollster"], r["date_start"], r["date_end"], r["population"],
+             r["hi"], r["lo"], str(r["n"]))
+        if k in seen:
+            n += 1
+            continue
+        seen.add(k)
+        out.append(r)
+    return out, n
+
+
+def one_per_survey(rows):
+    """추세·하우스 이펙트용 — 한 조사(기관+현장기간)당 한 행만.
+
+    왜 필요한가 — 한 조사가 성인/등록유권자/유력투표층으로 2~3행이 되면 단순 평균에서
+    **같은 현장조사가 2~3번 가중**된다. 2026년 기준 순지지도 행의 20%, 일반투표의 24%가
+    이 중복 가중이었고, 두 모집단을 늘 함께 싣는 YouGov가 가장 크게 부풀려졌다.
+    게다가 순지지도는 RV/LV가 A보다 체계적으로 높게 나와, 어느 기관이 어느 모집단을
+    싣느냐가 평균 수준까지 흔든다. 조사 단위로 하나만 남겨 이를 끊는다.
+    (그래프의 점은 실제 발표된 값이므로 전부 그대로 찍는다 — 이 축약은 계산에만 쓴다.)
+    """
+    best = {}
+    for r in rows:
+        k = (r["pollster"], r["date_start"], r["date_end"])
+        cur = best.get(k)
+        if cur is None or POP_RANK.get(r["population"], 9) < POP_RANK.get(cur["population"], 9):
+            best[k] = r
+    return sorted(best.values(), key=lambda r: (r["date_end"], r["pollster"]))
+
+
 def rolling_trend(rows, window, since):
     """비당파 조사만으로 중심 이동평균.
 
@@ -156,15 +198,20 @@ def write_csv(path, rows, hi_col, lo_col):
 def block(rows, since, label):
     """차트용 블록 — since 이후만. 원자료 CSV는 전 기간을 따로 보관한다."""
     win = [r for r in rows if r["date_end"] >= since]
+    # 계산용 표본: 조사 단위로 1행. 그래프의 점(win)은 발표된 값 전부를 그대로 쓴다.
+    calc_all = one_per_survey(rows)
+    calc = [r for r in calc_all if r["date_end"] >= since]
     # 추세는 전 기간(2025~)으로 계산해야 창 왼쪽 끝이 잘리지 않는다. 표시만 since 이후.
-    trend = rolling_trend(rows, TREND_WINDOW_DAYS, since)
-    eff = house_effects(win, trend)
+    trend = rolling_trend(calc_all, TREND_WINDOW_DAYS, since)
+    eff = house_effects(calc, trend)
     counts = {}
     for r in win:
         counts[r["pollster"]] = counts.get(r["pollster"], 0) + 1
     top = [p for p, _ in sorted(counts.items(), key=lambda x: (-x[1], x[0]))[:TOP_N_POLLSTERS]]
     print(f"[polls] {label}: {len(win)}건 / 조사기관 {len(counts)}곳 / "
           f"{win[0]['date_end']}~{win[-1]['date_end']} · 상위: {', '.join(top[:4])} …")
+    print(f"[polls]   └ 계산용(조사 단위 1행): {len(calc)}건 — "
+          f"모집단 중복 {len(win) - len(calc)}행 제외")
     return {
         "polls": [{"d": r["date_end"], "v": r["value"], "p": r["pollster"],
                    "pop": r["population"], "n": r["n"] or None,
@@ -198,6 +245,10 @@ def main():
     gen, s2 = normalize(gen_raw, "Dem", "Rep")
     if s1 or s2:
         print(f"[polls] 선택지 불일치로 제외: 지지율 {s1}건 · 일반투표 {s2}건", file=sys.stderr)
+    appr, d1 = drop_exact_dupes(appr)
+    gen, d2 = drop_exact_dupes(gen)
+    if d1 or d2:
+        print(f"[polls] 피드 중복 제거: 지지율 {d1}행 · 일반투표 {d2}행")
     if not appr or not gen:
         print("[polls] 정규화 결과가 비었다 — API 스키마 변경 의심", file=sys.stderr)
         return 1

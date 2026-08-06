@@ -326,11 +326,9 @@ date_end,date_start,pollster,sponsor,population,n,dem,rep,value,partisan,interna
 2026-02-23,2026-02-19,Echelon Insights,,LV,1002,50.0,46.0,4.0,,,gen202ech2aa40d74,https://docs.google.com/spreadsheets/d/1m0IKbqTOxjH_xFQu7I8JTQeIqildMiyY/edit?rtpof=true&sd=true
 2026-02-23,2026-02-20,Grayhouse,America One Policies,RV,1394,43.0,40.0,3.0,REP,,gen202gra2275cae0,https://cdn.prod.website-files.com/5d02aaade6188137a65c8441/69a9b8dd9009aa1372749a66_Iran%20and%20Affordability%20Deck_0305.pdf
 2026-02-23,2026-02-18,Ipsos,Reuters,RV,3686,40.0,38.0,2.0,,,gen202ips899bee43,https://www.reuters.com/world/us/most-americans-say-trump-is-growing-erratic-with-age-reutersipsos-poll-finds-2026-02-24
-2026-02-23,2026-02-18,Ipsos,Reuters,RV,3686,40.0,38.0,2.0,,,gen202ips5a0ed2e7,https://www.ipsos.com/sites/default/files/ct/news/documents/2026-03/Reuters%20Ipsos%20Large%20Issue%20Topline%20Feb%202026.pdf
 2026-02-23,2026-02-18,Ipsos,Reuters,A,4638,35.0,32.0,3.0,,,gen202ipse467faa1,https://www.ipsos.com/sites/default/files/ct/news/documents/2026-03/Reuters%20Ipsos%20Large%20Issue%20Topline%20Feb%202026.pdf
 2026-02-23,2026-02-18,Pennsylvania State University McCourtney Institute for Democracy/YouGov,,RV,824,42.0,37.0,5.0,,,gen202pen388f5658,https://democracy.psu.edu/wp-content/uploads/sites/14/2026/03/MOTN-GenericBallotFeb2026.pdf
 2026-02-23,2026-02-20,YouGov,The Economist,RV,1402,45.0,41.0,4.0,,,gen202youf1935f54,https://yougov.com/en-us/articles/54156-two-thirds-independents-disapprove-donald-trump-job-performance-february-20-23-2026-economist-yougov-poll
-2026-02-23,2026-02-20,YouGov,The Economist,RV,1402,45.0,41.0,4.0,,,gen202youc7574fda,https://yougov.com/en-us/articles/54156-two-thirds-independents-disapprove-donald-trump-job-performance-february-20-23-2026-economist-yougov-poll
 2026-02-23,2026-02-20,YouGov,The Economist,A,1551,39.0,34.0,5.0,,,gen202you4cb58744,https://yougov.com/en-us/articles/54156-two-thirds-independents-disapprove-donald-trump-job-performance-february-20-23-2026-economist-yougov-poll
 2026-02-26,2026-02-24,Cygnal,American Principles Project,LV,1048,48.0,45.0,3.0,REP,,gen202cyg042f1e59,https://act.americanprinciplesproject.org/p/protect-kids-online/results?access=press
 2026-02-26,2026-02-25,HarrisX/Harris,Harvard CAPS,LV,,50.0,50.0,0.0,,,gen202harb82e0a2b,https://harvardharrispoll.com/wp-content/uploads/2026/03/HHP_Feb2026_KeyResults_Mon.pdf
@@ -368,7 +366,6 @@ date_end,date_start,pollster,sponsor,population,n,dem,rep,value,partisan,interna
 2026-03-18,2026-03-17,Quantus Insights,,LV,1053,47.0,42.0,5.0,,,gen202qua946fac3d,https://drive.google.com/file/d/1u6X2tjztzSMI-UNX00OA-CuWAhqPcxxj/view
 2026-03-19,2026-03-17,Ipsos,Reuters,A,1545,35.0,32.0,3.0,,,gen202ips67b7ec50,https://www.ipsos.com/sites/default/files/ct/news/documents/2026-03/Reuters%20Ipsos%20Iran%20Poll%20March%202026%20Topline.pdf
 2026-03-19,2026-03-17,Ipsos,Reuters,RV,1206,40.0,37.0,3.0,,,gen202ips8f20b085,https://www.ipsos.com/sites/default/files/ct/news/documents/2026-03/Reuters%20Ipsos%20Iran%20Poll%20March%202026%20Topline.pdf
-2026-03-19,2026-03-17,Ipsos,Reuters,A,1545,35.0,32.0,3.0,,,gen202ipse0d79dcd,https://www.ipsos.com/sites/default/files/ct/news/documents/2026-03/Reuters%20Ipsos%20Iran%20Poll%20March%202026%20Topline.pdf
 2026-03-20,2026-03-10,Impact Research/BSP Research,Third Way; UnidosUS,LV,1000,45.0,41.0,4.0,,,gen202impb4bb4fec,https://www.thirdway.org/memo/president-trumps-immigration-problem
 2026-03-22,2026-03-17,Morning Consult,Gambling Is Not Investing,A,15029,47.0,42.0,5.0,,,gen202mor21cd6c2a,https://www.gamblingisnotinvesting.com/morning-consult-poll-reveals-americans-concerns-with-prediction-markets
 2026-03-23,2026-03-19,Quinnipiac University,,RV,1191,51.0,40.0,11.0,,,gen202qui1a373f46,https://poll.qu.edu/images/polling/us/us03252026_ueek31.pdf
@@ -378,7 +375,6 @@ date_end,date_start,pollster,sponsor,population,n,dem,rep,value,partisan,interna
 2026-03-26,2026-03-25,HarrisX/Harris,Harvard CAPS,RV,2009,51.0,49.0,2.0,,,gen202har6cb5564e,https://x.com/IAPolls2022/status/2038692771830063336?s=20
 2026-03-26,2026-03-25,Quantus Insights,,LV,1470,47.0,41.3,5.7,,,gen202quaf01fa8df,https://docs.google.com/spreadsheets/d/1_Fz7pWK_RfSVQ__18QujNi-QPw5jJIqX/edit?gid=1786900467#gid=1786900467
 2026-03-29,2026-03-23,Morning Consult,,RV,26725,45.0,42.0,3.0,,,gen202mor1a15291a,https://pro.morningconsult.com/trackers/2026-midterm-election-generic-ballot-polls#03-29-2026
-2026-03-29,2026-03-23,Morning Consult,,RV,26725,45.0,42.0,3.0,,,gen202mor2e2d0029,https://pro.morningconsult.com/trackers/2026-midterm-election-generic-ballot-polls#03-29-2026
 2026-03-30,2026-03-26,CNN/SSRS,,RV,951,48.0,42.0,6.0,,,gen202cnn96858d5d,https://embed.documentcloud.org/documents/28014525-cnn-poll-conducted-by-ssrs-2026-midterms-parties/?embed=1&responsive=1&title=1&onlyshoworg=1
 2026-03-30,2026-03-26,University of Massachusetts Lowell Center for Public Opinion/YouGov,,A,1000,38.0,35.0,3.0,,,gen202uniab038bd7,https://www.uml.edu/docs/2026-Nat-Pol-March-Topline_tcm18-417813.pdf
 2026-03-30,2026-03-27,YouGov,The Economist,RV,1502,45.0,39.0,6.0,,,gen202you13c9e3ae,https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_3wplfYX.pdf#page=50
@@ -411,7 +407,6 @@ date_end,date_start,pollster,sponsor,population,n,dem,rep,value,partisan,interna
 2026-04-20,2026-04-17,Beacon Research/Shaw & Co. Research,Fox News,RV,1001,52.0,47.0,5.0,,,gen202beab54fecf9,https://static.foxnews.com/foxnews.com/content/uploads/2026/04/fox_april-17-20-2026_national_topline_april-22-release.pdf
 2026-04-20,2026-04-17,Echelon Insights,,LV,1012,50.0,44.0,6.0,,,gen202ech75567eb0,https://echeloninsights.com/hubfs/_Media%20for%20Insights%20Blog/April%202026%20Voter%20Omnibus%20Topline%20-%20External.pdf
 2026-04-20,2026-04-15,Ipsos,Reuters,RV,3577,41.0,38.0,3.0,,,gen202ips723b2f06,https://www.reuters.com/world/us/many-americans-question-trumps-temperament-amid-iran-war-pope-spat-reutersipsos-2026-04-21
-2026-04-20,2026-04-15,Ipsos,Reuters,RV,3577,41.0,38.0,3.0,,,gen202ipsf49cf96d,https://www.ipsos.com/sites/default/files/ct/news/documents/2026-04/Reuters%20Ipsos%20Large%20Issue%20April%202026%20Topline%204.21%20Release_1.pdf
 2026-04-20,2026-04-15,Ipsos,Reuters,A,4557,35.0,31.0,4.0,,,gen202ipse8884e79,https://www.ipsos.com/sites/default/files/ct/news/documents/2026-04/Reuters%20Ipsos%20Large%20Issue%20April%202026%20Topline%204.21%20Release_1.pdf
 2026-04-20,2026-04-17,Leger,338Canada; Maintenant Media,A,1004,52.0,42.0,10.0,,,gen202leg6734532b,https://documents.leger360.com/hubfs/%C3%89tudes%20M%C3%A9diatiques/%C3%89tudes%20M%C3%A9diatiques%20-%202026/4.%20%C3%89M%20-%20Avril%202026/20260428%20-%20US%20Poll%20April%202026/US_POL_April_2026_338Canada_VF.pdf
 2026-04-20,2026-04-17,Morning Consult,,RV,2203,45.0,42.0,3.0,,,gen202mor572d6544,https://pro.morningconsult.com/trackers/donald-trump-congress-policy-republicans-polling#04-20-2026
