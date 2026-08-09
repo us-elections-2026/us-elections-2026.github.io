@@ -1,6 +1,6 @@
 {
  "as_of": "2026-08-09",
- "fetched_at_utc": "2026-08-09T21:17:42Z",
+ "fetched_at_utc": "2026-08-09T21:20:00Z",
  "type": "market",
  "source_label": "Kalshi (예측시장 가격)",
  "source_url": "https://kalshi.com/",
@@ -15,11 +15,11 @@
   "url": "https://kalshi.com/markets/controls/senate-winner"
  },
  "house_control": {
-  "dem": 85.0,
+  "dem": 84.0,
   "rep": 16.0,
   "question": "Will Democrats win the House in 2026?",
   "rules": "If the Democratic Party has won control of the House in 2026, then the market resolves to Yes.",
-  "volume": 8880685,
+  "volume": 8880733,
   "open_interest": 5520145,
   "url": "https://kalshi.com/markets/controlh"
  },
@@ -459,12 +459,12 @@
    "url": "https://kalshi.com/markets/senatetn"
   },
   "TX": {
-   "dem": 50.0,
+   "dem": 51.0,
    "rep": 51.0,
    "dem_label": "James Talarico",
    "rep_label": "Ken Paxton",
-   "volume": 7651786,
-   "open_interest": 5213975,
+   "volume": 7652734,
+   "open_interest": 5214923,
    "series": "SENATETX",
    "tickers": [
     "SENATETX-26-D",
@@ -983,8 +983,8 @@
    "rep": 62.0,
    "dem_label": "Democratic party",
    "rep_label": "Republican party",
-   "volume": 382962,
-   "open_interest": 276548,
+   "volume": 382972,
+   "open_interest": 276558,
    "series": "GOVPARTYWI",
    "tickers": [
     "GOVPARTYWI-26-R",
