@@ -1,6 +1,6 @@
 {
  "as_of": "2026-08-09",
- "fetched_at_utc": "2026-08-09T21:20:00Z",
+ "fetched_at_utc": "2026-08-09T21:23:45Z",
  "type": "market",
  "source_label": "Kalshi (예측시장 가격)",
  "source_url": "https://kalshi.com/",
@@ -295,7 +295,7 @@
    "rep": 9.8,
    "dem_label": "Roy Cooper",
    "rep_label": "Michael Whatley",
-   "volume": 1343745,
+   "volume": 1343772,
    "open_interest": 1173506,
    "series": "SENATENC",
    "tickers": [
@@ -459,12 +459,12 @@
    "url": "https://kalshi.com/markets/senatetn"
   },
   "TX": {
-   "dem": 51.0,
+   "dem": 50.0,
    "rep": 51.0,
    "dem_label": "James Talarico",
    "rep_label": "Ken Paxton",
-   "volume": 7652734,
-   "open_interest": 5214923,
+   "volume": 7652807,
+   "open_interest": 5214977,
    "series": "SENATETX",
    "tickers": [
     "SENATETX-26-D",
