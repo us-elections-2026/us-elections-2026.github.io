@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-08-06",
+  "as_of": "2026-08-09",
   "dem_needed_net": 4,
   "current_balance": "R 53 / D 47",
   "races": [
@@ -8,18 +8,18 @@
       "defense": "D",
       "incumbent": "Ossoff (D·현직) vs Collins (R)",
       "rating": "Lean D (Cook) / Likely D (Sabato 7/30↑)",
-      "latest_poll": "Ossoff 52–43 (AARP D+9) — 이번 주 신규 조사 없음",
-      "poll_source": "AARP 7/13–16 · Fox 6/23–27 D+13; 예측시장 오소프 재선 91¢(Kalshi 8/6)",
-      "cash_on_hand": "Ossoff 현금 $42M+ (Q2 $20M) vs Collins ~$2M — 양당 상원 후보 최대",
+      "latest_poll": "Ossoff +9~13 (AARP D+9 · Fox D+13) — 이번 주 신규 조사 없음",
+      "poll_source": "AARP 7/13–16 · Fox 6/23–27; 공화 인사 3명(플레이크 전 상원의원·밸도스타/티프턴 시장) 교차 지지·콜린스 백인우월주의 연계 의혹(Axios 8/4); 예측시장 오소프 92¢(Kalshi 8/9)",
+      "cash_on_hand": "Ossoff 사이클 누적 ~$81M·현금 $42M+ (Q2 $20M) vs Collins 분기 $2.1M — 양당 상원 후보 최대",
       "kr_relevance": "통상·반도체"
     },
     {
       "state": "MI",
       "defense": "D",
-      "incumbent": "공개석 (Peters 은퇴) — El-Sayed (D, 8/4 예비 승 48.5–47.5) vs Rogers (R)",
+      "incumbent": "공개석 (Peters 은퇴) — El-Sayed (D, 8/4 예비 승 약 1%p) vs Rogers (R)",
       "rating": "Toss Up",
-      "latest_poll": "본선 가상 Rogers 49.0–El-Sayed 38.7 (R+10.3) / Stevens 45.5–Rogers 44.7 (동률)",
-      "poll_source": "Glengariff 7/22–24 (예비 전 본선 가상); 예비 결과 El-Sayed 48.5–Stevens 47.5 (8/4, 개표 99%)",
+      "latest_poll": "Rogers 44.3–El-Sayed 44.0 (R+0.3) — 경선 후 RCP 첫 본선 평균, 순수 토스업",
+      "poll_source": "RCP 경선 후 첫 평균(8/6~7) · 경선 전 가상 EPIC-MRA 로저스 46–엘사예드 43; 예비 결과 El-Sayed def. Stevens 약 1%p (AP 8/5 확정, 개표 99%); AIPAC 계열 외부지출 $60M+ 극복",
       "cash_on_hand": null,
       "kr_relevance": "자동차·관세"
     },
@@ -28,8 +28,8 @@
       "defense": "D",
       "incumbent": "공개석 (Shaheen 은퇴) — Pappas (D) vs Sununu (R)",
       "rating": "Lean D",
-      "latest_poll": "Pappas 47–44 Sununu (D+3, 4월 +7서 축소) — 이번 주 신규 조사 없음",
-      "poll_source": "UNH 7월 · Emerson 45–44 · NRSC 내부 D+1; Sununu 공화 예비 59–20 압도(9/8)",
+      "latest_poll": "Pappas 49–42 Sununu (UNH D+7) — 이번 주 신규 조사 없음",
+      "poll_source": "UNH(20주차 상원 주간 기재 최신치) · Emerson 45–44 · NRSC 내부 D+1; Sununu 공화 예비 56–19 압도(9/8); 공화 '워싱턴 인사이더' 프레이밍 광고 개시",
       "cash_on_hand": "Pappas $5.1M vs Sununu $3M",
       "kr_relevance": "민주 수성 필수 3석 중 하나"
     },
@@ -37,30 +37,30 @@
       "state": "ME",
       "defense": "R",
       "incumbent": "Jackson (D, 7/25 인준) vs Collins (R·6선)",
-      "rating": "Toss Up",
-      "latest_poll": "Jackson 49–46 Collins (D+3, 사퇴 후 첫 조사) — 이번 주 신규 조사 없음",
-      "poll_source": "UNH 7/15–20; 566–5 전당대회 인준·7/27 등재 마감 준수",
-      "cash_on_hand": "Collins Q2 $5.7M·현금 ~$11M vs Jackson 누적 $100만+ 돌파(7/29) — 약 $11M 열세",
+      "rating": "Toss Up (Cook·DDHQ)",
+      "latest_poll": "Jackson 49–45 Collins (하트리서치 D+4, SMP 당파 의뢰) · UNH 파인트리 D+3",
+      "poll_source": "SMP 의뢰 하트리서치(8/9 인용) · UNH 파인트리(8/6 보도, 필드 기간 미공표·잠정) — 잭슨 후보 확정 이후 첫 공개 조사들",
+      "cash_on_hand": "Collins 현금 ~$11M vs Jackson — 약 $11M 열세. 잭슨 첫 7자리 수 TV 광고 개시(주 전역)",
       "kr_relevance": "민주 최우선 탈환 표적"
     },
     {
       "state": "NC",
       "defense": "R",
       "incumbent": "공석 — Cooper (D) vs Whatley (R)",
-      "rating": "Lean D (UVA) / 일부 Lean R",
-      "latest_poll": "Cooper 53–44 Whatley (Fox D+9, 공개 조사 최대 격차)",
-      "poll_source": "Fox News 7/23–27 (RV 1,005명, ±3) · PPP 7/13 D+4 · NYT/Siena D+7",
-      "cash_on_hand": "Cooper $14.8M vs Whatley $5M (현금 $20.7M vs $3.4M); SMP +$11M(총 ~$42M) vs SLF NC 공약 $71M",
+      "rating": "Lean D (Cook·Sabato)",
+      "latest_poll": "Cooper +14 (커토바칼리지/YouGov — 사이클 최대 격차) · Fox 53–44 (D+9)",
+      "poll_source": "커토바칼리지/YouGov 8/6 보도 · Fox News 7/23–27 (RV 1,005명, ±3) · NYT/Siena D+7",
+      "cash_on_hand": "Cooper 현금 $14M+ vs Whatley ~$2.5M; SLF NC 공약 $71M(반쿠퍼 광고 $17M 집행) vs SMP ~$42M — 총 지출 $6.5억~8억 전망(사이클 최고)",
       "kr_relevance": "—"
     },
     {
       "state": "TX",
       "defense": "R",
       "incumbent": "Talarico (D) vs Paxton (R)",
-      "rating": "Lean R",
-      "latest_poll": "Talarico 45–40 Paxton (TPOR D+5 — 민주 성향·표본 D+11, 과독 금물)",
-      "poll_source": "TPOR 7/15–17 (LV 1,048명, ±3.4); RCP 평균은 Paxton +0.6",
-      "cash_on_hand": "Talarico Q2 $30M (팩스턴 3배, 가용현금 $21.5M vs $7.5M)",
+      "rating": "Lean R (토스업 경계)",
+      "latest_poll": "Talarico 47–43 Paxton (부시스쿨/Recon MR D+4, 트래커 최대) — 공개 조사 4연속 D 우위",
+      "poll_source": "부시스쿨/Recon MR 7/27–30 (LV 619명, ±4.7) · Fox News 7/23–27 51–48 (RV 1,006명, ±3) · TSU/YouGov 47–45 · 웨지우드 48–46 (LV 800명); 6월 중순 이후 팩스턴 우위 공개 조사 전무. 순호감도 탈라리코 +12(주 최고)·팩스턴 −13(주 최저). 전부 7월 말 필드 — 8/7 고용 쇼크 미반영",
+      "cash_on_hand": "Talarico 지난 분기 $30M vs Paxton $9M — 약 3배",
       "kr_relevance": "블루웨이브 시 도전"
     },
     {
@@ -68,9 +68,9 @@
       "defense": "R",
       "incumbent": "Brown (D) vs Husted (R·임명직)",
       "rating": "Toss Up",
-      "latest_poll": "진성 토스업 (Fox D+8 vs Emerson R+6) — 이번 주 신규 조사 없음",
-      "poll_source": "Fox 5/28–6/1 · Emerson · AARP; Kalshi 브라운 53¢(8/6)",
-      "cash_on_hand": "Brown Q2 $17.1M(직접 $14.1M+PAC $3M)·현금 $16.2M vs Husted $7.7M(직접 $3.4M+PAC $4.3M); SMP +$24M → 총 ~$64M(사이클 최고)",
+      "latest_poll": "Husted 50–47 Brown (NYT/Siena R+3, 기준선) · Fox 5/28–6/1 Brown 53–45 (D+8) — 이번 주 신규 조사 없음",
+      "poll_source": "NYT/Siena(기준선) · Fox 5/28–6/1. 집계 사이트에 도는 에머슨 '허스티드 50–44'는 2025년 8월 자료로 취급 금지(20주차 상원 주간 경고). Kalshi 브라운 49¢(8/9)",
+      "cash_on_hand": "Brown Q2 $17.1M(직접 $14.1M+PAC $3M)·현금 $16.2M vs Husted $7.7M(직접 $3.4M+PAC $4.3M); SMP 오하이오 TV 예약 $40M — 단일 주 최대",
       "kr_relevance": "철강·제조업"
     },
     {
@@ -78,9 +78,9 @@
       "defense": "R",
       "incumbent": "Peltola (D) vs Sullivan (R·현직)",
       "rating": "Toss Up (Cook 7/1 이동)",
-      "latest_poll": "Sullivan 47–45 Peltola (R−2); ASR 펠톨라 +5~6 — 이번 주 신규 조사 없음",
-      "poll_source": "NYT/Siena · ASR 트래킹; 동명이인 FBI·연방검찰 수사 심화(7/28)·8/18 top-4 예비 16명",
-      "cash_on_hand": "Peltola Q2 $6.9M vs Sullivan $2M (현금 Sullivan $8.3M > Peltola $6.1M)",
+      "latest_poll": "Sullivan 47–45 Peltola (NYT/Siena R+2; 무당파는 펠톨라 +14) — 이번 주 신규 조사 없음",
+      "poll_source": "NYT/Siena(CNN 8/3 분석이 기준선으로 재부각) · ASR 트래킹 펠톨라 +5~6; 동명이인 '댄 J. 설리번' FBI·주 법무장관·연방검찰 수사 지속(주 대법원은 투표용지 잔류 확정)·8/18 top-4 예비 16명",
+      "cash_on_hand": "Peltola Q2 $6.9M vs Sullivan $2M (현금은 Sullivan $8.3M > Peltola $6.1M); 머카우스키 설리번 지지",
       "kr_relevance": "—"
     }
   ]

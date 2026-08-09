@@ -113,7 +113,7 @@
   {
    "key": "inside-elections-governor-2026",
    "label": "Inside Elections",
-   "as_of": "2026-06-30",
+   "as_of": "2026-08-06",
    "ratings": {
     "AK": "Likely R",
     "AL": "Solid R",
@@ -125,10 +125,10 @@
     "FL": "Solid R",
     "GA": "Toss-up",
     "HI": "Solid D",
-    "IA": "Toss-up",
+    "IA": "Tilt D",
     "ID": "Solid R",
     "IL": "Solid D",
-    "KS": "Toss-up",
+    "KS": "Tilt R",
     "MA": "Solid D",
     "MD": "Solid D",
     "ME": "Likely D",
@@ -147,7 +147,7 @@
     "SC": "Solid R",
     "SD": "Solid R",
     "TN": "Solid R",
-    "TX": "Solid R",
+    "TX": "Likely R",
     "VT": "Solid R",
     "WI": "Toss-up",
     "WY": "Solid R"
@@ -156,8 +156,8 @@
    "competitive": {
     "AZ": "Toss-up",
     "GA": "Toss-up",
-    "IA": "Toss-up",
-    "KS": "Toss-up",
+    "IA": "Tilt D",
+    "KS": "Tilt R",
     "MI": "Tilt D",
     "NV": "Tilt R",
     "OH": "Lean R",
@@ -336,7 +336,7 @@
   {
    "key": "kalshi-2026-governor-prediction-market-prices",
    "label": "Kalshi (예측시장 가격)",
-   "as_of": "2026-08-06",
+   "as_of": "2026-08-09",
    "ratings": {
     "AK": "Toss-up",
     "AL": "Solid R",
@@ -359,19 +359,19 @@
     "MN": "Solid D",
     "NE": "Likely R",
     "NH": "Likely R",
-    "NM": "Likely D",
+    "NM": "Solid D",
     "NV": "Tilt D",
     "NY": "Solid D",
     "OH": "Toss-up",
     "OK": "Solid R",
-    "OR": "Solid D",
+    "OR": "Likely D",
     "PA": "Solid D",
     "RI": "Solid D",
     "SC": "Likely R",
     "SD": "Solid R",
     "TN": "Solid R",
     "TX": "Likely R",
-    "VT": "Likely R",
+    "VT": "Solid R",
     "WI": "Tilt R",
     "WY": "Solid R"
    },
@@ -388,7 +388,7 @@
   {
    "key": "consensus-2026-governor-forecast",
    "label": "270toWin Consensus",
-   "as_of": "2026-07-23",
+   "as_of": "2026-08-06",
    "ratings": {
     "AK": "Likely R",
     "AL": "Solid R",
@@ -422,7 +422,7 @@
     "SC": "Solid R",
     "SD": "Solid R",
     "TN": "Solid R",
-    "TX": "Solid R",
+    "TX": "Likely R",
     "VT": "Solid R",
     "WI": "Toss-up",
     "WY": "Solid R"

@@ -1,7 +1,7 @@
 {
-  "as_of": "2026-08-02",
+  "as_of": "2026-08-09",
   "rows": [
-    {"source": "Silver Bulletin", "approve": 38.2, "disapprove": 58.8, "net": -20.6, "row_as_of": "2026-07-30", "note": "2기 최저 경신 — 5월 저점 -20.2 하향 돌파, 바이든 동기(-19.2) 첫 하회. 주 전반 -17.4 횡보 → 금 7/31 3.2p 급락. SB는 하락 요인으로 휘발유값·이란 전쟁 지목"},
+    {"source": "Silver Bulletin", "approve": 38.2, "disapprove": 58.8, "net": -20.6, "row_as_of": "2026-08-07", "note": "2기 최저치에서 완전 횡보 — 지난주 후반 급락(-17.4→-20.6) 이후 새 하방 이동 없이 저점 고착. 동기 트럼프 1기(-11.3)·바이든 동기(-19.2)·1기 최저(약 -19) 모두 하회. 반대 60% 육박·강한 지지 21%. 8/7 고용 쇼크(-2.3만)는 아직 미반영 — 주말~주초 조사가 판정"},
     {"source": "FiftyPlusOne", "approve": 36.8, "disapprove": 59.8, "net": -23.0, "row_as_of": "2026-07-29", "note": "병행 집계(7/29 일일 브리핑 기재) — SB 평균보다 낮게 산출"},
     {"source": "USPollingData", "approve": 38.6, "disapprove": 58.0, "net": -19.4, "row_as_of": "2026-06-12", "note": "Gallup·Ipsos·YouGov·Quinnipiac·MC 종합 (이후 신규 반영 대기)"}
   ]

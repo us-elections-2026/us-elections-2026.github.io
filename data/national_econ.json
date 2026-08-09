@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-08-03",
+  "as_of": "2026-08-10",
   "series_start": "2026-01",
   "source_label": "FRED (St. Louis Fed) — BLS·미시간대 원자료",
   "provenance_note": "빌드 시점 스냅샷. null은 수집 실패 — 추정으로 채우지 않음.",
@@ -19,9 +19,9 @@
       "series_id": "UNRATE",
       "key": "unrate",
       "unit": "%",
-      "value": 4.2,
-      "prev": 4.3,
-      "period": "2026-06",
+      "value": 4.1,
+      "prev": 4.2,
+      "period": "2026-07",
       "election_note": "고용 악화 시 현직당 부담 가중"
     },
     {
@@ -86,6 +86,10 @@
       [
         "2026-06",
         4.2
+      ],
+      [
+        "2026-07",
+        4.1
       ]
     ],
     "umcsent": [
