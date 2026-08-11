@@ -20,7 +20,7 @@ gt_state_detail("TX")
 
 ::: {.summary}
 - **구도**: 공화 방어 — Paxton(AG, 현역 Cornyn 격파) vs Talarico(D). Cook **Leans R**.
-- **변화**: Cornyn 경선 패배(5/26, 1970년 이후 첫 현역 탈락), Talarico 역대급 모금($19.6M).
+- **변화**: Cornyn 경선 패배(5/26, 1970년 이후 첫 현역 탈락), Talarico 역대급 모금(Q1 $19.6M).
 - **한국 함의**: 삼성 Taylor $44B 팹이 구조적 후크이나, 후보 직접 발언은 미확인.
 :::
 
@@ -63,14 +63,11 @@ gt_state_polls("TX")
 cat(state_money_html("TX"))
 ```
 
-**직전 분기(2026 Q1 · 3/31 마감) 상세** — 아래 표는 Q1 시점 기록이며, 최신 수치는 위 상자를 보세요.
+```{r}
+gt_state_fec("TX")
+```
 
-| 후보 | 정당 | Q1 모금 | 보유현금 |
-|---|---|---:|---:|
-| James Talarico | D | **$19.6M** (수입) | **$9.9M** |
-| Ken Paxton | R | 약 $2.2M | 약 $2.6M |
-
-: {.striped}
+> **아래는 Q1(3/31 마감) 시점의 해설**입니다 — 위 표는 FEC 원장에서 자동 렌더되는 사이클 누적치라 기준이 다릅니다.
 
 Talarico는 분기 역대급 모금에 더해 **결선 다음날 24시간 만에 $3M+**를 모았습니다(5/28 기준). Paxton은 같은 분기 Cornyn($9M)에 모금에서 밀렸으나 결선에서 승리했습니다 — **돈이 아니라 트럼프 지지가 결정 변수**였던 경선입니다. 2분기(4–6월) FEC 보고는 마감 전이라 결선 후 Talarico 누계 현금은 미확정. ([Texas Tribune](https://www.texastribune.org/2026/04/15/john-cornyn-ken-paxton-runoff-first-quarter-fundraising/) · [CNN](https://www.cnn.com/2026/05/28/politics/james-talarico-texas-senate-fundraising))
 

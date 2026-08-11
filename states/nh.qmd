@@ -77,15 +77,11 @@ gt_state_polls("NH")
 cat(state_money_html("NH"))
 ```
 
-**직전 분기(2026 Q1 · 3/31 마감) 상세** — 아래 표는 Q1 시점 기록이며, 최신 수치는 위 상자를 보세요.
+```{r}
+gt_state_fec("NH")
+```
 
-| 후보 | 정당 | Q1 모금 | 보유현금 |
-|---|---|---:|---:|
-| Chris Pappas | D | **$3.3M** | **$4.2M+** |
-| John E. Sununu | R | $1.5M+ | 약 $1.9M (5월 진입) |
-| Scott Brown | R | 약 $298K | 약 $780K |
-
-: {.striped}
+> **아래는 Q1(3/31 마감) 시점의 해설**입니다 — 위 표는 FEC 원장에서 자동 렌더되는 사이클 누적치라 기준이 다릅니다.
 
 Pappas는 기부의 97%가 $100 이하(평균 온라인 $29.56, 기업 PAC $0)이며 양 공화 후보 합산보다 많은 보유현금으로, 9/8부터 본선 TV 광고 약 $9M을 예약했습니다. 공화 경선은 **Sununu가 모금·현금 모두 Brown을 크게 앞서** 사실상 선두입니다. (Sununu·Brown 보유현금의 정확 FEC 기준일은 원본 대조 권장.) ([Pappas 캠프](https://chrispappas.org/2026/04/chris-pappas-for-senate-announces-q1-fundraising-haul-of-3-3-million-general-election-tv-ad-reservations/) · [NH Journal](https://nhjournal.com/sununus-cash-edge-grows-while-brown-falls-behind-in-q1-fundraising/))
 

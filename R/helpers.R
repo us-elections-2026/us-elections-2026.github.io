@@ -238,6 +238,67 @@ state_money_html <- function(code) {
   paste0('<div class="lookfor"><p><b>최신 자금 상황</b> (기준 ', d$as_of, ') — ', body, '</p></div>')
 }
 
+# 1.4c-3 FEC 분기 신고 표 (State Focus용) -------------------------------------
+# data/fec_fundraising.json(주간 자동 취득)에서 렌더한다. 종전에는 각 주 페이지에
+# Q1 표를 손으로 박아 둬서 분기가 지나도 갱신되지 않았다(GA 표엔 6/16 결선에서 진
+# 후보가 남아 있었다). 이제 후보 명단은 candidates.json, 수치는 FEC 원장을 따른다.
+#   - 매칭: 사이트 후보의 성(姓)이 FEC 신고명에 들어가는 기록. FEC는 법적 이름을
+#     쓰므로 표기가 다르다(예: 힌슨의 신고명은 ARENHOLZ, ASHLEY HINSON).
+#   - 같은 성이 여럿이면 모금액이 큰 쪽(동명이인 스포일러 후보를 걸러낸다).
+#   - FEC 신고가 없으면 【수집】 — 추정으로 채우지 않는다(예: 7/25 지명된 잭슨).
+gt_state_fec <- function(code) {
+  path <- file.path("data", "fec_fundraising.json")
+  if (!file.exists(path)) {
+    return(gt(tibble(안내 = "data/fec_fundraising.json 미생성 — scripts/fetch_fec_fundraising.py 실행 후 채워집니다.")) |>
+             tab_header(title = "FEC 분기 신고") |> .tbl_opts())
+  }
+  fec <- jsonlite::read_json(path, simplifyVector = FALSE)
+  recs <- fec$states[[code]]
+  cc <- .load_json("candidates")$candidates
+  cc <- cc[cc$state == code, ]
+  if (is.null(recs) || nrow(cc) == 0) return(invisible(NULL))
+
+  pick <- function(full_name) {
+    sur <- toupper(tail(strsplit(trimws(full_name), "\\s+")[[1]], 1))
+    hit <- Filter(function(r) grepl(sur, toupper(r$name), fixed = TRUE), recs)
+    if (!length(hit)) return(NULL)
+    # 후보별 최신 보고 → 그중 모금액 최대(동명이인 방지)
+    hit <- hit[order(vapply(hit, function(r) r$receipts, numeric(1)), decreasing = TRUE)]
+    hit[[1]]
+  }
+  st <- .c_status(cc)
+  keep <- is.na(st) | st != "primary"          # 확정 후보만 — 경선 탈락자는 싣지 않는다
+  # 단 아직 경선 전이라 확정 후보가 없는 주(9/8 예비의 뉴햄프셔)는 경선 후보를 싣는다.
+  if (!any(keep)) keep <- rep(TRUE, nrow(cc))
+  cc <- cc[keep, ]
+  if (nrow(cc) == 0) return(invisible(NULL))
+
+  rows <- lapply(seq_len(nrow(cc)), function(i) {
+    r <- pick(cc$name[i]); p <- cc$party[i]
+    if (is.null(r)) list(nm = cc$name_kr[i], en = cc$name[i], pty = .party_kr[[p]],
+                         rc = NA_real_, ch = NA_real_, ce = NA_character_)
+    else list(nm = cc$name_kr[i], en = cc$name[i], pty = .party_kr[[p]],
+              rc = r$receipts, ch = r$cash_on_hand, ce = r$coverage_end)
+  })
+  m <- function(x) ifelse(is.na(x), "【수집】", paste0("$", formatC(x, format = "f", digits = 2), "M"))
+  tibble(
+    후보 = vapply(rows, function(r) paste0(r$nm, " (", r$en, ")"), character(1)),
+    정당 = vapply(rows, function(r) r$pty, character(1)),
+    `사이클 누적 모금` = m(vapply(rows, function(r) r$rc, numeric(1))),
+    `보유 현금` = m(vapply(rows, function(r) r$ch, numeric(1))),
+    `보고 마감` = vapply(rows, function(r) if (is.na(r$ce)) "—" else r$ce, character(1))
+  ) |>
+    gt() |>
+    tab_header(title = "FEC 분기 신고 — 사이클 누적",
+               subtitle = paste0("취득 ", fec$as_of, " · 단위 $M · 후보 본인 위원회 기준")) |>
+    tab_source_note(paste0(
+      "`scripts/fetch_fec_fundraising.py`가 FEC API에서 주간 취득한 원장입니다(자동). ",
+      "**슈퍼팩 외부지출은 포함되지 않습니다** — 이 사이클에서는 외부지출이 후보 자금보다 큰 주가 여럿이라, ",
+      "위 상자의 외부지출 메모와 함께 보세요. 【수집】은 해당 후보의 FEC 신고가 아직 없다는 뜻입니다(추정으로 채우지 않음). ",
+      "FEC는 법적 이름으로 신고되므로 표기가 이 사이트와 다를 수 있습니다.")) |>
+    .tbl_opts()
+}
+
 # 1.4d 후보자 프로필 카드 (HTML) --------------------------------------------
 # data/candidates.json 을 읽어 HTML 카드 문자열을 반환. qmd 청크에서
 # `#| output: asis` 와 함께 cat() 으로 출력한다. status="primary"는 경선 후보(하단 가로),
@@ -445,8 +506,9 @@ rating_matrix_html <- function() {
       paste0('<div class="rmx-state" title="', rows$name[ri], '">', rows$state[ri], '</div>',
              paste(tds, collapse = ""))
     }, character(1))
-    sprintf('<div class="rmx-panel"><div class="rmx-title">%s</div><div class="rmx-grid">%s%s</div></div>',
-            ag$name, head, paste(body, collapse = ""))
+    # 열 수를 CSS 변수로 주입 — 월 칸이 늘면 격자도 함께 늘어난다(고정 5열이던 시절 8월 칸 추가로 격자가 밀렸다).
+    sprintf('<div class="rmx-panel"><div class="rmx-title">%s</div><div class="rmx-grid" style="--rmx-cols:%d">%s%s</div></div>',
+            ag$name, length(months), head, paste(body, collapse = ""))
   }, character(1))
 
   legend <- paste0(

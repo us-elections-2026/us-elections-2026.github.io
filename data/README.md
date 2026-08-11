@@ -114,10 +114,14 @@
 - `photo`가 `null`이면 `_placeholder.svg`로 렌더된다(`.c_photo()`) — 저작권 미확인 캠페인 사진은 쓰지 않는다.
 - 소비: `governor_cards_html()` → `governors.qmd#candidates`. **수동 갱신**(경선 확정·자금 신고 시).
 
-### `fec_fundraising.json` — FEC 모금 스테이징 (직접 렌더 안 함)
-- `scripts/fetch_fec_fundraising.py`가 생성(단위 $M). 최상위: `as_of`, `source_label`, `provenance_note`, `states`(`{ST: [후보…]}`).
-- `senate_races.json`의 `cash_on_hand` 반영은 **수동 병합**(편집 통제). 슈퍼팩 외부지출 미포함.
-- 현재 어떤 헬퍼도 직접 로드하지 않음 → `validate_data.R` 검증 대상 아님(파싱만 필요 시 수동).
+### `fec_fundraising.json` — FEC 분기 신고 (자동 취득)
+- `scripts/fetch_fec_fundraising.py`가 생성(단위 $M, 감시 9주). 최상위: `as_of`, `source_label`, `provenance_note`, `states`(`{ST: [후보…]}`).
+- `states[ST][]`: `name`(FEC 법적 표기), `party`, `candidate_id`, `receipts`, `disbursements`, `cash_on_hand`, `coverage_end`(분기 마감).
+- 소비: **`gt_state_fec()` → `states/*.qmd` 5~6절**. 후보 명단은 `candidates.json`, 수치는 이 파일을 따르며,
+  성(姓)이 FEC 신고명에 포함되는 기록을 매칭한다(FEC는 법적 이름 — 예: 힌슨 = `ARENHOLZ, ASHLEY HINSON`).
+  같은 성이 여럿이면 모금액이 큰 쪽을 쓴다(AK의 동명이인 스포일러 후보 배제). 신고가 없으면 【수집】.
+- `senate_races.json`의 `cash_on_hand`(요약 상자) 반영은 여전히 **수동 병합**(편집 통제).
+- **슈퍼팩 외부지출은 미포함** — 이 사이클에는 외부지출이 후보 자금을 넘는 주가 여럿이라 표만 보면 판세를 오독한다.
 
 ---
 

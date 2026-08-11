@@ -63,12 +63,9 @@ gt_state_polls("ME")
 cat(state_money_html("ME"))
 ```
 
-| 후보 | 정당 | 비고 | 보유현금 |
-|---|---|---|---:|
-| Troy Jackson | D | 7/25 인준(신규 후보) | 【수집】(Q3부터) |
-| Susan Collins | R | 무경쟁, Q2 $5.7M 모금 | **$11M** (7월) |
-
-: {.striped}
+```{r}
+gt_state_fec("ME")
+```
 
 **후보 교체로 민주 측 본선 모금은 사실상 초기화**됐습니다. 사퇴한 Platner가 사이클 $16.3M(8.8만 소액 기부자)를 모았으나 7/10 사퇴로 승계되지 않고, 잭슨은 7/25 인준 직후라 자체 모금 실적이 Q3부터 집계됩니다. 반면 무경쟁의 Collins는 Q2 $5.7M 모금·보유 약 $11M로 현금 우위를 유지하며, SLF 등 외부 자금이 이 격차를 메우는 구도입니다. ([WRAL/캠페인 파이낸스 트래커](https://www.washingtonexaminer.com/news/campaigns/congressional/4650740/senate-campaign-cash-tracker/))
 

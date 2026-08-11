@@ -60,14 +60,11 @@ gt_state_polls("NC")
 cat(state_money_html("NC"))
 ```
 
-**직전 분기(2026 Q1 · 3/31 마감) 상세** — 아래 표는 Q1 시점 기록이며, 최신 수치는 위 상자를 보세요.
+```{r}
+gt_state_fec("NC")
+```
 
-| 후보 | 정당 | Q1 모금 | 보유현금 |
-|---|---|---:|---:|
-| Roy Cooper | D | **$13.8M** | **$18.5M** |
-| Michael Whatley | R | $5.0M | $2.5M+ |
-
-: {.striped}
+> **아래는 Q1(3/31 마감) 시점의 해설**입니다 — 위 표는 FEC 원장에서 자동 렌더되는 사이클 누적치라 기준이 다릅니다.
 
 Cooper 모금의 **95% 이상이 $100 이하 소액**으로, 보유현금에서 Whatley의 **7배 이상** 우위입니다(입후보 후 누적 $36M+ vs 약 $16M). 다만 공화 슈퍼팩 SLF의 $71M 외부지출이 이 현금 격차를 상쇄하는 구조입니다. (FEC 원본 대조 권장.) ([Carolina Journal](https://www.carolinajournal.com/cooper-outraises-whatley-in-q1-13-8m-to-5m/) · [AOL](https://www.aol.com/articles/election-2026-cooper-cash-advantage-221900221.html))
 

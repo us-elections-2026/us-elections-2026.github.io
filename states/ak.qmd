@@ -60,14 +60,11 @@ gt_state_polls("AK")
 cat(state_money_html("AK"))
 ```
 
-**직전 분기(2026 Q1 · 3/31 마감) 상세** — 아래 표는 Q1 시점 기록이며, 최신 수치는 위 상자를 보세요.
+```{r}
+gt_state_fec("AK")
+```
 
-| 후보 | 정당 | Q1 모금 | 보유현금 |
-|---|---|---:|---:|
-| Mary Peltola | D | **$8.7M** | $5.7M |
-| Dan S. Sullivan | R | $1.7M | **$7.1M** |
-
-: {.striped}
+> **아래는 Q1(3/31 마감) 시점의 해설**입니다 — 위 표는 FEC 원장에서 자동 렌더되는 사이클 누적치라 기준이 다릅니다.
 
 **Peltola가 신규 모금에서 약 5대 1로 Sullivan을 압도**(알래스카 상원 사상 분기 최대)했으나, **보유현금은 현역 Sullivan이 우위**($7.1M vs $5.7M)입니다 — 누적 적립 효과. 출처별 수치 편차가 있어(ADN vs 캠프 발표) FEC 원본 대조를 권합니다. ([ADN](https://www.adn.com/politics/2026/04/16/peltola-posts-massive-campaign-fundraising-but-republicans-maintain-cash-advantage-in-alaska-congressional-races/))
 

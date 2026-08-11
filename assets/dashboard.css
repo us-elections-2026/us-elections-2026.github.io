@@ -77,7 +77,8 @@
 /* 등급 변동 매트릭스 (기관 × 주 × 월) */
 .rmx-wrap { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; margin: .6rem 0 .4rem; }
 .rmx-title { font-size: .9rem; font-weight: 700; margin-bottom: 6px; }
-.rmx-grid { display: grid; grid-template-columns: 42px repeat(5, 1fr); gap: 3px; }
+/* 열 수는 rating_matrix_html()이 --rmx-cols 로 주입한다 — 월 칸이 늘어도 격자가 밀리지 않게. */
+.rmx-grid { display: grid; grid-template-columns: 42px repeat(var(--rmx-cols, 5), 1fr); gap: 3px; }
 .rmx-mon { font-size: .7rem; color: #6b7280; text-align: center; padding-bottom: 2px; }
 .rmx-state { font-size: .74rem; font-weight: 700; color: #374151; display: flex; align-items: center; }
 .rmx-cell { position: relative; font-size: .69rem; text-align: center; padding: 9px 2px; border-radius: 3px;

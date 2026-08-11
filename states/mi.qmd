@@ -77,16 +77,11 @@ gt_state_polls("MI")
 cat(state_money_html("MI"))
 ```
 
-**직전 분기(2026 Q1 · 3/31 마감) 상세** — 아래 표는 Q1 시점 기록이며, 최신 수치는 위 상자를 보세요.
+```{r}
+gt_state_fec("MI")
+```
 
-| 후보 | 정당 | Q1 모금 | 보유현금 |
-|---|---|---:|---:|
-| Mallory McMorrow | D | $2.96M | **$3.69M** |
-| Haley Stevens | D | 약 $2.0M | $3.3M |
-| Abdul El-Sayed | D | $2.27M | $2.52M |
-| Mike Rogers | R | — | **$4.2M** |
-
-: {.striped}
+> **아래는 Q1(3/31 마감) 시점의 해설**입니다 — 위 표는 FEC 원장에서 자동 렌더되는 사이클 누적치라 기준이 다릅니다.
 
 **McMorrow가 Q1 모금 1위**(캠프 누적 $8.6M), **Rogers가 보유현금 1위**입니다. Stevens는 모금의 약 84%를 소진해 burn rate가 가장 높습니다. Rogers는 외부지출(outside spending) 약 $45M 확보가 보도됐으나, 이는 후보 캠프 직접 모금과 구분되는 외부 PAC 지출입니다(FEC 1차 확인 권장). ([Michigan Advance](https://michiganadvance.com/2026/04/28/michigan-u-s-senate-primary-tightens-as-mcmorrow-el-sayed-outpace-stevens-in-q1-fundraising/) · [Detroit News](https://www.detroitnews.com/story/news/politics/2026/04/15/mallory-mcmorrow-fundraising-lead-michigan-u-s-senate-race-mike-rogers-cash-stevens-el-sayed/89630523007/))
 

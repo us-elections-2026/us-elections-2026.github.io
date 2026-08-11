@@ -16,11 +16,11 @@ cat(candidate_cards_html("GA"))
 gt_state_detail("GA")
 ```
 
-민주당의 **최우선 방어석**. Ossoff는 2021년 결선에서 1.2%p 차로 당선된 취약 의석입니다. 공화당은 **6/16 결선에서 Mike Collins가 Derek Dooley를 55.5% 대 44.5%로 꺾고 본선에 진출**했습니다 — 본선은 이제 **Ossoff(D) vs Collins(R)** 양자 구도로 확정. 무경선 현역 Ossoff는 보유 현금 $31M으로 광고전을 선점한 반면 공화당은 결선까지 자원을 소모했고, 2024년 트럼프가 GA를 다시 가져간 만큼 기초 지형은 민주당에 불리 — 이제 트럼프계 Collins로의 공화당 통합 속도가 1차 변수입니다.
+민주당의 **최우선 방어석**. Ossoff는 2021년 결선에서 1.2%p 차로 당선된 취약 의석입니다. 공화당은 **6/16 결선에서 Mike Collins가 Derek Dooley를 55.5% 대 44.5%로 꺾고 본선에 진출**했습니다 — 본선은 이제 **Ossoff(D) vs Collins(R)** 양자 구도로 확정. 무경선 현역 Ossoff는 압도적 보유 현금(아래 표)으로 광고전을 선점한 반면 공화당은 결선까지 자원을 소모했고, 2024년 트럼프가 GA를 다시 가져간 만큼 기초 지형은 민주당에 불리 — 이제 트럼프계 Collins로의 공화당 통합 속도가 1차 변수입니다.
 
 ::: {.summary}
 - **구도**: 민주 최우선 방어석 — 현역 Ossoff(D) vs Collins(R) 양자 확정(공화 결선 6/16 종료, Collins 55.5%).
-- **변화**: 현역이 무경선·자금 압도($31M, 소액 99%)로 선점, 공화는 결선까지 자원 소모 후 통합 국면.
+- **변화**: 현역이 무경선·자금 압도($42M+, 소액 99%)로 선점, 공화는 결선까지 자원 소모 후 통합 국면.
 - **한국 함의**: 8개 경합주 중 **한국 직접 관여가 가장 풍부**(Partner with Korea Act·DMZ·현대차 단속 대응).
 :::
 
@@ -68,15 +68,11 @@ gt_state_polls("GA")
 cat(state_money_html("GA"))
 ```
 
-**직전 분기(2026 Q1 · 3/31 마감) 상세** — 아래 표는 Q1 시점 기록이며, 최신 수치는 위 상자를 보세요.
+```{r}
+gt_state_fec("GA")
+```
 
-| 후보 | 정당 | Q1 모금 | 보유현금 |
-|---|---|---:|---:|
-| Jon Ossoff | D (현역) | **$14M+** | **$31M** |
-| Derek Dooley | R | $660K | $2.2M |
-| Mike Collins | R | 약 $1.0M | $2.1M |
-
-: {.striped}
+> **아래는 Q1(3/31 마감) 시점의 해설**입니다 — 위 표는 FEC 원장에서 자동 렌더되는 사이클 누적치라 기준이 다릅니다.
 
 Ossoff의 Q1 기여는 **99% 이상이 $200 미만 소액**(40.8만 건 이상, 평균 $38)으로, 대액 기부 의존도가 높은 공화 후보들과 대조됩니다. 무경선 현역이 결선을 치르는 공화 후보들보다 **약 15배 많은 보유현금**으로 광고전을 선점한 구도. ([AJC](https://www.ajc.com/politics/2026/04/jon-ossoff-posts-record-14m-haul-in-high-stakes-georgia-senate-race/) · [OpenSecrets](https://www.opensecrets.org/news/2026/04/small-donors-vs-big-checks-fundraising-divide-shapes-georgia-senate-race/))
 
