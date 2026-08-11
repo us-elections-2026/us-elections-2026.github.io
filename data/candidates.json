@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-08-06",
+  "as_of": "2026-08-08",
   "note": "후보 프로필. 출처가 분명한 사실만 수록. null=공개 출처 미확인. 사진은 공개도메인(공식 상·하원 초상) 또는 CC 라이선스만 사용하며 photo_credit에 출처·라이선스 표기.",
   "candidates": [
     {
@@ -375,12 +375,12 @@
       "name": "Troy Jackson",
       "name_kr": "트로이 잭슨",
       "incumbent": false,
-      "photo": null,
-      "photo_credit": null,
+      "photo": "assets/candidates/me_jackson.jpg",
+      "photo_credit": "ArenLeBrun · CC0 (Wikimedia Commons: Troy_Jackson_in_the_Senate_Chamber_(cropped).jpg)",
       "born": 1968,
       "occupation": "전 메인주 상원의장 · 벌목노동자",
-      "education": null,
-      "family": null,
+      "education": "메인대 포트켄트 캠퍼스 준학사(비즈니스, 2000) — 5대째 벌목공",
+      "family": "파트너 Lana, 장성한 아들 둘",
       "past_elections": [
         "2026 상원 민주 지명전당대회(7/25) 566–5 인준 — Platner 사퇴 후 교체후보 확정",
         "전 메인주 상원의장(Senate President)"
@@ -778,6 +778,89 @@
         "https://en.wikipedia.org/wiki/Dan_Sullivan_(U.S._senator)",
         "https://www.sullivan.senate.gov/newsroom/press-releases/president-trump-announces-joint-venture-on-alaska-lng-project-with-japan",
         "https://www.cnn.com/2026/06/07/politics/dan-sullivan-alaska-senate-ballot"
+      ],
+      "status": "nominee"
+    },
+    {
+      "state": "IA",
+      "party": "D",
+      "name": "Josh Turek",
+      "name_kr": "조시 튜렉",
+      "incumbent": false,
+      "photo": "assets/candidates/ia_turek.jpg",
+      "photo_credit": "Iowa General Assembly · Copyrighted free use (Wikimedia Commons: Joshua_Turek.jpg)",
+      "born": 1979,
+      "occupation": "아이오와 주하원의원(2023~) · 패럴림픽 휠체어농구 금메달리스트(2016 리우·2020 도쿄)",
+      "education": "사우스웨스트 미네소타주립대 역사학 학사(2002), DeVry대 MBA",
+      "family": "부인 Jarolin (스페인 리그 선수 시절 만남)",
+      "past_elections": [
+        "2022 주하원 6표차 승리(재검표)",
+        "2024 재선 52.5%",
+        "2026-06-02 상원 경선 62.7%로 Zach Wahls(주 상원의원) 격파 — 주무장관 공식 개표"
+      ],
+      "fundraising": "Q2 $2.81M — 첫 분기 추월 · 현금 $2.4M (FEC 보고 기반 보도)",
+      "strengths": [
+        "패럴림픽 영웅 서사 + 장애인 권리 상징성(전국 소액모금)",
+        "'prairie populist' 온건·서민 포지셔닝",
+        "트럼프 우위 경합구 승리 경험"
+      ],
+      "weaknesses": [
+        "주 전체 선거 미경험·인지도 열세",
+        "현금보유 힌슨 대비 약 1/3",
+        "아이오와 상원선거 민주 승리는 하킨 이후 부재"
+      ],
+      "policy": [
+        "장애인 권리·메디케이드 수호",
+        "공교육(바우처 반대)",
+        "공공보험 옵션",
+        "농민 수리할 권리"
+      ],
+      "kr_note": null,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Josh_Turek",
+        "https://iowacapitaldispatch.com/2026/06/02/rep-josh-turek-wins-u-s-senate-primary-race-against-sen-zach-wahls-ap-projects/"
+      ],
+      "status": "nominee"
+    },
+    {
+      "state": "IA",
+      "party": "R",
+      "name": "Ashley Hinson",
+      "name_kr": "애슐리 힌슨",
+      "incumbent": false,
+      "photo": "assets/candidates/ia_hinson.jpg",
+      "photo_credit": "Office of Congresswoman Ashley Hinson · Public domain (Wikimedia Commons: Congresswoman_Ashley_Hinson_Official_portrait.jpg)",
+      "born": 1983,
+      "occupation": "연방하원의원 IA-02(2021~) · 전 KCRG-TV 앵커·기자, 전 주하원의원",
+      "education": "서던캘리포니아대(USC) 방송저널리즘 학사",
+      "family": "남편 Matt(소기업 경영), 아들 둘",
+      "past_elections": [
+        "2020 하원 51.2%(민주 현직 격파)",
+        "2022 54.1% · 2024 57.1%",
+        "2026-06-02 상원 경선 74.2%(Jim Carlin 25.8%) — 48.4%p 차, 주무장관 공식 개표"
+      ],
+      "fundraising": "Q2 $2.06M · 현금 $6.7M — 사이클 누계 $10.3M (FEC 보고 기반 보도)",
+      "strengths": [
+        "트럼프 지지 확보 · 전국 공화 모금 네트워크",
+        "TV 앵커 출신 인지도·미디어 능력",
+        "하원 3선으로 검증된 조직"
+      ],
+      "weaknesses": [
+        "트럼프 밀착 — 여당 역풍에 정면 노출",
+        "관세·농업 경기 악화 방어 부담",
+        "오픈시트 첫 주 전체 선거"
+      ],
+      "policy": [
+        "감세·물가",
+        "국경",
+        "농업(바이오연료)",
+        "대중국 견제"
+      ],
+      "kr_note": "2025-04 <b>CSGK(Congressional Study Group on Korea) 대표단으로 방한</b>해 조태열 외교장관 면담 — 경합주 후보 중 유일하게 확인된 직접 접점. 다만 한국 관련 법안은 117~119대 발의·공동발의 1,014건 중 0건이고(미·한 동맹 결의안 H.Res.64 불참), 표결은 이산가족등록법·북한인권법 재승인 찬성 2건뿐(둘 다 초당적 압도 통과). Korea Caucus 임원 아님. 관세 국면에서 아이오와 소고기·옥수수·돈육의 대한국 수출이 실질 이해관계.",
+      "sources": [
+        "https://ballotpedia.org/Ashley_Hinson",
+        "https://www.nbcnews.com/politics/2026-election/iowa-senate-election-primary-winners-turek-hinson-rcna347468",
+        "https://keia.org/analysis/q2-2025-u-s-korea-trade-and-diplomacy-ledger/"
       ],
       "status": "nominee"
     }

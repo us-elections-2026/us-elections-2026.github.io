@@ -19,10 +19,16 @@
 
 ## 전국 환경
 
-### `forecast.json` — 예보 종합
-- 최상위: `as_of`, `next_update`, **`rows`**(배열).
+### `forecast.json` — 예보 종합 (**자동 생성 — 직접 편집하지 말 것**)
+- 최상위: `as_of`, `generated_by`, `provenance_note`, **`rows`**(배열).
 - `rows[]`: `source`, `type`, `house_dem`, `senate_dem`, `house_delta`, `senate_delta`, `note`.
-  - `house_dem`/`senate_dem`/`*_delta`는 nullable(【수집】 슬롯).
+  - `house_dem`/`senate_dem`/`*_delta`는 **0~1 분수**(`gt_forecast()`가 ×100해 렌더). nullable.
+- **생성**: `scripts/build_forecast.py`가 `kalshi_prices.json`(시장) · `ddhq_forecast.json` ·
+  `rtwh_forecast.json` · `model_v0.json`(모델)에서 조립. `publish_weekly.sh` 2.7단계에서 실행되며,
+  **모델 재실행(2.5) 뒤에 와야** 자체 모델 행이 최신값이 된다.
+- `*_delta`는 **직전 `forecast.json` 대비**로 계산되므로, 파일을 손으로 되돌리면 다음 delta가 틀어진다.
+- 빈 칸은 해당 원천이 그 원(院)을 예측하지 않는다는 뜻(RtWH·자체 모델은 상원 전용) — 추정으로 채우지 않는다.
+- 등급(Cook·Sabato)은 확률이 아니므로 이 표에 넣지 않는다. 등급 비교는 `senate_ratings_feed.json`·`governor_ratings.json` 쪽 표.
 - 소비: `gt_forecast()` → `trackers.qmd`.
 
 ### `generic_ballot.json` — 제너릭 밸럿
@@ -100,6 +106,13 @@
   `strengths`, `weaknesses`, `policy`, `kr_note`, `sources`, `status`.
   - 다수 필드 nullable(`null`=공개 출처 미확인). 사진은 PD/CC만.
 - 소비: `candidate_cards_html()`·`primary_cards_html()` → `states/*.qmd`.
+
+### `governor_candidates.json` — 주지사 후보 프로필 카드
+- 스키마는 `candidates.json`과 동일하며 **`office`**(="governor") 한 필드만 더 있다.
+- 경합 8주(AZ·GA·IA·KS·MI·NV·OH·WI) 16명. `status`는 `nominee` 외에
+  `presumptive (8/11)`처럼 경선 전 상태를 표기하며, 이 경우 카드 위에 "지명 확정 전" 주석이 붙는다.
+- `photo`가 `null`이면 `_placeholder.svg`로 렌더된다(`.c_photo()`) — 저작권 미확인 캠페인 사진은 쓰지 않는다.
+- 소비: `governor_cards_html()` → `governors.qmd#candidates`. **수동 갱신**(경선 확정·자금 신고 시).
 
 ### `fec_fundraising.json` — FEC 모금 스테이징 (직접 렌더 안 함)
 - `scripts/fetch_fec_fundraising.py`가 생성(단위 $M). 최상위: `as_of`, `source_label`, `provenance_note`, `states`(`{ST: [후보…]}`).

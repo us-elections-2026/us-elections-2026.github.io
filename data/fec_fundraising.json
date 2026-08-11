@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-08-10",
+  "as_of": "2026-08-11",
   "source_label": "FEC (api.open.fec.gov) — 분기 보고 기준, 단위 $M",
   "provenance_note": "coverage_end가 분기 마감일. 슈퍼팩 외부지출은 별도(independent expenditures) — 이 파일에 미포함.",
   "states": {
@@ -157,7 +157,7 @@
         "receipts": 0.0,
         "disbursements": 0.0,
         "cash_on_hand": 0.0,
-        "coverage_end": "2026-03-31"
+        "coverage_end": "2026-06-30"
       }
     ],
     "NH": [
@@ -631,7 +631,7 @@
       {
         "name": "VOLPE, CHRISTOPHER",
         "party": "DEM",
-        "candidate_id": "S6OH00346",
+        "candidate_id": "S6OH00353",
         "receipts": 0.0,
         "disbursements": 0.0,
         "cash_on_hand": 0.0,
@@ -640,7 +640,7 @@
       {
         "name": "VOLPE, CHRISTOPHER",
         "party": "DEM",
-        "candidate_id": "S6OH00353",
+        "candidate_id": "S6OH00346",
         "receipts": 0.0,
         "disbursements": 0.0,
         "cash_on_hand": 0.0,
@@ -683,6 +683,71 @@
         "disbursements": 0.01,
         "cash_on_hand": 0.01,
         "coverage_end": "2026-07-29"
+      }
+    ],
+    "IA": [
+      {
+        "name": "ARENHOLZ, ASHLEY HINSON",
+        "party": "REP",
+        "candidate_id": "S6IA00314",
+        "receipts": 10.22,
+        "disbursements": 5.4,
+        "cash_on_hand": 6.75,
+        "coverage_end": "2026-06-30"
+      },
+      {
+        "name": "TUREK, JOSHUA",
+        "party": "DEM",
+        "candidate_id": "S6IA00298",
+        "receipts": 6.28,
+        "disbursements": 3.91,
+        "cash_on_hand": 2.36,
+        "coverage_end": "2026-06-30"
+      },
+      {
+        "name": "SAGE, NATHAN",
+        "party": "DEM",
+        "candidate_id": "S6IA00256",
+        "receipts": 1.43,
+        "disbursements": 1.43,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-06-30"
+      },
+      {
+        "name": "CARLIN, JAMES",
+        "party": "REP",
+        "candidate_id": "S6IA00249",
+        "receipts": 0.49,
+        "disbursements": 0.49,
+        "cash_on_hand": 0.01,
+        "coverage_end": "2026-06-30"
+      },
+      {
+        "name": "NORRIS, JACKIE",
+        "party": "DEM",
+        "candidate_id": "S6IA00280",
+        "receipts": 0.36,
+        "disbursements": 0.36,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-03-20"
+      },
+      {
+        "name": "SCHOLTEN, JAMES",
+        "party": "DEM",
+        "candidate_id": "S6IA00264",
+        "receipts": 0.21,
+        "disbursements": 0.21,
+        "cash_on_hand": 0.01,
+        "coverage_end": "2025-12-31"
+      },
+      {
+        "name": "LAEHN, THOMAS RAYMOND DR.",
+        "party": "LIB",
+        "candidate_id": "S6IA00181",
+        "receipts": 0.05,
+        "disbursements": 0.05,
+        "cash_on_hand": 0.01,
+        "coverage_end": "2026-06-30"
       }
     ]
   }

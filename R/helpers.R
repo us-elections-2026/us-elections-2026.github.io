@@ -62,7 +62,9 @@ gt_forecast <- function() {
   ) |>
     gt() |>
     tab_header(title = "예보 종합 — 상·하원 통제 확률",
-               subtitle = paste0("기준 ", d$as_of, " · 시장/모델/등급은 성격이 다름에 유의")) |>
+               subtitle = paste0("기준 ", d$as_of, " · 시장과 모델은 성격이 다름에 유의")) |>
+    tab_source_note(if (!is.null(d$provenance_note)) d$provenance_note else
+      "출처별 성격이 다르므로 같은 잣대로 비교하지 마세요.") |>
     .tbl_opts()
 }
 
@@ -251,7 +253,13 @@ state_money_html <- function(code) {
     else sprintf('<span>[%d] %s</span>', i, u) }, character(1))
   paste0('<span class="cand-src">출처 ', paste(links, collapse = " "), "</span>") }
 .c_badge <- function(r) paste0(.party_kr[[r$party]], if (isTRUE(r$incumbent)) " · 현직" else "")
-.c_credit <- function(r) if (!is.na(r$photo_credit) && nzchar(r$photo_credit)) paste0("사진: ", r$photo_credit) else "사진 미확보"
+# 카드 HTML은 `output: asis`로 pandoc을 거치므로, 크레딧의 Commons 파일명에 든 밑줄이
+# 마크다운 강조(_..._)로 해석돼 이탤릭이 되는 것을 막는다.
+.c_credit <- function(r) if (!is.na(r$photo_credit) && nzchar(r$photo_credit))
+  paste0("사진: ", gsub("_", "&#95;", r$photo_credit, fixed = TRUE)) else "사진 미확보"
+# 사진이 없는 후보(자유 라이선스 초상 미확보)는 플레이스홀더로 — 추정 이미지를 쓰지 않는다.
+.c_photo <- function(r) if (length(r$photo) == 0 || is.na(r$photo) || !nzchar(r$photo))
+  "assets/candidates/_placeholder.svg" else r$photo
 .c_age <- function(r) if (!is.na(r$born)) paste0(r$born, "년생(", 2026 - r$born, "세) · ") else ""
 
 # 정식(전체) 카드 — 행 단위 평탄 구조(두 카드 간 subgrid 정렬용).
@@ -262,7 +270,7 @@ state_money_html <- function(code) {
     "<span class='muted'>한국 관련 직접 입장은 공개 출처에서 확인되지 않음</span>"
   paste0(
     '<div class="cand-card cand-', r$party, '">',
-    '<img class="cand-photo" src="/', r$photo, '" alt="', r$name, '" loading="lazy">',
+    '<img class="cand-photo" src="/', .c_photo(r), '" alt="', r$name, '" loading="lazy">',
     '<div class="cand-intro"><div class="cand-head"><span class="cand-name">', r$name_kr,
       ' <em>', r$name, '</em></span><span class="cand-badge b-', r$party, '">', .c_badge(r),
       '</span></div><p class="cand-sub">', .c_age(r), r$occupation, '</p></div>',
@@ -283,7 +291,7 @@ state_money_html <- function(code) {
 .mini_card <- function(r) {
   paste0(
     '<div class="cand-mini cand-', r$party, '">',
-    '<img class="cand-mini-photo" src="/', r$photo, '" alt="', r$name, '" loading="lazy">',
+    '<img class="cand-mini-photo" src="/', .c_photo(r), '" alt="', r$name, '" loading="lazy">',
     '<div class="cand-mini-head"><span class="cand-name">', r$name_kr, '</span>',
       '<span class="cand-badge b-', r$party, '">', .c_badge(r), '</span></div>',
     '<p class="cand-en">', r$name, '</p>',
@@ -350,6 +358,31 @@ primary_cards_html <- function(code) {
   if (nrow(prim) == 0) return("")
   minis <- vapply(seq_len(nrow(prim)), function(i) .mini_card(prim[i, ]), character(1))
   paste0('<div class="cand-mini-wrap">', paste(minis, collapse = ""), "</div>")
+}
+
+# 주지사 후보 카드 — data/governor_candidates.json (상원 candidates.json과 동일 스키마 + office).
+# 상원과 달리 경선/확정을 나눠 싣지 않고 양당 한 장씩 나란히 놓되, 아직 지명이
+# 확정되지 않은 주(WI 8/11 경선)는 그 사실을 카드 위에 명시한다.
+governor_cards_html <- function(code) {
+  d <- .load_json("governor_candidates")
+  cc <- d$candidates[d$candidates$state == code, ]
+  if (nrow(cc) == 0) return("")
+  cards <- character(0)
+  for (pty in c("D", "R")) {
+    p <- cc[cc$party == pty, ]
+    if (nrow(p) > 0) for (i in seq_len(nrow(p))) cards <- c(cards, .full_card(p[i, ]))
+  }
+  st <- .c_status(cc)
+  pend <- !is.na(st) & st != "nominee"
+  note <- if (any(pend)) {
+    lab <- sub("\\s*\\(.*\\)$", "", st[pend])                    # "presumptive (8/11)" -> "presumptive"
+    lab <- sub("primary-frontrunner", "경선 선두", lab, fixed = TRUE)
+    lab <- sub("presumptive", "사실상 확정", lab, fixed = TRUE)
+    dt <- if (grepl("\\(", st[pend][1])) paste0("(", sub(".*\\(([^)]+)\\).*", "\\1", st[pend][1]), " 경선)") else ""
+    paste0('<p class="muted">※ 아직 지명 확정 전', dt, ' — ',
+           paste0(cc$name_kr[pend], "(", .party_kr[cc$party[pend]], "·", lab, ")", collapse = " · "), "</p>")
+  } else ""
+  paste0(note, '<div class="cand-wrap">', paste(cards, collapse = ""), "</div>")
 }
 
 # 1.6 자체 모델 대시보드 (정적 폴백 표) -------------------------------------
@@ -431,8 +464,9 @@ rating_matrix_html <- function() {
     '<p class="rmx-note">각 칸은 <b>해당 월말 기준</b> 등급입니다. ',
     '등급은 확률이 아닌 서수적 판단이며, 기관은 상시 갱신하므로 <b>아카이브에서 확인된 것만</b> 표기하고 ',
     '기록이 없으면 <b>미확인</b>으로 둡니다(추정으로 채우지 않음). ',
-    '주요 이동: <b>4/13</b> Cook GA·NC를 Lean D로, OH를 Toss-up으로 · <b>5/31</b> Cook TX Likely R→Lean R(팩스턴 경선승) · ',
-    '<b>6/11</b> Sabato NC Lean D·AK/OH Toss-up 일괄 이동 · <b>6월 하순</b> Cook OH Lean R 회귀 · <b>7/1</b> Cook AK Toss-up. ',
+    '주요 이동: <b>4/13</b> Cook 4건 일괄(GA·NC를 Lean D로, OH를 Toss Up으로, NE를 Likely R로) · ',
+    '<b>5/26·5/27</b> Sabato·Cook이 이틀 차로 TX를 Lean R로 · <b>6/2·6/3</b> 같은 방식으로 IA를 Lean R로 · ',
+    '<b>6/11</b> Sabato NC Leans D·AK/OH Toss-up 일괄 이동 · <b>7/1</b> Cook AK Toss Up · <b>7/30</b> Sabato GA Likely D. ',
     '기준 ', d$as_of, '.</p>')
   paste0('<div class="rmx-wrap">', paste(panels, collapse = ""), "</div>", legend, note)
 }
@@ -621,13 +655,13 @@ gt_kalshi_races <- function(kind = c("senate", "governor"), states = NULL, min_d
     .tbl_opts()
 }
 
-# 상원 감시 8주 — 기관별 등급을 한 표에 (Kalshi 행만 원가격) (270towin 재게시 피드 자동 취득)
+# 상원 감시 9주 — 기관별 등급을 한 표에 (Kalshi 행만 원가격) (270towin 재게시 피드 자동 취득)
 gt_senate_rating_sources <- function() {
   d <- .load_json("senate_ratings_feed"); src <- d$sources
   rt <- src$ratings   # data.frame: 행=기관, 열=주 약자
-  key <- c("GA", "NC", "NH", "MI", "ME", "AK", "OH", "TX")
+  key <- c("GA", "NC", "NH", "MI", "ME", "AK", "OH", "TX", "IA")
   kr <- c(GA = "조지아", NC = "NC", NH = "NH", MI = "미시간", ME = "메인",
-          AK = "알래스카", OH = "오하이오", TX = "텍사스")
+          AK = "알래스카", OH = "오하이오", TX = "텍사스", IA = "아이오와")
   is_mkt <- grepl("Kalshi|예측시장", src$label)
   kal <- .kalshi()
   cell <- function(i, ab) {
@@ -648,7 +682,7 @@ gt_senate_rating_sources <- function() {
   as_of <- ifelse(is_mkt & !is.null(kal), substr(kal$fetched_at_utc %||% "", 1, 10), src$as_of)
   bind_cols(tibble(예측기관 = lbl, 기준일 = as_of), as_tibble(cols)) |>
     gt() |>
-    tab_header(title = "상원 감시 8주 — 기관별 등급",
+    tab_header(title = "상원 감시 9주 — 기관별 등급",
                subtitle = "270towin 재게시 피드 자동 취득 · 등급은 확률이 아님") |>
     tab_source_note(paste0(
       "같은 주를 기관마다 어떻게 보는지 비교합니다. ",
@@ -905,11 +939,11 @@ rating_tiles_html <- function() {
   defs <- list(c("Solid D", "rt-sd", "Solid·Likely D"), c("Lean D", "rt-ld", "Lean D"),
                c("Toss-up", "rt-tu", "Toss-up"), c("Lean R", "rt-lr", "Lean R"),
                c("Solid R", "rt-sr", "Solid·Likely R"))
-  # 2026-08-06 — 타일을 **이번 개선 35석 전체** 기준으로 확장. 종전에는 감시 8주만
+  # 2026-08-06 — 타일을 **이번 개선 35석 전체** 기준으로 확장. 종전에는 감시주만
   # 세서 양끝 Solid 타일이 늘 0이었다. 양끝은 주명 없이 숫자만 싣고(사용자 요청),
-  # 가운데 경합 타일은 감시 8주는 링크 칩, 감시 밖 경합주(예: 컨센서스가 Lean R로
-  # 보는 아이오와)는 링크 없는 칩으로 구분한다 — 다섯 타일의 합이 35가 되게.
-  # 컨센서스 피드가 없으면 종전대로 감시 8주만 렌더한다(추정으로 채우지 않음).
+  # 가운데 경합 타일은 감시 9주는 링크 칩, 감시 밖 경합주는 링크 없는 칩으로
+  # 구분한다 — 다섯 타일의 합이 35가 되게.
+  # 컨센서스 피드가 없으면 종전대로 감시주만 렌더한다(추정으로 채우지 않음).
   ba <- NULL
   if (!is.null(cons)) {
     abbrs <- names(cons$rt)
@@ -929,7 +963,7 @@ rating_tiles_html <- function() {
         '<div class="rtile %s"><div class="rt-num">%s</div><div class="rt-lab">%s</div><div class="rt-states"><span class="rt-empty">안전권 · 주명 생략</span></div></div>',
         x[2], if (is.na(n)) "—" else as.character(n), x[3]))
     }
-    if (is.null(ba)) {                       # 폴백: 감시 8주만
+    if (is.null(ba)) {                       # 폴백: 감시주만
       idx <- which(b == x[1]); members <- watch_ab[idx]
     } else members <- names(ba)[!is.na(ba) & ba == x[1]]
     states <- if (length(members) == 0) '<span class="rt-empty">—</span>' else
@@ -939,14 +973,14 @@ rating_tiles_html <- function() {
           '<div class="rt-st"><a href="/states/%s.html">%s%s</a><span class="rt-hold rt-hold-%s">%s</span></div>',
           s$id[i], s$name[i], if (diverge[i]) '<span class="rt-div" title="Cook과 Sabato 평가가 갈림">◆</span>' else "",
           tolower(s$defense[i]), s$defense[i])
-        else sprintf('<div class="rt-st"><span title="감시 8주 밖 — State Focus 페이지 없음">%s</span></div>',
+        else sprintf('<div class="rt-st"><span title="감시 9주 밖 — State Focus 페이지 없음">%s</span></div>',
                      if (!is.null(kr) && !is.null(kr[[ab]])) kr[[ab]] else ab)
       }, character(1)), collapse = "")
     sprintf('<div class="rtile %s"><div class="rt-num">%d</div><div class="rt-lab">%s</div><div class="rt-states">%s</div></div>',
             x[2], length(members), x[3], states)
   }, character(1))
   src <- if (!is.null(cons))
-    sprintf('<p class="rt-src">분류 기준: <b>270toWin 컨센서스</b>(기준 %s) — 상원 지도와 같은 출처, <b>이번 개선 35석 전체</b>(다섯 타일 합 = 35). 양끝 안전권은 주명을 생략하고 수만 표시합니다. 링크 없는 주는 감시 8주 밖의 경합 판정 주. ◆는 Cook과 Sabato 평가가 갈리는 주로, 개별 등급은 <a href="/senate.html#races">경합주 표</a>와 <a href="/dashboard.html">대시보드</a>에서 확인하세요.</p>', cons$as_of)
+    sprintf('<p class="rt-src">분류 기준: <b>270toWin 컨센서스</b>(기준 %s) — 상원 지도와 같은 출처, <b>이번 개선 35석 전체</b>(다섯 타일 합 = 35). 양끝 안전권은 주명을 생략하고 수만 표시합니다. 링크 없는 주는 감시 9주 밖의 경합 판정 주. ◆는 Cook과 Sabato 평가가 갈리는 주로, 개별 등급은 <a href="/senate.html#races">경합주 표</a>와 <a href="/dashboard.html">대시보드</a>에서 확인하세요.</p>', cons$as_of)
   else ""
   paste0('<div class="rating-tiles">', paste(tiles, collapse = ""), "</div>", src)
 }

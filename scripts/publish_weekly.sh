@@ -62,6 +62,11 @@ if [ -f scripts/model/run_model.R ]; then
   Rscript scripts/model/run_model.R || echo "[weekly] ! 모델 실행 실패(건너뜀 — 직전 산출물 유지)"
 fi
 
+# 2.7) 예보 종합표 조립 — 위에서 취득한 Kalshi·DDHQ·RtWH와 자체 모델 v0에서 생성.
+#      (반드시 2.5 모델 실행 뒤에 와야 자체 모델 행이 최신값으로 들어간다)
+echo "[weekly] 예보 종합표 생성"
+python3 scripts/build_forecast.py || echo "[weekly] ! 예보 종합표 생성 실패(건너뜀 — 직전 값 유지)"
+
 # 3) 데이터 무결성 검증 — 하드 게이트
 echo "[weekly] 데이터 검증(validate_data.R)"
 Rscript scripts/validate_data.R || { echo "[weekly] 데이터 검증 실패 — 발행 중단"; exit 1; }

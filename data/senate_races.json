@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-08-09",
+  "as_of": "2026-08-10",
   "dem_needed_net": 4,
   "current_balance": "R 53 / D 47",
   "races": [
@@ -20,7 +20,7 @@
       "rating": "Toss Up",
       "latest_poll": "Rogers 44.3–El-Sayed 44.0 (R+0.3) — 경선 후 RCP 첫 본선 평균, 순수 토스업",
       "poll_source": "RCP 경선 후 첫 평균(8/6~7) · 경선 전 가상 EPIC-MRA 로저스 46–엘사예드 43; 예비 결과 El-Sayed def. Stevens 약 1%p (AP 8/5 확정, 개표 99%); AIPAC 계열 외부지출 $60M+ 극복",
-      "cash_on_hand": null,
+      "cash_on_hand": "경선 후 신규 신고 대기 — 외부지출은 AIPAC 계열 $60M+가 경선에 집행됨",
       "kr_relevance": "자동차·관세"
     },
     {
@@ -60,7 +60,7 @@
       "rating": "Lean R (토스업 경계)",
       "latest_poll": "Talarico 47–43 Paxton (부시스쿨/Recon MR D+4, 트래커 최대) — 공개 조사 4연속 D 우위",
       "poll_source": "부시스쿨/Recon MR 7/27–30 (LV 619명, ±4.7) · Fox News 7/23–27 51–48 (RV 1,006명, ±3) · TSU/YouGov 47–45 · 웨지우드 48–46 (LV 800명); 6월 중순 이후 팩스턴 우위 공개 조사 전무. 순호감도 탈라리코 +12(주 최고)·팩스턴 −13(주 최저). 전부 7월 말 필드 — 8/7 고용 쇼크 미반영",
-      "cash_on_hand": "Talarico 지난 분기 $30M vs Paxton $9M — 약 3배",
+      "cash_on_hand": "Talarico 지난 분기 $30M vs Paxton $9M (약 3배) — 순호감도 Talarico +12(주 최고) 대 Paxton −13(주 최저)",
       "kr_relevance": "블루웨이브 시 도전"
     },
     {
@@ -82,6 +82,16 @@
       "poll_source": "NYT/Siena(CNN 8/3 분석이 기준선으로 재부각) · ASR 트래킹 펠톨라 +5~6; 동명이인 '댄 J. 설리번' FBI·주 법무장관·연방검찰 수사 지속(주 대법원은 투표용지 잔류 확정)·8/18 top-4 예비 16명",
       "cash_on_hand": "Peltola Q2 $6.9M vs Sullivan $2M (현금은 Sullivan $8.3M > Peltola $6.1M); 머카우스키 설리번 지지",
       "kr_relevance": "—"
+    },
+    {
+      "state": "IA",
+      "defense": "R",
+      "incumbent": "Turek (D) vs Hinson (R) — 개방석(Ernst 은퇴)",
+      "rating": "Lean R (Cook·Sabato 6/3) / Tilt R (IE 8/6↓)",
+      "latest_poll": "Turek 46–48 (NYT/Siena R+2) · Fox 50–46 (D+4) — 두 조사가 상충",
+      "poll_source": "NYT/Siena 6/15–29 LV 600 ±4.7 · Fox 6/23–27 RV 1,003 ±3; 예측시장 민주 43¢(Kalshi 8/6)",
+      "cash_on_hand": "Turek Q2 $2.81M·현금 $2.4M vs Hinson Q2 $2.06M·현금 $6.7M — 모금은 Turek, 현금은 Hinson 약 3배",
+      "kr_relevance": "농업(대두·에탄올) 관세 — 직접 연결은 미확인"
     }
   ]
 }

@@ -1,0 +1,660 @@
+{
+ "as_of": "2026-08-07",
+ "note": "주지사 경합 8개 주 후보 16명 — 상원 candidates.json과 동일 스키마(office 필드 추가). 프로필은 Ballotpedia·공식 약력·지역 언론 교차 확인(2026-08-07). 사진은 위키미디어(라이선스 photo_credit 병기), 없는 2명(KS-R·IA-R)은 null → _placeholder.svg 렌더.",
+ "candidates": [
+  {
+   "state": "AZ",
+   "office": "governor",
+   "party": "D",
+   "name": "Katie Hobbs",
+   "name_kr": "케이티 홉스",
+   "incumbent": true,
+   "photo": "assets/candidates/gv_az_hobbs.jpg",
+   "photo_credit": "Gage Skidmore · CC BY-SA 2.0 (Wikimedia Commons: Katie_Hobbs_in_2025.jpg)",
+   "born": 1969,
+   "occupation": "애리조나 주지사(2023~) · 전 주 국무장관·사회복지사",
+   "education": "노던애리조나대 사회복지 학사, 애리조나주립대(ASU) 사회복지 석사",
+   "family": "남편 Pat, 자녀 둘",
+   "past_elections": [
+    "2022 주지사 50.3% vs Lake 49.6%(0.7%p)",
+    "2018 주 국무장관 50.4%",
+    "주상원 3선"
+   ],
+   "fundraising": "Q2 모금 $2.6M · 잔고 $2.4M(선제 광고로 지출 $7.4M) + DGA $10M 투입(주 선관위 신고·KJZZ)",
+   "strengths": [
+    "현직 프리미엄 · 2022 최격전지 승리 경험",
+    "공화 주의회 상대 거부권 정치로 온건 이미지",
+    "상대(빅스)의 강경 포지셔닝 반사이익"
+   ],
+   "weaknesses": [
+    "2022년 0.7%p 신승 — 기반 취약",
+    "낮은 카리스마·토론 회피 논란(2022)",
+    "트럼프가 2024년 5.5%p 이긴 주"
+   ],
+   "policy": [
+    "낙태권 보호",
+    "주택·생활비",
+    "물(콜로라도강) 문제",
+    "보육·교육"
+   ],
+   "kr_note": null,
+   "sources": [
+    "https://ballotpedia.org/Katie_Hobbs"
+   ],
+   "status": "nominee"
+  },
+  {
+   "state": "AZ",
+   "office": "governor",
+   "party": "R",
+   "name": "Andy Biggs",
+   "name_kr": "앤디 빅스",
+   "incumbent": false,
+   "photo": "assets/candidates/gv_az_biggs.jpg",
+   "photo_credit": "U.S. House of Representatives · Public domain (Wikimedia Commons: Andy_Biggs_portrait_(118th_Congress).jpg)",
+   "born": 1958,
+   "occupation": "연방하원의원 AZ-05 5선(2017~) · 전 주상원의장 · 변호사",
+   "education": "BYU 학사, 애리조나대 JD, ASU 석사",
+   "family": "부인 Cindy, 자녀 여섯(딸 1명 2025년 별세)",
+   "past_elections": [
+    "하원 5연승(56.7~64.1%)",
+    "2026-07-21 경선 73.6% 압승(롭슨 경선 전 사퇴)"
+   ],
+   "fundraising": "모금 $0.9M · 잔고 $1.2M (주 선관위 신고, 7/16 — 홉스 대비 열세)",
+   "strengths": [
+    "프리덤코커스 전 의장급 인지도·강성 보수 결집",
+    "의정 경력 20년+",
+    "MAGA 조직 장악"
+   ],
+   "weaknesses": [
+    "2021-01-06 선거인단 인증 반대 표결 — 본선 부담",
+    "경합주 중도층에 불리한 강경 노선",
+    "주 전체 선거 첫 도전"
+   ],
+   "policy": [
+    "국경 통제",
+    "연방지출 삭감·감세",
+    "규제 완화",
+    "선거 보안"
+   ],
+   "kr_note": null,
+   "sources": [
+    "https://ballotpedia.org/Andy_Biggs",
+    "https://www.washingtonpost.com/elections/results/2026/07/21/arizona-governor-primary-election-results-2026-live-updates/"
+   ],
+   "status": "nominee"
+  },
+  {
+   "state": "GA",
+   "office": "governor",
+   "party": "D",
+   "name": "Keisha Lance Bottoms",
+   "name_kr": "케이샤 랜스 바텀스",
+   "incumbent": false,
+   "photo": "assets/candidates/gv_ga_bottoms.jpg",
+   "photo_credit": "Office of U.S. Senator David Perdue · Public domain (Wikimedia Commons: Keisha_Lance_Bottoms_2019.jpg)",
+   "born": 1970,
+   "occupation": "전 애틀랜타 시장(2018–2022) · 전 백악관 수석고문(공공참여) · 변호사",
+   "education": "플로리다 A&M대 방송저널리즘 학사, 조지아주립대 JD",
+   "family": "남편 Derek Bottoms, 입양 자녀 넷",
+   "past_elections": [
+    "2017 애틀랜타 시장 결선 50.45%(832표차)",
+    "2021 재선 불출마",
+    "2026-05-19 민주 경선 56%로 결선 없이 확정"
+   ],
+   "fundraising": "전국 소액기부 네트워크 — 본선 신고 초기 단계(주 선관위)",
+   "strengths": [
+    "전국 인지도(2020 부통령 후보군·백악관 경력)",
+    "흑인 여성 유권자 기반 — 당선 시 조지아 최초",
+    "애틀랜타 대도시권 조직"
+   ],
+   "weaknesses": [
+    "시장 재선 포기 전력('중도하차' 공격 소재)",
+    "재임기 범죄 급증·2020 소요 대응 논란",
+    "애틀랜타 밖 주 전역 득표력 미검증"
+   ],
+   "policy": [
+    "경제·일자리 훈련",
+    "메디케이드 확대",
+    "공교육",
+    "치안+경찰개혁 병행"
+   ],
+   "kr_note": null,
+   "sources": [
+    "https://ballotpedia.org/Keisha_Lance_Bottoms"
+   ],
+   "status": "nominee"
+  },
+  {
+   "state": "GA",
+   "office": "governor",
+   "party": "R",
+   "name": "Rick Jackson",
+   "name_kr": "릭 잭슨",
+   "incumbent": false,
+   "photo": "assets/candidates/gv_ga_jackson.jpg",
+   "photo_credit": "Cherie Martin · CC BY 4.0 (Wikimedia Commons: Rick_Jackson_(cropped).png)",
+   "born": 1954,
+   "occupation": "Jackson Healthcare(의료인력, 연매출 ~$30억) 창업자·CEO — 첫 공직 출마",
+   "education": "대학 중퇴(학비 부족) — 자수성가 서사",
+   "family": "아들 Shane(회사 사장) · 배우자 미확인",
+   "past_elections": [
+    "첫 출마",
+    "2026-05-19 1차 33%(2위) → 6/16 결선 ~53%로 트럼프 지지 Burt Jones 격파"
+   ],
+   "fundraising": "자기자금 $50M+ 투입(경선+결선 공화 총비용 $138.6M 중 ~$108M) — 사실상 무제한",
+   "strengths": [
+    "무제한 자기자금",
+    "빈곤·위탁가정 출신 자수성가 스토리",
+    "아웃사이더 — 트럼프 후보를 꺾고도 친트럼프 포지셔닝"
+   ],
+   "weaknesses": [
+    "공직·행정 경험 전무",
+    "70대 초선 도전",
+    "정당 조직 기반 부재·본선 검증 안 됨"
+   ],
+   "policy": [
+    "주 소득세 반감",
+    "재산세 동결",
+    "이민 단속",
+    "위탁아동·아동복지"
+   ],
+   "kr_note": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rick_Jackson_(businessman)",
+    "https://www.gpb.org/news/2026/06/16/gops-jackson-collins-win-runoffs-for-governor-senate-face-bottoms-and-ossoff-in"
+   ],
+   "status": "nominee"
+  },
+  {
+   "state": "OH",
+   "office": "governor",
+   "party": "D",
+   "name": "Amy Acton",
+   "name_kr": "에이미 액턴",
+   "incumbent": false,
+   "photo": "assets/candidates/gv_oh_acton.jpg",
+   "photo_credit": "air force · Public domain (Wikimedia Commons: Amy_Acton_(cropped).jpg)",
+   "born": 1966,
+   "occupation": "의사(공중보건) · 전 오하이오 보건국장(2019–2020) — 코로나 초기 대응 주도",
+   "education": "영스타운주립대 학사, 노스이스트오하이오 의대 MD, 오하이오주립대 MPH",
+   "family": "남편 Eric Acton(교사), 혼합가족 자녀 여섯 · 유년기 빈곤·홈리스 경험",
+   "past_elections": [
+    "선출직 첫 출마",
+    "2026-05-05 민주 경선 무경쟁 통과"
+   ],
+   "fundraising": "총모금 ~$18.5M — 단 5/15~6/30 광고 집행 ~$10만(램스와미 ~$9M의 1/90)",
+   "strengths": [
+    "팬데믹기 '신뢰받는 얼굴' — 초당적 인지도",
+    "Profile in Courage 수상(2021) 서사",
+    "브라운 상원 티켓과의 시너지"
+   ],
+   "weaknesses": [
+    "선출직·행정 경험 부족",
+    "락다운 반발층(보수)의 표적",
+    "오하이오의 공화 우위 지형(트럼프 +11)"
+   ],
+   "policy": [
+    "의료비 인하",
+    "메디케이드 확대",
+    "공중보건",
+    "돌봄 세액공제"
+   ],
+   "kr_note": null,
+   "sources": [
+    "https://ballotpedia.org/Amy_Acton"
+   ],
+   "status": "nominee"
+  },
+  {
+   "state": "OH",
+   "office": "governor",
+   "party": "R",
+   "name": "Vivek Ramaswamy",
+   "name_kr": "비벡 램스와미",
+   "incumbent": false,
+   "photo": "assets/candidates/gv_oh_ramaswamy.jpg",
+   "photo_credit": "Prime Minister's Office · GODL-India (Wikimedia Commons: Vivek_Ramaswamy,_Prime_Minister_Narendra_Modi,_2025_(cropped).jpg)",
+   "born": 1985,
+   "occupation": "기업인·작가 — Roivant Sciences 창업, Strive Asset Management 공동창업 · 2024 대선 경선 주자",
+   "education": "하버드 생물학 학사(수석급), 예일 로스쿨 JD",
+   "family": "부인 Apoorva(외과 교수), 아들 둘",
+   "past_elections": [
+    "2024 대선 경선 → 아이오와 직후 사퇴·트럼프 지지",
+    "2026-05-05 공화 경선 82% 압승"
+   ],
+   "fundraising": "총모금 ~$50M(절반 자비 · 머스크 $5M·야스 $10M 등) — 5/15~6/30 광고 ~$9M",
+   "strengths": [
+    "막대한 자산+모금력 · 트럼프 조기 지지 확보",
+    "전국 인지도·미디어 장악력",
+    "젊음(41) — 2028 발판론이 동원력으로"
+   ],
+   "weaknesses": [
+    "공직 경험 전무",
+    "DOGE 공동수장 하루 만에 이탈(2025-01) 등 '뜨내기' 공격 소재",
+    "지방선거 투표 불참 이력"
+   ],
+   "policy": [
+    "교육 개혁(성취 기준·학교선택)",
+    "감세·규제 완화",
+    "반ESG·반워크",
+    "치안"
+   ],
+   "kr_note": null,
+   "sources": [
+    "https://ballotpedia.org/Vivek_Ramaswamy"
+   ],
+   "status": "nominee"
+  },
+  {
+   "state": "MI",
+   "office": "governor",
+   "party": "D",
+   "name": "Jocelyn Benson",
+   "name_kr": "조슬린 벤슨",
+   "incumbent": false,
+   "photo": "assets/candidates/gv_mi_benson.jpg",
+   "photo_credit": "JFM Photo 73 · CC BY 4.0 (Wikimedia Commons: SOS_Jocelyn_Benson_web.jpg)",
+   "born": 1977,
+   "occupation": "미시간 주 국무장관(2019~) · 전 웨인주립대 로스쿨 학장",
+   "education": "웰즐리칼리지 학사, 옥스퍼드 사회학 석사(마셜 장학생), 하버드 로스쿨 JD",
+   "family": "남편 Ryan Friedrichs(육군 참전용사), 아들 하나",
+   "past_elections": [
+    "2018 국무장관 52.9% · 2022 재선 55.9%(민주 최상위 득표)",
+    "2026-08-04 경선 85% 대 15% 압승(스완슨)"
+   ],
+   "fundraising": "모금 $4.9M · 잔고 $6.4M (경선 전 주 선관위 신고)",
+   "strengths": [
+    "주 전체 선거 3회 검증 — 2022 두 자릿수 압승",
+    "2020 선거 방어 '민주주의 수호' 브랜드(JFK Profile in Courage)",
+    "UAW 등 노조 지지"
+   ],
+   "weaknesses": [
+    "보수층 집중 표적 — 양극화 리스크",
+    "경제·생활비 행정 실적 부재",
+    "휘트머 은퇴 후 개방석 방어 부담"
+   ],
+   "policy": [
+    "투표권·민주주의",
+    "생활비·주거",
+    "교육",
+    "관공서 서비스 개혁"
+   ],
+   "kr_note": null,
+   "sources": [
+    "https://ballotpedia.org/Jocelyn_Benson",
+    "https://michiganadvance.com/2026/08/04/benson-handily-wins-democratic-gubernatorial-primary-over-swanson/"
+   ],
+   "status": "nominee"
+  },
+  {
+   "state": "MI",
+   "office": "governor",
+   "party": "R",
+   "name": "John James",
+   "name_kr": "존 제임스",
+   "incumbent": false,
+   "photo": "assets/candidates/gv_mi_james.jpg",
+   "photo_credit": "United States Congress · CC BY-SA 4.0 (Wikimedia Commons: Rep._John_James_official_photo,_118th_Congress.jpg)",
+   "born": 1981,
+   "occupation": "연방하원의원 MI-10(2023~) · 전 육군 아파치 조종사(이라크전) · 가족기업 경영",
+   "education": "웨스트포인트(육사) 학사, 펜실베이니아주립대 석사, 미시간대 MBA",
+   "family": "부인 Elizabeth, 아들 셋",
+   "past_elections": [
+    "2018 상원 낙선(45.8%) · 2020 상원 낙선(1.7%p차)",
+    "2022 하원 0.5%p 신승 → 2024 51.1% 재선",
+    "2026-08-04 경선 ~15%p 승(존슨 자비 $32M 상대)"
+   ],
+   "fundraising": "미확인 (경선 후 신고 대기)",
+   "strengths": [
+    "트럼프 지지",
+    "군인+기업인 이력·전국구 모금력",
+    "흑인 공화당원 교차 소구 잠재력"
+   ],
+   "weaknesses": [
+    "주 전체 선거 2연패(2018·2020)",
+    "경합구에서도 신승에 그친 득표력",
+    "낙태 강경 입장 — 2022 낙태권 주민투표 가결 주"
+   ],
+   "policy": [
+    "제조업·경제",
+    "교육(학부모 권한)",
+    "국경",
+    "치안"
+   ],
+   "kr_note": null,
+   "sources": [
+    "https://ballotpedia.org/John_James_(Michigan)",
+    "https://bridgemi.com/michigan-government/michigan-republican-governor-primary-results-john-james-perry-johnson/"
+   ],
+   "status": "nominee"
+  },
+  {
+   "state": "WI",
+   "office": "governor",
+   "party": "D",
+   "name": "Francesca Hong",
+   "name_kr": "프란체스카 홍",
+   "incumbent": false,
+   "photo": "assets/candidates/gv_wi_hong.jpg",
+   "photo_credit": "SecretName101 · CC BY 4.0 (Wikimedia Commons: Francesca_Hong_IMG_2500_(1).jpg)",
+   "born": 1988,
+   "occupation": "위스콘신 주하원의원(매디슨, 2021~) · 셰프 — Morris Ramen 공동창업",
+   "education": "위스콘신대 매디슨 중퇴(생계로 요식업 진입)",
+   "family": "아들 하나 (이혼)",
+   "past_elections": [
+    "2020 주하원 88% — 위스콘신 최초 아시아계 주의원",
+    "2022·2024 사실상 무경쟁 재선",
+    "경선 조사 선두: Marquette 7월 38% 대 반스 16%"
+   ],
+   "fundraising": "주하원 4년 누적 ~$24만 — 반기업 PAC 선언, 소액기부 의존 (경선 진행 중)",
+   "strengths": [
+    "진보 풀뿌리·청년층 에너지(맘다니 모델)",
+    "요식업 노동자 출신 생활비 서사",
+    "최초성(아시아계·여성)"
+   ],
+   "weaknesses": [
+    "주 전체 선거 경험·조직 부재",
+    "DSA 당원 — '사회주의자' 공격 정면 노출",
+    "모금력 열세"
+   ],
+   "policy": [
+    "공교육",
+    "보육",
+    "의료 접근",
+    "기후·노동권"
+   ],
+   "kr_note": "한국계 미국인 — 한국 이민자 부모, 매디슨 출생. 2025년 주의회 최초 아시아계 코커스 설립. 경합주 후보 중 유일한 실질적 한국 연결",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Francesca_Hong"
+   ],
+   "status": "primary-frontrunner (8/11)"
+  },
+  {
+   "state": "WI",
+   "office": "governor",
+   "party": "R",
+   "name": "Tom Tiffany",
+   "name_kr": "톰 티파니",
+   "incumbent": false,
+   "photo": "assets/candidates/gv_wi_tiffany.jpg",
+   "photo_credit": "US House of Representatives · Public domain (Wikimedia Commons: Tom_Tiffany.jpg)",
+   "born": 1957,
+   "occupation": "연방하원의원 WI-07(2020 보선~) · 전 주상원·주하원 · 유람선 사업 출신",
+   "education": "위스콘신대 리버폴스 농업경제학 학사",
+   "family": "부인 Chris, 딸 셋",
+   "past_elections": [
+    "2020 보선 57.1% 이후 60%+ 연승(2024 63.6%)",
+    "경선 조사 67%(사실상 단독 — 베리엔 2025 사퇴)"
+   ],
+   "fundraising": "미확인 (경선 후 신고 대기)",
+   "strengths": [
+    "트럼프 지지 + 주 공화 하원의원 전원 지지",
+    "북부 농촌 기반 견고",
+    "의정 경력 15년"
+   ],
+   "weaknesses": [
+    "주 전체 선거 미검증 — 밀워키·매디슨 교외 인지도 낮음",
+    "2020 대선 인증 반대 표결",
+    "고령(68)·농촌 보수 브랜드의 확장성 한계"
+   ],
+   "policy": [
+    "감세",
+    "자원개발·규제완화(벌목·광업)",
+    "국경",
+    "선거 무결성"
+   ],
+   "kr_note": null,
+   "sources": [
+    "https://ballotpedia.org/Tom_Tiffany"
+   ],
+   "status": "presumptive (8/11)"
+  },
+  {
+   "state": "NV",
+   "office": "governor",
+   "party": "D",
+   "name": "Aaron Ford",
+   "name_kr": "애런 포드",
+   "incumbent": false,
+   "photo": "assets/candidates/gv_nv_ford.jpg",
+   "photo_credit": "United State Senate - the Office of Michael Bennet · Public domain (Wikimedia Commons: Aaron_D._Ford.jpg)",
+   "born": 1972,
+   "occupation": "네바다 주 법무장관(2019~) · 전 주상원 다수당 대표",
+   "education": "텍사스 A&M 학사, 조지워싱턴대 석사, 오하이오주립대 석·박사·JD",
+   "family": "부인 Berna Rhodes-Ford(변호사), 아들 셋+조카 양육",
+   "past_elections": [
+    "2018 법무장관 0.4%p 신승 · 2022 재선 52.3%",
+    "2026-06-09 경선 63.8%"
+   ],
+   "fundraising": "미확인 (주 선관위 신고 확인 필요)",
+   "strengths": [
+    "주 전체 선거 2회 검증",
+    "오피오이드 합의 $11억 등 법무장관 실적",
+    "당선 시 네바다 최초 흑인 주지사"
+   ],
+   "weaknesses": [
+    "과거 IRS 체납 이력(2016년 해소)",
+    "후원 해외여행 윤리위 심사 진행 중",
+    "현직 롬바도의 온건 이미지"
+   ],
+   "policy": [
+    "주택 비용",
+    "약가·의료비",
+    "공교육",
+    "소비자 보호"
+   ],
+   "kr_note": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Aaron_D._Ford"
+   ],
+   "status": "nominee"
+  },
+  {
+   "state": "NV",
+   "office": "governor",
+   "party": "R",
+   "name": "Joe Lombardo",
+   "name_kr": "조 롬바도",
+   "incumbent": true,
+   "photo": "assets/candidates/gv_nv_lombardo.jpg",
+   "photo_credit": "Gage Skidmore · CC BY-SA 3.0 (Wikimedia Commons: Joe_Lombardo_by_Gage_Skidmore.jpg)",
+   "born": 1962,
+   "occupation": "네바다 주지사(2023~) · 전 클라크카운티 셰리프 · 라스베이거스 경찰 26년",
+   "education": "UNLV 토목공학 학사, UNLV 위기관리 석사",
+   "family": "부인 Donna",
+   "past_elections": [
+    "2014 셰리프 51% · 2018 재선 72.8%",
+    "2022 주지사 48.8% vs 시솔랙 47.3% — 그 해 전국 유일 현직 축출",
+    "2026-06-09 경선 91.1%"
+   ],
+   "fundraising": "미확인 (주 선관위 신고 확인 필요)",
+   "strengths": [
+    "현직+법집행 이미지",
+    "2022 역풍 속 민주 현직을 꺾은 득표력",
+    "트럼프 지지와 온건 실용 병행"
+   ],
+   "weaknesses": [
+    "거부권 75건(2023, 주 기록) — 민주 주의회와 전면 대치",
+    "1.5%p 신승 전력·민주 조직력(리드 머신)",
+    "중간선거 여당 역풍 노출"
+   ],
+   "policy": [
+    "선거제 개혁(투표자 ID)",
+    "학교선택 확대",
+    "치안·경찰 지원",
+    "증세 반대"
+   ],
+   "kr_note": null,
+   "sources": [
+    "https://ballotpedia.org/Joe_Lombardo"
+   ],
+   "status": "nominee"
+  },
+  {
+   "state": "IA",
+   "office": "governor",
+   "party": "D",
+   "name": "Rob Sand",
+   "name_kr": "롭 샌드",
+   "incumbent": false,
+   "photo": "assets/candidates/gv_ia_sand.jpg",
+   "photo_credit": "Rob Sand for Governor · CC0 (Wikimedia Commons: Rob_Sand_campaign_headshot_(cropped_2).jpg)",
+   "born": 1982,
+   "occupation": "아이오와 주 감사원장(2019~) — 주 유일 민주 주 전체 선출직 · 전 부패·금융범죄 검사",
+   "education": "브라운대 정치학 학사(트루먼 장학생), 아이오와대 JD",
+   "family": "부인 Christine Lauridsen(Lauridsen Group CEO), 아들 둘",
+   "past_elections": [
+    "2018 감사원장 51.0%(공화 현직 격파)",
+    "2022 재선 50.1%(0.2%p)",
+    "2026 경선 무경쟁"
+   ],
+   "fundraising": "2025년 한 해 $9.5M(주 기록) · 현금 $13.2M — 주지사 후보 전국 최상위급(Cook 4/9 상향 사유)",
+   "strengths": [
+    "기록적 모금",
+    "'3당파(tri-partisan)' 초당 브랜드·부패 감시 이력",
+    "아이오와 민주 중 유일한 주 전체 승리 경험"
+   ],
+   "weaknesses": [
+    "처가(Lauridsen家) 자금 의존 공격 소재",
+    "2022년 0.2%p 신승",
+    "트럼프 +13 주의 우경화 지형"
+   ],
+   "policy": [
+    "정부 효율·투명성",
+    "메디케이드 민영화 감사·의료",
+    "공교육",
+    "초당 협치"
+   ],
+   "kr_note": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rob_Sand",
+    "https://www.thegazette.com/news/elections/rob-sand-raised-9-5m-last-year-without-help-from-family-in-his-campaign-for/article_0f09e096-081f-5aac-b274-fca76162fced.html"
+   ],
+   "status": "nominee"
+  },
+  {
+   "state": "IA",
+   "office": "governor",
+   "party": "R",
+   "name": "Zach Lahn",
+   "name_kr": "잭 란",
+   "incumbent": false,
+   "photo": null,
+   "photo_credit": null,
+   "born": null,
+   "occupation": "농장주·사업가 — 위치토 사립학교 'Wonder' 공동창업(체이스 코크와), 전 AFP 몬태나 지부장",
+   "education": "미확인 (콜로라도 주상원 보좌 경력 확인)",
+   "family": "부인 Annie, 혼합가족 자녀 일곱",
+   "past_elections": [
+    "첫 공직 출마",
+    "2026-06-02 경선 37.8% 대 핀스트라(현역 하원) 37.0% — 트럼프 막판 지지 후보를 꺾은 이변"
+   ],
+   "fundraising": "자기자금 $2M 대출 포함 — 경선에서 핀스트라 모금 추월",
+   "strengths": [
+    "아웃사이더·반기득권 포지셔닝",
+    "자기자금+MAHA(RFK Jr. 계열) 지지",
+    "경선 이변의 모멘텀"
+   ],
+   "weaknesses": [
+    "공직 경험 전무",
+    "거주 논란 — 2023년 아이오와 이주·캔자스 투표 이력",
+    "코크 네트워크 유착 공격 소재"
+   ],
+   "policy": [
+    "가족농 보호·Big Ag 반독점",
+    "교육(학부모 권한)",
+    "낙태 반대",
+    "Make Iowa Healthy Again"
+   ],
+   "kr_note": null,
+   "sources": [
+    "https://ballotpedia.org/Zach_Lahn",
+    "https://www.iowapublicradio.org/political-news/2026-06-03/zach-lahn-wins-republican-nomination-for-iowa-governor"
+   ],
+   "status": "nominee"
+  },
+  {
+   "state": "KS",
+   "office": "governor",
+   "party": "D",
+   "name": "Cindy Holscher",
+   "name_kr": "신디 홀셔",
+   "incumbent": false,
+   "photo": "assets/candidates/gv_ks_holscher.jpg",
+   "photo_credit": "Kansas State Democrats (Cindy Holscher) · CC0 (Wikimedia Commons: Kansas_State_Senator_Cindy_Holscher.jpg)",
+   "born": 1969,
+   "occupation": "캔자스 주상원의원(오버랜드파크, 2021~) · 전 주하원 · 기업 마케팅 출신",
+   "education": "미주리대 학사(저널리즘·마케팅·정치학) — 집안 첫 대졸",
+   "family": "남편 Greg, 자녀 셋",
+   "past_elections": [
+    "2016 주하원 55.7%(공화 현직 격파)",
+    "2020 주상원 54.4% · 2024 재선 61.1%",
+    "2026-08-04 경선 49%(켈리 주지사 지지 코슨 39% 격파)"
+   ],
+   "fundraising": "미확인 (경선 직후)",
+   "strengths": [
+    "공화 성향 교외 지역구 연승 — 캔자스 민주 승리 공식의 핵심 지역",
+    "노동자 가정 서사",
+    "브라운백 감세 실패 프레임 활용 가능"
+   ],
+   "weaknesses": [
+    "주 전체 인지도·모금력 열세",
+    "켈리식 온건 브랜드 계승 미검증",
+    "연방선거 기준 공화 우위 주"
+   ],
+   "policy": [
+    "공교육 완전 재정",
+    "식품 판매세·사회보장 과세 폐지",
+    "메디케이드 확대",
+    "보육 세액공제"
+   ],
+   "kr_note": null,
+   "sources": [
+    "https://ballotpedia.org/Cindy_Holscher",
+    "https://kansasreflector.com/2026/08/04/masterson-scores-win-in-gop-primary-for-kansas-governor-holscher-prevails-in-democratic-race/"
+   ],
+   "status": "nominee"
+  },
+  {
+   "state": "KS",
+   "office": "governor",
+   "party": "R",
+   "name": "Ty Masterson",
+   "name_kr": "타이 매스터슨",
+   "incumbent": false,
+   "photo": null,
+   "photo_credit": null,
+   "born": 1969,
+   "occupation": "캔자스 주상원의장(2021~) · 주상원 5선 · 부동산·소기업 경영",
+   "education": "캔자스주립대 수학 (학위 취득 여부 미확인)",
+   "family": "부인 Marlo",
+   "past_elections": [
+    "주상원 5선(63.5~69.0%)",
+    "2026-08-04 경선 43%(7인 — 슈왑 국무장관 등 격파)"
+   ],
+   "fundraising": "미확인 (경선 직후 · 경선 외부자금 $20M+ 유입 레이스)",
+   "strengths": [
+    "주의회 권력 정점 — 입법 실적·당내 조직",
+    "강성 보수 기반 결집",
+    "트럼프·마셜 상원의원 지지"
+   ],
+   "weaknesses": [
+    "2011년 개인 파산 전력",
+    "강경 사회 이슈 주도 — 2022 낙태권 주민투표 59% 유지 주에서 중도 이탈 위험",
+    "최근 3연속 민주 주지사 당선 주"
+   ],
+   "policy": [
+    "감세",
+    "학교선택(바우처)",
+    "낙태 반대",
+    "불법이민 대응"
+   ],
+   "kr_note": null,
+   "sources": [
+    "https://ballotpedia.org/Ty_Masterson"
+   ],
+   "status": "nominee"
+  }
+ ]
+}

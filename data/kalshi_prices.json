@@ -1,36 +1,36 @@
 {
- "as_of": "2026-08-09",
- "fetched_at_utc": "2026-08-09T21:23:45Z",
+ "as_of": "2026-08-10",
+ "fetched_at_utc": "2026-08-10T13:54:03Z",
  "type": "market",
  "source_label": "Kalshi (예측시장 가격)",
  "source_url": "https://kalshi.com/",
  "note": "가격(센트)은 확률의 근사일 뿐이며 확률 자체가 아니다 — 유동성·수수료·거래자 편향이 섞인다. 민주/공화 값은 서로 다른 계약의 마지막 체결가라 합이 100이 안 될 수 있으며, 정규화하지 않고 원값 그대로 싣는다. Cook·Sabato의 등급과 같은 잣대로 비교하지 말 것.",
  "senate_control": {
   "dem": 46.0,
-  "rep": 54.0,
+  "rep": 55.0,
   "question": "Will Democrats win the U.S. Senate in 2026?",
   "rules": "If the Democratic Party has won control of the U.S. Senate in 2026, then the market resolves to Yes.",
-  "volume": 2870670,
-  "open_interest": 1413905,
+  "volume": 2875507,
+  "open_interest": 1418689,
   "url": "https://kalshi.com/markets/controls/senate-winner"
  },
  "house_control": {
-  "dem": 84.0,
-  "rep": 16.0,
+  "dem": 85.0,
+  "rep": 15.0,
   "question": "Will Democrats win the House in 2026?",
   "rules": "If the Democratic Party has won control of the House in 2026, then the market resolves to Yes.",
-  "volume": 8880733,
-  "open_interest": 5520145,
+  "volume": 8889765,
+  "open_interest": 5528454,
   "url": "https://kalshi.com/markets/controlh"
  },
  "senate": {
   "AK": {
    "dem": 55.0,
-   "rep": 46.0,
+   "rep": 45.0,
    "dem_label": "Democratic party",
    "rep_label": "Republican party",
-   "volume": 496116,
-   "open_interest": 354367,
+   "volume": 497348,
+   "open_interest": 354442,
    "series": "SENATEAK",
    "tickers": [
     "SENATEAK-26-D",
@@ -95,12 +95,12 @@
    "url": "https://kalshi.com/markets/senatede"
   },
   "FL": {
-   "dem": 13.0,
+   "dem": 15.0,
    "rep": 87.0,
    "dem_label": "Democratic party",
    "rep_label": "Republican party",
-   "volume": 144768,
-   "open_interest": 89283,
+   "volume": 144869,
+   "open_interest": 89384,
    "series": "SENATEFLS",
    "tickers": [
     "SENATEFLS-26-R",
@@ -109,12 +109,12 @@
    "url": "https://kalshi.com/markets/senatefls"
   },
   "GA": {
-   "dem": 91.6,
-   "rep": 8.8,
+   "dem": 91.2,
+   "rep": 8.1,
    "dem_label": "Jon Ossoff",
    "rep_label": "Mike Collins",
-   "volume": 1017618,
-   "open_interest": 728658,
+   "volume": 1018133,
+   "open_interest": 728670,
    "series": "SENATEGA",
    "tickers": [
     "SENATEGA-26-D",
@@ -124,11 +124,11 @@
   },
   "IA": {
    "dem": 41.0,
-   "rep": 61.0,
+   "rep": 59.0,
    "dem_label": "Josh Turek",
    "rep_label": "Ashley Hinson",
-   "volume": 1013823,
-   "open_interest": 881637,
+   "volume": 1026013,
+   "open_interest": 880123,
    "series": "SENATEIA",
    "tickers": [
     "SENATEIA-26-R",
@@ -166,11 +166,11 @@
   },
   "KS": {
    "dem": 20.0,
-   "rep": 82.0,
+   "rep": 81.0,
    "dem_label": "Adam Hamilton",
    "rep_label": "Roger Marshall",
-   "volume": 243313,
-   "open_interest": 185751,
+   "volume": 244581,
+   "open_interest": 187014,
    "series": "SENATEKS",
    "tickers": [
     "SENATEKS-26-R",
@@ -179,12 +179,12 @@
    "url": "https://kalshi.com/markets/senateks"
   },
   "KY": {
-   "dem": 5.1,
+   "dem": 7.0,
    "rep": 93.5,
    "dem_label": "Charles Booker",
    "rep_label": "Andy Barr",
-   "volume": 93084,
-   "open_interest": 39806,
+   "volume": 93092,
+   "open_interest": 39814,
    "series": "SENATELA",
    "tickers": [
     "SENATELA-26-R",
@@ -222,11 +222,11 @@
   },
   "ME": {
    "dem": 65.0,
-   "rep": 36.0,
+   "rep": 37.0,
    "dem_label": "Troy Jackson",
    "rep_label": "Susan Collins",
-   "volume": 3725863,
-   "open_interest": 2010104,
+   "volume": 3731289,
+   "open_interest": 2012665,
    "series": "SENATEME",
    "tickers": [
     "SENATEME-26-R",
@@ -236,11 +236,11 @@
   },
   "MI": {
    "dem": 55.0,
-   "rep": 46.0,
+   "rep": 45.0,
    "dem_label": "Abdul El-Sayed",
    "rep_label": "Mike Rogers",
-   "volume": 1079594,
-   "open_interest": 842758,
+   "volume": 1106431,
+   "open_interest": 848911,
    "series": "SENATEMI",
    "tickers": [
     "SENATEMI-26-R",
@@ -250,11 +250,11 @@
   },
   "MN": {
    "dem": 94.9,
-   "rep": 5.7,
+   "rep": 6.7,
    "dem_label": "Democratic (DFL) party",
    "rep_label": "Republican party",
-   "volume": 88743,
-   "open_interest": 48940,
+   "volume": 91048,
+   "open_interest": 51245,
    "series": "SENATEMN",
    "tickers": [
     "SENATEMN-26-R",
@@ -278,11 +278,11 @@
   },
   "MT": {
    "dem": 2.3,
-   "rep": 88.0,
+   "rep": 87.0,
    "dem_label": "Alani Bankhead",
    "rep_label": "Kurt Alme",
-   "volume": 195848,
-   "open_interest": 117162,
+   "volume": 195975,
+   "open_interest": 117289,
    "series": "SENATEMT",
    "tickers": [
     "SENATEMT-26-R",
@@ -291,12 +291,12 @@
    "url": "https://kalshi.com/markets/senatemt"
   },
   "NC": {
-   "dem": 91.1,
-   "rep": 9.8,
+   "dem": 91.2,
+   "rep": 8.8,
    "dem_label": "Roy Cooper",
    "rep_label": "Michael Whatley",
-   "volume": 1343772,
-   "open_interest": 1173506,
+   "volume": 1344480,
+   "open_interest": 1173736,
    "series": "SENATENC",
    "tickers": [
     "SENATENC-26-R",
@@ -306,11 +306,11 @@
   },
   "NE": {
    "dem": 0.5,
-   "rep": 71.0,
+   "rep": 70.0,
    "dem_label": "Cindy Burbank",
    "rep_label": "Pete Ricketts",
-   "volume": 253870,
-   "open_interest": 164578,
+   "volume": 255122,
+   "open_interest": 164119,
    "series": "SENATENE",
    "tickers": [
     "SENATENE-26-R",
@@ -319,12 +319,12 @@
    "url": "https://kalshi.com/markets/senatene"
   },
   "NH": {
-   "dem": 88.0,
+   "dem": 89.0,
    "rep": 11.0,
    "dem_label": "Democratic party",
    "rep_label": "Republican party",
-   "volume": 160352,
-   "open_interest": 108059,
+   "volume": 160510,
+   "open_interest": 108216,
    "series": "SENATENH",
    "tickers": [
     "SENATENH-26-R",
@@ -347,12 +347,12 @@
    "url": "https://kalshi.com/markets/senatenj"
   },
   "NM": {
-   "dem": 93.7,
+   "dem": 97.1,
    "rep": 3.8,
    "dem_label": "Ben Ray Luján",
    "rep_label": "Larry E. Marker",
-   "volume": 22832,
-   "open_interest": 11002,
+   "volume": 23576,
+   "open_interest": 11001,
    "series": "SENATENM",
    "tickers": [
     "SENATENM-26-R",
@@ -365,8 +365,8 @@
    "rep": 51.0,
    "dem_label": "Sherrod Brown",
    "rep_label": "Jon Husted",
-   "volume": 1026446,
-   "open_interest": 776619,
+   "volume": 1038165,
+   "open_interest": 779936,
    "series": "SENATEOHS",
    "tickers": [
     "SENATEOHS-26-D",
@@ -417,12 +417,12 @@
    "url": "https://kalshi.com/markets/senateri"
   },
   "SC": {
-   "dem": 11.0,
+   "dem": 13.0,
    "rep": 88.0,
    "dem_label": "Annie Andrews",
    "rep_label": "Republican party",
-   "volume": 619193,
-   "open_interest": 387973,
+   "volume": 619447,
+   "open_interest": 387969,
    "series": "SENATESC",
    "tickers": [
     "SENATESC-26-R",
@@ -459,12 +459,12 @@
    "url": "https://kalshi.com/markets/senatetn"
   },
   "TX": {
-   "dem": 50.0,
+   "dem": 49.0,
    "rep": 51.0,
    "dem_label": "James Talarico",
    "rep_label": "Ken Paxton",
-   "volume": 7652807,
-   "open_interest": 5214977,
+   "volume": 7687244,
+   "open_interest": 5240932,
    "series": "SENATETX",
    "tickers": [
     "SENATETX-26-D",
@@ -474,11 +474,11 @@
   },
   "VA": {
    "dem": 95.7,
-   "rep": 1.9,
+   "rep": 2.3,
    "dem_label": "Mark Warner",
    "rep_label": "Bert Mizusawa",
-   "volume": 20428,
-   "open_interest": 9416,
+   "volume": 21063,
+   "open_interest": 10041,
    "series": "SENATEVA",
    "tickers": [
     "SENATEVA-26-D",
@@ -517,12 +517,12 @@
  },
  "governor": {
   "AK": {
-   "dem": 44.0,
-   "rep": 54.0,
+   "dem": 40.0,
+   "rep": 55.0,
    "dem_label": "Democratic party",
    "rep_label": "Republican party",
-   "volume": 69106,
-   "open_interest": 21889,
+   "volume": 69110,
+   "open_interest": 21891,
    "series": "KXGOVPARTYAK",
    "tickers": [
     "KXGOVPARTYAK-26-R",
@@ -531,12 +531,12 @@
    "url": "https://kalshi.com/markets/kxgovpartyak"
   },
   "AL": {
-   "dem": 8.5,
-   "rep": 93.0,
+   "dem": 5.0,
+   "rep": 94.5,
    "dem_label": "Doug Jones",
    "rep_label": "Tommy Tuberville",
-   "volume": 54244,
-   "open_interest": 42505,
+   "volume": 54246,
+   "open_interest": 42507,
    "series": "GOVPARTYAL",
    "tickers": [
     "GOVPARTYAL-26-R",
@@ -545,12 +545,12 @@
    "url": "https://kalshi.com/markets/govpartyal"
   },
   "AR": {
-   "dem": 2.4,
-   "rep": 99.3,
+   "dem": 1.0,
+   "rep": 99.8,
    "dem_label": "Democratic",
    "rep_label": "Republican",
-   "volume": 2769,
-   "open_interest": 2057,
+   "volume": 2771,
+   "open_interest": 2059,
    "series": "GOVPARTYAR",
    "tickers": [
     "GOVPARTYAR-26-R",
@@ -563,8 +563,8 @@
    "rep": 15.0,
    "dem_label": "Katie Hobbs",
    "rep_label": "Andy Biggs",
-   "volume": 477410,
-   "open_interest": 314717,
+   "volume": 477930,
+   "open_interest": 315146,
    "series": "GOVPARTYAZ",
    "tickers": [
     "GOVPARTYAZ-26-R",
@@ -573,12 +573,12 @@
    "url": "https://kalshi.com/markets/govpartyaz"
   },
   "CA": {
-   "dem": 95.1,
-   "rep": 5.1,
+   "dem": 95.3,
+   "rep": 5.0,
    "dem_label": "Xavier Becerra",
    "rep_label": "Steve Hilton",
-   "volume": 1207786,
-   "open_interest": 611584,
+   "volume": 1207918,
+   "open_interest": 611493,
    "series": "GOVPARTYCA",
    "tickers": [
     "GOVPARTYCA-26-R",
@@ -591,8 +591,8 @@
    "rep": 3.7,
    "dem_label": "Phil Weiser",
    "rep_label": "Victor Marx",
-   "volume": 81550,
-   "open_interest": 60647,
+   "volume": 81579,
+   "open_interest": 60675,
    "series": "GOVPARTYCO",
    "tickers": [
     "GOVPARTYCO-26-R",
@@ -633,8 +633,8 @@
    "rep": 44.0,
    "dem_label": "Keisha Lance Bottoms",
    "rep_label": "Rick Jackson",
-   "volume": 493535,
-   "open_interest": 405762,
+   "volume": 499369,
+   "open_interest": 411595,
    "series": "GOVPARTYGA",
    "tickers": [
     "GOVPARTYGA-26-R",
@@ -657,12 +657,12 @@
    "url": "https://kalshi.com/markets/govpartyhi"
   },
   "IA": {
-   "dem": 63.0,
-   "rep": 35.0,
+   "dem": 65.0,
+   "rep": 36.0,
    "dem_label": "Rob Sand",
    "rep_label": "Zach Lahn",
-   "volume": 332559,
-   "open_interest": 234017,
+   "volume": 333714,
+   "open_interest": 234760,
    "series": "GOVPARTYIA",
    "tickers": [
     "GOVPARTYIA-26-R",
@@ -685,12 +685,12 @@
    "url": "https://kalshi.com/markets/govpartyid"
   },
   "IL": {
-   "dem": 94.9,
-   "rep": 7.5,
+   "dem": 96.0,
+   "rep": 4.8,
    "dem_label": "JB Pritzker",
    "rep_label": "Darren Bailey",
-   "volume": 47082,
-   "open_interest": 33891,
+   "volume": 47303,
+   "open_interest": 33724,
    "series": "GOVPARTYIL",
    "tickers": [
     "GOVPARTYIL-26-R",
@@ -699,12 +699,12 @@
    "url": "https://kalshi.com/markets/govpartyil"
   },
   "KS": {
-   "dem": 21.0,
-   "rep": 81.0,
+   "dem": 20.0,
+   "rep": 80.0,
    "dem_label": "Cindy Holscher",
    "rep_label": "Ty Masterson",
-   "volume": 22049,
-   "open_interest": 12338,
+   "volume": 22136,
+   "open_interest": 12402,
    "series": "GOVPARTYKS",
    "tickers": [
     "GOVPARTYKS-27-R",
@@ -714,11 +714,11 @@
   },
   "MA": {
    "dem": 94.5,
-   "rep": 7.5,
+   "rep": 7.3,
    "dem_label": "Democratic party",
    "rep_label": "Republican party",
-   "volume": 126749,
-   "open_interest": 102699,
+   "volume": 126803,
+   "open_interest": 102752,
    "series": "GOVPARTYMA",
    "tickers": [
     "GOVPARTYMA-26-R",
@@ -759,8 +759,8 @@
    "rep": 17.0,
    "dem_label": "Jocelyn Benson",
    "rep_label": "John James",
-   "volume": 178038,
-   "open_interest": 120349,
+   "volume": 178077,
+   "open_interest": 120388,
    "series": "GOVPARTYMI",
    "tickers": [
     "GOVPARTYMI-26-R",
@@ -770,11 +770,11 @@
   },
   "MN": {
    "dem": 95.3,
-   "rep": 6.4,
+   "rep": 5.9,
    "dem_label": "Democratic party",
    "rep_label": "Republican party",
-   "volume": 242522,
-   "open_interest": 130980,
+   "volume": 242562,
+   "open_interest": 131020,
    "series": "GOVPARTYMN",
    "tickers": [
     "GOVPARTYMN-26-R",
@@ -784,10 +784,10 @@
   },
   "NE": {
    "dem": 15.0,
-   "rep": 85.0,
+   "rep": 82.0,
    "dem_label": "Lynne Walz",
    "rep_label": "Jim Pillen",
-   "volume": 33664,
+   "volume": 33674,
    "open_interest": 30251,
    "series": "GOVPARTYNE",
    "tickers": [
@@ -798,11 +798,11 @@
   },
   "NM": {
    "dem": 91.8,
-   "rep": 12.0,
+   "rep": 10.0,
    "dem_label": "Deb Haaland",
    "rep_label": "Greggory D. Hull",
-   "volume": 39850,
-   "open_interest": 21676,
+   "volume": 40065,
+   "open_interest": 21891,
    "series": "GOVPARTYNM",
    "tickers": [
     "GOVPARTYNM-26-R",
@@ -812,11 +812,11 @@
   },
   "NV": {
    "dem": 56.0,
-   "rep": 46.0,
+   "rep": 45.0,
    "dem_label": "Aaron Ford",
    "rep_label": "Joe Lombardo",
-   "volume": 269577,
-   "open_interest": 193816,
+   "volume": 269664,
+   "open_interest": 193902,
    "series": "GOVPARTYNV",
    "tickers": [
     "GOVPARTYNV-26-R",
@@ -825,12 +825,12 @@
    "url": "https://kalshi.com/markets/govpartynv"
   },
   "NY": {
-   "dem": 94.2,
-   "rep": 5.7,
+   "dem": 95.0,
+   "rep": 4.6,
    "dem_label": "Kathy Hochul",
    "rep_label": "Bruce Blakeman",
-   "volume": 555095,
-   "open_interest": 364805,
+   "volume": 557103,
+   "open_interest": 366053,
    "series": "GOVPARTYNY",
    "tickers": [
     "GOVPARTYNY-26-R",
@@ -839,12 +839,12 @@
    "url": "https://kalshi.com/markets/govpartyny"
   },
   "OH": {
-   "dem": 49.0,
-   "rep": 51.0,
+   "dem": 50.0,
+   "rep": 50.0,
    "dem_label": "Amy Acton",
    "rep_label": "Vivek Ramaswamy",
-   "volume": 944277,
-   "open_interest": 708138,
+   "volume": 947099,
+   "open_interest": 709329,
    "series": "GOVPARTYOH",
    "tickers": [
     "GOVPARTYOH-26-R",
@@ -854,11 +854,11 @@
   },
   "OK": {
    "dem": 4.2,
-   "rep": 94.0,
+   "rep": 96.9,
    "dem_label": "Cyndi Munson",
    "rep_label": "Republican party",
-   "volume": 66763,
-   "open_interest": 31883,
+   "volume": 66764,
+   "open_interest": 31884,
    "series": "GOVPARTYOK",
    "tickers": [
     "GOVPARTYOK-26-R",
@@ -868,11 +868,11 @@
   },
   "OR": {
    "dem": 88.0,
-   "rep": 12.0,
+   "rep": 13.0,
    "dem_label": "Tina Kotek",
    "rep_label": "Christine Drazan",
-   "volume": 128289,
-   "open_interest": 92830,
+   "volume": 129333,
+   "open_interest": 93834,
    "series": "GOVPARTYOR",
    "tickers": [
     "GOVPARTYOR-26-R",
@@ -881,12 +881,12 @@
    "url": "https://kalshi.com/markets/govpartyor"
   },
   "PA": {
-   "dem": 93.3,
-   "rep": 8.0,
+   "dem": 93.8,
+   "rep": 6.3,
    "dem_label": "Josh Shapiro",
    "rep_label": "Stacy Garrity",
-   "volume": 367798,
-   "open_interest": 353529,
+   "volume": 387886,
+   "open_interest": 363609,
    "series": "GOVPARTYPA",
    "tickers": [
     "GOVPARTYPA-26-R",
@@ -941,8 +941,8 @@
    "rep": 97.4,
    "dem_label": "Jerri Green",
    "rep_label": "Marsha Blackburn",
-   "volume": 14375,
-   "open_interest": 10219,
+   "volume": 14479,
+   "open_interest": 10323,
    "series": "GOVPARTYTN",
    "tickers": [
     "GOVPARTYTN-26-R",
@@ -951,12 +951,12 @@
    "url": "https://kalshi.com/markets/govpartytn"
   },
   "TX": {
-   "dem": 12.0,
+   "dem": 13.0,
    "rep": 89.0,
    "dem_label": "Gina Hinojosa",
    "rep_label": "Greg Abbott",
-   "volume": 577881,
-   "open_interest": 465637,
+   "volume": 578761,
+   "open_interest": 465897,
    "series": "GOVPARTYTX",
    "tickers": [
     "GOVPARTYTX-26-R",
@@ -983,8 +983,8 @@
    "rep": 62.0,
    "dem_label": "Democratic party",
    "rep_label": "Republican party",
-   "volume": 382972,
-   "open_interest": 276558,
+   "volume": 389621,
+   "open_interest": 283129,
    "series": "GOVPARTYWI",
    "tickers": [
     "GOVPARTYWI-26-R",

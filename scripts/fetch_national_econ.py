@@ -31,6 +31,8 @@ SERIES_START = "2026-01"  # 그래프 시계열 시작 (YYYY-MM) — 필요 시 
 SERIES = [
     # (series_id, 출력키, 지표명, 단위, yoy 계산 여부, 선거 함의 메모)
     ("CPIAUCSL", "cpi_yoy", "CPI (전년 대비)", "%", True,  "물가는 현 사이클 최대 악재"),
+    ("CPILFESL", "cpi_core_yoy", "근원 CPI (전년 대비)", "%", True,
+     "에너지·식품 제외 — 전쟁발 유가 충격과 기저 물가를 가른다"),
     ("UNRATE",   "unrate",  "실업률",          "%", False, "고용 악화 시 현직당 부담 가중"),
     ("UMCSENT",  "umcsent", "미시간대 소비자심리", "지수", False, "체감 경기 — 지지율 선행 지표 성격"),
 ]

@@ -1,13 +1,63 @@
 {
-  "as_of": "2026-08-09",
-  "aggregators": [
-    {"source": "USPollingData", "dem": 48.1, "rep": 41.1, "margin": 7.0, "agg_as_of": "2026-07-24", "population": "종합 (2018.8 이후 최대 폭)"},
-    {"source": "Silver Bulletin", "dem": null, "rep": null, "margin": 6.4, "agg_as_of": "2026-08-07", "population": "LV 가중"},
-    {"source": "FiftyPlusOne", "dem": 49.4, "rep": 43.5, "margin": 5.9, "agg_as_of": "2026-07-31", "population": "품질·최신성 가중"},
-    {"source": "Morning Consult", "dem": 46, "rep": 42, "margin": 4.0, "agg_as_of": "2026-07-24", "population": "등록유권자(RV)"}
-  ],
-  "spread_examples": [
-    {"pollster": "Emerson·Big Data Poll", "dem": 53, "rep": 42, "margin": 11, "population": "LV", "note": "상단 아웃라이어 2건 — Emerson 53/42(7/19–20)·Big Data Poll 50/39(~7/29). 밴드 밖으로 기록만 하고 가중하지 않음"},
-    {"pollster": "Morning Consult·RCP", "dem": 46, "rep": 42, "margin": 4, "population": "RV", "note": "하단 — MC 트래커 D+4(7월 하순). 같은 주 RCP 평균은 8/5 D+7.2·8/6 D+6.6·8/7 D+7.0(48.6-41.6)으로 RCP 기준 사이클 최고치권을 터치했고, 엄격 모델(G.E. Morris)은 ~D+2.3 — 집계 방식에 따라 D+2~7 범위이나 방향(민주 우위)은 전 집계 일치"}
-  ]
+ "as_of": "2026-08-09",
+ "aggregators": [
+  {
+   "source": "RealClearPolitics",
+   "dem": 48.6,
+   "rep": 41.6,
+   "margin": 7.0,
+   "agg_as_of": "2026-08-07",
+   "population": "종합 (주중 D+7.2·8/5 터치 — 사이클 최고치권)"
+  },
+  {
+   "source": "USPollingData",
+   "dem": null,
+   "rep": null,
+   "margin": 7.0,
+   "agg_as_of": "2026-08-02",
+   "population": "종합 (2018.8 이후 최대 폭)"
+  },
+  {
+   "source": "Silver Bulletin",
+   "dem": null,
+   "rep": null,
+   "margin": 6.4,
+   "agg_as_of": "2026-08-07",
+   "population": "LV 가중"
+  },
+  {
+   "source": "FiftyPlusOne",
+   "dem": 49.4,
+   "rep": 43.5,
+   "margin": 5.9,
+   "agg_as_of": "2026-07-31",
+   "population": "품질·최신성 가중"
+  },
+  {
+   "source": "Morning Consult",
+   "dem": 46,
+   "rep": 42,
+   "margin": 4.0,
+   "agg_as_of": "2026-07-24",
+   "population": "등록유권자(RV)"
+  }
+ ],
+ "spread_examples": [
+  {
+   "pollster": "Emerson·Big Data Poll",
+   "dem": 53,
+   "rep": 42,
+   "margin": 11,
+   "population": "LV",
+   "note": "상단 아웃라이어 2건 — Emerson 53/42(7/19–20)·Big Data Poll 50/39(~7/29). 밴드 밖으로 기록만 하고 가중하지 않음"
+  },
+  {
+   "pollster": "Morning Consult·RCP",
+   "dem": 46,
+   "rep": 42,
+   "margin": 4,
+   "population": "RV",
+   "note": "하단 — MC D+4. RCP는 8/2 D+6.0 → 8/5 D+7.2 → 8/6 D+6.6 → 8/7 D+7.0으로 사이클 최고치권 터치. 엄격 모델(G.E. Morris)은 약 D+2.3로, 집계 방식에 따라 D+2~7 범위"
+  }
+ ]
 }

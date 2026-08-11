@@ -164,7 +164,7 @@
   {
    "key": "split-ticket-2026-senate-ratings",
    "label": "Split Ticket",
-   "as_of": "2026-08-06",
+   "as_of": "2026-08-10",
    "ratings": {
     "AK": "Toss-up",
     "AL": "Solid R",
@@ -187,7 +187,7 @@
     "MT": "Solid R",
     "NC": "Likely D",
     "NE": "Likely R",
-    "NH": "Likely D",
+    "NH": "Solid D",
     "NJ": "Solid D",
     "NM": "Solid D",
     "OH": "Lean D",
@@ -206,7 +206,7 @@
    "watch": {
     "GA": "Likely D",
     "NC": "Likely D",
-    "NH": "Likely D",
+    "NH": "Solid D",
     "MI": "Lean D",
     "ME": "Lean D",
     "AK": "Toss-up",
@@ -376,7 +376,7 @@
   {
    "key": "racetothewh-2026-senate-forecast",
    "label": "Race to the WH",
-   "as_of": "2026-07-21",
+   "as_of": "2026-08-10",
    "ratings": {
     "AK": "Toss-up",
     "AL": "Solid R",
@@ -393,23 +393,23 @@
     "LA": "Likely R",
     "MA": "Solid D",
     "ME": "Tilt D",
-    "MI": "Tilt D",
+    "MI": "Toss-up",
     "MN": "Solid D",
     "MS": "Solid R",
     "MT": "Likely R",
     "NC": "Likely D",
     "NE": "Lean R",
-    "NH": "Lean D",
+    "NH": "Likely D",
     "NJ": "Solid D",
     "NM": "Solid D",
-    "OH": "Tilt D",
+    "OH": "Lean D",
     "OK": "Solid R",
     "OR": "Solid D",
     "RI": "Solid D",
-    "SC": "Likely R",
+    "SC": "Lean R",
     "SD": "Solid R",
     "TN": "Solid R",
-    "TX": "Toss-up",
+    "TX": "Tilt D",
     "VA": "Solid D",
     "WV": "Solid R",
     "WY": "Solid R"
@@ -418,18 +418,18 @@
    "watch": {
     "GA": "Likely D",
     "NC": "Likely D",
-    "NH": "Lean D",
-    "MI": "Tilt D",
+    "NH": "Likely D",
+    "MI": "Toss-up",
     "ME": "Tilt D",
     "AK": "Toss-up",
-    "OH": "Tilt D",
-    "TX": "Toss-up"
+    "OH": "Lean D",
+    "TX": "Tilt D"
    }
   },
   {
    "key": "kalshi-2026-senate-prediction-market-prices",
    "label": "Kalshi (예측시장 가격)",
-   "as_of": "2026-08-09",
+   "as_of": "2026-08-10",
    "ratings": {
     "AK": "Tilt D",
     "AL": "Solid R",

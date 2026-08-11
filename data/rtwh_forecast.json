@@ -1,12 +1,12 @@
 {
- "as_of": "2026-08-09",
- "fetched_at_utc": "2026-08-09T21:24:39Z",
+ "as_of": "2026-08-10",
+ "fetched_at_utc": "2026-08-10T13:55:00Z",
  "type": "model",
  "source_label": "Race to the WH",
  "source_url": "https://www.racetothewh.com/senate/26",
  "chamber": "senate",
- "series_refreshed": "2026-08-09T21:23:20.650Z",
- "last_point_label": "Aug 9",
+ "series_refreshed": "2026-08-10T13:53:03.191Z",
+ "last_point_label": "Aug 10",
  "dem_majority_prob": 57.6,
  "rep_majority_prob": 42.4,
  "seats_projected": {

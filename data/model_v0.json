@@ -1,6 +1,6 @@
 {
   "version": "v0.1",
-  "run_date": "2026-08-10",
+  "run_date": "2026-08-11",
   "seed": 20261103,
   "n_sims": 10000,
   "assumptions": {
@@ -20,49 +20,49 @@
       "defense": "D",
       "rating": "Lean D (Cook) / Likely D (Sabato 7/30↑)",
       "p_rating": 0.75,
-      "p_market": 0.92,
+      "p_market": 0.91,
       "poll_margin": 10.4,
       "n_polls": 2,
       "p_poll": 0.958,
-      "p_blend": 0.89
+      "p_blend": 0.886
     },
     {
       "state": "MI",
       "defense": "D",
-      "rating": "Toss Up",
+      "rating": "Toss Up (Cook·Sabato)",
       "p_rating": 0.5,
       "p_market": 0.55,
-      "poll_margin": -5.9,
+      "poll_margin": -6.2,
       "n_polls": 2,
-      "p_poll": 0.161,
-      "p_blend": 0.379
+      "p_poll": 0.15,
+      "p_blend": 0.374
     },
     {
       "state": "NH",
       "defense": "D",
       "rating": "Lean D",
       "p_rating": 0.75,
-      "p_market": 0.88,
+      "p_market": 0.89,
       "poll_margin": 2.2,
       "n_polls": 2,
       "p_poll": 0.643,
-      "p_blend": 0.749
+      "p_blend": 0.752
     },
     {
       "state": "ME",
       "defense": "R",
-      "rating": "Toss Up (Cook·DDHQ)",
+      "rating": "Toss Up",
       "p_rating": 0.5,
       "p_market": 0.65,
-      "poll_margin": 3.3,
-      "n_polls": 3,
-      "p_poll": 0.707,
-      "p_blend": 0.632
+      "poll_margin": 3.4,
+      "n_polls": 2,
+      "p_poll": 0.716,
+      "p_blend": 0.636
     },
     {
       "state": "NC",
       "defense": "R",
-      "rating": "Lean D (Cook·Sabato)",
+      "rating": "Lean D (UVA) / 일부 Lean R",
       "p_rating": 0.75,
       "p_market": 0.91,
       "poll_margin": 10.8,
@@ -73,13 +73,13 @@
     {
       "state": "TX",
       "defense": "R",
-      "rating": "Lean R (토스업 경계)",
+      "rating": "Lean R",
       "p_rating": 0.25,
-      "p_market": 0.51,
+      "p_market": 0.49,
       "poll_margin": 2.5,
       "n_polls": 7,
-      "p_poll": 0.659,
-      "p_blend": 0.5
+      "p_poll": 0.66,
+      "p_blend": 0.494
     },
     {
       "state": "OH",
@@ -102,26 +102,38 @@
       "n_polls": 1,
       "p_poll": 0.369,
       "p_blend": 0.487
+    },
+    {
+      "state": "IA",
+      "defense": "R",
+      "rating": "Lean R (Cook·Sabato 6/3) / Tilt R (IE 8/6↓)",
+      "p_rating": 0.25,
+      "p_market": 0.41,
+      "poll_margin": 0.9,
+      "n_polls": 2,
+      "p_poll": 0.56,
+      "p_blend": 0.427
     }
   ],
-  "dem_majority_prob": 29.9,
+  "dem_majority_prob": 37.4,
   "seats": {
-    "mean": 48.99,
+    "mean": 49.41,
     "p05": 45,
-    "p25": 47,
-    "median": 49,
+    "p25": 48,
+    "median": 50,
     "p75": 51,
-    "p95": 52
+    "p95": 53
   },
   "seat_pmf": {
-    "44": 0.0218,
-    "45": 0.0498,
-    "46": 0.083,
-    "47": 0.108,
-    "48": 0.1355,
-    "49": 0.1525,
-    "50": 0.1506,
-    "51": 0.1485,
-    "52": 0.1503
+    "44": 0.0223,
+    "45": 0.0466,
+    "46": 0.0764,
+    "47": 0.0955,
+    "48": 0.1179,
+    "49": 0.1338,
+    "50": 0.1333,
+    "51": 0.1313,
+    "52": 0.1214,
+    "53": 0.1215
   }
 }

@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-08-06",
+  "as_of": "2026-08-08",
   "rows": [
     {
       "state": "NC",
       "event": "양당 경선",
       "date": "2026-03-03",
       "status": "완료",
-      "detail": "Cooper(D) 92.0% · Whatley(R) 64.6%로 각각 지명 — 본선 대진 확정(Tillis 은퇴 의석). 8개 감시주 중 가장 먼저 대진이 굳은 곳이라 본선 조사의 신뢰도가 높다."
+      "detail": "Cooper(D) 92.0% · Whatley(R) 64.6%로 각각 지명 — 본선 대진 확정(Tillis 은퇴 의석). 9개 감시주 중 가장 먼저 대진이 굳은 곳이라 본선 조사의 신뢰도가 높다."
     },
     {
       "state": "OH",
@@ -21,6 +21,13 @@
       "date": "2026-05-26",
       "status": "완료",
       "detail": "Paxton 63.8% vs 현직 Cornyn 약 35% — 3/3 1차에서 과반 미달로 간 결선에서 30년 현직을 격파. 이 결과로 Cook이 Likely R→Lean R 하향(5/31)."
+    },
+    {
+      "state": "IA",
+      "event": "양당 경선",
+      "date": "2026-06-02",
+      "status": "완료",
+      "detail": "민주 — Josh Turek 62.7%로 Zach Wahls(주 상원의원) 격파 · 공화 — Ashley Hinson(연방하원 IA-02) 74.2%로 Jim Carlin 제압. Ernst 은퇴로 열린 개방석이라 양당 모두 경선이 실질 경쟁이었다. 수치는 아이오와 주무장관 공식 개표(Canvass Summary)."
     },
     {
       "state": "GA",
@@ -45,7 +52,7 @@
     },
     {
       "state": "SC",
-      "event": "공화 특별 예비선거 (감시 8주 밖)",
+      "event": "공화 특별 예비선거 (감시 9주 밖)",
       "date": "2026-08-11",
       "status": "예정",
       "detail": "Graham(R) 별세(7/11)로 생긴 공석. 임명된 여동생 Darline Graham이 잔여 임기 승계 후 정식 임기 도전. 후보 등록 7/28 마감·총 12명. 안전 공화이나 8월 혼돈이 판도 확장의 꼬리 리스크."

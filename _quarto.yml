@@ -64,7 +64,7 @@ website:
             href: senate.qmd
           - text: "시나리오 — 소수·50:50·다수"
             href: scenarios.qmd
-          - section: "State Focus (8주)"
+          - section: "State Focus (9주)"
             contents:
               - states/ga.qmd
               - states/mi.qmd
@@ -74,6 +74,7 @@ website:
               - states/tx.qmd
               - states/oh.qmd
               - states/ak.qmd
+              - states/ia.qmd
       - section: "하원 House"
         contents:
           - text: "경합구 트래커 — 토스업·재획정"
