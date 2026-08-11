@@ -41,7 +41,7 @@
     root.appendChild(wrap);
   }
 
-  // 8개 주 가로 막대(자체 모델 v0) × 예측시장가 마커(◆) 오버레이 — 50% 기준선 포함
+  // 9개 주 가로 막대(자체 모델 v0) × 예측시장가 마커(◆) 오버레이 — 50% 기준선 포함
   function renderStateOutlook(d, m) {
     const ctx = document.getElementById("probChart");
     if (!ctx || !window.Chart) return;
