@@ -6,6 +6,7 @@ project:
     - "*.qmd"
     - "issues/"
     - "states/"
+    - "governors/"
     - "!handoff.md"
     - "!NOTES_LOCAL.md"
     - "!README.md"
@@ -85,6 +86,16 @@ website:
         contents:
           - text: "주지사 — 36개 주 경합"
             href: governors.qmd
+          - section: "State Focus (경합 8주)"
+            contents:
+              - governors/az.qmd
+              - governors/ga.qmd
+              - governors/oh.qmd
+              - governors/mi.qmd
+              - governors/wi.qmd
+              - governors/nv.qmd
+              - governors/ia.qmd
+              - governors/ks.qmd
           - text: "주의회 — 다음 지도를 그리는 주체"
             href: redistricting.qmd#legislature
       - section: "Korea Watch"

@@ -194,7 +194,9 @@ gt_state_detail <- function(code) {
 # data/senate_polls.csv 를 그대로 렌더 — 프로즈에 수치를 박지 않고 데이터에서 끌어오므로
 # 주간 발행 때 조사가 추가되면 각 주 페이지가 자동으로 최신화된다.
 gt_state_polls <- function(code) {
-  p <- readr::read_csv(file.path("data", "senate_polls.csv"), show_col_types = FALSE)
+  # 날짜 컬럼을 문자로 강제 — Date로 파싱되면 `x == ""` 비교가 NA가 돼 실사기간이 통째로 NA가 된다
+  p <- readr::read_csv(file.path("data", "senate_polls.csv"), show_col_types = FALSE,
+                       col_types = readr::cols(.default = "c"))
   p <- p[p$state == code, ]
   if (nrow(p) == 0) {
     return(gt(tibble(안내 = "이 주의 본선 여론조사가 아직 데이터베이스에 없습니다(추정으로 채우지 않음).")) |>
@@ -236,6 +238,86 @@ state_money_html <- function(code) {
     "이 주의 최신 분기 자금 요약은 아직 데이터에 없습니다(【수집】 — 추정으로 채우지 않음)."
   else v
   paste0('<div class="lookfor"><p><b>최신 자금 상황</b> (기준 ', d$as_of, ') — ', body, '</p></div>')
+}
+
+# 1.4c-2b 주지사 State Focus 헬퍼 3종 ----------------------------------------
+# 상원 State Focus(gt_state_detail·gt_state_polls·state_money_html)의 주지사 판.
+# 데이터만 governor_*로 갈아끼우고 렌더 규칙은 동일하게 유지한다 — 자금 라벨만
+# 다르다(주지사는 연방 FEC가 아니라 주(州) 선관위 신고라 자동 피드가 없다).
+gt_governor_detail <- function(code) {
+  d <- .load_json("governor_races")
+  r <- d$races[d$races$state == code, ]
+  p <- .load_json("governor_primaries")$rows
+  p <- p[p$state == code, ]
+
+  poll <- if (is.na(r$latest_poll)) "【수집】" else
+    paste0(r$latest_poll, if (!is.na(r$poll_source)) paste0(" (", r$poll_source, ")") else "")
+  rows <- tibble(
+    항목 = c("구도", "현직/구도", "등급", "최신 폴", "자금(주 선관위)", "한국 관심"),
+    내용 = c(ifelse(r$defense == "D", "민주 방어", "공화 방어"),
+           r$incumbent, r$rating, poll,
+           ifelse(is.na(r$cash_on_hand), "—", r$cash_on_hand),
+           r$kr_relevance)
+  )
+  if (nrow(p) > 0) {
+    rows <- bind_rows(rows, tibble(
+      항목 = paste0("경선 — ", p$event),
+      내용 = paste0(ifelse(is.na(p$date), p$status, paste0(p$date, " ", p$status)),
+                  ifelse(is.na(p$detail), "", paste0(" · ", p$detail)))
+    ))
+  }
+  rows |>
+    gt() |>
+    tab_header(title = paste0(code, " 주지사 레이스 카드"),
+               subtitle = paste0("기준 ", d$as_of, " · 자금은 주(州) 선관위 신고 기준(연방 FEC 아님)")) |>
+    .tbl_opts()
+}
+
+gt_governor_polls <- function(code) {
+  p <- readr::read_csv(file.path("data", "governor_polls.csv"), show_col_types = FALSE,
+                       col_types = readr::cols(.default = "c"))
+  p <- p[p$state == code, ]
+  if (nrow(p) == 0) {
+    return(gt(tibble(안내 = "이 주의 주지사 본선 여론조사가 아직 데이터베이스에 없습니다(추정으로 채우지 않음).")) |>
+             tab_header(title = "최신 여론조사") |> .tbl_opts())
+  }
+  p <- p[order(p$end_date, decreasing = TRUE), ]
+  fld <- function(x, alt = "—") ifelse(is.na(x) | x == "", alt, as.character(x))
+  period <- ifelse(is.na(p$start_date) | p$start_date == "",
+                   paste0("~", fld(p$end_date)),
+                   paste0(fld(p$start_date), " ~ ", fld(p$end_date)))
+  house <- ifelse(is.na(p$partisan) | p$partisan == "none", "",
+                  paste0(" (", p$partisan, " 성향)"))
+  res <- paste0(fld(p$dem_candidate), " ", fld(p$dem_pct), " – ",
+                fld(p$rep_pct), " ", fld(p$rep_candidate))
+  tibble(
+    조사기관 = paste0(p$pollster, house),
+    실사기간 = period,
+    모집단 = fld(p$population),
+    표본 = fld(p$n),
+    결과 = res,
+    마진 = .fmt_margin(suppressWarnings(as.numeric(p$margin))),
+    비고 = fld(p$note, "")
+  ) |>
+    gt() |>
+    tab_header(title = "최신 여론조사",
+               subtitle = paste0("최신순 · ", nrow(p), "건 · 양수 = 민주 우위(D+)")) |>
+    tab_source_note(paste0(
+      "출처 URL은 `data/governor_polls.csv`에 행별로 보관합니다(【수집】은 원문 URL 확인 중). ",
+      "당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 단일 조사보다 여러 조사의 방향을 함께 보세요. ",
+      "표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.")) |>
+    .tbl_opts()
+}
+
+governor_money_html <- function(code) {
+  d <- .load_json("governor_races")
+  r <- d$races[d$races$state == code, ]
+  v <- if (nrow(r) && !is.na(r$cash_on_hand)) r$cash_on_hand else NA
+  body <- if (is.na(v))
+    "이 주의 최신 자금 요약은 아직 데이터에 없습니다(【수집】 — 추정으로 채우지 않음)."
+  else v
+  paste0('<div class="lookfor"><p><b>최신 자금 상황</b> (기준 ', d$as_of,
+         ' · 주 선관위 신고 — 연방 FEC 아님) — ', body, '</p></div>')
 }
 
 # 1.4c-3 FEC 분기 신고 표 (State Focus용) -------------------------------------

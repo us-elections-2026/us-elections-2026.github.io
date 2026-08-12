@@ -1,0 +1,86 @@
+{
+  "as_of": "2026-08-12",
+  "note": "주지사 경합 8주 레이스 데이터 — senate_races.json과 동일 스키마. 등급은 governor_ratings.json(자동 취득)이 정본이고 여기엔 표시용 요약만 둔다. 자금은 주(州) 선관위 신고 기준(연방 FEC 아님) — 자동 피드가 없어 수동 갱신. 프로필·조사 상세는 report_2026-08-07 research_notes(기준 2026-08-07) 검증분.",
+  "races": [
+    {
+      "state": "AZ",
+      "defense": "D",
+      "incumbent": "Hobbs (D·현직) vs Biggs (R)",
+      "rating": "Lean D (Cook 7/10↑·Sabato) / Toss-up (IE)",
+      "latest_poll": "Hobbs 41–37 (Noble Predictive D+4) · TIPP(공화 성향) D+10 — 7/21 경선 후 신규 조사 미확인",
+      "poll_source": "Noble Predictive ~5/7 (RV 996) · TIPP ~4/24 (LV 1,159); 집계 평균 Hobbs +4~5",
+      "cash_on_hand": "Hobbs Q2 모금 $2.6M·잔고 $2.4M(선제 광고로 지출 $7.4M) vs Biggs $0.9M·잔고 $1.2M (주 선관위 신고, AZ Mirror 7/16) + DGA $10M 투입 발표(KJZZ 7/29)",
+      "kr_relevance": "반도체·배터리 투자처(간접) — 인허가·인센티브 결정권"
+    },
+    {
+      "state": "GA",
+      "defense": "R",
+      "incumbent": "Bottoms (D) vs Jackson (R) — 개방석(Kemp 임기 제한)",
+      "rating": "Toss-up (Cook·Sabato·IE·컨센서스)",
+      "latest_poll": "Bottoms +7.2 (State Navigate) · Fabrizio Lee(공화 성향) Bottoms 48–46 · Wick 43–43 — 집계 평균 Bottoms +5~6",
+      "poll_source": "State Navigate 7/13 (LV 448) · Fabrizio Lee 7/16 (LV 1,060) · Wick Insights 6/30 (LV 1,175)",
+      "cash_on_hand": "Jackson 자기자금 $50M+ 투입 — 공화 경선+결선 총비용 $138.6M 중 ~$108M 자비(Georgia Recorder). Bottoms는 전국 소액기부 네트워크, 본선 신고 초기 단계(주 선관위)",
+      "kr_relevance": "현대차 메타플랜트·SK온 배터리 — 주지사가 인허가·세제 인센티브 실질 결정권자"
+    },
+    {
+      "state": "OH",
+      "defense": "R",
+      "incumbent": "Acton (D) vs Ramaswamy (R) — 개방석",
+      "rating": "Toss-up (Cook 7/10↑) / Lean R (Sabato·IE) — 기관 이견 최대",
+      "latest_poll": "47–47 동률 (NYT/Siena) — RCP 평균 Acton +0.8 대 Pollsmax Ramaswamy +0.8로 집계조차 방향이 갈림",
+      "poll_source": "NYT/Siena 6월 말 (LV 601) · Impact/Fabrizio 초당 합동 6/16 (LV 800) Acton +3 · Tulchin(민주 성향) 6/12 +3 · BGSU/YouGov 2025-10 Ramaswamy +3 · Emerson 2025-12 Acton +1",
+      "cash_on_hand": "Ramaswamy 총모금 ~$50M(절반 자비 · 머스크 $5M·야스 $10M 등) — 5/15~6/30 광고 ~$9M vs Acton 총모금 ~$18.5M·같은 기간 광고 ~$10만 (Ohio Capital Journal 7/21) — 90 대 1 광고 격차에도 조사는 동률",
+      "kr_relevance": "Honda–LG에너지솔루션 배터리 합작·한화 등 제조 투자 — 전기요금(AI 데이터센터) 이슈와 교차"
+    },
+    {
+      "state": "MI",
+      "defense": "D",
+      "incumbent": "Benson (D) vs James (R) — 개방석(Whitmer 임기 제한)",
+      "rating": "Lean D (Cook 5/21↑·Sabato) / Tilt D (IE)",
+      "latest_poll": "Benson 47–38 (EPIC-MRA D+9) · Glengariff D+5 · Mitchell D+2 — RCP 평균 Benson +7.3",
+      "poll_source": "EPIC-MRA 7/24–31 (LV 600, ±4) · Glengariff 7/22–24 · Mitchell 7/29 (LV 672)",
+      "cash_on_hand": "Benson 모금 $4.9M·잔고 $6.4M (경선 전 주 선관위 신고) · James 미확인(8/4 경선 후 신고 대기)",
+      "kr_relevance": "LG에너지솔루션 Ultium(랜싱) 본진 — 주지사가 투자 환경·전력 요금 실질 결정권자"
+    },
+    {
+      "state": "WI",
+      "defense": "D",
+      "incumbent": "민주(8/11 경선) vs Tiffany (R) — 개방석",
+      "rating": "Toss-up (Cook·Sabato·IE) / Tilt R (RtWH·시장)",
+      "latest_poll": "Marquette Hong 44–Tiffany 44 동률 · RMG Hong +1 · Wedgewood Hong +3 — 순수 동률권, 시장은 공화 쪽(민주 38¢)",
+      "poll_source": "Marquette Law 7/8–16 (LV 695, ±4.9 — 공식 릴리스 기준 동률) · RMG/IRG 7/20–24 (RV 800) · Wedgewood 7/2–4 (LV 707, 발표처 신뢰성 주의)",
+      "cash_on_hand": "미확인 — 8/11 경선 종료 후 주 선관위 신고 확인 필요",
+      "kr_relevance": "민주 선두 Hong은 한국계 미국인(한국 이민자 부모·매디슨 출생) — 경합주 주지사 후보 중 유일한 직접 연결"
+    },
+    {
+      "state": "NV",
+      "defense": "R",
+      "incumbent": "Ford (D) vs Lombardo (R·현직)",
+      "rating": "Toss-up (Cook) / Lean R (Sabato 7/23) / Tilt R (IE) — 기관 이견",
+      "latest_poll": "44–44 동률 (PPP·민주 성향) · Wedgewood Lombardo +3 · GSG(민주 성향) Lombardo +3 — 집계 평균 Lombardo +3~4",
+      "poll_source": "PPP 7/16 (LV 558) · Wedgewood 7/12 (LV 350) · GSG 5/11 (LV 700)",
+      "cash_on_hand": "양측 미확인 — 주 선관위 신고 확인 필요",
+      "kr_relevance": "직접 연결 미확인"
+    },
+    {
+      "state": "IA",
+      "defense": "R",
+      "incumbent": "Sand (D) vs Lahn (R) — 개방석(Reynolds 불출마)",
+      "rating": "Toss-up (Cook 4/9↑·Sabato) / Tilt D (IE 8/6↑)",
+      "latest_poll": "Sand 53–44 (Fox D+9) · NYT/Siena Sand 48–47 (D+1) — 집계 평균 Sand +4, 시장은 민주 65¢",
+      "poll_source": "Fox News 6/23–27 (RV 1,003, ±3) · NYT/Siena 6월 (LV 600, ±4.7)",
+      "cash_on_hand": "Sand 2025년 한 해 $9.5M·현금 $13.2M (주 기록 — Cook 4/9 상향 사유) vs Lahn 자기자금 $2M 대출 포함(경선)",
+      "kr_relevance": "직접 연결 미확인 — 농업·통상 간접 경로는 상원 아이오와 페이지 참조"
+    },
+    {
+      "state": "KS",
+      "defense": "D",
+      "incumbent": "Holscher (D) vs Masterson (R) — 개방석(Kelly 임기 제한)",
+      "rating": "Lean R (Cook·Sabato) / Tilt R (IE)",
+      "latest_poll": "본선 공개 조사 미확인 — 8/4 경선 직후",
+      "poll_source": "경선: Masterson 43%(7인) · Holscher 49–39(켈리 지지 후보 격파) — Kansas Reflector 8/4",
+      "cash_on_hand": "양측 미확인(경선 직후) — 공화 경선에 외부자금 $20M+ 유입",
+      "kr_relevance": "직접 연결 미확인"
+    }
+  ]
+}

@@ -114,6 +114,15 @@
 - `photo`가 `null`이면 `_placeholder.svg`로 렌더된다(`.c_photo()`) — 저작권 미확인 캠페인 사진은 쓰지 않는다.
 - 소비: `governor_cards_html()` → `governors.qmd#candidates`. **수동 갱신**(경선 확정·자금 신고 시).
 
+### `governor_races.json` — 주지사 State Focus 레이스 데이터 (수동)
+- `senate_races.json`과 동일 스키마(state·defense·incumbent·rating·latest_poll·poll_source·cash_on_hand·kr_relevance). 경합 8주.
+- **자금은 주(州) 선관위 신고 기준**(연방 FEC 아님 — 자동 피드 없음). 등급 정본은 `governor_ratings.json`(자동)이고 여기엔 표시용 요약만.
+- 소비: `gt_governor_detail()`·`governor_money_html()` → `governors/*.qmd`.
+
+### `governor_polls.csv` — 주지사 본선 여론조사 DB (수동)
+- `senate_polls.csv`와 동일 스키마. **전 행 원문 URL 확보**(2026-08-12 검증 — Marquette 동률·AARP 초당 합동 등 5건 정정 포함).
+- 소비: `gt_governor_polls()` → `governors/*.qmd` 4절.
+
 ### `fec_fundraising.json` — FEC 분기 신고 (자동 취득)
 - `scripts/fetch_fec_fundraising.py`가 생성(단위 $M, 감시 9주). 최상위: `as_of`, `source_label`, `provenance_note`, `states`(`{ST: [후보…]}`).
 - `states[ST][]`: `name`(FEC 법적 표기), `party`, `candidate_id`, `receipts`, `disbursements`, `cash_on_hand`, `coverage_end`(분기 마감).
