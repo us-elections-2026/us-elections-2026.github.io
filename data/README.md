@@ -49,6 +49,8 @@
 - `weeks[]`: `date`, `label`, `trump_net`, `generic`.
   - `trump_net`(순지지)·`generic`(일반투표 D 마진, 양수=민주)은 보고된 주만 값, 나머지 nullable.
 - 소비: 런타임 `assets/trends.js`가 `fetch` → `index.qmd`. (`_quarto.yml`의 `project.resources` 등록 필요.)
+- `assets/trends.js`는 결측 주가 있으면 **실측(실선·점)과 보간(회색 점선)을 분리 렌더**하고 차트 아래 범례를 붙인다. 보간선을 값으로 오독하지 않게 하기 위한 것이므로, `null`을 임의 값으로 채우지 말 것.
+- 대조 기록: **`trends_verification.md`** — 20주 전량을 `issues/*.qmd` 브리핑 원문과 1:1 대조한 결과(2026-08-12 시행). 정정 2건·삭제 2건을 반영했고, 5월 저점이 브리핑마다 −20.1/−20.2/−21.2로 갈리는 건은 원 집계 확인 전이라 미해결로 남겼다. 값을 고칠 때 먼저 읽을 것.
 
 ### `pollster_series.json` — 조사기관별 시계열 (차트용, **선택 파일**)
 - `scripts/fetch_pollster_polls.py`가 `approval_polls.csv`·`generic_polls.csv`와 함께 생성.
