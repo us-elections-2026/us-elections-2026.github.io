@@ -1495,7 +1495,7 @@ home_kpis <- function() {
            sprintf("다수까지 순 +%d석 필요 — 가격은 확률의 근사일 뿐", k$needed)),
       card("kpi-d", k$net_display, "순증 컨센서스 (민주)",
            "Inside Elections",
-           "공화 표적 5곳 · 민주 수성 3곳의 순증 — 문턱 +4 미달"),
+           "공화 표적 6곳 · 민주 수성 3곳의 순증 — 문턱 +4 미달"),
       card("kpi-r", ifelse(is.na(tn), "—", sprintf("%+.1f", tn)), "트럼프 순지지도",
            paste0("Silver Bulletin · ~", td$as_of),
            "낮을수록 민주 우호 — 2기 최저권"),
