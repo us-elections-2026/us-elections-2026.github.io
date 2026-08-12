@@ -75,6 +75,35 @@ Rscript scripts/validate_data.R || { echo "[weekly] 데이터 검증 실패 — 
 echo "[weekly] 전체 렌더(quarto render)"
 quarto render || { echo "[weekly] 렌더 실패 — 발행 중단"; exit 1; }
 
+# 4.5) 주간 스냅샷 — 검증·렌더를 통과한 상태만 data/history/<날짜>/에 보관.
+#      편집 3원칙 ②(delta 추적)의 "지난 값"이 여기서 나온다. 다음 §5의 git add data/ 에 포함돼
+#      주간 발행 커밋과 함께 나간다(별도 커밋·push 없음).
+#      2026-08-13: 종전에는 snapshot_and_publish.sh를 launchd(월 09:10)가 돌기로 돼 있었으나
+#      plist가 ~/Library/LaunchAgents/에 설치된 적이 없어 한 번도 실행되지 않았다(로그 디렉터리
+#      미생성으로 확인). 스냅샷이 2026-06-08 1건에 머물러 delta 추적이 불가능했으므로,
+#      실행이 커밋으로 증명되는 이 주간 경로에 편입했다. 스케줄러를 하나 더 세우지 않는다.
+#      glob 대신 find를 쓰는 이유: 이 스크립트는 zsh이고, zsh는 매치가 없으면 "no matches
+#      found"를 stderr로 뱉는다(bash처럼 조용히 리터럴로 두지 않는다). 첫 실행이나 history/가
+#      빈 클론에서 발행 로그에 가짜 에러가 남는다.
+SNAP_TODAY="$(date +%F)"
+SNAP_HIST="data/history/$SNAP_TODAY"
+SNAP_PREV="$(find data/history -mindepth 1 -maxdepth 1 -type d 2>/dev/null | sort | tail -1)"
+snap_changed=1
+if [ -n "$SNAP_PREV" ]; then
+  snap_changed=0
+  for f in $(find data -maxdepth 1 -type f \( -name '*.json' -o -name '*.csv' \) | sort); do
+    cmp -s "$f" "$SNAP_PREV/$(basename "$f")" || { snap_changed=1; break; }
+  done
+fi
+if [ "$snap_changed" -eq 0 ]; then
+  echo "[weekly] 스냅샷 건너뜀 — 직전($SNAP_PREV)과 동일"
+else
+  echo "[weekly] 주간 스냅샷 → $SNAP_HIST"
+  mkdir -p "$SNAP_HIST" \
+    && find data -maxdepth 1 -type f \( -name '*.json' -o -name '*.csv' \) -exec cp {} "$SNAP_HIST"/ \; \
+    || echo "[weekly] ! 스냅샷 실패(건너뜀 — 발행은 계속)"
+fi
+
 # 5) 스테이징·커밋·push (data/ + issues/ + states/ + 최상위 .qmd)
 git add data/ issues/ states/ ./*.qmd
 if git diff --cached --quiet; then
