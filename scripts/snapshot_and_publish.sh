@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
-# 주기적 스냅샷 + 자동 배포 (Mac mini에서 launchd/cron로 실행)
+# 주기적 스냅샷 + 자동 배포 — 수동 실행 전용(2026-08-13부터).
+#
+# ⚠️ 정기 스냅샷은 이제 publish_weekly.sh §4.5가 담당한다. 이 스크립트를 launchd/cron에
+#    다시 걸지 말 것 — 같은 스냅샷이 두 번 커밋된다. 동봉된 com.us-elections.snapshot.plist는
+#    ~/Library/LaunchAgents/에 설치된 적이 없고(로그 디렉터리 미생성으로 확인) 설치하지 않는다.
+#    이 파일은 주간 발행 밖에서 임시로 스냅샷을 남겨야 할 때만 손으로 실행한다.
 #
 # 하는 일:
 #   1. data/*.json 의 현재 값이 직전 스냅샷과 다르면 data/history/<YYYY-MM-DD>/ 에 보관

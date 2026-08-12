@@ -5,6 +5,8 @@
 
 검증: `Rscript scripts/validate_data.R` (파싱·필수 필드·규약 점검, CI publish 전 실행).
 
+> **수집 전에 [`_collection_ledger.json`](_collection_ledger.json)을 먼저 읽을 것.** 어떤 자료를 누가·어떻게 수집하며 지금 무슨 상태인지의 단일 기록이다. 차단이 확인된 출처(`blocked_sources`)와 미확보 항목(`gaps`)도 거기 있다. 이 README는 **스키마**를, 대장은 **출처·담당·상태**를 담는다. 규칙은 `AGENTS.md`의 「수집 규약」.
+
 ## 공통 규약 (모든 파일)
 
 - **부호: 양수 = 민주 우위.** 마진은 `D+`(양수) / `R+`(음수)로 정규화한다. 절대 뒤집지 않는다.
@@ -49,6 +51,8 @@
 - `weeks[]`: `date`, `label`, `trump_net`, `generic`.
   - `trump_net`(순지지)·`generic`(일반투표 D 마진, 양수=민주)은 보고된 주만 값, 나머지 nullable.
 - 소비: 런타임 `assets/trends.js`가 `fetch` → `index.qmd`. (`_quarto.yml`의 `project.resources` 등록 필요.)
+- `assets/trends.js`는 결측 주가 있으면 **실측(실선·점)과 보간(회색 점선)을 분리 렌더**하고 차트 아래 범례를 붙인다. 보간선을 값으로 오독하지 않게 하기 위한 것이므로, `null`을 임의 값으로 채우지 말 것.
+- 대조 기록: **`trends_verification.md`** — 20주 전량을 `issues/*.qmd` 브리핑 원문과 1:1 대조한 결과(2026-08-12 시행). 정정 2건·삭제 2건을 반영했고, 5월 저점이 브리핑마다 −20.1/−20.2/−21.2로 갈리는 건은 원 집계 확인 전이라 미해결로 남겼다. 값을 고칠 때 먼저 읽을 것.
 
 ### `pollster_series.json` — 조사기관별 시계열 (차트용, **선택 파일**)
 - `scripts/fetch_pollster_polls.py`가 `approval_polls.csv`·`generic_polls.csv`와 함께 생성.
