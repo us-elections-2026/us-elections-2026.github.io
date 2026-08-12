@@ -5,6 +5,8 @@
 
 검증: `Rscript scripts/validate_data.R` (파싱·필수 필드·규약 점검, CI publish 전 실행).
 
+> **수집 전에 [`_collection_ledger.json`](_collection_ledger.json)을 먼저 읽을 것.** 어떤 자료를 누가·어떻게 수집하며 지금 무슨 상태인지의 단일 기록이다. 차단이 확인된 출처(`blocked_sources`)와 미확보 항목(`gaps`)도 거기 있다. 이 README는 **스키마**를, 대장은 **출처·담당·상태**를 담는다. 규칙은 `AGENTS.md`의 「수집 규약」.
+
 ## 공통 규약 (모든 파일)
 
 - **부호: 양수 = 민주 우위.** 마진은 `D+`(양수) / `R+`(음수)로 정규화한다. 절대 뒤집지 않는다.
