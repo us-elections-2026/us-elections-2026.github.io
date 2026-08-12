@@ -128,7 +128,7 @@
     "href": "states/oh.html#polls",
     "title": "오하이오 Ohio",
     "section": "4. 최신 여론조사",
-    "text": "4. 최신 여론조사\n\n\n\n\n\n\n\n\n최신 여론조사\n\n\n최신순 · 4건 · 양수 = 민주 우위(D+)\n\n\n조사기관\n실사기간\n모집단\n표본\n결과\n마진\n비고\n\n\n\n\nEmerson College\n~NA\n—\n—\nBrown 44 – 50 Husted\nR+6\n게시일 기준\n\n\nNYT/Siena\nNA\nLV\n—\nBrown 47 – 50 Husted\nR+3\n6개 주 패키지\n\n\nAARP/Fabrizio·Impact\nNA\nLV\n800\nBrown 48 – 45 Husted\nD+3\n±3.5\n\n\nFox News\nNA\n—\n—\nBrown 53 – 45 Husted\nD+8\n\n\n\n\n출처 URL은 `data/senate_polls.csv`에 행별로 보관합니다. 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.\n\n\n\n\n\n\n\n\n\n이 표는 data/senate_polls.csv에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 여러 조사의 방향을 보세요.",
+    "text": "4. 최신 여론조사\n\n\n\n\n\n\n\n\n최신 여론조사\n\n\n최신순 · 4건 · 양수 = 민주 우위(D+)\n\n\n조사기관\n실사기간\n모집단\n표본\n결과\n마진\n비고\n\n\n\n\nEmerson College\n~2026-07-02\n—\n—\nBrown 44 – 50 Husted\nR+6\n게시일 기준\n\n\nNYT/Siena\n2026-06-15 ~ 2026-06-29\nLV\n—\nBrown 47 – 50 Husted\nR+3\n6개 주 패키지\n\n\nAARP/Fabrizio·Impact\n2026-06-14 ~ 2026-06-16\nLV\n800\nBrown 48 – 45 Husted\nD+3\n±3.5\n\n\nFox News\n2026-05-28 ~ 2026-06-01\n—\n—\nBrown 53 – 45 Husted\nD+8\n\n\n\n\n출처 URL은 `data/senate_polls.csv`에 행별로 보관합니다. 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.\n\n\n\n\n\n\n\n\n\n이 표는 data/senate_polls.csv에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 여러 조사의 방향을 보세요.",
     "crumbs": [
       "홈",
       "상원 Senate",
@@ -219,7 +219,7 @@
     "href": "states/nc.html#polls",
     "title": "노스캐롤라이나 North Carolina",
     "section": "4. 최신 여론조사",
-    "text": "4. 최신 여론조사\n\n\n\n\n\n\n\n\n최신 여론조사\n\n\n최신순 · 5건 · 양수 = 민주 우위(D+)\n\n\n조사기관\n실사기간\n모집단\n표본\n결과\n마진\n비고\n\n\n\n\nCatawba College/YouGov\n~NA\n—\n—\nCooper — – — Whatley\nD+14\n보도일 기준·사이클 최대 격차·세부 미공표\n\n\nFox News\nNA\nRV\n1005\nCooper 53 – 44 Whatley\nD+9\n±3·공개 조사 최대 격차\n\n\nPublic Policy Polling (D 성향)\n~NA\n—\n—\nCooper 48 – 44 Whatley\nD+4\n민주 성향·공개일 기준\n\n\nNYT/Siena\nNA\nLV\n—\nCooper 50 – 43 Whatley\nD+7\n6개 주 패키지\n\n\nCatawba/YouGov\n~NA\n—\n—\nCooper 48 – 34 Whatley\nD+14\n발표일 기준\n\n\n\n출처 URL은 `data/senate_polls.csv`에 행별로 보관합니다. 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.\n\n\n\n\n\n\n\n\n\n이 표는 data/senate_polls.csv에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 여러 조사의 방향을 보세요.",
+    "text": "4. 최신 여론조사\n\n\n\n\n\n\n\n\n최신 여론조사\n\n\n최신순 · 5건 · 양수 = 민주 우위(D+)\n\n\n조사기관\n실사기간\n모집단\n표본\n결과\n마진\n비고\n\n\n\n\nCatawba College/YouGov\n~2026-08-06\n—\n—\nCooper — – — Whatley\nD+14\n보도일 기준·사이클 최대 격차·세부 미공표\n\n\nFox News\n2026-07-23 ~ 2026-07-27\nRV\n1005\nCooper 53 – 44 Whatley\nD+9\n±3·공개 조사 최대 격차\n\n\nPublic Policy Polling (D 성향)\n~2026-07-13\n—\n—\nCooper 48 – 44 Whatley\nD+4\n민주 성향·공개일 기준\n\n\nNYT/Siena\n2026-06-15 ~ 2026-06-29\nLV\n—\nCooper 50 – 43 Whatley\nD+7\n6개 주 패키지\n\n\nCatawba/YouGov\n~2026-06-24\n—\n—\nCooper 48 – 34 Whatley\nD+14\n발표일 기준\n\n\n\n출처 URL은 `data/senate_polls.csv`에 행별로 보관합니다. 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.\n\n\n\n\n\n\n\n\n\n이 표는 data/senate_polls.csv에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 여러 조사의 방향을 보세요.",
     "crumbs": [
       "홈",
       "상원 Senate",
@@ -323,7 +323,7 @@
     "href": "states/me.html#polls",
     "title": "메인 Maine",
     "section": "5. 최신 여론조사",
-    "text": "5. 최신 여론조사\n\n\n\n\n\n\n\n\n최신 여론조사\n\n\n최신순 · 3건 · 양수 = 민주 우위(D+)\n\n\n조사기관\n실사기간\n모집단\n표본\n결과\n마진\n비고\n\n\n\n\nHart Research (D 성향)\nNA\nLV\n—\nJackson 49 – 45 Collins\nD+4\n±3.5·LV 800+·민주계 PAC 스폰서·8/6 보도\n\n\nUNH Survey Center\nNA\nLV\n1236\nJackson 49 – 46 Collins\nD+3\n사퇴 후 첫 조사 ±2.8\n\n\nNYT/Siena\nNA\nLV\n—\nPlatner 49 – 47 Collins\nD+2\n±4.8·사퇴 전 후보(모델 제외)\n\n\n\n출처 URL은 `data/senate_polls.csv`에 행별로 보관합니다. 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.\n\n\n\n\n\n\n\n\n\n이 표는 data/senate_polls.csv에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 여러 조사의 방향을 보세요.",
+    "text": "5. 최신 여론조사\n\n\n\n\n\n\n\n\n최신 여론조사\n\n\n최신순 · 3건 · 양수 = 민주 우위(D+)\n\n\n조사기관\n실사기간\n모집단\n표본\n결과\n마진\n비고\n\n\n\n\nHart Research (D 성향)\n2026-07-27 ~ 2026-08-01\nLV\n—\nJackson 49 – 45 Collins\nD+4\n±3.5·LV 800+·민주계 PAC 스폰서·8/6 보도\n\n\nUNH Survey Center\n2026-07-15 ~ 2026-07-20\nLV\n1236\nJackson 49 – 46 Collins\nD+3\n사퇴 후 첫 조사 ±2.8\n\n\nNYT/Siena\n2026-06-19 ~ 2026-06-26\nLV\n—\nPlatner 49 – 47 Collins\nD+2\n±4.8·사퇴 전 후보(모델 제외)\n\n\n\n출처 URL은 `data/senate_polls.csv`에 행별로 보관합니다. 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.\n\n\n\n\n\n\n\n\n\n이 표는 data/senate_polls.csv에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 여러 조사의 방향을 보세요.",
     "crumbs": [
       "홈",
       "상원 Senate",
@@ -427,7 +427,7 @@
     "href": "states/ga.html#polls",
     "title": "조지아 Georgia",
     "section": "5. 최신 여론조사",
-    "text": "5. 최신 여론조사\n\n\n\n\n\n\n\n\n최신 여론조사\n\n\n최신순 · 2건 · 양수 = 민주 우위(D+)\n\n\n조사기관\n실사기간\n모집단\n표본\n결과\n마진\n비고\n\n\n\n\nAARP/Fabrizio·Impact\nNA\nLV\n1060\nOssoff 52 – 43 Collins\nD+9\n유력투표층\n\n\nFox News/Beacon·Shaw\nNA\nRV\n1002\nOssoff 56 – 43 Collins\nD+13\n\n\n\n\n출처 URL은 `data/senate_polls.csv`에 행별로 보관합니다. 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.\n\n\n\n\n\n\n\n\n\n이 표는 data/senate_polls.csv에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 여러 조사의 방향을 보세요.",
+    "text": "5. 최신 여론조사\n\n\n\n\n\n\n\n\n최신 여론조사\n\n\n최신순 · 2건 · 양수 = 민주 우위(D+)\n\n\n조사기관\n실사기간\n모집단\n표본\n결과\n마진\n비고\n\n\n\n\nAARP/Fabrizio·Impact\n2026-07-13 ~ 2026-07-16\nLV\n1060\nOssoff 52 – 43 Collins\nD+9\n유력투표층\n\n\nFox News/Beacon·Shaw\n2026-06-23 ~ 2026-06-27\nRV\n1002\nOssoff 56 – 43 Collins\nD+13\n\n\n\n\n출처 URL은 `data/senate_polls.csv`에 행별로 보관합니다. 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.\n\n\n\n\n\n\n\n\n\n이 표는 data/senate_polls.csv에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 여러 조사의 방향을 보세요.",
     "crumbs": [
       "홈",
       "상원 Senate",
@@ -1278,6 +1278,370 @@
     ]
   },
   {
+    "objectID": "governors/wi.html",
+    "href": "governors/wi.html",
+    "title": "위스콘신 주지사 Wisconsin Governor",
+    "section": "",
+    "text": "※ 아직 지명 확정 전(8/11 경선) — 프란체스카 홍(민주·경선 선두) · 톰 티파니(공화·사실상 확정)\nWI 주지사 레이스 카드\n\n\n기준 2026-08-12 · 자금은 주(州) 선관위 신고 기준(연방 FEC 아님)\n\n\n항목\n내용\n\n\n\n\n구도\n민주 방어\n\n\n현직/구도\n민주(8/11 경선) vs Tiffany (R) — 개방석\n\n\n등급\nToss-up (Cook·Sabato·IE) / Tilt R (RtWH·시장)\n\n\n최신 폴\nMarquette Hong 44–Tiffany 44 동률 · RMG Hong +1 · Wedgewood Hong +3 — 순수 동률권, 시장은 공화 쪽(민주 38¢) (Marquette Law 7/8–16 (LV 695, ±4.9 — 공식 릴리스 기준 동률) · RMG/IRG 7/20–24 (RV 800) · Wedgewood 7/2–4 (LV 707, 발표처 신뢰성 주의))\n\n\n자금(주 선관위)\n미확인 — 8/11 경선 종료 후 주 선관위 신고 확인 필요\n\n\n한국 관심\n민주 선두 Hong은 한국계 미국인(한국 이민자 부모·매디슨 출생) — 경합주 주지사 후보 중 유일한 직접 연결\n\n\n경선 — 양당 경선\n2026-08-11 예정 · 8개 경합주 중 **유일하게 남은 미확정 대진**. Evers 불출마 공석이며, 주지사·주 상원·주 하원이 동시에 경합권이라 트라이펙타가 통째로 걸린 주다.\n경합 8주 중 대진이 마지막으로 정해지는 주입니다 — 8/11 경선이 치러졌고 결과 집계·인증이 진행 중입니다. 공화는 Tiffany 승리가 투영됐고(NBC, AP 데이터 — 원문 접근 제한으로 득표율 미확인), 민주는 아직 콜이 확인되지 않았습니다. 민주 최종 후보는 Hong·Crowley·Roys·Brennan 4인이었고(Barnes·Rodriguez는 중도 사퇴), 경선 직전 조사(State Navigate 8/7)에서 Hong 44%로 Crowley에 약 20%p 앞섰습니다 — Evers 주지사는 8/9 Crowley 지지 유세로 맞섰습니다. 동시에 재획정 신지도로 주 상원·주 하원이 모두 경합권에 들어와, 세 선거가 같은 방향으로 움직이면 트라이펙타가 통째로 바뀔 수 있는 — 이번 사이클에서 구조 변화 폭이 가장 큰 주입니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "위스콘신 주지사 Wisconsin Governor"
+    ]
+  },
+  {
+    "objectID": "governors/wi.html#주-개요",
+    "href": "governors/wi.html#주-개요",
+    "title": "위스콘신 주지사 Wisconsin Governor",
+    "section": "1. 주 개요",
+    "text": "1. 주 개요\n\n개방석 + 3중 접전: 주지사가 토스업인 동시에 재획정 신지도로 주 상·하원이 모두 경합권입니다. 주지사의 재획정 거부권까지 고려하면, 이 선거의 승자가 2030년 지도의 방향을 상당 부분 결정합니다(재획정 페이지 참조).\nHong의 프로필: 2020년 위스콘신 최초의 아시아계 주의원(매디슨), 셰프 출신·요식업 노동자 서사. 2025년 주의회 최초 아시아계 코커스를 설립했습니다. 약점은 주 전체 선거 경험·조직 부재와 DSA 당원 이력(‘사회주의자’ 공격 정면 노출), 모금 열세(주하원 4년 누적 ~$24만·반기업 PAC 선언)입니다.\nTiffany의 프로필: 2020년 보궐 이후 60%+ 연승의 북부 농촌 기반. 트럼프 지지에 주 공화 하원의원 전원의 지지를 얹었습니다. 약점은 주 전체 인지도(밀워키·매디슨 교외)와 2020년 대선 인증 반대 표결, 고령(69세)입니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "위스콘신 주지사 Wisconsin Governor"
+    ]
+  },
+  {
+    "objectID": "governors/wi.html#제도",
+    "href": "governors/wi.html#제도",
+    "title": "위스콘신 주지사 Wisconsin Governor",
+    "section": "2. 제도",
+    "text": "2. 제도\n\n경선(8/11): 정당 등록 제도가 없는 개방형 — 다만 한 정당의 경선만 골라야 하며 교차 투표는 무효 처리됩니다. 결과가 인증되는 대로 후보 상태를 갱신합니다.\n임기 제한 없음: 위스콘신 주지사는 연임 제한이 없습니다 — Evers의 퇴장은 제도가 아니라 본인 선택입니다.\n재획정 거부권: 위스콘신은 연방·주 의회 선거구를 일반 입법으로 긋는 주라 주지사 거부권이 직접 작동합니다(2021년 Evers가 실제 행사). 이번에 뽑히는 주지사가 2030년 지도에서 같은 거부권을 쥡니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "위스콘신 주지사 Wisconsin Governor"
+    ]
+  },
+  {
+    "objectID": "governors/wi.html#관전점",
+    "href": "governors/wi.html#관전점",
+    "title": "위스콘신 주지사 Wisconsin Governor",
+    "section": "3. 관전점",
+    "text": "3. 관전점\n등급(토스업 일치)과 시장(민주 38¢)의 괴리가 관전의 출발점입니다. 시장이 반영하는 것은 Hong의 모금 열세와 ‘사회주의자’ 공격 취약성으로 보이는데, 반대편에는 진보 풀뿌리·청년층 에너지(맘다니 모델)와 개방석 프리미엄이 있습니다. 경선 확정 후 첫 독립 조사가 이 괴리의 1차 판정입니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "위스콘신 주지사 Wisconsin Governor"
+    ]
+  },
+  {
+    "objectID": "governors/wi.html#polls",
+    "href": "governors/wi.html#polls",
+    "title": "위스콘신 주지사 Wisconsin Governor",
+    "section": "4. 최신 여론조사",
+    "text": "4. 최신 여론조사\n\n\n\n\n\n\n\n\n최신 여론조사\n\n\n최신순 · 3건 · 양수 = 민주 우위(D+)\n\n\n조사기관\n실사기간\n모집단\n표본\n결과\n마진\n비고\n\n\n\n\nRMG Research/Napolitan\n2026-07-20 ~ 2026-07-24\nRV\n800\nHong 44 – 43 Tiffany\nD+1\n±3.5·경선 전 가상\n\n\nMarquette Law School\n2026-07-08 ~ 2026-07-16\nLV\n695\nHong 44 – 44 Tiffany\nD+0\n±4.9·동률(미결정 11%)·8/11 경선 전 가상\n\n\nWedgewood Polls\n2026-07-02 ~ 2026-07-04\nLV\n707\nHong 47 – 44 Tiffany\nD+3\n±4.4·발표처 실체 불명 지적(MacIver) — 신뢰성 주의\n\n\n\n출처 URL은 `data/governor_polls.csv`에 행별로 보관합니다(【수집】은 원문 URL 확인 중). 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.\n\n\n\n\n\n\n\n\n\n세 조사 모두 8/11 경선 전 가상대결입니다(Marquette는 공식 릴리스 기준 44–44 동률). 대진 확정 후 조사가 나오면 교체됩니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "위스콘신 주지사 Wisconsin Governor"
+    ]
+  },
+  {
+    "objectID": "governors/wi.html#자금",
+    "href": "governors/wi.html#자금",
+    "title": "위스콘신 주지사 Wisconsin Governor",
+    "section": "5. 자금",
+    "text": "5. 자금\n\n\n최신 자금 상황 (기준 2026-08-12 · 주 선관위 신고 — 연방 FEC 아님) — 미확인 — 8/11 경선 종료 후 주 선관위 신고 확인 필요\n\n\n경선 종료 후 주 선관위 신고가 나와야 본선 자금 구도를 판단할 수 있습니다. Hong의 반기업 PAC 선언·소액기부 의존이 본선 화력으로 이어지는지가 관건입니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "위스콘신 주지사 Wisconsin Governor"
+    ]
+  },
+  {
+    "objectID": "governors/wi.html#한국-함의",
+    "href": "governors/wi.html#한국-함의",
+    "title": "위스콘신 주지사 Wisconsin Governor",
+    "section": "6. 한국 함의",
+    "text": "6. 한국 함의\n경합주 주지사 후보 중 유일한 직접 연결이 이 주에 있습니다 — 민주 선두 Francesca Hong은 한국 이민자 부모의 매디슨 출생 한국계 미국인으로, 2025년 위스콘신 주의회 최초의 아시아계 코커스를 설립했습니다. 다만 한국 정책 관련 발언·공약은 확인되지 않았습니다 — 당선 시 한국계 첫 위스콘신 주지사가 되는 상징성과 함께 Korea Watch에서 추적합니다.\n작성 2026-08-12 · 등급: Cook·Sabato·IE Toss-up · RtWH Tilt R(8/10) · 시장 민주 38¢(Kalshi 8/10) · 프로필·조사 상세 기준 2026-08-07 · 8/11 경선 집계 중(공화 Tiffany 투영·민주 미콜)",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "위스콘신 주지사 Wisconsin Governor"
+    ]
+  },
+  {
+    "objectID": "governors/nv.html",
+    "href": "governors/nv.html",
+    "title": "네바다 주지사 Nevada Governor",
+    "section": "",
+    "text": "애런 포드 Aaron Ford민주\n\n\n1972년생(54세) · 네바다 주 법무장관(2019~) · 전 주상원 다수당 대표\n\n\n\n가족 부인 Berna Rhodes-Ford(변호사), 아들 셋+조카 양육\n\n\n학력 텍사스 A&M 학사, 조지워싱턴대 석사, 오하이오주립대 석·박사·JD\n\n\n경력 2018 법무장관 0.4%p 신승 · 2022 재선 52.3% · 2026-06-09 경선 63.8%\n\n\n펀드레이징 미확인 (주 선관위 신고 확인 필요)\n\n\n강점\n\n\n주 전체 선거 2회 검증\n\n\n오피오이드 합의 $11억 등 법무장관 실적\n\n\n당선 시 네바다 최초 흑인 주지사\n\n\n\n\n약점\n\n\n과거 IRS 체납 이력(2016년 해소)\n\n\n후원 해외여행 윤리위 심사 진행 중\n\n\n현직 롬바도의 온건 이미지\n\n\n\n\n정책 주택 비용 · 약가·의료비 · 공교육 · 소비자 보호\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: United State Senate - the Office of Michael Bennet · Public domain (Wikimedia Commons: Aaron_D._Ford.jpg)   출처 [1]\n\n\n\n\n\n\n조 롬바도 Joe Lombardo공화 · 현직\n\n\n1962년생(64세) · 네바다 주지사(2023~) · 전 클라크카운티 셰리프 · 라스베이거스 경찰 26년\n\n\n\n가족 부인 Donna\n\n\n학력 UNLV 토목공학 학사, UNLV 위기관리 석사\n\n\n경력 2014 셰리프 51% · 2018 재선 72.8% · 2022 주지사 48.8% vs 시솔랙 47.3% — 그 해 전국 유일 현직 축출 · 2026-06-09 경선 91.1%\n\n\n펀드레이징 미확인 (주 선관위 신고 확인 필요)\n\n\n강점\n\n\n현직+법집행 이미지\n\n\n2022 역풍 속 민주 현직을 꺾은 득표력\n\n\n트럼프 지지와 온건 실용 병행\n\n\n\n\n약점\n\n\n거부권 75건(2023, 주 기록) — 민주 주의회와 전면 대치\n\n\n1.5%p 신승 전력·민주 조직력(리드 머신)\n\n\n중간선거 여당 역풍 노출\n\n\n\n\n정책 선거제 개혁(투표자 ID) · 학교선택 확대 · 치안·경찰 지원 · 증세 반대\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: Gage Skidmore · CC BY-SA 3.0 (Wikimedia Commons: Joe_Lombardo_by_Gage_Skidmore.jpg)   출처 [1]\nNV 주지사 레이스 카드\n\n\n기준 2026-08-12 · 자금은 주(州) 선관위 신고 기준(연방 FEC 아님)\n\n\n항목\n내용\n\n\n\n\n구도\n공화 방어\n\n\n현직/구도\nFord (D) vs Lombardo (R·현직)\n\n\n등급\nToss-up (Cook) / Lean R (Sabato 7/23) / Tilt R (IE) — 기관 이견\n\n\n최신 폴\n44–44 동률 (PPP·민주 성향) · Wedgewood Lombardo +3 · GSG(민주 성향) Lombardo +3 — 집계 평균 Lombardo +3~4 (PPP 7/16 (LV 558) · Wedgewood 7/12 (LV 350) · GSG 5/11 (LV 700))\n\n\n자금(주 선관위)\n양측 미확인 — 주 선관위 신고 확인 필요\n\n\n한국 관심\n직접 연결 미확인\n\n\n경선 — 양당 경선\n2026-06-09 완료 · Aaron Ford(D, 주 법무장관) vs 현직 Joe Lombardo(R). 8개 경합주 중 공화 현직이 방어하는 두 곳 중 하나.\n현직 공화 주지사 가운데 유일한 진성 경합입니다. Lombardo는 2022년 민주 파도 속에서 그 해 전국에서 유일하게 현직 주지사(Sisolak)를 축출하고 당선된 인물이고, 도전자 Ford는 주 전체 선거(법무장관)를 두 번 이긴 검증된 후보입니다 — 당선 시 네바다 최초의 흑인 주지사가 됩니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "네바다 주지사 Nevada Governor"
+    ]
+  },
+  {
+    "objectID": "governors/nv.html#주-개요",
+    "href": "governors/nv.html#주-개요",
+    "title": "네바다 주지사 Nevada Governor",
+    "section": "1. 주 개요",
+    "text": "1. 주 개요\n\n2022년의 개인기 대 2026년의 환경: Lombardo의 자산은 역풍 속에서도 이긴 득표력과 현직+법집행 이미지입니다. 반대편 변수는 네바다 경제의 구조 — 관광·서비스업 의존이 커 물가·경기 둔화에 가장 민감한 주라는 점이 중간선거 여당 역풍과 겹칩니다.\n거부권 75건: 2023년 회기에 민주 주의회를 상대로 주 기록인 75건의 거부권을 행사했습니다 — 온건 실용 이미지와 전면 대치 기록이 공존하는 현직입니다.\nFord의 검증 포인트: 2018년 법무장관 0.4%p 신승 → 2022년 재선 52.3%. 오피오이드 합의 $11억 등 실적이 자산이나, 과거 IRS 체납 이력(2016년 해소)과 후원 해외여행 윤리위 심사가 공격 소재입니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "네바다 주지사 Nevada Governor"
+    ]
+  },
+  {
+    "objectID": "governors/nv.html#제도",
+    "href": "governors/nv.html#제도",
+    "title": "네바다 주지사 Nevada Governor",
+    "section": "2. 제도",
+    "text": "2. 제도\n\n경선(6/9): 폐쇄형(2024년 개방형 경선 개헌안 부결로 유지). 일찍 끝나 본선 조사 축적 기간이 깁니다.\n임기: 1970년 개정으로 통산 2선 제한(비연속 포함) — Lombardo는 1선째의 재선 도전입니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "네바다 주지사 Nevada Governor"
+    ]
+  },
+  {
+    "objectID": "governors/nv.html#관전점",
+    "href": "governors/nv.html#관전점",
+    "title": "네바다 주지사 Nevada Governor",
+    "section": "3. 관전점",
+    "text": "3. 관전점\n조사(Lombardo +3~4)와 시장(민주 56¢)이 반대를 가리키는 주입니다. 시장이 반영하는 것은 중간선거 역풍과 리드 머신(민주 조직력)의 실적으로 보이나, 네바다는 2022년에도 조직력이 주지사를 지키지 못한 전례가 있습니다. 어느 쪽이 맞는지는 경선 후 신규 조사가 쌓여야 판별됩니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "네바다 주지사 Nevada Governor"
+    ]
+  },
+  {
+    "objectID": "governors/nv.html#polls",
+    "href": "governors/nv.html#polls",
+    "title": "네바다 주지사 Nevada Governor",
+    "section": "4. 최신 여론조사",
+    "text": "4. 최신 여론조사\n\n\n\n\n\n\n\n\n최신 여론조사\n\n\n최신순 · 3건 · 양수 = 민주 우위(D+)\n\n\n조사기관\n실사기간\n모집단\n표본\n결과\n마진\n비고\n\n\n\n\nPublic Policy Polling (D 성향)\n2026-07-15 ~ 2026-07-16\nLV\n558\nFord 44 – 44 Lombardo\nD+0\n민주주지사협회 의뢰·동률(미결정 12%)\n\n\nWedgewood Polls\n2026-07-09 ~ 2026-07-12\nLV\n700\nFord 47 – 50 Lombardo\nR+3\n주 전체 LV 700(350은 NV-02 서브샘플)·크로스탭 정정 전력 — 신뢰성 주의\n\n\nGSG (D 성향)\n2026-05-05 ~ 2026-05-11\nLV\n700\nFord 42 – 45 Lombardo\nR+3\n±3.7·민주 내부 조사에서 Lombardo 우위(메모 6/9)\n\n\n\n출처 URL은 `data/governor_polls.csv`에 행별로 보관합니다(【수집】은 원문 URL 확인 중). 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.\n\n\n\n\n\n\n\n\n\n세 조사 중 둘이 민주 성향 기관 의뢰인데도 동률~Lombardo 우위로 나온 점에 유의하세요 — 당파 의뢰 조사가 자당에 불리한 결과를 낼 때는 정보 가치가 큽니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "네바다 주지사 Nevada Governor"
+    ]
+  },
+  {
+    "objectID": "governors/nv.html#자금",
+    "href": "governors/nv.html#자금",
+    "title": "네바다 주지사 Nevada Governor",
+    "section": "5. 자금",
+    "text": "5. 자금\n\n\n최신 자금 상황 (기준 2026-08-12 · 주 선관위 신고 — 연방 FEC 아님) — 양측 미확인 — 주 선관위 신고 확인 필요\n\n\n양측 모두 주 선관위 신고 확인 전입니다 — 수치가 확인되는 대로 채웁니다(추정 금지).",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "네바다 주지사 Nevada Governor"
+    ]
+  },
+  {
+    "objectID": "governors/nv.html#한국-함의",
+    "href": "governors/nv.html#한국-함의",
+    "title": "네바다 주지사 Nevada Governor",
+    "section": "6. 한국 함의",
+    "text": "6. 한국 함의\n직접 연결이 확인되지 않았습니다. 후보 발언·투자 연계가 확인되면 Korea Watch에 기록합니다.\n작성 2026-08-12 · 등급: Cook Toss-up · Sabato Lean R(7/23) · IE Tilt R · 시장 민주 56¢(Kalshi 8/10) · 프로필·조사 상세 기준 2026-08-07",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "네바다 주지사 Nevada Governor"
+    ]
+  },
+  {
+    "objectID": "governors/ks.html",
+    "href": "governors/ks.html",
+    "title": "캔자스 주지사 Kansas Governor",
+    "section": "",
+    "text": "신디 홀셔 Cindy Holscher민주\n\n\n1969년생(57세) · 캔자스 주상원의원(오버랜드파크, 2021~) · 전 주하원 · 기업 마케팅 출신\n\n\n\n가족 남편 Greg, 자녀 셋\n\n\n학력 미주리대 학사(저널리즘·마케팅·정치학) — 집안 첫 대졸\n\n\n경력 2016 주하원 55.7%(공화 현직 격파) · 2020 주상원 54.4% · 2024 재선 61.1% · 2026-08-04 경선 49%(켈리 주지사 지지 코슨 39% 격파)\n\n\n펀드레이징 미확인 (경선 직후)\n\n\n강점\n\n\n공화 성향 교외 지역구 연승 — 캔자스 민주 승리 공식의 핵심 지역\n\n\n노동자 가정 서사\n\n\n브라운백 감세 실패 프레임 활용 가능\n\n\n\n\n약점\n\n\n주 전체 인지도·모금력 열세\n\n\n켈리식 온건 브랜드 계승 미검증\n\n\n연방선거 기준 공화 우위 주\n\n\n\n\n정책 공교육 완전 재정 · 식품 판매세·사회보장 과세 폐지 · 메디케이드 확대 · 보육 세액공제\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: Kansas State Democrats (Cindy Holscher) · CC0 (Wikimedia Commons: Kansas_State_Senator_Cindy_Holscher.jpg)   출처 [1] [2]\n\n\n\n\n\n\n타이 매스터슨 Ty Masterson공화\n\n\n1969년생(57세) · 캔자스 주상원의장(2021~) · 주상원 5선 · 부동산·소기업 경영\n\n\n\n가족 부인 Marlo\n\n\n학력 캔자스주립대 수학 (학위 취득 여부 미확인)\n\n\n경력 주상원 5선(63.5~69.0%) · 2026-08-04 경선 43%(7인 — 슈왑 국무장관 등 격파)\n\n\n펀드레이징 미확인 (경선 직후 · 경선 외부자금 $20M+ 유입 레이스)\n\n\n강점\n\n\n주의회 권력 정점 — 입법 실적·당내 조직\n\n\n강성 보수 기반 결집\n\n\n트럼프·마셜 상원의원 지지\n\n\n\n\n약점\n\n\n2011년 개인 파산 전력\n\n\n강경 사회 이슈 주도 — 2022 낙태권 주민투표 59% 유지 주에서 중도 이탈 위험\n\n\n최근 3연속 민주 주지사 당선 주\n\n\n\n\n정책 감세 · 학교선택(바우처) · 낙태 반대 · 불법이민 대응\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진 미확보   출처 [1]\nKS 주지사 레이스 카드\n\n\n기준 2026-08-12 · 자금은 주(州) 선관위 신고 기준(연방 FEC 아님)\n\n\n항목\n내용\n\n\n\n\n구도\n민주 방어\n\n\n현직/구도\nHolscher (D) vs Masterson (R) — 개방석(Kelly 임기 제한)\n\n\n등급\nLean R (Cook·Sabato) / Tilt R (IE)\n\n\n최신 폴\n본선 공개 조사 미확인 — 8/4 경선 직후 (경선: Masterson 43%(7인) · Holscher 49–39(켈리 지지 후보 격파) — Kansas Reflector 8/4)\n\n\n자금(주 선관위)\n양측 미확인(경선 직후) — 공화 경선에 외부자금 $20M+ 유입\n\n\n한국 관심\n직접 연결 미확인\n\n\n경선 — 양당 경선\n2026-08-04 완료 · Cindy Holscher(D) vs Ty Masterson(R, 주 상원의장). Kelly 임기 제한 공석 — 구조적 공화 우위 주라 민주 수성이 어렵다(시장 민주 23¢).\nKelly 주지사의 임기 제한으로 열린 개방석 — 경합 8주 중 유일하게 등급이 공화 우위(Lean R)인 민주 방어석입니다. 즉 현 지형에서 민주당이 방어에 실패할 가능성이 가장 높은 곳으로 분류되는 주입니다. 트럼프가 이긴 주의 민주당 보유 주지사직 5곳 중 하나이기도 합니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "캔자스 주지사 Kansas Governor"
+    ]
+  },
+  {
+    "objectID": "governors/ks.html#주-개요",
+    "href": "governors/ks.html#주-개요",
+    "title": "캔자스 주지사 Kansas Governor",
+    "section": "1. 주 개요",
+    "text": "1. 주 개요\n\n켈리 공식의 시험대: 캔자스는 연방 선거 기준 공화 우위 주지만 최근 3연속 민주 주지사를 뽑았고, 2022년 낙태권 주민투표에서 59%가 낙태권 유지를 택한 주입니다. Kelly식 온건·교육 중심 브랜드가 후계자에게 이전되는지가 이 레이스의 본질입니다.\n경선이 말해준 것: 공화 쪽은 강성 보수(Masterson, 트럼프·Marshall 상원의원 지지)가 7인 경선을 43%로 정리했고, 민주 쪽은 현직 주지사가 지지한 후보가 패배했습니다 — Holscher는 공화 성향 교외(오버랜드파크) 지역구에서 연승해 온 자력 승부형입니다. 같은 날 공화당이 추진한 주 대법관 직선제 개헌안이 61.3 대 38.7로 부결된 것은 민주 측 조직력의 방증으로 읽힙니다.\nMasterson의 리스크: 주의회 권력 정점의 입법 실적이 자산이나, 2011년 개인 파산 전력과 강경 사회 이슈 주도(낙태권 유지 59% 주에서의 중도 이탈 위험)가 검증 포인트입니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "캔자스 주지사 Kansas Governor"
+    ]
+  },
+  {
+    "objectID": "governors/ks.html#제도",
+    "href": "governors/ks.html#제도",
+    "title": "캔자스 주지사 Kansas Governor",
+    "section": "2. 제도",
+    "text": "2. 제도\n\n경선: 폐쇄형이지만 무당파는 당일 현장에서 정당 등록을 하고 참여할 수 있습니다(기존 정당 등록자의 당 변경은 불가).\n임기: 연속 2선 제한 — Kelly의 퇴장 사유입니다.\n사법부 전선: 8/4 주민투표에서 공화당이 추진한 주 대법관 직선제 개헌안이 61.3 대 38.7로 부결됐습니다 — 사법부 구성 방식을 둘러싼 대치는 이 레이스의 배경 전선으로 남아 있습니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "캔자스 주지사 Kansas Governor"
+    ]
+  },
+  {
+    "objectID": "governors/ks.html#관전점",
+    "href": "governors/ks.html#관전점",
+    "title": "캔자스 주지사 Kansas Governor",
+    "section": "3. 관전점",
+    "text": "3. 관전점\n등급대로면 공화 탈환이 기본값이지만, 캔자스는 등급이 민주당을 과소평가해 온 전례(2018·2022 Kelly)가 있는 주입니다. 브라운백 감세 실패의 기억, 낙태권 주민투표의 조직력, 교외 이반 — Holscher가 쓸 수 있는 자원은 Kelly가 두 번 이겼던 그 조합입니다. 반대로 개방석에서 현직 프리미엄 없이 그 조합이 재현되는지가 미검증입니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "캔자스 주지사 Kansas Governor"
+    ]
+  },
+  {
+    "objectID": "governors/ks.html#polls",
+    "href": "governors/ks.html#polls",
+    "title": "캔자스 주지사 Kansas Governor",
+    "section": "4. 최신 여론조사",
+    "text": "4. 최신 여론조사\n\n\n\n\n\n\n\n\n최신 여론조사\n\n\n안내\n\n\n\n\n이 주의 주지사 본선 여론조사가 아직 데이터베이스에 없습니다(추정으로 채우지 않음).",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "캔자스 주지사 Kansas Governor"
+    ]
+  },
+  {
+    "objectID": "governors/ks.html#자금",
+    "href": "governors/ks.html#자금",
+    "title": "캔자스 주지사 Kansas Governor",
+    "section": "5. 자금",
+    "text": "5. 자금\n\n\n최신 자금 상황 (기준 2026-08-12 · 주 선관위 신고 — 연방 FEC 아님) — 양측 미확인(경선 직후) — 공화 경선에 외부자금 $20M+ 유입\n\n\n공화 경선에 외부자금 $20M+가 유입된 레이스입니다 — 본선 신고가 나오는 대로 채웁니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "캔자스 주지사 Kansas Governor"
+    ]
+  },
+  {
+    "objectID": "governors/ks.html#한국-함의",
+    "href": "governors/ks.html#한국-함의",
+    "title": "캔자스 주지사 Kansas Governor",
+    "section": "6. 한국 함의",
+    "text": "6. 한국 함의\n직접 연결이 확인되지 않았습니다. 확인되는 대로 Korea Watch에 기록합니다.\n작성 2026-08-12 · 등급: Cook·Sabato Lean R · IE Tilt R(8/6) · 시장 민주 20¢(Kalshi 8/10) · 프로필·조사 상세 기준 2026-08-07",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "캔자스 주지사 Kansas Governor"
+    ]
+  },
+  {
+    "objectID": "governors/ga.html",
+    "href": "governors/ga.html",
+    "title": "조지아 주지사 Georgia Governor",
+    "section": "",
+    "text": "케이샤 랜스 바텀스 Keisha Lance Bottoms민주\n\n\n1970년생(56세) · 전 애틀랜타 시장(2018–2022) · 전 백악관 수석고문(공공참여) · 변호사\n\n\n\n가족 남편 Derek Bottoms, 입양 자녀 넷\n\n\n학력 플로리다 A&M대 방송저널리즘 학사, 조지아주립대 JD\n\n\n경력 2017 애틀랜타 시장 결선 50.45%(832표차) · 2021 재선 불출마 · 2026-05-19 민주 경선 56%로 결선 없이 확정\n\n\n펀드레이징 전국 소액기부 네트워크 — 본선 신고 초기 단계(주 선관위)\n\n\n강점\n\n\n전국 인지도(2020 부통령 후보군·백악관 경력)\n\n\n흑인 여성 유권자 기반 — 당선 시 조지아 최초\n\n\n애틀랜타 대도시권 조직\n\n\n\n\n약점\n\n\n시장 재선 포기 전력(‘중도하차’ 공격 소재)\n\n\n재임기 범죄 급증·2020 소요 대응 논란\n\n\n애틀랜타 밖 주 전역 득표력 미검증\n\n\n\n\n정책 경제·일자리 훈련 · 메디케이드 확대 · 공교육 · 치안+경찰개혁 병행\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: Office of U.S. Senator David Perdue · Public domain (Wikimedia Commons: Keisha_Lance_Bottoms_2019.jpg)   출처 [1]\n\n\n\n\n\n\n릭 잭슨 Rick Jackson공화\n\n\n1954년생(72세) · Jackson Healthcare(의료인력, 연매출 ~$30억) 창업자·CEO — 첫 공직 출마\n\n\n\n가족 아들 Shane(회사 사장) · 배우자 미확인\n\n\n학력 대학 중퇴(학비 부족) — 자수성가 서사\n\n\n경력 첫 출마 · 2026-05-19 1차 33%(2위) → 6/16 결선 ~53%로 트럼프 지지 Burt Jones 격파\n\n\n펀드레이징 자기자금 $50M+ 투입(경선+결선 공화 총비용 $138.6M 중 ~$108M) — 사실상 무제한\n\n\n강점\n\n\n무제한 자기자금\n\n\n빈곤·위탁가정 출신 자수성가 스토리\n\n\n아웃사이더 — 트럼프 후보를 꺾고도 친트럼프 포지셔닝\n\n\n\n\n약점\n\n\n공직·행정 경험 전무\n\n\n70대 초선 도전\n\n\n정당 조직 기반 부재·본선 검증 안 됨\n\n\n\n\n정책 주 소득세 반감 · 재산세 동결 · 이민 단속 · 위탁아동·아동복지\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: Cherie Martin · CC BY 4.0 (Wikimedia Commons: Rick_Jackson_(cropped).png)   출처 [1] [2]\nGA 주지사 레이스 카드\n\n\n기준 2026-08-12 · 자금은 주(州) 선관위 신고 기준(연방 FEC 아님)\n\n\n항목\n내용\n\n\n\n\n구도\n공화 방어\n\n\n현직/구도\nBottoms (D) vs Jackson (R) — 개방석(Kemp 임기 제한)\n\n\n등급\nToss-up (Cook·Sabato·IE·컨센서스)\n\n\n최신 폴\nBottoms +7.2 (State Navigate) · Fabrizio Lee(공화 성향) Bottoms 48–46 · Wick 43–43 — 집계 평균 Bottoms +5~6 (State Navigate 7/13 (LV 448) · Fabrizio Lee 7/16 (LV 1,060) · Wick Insights 6/30 (LV 1,175))\n\n\n자금(주 선관위)\nJackson 자기자금 $50M+ 투입 — 공화 경선+결선 총비용 $138.6M 중 ~$108M 자비(Georgia Recorder). Bottoms는 전국 소액기부 네트워크, 본선 신고 초기 단계(주 선관위)\n\n\n한국 관심\n현대차 메타플랜트·SK온 배터리 — 주지사가 인허가·세제 인센티브 실질 결정권자\n\n\n경선 — 양당 경선\n2026-05-19 완료 · Keisha Lance Bottoms(D, 전 애틀랜타 시장) 지명. 공화는 과반 미달로 6/16 결선행. Kemp 임기 제한 공석.\n\n\n경선 — 공화당 결선\n2026-06-16 완료 · Rick Jackson(억만장자·자기자금, 트럼프 미보증)이 Burt Jones(트럼프·Kemp 지지)를 52.8–47.3으로 제압. 조지아 역사상 최고가 비방전(약 1.6억 달러) — \"트럼프 보증이 더는 무적이 아니다\"는 해석을 낳았다.\nKemp 주지사의 임기 제한으로 열린 개방석이자, 트럼프 보증이 처음 꺾인 곳입니다. 6/16 공화 결선에서 헬스케어 억만장자 Rick Jackson이 트럼프·Kemp가 지지한 Burt Jones 부지사를 52.8–47.3으로 제압했습니다 — 조지아 역사상 최고가 비방전(경선+결선 약 $138.6M) 끝의 결과입니다. 같은 주에서 상원(Ossoff)도 동시에 치러져 한 주에 상원·주지사가 함께 걸린 최대 격전지입니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "조지아 주지사 Georgia Governor"
+    ]
+  },
+  {
+    "objectID": "governors/ga.html#주-개요",
+    "href": "governors/ga.html#주-개요",
+    "title": "조지아 주지사 Georgia Governor",
+    "section": "1. 주 개요",
+    "text": "1. 주 개요\n\n개방석의 배경: Kemp는 연속 2선 임기 제한으로 물러납니다(2026년 상원 불출마도 함께 선언). 애브람스가 불출마한 가운데 민주당은 흑인 여성 후보(Bottoms)의 주 전체 시험대를, 공화당은 ‘비(非)MAGA 아웃사이더’(Jackson)의 절연 실험을 각각 치릅니다 — 트럼프 −20 환경에서 트럼프 후보(Jones)를 꺾고 올라온 대진이라는 점이 이 레이스의 정체성입니다.\n2028년으로 이어지는 권한: 조지아 주지사는 2028년 대선 인증 국면의 당사자입니다. 2020년 인증 갈등의 무대였던 주라는 점에서 상원 못지않은 관찰 대상입니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "조지아 주지사 Georgia Governor"
+    ]
+  },
+  {
+    "objectID": "governors/ga.html#제도-과반-결선",
+    "href": "governors/ga.html#제도-과반-결선",
+    "title": "조지아 주지사 Georgia Governor",
+    "section": "2. 제도 — 과반-결선",
+    "text": "2. 제도 — 과반-결선\n조지아는 과반(50%+1) 미달 시 상위 2인이 결선을 치릅니다. 이번 공화 경선이 정확히 그 경로였습니다(5/19 1차: Jones 38·Jackson 33·Raffensperger 15·Carr 12 → 6/16 결선). 제도 상세와 본선 함의는 상원 조지아 페이지 2절에 정리돼 있습니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "조지아 주지사 Georgia Governor"
+    ]
+  },
+  {
+    "objectID": "governors/ga.html#관전점",
+    "href": "governors/ga.html#관전점",
+    "title": "조지아 주지사 Georgia Governor",
+    "section": "3. 관전점",
+    "text": "3. 관전점\nJackson의 사실상 무제한 자기자금(경선·결선에 ~$108M 투입)과 빈곤·위탁가정 출신 자수성가 서사가 공화당의 자산이고, 공직·행정 경험 전무와 70대 초선 도전이 검증 포인트입니다. Bottoms는 전국 인지도(2020 부통령 후보군·백악관 경력)와 애틀랜타 대도시권 조직이 자산이지만, 시장 재선 포기 전력(‘중도하차’ 공격 소재)과 애틀랜타 밖 득표력이 미검증입니다. 애브람스 부재 속 민주당의 흑인 여성 후보 시험대이자, 2028년 조지아 인증 권한의 향배가 걸린 레이스입니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "조지아 주지사 Georgia Governor"
+    ]
+  },
+  {
+    "objectID": "governors/ga.html#polls",
+    "href": "governors/ga.html#polls",
+    "title": "조지아 주지사 Georgia Governor",
+    "section": "4. 최신 여론조사",
+    "text": "4. 최신 여론조사\n\n\n\n\n\n\n\n\n최신 여론조사\n\n\n최신순 · 3건 · 양수 = 민주 우위(D+)\n\n\n조사기관\n실사기간\n모집단\n표본\n결과\n마진\n비고\n\n\n\n\nFabrizio Ward/Impact Research\n2026-07-13 ~ 2026-07-16\nLV\n1060\nBottoms 48 – 46 Jackson\nD+2\n±3·공화+민주 초당 합동(오하이오 AARP와 같은 체제)\n\n\nState Navigate\n2026-07-10 ~ 2026-07-13\nLV\n448\nBottoms 51 – 44 Jackson\nD+7\n±4.6·leaners 포함 토플라인(원문 브리핑 PDF)\n\n\nWick Insights\n2026-06-27 ~ 2026-06-30\nLV\n1175\nBottoms 42.7 – 43.2 Jackson\nR+0.5\n±2.9·사실상 동률(원문은 Jackson +0.5)\n\n\n\n출처 URL은 `data/governor_polls.csv`에 행별로 보관합니다(【수집】은 원문 URL 확인 중). 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.\n\n\n\n\n\n\n\n\n\n세 조사가 +7.2 ~ 동률로 벌어져 있고, 그중 Bottoms 우위 최대치(State Navigate)는 표본이 작습니다(LV 448). 공화 성향 기관(Fabrizio Lee)에서도 Bottoms +2가 나온 점이 오히려 유의미합니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "조지아 주지사 Georgia Governor"
+    ]
+  },
+  {
+    "objectID": "governors/ga.html#자금",
+    "href": "governors/ga.html#자금",
+    "title": "조지아 주지사 Georgia Governor",
+    "section": "5. 자금",
+    "text": "5. 자금\n\n\n최신 자금 상황 (기준 2026-08-12 · 주 선관위 신고 — 연방 FEC 아님) — Jackson 자기자금 $50M+ 투입 — 공화 경선+결선 총비용 $138.6M 중 ~$108M 자비(Georgia Recorder). Bottoms는 전국 소액기부 네트워크, 본선 신고 초기 단계(주 선관위)\n\n\n자기자금 대 소액기부 네트워크의 대비가 이 레이스 자금 구조의 본질입니다. Jackson의 화력은 사실상 무제한이지만, 경선·결선에서 이미 $100M+를 소모한 뒤의 본선 지속력은 별개 문제입니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "조지아 주지사 Georgia Governor"
+    ]
+  },
+  {
+    "objectID": "governors/ga.html#한국-함의",
+    "href": "governors/ga.html#한국-함의",
+    "title": "조지아 주지사 Georgia Governor",
+    "section": "6. 한국 함의",
+    "text": "6. 한국 함의\n후보들의 한국 관련 직접 발언은 확인되지 않았습니다. 다만 조지아는 현대차 메타플랜트·SK온 배터리가 있는 주로, 주지사의 인허가·인센티브·전력 정책이 한국 기업 투자 환경의 실질 변수입니다. 2025년 9월 현대-LG 배터리 공장 ICE 단속 사태처럼 연방-주 정치가 교차하는 사안에서 주지사의 스탠스가 직접 작동합니다 — 후보별 입장이 확인되는 대로 Korea Watch에 기록합니다.\n작성 2026-08-12 · 등급: Cook·Sabato·IE·컨센서스 Toss-up · 시장 민주 57¢(Kalshi 8/10) · 프로필·조사 상세 기준 2026-08-07",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "조지아 주지사 Georgia Governor"
+    ]
+  },
+  {
     "objectID": "governors.html",
     "href": "governors.html",
     "title": "주지사 선거",
@@ -1354,7 +1718,7 @@
     "href": "governors.html#featured",
     "title": "주지사 선거",
     "section": "주목 레이스",
-    "text": "주목 레이스\n조지아 — 트럼프 보증이 처음 꺾인 곳 Kemp 주지사의 임기 제한으로 열린 공석. 6/16 공화 결선에서 Rick Jackson(억만장자·자기자금 1억 달러+, 트럼프 미보증)이 Burt Jones(트럼프·Kemp 지지)를 52.8–47.3으로 제압했습니다. 조지아 역사상 최고가 비방전(약 1.6억 달러) 끝의 결과로, “트럼프 보증은 여전히 강하지만 더는 무적이 아니다”라는 해석을 낳았습니다. 같은 주에서 상원(오소프)도 동시에 치러져 한 주에서 상원·주지사가 함께 걸린 최대 격전지입니다.\n위스콘신 — 재획정이 만든 3중 접전 주지사가 토스업인 동시에, 재획정 신지도로 주 상·하원이 모두 경합권에 들어왔습니다. 세 선거가 같은 방향으로 움직이면 트라이펙타(주지사+양원 독점)가 통째로 바뀔 수 있는, 이번 사이클에서 구조 변화 폭이 가장 큰 주입니다.\n미시간 · 애리조나 — 민주 방어(Lean D) 두 곳 모두 민주 주지사 자리를 지키는 싸움이며, 동시에 주의회 다수도 걸려 있습니다. 미시간은 같은 날(8/4) 주지사·상원 경선이 함께 치러져 한 주에서 세 층위가 동시에 움직입니다 — 주지사는 Benson(D) vs James(R), 상원은 El-Sayed(D) vs Rogers(R)로 확정됐습니다.\n오하이오 · 네바다 — 기관이 갈리는 두 곳 Cook은 토스업, Sabato는 Lean R. 오하이오는 상원(브라운 vs 허스티드)도 진성 토스업이라, 주 전체가 상·하위 선거 모두에서 접전인 드문 사례입니다.\n\n한국 함의 — 공장이 있는 주가 곧 경합주 경합 8주 중 미시간(LG에너지솔루션·Tesla-LG LFP 공장)·조지아(SK온·현대차 메타플랜트)·오하이오(한화 등 제조 투자)·애리조나(반도체 클러스터)가 한국 기업의 대미 투자처와 겹칩니다. 주지사는 인허가·세제 인센티브·전력 요금 같은 투자 환경의 실질 결정권자이므로, 연방 통상정책보다 개별 프로젝트에 더 빨리 영향을 줍니다. 다만 후보들의 한국 관련 직접 발언·공약은 아직 확인되지 않았습니다 — 확인되는 대로 Korea Watch에 기록합니다.",
+    "text": "주목 레이스\n조지아 — 트럼프 보증이 처음 꺾인 곳 Kemp 주지사의 임기 제한으로 열린 공석. 6/16 공화 결선에서 Rick Jackson(억만장자·자기자금 1억 달러+, 트럼프 미보증)이 Burt Jones(트럼프·Kemp 지지)를 52.8–47.3으로 제압했습니다. 조지아 역사상 최고가 비방전(약 1.6억 달러) 끝의 결과로, “트럼프 보증은 여전히 강하지만 더는 무적이 아니다”라는 해석을 낳았습니다. 같은 주에서 상원(오소프)도 동시에 치러져 한 주에서 상원·주지사가 함께 걸린 최대 격전지입니다.\n위스콘신 — 재획정이 만든 3중 접전 주지사가 토스업인 동시에, 재획정 신지도로 주 상·하원이 모두 경합권에 들어왔습니다. 세 선거가 같은 방향으로 움직이면 트라이펙타(주지사+양원 독점)가 통째로 바뀔 수 있는, 이번 사이클에서 구조 변화 폭이 가장 큰 주입니다.\n미시간 · 애리조나 — 민주 방어(Lean D) 두 곳 모두 민주 주지사 자리를 지키는 싸움이며, 동시에 주의회 다수도 걸려 있습니다. 미시간은 같은 날(8/4) 주지사·상원 경선이 함께 치러져 한 주에서 세 층위가 동시에 움직입니다 — 주지사는 Benson(D) vs James(R), 상원은 El-Sayed(D) vs Rogers(R)로 확정됐습니다.\n오하이오 · 네바다 — 기관이 갈리는 두 곳 Cook은 토스업, Sabato는 Lean R. 오하이오는 상원(브라운 vs 허스티드)도 진성 토스업이라, 주 전체가 상·하위 선거 모두에서 접전인 드문 사례입니다.\n\n한국 함의 — 공장이 있는 주가 곧 경합주 경합 8주 중 미시간(LG에너지솔루션·Tesla-LG LFP 공장)·조지아(SK온·현대차 메타플랜트)·오하이오(한화 등 제조 투자)·애리조나(LG에너지솔루션 Queen Creek $5.5B 배터리 복합단지·반도체 클러스터)가 한국 기업의 대미 투자처와 겹칩니다. 주지사는 인허가·세제 인센티브·전력 요금 같은 투자 환경의 실질 결정권자이므로, 연방 통상정책보다 개별 프로젝트에 더 빨리 영향을 줍니다. 다만 후보들의 한국 관련 직접 발언·공약은 아직 확인되지 않았습니다 — 확인되는 대로 Korea Watch에 기록합니다.",
     "crumbs": [
       "홈",
       "주지사·주의회",
@@ -1366,7 +1730,7 @@
     "href": "governors.html#candidates",
     "title": "주지사 선거",
     "section": "후보 프로필 — 경합 8주",
-    "text": "후보 프로필 — 경합 8주\n상원 State Focus와 같은 양식의 후보 카드입니다. 주지사 후보는 연방 표결 기록이 없는 경우가 많아(주 단위 선출직·민간 출신), 상원 카드보다 경력·자금·포지셔닝의 비중이 큽니다. 등급 순서는 위 경합주 표를 함께 보세요.\n\n\n\n\n\n\n사진 출처 — 모든 초상은 Wikimedia Commons의 퍼블릭 도메인·CC 라이선스 이미지이며, 각 카드 하단에 작가·라이선스를 병기했습니다. 자유 라이선스 초상을 확보하지 못한 Masterson(KS·공화)·Lahn(IA·공화) 두 명은 플레이스홀더로 둡니다 — 캠페인 사이트 사진은 저작권이 확인되기 전까지 쓰지 않습니다.\n\n\n\n\n애리조나 AZ\n\n\n\n\n\n케이티 홉스 Katie Hobbs민주 · 현직\n\n\n1969년생(57세) · 애리조나 주지사(2023~) · 전 주 국무장관·사회복지사\n\n\n\n가족 남편 Pat, 자녀 둘\n\n\n학력 노던애리조나대 사회복지 학사, 애리조나주립대(ASU) 사회복지 석사\n\n\n경력 2022 주지사 50.3% vs Lake 49.6%(0.7%p) · 2018 주 국무장관 50.4% · 주상원 3선\n\n\n펀드레이징 Q2 모금 $2.6M · 잔고 $2.4M(선제 광고로 지출 $7.4M) + DGA $10M 투입(주 선관위 신고·KJZZ)\n\n\n강점\n\n\n현직 프리미엄 · 2022 최격전지 승리 경험\n\n\n공화 주의회 상대 거부권 정치로 온건 이미지\n\n\n상대(빅스)의 강경 포지셔닝 반사이익\n\n\n\n\n약점\n\n\n2022년 0.7%p 신승 — 기반 취약\n\n\n낮은 카리스마·토론 회피 논란(2022)\n\n\n트럼프가 2024년 5.5%p 이긴 주\n\n\n\n\n정책 낙태권 보호 · 주택·생활비 · 물(콜로라도강) 문제 · 보육·교육\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: Gage Skidmore · CC BY-SA 2.0 (Wikimedia Commons: Katie_Hobbs_in_2025.jpg)   출처 [1]\n\n\n\n\n\n\n앤디 빅스 Andy Biggs공화\n\n\n1958년생(68세) · 연방하원의원 AZ-05 5선(2017~) · 전 주상원의장 · 변호사\n\n\n\n가족 부인 Cindy, 자녀 여섯(딸 1명 2025년 별세)\n\n\n학력 BYU 학사, 애리조나대 JD, ASU 석사\n\n\n경력 하원 5연승(56.7~64.1%) · 2026-07-21 경선 73.6% 압승(롭슨 경선 전 사퇴)\n\n\n펀드레이징 모금 $0.9M · 잔고 $1.2M (주 선관위 신고, 7/16 — 홉스 대비 열세)\n\n\n강점\n\n\n프리덤코커스 전 의장급 인지도·강성 보수 결집\n\n\n의정 경력 20년+\n\n\nMAGA 조직 장악\n\n\n\n\n약점\n\n\n2021-01-06 선거인단 인증 반대 표결 — 본선 부담\n\n\n경합주 중도층에 불리한 강경 노선\n\n\n주 전체 선거 첫 도전\n\n\n\n\n정책 국경 통제 · 연방지출 삭감·감세 · 규제 완화 · 선거 보안\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: U.S. House of Representatives · Public domain (Wikimedia Commons: Andy_Biggs_portrait_(118th_Congress).jpg)   출처 [1] [2]\n\n\n\n\n\n조지아 GA\n\n\n\n\n\n케이샤 랜스 바텀스 Keisha Lance Bottoms민주\n\n\n1970년생(56세) · 전 애틀랜타 시장(2018–2022) · 전 백악관 수석고문(공공참여) · 변호사\n\n\n\n가족 남편 Derek Bottoms, 입양 자녀 넷\n\n\n학력 플로리다 A&M대 방송저널리즘 학사, 조지아주립대 JD\n\n\n경력 2017 애틀랜타 시장 결선 50.45%(832표차) · 2021 재선 불출마 · 2026-05-19 민주 경선 56%로 결선 없이 확정\n\n\n펀드레이징 전국 소액기부 네트워크 — 본선 신고 초기 단계(주 선관위)\n\n\n강점\n\n\n전국 인지도(2020 부통령 후보군·백악관 경력)\n\n\n흑인 여성 유권자 기반 — 당선 시 조지아 최초\n\n\n애틀랜타 대도시권 조직\n\n\n\n\n약점\n\n\n시장 재선 포기 전력(‘중도하차’ 공격 소재)\n\n\n재임기 범죄 급증·2020 소요 대응 논란\n\n\n애틀랜타 밖 주 전역 득표력 미검증\n\n\n\n\n정책 경제·일자리 훈련 · 메디케이드 확대 · 공교육 · 치안+경찰개혁 병행\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: Office of U.S. Senator David Perdue · Public domain (Wikimedia Commons: Keisha_Lance_Bottoms_2019.jpg)   출처 [1]\n\n\n\n\n\n\n릭 잭슨 Rick Jackson공화\n\n\n1954년생(72세) · Jackson Healthcare(의료인력, 연매출 ~$30억) 창업자·CEO — 첫 공직 출마\n\n\n\n가족 아들 Shane(회사 사장) · 배우자 미확인\n\n\n학력 대학 중퇴(학비 부족) — 자수성가 서사\n\n\n경력 첫 출마 · 2026-05-19 1차 33%(2위) → 6/16 결선 ~53%로 트럼프 지지 Burt Jones 격파\n\n\n펀드레이징 자기자금 $50M+ 투입(경선+결선 공화 총비용 $138.6M 중 ~$108M) — 사실상 무제한\n\n\n강점\n\n\n무제한 자기자금\n\n\n빈곤·위탁가정 출신 자수성가 스토리\n\n\n아웃사이더 — 트럼프 후보를 꺾고도 친트럼프 포지셔닝\n\n\n\n\n약점\n\n\n공직·행정 경험 전무\n\n\n70대 초선 도전\n\n\n정당 조직 기반 부재·본선 검증 안 됨\n\n\n\n\n정책 주 소득세 반감 · 재산세 동결 · 이민 단속 · 위탁아동·아동복지\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: Cherie Martin · CC BY 4.0 (Wikimedia Commons: Rick_Jackson_(cropped).png)   출처 [1] [2]\n\n\n\n\n\n오하이오 OH\n\n\n\n\n\n에이미 액턴 Amy Acton민주\n\n\n1966년생(60세) · 의사(공중보건) · 전 오하이오 보건국장(2019–2020) — 코로나 초기 대응 주도\n\n\n\n가족 남편 Eric Acton(교사), 혼합가족 자녀 여섯 · 유년기 빈곤·홈리스 경험\n\n\n학력 영스타운주립대 학사, 노스이스트오하이오 의대 MD, 오하이오주립대 MPH\n\n\n경력 선출직 첫 출마 · 2026-05-05 민주 경선 무경쟁 통과\n\n\n펀드레이징 총모금 ~$18.5M — 단 5/15~6/30 광고 집행 ~$10만(램스와미 ~$9M의 1/90)\n\n\n강점\n\n\n팬데믹기 ‘신뢰받는 얼굴’ — 초당적 인지도\n\n\nProfile in Courage 수상(2021) 서사\n\n\n브라운 상원 티켓과의 시너지\n\n\n\n\n약점\n\n\n선출직·행정 경험 부족\n\n\n락다운 반발층(보수)의 표적\n\n\n오하이오의 공화 우위 지형(트럼프 +11)\n\n\n\n\n정책 의료비 인하 · 메디케이드 확대 · 공중보건 · 돌봄 세액공제\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: air force · Public domain (Wikimedia Commons: Amy_Acton_(cropped).jpg)   출처 [1]\n\n\n\n\n\n\n비벡 램스와미 Vivek Ramaswamy공화\n\n\n1985년생(41세) · 기업인·작가 — Roivant Sciences 창업, Strive Asset Management 공동창업 · 2024 대선 경선 주자\n\n\n\n가족 부인 Apoorva(외과 교수), 아들 둘\n\n\n학력 하버드 생물학 학사(수석급), 예일 로스쿨 JD\n\n\n경력 2024 대선 경선 → 아이오와 직후 사퇴·트럼프 지지 · 2026-05-05 공화 경선 82% 압승\n\n\n펀드레이징 총모금 ~$50M(절반 자비 · 머스크 $5M·야스 $10M 등) — 5/15~6/30 광고 ~$9M\n\n\n강점\n\n\n막대한 자산+모금력 · 트럼프 조기 지지 확보\n\n\n전국 인지도·미디어 장악력\n\n\n젊음(41) — 2028 발판론이 동원력으로\n\n\n\n\n약점\n\n\n공직 경험 전무\n\n\nDOGE 공동수장 하루 만에 이탈(2025-01) 등 ‘뜨내기’ 공격 소재\n\n\n지방선거 투표 불참 이력\n\n\n\n\n정책 교육 개혁(성취 기준·학교선택) · 감세·규제 완화 · 반ESG·반워크 · 치안\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: Prime Minister’s Office · GODL-India (Wikimedia Commons: Vivek_Ramaswamy,_Prime_Minister_Narendra_Modi,_2025_(cropped).jpg)   출처 [1]\n\n\n\n\n\n미시간 MI\n\n\n\n\n\n조슬린 벤슨 Jocelyn Benson민주\n\n\n1977년생(49세) · 미시간 주 국무장관(2019~) · 전 웨인주립대 로스쿨 학장\n\n\n\n가족 남편 Ryan Friedrichs(육군 참전용사), 아들 하나\n\n\n학력 웰즐리칼리지 학사, 옥스퍼드 사회학 석사(마셜 장학생), 하버드 로스쿨 JD\n\n\n경력 2018 국무장관 52.9% · 2022 재선 55.9%(민주 최상위 득표) · 2026-08-04 경선 85% 대 15% 압승(스완슨)\n\n\n펀드레이징 모금 $4.9M · 잔고 $6.4M (경선 전 주 선관위 신고)\n\n\n강점\n\n\n주 전체 선거 3회 검증 — 2022 두 자릿수 압승\n\n\n2020 선거 방어 ‘민주주의 수호’ 브랜드(JFK Profile in Courage)\n\n\nUAW 등 노조 지지\n\n\n\n\n약점\n\n\n보수층 집중 표적 — 양극화 리스크\n\n\n경제·생활비 행정 실적 부재\n\n\n휘트머 은퇴 후 개방석 방어 부담\n\n\n\n\n정책 투표권·민주주의 · 생활비·주거 · 교육 · 관공서 서비스 개혁\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: JFM Photo 73 · CC BY 4.0 (Wikimedia Commons: SOS_Jocelyn_Benson_web.jpg)   출처 [1] [2]\n\n\n\n\n\n\n존 제임스 John James공화\n\n\n1981년생(45세) · 연방하원의원 MI-10(2023~) · 전 육군 아파치 조종사(이라크전) · 가족기업 경영\n\n\n\n가족 부인 Elizabeth, 아들 셋\n\n\n학력 웨스트포인트(육사) 학사, 펜실베이니아주립대 석사, 미시간대 MBA\n\n\n경력 2018 상원 낙선(45.8%) · 2020 상원 낙선(1.7%p차) · 2022 하원 0.5%p 신승 → 2024 51.1% 재선 · 2026-08-04 경선 ~15%p 승(존슨 자비 $32M 상대)\n\n\n펀드레이징 미확인 (경선 후 신고 대기)\n\n\n강점\n\n\n트럼프 지지\n\n\n군인+기업인 이력·전국구 모금력\n\n\n흑인 공화당원 교차 소구 잠재력\n\n\n\n\n약점\n\n\n주 전체 선거 2연패(2018·2020)\n\n\n경합구에서도 신승에 그친 득표력\n\n\n낙태 강경 입장 — 2022 낙태권 주민투표 가결 주\n\n\n\n\n정책 제조업·경제 · 교육(학부모 권한) · 국경 · 치안\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: United States Congress · CC BY-SA 4.0 (Wikimedia Commons: Rep._John_James_official_photo,_118th_Congress.jpg)   출처 [1] [2]\n\n\n\n\n\n위스콘신 WI\n\n※ 아직 지명 확정 전(8/11 경선) — 프란체스카 홍(민주·경선 선두) · 톰 티파니(공화·사실상 확정)\n\n\n\n\n\n\n프란체스카 홍 Francesca Hong민주\n\n\n1988년생(38세) · 위스콘신 주하원의원(매디슨, 2021~) · 셰프 — Morris Ramen 공동창업\n\n\n\n가족 아들 하나 (이혼)\n\n\n학력 위스콘신대 매디슨 중퇴(생계로 요식업 진입)\n\n\n경력 2020 주하원 88% — 위스콘신 최초 아시아계 주의원 · 2022·2024 사실상 무경쟁 재선 · 경선 조사 선두: Marquette 7월 38% 대 반스 16%\n\n\n펀드레이징 주하원 4년 누적 ~$24만 — 반기업 PAC 선언, 소액기부 의존 (경선 진행 중)\n\n\n강점\n\n\n진보 풀뿌리·청년층 에너지(맘다니 모델)\n\n\n요식업 노동자 출신 생활비 서사\n\n\n최초성(아시아계·여성)\n\n\n\n\n약점\n\n\n주 전체 선거 경험·조직 부재\n\n\nDSA 당원 — ‘사회주의자’ 공격 정면 노출\n\n\n모금력 열세\n\n\n\n\n정책 공교육 · 보육 · 의료 접근 · 기후·노동권\n\n\n🇰🇷 한국 함의 한국계 미국인 — 한국 이민자 부모, 매디슨 출생. 2025년 주의회 최초 아시아계 코커스 설립. 경합주 후보 중 유일한 실질적 한국 연결\n\n\n사진: SecretName101 · CC BY 4.0 (Wikimedia Commons: Francesca_Hong_IMG_2500_(1).jpg)   출처 [1]\n\n\n\n\n\n\n톰 티파니 Tom Tiffany공화\n\n\n1957년생(69세) · 연방하원의원 WI-07(2020 보선~) · 전 주상원·주하원 · 유람선 사업 출신\n\n\n\n가족 부인 Chris, 딸 셋\n\n\n학력 위스콘신대 리버폴스 농업경제학 학사\n\n\n경력 2020 보선 57.1% 이후 60%+ 연승(2024 63.6%) · 경선 조사 67%(사실상 단독 — 베리엔 2025 사퇴)\n\n\n펀드레이징 미확인 (경선 후 신고 대기)\n\n\n강점\n\n\n트럼프 지지 + 주 공화 하원의원 전원 지지\n\n\n북부 농촌 기반 견고\n\n\n의정 경력 15년\n\n\n\n\n약점\n\n\n주 전체 선거 미검증 — 밀워키·매디슨 교외 인지도 낮음\n\n\n2020 대선 인증 반대 표결\n\n\n고령(68)·농촌 보수 브랜드의 확장성 한계\n\n\n\n\n정책 감세 · 자원개발·규제완화(벌목·광업) · 국경 · 선거 무결성\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: US House of Representatives · Public domain (Wikimedia Commons: Tom_Tiffany.jpg)   출처 [1]\n\n\n\n\n\n네바다 NV\n\n\n\n\n\n애런 포드 Aaron Ford민주\n\n\n1972년생(54세) · 네바다 주 법무장관(2019~) · 전 주상원 다수당 대표\n\n\n\n가족 부인 Berna Rhodes-Ford(변호사), 아들 셋+조카 양육\n\n\n학력 텍사스 A&M 학사, 조지워싱턴대 석사, 오하이오주립대 석·박사·JD\n\n\n경력 2018 법무장관 0.4%p 신승 · 2022 재선 52.3% · 2026-06-09 경선 63.8%\n\n\n펀드레이징 미확인 (주 선관위 신고 확인 필요)\n\n\n강점\n\n\n주 전체 선거 2회 검증\n\n\n오피오이드 합의 $11억 등 법무장관 실적\n\n\n당선 시 네바다 최초 흑인 주지사\n\n\n\n\n약점\n\n\n과거 IRS 체납 이력(2016년 해소)\n\n\n후원 해외여행 윤리위 심사 진행 중\n\n\n현직 롬바도의 온건 이미지\n\n\n\n\n정책 주택 비용 · 약가·의료비 · 공교육 · 소비자 보호\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: United State Senate - the Office of Michael Bennet · Public domain (Wikimedia Commons: Aaron_D._Ford.jpg)   출처 [1]\n\n\n\n\n\n\n조 롬바도 Joe Lombardo공화 · 현직\n\n\n1962년생(64세) · 네바다 주지사(2023~) · 전 클라크카운티 셰리프 · 라스베이거스 경찰 26년\n\n\n\n가족 부인 Donna\n\n\n학력 UNLV 토목공학 학사, UNLV 위기관리 석사\n\n\n경력 2014 셰리프 51% · 2018 재선 72.8% · 2022 주지사 48.8% vs 시솔랙 47.3% — 그 해 전국 유일 현직 축출 · 2026-06-09 경선 91.1%\n\n\n펀드레이징 미확인 (주 선관위 신고 확인 필요)\n\n\n강점\n\n\n현직+법집행 이미지\n\n\n2022 역풍 속 민주 현직을 꺾은 득표력\n\n\n트럼프 지지와 온건 실용 병행\n\n\n\n\n약점\n\n\n거부권 75건(2023, 주 기록) — 민주 주의회와 전면 대치\n\n\n1.5%p 신승 전력·민주 조직력(리드 머신)\n\n\n중간선거 여당 역풍 노출\n\n\n\n\n정책 선거제 개혁(투표자 ID) · 학교선택 확대 · 치안·경찰 지원 · 증세 반대\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: Gage Skidmore · CC BY-SA 3.0 (Wikimedia Commons: Joe_Lombardo_by_Gage_Skidmore.jpg)   출처 [1]\n\n\n\n\n\n아이오와 IA\n\n\n\n\n\n롭 샌드 Rob Sand민주\n\n\n1982년생(44세) · 아이오와 주 감사원장(2019~) — 주 유일 민주 주 전체 선출직 · 전 부패·금융범죄 검사\n\n\n\n가족 부인 Christine Lauridsen(Lauridsen Group CEO), 아들 둘\n\n\n학력 브라운대 정치학 학사(트루먼 장학생), 아이오와대 JD\n\n\n경력 2018 감사원장 51.0%(공화 현직 격파) · 2022 재선 50.1%(0.2%p) · 2026 경선 무경쟁\n\n\n펀드레이징 2025년 한 해 $9.5M(주 기록) · 현금 $13.2M — 주지사 후보 전국 최상위급(Cook 4/9 상향 사유)\n\n\n강점\n\n\n기록적 모금\n\n\n‘3당파(tri-partisan)’ 초당 브랜드·부패 감시 이력\n\n\n아이오와 민주 중 유일한 주 전체 승리 경험\n\n\n\n\n약점\n\n\n처가(Lauridsen家) 자금 의존 공격 소재\n\n\n2022년 0.2%p 신승\n\n\n트럼프 +13 주의 우경화 지형\n\n\n\n\n정책 정부 효율·투명성 · 메디케이드 민영화 감사·의료 · 공교육 · 초당 협치\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: Rob Sand for Governor · CC0 (Wikimedia Commons: Rob_Sand_campaign_headshot_(cropped_2).jpg)   출처 [1] [2]\n\n\n\n\n\n\n잭 란 Zach Lahn공화\n\n\n농장주·사업가 — 위치토 사립학교 ‘Wonder’ 공동창업(체이스 코크와), 전 AFP 몬태나 지부장\n\n\n\n가족 부인 Annie, 혼합가족 자녀 일곱\n\n\n학력 미확인 (콜로라도 주상원 보좌 경력 확인)\n\n\n경력 첫 공직 출마 · 2026-06-02 경선 37.8% 대 핀스트라(현역 하원) 37.0% — 트럼프 막판 지지 후보를 꺾은 이변\n\n\n펀드레이징 자기자금 $2M 대출 포함 — 경선에서 핀스트라 모금 추월\n\n\n강점\n\n\n아웃사이더·반기득권 포지셔닝\n\n\n자기자금+MAHA(RFK Jr. 계열) 지지\n\n\n경선 이변의 모멘텀\n\n\n\n\n약점\n\n\n공직 경험 전무\n\n\n거주 논란 — 2023년 아이오와 이주·캔자스 투표 이력\n\n\n코크 네트워크 유착 공격 소재\n\n\n\n\n정책 가족농 보호·Big Ag 반독점 · 교육(학부모 권한) · 낙태 반대 · Make Iowa Healthy Again\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진 미확보   출처 [1] [2]\n\n\n\n\n\n캔자스 KS\n\n\n\n\n\n신디 홀셔 Cindy Holscher민주\n\n\n1969년생(57세) · 캔자스 주상원의원(오버랜드파크, 2021~) · 전 주하원 · 기업 마케팅 출신\n\n\n\n가족 남편 Greg, 자녀 셋\n\n\n학력 미주리대 학사(저널리즘·마케팅·정치학) — 집안 첫 대졸\n\n\n경력 2016 주하원 55.7%(공화 현직 격파) · 2020 주상원 54.4% · 2024 재선 61.1% · 2026-08-04 경선 49%(켈리 주지사 지지 코슨 39% 격파)\n\n\n펀드레이징 미확인 (경선 직후)\n\n\n강점\n\n\n공화 성향 교외 지역구 연승 — 캔자스 민주 승리 공식의 핵심 지역\n\n\n노동자 가정 서사\n\n\n브라운백 감세 실패 프레임 활용 가능\n\n\n\n\n약점\n\n\n주 전체 인지도·모금력 열세\n\n\n켈리식 온건 브랜드 계승 미검증\n\n\n연방선거 기준 공화 우위 주\n\n\n\n\n정책 공교육 완전 재정 · 식품 판매세·사회보장 과세 폐지 · 메디케이드 확대 · 보육 세액공제\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: Kansas State Democrats (Cindy Holscher) · CC0 (Wikimedia Commons: Kansas_State_Senator_Cindy_Holscher.jpg)   출처 [1] [2]\n\n\n\n\n\n\n타이 매스터슨 Ty Masterson공화\n\n\n1969년생(57세) · 캔자스 주상원의장(2021~) · 주상원 5선 · 부동산·소기업 경영\n\n\n\n가족 부인 Marlo\n\n\n학력 캔자스주립대 수학 (학위 취득 여부 미확인)\n\n\n경력 주상원 5선(63.5~69.0%) · 2026-08-04 경선 43%(7인 — 슈왑 국무장관 등 격파)\n\n\n펀드레이징 미확인 (경선 직후 · 경선 외부자금 $20M+ 유입 레이스)\n\n\n강점\n\n\n주의회 권력 정점 — 입법 실적·당내 조직\n\n\n강성 보수 기반 결집\n\n\n트럼프·마셜 상원의원 지지\n\n\n\n\n약점\n\n\n2011년 개인 파산 전력\n\n\n강경 사회 이슈 주도 — 2022 낙태권 주민투표 59% 유지 주에서 중도 이탈 위험\n\n\n최근 3연속 민주 주지사 당선 주\n\n\n\n\n정책 감세 · 학교선택(바우처) · 낙태 반대 · 불법이민 대응\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진 미확보   출처 [1]",
+    "text": "후보 프로필 — 경합 8주\n상원 State Focus와 같은 양식의 후보 카드입니다. 주 이름을 클릭하면 주별 State Focus 페이지(개요·관전점·여론조사·자금·한국 함의)로 이동합니다. 주지사 후보는 연방 표결 기록이 없는 경우가 많아(주 단위 선출직·민간 출신), 상원 카드보다 경력·자금·포지셔닝의 비중이 큽니다. 등급 순서는 위 경합주 표를 함께 보세요.\n\n\n\n\n\n\n사진 출처 — 모든 초상은 Wikimedia Commons의 퍼블릭 도메인·CC 라이선스 이미지이며, 각 카드 하단에 작가·라이선스를 병기했습니다. 자유 라이선스 초상을 확보하지 못한 Masterson(KS·공화)·Lahn(IA·공화) 두 명은 플레이스홀더로 둡니다 — 캠페인 사이트 사진은 저작권이 확인되기 전까지 쓰지 않습니다.\n\n\n\n\n애리조나 AZ\n\n\n\n\n\n케이티 홉스 Katie Hobbs민주 · 현직\n\n\n1969년생(57세) · 애리조나 주지사(2023~) · 전 주 국무장관·사회복지사\n\n\n\n가족 남편 Pat, 자녀 둘\n\n\n학력 노던애리조나대 사회복지 학사, 애리조나주립대(ASU) 사회복지 석사\n\n\n경력 2022 주지사 50.3% vs Lake 49.6%(0.7%p) · 2018 주 국무장관 50.4% · 주상원 3선\n\n\n펀드레이징 Q2 모금 $2.6M · 잔고 $2.4M(선제 광고로 지출 $7.4M) + DGA $10M 투입(주 선관위 신고·KJZZ)\n\n\n강점\n\n\n현직 프리미엄 · 2022 최격전지 승리 경험\n\n\n공화 주의회 상대 거부권 정치로 온건 이미지\n\n\n상대(빅스)의 강경 포지셔닝 반사이익\n\n\n\n\n약점\n\n\n2022년 0.7%p 신승 — 기반 취약\n\n\n낮은 카리스마·토론 회피 논란(2022)\n\n\n트럼프가 2024년 5.5%p 이긴 주\n\n\n\n\n정책 낙태권 보호 · 주택·생활비 · 물(콜로라도강) 문제 · 보육·교육\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: Gage Skidmore · CC BY-SA 2.0 (Wikimedia Commons: Katie_Hobbs_in_2025.jpg)   출처 [1]\n\n\n\n\n\n\n앤디 빅스 Andy Biggs공화\n\n\n1958년생(68세) · 연방하원의원 AZ-05 5선(2017~) · 전 주상원의장 · 변호사\n\n\n\n가족 부인 Cindy, 자녀 여섯(딸 1명 2025년 별세)\n\n\n학력 BYU 학사, 애리조나대 JD, ASU 석사\n\n\n경력 하원 5연승(56.7~64.1%) · 2026-07-21 경선 73.6% 압승(롭슨 경선 전 사퇴)\n\n\n펀드레이징 모금 $0.9M · 잔고 $1.2M (주 선관위 신고, 7/16 — 홉스 대비 열세)\n\n\n강점\n\n\n프리덤코커스 전 의장급 인지도·강성 보수 결집\n\n\n의정 경력 20년+\n\n\nMAGA 조직 장악\n\n\n\n\n약점\n\n\n2021-01-06 선거인단 인증 반대 표결 — 본선 부담\n\n\n경합주 중도층에 불리한 강경 노선\n\n\n주 전체 선거 첫 도전\n\n\n\n\n정책 국경 통제 · 연방지출 삭감·감세 · 규제 완화 · 선거 보안\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: U.S. House of Representatives · Public domain (Wikimedia Commons: Andy_Biggs_portrait_(118th_Congress).jpg)   출처 [1] [2]\n\n\n\n\n\n조지아 GA\n\n\n\n\n\n케이샤 랜스 바텀스 Keisha Lance Bottoms민주\n\n\n1970년생(56세) · 전 애틀랜타 시장(2018–2022) · 전 백악관 수석고문(공공참여) · 변호사\n\n\n\n가족 남편 Derek Bottoms, 입양 자녀 넷\n\n\n학력 플로리다 A&M대 방송저널리즘 학사, 조지아주립대 JD\n\n\n경력 2017 애틀랜타 시장 결선 50.45%(832표차) · 2021 재선 불출마 · 2026-05-19 민주 경선 56%로 결선 없이 확정\n\n\n펀드레이징 전국 소액기부 네트워크 — 본선 신고 초기 단계(주 선관위)\n\n\n강점\n\n\n전국 인지도(2020 부통령 후보군·백악관 경력)\n\n\n흑인 여성 유권자 기반 — 당선 시 조지아 최초\n\n\n애틀랜타 대도시권 조직\n\n\n\n\n약점\n\n\n시장 재선 포기 전력(‘중도하차’ 공격 소재)\n\n\n재임기 범죄 급증·2020 소요 대응 논란\n\n\n애틀랜타 밖 주 전역 득표력 미검증\n\n\n\n\n정책 경제·일자리 훈련 · 메디케이드 확대 · 공교육 · 치안+경찰개혁 병행\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: Office of U.S. Senator David Perdue · Public domain (Wikimedia Commons: Keisha_Lance_Bottoms_2019.jpg)   출처 [1]\n\n\n\n\n\n\n릭 잭슨 Rick Jackson공화\n\n\n1954년생(72세) · Jackson Healthcare(의료인력, 연매출 ~$30억) 창업자·CEO — 첫 공직 출마\n\n\n\n가족 아들 Shane(회사 사장) · 배우자 미확인\n\n\n학력 대학 중퇴(학비 부족) — 자수성가 서사\n\n\n경력 첫 출마 · 2026-05-19 1차 33%(2위) → 6/16 결선 ~53%로 트럼프 지지 Burt Jones 격파\n\n\n펀드레이징 자기자금 $50M+ 투입(경선+결선 공화 총비용 $138.6M 중 ~$108M) — 사실상 무제한\n\n\n강점\n\n\n무제한 자기자금\n\n\n빈곤·위탁가정 출신 자수성가 스토리\n\n\n아웃사이더 — 트럼프 후보를 꺾고도 친트럼프 포지셔닝\n\n\n\n\n약점\n\n\n공직·행정 경험 전무\n\n\n70대 초선 도전\n\n\n정당 조직 기반 부재·본선 검증 안 됨\n\n\n\n\n정책 주 소득세 반감 · 재산세 동결 · 이민 단속 · 위탁아동·아동복지\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: Cherie Martin · CC BY 4.0 (Wikimedia Commons: Rick_Jackson_(cropped).png)   출처 [1] [2]\n\n\n\n\n\n오하이오 OH\n\n\n\n\n\n에이미 액턴 Amy Acton민주\n\n\n1966년생(60세) · 의사(공중보건) · 전 오하이오 보건국장(2019–2020) — 코로나 초기 대응 주도\n\n\n\n가족 남편 Eric Acton(교사), 혼합가족 자녀 여섯 · 유년기 빈곤·홈리스 경험\n\n\n학력 영스타운주립대 학사, 노스이스트오하이오 의대 MD, 오하이오주립대 MPH\n\n\n경력 선출직 첫 출마 · 2026-05-05 민주 경선 무경쟁 통과\n\n\n펀드레이징 총모금 ~$18.5M — 단 5/15~6/30 광고 집행 ~$10만(램스와미 ~$9M의 1/90)\n\n\n강점\n\n\n팬데믹기 ‘신뢰받는 얼굴’ — 초당적 인지도\n\n\nProfile in Courage 수상(2021) 서사\n\n\n브라운 상원 티켓과의 시너지\n\n\n\n\n약점\n\n\n선출직·행정 경험 부족\n\n\n락다운 반발층(보수)의 표적\n\n\n오하이오의 공화 우위 지형(트럼프 +11)\n\n\n\n\n정책 의료비 인하 · 메디케이드 확대 · 공중보건 · 돌봄 세액공제\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: air force · Public domain (Wikimedia Commons: Amy_Acton_(cropped).jpg)   출처 [1]\n\n\n\n\n\n\n비벡 램스와미 Vivek Ramaswamy공화\n\n\n1985년생(41세) · 기업인·작가 — Roivant Sciences 창업, Strive Asset Management 공동창업 · 2024 대선 경선 주자\n\n\n\n가족 부인 Apoorva(외과 교수), 아들 둘\n\n\n학력 하버드 생물학 학사(수석급), 예일 로스쿨 JD\n\n\n경력 2024 대선 경선 → 아이오와 직후 사퇴·트럼프 지지 · 2026-05-05 공화 경선 82% 압승\n\n\n펀드레이징 총모금 ~$50M(절반 자비 · 머스크 $5M·야스 $10M 등) — 5/15~6/30 광고 ~$9M\n\n\n강점\n\n\n막대한 자산+모금력 · 트럼프 조기 지지 확보\n\n\n전국 인지도·미디어 장악력\n\n\n젊음(41) — 2028 발판론이 동원력으로\n\n\n\n\n약점\n\n\n공직 경험 전무\n\n\nDOGE 공동수장 하루 만에 이탈(2025-01) 등 ‘뜨내기’ 공격 소재\n\n\n지방선거 투표 불참 이력\n\n\n\n\n정책 교육 개혁(성취 기준·학교선택) · 감세·규제 완화 · 반ESG·반워크 · 치안\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: Prime Minister’s Office · GODL-India (Wikimedia Commons: Vivek_Ramaswamy,_Prime_Minister_Narendra_Modi,_2025_(cropped).jpg)   출처 [1]\n\n\n\n\n\n미시간 MI\n\n\n\n\n\n조슬린 벤슨 Jocelyn Benson민주\n\n\n1977년생(49세) · 미시간 주 국무장관(2019~) · 전 웨인주립대 로스쿨 학장\n\n\n\n가족 남편 Ryan Friedrichs(육군 참전용사), 아들 하나\n\n\n학력 웰즐리칼리지 학사, 옥스퍼드 사회학 석사(마셜 장학생), 하버드 로스쿨 JD\n\n\n경력 2018 국무장관 52.9% · 2022 재선 55.9%(민주 최상위 득표) · 2026-08-04 경선 85% 대 15% 압승(스완슨)\n\n\n펀드레이징 모금 $4.9M · 잔고 $6.4M (경선 전 주 선관위 신고)\n\n\n강점\n\n\n주 전체 선거 3회 검증 — 2022 두 자릿수 압승\n\n\n2020 선거 방어 ‘민주주의 수호’ 브랜드(JFK Profile in Courage)\n\n\nUAW 등 노조 지지\n\n\n\n\n약점\n\n\n보수층 집중 표적 — 양극화 리스크\n\n\n경제·생활비 행정 실적 부재\n\n\n휘트머 은퇴 후 개방석 방어 부담\n\n\n\n\n정책 투표권·민주주의 · 생활비·주거 · 교육 · 관공서 서비스 개혁\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: JFM Photo 73 · CC BY 4.0 (Wikimedia Commons: SOS_Jocelyn_Benson_web.jpg)   출처 [1] [2]\n\n\n\n\n\n\n존 제임스 John James공화\n\n\n1981년생(45세) · 연방하원의원 MI-10(2023~) · 전 육군 아파치 조종사(이라크전) · 가족기업 경영\n\n\n\n가족 부인 Elizabeth, 아들 셋\n\n\n학력 웨스트포인트(육사) 학사, 펜실베이니아주립대 석사, 미시간대 MBA\n\n\n경력 2018 상원 낙선(45.8%) · 2020 상원 낙선(1.7%p차) · 2022 하원 0.5%p 신승 → 2024 51.1% 재선 · 2026-08-04 경선 ~15%p 승(존슨 자비 $32M 상대)\n\n\n펀드레이징 미확인 (경선 후 신고 대기)\n\n\n강점\n\n\n트럼프 지지\n\n\n군인+기업인 이력·전국구 모금력\n\n\n흑인 공화당원 교차 소구 잠재력\n\n\n\n\n약점\n\n\n주 전체 선거 2연패(2018·2020)\n\n\n경합구에서도 신승에 그친 득표력\n\n\n낙태 강경 입장 — 2022 낙태권 주민투표 가결 주\n\n\n\n\n정책 제조업·경제 · 교육(학부모 권한) · 국경 · 치안\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: United States Congress · CC BY-SA 4.0 (Wikimedia Commons: Rep._John_James_official_photo,_118th_Congress.jpg)   출처 [1] [2]\n\n\n\n\n\n위스콘신 WI\n\n※ 아직 지명 확정 전(8/11 경선) — 프란체스카 홍(민주·경선 선두) · 톰 티파니(공화·사실상 확정)\n\n\n\n\n\n\n프란체스카 홍 Francesca Hong민주\n\n\n1988년생(38세) · 위스콘신 주하원의원(매디슨, 2021~) · 셰프 — Morris Ramen 공동창업\n\n\n\n가족 아들 하나 (이혼)\n\n\n학력 위스콘신대 매디슨 중퇴(생계로 요식업 진입)\n\n\n경력 2020 주하원 88% — 위스콘신 최초 아시아계 주의원 · 2022·2024 사실상 무경쟁 재선 · 경선 조사 선두: Marquette 7월 38% 대 반스 16%\n\n\n펀드레이징 주하원 4년 누적 ~$24만 — 반기업 PAC 선언, 소액기부 의존 (경선 진행 중)\n\n\n강점\n\n\n진보 풀뿌리·청년층 에너지(맘다니 모델)\n\n\n요식업 노동자 출신 생활비 서사\n\n\n최초성(아시아계·여성)\n\n\n\n\n약점\n\n\n주 전체 선거 경험·조직 부재\n\n\nDSA 당원 — ‘사회주의자’ 공격 정면 노출\n\n\n모금력 열세\n\n\n\n\n정책 공교육 · 보육 · 의료 접근 · 기후·노동권\n\n\n🇰🇷 한국 함의 한국계 미국인 — 한국 이민자 부모, 매디슨 출생. 2025년 주의회 최초 아시아계 코커스 설립. 경합주 후보 중 유일한 실질적 한국 연결\n\n\n사진: SecretName101 · CC BY 4.0 (Wikimedia Commons: Francesca_Hong_IMG_2500_(1).jpg)   출처 [1]\n\n\n\n\n\n\n톰 티파니 Tom Tiffany공화\n\n\n1957년생(69세) · 연방하원의원 WI-07(2020 보선~) · 전 주상원·주하원 · 유람선 사업 출신\n\n\n\n가족 부인 Chris, 딸 셋\n\n\n학력 위스콘신대 리버폴스 농업경제학 학사\n\n\n경력 2020 보선 57.1% 이후 60%+ 연승(2024 63.6%) · 경선 조사 67%(사실상 단독 — 베리엔 2025 사퇴)\n\n\n펀드레이징 미확인 (경선 후 신고 대기)\n\n\n강점\n\n\n트럼프 지지 + 주 공화 하원의원 전원 지지\n\n\n북부 농촌 기반 견고\n\n\n의정 경력 15년\n\n\n\n\n약점\n\n\n주 전체 선거 미검증 — 밀워키·매디슨 교외 인지도 낮음\n\n\n2020 대선 인증 반대 표결\n\n\n고령(68)·농촌 보수 브랜드의 확장성 한계\n\n\n\n\n정책 감세 · 자원개발·규제완화(벌목·광업) · 국경 · 선거 무결성\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: US House of Representatives · Public domain (Wikimedia Commons: Tom_Tiffany.jpg)   출처 [1]\n\n\n\n\n\n네바다 NV\n\n\n\n\n\n애런 포드 Aaron Ford민주\n\n\n1972년생(54세) · 네바다 주 법무장관(2019~) · 전 주상원 다수당 대표\n\n\n\n가족 부인 Berna Rhodes-Ford(변호사), 아들 셋+조카 양육\n\n\n학력 텍사스 A&M 학사, 조지워싱턴대 석사, 오하이오주립대 석·박사·JD\n\n\n경력 2018 법무장관 0.4%p 신승 · 2022 재선 52.3% · 2026-06-09 경선 63.8%\n\n\n펀드레이징 미확인 (주 선관위 신고 확인 필요)\n\n\n강점\n\n\n주 전체 선거 2회 검증\n\n\n오피오이드 합의 $11억 등 법무장관 실적\n\n\n당선 시 네바다 최초 흑인 주지사\n\n\n\n\n약점\n\n\n과거 IRS 체납 이력(2016년 해소)\n\n\n후원 해외여행 윤리위 심사 진행 중\n\n\n현직 롬바도의 온건 이미지\n\n\n\n\n정책 주택 비용 · 약가·의료비 · 공교육 · 소비자 보호\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: United State Senate - the Office of Michael Bennet · Public domain (Wikimedia Commons: Aaron_D._Ford.jpg)   출처 [1]\n\n\n\n\n\n\n조 롬바도 Joe Lombardo공화 · 현직\n\n\n1962년생(64세) · 네바다 주지사(2023~) · 전 클라크카운티 셰리프 · 라스베이거스 경찰 26년\n\n\n\n가족 부인 Donna\n\n\n학력 UNLV 토목공학 학사, UNLV 위기관리 석사\n\n\n경력 2014 셰리프 51% · 2018 재선 72.8% · 2022 주지사 48.8% vs 시솔랙 47.3% — 그 해 전국 유일 현직 축출 · 2026-06-09 경선 91.1%\n\n\n펀드레이징 미확인 (주 선관위 신고 확인 필요)\n\n\n강점\n\n\n현직+법집행 이미지\n\n\n2022 역풍 속 민주 현직을 꺾은 득표력\n\n\n트럼프 지지와 온건 실용 병행\n\n\n\n\n약점\n\n\n거부권 75건(2023, 주 기록) — 민주 주의회와 전면 대치\n\n\n1.5%p 신승 전력·민주 조직력(리드 머신)\n\n\n중간선거 여당 역풍 노출\n\n\n\n\n정책 선거제 개혁(투표자 ID) · 학교선택 확대 · 치안·경찰 지원 · 증세 반대\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: Gage Skidmore · CC BY-SA 3.0 (Wikimedia Commons: Joe_Lombardo_by_Gage_Skidmore.jpg)   출처 [1]\n\n\n\n\n\n아이오와 IA\n\n\n\n\n\n롭 샌드 Rob Sand민주\n\n\n1982년생(44세) · 아이오와 주 감사원장(2019~) — 주 유일 민주 주 전체 선출직 · 전 부패·금융범죄 검사\n\n\n\n가족 부인 Christine Lauridsen(Lauridsen Group CEO), 아들 둘\n\n\n학력 브라운대 정치학 학사(트루먼 장학생), 아이오와대 JD\n\n\n경력 2018 감사원장 51.0%(공화 현직 격파) · 2022 재선 50.1%(0.2%p) · 2026 경선 무경쟁\n\n\n펀드레이징 2025년 한 해 $9.5M(주 기록) · 현금 $13.2M — 주지사 후보 전국 최상위급(Cook 4/9 상향 사유)\n\n\n강점\n\n\n기록적 모금\n\n\n‘3당파(tri-partisan)’ 초당 브랜드·부패 감시 이력\n\n\n아이오와 민주 중 유일한 주 전체 승리 경험\n\n\n\n\n약점\n\n\n처가(Lauridsen家) 자금 의존 공격 소재\n\n\n2022년 0.2%p 신승\n\n\n트럼프 +13 주의 우경화 지형\n\n\n\n\n정책 정부 효율·투명성 · 메디케이드 민영화 감사·의료 · 공교육 · 초당 협치\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: Rob Sand for Governor · CC0 (Wikimedia Commons: Rob_Sand_campaign_headshot_(cropped_2).jpg)   출처 [1] [2]\n\n\n\n\n\n\n잭 란 Zach Lahn공화\n\n\n농장주·사업가 — 위치토 사립학교 ‘Wonder’ 공동창업(체이스 코크와), 전 AFP 몬태나 지부장\n\n\n\n가족 부인 Annie, 혼합가족 자녀 일곱\n\n\n학력 미확인 (콜로라도 주상원 보좌 경력 확인)\n\n\n경력 첫 공직 출마 · 2026-06-02 경선 37.8% 대 핀스트라(현역 하원) 37.0% — 트럼프 막판 지지 후보를 꺾은 이변\n\n\n펀드레이징 자기자금 $2M 대출 포함 — 경선에서 핀스트라 모금 추월\n\n\n강점\n\n\n아웃사이더·반기득권 포지셔닝\n\n\n자기자금+MAHA(RFK Jr. 계열) 지지\n\n\n경선 이변의 모멘텀\n\n\n\n\n약점\n\n\n공직 경험 전무\n\n\n거주 논란 — 2023년 아이오와 이주·캔자스 투표 이력\n\n\n코크 네트워크 유착 공격 소재\n\n\n\n\n정책 가족농 보호·Big Ag 반독점 · 교육(학부모 권한) · 낙태 반대 · Make Iowa Healthy Again\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진 미확보   출처 [1] [2]\n\n\n\n\n\n캔자스 KS\n\n\n\n\n\n신디 홀셔 Cindy Holscher민주\n\n\n1969년생(57세) · 캔자스 주상원의원(오버랜드파크, 2021~) · 전 주하원 · 기업 마케팅 출신\n\n\n\n가족 남편 Greg, 자녀 셋\n\n\n학력 미주리대 학사(저널리즘·마케팅·정치학) — 집안 첫 대졸\n\n\n경력 2016 주하원 55.7%(공화 현직 격파) · 2020 주상원 54.4% · 2024 재선 61.1% · 2026-08-04 경선 49%(켈리 주지사 지지 코슨 39% 격파)\n\n\n펀드레이징 미확인 (경선 직후)\n\n\n강점\n\n\n공화 성향 교외 지역구 연승 — 캔자스 민주 승리 공식의 핵심 지역\n\n\n노동자 가정 서사\n\n\n브라운백 감세 실패 프레임 활용 가능\n\n\n\n\n약점\n\n\n주 전체 인지도·모금력 열세\n\n\n켈리식 온건 브랜드 계승 미검증\n\n\n연방선거 기준 공화 우위 주\n\n\n\n\n정책 공교육 완전 재정 · 식품 판매세·사회보장 과세 폐지 · 메디케이드 확대 · 보육 세액공제\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: Kansas State Democrats (Cindy Holscher) · CC0 (Wikimedia Commons: Kansas_State_Senator_Cindy_Holscher.jpg)   출처 [1] [2]\n\n\n\n\n\n\n타이 매스터슨 Ty Masterson공화\n\n\n1969년생(57세) · 캔자스 주상원의장(2021~) · 주상원 5선 · 부동산·소기업 경영\n\n\n\n가족 부인 Marlo\n\n\n학력 캔자스주립대 수학 (학위 취득 여부 미확인)\n\n\n경력 주상원 5선(63.5~69.0%) · 2026-08-04 경선 43%(7인 — 슈왑 국무장관 등 격파)\n\n\n펀드레이징 미확인 (경선 직후 · 경선 외부자금 $20M+ 유입 레이스)\n\n\n강점\n\n\n주의회 권력 정점 — 입법 실적·당내 조직\n\n\n강성 보수 기반 결집\n\n\n트럼프·마셜 상원의원 지지\n\n\n\n\n약점\n\n\n2011년 개인 파산 전력\n\n\n강경 사회 이슈 주도 — 2022 낙태권 주민투표 59% 유지 주에서 중도 이탈 위험\n\n\n최근 3연속 민주 주지사 당선 주\n\n\n\n\n정책 감세 · 학교선택(바우처) · 낙태 반대 · 불법이민 대응\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진 미확보   출처 [1]",
     "crumbs": [
       "홈",
       "주지사·주의회",
@@ -1479,6 +1843,370 @@
       "홈",
       "상원 Senate",
       "전망 대시보드 — 주별 확률"
+    ]
+  },
+  {
+    "objectID": "governors/az.html",
+    "href": "governors/az.html",
+    "title": "애리조나 주지사 Arizona Governor",
+    "section": "",
+    "text": "케이티 홉스 Katie Hobbs민주 · 현직\n\n\n1969년생(57세) · 애리조나 주지사(2023~) · 전 주 국무장관·사회복지사\n\n\n\n가족 남편 Pat, 자녀 둘\n\n\n학력 노던애리조나대 사회복지 학사, 애리조나주립대(ASU) 사회복지 석사\n\n\n경력 2022 주지사 50.3% vs Lake 49.6%(0.7%p) · 2018 주 국무장관 50.4% · 주상원 3선\n\n\n펀드레이징 Q2 모금 $2.6M · 잔고 $2.4M(선제 광고로 지출 $7.4M) + DGA $10M 투입(주 선관위 신고·KJZZ)\n\n\n강점\n\n\n현직 프리미엄 · 2022 최격전지 승리 경험\n\n\n공화 주의회 상대 거부권 정치로 온건 이미지\n\n\n상대(빅스)의 강경 포지셔닝 반사이익\n\n\n\n\n약점\n\n\n2022년 0.7%p 신승 — 기반 취약\n\n\n낮은 카리스마·토론 회피 논란(2022)\n\n\n트럼프가 2024년 5.5%p 이긴 주\n\n\n\n\n정책 낙태권 보호 · 주택·생활비 · 물(콜로라도강) 문제 · 보육·교육\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: Gage Skidmore · CC BY-SA 2.0 (Wikimedia Commons: Katie_Hobbs_in_2025.jpg)   출처 [1]\n\n\n\n\n\n\n앤디 빅스 Andy Biggs공화\n\n\n1958년생(68세) · 연방하원의원 AZ-05 5선(2017~) · 전 주상원의장 · 변호사\n\n\n\n가족 부인 Cindy, 자녀 여섯(딸 1명 2025년 별세)\n\n\n학력 BYU 학사, 애리조나대 JD, ASU 석사\n\n\n경력 하원 5연승(56.7~64.1%) · 2026-07-21 경선 73.6% 압승(롭슨 경선 전 사퇴)\n\n\n펀드레이징 모금 $0.9M · 잔고 $1.2M (주 선관위 신고, 7/16 — 홉스 대비 열세)\n\n\n강점\n\n\n프리덤코커스 전 의장급 인지도·강성 보수 결집\n\n\n의정 경력 20년+\n\n\nMAGA 조직 장악\n\n\n\n\n약점\n\n\n2021-01-06 선거인단 인증 반대 표결 — 본선 부담\n\n\n경합주 중도층에 불리한 강경 노선\n\n\n주 전체 선거 첫 도전\n\n\n\n\n정책 국경 통제 · 연방지출 삭감·감세 · 규제 완화 · 선거 보안\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: U.S. House of Representatives · Public domain (Wikimedia Commons: Andy_Biggs_portrait_(118th_Congress).jpg)   출처 [1] [2]\nAZ 주지사 레이스 카드\n\n\n기준 2026-08-12 · 자금은 주(州) 선관위 신고 기준(연방 FEC 아님)\n\n\n항목\n내용\n\n\n\n\n구도\n민주 방어\n\n\n현직/구도\nHobbs (D·현직) vs Biggs (R)\n\n\n등급\nLean D (Cook 7/10↑·Sabato) / Toss-up (IE)\n\n\n최신 폴\nHobbs 41–37 (Noble Predictive D+4) · TIPP(공화 성향) D+10 — 7/21 경선 후 신규 조사 미확인 (Noble Predictive ~5/7 (RV 996) · TIPP ~4/24 (LV 1,159); 집계 평균 Hobbs +4~5)\n\n\n자금(주 선관위)\nHobbs Q2 모금 $2.6M·잔고 $2.4M(선제 광고로 지출 $7.4M) vs Biggs $0.9M·잔고 $1.2M (주 선관위 신고, AZ Mirror 7/16) + DGA $10M 투입 발표(KJZZ 7/29)\n\n\n한국 관심\n반도체·배터리 투자처(간접) — 인허가·인센티브 결정권\n\n\n경선 — 양당 경선\n2026-07-21 완료 · 현직 Katie Hobbs(D)가 재선 도전, 공화는 Andy Biggs(연방하원). 민주 현직 방어 3곳 중 시장 평가가 가장 안정적(민주 81¢).\n민주 현직 방어 3곳(AZ·MI + 부분적으로 WI) 가운데 시장 평가가 가장 안정적인 주입니다(민주 85¢, Kalshi 8/10). Hobbs는 2022년 Kari Lake를 0.7%p로 꺾은 현직이고, 공화당은 7/21 경선에서 프리덤코커스 강경파 Andy Biggs가 73.6%로 압승했습니다 — 유력 온건 후보였던 Karrin Taylor Robson은 경선 전 사퇴했습니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "애리조나 주지사 Arizona Governor"
+    ]
+  },
+  {
+    "objectID": "governors/az.html#주-개요",
+    "href": "governors/az.html#주-개요",
+    "title": "애리조나 주지사 Arizona Governor",
+    "section": "1. 주 개요",
+    "text": "1. 주 개요\n\n2022년의 재현 구도: Hobbs는 2022년 선거 부정론자 Lake를 0.7%p로 꺾고 당선됐습니다. 이번 상대 Biggs는 프리덤코커스 전 의장급 인지도에 2021-01-06 선거인단 인증 반대 표결 이력이 있어, 선거 신뢰 이슈가 다시 중심 전선이 될 공산이 큽니다.\n현직의 포지셔닝: Hobbs는 공화 주의회를 상대로 한 거부권 정치로 온건 이미지를 쌓았고, 국경·물(콜로라도강) 이슈에서 중도 포지셔닝을 유지해 왔습니다. 약점은 2022년 0.7%p 신승의 얇은 기반과 트럼프가 2024년 5.5%p로 이긴 주라는 지형입니다.\n등급 이동: Cook이 7/10 일괄 조정에서 Toss-up → Lean D로 올렸습니다(AZ·OH·OR·ME 동시 이동 — 전부 민주 방향).",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "애리조나 주지사 Arizona Governor"
+    ]
+  },
+  {
+    "objectID": "governors/az.html#제도권한-왜-이-자리가-2028년으로-이어지나",
+    "href": "governors/az.html#제도권한-왜-이-자리가-2028년으로-이어지나",
+    "title": "애리조나 주지사 Arizona Governor",
+    "section": "2. 제도·권한 — 왜 이 자리가 2028년으로 이어지나",
+    "text": "2. 제도·권한 — 왜 이 자리가 2028년으로 이어지나\n애리조나는 2028년 대선 스윙스테이트이고, 이번 선거에서 주지사·국무장관(Fontes 재선 도전)·법무장관(Mayes 재선 도전)까지 선거 관리 3역이 모두 선출됩니다. 개표 인증·선거 소송 대응의 최전선이 통째로 걸린 셈이라, 이 레이스는 단순한 주정부 구성 이상의 의미를 갖습니다. 주지사는 차기 재획정 국면의 거부권도 쥡니다.\n\n경선(7/21): 무당파 등록 유권자가 한 정당의 투표용지를 골라 참여할 수 있는 준개방형입니다.\n임기: 1992년 개정으로 연속 2선 제한(4년 공백 후 재출마 가능) — Hobbs는 1선째의 재선 도전이라 제한과 무관합니다.\n부지사 신설: 2022년 Prop 131 통과로 2026년이 부지사 러닝메이트 동반 출마 첫 선거입니다 — 애리조나는 그간 부지사가 없어 주지사 유고 시 국무장관이 승계해 왔습니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "애리조나 주지사 Arizona Governor"
+    ]
+  },
+  {
+    "objectID": "governors/az.html#관전점",
+    "href": "governors/az.html#관전점",
+    "title": "애리조나 주지사 Arizona Governor",
+    "section": "3. 관전점",
+    "text": "3. 관전점\n공화당 입장에서는 Biggs의 프리덤코커스 이력(정부 셧다운 찬성·2020 인증 반대)이 교외 마리코파 카운티에서 검증대에 오릅니다 — 2022년 Lake의 패배 공식이 반복되는지가 핵심입니다. 민주당 쪽 변수는 Hobbs의 낮은 카리스마와 토론 회피 논란(2022)이 재부각되는지, 그리고 선제 광고 집행(Q2 지출 $7.4M)으로 얇아진 잔고를 DGA의 $10M 투입이 메워주는지입니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "애리조나 주지사 Arizona Governor"
+    ]
+  },
+  {
+    "objectID": "governors/az.html#polls",
+    "href": "governors/az.html#polls",
+    "title": "애리조나 주지사 Arizona Governor",
+    "section": "4. 최신 여론조사",
+    "text": "4. 최신 여론조사\n\n\n\n\n\n\n\n\n최신 여론조사\n\n\n최신순 · 2건 · 양수 = 민주 우위(D+)\n\n\n조사기관\n실사기간\n모집단\n표본\n결과\n마진\n비고\n\n\n\n\nNoble Predictive Insights\n2026-05-05 ~ 2026-05-07\nRV\n996\nHobbs 41 – 37 Biggs\nD+4\n±3.1·발표 5/18·7/21 경선 전\n\n\nTechnoMetrica(TIPP) (R 성향)\n2026-04-20 ~ 2026-04-24\nLV\n1159\nHobbs 48 – 38 Biggs\nD+10\n±3.2·전체 RV 1,501의 LV 서브샘플·토플라인은 Newsweek 확인\n\n\n\n출처 URL은 `data/governor_polls.csv`에 행별로 보관합니다(【수집】은 원문 URL 확인 중). 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.\n\n\n\n\n\n\n\n\n\n두 조사 모두 7/21 경선 전 가상대결입니다. 경선 후 첫 독립 조사가 나와야 Biggs 확정 효과를 판별할 수 있습니다. 표는 data/governor_polls.csv에서 자동 렌더됩니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "애리조나 주지사 Arizona Governor"
+    ]
+  },
+  {
+    "objectID": "governors/az.html#자금",
+    "href": "governors/az.html#자금",
+    "title": "애리조나 주지사 Arizona Governor",
+    "section": "5. 자금",
+    "text": "5. 자금\n\n\n최신 자금 상황 (기준 2026-08-12 · 주 선관위 신고 — 연방 FEC 아님) — Hobbs Q2 모금 $2.6M·잔고 $2.4M(선제 광고로 지출 $7.4M) vs Biggs $0.9M·잔고 $1.2M (주 선관위 신고, AZ Mirror 7/16) + DGA $10M 투입 발표(KJZZ 7/29)\n\n\nHobbs가 선제 광고에 자금을 미리 쓴 구조라 잔고만 보면 격차가 작아 보이지만, 모금 흐름과 DGA 외부 투입까지 보면 민주 우위입니다. 주지사 선거 자금은 연방 FEC가 아니라 주 선관위 신고라 자동 취득이 없습니다 — 분기 신고가 나올 때 수동 갱신합니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "애리조나 주지사 Arizona Governor"
+    ]
+  },
+  {
+    "objectID": "governors/az.html#한국-함의",
+    "href": "governors/az.html#한국-함의",
+    "title": "애리조나 주지사 Arizona Governor",
+    "section": "6. 한국 함의",
+    "text": "6. 한국 함의\n후보들의 한국 관련 직접 발언·공약은 확인되지 않았습니다. 다만 투자 쪽 연결은 확정돼 있습니다 — LG에너지솔루션이 Queen Creek에 $5.5B 규모 배터리 복합단지(원통형 EV 36GWh + ESS용 LFP 17GWh)를 공식 발표(2024-04)했고, 2025년 8월 기준 약 60% 완공·2026년 여름 생산 개시 예정입니다(ESS 라인은 2024년 일시 중단 보도가 있어 진행 상황 주시). 반도체 클러스터와 함께, 주지사의 인허가·세제 인센티브·전력 요금 결정권이 한국 기업 투자 환경에 직접 닿는 주입니다 — Korea Watch에서 추적합니다.\n작성 2026-08-12 · 등급: Cook Lean D(7/10↑) · Sabato Lean D · IE Toss-up · 시장 민주 85¢(Kalshi 8/10) · 프로필·조사 상세 기준 2026-08-07",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "애리조나 주지사 Arizona Governor"
+    ]
+  },
+  {
+    "objectID": "governors/ia.html",
+    "href": "governors/ia.html",
+    "title": "아이오와 주지사 Iowa Governor",
+    "section": "",
+    "text": "롭 샌드 Rob Sand민주\n\n\n1982년생(44세) · 아이오와 주 감사원장(2019~) — 주 유일 민주 주 전체 선출직 · 전 부패·금융범죄 검사\n\n\n\n가족 부인 Christine Lauridsen(Lauridsen Group CEO), 아들 둘\n\n\n학력 브라운대 정치학 학사(트루먼 장학생), 아이오와대 JD\n\n\n경력 2018 감사원장 51.0%(공화 현직 격파) · 2022 재선 50.1%(0.2%p) · 2026 경선 무경쟁\n\n\n펀드레이징 2025년 한 해 $9.5M(주 기록) · 현금 $13.2M — 주지사 후보 전국 최상위급(Cook 4/9 상향 사유)\n\n\n강점\n\n\n기록적 모금\n\n\n‘3당파(tri-partisan)’ 초당 브랜드·부패 감시 이력\n\n\n아이오와 민주 중 유일한 주 전체 승리 경험\n\n\n\n\n약점\n\n\n처가(Lauridsen家) 자금 의존 공격 소재\n\n\n2022년 0.2%p 신승\n\n\n트럼프 +13 주의 우경화 지형\n\n\n\n\n정책 정부 효율·투명성 · 메디케이드 민영화 감사·의료 · 공교육 · 초당 협치\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: Rob Sand for Governor · CC0 (Wikimedia Commons: Rob_Sand_campaign_headshot_(cropped_2).jpg)   출처 [1] [2]\n\n\n\n\n\n\n잭 란 Zach Lahn공화\n\n\n농장주·사업가 — 위치토 사립학교 ‘Wonder’ 공동창업(체이스 코크와), 전 AFP 몬태나 지부장\n\n\n\n가족 부인 Annie, 혼합가족 자녀 일곱\n\n\n학력 미확인 (콜로라도 주상원 보좌 경력 확인)\n\n\n경력 첫 공직 출마 · 2026-06-02 경선 37.8% 대 핀스트라(현역 하원) 37.0% — 트럼프 막판 지지 후보를 꺾은 이변\n\n\n펀드레이징 자기자금 $2M 대출 포함 — 경선에서 핀스트라 모금 추월\n\n\n강점\n\n\n아웃사이더·반기득권 포지셔닝\n\n\n자기자금+MAHA(RFK Jr. 계열) 지지\n\n\n경선 이변의 모멘텀\n\n\n\n\n약점\n\n\n공직 경험 전무\n\n\n거주 논란 — 2023년 아이오와 이주·캔자스 투표 이력\n\n\n코크 네트워크 유착 공격 소재\n\n\n\n\n정책 가족농 보호·Big Ag 반독점 · 교육(학부모 권한) · 낙태 반대 · Make Iowa Healthy Again\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진 미확보   출처 [1] [2]\nIA 주지사 레이스 카드\n\n\n기준 2026-08-12 · 자금은 주(州) 선관위 신고 기준(연방 FEC 아님)\n\n\n항목\n내용\n\n\n\n\n구도\n공화 방어\n\n\n현직/구도\nSand (D) vs Lahn (R) — 개방석(Reynolds 불출마)\n\n\n등급\nToss-up (Cook 4/9↑·Sabato) / Tilt D (IE 8/6↑)\n\n\n최신 폴\nSand 53–44 (Fox D+9) · NYT/Siena Sand 48–47 (D+1) — 집계 평균 Sand +4, 시장은 민주 65¢ (Fox News 6/23–27 (RV 1,003, ±3) · NYT/Siena 6월 (LV 600, ±4.7))\n\n\n자금(주 선관위)\nSand 2025년 한 해 $9.5M·현금 $13.2M (주 기록 — Cook 4/9 상향 사유) vs Lahn 자기자금 $2M 대출 포함(경선)\n\n\n한국 관심\n직접 연결 미확인 — 농업·통상 간접 경로는 상원 아이오와 페이지 참조\n\n\n경선 — 양당 경선\n2026-06-02 완료 · Rob Sand(D, 주 감사원장) vs Zach Lahn(R). Reynolds 불출마로 열린 공석 — 시장은 민주 64¢로 이 사이클 최대 민주 픽업 기회로 본다.\nReynolds의 불출마 선언(2025-04-11, 가족 사유)으로 열린 개방석입니다. 이 레이스가 흥미로운 이유는 같은 날 같은 유권자가 뽑는 상원과 예측시장 평가가 24포인트 갈리기 때문입니다 — 상원 민주 41¢, 주지사 민주 65¢(Kalshi 8/10). 주 지형으로는 설명되지 않는 격차이고, 남는 설명은 후보 효과입니다. Sand는 2022년 아이오와에서 주 전체 선출직에 당선된 유일한 민주당원(감사원장)입니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "아이오와 주지사 Iowa Governor"
+    ]
+  },
+  {
+    "objectID": "governors/ia.html#주-개요",
+    "href": "governors/ia.html#주-개요",
+    "title": "아이오와 주지사 Iowa Governor",
+    "section": "1. 주 개요",
+    "text": "1. 주 개요\n\nSand의 위치: 2018년 감사원장 51.0%(공화 현직 격파) → 2022년 재선 50.1%(0.2%p). ‘3당파(tri-partisan)’ 초당 브랜드와 부패 감시 이력, 그리고 2025년 한 해 $9.5M·현금 $13.2M라는 주 기록 모금(주지사 후보 전국 최상위급)이 Cook 4/9 상향의 명시 사유였습니다.\nLahn의 이변: 6/2 공화 경선에서 트럼프가 막판 지지한 현역 연방하원 Feenstra를 37.8 대 37.0으로 꺾었습니다 — 35% 문턱을 넘겨 전당대회행을 피한 최소 승리입니다(같은 규칙이 상원 경선에도 적용됩니다 — 상원 페이지 2절의 §43.65 참조). 위치토 사립학교 공동창업(코크 계열)·MAHA 지지가 기반이고, 공직 경험 전무와 2023년 아이오와 이주·캔자스 투표 이력의 거주 논란이 검증 포인트입니다.\n등급 이동: Cook 4/9 Lean R→Toss-up(Sand 모금 사유 명시), IE 8/6 Toss-up→Tilt D — 상원 IE 하향(Tilt R)과 같은 날, 반대 방향입니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "아이오와 주지사 Iowa Governor"
+    ]
+  },
+  {
+    "objectID": "governors/ia.html#제도",
+    "href": "governors/ia.html#제도",
+    "title": "아이오와 주지사 Iowa Governor",
+    "section": "2. 제도",
+    "text": "2. 제도\n경선 35% 규칙·본선 단순다수 등 아이오와 선거 제도는 상원 아이오와 페이지 2절에 정리돼 있습니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "아이오와 주지사 Iowa Governor"
+    ]
+  },
+  {
+    "objectID": "governors/ia.html#관전점",
+    "href": "governors/ia.html#관전점",
+    "title": "아이오와 주지사 Iowa Governor",
+    "section": "3. 관전점",
+    "text": "3. 관전점\n상원과의 24포인트 괴리 그 자체가 관전점입니다. 같은 전국 환경, 같은 주 지형에서 Sand가 Turek보다 훨씬 앞서는 것은 8년 주 전체 선출직의 인지도·초당 브랜드·기록적 자금의 결합 효과로 읽힙니다. 거꾸로 말하면 Lahn이 본선 검증(첫 공직 출마)을 통과하는지, 트럼프 +13 지형의 ’기본값’이 후보 효과를 눌러내는지의 싸움입니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "아이오와 주지사 Iowa Governor"
+    ]
+  },
+  {
+    "objectID": "governors/ia.html#polls",
+    "href": "governors/ia.html#polls",
+    "title": "아이오와 주지사 Iowa Governor",
+    "section": "4. 최신 여론조사",
+    "text": "4. 최신 여론조사\n\n\n\n\n\n\n\n\n최신 여론조사\n\n\n최신순 · 2건 · 양수 = 민주 우위(D+)\n\n\n조사기관\n실사기간\n모집단\n표본\n결과\n마진\n비고\n\n\n\n\nFox News/Beacon·Shaw\n2026-06-23 ~ 2026-06-27\nRV\n1003\nSand 53 – 44 Lahn\nD+9\n±3·상원과 같은 조사(토플라인 Q9)\n\n\nNYT/Siena\n2026-06-15 ~ 2026-06-27\nLV\n600\nSand 48 – 47 Lahn\nD+1\n±4.7·Siena 패키지 페이지엔 상원만 표기 — 주지사 수치는 보도 확인\n\n\n\n출처 URL은 `data/governor_polls.csv`에 행별로 보관합니다(【수집】은 원문 URL 확인 중). 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.\n\n\n\n\n\n\n\n\n\nFox +9와 NYT/Siena +1의 간격이 큽니다 — 모집단(RV vs LV) 차이를 고려해도 단일 조사보다 방향(둘 다 Sand 우위)을 보세요.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "아이오와 주지사 Iowa Governor"
+    ]
+  },
+  {
+    "objectID": "governors/ia.html#자금",
+    "href": "governors/ia.html#자금",
+    "title": "아이오와 주지사 Iowa Governor",
+    "section": "5. 자금",
+    "text": "5. 자금\n\n\n최신 자금 상황 (기준 2026-08-12 · 주 선관위 신고 — 연방 FEC 아님) — Sand 2025년 한 해 $9.5M·현금 $13.2M (주 기록 — Cook 4/9 상향 사유) vs Lahn 자기자금 $2M 대출 포함(경선)\n\n\nSand의 현금 $13.2M은 처가(Lauridsen家) 자금 의존이라는 공격 소재와 동전의 양면입니다. Lahn은 경선에서 자기자금 $2M 대출로 Feenstra 모금을 추월했지만 본선 화력은 미검증입니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "아이오와 주지사 Iowa Governor"
+    ]
+  },
+  {
+    "objectID": "governors/ia.html#한국-함의",
+    "href": "governors/ia.html#한국-함의",
+    "title": "아이오와 주지사 Iowa Governor",
+    "section": "6. 한국 함의",
+    "text": "6. 한국 함의\n직접 연결이 확인되지 않았습니다. 아이오와의 한국 접점(소고기·옥수수·돈육 수출과 관세 국면)은 연방 통상 사안이라 상원 아이오와 페이지 6절에서 다룹니다 — 주지사 후보의 관련 발언이 확인되면 Korea Watch에 기록합니다.\n작성 2026-08-12 · 등급: Cook Toss-up(4/9↑) · Sabato Toss-up · IE Tilt D(8/6↑) · 시장 민주 65¢(Kalshi 8/10) · 프로필·조사 상세 기준 2026-08-07",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "아이오와 주지사 Iowa Governor"
+    ]
+  },
+  {
+    "objectID": "governors/mi.html",
+    "href": "governors/mi.html",
+    "title": "미시간 주지사 Michigan Governor",
+    "section": "",
+    "text": "조슬린 벤슨 Jocelyn Benson민주\n\n\n1977년생(49세) · 미시간 주 국무장관(2019~) · 전 웨인주립대 로스쿨 학장\n\n\n\n가족 남편 Ryan Friedrichs(육군 참전용사), 아들 하나\n\n\n학력 웰즐리칼리지 학사, 옥스퍼드 사회학 석사(마셜 장학생), 하버드 로스쿨 JD\n\n\n경력 2018 국무장관 52.9% · 2022 재선 55.9%(민주 최상위 득표) · 2026-08-04 경선 85% 대 15% 압승(스완슨)\n\n\n펀드레이징 모금 $4.9M · 잔고 $6.4M (경선 전 주 선관위 신고)\n\n\n강점\n\n\n주 전체 선거 3회 검증 — 2022 두 자릿수 압승\n\n\n2020 선거 방어 ‘민주주의 수호’ 브랜드(JFK Profile in Courage)\n\n\nUAW 등 노조 지지\n\n\n\n\n약점\n\n\n보수층 집중 표적 — 양극화 리스크\n\n\n경제·생활비 행정 실적 부재\n\n\n휘트머 은퇴 후 개방석 방어 부담\n\n\n\n\n정책 투표권·민주주의 · 생활비·주거 · 교육 · 관공서 서비스 개혁\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: JFM Photo 73 · CC BY 4.0 (Wikimedia Commons: SOS_Jocelyn_Benson_web.jpg)   출처 [1] [2]\n\n\n\n\n\n\n존 제임스 John James공화\n\n\n1981년생(45세) · 연방하원의원 MI-10(2023~) · 전 육군 아파치 조종사(이라크전) · 가족기업 경영\n\n\n\n가족 부인 Elizabeth, 아들 셋\n\n\n학력 웨스트포인트(육사) 학사, 펜실베이니아주립대 석사, 미시간대 MBA\n\n\n경력 2018 상원 낙선(45.8%) · 2020 상원 낙선(1.7%p차) · 2022 하원 0.5%p 신승 → 2024 51.1% 재선 · 2026-08-04 경선 ~15%p 승(존슨 자비 $32M 상대)\n\n\n펀드레이징 미확인 (경선 후 신고 대기)\n\n\n강점\n\n\n트럼프 지지\n\n\n군인+기업인 이력·전국구 모금력\n\n\n흑인 공화당원 교차 소구 잠재력\n\n\n\n\n약점\n\n\n주 전체 선거 2연패(2018·2020)\n\n\n경합구에서도 신승에 그친 득표력\n\n\n낙태 강경 입장 — 2022 낙태권 주민투표 가결 주\n\n\n\n\n정책 제조업·경제 · 교육(학부모 권한) · 국경 · 치안\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: United States Congress · CC BY-SA 4.0 (Wikimedia Commons: Rep._John_James_official_photo,_118th_Congress.jpg)   출처 [1] [2]\nMI 주지사 레이스 카드\n\n\n기준 2026-08-12 · 자금은 주(州) 선관위 신고 기준(연방 FEC 아님)\n\n\n항목\n내용\n\n\n\n\n구도\n민주 방어\n\n\n현직/구도\nBenson (D) vs James (R) — 개방석(Whitmer 임기 제한)\n\n\n등급\nLean D (Cook 5/21↑·Sabato) / Tilt D (IE)\n\n\n최신 폴\nBenson 47–38 (EPIC-MRA D+9) · Glengariff D+5 · Mitchell D+2 — RCP 평균 Benson +7.3 (EPIC-MRA 7/24–31 (LV 600, ±4) · Glengariff 7/22–24 · Mitchell 7/29 (LV 672))\n\n\n자금(주 선관위)\nBenson 모금 $4.9M·잔고 $6.4M (경선 전 주 선관위 신고) · James 미확인(8/4 경선 후 신고 대기)\n\n\n한국 관심\nLG에너지솔루션 Ultium(랜싱) 본진 — 주지사가 투자 환경·전력 요금 실질 결정권자\n\n\n경선 — 양당 경선\n2026-08-04 완료 · Jocelyn Benson(D, 주 국무장관)이 Chris Swanson(제네시 카운티 보안관)을 꺾고 지명, 공화는 트럼프가 지지한 John James(연방하원). 같은 날 상원 경선(El-Sayed 확정)도 함께 치러졌다.\nWhitmer의 임기 만료로 열린 민주 방어 개방석입니다. 8/4 경선에서 민주 Benson이 85 대 15로 압승했고(Gilchrist 부지사는 1월에 주지사 도전을 접고 국무장관 출마로 전환), 공화 James는 자비 $32M을 쓴 Perry Johnson을 약 15%p 차로 꺾었습니다. 미시간은 같은 날 상원 경선(El-Sayed vs Rogers 확정)도 치러져 한 주에서 세 층위(주지사·상원·주의회)가 동시에 움직이는 주입니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "미시간 주지사 Michigan Governor"
+    ]
+  },
+  {
+    "objectID": "governors/mi.html#주-개요",
+    "href": "governors/mi.html#주-개요",
+    "title": "미시간 주지사 Michigan Governor",
+    "section": "1. 주 개요",
+    "text": "1. 주 개요\n\n상원과의 대비가 이 주의 핵심입니다. 같은 유권자를 두고 상원은 로저스 +0.3의 동전 던지기인데 주지사는 Benson +7.3입니다 — 전국 환경이 같아도 후보에 따라 결과가 갈린다는 것을 아이오와(반대 방향)와 함께 보여주는 사례입니다.\nBenson의 자산: 2018 국무장관 52.9% → 2022 재선 55.9%(그 해 민주 최상위 득표). 2020년 선거 인증 국면의 국무장관으로 전국 인지도(‘민주주의의 수호’ 브랜드, JFK Profile in Courage)를 얻었습니다. 약점은 보수층 집중 표적이 돼 온 양극화 리스크와 경제·생활비 행정 실적 부재입니다.\nJames의 도전: 상원 2연패(2018·2020) 후 하원 재선을 거친 주 전체 선거 3번째 도전입니다. 트럼프 지지·군인+기업인 이력·흑인 공화당원 교차 소구가 자산이나, 경합구에서도 신승에 그친 득표력이 검증 포인트입니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "미시간 주지사 Michigan Governor"
+    ]
+  },
+  {
+    "objectID": "governors/mi.html#제도",
+    "href": "governors/mi.html#제도",
+    "title": "미시간 주지사 Michigan Governor",
+    "section": "2. 제도",
+    "text": "2. 제도\n선거 제도는 상원 미시간 페이지와 동일합니다. 주지사 고유의 권한으로는 차기 재획정 국면의 거부권과 2028년 스윙스테이트 선거 관리(국무장관과 분점)가 걸려 있습니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "미시간 주지사 Michigan Governor"
+    ]
+  },
+  {
+    "objectID": "governors/mi.html#관전점",
+    "href": "governors/mi.html#관전점",
+    "title": "미시간 주지사 Michigan Governor",
+    "section": "3. 관전점",
+    "text": "3. 관전점\n민주당은 상원(El-Sayed)과 주지사(Benson)의 이질적 티켓 결합 효과가 변수입니다 — 진보 상원 후보와 주류 주지사 후보가 서로의 약한 지지층을 보완할지, 어색한 동거가 될지. 공화당은 James가 상원 시절의 ‘아깝게 지는’ 패턴을 깨려면 디트로이트 교외에서 Benson의 우위를 잠식해야 합니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "미시간 주지사 Michigan Governor"
+    ]
+  },
+  {
+    "objectID": "governors/mi.html#polls",
+    "href": "governors/mi.html#polls",
+    "title": "미시간 주지사 Michigan Governor",
+    "section": "4. 최신 여론조사",
+    "text": "4. 최신 여론조사\n\n\n\n\n\n\n\n\n최신 여론조사\n\n\n최신순 · 3건 · 양수 = 민주 우위(D+)\n\n\n조사기관\n실사기간\n모집단\n표본\n결과\n마진\n비고\n\n\n\n\nEPIC-MRA\n2026-07-24 ~ 2026-07-31\nLV\n600\nBenson 47 – 38 James\nD+9\n±4·상원 문항과 같은 조사\n\n\nMitchell Research\n2026-07-28 ~ 2026-07-29\nLV\n672\nBenson 46 – 44 James\nD+2\n±3.77·원문 릴리스 PDF\n\n\nGlengariff\n2026-07-22 ~ 2026-07-24\nLV\n600\nBenson 43.7 – 38.7 James\nD+5\n±4·원문 페이월 — 집계 사이트 경유\n\n\n\n출처 URL은 `data/governor_polls.csv`에 행별로 보관합니다(【수집】은 원문 URL 확인 중). 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.\n\n\n\n\n\n\n\n\n\nEPIC-MRA 조사는 상원 문항과 같은 조사입니다(상원 R+3 · 주지사 D+9) — 같은 표본에서 12포인트가 갈렸다는 것이 티켓 분리 투표의 직접 증거입니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "미시간 주지사 Michigan Governor"
+    ]
+  },
+  {
+    "objectID": "governors/mi.html#자금",
+    "href": "governors/mi.html#자금",
+    "title": "미시간 주지사 Michigan Governor",
+    "section": "5. 자금",
+    "text": "5. 자금\n\n\n최신 자금 상황 (기준 2026-08-12 · 주 선관위 신고 — 연방 FEC 아님) — Benson 모금 $4.9M·잔고 $6.4M (경선 전 주 선관위 신고) · James 미확인(8/4 경선 후 신고 대기)\n\n\nJames의 경선 후 첫 주 선관위 신고가 나와야 본선 자금 구도를 판단할 수 있습니다. 경선에서 자비 $32M의 Johnson을 조직력으로 꺾은 만큼, 본선은 전국 공화 모금망의 투입 강도가 변수입니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "미시간 주지사 Michigan Governor"
+    ]
+  },
+  {
+    "objectID": "governors/mi.html#한국-함의",
+    "href": "governors/mi.html#한국-함의",
+    "title": "미시간 주지사 Michigan Governor",
+    "section": "6. 한국 함의",
+    "text": "6. 한국 함의\n후보들의 한국 관련 직접 발언은 확인되지 않았습니다. 미시간은 LG에너지솔루션 Ultium(랜싱) 단독 소유 전환 등 한국 배터리 투자의 본진이고(상세는 상원 미시간 페이지 1절), EV 수요 둔화 국면에서 주정부의 보조금·전력·인허가 대응이 투자 지속성의 변수입니다 — Korea Watch에서 추적합니다.\n작성 2026-08-12 · 등급: Cook Lean D(5/21↑) · Sabato Lean D · IE Tilt D · 시장 민주 84¢(Kalshi 8/10) · 프로필·조사 상세 기준 2026-08-07",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "미시간 주지사 Michigan Governor"
+    ]
+  },
+  {
+    "objectID": "governors/oh.html",
+    "href": "governors/oh.html",
+    "title": "오하이오 주지사 Ohio Governor",
+    "section": "",
+    "text": "에이미 액턴 Amy Acton민주\n\n\n1966년생(60세) · 의사(공중보건) · 전 오하이오 보건국장(2019–2020) — 코로나 초기 대응 주도\n\n\n\n가족 남편 Eric Acton(교사), 혼합가족 자녀 여섯 · 유년기 빈곤·홈리스 경험\n\n\n학력 영스타운주립대 학사, 노스이스트오하이오 의대 MD, 오하이오주립대 MPH\n\n\n경력 선출직 첫 출마 · 2026-05-05 민주 경선 무경쟁 통과\n\n\n펀드레이징 총모금 ~$18.5M — 단 5/15~6/30 광고 집행 ~$10만(램스와미 ~$9M의 1/90)\n\n\n강점\n\n\n팬데믹기 ‘신뢰받는 얼굴’ — 초당적 인지도\n\n\nProfile in Courage 수상(2021) 서사\n\n\n브라운 상원 티켓과의 시너지\n\n\n\n\n약점\n\n\n선출직·행정 경험 부족\n\n\n락다운 반발층(보수)의 표적\n\n\n오하이오의 공화 우위 지형(트럼프 +11)\n\n\n\n\n정책 의료비 인하 · 메디케이드 확대 · 공중보건 · 돌봄 세액공제\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: air force · Public domain (Wikimedia Commons: Amy_Acton_(cropped).jpg)   출처 [1]\n\n\n\n\n\n\n비벡 램스와미 Vivek Ramaswamy공화\n\n\n1985년생(41세) · 기업인·작가 — Roivant Sciences 창업, Strive Asset Management 공동창업 · 2024 대선 경선 주자\n\n\n\n가족 부인 Apoorva(외과 교수), 아들 둘\n\n\n학력 하버드 생물학 학사(수석급), 예일 로스쿨 JD\n\n\n경력 2024 대선 경선 → 아이오와 직후 사퇴·트럼프 지지 · 2026-05-05 공화 경선 82% 압승\n\n\n펀드레이징 총모금 ~$50M(절반 자비 · 머스크 $5M·야스 $10M 등) — 5/15~6/30 광고 ~$9M\n\n\n강점\n\n\n막대한 자산+모금력 · 트럼프 조기 지지 확보\n\n\n전국 인지도·미디어 장악력\n\n\n젊음(41) — 2028 발판론이 동원력으로\n\n\n\n\n약점\n\n\n공직 경험 전무\n\n\nDOGE 공동수장 하루 만에 이탈(2025-01) 등 ‘뜨내기’ 공격 소재\n\n\n지방선거 투표 불참 이력\n\n\n\n\n정책 교육 개혁(성취 기준·학교선택) · 감세·규제 완화 · 반ESG·반워크 · 치안\n\n\n🇰🇷 한국 함의 한국 관련 직접 입장은 공개 출처에서 확인되지 않음\n\n\n사진: Prime Minister’s Office · GODL-India (Wikimedia Commons: Vivek_Ramaswamy,_Prime_Minister_Narendra_Modi,_2025_(cropped).jpg)   출처 [1]\nOH 주지사 레이스 카드\n\n\n기준 2026-08-12 · 자금은 주(州) 선관위 신고 기준(연방 FEC 아님)\n\n\n항목\n내용\n\n\n\n\n구도\n공화 방어\n\n\n현직/구도\nActon (D) vs Ramaswamy (R) — 개방석\n\n\n등급\nToss-up (Cook 7/10↑) / Lean R (Sabato·IE) — 기관 이견 최대\n\n\n최신 폴\n47–47 동률 (NYT/Siena) — RCP 평균 Acton +0.8 대 Pollsmax Ramaswamy +0.8로 집계조차 방향이 갈림 (NYT/Siena 6월 말 (LV 601) · Impact/Fabrizio 초당 합동 6/16 (LV 800) Acton +3 · Tulchin(민주 성향) 6/12 +3 · BGSU/YouGov 2025-10 Ramaswamy +3 · Emerson 2025-12 Acton +1)\n\n\n자금(주 선관위)\nRamaswamy 총모금 ~$50M(절반 자비 · 머스크 $5M·야스 $10M 등) — 5/15~6/30 광고 ~$9M vs Acton 총모금 ~$18.5M·같은 기간 광고 ~$10만 (Ohio Capital Journal 7/21) — 90 대 1 광고 격차에도 조사는 동률\n\n\n한국 관심\nHonda–LG에너지솔루션 배터리 합작·한화 등 제조 투자 — 전기요금(AI 데이터센터) 이슈와 교차\n\n\n경선 — 양당 경선\n2026-05-05 완료 · Amy Acton(D) 무경쟁 · Vivek Ramaswamy(R) 사실상 무경쟁 — 양당 모두 일찌감치 대진 확정. DeWine 임기 제한으로 열린 공석.\n경합 8주 가운데 기관 이견과 조사 편차가 모두 가장 큰 주입니다. Cook은 7/10 Toss-up으로 올렸는데 Sabato·IE는 Lean R을 유지하고, 집계조차 RCP는 Acton +0.8, Pollsmax는 Ramaswamy +0.8로 방향이 갈립니다. 광고비 90 대 1의 격차에도 조사가 동률이라는 것이 이 레이스의 요약입니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "오하이오 주지사 Ohio Governor"
+    ]
+  },
+  {
+    "objectID": "governors/oh.html#주-개요",
+    "href": "governors/oh.html#주-개요",
+    "title": "오하이오 주지사 Ohio Governor",
+    "section": "1. 주 개요",
+    "text": "1. 주 개요\n\n구도의 비대칭: 5/5로 경합 8주 중 경선이 가장 빨랐고(양당 모두 사실상 무경쟁 — Ramaswamy 82%·Acton 무경쟁) 그만큼 본선 조사 축적이 두껍습니다. 오하이오는 2016년 이후 대선에서 R+8~11로 밀린 주라 ’기본값’은 공화 우위입니다.\n상원과의 동시성: 같은 날 상원 특별선거(Brown vs Husted)도 진성 토스업입니다 — 주 전체가 상·하위 선거 모두에서 접전인 드문 사례로, Brown-Acton 동반 티켓이 노조·저소득 백인 표 일부를 복원하는 시나리오가 민주당의 배팅입니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "오하이오 주지사 Ohio Governor"
+    ]
+  },
+  {
+    "objectID": "governors/oh.html#제도",
+    "href": "governors/oh.html#제도",
+    "title": "오하이오 주지사 Ohio Governor",
+    "section": "2. 제도",
+    "text": "2. 제도\n선거 제도(경선 방식·사진 신분증 HB458 등)는 상원 오하이오 페이지 2절에 정리돼 있습니다 — 같은 주라 규칙이 동일합니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "오하이오 주지사 Ohio Governor"
+    ]
+  },
+  {
+    "objectID": "governors/oh.html#관전점",
+    "href": "governors/oh.html#관전점",
+    "title": "오하이오 주지사 Ohio Governor",
+    "section": "3. 관전점",
+    "text": "3. 관전점\nRamaswamy의 2028년 대선 발판론(막대한 자산·전국 인지도·미디어 장악력, 그러나 DOGE 공동수장 하루 만에 이탈 등 ‘뜨내기’ 공격 소재) 대 Acton의 팬데믹 ‘신뢰받는 얼굴’ 브랜드(Profile in Courage 수상, 그러나 선출직 경험 전무)의 대결입니다. 여기에 전기요금이 전국화된 쟁점으로 얹혔습니다 — AI 데이터센터발 요금 인상이 애벗 텍사스 주지사가 데이터센터 승인 일시중지를 명령(8/4)할 만큼 커졌고, 오하이오는 그 최전선입니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "오하이오 주지사 Ohio Governor"
+    ]
+  },
+  {
+    "objectID": "governors/oh.html#polls",
+    "href": "governors/oh.html#polls",
+    "title": "오하이오 주지사 Ohio Governor",
+    "section": "4. 최신 여론조사",
+    "text": "4. 최신 여론조사\n\n\n\n\n\n\n\n\n최신 여론조사\n\n\n최신순 · 5건 · 양수 = 민주 우위(D+)\n\n\n조사기관\n실사기간\n모집단\n표본\n결과\n마진\n비고\n\n\n\n\nNYT/Siena\n2026-06-15 ~ 2026-06-29\nLV\n601\nActon 47 – 47 Ramaswamy\nD+0\n±4.7·동률·표본·기간은 전재 보도 기준\n\n\nFabrizio Ward/Impact Research\n2026-06-14 ~ 2026-06-16\nLV\n800\nActon 47 – 44 Ramaswamy\nD+3\n±3.5·초당 합동\n\n\nTulchin Research (D 성향)\n2026-06-02 ~ 2026-06-04\nLV\n600\nActon 47 – 44 Ramaswamy\nD+3\n±4·민주 내부(AG 후보 캠프)·보도 6/17\n\n\nEmerson College\n2025-12-06 ~ 2025-12-08\nRV\n850\nActon 46 – 45 Ramaswamy\nD+1\n±3.3·2025년 12월\n\n\nBGSU/YouGov\n2025-10-02 ~ 2025-10-14\nRV\n800\nActon 47 – 50 Ramaswamy\nR+3\n±4.5·2025년 10월\n\n\n\n출처 URL은 `data/governor_polls.csv`에 행별로 보관합니다(【수집】은 원문 URL 확인 중). 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.\n\n\n\n\n\n\n\n\n\n이 표의 특징은 당파 스펙트럼 전체에서 접전이 확인된다는 점입니다 — 민주 성향(Tulchin +3), 초당 합동(Impact/Fabrizio +3), 무당파(NYT/Siena 동률), 그리고 2025년 조사들(BGSU R+3·Emerson D+1)까지. 어느 한 조사도 단독으로 신뢰하기 어렵습니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "오하이오 주지사 Ohio Governor"
+    ]
+  },
+  {
+    "objectID": "governors/oh.html#자금",
+    "href": "governors/oh.html#자금",
+    "title": "오하이오 주지사 Ohio Governor",
+    "section": "5. 자금",
+    "text": "5. 자금\n\n\n최신 자금 상황 (기준 2026-08-12 · 주 선관위 신고 — 연방 FEC 아님) — Ramaswamy 총모금 ~$50M(절반 자비 · 머스크 $5M·야스 $10M 등) — 5/15~6/30 광고 ~$9M vs Acton 총모금 ~$18.5M·같은 기간 광고 ~$10만 (Ohio Capital Journal 7/21) — 90 대 1 광고 격차에도 조사는 동률\n\n\n90 대 1 광고 격차에도 조사가 동률인 것이 이 레이스 최대의 퍼즐입니다. Ramaswamy의 화력(머스크 $5M·야스 $10M 포함)이 이미 한계효용에 도달했다는 해석과, 본선 국면에서 격차가 뒤늦게 작동할 것이라는 해석이 맞서 있습니다.",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "오하이오 주지사 Ohio Governor"
+    ]
+  },
+  {
+    "objectID": "governors/oh.html#한국-함의",
+    "href": "governors/oh.html#한국-함의",
+    "title": "오하이오 주지사 Ohio Governor",
+    "section": "6. 한국 함의",
+    "text": "6. 한국 함의\n후보들의 한국 관련 직접 발언은 확인되지 않았습니다. 오하이오는 Honda–LG에너지솔루션 EV 배터리 합작($44억)과 한화 등 제조 투자가 있는 주이고(상세는 상원 오하이오 페이지 1절), 전기요금·산업 전력 정책의 결정권자가 주지사라는 점에서 간접 이해가 큽니다 — Korea Watch에서 추적합니다.\n작성 2026-08-12 · 등급: Cook Toss-up(7/10↑) · Sabato·IE Lean R · 시장 민주 50¢(Kalshi 8/10 — 정확한 동전 던지기) · 프로필·조사 상세 기준 2026-08-07",
+    "crumbs": [
+      "홈",
+      "주지사·주의회",
+      "State Focus (경합 8주)",
+      "오하이오 주지사 Ohio Governor"
     ]
   },
   {
@@ -2399,7 +3127,7 @@
     "href": "states/ak.html#polls",
     "title": "알래스카 Alaska",
     "section": "4. 최신 여론조사",
-    "text": "4. 최신 여론조사\n\n\n\n\n\n\n\n\n최신 여론조사\n\n\n최신순 · 1건 · 양수 = 민주 우위(D+)\n\n\n조사기관\n실사기간\n모집단\n표본\n결과\n마진\n비고\n\n\n\n\nNYT/Siena\nNA\nLV\n593\nPeltola 45 – 47 Sullivan\nR+2\nRCV 1차 의향\n\n\n\n출처 URL은 `data/senate_polls.csv`에 행별로 보관합니다. 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.\n\n\n\n\n\n\n\n\n\n이 표는 data/senate_polls.csv에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 여러 조사의 방향을 보세요.",
+    "text": "4. 최신 여론조사\n\n\n\n\n\n\n\n\n최신 여론조사\n\n\n최신순 · 1건 · 양수 = 민주 우위(D+)\n\n\n조사기관\n실사기간\n모집단\n표본\n결과\n마진\n비고\n\n\n\n\nNYT/Siena\n2026-06-15 ~ 2026-06-29\nLV\n593\nPeltola 45 – 47 Sullivan\nR+2\nRCV 1차 의향\n\n\n\n출처 URL은 `data/senate_polls.csv`에 행별로 보관합니다. 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.\n\n\n\n\n\n\n\n\n\n이 표는 data/senate_polls.csv에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 여러 조사의 방향을 보세요.",
     "crumbs": [
       "홈",
       "상원 Senate",
@@ -2490,7 +3218,7 @@
     "href": "states/ia.html#polls",
     "title": "아이오와 Iowa",
     "section": "4. 최신 여론조사",
-    "text": "4. 최신 여론조사\n\n\n\n\n\n\n\n\n최신 여론조사\n\n\n최신순 · 2건 · 양수 = 민주 우위(D+)\n\n\n조사기관\n실사기간\n모집단\n표본\n결과\n마진\n비고\n\n\n\n\nNYT/Siena\nNA\nLV\n600\nTurek 46 – 48 Hinson\nR+2\n±4.7·4개 주 패키지(AK·IA·NC·OH)\n\n\nFox News/Beacon·Shaw\nNA\nRV\n1003\nTurek 50 – 46 Hinson\nD+4\n±3·호감도 튜렉 +18 대 힌슨 −7\n\n\n\n출처 URL은 `data/senate_polls.csv`에 행별로 보관합니다. 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.\n\n\n\n\n\n\n\n\n\n이 주의 특징은 두 공개 조사가 서로 반대 방향이라는 점입니다 — Fox(6/23–27, RV 1,003)는 Turek +4, NYT/Siena(6/15–29, LV 600)는 Hinson +2. 모집단(RV 대 LV)과 오차범위를 고려하면 통계적으로는 양립 가능한 범위지만, 경선 이후 두 달 넘게 신규 공개 조사가 없다는 점이 더 중요합니다. 예측시장은 이 공백에서 민주 43¢를 매기고 있습니다.",
+    "text": "4. 최신 여론조사\n\n\n\n\n\n\n\n\n최신 여론조사\n\n\n최신순 · 2건 · 양수 = 민주 우위(D+)\n\n\n조사기관\n실사기간\n모집단\n표본\n결과\n마진\n비고\n\n\n\n\nNYT/Siena\n2026-06-15 ~ 2026-06-29\nLV\n600\nTurek 46 – 48 Hinson\nR+2\n±4.7·4개 주 패키지(AK·IA·NC·OH)\n\n\nFox News/Beacon·Shaw\n2026-06-23 ~ 2026-06-27\nRV\n1003\nTurek 50 – 46 Hinson\nD+4\n±3·호감도 튜렉 +18 대 힌슨 −7\n\n\n\n출처 URL은 `data/senate_polls.csv`에 행별로 보관합니다. 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.\n\n\n\n\n\n\n\n\n\n이 주의 특징은 두 공개 조사가 서로 반대 방향이라는 점입니다 — Fox(6/23–27, RV 1,003)는 Turek +4, NYT/Siena(6/15–29, LV 600)는 Hinson +2. 모집단(RV 대 LV)과 오차범위를 고려하면 통계적으로는 양립 가능한 범위지만, 경선 이후 두 달 넘게 신규 공개 조사가 없다는 점이 더 중요합니다. 예측시장은 이 공백에서 민주 43¢를 매기고 있습니다.",
     "crumbs": [
       "홈",
       "상원 Senate",
@@ -2594,7 +3322,7 @@
     "href": "states/mi.html#polls",
     "title": "미시간 Michigan",
     "section": "5. 최신 여론조사",
-    "text": "5. 최신 여론조사\n\n\n\n\n\n\n\n\n최신 여론조사\n\n\n최신순 · 3건 · 양수 = 민주 우위(D+)\n\n\n조사기관\n실사기간\n모집단\n표본\n결과\n마진\n비고\n\n\n\n\nEPIC-MRA\nNA\nLV\n600\nEl-Sayed 43 – 46 Rogers\nR+3\n±4·8/3 공개·경선 후 첫 본선 조사\n\n\nGlengariff\nNA\nLV\n—\nEl-Sayed 38.7 – 49 Rogers\nR+10.3\n본선 가상(8/4 예비 전)·±4\n\n\nGlengariff\nNA\nLV\n—\nStevens 45.5 – 44.7 Rogers\nD+0.8\n본선 가상(8/4 예비 전)·±4\n\n\n\n출처 URL은 `data/senate_polls.csv`에 행별로 보관합니다. 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.\n\n\n\n\n\n\n\n\n\n이 표는 data/senate_polls.csv에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 여러 조사의 방향을 보세요.",
+    "text": "5. 최신 여론조사\n\n\n\n\n\n\n\n\n최신 여론조사\n\n\n최신순 · 3건 · 양수 = 민주 우위(D+)\n\n\n조사기관\n실사기간\n모집단\n표본\n결과\n마진\n비고\n\n\n\n\nEPIC-MRA\n2026-07-24 ~ 2026-07-31\nLV\n600\nEl-Sayed 43 – 46 Rogers\nR+3\n±4·8/3 공개·경선 후 첫 본선 조사\n\n\nGlengariff\n2026-07-22 ~ 2026-07-24\nLV\n—\nEl-Sayed 38.7 – 49.0 Rogers\nR+10.3\n본선 가상(8/4 예비 전)·±4\n\n\nGlengariff\n2026-07-22 ~ 2026-07-24\nLV\n—\nStevens 45.5 – 44.7 Rogers\nD+0.8\n본선 가상(8/4 예비 전)·±4\n\n\n\n출처 URL은 `data/senate_polls.csv`에 행별로 보관합니다. 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.\n\n\n\n\n\n\n\n\n\n이 표는 data/senate_polls.csv에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 여러 조사의 방향을 보세요.",
     "crumbs": [
       "홈",
       "상원 Senate",
@@ -2698,7 +3426,7 @@
     "href": "states/nh.html#polls",
     "title": "뉴햄프셔 New Hampshire",
     "section": "5. 최신 여론조사",
-    "text": "5. 최신 여론조사\n\n\n\n\n\n\n\n\n최신 여론조사\n\n\n최신순 · 2건 · 양수 = 민주 우위(D+)\n\n\n조사기관\n실사기간\n모집단\n표본\n결과\n마진\n비고\n\n\n\n\nNRSC/Peak Insights (R 성향)\n~NA\n—\n—\nPappas 43 – 42 Sununu\nD+1\n내부 조사·공개일 기준\n\n\nUNH Survey Center\n~NA\n—\n—\nPappas 47 – 44 Sununu\nD+3\n발표일 기준\n\n\n\n출처 URL은 `data/senate_polls.csv`에 행별로 보관합니다. 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.\n\n\n\n\n\n\n\n\n\n이 표는 data/senate_polls.csv에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 여러 조사의 방향을 보세요.",
+    "text": "5. 최신 여론조사\n\n\n\n\n\n\n\n\n최신 여론조사\n\n\n최신순 · 2건 · 양수 = 민주 우위(D+)\n\n\n조사기관\n실사기간\n모집단\n표본\n결과\n마진\n비고\n\n\n\n\nNRSC/Peak Insights (R 성향)\n~2026-07-10\n—\n—\nPappas 43 – 42 Sununu\nD+1\n내부 조사·공개일 기준\n\n\nUNH Survey Center\n~2026-07-01\n—\n—\nPappas 47 – 44 Sununu\nD+3\n발표일 기준\n\n\n\n출처 URL은 `data/senate_polls.csv`에 행별로 보관합니다. 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.\n\n\n\n\n\n\n\n\n\n이 표는 data/senate_polls.csv에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 여러 조사의 방향을 보세요.",
     "crumbs": [
       "홈",
       "상원 Senate",
@@ -2802,7 +3530,7 @@
     "href": "states/tx.html#polls",
     "title": "텍사스 Texas",
     "section": "5. 최신 여론조사",
-    "text": "5. 최신 여론조사\n\n\n\n\n\n\n\n\n최신 여론조사\n\n\n최신순 · 7건 · 양수 = 민주 우위(D+)\n\n\n조사기관\n실사기간\n모집단\n표본\n결과\n마진\n비고\n\n\n\n\nWedgewood Polls\n~NA\nLV\n800\nTalarico 48 – 46 Paxton\nD+2\n보도일 기준·실사기간 미공표\n\n\nTexas Southern Univ./Jordan Research Center\nNA\nLV\n1200\nTalarico 47 – 45 Paxton\nD+2\n±2.83·8/3 공개·SMS→온라인 자체 실사\n\n\nBush School/Recon MR Pulse\nNA\nLV\n619\nTalarico 47 – 43 Paxton\nD+4\n±4.7·8/7 공개·트래커 최대 격차\n\n\nFox News\nNA\nRV\n1006\nTalarico 51 – 48 Paxton\nD+3\n±3·Beacon(D)·Shaw(R) 합동·투표의욕 최상위층 D+6\n\n\nTPOR (D 성향)\nNA\nLV\n1048\nTalarico 45 – 40 Paxton\nD+5\n±3.4·민주 성향·표본 D+11 유의\n\n\nNYT/Siena\nNA\nLV\n656\nTalarico 47 – 47 Paxton\nD+0\n±4.5\n\n\nUT Austin/Texas Politics Project\n~NA\n—\n—\nTalarico 42 – 43 Paxton\nR+1\n발표일 기준\n\n\n\n출처 URL은 `data/senate_polls.csv`에 행별로 보관합니다. 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.\n\n\n\n\n\n\n\n\n\n이 표는 data/senate_polls.csv에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 여러 조사의 방향을 보세요.",
+    "text": "5. 최신 여론조사\n\n\n\n\n\n\n\n\n최신 여론조사\n\n\n최신순 · 7건 · 양수 = 민주 우위(D+)\n\n\n조사기관\n실사기간\n모집단\n표본\n결과\n마진\n비고\n\n\n\n\nWedgewood Polls\n~2026-08-02\nLV\n800\nTalarico 48 – 46 Paxton\nD+2\n보도일 기준·실사기간 미공표\n\n\nTexas Southern Univ./Jordan Research Center\n2026-07-27 ~ 2026-07-30\nLV\n1200\nTalarico 47 – 45 Paxton\nD+2\n±2.83·8/3 공개·SMS→온라인 자체 실사\n\n\nBush School/Recon MR Pulse\n2026-07-27 ~ 2026-07-30\nLV\n619\nTalarico 47 – 43 Paxton\nD+4\n±4.7·8/7 공개·트래커 최대 격차\n\n\nFox News\n2026-07-23 ~ 2026-07-27\nRV\n1006\nTalarico 51 – 48 Paxton\nD+3\n±3·Beacon(D)·Shaw(R) 합동·투표의욕 최상위층 D+6\n\n\nTPOR (D 성향)\n2026-07-15 ~ 2026-07-17\nLV\n1048\nTalarico 45 – 40 Paxton\nD+5\n±3.4·민주 성향·표본 D+11 유의\n\n\nNYT/Siena\n2026-06-19 ~ 2026-06-27\nLV\n656\nTalarico 47 – 47 Paxton\nD+0\n±4.5\n\n\nUT Austin/Texas Politics Project\n~2026-06-23\n—\n—\nTalarico 42 – 43 Paxton\nR+1\n발표일 기준\n\n\n\n출처 URL은 `data/senate_polls.csv`에 행별로 보관합니다. 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.\n\n\n\n\n\n\n\n\n\n이 표는 data/senate_polls.csv에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 여러 조사의 방향을 보세요.",
     "crumbs": [
       "홈",
       "상원 Senate",
