@@ -1,0 +1,41 @@
+{
+  "as_of": "2026-08-03",
+  "source_label": "Sabato's Crystal Ball 초기 등급 · MultiState · Ballotpedia (수동 큐레이션)",
+  "provenance_note": "주의회 등급은 상·하원·주지사와 달리 270towin 자동 피드가 없어 수동으로 정리합니다. 등급은 확률이 아니며, 각 항목의 출처는 아래 표기를 따릅니다. 의석수·통제 정당은 선거 전 현재 기준이고, 확인되지 않은 항목은 채우지 않습니다.",
+  "scope": {
+    "states": 46,
+    "chambers_up": 88,
+    "chambers_total": 99,
+    "seats": "약 5,800",
+    "note": "네브래스카는 단원제·비당파 형식이며, 일부 주는 상원 의석이 순차 개선(staggered)이라 88개 의회 모두가 전면 개선은 아닙니다."
+  },
+  "competitive_summary": {
+    "tossup_chambers": 9,
+    "tossup_states": 5,
+    "competitive_total": 15,
+    "held_by_r": 8,
+    "held_by_d": 4,
+    "note": "경합 15개 의회 중 공화 보유가 8개로, 공화가 상대적으로 수세입니다(나머지는 동수·기타)."
+  },
+  "chambers": [
+    { "state": "애리조나", "abbr": "AZ", "chamber": "하원", "control": "R", "rating": "Toss-up", "trifecta_note": "민주 주지사(홉스) + 공화 양원 → 분점 해소 여부" },
+    { "state": "애리조나", "abbr": "AZ", "chamber": "상원", "control": "R", "rating": "Toss-up", "trifecta_note": "민주 주지사(홉스) + 공화 양원 → 분점 해소 여부" },
+    { "state": "미시간", "abbr": "MI", "chamber": "하원", "control": "R", "rating": "Toss-up", "trifecta_note": "주지사 선거(Lean D)와 동시 — 민주 트라이펙타 복원 경로" },
+    { "state": "미시간", "abbr": "MI", "chamber": "상원", "control": "D", "rating": "Toss-up", "trifecta_note": "민주 방어" },
+    { "state": "미네소타", "abbr": "MN", "chamber": "하원", "control": "동수(tied)", "rating": "Toss-up", "trifecta_note": "현재 동수 — 한 석이 통제를 가름" },
+    { "state": "미네소타", "abbr": "MN", "chamber": "상원", "control": "D", "rating": "Toss-up", "trifecta_note": "민주 방어" },
+    { "state": "위스콘신", "abbr": "WI", "chamber": "하원", "control": "R", "rating": "Toss-up", "trifecta_note": "재획정 신지도로 오랜만에 양원 경합권 진입" },
+    { "state": "위스콘신", "abbr": "WI", "chamber": "상원", "control": "R", "rating": "Toss-up", "trifecta_note": "재획정 신지도 효과 · 주지사 선거도 Toss-up" },
+    { "state": "뉴햄프셔", "abbr": "NH", "chamber": "하원", "control": "R", "rating": "Toss-up", "trifecta_note": "400석 초대형 하원 — 전국 환경에 민감" },
+    { "state": "펜실베이니아", "abbr": "PA", "chamber": "하원", "control": "D", "rating": "Lean D", "trifecta_note": "1석 차 초박빙 구조로 알려진 의회" },
+    { "state": "펜실베이니아", "abbr": "PA", "chamber": "상원", "control": "R", "rating": "Lean R", "trifecta_note": "민주 트라이펙타의 마지막 관문" },
+    { "state": "뉴햄프셔", "abbr": "NH", "chamber": "상원", "control": "R", "rating": "Lean R", "trifecta_note": "하원과 동반 이동 가능성" },
+    { "state": "메인", "abbr": "ME", "chamber": "하원", "control": "D", "rating": "Lean D(공화 표적)", "trifecta_note": "상원 선거(잭슨 vs 콜린스)와 같은 주 — 하향식 효과 주시" }
+  ],
+  "trifecta_watch": ["애리조나", "미시간", "미네소타", "위스콘신", "펜실베이니아"],
+  "sources": [
+    { "label": "Sabato's Crystal Ball — 2026 주의회 지도 초기 등급", "url": "https://centerforpolitics.org/crystalball/handicapping-the-2026-state-legislative-map-a-first-look/" },
+    { "label": "MultiState — 2026 주 선거와 트라이펙타", "url": "https://www.multistate.us/insider/2026/2/5/2026-state-elections-could-reshape-trifecta-control-states-to-watch" },
+    { "label": "Ballotpedia — State legislative elections, 2026", "url": "https://ballotpedia.org/State_legislative_elections,_2026" }
+  ]
+}

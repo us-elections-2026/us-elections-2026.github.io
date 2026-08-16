@@ -1,0 +1,659 @@
+{
+ "as_of": "2026-08-10",
+ "months": [
+  "3월",
+  "4월",
+  "5월",
+  "6월",
+  "7월",
+  "8월 초"
+ ],
+ "cell_note": "각 칸 = 해당 월말 기준 등급. status: confirmed=아카이브에 그 시점 등급 명시 · derived=이후 이동 서술의 '이전 등급'에서 역산 · unknown=기록 없음(추정으로 채우지 않음). changed=true는 그 달에 등급이 이동한 칸.",
+ "source_note": "출처: NIS 상원 주간 브리핑 아카이브 18편(2026-03-23~07-26)의 기관 귀속 서술. Cook 원문 링크가 확인된 이동은 AK(1월 Solid R→Lean R, 7/1 Lean R→Toss-up)·GA/NC/OH(4/13)·TX(5/31). Sabato 6/11 일괄 이동(NC Lean D, AK·OH Toss-up)은 6/20 일일 브리핑이 주체를 명시. · 2026-08-03 갱신: 7월 칸을 270towin 재게시 원본 피드(Cook 7/1 지도·Sabato 7/30 지도)로 대조·확정. 이 과정에서 (a) Cook 오하이오의 Toss-up 복귀 시점이 '7월 중순'이 아니라 AK와 같은 7/1임을 확인해 정정, (b) Sabato의 NH·ME 미확인 칸을 실데이터로 해소, (c) Sabato 조지아의 7/30 Likely D 상향을 반영했습니다. · 2026-08-07 갱신: '8월 초' 칸을 270toWin 재게시 피드(Cook 8/5·Sabato 8/5)로 확정 추가. · 2026-08-10 갱신: **Sabato의 3~6월 칸을 Crystal Ball 원문으로 확정**했습니다. 등급표가 날짜 박힌 지도 PNG라 Wayback 스냅샷(3/10·4/2·5/1·6/8·7/7·8/2)의 'Updated' 표기와 지도 이미지를 직접 판독하고, 누적 changelog(2026-rating-changes)·6/11 기사 Table 1로 교차 확인했습니다. 3월 4일 지도가 5/1 스냅샷까지 유지돼 3·4월말이 동일합니다. 이 과정에서 **알래스카의 '3월 Safe R → 4월 초 Lean R 이동' 기재가 오류**임을 확인해 정정했습니다 — 실제 이동은 2026-01-12로, 3월에는 이미 Leans R이었습니다. 표기는 사이트 정규화 기준(Lean/Likely/Safe)을 따르며, Sabato 원문 표기는 'Leans'·'Safe'입니다. · 아이오와 행은 2026-08-10 감시주 편입에 맞춰 추가했습니다 — Sabato는 지도 픽셀 판독(Likely R `(238,41,53)` ↔ Leans R `(246,135,86)`으로 구분), Cook은 3/30·4/29·5/30 등급표 스냅샷(매 스냅샷 35석 합계로 파싱 검증)에서 읽었습니다. Cook 7월 칸만 미확인으로 남습니다. · **표기 주의**: 두 기관의 등급 눈금 표기가 다릅니다 — Sabato는 `Safe`/`Likely`/`Leans`/`Toss-up`(정당명 `Democratic`), Cook은 `Solid`/`Likely`/`Lean`/`Toss Up`(정당명 `Democrat`). 이 표는 사이트 정규화 기준(Lean/Likely/Safe)으로 통일해 표기하며, 원문 표기는 각 기관 사이트를 따릅니다. · **2026-08-10 정정(중요)**: Cook 요약표 Wayback 캡처 28개(1/12~8/7)와 Cook 공식 인쇄용 PDF 3종을 파싱해 (매 캡처 35석 합계 검증) **종전에 '확정'으로 실었던 두 값이 오류였음을 확인하고 고쳤습니다.** (1) **뉴햄프셔는 2026년 내내 Cook 기준 Lean D**였습니다 — 'Likely D였다가 7월에 Lean D로 내려왔다'는 기재는 사실이 아니며 Cook의 NH 등급은 2025-02-11 이후 바뀐 적이 없습니다. (2) **오하이오는 4/13 Toss Up 이후 이탈한 적이 없습니다** — '6월 하순 Lean R 회귀'와 '7/1 Toss-up 복귀'는 둘 다 성립하지 않고, 7/1 변경은 알래스카 단독이었습니다. 또 텍사스 이동일을 5/31에서 **5/27**로 정정했습니다. 종전 오류의 원인은 Cook **개별 레이스 페이지의 등급 위젯**으로 보입니다 — 이 위젯은 아카이브 캡처에서 *변경 직전 값*에 *변경 날짜*를 붙여 표시해(ME·OH·IA에서 동일 현상 확인) 요약표와 충돌합니다. **요약표와 공식 PDF가 정본이며, 개별 레이스 페이지 위젯은 이력 판정에 쓰지 않습니다.**",
+ "agencies": [
+  {
+   "key": "cook",
+   "name": "Cook Political Report",
+   "rows": [
+    {
+     "state": "NC",
+     "name": "노스캐롤라이나",
+     "cells": [
+      {
+       "r": "Toss-up",
+       "status": "confirmed"
+      },
+      {
+       "r": "Lean D",
+       "status": "confirmed",
+       "changed": true,
+       "note": "4/13 Toss-up→Lean D"
+      },
+      {
+       "r": "Lean D",
+       "status": "confirmed"
+      },
+      {
+       "r": "Lean D",
+       "status": "confirmed"
+      },
+      {
+       "r": "Lean D",
+       "status": "confirmed"
+      },
+      {
+       "r": "Lean D",
+       "status": "confirmed",
+       "note": "8/5 270toWin 재게시 피드로 확인"
+      }
+     ]
+    },
+    {
+     "state": "GA",
+     "name": "조지아",
+     "cells": [
+      {
+       "r": "Toss-up",
+       "status": "confirmed"
+      },
+      {
+       "r": "Lean D",
+       "status": "confirmed",
+       "changed": true,
+       "note": "4/13 Toss-up→Lean D"
+      },
+      {
+       "r": "Lean D",
+       "status": "confirmed"
+      },
+      {
+       "r": "Lean D",
+       "status": "confirmed"
+      },
+      {
+       "r": "Lean D",
+       "status": "confirmed"
+      },
+      {
+       "r": "Lean D",
+       "status": "confirmed",
+       "note": "8/5 270toWin 재게시 피드로 확인"
+      }
+     ]
+    },
+    {
+     "state": "NH",
+     "name": "뉴햄프셔",
+     "cells": [
+      {
+       "r": "Lean D",
+       "status": "confirmed",
+       "note": "Cook 요약표 Wayback 캡처 28개(1/12~8/7)·공식 인쇄용 PDF 3개 파싱(매 캡처 35석 검증) — 2025-02-11 이후 무변경(종전 'Likely D' 기재는 오류)"
+      },
+      {
+       "r": "Lean D",
+       "status": "confirmed",
+       "note": "Cook 요약표 Wayback 캡처 28개(1/12~8/7)·공식 인쇄용 PDF 3개 파싱(매 캡처 35석 검증)"
+      },
+      {
+       "r": "Lean D",
+       "status": "confirmed",
+       "note": "Cook 요약표 Wayback 캡처 28개(1/12~8/7)·공식 인쇄용 PDF 3개 파싱(매 캡처 35석 검증)"
+      },
+      {
+       "r": "Lean D",
+       "status": "confirmed",
+       "note": "Cook 요약표 Wayback 캡처 28개(1/12~8/7)·공식 인쇄용 PDF 3개 파싱(매 캡처 35석 검증) — 6/18 일일의 표기 혼재는 Cook 원문과 무관"
+      },
+      {
+       "r": "Lean D",
+       "status": "confirmed",
+       "note": "Cook 요약표 Wayback 캡처 28개(1/12~8/7)·공식 인쇄용 PDF 3개 파싱(매 캡처 35석 검증) — 7월 이동은 없었다(종전 '7/1 이전 이동' 기재는 오류)"
+      },
+      {
+       "r": "Lean D",
+       "status": "confirmed",
+       "note": "8/5 270toWin 재게시 피드 + Cook 8/5·8/7 캡처로 확인"
+      }
+     ]
+    },
+    {
+     "state": "ME",
+     "name": "메인",
+     "cells": [
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "note": "Cook 요약표 Wayback 캡처 28개(1/12~8/7)·공식 인쇄용 PDF 3개 파싱(매 캡처 35석 검증) (3/30 캡처)"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "note": "Cook 요약표 Wayback 캡처 28개(1/12~8/7)·공식 인쇄용 PDF 3개 파싱(매 캡처 35석 검증) (4/29 캡처)"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "note": "Cook 요약표 Wayback 캡처 28개(1/12~8/7)·공식 인쇄용 PDF 3개 파싱(매 캡처 35석 검증) (5/30 캡처)"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "note": "8/5 270toWin 재게시 피드로 확인"
+      }
+     ]
+    },
+    {
+     "state": "MI",
+     "name": "미시간",
+     "cells": [
+      {
+       "r": "Toss-up",
+       "status": "confirmed"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "note": "8/5 270toWin 재게시 피드로 확인"
+      }
+     ]
+    },
+    {
+     "state": "OH",
+     "name": "오하이오",
+     "cells": [
+      {
+       "r": "Lean R",
+       "status": "confirmed",
+       "note": "Cook 요약표 Wayback 캡처 28개(1/12~8/7)·공식 인쇄용 PDF 3개 파싱(매 캡처 35석 검증) (3/30 캡처)"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "changed": true,
+       "note": "4/13 Lean R→Toss-up"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "note": "Cook 요약표 Wayback 캡처 28개(1/12~8/7)·공식 인쇄용 PDF 3개 파싱(매 캡처 35석 검증) — 4/22~8/7 전 캡처 Toss Up(종전 '6월 하순 Lean R 회귀'는 오류)"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "note": "Cook 요약표 Wayback 캡처 28개(1/12~8/7)·공식 인쇄용 PDF 3개 파싱(매 캡처 35석 검증) — 7월 이동 없음(7/1 변경은 AK 단독)"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "note": "8/5 270toWin 재게시 피드로 확인"
+      }
+     ]
+    },
+    {
+     "state": "AK",
+     "name": "알래스카",
+     "cells": [
+      {
+       "r": "Lean R",
+       "status": "confirmed",
+       "note": "1월 Solid R→Lean R(펠톨라 출마)"
+      },
+      {
+       "r": "Lean R",
+       "status": "confirmed"
+      },
+      {
+       "r": "Lean R",
+       "status": "confirmed"
+      },
+      {
+       "r": "Lean R",
+       "status": "confirmed",
+       "note": "Sabato 6/11 Toss-up 이동에도 Cook은 Lean R 유지"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "changed": true,
+       "note": "7/1 Lean R→Toss-up (Cook 원문·피드 일치)"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "note": "8/5 270toWin 재게시 피드로 확인"
+      }
+     ]
+    },
+    {
+     "state": "TX",
+     "name": "텍사스",
+     "cells": [
+      {
+       "r": "Likely R",
+       "status": "confirmed"
+      },
+      {
+       "r": "Likely R",
+       "status": "confirmed"
+      },
+      {
+       "r": "Lean R",
+       "status": "confirmed",
+       "changed": true,
+       "note": "5/27 Likely R→Lean R (팩스턴 5/26 결선승) — Substack 기사 발행일·페이지 스탬프 모두 5/27"
+      },
+      {
+       "r": "Lean R",
+       "status": "confirmed"
+      },
+      {
+       "r": "Lean R",
+       "status": "confirmed"
+      },
+      {
+       "r": "Lean R",
+       "status": "confirmed",
+       "note": "8/5 270toWin 재게시 피드로 확인"
+      }
+     ]
+    },
+    {
+     "state": "IA",
+     "name": "아이오와",
+     "cells": [
+      {
+       "r": "Likely R",
+       "status": "confirmed",
+       "note": "Cook 등급표 Wayback 스냅샷 직접 판독 (3/30 스냅샷)"
+      },
+      {
+       "r": "Likely R",
+       "status": "confirmed",
+       "note": "Cook 등급표 Wayback 스냅샷 직접 판독 (4/29 스냅샷)"
+      },
+      {
+       "r": "Likely R",
+       "status": "confirmed",
+       "note": "Cook 등급표 Wayback 스냅샷 직접 판독 (5/30 스냅샷)"
+      },
+      {
+       "r": "Lean R",
+       "status": "confirmed",
+       "changed": true,
+       "note": "6/3 Likely R→Lean R — 5/30↔6/3 스냅샷 사이로 확인"
+      },
+      {
+       "r": "Lean R",
+       "status": "confirmed",
+       "note": "Cook 요약표 Wayback 캡처 28개(1/12~8/7)·공식 인쇄용 PDF 3개 파싱(매 캡처 35석 검증) — 6/3 이후 IA 변경 없음(7/14·7/16 캡처 포함)"
+      },
+      {
+       "r": "Lean R",
+       "status": "confirmed",
+       "note": "8/5 270toWin 재게시 피드로 확인"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "sabato",
+   "name": "Sabato's Crystal Ball",
+   "rows": [
+    {
+     "state": "NC",
+     "name": "노스캐롤라이나",
+     "cells": [
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "note": "Wayback 3/10·4/2 스냅샷의 3/4자 지도 직접 판독"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "note": "Wayback 3/10·4/2 스냅샷의 3/4자 지도 직접 판독"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "note": "3/4자 지도 유지 + 6/3자 누적 changelog(3/4~5/26 상원 변경 없음)"
+      },
+      {
+       "r": "Lean D",
+       "status": "confirmed",
+       "changed": true,
+       "note": "6/11 Toss-up→Leans D — 기사 Table 1 확인"
+      },
+      {
+       "r": "Lean D",
+       "status": "confirmed"
+      },
+      {
+       "r": "Lean D",
+       "status": "confirmed",
+       "note": "8/5 270toWin 재게시 피드로 확인"
+      }
+     ]
+    },
+    {
+     "state": "GA",
+     "name": "조지아",
+     "cells": [
+      {
+       "r": "Lean D",
+       "status": "confirmed",
+       "note": "1/29 Toss-up→Leans D 이후 유지 · Wayback 3/10·4/2 스냅샷의 3/4자 지도 직접 판독"
+      },
+      {
+       "r": "Lean D",
+       "status": "confirmed",
+       "note": "Wayback 3/10·4/2 스냅샷의 3/4자 지도 직접 판독"
+      },
+      {
+       "r": "Lean D",
+       "status": "confirmed",
+       "note": "5/18 'Lean D 유지' 확인 — 이동 시점 미확인"
+      },
+      {
+       "r": "Lean D",
+       "status": "confirmed"
+      },
+      {
+       "r": "Likely D",
+       "status": "confirmed",
+       "changed": true,
+       "note": "7/30 Lean D→Likely D 상향 — 감시 9주 중 첫 경합권 이탈"
+      },
+      {
+       "r": "Likely D",
+       "status": "confirmed",
+       "note": "8/5 270toWin 재게시 피드로 확인"
+      }
+     ]
+    },
+    {
+     "state": "NH",
+     "name": "뉴햄프셔",
+     "cells": [
+      {
+       "r": "Lean D",
+       "status": "confirmed",
+       "note": "2025-03-12 Likely D→Leans D 이후 유지 · Wayback 3/10·4/2 스냅샷의 3/4자 지도 직접 판독"
+      },
+      {
+       "r": "Lean D",
+       "status": "confirmed",
+       "note": "Wayback 3/10·4/2 스냅샷의 3/4자 지도 직접 판독"
+      },
+      {
+       "r": "Lean D",
+       "status": "confirmed",
+       "note": "3/4자 지도 유지 + 6/3자 누적 changelog(3/4~5/26 상원 변경 없음)"
+      },
+      {
+       "r": "Lean D",
+       "status": "confirmed",
+       "note": "6/11자 지도 + 6/11 기사 Table 1 직접 판독"
+      },
+      {
+       "r": "Lean D",
+       "status": "confirmed",
+       "note": "7/30 피드로 최초 확인(종전 미확인)"
+      },
+      {
+       "r": "Lean D",
+       "status": "confirmed",
+       "note": "8/5 270toWin 재게시 피드로 확인"
+      }
+     ]
+    },
+    {
+     "state": "ME",
+     "name": "메인",
+     "cells": [
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "note": "2025-10-14 Leans R→Toss-up 이후 유지 · Wayback 3/10·4/2 스냅샷의 3/4자 지도 직접 판독"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "note": "Wayback 3/10·4/2 스냅샷의 3/4자 지도 직접 판독"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "note": "3/4자 지도 유지 + 6/3자 누적 changelog(3/4~5/26 상원 변경 없음)"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "note": "6/11자 지도 + 6/11 기사 Table 1 직접 판독"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "note": "7/30 피드로 최초 확인(종전 미확인)"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "note": "8/5 270toWin 재게시 피드로 확인"
+      }
+     ]
+    },
+    {
+     "state": "MI",
+     "name": "미시간",
+     "cells": [
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "note": "2025-02-13 최초 등급부터 Toss-up 유지(changelog 무변) · Wayback 3/10·4/2 스냅샷의 3/4자 지도 직접 판독"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "note": "Wayback 3/10·4/2 스냅샷의 3/4자 지도 직접 판독"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "note": "3/4자 지도 유지 + 6/3자 누적 changelog(3/4~5/26 상원 변경 없음)"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "note": "8/5 270toWin 재게시 피드로 확인"
+      }
+     ]
+    },
+    {
+     "state": "OH",
+     "name": "오하이오",
+     "cells": [
+      {
+       "r": "Lean R",
+       "status": "confirmed",
+       "note": "2025-08-12 Likely R→Leans R 이후 유지 · Wayback 3/10·4/2 스냅샷의 3/4자 지도 직접 판독"
+      },
+      {
+       "r": "Lean R",
+       "status": "confirmed",
+       "note": "Wayback 3/10·4/2 스냅샷의 3/4자 지도 직접 판독"
+      },
+      {
+       "r": "Lean R",
+       "status": "confirmed",
+       "note": "3/4자 지도 유지 + 6/3자 누적 changelog(3/4~5/26 상원 변경 없음)"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "changed": true,
+       "note": "6/11 Leans R→Toss-up — 기사 Table 1 확인"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "note": "8/5 270toWin 재게시 피드로 확인"
+      }
+     ]
+    },
+    {
+     "state": "AK",
+     "name": "알래스카",
+     "cells": [
+      {
+       "r": "Lean R",
+       "status": "confirmed",
+       "note": "2026-01-12 Safe R→Leans R 이후 유지 · Wayback 3/10·4/2 스냅샷의 3/4자 지도 직접 판독 (종전 '3월 Safe R·4월 초 이동' 기재는 오류였음)"
+      },
+      {
+       "r": "Lean R",
+       "status": "confirmed",
+       "note": "Wayback 3/10·4/2 스냅샷의 3/4자 지도 직접 판독"
+      },
+      {
+       "r": "Lean R",
+       "status": "confirmed",
+       "note": "3/4자 지도 유지 + 6/3자 누적 changelog(3/4~5/26 상원 변경 없음)"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "changed": true,
+       "note": "6/11 Leans R→Toss-up — 기사 Table 1 확인"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed"
+      },
+      {
+       "r": "Toss-up",
+       "status": "confirmed",
+       "note": "8/5 270toWin 재게시 피드로 확인"
+      }
+     ]
+    },
+    {
+     "state": "TX",
+     "name": "텍사스",
+     "cells": [
+      {
+       "r": "Likely R",
+       "status": "confirmed",
+       "note": "Wayback 3/10·4/2 스냅샷의 3/4자 지도 직접 판독"
+      },
+      {
+       "r": "Likely R",
+       "status": "confirmed",
+       "note": "Wayback 3/10·4/2 스냅샷의 3/4자 지도 직접 판독"
+      },
+      {
+       "r": "Lean R",
+       "status": "confirmed",
+       "note": "5/26 Likely R→Leans R — changelog 확인",
+       "changed": true
+      },
+      {
+       "r": "Lean R",
+       "status": "confirmed",
+       "note": "6/28 확인 — 이동 시점 미확인"
+      },
+      {
+       "r": "Lean R",
+       "status": "confirmed",
+       "note": "7/30 피드 확인"
+      },
+      {
+       "r": "Lean R",
+       "status": "confirmed",
+       "note": "8/5 270toWin 재게시 피드로 확인"
+      }
+     ]
+    },
+    {
+     "state": "IA",
+     "name": "아이오와",
+     "cells": [
+      {
+       "r": "Likely R",
+       "status": "confirmed",
+       "note": "Wayback 3/10·4/2 스냅샷의 3/4자 지도 픽셀 판독(Likely R 스와치 RGB 일치)"
+      },
+      {
+       "r": "Likely R",
+       "status": "confirmed",
+       "note": "Wayback 3/10·4/2 스냅샷의 3/4자 지도 픽셀 판독(Likely R 스와치 RGB 일치)"
+      },
+      {
+       "r": "Likely R",
+       "status": "confirmed",
+       "note": "3/4자 지도 + 6/3자 changelog(IA 변경일 6/2) — 5월 중 캡처 없어 이 칸만 지도 직접 판독 아님"
+      },
+      {
+       "r": "Lean R",
+       "status": "confirmed",
+       "changed": true,
+       "note": "6/2 Likely R→Leans R · 6/11자 지도 픽셀 판독으로 확정"
+      },
+      {
+       "r": "Lean R",
+       "status": "confirmed",
+       "note": "7/29자 지도 픽셀 판독 — 7월 추가 변경 없음"
+      },
+      {
+       "r": "Lean R",
+       "status": "confirmed",
+       "note": "8/5 270toWin 재게시 피드로 확인"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

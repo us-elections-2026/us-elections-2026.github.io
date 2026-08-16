@@ -1,0 +1,13 @@
+date_end,date_start,pollster,sponsor,population,n,approve,disapprove,value,partisan,internal,poll_id,source_url
+2026-07-06,2026-07-03,YouGov,The Economist,A,1603,35.0,61.0,-26.0,,,supp-yg-0706-a,https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_Qxo6bev.pdf#page=46
+2026-07-06,2026-07-03,YouGov,The Economist,RV,1443,40.0,58.0,-18.0,,,supp-yg-0706-rv,https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_Qxo6bev.pdf#page=46
+2026-07-20,2026-07-17,YouGov,The Economist,A,1602,36.0,60.0,-24.0,,,supp-yg-0720-a,https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_ESdiNMa.pdf#page=18
+2026-07-20,2026-07-17,YouGov,The Economist,RV,1432,40.0,58.0,-18.0,,,supp-yg-0720-rv,https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_ESdiNMa.pdf#page=18
+2026-07-27,2026-07-25,YouGov,The Economist,A,1559,34.0,62.0,-28.0,,,supp-yg-0727-a,https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_0t0YpHo.pdf#page=22
+2026-07-27,2026-07-25,YouGov,The Economist,RV,1407,39.0,59.0,-20.0,,,supp-yg-0727-rv,https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_0t0YpHo.pdf#page=22
+2026-08-03,2026-07-31,YouGov,The Economist,A,1609,36.0,60.0,-24.0,,,supp-yg-0803-a,https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_mjKhx0z.pdf#page=11
+2026-08-03,2026-07-31,YouGov,The Economist,RV,1473,39.0,59.0,-20.0,,,supp-yg-0803-rv,https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_mjKhx0z.pdf#page=11
+2026-07-20,2026-07-16,American Research Group,,A,1100,30.0,67.0,-37.0,,,supp-arg-0720-a,https://americanresearchgroup.com/economy/
+2026-07-20,2026-07-16,American Research Group,,RV,,31.0,67.0,-36.0,,,supp-arg-0720-rv,https://americanresearchgroup.com/economy/
+2026-08-03,2026-07-29,Ipsos,Reuters,A,4505,35.0,63.0,-28.0,,,supp-ips-0803-a,https://www.ipsos.com/sites/default/files/ct/news/documents/2026-08/Reuters%20Ipsos%20August%20Large%20Sample%20Topline%208.4.26.pdf
+2026-08-03,2026-07-29,Ipsos,Reuters,RV,3542,38.0,61.0,-23.0,,,supp-ips-0803-rv,https://www.ipsos.com/sites/default/files/ct/news/documents/2026-08/Reuters%20Ipsos%20August%20Large%20Sample%20Topline%208.4.26.pdf

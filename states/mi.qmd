@@ -16,12 +16,12 @@ cat(candidate_cards_html("MI"))
 gt_state_detail("MI")
 ```
 
-Peters 은퇴로 **민주당이 방어해야 하는 공개석**. 9개 경합주 중 본선이 공화당에 가장 유리한(오차범위 내) 유일한 주로, Cook·Sabato 모두 **Toss-up**으로 분류합니다. **8/4 민주당 경선에서 진보 성향의 Abdul El-Sayed가 온건파 Haley Stevens를 48.5–47.5(1%p)로 제압**해 본선 대진이 확정됐습니다 — 8대 1의 자금 열세와 당 주류의 반대를 뒤집은 결과입니다. 이제 2024년 Slotkin에게 0.3%p로 졌던 공화당 Mike Rogers와 맞붙습니다. 공화당은 이 대진을 공개적으로 반겼고, 트럼프·밴스·NRSC의 조직적 이슬람 혐오 공세가 이어진 뒤 Rogers는 8/7 **Stevens 지지층을 겨냥한 크로스오버 구애**로 전술을 틀었습니다 — 규정짓기에서 연합 사냥으로의 전환입니다. 다만 **경선 후 RCP 본선 첫 평균은 Rogers 44.3–El-Sayed 44.0(R+0.3)의 순수 토스업**으로, '약체 후보' 가설이 아직 톱라인에서 확인되지는 않았습니다. ([CNBC](https://www.cnbc.com/2026/08/04/abdul-el-sayed-haley-stevens-michigan-primary.html) · [Detroit News](https://www.detroitnews.com/story/news/politics/2026/08/04/michigan-senate-election-results/91144752007/) · [CNN(크로스오버 전환)](https://www.cnn.com/2026/08/07/politics/abdul-el-sayed-mike-rogers-michigan-democrats-senate) · [RCP(본선 평균)](https://www.realclearpolling.com/polls/senate/general/2026/michigan/rogers-vs-el-sayed))
+Peters 은퇴로 **민주당이 방어해야 하는 공개석**. 9개 경합주 중 본선이 공화당에 가장 유리한(오차범위 내) 유일한 주로, Cook·Sabato 모두 **Toss-up**으로 분류합니다. **8/4 민주당 경선에서 진보 성향의 Abdul El-Sayed가 온건파 Haley Stevens를 48.5–47.5(1%p)로 제압**해 본선 대진이 확정됐습니다 — 8대 1의 자금 열세와 당 주류의 반대를 뒤집은 결과입니다. 이제 2024년 Slotkin에게 0.3%p로 졌던 공화당 Mike Rogers와 맞붙습니다. 공화당은 이 대진을 공개적으로 반겼고, 트럼프·밴스·NRSC의 조직적 이슬람 혐오 공세가 이어진 뒤 Rogers는 8/7 **Stevens 지지층을 겨냥한 크로스오버 구애**로 전술을 틀었습니다 — 규정짓기에서 연합 사냥으로의 전환입니다. 경선 직후 RCP 본선 첫 평균은 Rogers 44.3–El-Sayed 44.0(R+0.3)의 순수 접전이었으나, **8/6–10 실시된 폭스뉴스/Beacon&Shaw 조사(RV 1,006, ±3)에서 Rogers 51–El-Sayed 47(R+4)**이 나오면서 경선 후 첫 주요 언론 조사가 공화 우위를 가리켰습니다 — Glengariff(+10)·EPIC-MRA(46–43)와 함께 엘사예드가 뒤지거나 동률인 조사가 4연속입니다. 다만 같은 폭스 조사의 교차분석은 양면적이고(54% "엘사예드 정책이 너무 극단" ↔ 51% "로저스는 트럼프와 너무 가까움"), **예측시장은 오히려 엘사예드를 57¢로 매겨** 조사와 가격이 정면으로 갈린 상태입니다. ([CNBC](https://www.cnbc.com/2026/08/04/abdul-el-sayed-haley-stevens-michigan-primary.html) · [Detroit News](https://www.detroitnews.com/story/news/politics/2026/08/04/michigan-senate-election-results/91144752007/) · [CNN(크로스오버 전환)](https://www.cnn.com/2026/08/07/politics/abdul-el-sayed-mike-rogers-michigan-democrats-senate) · [Fox(8/6–10 조사)](https://www.foxnews.com/politics/fox-news-poll-senate-battle-looms-michigan))
 
 ::: {.summary}
 - **구도**: 민주 방어 공개석(Peters 은퇴) — 9개 경합주 중 본선이 공화에 가장 유리(Cook·Sabato Toss-up).
 - **변화**: **8/4 경선 El-Sayed 48.5–Stevens 47.5로 확정**(McMorrow 4%, 개표 99%). 예비 전 가상대결에서 Rogers에게 가장 약했던 후보가 지명된 구도.
-- **주의**: 예비 전 가상대결(Glengariff 7/22–24)의 Rogers +10.3은 **경선 후 실제 본선 평균에서 재현되지 않았습니다** — RCP의 경선 후 첫 평균은 Rogers 44.3–El-Sayed 44.0(R+0.3)의 순수 접전입니다. 가상대결과 실제 대진의 조사는 같은 것이 아닙니다.
+- **주의**: 가상대결과 실제 대진의 조사는 같은 것이 아닙니다 — 예비 전 Glengariff(7/22–24)의 Rogers +10.3은 경선 직후 RCP 평균(R+0.3)에서 재현되지 않았습니다. 다만 **8/6–10 폭스 조사에서 Rogers +4**가 나오며 열세·동률 조사가 4연속이 됐고, 그런데도 **예측시장은 El-Sayed 57¢** — 조사와 가격의 괴리를 평균 내지 말고 그대로 볼 것.
 - **한국 함의**: LG·SK·삼성 배터리 본진이나 후보의 직접 한국 입장은 미확인(추정 연결고리만).
 :::
 
