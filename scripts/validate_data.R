@@ -139,6 +139,24 @@ d <- load_json("candidates.json")
 require_keys("candidates.json", d, c("as_of", "candidates"))
 require_cols("candidates.json", d$candidates, c("state", "party", "name"))
 
+# 주지사 후보 카드 — candidates.json과 동일 스키마(+office). 없으면 카드가 렌더되지 않으므로 선택.
+d <- load_json("governor_candidates.json", optional = TRUE)
+if (!is.null(d)) {
+  require_keys("governor_candidates.json", d, c("as_of", "candidates"))
+  require_cols("governor_candidates.json", d$candidates,
+               c("state", "party", "name", "office", "status", "sources"))
+  enum_ok("governor_candidates.json", d$candidates, "party", c("D", "R", "I"))
+  enum_ok("governor_candidates.json", d$candidates, "office", c("governor"))
+  # 출처 없는 카드는 게재하지 않는다(편집 3원칙 ③ provenance).
+  if (!is.null(d$candidates) && is.data.frame(d$candidates) && "sources" %in% names(d$candidates)) {
+    n_src <- vapply(d$candidates$sources, function(s) length(unlist(s)), integer(1))
+    if (any(n_src == 0))
+      err("governor_candidates.json",
+          sprintf("출처 없는 후보 카드: %s",
+                  paste(d$candidates$name[n_src == 0], collapse = ", ")))
+  }
+}
+
 # ---- 자체 모델 대시보드 ------------------------------------------------------
 d <- load_json("model_dashboard.json")
 require_keys("model_dashboard.json", d, c("as_of", "states", "scenarios", "timeline"))
