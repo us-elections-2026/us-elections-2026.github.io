@@ -12,3 +12,11 @@
 # 로컬 전용 노트 (커밋 금지)
 NOTES_LOCAL.md
 handoff.md
+
+# Dropbox 동기화 충돌 사본 (커밋 금지)
+#   두 머신이 같은 작업 사본을 공유하므로 Dropbox가 "<파일> (X's conflicted copy
+#   YYYY-MM-DD).qmd" 류를 만들 수 있다. publish_weekly.sh가 디렉터리째 스테이징하고
+#   _quarto.yml이 glob으로 렌더하므로, 걸러 두지 않으면 낡은 중복 페이지가 라이브로 나간다.
+*conflicted copy*
+*conflicted-copy*
+*충돌 사본*

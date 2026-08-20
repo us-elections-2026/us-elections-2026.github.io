@@ -11,11 +11,14 @@
 set -u
 export LANG=en_US.UTF-8
 export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
-REPO="$HOME/Library/CloudStorage/Dropbox/gitpages/us_elections.github.io"
+# 레포 경로는 스크립트 위치에서 유도한다(publish_weekly.sh와 동일). 하드코딩된
+# Dropbox 경로는 머신·클론 위치가 바뀌면 엉뚱한 사본을 발행한다.
+REPO="${US_ELECTIONS_REPO:-$(cd "$(dirname "$0")/.." && pwd)}"
 
 ISSUE="${1:-}"
 [ -n "$ISSUE" ] || { echo "[publish] 사용법: publish_issue.sh <issue.qmd>"; exit 2; }
 cd "$REPO" || { echo "[publish] repo 접근 불가: $REPO"; exit 1; }
+git rev-parse --git-dir >/dev/null 2>&1 || { echo "[publish] git 레포가 아님: $REPO"; exit 1; }
 [ -f "$ISSUE" ] || { echo "[publish] 파일 없음: $ISSUE"; exit 1; }
 
 br=$(git branch --show-current)

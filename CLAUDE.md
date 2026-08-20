@@ -11,6 +11,8 @@
 
 ## 아키텍처 (한 줄)
 
+**발행 담당 머신은 Mac Studio(mini)로 고정한다** — 두 로컬 머신이 Dropbox로 같은 작업 사본을 공유하므로(아래 「금지·주의」①), `publish_weekly.sh`·launchd·API 키는 이 한 대에서만 돌린다. 다른 머신은 편집만 한다. 클라우드(Claude Code) 세션은 GitHub에서 별도 클론을 받아 쓰므로 Dropbox 사본과 무관하고, 결과는 git으로만 되돌린다.
+
 ```
 Mac mini (수집 + 정규화 → data/ 에 JSON/CSV 커밋) → git push
   → GitHub Actions (Quarto render + R 실행) → gh-pages → Pages
@@ -59,6 +61,10 @@ Rscript -e 'install.packages(c("jsonlite","dplyr","gt","readr"))'   # 최초 1�
 
 ## 금지·주의 (중요)
 
+- **두 대의 로컬 머신이 Dropbox로 같은 작업 사본을 공유한다.** 이 구조에서 나오는 두 가지 함정:
+  ① **Dropbox 충돌 사본이 라이브로 나갈 수 있다** — `publish_weekly.sh` §5는 `git add data/ issues/ states/ ./*.qmd`로 디렉터리째 스테이징하고 `_quarto.yml`의 `render:`는 `"*.qmd"` 같은 glob이다. 그래서 `senate (Woo's conflicted copy 2026-08-20).qmd` 하나가 생기면 스테이징→커밋→push→CI 렌더를 그대로 통과해 **낡은 중복 페이지가 공개된다**(문법이 정상이라 렌더도 검증도 오류로 보지 않는다). 2026-08-20 3중 방어 추가: `.gitignore` 패턴 · `_quarto.yml` 부정 glob · `publish_weekly.sh` 시작 시 하드 게이트.
+  ② **머신 종속 상태를 근거로 진단하지 말 것** — launchd plist·cron·로컬 캐시·로그 디렉터리는 한 머신에만 존재할 수 있다. "설치된 적 없음/실행된 적 없음"은 **커밋 이력으로 확인될 때만** 유효하다(스냅샷 건이 그 예다 — 파일시스템이 아니라 `data/history/`가 1건에 머문 사실이 근거였다).
+  발행 스크립트의 레포 경로는 하드코딩을 걷어내고 스크립트 위치에서 유도한다(`US_ELECTIONS_REPO`로 덮어쓰기 가능).
 - **추정치로 빈 칸을 채우지 말 것.** 모르는 값은 `null`로 두고 표에서는 `—` 또는 `【수집】` 슬롯으로 렌더링한다. 전문 독자에게 staleness·오류가 가장 큰 평판 리스크다.
 - **예측시장 가격은 확률의 근사일 뿐**이며 확률 자체가 아니다(유동성·편향 섞임).
 - **등급(Toss Up/Lean)은 확률이 아니다.** 모델·시장과 같은 잣대로 비교하지 말 것(표에서 `종류` 열로 구분).
