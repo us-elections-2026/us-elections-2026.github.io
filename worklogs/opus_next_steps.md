@@ -1,5 +1,10 @@
 # Opus Handoff: Data Reliability Improvements
 
+> **상태(2026-08-20 확인)**: ①data/README.md ②scripts/validate_data.R ③CI 연결 ⑤AGENTS.md 커밋
+> 은 모두 완료됐고, 미완이던 **④README.md 갱신**을 2026-08-20에 반영했다(governors·redistricting·
+> states 9주·scripts 목록·발행 머신 고정). **이 인계 문서의 요청 항목은 전부 닫혔다** —
+> 이후 작업은 `worklogs/worklog_2026-08-20.md`를 참조할 것.
+
 Please improve this Quarto + GitHub Pages repo with a focus on data reliability.
 
 ## Context

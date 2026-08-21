@@ -26,27 +26,50 @@ Mac mini (수집 + 정규화 → data/ 에 JSON/CSV 커밋)
 ├── korea-watch.qmd        # ★ Korea Watch (korea_watch.csv + 인물·법안 표)
 ├── methodology.qmd        # ★ 방법론 (수치 3종 구분·모델 개요·여론조사 리터러시)
 ├── scenarios.qmd          # ★ 상원 시나리오 (소수/50:50/다수, tipping-point, 한국 함의)
+├── governors.qmd          # ★ 주지사 36주 (등급·기관 비교·경선 캘린더·후보 프로필 카드)
+├── redistricting.qmd      # ★ 재획정 설명 (제도·배경·17주 현황·지도 비교·지역구 Δ)
 ├── senate.qmd             # 상원 경합주 표
 ├── trackers.qmd           # 최신 데이터 표 모음
 ├── archive.qmd            # 주간 호 아카이브 listing
 ├── about.qmd              # 소개(evergreen)
 ├── issues/                # 주간 호 (데이터=함수 렌더링, 분석=프로즈). 홈·archive listing.
-├── states/                # 경합 8주 State Focus (6섹션 표준 + gt_state_detail 카드)
-│   └── {ga,mi,nh,me,nc,tx,oh,ak}.qmd
-├── data/                  # ★ 정규화 데이터 — Mac mini가 여기에 커밋. 스키마는 data/README.md
+├── states/                # 상원 경합 9주 State Focus (6섹션 표준 + gt_state_detail 카드)
+│   └── {ga,mi,nh,me,nc,tx,oh,ak,ia}.qmd
+├── governors/             # ★ 주지사 경합 8주 State Focus (상원과 같은 6섹션 구조)
+│   └── {az,ga,oh,mi,wi,nv,ia,ks}.qmd
+├── data/                  # ★ 정규화 데이터 — 발행 머신이 여기에 커밋. 스키마는 data/README.md
 │   ├── forecast.json  generic_ballot.json  approval.json  trends.json  national_econ.json
 │   ├── senate_races.json  senate_primaries.json  candidates.json  fec_fundraising.json
-│   ├── model_dashboard.json  house_races.json
-│   ├── korea_watch.csv  polls_log.csv
+│   ├── senate_ratings_feed.json  ddhq_forecast.json  rtwh_forecast.json   # 등급·외부모델(자동)
+│   ├── governor_races.json  governor_polls.csv  governor_primaries.json
+│   ├── governor_ratings.json  governor_candidates.json                    # 주지사
+│   ├── house_races.json  house_cook_ratings.json  house_cook_districts.json
+│   ├── redistricting_states.json  redistricting_pres.json
+│   ├── kalshi_prices.json          # 예측시장 원가격(등급 환산값 아님)
+│   ├── approval_polls.csv  generic_polls.csv  pollster_series.json        # 개별 조사 원자료
+│   ├── model_dashboard.json  model_v0.json  senate_polls.csv              # 자체 모델
+│   ├── korea_watch.csv  polls_log.csv  rating_history.json  state_legislatures.json
+│   ├── _collection_ledger.json    # 수집 대장 (담당·차단 출처·미확보 gap)
 │   ├── README.md          # 데이터 스키마 문서 (필드·nullable·부호 규약·소비처)
-│   └── history/<YYYY-MM-DD>/   # 주간 스냅샷 (delta 추적)
+│   └── history/<YYYY-MM-DD>/   # 주간 스냅샷 (delta 추적) — publish_weekly.sh §4.5가 생성
 ├── assets/                # dashboard.{js,css}, trends.js, econ.js, candidates/ (후보 사진 PD·CC)
 ├── R/helpers.R            # 로딩·정규화·gt 표·카드 렌더링 헬퍼
 ├── scripts/
 │   ├── validate_data.R    # ★ data/ 스키마·파싱 검증 (CI publish 전 실행)
-│   ├── fetch_national_econ.py   # FRED → national_econ.json
-│   ├── fetch_fec_fundraising.py # FEC → fec_fundraising.json (스테이징)
-│   └── snapshot_and_publish.sh  # 주간 스냅샷 + launchd
+│   ├── publish_weekly.sh  # ★ 주간 발행 묶음 — 취득 → 검증 → 렌더 → 스냅샷 → 커밋·push
+│   ├── publish_issue.sh   # 주간호 단건 발행 헬퍼
+│   ├── fetch_national_econ.py     # FRED → national_econ.json
+│   ├── fetch_fec_fundraising.py   # FEC → fec_fundraising.json (스테이징)
+│   ├── fetch_cook_house.py        # 270towin 재게시 Cook 하원 등급 435개구 해독
+│   ├── fetch_senate_ratings.py  fetch_governor_ratings.py   # 등급 피드
+│   ├── fetch_kalshi_prices.py     # Kalshi 공개 API → 예측시장 원가격
+│   ├── fetch_ddhq_forecast.py  fetch_rtwh_forecast.py       # 외부 모델 확률
+│   ├── fetch_pollster_polls.py    # VoteHub → 개별 조사 원자료
+│   ├── sync_korea_watch.py        # _NIS DB → korea_watch.csv (append, idempotent)
+│   ├── build_forecast.py          # 예보 종합표 조립
+│   ├── snapshot_ratings.py        # 등급 변동만 rating_history에 축적
+│   └── snapshot_and_publish.sh    # 수동 실행 전용 (launchd에 걸지 않음)
+├── worklogs/              # 세션 인계 기록 (사이트로 렌더되지 않음)
 ├── theme/custom.scss      # 테마
 └── .github/workflows/publish.yml   # 검증 → Quarto render → gh-pages 배포
 ```
@@ -83,13 +106,18 @@ quarto render
 ## 데이터 갱신 (핵심)
 
 `data/`의 파일만 바꿔 커밋하면 사이트가 다시 빌드되어 표가 갱신됩니다.
-Mac mini의 launchd/cron 작업 끝에 다음을 붙이면 됩니다:
+주간 발행은 `scripts/publish_weekly.sh` 한 번으로 끝납니다 — 결정론 취득(FRED·FEC·등급·시장가)
+→ 데이터 검증 → 전체 렌더 → 주간 스냅샷 → 커밋 → `origin/main` rebase → push 순서입니다.
+검증과 렌더는 **하드 게이트**라, 깨지면 발행되지 않습니다.
 
 ```bash
-cd /path/to/midterm-kr
-# (수집 스크립트가 data/*.json 을 갱신)
-git add data/ && git commit -m "data: $(date +%F) 갱신" && git push
+scripts/publish_weekly.sh        # 레포 경로는 스크립트 위치에서 유도됨
+US_ELECTIONS_REPO=/other/path scripts/publish_weekly.sh   # 필요 시 경로 덮어쓰기
 ```
+
+> **발행 담당 머신은 Mac Studio 한 대로 고정합니다.** 두 로컬 머신이 Dropbox로 같은 작업 사본을
+> 공유하므로, launchd·API 키·발행 스크립트는 이 한 대에서만 돌립니다(자세한 함정은 `CLAUDE.md`
+> 「금지·주의」 참조). 다른 머신은 편집만 합니다.
 
 > **delta(주간 변화) 채우기**: 현재 시드 데이터의 `*_delta` 값은 `null`입니다.
 > 변화 추적을 자동화하려면 매주 직전 스냅샷을 보관(예: `data/history/2026-06-07/`)하고,
