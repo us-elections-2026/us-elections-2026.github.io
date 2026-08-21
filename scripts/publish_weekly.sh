@@ -13,11 +13,30 @@
 set -u
 export LANG=en_US.UTF-8
 export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
-REPO="$HOME/Library/CloudStorage/Dropbox/gitpages/us_elections.github.io"
+# 레포 경로는 스크립트 위치에서 유도한다(snapshot_and_publish.sh와 동일 방식).
+# 종전에는 Dropbox 경로를 하드코딩했는데, 그러면 클론을 옮기거나 머신마다 위치가
+# 다를 때 조용히 엉뚱한 사본을 발행한다. US_ELECTIONS_REPO로 덮어쓸 수 있다.
+REPO="${US_ELECTIONS_REPO:-$(cd "$(dirname "$0")/.." && pwd)}"
 
 cd "$REPO" || { echo "[weekly] repo 접근 불가: $REPO"; exit 1; }
+git rev-parse --git-dir >/dev/null 2>&1 || { echo "[weekly] git 레포가 아님: $REPO"; exit 1; }
 br=$(git branch --show-current)
 [ "$br" = "main" ] || { echo "[weekly] main 브랜치가 아님(현재 '$br') — 중단"; exit 1; }
+
+# Dropbox 동기화 충돌 사본 차단 — 하드 게이트.
+#   §5가 `git add data/ issues/ states/ ./*.qmd`로 디렉터리째 스테이징하고,
+#   _quarto.yml의 render 목록은 "*.qmd"·"issues/" 같은 glob이다. 따라서
+#   "senate (Woo's conflicted copy 2026-08-20).qmd" 한 개가 생기면
+#   스테이징 → 커밋 → push → CI가 glob으로 잡아 렌더 → 낡은 중복 페이지가
+#   그대로 라이브로 나간다. 렌더도 검증도 이걸 오류로 보지 않는다(문법은 정상).
+#   두 머신이 Dropbox로 같은 작업 사본을 공유하는 구조에서 실제로 발생 가능하다.
+conflicts=$(find . -path ./.git -prune -o \
+  \( -iname '*conflicted copy*' -o -iname '*충돌 사본*' -o -iname '*conflicted-copy*' \) -print 2>/dev/null)
+if [ -n "$conflicts" ]; then
+  echo "[weekly] ✗ Dropbox 충돌 사본이 있어 중단합니다 — 발행 전에 정리하세요:"
+  echo "$conflicts" | sed 's/^/    /'
+  exit 1
+fi
 
 echo "[weekly] 최신 main 동기화(pull --ff-only)"
 git fetch origin main -q && git merge --ff-only origin/main -q 2>/dev/null || echo "[weekly] (ff-only 불가 — 로컬 커밋 존재, 계속)"

@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-08-12",
+  "as_of": "2026-08-20",
   "source_note": "일자는 270toWin 2026 주별 경선 캘린더(https://www.270towin.com/2026-state-primary-calendar/) 기준. 후보 확정 사실은 MI·OH를 보도로 교차 확인했고, 나머지 주의 후보명은 Kalshi 계약 라벨 기준이라 공식 인증 결과와 대조하지 않았다(이름 표기 오류 가능). 경합 8주만 수록한다.",
   "rows": [
     {
@@ -62,8 +62,8 @@
       "state": "WI",
       "event": "양당 경선",
       "date": "2026-08-11",
-      "status": "집계 중",
-      "detail": "공화 — Tom Tiffany 압승(주 공화당·트럼프 지지) 확정. 민주 — **초박빙 미확정**: David Crowley(밀워키 카운티 행정관)와 Francesca Hong이 1%p 이내 접전으로 개표 92% 시점 3,000표 미만 차. 1%p 이내면 주 개표 확정 후 재검표 청구가 가능하다. Crowley는 7월 초 사퇴했다가 Rodriguez 사퇴 후 Evers 지지를 업고 재진입한 후보다."
+      "status": "완료",
+      "detail": "공화 — Tom Tiffany 96.2%(Andy Manske와 2인 경선) 확정. 민주 — **David Crowley 39.8% 대 Francesca Hong 39.3%**(약 3,000표·0.4%p, 개표 98% 시점)로 사이클 최대 접전. AP는 홍의 승복 후 8/12 새벽 2시 34분(중부시간) 콜 — **승복으로 1%p 이내 재검표 청구 가능성이 소멸**했다. Crowley는 7/8 경선 중도 하차 후 Rodriguez 사퇴를 계기로 7/18 복귀했고 Evers 주지사 지지를 업었다. 결과는 주 개표 인증 전까지 비공식이다."
     }
   ]
 }

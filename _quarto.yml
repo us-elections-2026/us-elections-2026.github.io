@@ -12,6 +12,10 @@ project:
     - "!README.md"
     - "!AGENTS.md"
     - "!worklogs/"
+    # Dropbox 충돌 사본은 렌더하지 않는다 — glob("*.qmd")에 걸려 낡은 중복 페이지가
+    # 라이브로 나가는 것을 막는 2차 방어선(1차는 .gitignore·publish_weekly.sh 가드).
+    - "!*conflicted copy*"
+    - "!*충돌 사본*"
   resources:
     - data/model_dashboard.json
     - data/model_v0.json

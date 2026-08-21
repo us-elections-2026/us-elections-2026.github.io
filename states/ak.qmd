@@ -16,12 +16,16 @@ cat(candidate_cards_html("AK"))
 gt_state_detail("AK")
 ```
 
-**Toss-up** — 올해 가장 크게 움직인 주입니다. 공화 현직 Dan Sullivan을, 2022년 최초의 알래스카 원주민(Yup'ik) 연방의원이 된 Mary Peltola(D)가 도전합니다. Cook은 **1월 Solid R → Lean R**(펠톨라 출마), 다시 **7/1 Lean R → Toss-up**으로 두 단계 올렸고 Sabato도 6/11에 Toss-up으로 옮겼습니다. 8/18 통합 예비선거(top-4)를 거쳐 11월 본선 RCV로 갑니다. 조사는 기관별 편차가 큽니다(아래 표) — 벤치마크는 NYT/Siena, 트래킹은 ASR.
+**Toss-up** — 올해 가장 크게 움직인 주입니다. 공화 현직 Dan Sullivan을, 2022년 최초의 알래스카 원주민(Yup'ik) 연방의원이 된 Mary Peltola(D)가 도전합니다. Cook은 **1월 Solid R → Lean R**(펠톨라 출마), 다시 **7/1 Lean R → Toss-up**으로 두 단계 올렸고 Sabato도 6/11에 Toss-up으로 옮겼습니다. **8/18 통합 예비선거(top-4)가 끝나 본선 4인 진용이 잡혔고**, 11월 본선은 RCV입니다. 조사는 기관별 편차가 큽니다(아래 표) — 벤치마크는 NYT/Siena, 트래킹은 ASR.
 
 ::: {.summary}
 - **구도**: 공화 방어 — 현역 Sullivan(R, 군사위) vs Peltola(D, 전 하원의원). **Cook·Sabato 모두 Toss-up**(Cook 7/1 이동).
-- **변화**: 동명이인 'Dan J. Sullivan'이 주 대법원 판결로 **8/18 투표용지 등재 확정**(6월의 예비 제외 결정이 뒤집힘) — FBI·주법무장관·연방검찰 수사 진행. top-4 경선+본선 RCV에서 유권자 혼동이 살아있는 변수.
+- **변화**: **8/18 예비 완료** — 펠톨라 48% · 현역 설리번 43% · 동명이인 **Daniel J. Sullivan Jr. 2.4%**(무당파 표기) · 4위는 Leslie(D) 1.1%와 Heikes(R)가 20표 차 미확정. 사이클 내내 최대 미지수였던 **동명이인 잠식률이 2.4%로 처음 실측**됐다(예비 집계, 인증 8/31 예정).
 - **한국 함의**: **Sullivan 인도태평양법(한국 명시)·한화 필리 조선소·Alaska LNG-POSCO**(직접 풍부).
+:::
+
+::: {.callout-warning appearance="simple"}
+**예비 득표율을 본선 마진으로 읽지 마세요.** top-4는 전 정당이 한 용지에서 겨루는 통합 경선입니다. 민주 성향 표는 펠톨라 한 명에 결집한 반면 공화 성향 표는 현역·동명이인·Heikes 등으로 갈렸으므로, **48–43이라는 간격은 본선 D+5를 뜻하지 않습니다.** 본선은 4명이 RCV로 겨루고, 탈락자의 2순위가 어디로 가느냐가 실제 승부를 정합니다.
 :::
 
 ## 1. 주 개요
@@ -32,8 +36,9 @@ gt_state_detail("AK")
 
 ## 2. 선거 제도
 
-- **Top-Four 오픈 경선 + 본선 RCV**: 2024년 RCV 폐지안(Ballot Measure 2)이 **743표(0.25%p) 차로 부결**돼 제도가 존치됐습니다. 8/18 통합 예비선거에서 정당 무관 상위 4명이 본선에 오르고, 11월 본선은 **순위선택투표(RCV)** — 과반 미달 시 최하위를 탈락시켜 차순위로 재배분합니다. Peltola가 2022년 이 방식으로 Palin을 꺾은 전례가 강점입니다. ([KTOO](https://www.ktoo.org/2024/12/10/the-recount-is-over-alaska-will-keep-ranked-choice-voting/))
-- **동명이인 'Dan J. Sullivan' 논란**: 현역(Dan S., Anchorage)과 이름·당이 같은 **Dan J. Sullivan**(Petersburg)이 출마했습니다. 현역 측·NRSC는 "민주 공작"이라 주장(부정), 선관위는 미들 이니셜로 구분하기로 했고 **2026-06-12 Dan J.를 투표용지에서 제외할 예비 결정**을 통지했습니다(최종 미확정). RCV 1차 집계에서 보수표 분산을 키울 변수였습니다. ([Alaska Public](https://alaskapublic.org/news/politics/2026-06-12/alaska-division-of-elections-intends-to-strike-u-s-senate-challenger-dan-sullivan-from-the-ballot))
+- **Top-Four 오픈 경선 + 본선 RCV**: 2024년 RCV 폐지안(Ballot Measure 2)이 **743표(0.25%p) 차로 부결**돼 제도가 존치됐습니다. 8/18 통합 예비선거에서 정당 무관 상위 4명이 본선에 올랐고, 11월 본선은 **순위선택투표(RCV)** — 과반 미달 시 최하위를 탈락시켜 차순위로 재배분합니다. Peltola가 2022년 이 방식으로 Palin을 꺾은 전례가 강점입니다. ([KTOO](https://www.ktoo.org/2024/12/10/the-recount-is-over-alaska-will-keep-ranked-choice-voting/))
+- **개표 일정**: 알래스카는 **8/18 소인이 찍힌 부재자 투표를 10일 뒤까지 접수**합니다. 선관위는 **8/25·8/28 갱신**을 예고했고 **최종 비공식 집계 8/28 · 공식 인증 8/31** 예정입니다. 아래 수치는 전부 **예비 집계**이며, 20표 차인 4위 확정은 이 일정에 달려 있습니다.
+- **동명이인 'Dan J. Sullivan' — 결말과 실측치**: 현역(Dan S., Anchorage)과 이름이 같은 **Dan J. Sullivan**(Petersburg, 전 산림청 직원·은퇴 교사)이 출마했습니다. 현역 측·NRSC는 "민주 공작"이라 주장했고 선관위는 **6/12 투표용지 제외 예비 결정**을 냈지만, 본인이 법정 다툼에서 이겨 **등재가 확정**됐습니다. 다만 표기가 갈렸습니다 — 현역은 **`Dan S. Sullivan · 공화 · 현역`**, 도전자는 **`Daniel J. Sullivan Jr. · 무당파`**로, 혼동을 줄이려는 조치였습니다. 결과는 **2.4%**. 즉 **당적과 이름 표기로 구분된 상태에서의 잠식률이 2.4%**라는 뜻이며, 아무 표시가 없었다면 어땠을지는 이 수치로 알 수 없습니다. 통신사기·공모 혐의에 대한 FBI·법무부·연방검찰 수사는 계속되고 대배심 소환장이 발부된 상태입니다. ([Alaska Public](https://alaskapublic.org/news/politics/elections/2026-08-18/u-s-senate-race-will-likely-have-two-dan-sullivans-and-a-mary-peltola))
 
 ## 3. roll-call / 입법 관심사
 
@@ -75,3 +80,5 @@ gt_state_fec("AK")
 - **직접 확인**: ① Sullivan의 **인도태평양 안보협력 법안이 한국을 동맹국으로 명시**(군사·억제 협력). ② 그가 주재한 조선 청문회·SHIPS Act 옹호가 **한화 필리 조선소**(한화오션 $5B) 확장과 직접 연결(MASGA·미·한 조선 협력 맥락). ③ **Alaska LNG–POSCO 잠정 합의**로 한국이 잠재 구매자.
 - **추정·미확인 구분**: DMZ 방문은 시점이 오래됐을 가능성(~2017, 미확인), LNG 한국 합의의 법적 구속력은 미확정, Peltola의 명태 알(roe) 한국 수출 연결은 산업 차원일 뿐 본인 직접 언급은 미확인입니다.
 - 신규 동향은 [Korea Watch](../korea-watch.qmd)에 기록합니다.
+
+*갱신 2026-08-20 — 8/18 top-4 예비 결과(예비 집계) 반영. 선관위 갱신 8/25·8/28, 인증 8/31 예정이므로 4위 확정과 최종 득표율은 그때 다시 반영합니다.*
