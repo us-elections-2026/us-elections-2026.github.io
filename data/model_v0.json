@@ -1,6 +1,6 @@
 {
   "version": "v0.1",
-  "run_date": "2026-08-17",
+  "run_date": "2026-08-24",
   "seed": 20261103,
   "n_sims": 10000,
   "assumptions": {
@@ -18,106 +18,106 @@
     {
       "state": "GA",
       "defense": "D",
-      "rating": "Lean D (Cook) / Likely D (Sabato 8/13 확인)",
+      "rating": "Lean D (Cook 8/20) / Likely D (Sabato 8/19) · Tilt D (Inside Elections)",
       "p_rating": 0.75,
       "p_market": 0.92,
-      "poll_margin": 10.4,
-      "n_polls": 2,
-      "p_poll": 0.958,
-      "p_blend": 0.89
+      "poll_margin": 8.2,
+      "n_polls": 3,
+      "p_poll": 0.914,
+      "p_blend": 0.871
     },
     {
       "state": "MI",
       "defense": "D",
-      "rating": "Toss Up (Cook·Sabato) — Daily Kos(당파) 8/12 Lean D→Toss-up 하향",
+      "rating": "Toss-up (Cook 8/20 · Sabato 8/19) — Fox News가 8/17 Lean D→Toss-up으로 내려 이번 주 유일한 친공화 이동",
       "p_rating": 0.5,
-      "p_market": 0.57,
-      "poll_margin": -5.3,
-      "n_polls": 3,
-      "p_poll": 0.191,
-      "p_blend": 0.397
+      "p_market": 0.61,
+      "poll_margin": 0.1,
+      "n_polls": 6,
+      "p_poll": 0.51,
+      "p_blend": 0.54
     },
     {
       "state": "NH",
       "defense": "D",
-      "rating": "Lean D",
+      "rating": "Lean D (Cook 8/20 · Sabato 8/19) — 2026년 중 이동 없음",
       "p_rating": 0.75,
-      "p_market": 0.88,
-      "poll_margin": 2.2,
-      "n_polls": 2,
-      "p_poll": 0.643,
-      "p_blend": 0.749
+      "p_market": 0.91,
+      "poll_margin": 5.8,
+      "n_polls": 3,
+      "p_poll": 0.832,
+      "p_blend": 0.835
     },
     {
       "state": "ME",
       "defense": "R",
-      "rating": "Toss Up (Cook·DDHQ)",
+      "rating": "Toss Up (Cook 8/20 · Sabato 8/19)",
       "p_rating": 0.5,
-      "p_market": 0.65,
+      "p_market": 0.69,
       "poll_margin": 2.7,
       "n_polls": 3,
       "p_poll": 0.671,
-      "p_blend": 0.618
+      "p_blend": 0.631
     },
     {
       "state": "NC",
       "defense": "R",
-      "rating": "Lean D (Cook·Sabato) / Tilt D (IE)",
+      "rating": "Lean D (Cook 8/20 · Sabato 8/19) / Tilt D (Inside Elections)",
       "p_rating": 0.75,
-      "p_market": 0.93,
-      "poll_margin": 10,
-      "n_polls": 7,
-      "p_poll": 0.952,
-      "p_blend": 0.89
+      "p_market": 0.91,
+      "poll_margin": 9.2,
+      "n_polls": 9,
+      "p_poll": 0.938,
+      "p_blend": 0.878
     },
     {
       "state": "TX",
       "defense": "R",
-      "rating": "Lean R (Cook·Sabato) / Lean R (IE 8월 초 Likely R→상향)",
-      "p_rating": 0.25,
+      "rating": "**Toss Up (Cook 8/20 — Lean R에서 상향)** / Lean R (Sabato 8/19) · Toss-up (Fox 8/17) · Lean R (Inside Elections)",
+      "p_rating": 0.5,
       "p_market": 0.48,
       "poll_margin": 1.7,
       "n_polls": 8,
       "p_poll": 0.611,
-      "p_blend": 0.471
+      "p_blend": 0.538
     },
     {
       "state": "OH",
       "defense": "R",
-      "rating": "Toss Up",
+      "rating": "Toss Up (Cook 8/20 · Sabato 8/19)",
       "p_rating": 0.5,
-      "p_market": 0.51,
+      "p_market": 0.52,
       "poll_margin": 3.8,
       "n_polls": 5,
       "p_poll": 0.739,
-      "p_blend": 0.6
+      "p_blend": 0.603
     },
     {
       "state": "AK",
       "defense": "R",
-      "rating": "Toss Up (Cook 7/1 이동)",
+      "rating": "Toss Up (Cook 8/20 · Sabato 8/19)",
       "p_rating": 0.5,
-      "p_market": 0.53,
+      "p_market": 0.61,
       "poll_margin": 0.8,
       "n_polls": 2,
       "p_poll": 0.552,
-      "p_blend": 0.531
+      "p_blend": 0.557
     },
     {
       "state": "IA",
       "defense": "R",
-      "rating": "Lean R (Cook·Sabato 6/3) / Tilt R (IE 8/6↓)",
-      "p_rating": 0.25,
+      "rating": "**Toss Up (Cook 8/20 — Lean R에서 상향)** / Lean R (Sabato 8/19) / Tilt R (Inside Elections)",
+      "p_rating": 0.5,
       "p_market": 0.44,
       "poll_margin": 0.9,
       "n_polls": 2,
       "p_poll": 0.56,
-      "p_blend": 0.437
+      "p_blend": 0.505
     }
   ],
-  "dem_majority_prob": 40.9,
+  "dem_majority_prob": 48,
   "seats": {
-    "mean": 49.59,
+    "mean": 49.96,
     "p05": 45,
     "p25": 48,
     "median": 50,
@@ -125,15 +125,15 @@
     "p95": 53
   },
   "seat_pmf": {
-    "44": 0.0205,
-    "45": 0.0429,
-    "46": 0.0723,
-    "47": 0.0856,
-    "48": 0.1139,
-    "49": 0.1218,
-    "50": 0.134,
-    "51": 0.1358,
-    "52": 0.1348,
-    "53": 0.1384
+    "44": 0.0185,
+    "45": 0.0361,
+    "46": 0.0579,
+    "47": 0.0699,
+    "48": 0.0989,
+    "49": 0.1098,
+    "50": 0.1286,
+    "51": 0.143,
+    "52": 0.152,
+    "53": 0.1853
   }
 }

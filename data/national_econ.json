@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-08-17",
+  "as_of": "2026-08-24",
   "series_start": "2026-01",
   "source_label": "FRED (St. Louis Fed) — BLS·미시간대 원자료",
   "provenance_note": "빌드 시점 스냅샷. null은 수집 실패 — 추정으로 채우지 않음.",

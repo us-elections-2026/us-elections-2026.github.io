@@ -1,256 +1,263 @@
 {
-  "as_of": "2026-08-16",
-  "facts_updated": "2026-08-16",
-  "source_label": "외부 예측 종합 — 예측시장 원가격(Kalshi) · 모델 확률(RtWH·DDHQ) · 등급(Cook·Sabato)",
-  "provenance_note": "이 대시보드는 자체 정성 추정 대신 외부 예측을 종합해 표시합니다(2026-07-29 전환). 종류가 다른 수치를 같은 잣대로 비교하지 마세요 — 등급(Cook·Sabato)은 확률이 아닌 서수적 전문가 판단, 예측시장 가격(Kalshi)은 확률의 근사일 뿐(유동성·편향 혼입)입니다. 2026-08-06부터 주별 % 는 270towin의 등급 환산값이 아니라 **Kalshi 공개 API의 원가격**을 직접 받아 9개 주 전부에 표시합니다(scripts/fetch_kalshi_prices.py). 외부 모델 확률은 원천에서 자동 취득한 것만 싣습니다 — Decision Desk HQ(예측 페이지 구조화 데이터, 모델 갱신 8/14)와 Race to the WH(Infogram 라이브 시계열, 8/16). 확인되지 않는 수치는 게재하지 않습니다. 기준 2026-08-16.",
-  "current_balance": "R 53 / D 47",
-  "dem_needed_net": 4,
-  "dem_majority_prob": 48,
-  "majority_note": "Kalshi 시장 48¢(전주 45¢) · 모델은 여전히 갈린다 — Race to the WH 55.2% vs Decision Desk HQ 45.0%(둘 다 원천 직접 확인, 8/14~8/16). 여기에 여론조사 기반 모델(G.E. Morris 55%·Silver Bulletin FLIPR 약 57%)이 이번 주 처음 민주 과반을 명목 favorite로 판정했다. 가격은 확률의 근사일 뿐이다.",
-  "net_expected_seats": 2,
-  "net_display": "+1~+3",
-  "states": [
-    {
-      "id": "ga",
-      "name": "조지아",
-      "nameEn": "Georgia",
-      "defense": "D",
-      "rating": "Lean D (Cook) / Likely D (Sabato)",
-      "prob": 92,
-      "matchup": "Ossoff (D·현직) vs Collins (R)",
-      "key_var": "콜린스 자질 악재 연쇄, Ossoff 자금 압도($42M vs 분기 $2.1M)",
-      "note": "% = Kalshi 오소프 재선 계약 92¢(8/16). 초당 합동 AARP 조사의 오소프 52–43(D+9)이 이번 주 최신 신호다. 콜린스는 서배너 유세에서 1·6 폭동 유죄자 보상 기금을 지지하는 듯한 입장을 보여 오소프에게 새 공격선을 줬고(AJC 8/12), 하원 윤리위의 인턴 급여 의혹 심리와 사위의 백인우월주의 계정 보도가 겹치며 보수 매체(워싱턴 이그재미너)조차 그의 선거운동을 '흐려졌다'고 표현했다. 사바토 Likely D 유지 — 9개 감시주 중 가장 안정된 방어주.",
-      "rating_cook": "Lean D",
-      "rating_sabato": "Likely D",
-      "rating_as_of": "Cook 8/5 Lean D 유지 · 사바토 8/13 지도에서 Likely D 유지",
-      "rating_history": "Cook: Toss-up →(4/13) Lean D · Sabato: Lean D(5/18 확인, 이동일 미확인) →(7/30) Likely D"
-    },
-    {
-      "id": "nc",
-      "name": "노스캐롤라이나",
-      "nameEn": "North Carolina",
-      "defense": "R",
-      "rating": "Lean D (Cook·Sabato)",
-      "prob": 93,
-      "matchup": "Cooper (D·전 주지사) vs Whatley (R)",
-      "key_var": "쿠퍼 두 자릿수 우위 재확인, 와틀리 인지도 상승에 따른 축소 경고",
-      "note": "% = Kalshi 쿠퍼 계약 93¢ — 감시 9주 중 최고가다. Elon대(7/23–31, LV) 쿠퍼 53–42와 Carolina Forward/Change Research(8/3–6) 50–43이 같은 주에 나와 최상급 탈환 기회임을 재확인했다. 단서도 같이 왔다 — Elon 조사책임자와 WRAL 모두 와틀리 인지도가 3월→7월 상승해 격차가 좁혀질 것으로 본다. 자금은 SLF가 공약한 $71M 중 여름에 $17M을 집행했고 SMP가 $11M으로 맞대응 중.",
-      "rating_cook": "Lean D",
-      "rating_sabato": "Lean D",
-      "rating_as_of": "Cook 8/5 · 사바토 8/13 지도 Lean D 유지 · Inside Elections Tilt D",
-      "rating_history": "Cook: Toss-up →(4/13) Lean D · Sabato: →(6/11) Lean D"
-    },
-    {
-      "id": "nh",
-      "name": "뉴햄프셔",
-      "nameEn": "New Hampshire",
-      "defense": "D",
-      "rating": "Lean D (Cook)",
-      "prob": 88,
-      "matchup": "Pappas (D) vs Sununu (R 예비 압도)",
-      "key_var": "9/8 경선 사실상 종결, 조사 편차(UNH +7 ↔ 에머슨 동률)",
-      "note": "% = Kalshi 민주 88¢. 이번 주 신규 조사 없음 — UNH 파파스 +7과 에머슨 45–44 동률 사이의 편차가 그대로다. 트럼프가 트루스소셜에서 존 E. 수누누에 '완전하고 전적인 지지'를 선언해 9/8 공화 경선이 사실상 종결됐고, 공화당은 경선 전인데도 파파스 겨냥 광고를 시작해 본선 국면으로 넘어갔다. 시장은 등급(Lean D)보다 민주에 후하다.",
-      "rating_cook": "Lean D",
-      "rating_sabato": "Lean D",
-      "rating_as_of": "Cook 8/5 · 사바토 8/13 Lean D 유지 — 2026년 중 이동 없음",
-      "rating_history": "Cook: 2025-02-11 이후 Lean D 무변경 · Sabato: 2025-03-12 Likely D→Leans D 이후 무변경"
-    },
-    {
-      "id": "mi",
-      "name": "미시간",
-      "nameEn": "Michigan",
-      "defense": "D",
-      "rating": "Toss-up (Cook·Sabato)",
-      "prob": 57,
-      "matchup": "El-Sayed (D, 8/4 지명) vs Rogers (R)",
-      "key_var": "경선 후 첫 주요 조사 로저스 +4 — 필수 방어주가 실질 열세로",
-      "note": "% = Kalshi 엘사예드 계약 57¢ — 조사와 시장이 정면으로 갈린 이번 주 유일한 주다. 폭스뉴스/Beacon&Shaw(8/6–10, RV 1,006) 로저스 51–엘사예드 47이 경선 이후 주요 언론사 첫 본선 조사로 '공화 선호 매치업' 가설에 데이터를 줬고, Glengariff(+10)·EPIC-MRA(46–43)와 함께 엘사예드가 뒤지거나 동률인 조사가 4연속이다. SLF는 총 $5,100만 투입을 확정했다. 그런데 시장은 여전히 민주 쪽 57¢ — 조사(R+4)와 가격(D 57)을 평균 내지 말고 격차를 그대로 볼 것.",
-      "rating_cook": "Toss-up",
-      "rating_sabato": "Toss-up",
-      "rating_as_of": "Cook 8/5 · 사바토 8/13 Toss-up 유지 (Daily Kos는 8/12 Lean D→Toss-up 하향)",
-      "rating_history": "양 기관 Toss-up 유지(공석 확정 후 이동 기록 없음)"
-    },
-    {
-      "id": "me",
-      "name": "메인",
-      "nameEn": "Maine",
-      "defense": "R",
-      "rating": "Toss-up",
-      "prob": 65,
-      "matchup": "Jackson (D, 7/25 인준) vs Collins (R·6선)",
-      "key_var": "1988년 경찰 기록 보도('플래트너 2.0'), 세 조사 모두 보도 이전 필드",
-      "note": "% = Kalshi 잭슨 계약 65¢. 8/12 뱅고어 데일리 뉴스가 1988년 포트켄트 경찰 보고서를 입수·보도해 지명자 잭슨이 두 번째 검증 위기를 맞았고, RNC는 '그레이엄 플래트너 2.0' 프레임을 가동했다(잭슨은 남성과의 싸움은 인정, 여성 폭력은 부인). 세 조사(폭스 48–46·UNH 파인트리 49–46·하트/SMP 49–45)는 모두 잭슨 근소 우위지만 전부 보도 이전 필드라 스캔들이 반영돼 있지 않다 — 사건 이후 첫 공개 조사가 진짜 시험대다. 반콜린스 구조(콜린스 호감 44/54)는 견고.",
-      "rating_cook": "Toss-up",
-      "rating_sabato": "Toss-up",
-      "rating_as_of": "Cook 8/5 · 사바토 8/13 Toss-up (Inside Elections는 Tilt R)",
-      "rating_history": "Cook: Toss-up(6/28 확인, 이동일 미확인) · Sabato: 8/13 피드에서 Toss-up 확인"
-    },
-    {
-      "id": "ak",
-      "name": "알래스카",
-      "nameEn": "Alaska",
-      "defense": "R",
-      "rating": "Toss-up (Cook 7/1)",
-      "prob": 53,
-      "matchup": "Peltola (D) vs Sullivan (R·현직)",
-      "key_var": "동명이인 잠식률 2.4% 실측 — 남은 변수는 11월 RCV 이전 배분",
-      "note": "% = Kalshi 민주 53¢. **8/18 top-4 예비 결과(예비 집계)**: Peltola(D) 48% · 현역 Dan S. Sullivan(R) 43% · **Daniel J. Sullivan Jr.**(피터즈버그, 무당파) **2.4%** · 4위는 David Leslie(D) 1.1%와 Gerald Heikes(R)가 20표 차 미확정. 동명이인의 잠식 득표율 2.4%가 이 예비의 실측치다 — 다만 투표용지가 'Dan S. Sullivan(공화·현역)' 대 'Daniel J. Sullivan Jr.(무당파)'로 구분 표기된 상태에서 나온 수치다. 개표는 부재자 접수 마감까지 이어져 8/25·8/28 갱신, 인증 예정 8/31 — 현재 수치는 예비 집계다. ASR 트래킹 최종 라운드(8/2–5, LV 1,371)의 펠톨라 50.8–설리번 49.2와 방향이 같고, 6월 NYT/시에나(설리번 +2)와는 여전히 엇갈린다. 동명이인에 대한 FBI·법무부·연방검찰의 통신사기·공모 수사는 계속된다. Polymarket은 펠톨라 ~86%(거품 감안).",
-      "rating_cook": "Toss-up (7/1)",
-      "rating_sabato": "Toss-up",
-      "rating_as_of": "Cook 7/1 Lean R→토스업 이동 · 사바토 8/13 Toss-up 유지",
-      "rating_history": "Cook: Solid R →(1월) Lean R →(7/1) Toss-up · Sabato: Safe R →(2026-01-12) Lean R →(6/11) Toss-up"
-    },
-    {
-      "id": "oh",
-      "name": "오하이오",
-      "nameEn": "Ohio",
-      "defense": "R",
-      "rating": "Toss-up (Cook 4/13)",
-      "prob": 51,
-      "matchup": "Brown (D·전 상원) vs Husted (R·임명직)",
-      "key_var": "폭스 브라운 +8 재확인 vs 집계 평균 +3.1 — 조사 편차가 본질",
-      "note": "% = Kalshi 브라운 51¢ 대 허스티드 49¢ — 시장에서도 동전 던지기다. 폭스뉴스/Beacon&Shaw(8/6–10, RV 1,008) 브라운 53–허스티드 45는 6월 폭스와 같은 +8로, 임명직 현역이 여름 내내 격차를 좁히지 못했음을 시사한다. 같은 조사에서 주지사 후보 라마스와미(R)는 앞서는데 허스티드만 뒤져 후보 개인 경쟁력 문제가 분리 확인됐다. 다만 조사 편차가 커(NYT/시에나 허스티드 +3·에머슨 초기 +6) Silver Bulletin 평균은 브라운 +3.1 — 폭스 단일치보다 훨씬 접전이다.",
-      "rating_cook": "Toss-up",
-      "rating_sabato": "Toss-up",
-      "rating_as_of": "Cook 8/5 · 사바토 8/13 Toss-up 유지",
-      "rating_history": "Cook: Lean R →(4/13) Toss-up, 이후 무변경 · Sabato: Leans R →(6/11) Toss-up"
-    },
-    {
-      "id": "tx",
-      "name": "텍사스",
-      "nameEn": "Texas",
-      "defense": "R",
-      "rating": "Lean R (Cook·Sabato)",
-      "prob": 48,
-      "matchup": "Talarico (D) vs Paxton (R)",
-      "key_var": "에머슨 팩스턴 +1로 7연속 우위 중단 — 확장 축 소폭 냉각",
-      "note": "% = Kalshi 탈라리코 계약 48¢. 에머슨/넥스타(8/9–10, LV 1,000) 팩스턴 47–탈라리코 46으로 봄 이후 팩스턴이 명목상 앞선 첫 공개 조사가 나오며 탈라리코의 7연속 우위 행진이 끊겼다. 연령 분화가 선명해(50세 미만 탈라리코 +15·50세 이상 팩스턴 +11) 투표층 구성 싸움으로 압축됐다. 텍사스 트리뷴 트래커 기준으로는 7월 말 이후에도 다수 조사가 여전히 탈라리코 우위라 동률 한 건이 흐름을 뒤집지는 않지만, '텍사스가 넘어간다'는 서사는 한 단계 식었다. Inside Elections는 8월 초 Likely R→Lean R로 민주 쪽 상향.",
-      "rating_cook": "Lean R",
-      "rating_sabato": "Lean R",
-      "rating_as_of": "Cook 8/5 · 사바토 8/13 Lean R 유지 · IE 8월 초 Likely R→Lean R",
-      "rating_history": "Cook: Likely R →(5/27) Lean R — 팩스턴 경선승(5/26) 여파 · Sabato: Lean R(6/28 확인, 이동일 미확인)"
-    },
-    {
-      "id": "ia",
-      "name": "아이오와",
-      "nameEn": "Iowa",
-      "defense": "R",
-      "rating": "Lean R (Cook·Sabato) / Tilt R (IE 8/6)",
-      "prob": 44,
-      "matchup": "Turek (D) vs Hinson (R)",
-      "key_var": "Ernst 은퇴 개방석, 공개 조사 상충(Fox D+4 ↔ NYT/Siena R+2), 현금 힌슨 3배",
-      "note": "% = Kalshi 튜렉 계약 44¢(전주 43¢). _NIS 상원 트랙이 8개 주만 전수 추적해 이번 주 아이오와는 서술 대상 밖이었다 — 등급 피드와 시장 원가격으로만 갱신했고 신규 공개 조사는 없다. Cook·Sabato는 6/3 Lean R 이후 유지, Inside Elections만 8/6 Tilt R로 내려 감시 9주 중 등급상 여전히 가장 공화 쪽이다.",
-      "rating_cook": "Lean R",
-      "rating_sabato": "Lean R",
-      "rating_as_of": "Cook·Sabato 6/3 Likely R→Lean R 이후 유지 · Inside Elections 8/6 Lean R→Tilt R",
-      "rating_history": "Cook: Likely R →(6/3) Lean R · Sabato: Likely R →(6/3) Leans R · IE: Lean R →(8/6) Tilt R"
-    }
-  ],
-  "scenarios": [
-    {
-      "id": "rtwh",
-      "name": "Race to the WH",
-      "subname": "확률 모델 · 원천 확인",
-      "prob": 55,
-      "prob_label": "55.2%",
-      "seats": "예상 의석 D 50.9 – R 49.1",
-      "majority": "민주 탈환 55.2%",
-      "desc": "Infogram 라이브 시계열에서 직접 취득(마지막 관측 Aug 16, 시계열 130점). 이 사이트가 종합하는 브리핑 원문에는 이 모델이 '공화 87.5% / 민주 12.5%'로 두 주 연속 기재돼 있으나, 원천 시계열에는 그런 값이 없다 — 실제 마지막 관측은 민주 55.2%이고 예상 의석도 D 50.9로 다수 문턱을 막 넘긴 상태다. 널리 인용되는 확률일수록 원천을 한 번 더 확인해야 하는 이유다."
-    },
-    {
-      "id": "ddhq",
-      "name": "Decision Desk HQ",
-      "subname": "확률 모델 · 원천 확인",
-      "prob": 45,
-      "prob_label": "45%",
-      "seats": "평균 의석 D 50 – R 50",
-      "majority": "공화 유지 55%",
-      "desc": "공개 예측 페이지의 구조화 데이터에서 직접 취득(모델 갱신 2026-08-14). 전주 43%에서 45%로 올랐다. 평균 의석 50–50은 확률이 아니라 시뮬레이션 평균이며, 50–50 의석은 부통령 캐스팅보트로 오히려 공화 다수를 뜻한다. 이 값이 예측시장 48¢와 3%p 차이라는 점이 중요하다 — 독립적인 모델과 시장이 사실상 같은 곳을 가리킨다."
-    },
-    {
-      "id": "inside",
-      "name": "등급가중 산수",
-      "subname": "자체 계산 · 컨센서스",
-      "prob": null,
-      "prob_label": "+1~+3석",
-      "seats": "민주 순증 +1 ~ +3",
-      "majority": "다수 문턱(+4) 미달",
-      "desc": "Solid/Likely=확정, Lean=75%, Toss-up=50% 가중. 확장(NC·ME·AK·OH·TX) ≈ +2.58 / 방어 손실(MI·NH·GA) ≈ −0.86 → 순 기대의석 ≈ +1.72석으로 문턱 +4에 명확히 미달(전주 ~+1.85에서 소폭 하락 — NC 재확인을 미시간 악화·텍사스 냉각이 상쇄). 등급은 전국 환경을 거의 반영하지 않으므로 모델·시장과 같은 잣대로 비교하지 말 것."
-    },
-    {
-      "id": "market",
-      "name": "예측시장 (Kalshi)",
-      "subname": "원가격 · 대표값",
-      "prob": 48,
-      "prob_label": "48%",
-      "seats": "NC 93¢ · GA 92¢ · NH 88¢ · ME 65¢ · MI 57¢ · AK 53¢ · OH 51¢ · TX 48¢ · IA 44¢",
-      "majority": "민주 다수 48%",
-      "desc": "Kalshi 상원 다수 계약(\"Will Democrats win the U.S. Senate in 2026?\") 민주 48¢ — 거래액 $308만·미결제약정 $153만의 두꺼운 시장이며 전주 45¢에서 3¢ 올랐다. 공개 API에서 원가격을 직접 받는다. 미시간이 특히 눈에 띈다 — 조사는 로저스 +4인데 시장은 엘사예드 57¢로, 시장이 여론조사보다 민주에 후하다. 가격은 확률의 근사일 뿐이며(유동성·편향 혼입) 모델과 같은 잣대로 평균 내지 말 것."
-    }
-  ],
-  "timeline": [
-    {
-      "date": "7/25",
-      "event": "ME 민주 지명전당대회",
-      "detail": "Troy Jackson 566–5 인준 → Collins 도전 확정 (3주 혼란 종결)",
-      "party": "dem",
-      "status": "done"
-    },
-    {
-      "date": "8/4",
-      "event": "MI 민주당 예비",
-      "detail": "El-Sayed 48.5–Stevens 47.5(약 1%p)로 승리 — 공화가 반긴 대진 성립",
-      "party": "dem",
-      "status": "done"
-    },
-    {
-      "date": "8/11",
-      "event": "SC 특별 공화 예비",
-      "detail": "D. Graham 33% – Norman 25%, 과반 미달로 8/25 결선 확정 (Safe R — 다수 산술 무영향)",
-      "party": "rep",
-      "status": "done"
-    },
-    {
-      "date": "8/12",
-      "event": "ME 잭슨 1988년 경찰 기록 보도",
-      "detail": "뱅고어 데일리 뉴스 보도 → RNC '플래트너 2.0' 공세. 기존 3조사는 모두 보도 이전 필드",
-      "party": "dem",
-      "status": "done"
-    },
-    {
-      "date": "8/18",
-      "event": "AK top-4 예비",
-      "detail": "AK top-4 예비 완료 — 동명이인 잠식 2.4%(무당파 표기). 펠톨라 48·현역 설리번 43. 4위 미확정, 인증 8/31",
-      "party": "neutral",
-      "status": "done"
-    },
-    {
-      "date": "8/25",
-      "event": "SC 특별 예비 결선",
-      "detail": "D. Graham vs Norman — 승자가 사실상 11월 당선 확정. 트럼프 지지 효과의 다음 시험대",
-      "party": "rep",
-      "status": "upcoming"
-    },
-    {
-      "date": "9/8",
-      "event": "NH 양당 경선",
-      "detail": "공화 Sununu(트럼프 지지로 사실상 종결) · 민주 Pappas — 9개 주 중 가장 늦은 경선",
-      "party": "rep",
-      "status": "upcoming"
-    },
-    {
-      "date": "9~10월",
-      "event": "본선 토론·광고전",
-      "detail": "슈퍼팩 투입 효과 가시화(SLF NC $71M·MI $51M·ME $42M+), 10월 서프라이즈",
-      "party": "neutral",
-      "status": "upcoming"
-    },
-    {
-      "date": "11/3",
-      "event": "선거일",
-      "detail": "2026 중간선거 투표일",
-      "party": "neutral",
-      "status": "upcoming"
-    }
-  ]
+ "as_of": "2026-08-23",
+ "facts_updated": "2026-08-23",
+ "source_label": "외부 예측 종합 — 예측시장 원가격(Kalshi) · 모델 확률(RtWH·DDHQ) · 등급(Cook·Sabato)",
+ "provenance_note": "이 대시보드는 자체 정성 추정 대신 외부 예측을 종합해 표시합니다(2026-07-29 전환). 종류가 다른 수치를 같은 잣대로 비교하지 마세요 — 등급(Cook·Sabato)은 확률이 아닌 서수적 전문가 판단, 예측시장 가격(Kalshi)은 확률의 근사일 뿐(유동성·편향 혼입)입니다. 2026-08-06부터 주별 % 는 270towin의 등급 환산값이 아니라 **Kalshi 공개 API의 원가격**을 직접 받아 9개 주 전부에 표시합니다(scripts/fetch_kalshi_prices.py). 외부 모델 확률은 원천에서 자동 취득한 것만 싣습니다 — Decision Desk HQ(예측 페이지 구조화 데이터, 모델 갱신 8/14)와 Race to the WH(Infogram 라이브 시계열, 8/16). 확인되지 않는 수치는 게재하지 않습니다. 기준 2026-08-16.",
+ "current_balance": "R 53 / D 47",
+ "dem_needed_net": 4,
+ "dem_majority_prob": 46,
+ "majority_note": "Kalshi 상원 다수 계약 민주 46¢(8/23, 전주 48¢) — 등급이 민주 쪽으로 크게 움직인 주에 시장가는 오히려 2¢ 내렸다. 모델은 여전히 갈린다 — Race to the WH 55.5%(8/23) vs Decision Desk HQ 46.0%(모델 갱신 8/21). 이번 주의 변화는 DDHQ가 45.0%→46.0%로 오르며 **예측시장과 사실상 같은 값에 붙었다**는 것이다(46 대 46). 그 반대편에 RtWH 55.5%가 홀로 서 있다. 가격은 확률의 근사일 뿐이며 평균 내지 말 것.",
+ "net_expected_seats": 2,
+ "net_display": "+1~+3",
+ "states": [
+  {
+   "id": "ga",
+   "name": "조지아",
+   "nameEn": "Georgia",
+   "defense": "D",
+   "rating": "Lean D (Cook) / Likely D (Sabato)",
+   "prob": 92,
+   "matchup": "Ossoff (D·현직) vs Collins (R)",
+   "key_var": "InsiderAdvantage +7로 중심값 재확인, 모금 약 20:1",
+   "note": "% = Kalshi 오소프 계약 92¢(8/23). InsiderAdvantage/James Magazine(8/16–17, LV 800, ±3.46)의 오소프 50–43이 이번 주 최신 실측이고, RCP 평균 +7.5와 함께 **오소프 +7이 방어 가능한 중심값**이다. 코버리지에 도는 AARP 52–43(7/13–16 필드)과 폭스 56–43(6/23–27)은 재게시된 옛 조사다 — 새 데이터로 평균에 넣지 말 것. NRSC가 오소프를 엘사예드·닉슨과 묶는 전국화 공세를 시작했고, 콜린스에게는 윤리위·연방수사가 계속 붙어 있다. 조기투표 약 7주 후로 감시 9주 중 첫 투표 개시.",
+   "rating_cook": "Lean D",
+   "rating_sabato": "Likely D",
+   "rating_as_of": "Cook 8/20 Lean D 유지 · 사바토 8/19 Likely D 유지 · Inside Elections Tilt D",
+   "rating_history": "Cook: Toss-up →(4/13) Lean D · Sabato: Lean D(5/18 확인, 이동일 미확인) →(7/30) Likely D"
+  },
+  {
+   "id": "nc",
+   "name": "노스캐롤라이나",
+   "nameEn": "North Carolina",
+   "defense": "R",
+   "rating": "Lean D (Cook·Sabato)",
+   "prob": 91,
+   "matchup": "Cooper (D·전 주지사) vs Whatley (R)",
+   "key_var": "High Point +5 — 사이클 첫 실질 축소 신호, 단 오차범위가 넓다",
+   "note": "% = Kalshi 쿠퍼 91¢. High Point대(8/3–12, LV 660, ±5.2, 8/21 공개) 쿠퍼 50–45가 사이클 첫 축소 신호이나 두 가지 단서가 붙는다 — (1) 쿠퍼는 50%를 지켰고 움직인 쪽은 왓틀리의 결집이다, (2) ±5.2에서 D+5와 D+11은 통계적으로 구분되지 않는다. High Point의 실사창(8/3–12)은 Carolina Journal/Harper(8/9–10, 51.5–39.0)와 거의 겹치는데 답은 7포인트 다르다. 정직한 서술은 '한 주 만에 5포인트 움직였다'가 아니라 **참값이 한 자릿수 중후반이고 8월 조사들이 그 위치에 대해 서로 다르다**는 것이다. 부재자 신청 9/4 개시 — 감시주 중 설득 기간이 가장 먼저 닫힌다.",
+   "rating_cook": "Lean D",
+   "rating_sabato": "Lean D",
+   "rating_as_of": "Cook 8/20 · 사바토 8/19 Lean D 유지 · Inside Elections Tilt D",
+   "rating_history": "Cook: Toss-up →(4/13) Lean D · Sabato: →(6/11) Lean D"
+  },
+  {
+   "id": "nh",
+   "name": "뉴햄프셔",
+   "nameEn": "New Hampshire",
+   "defense": "D",
+   "rating": "Lean D (Cook·Sabato)",
+   "prob": 91,
+   "matchup": "Pappas (D) vs Sununu (R 예비 압도)",
+   "key_var": "세인트앤셀름 D+7 — 사이클 최대 표본이 편차를 정리했다",
+   "note": "% = Kalshi 민주 91¢(전주 88¢). 세인트앤셀름(8/17–18, LV 1,411, ±2.6)이 이 사이클 뉴햄프셔 최대 표본·최소 오차로 파파스 48–41(수누누)·49–37(브라운)을 냈다. 그동안 이 주의 문제는 UNH +7과 에머슨 동률 사이의 편차였는데, 이 조사로 에머슨 동률과 Quantus의 수누누 우위가 이상치 쪽으로 밀렸다. 9/8 경선은 사실상 종결(민주 파파스 59–28 · 공화 수누누 54–24). **같은 조사의 주지사 문항은 에이요트 49–워밍턴 38로 R+11** — 한 표본 안에서 상원 D+7과 주지사 R+11이 동시에 나온다.",
+   "rating_cook": "Lean D",
+   "rating_sabato": "Lean D",
+   "rating_as_of": "Cook 8/20 · 사바토 8/19 Lean D 유지 — 2026년 중 이동 없음",
+   "rating_history": "Cook: 2025-02-11 이후 Lean D 무변경 · Sabato: 2025-03-12 Likely D→Leans D 이후 무변경"
+  },
+  {
+   "id": "mi",
+   "name": "미시간",
+   "nameEn": "Michigan",
+   "defense": "D",
+   "rating": "Toss-up (Cook·Sabato)",
+   "prob": 61,
+   "matchup": "El-Sayed (D, 8/4 지명) vs Rogers (R)",
+   "key_var": "8월 4개 조사가 11포인트 산포 — 판세 이동이 아니라 하우스 이펙트",
+   "note": "% = Kalshi 엘사예드 61¢(전주 56¢). 8월 조사 4건이 실사기간이 겹치는데도 11포인트 벌어졌다 — TIPP D+3(8/6–10, RV 1,528) · 폭스 R+4(8/6–10, RV 1,006) · AARP D+1(8/9–11, LV 877) · Susquehanna D+7(8/11–17, LV 800). 폭스와 TIPP는 **실사기간이 같은데 부호가 반대**다. 그래서 이건 움직이는 판세가 아니라 하우스 이펙트 문제로 읽는다. 초당 합동팀(파브리지오 워드 R + 임팩트 D)인 AARP가 앵커이고, 그 내부가 이 주의 핵심 변수다 — 로저스 50세 이상 +9(65세 이상 +13), 엘사예드 18–49세 +14인데 **투표 의향은 고령층이 훨씬 높다**(86% vs 71%). RCP 평균은 D+0.7. 지난주 이 칸에 적었던 '조사 대 시장'의 격차는 조사 쪽이 올라오면서 좁혀졌다.",
+   "rating_cook": "Toss-up",
+   "rating_sabato": "Toss-up",
+   "rating_as_of": "Cook 8/20 · 사바토 8/19 Toss-up 유지 · Fox News 8/17 Lean D→Toss-up(이번 주 유일한 친공화 이동)",
+   "rating_history": "양 기관 Toss-up 유지(공석 확정 후 이동 기록 없음)"
+  },
+  {
+   "id": "me",
+   "name": "메인",
+   "nameEn": "Maine",
+   "defense": "R",
+   "rating": "Toss-up (Cook·Sabato)",
+   "prob": 69,
+   "matchup": "Jackson (D, 7/25 인준) vs Collins (R·6선)",
+   "key_var": "스캔들 이후 11일째 공개 조사 공백 — 지도 최대 미확보 데이터",
+   "note": "% = Kalshi 민주 69¢(전주 66¢). 8/12 스캔들 보도 이후 **11일째 공개 조사가 하나도 없다**. 지금 도는 3건(폭스 D+2·UNH 파인트리 D+3·Hart/SMP D+4)은 전부 보도 이전 필드다. 이달 4개 기관이 10건을 민주 쪽으로 옮기는 동안 **메인만 아무도 옮기지 않았다** — 핵심 탈환 대상에서 그 사실 자체가 신호로 읽힌다. 콜린스는 'All of Maine' 버스투어로 공세 전환했고 민주 쪽 공개 이탈은 0명. 규율 항목: 콜린스는 2020년에도 이 시점에 뒤지다 8.6%p로 이겼다(다만 당시와 지금의 전국 환경은 약 14%p 다르다).",
+   "rating_cook": "Toss-up",
+   "rating_sabato": "Toss-up",
+   "rating_as_of": "Cook 8/20 · 사바토 8/19 Toss-up 유지 (Inside Elections는 Tilt R)",
+   "rating_history": "Cook: Toss-up(6/28 확인, 이동일 미확인) · Sabato: 8/13 피드에서 Toss-up 확인"
+  },
+  {
+   "id": "ak",
+   "name": "알래스카",
+   "nameEn": "Alaska",
+   "defense": "R",
+   "rating": "Toss-up (Cook·Sabato)",
+   "prob": 61,
+   "matchup": "Peltola (D) vs Sullivan (R·현직)",
+   "key_var": "예비선거 실측 D+5.3 — 조사가 아니라 개표",
+   "note": "% = Kalshi 펠톨라 61¢(전주 53¢) — **이번 주 감시 9주 중 최대 상승폭(+8¢)**. 8/18 top-4 예비에서 펠톨라 48.2–설리번 42.9(개표 93%)로 트럼프 지지 현직이 5.3%p 뒤졌다. 200만 달러+가 투입된 '동명이인 스포일러'는 합산 약 3.5%로 실패했고 법무부는 전신사기 혐의 대배심 소환장을 발부했다. **다만 예비 득표율은 본선 마진이 아니다** — 전 정당 통합 용지라 민주는 한 명에 결집했고 공화는 갈렸으며, 8월 예비 유권자층은 역사적으로 민주 성향이다. RCV 시뮬은 펠톨라 +1.6~+6. 개표는 8/25·8/28 갱신, 인증 8/31.",
+   "rating_cook": "Toss-up",
+   "rating_sabato": "Toss-up",
+   "rating_as_of": "Cook 7/1 Lean R→Toss-up 이후 유지(8/20 확인) · 사바토 8/17 Leans R→Toss-up",
+   "rating_history": "Cook: Solid R →(1월) Lean R →(7/1) Toss-up · Sabato: Safe R →(2026-01-12) Lean R →(6/11) Toss-up"
+  },
+  {
+   "id": "oh",
+   "name": "오하이오",
+   "nameEn": "Ohio",
+   "defense": "R",
+   "rating": "Toss-up (Cook·Sabato)",
+   "prob": 52,
+   "matchup": "Brown (D·전 상원) vs Husted (R·임명직)",
+   "key_var": "집계기관끼리 부호가 갈린다 — 감시 9주 중 편차 최대",
+   "note": "% = Kalshi 브라운 52¢(전주 51¢). Wedgewood 브라운 48–44(8/13 종료)가 최신이지만 실사 상세가 공표되지 않아 이 사이트 조사 DB에는 넣지 않았다. 문제는 단일 조사가 아니라 **집계기관끼리 부호가 갈린다**는 것이다 — RCP 브라운 +0.6 · PollingSource +5.3 · Pollsmax 허스티드 +1.8. 편차의 출처는 각 평균이 봄철 허스티드 우위 조사를 얼마나 남겨두느냐다. 상원 트랙 원문은 사바토가 8/17 Leans R→Toss-up으로 옮겼다고 적었으나, 이 사이트가 자동 취득하는 270towin 재게시 피드에서 사바토의 오하이오는 **6월 이래 Toss-up**이다 — 이번 주 하드 이동으로 세지 않는다. 외곽 자금은 지도상 공화에 가장 유리($79M 대 $40M).",
+   "rating_cook": "Toss-up",
+   "rating_sabato": "Toss-up",
+   "rating_as_of": "Cook 8/20 · 사바토 8/19 Toss-up 유지 — 사바토의 오하이오는 이 사이트 피드 기준 6월부터 Toss-up이다",
+   "rating_history": "Cook: Lean R →(4/13) Toss-up, 이후 무변경 · Sabato: Leans R →(6/11) Toss-up"
+  },
+  {
+   "id": "tx",
+   "name": "텍사스",
+   "nameEn": "Texas",
+   "defense": "R",
+   "rating": "Toss Up (Cook 8/20↑) / Lean R (Sabato)",
+   "prob": 48,
+   "matchup": "Talarico (D) vs Paxton (R)",
+   "key_var": "Cook 이동 사유가 환경이 아니라 후보 자질 — 광고비는 210:1",
+   "note": "% = Kalshi 탈라리코 48¢(전주 49¢). **Cook이 8/20 Lean R→Toss Up으로 옮겼다.** 사유가 특이하다 — 전국 환경이 아니라 후보 자질이다('팩스턴은 공화 자체 조사에서도 generic Republican보다 저조'). 여기에 광고비 비대칭이 겹쳤다: 탈라리코 $2,500만+ 대 팩스턴 $11.9만으로 약 **210:1**, 공화 가을 선매는 0원. 반대 신호는 에머슨의 팩스턴 47–46 하나인데 **실사기간이 원천 파일 간에 상충한다(8/9~10 vs 8/16~17) — 미확인으로 둔다**. RCP 평균은 탈라리코 +1.2. 분기점은 트럼프 슈퍼팩 5억 달러+의 텍사스 투입 여부(9/1 전후 선매). 등급이 민주 쪽으로 옮겨진 주에 **시장가는 1¢ 내렸다** — 등급과 시장이 이번 주 정확히 반대로 움직인 유일한 주다.",
+   "rating_cook": "Toss Up",
+   "rating_sabato": "Lean R",
+   "rating_as_of": "**Cook 8/20 Lean R→Toss Up** · 사바토 8/19 Lean R 유지 · Fox 8/17 Toss-up · Inside Elections Lean R",
+   "rating_history": "Cook: Likely R →(5/27) Lean R — 팩스턴 경선승(5/26) 여파 · Sabato: Lean R(6/28 확인, 이동일 미확인)"
+  },
+  {
+   "id": "ia",
+   "name": "아이오와",
+   "nameEn": "Iowa",
+   "defense": "R",
+   "rating": "Toss Up (Cook 8/20↑) / Lean R (Sabato) / Tilt R (IE)",
+   "prob": 44,
+   "matchup": "Turek (D) vs Hinson (R)",
+   "key_var": "Cook 이동 사유는 후보가 아니라 관세·유가·투입원가",
+   "note": "% = Kalshi 투렉 44¢(전주 45¢). **Cook이 8/20 Lean R→Toss Up으로 옮겼다**(텍사스와 같은 날). 사유를 그대로 옮기면 '후보 문제가 아니라(힌슨은 강한 후보) 관세·유가·투입원가'다. 비료·디젤 가격과 9/8 발효될 캐나다 보복관세(농기계·펄프 겨냥)가 직격하는 구조다. 같은 날 Cook은 아이오와 **주지사** 레이스도 Toss-up→Lean D로 옮겼다 — **상원·주지사가 동반 이동한 유일한 주**이고, 생활비 채널이 티켓 전체를 미는 사례로 읽힌다. 이번 주 신규 조사는 없다(도는 Fox D+4는 6/23–27 조사). 등급은 상향됐는데 시장가는 1¢ 내렸다.",
+   "rating_cook": "Toss Up",
+   "rating_sabato": "Lean R",
+   "rating_as_of": "**Cook 8/20 Lean R→Toss Up** · 사바토 8/19 Lean R 유지 · Inside Elections Tilt R",
+   "rating_history": "Cook: Likely R →(6/3) Lean R · Sabato: Likely R →(6/3) Leans R · IE: Lean R →(8/6) Tilt R"
+  }
+ ],
+ "scenarios": [
+  {
+   "id": "rtwh",
+   "name": "Race to the WH",
+   "subname": "확률 모델 · 원천 확인",
+   "prob": 55,
+   "prob_label": "55.5%",
+   "seats": "예상 의석 D 50.9 – R 49.1",
+   "majority": "민주 탈환 55.5%",
+   "desc": "Infogram 라이브 시계열에서 직접 취득(마지막 관측 Aug 23, 시계열 131점). 전주 55.2%에서 55.5%로 소폭 상승. 이 사이트가 종합하는 브리핑 원문이 이 모델을 '공화 87.5% / 민주 12.5%'로 기재하던 문제는 3주 연속 확인됐고, 원천 시계열에는 그런 값이 없다. 이제 이 모델은 네 수치 가운데 홀로 민주 과반을 가리킨다."
+  },
+  {
+   "id": "ddhq",
+   "name": "Decision Desk HQ",
+   "subname": "확률 모델 · 원천 확인",
+   "prob": 46,
+   "prob_label": "46.0%",
+   "seats": "평균 의석 D 50 – R 50",
+   "majority": "공화 유지 54.0%",
+   "desc": "공개 예측 페이지의 구조화 데이터에서 직접 취득(모델 갱신 2026-08-21). 전주 45.0%에서 46.0%로 올랐고, 그 결과 **Kalshi 시장가 46¢와 사실상 같은 값이 됐다**. 평균 의석 50–50은 확률이 아니라 시뮬레이션 평균이며, 50–50 의석은 부통령 캐스팅보트로 오히려 공화 다수를 뜻한다. 같은 기관이 제너릭 밸럿 D+7.5를 상원이 순수 접전이 되는 임계선으로 제시했는데, 현재 독립 평균은 D+6.0~6.7로 그 아래다."
+  },
+  {
+   "id": "inside",
+   "name": "등급가중 산수",
+   "subname": "자체 계산 · 컨센서스",
+   "prob": null,
+   "prob_label": "+2.1석",
+   "seats": "민주 순증 +1 ~ +3",
+   "majority": "다수 문턱(+4) 미달",
+   "desc": "Solid/Likely=확정, Lean=75%, Toss-up=50% 가중을 Cook(8/20)·Sabato(8/19) 두 기관 평균에 적용. 탈환 기대 ME .50 + NC .75 + AK .50 + OH .50 + TX .375 + IA .375 = 3.00, 방어 손실 GA .125 + MI .50 + NH .25 = 0.875 → **순 기대의석 +2.13석**. 전주를 같은 방식으로 다시 계산하면 +1.88석이므로 **주간 변화는 정확히 +0.25석**이고, 그 전부가 Cook의 TX·IA 두 건에서 나온다(각 +0.125). 등급 10건이 민주 쪽으로 움직인 주의 산술 상승분이 4분의 1석이라는 것이 이 주의 요점이다. 등급은 전국 환경을 거의 반영하지 않으므로 모델·시장과 같은 잣대로 비교하지 말 것."
+  },
+  {
+   "id": "market",
+   "name": "예측시장 (Kalshi)",
+   "subname": "원가격 · 대표값",
+   "prob": 46,
+   "prob_label": "46%",
+   "seats": "GA 92¢ · NC 91¢ · NH 91¢ · ME 69¢ · MI 61¢ · AK 61¢ · OH 52¢ · TX 48¢ · IA 44¢",
+   "majority": "민주 다수 46%",
+   "desc": "Kalshi 상원 다수 계약(\"Will Democrats win the U.S. Senate in 2026?\") 민주 46¢ — 거래액 $318만·미결제약정 $161만. **전주 48¢에서 2¢ 내렸다.** 개별 주 가격은 대부분 올랐는데(AK +8¢·MI +5¢·ME +3¢·NH +3¢) 다수 계약은 내렸다는 조합이 이번 주 시장의 특징이다. 반대로 등급이 상향된 TX·IA는 시장가가 각각 1¢ 내렸다. 가격은 확률의 근사일 뿐이며(유동성·편향 혼입) 모델과 평균 내지 말 것."
+  }
+ ],
+ "timeline": [
+  {
+   "date": "7/25",
+   "event": "ME 민주 지명전당대회",
+   "detail": "Troy Jackson 566–5 인준 → Collins 도전 확정 (3주 혼란 종결)",
+   "party": "dem",
+   "status": "done"
+  },
+  {
+   "date": "8/4",
+   "event": "MI 민주당 예비",
+   "detail": "El-Sayed 48.5–Stevens 47.5(약 1%p)로 승리 — 공화가 반긴 대진 성립",
+   "party": "dem",
+   "status": "done"
+  },
+  {
+   "date": "8/11",
+   "event": "SC 특별 공화 예비",
+   "detail": "D. Graham 33% – Norman 25%, 과반 미달로 8/25 결선 확정 (Safe R — 다수 산술 무영향)",
+   "party": "rep",
+   "status": "done"
+  },
+  {
+   "date": "8/12",
+   "event": "ME 잭슨 1988년 경찰 기록 보도",
+   "detail": "뱅고어 데일리 뉴스 보도 → RNC '플래트너 2.0' 공세. 기존 3조사는 모두 보도 이전 필드",
+   "party": "dem",
+   "status": "done"
+  },
+  {
+   "date": "8/18",
+   "event": "AK top-4 예비",
+   "detail": "펠톨라 48.2 – 현역 설리번 42.9(개표 93%, D+5.3). 동명이인 스포일러는 합산 ~3.5%로 실패, DOJ 전신사기 대배심 소환장 발부. 부재자 개표 8/25·8/28 갱신, 인증 8/31",
+   "party": "neutral",
+   "status": "done"
+  },
+  {
+   "date": "8/20",
+   "event": "Cook, TX·IA 토스업 편입",
+   "detail": "Cook이 텍사스·아이오와를 Lean R→Toss Up으로 옮기며 상원 전체를 \"공화 약간 우위의 토스업\"으로 규정 — 72시간 내 4개 기관 10건 민주 방향 이동의 마지막이자 이 사이트 피드가 확인한 하드 이동 2건",
+   "party": "dem",
+   "status": "done"
+  },
+  {
+   "date": "8/25",
+   "event": "SC 특별 예비 결선",
+   "detail": "D. Graham vs Norman — Safe R이라 다수 산술 무영향이나, 트럼프 지지 후보 3주 9패 이후 지지 효력의 다음 직접 시험대",
+   "party": "rep",
+   "status": "upcoming"
+  },
+  {
+   "date": "9/8",
+   "event": "NH 양당 경선",
+   "detail": "공화 Sununu(트럼프 지지로 사실상 종결) · 민주 Pappas — 9개 주 중 가장 늦은 경선",
+   "party": "rep",
+   "status": "upcoming"
+  },
+  {
+   "date": "9~10월",
+   "event": "본선 토론·광고전",
+   "detail": "슈퍼팩 투입 효과 가시화(SLF NC $71M·MI $51M·ME $42M+), 10월 서프라이즈",
+   "party": "neutral",
+   "status": "upcoming"
+  },
+  {
+   "date": "11/3",
+   "event": "선거일",
+   "detail": "2026 중간선거 투표일",
+   "party": "neutral",
+   "status": "upcoming"
+  }
+ ]
 }

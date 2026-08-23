@@ -1,7 +1,8 @@
 [
   {
-    "listing": "/archive.html",
+    "listing": "/index.html",
     "items": [
+      "/issues/2026-08-17.html",
       "/issues/2026-08-10.html",
       "/issues/2026-08-03.html",
       "/issues/2026-07-27.html",
@@ -26,8 +27,9 @@
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/archive.html",
     "items": [
+      "/issues/2026-08-17.html",
       "/issues/2026-08-10.html",
       "/issues/2026-08-03.html",
       "/issues/2026-07-27.html",
