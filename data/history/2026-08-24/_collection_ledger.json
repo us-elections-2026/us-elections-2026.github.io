@@ -1,0 +1,688 @@
+{
+  "as_of": "2026-08-20",
+  "purpose": "수집 대장 — 어떤 자료를 누가·어떻게 수집하며 지금 무슨 상태인지의 단일 기록. 두 가지 목적: ① 중복 수집 방지(수집 전에 여기부터 읽는다) ② 리뷰 대상 제공(데이터 PR의 근거를 여기에 대조한다). 스키마 정의는 data/README.md, 값의 출처 대조는 data/trends_verification.md.",
+  "rules": [
+    "수집을 시작하기 전에 이 파일을 먼저 읽는다. 해당 항목이 이미 '확보'이거나 다른 담당에게 배정돼 있으면 중복 수집하지 않는다.",
+    "사이트 제작 세션(웹 Claude Code 등)은 1차 자료를 직접 수집하지 않는다. data/를 소비하고, 없는 값은 gaps에 요청으로 기록한다.",
+    "blocked_sources에 있는 출처는 재시도하지 않는다. 새로 차단을 확인하면 여기에 추가한다 — 다음 세션이 같은 벽에 부딪히지 않게 하는 것이 이 절의 유일한 목적이다.",
+    "수집을 마치면 해당 항목의 last_updated·status를 갱신한다. 값만 커밋하고 대장을 그대로 두면 다음 세션이 다시 수집한다.",
+    "모르는 값은 추정으로 채우지 않는다(data/README.md 공통 규약). status를 '미확보'로 두고 gaps에 남긴다."
+  ],
+  "owners": {
+    "auto-script": "결정론 스크립트 산출 — scripts/publish_weekly.sh가 주 1회 일괄 실행(Cowork 루틴이 마지막에 호출). 사람·LLM이 값을 만들지 않는다. 고칠 게 있으면 값이 아니라 스크립트를 고친다.",
+    "cowork": "Claude Cowork 주간 루틴 — issue.qmd 프로즈 작성 + data/*.json 수치 정규화. publish_weekly.sh 헤더가 이 분담을 명시한다(\"LLM이 하는 프로즈 작성·수치 정규화는 이 스크립트 밖(루틴)에서 끝낸 상태로 가정한다\").",
+    "site": "Claude Code(클라우드) — 사이트 제작·페이지 편집. 1차 자료를 수집하지 않는다.",
+    "human": "사람 판단이 필요한 항목 — 모델 확률 입력, 감시주 편입·제외, 파일 폐기 결정."
+  },
+  "items": [
+    {
+      "item": "예측시장 원가격 (상원 다수 계약·상원 35·주지사 35)",
+      "files": [
+        "data/kalshi_prices.json"
+      ],
+      "owner": "auto-script",
+      "owner_status": "확정 — publish_weekly.sh §1.7",
+      "producer": "scripts/fetch_kalshi_prices.py",
+      "method": "Kalshi 공개 API (인증 불필요)",
+      "cadence": "주 1회 (scripts/publish_weekly.sh)",
+      "last_updated": "2026-08-12",
+      "status": "확보",
+      "note": "티커 신뢰 금지 — 주는 rules_primary, 사이클은 expected_expiration으로 판정. 270towin의 '등급 환산값'을 쓰지 말 것."
+    },
+    {
+      "item": "외부 모델 확률 — DecisionDeskHQ",
+      "files": [
+        "data/ddhq_forecast.json"
+      ],
+      "owner": "auto-script",
+      "owner_status": "확정 — publish_weekly.sh §1.7",
+      "producer": "scripts/fetch_ddhq_forecast.py",
+      "method": "votes.decisiondeskhq.com 스크래핑",
+      "cadence": "주 1회 (scripts/publish_weekly.sh)",
+      "last_updated": "2026-08-12",
+      "status": "확보",
+      "note": null
+    },
+    {
+      "item": "외부 모델 확률 — RaceToTheWH",
+      "files": [
+        "data/rtwh_forecast.json"
+      ],
+      "owner": "auto-script",
+      "owner_status": "확정 — publish_weekly.sh §1.7",
+      "producer": "scripts/fetch_rtwh_forecast.py",
+      "method": "racetothewh.com 스크래핑",
+      "cadence": "주 1회 (scripts/publish_weekly.sh)",
+      "last_updated": "2026-08-12",
+      "status": "확보",
+      "note": null
+    },
+    {
+      "item": "예보 종합표 (외부 모델·시장 병합)",
+      "files": [
+        "data/forecast.json"
+      ],
+      "owner": "auto-script",
+      "owner_status": "확정 — publish_weekly.sh §2.7",
+      "producer": "scripts/build_forecast.py",
+      "method": "파생 — ddhq/rtwh/kalshi를 병합",
+      "cadence": "주 1회 (scripts/publish_weekly.sh)",
+      "last_updated": "2026-08-12",
+      "status": "확보",
+      "note": "자동 생성 파일 — 직접 편집 금지. 반드시 자체 모델 v0 실행(§2.5) 뒤에 조립돼야 자체 모델 행이 최신값으로 들어간다."
+    },
+    {
+      "item": "상원 등급 피드 (270towin 컨센서스)",
+      "files": [
+        "data/senate_ratings_feed.json"
+      ],
+      "owner": "auto-script",
+      "owner_status": "확정 — publish_weekly.sh §1.6",
+      "producer": "scripts/fetch_senate_ratings.py",
+      "method": "270towin map_string 파싱",
+      "cadence": "주 1회 (scripts/publish_weekly.sh)",
+      "last_updated": "2026-08-12",
+      "status": "확보",
+      "note": "map_string 코드표는 CLAUDE.md 참조. 정렬 검증은 양방향으로 — 선거석이 9가 아닌지 + 비선거석이 9인지 둘 다."
+    },
+    {
+      "item": "주지사 등급 피드",
+      "files": [
+        "data/governor_ratings.json"
+      ],
+      "owner": "auto-script",
+      "owner_status": "확정 — publish_weekly.sh §1.6",
+      "producer": "scripts/fetch_governor_ratings.py",
+      "method": "270towin map_string 파싱",
+      "cadence": "주 1회 (scripts/publish_weekly.sh)",
+      "last_updated": "2026-08-12",
+      "status": "확보",
+      "note": null
+    },
+    {
+      "item": "하원 Cook 지역구별 등급",
+      "files": [
+        "data/house_cook_districts.json"
+      ],
+      "owner": "auto-script",
+      "owner_status": "확정 — publish_weekly.sh §1.5",
+      "producer": "scripts/fetch_cook_house.py",
+      "method": "270towin 파싱",
+      "cadence": "주 1회 (scripts/publish_weekly.sh)",
+      "last_updated": "2026-08-06",
+      "status": "확보",
+      "note": null
+    },
+    {
+      "item": "하원 Cook 등급 토플라인 (막대그래프용 7개 카테고리)",
+      "files": [
+        "data/house_cook_ratings.json"
+      ],
+      "owner": "auto-script",
+      "owner_status": "확정 — 충돌 해소",
+      "producer": "scripts/fetch_cook_house.py",
+      "method": "270towin 파싱",
+      "cadence": "주 1회 (scripts/publish_weekly.sh)",
+      "last_updated": "2026-08-03",
+      "status": "확보",
+      "note": "충돌 해소(2026-08-13): fetch_cook_house.py:148이 이 파일을 실제로 write하며 publish_weekly.sh §1.5가 호출한다. 2026-06-21 신설 당시엔 수동이었으나 2026-08-03 커밋('Cook 하원 등급 자동 취득 도입')으로 자동 전환됐다. CLAUDE.md의 '수동 갱신' 기술은 그때 갱신되지 않은 것이며 함께 정정했다. Solid는 토플라인−Likely−Lean 역산, 합계 435 검증."
+    },
+    {
+      "item": "경제 지표 (CPI YoY·실업률·미시간 소비자심리)",
+      "files": [
+        "data/national_econ.json"
+      ],
+      "owner": "auto-script",
+      "owner_status": "확정 — publish_weekly.sh §1",
+      "producer": "scripts/fetch_national_econ.py",
+      "method": "FRED API — 키는 ~/.claude/settings.json의 env (레포에 커밋 금지)",
+      "cadence": "주 1회 (scripts/publish_weekly.sh)",
+      "last_updated": "2026-08-12",
+      "status": "확보",
+      "note": "파일이 없으면 gt_national_econ()이 안내문을 렌더한다(빌드 안전)."
+    },
+    {
+      "item": "FEC 분기 모금 신고",
+      "files": [
+        "data/fec_fundraising.json"
+      ],
+      "owner": "auto-script",
+      "owner_status": "확정 — publish_weekly.sh §1",
+      "producer": "scripts/fetch_fec_fundraising.py",
+      "method": "FEC API — 키는 ~/.claude/settings.json의 env (레포에 커밋 금지)",
+      "cadence": "주 1회 (scripts/publish_weekly.sh)",
+      "last_updated": "2026-08-12",
+      "status": "확보",
+      "note": "각 주 State Focus의 분기 표는 gt_state_fec()가 이 파일에서 자동 렌더. senate_races.json 요약 상자 반영은 수동 병합(편집 통제)."
+    },
+    {
+      "item": "개별 여론조사 원자료 (순지지도·일반투표)",
+      "files": [
+        "data/approval_polls.csv",
+        "data/generic_polls.csv",
+        "data/pollster_series.json"
+      ],
+      "owner": "auto-script",
+      "owner_status": "확정 — publish_weekly.sh §1.8",
+      "producer": "scripts/fetch_pollster_polls.py",
+      "method": "VoteHub 공개 API (인증 불필요)",
+      "cadence": "주 1회 (scripts/publish_weekly.sh)",
+      "last_updated": "2026-08-07",
+      "status": "부분 확보",
+      "note": "피드가 6/29(순지지)·6/30(일반투표)에서 정지. 이후 구간은 상위 기관 몇 곳만 있는 부분 표본이므로 이동평균·하우스 이펙트 계산에서 제외한다. 집계 평균(approval.json·generic_ballot.json)과는 다른 층이며 값이 다른 것이 정상."
+    },
+    {
+      "item": "7월 수동 보충 조사분",
+      "files": [
+        "data/approval_polls_supplement.csv",
+        "data/generic_polls_supplement.csv"
+      ],
+      "owner": "cowork",
+      "owner_status": "확정 — 커밋 이력",
+      "producer": null,
+      "method": "기관 원본(탭 PDF·토플라인) 직접 전사",
+      "cadence": "피드 정지 구간 한정",
+      "last_updated": "2026-08-07",
+      "status": "부분 확보",
+      "note": "poll_id가 supp-로 시작. 2026-08-07 커밋 '7월 보충분 수집 — 피드가 멈춘 5주를 기관 원본으로 채웠다'. 피드가 해당 구간을 따라잡으면 피드 행에 자리를 내준다. Morning Consult 7월분·RMG 순지지 7월분은 원본 미확보로 싣지 않음."
+    },
+    {
+      "item": "Korea Watch DB",
+      "files": [
+        "data/korea_watch.csv"
+      ],
+      "owner": "auto-script",
+      "owner_status": "확정 — publish_weekly.sh §2",
+      "producer": "scripts/sync_korea_watch.py",
+      "method": "동기화 스크립트",
+      "cadence": "주 1회 (scripts/publish_weekly.sh)",
+      "last_updated": "2026-08-12",
+      "status": "확보",
+      "note": "스키마 고정 — 열 정의 변경 금지. 매일 append라 중복 누적 가능성 있음(dedup 래퍼 검토는 CLAUDE.md TODO)."
+    },
+    {
+      "item": "트럼프 국정지지율 집계 (Silver Bulletin 등 집계기관 평균)",
+      "files": [
+        "data/approval.json"
+      ],
+      "owner": "cowork",
+      "owner_status": "확정 — 주간 브리핑이 출처",
+      "producer": null,
+      "method": "주간 브리핑(issues/*.qmd)에서 사람이 전사",
+      "cadence": "주 1회",
+      "last_updated": "2026-08-12",
+      "status": "확보",
+      "note": "일부 행은 의도적으로 오래됨(USPollingData row_as_of 2026-06-12, note에 '신규 반영 대기'). 신선도 자동 검사를 붙일 때 이 행이 걸리지 않게 할 것."
+    },
+    {
+      "item": "제너릭 밸럿 집계",
+      "files": [
+        "data/generic_ballot.json"
+      ],
+      "owner": "cowork",
+      "owner_status": "확정 — 주간 브리핑이 출처",
+      "producer": null,
+      "method": "주간 브리핑에서 사람이 전사",
+      "cadence": "주 1회",
+      "last_updated": "2026-08-12",
+      "status": "확보",
+      "note": "USPollingData·Silver Bulletin 행은 dem/rep가 null이고 margin만 있다. 마진 재계산 검사를 붙일 때 null을 0으로 읽지 말 것."
+    },
+    {
+      "item": "전국 환경 주간 추이 (홈·전국환경 차트)",
+      "files": [
+        "data/trends.json"
+      ],
+      "owner": "cowork",
+      "owner_status": "확정 — 주간 브리핑이 출처",
+      "producer": null,
+      "method": "주간 브리핑에서 사람이 전사",
+      "cadence": "주 1회",
+      "last_updated": "2026-08-13",
+      "status": "확보 (일반투표 8주 결측)",
+      "note": "2026-08-12 20주 전량 원자료 대조 시행 — 정정 2·삭제 2. 대조 기록은 data/trends_verification.md. 값을 고치기 전에 반드시 읽을 것."
+    },
+    {
+      "item": "상원 경합주 카드 (9주)",
+      "files": [
+        "data/senate_races.json"
+      ],
+      "owner": "cowork",
+      "owner_status": "확정 — publish_weekly.sh 분담 + 커밋 이력",
+      "producer": null,
+      "method": "수동 편집",
+      "cadence": "주 1회",
+      "last_updated": "2026-08-12",
+      "status": "확보",
+      "note": "GA·MI·NH·ME·NC·TX·OH·AK·IA. 주 편입·제외 결정은 human. FEC 요약 상자는 fec_fundraising.json에서 수동 병합(편집 통제)."
+    },
+    {
+      "item": "상원 본선 여론조사 (모델 입력)",
+      "files": [
+        "data/senate_polls.csv"
+      ],
+      "owner": "cowork",
+      "owner_status": "확정 — 커밋 이력",
+      "producer": null,
+      "method": "수동 편집",
+      "cadence": "주 1회",
+      "last_updated": "2026-08-12",
+      "status": "확보",
+      "note": "자체 모델 v0의 입력. 이 파일이 갱신돼야 publish_weekly.sh §2.5의 모델 재실행이 의미를 갖는다."
+    },
+    {
+      "item": "상원 경선 캘린더·결과",
+      "files": [
+        "data/senate_primaries.json"
+      ],
+      "owner": "cowork",
+      "owner_status": "확정 — 커밋 이력",
+      "producer": null,
+      "method": "수동 편집",
+      "cadence": "경선 일정에 따라",
+      "last_updated": "2026-08-12",
+      "status": "확보",
+      "note": null
+    },
+    {
+      "item": "상원 후보 프로필 카드",
+      "files": [
+        "data/candidates.json"
+      ],
+      "owner": "cowork",
+      "owner_status": "확정 — 커밋 이력",
+      "producer": null,
+      "method": "수동 편집 + 사진(Wikimedia PD·CC만)",
+      "cadence": "경선 확정 시",
+      "last_updated": "2026-08-12",
+      "status": "확보",
+      "note": "status=nominee|primary. 사진 없으면 _placeholder.svg."
+    },
+    {
+      "item": "등급 변경 이력",
+      "files": [
+        "data/rating_history.json"
+      ],
+      "owner": "cowork",
+      "owner_status": "확정 — 확인 완료",
+      "producer": null,
+      "method": "수동 편집 (기관×주×월 매트릭스)",
+      "cadence": "등급 변동 시",
+      "last_updated": "2026-08-12",
+      "status": "확보",
+      "note": "확인 완료(2026-08-13): snapshot_ratings.py는 이 파일이 아니라 data/history/*_rating_snapshots.json을 쓴다. 이 파일은 편집 커밋으로만 갱신돼 온 수동 자산이다."
+    },
+    {
+      "item": "주지사 State Focus 레이스 데이터 (8주)",
+      "files": [
+        "data/governor_races.json"
+      ],
+      "owner": "cowork",
+      "owner_status": "확정 — 커밋 이력",
+      "producer": null,
+      "method": "수동 편집. 자금은 주(州) 선관위 신고 기준 — FEC 자동 취득 없음",
+      "cadence": "주 1회",
+      "last_updated": "2026-08-12",
+      "status": "확보",
+      "note": "AZ·GA·OH·MI·WI·NV·IA·KS."
+    },
+    {
+      "item": "주지사 본선 여론조사 DB",
+      "files": [
+        "data/governor_polls.csv"
+      ],
+      "owner": "cowork",
+      "owner_status": "확정 — 커밋 이력",
+      "producer": null,
+      "method": "수동 편집 — 전 행에 원문 URL 필수",
+      "cadence": "주 1회",
+      "last_updated": "2026-08-12",
+      "status": "확보",
+      "note": null
+    },
+    {
+      "item": "주지사 경선 캘린더",
+      "files": [
+        "data/governor_primaries.json"
+      ],
+      "owner": "cowork",
+      "owner_status": "확정 — 커밋 이력",
+      "producer": null,
+      "method": "수동 편집",
+      "cadence": "경선 일정에 따라",
+      "last_updated": "2026-08-06",
+      "status": "확보",
+      "note": null
+    },
+    {
+      "item": "주지사 후보 프로필 카드 (경합 8주 16명)",
+      "files": [
+        "data/governor_candidates.json"
+      ],
+      "owner": "cowork",
+      "owner_status": "확정 — 커밋 이력",
+      "producer": null,
+      "method": "수동 편집 + 사진(Wikimedia PD·CC만)",
+      "cadence": "경선 확정 시",
+      "last_updated": "2026-08-12",
+      "status": "확보",
+      "note": "candidates.json과 동일 스키마 + office 필드."
+    },
+    {
+      "item": "경합주 투표 마감일 (조기투표·등록·우편신청·우편반환)",
+      "files": [
+        "data/senate_races.json",
+        "data/governor_races.json"
+      ],
+      "owner": "cowork",
+      "owner_status": "확정",
+      "producer": null,
+      "method": "주 선관위 공식 페이지. 봇 차단 시 Internet Archive 스냅샷(날짜 명기) 또는 공식 PDF",
+      "cadence": "1회성 (선거일까지 갱신 없음, 단 KS 소송 결과 반영 필요)",
+      "last_updated": "2026-08-12",
+      "status": "확보 (KS 2건 미게시)",
+      "note": "경합 13주 확보 — 상원 9(GA·MI·NH·ME·NC·TX·OH·AK·IA) + 주지사 4(AZ·NV·WI·KS). 주의 3가지: ① KS 우편 반환은 소송 계류(법률=도착 기준 vs injunction=소인 허용, 현재 집행은 소인) — 사이트에 분쟁 상태 병기 필수 ② WI 조기투표 10/20~11/1은 법정 상한이지 전 지역 공통 일정이 아님(실제 일정은 municipal clerk 결정) ③ NV·KS는 주 공식 달력 미게시라 Clark County·Johnson County(카운티 출처)로 보완 — 출처 등급 구분 표기. 이 값들은 아직 독립 검증되지 않았다."
+    },
+    {
+      "item": "하원 경합구 트래커",
+      "files": [
+        "data/house_races.json"
+      ],
+      "owner": "cowork",
+      "owner_status": "확정 — 주간 자동 발행 커밋에 포함",
+      "producer": null,
+      "method": "수동 편집",
+      "cadence": "주 1회",
+      "last_updated": "2026-08-10",
+      "status": "확보",
+      "note": "Cook 토스업 상시 + Lean 주간 관리 2단 구조."
+    },
+    {
+      "item": "자체 모델 산출 (v0)",
+      "files": [
+        "data/model_v0.json"
+      ],
+      "owner": "auto-script",
+      "owner_status": "확정 — publish_weekly.sh §2.5",
+      "producer": "scripts/model/run_model.R",
+      "method": "senate_polls.csv·등급·시장가 블렌드 + 몬테카를로",
+      "cadence": "주 1회 (scripts/publish_weekly.sh)",
+      "last_updated": "2026-08-12",
+      "status": "확보",
+      "note": "입력(senate_polls.csv)이 갱신되지 않으면 재실행해도 값이 그대로다."
+    },
+    {
+      "item": "자체 모델 대시보드 (확률 입력)",
+      "files": [
+        "data/model_dashboard.json"
+      ],
+      "owner": "human",
+      "owner_status": "확정",
+      "producer": null,
+      "method": "사람이 확률 입력 — null은 '산정 전'으로 렌더",
+      "cadence": "주 1회",
+      "last_updated": "2026-08-12",
+      "status": "부분 확보",
+      "note": "모델 확률은 자동 산출이 아니라 사람 판단. NC Lean D prob 미입력 등은 CLAUDE.md TODO. dashboard.qmd가 런타임 fetch하므로 _quarto.yml resources 등록 필수."
+    },
+    {
+      "item": "재획정 현황·지역구 마진",
+      "files": [
+        "data/redistricting_states.json",
+        "data/redistricting_pres.json"
+      ],
+      "owner": "cowork",
+      "owner_status": "이력 근거 — 단일 커밋(2026-06-15)",
+      "producer": null,
+      "method": "수동 편집",
+      "cadence": "변동 시",
+      "last_updated": "2026-06-15",
+      "status": "확보",
+      "note": "17주 현황. 2026-06-15 신설 이후 미갱신 — 재획정 소송 진행분 반영이 필요한지 확인할 것. 갱신 주기가 사실상 없어 담당이 흐려지기 쉬운 항목이다."
+    },
+    {
+      "item": "주의회 구성",
+      "files": [
+        "data/state_legislatures.json"
+      ],
+      "owner": "cowork",
+      "owner_status": "이력 근거 — 단일 커밋(2026-08-03)",
+      "producer": null,
+      "method": "수동 편집",
+      "cadence": "변동 시",
+      "last_updated": "2026-08-03",
+      "status": "확보",
+      "note": null
+    },
+    {
+      "item": "여론조사 로그",
+      "files": [
+        "data/polls_log.csv"
+      ],
+      "owner": "human",
+      "owner_status": "폐기 판단 필요",
+      "producer": null,
+      "method": "수동 편집",
+      "cadence": null,
+      "last_updated": "2026-06-07",
+      "status": "미사용",
+      "note": "2026-06-07 최초 커밋 이후 한 번도 갱신되지 않았다. gt_polls_log() 헬퍼는 존재한다. 계속 쓸지 폐기할지 사람이 결정할 것 — 방치 상태로 두면 스키마 검증만 계속 통과하는 죽은 파일이 된다."
+    },
+    {
+      "item": "주간 데이터 스냅샷 (delta 추적용)",
+      "files": [
+        "data/history/<YYYY-MM-DD>/"
+      ],
+      "owner": "auto-script",
+      "owner_status": "확정 — publish_weekly.sh §4.5 (2026-08-13 편입)",
+      "producer": "scripts/publish_weekly.sh §4.5",
+      "method": "검증·렌더 통과분 data/*.json·csv를 직전 스냅샷과 비교해 변경 시에만 보관. 주간 발행 커밋에 함께 실림",
+      "cadence": "주 1회 (scripts/publish_weekly.sh)",
+      "last_updated": "2026-06-08",
+      "status": "복구 — 다음 주간 발행부터 축적",
+      "note": "2026-08-13 조사: 종전 담당이던 launchd(com.us-elections.snapshot)는 plist가 ~/Library/LaunchAgents/에 설치된 적이 없어 **한 번도 실행되지 않았다**(로그 디렉터리 /Users/kang/.cache/us-elections/ 미생성으로 확인). 스냅샷 커밋은 2026-06-08 1건(수동)뿐이었고 그동안 delta 추적이 불가능했다. CLAUDE.md가 '수집 파이프라인 스케줄러로 대체'라고 적고 있었으나 그 plist도 .disabled이고 run_pipeline.sh는 애초에 스냅샷을 하지 않는다. → 실행이 커밋으로 증명되는 publish_weekly.sh에 편입했다. snapshot_and_publish.sh는 수동 실행 전용으로 남기고 launchd에 걸지 않는다(이중 커밋 방지)."
+    },
+    {
+      "item": "등급 스냅샷 (변동 매트릭스 원천)",
+      "files": [
+        "data/history/senate_rating_snapshots.json",
+        "data/history/governor_rating_snapshots.json"
+      ],
+      "owner": "auto-script",
+      "owner_status": "확정 — publish_weekly.sh §1.6",
+      "producer": "scripts/snapshot_ratings.py",
+      "method": "등급 피드와 비교해 바뀐 주만 축적(동일하면 미기록)",
+      "cadence": "주 1회 (scripts/publish_weekly.sh)",
+      "last_updated": "2026-08-12",
+      "status": "확보",
+      "note": "rating_history.json과 다른 파일이다 — 이쪽이 자동 축적분, rating_history.json은 수동 편집분. 같은 data/history/ 아래 있지만 이쪽은 publish_weekly.sh 안에서 돌아 정상 작동해 왔고(2026-08-12 갱신), 주간 데이터 스냅샷은 launchd 미설치로 멈춰 있었다 — 경로가 다르면 생사도 다르다."
+    }
+  ],
+  "blocked_sources": [
+    {
+      "source": "The New York Times (nytimes.com) — NYT/Siena 벤치마크 조사 포함",
+      "blocked_for": [
+        "WebFetch",
+        "인앱 브라우저"
+      ],
+      "confirmed": "2026-08-13",
+      "confirmed_by": "두 세션이 독립적으로 확인",
+      "workaround": null,
+      "action": "재시도 금지. 대체 출처를 쓰거나 미확보로 둔다.",
+      "note": "이 행이 이 절의 존재 이유다 — 같은 벽을 두 번 발견하는 데 두 세션이 소모됐다."
+    },
+    {
+      "source": "주 선관위 — azsos.gov · nvsos.gov · elections.wi.gov",
+      "blocked_for": [
+        "WebFetch",
+        "Playwright 직접 접근"
+      ],
+      "confirmed": "2026-08-12",
+      "confirmed_by": "cowork",
+      "workaround": "web.archive.org를 셸 curl로 경유해 공식 페이지 스냅샷 확보 (스냅샷 날짜 명기). WebFetch로는 아카이브도 막힌다.",
+      "action": "직접 접근 시도하지 말고 우회 경로를 쓴다.",
+      "note": "OH·NH·AK 상원 마감일도 같은 방식으로 해결됐다."
+    },
+    {
+      "source": "Silver Bulletin · RealClearPolitics 원 집계 페이지",
+      "blocked_for": [
+        "자동 접근"
+      ],
+      "confirmed": "2026-08-12",
+      "confirmed_by": "site",
+      "workaround": null,
+      "action": "집계값은 주간 브리핑 전사에 의존한다. 브리핑↔원 집계 대조는 현재 불가능하며, 이것이 trends_verification.md의 명시된 검증 한계다.",
+      "note": "5월 저점 −20.1/−20.2/−21.2 충돌을 판정하지 못하는 이유."
+    },
+    {
+      "source": "Morning Consult 7월분 토플라인",
+      "blocked_for": [
+        "원본 접근"
+      ],
+      "confirmed": "2026-08-06",
+      "confirmed_by": "cowork",
+      "workaround": null,
+      "action": "싣지 않는다. 추정으로 채우지 말 것.",
+      "note": "피드분(~6월)도 유료라 원본 대조 못 함 — 미검증 상태."
+    },
+    {
+      "source": "Ipsos 피드분(~6월) 원본",
+      "blocked_for": [
+        "원본 접근"
+      ],
+      "confirmed": "2026-08-06",
+      "confirmed_by": "cowork",
+      "workaround": "7/29~8/3분은 Reuters/Ipsos 토플라인 PDF로 확보됨",
+      "action": "피드분은 미검증으로 표시 유지.",
+      "note": null
+    },
+    {
+      "source": "American Research Group 자사 발표 페이지",
+      "blocked_for": [
+        "자동 접근"
+      ],
+      "confirmed": "2026-08-06",
+      "confirmed_by": "cowork",
+      "workaround": "보도 인용 경유(2차 출처)",
+      "action": "2차 출처 검증임을 행에 표시.",
+      "note": null
+    },
+    {
+      "source": "일반 웹 전반 — Ballotpedia·Wikipedia·지역 언론·카운티 공식 페이지 포함",
+      "blocked_for": [
+        "WebFetch",
+        "셸 curl",
+        "web.archive.org 우회"
+      ],
+      "confirmed": "2026-08-20",
+      "confirmed_by": "claude-code 원격 세션",
+      "workaround": "WebSearch(검색 요약)는 동작한다 — 다만 원본 문서가 아니라 검색엔진 요약이므로 2차 출처로만 취급한다.",
+      "action": "원격(클라우드) 세션에서는 원본 대조를 시도하지 말 것. 원본 확인이 필요한 작업은 Mac mini 로컬 세션으로 넘긴다.",
+      "note": "이 환경의 아웃바운드는 에이전트 프록시가 통제하며 Anthropic·패키지 레지스트리·GitHub 외 도메인은 CONNECT 403으로 거절된다. 2026-08-20 주지사 카드 16명 전수 대조가 이 벽에 걸려 전부 2차 출처 기반으로 수행됐다."
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "일반투표 집계 3~5월 8주 결측",
+      "files": [
+        "data/trends.json"
+      ],
+      "detail": "3/23·3/30·4/6·4/20·4/27·5/4·5/11·5/18. 해당 주 브리핑이 일반투표 집계값을 인용하지 않았다.",
+      "raw_data_exists": true,
+      "raw_data_note": "generic_polls.csv에 이 8주의 개별 조사 88건이 저장돼 있다(주당 6~19건). 다만 개별 조사의 단순 평균은 집계기관 값과 다른 층이라 이것으로 메우면 안 된다.",
+      "needed": "RealClearPolling 등 집계기관의 당시 일별 평균 소급 취득",
+      "owner": "미정",
+      "priority": "중"
+    },
+    {
+      "gap": "4/13 트럼프 순지지 값 없음",
+      "files": [
+        "data/trends.json"
+      ],
+      "detail": "종전 −16.8이 어느 출처에도 없는 파생값으로 확인돼 2026-08-13 null로 삭제.",
+      "raw_data_exists": true,
+      "raw_data_note": "그 주 브리핑에 Silver Bulletin −16.3이 있다.",
+      "needed": "−16.3의 기준일이 시리즈의 다른 주(주중~주말 대표치)와 정합적인지 확인 후 되살릴지 결정",
+      "owner": "human",
+      "priority": "낮"
+    },
+    {
+      "gap": "5월 순지지 저점이 브리핑마다 −20.1/−20.2/−21.2로 충돌",
+      "files": [
+        "issues/2026-05-18.qmd",
+        "issues/2026-06-08.qmd",
+        "issues/2026-06-15.qmd",
+        "issues/2026-06-22.qmd",
+        "issues/2026-07-20.qmd",
+        "issues/2026-07-27.qmd"
+      ],
+      "detail": "당시 브리핑은 −20.1, 사후 브리핑들은 −20.2 또는 −21.2. trends.json은 당시 기재값 −20.1을 유지해 계열 자체에는 근거 없는 값이 없다.",
+      "raw_data_exists": false,
+      "raw_data_note": "Silver Bulletin 원 집계 접근 불가(blocked_sources 참조).",
+      "needed": "원 집계 확인. 그 전에는 아카이브 수정 여부(삭제/각주/정정)가 편집 정책 결정 사항.",
+      "owner": "human",
+      "priority": "중"
+    },
+    {
+      "gap": "KS 우편 신청·반환 마감일 미게시",
+      "files": [
+        "data/governor_races.json"
+      ],
+      "detail": "주 공식 달력 미게시. 반환 규칙 자체가 소송 계류 중(법률=도착 기준 vs injunction=소인 허용).",
+      "raw_data_exists": false,
+      "raw_data_note": null,
+      "needed": "주 공식 게시 대기 또는 소송 결과 확정 시 갱신",
+      "owner": "cowork",
+      "priority": "중"
+    },
+    {
+      "gap": "WI 조기투표 실제 일정 (municipal clerk별)",
+      "files": [
+        "data/governor_races.json"
+      ],
+      "detail": "확보한 10/20~11/1은 법정 상한 구간이지 전 지역 공통 일정이 아니다.",
+      "raw_data_exists": false,
+      "raw_data_note": null,
+      "needed": "단정 표기 금지. 상한임을 명시하거나 주요 카운티별로 별도 취득.",
+      "owner": "cowork",
+      "priority": "낮"
+    },
+    {
+      "gap": "VoteHub 피드 정지 — 7월 이후 개별 조사 부분 표본",
+      "files": [
+        "data/approval_polls.csv",
+        "data/generic_polls.csv"
+      ],
+      "detail": "피드가 6/29(순지지)·6/30(일반투표)에서 멈춤. 이후는 상위 기관 몇 곳만.",
+      "raw_data_exists": false,
+      "raw_data_note": null,
+      "needed": "피드 복구 여부 확인, 또는 수동 보충 계속",
+      "owner": "mac-mini",
+      "priority": "중"
+    },
+    {
+      "gap": "AZ·NV·WI·KS 마감일 독립 검증 안 됨",
+      "files": [
+        "data/governor_races.json"
+      ],
+      "detail": "2026-08-12 수집분은 단일 세션의 아카이브 스냅샷 판독에 의존한다. 특히 KS 소인/도착 판정은 법적 분쟁 상태를 읽어낸 것이라 재확인이 필요하다.",
+      "raw_data_exists": true,
+      "raw_data_note": "아카이브 스냅샷 URL은 수집 세션이 보유.",
+      "needed": "제2 검토자의 원문 교차확인 (특히 KS·WI)",
+      "owner": "미정",
+      "priority": "높"
+    },
+    {
+      "gap": "delta 자동화 — 비교 가능한 스냅샷이 아직 1주치",
+      "files": [
+        "data/history/"
+      ],
+      "detail": "2026-08-13 스냅샷 경로를 publish_weekly.sh §4.5로 복구했으나, 현재 보유 스냅샷은 2026-06-08 1건이다. 편집 3원칙 ②의 *_delta 자동 계산은 연속한 2주치가 쌓인 뒤에야 가능하다.",
+      "raw_data_exists": false,
+      "raw_data_note": "2026-06-08 스냅샷과 현재 값의 차이는 두 달치라 '지난 주 대비'로 쓸 수 없다.",
+      "needed": "주간 발행 2회 경과 후 delta 계산 스크립트 추가. 그 전까지 표의 *_delta는 수동 기재 유지.",
+      "owner": "auto-script",
+      "priority": "중"
+    }
+  ]
+}

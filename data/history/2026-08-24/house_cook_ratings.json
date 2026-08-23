@@ -1,0 +1,51 @@
+{
+  "as_of": "2026-08-13",
+  "source_label": "Cook Political Report (270towin 재게시 · 자동 취득)",
+  "source_url": "https://www.270towin.com/2026-house-election/index_show_table.php?map_title=cook-political-report-2026-house-ratings",
+  "majority": 218,
+  "note": "scripts/fetch_cook_house.py가 270towin에 게시된 Cook 등급 문자열(435개구)을 해독해 자동 생성한다. Solid는 역산이 아니라 지역구별 등급의 직접 집계다. 등급은 확률이 아니다.",
+  "categories": [
+    {
+      "key": "solid_d",
+      "label": "Solid D",
+      "party": "D",
+      "seats": 184
+    },
+    {
+      "key": "likely_d",
+      "label": "Likely D",
+      "party": "D",
+      "seats": 11
+    },
+    {
+      "key": "lean_d",
+      "label": "Lean D",
+      "party": "D",
+      "seats": 10
+    },
+    {
+      "key": "tossup",
+      "label": "Toss-up",
+      "party": "T",
+      "seats": 19
+    },
+    {
+      "key": "lean_r",
+      "label": "Lean R",
+      "party": "R",
+      "seats": 9
+    },
+    {
+      "key": "likely_r",
+      "label": "Likely R",
+      "party": "R",
+      "seats": 20
+    },
+    {
+      "key": "solid_r",
+      "label": "Solid R",
+      "party": "R",
+      "seats": 182
+    }
+  ]
+}

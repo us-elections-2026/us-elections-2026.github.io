@@ -1,0 +1,89 @@
+{
+  "as_of": "2026-08-20",
+  "rows": [
+    {
+      "state": "NC",
+      "event": "양당 경선",
+      "date": "2026-03-03",
+      "status": "완료",
+      "detail": "Cooper(D) 92.0% · Whatley(R) 64.6%로 각각 지명 — 본선 대진 확정(Tillis 은퇴 의석). 9개 감시주 중 가장 먼저 대진이 굳은 곳이라 본선 조사의 신뢰도가 높다."
+    },
+    {
+      "state": "OH",
+      "event": "특별선거 양당 경선",
+      "date": "2026-05-05",
+      "status": "완료",
+      "detail": "Brown(D)이 민주 지명 확보, 현직 임명자 Husted(R)는 무경쟁. Vance 사퇴로 생긴 잔여 임기(2년)를 채우는 특별선거."
+    },
+    {
+      "state": "TX",
+      "event": "공화당 결선",
+      "date": "2026-05-26",
+      "status": "완료",
+      "detail": "Paxton 63.8% vs 현직 Cornyn 약 35% — 3/3 1차에서 과반 미달로 간 결선에서 30년 현직을 격파. 이 결과로 Cook이 Likely R→Lean R 하향(5/31)."
+    },
+    {
+      "state": "IA",
+      "event": "양당 경선",
+      "date": "2026-06-02",
+      "status": "완료",
+      "detail": "민주 — Josh Turek 62.7%로 Zach Wahls(주 상원의원) 격파 · 공화 — Ashley Hinson(연방하원 IA-02) 74.2%로 Jim Carlin 제압. Ernst 은퇴로 열린 개방석이라 양당 모두 경선이 실질 경쟁이었다. 수치는 아이오와 주무장관 공식 개표(Canvass Summary)."
+    },
+    {
+      "state": "GA",
+      "event": "공화당 결선",
+      "date": "2026-06-16",
+      "status": "완료",
+      "detail": "Collins 55.5% vs Dooley 44.5% → 본선 진출(현역 Ossoff 상대). 트럼프 막판 Collins 지지, Kemp는 Dooley 지지."
+    },
+    {
+      "state": "ME",
+      "event": "민주 지명전당대회 (Platner 사퇴 후)",
+      "date": "2026-07-25",
+      "status": "완료(후보 교체)",
+      "detail": "Platner 6/9 경선 승리 → 성폭행 의혹으로 7/10 사퇴 → 7/25 뱅고어 전당대회에서 Troy Jackson(전 주상원의장)을 566–5로 인준. 7/27 등재 마감 준수."
+    },
+    {
+      "state": "MI",
+      "event": "민주당 경선",
+      "date": "2026-08-04",
+      "status": "완료",
+      "detail": "El-Sayed 48.5% – Stevens 47.5% – McMorrow 4.0%(개표 99%). 8대 1 자금 열세와 당 주류의 반대를 뒤집은 1%p 신승. 본선은 Rogers(R)와 맞대결 — 예비 전 유일한 본선 가상조사는 Rogers +10.3이었다."
+    },
+    {
+      "state": "SC",
+      "event": "공화 특별 예비선거 (감시 9주 밖)",
+      "date": "2026-08-11",
+      "status": "완료(과반 미달 → 결선)",
+      "detail": "Graham(R) 별세(7/11)로 생긴 공석. 공화 10명이 겨룬 결과 임명 현역 Darline Graham 33% · Ralph Norman 하원의원 25%로 누구도 50%에 미치지 못해 8/25 결선 확정. 사전 에머슨 조사(노먼 22·D.그레이엄 19·프라이 12·샌포드 11)를 뒤집고 임명 현역이 선두에 올랐다. Safe R이라 경합주 산술은 바뀌지 않으나, 트럼프가 지지한 후보가 33%에 그친 점이 브랜드 시험대."
+    },
+    {
+      "state": "AK",
+      "event": "통합 예비선거 (top-4)",
+      "date": "2026-08-18",
+      "status": "완료(예비 집계)",
+      "detail": "통합 예비선거(top-4) 실시 — Peltola(D) 48% · 현역 Dan S. Sullivan(R) 43% · **Daniel J. Sullivan Jr.**(피터즈버그, 무당파) **2.4%** · 4위는 David Leslie(D) 1.1%와 Gerald Heikes(R)가 20표 차 미확정. 동명이인의 잠식 득표율 2.4%가 이 예비의 실측치다 — 다만 투표용지가 'Dan S. Sullivan(공화·현역)' 대 'Daniel J. Sullivan Jr.(무당파)'로 구분 표기된 상태에서 나온 수치다. 개표는 부재자 접수 마감까지 이어져 8/25·8/28 갱신, 인증 예정 8/31 — 현재 수치는 예비 집계다. 상위 4명이 11월 RCV 본선에 진출한다. **top-4 예비 득표율은 본선 마진이 아니다**: 전 정당이 한 용지에서 겨루므로 민주는 펠톨라 한 명에 결집한 반면 공화 계열은 여러 후보로 갈렸다."
+    },
+    {
+      "state": "SC",
+      "event": "공화 특별 예비 결선 (조건부)",
+      "date": "2026-08-25",
+      "status": "확정(실시)",
+      "detail": "8/11 1차에서 과반 득표자가 없어 실시 확정 — Darline Graham(33%) vs Ralph Norman(25%). 승자가 사실상 11월 당선을 확정하며, 트럼프 지지 효과의 다음 직접 시험대다(TN-5 오글스 경선 패배 이후)."
+    },
+    {
+      "state": "NH",
+      "event": "공화당 경선",
+      "date": "2026-09-08",
+      "status": "예정",
+      "detail": "Sununu 우세 — Emerson 3월 48 vs Brown 19, 4월 집계 평균 51 vs 21. 트럼프 지지 확보."
+    },
+    {
+      "state": "NH",
+      "event": "민주당 경선",
+      "date": "2026-09-08",
+      "status": "예정",
+      "detail": "Pappas 사실상 단일 구도 (집계 평균 Pappas 66 vs Manzur 13, 4/23)."
+    }
+  ]
+}
