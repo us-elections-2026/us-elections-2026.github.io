@@ -1071,7 +1071,8 @@ rating_tiles_html <- function() {
   cons <- tryCatch({
     f <- .load_json("senate_ratings_feed")
     i <- which(f$sources$label == "270toWin Consensus")
-    if (length(i)) list(rt = f$sources$ratings, i = i[1], as_of = f$sources$as_of[i[1]]) else NULL
+    if (length(i)) list(rt = f$sources$ratings, i = i[1], as_of = f$sources$as_of[i[1]],
+                        fetched = f$fetched_at) else NULL
   }, error = function(e) NULL)
   b <- vapply(.single_rating(s), .rating_bucket, character(1))
   # Cook과 Sabato가 갈리는 주는 타일에 표시해, 단일 등급으로 보이지 않게 한다.
@@ -1123,8 +1124,13 @@ rating_tiles_html <- function() {
     sprintf('<div class="rtile %s"><div class="rt-num">%d</div><div class="rt-lab">%s</div><div class="rt-states">%s</div></div>',
             x[2], length(members), x[3], states)
   }, character(1))
+  # 날짜는 두 층위다 — 원천 기관이 등급을 매긴 날(as_of)과 이 사이트가 그것을 받아온 날(fetched_at).
+  # 하나만 적으면 "지금 최신인가"를 독자가 판단할 수 없다(2026-08-28 분리).
+  stamp <- if (!is.null(cons$fetched) && nzchar(cons$fetched))
+    sprintf('등급 기준일 <b>%s</b> · 사이트 반영 <b>%s</b>', cons$as_of, cons$fetched)
+  else sprintf('등급 기준일 <b>%s</b>', cons$as_of)
   src <- if (!is.null(cons))
-    sprintf('<p class="rt-src">분류 기준: <b>270toWin 컨센서스</b>(기준 %s) — 상원 지도와 같은 출처, <b>이번 개선 35석 전체</b>(다섯 타일 합 = 35). 양끝 안전권은 주명을 생략하고 수만 표시합니다. 링크 없는 주는 감시 9주 밖의 경합 판정 주. ◆는 Cook과 Sabato 평가가 갈리는 주로, 개별 등급은 <a href="/senate.html#races">경합주 표</a>와 <a href="/dashboard.html">대시보드</a>에서 확인하세요.</p>', cons$as_of)
+    sprintf('<p class="rt-src">분류 기준: <b>270toWin 컨센서스</b> — %s. 상원 지도와 같은 출처, <b>이번 개선 35석 전체</b>(다섯 타일 합 = 35). 두 날짜가 다른 것은 정상입니다 — 평가기관이 등급을 새로 내지 않으면 반영일만 갱신됩니다. 양끝 안전권은 주명을 생략하고 수만 표시합니다. 링크 없는 주는 감시 9주 밖의 경합 판정 주. ◆는 Cook과 Sabato 평가가 갈리는 주로, 개별 등급은 <a href="/senate.html#races">경합주 표</a>와 <a href="/dashboard.html">대시보드</a>에서 확인하세요.</p>', stamp)
   else ""
   paste0('<div class="rating-tiles">', paste(tiles, collapse = ""), "</div>", src)
 }

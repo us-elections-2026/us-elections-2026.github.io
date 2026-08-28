@@ -21,6 +21,7 @@ import os
 import re
 import sys
 import urllib.request
+from datetime import datetime, timezone
 
 URL = "https://www.270towin.com/2026-senate-election/"
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
@@ -70,7 +71,10 @@ def main():
     if unknown_states:
         print(f"[senate] 목록 밖 주: {unknown_states}", file=sys.stderr); return 1
 
-    out = {"generated_from": URL, "n_races": len(race), "sources": []}
+    # fetched_at = 이 사이트가 피드를 받아온 날. 각 source의 as_of(원천 기관의 등급 기준일)와
+    # 다른 층위다 — 등급이 8/20자여도 우리가 그걸 반영한 건 8/23일 수 있다. 둘을 함께 노출한다.
+    out = {"generated_from": URL, "fetched_at": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+           "n_races": len(race), "sources": []}
     for slug, label in SOURCES:
         objs = re.findall(r'\{[^{}]*"url_title":"' + re.escape(slug) + r'"[^{}]*\}', html)
         if not objs:

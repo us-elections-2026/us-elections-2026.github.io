@@ -12,6 +12,7 @@ a=D1(Tilt D)·b=R1(Tilt R). 출처 원본 정의의 전사이며 추정이 아�
 산출물: data/governor_ratings.json
 """
 import argparse, json, os, re, sys, urllib.request
+from datetime import datetime, timezone
 
 URL = "https://www.270towin.com/2026-governor-election/"
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
@@ -50,7 +51,9 @@ def main():
     with urllib.request.urlopen(req, timeout=40) as r:
         html = r.read().decode("utf-8", "ignore").replace("\\/", "/").replace('\\"', '"')
 
-    out = {"generated_from": URL, "n_races": 50 - len(NO_RACE), "sources": [], "state_names_kr": KR}
+    # fetched_at = 취득일(원천 기관의 등급 기준일 as_of와 다른 층위 — fetch_senate_ratings.py 주석 참조)
+    out = {"generated_from": URL, "fetched_at": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+           "n_races": 50 - len(NO_RACE), "sources": [], "state_names_kr": KR}
     for slug, label in SOURCES:
         objs = re.findall(r'\{[^{}]*"url_title":"' + re.escape(slug) + r'"[^{}]*\}', html)
         if not objs:

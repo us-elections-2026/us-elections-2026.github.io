@@ -1,5 +1,6 @@
 {
  "generated_from": "https://www.270towin.com/2026-senate-election/",
+ "fetched_at": "2026-08-28",
  "n_races": 35,
  "sources": [
   {
@@ -58,7 +59,7 @@
   {
    "key": "sabatos-crystal-ball-senate-2026",
    "label": "Sabato's Crystal Ball",
-   "as_of": "2026-08-19",
+   "as_of": "2026-08-26",
    "ratings": {
     "AK": "Toss-up",
     "AL": "Solid R",
@@ -91,7 +92,7 @@
     "SC": "Solid R",
     "SD": "Solid R",
     "TN": "Solid R",
-    "TX": "Lean R",
+    "TX": "Toss-up",
     "VA": "Solid D",
     "WV": "Solid R",
     "WY": "Solid R"
@@ -105,7 +106,7 @@
     "ME": "Toss-up",
     "AK": "Toss-up",
     "OH": "Toss-up",
-    "TX": "Lean R"
+    "TX": "Toss-up"
    }
   },
   {
@@ -164,7 +165,7 @@
   {
    "key": "split-ticket-2026-senate-ratings",
    "label": "Split Ticket",
-   "as_of": "2026-08-19",
+   "as_of": "2026-08-25",
    "ratings": {
     "AK": "Toss-up",
     "AL": "Solid R",
@@ -217,16 +218,16 @@
   {
    "key": "almanac-american-politics-2026-senate-handicapping",
    "label": "Almanac of American Politics",
-   "as_of": "2026-08-19",
+   "as_of": "2026-08-24",
    "ratings": {
-    "AK": "Lean R",
+    "AK": "Toss-up",
     "AL": "Solid R",
     "AR": "Solid R",
     "CO": "Solid D",
     "DE": "Solid D",
     "FL": "Solid R",
     "GA": "Lean D",
-    "IA": "Lean R",
+    "IA": "Toss-up",
     "ID": "Likely R",
     "IL": "Solid D",
     "KS": "Likely R",
@@ -243,14 +244,14 @@
     "NH": "Lean D",
     "NJ": "Solid D",
     "NM": "Solid D",
-    "OH": "Lean R",
+    "OH": "Toss-up",
     "OK": "Solid R",
     "OR": "Solid D",
     "RI": "Solid D",
     "SC": "Solid R",
     "SD": "Solid R",
     "TN": "Solid R",
-    "TX": "Lean R",
+    "TX": "Toss-up",
     "VA": "Solid D",
     "WV": "Solid R",
     "WY": "Solid R"
@@ -262,15 +263,15 @@
     "NH": "Lean D",
     "MI": "Toss-up",
     "ME": "Toss-up",
-    "AK": "Lean R",
-    "OH": "Lean R",
-    "TX": "Lean R"
+    "AK": "Toss-up",
+    "OH": "Toss-up",
+    "TX": "Toss-up"
    }
   },
   {
    "key": "fox-news-2026-senate-power-rankings",
    "label": "Fox News Power Rankings",
-   "as_of": "2026-07-22",
+   "as_of": "2026-08-25",
    "ratings": {
     "AK": "Toss-up",
     "AL": "Solid R",
@@ -282,12 +283,12 @@
     "IA": "Toss-up",
     "ID": "Solid R",
     "IL": "Solid D",
-    "KS": "Solid R",
+    "KS": "Likely R",
     "KY": "Solid R",
     "LA": "Solid R",
     "MA": "Solid D",
     "ME": "Toss-up",
-    "MI": "Lean D",
+    "MI": "Toss-up",
     "MN": "Likely D",
     "MS": "Solid R",
     "MT": "Solid R",
@@ -303,7 +304,7 @@
     "SC": "Solid R",
     "SD": "Solid R",
     "TN": "Solid R",
-    "TX": "Lean R",
+    "TX": "Toss-up",
     "VA": "Solid D",
     "WV": "Solid R",
     "WY": "Solid R"
@@ -313,17 +314,17 @@
     "GA": "Lean D",
     "NC": "Lean D",
     "NH": "Lean D",
-    "MI": "Lean D",
+    "MI": "Toss-up",
     "ME": "Toss-up",
     "AK": "Toss-up",
     "OH": "Toss-up",
-    "TX": "Lean R"
+    "TX": "Toss-up"
    }
   },
   {
    "key": "decision-desk-hq-2026-senate-forecast",
    "label": "Decision Desk HQ",
-   "as_of": "2026-08-17",
+   "as_of": "2026-08-25",
    "ratings": {
     "AK": "Toss-up",
     "AL": "Solid R",
@@ -340,9 +341,9 @@
     "LA": "Likely R",
     "MA": "Solid D",
     "ME": "Toss-up",
-    "MI": "Toss-up",
+    "MI": "Lean D",
     "MN": "Likely D",
-    "MS": "Solid R",
+    "MS": "Likely R",
     "MT": "Likely R",
     "NC": "Likely D",
     "NE": "Likely R",
@@ -366,7 +367,7 @@
     "GA": "Likely D",
     "NC": "Likely D",
     "NH": "Likely D",
-    "MI": "Toss-up",
+    "MI": "Lean D",
     "ME": "Toss-up",
     "AK": "Toss-up",
     "OH": "Toss-up",
@@ -429,7 +430,7 @@
   {
    "key": "kalshi-2026-senate-prediction-market-prices",
    "label": "Kalshi (예측시장 가격)",
-   "as_of": "2026-08-23",
+   "as_of": "2026-08-28",
    "ratings": {
     "AK": "Tilt D",
     "AL": "Solid R",
@@ -447,12 +448,12 @@
     "MA": "Solid D",
     "ME": "Lean D",
     "MI": "Tilt D",
-    "MN": "Likely D",
+    "MN": "Solid D",
     "MS": "Solid R",
     "MT": "Solid R",
     "NC": "Solid D",
     "NE": "Lean R",
-    "NH": "Solid D",
+    "NH": "Likely D",
     "NJ": "Solid D",
     "NM": "Solid D",
     "OH": "Toss-up",
@@ -471,7 +472,7 @@
    "watch": {
     "GA": "Solid D",
     "NC": "Solid D",
-    "NH": "Solid D",
+    "NH": "Likely D",
     "MI": "Tilt D",
     "ME": "Lean D",
     "AK": "Tilt D",
