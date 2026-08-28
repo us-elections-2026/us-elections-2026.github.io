@@ -107,8 +107,13 @@
           if (box) box.insertAdjacentHTML("afterend", legendHTML(item[1], labels.length, item[2]));
         });
 
+        // 값이 전주와 같으면 선이 평평해 "갱신이 멈춘 것"처럼 보인다.
+        // 마지막 실측 주를 앞에 명시해 '변화 없음'과 '반영 안 됨'을 구분한다(2026-08-28).
+        const last = d.weeks[d.weeks.length - 1];
         const s = document.getElementById("trends-note");
-        if (s) s.textContent = d.source;
+        if (s) s.textContent =
+          "마지막 반영 주: " + last.label + " (" + last.date + " 주간, 데이터 기준 " + d.as_of + ") — "
+          + "값이 전주와 같으면 선이 평평하게 그려집니다. " + d.source;
       })
       .catch(function () {
         const r = document.getElementById("trends-root");
