@@ -26,7 +26,7 @@ Mac mini (수집 + 정규화 → data/ 에 JSON/CSV 커밋) → git push
 - `_quarto.yml` — 사이트 설정. `execute-dir: project`(작업경로=루트 고정), `freeze: false`(데이터 변경 시 매 빌드 재계산).
 - `R/helpers.R` — `data/` 로딩·정규화·`gt` 표 렌더링 헬퍼. `gt_forecast()` `gt_generic()` `gt_generic_spread()` `gt_approval()` `gt_senate()` `gt_senate_primaries()` `gt_state_detail()` `gt_polls_log()` `gt_model_states()` `gt_model_scenarios()` `model_kpi()` `house_cook_bar_html()` `gt_house_races()` `gt_korea_watch()` `candidate_cards_html()` `governor_cards_html()` `gt_state_fec()` `gt_governor_detail()` `gt_governor_polls()` `governor_money_html()`.
 - `index.qmd` — 홈(상원 전망 요약 KPI + 환경 스냅샷 + 이슈 listing). `trackers.qmd` — 최신 표 모음. `senate.qmd` — 경합주 표. `dashboard.qmd` — ★ 자체 모델 대시보드. `about.qmd` — evergreen 소개.
-- `dashboard.qmd` + `assets/dashboard.{js,css}` — 인터랙티브 대시보드(Chart.js). `data/model_dashboard.json`을 런타임 `fetch`로 읽어 KPI·확률차트·시나리오·주별카드·타임라인 렌더. JS 비활성 환경 대비 `gt_model_states()`/`gt_model_scenarios()` 정적 표도 함께 렌더. **데이터 갱신 = `data/model_dashboard.json` 한 파일만 편집 → push → 자동 재빌드.** `fetch` 대상이라 `_quarto.yml`의 `project.resources`에 등록돼 있어야 `_site/`로 복사됨.
+- `dashboard.qmd` + `assets/dashboard.{js,css}` — 인터랙티브 대시보드(Chart.js). `data/model_dashboard.json`을 런타임 `fetch`로 읽어 KPI·확률차트·시나리오·주별카드·타임라인 렌더. ⚠️ **JS 비활성 환경 폴백은 현재 끊겨 있다(2026-08-29 확인)** — `gt_model_scenarios()`는 `scenarios.qmd`에서 쓰이지만 `gt_model_states()`는 어느 `.qmd`에서도 호출되지 않아, `dashboard.html`은 `#dash-kpis`·`#dash-scenarios`·`#dash-states`·`#dash-timeline`·`#dash-stamp`·`#dash-note` 여섯 컨테이너를 **빈 채로 출고**한다(JS가 채운다). 복구는 아래 TODO 참조. 산문 수치는 2026-08-29부터 인라인 R로 `data/`에서 읽는다 — **손으로 박지 말 것**(8/6자 값이 5주간 남아 같은 페이지 표와 어긋난 전력). **데이터 갱신 = `data/model_dashboard.json` 한 파일만 편집 → push → 자동 재빌드.** `fetch` 대상이라 `_quarto.yml`의 `project.resources`에 등록돼 있어야 `_site/`로 복사됨.
 - `states/{ga,mi,nh,me,nc,tx,oh,ak,ia}.qmd` — 경합주 9곳 State Focus 페이지(`gt_state_detail()` 카드 + 프로즈). 민주 수성 3(GA·MI·NH) + 공화 표적 6(ME·NC·TX·OH·AK·IA). 주 추가/제외는 사람이 결정한다 — **IA는 2026-08-08 편입**(Inside Elections 하향 + Fox 조사 튜렉 우위 + Q2 모금 역전).
 - `issues/YYYY-MM-DD.qmd` — 주간 호. 데이터(PART 1)는 함수 렌더링, 분석(PART 2)은 프로즈. 사이드바에는 `archive.qmd`(listing 페이지)만 노출 — 개별 호 자동 등재(auto)는 사이드바 비대화 문제로 제거(2026-06-11). 홈 listing은 유지.
 - `house.qmd` — ★ 하원. 맨 위 **Cook 등급 가로 누적 막대**(`house_cook_bar_html()`, `data/house_cook_ratings.json` — 7개 카테고리 의석수, 색은 270towin 원본 팔레트, 218 과반선·범례 포함. **자동 취득**(2026-08-03 전환): `scripts/fetch_cook_house.py`가 270towin에서 파싱해 이 파일을 쓰고, `publish_weekly.sh` §1.5가 호출한다 — 손으로 옮기지 말 것. Solid는 토플라인−Likely−Lean 역산, 합계 435 검증) + 경합구 트래커(`gt_house_races()`, `data/house_races.json`, Cook 토스업 상시 + Lean 주간 관리 2단 구조).
@@ -79,6 +79,7 @@ Rscript -e 'install.packages(c("jsonlite","dplyr","gt","readr"))'   # 최초 1�
 ## 현재 미완 (TODO)
 
 ### 긴급 (날짜 임박)
+- **[2026-08-30 주간 발행 때 처리] `dashboard.qmd` JS 비활성 폴백 복구** — `gt_model_states()`가 정의(`R/helpers.R:532`)만 있고 호출처가 없어 대시보드의 여섯 컨테이너가 빈 채로 출고된다(위 `dashboard.qmd` 항목 참조). `scenarios.qmd:20`이 쓰는 `gt_model_scenarios()`는 정상이므로 **대상은 `gt_model_states()` 하나**. 주의: JS가 켜진 환경에서는 JS 렌더 결과와 **이중 표시**되므로, 단순 호출 추가가 아니라 `.d-none`/`<noscript>`류로 한쪽만 보이게 하는 처리가 함께 필요하다. 사용자 지시로 8/30 발행 사이클에 배정(2026-08-29).
 - ~~`actions/checkout@v4` Node 24 대응~~ — ✅ 완료(2026-06-11)
 - **GA 결선(6/16) 후 데이터 갱신**: `data/senate_races.json`·`data/senate_primaries.json`·`data/model_dashboard.json`·`states/ga.qmd`
 
