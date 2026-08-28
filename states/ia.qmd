@@ -16,7 +16,7 @@ cat(candidate_cards_html("IA"))
 gt_state_detail("IA")
 ```
 
-공화당 방어 개방석이지만, **2026-08-08 감시주로 새로 편입한 곳**입니다. 트럼프가 2024년 13.2%p로 이긴 주에서 민주당 후보가 공개 무당파 조사 우위를 냈고(Fox 6/23–27, Turek 50–46), Inside Elections가 **8/6 Lean R→Tilt R**로 내렸으며, Q2 모금에서 민주 후보가 앞섰기 때문입니다. 그리고 **2026-08-20 Cook이 Lean R → Toss Up으로 옮겼습니다** — 사유는 후보가 아니라 생활비였습니다: "후보 문제가 아니라(힌슨은 강한 후보) 관세·유가·투입원가". 같은 날 Cook은 아이오와 **주지사** 레이스도 Toss-up → Lean D로 올려, 아이오와는 상원·주지사가 같은 날 동반 이동한 유일한 주가 됐습니다. Sabato는 8/19 기준 Lean R을 유지하고 있어 두 기관이 갈립니다. ([Cook 8/20](https://www.cookpolitical.com/analysis/senate/senate-overview/texas-and-iowa-senate-races-move-toss-races-governor-also-move))
+공화당 방어 개방석이지만, **2026-08-08 감시주로 새로 편입한 곳**입니다. 트럼프가 2024년 13.2%p로 이긴 주에서 민주당 후보가 공개 무당파 조사 우위를 냈고(Fox 6/23–27, Turek 50–46), Inside Elections가 **8/6 Lean R→Tilt R**로 내렸으며, Q2 모금에서 민주 후보가 앞섰기 때문입니다. 그리고 **2026-08-20 Cook이 Lean R → Toss Up으로 옮겼습니다** — 사유는 후보가 아니라 생활비였습니다: "후보 문제가 아니라(힌슨은 강한 후보) 관세·유가·투입원가". 같은 날 Cook은 아이오와 **주지사** 레이스도 Toss-up → Lean D로 올려, 아이오와는 상원·주지사가 같은 날 동반 이동한 유일한 주가 됐습니다. Sabato는 8/26 갱신에서도 Lean R을 유지해 두 기관이 갈립니다 — 같은 날 텍사스는 Sabato가 Cook을 따라 토스업으로 옮겼으므로, **아이오와가 감시 9주 중 Cook·Sabato가 갈리는 유일한 주**가 됐습니다. ([Cook 8/20](https://www.cookpolitical.com/analysis/senate/senate-overview/texas-and-iowa-senate-races-move-toss-races-governor-also-move))
 
 ::: {.summary}
 - **구도**: 공화 방어 개방석(Ernst 은퇴) — Turek(D, 주 하원의원·패럴림픽 금메달 2관왕) vs Hinson(R, 연방하원 IA-02·전 TV 앵커). 양당 경선 6/2 종료.
@@ -29,7 +29,7 @@ gt_state_detail("IA")
 - **개방석의 배경**: **Joni Ernst**(R, 2선) 상원의원이 **2025년 9월 2일** 영상 메시지로 불출마를 발표했습니다. 아이오와 최초의 여성 연방상원의원이자 최초의 여성 전투참전용사 상원의원이었습니다. 발표문의 사유는 가족이었습니다 — "이제는 내가 가족에게 돌려줄 때"라는 취지입니다. (측근 전언으로 보도된 다른 동기들은 본인 공개 발표문에 없어 이 사이트는 싣지 않습니다.) ([Iowa Public Radio](https://www.iowapublicradio.org/political-news/2025-09-02/sen-joni-ernst-will-not-run-for-reelection-in-2026))
 - **정치 지형**: 2024년 대선에서 **트럼프 55.7% 대 해리스 42.5%(R+13.2)** — 1972년 이후 아이오와에서 어느 후보든 얻은 최대 격차이자, 1980년 이후 공화당의 첫 두 자릿수 승리입니다. ([2024 Iowa 결과](https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_Iowa))
 - **상원 이력**: 민주당의 마지막 아이오와 연방상원 **승리는 2008년 Tom Harkin의 재선**이고, 그의 임기는 2015년 1월 3일에 끝났습니다. 즉 민주당은 **18년째 이 주에서 상원 선거를 이기지 못했습니다.** ([상원의원 목록](https://en.wikipedia.org/wiki/List_of_United_States_senators_from_Iowa))
-- **등급 이동**: Cook·Sabato는 6/2 경선 직후인 **6월 3일 나란히 Likely R → Lean R**로 내렸고, **Cook은 8/20 한 단계 더 내려 Toss Up**으로 옮겼습니다(Sabato는 8/19 기준 Lean R 유지). ([Cook](https://thecookpoliticalreport.substack.com/p/iowa-senate-moves-from-likely-to) · [Sabato](https://centerforpolitics.org/crystalball/rating-changes-in-iowa-following-tuesdays-primary/))
+- **등급 이동**: Cook·Sabato는 6/2 경선 직후인 **6월 3일 나란히 Likely R → Lean R**로 내렸고, **Cook은 8/20 한 단계 더 내려 Toss Up**으로 옮겼습니다(Sabato는 8/26 갱신에서도 Lean R 유지). ([Cook](https://thecookpoliticalreport.substack.com/p/iowa-senate-moves-from-likely-to) · [Sabato](https://centerforpolitics.org/crystalball/rating-changes-in-iowa-following-tuesdays-primary/))
 
 ## 2. 선거 제도
 
@@ -95,4 +95,4 @@ gt_state_fec("IA")
 - **선거와의 연결**: Hinson은 관세 비상사태 종료 결의에 반대하면서도 "시장을 열 무역협정"을 말하고, Turek은 "관세 종료"와 "보조금이 아니라 시장"을 말합니다. 두 사람 모두 **대(對)아시아 농산물 시장 접근 확대**로 수렴하는 화법이라, 어느 쪽이 이기든 한국·일본 시장은 아이오와 정치에서 계속 호명될 공산이 큽니다. 다만 이는 현재까지의 발언 패턴에 근거한 **해석**이며, 한국을 명시한 공약은 양측 모두 확인되지 않았습니다.
 - 신규 동향은 [Korea Watch](../korea-watch.qmd)에 기록합니다.
 
-*작성 2026-08-08 · 갱신 2026-08-23 · 등급: **Cook Toss Up(8/20)** · Sabato Lean R(8/19) · Inside Elections Tilt R(8/6) · DDHQ Toss-up · Fox Toss-up · 예측시장 민주 44¢(Kalshi 8/23)*
+*작성 2026-08-08 · 갱신 2026-08-28 · 등급: **Cook Toss Up(8/20)** · Sabato Lean R(8/26) · Inside Elections Tilt R(8/6) · DDHQ Toss-up · Fox Toss-up(8/25) · 예측시장 민주 44¢(Kalshi 8/23)*

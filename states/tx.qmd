@@ -19,7 +19,7 @@ gt_state_detail("TX")
 이번 사이클 최대의 와일드카드. **Paxton이 현직 Cornyn을 5/26 결선에서 63.8%로 격파**(Cornyn은 1970년 이후 경선 탈락한 첫 텍사스 현역 상원의원)하면서 Cook Political이 Likely R → **Lean R**로 하향했고, **8/20 다시 Lean R → Toss Up으로 옮겼습니다** — 구조적 공화 우위(R+8 안팎) 주가 후보 요인만으로 완전 경합에 들어온 사례입니다. Cook이 8/20 이동에 든 사유도 환경이 아니라 후보였습니다: "팩스턴은 공화 자체 조사에서도 generic Republican보다 저조". ([Cook 8/20](https://www.cookpolitical.com/analysis/senate/senate-overview/texas-and-iowa-senate-races-move-toss-races-governor-also-move)) 5/19 트럼프의 Paxton 공개 지지가 결선의 결정타였고, 양 진영에 1억6,500만 달러가 투입된 역대 최고가 경선이었습니다. 1994년 이후 30년간 민주당이 주 전체 선거에서 이긴 적이 없다는 점이 천장입니다. ([NPR](https://www.npr.org/2026/05/26/nx-s1-5835745/paxton-republican-texas-senate-nominee-trump-cornyn-talarico))
 
 ::: {.summary}
-- **구도**: 공화 방어 — Paxton(AG, 현역 Cornyn 격파) vs Talarico(D). **Cook Toss Up(8/20↑) · Sabato Lean R · Fox Toss-up(8/17)**.
+- **구도**: 공화 방어 — Paxton(AG, 현역 Cornyn 격파) vs Talarico(D). **Cook Toss Up(8/20↑) · Sabato Toss-up(8/26↑) · Fox Toss-up(8/25)** — 주요 4개 기관 중 3곳이 토스업.
 - **변화**: Cornyn 경선 패배(5/26, 1970년 이후 첫 현역 탈락), Talarico 역대급 모금(Q1 $19.6M).
 - **한국 함의**: 삼성 Taylor $44B 팹이 구조적 후크이나, 후보 직접 발언은 미확인.
 :::
@@ -37,7 +37,7 @@ gt_state_detail("TX")
 
 ## 3. 후보자
 
-> Paxton 결선 승리 후 Cook·Sabato 모두 Likely R → **Leans R**로 하향했고, **8/20 Cook만 다시 Toss Up으로 옮겨 두 기관이 갈렸습니다**(Sabato는 8/19 기준 Lean R 유지). 외부지출은 6/1 기준 합산 $18.6M(Paxton 반대 $14.0M + Talarico 지지 $4.09M)이며, 8월 광고비는 탈라리코 $2,500만+ 대 팩스턴 $11.9만으로 약 210:1이고 공화 쪽 가을 선매는 아직 0원입니다.
+> Paxton 결선 승리 후 Cook·Sabato 모두 Likely R → **Leans R**로 하향했고, **8/20 Cook이 Toss Up으로 옮긴 데 이어 8/26 Sabato도 따라와 두 기관이 다시 일치**했습니다(자동 취득 피드 2026-08-28 확인). 같은 기간 Fox도 Toss-up으로 갱신(8/25)해, 남은 것은 Inside Elections의 Lean R(8/6자)뿐입니다. 외부지출은 6/1 기준 합산 $18.6M(Paxton 반대 $14.0M + Talarico 지지 $4.09M)이며, 8월 광고비는 탈라리코 $2,500만+ 대 팩스턴 $11.9만으로 약 210:1이고 공화 쪽 가을 선매는 아직 0원입니다.
 
 ## 4. roll-call / 입법 관심사
 

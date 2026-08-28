@@ -1,6 +1,6 @@
 {
  "as_of": "2026-08-23",
- "facts_updated": "2026-08-23",
+ "facts_updated": "2026-08-28",
  "source_label": "외부 예측 종합 — 예측시장 원가격(Kalshi) · 모델 확률(RtWH·DDHQ) · 등급(Cook·Sabato)",
  "provenance_note": "이 대시보드는 자체 정성 추정 대신 외부 예측을 종합해 표시합니다(2026-07-29 전환). 종류가 다른 수치를 같은 잣대로 비교하지 마세요 — 등급(Cook·Sabato)은 확률이 아닌 서수적 전문가 판단, 예측시장 가격(Kalshi)은 확률의 근사일 뿐(유동성·편향 혼입)입니다. 2026-08-06부터 주별 % 는 270towin의 등급 환산값이 아니라 **Kalshi 공개 API의 원가격**을 직접 받아 9개 주 전부에 표시합니다(scripts/fetch_kalshi_prices.py). 외부 모델 확률은 원천에서 자동 취득한 것만 싣습니다 — Decision Desk HQ(예측 페이지 구조화 데이터, 모델 갱신 8/14)와 Race to the WH(Infogram 라이브 시계열, 8/16). 확인되지 않는 수치는 게재하지 않습니다. 기준 2026-08-16.",
  "current_balance": "R 53 / D 47",
@@ -8,7 +8,7 @@
  "dem_majority_prob": 46,
  "majority_note": "Kalshi 상원 다수 계약 민주 46¢(8/23, 전주 48¢) — 등급이 민주 쪽으로 크게 움직인 주에 시장가는 오히려 2¢ 내렸다. 모델은 여전히 갈린다 — Race to the WH 55.5%(8/23) vs Decision Desk HQ 46.0%(모델 갱신 8/21). 이번 주의 변화는 DDHQ가 45.0%→46.0%로 오르며 **예측시장과 사실상 같은 값에 붙었다**는 것이다(46 대 46). 그 반대편에 RtWH 55.5%가 홀로 서 있다. 가격은 확률의 근사일 뿐이며 평균 내지 말 것.",
  "net_expected_seats": 2,
- "net_display": "+1~+3",
+ "net_display": "+2~+3",
  "states": [
   {
    "id": "ga",
@@ -22,7 +22,7 @@
    "note": "% = Kalshi 오소프 계약 92¢(8/23). InsiderAdvantage/James Magazine(8/16–17, LV 800, ±3.46)의 오소프 50–43이 이번 주 최신 실측이고, RCP 평균 +7.5와 함께 **오소프 +7이 방어 가능한 중심값**이다. 코버리지에 도는 AARP 52–43(7/13–16 필드)과 폭스 56–43(6/23–27)은 재게시된 옛 조사다 — 새 데이터로 평균에 넣지 말 것. NRSC가 오소프를 엘사예드·닉슨과 묶는 전국화 공세를 시작했고, 콜린스에게는 윤리위·연방수사가 계속 붙어 있다. 조기투표 약 7주 후로 감시 9주 중 첫 투표 개시.",
    "rating_cook": "Lean D",
    "rating_sabato": "Likely D",
-   "rating_as_of": "Cook 8/20 Lean D 유지 · 사바토 8/19 Likely D 유지 · Inside Elections Tilt D",
+   "rating_as_of": "Cook 8/20 Lean D 유지 · 사바토 8/26 Likely D 유지 · Inside Elections Tilt D",
    "rating_history": "Cook: Toss-up →(4/13) Lean D · Sabato: Lean D(5/18 확인, 이동일 미확인) →(7/30) Likely D"
   },
   {
@@ -37,7 +37,7 @@
    "note": "% = Kalshi 쿠퍼 91¢. High Point대(8/3–12, LV 660, ±5.2, 8/21 공개) 쿠퍼 50–45가 사이클 첫 축소 신호이나 두 가지 단서가 붙는다 — (1) 쿠퍼는 50%를 지켰고 움직인 쪽은 왓틀리의 결집이다, (2) ±5.2에서 D+5와 D+11은 통계적으로 구분되지 않는다. High Point의 실사창(8/3–12)은 Carolina Journal/Harper(8/9–10, 51.5–39.0)와 거의 겹치는데 답은 7포인트 다르다. 정직한 서술은 '한 주 만에 5포인트 움직였다'가 아니라 **참값이 한 자릿수 중후반이고 8월 조사들이 그 위치에 대해 서로 다르다**는 것이다. 부재자 신청 9/4 개시 — 감시주 중 설득 기간이 가장 먼저 닫힌다.",
    "rating_cook": "Lean D",
    "rating_sabato": "Lean D",
-   "rating_as_of": "Cook 8/20 · 사바토 8/19 Lean D 유지 · Inside Elections Tilt D",
+   "rating_as_of": "Cook 8/20 · 사바토 8/26 Lean D 유지 · Inside Elections Tilt D",
    "rating_history": "Cook: Toss-up →(4/13) Lean D · Sabato: →(6/11) Lean D"
   },
   {
@@ -52,7 +52,7 @@
    "note": "% = Kalshi 민주 91¢(전주 88¢). 세인트앤셀름(8/17–18, LV 1,411, ±2.6)이 이 사이클 뉴햄프셔 최대 표본·최소 오차로 파파스 48–41(수누누)·49–37(브라운)을 냈다. 그동안 이 주의 문제는 UNH +7과 에머슨 동률 사이의 편차였는데, 이 조사로 에머슨 동률과 Quantus의 수누누 우위가 이상치 쪽으로 밀렸다. 9/8 경선은 사실상 종결(민주 파파스 59–28 · 공화 수누누 54–24). **같은 조사의 주지사 문항은 에이요트 49–워밍턴 38로 R+11** — 한 표본 안에서 상원 D+7과 주지사 R+11이 동시에 나온다.",
    "rating_cook": "Lean D",
    "rating_sabato": "Lean D",
-   "rating_as_of": "Cook 8/20 · 사바토 8/19 Lean D 유지 — 2026년 중 이동 없음",
+   "rating_as_of": "Cook 8/20 · 사바토 8/26 Lean D 유지 — 2026년 중 이동 없음",
    "rating_history": "Cook: 2025-02-11 이후 Lean D 무변경 · Sabato: 2025-03-12 Likely D→Leans D 이후 무변경"
   },
   {
@@ -67,7 +67,7 @@
    "note": "% = Kalshi 엘사예드 61¢(전주 56¢). 8월 조사 4건이 실사기간이 겹치는데도 11포인트 벌어졌다 — TIPP D+3(8/6–10, RV 1,528) · 폭스 R+4(8/6–10, RV 1,006) · AARP D+1(8/9–11, LV 877) · Susquehanna D+7(8/11–17, LV 800). 폭스와 TIPP는 **실사기간이 같은데 부호가 반대**다. 그래서 이건 움직이는 판세가 아니라 하우스 이펙트 문제로 읽는다. 초당 합동팀(파브리지오 워드 R + 임팩트 D)인 AARP가 앵커이고, 그 내부가 이 주의 핵심 변수다 — 로저스 50세 이상 +9(65세 이상 +13), 엘사예드 18–49세 +14인데 **투표 의향은 고령층이 훨씬 높다**(86% vs 71%). RCP 평균은 D+0.7. 지난주 이 칸에 적었던 '조사 대 시장'의 격차는 조사 쪽이 올라오면서 좁혀졌다.",
    "rating_cook": "Toss-up",
    "rating_sabato": "Toss-up",
-   "rating_as_of": "Cook 8/20 · 사바토 8/19 Toss-up 유지 · Fox News 8/17 Lean D→Toss-up(이번 주 유일한 친공화 이동)",
+   "rating_as_of": "Cook 8/20 · 사바토 8/26 Toss-up 유지 · Fox News Lean D→Toss-up(8/25 피드 갱신으로 확인 — 종전 피드는 7/22자였다)",
    "rating_history": "양 기관 Toss-up 유지(공석 확정 후 이동 기록 없음)"
   },
   {
@@ -82,7 +82,7 @@
    "note": "% = Kalshi 민주 69¢(전주 66¢). 8/12 스캔들 보도 이후 **11일째 공개 조사가 하나도 없다**. 지금 도는 3건(폭스 D+2·UNH 파인트리 D+3·Hart/SMP D+4)은 전부 보도 이전 필드다. 이달 4개 기관이 10건을 민주 쪽으로 옮기는 동안 **메인만 아무도 옮기지 않았다** — 핵심 탈환 대상에서 그 사실 자체가 신호로 읽힌다. 콜린스는 'All of Maine' 버스투어로 공세 전환했고 민주 쪽 공개 이탈은 0명. 규율 항목: 콜린스는 2020년에도 이 시점에 뒤지다 8.6%p로 이겼다(다만 당시와 지금의 전국 환경은 약 14%p 다르다).",
    "rating_cook": "Toss-up",
    "rating_sabato": "Toss-up",
-   "rating_as_of": "Cook 8/20 · 사바토 8/19 Toss-up 유지 (Inside Elections는 Tilt R)",
+   "rating_as_of": "Cook 8/20 · 사바토 8/26 Toss-up 유지 (Inside Elections는 Tilt R)",
    "rating_history": "Cook: Toss-up(6/28 확인, 이동일 미확인) · Sabato: 8/13 피드에서 Toss-up 확인"
   },
   {
@@ -97,7 +97,7 @@
    "note": "% = Kalshi 펠톨라 61¢(전주 53¢) — **이번 주 감시 9주 중 최대 상승폭(+8¢)**. 8/18 top-4 예비에서 펠톨라 48.2–설리번 42.9(개표 93%)로 트럼프 지지 현직이 5.3%p 뒤졌다. 200만 달러+가 투입된 '동명이인 스포일러'는 합산 약 3.5%로 실패했고 법무부는 전신사기 혐의 대배심 소환장을 발부했다. **다만 예비 득표율은 본선 마진이 아니다** — 전 정당 통합 용지라 민주는 한 명에 결집했고 공화는 갈렸으며, 8월 예비 유권자층은 역사적으로 민주 성향이다. RCV 시뮬은 펠톨라 +1.6~+6. 개표는 8/25·8/28 갱신, 인증 8/31.",
    "rating_cook": "Toss-up",
    "rating_sabato": "Toss-up",
-   "rating_as_of": "Cook 7/1 Lean R→Toss-up 이후 유지(8/20 확인) · 사바토 8/17 Leans R→Toss-up",
+   "rating_as_of": "Cook 7/1 Lean R→Toss-up 이후 유지(8/20 확인) · 사바토 8/26 Leans R→Toss-up",
    "rating_history": "Cook: Solid R →(1월) Lean R →(7/1) Toss-up · Sabato: Safe R →(2026-01-12) Lean R →(6/11) Toss-up"
   },
   {
@@ -112,7 +112,7 @@
    "note": "% = Kalshi 브라운 52¢(전주 51¢). Wedgewood 브라운 48–44(8/13 종료)가 최신이지만 실사 상세가 공표되지 않아 이 사이트 조사 DB에는 넣지 않았다. 문제는 단일 조사가 아니라 **집계기관끼리 부호가 갈린다**는 것이다 — RCP 브라운 +0.6 · PollingSource +5.3 · Pollsmax 허스티드 +1.8. 편차의 출처는 각 평균이 봄철 허스티드 우위 조사를 얼마나 남겨두느냐다. 상원 트랙 원문은 사바토가 8/17 Leans R→Toss-up으로 옮겼다고 적었으나, 이 사이트가 자동 취득하는 270towin 재게시 피드에서 사바토의 오하이오는 **6월 이래 Toss-up**이다 — 이번 주 하드 이동으로 세지 않는다. 외곽 자금은 지도상 공화에 가장 유리($79M 대 $40M).",
    "rating_cook": "Toss-up",
    "rating_sabato": "Toss-up",
-   "rating_as_of": "Cook 8/20 · 사바토 8/19 Toss-up 유지 — 사바토의 오하이오는 이 사이트 피드 기준 6월부터 Toss-up이다",
+   "rating_as_of": "Cook 8/20 · 사바토 8/26 Toss-up 유지 — 사바토의 오하이오는 이 사이트 피드 기준 6월부터 Toss-up이다",
    "rating_history": "Cook: Lean R →(4/13) Toss-up, 이후 무변경 · Sabato: Leans R →(6/11) Toss-up"
   },
   {
@@ -120,14 +120,14 @@
    "name": "텍사스",
    "nameEn": "Texas",
    "defense": "R",
-   "rating": "Toss Up (Cook 8/20↑) / Lean R (Sabato)",
+   "rating": "Toss Up (Cook 8/20↑ · Sabato 8/26↑)",
    "prob": 48,
    "matchup": "Talarico (D) vs Paxton (R)",
-   "key_var": "Cook 이동 사유가 환경이 아니라 후보 자질 — 광고비는 210:1",
-   "note": "% = Kalshi 탈라리코 48¢(전주 49¢). **Cook이 8/20 Lean R→Toss Up으로 옮겼다.** 사유가 특이하다 — 전국 환경이 아니라 후보 자질이다('팩스턴은 공화 자체 조사에서도 generic Republican보다 저조'). 여기에 광고비 비대칭이 겹쳤다: 탈라리코 $2,500만+ 대 팩스턴 $11.9만으로 약 **210:1**, 공화 가을 선매는 0원. 반대 신호는 에머슨의 팩스턴 47–46 하나인데 **실사기간이 원천 파일 간에 상충한다(8/9~10 vs 8/16~17) — 미확인으로 둔다**. RCP 평균은 탈라리코 +1.2. 분기점은 트럼프 슈퍼팩 5억 달러+의 텍사스 투입 여부(9/1 전후 선매). 등급이 민주 쪽으로 옮겨진 주에 **시장가는 1¢ 내렸다** — 등급과 시장이 이번 주 정확히 반대로 움직인 유일한 주다.",
+   "key_var": "Cook에 이어 사바토도 토스업 — 주요 4개 기관 중 3곳이 토스업",
+   "note": "% = Kalshi 탈라리코 48¢(전주 49¢). **Cook이 8/20 Lean R→Toss Up으로 옮겼다.** 사유가 특이하다 — 전국 환경이 아니라 후보 자질이다('팩스턴은 공화 자체 조사에서도 generic Republican보다 저조'). 여기에 광고비 비대칭이 겹쳤다: 탈라리코 $2,500만+ 대 팩스턴 $11.9만으로 약 **210:1**, 공화 가을 선매는 0원. 반대 신호는 에머슨의 팩스턴 47–46 하나인데 **실사기간이 원천 파일 간에 상충한다(8/9~10 vs 8/16~17) — 미확인으로 둔다**. RCP 평균은 탈라리코 +1.2. 분기점은 트럼프 슈퍼팩 5억 달러+의 텍사스 투입 여부(9/1 전후 선매). 등급이 민주 쪽으로 옮겨진 주에 **시장가는 1¢ 내렸다** — 등급과 시장이 그 주 정확히 반대로 움직인 유일한 주였다. **이후 8/26 사바토도 Lean R→Toss-up으로 따라왔다**(자동 취득 피드 8/28 확인) — 주요 4개 기관 중 3곳이 토스업이고 Inside Elections(8/6자)만 남았다. 위 % 는 8/23 주간 스냅샷 가격이다.",
    "rating_cook": "Toss Up",
-   "rating_sabato": "Lean R",
-   "rating_as_of": "**Cook 8/20 Lean R→Toss Up** · 사바토 8/19 Lean R 유지 · Fox 8/17 Toss-up · Inside Elections Lean R",
+   "rating_sabato": "Toss Up",
+   "rating_as_of": "**Cook 8/20 Lean R→Toss Up · 사바토 8/26 Lean R→Toss Up** — 두 기관 일치. Fox 8/25 Toss-up · Inside Elections 8/6 Lean R",
    "rating_history": "Cook: Likely R →(5/27) Lean R — 팩스턴 경선승(5/26) 여파 · Sabato: Lean R(6/28 확인, 이동일 미확인)"
   },
   {
@@ -139,10 +139,10 @@
    "prob": 44,
    "matchup": "Turek (D) vs Hinson (R)",
    "key_var": "Cook 이동 사유는 후보가 아니라 관세·유가·투입원가",
-   "note": "% = Kalshi 투렉 44¢(전주 45¢). **Cook이 8/20 Lean R→Toss Up으로 옮겼다**(텍사스와 같은 날). 사유를 그대로 옮기면 '후보 문제가 아니라(힌슨은 강한 후보) 관세·유가·투입원가'다. 비료·디젤 가격과 9/8 발효될 캐나다 보복관세(농기계·펄프 겨냥)가 직격하는 구조다. 같은 날 Cook은 아이오와 **주지사** 레이스도 Toss-up→Lean D로 옮겼다 — **상원·주지사가 동반 이동한 유일한 주**이고, 생활비 채널이 티켓 전체를 미는 사례로 읽힌다. 이번 주 신규 조사는 없다(도는 Fox D+4는 6/23–27 조사). 등급은 상향됐는데 시장가는 1¢ 내렸다.",
+   "note": "% = Kalshi 투렉 44¢(전주 45¢). **Cook이 8/20 Lean R→Toss Up으로 옮겼다**(텍사스와 같은 날). 사유를 그대로 옮기면 '후보 문제가 아니라(힌슨은 강한 후보) 관세·유가·투입원가'다. 비료·디젤 가격과 9/8 발효될 캐나다 보복관세(농기계·펄프 겨냥)가 직격하는 구조다. 같은 날 Cook은 아이오와 **주지사** 레이스도 Toss-up→Lean D로 옮겼다 — **상원·주지사가 동반 이동한 유일한 주**이고, 생활비 채널이 티켓 전체를 미는 사례로 읽힌다. 이번 주 신규 조사는 없다(도는 Fox D+4는 6/23–27 조사). 등급은 상향됐는데 시장가는 1¢ 내렸다. **8/26 사바토 갱신에서도 아이오와는 Lean R을 유지해**, 텍사스와 달리 두 기관이 갈리는 감시 9주 중 유일한 주가 됐다.",
    "rating_cook": "Toss Up",
    "rating_sabato": "Lean R",
-   "rating_as_of": "**Cook 8/20 Lean R→Toss Up** · 사바토 8/19 Lean R 유지 · Inside Elections Tilt R",
+   "rating_as_of": "**Cook 8/20 Lean R→Toss Up** · 사바토 8/26 Lean R 유지 · Inside Elections Tilt R",
    "rating_history": "Cook: Likely R →(6/3) Lean R · Sabato: Likely R →(6/3) Leans R · IE: Lean R →(8/6) Tilt R"
   }
  ],
@@ -172,10 +172,10 @@
    "name": "등급가중 산수",
    "subname": "자체 계산 · 컨센서스",
    "prob": null,
-   "prob_label": "+2.1석",
+   "prob_label": "+2.25석",
    "seats": "민주 순증 +1 ~ +3",
    "majority": "다수 문턱(+4) 미달",
-   "desc": "Solid/Likely=확정, Lean=75%, Toss-up=50% 가중을 Cook(8/20)·Sabato(8/19) 두 기관 평균에 적용. 탈환 기대 ME .50 + NC .75 + AK .50 + OH .50 + TX .375 + IA .375 = 3.00, 방어 손실 GA .125 + MI .50 + NH .25 = 0.875 → **순 기대의석 +2.13석**. 전주를 같은 방식으로 다시 계산하면 +1.88석이므로 **주간 변화는 정확히 +0.25석**이고, 그 전부가 Cook의 TX·IA 두 건에서 나온다(각 +0.125). 등급 10건이 민주 쪽으로 움직인 주의 산술 상승분이 4분의 1석이라는 것이 이 주의 요점이다. 등급은 전국 환경을 거의 반영하지 않으므로 모델·시장과 같은 잣대로 비교하지 말 것."
+   "desc": "Solid/Likely=확정, Lean=75%, Toss-up=50% 가중을 Cook(8/20)·Sabato(8/26) 두 기관 평균에 적용. 탈환 기대 ME .50 + NC .75 + AK .50 + OH .50 + TX .50 + IA .375 = 3.125, 방어 손실 GA .125 + MI .50 + NH .25 = 0.875 → **순 기대의석 +2.25석**. 8/23 주간 발행 시점(+2.13석)에서 **+0.13석 오른 것은 사바토가 8/26 텍사스를 Lean R→Toss-up으로 옮겼기 때문**이다(자동 취득 피드 8/28 확인). 8월 초 기준(+1.88석)과 비교하면 한 달 누적 +0.375석 — 4개 기관이 십수 건을 민주 쪽으로 옮긴 달의 의석 함의가 이 정도라는 뜻이다. 등급은 전국 환경을 거의 반영하지 않으므로 모델·시장과 같은 잣대로 비교하지 말 것."
   },
   {
    "id": "market",

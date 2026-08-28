@@ -9,7 +9,7 @@
    "house_dem": 0.85,
    "senate_dem": 0.46,
    "house_delta": 0.0,
-   "senate_delta": -0.02,
+   "senate_delta": 0.0,
    "note": "민주 승리 계약의 마지막 체결가 — 확률의 근사일 뿐 확률이 아니다. 누적 거래액 상원 $3,179,350·하원 $9,526,340"
   },
   {
@@ -17,8 +17,8 @@
    "type": "model",
    "house_dem": 0.66,
    "senate_dem": 0.46,
-   "house_delta": 0.02,
-   "senate_delta": 0.01,
+   "house_delta": 0.0,
+   "senate_delta": 0.0,
    "note": "다수당 확률. 평균 의석은 상원 50·하원 229석 — 상원 50–50은 부통령 캐스팅보트로 공화 다수를 뜻한다"
   },
   {
@@ -27,7 +27,7 @@
    "house_dem": null,
    "senate_dem": 0.555,
    "house_delta": null,
-   "senate_delta": 0.003,
+   "senate_delta": 0.0,
    "note": "상원 전용(하원 미취득). 예상 의석 민주 50.9석. Infogram 라이브 시계열의 마지막 관측치(Aug 23)"
   },
   {
@@ -36,7 +36,7 @@
    "house_dem": null,
    "senate_dem": 0.48,
    "house_delta": null,
-   "senate_delta": 0.071,
+   "senate_delta": 0.0,
    "note": "이 사이트의 재현 가능한 모델(고정 시드). 의석 중앙값 50·90% 구간 45–53. 감시주만 시뮬레이션하므로 감시 목록을 바꾸면 확률도 바뀐다(방법론 참조)"
   }
  ]
