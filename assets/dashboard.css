@@ -67,6 +67,11 @@
 .spec-lab { position: absolute; transform: translateX(-50%); text-align: center; font-size: .76rem; line-height: 1.25; white-space: nowrap; }
 .spec-lab.above { bottom: calc(100% + 8px); }
 .spec-lab.below { top: calc(100% + 8px); }
+/* 값이 촘촘해 두 줄로 모자랄 때만 쓰는 바깥 단 — JS가 .spec-wrap.t2 를 붙여 여백을 넓힌다. */
+.spec-lab.above2 { bottom: calc(100% + 46px); }
+.spec-lab.below2 { top: calc(100% + 46px); }
+.spec-wrap.t2 .spec-axis { margin-bottom: 82px; }
+.spec-wrap.t2 .spec-bar { margin-bottom: 90px; }
 .spec-val { display: block; font-weight: 800; font-size: .95rem; }
 .spec-name { display: block; font-size: .7rem; color: #6b7280; }
 .spec-notes { list-style: none; padding: 0; margin: 0; font-size: .82rem; color: #374151; }

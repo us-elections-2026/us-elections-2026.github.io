@@ -95,26 +95,58 @@
   }
 
   // 민주 다수 확률 — 0~100% 스펙트럼 축 위에 모델별 위치 표시 + 설명 리스트
+  //
+  // 라벨 배치 규칙(2026-08-30 재작성). 종전에는 정렬 인덱스로 위/아래를 번갈아 놓아,
+  // 값이 가까운 두 마크가 같은 줄에 떨어지면 글자가 그대로 겹쳤다("4648%").
+  // DDHQ와 Kalshi가 동시에 46%가 되면서 드러난 문제다. 이제 두 단계로 처리한다 —
+  //   ① 같은 값은 라벨 하나로 합친다("46% DDHQ · Kalshi") — 점도 하나만 찍는다.
+  //   ② 남은 라벨은 수평 간격이 MINGAP 이상 확보되는 줄에 넣고, 위/아래 두 줄로
+  //      모자랄 때만 바깥 단(above2/below2)으로 밀어낸다.
+  const SPEC_SHORT = { rtwh: "RtWH", ddhq: "DDHQ", market: "Kalshi", inside: "등급가중" };
+  const SPEC_MINGAP = 8;   // % — 라벨이 서로 닿지 않는 최소 수평 간격(짧은 이름 기준)
+
   function renderMajoritySpectrum(root, d, m) {
     const marks = [];
     (d.scenarios || []).forEach((s) => {
-      if (s.prob != null) marks.push({ v: s.prob, name: s.id === "ddhq" ? "DDHQ" : s.name });
+      if (s.prob != null) marks.push({ v: Math.round(s.prob), name: SPEC_SHORT[s.id] || s.name });
     });
     if (m && m.dem_majority_prob != null)
       marks.push({ v: Math.round(m.dem_majority_prob), name: "자체 " + (m.version || "v0") });
     marks.sort((a, b) => a.v - b.v);
+
+    // ① 같은 값 병합
+    const groups = [];
+    marks.forEach((mk) => {
+      const last = groups[groups.length - 1];
+      if (last && last.v === mk.v) last.names.push(mk.name);
+      else groups.push({ v: mk.v, names: [mk.name] });
+    });
 
     const wrap = el("div", "spec-wrap");
     wrap.appendChild(el("div", "spec-axis",
       "<span>0% — 공화 유지 확실</span><span>50%</span><span>100% — 민주 탈환 확실</span>"));
     const bar = el("div", "spec-bar");
     bar.appendChild(el("div", "spec-mid"));
-    marks.forEach((mk, i) => {
-      const dot = el("div", "spec-mark"); dot.style.left = mk.v + "%"; bar.appendChild(dot);
-      const lab = el("div", "spec-lab " + (i % 2 ? "below" : "above"),
-        `<span class="spec-val">${mk.v}%</span><span class="spec-name">${mk.name}</span>`);
-      lab.style.left = mk.v + "%"; bar.appendChild(lab);
+
+    // ② 충돌 회피 배치
+    const ROWS = ["above", "below", "above2", "below2"];
+    const lastX = [-Infinity, -Infinity, -Infinity, -Infinity];
+    let usedTier2 = false;
+    groups.forEach((g) => {
+      const dot = el("div", "spec-mark"); dot.style.left = g.v + "%"; bar.appendChild(dot);
+      let r = 0;
+      while (r < ROWS.length - 1 && g.v - lastX[r] < SPEC_MINGAP) r++;
+      lastX[r] = g.v;
+      if (r >= 2) usedTier2 = true;
+      const lab = el("div", "spec-lab " + ROWS[r],
+        `<span class="spec-val">${g.v}%</span><span class="spec-name">${g.names.join(" · ")}</span>`);
+      // 양끝에서는 가운데 정렬이 축 밖으로 삐져나가므로 정렬 기준을 옮긴다.
+      if (g.v <= 8) { lab.style.left = "0%"; lab.style.transform = "translateX(0)"; lab.style.textAlign = "left"; }
+      else if (g.v >= 92) { lab.style.left = "100%"; lab.style.transform = "translateX(-100%)"; lab.style.textAlign = "right"; }
+      else lab.style.left = g.v + "%";
+      bar.appendChild(lab);
     });
+    if (usedTier2) wrap.classList.add("t2");
     wrap.appendChild(bar);
 
     const ul = el("ul", "spec-notes");
