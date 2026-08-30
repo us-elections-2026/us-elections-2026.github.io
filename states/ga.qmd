@@ -13,7 +13,8 @@ cat(candidate_cards_html("GA"))
 ```
 
 ```{r}
-gt_state_detail("GA")
+#| output: asis
+cat(state_card_html("GA"))
 ```
 
 민주당의 **최우선 방어석**. Ossoff는 2021년 결선에서 1.2%p 차로 당선된 취약 의석입니다. 공화당은 **6/16 결선에서 Mike Collins가 Derek Dooley를 55.5% 대 44.5%로 꺾고 본선에 진출**했습니다 — 본선은 이제 **Ossoff(D) vs Collins(R)** 양자 구도로 확정. 무경선 현역 Ossoff는 압도적 보유 현금(아래 표)으로 광고전을 선점한 반면 공화당은 결선까지 자원을 소모했고, 2024년 트럼프가 GA를 다시 가져간 만큼 기초 지형은 민주당에 불리 — 이제 트럼프계 Collins로의 공화당 통합 속도가 1차 변수입니다.
@@ -61,7 +62,7 @@ gt_state_polls("GA")
 
 > 이 표는 `data/senate_polls.csv`에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 **여러 조사의 방향**을 보세요.
 
-## 6. 펀드레이징
+## 6. 펀드레이징 {#money}
 
 ```{r}
 #| output: asis

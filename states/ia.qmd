@@ -13,7 +13,8 @@ cat(candidate_cards_html("IA"))
 ```
 
 ```{r}
-gt_state_detail("IA")
+#| output: asis
+cat(state_card_html("IA"))
 ```
 
 공화당 방어 개방석이지만, **2026-08-08 감시주로 새로 편입한 곳**입니다. 트럼프가 2024년 13.2%p로 이긴 주에서 민주당 후보가 공개 무당파 조사 우위를 냈고(Fox 6/23–27, Turek 50–46), Inside Elections가 **8/6 Lean R→Tilt R**로 내렸으며, Q2 모금에서 민주 후보가 앞섰기 때문입니다. 그리고 **2026-08-20 Cook이 Lean R → Toss Up으로 옮겼습니다** — 사유는 후보가 아니라 생활비였습니다: "후보 문제가 아니라(힌슨은 강한 후보) 관세·유가·투입원가". 같은 날 Cook은 아이오와 **주지사** 레이스도 Toss-up → Lean D로 올려, 아이오와는 상원·주지사가 같은 날 동반 이동한 유일한 주가 됐습니다. Sabato는 8/26 갱신에서도 Lean R을 유지해 두 기관이 갈립니다 — 같은 날 텍사스는 Sabato가 Cook을 따라 토스업으로 옮겼으므로, **아이오와가 감시 9주 중 Cook·Sabato가 갈리는 유일한 주**가 됐습니다. ([Cook 8/20](https://www.cookpolitical.com/analysis/senate/senate-overview/texas-and-iowa-senate-races-move-toss-races-governor-also-move))
@@ -71,8 +72,7 @@ gt_state_polls("IA")
 
 > 이 주의 특징은 **두 공개 조사가 서로 반대 방향**이라는 점입니다 — Fox(6/23–27, RV 1,003)는 Turek +4, NYT/Siena(6/15–29, LV 600)는 Hinson +2. 모집단(RV 대 LV)과 오차범위를 고려하면 통계적으로는 양립 가능한 범위지만, **경선 이후 두 달 넘게 신규 공개 조사가 없다**는 점이 더 중요합니다. 예측시장은 이 공백에서 민주 43¢를 매기고 있습니다.
 
-## 5. 펀드레이징
-
+## 5. 펀드레이징 {#money}
 ```{r}
 #| output: asis
 cat(state_money_html("IA"))

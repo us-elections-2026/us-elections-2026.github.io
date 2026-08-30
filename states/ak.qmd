@@ -13,7 +13,8 @@ cat(candidate_cards_html("AK"))
 ```
 
 ```{r}
-gt_state_detail("AK")
+#| output: asis
+cat(state_card_html("AK"))
 ```
 
 **Toss-up** — 올해 가장 크게 움직인 주입니다. 공화 현직 Dan Sullivan을, 2022년 최초의 알래스카 원주민(Yup'ik) 연방의원이 된 Mary Peltola(D)가 도전합니다. Cook은 **1월 Solid R → Lean R**(펠톨라 출마), 다시 **7/1 Lean R → Toss-up**으로 두 단계 올렸고 Sabato도 6/11에 Toss-up으로 옮겼습니다. **8/18 통합 예비선거(top-4)가 끝나 본선 4인 진용이 잡혔고**, 11월 본선은 RCV입니다. 조사는 기관별 편차가 큽니다(아래 표) — 벤치마크는 NYT/Siena, 트래킹은 ASR.
@@ -58,8 +59,7 @@ gt_state_polls("AK")
 
 > 이 표는 `data/senate_polls.csv`에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 **여러 조사의 방향**을 보세요.
 
-## 5. 펀드레이징
-
+## 5. 펀드레이징 {#money}
 ```{r}
 #| output: asis
 cat(state_money_html("AK"))

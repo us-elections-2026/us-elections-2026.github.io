@@ -13,7 +13,8 @@ cat(candidate_cards_html("NC"))
 ```
 
 ```{r}
-gt_state_detail("NC")
+#| output: asis
+cat(state_card_html("NC"))
 ```
 
 Tillis 은퇴로 생긴 **공개석**(공화 방어). 전 주지사 Roy Cooper(D)가 인지도·모금에서 전 RNC 위원장 Michael Whatley(R)를 앞서며, 봄 내내 한 자릿수 후반~두 자릿수 초반 리드를 일관 유지했습니다(예측시장 약 83%). 양당 경선은 **3/3에 이미 종료**돼(민주 Cooper 92%, 공화 Whatley 64.6%) 본선 체제로 전환했고, **6/11 Cook이 Toss-up → Lean D로 하향**했습니다. 최대 변수는 Whatley의 낮은 인지도(과반이 '모름')를 둘러싼 정의(定義) 싸움과, 공화 슈퍼팩 SLF의 **7,100만 달러** 광고전입니다. ([WRAL](https://www.wral.com/news/nccapitol/nc-senate-cooper-whatley-spending-election-2026-republican-slf-march-2026/) · [Carolina Journal](https://www.carolinajournal.com/cook-political-report-shifts-nc-senate-race-from-toss-up-to-lean-democrat/))
@@ -53,8 +54,7 @@ gt_state_polls("NC")
 
 > 이 표는 `data/senate_polls.csv`에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 **여러 조사의 방향**을 보세요.
 
-## 5. 펀드레이징
-
+## 5. 펀드레이징 {#money}
 ```{r}
 #| output: asis
 cat(state_money_html("NC"))

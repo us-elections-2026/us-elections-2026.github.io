@@ -13,7 +13,8 @@ cat(candidate_cards_html("TX"))
 ```
 
 ```{r}
-gt_state_detail("TX")
+#| output: asis
+cat(state_card_html("TX"))
 ```
 
 이번 사이클 최대의 와일드카드. **Paxton이 현직 Cornyn을 5/26 결선에서 63.8%로 격파**(Cornyn은 1970년 이후 경선 탈락한 첫 텍사스 현역 상원의원)하면서 Cook Political이 Likely R → **Lean R**로 하향했고, **8/20 다시 Lean R → Toss Up으로 옮겼습니다** — 구조적 공화 우위(R+8 안팎) 주가 후보 요인만으로 완전 경합에 들어온 사례입니다. Cook이 8/20 이동에 든 사유도 환경이 아니라 후보였습니다: "팩스턴은 공화 자체 조사에서도 generic Republican보다 저조". ([Cook 8/20](https://www.cookpolitical.com/analysis/senate/senate-overview/texas-and-iowa-senate-races-move-toss-races-governor-also-move)) 5/19 트럼프의 Paxton 공개 지지가 결선의 결정타였고, 양 진영에 1억6,500만 달러가 투입된 역대 최고가 경선이었습니다. 1994년 이후 30년간 민주당이 주 전체 선거에서 이긴 적이 없다는 점이 천장입니다. ([NPR](https://www.npr.org/2026/05/26/nx-s1-5835745/paxton-republican-texas-senate-nominee-trump-cornyn-talarico))
@@ -56,7 +57,7 @@ gt_state_polls("TX")
 
 > 이 표는 `data/senate_polls.csv`에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 **여러 조사의 방향**을 보세요.
 
-## 6. 펀드레이징
+## 6. 펀드레이징 {#money}
 
 ```{r}
 #| output: asis

@@ -160,40 +160,161 @@ gt_senate_primaries <- function() {
     .tbl_opts()
 }
 
-# 1.4c 주별 상세 카드 (State Focus 페이지용) ---------------------------------
-gt_state_detail <- function(code) {
-  d <- .load_json("senate_races")
-  r <- d$races[d$races$state == code, ]
-  p <- .load_json("senate_primaries")$rows
-  p <- p[p$state == code, ]
+# 1.4c 주별 레이스 카드 (State Focus 상단) ------------------------------------
+# 2026-08-30 전면 교체. 종전 gt_state_detail()은 6~7행짜리 세로 표였는데,
+#   (a) '최신 폴' 한 칸에 poll_source 전문(최대 436자)이 통째로 들어가 카드가 문단이 됐고,
+#   (b) 담긴 내용 대부분이 바로 아래 절에서 더 자세히 반복됐다
+#       (최신 폴↔§5 조사표 · 모금↔§6 펀드레이징 · 경선↔§3 후보자 · 구도↔도입 문단),
+#   (c) '항목' 열이 좁아 한글이 "모금\n(현\n금)"처럼 세로로 쪼개졌다.
+# 그래서 카드는 '요약 반복'을 그만두고 **상태 스트립 + 조사 추이**만 남긴다.
+# 서술형 상세는 §5 조사표의 source note로 옮겼다(gt_state_polls).
 
-  poll <- if (is.na(r$latest_poll)) "【수집】" else
-    paste0(r$latest_poll, if (!is.na(r$poll_source)) paste0(" (", r$poll_source, ")") else "")
-  rows <- tibble(
-    항목 = c("구도", "현직/구도", "등급", "최신 폴", "모금(현금)", "한국 관심"),
-    내용 = c(ifelse(r$defense == "D", "민주 방어", "공화 방어"),
-           r$incumbent, r$rating, poll,
-           ifelse(is.na(r$cash_on_hand), "—", r$cash_on_hand),
-           r$kr_relevance)
-  )
-  if (nrow(p) > 0) {
-    rows <- bind_rows(rows, tibble(
-      항목 = paste0("경선 — ", p$event),
-      내용 = paste0(ifelse(is.na(p$date), p$status, paste0(p$date, " ", p$status)),
-                  ifelse(is.na(p$detail), "", paste0(" · ", p$detail)))
-    ))
+# 조사기관 표시명 — 그래프 위에 얹으므로 짧아야 한다. 목록에 없으면 규칙으로 줄인다.
+.POLLSTER_SHORT <- c(
+  "Fox News/Beacon·Shaw" = "Fox", "Fox News" = "Fox",
+  "NYT/Siena" = "NYT/Siena", "Emerson College/Nexstar" = "Emerson",
+  "Emerson College" = "Emerson", "InsiderAdvantage" = "InsiderAdv",
+  "High Point University" = "HPU", "Harper Polling" = "Harper",
+  "Saint Anselm College Survey Center" = "St.Anselm",
+  "AARP/Fabrizio·Impact" = "AARP", "TIPP/TechnoMetrica" = "TIPP",
+  "Susquehanna Polling & Research" = "Susquehanna", "Change Research" = "Change Res",
+  "Elon University" = "Elon", "Catawba/YouGov" = "Catawba",
+  "Catawba College/YouGov" = "Catawba", "Public Policy Polling" = "PPP",
+  "UNH Survey Center" = "UNH", "Hart Research" = "Hart",
+  "Alaska Survey Research" = "ASR", "Wedgewood Polls" = "Wedgewood",
+  "Texas Southern Univ./Jordan Research Center" = "TSU",
+  "Bush School/Recon MR Pulse" = "Bush School",
+  "UT Austin/Texas Politics Project" = "UT Austin", "NRSC/Peak Insights" = "NRSC")
+
+.pollster_short <- function(x) {
+  vapply(x, function(nm) {
+    if (!is.na(.POLLSTER_SHORT[nm])) return(unname(.POLLSTER_SHORT[nm]))
+    s <- trimws(strsplit(nm, "/|·")[[1]][1])              # 첫 토큰만
+    if (nchar(s) > 13) s <- paste0(substr(s, 1, 12), "…")
+    s
+  }, character(1), USE.NAMES = FALSE)
+}
+
+.esc <- function(x) {
+  x <- gsub("&", "&amp;", x, fixed = TRUE); x <- gsub("<", "&lt;", x, fixed = TRUE)
+  gsub(">", "&gt;", x, fixed = TRUE)
+}
+
+# 현 지명자 대진의 본선 조사만 — 대진이 다른 조사를 같은 선에 얹으면 추세가 왜곡된다.
+# (미시간의 Stevens 가상대결, 메인의 Platner 조사가 실제 사례)
+.state_poll_series <- function(code) {
+  p <- readr::read_csv(file.path("data", "senate_polls.csv"), show_col_types = FALSE,
+                       col_types = readr::cols(.default = "c"))
+  p <- p[p$state == code, ]
+  if (!nrow(p)) return(p[0, ])
+  nomd <- tryCatch({
+    cd <- .load_json("candidates")$candidates
+    cd <- cd[cd$state == code & cd$party == "D" & cd$status == "nominee", ]
+    if (nrow(cd)) utils::tail(strsplit(cd$name[1], " ")[[1]], 1) else NA_character_
+  }, error = function(e) NA_character_)
+  if (!is.na(nomd)) p <- p[grepl(nomd, p$dem_candidate, fixed = TRUE), ]
+  p$.d <- ifelse(is.na(p$end_date) | p$end_date == "", p$start_date, p$end_date)
+  p$.m <- suppressWarnings(as.numeric(p$margin))
+  p <- p[!is.na(p$.d) & p$.d != "" & !is.na(p$.m), ]
+  p[order(p$.d), ]
+}
+
+# 조사 마진 추이 SVG — 각 점에 조사기관 명칭을 얹는다(상세 수치는 §5 표).
+poll_trend_svg <- function(code) {
+  p <- .state_poll_series(code)
+  n <- nrow(p)
+  if (n == 0)
+    return('<p class="pt-empty">현 대진의 본선 여론조사가 아직 데이터베이스에 없습니다 — 추정으로 채우지 않습니다.</p>')
+
+  W <- 720; H <- 168; padL <- 10; padR <- 10; padT <- 34; padB <- 40
+  x <- as.numeric(as.Date(p$.d)); y <- p$.m
+  rng <- range(c(y, 0)); pad <- max(2, diff(rng) * 0.22)
+  lo <- rng[1] - pad; hi <- rng[2] + pad
+  fx <- function(v) if (max(x) > min(x)) padL + (W - padL - padR) * (v - min(x)) / (max(x) - min(x)) else W / 2
+  fy <- function(v) padT + (H - padT - padB) * (1 - (v - lo) / (hi - lo))
+  zy <- fy(0)
+
+  s <- c(sprintf('<svg class="pt-svg" viewBox="0 0 %d %d" role="img" aria-label="%s 조사 마진 추이">', W, H, code))
+  s <- c(s, sprintf('<line class="pt-zero" x1="0" y1="%.1f" x2="%d" y2="%.1f"/>', zy, W, zy),
+            sprintf('<text class="pt-zlab" x="%d" y="%.1f">동률</text>', W - 2, zy - 4))
+  # 3건 미만은 선을 긋지 않는다 — 두 점을 잇는 건 추세가 아니라 착시다.
+  if (n >= 3)
+    s <- c(s, sprintf('<path class="pt-line" d="%s"/>',
+                      paste0(ifelse(seq_len(n) == 1, "M", "L"),
+                             sprintf("%.1f,%.1f", fx(x), fy(y)), collapse = " ")))
+  # 라벨 배치: x가 가까우면 겹치므로 위/아래 두 줄에 번갈아 넣되 간격을 확인한다.
+  lastX <- c(-Inf, -Inf); rowsY <- c(-1, 1)
+  lab <- character(n)
+  short <- .pollster_short(p$pollster)
+  for (i in seq_len(n)) {
+    xi <- fx(x[i]); r <- if (xi - lastX[1] >= 96) 1L else if (xi - lastX[2] >= 96) 2L else
+      if ((xi - lastX[1]) >= (xi - lastX[2])) 1L else 2L
+    lastX[r] <- xi
+    dy <- if (rowsY[r] < 0) -13 else 21
+    anch <- if (xi < 60) "start" else if (xi > W - 60) "end" else "middle"
+    lab[i] <- sprintf(
+      '<text class="pt-lab" x="%.1f" y="%.1f" text-anchor="%s">%s<tspan class="pt-lab-m" dx="4">%s</tspan></text>',
+      xi, fy(y[i]) + dy, anch, .esc(short[i]), .fmt_margin(y[i]))
   }
-  rows |>
-    gt() |>
-    tab_header(title = paste0(code, " 레이스 카드"),
-               subtitle = paste0("기준 ", d$as_of)) |>
-    .tbl_opts()
+  s <- c(s, lab)
+  part <- !is.na(p$partisan) & p$partisan %in% c("D", "R")
+  s <- c(s, sprintf('<circle class="pt-dot%s" cx="%.1f" cy="%.1f" r="4.2"/>',
+                    ifelse(part, " pt-part", ""), fx(x), fy(y)))
+  s <- c(s, sprintf('<circle class="pt-last" cx="%.1f" cy="%.1f" r="5.4"/>', fx(x[n]), fy(y[n])))
+  s <- c(s, sprintf('<text class="pt-ax" x="%.1f" y="%d" text-anchor="start">%s</text>',
+                    padL, H - 8, format(as.Date(p$.d[1]), "%m/%d")))
+  if (n > 1)
+    s <- c(s, sprintf('<text class="pt-ax" x="%.1f" y="%d" text-anchor="end">%s</text>',
+                      W - padR, H - 8, format(as.Date(p$.d[n]), "%m/%d")))
+  s <- c(s, "</svg>")
+  paste0(paste(s, collapse = ""),
+         if (n < 3) sprintf('<p class="pt-thin">조사 %d건 — 추세를 판단하기에 부족해 선을 긋지 않았습니다.</p>', n) else "")
+}
+
+# 레이스 카드 = 상태 스트립 + 조사 추이. 상세는 각 절로 링크한다.
+state_card_html <- function(code) {
+  d <- .load_json("senate_races"); r <- d$races[d$races$state == code, ]
+  feed <- tryCatch(.load_json("senate_ratings_feed"), error = function(e) NULL)
+  kal  <- tryCatch(.load_json("kalshi_prices"), error = function(e) NULL)
+
+  cls <- function(g) if (grepl(" D$", g)) "d" else if (grepl(" R$", g)) "r" else "t"
+  bd <- c(sprintf('<b class="bd bd-def">%s</b>', if (r$defense == "D") "민주 방어" else "공화 방어"))
+  if (!is.null(feed)) {
+    for (lb in c("Cook Political Report", "Sabato's Crystal Ball", "Inside Elections")) {
+      i <- which(feed$sources$label == lb)
+      if (!length(i)) next
+      g <- feed$sources$ratings[[code]][i[1]]
+      if (is.na(g) || !nzchar(g)) next
+      nm <- c("Cook Political Report" = "Cook", "Sabato's Crystal Ball" = "Sabato",
+              "Inside Elections" = "IE")[[lb]]
+      bd <- c(bd, sprintf('<b class="bd bd-%s">%s %s <span class="bd-as">%s</span></b>',
+                          cls(g), nm, .esc(g), substr(feed$sources$as_of[i[1]], 6, 10)))
+    }
+  }
+  if (!is.null(kal) && !is.null(kal$senate[[code]]$dem))
+    bd <- c(bd, sprintf('<b class="bd bd-mkt">Kalshi 민주 %d¢</b>', round(kal$senate[[code]]$dem)))
+
+  p <- .state_poll_series(code); n <- nrow(p)
+  head <- if (n == 0) "본선 조사 없음" else
+    sprintf("최신 %s · %s <span class=\"pt-sub\">조사 %d건%s</span>",
+            .fmt_margin(p$.m[n]), format(as.Date(p$.d[n]), "%-m/%-d"), n,
+            if (n >= 2) sprintf(" · %s %s부터", format(as.Date(p$.d[1]), "%-m/%-d"), .fmt_margin(p$.m[1])) else "")
+
+  paste0(
+    '<div class="rcard">',
+    sprintf('<div class="rcard-hd">%s <span class="rcard-mu">· %s</span></div>', .esc(r$incumbent), code),
+    '<div class="rcard-bd">', paste(bd, collapse = ""), '</div>',
+    '<div class="rcard-tt">조사 마진 추이 <span class="rcard-mu">(양수 = 민주 우위 · 속 빈 점 = 당파 후원 조사)</span></div>',
+    poll_trend_svg(code),
+    sprintf('<p class="rcard-lk">각 조사의 실사기간·표본·출처는 <a href="#polls">최신 여론조사 표</a> · 자금은 <a href="#money">펀드레이징</a> · 등급 비교는 <a href="/dashboard.html">전망 대시보드</a>. <span class="rcard-mu">데이터 기준 %s</span></p>', d$as_of),
+    '</div>')
 }
 
 # 1.4c-2 주별 여론조사 표 (State Focus용) ------------------------------------
 # data/senate_polls.csv 를 그대로 렌더 — 프로즈에 수치를 박지 않고 데이터에서 끌어오므로
 # 주간 발행 때 조사가 추가되면 각 주 페이지가 자동으로 최신화된다.
 gt_state_polls <- function(code) {
+  rd <- .load_json("senate_races"); rr <- rd$races[rd$races$state == code, ]
   # 날짜 컬럼을 문자로 강제 — Date로 파싱되면 `x == ""` 비교가 NA가 돼 실사기간이 통째로 NA가 된다
   p <- readr::read_csv(file.path("data", "senate_polls.csv"), show_col_types = FALSE,
                        col_types = readr::cols(.default = "c"))
@@ -226,6 +347,10 @@ gt_state_polls <- function(code) {
     tab_source_note(paste0(
       "출처 URL은 `data/senate_polls.csv`에 행별로 보관합니다. 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 ",
       "단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.")) |>
+    # 종전에 레이스 카드 한 칸을 통째로 차지하던 서술형 해설(최대 436자)을 여기로 옮겼다
+    # (2026-08-30) — 카드는 한눈에 보는 자리이고, 읽는 자리는 표 아래다.
+    (\(g) if (nrow(rr) && !is.na(rr$poll_source))
+            tab_source_note(g, paste0("이번 주 판독 — ", rr$poll_source)) else g)() |>
     .tbl_opts()
 }
 

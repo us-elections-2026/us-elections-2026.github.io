@@ -13,7 +13,8 @@ cat(candidate_cards_html("NH"))
 ```
 
 ```{r}
-gt_state_detail("NH")
+#| output: asis
+cat(state_card_html("NH"))
 ```
 
 민주당의 **수성 레이스**. 5선 [Jeanne Shaheen의 은퇴](https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire)로 이 의석은 1990년 이후 처음인 완전 오픈시트가 됐습니다. 등급은 Cook **Lean D**(1/12)·Sabato **Leans Democratic**으로, 민주당의 "+4 산수"에서 NH는 필수 수성 3석(GA·MI·NH) 중 하나입니다. 이곳을 잃으면 다수당 경로가 공화 보유 6곳(ME·NC·TX·OH·AK·IA) 전승으로 좁아집니다([시나리오](../scenarios.qmd) 참조).
@@ -70,7 +71,7 @@ gt_state_polls("NH")
 
 > 이 표는 `data/senate_polls.csv`에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 **여러 조사의 방향**을 보세요.
 
-## 6. 펀드레이징
+## 6. 펀드레이징 {#money}
 
 ```{r}
 #| output: asis

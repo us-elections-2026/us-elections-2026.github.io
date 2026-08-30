@@ -26,7 +26,7 @@ Mac mini (수집 + 정규화 → data/ 에 JSON/CSV 커밋) → git push
 - `_quarto.yml` — 사이트 설정. `execute-dir: project`(작업경로=루트 고정), `freeze: false`(데이터 변경 시 매 빌드 재계산).
 - `R/helpers.R` — `data/` 로딩·정규화·`gt` 표 렌더링 헬퍼. **공개 함수 43개 전수**(2026-08-30 대조 — 종전 목록엔 20개만 적혀 있어 있는 헬퍼를 없는 줄 알고 중복 구현할 위험이 있었다):
   - **전국·예보·KPI**: `gt_forecast()` `gt_generic()` `gt_generic_spread()` `gt_approval()` `gt_national_econ()` `home_kpis()` `model_kpi()` `model_rating_counts()`
-  - **상원**: `gt_senate()` `gt_senate_primaries()` `gt_state_detail()` `gt_state_polls()` `gt_state_fec()` `state_money_html()` `gt_model_states()` `gt_model_scenarios()` `rating_tiles_html()` `holder_note_html()` `us_tile_map_html()` `rating_matrix_html()` `gt_senate_rating_sources()` `gt_cook_tossups()` `candidate_cards_html()` `primary_cards_html()`
+  - **상원**: `gt_senate()` `gt_senate_primaries()` `state_card_html()` `poll_trend_svg()` `gt_state_polls()` `gt_state_fec()` `state_money_html()` `gt_model_states()` `gt_model_scenarios()` `rating_tiles_html()` `holder_note_html()` `us_tile_map_html()` `rating_matrix_html()` `gt_senate_rating_sources()` `gt_cook_tossups()` `candidate_cards_html()` `primary_cards_html()`
   - **하원**: `house_cook_bar_html()` `gt_house_races()`
   - **주지사**: `gt_governor_races()` `gt_governor_detail()` `gt_governor_polls()` `gt_governor_primaries()` `gt_governor_sources()` `governor_cards_html()` `governor_money_html()` `governor_history_html()`
   - **시장·재획정·기타**: `kalshi_control_html()` `gt_kalshi_races()` `gt_redistricting_states()` `gt_redistricting_pres()` `svg_redistricting_bar()` `svg_redistricting_dumbbell()` `gt_state_legislatures()` `gt_korea_watch()` `gt_polls_log()`

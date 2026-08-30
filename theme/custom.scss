@@ -362,3 +362,37 @@ main .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .mkt-note { font-size: .76rem; color: #6b7280; line-height: 1.6; margin: 8px 0 0; }
 .mkt-flag { color: #b45309; font-size: .72rem; border: 1px solid #e7c98f; border-radius: 3px; padding: 0 4px; margin-left: 5px; font-weight: 600; }
 .mkt-src { color: #9ca3af; font-size: .74rem; font-weight: 400; }
+
+
+/* ── 주별 레이스 카드 (State Focus 상단) — 2026-08-30 신설 ────────────────
+   종전 세로 표를 대체한다. 카드는 '한눈에', 상세는 각 절로 링크한다. */
+.rcard { border: 1px solid #e5e0d3; border-radius: 10px; padding: 14px 16px 10px; margin: .2rem 0 1.1rem;
+  background: #fffdf8; }
+.rcard-hd { font-weight: 700; font-size: 1.02rem; letter-spacing: -.01em; }
+.rcard-mu { color: #6b7280; font-weight: 400; font-size: .82rem; }
+.rcard-bd { display: flex; flex-wrap: wrap; gap: 6px; margin: 9px 0 4px; }
+.bd { font-size: .74rem; font-weight: 700; padding: 3px 9px; border-radius: 99px;
+  border: 1px solid #e5e0d3; background: #fff; white-space: nowrap; }
+.bd-as { font-weight: 400; opacity: .62; margin-left: 3px; }
+.bd-def { background: #f3f4f6; color: #374151; }
+.bd-d { background: #dbeafe; color: #1e3a8a; border-color: #bfdbfe; }
+.bd-r { background: #fee2e2; color: #7f1d1d; border-color: #fecaca; }
+.bd-t { background: #f1f2f4; color: #374151; }
+.bd-mkt { color: #4b5563; }
+.rcard-tt { font-size: .8rem; font-weight: 700; color: #374151; margin: 12px 0 2px; }
+.rcard-lk { font-size: .76rem; color: #6b7280; margin: 6px 0 2px; }
+
+/* 조사 마진 추이 — 각 점에 조사기관명을 얹는다(상세 수치는 §5 표). */
+.pt-svg { width: 100%; height: auto; max-height: 200px; display: block; overflow: visible; }
+.pt-zero { stroke: #cbd5e1; stroke-width: 1; stroke-dasharray: 3 3; }
+.pt-zlab { fill: #9ca3af; font-size: 10px; text-anchor: end; }
+.pt-line { fill: none; stroke: #94a3b8; stroke-width: 1.8; stroke-linejoin: round; stroke-linecap: round; }
+.pt-dot { fill: #475569; }
+.pt-part { fill: #fffdf8; stroke: #475569; stroke-width: 1.6; }
+.pt-last { fill: #2166ac; stroke: #fffdf8; stroke-width: 2; }
+.pt-lab { fill: #374151; font-size: 11px; font-weight: 600; }
+.pt-lab-m { fill: #6b7280; font-weight: 700; }
+.pt-ax { fill: #9ca3af; font-size: 10px; }
+.pt-thin { font-size: .78rem; color: #6b7280; font-style: italic; margin: 2px 0 0; }
+.pt-empty { font-size: .82rem; color: #6b7280; margin: 6px 0; }
+.pt-sub { color: #6b7280; font-weight: 400; }
