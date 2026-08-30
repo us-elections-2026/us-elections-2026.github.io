@@ -24,7 +24,12 @@ Mac mini (수집 + 정규화 → data/ 에 JSON/CSV 커밋) → git push
 ## 디렉터리
 
 - `_quarto.yml` — 사이트 설정. `execute-dir: project`(작업경로=루트 고정), `freeze: false`(데이터 변경 시 매 빌드 재계산).
-- `R/helpers.R` — `data/` 로딩·정규화·`gt` 표 렌더링 헬퍼. `gt_forecast()` `gt_generic()` `gt_generic_spread()` `gt_approval()` `gt_senate()` `gt_senate_primaries()` `gt_state_detail()` `gt_polls_log()` `gt_model_states()` `gt_model_scenarios()` `model_kpi()` `house_cook_bar_html()` `gt_house_races()` `gt_korea_watch()` `candidate_cards_html()` `governor_cards_html()` `gt_state_fec()` `gt_governor_detail()` `gt_governor_polls()` `governor_money_html()`.
+- `R/helpers.R` — `data/` 로딩·정규화·`gt` 표 렌더링 헬퍼. **공개 함수 43개 전수**(2026-08-30 대조 — 종전 목록엔 20개만 적혀 있어 있는 헬퍼를 없는 줄 알고 중복 구현할 위험이 있었다):
+  - **전국·예보·KPI**: `gt_forecast()` `gt_generic()` `gt_generic_spread()` `gt_approval()` `gt_national_econ()` `home_kpis()` `model_kpi()` `model_rating_counts()`
+  - **상원**: `gt_senate()` `gt_senate_primaries()` `gt_state_detail()` `gt_state_polls()` `gt_state_fec()` `state_money_html()` `gt_model_states()` `gt_model_scenarios()` `rating_tiles_html()` `holder_note_html()` `us_tile_map_html()` `rating_matrix_html()` `gt_senate_rating_sources()` `gt_cook_tossups()` `candidate_cards_html()` `primary_cards_html()`
+  - **하원**: `house_cook_bar_html()` `gt_house_races()`
+  - **주지사**: `gt_governor_races()` `gt_governor_detail()` `gt_governor_polls()` `gt_governor_primaries()` `gt_governor_sources()` `governor_cards_html()` `governor_money_html()` `governor_history_html()`
+  - **시장·재획정·기타**: `kalshi_control_html()` `gt_kalshi_races()` `gt_redistricting_states()` `gt_redistricting_pres()` `svg_redistricting_bar()` `svg_redistricting_dumbbell()` `gt_state_legislatures()` `gt_korea_watch()` `gt_polls_log()`
 - `index.qmd` — 홈(상원 전망 요약 KPI + 환경 스냅샷 + 이슈 listing). `trackers.qmd` — 최신 표 모음. `senate.qmd` — 경합주 표. `dashboard.qmd` — ★ 자체 모델 대시보드. `about.qmd` — evergreen 소개.
 - `dashboard.qmd` + `assets/dashboard.{js,css}` — 인터랙티브 대시보드(Chart.js). `data/model_dashboard.json`을 런타임 `fetch`로 읽어 KPI·확률차트·시나리오·주별카드·타임라인 렌더. ⚠️ **JS 비활성 환경 폴백은 현재 끊겨 있다(2026-08-29 확인)** — `gt_model_scenarios()`는 `scenarios.qmd`에서 쓰이지만 `gt_model_states()`는 어느 `.qmd`에서도 호출되지 않아, `dashboard.html`은 `#dash-kpis`·`#dash-scenarios`·`#dash-states`·`#dash-timeline`·`#dash-stamp`·`#dash-note` 여섯 컨테이너를 **빈 채로 출고**한다(JS가 채운다). 복구는 아래 TODO 참조. 산문 수치는 2026-08-29부터 인라인 R로 `data/`에서 읽는다 — **손으로 박지 말 것**(8/6자 값이 5주간 남아 같은 페이지 표와 어긋난 전력). **데이터 갱신 = `data/model_dashboard.json` 한 파일만 편집 → push → 자동 재빌드.** `fetch` 대상이라 `_quarto.yml`의 `project.resources`에 등록돼 있어야 `_site/`로 복사됨.
 - `states/{ga,mi,nh,me,nc,tx,oh,ak,ia}.qmd` — 경합주 9곳 State Focus 페이지(`gt_state_detail()` 카드 + 프로즈). 민주 수성 3(GA·MI·NH) + 공화 표적 6(ME·NC·TX·OH·AK·IA). 주 추가/제외는 사람이 결정한다 — **IA는 2026-08-08 편입**(Inside Elections 하향 + Fox 조사 튜렉 우위 + Q2 모금 역전).
@@ -81,28 +86,27 @@ Rscript -e 'install.packages(c("jsonlite","dplyr","gt","readr"))'   # 최초 1�
 ### 긴급 (날짜 임박)
 - **[2026-08-30 주간 발행 때 처리] `dashboard.qmd` JS 비활성 폴백 복구** — `gt_model_states()`가 정의(`R/helpers.R:532`)만 있고 호출처가 없어 대시보드의 여섯 컨테이너가 빈 채로 출고된다(위 `dashboard.qmd` 항목 참조). `scenarios.qmd:20`이 쓰는 `gt_model_scenarios()`는 정상이므로 **대상은 `gt_model_states()` 하나**. 주의: JS가 켜진 환경에서는 JS 렌더 결과와 **이중 표시**되므로, 단순 호출 추가가 아니라 `.d-none`/`<noscript>`류로 한쪽만 보이게 하는 처리가 함께 필요하다. 사용자 지시로 8/30 발행 사이클에 배정(2026-08-29).
 - ~~`actions/checkout@v4` Node 24 대응~~ — ✅ 완료(2026-06-11)
-- **GA 결선(6/16) 후 데이터 갱신**: `data/senate_races.json`·`data/senate_primaries.json`·`data/model_dashboard.json`·`states/ga.qmd`
+- ~~GA 결선(6/16) 후 데이터 갱신~~ — ✅ 완료(2026-08-30 대조 확인): `senate_primaries` 결선 '완료'(Collins 55.5–Dooley 44.5) · `senate_races`/`model_dashboard` 모두 Ossoff vs Collins 대진 반영 · `states/ga.qmd` 결선 서술 반영
 
 ### 콘텐츠
-- `issues/2026-06-14.qmd` 작성 — GA 6/16 결선 직전 동향·ME 압승 반영 (**GA 결선 이후 작성 권장**)
 - ~~`states/me.qmd` Platner 77.7% 업데이트~~ — ✅ 반영됨
 - ~~`house.qmd` 주목 레이스 카드·`house_races.json` margin/sabato/status 채우기~~ — ✅ 완료(2026-06-14): 18구 전 필드·주목 카드 7개·AZ-01/ME-02/NE-02 공석 정정
 - ~~`korea-watch.qmd` 인물 명단~~ — ✅ 완료(2026-06-14): 16행 DB + 법안/인물 표
 - ~~`states/nc.qmd`·`states/ak.qmd`·`states/oh.qmd` 슬롯 채우기~~ — ✅ 완료(2026-06-14): 8주 전부 6섹션 표준화
-- `about.qmd` — evergreen 소개 실제 콘텐츠
-- `data/model_dashboard.json` — NC Lean D prob 입력, 경선 결과 반영. **모델 확률은 사람이 입력** (null="산정 전"으로 렌더)
-- `data/trends.json` — 일반투표 결측 8개 주 RealClearPolling 소급 보강
+- ~~`about.qmd` evergreen 소개 실제 콘텐츠~~ — ✅ 완료(2026-08-30 확인): 4개 절(중간선거란·의회 구조·한국 독자에게 중요한 이유·여론조사 읽는 법), 플레이스홀더 0건
+- ⚠️ **`data/model_dashboard.json`의 `prob`는 사람이 입력하지 않는다** — 종전 이 자리에 "모델 확률은 사람이 입력"이라고 적혀 있었으나 **2026-08-06부터 규칙이 반대로 바뀌었다**(2026-08-30 정정). 각 주 `prob` = `kalshi_prices.json`의 `senate.<주>.dem`(¢)을 반올림한 **시장 원가격 전재**이고, 시장이 없는 주만 `null`이다. 대시보드 JS가 이 값을 "시장가 민주 N%"로 렌더하므로 **등급·조사를 가중한 추정치를 넣으면 라벨과 내용이 어긋난다.** 현재 9개 주 전부 Kalshi 원가격과 일치하고 `null`은 0개다. 같은 이유로 `dem_majority_prob`도 `senate_control.dem` 전재이며, 모델 확률(RtWH·DDHQ)은 `scenarios[]`에만 넣는다.
+- `data/trends.json` — 일반투표 결측 8개 주(3/23·3/30·4/6·4/20·4/27·5/4·5/11·5/18) RealClearPolling 소급 보강. **주의: `trump_net`의 4/13 결측은 보강 대상이 아니다** — 어느 출처에도 없는 파생값으로 확인돼 2026-08-12 대조에서 의도적으로 `null` 처리한 것이다(`data/trends_verification.md`).
 
 ### 데이터 플래그 (홈 유의사항 callout에 공개)
-- Barrett(MI-07) Korea Caucus 1차 출처 미검증 (재확인 필요)
-- Platner 6/9 경선 77.7% 최종 인증치 미독립검증
+- Barrett(MI-07) Korea Caucus 1차 출처 미검증 (재확인 필요) — **유효**: `korea-watch.qmd`가 멤버로 단정 서술 중이고 홈 callout이 미검증으로 공개 중
+- ~~Platner 6/9 경선 77.7% 최종 인증치 미독립검증~~ — 무효화(2026-08-30): Platner는 7/10 사퇴하고 Jackson이 지명자이며, **`77.7`이라는 수치가 사이트 어디에도 남아 있지 않다**(전수 grep 0건). 검증할 대상이 없어진 플래그
 - FEC 일부 수치 보도 기반
 
-### 자동화 (2026-06-14 완료)
+### 자동화
 - ~~launchd 주간 스냅샷 활성화~~ — ✅ **`publish_weekly.sh` §4.5로 편입**(2026-08-13). 종전 기재("수집 파이프라인 스케줄러로 대체, 매일 09:00")는 **사실이 아니었다** — ⓐ 그 plist(`com.us-elections.pipeline.plist`)는 `.disabled`로 비활성 상태이고 ⓑ `run_pipeline.sh`는 애초에 스냅샷을 하지 않는다(헤드리스 Claude로 브리핑을 쓰는 별개 파이프라인). 스냅샷은 2026-06-08 1건에서 멈춰 있었다.
 - `data/*`의 `*_delta` 자동화 — 스냅샷 경로가 복구됐으므로(위) 2주치가 쌓이면 delta 계산 스크립트 추가 가능. **선행 조건이었던 "스냅샷이 쌓이지 않는 문제"는 해소됨.**
 
 ### 선택
-- 예보 종합표 일부 모델 수치(RacetotheWH·Silver Bulletin 본선 확률) — 슬롯 상태
+- 예보 종합표 모델 수치 — **RacetotheWH는 자동 취득으로 해소**(`scripts/fetch_rtwh_forecast.py`, Infogram 라이브 시계열). **남은 것은 Silver Bulletin 본선 확률**로, 의석 표가 유료 구간이라 자동 취득 경로가 없다
 - 뉴스레터 배포 채널 분리(Pages는 이메일 발송 불가 → Buttondown/Substack 등)
 - `korea_watch_db.csv` 매일 append → 중복 누적 가능성 — dedup 래퍼 추가 검토
