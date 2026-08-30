@@ -13,7 +13,8 @@ cat(governor_cards_html("OH"))
 ```
 
 ```{r}
-gt_governor_detail("OH")
+#| output: asis
+cat(governor_card_html("OH"))
 ```
 
 경합 8주 가운데 **기관 이견과 조사 편차가 모두 가장 큰 주**입니다. Cook은 7/10 Toss-up으로 올렸는데 Sabato·IE는 Lean R을 유지하고, 집계조차 RCP는 Acton +0.8, Pollsmax는 Ramaswamy +0.8로 방향이 갈립니다. **광고비 90 대 1의 격차에도 조사가 동률**이라는 것이 이 레이스의 요약입니다.
@@ -45,8 +46,7 @@ gt_governor_polls("OH")
 
 > 이 표의 특징은 **당파 스펙트럼 전체에서 접전이 확인된다**는 점입니다 — 민주 성향(Tulchin +3), 초당 합동(Impact/Fabrizio +3), 무당파(NYT/Siena 동률), 그리고 2025년 조사들(BGSU R+3·Emerson D+1)까지. 어느 한 조사도 단독으로 신뢰하기 어렵습니다.
 
-## 5. 자금
-
+## 5. 자금 {#money}
 ```{r}
 #| output: asis
 cat(governor_money_html("OH"))

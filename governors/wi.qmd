@@ -13,7 +13,8 @@ cat(governor_cards_html("WI"))
 ```
 
 ```{r}
-gt_governor_detail("WI")
+#| output: asis
+cat(governor_card_html("WI"))
 ```
 
 **경합 8주 중 대진이 마지막으로 정해진 주**입니다. 8/11 경선에서 공화는 **Tom Tiffany가 96.2%**(Andy Manske와 2인 경선)로 일찌감치 확정됐고, 민주는 **David Crowley 39.8% 대 Francesca Hong 39.3%** — 약 3,000표·**0.4%p** 차의 사이클 최대 접전이었습니다. 밀워키 개표가 늦어지며 콜이 미뤄졌지만 **Hong이 당일 밤 승복**하면서 1%p 이내에서 가능했던 재검표 청구 가능성이 소멸했고, AP는 **8/12 새벽 2시 34분(중부시간)** 승자를 확정했습니다. 다만 결과는 **주 개표 인증 전까지 비공식**입니다.
@@ -55,8 +56,7 @@ gt_governor_polls("WI")
 
 > **이 표는 현재 대진을 반영하지 않습니다.** 세 조사 모두 **8/11 경선 전 Hong 기준 가상대결**이고(Marquette는 공식 릴리스 기준 44–44 동률), 민주 후보는 Crowley로 확정됐습니다. 따라서 **본선 판세의 근거로 쓸 수 없으며**, 경선 전 지형을 보여주는 기록으로만 남겨 둡니다. Crowley 기준 신규 조사가 나오는 대로 교체합니다.
 
-## 5. 자금
-
+## 5. 자금 {#money}
 ```{r}
 #| output: asis
 cat(governor_money_html("WI"))

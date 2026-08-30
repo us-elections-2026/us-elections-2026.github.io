@@ -123,8 +123,12 @@ else
     || echo "[weekly] ! 스냅샷 실패(건너뜀 — 발행은 계속)"
 fi
 
-# 5) 스테이징·커밋·push (data/ + issues/ + states/ + 최상위 .qmd)
-git add data/ issues/ states/ ./*.qmd
+# 5) 스테이징·커밋·push (data/ + issues/ + states/ + governors/ + 최상위 .qmd)
+# governors/ 가 빠져 있었다(2026-08-30 발견) — 주지사 State Focus 8곳은 CLAUDE.md가
+# 관리 대상으로 명시한 디렉터리인데 스테이징 목록에 없어, 그쪽을 고쳐도 주간 발행에
+# 실리지 않고 조용히 남았다. R/·assets/·theme/ 은 코드·스타일이라 의도적으로 제외한다
+# (사람이 별도 커밋한다).
+git add data/ issues/ states/ governors/ ./*.qmd
 if git diff --cached --quiet; then
   echo "[weekly] 커밋할 변경 없음 — 종료(이미 최신)"; exit 0
 fi

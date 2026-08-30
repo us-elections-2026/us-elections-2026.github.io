@@ -13,7 +13,8 @@ cat(governor_cards_html("IA"))
 ```
 
 ```{r}
-gt_governor_detail("IA")
+#| output: asis
+cat(governor_card_html("IA"))
 ```
 
 Reynolds의 불출마 선언(2025-04-11, 가족 사유)으로 열린 개방석입니다. 이 레이스가 흥미로운 이유는 **같은 날 같은 유권자가 뽑는 상원과 예측시장 평가가 24포인트 갈리기 때문**입니다 — 상원 민주 41¢, 주지사 민주 65¢(Kalshi 8/10). 주 지형으로는 설명되지 않는 격차이고, 남는 설명은 후보 효과입니다. **Sand는 2022년 아이오와에서 주 전체 선출직에 당선된 유일한 민주당원**(감사원장)입니다.
@@ -46,8 +47,7 @@ gt_governor_polls("IA")
 
 > Fox +9와 NYT/Siena +1의 간격이 큽니다 — 모집단(RV vs LV) 차이를 고려해도 단일 조사보다 방향(둘 다 Sand 우위)을 보세요.
 
-## 5. 자금
-
+## 5. 자금 {#money}
 ```{r}
 #| output: asis
 cat(governor_money_html("IA"))

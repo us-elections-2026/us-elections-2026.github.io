@@ -184,12 +184,23 @@ gt_senate_primaries <- function() {
   "Alaska Survey Research" = "ASR", "Wedgewood Polls" = "Wedgewood",
   "Texas Southern Univ./Jordan Research Center" = "TSU",
   "Bush School/Recon MR Pulse" = "Bush School",
-  "UT Austin/Texas Politics Project" = "UT Austin", "NRSC/Peak Insights" = "NRSC")
+  "UT Austin/Texas Politics Project" = "UT Austin", "NRSC/Peak Insights" = "NRSC",
+  # 주지사 트랙(2026-08-30 추가)
+  "Noble Predictive Insights" = "Noble", "TechnoMetrica(TIPP)" = "TIPP",
+  "Fabrizio Ward/Impact Research" = "Fabrizio", "State Navigate" = "State Nav.",
+  "Tulchin Research" = "Tulchin", "Mitchell Research" = "Mitchell",
+  "Platform Communications" = "Platform", "Wick Insights" = "Wick",
+  "Marquette Law School" = "Marquette", "RMG Research/Napolitan" = "RMG",
+  "BGSU/YouGov" = "BGSU")
 
+# 목록에 없으면 규칙으로 줄인다 — 첫 토큰에서 일반명사 접미어를 떼고, 그래도 길면 자른다.
+# 그냥 자르면 "Noble Predic…", "State Naviga…"처럼 읽기 어려운 꼬리가 남는다.
+.POLLSTER_DROP <- "\\s+(Research|Polling|Polls|Insights|Communications|College|University|Survey Center|Institute|Group)$"
 .pollster_short <- function(x) {
   vapply(x, function(nm) {
     if (!is.na(.POLLSTER_SHORT[nm])) return(unname(.POLLSTER_SHORT[nm]))
     s <- trimws(strsplit(nm, "/|·")[[1]][1])              # 첫 토큰만
+    repeat { s2 <- sub(.POLLSTER_DROP, "", s); if (identical(s2, s)) break; s <- s2 }
     if (nchar(s) > 13) s <- paste0(substr(s, 1, 12), "…")
     s
   }, character(1), USE.NAMES = FALSE)
@@ -201,14 +212,20 @@ gt_senate_primaries <- function() {
 }
 
 # 현 지명자 대진의 본선 조사만 — 대진이 다른 조사를 같은 선에 얹으면 추세가 왜곡된다.
-# (미시간의 Stevens 가상대결, 메인의 Platner 조사가 실제 사례)
-.state_poll_series <- function(code) {
-  p <- readr::read_csv(file.path("data", "senate_polls.csv"), show_col_types = FALSE,
+# 실제 사례: 상원 미시간의 Stevens 가상대결·메인의 Platner 조사,
+#            주지사 위스콘신의 Hong 가상대결(8/11 경선에서 Crowley가 이겼다).
+# office = "senate" | "governor" — 두 트랙이 같은 규칙을 쓰도록 한 곳에 모았다.
+.poll_series <- function(code, office = c("senate", "governor")) {
+  office <- match.arg(office)
+  src <- if (office == "senate")
+    list(csv = "senate_polls.csv", cand = "candidates") else
+    list(csv = "governor_polls.csv", cand = "governor_candidates")
+  p <- readr::read_csv(file.path("data", src$csv), show_col_types = FALSE,
                        col_types = readr::cols(.default = "c"))
   p <- p[p$state == code, ]
   if (!nrow(p)) return(p[0, ])
   nomd <- tryCatch({
-    cd <- .load_json("candidates")$candidates
+    cd <- .load_json(src$cand)$candidates
     cd <- cd[cd$state == code & cd$party == "D" & cd$status == "nominee", ]
     if (nrow(cd)) utils::tail(strsplit(cd$name[1], " ")[[1]], 1) else NA_character_
   }, error = function(e) NA_character_)
@@ -220,8 +237,8 @@ gt_senate_primaries <- function() {
 }
 
 # 조사 마진 추이 SVG — 각 점에 조사기관 명칭을 얹는다(상세 수치는 §5 표).
-poll_trend_svg <- function(code) {
-  p <- .state_poll_series(code)
+poll_trend_svg <- function(code, office = c("senate", "governor")) {
+  p <- .poll_series(code, match.arg(office))
   n <- nrow(p)
   if (n == 0)
     return('<p class="pt-empty">현 대진의 본선 여론조사가 아직 데이터베이스에 없습니다 — 추정으로 채우지 않습니다.</p>')
@@ -272,9 +289,16 @@ poll_trend_svg <- function(code) {
 }
 
 # 레이스 카드 = 상태 스트립 + 조사 추이. 상세는 각 절로 링크한다.
-state_card_html <- function(code) {
-  d <- .load_json("senate_races"); r <- d$races[d$races$state == code, ]
-  feed <- tryCatch(.load_json("senate_ratings_feed"), error = function(e) NULL)
+# 상원·주지사가 같은 규칙을 쓰도록 한 함수로 두고, 트랙별 데이터 출처만 갈아 끼운다.
+.race_card_html <- function(code, office = c("senate", "governor")) {
+  office <- match.arg(office)
+  cfg <- if (office == "senate")
+    list(races = "senate_races", feed = "senate_ratings_feed", kal = "senate",
+         money = "펀드레이징", note = "") else
+    list(races = "governor_races", feed = "governor_ratings", kal = "governor",
+         money = "자금", note = " 자금은 주(州) 선관위 신고 기준(연방 FEC 아님).")
+  d <- .load_json(cfg$races); r <- d$races[d$races$state == code, ]
+  feed <- tryCatch(.load_json(cfg$feed), error = function(e) NULL)
   kal  <- tryCatch(.load_json("kalshi_prices"), error = function(e) NULL)
 
   cls <- function(g) if (grepl(" D$", g)) "d" else if (grepl(" R$", g)) "r" else "t"
@@ -291,10 +315,10 @@ state_card_html <- function(code) {
                           cls(g), nm, .esc(g), substr(feed$sources$as_of[i[1]], 6, 10)))
     }
   }
-  if (!is.null(kal) && !is.null(kal$senate[[code]]$dem))
-    bd <- c(bd, sprintf('<b class="bd bd-mkt">Kalshi 민주 %d¢</b>', round(kal$senate[[code]]$dem)))
+  if (!is.null(kal) && !is.null(kal[[cfg$kal]][[code]]$dem))
+    bd <- c(bd, sprintf('<b class="bd bd-mkt">Kalshi 민주 %d¢</b>', round(kal[[cfg$kal]][[code]]$dem)))
 
-  p <- .state_poll_series(code); n <- nrow(p)
+  p <- .poll_series(code, office); n <- nrow(p)
   head <- if (n == 0) "본선 조사 없음" else
     sprintf("최신 %s · %s <span class=\"pt-sub\">조사 %d건%s</span>",
             .fmt_margin(p$.m[n]), format(as.Date(p$.d[n]), "%-m/%-d"), n,
@@ -305,10 +329,14 @@ state_card_html <- function(code) {
     sprintf('<div class="rcard-hd">%s <span class="rcard-mu">· %s</span></div>', .esc(r$incumbent), code),
     '<div class="rcard-bd">', paste(bd, collapse = ""), '</div>',
     '<div class="rcard-tt">조사 마진 추이 <span class="rcard-mu">(양수 = 민주 우위 · 속 빈 점 = 당파 후원 조사)</span></div>',
-    poll_trend_svg(code),
-    sprintf('<p class="rcard-lk">각 조사의 실사기간·표본·출처는 <a href="#polls">최신 여론조사 표</a> · 자금은 <a href="#money">펀드레이징</a> · 등급 비교는 <a href="/dashboard.html">전망 대시보드</a>. <span class="rcard-mu">데이터 기준 %s</span></p>', d$as_of),
+    poll_trend_svg(code, office),
+    sprintf('<p class="rcard-lk">각 조사의 실사기간·표본·출처는 <a href="#polls">최신 여론조사 표</a> · 자금은 <a href="#money">%s</a> · 등급 비교는 <a href="/dashboard.html">전망 대시보드</a>.%s <span class="rcard-mu">데이터 기준 %s</span></p>',
+            cfg$money, cfg$note, d$as_of),
     '</div>')
 }
+
+state_card_html    <- function(code) .race_card_html(code, "senate")
+governor_card_html <- function(code) .race_card_html(code, "governor")
 
 # 1.4c-2 주별 여론조사 표 (State Focus용) ------------------------------------
 # data/senate_polls.csv 를 그대로 렌더 — 프로즈에 수치를 박지 않고 데이터에서 끌어오므로
@@ -320,8 +348,11 @@ gt_state_polls <- function(code) {
                        col_types = readr::cols(.default = "c"))
   p <- p[p$state == code, ]
   if (nrow(p) == 0) {
-    return(gt(tibble(안내 = "이 주의 본선 여론조사가 아직 데이터베이스에 없습니다(추정으로 채우지 않음).")) |>
-             tab_header(title = "최신 여론조사") |> .tbl_opts())
+    g <- gt(tibble(안내 = "이 주의 본선 여론조사가 아직 데이터베이스에 없습니다(추정으로 채우지 않음).")) |>
+      tab_header(title = "최신 여론조사")
+    if (nrow(rr) && !is.na(rr$poll_source))
+      g <- tab_source_note(g, paste0("이번 주 판독 — ", rr$poll_source))
+    return(.tbl_opts(g))
   }
   p <- p[order(p$end_date, decreasing = TRUE), ]
   fld <- function(x, alt = "—") ifelse(is.na(x) | x == "", alt, as.character(x))
@@ -399,12 +430,16 @@ gt_governor_detail <- function(code) {
 }
 
 gt_governor_polls <- function(code) {
+  rd <- .load_json("governor_races"); rr <- rd$races[rd$races$state == code, ]
   p <- readr::read_csv(file.path("data", "governor_polls.csv"), show_col_types = FALSE,
                        col_types = readr::cols(.default = "c"))
   p <- p[p$state == code, ]
   if (nrow(p) == 0) {
-    return(gt(tibble(안내 = "이 주의 주지사 본선 여론조사가 아직 데이터베이스에 없습니다(추정으로 채우지 않음).")) |>
-             tab_header(title = "최신 여론조사") |> .tbl_opts())
+    g <- gt(tibble(안내 = "이 주의 주지사 본선 여론조사가 아직 데이터베이스에 없습니다(추정으로 채우지 않음).")) |>
+      tab_header(title = "최신 여론조사")
+    if (nrow(rr) && !is.na(rr$poll_source))
+      g <- tab_source_note(g, paste0("이번 주 판독 — ", rr$poll_source))
+    return(.tbl_opts(g))
   }
   p <- p[order(p$end_date, decreasing = TRUE), ]
   fld <- function(x, alt = "—") ifelse(is.na(x) | x == "", alt, as.character(x))
@@ -431,6 +466,9 @@ gt_governor_polls <- function(code) {
       "출처 URL은 `data/governor_polls.csv`에 행별로 보관합니다(【수집】은 원문 URL 확인 중). ",
       "당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 단일 조사보다 여러 조사의 방향을 함께 보세요. ",
       "표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.")) |>
+    # 종전 레이스 카드 한 칸을 차지하던 서술형 해설을 여기로 옮겼다(2026-08-30, 상원과 동일).
+    (\(g) if (nrow(rr) && !is.na(rr$poll_source))
+            tab_source_note(g, paste0("이번 주 판독 — ", rr$poll_source)) else g)() |>
     .tbl_opts()
 }
 

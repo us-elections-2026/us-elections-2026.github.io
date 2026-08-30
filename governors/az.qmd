@@ -13,7 +13,8 @@ cat(governor_cards_html("AZ"))
 ```
 
 ```{r}
-gt_governor_detail("AZ")
+#| output: asis
+cat(governor_card_html("AZ"))
 ```
 
 민주 현직 방어 3곳(AZ·MI + 부분적으로 WI) 가운데 **시장 평가가 가장 안정적인 주**입니다(민주 85¢, Kalshi 8/10). Hobbs는 2022년 Kari Lake를 0.7%p로 꺾은 현직이고, 공화당은 7/21 경선에서 **프리덤코커스 강경파 Andy Biggs가 73.6%로 압승**했습니다 — 유력 온건 후보였던 Karrin Taylor Robson은 경선 전 사퇴했습니다.
@@ -50,8 +51,7 @@ gt_governor_polls("AZ")
 
 > 두 조사 모두 **7/21 경선 전** 가상대결입니다. 경선 후 첫 독립 조사가 나와야 Biggs 확정 효과를 판별할 수 있습니다. 표는 `data/governor_polls.csv`에서 자동 렌더됩니다.
 
-## 5. 자금
-
+## 5. 자금 {#money}
 ```{r}
 #| output: asis
 cat(governor_money_html("AZ"))

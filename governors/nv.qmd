@@ -13,7 +13,8 @@ cat(governor_cards_html("NV"))
 ```
 
 ```{r}
-gt_governor_detail("NV")
+#| output: asis
+cat(governor_card_html("NV"))
 ```
 
 **현직 공화 주지사 가운데 유일한 진성 경합**입니다. Lombardo는 2022년 민주 파도 속에서 **그 해 전국에서 유일하게 현직 주지사(Sisolak)를 축출**하고 당선된 인물이고, 도전자 Ford는 주 전체 선거(법무장관)를 두 번 이긴 검증된 후보입니다 — 당선 시 네바다 최초의 흑인 주지사가 됩니다.
@@ -47,8 +48,7 @@ gt_governor_polls("NV")
 
 > 세 조사 중 둘이 민주 성향 기관 의뢰인데도 **동률~Lombardo 우위**로 나온 점에 유의하세요 — 당파 의뢰 조사가 자당에 불리한 결과를 낼 때는 정보 가치가 큽니다.
 
-## 5. 자금
-
+## 5. 자금 {#money}
 ```{r}
 #| output: asis
 cat(governor_money_html("NV"))

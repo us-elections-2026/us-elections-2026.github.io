@@ -13,7 +13,8 @@ cat(governor_cards_html("MI"))
 ```
 
 ```{r}
-gt_governor_detail("MI")
+#| output: asis
+cat(governor_card_html("MI"))
 ```
 
 Whitmer의 임기 만료로 열린 **민주 방어 개방석**입니다. 8/4 경선에서 민주 **Benson이 85 대 15로 압승**했고(Gilchrist 부지사는 1월에 주지사 도전을 접고 국무장관 출마로 전환), 공화 **James는 자비 $32M을 쓴 Perry Johnson을 약 15%p 차로** 꺾었습니다. 미시간은 같은 날 상원 경선(El-Sayed vs Rogers 확정)도 치러져 **한 주에서 세 층위(주지사·상원·주의회)가 동시에 움직이는** 주입니다.
@@ -46,8 +47,7 @@ gt_governor_polls("MI")
 
 > EPIC-MRA 조사는 상원 문항과 같은 조사입니다(상원 R+3 · 주지사 D+9) — **같은 표본에서 12포인트가 갈렸다**는 것이 티켓 분리 투표의 직접 증거입니다.
 
-## 5. 자금
-
+## 5. 자금 {#money}
 ```{r}
 #| output: asis
 cat(governor_money_html("MI"))

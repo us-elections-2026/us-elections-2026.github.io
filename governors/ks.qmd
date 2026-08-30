@@ -13,7 +13,8 @@ cat(governor_cards_html("KS"))
 ```
 
 ```{r}
-gt_governor_detail("KS")
+#| output: asis
+cat(governor_card_html("KS"))
 ```
 
 Kelly 주지사의 임기 제한으로 열린 개방석 — **경합 8주 중 유일하게 등급이 공화 우위(Lean R)인 민주 방어석**입니다. 즉 현 지형에서 민주당이 방어에 실패할 가능성이 가장 높은 곳으로 분류되는 주입니다. 트럼프가 이긴 주의 민주당 보유 주지사직 5곳 중 하나이기도 합니다.
@@ -46,8 +47,7 @@ Kelly 주지사의 임기 제한으로 열린 개방석 — **경합 8주 중 �
 gt_governor_polls("KS")
 ```
 
-## 5. 자금
-
+## 5. 자금 {#money}
 ```{r}
 #| output: asis
 cat(governor_money_html("KS"))
