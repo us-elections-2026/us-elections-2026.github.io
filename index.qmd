@@ -40,7 +40,13 @@ cat(home_kpis())
 
 ## 1. 전국 환경 {#national}
 
-트럼프 순지지 **`r sprintf("%+.1f", trump_now)`**, 일반투표 **`r .fmt_margin(gen_now)`** — 거시 환경은 민주 우위가 이어지나 경제 심리·체감물가는 약세 혼조입니다. **양수 = 민주 우위** 기준의 누적 추세:
+::: {.takeaway}
+<span class="tk-kicker">이번 주 환경 — 기준 `r td$as_of`</span>
+<span class="tk-big">트럼프 순지지 `r sprintf("%+.1f", trump_now)` · 일반투표 `r .fmt_margin(gen_now)`</span>
+<span class="tk-sub">거시 환경은 민주 우위가 이어지나 경제 심리·체감물가는 약세 혼조 — 양수 = 민주 우위</span>
+:::
+
+**양수 = 민주 우위** 기준의 누적 추세:
 
 ::: {#trends-root}
 

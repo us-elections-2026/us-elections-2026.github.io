@@ -19,6 +19,28 @@ $h2-font-size: 1.45rem;
 $h3-font-size: 1.15rem;
 
 /*-- scss:rules --*/
+/* ── 디자인 토큰 (2026-09-01, textbooks-dashboard 차용) ─────────────────────
+   종이 톤 배경 + 서체 3단 체계(본문 sans · 수치/라벨 mono · 제목 serif).
+   새 컴포넌트는 이 변수를 쓸 것 — SCSS 변수($dem 등)는 빌드 시점, CSS 변수는
+   런타임(JS 차트가 getPropertyValue로 읽을 수 있다)이라 둘 다 유지한다. */
+:root {
+  --paper: #fcfcf9;        /* 본문 배경 — 순백이 아니라 종이 톤 */
+  --card: #ffffff;         /* 표·카드 — 배경과 한 단계 대비 */
+  --ink: #1a1a1a;
+  --muted: #6b7280;
+  --line: #e6e8eb;
+  --party-d: #{$dem};
+  --party-r: #{$rep};
+  --sans: "IBM Plex Sans KR", -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  --mono: "JetBrains Mono", "SF Mono", ui-monospace, monospace;
+  --serif: "Noto Serif KR", "Apple Myungjo", serif;
+}
+body { background: var(--paper); }
+/* 표·코드 블록은 카드 톤으로 살짝 띄운다 */
+.gt_table, table.table { background: var(--card); }
+
+/* 제목 = 세리프 디스플레이 (본문과 역할 분리 — 페이지 대제목에만, 절제) */
+h1, .title { font-family: var(--serif); font-weight: 700; letter-spacing: -0.02em; }
 h1, h2, h3 {
   letter-spacing: -0.01em;
   font-weight: 700;
@@ -40,12 +62,46 @@ blockquote {
 }
 .navbar-brand {
   font-weight: 700;
+  font-family: var(--serif);
 }
-/* "기준 시각" 같은 메타 텍스트 */
+/* 상단 내비 — 반투명 + blur (textbooks-dashboard 차용). litera의 불투명 배경을 덮는다 */
+.navbar {
+  background-color: rgba(252, 252, 249, 0.9) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+/* "기준 시각" 같은 메타 텍스트 — 모노스페이스로 본문과 역할 분리 */
 .as-of {
-  color: #6b7280;
-  font-size: 0.85rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-family: var(--mono);
 }
+/* 상황판 메타 줄(홈 상단)·타일 출처 줄도 같은 층위 */
+.situ-meta, .rt-src { font-family: var(--mono); font-size: .78rem; }
+.situ-meta .latest-link { font-family: var(--sans); }
+
+/* 핵심 결론 밴드 — 한 호의 가장 중요한 수치/문장 하나를 다크 배경에 크게.
+   textbooks-dashboard의 다크 섹션 차용(2026-09-01). 주간호·홈에서
+   ::: {.takeaway} ... ::: 로 쓴다. 남용 금지 — 페이지당 1개. */
+.takeaway {
+  background: #16181d;
+  color: #fbfbf8;
+  border-radius: 12px;
+  padding: 2rem 1.6rem;
+  margin: 1.6rem 0;
+  text-align: center;
+}
+.takeaway .tk-kicker {
+  display: block; font-family: var(--mono); font-size: .72rem; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: #9aa2b1; margin-bottom: .7rem;
+}
+.takeaway .tk-big {
+  display: block; font-family: var(--serif); font-weight: 700;
+  font-size: clamp(1.9rem, 4.5vw, 3.2rem); line-height: 1.25; letter-spacing: -0.02em;
+}
+.takeaway .tk-sub { display: block; margin-top: .8rem; font-size: .9rem; color: #c3c9d4; }
+.takeaway a { color: #aecbeb; }
 
 /* 모바일 표 가로 스크롤 보호 — 넓은 gt/markdown 표를 감싸는 용도 */
 main .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
@@ -396,3 +452,9 @@ main .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .pt-thin { font-size: .78rem; color: #6b7280; font-style: italic; margin: 2px 0 0; }
 .pt-empty { font-size: .82rem; color: #6b7280; margin: 6px 0; }
 .pt-sub { color: #6b7280; font-weight: 400; }
+
+
+/* 서체 역할 분리 후속(2026-09-01) — 수치·기준일이 붙는 자리들을 모노로 통일 */
+.bd-as, .rcard-mu, .rcard-lk { font-family: var(--mono); }
+.rcard-lk a { font-family: var(--sans); }
+.pt-lab, .pt-lab-m, .pt-ax, .pt-zlab { font-family: var(--mono); }

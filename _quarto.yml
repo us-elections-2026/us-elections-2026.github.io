@@ -123,6 +123,15 @@ website:
 
 format:
   html:
+    include-in-header:
+      # 서체 3단 체계(2026-09-01, textbooks-dashboard 차용) — 본문 IBM Plex Sans KR ·
+      # 수치/기준일/라벨 JetBrains Mono · 제목/핵심 문장 Noto Serif KR.
+      # IBM Plex Sans KR은 종전에 custom.scss에 선언만 있고 로드가 없어 시스템 폰트로
+      # 폴백되고 있었다 — 이 링크가 그 선언을 실제로 살린다.
+      - text: |
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&family=JetBrains+Mono:wght@400;600&family=Noto+Serif+KR:wght@600;700&display=swap" rel="stylesheet">
     theme:
       - litera
       - theme/custom.scss
