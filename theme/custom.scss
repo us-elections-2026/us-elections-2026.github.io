@@ -113,6 +113,18 @@ main .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
    요구해 표가 수천 px로 늘어나고, 가운데 정렬된 제목이 화면 밖으로 밀린다.
    2026-09-05에 실제로 그렇게 배포됐다가 되돌렸다. */
 
+/* 마크다운 표(issues/*의 프로즈 표)는 감싸는 스크롤 컨테이너가 없어, 칸을 넘으면
+   그대로 잘린다(2026-09-05 실측: 353px 표가 334px 칸에서 잘림 — 26건).
+   좁은 화면에서만 표 자체를 스크롤 박스로 만든다. 데스크톱은 손대지 않는다
+   — 감사 결과 데스크톱 122개 표는 전부 정상이었다. */
+@media (max-width: 767.98px) {
+  main table.table:not(.gt_table) {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
 /* 등급표 열 머리 — "노스캐롤라이나\nNC" 2줄 표기를 살린다 */
 main table.gt_table th.gt_col_heading { white-space: pre-line; text-align: center; vertical-align: bottom; }
 
