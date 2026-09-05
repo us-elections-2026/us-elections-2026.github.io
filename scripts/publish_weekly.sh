@@ -30,8 +30,16 @@ br=$(git branch --show-current)
 #   스테이징 → 커밋 → push → CI가 glob으로 잡아 렌더 → 낡은 중복 페이지가
 #   그대로 라이브로 나간다. 렌더도 검증도 이걸 오류로 보지 않는다(문법은 정상).
 #   두 머신이 Dropbox로 같은 작업 사본을 공유하는 구조에서 실제로 발생 가능하다.
-conflicts=$(find . -path ./.git -prune -o \
-  \( -iname '*conflicted copy*' -o -iname '*충돌 사본*' -o -iname '*conflicted-copy*' \) -print 2>/dev/null)
+#   ⚠️ 한글 패턴을 쓰지 말 것 — macOS는 파일명을 NFD(자모 분리)로 저장하는데
+#   스크립트의 한글 리터럴은 NFC라 -iname '*충돌*사본*'이 실제 Dropbox 파일을
+#   못 잡는다(2026-09-05 실측). 대신 로케일·정규화와 무관한 구조로 잡는다:
+#   Dropbox 충돌 사본은 언어와 상관없이 "<이름> (… YYYY-MM-DD).<확장자>" 꼴이다.
+#   검사 범위는 **발행 입력만** — _site(빌드 산출물, gitignore)와 .claude(에이전트
+#   작업트리)는 제외한다. 넣으면 .claude/worktrees의 옛 충돌본(2026-08-12자) 때문에
+#   매주 발행이 중단된다(2026-09-05 실측).
+conflicts=$(find . -path ./.git -prune -o -path ./.claude -prune -o -path ./_site -prune -o \
+  \( -iname '* (*[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9])*' \
+     -o -iname '*conflicted copy*' -o -iname '*conflicted-copy*' \) -print 2>/dev/null)
 if [ -n "$conflicts" ]; then
   echo "[weekly] ✗ Dropbox 충돌 사본이 있어 중단합니다 — 발행 전에 정리하세요:"
   echo "$conflicts" | sed 's/^/    /'
