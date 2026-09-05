@@ -1,6 +1,6 @@
 ---
 title: "9주차 · 05/18~05/24"
-date: 2026-05-18
+date: 2026-05-24
 description: "조지아 공화당 경선 실시(5/19) → 결선 확정. 과반 득표자 없이 Mike Collins와 Derek Dooley가 6월 16일 결선투표 진출, Buddy C"
 categories: [주간브리핑]
 ---

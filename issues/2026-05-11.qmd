@@ -1,6 +1,6 @@
 ---
 title: "8주차 · 05/11~05/17"
-date: 2026-05-11
+date: 2026-05-17
 description: "조지아 공화당 경선 D-4로 임박(5/19). Buddy Carter가 Mike Collins를 겨냥한 첫 공격 광고(약 200만 달러)를 집행하며 혼전 가속."
 categories: [주간브리핑]
 ---

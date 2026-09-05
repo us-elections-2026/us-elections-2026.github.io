@@ -1,6 +1,6 @@
 ---
 title: "11주차 · 06/01~06/07"
-date: 2026-06-01
+date: 2026-06-07
 description: "텍사스 등급 하향 확정. Ken Paxton(R)이 5/26 결선에서 현역 John Cornyn을 63.8%로 격파한 여파로, 이번 주 Cook Political"
 categories: [주간브리핑]
 ---

@@ -1,6 +1,6 @@
 ---
 title: "13주차 · 06/15~06/21"
-date: 2026-06-15
+date: 2026-06-21
 description: "조지아 공화당 상원 결선(6/16) — Mike Collins가 Derek Dooley를 꺾고 본선행. 트럼프 막판 지지가 갈랐다. 본선은 Ossoff(D) vs Collins(R) 확정."
 categories: [주간브리핑]
 ---

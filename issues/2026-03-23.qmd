@@ -1,6 +1,6 @@
 ---
 title: "1주차 · 03/23~03/29"
-date: 2026-03-23
+date: 2026-03-29
 description: "트럼프 지지율 2기 사상 최저. Nate Silver 종합 순지지도 −16.7(3/26)로 2기 최저. Reuters/Ipsos 지지율은 36%로 전주(40%)"
 categories: [주간브리핑]
 ---

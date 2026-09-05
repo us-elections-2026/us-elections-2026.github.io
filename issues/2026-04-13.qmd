@@ -1,6 +1,6 @@
 ---
 title: "4주차 · 04/13~04/19"
-date: 2026-04-13
+date: 2026-04-19
 description: "Cook Political Report 등급 변동(4/13). 조지아·노스캐롤라이나를 Toss-up → Lean Democrat으로, 오하이오를 Lean R →"
 categories: [주간브리핑]
 ---
