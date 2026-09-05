@@ -1,6 +1,6 @@
 ---
 title: "5주차 · 04/20~04/26"
-date: 2026-04-20
+date: 2026-04-26
 description: "트럼프 지지율이 2기 최저점을 주중 거듭 경신. 주 초 NBC/Decision Desk 37%(비지지 63%)에서, 주 중반 AP-NORC 33%까지 떨어진 수치"
 categories: [주간브리핑]
 ---

@@ -1,6 +1,6 @@
 ---
 title: "10주차 · 05/25~05/31"
-date: 2026-05-25
+date: 2026-05-31
 description: "텍사스 대이변 — Paxton, 현역 Cornyn 격파(5/26). GOP 결선투표에서 Ken Paxton(주 법무장관)이 4선 현역 John Cornyn을 63"
 categories: [주간브리핑]
 ---
