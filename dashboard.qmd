@@ -129,7 +129,7 @@ cat(kalshi_control_html())
 :::
 
 ```{r}
-gt_kalshi_races("senate", states = c("GA","NC","NH","MI","ME","AK","OH","TX"))
+gt_kalshi_races("senate", states = WATCH)
 ```
 
 거래액을 함께 보세요. 감시 9주 중 가장 두꺼운 시장은 **`r kr(thick[1])`**(`r money(vol[[1]])`)와 **`r kr(thick[2])`**(`r money(vol[[2]])`), 가장 얇은 곳은 **`r kr(thin)`**(`r money(vol[[length(vol)]])`)입니다 — 얇은 시장은 소수 거래에 흔들립니다. 가격이 반반에 가까운데 거래액까지 큰 곳(`r krs(close_thick)`)이야말로 시장이 "정말 모르겠다"고 말하는 지점입니다.

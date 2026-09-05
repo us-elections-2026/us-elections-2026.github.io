@@ -103,8 +103,16 @@ blockquote {
 .takeaway .tk-sub { display: block; margin-top: .8rem; font-size: .9rem; color: #c3c9d4; }
 .takeaway a { color: #aecbeb; }
 
-/* 모바일 표 가로 스크롤 보호 — 넓은 gt/markdown 표를 감싸는 용도 */
+/* 모바일 표 가로 스크롤 보호 — 넓은 gt/markdown 표를 감싸는 용도.
+   2026-09-05: .table-wrap은 정의만 있고 gt 출력에는 적용된 적이 없었다.
+   gt는 자기 <div id="..."> 안에 <table>을 넣으므로, 그 컨테이너를 직접 잡는다
+   (대시보드 등급표는 11열이라 좁은 화면에서 페이지 전체가 가로로 밀렸다). */
 main .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+main div:has(> table.gt_table) { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+main table.gt_table { min-width: max-content; }
+
+/* 등급표 열 머리 — "노스캐롤라이나\nNC" 2줄 표기를 살린다 */
+main table.gt_table th.gt_col_heading { white-space: pre-line; text-align: center; vertical-align: bottom; }
 
 /* 한국 함의 강조 박스 — 사이트 차별점이므로 회색이 아닌 고정 색 배지 */
 .kr-box {

@@ -797,6 +797,16 @@ rating_matrix_html <- function() {
 .RATING_FILL <- c("Solid D" = "#2166ac", "Likely D" = "#6ba3d6", "Lean D" = "#b9d9ee",
                   "Tilt D" = "#dceaf5", "Toss-up" = "#e5e7eb", "Tilt R" = "#fce0d2",
                   "Lean R" = "#f6b89c", "Likely R" = "#d6604d", "Solid R" = "#b2182b")
+# 감시주 한글명 — model_dashboard.json(states.id/name)이 정본이다.
+# 종전에는 상원 표만 영문 약자를 쓰고 주지사 표만 한글을 붙여, 같은 페이지의
+# 두 표가 다른 표기를 보였다(2026-09-05 통일). governor_ratings의 state_names_kr는
+# NC가 비어 있어 정본으로 쓰지 않는다.
+.state_kr <- function() {
+  d <- tryCatch(.load_json("model_dashboard"), error = function(e) NULL)
+  if (is.null(d) || is.null(d$states)) return(NULL)
+  stats::setNames(d$states$name, toupper(d$states$id))
+}
+
 .RATING_INK <- c("Solid D" = "#ffffff", "Likely D" = "#0c2c47", "Lean D" = "#123a5c",
                  "Tilt D" = "#1d4a70", "Toss-up" = "#374151", "Tilt R" = "#6b2d12",
                  "Lean R" = "#6b2d12", "Likely R" = "#ffffff", "Solid R" = "#ffffff")
@@ -936,7 +946,9 @@ gt_kalshi_races <- function(kind = c("senate", "governor"), states = NULL, min_d
   dem <- vapply(ab, function(a) .kalshi_dem(k, kind, a), numeric(1))
   if (!is.null(min_dem)) ab <- ab[!is.na(dem) & dem >= min_dem[1] & dem <= min_dem[2]]
   if (!length(ab)) return(invisible(NULL))
-  kr <- if (kind == "governor") .load_json("governor_ratings")$state_names_kr else NULL
+  # 한글명은 상원·주지사 모두 붙인다 — 종전에는 주지사만 붙어 같은 페이지의 두 표가
+  # 다른 표기를 썼다(상원 "GA" vs 등급표 "조지아").
+  kr <- if (kind == "governor") .load_json("governor_ratings")$state_names_kr else as.list(.state_kr())
   nm <- vapply(ab, function(a) if (!is.null(kr) && !is.null(kr[[a]])) paste0(kr[[a]], " (", a, ")") else a,
                character(1))
   d <- vapply(ab, function(a) m[[a]]$dem %||% NA_real_, numeric(1))
@@ -967,8 +979,14 @@ gt_senate_rating_sources <- function() {
   d <- .load_json("senate_ratings_feed"); src <- d$sources
   rt <- src$ratings   # data.frame: 행=기관, 열=주 약자
   key <- c("GA", "NC", "NH", "MI", "ME", "AK", "OH", "TX", "IA")
-  kr <- c(GA = "조지아", NC = "NC", NH = "NH", MI = "미시간", ME = "메인",
-          AK = "알래스카", OH = "오하이오", TX = "텍사스", IA = "아이오와")
+  # 열 이름은 한글+약자 2줄. 종전에는 NC·NH만 영문 약자여서(폭 때문으로 보인다)
+  # 같은 표 안에서 표기가 갈렸다 — 줄바꿈으로 폭 문제를 풀고 표기를 통일한다(2026-09-05).
+  skr <- .state_kr()
+  kr <- vapply(key, function(a) {
+    nm <- if (!is.null(skr) && !is.na(skr[a])) unname(skr[a]) else a
+    paste0(nm, "\n", a)
+  }, character(1))
+  names(kr) <- key
   is_mkt <- grepl("Kalshi|예측시장", src$label)
   kal <- .kalshi()
   cell <- function(i, ab) {
@@ -987,11 +1005,15 @@ gt_senate_rating_sources <- function() {
   names(cols) <- kr[key]
   lbl <- ifelse(is_mkt, paste0(src$label, " ※"), src$label)
   as_of <- ifelse(is_mkt & !is.null(kal), substr(kal$fetched_at_utc %||% "", 1, 10), src$as_of)
-  bind_cols(tibble(예측기관 = lbl, 기준일 = as_of), as_tibble(cols)) |>
+  tb <- bind_cols(tibble(예측기관 = lbl, 기준일 = as_of), as_tibble(cols))
+  g <- tb |>
     gt() |>
     tab_header(title = "상원 감시 9주 — 기관별 등급",
                subtitle = "270towin 재게시 피드 자동 취득 · 등급은 확률이 아님") |>
     tab_source_note(paste0(
+      "칸 색은 등급의 **방향과 순서**를 나타냅니다(파랑=민주 쪽, 회색=Toss-up, 붉은색=공화 쪽). ",
+      "색은 서수 인코딩이며 **확률이 아닙니다** — 그래서 연속 그라데이션이 아니라 등급별 이산 계단으로 칠했고, ",
+      "위 「경합주 등급 변동」 매트릭스와 같은 팔레트를 씁니다. 예측시장 행만 회색 띠로 분리해 색을 칠하지 않았습니다. ",
       "같은 주를 기관마다 어떻게 보는지 비교합니다. ",
       "※ Kalshi 행만 성격이 다릅니다 — 전문가 등급이 아니라 **예측시장 가격**(민주 승리 계약의 마지막 체결가)이며, ",
       "Kalshi 공개 API에서 원가격을 직접 받아 싣습니다. 가격은 확률의 근사일 뿐이고(유동성·편향 혼입), ",
@@ -1000,6 +1022,36 @@ gt_senate_rating_sources <- function() {
       "'—'는 해당 기관이 경합으로 분류하지 않았거나 시장이 없는 칸(추정으로 채우지 않음). ",
       "취득: scripts/fetch_senate_ratings.py · scripts/fetch_kalshi_prices.py")) |>
     .tbl_opts()
+
+  # 등급 칸을 D↔R 발산 팔레트로 칠한다. 색은 **서수(순서) 인코딩**이며 확률이 아니다 —
+  # 그래서 연속 그라데이션이 아니라 등급별 이산 계단으로만 칠하고, 같은 팔레트를
+  # 등급 변동 매트릭스(rating_matrix_html)와 공유해 페이지 안에서 색 의미를 일치시킨다.
+  # 90칸이 전부 맨 텍스트여서 "어디가 진짜 갈리는가"를 한 칸씩 읽어야 했던 문제의 해소책.
+  dat_cols <- names(tb)[-(1:2)]
+  for (rt_lab in names(.RATING_FILL)) {
+    # lapply로 도는 이유: cells_body(columns = all_of(cn))의 열 선택은 지연 평가라
+    # for 루프에서 만들면 모든 위치가 루프 종료 시점의 cn(마지막 열)을 가리킨다.
+    # lapply는 반복마다 별도 환경을 주므로 cn이 그 시점 값으로 고정된다.
+    locs <- Filter(Negate(is.null), lapply(dat_cols, function(cn) {
+      rows <- which(!is_mkt & tb[[cn]] == rt_lab)
+      if (!length(rows)) return(NULL)
+      cells_body(columns = all_of(cn), rows = rows)
+    }))
+    if (length(locs)) {
+      g <- g |> tab_style(
+        style = list(cell_fill(color = unname(.RATING_FILL[[rt_lab]])),
+                     cell_text(color = unname(.RATING_INK[[rt_lab]]), weight = "600")),
+        locations = locs)
+    }
+  }
+  # 예측시장 행은 단위(¢)도 성격도 달라 색을 칠하지 않는다 — 등급과 같은 잣대로 읽히면 안 된다.
+  # 대신 중립 배경으로 띠를 만들어 시각적으로 분리한다.
+  if (any(is_mkt)) {
+    g <- g |> tab_style(
+      style = list(cell_fill(color = "#f3f4f6"), cell_text(style = "italic", color = "#374151")),
+      locations = cells_body(rows = which(is_mkt)))
+  }
+  g
 }
 
 # 1.7 주지사·주의회 -----------------------------------------------------------
