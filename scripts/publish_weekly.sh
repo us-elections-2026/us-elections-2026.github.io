@@ -31,7 +31,7 @@ br=$(git branch --show-current)
 #   그대로 라이브로 나간다. 렌더도 검증도 이걸 오류로 보지 않는다(문법은 정상).
 #   두 머신이 Dropbox로 같은 작업 사본을 공유하는 구조에서 실제로 발생 가능하다.
 conflicts=$(find . -path ./.git -prune -o \
-  \( -iname '*conflicted copy*' -o -iname '*충돌 사본*' -o -iname '*conflicted-copy*' \) -print 2>/dev/null)
+  \( -iname '*conflicted copy*' -o -iname '*충돌*사본*' -o -iname '*conflicted-copy*' \) -print 2>/dev/null)
 if [ -n "$conflicts" ]; then
   echo "[weekly] ✗ Dropbox 충돌 사본이 있어 중단합니다 — 발행 전에 정리하세요:"
   echo "$conflicts" | sed 's/^/    /'
