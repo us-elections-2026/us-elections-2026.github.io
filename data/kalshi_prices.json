@@ -1,6 +1,6 @@
 {
  "as_of": "2026-09-06",
- "fetched_at_utc": "2026-09-06T21:29:09Z",
+ "fetched_at_utc": "2026-09-06T21:33:48Z",
  "type": "market",
  "source_label": "Kalshi (예측시장 가격)",
  "source_url": "https://kalshi.com/",
@@ -843,7 +843,7 @@
    "rep": 43.0,
    "dem_label": "Amy Acton",
    "rep_label": "Vivek Ramaswamy",
-   "volume": 1491884,
+   "volume": 1491989,
    "open_interest": 1130455,
    "series": "GOVPARTYOH",
    "tickers": [
@@ -951,12 +951,12 @@
    "url": "https://kalshi.com/markets/govpartytn"
   },
   "TX": {
-   "dem": 20.0,
+   "dem": 21.0,
    "rep": 81.0,
    "dem_label": "Gina Hinojosa",
    "rep_label": "Greg Abbott",
-   "volume": 830144,
-   "open_interest": 559301,
+   "volume": 830145,
+   "open_interest": 559302,
    "series": "GOVPARTYTX",
    "tickers": [
     "GOVPARTYTX-26-R",

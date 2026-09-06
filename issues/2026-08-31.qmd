@@ -79,7 +79,7 @@ categories: [주간브리핑]
 | 셧다운 소멸 | **CR 370–48 가결(9/1) — 12/11까지.** 10월에 하원 지도를 재전국화할 수 있었던 유일한 확정 이벤트가 제거됐다. 방향으로는 **공화당 하방 꼬리 하나가 잘린 것**이므로 그렇게 적는다 |
 | 투표 실무 | 연방에서는 **9/4 예비적 금지명령**으로 우편투표 비중 큰 토스업(AZ·CA·CO·WA·IA·PA·FL-14)의 리스크가 일단 봉인됐다. 반대로 주 단위에서는 **NC가 발송 당일 3–2로 거부 기준을 강화**했다 — 한 자릿수 승부인 **NC-11·NC-01**의 초기 거부율이 첫 실측 시험대다 |
 | 실측 | **신규 지역구 조사 0건 — 7일 연속.** 전주 텍사스서던대 조사(TX-15 D+5 · TX-34 D+3 · TX-28 D+11)가 여전히 최신 독립 수치다. **OH-07 독립 조사 공백도 지속**(공개 4건이 전부 당파 의뢰) |
-| 모델·시장 | Kalshi 하원 다수 **84¢**(9/6, 전주 84¢) · **DDHQ 67%**(모델 갱신 9/4 — 평균 의석 D 229 – R 206, 이 사이트 자동 취득분) · Smarter.Vote 97%(AI 생성 명시 — 동급 취급 금지) · Polymarket ~89% · 등급가중 기대의석 약 **215석**(218 미달) |
+| 모델·시장 | Kalshi 하원 다수 **85¢**(9/6, 전주 84¢) · **DDHQ 67%**(모델 갱신 9/4 — 평균 의석 D 229 – R 206, 이 사이트 자동 취득분) · Smarter.Vote 97%(AI 생성 명시 — 동급 취급 금지) · Polymarket ~89% · 등급가중 기대의석 약 **215석**(218 미달) |
 
 : {.striped}
 
@@ -97,7 +97,7 @@ categories: [주간브리핑]
 | 위스콘신 | 80¢ | 80¢ | Toss-up / Lean D |
 | 아이오와 | 76¢ | 76¢ | Lean D / **Lean D (9/3↑)** |
 | 알래스카 | **63¢** | 55¢ | Likely R / **Toss-up (9/1↑)** |
-| 오하이오 | 58¢ | 57¢ | Toss-up / Lean R |
+| 오하이오 | 57¢ | 57¢ | Toss-up / Lean R |
 | 조지아 | **56¢** | 60¢ | Toss-up / Toss-up |
 | 네바다 | 42¢ | 42¢ | Toss-up / Lean R |
 | 캔자스 | **32¢** | 36¢ | Lean R / Lean R |
@@ -112,7 +112,7 @@ categories: [주간브리핑]
 
 **캔자스는 상태 정의를 고쳐 적는다.** 그동안 "실측 공백"으로 써 온 이 주는 실제로는 **"양당 의뢰 조사만 존재하는 상태"**다. 8/28 양당 의뢰 조사 2건이 동시에 공개된 것이 이번 주 소급 확인됐다 — 민주계 GSG(홀셔 캠프 의뢰, LV 600, ±4.0)는 **홀셔 47 – 매스터슨 46**으로 오차 내 동률이고 무당파에서 두 자릿수 홀셔 우세, 공화계 co/efficient는 **수치가 유료 구간이라 미확보**다. **공개된 유일한 본선 수치가 양사 Lean R 등급과 정면으로 어긋난다.** 다만 이 사이트 조사 DB에는 넣지 않았다 — 실사 기간이 공표되지 않았기 때문이다. 시장은 오히려 36¢ → 32¢로 내렸다.
 
-**오하이오는 여전히 이 표에서 가장 이상한 주다.** 비당파 실측이 **한 건도 없는 채로** 세 계통이 정면 충돌한다 — 평가기관은 접전으로 수렴하는데(IE가 9/3 한 칸 좁혔다) 펀더멘털 모델 Pollsmax는 라마스와미 **76.5%**, 예측시장은 액턴 쪽(58¢)이다. 집계평균끼리도 부호가 반대다(RCP D+0.3 대 Pollsmax R+0.7). 이번 주 움직인 것은 수치가 아니라 쟁점이었다 — 라마스와미가 9/3 "무료 주거용 전기"를 "전력 요금분만 면제"로 후퇴시켰고 재산세 환원 금액은 제시하지 않았으며, 액턴은 토론을 전면 거부했다. **첫 비당파 조사가 나오는 순간이 이 세 계통의 정합성을 판별하는 유일한 지점이다.**
+**오하이오는 여전히 이 표에서 가장 이상한 주다.** 비당파 실측이 **한 건도 없는 채로** 세 계통이 정면 충돌한다 — 평가기관은 접전으로 수렴하는데(IE가 9/3 한 칸 좁혔다) 펀더멘털 모델 Pollsmax는 라마스와미 **76.5%**, 예측시장은 액턴 쪽(57¢)이다. 집계평균끼리도 부호가 반대다(RCP D+0.3 대 Pollsmax R+0.7). 이번 주 움직인 것은 수치가 아니라 쟁점이었다 — 라마스와미가 9/3 "무료 주거용 전기"를 "전력 요금분만 면제"로 후퇴시켰고 재산세 환원 금액은 제시하지 않았으며, 액턴은 토론을 전면 거부했다. **첫 비당파 조사가 나오는 순간이 이 세 계통의 정합성을 판별하는 유일한 지점이다.**
 
 주의회 쪽에서는 이번 주 신규 특별선거가 **0건**이다. 누적 지표에 두 건이 추가됐다 — 트럼프 2기 개시 후 민주 플립 누적 **약 12석·11개 주, 공화 플립 0건**이고, 최대 스윙 사례는 **텍사스 주상원 9구 D+31.8**(트럼프 +17.4 지역 탈환)이다. 중위 스윙 D+10.4 · 투표율 가중 D+12.6은 불변이다. 다만 **집계 주체 본인의 경고를 함께 적는다** — MultiState는 "이 마진이 11월까지 유지되면 역사상 최대급 웨이브가 되겠지만, 거의 확실히 그 수준으로 유지되지는 않는다"고 명시했다. 지난주 이 자리에 쓴 "2018년식 여름 완화가 이번에는 오지 않았다"는 관찰에 대한 공식 제한으로 기록해 둔다. ([Crystal Ball(주지사 3건)](https://centerforpolitics.org/crystalball/the-governors-a-trio-of-rating-changes-toward-democrats-as-they-chase-a-rare-edge-in-overall-seats-held/) · [Alaska Beacon(부지사 번복)](https://alaskabeacon.com/2026/09/05/alaska-lt-gov-dahlstrom-reverses-herself-puts-former-attorney-general-treg-taylor-back-in-governors-race/) · [ADN(랭크 더 레드 거부)](https://www.adn.com/politics/2026/09/04/bernadette-wilson-says-republicans-should-not-rank-the-red-in-alaska-governors-race/) · [Alaska Beacon(득표 구조)](https://alaskabeacon.com/2026/09/03/amid-fractured-gop-field-a-democrat-could-be-headed-for-the-alaska-governors-mansion/) · [Sunflower State Journal(KS)](https://sunflowerstatejournal.com/a-battle-of-polls-what-is-state-of-the-kansas-governors-race/) · [Ohio Capital Journal(액턴 토론 거부)](https://ohiocapitaljournal.com/2026/09/04/ohio-democratic-candidate-for-governor-amy-acton-refuses-to-debate/) · [MultiState](https://www.multistate.us/elections/special-swing))
 
