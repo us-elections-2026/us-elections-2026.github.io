@@ -1,6 +1,6 @@
 {
   "version": "v0.1",
-  "run_date": "2026-08-31",
+  "run_date": "2026-09-07",
   "seed": 20261103,
   "n_sims": 10000,
   "assumptions": {
@@ -18,7 +18,7 @@
     {
       "state": "GA",
       "defense": "D",
-      "rating": "Lean D (Cook 8/20) / Likely D (Sabato 8/26) · Tilt D (Inside Elections 8/6)",
+      "rating": "Lean D (Cook 8/20) / Likely D (Sabato 8/26) · Tilt D (Inside Elections 9/3)",
       "p_rating": 0.75,
       "p_market": 0.93,
       "poll_margin": 8.2,
@@ -29,40 +29,40 @@
     {
       "state": "MI",
       "defense": "D",
-      "rating": "Toss-up (Cook 8/20 · Sabato 8/26) — Fox News도 8/25 피드에서 Lean D→Toss-up 확인",
+      "rating": "Toss-up (Cook 8/20 · Sabato 8/26) · Toss-up (Inside Elections 9/3 — 14개월째 동결)",
       "p_rating": 0.5,
       "p_market": 0.64,
-      "poll_margin": 0.1,
-      "n_polls": 6,
-      "p_poll": 0.51,
-      "p_blend": 0.549
+      "poll_margin": 1.7,
+      "n_polls": 8,
+      "p_poll": 0.612,
+      "p_blend": 0.591
     },
     {
       "state": "NH",
       "defense": "D",
-      "rating": "Lean D (Cook 8/20 · Sabato 8/26) — 등급은 무이동, 조사만 악화",
+      "rating": "Lean D (Cook 8/20 · Sabato 8/26) / **Toss-up (Inside Elections 9/3↓, Tilt D에서)** — 필수 사수 3곳 중 첫 등급상 토스업",
       "p_rating": 0.75,
       "p_market": 0.83,
-      "poll_margin": 2.1,
-      "n_polls": 4,
-      "p_poll": 0.635,
-      "p_blend": 0.729
+      "poll_margin": 1.4,
+      "n_polls": 5,
+      "p_poll": 0.591,
+      "p_blend": 0.712
     },
     {
       "state": "ME",
       "defense": "R",
-      "rating": "Toss Up (Cook 8/20 · Sabato 8/26) / Tilt R (Inside Elections 8/6)",
+      "rating": "Toss Up (Cook 8/20 · Sabato 8/26) / Tilt R (Inside Elections — **2025-07-24 이후 미갱신**, 잭슨 지명 이전 값이라 증거로 쓰지 않음)",
       "p_rating": 0.5,
-      "p_market": 0.7,
+      "p_market": 0.69,
       "poll_margin": 2.7,
       "n_polls": 3,
       "p_poll": 0.671,
-      "p_blend": 0.634
+      "p_blend": 0.631
     },
     {
       "state": "NC",
       "defense": "R",
-      "rating": "Lean D (Cook 8/20 · Sabato 8/26) / Tilt D (Inside Elections 8/6)",
+      "rating": "Lean D (Cook 8/20 · Sabato 8/26) / Tilt D (Inside Elections 9/3)",
       "p_rating": 0.75,
       "p_market": 0.91,
       "poll_margin": 9.2,
@@ -73,51 +73,51 @@
     {
       "state": "TX",
       "defense": "R",
-      "rating": "**Toss Up (Cook 8/20↑ · Sabato 8/26↑)** — 두 기관이 6일 간격으로 나란히 Lean R에서 올려 이제 일치. Fox도 Toss-up(8/25) · Inside Elections만 Lean R(8/6)",
+      "rating": "Toss Up (Cook 8/20 · Sabato 8/26) / Lean R (Inside Elections 9/3) — 시장·모델·등급 4자 괴리가 판 전체 최대",
       "p_rating": 0.5,
-      "p_market": 0.51,
-      "poll_margin": 3.1,
-      "n_polls": 10,
-      "p_poll": 0.699,
-      "p_blend": 0.584
+      "p_market": 0.48,
+      "poll_margin": 2.7,
+      "n_polls": 11,
+      "p_poll": 0.675,
+      "p_blend": 0.565
     },
     {
       "state": "OH",
       "defense": "R",
-      "rating": "Toss Up (Cook 8/20 · Sabato 8/26) / Tilt R (Inside Elections 8/6)",
+      "rating": "Toss Up (Cook 8/20 · Sabato 8/26) / **Toss-up (Inside Elections 9/3↑, Tilt R에서)** — 공화 쪽에 있던 예보기관 하나가 중립으로 이동",
       "p_rating": 0.5,
-      "p_market": 0.56,
+      "p_market": 0.54,
       "poll_margin": 3.8,
       "n_polls": 4,
       "p_poll": 0.739,
-      "p_blend": 0.616
+      "p_blend": 0.61
     },
     {
       "state": "AK",
       "defense": "R",
-      "rating": "Toss Up (Cook 8/20 · Sabato 8/26) / Lean R (Inside Elections 8/6)",
+      "rating": "Toss Up (Cook 8/20 · Sabato 8/26) / **Tilt R (Inside Elections 9/3↑, Lean R에서)**",
       "p_rating": 0.5,
-      "p_market": 0.64,
+      "p_market": 0.65,
       "poll_margin": 0.8,
       "n_polls": 2,
       "p_poll": 0.552,
-      "p_blend": 0.566
+      "p_blend": 0.57
     },
     {
       "state": "IA",
       "defense": "R",
-      "rating": "**Toss Up (Cook 8/20↑)** / Lean R (Sabato 8/26 유지) / Tilt R (Inside Elections 8/6) — 감시 9주 중 두 기관이 갈리는 유일한 주",
+      "rating": "**Toss Up (Cook 8/20↑)** / Lean R (Sabato 8/26 유지) / Tilt R (Inside Elections 9/3) — 감시 9주 중 Cook·Sabato가 갈리는 유일한 주",
       "p_rating": 0.5,
-      "p_market": 0.43,
-      "poll_margin": -2.8,
-      "n_polls": 3,
-      "p_poll": 0.319,
-      "p_blend": 0.404
+      "p_market": 0.36,
+      "poll_margin": -3.9,
+      "n_polls": 4,
+      "p_poll": 0.256,
+      "p_blend": 0.356
     }
   ],
-  "dem_majority_prob": 46.4,
+  "dem_majority_prob": 45.6,
   "seats": {
-    "mean": 49.84,
+    "mean": 49.8,
     "p05": 45,
     "p25": 48,
     "median": 50,
@@ -125,15 +125,15 @@
     "p95": 53
   },
   "seat_pmf": {
-    "44": 0.0217,
-    "45": 0.0396,
-    "46": 0.0636,
-    "47": 0.0756,
-    "48": 0.0968,
-    "49": 0.109,
-    "50": 0.1301,
-    "51": 0.1415,
-    "52": 0.1526,
-    "53": 0.1695
+    "44": 0.0225,
+    "45": 0.041,
+    "46": 0.0634,
+    "47": 0.0763,
+    "48": 0.0986,
+    "49": 0.1127,
+    "50": 0.1297,
+    "51": 0.1438,
+    "52": 0.1517,
+    "53": 0.1603
   }
 }
