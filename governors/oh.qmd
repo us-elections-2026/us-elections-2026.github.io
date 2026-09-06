@@ -17,10 +17,10 @@ cat(governor_cards_html("OH"))
 cat(governor_card_html("OH"))
 ```
 
-경합 8주 가운데 **기관 이견과 조사 편차가 모두 가장 큰 주**입니다. Cook은 7/10 Toss-up으로 올렸는데 Sabato·IE는 Lean R을 유지하고, 집계조차 RCP는 Acton +0.8, Pollsmax는 Ramaswamy +0.8로 방향이 갈립니다. **광고비 90 대 1의 격차에도 조사가 동률**이라는 것이 이 레이스의 요약입니다.
+경합 8주 가운데 **기관 이견과 조사 편차가 모두 가장 큰 주**입니다. Cook은 7/10 Toss-up으로 올렸는데 Sabato는 Lean R을 유지하고 **IE는 9/3 Lean R → Tilt R로 한 칸만 좁혔으며**, 집계조차 RCP는 Acton +0.8, Pollsmax는 Ramaswamy +0.8로 방향이 갈립니다. **광고비 90 대 1의 격차에도 조사가 동률**이라는 것이 이 레이스의 요약입니다.
 
 ::: {.summary}
-- **구도**: 공화 방어 개방석(DeWine 연속 2선 임기 제한) — Acton(전 주 보건국장, 코로나 초기 대응) vs Ramaswamy(기업인·2024 대선 경선 주자). Cook **Toss-up** / Sabato·IE **Lean R** — 기관 이견 최대.
+- **구도**: 공화 방어 개방석(DeWine 연속 2선 임기 제한) — Acton(전 주 보건국장, 코로나 초기 대응) vs Ramaswamy(기업인·2024 대선 경선 주자). Cook **Toss-up** / Sabato **Lean R** / **IE Tilt R(9/3↑)** — 기관 이견 최대.
 - **변화**: NYT/Siena 47–47 동률. Ramaswamy 총모금 ~$50M(광고 ~$9M) 대 Acton ~$18.5M(광고 ~$10만)의 화력 격차가 숫자로 안 나타나는 중.
 - **한국 함의**: Honda–LG에너지솔루션 배터리 합작의 주 — 전기요금(AI 데이터센터) 이슈와 교차.
 :::
@@ -58,4 +58,4 @@ cat(governor_money_html("OH"))
 
 **후보들의 한국 관련 직접 발언은 확인되지 않았습니다.** 오하이오는 **Honda–LG에너지솔루션 EV 배터리 합작**($44억)과 한화 등 제조 투자가 있는 주이고(상세는 [상원 오하이오 페이지](../states/oh.qmd) 1절), 전기요금·산업 전력 정책의 결정권자가 주지사라는 점에서 간접 이해가 큽니다 — [Korea Watch](../korea-watch.qmd)에서 추적합니다.
 
-*작성 2026-08-12 · 등급: Cook Toss-up(7/10↑) · Sabato·IE Lean R · 시장 민주 50¢(Kalshi 8/10 — 정확한 동전 던지기) · 프로필·조사 상세 기준 2026-08-07*
+*작성 2026-08-12 · 갱신 2026-09-06 · 등급: Cook Toss-up(7/10↑) · Sabato Lean R · **IE Tilt R(9/3↑)** · 시장 민주 58¢(Kalshi 9/6) · 프로필·조사 상세 기준 2026-08-07*

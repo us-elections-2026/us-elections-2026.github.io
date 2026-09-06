@@ -1,0 +1,12 @@
+date_end,date_start,pollster,sponsor,population,n,dem,rep,value,partisan,internal,poll_id,source_url
+2026-07-06,2026-07-03,YouGov,The Economist,A,1602,39.0,35.0,4.0,,,supp-yg-0706-ga,https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_Qxo6bev.pdf#page=59
+2026-07-06,2026-07-03,YouGov,The Economist,RV,1442,46.0,43.0,3.0,,,supp-yg-0706-grv,https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_Qxo6bev.pdf#page=59
+2026-07-20,2026-07-17,YouGov,The Economist,A,1602,39.0,33.0,6.0,,,supp-yg-0720-ga,https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_ESdiNMa.pdf#page=9
+2026-07-20,2026-07-17,YouGov,The Economist,RV,1432,46.0,41.0,5.0,,,supp-yg-0720-grv,https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_ESdiNMa.pdf#page=9
+2026-07-27,2026-07-25,YouGov,The Economist,A,1557,40.0,34.0,6.0,,,supp-yg-0727-ga,https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_0t0YpHo.pdf#page=57
+2026-07-27,2026-07-25,YouGov,The Economist,RV,1405,46.0,42.0,4.0,,,supp-yg-0727-grv,https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_0t0YpHo.pdf#page=57
+2026-08-03,2026-07-31,YouGov,The Economist,A,1607,41.0,33.0,8.0,,,supp-yg-0803-ga,https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_mjKhx0z.pdf#page=28
+2026-08-03,2026-07-31,YouGov,The Economist,RV,1472,46.0,42.0,4.0,,,supp-yg-0803-grv,https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_mjKhx0z.pdf#page=28
+2026-07-14,2026-07-06,RMG Research,Napolitan Institute,RV,2000,47.0,45.0,2.0,,,supp-rmg-0714-grv,https://napolitannews.org/assets/pdfs/6a56b1a75ef00-gcm26-0713-toplines-generic-ballot.pdf
+2026-08-03,2026-07-29,Ipsos,Reuters,A,4505,36.0,30.0,6.0,,,supp-ips-0803-ga,https://www.ipsos.com/sites/default/files/ct/news/documents/2026-08/Reuters%20Ipsos%20August%20Large%20Sample%20Topline%208.4.26.pdf
+2026-08-03,2026-07-29,Ipsos,Reuters,RV,3542,42.0,37.0,5.0,,,supp-ips-0803-grv,https://www.ipsos.com/sites/default/files/ct/news/documents/2026-08/Reuters%20Ipsos%20August%20Large%20Sample%20Topline%208.4.26.pdf
