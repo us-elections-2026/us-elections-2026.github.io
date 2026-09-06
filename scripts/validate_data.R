@@ -253,6 +253,42 @@ if (!is.null(pl)) {
   if (length(miss)) err("polls_log.csv", paste("필수 컬럼 누락:", paste(miss, collapse = ", ")))
 }
 
+# ---- 주간호 frontmatter (issues/*.qmd) ---------------------------------------
+# 발행일 불변식: 파일명은 그 주 **월요일**(=URL), frontmatter date는 그 주 **일요일**
+# (=파일명 +6일, 그 호가 다루는 기간의 끝). 제목의 기간 끝과도 일치해야 한다.
+#
+# 왜 검증까지 하나 — 이 규칙은 Cowork 앱 예약 작업에 붙여넣은 프롬프트가 지켜야 하는데,
+# 앱 내부라 레포에서 확인할 방법이 없다. 정본 문서(웹사이트_발행_자동화_STEP6-8.md)만
+# 고쳐 두면 앱이 옛 지시를 그대로 쓸 때 조용히 어긋난다. 발행 전 하드 게이트로 잡는다.
+# (2026-09-06: 23개 호가 월요일로 찍혀 있던 것을 일괄 정정한 뒤 도입)
+issue_files <- list.files("issues", pattern = "^\\d{4}-\\d{2}-\\d{2}\\.qmd$", full.names = TRUE)
+for (f in issue_files) {
+  base <- sub("\\.qmd$", "", basename(f))
+  fdate <- try(as.Date(base), silent = TRUE)
+  if (inherits(fdate, "try-error") || is.na(fdate)) { err(basename(f), "파일명이 날짜가 아님"); next }
+  if (format(fdate, "%u") != "1") err(basename(f), "파일명 날짜가 월요일이 아님 (URL 규칙)")
+
+  head <- readLines(f, n = 12, warn = FALSE)
+  dl <- grep("^date:\\s*", head, value = TRUE)
+  if (!length(dl)) { err(basename(f), "frontmatter에 date 없음"); next }
+  d <- as.Date(trimws(sub("^date:\\s*", "", dl[1])))
+  want <- fdate + 6
+  if (is.na(d) || d != want) {
+    err(basename(f), sprintf("date가 %s여야 하는데 %s (파일명 월요일 +6일 = 그 주 일요일)",
+                             want, if (is.na(d)) "파싱 불가" else format(d)))
+  }
+  # 제목의 기간 끝(MM/DD)도 같은 날이어야 한다
+  tl <- grep("^title:\\s*", head, value = TRUE)
+  if (length(tl)) {
+    m <- regmatches(tl[1], regexpr("\\d{2}/\\d{2}~\\d{2}/\\d{2}", tl[1]))
+    if (length(m) == 1) {
+      endmd <- sub("^.*~", "", m)
+      if (endmd != format(want, "%m/%d"))
+        err(basename(f), sprintf("제목의 기간 끝(%s)이 발행일 %s와 불일치", endmd, format(want, "%m/%d")))
+    }
+  }
+}
+
 # ---- 결과 --------------------------------------------------------------------
 if (length(errors) > 0) {
   cat(sprintf("\n✗ 데이터 검증 실패 (%d건):\n", length(errors)))
