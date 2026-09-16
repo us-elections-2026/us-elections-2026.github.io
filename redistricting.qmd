@@ -138,6 +138,8 @@ Mid-decade redistricting (중간 재획정)
 
 텍사스의 선공에 캘리포니아 유권자가 **Prop 50**(2025년 11월, 약 29%p 차 가결)으로 민주 +5석을 노리며 맞불을 놓아, 두 거대 주의 효과가 **서로 상쇄**됐습니다. 텍사스 신지도는 인종 게리맨더 논란으로 하급심에서 한때 사용이 막혔으나, **연방대법원이 2025년 12월 사용을 허용(6-3 stay)하고 2026년 4월 이를 영구화**해 2026 본선에 사용됩니다([Texas Tribune](https://www.texastribune.org/2026/04/27/texas-redistricting-map-ruling-us-supreme-court-upheld-2026-midterms/)). 캘리포니아 신지도도 2026년 2월 연방대법원이 사용을 허용했습니다([NPR](https://www.npr.org/2026/02/04/nx-s1-5691890/supreme-court-california-redistricting-map)). 이후 미주리·노스캐롤라이나(각 R+1), 오하이오(R+2, 위원회), 유타(법원, D+1) 등으로 번졌습니다.
 
+이 가운데 미주리 신지도는 2026년 9월 뒤집혔습니다. 주 대법원이 9/3 만장일치로 지도를 무효화했습니다. 연방대법원도 9/10 신지도 사용을 되살린 연방지법 임시명령을 정지시켰습니다([NBC](https://www.nbcnews.com/politics/supreme-court/supreme-court-blocks-missouris-attempt-use-newly-drawn-republican-cong-rcna596857)). 11월 선거는 2022년 지도(6R–2D)로 확정됐습니다 — **공화당의 중간주기 재획정 지도가 실효적으로 뒤집힌 첫 사례**입니다. 같은 날 Cook 재획정 트래커는 재획정 전체의 공화 순증 추정을 "약 4석"으로 재발행했습니다.
+
 ### 2차 파동 — *Callais* 이후 남부
 
 2026년 4월 29일, 연방대법원은 ***Louisiana v. Callais***에서 루이지애나 지도를 위헌적 인종 게리맨더로 보고 **6-3으로 파기**하면서, VRA §2에 따른 소수인종 보호 지역구의 근거를 크게 좁혔습니다([대법원 판결문](https://www.supremecourt.gov/opinions/25pdf/24-109_21o3.pdf) · [Congress.gov CRS](https://www.congress.gov/crs-product/LSB11431)). 이 판결을 계기로 남부 공화 주들이 소수인종 지역구를 겨냥한 재획정에 착수했습니다 — **플로리다**(R+4, DeSantis 2026-05-04 서명), **테네시**(2026-05-07 서명, 9R-0D 구도), 그리고 **앨라배마·사우스캐롤라이나** 진행, **루이지애나**는 판결 후 새 지도를 재작성 중입니다([Ballotpedia News](https://news.ballotpedia.org/2026/05/11/new-congressional-maps-in-florida-tennessee-aim-to-shift-five-more-districts-to-republicans-ahead-of-2026-midterms/)). 반대로 민주당이 추진한 **버지니아** 신지도는 주 대법원에서 막혔습니다([Democracy Docket](https://www.democracydocket.com/news-alerts/after-callais-and-virginia-republicans-are-ahead-in-trumps-gerrymandering-war/)).
@@ -146,8 +148,8 @@ Mid-decade redistricting (중간 재획정)
 
 ::: {.caveat}
 - 의석 **순효과는 추정치**이며 출처·시점마다 다릅니다. 초기엔 양당이 거의 상쇄(대략 R+9 / D+10)로 평가됐으나, *Callais*·버지니아 차단·플로리다·테네시를 거치며 공화 우위로 기운 것으로 분석됩니다. 정확한 주별 수치는 ③에서 **범위 + 출처 병기**로 정리합니다.
-- 소송이 진행 중인 주(텍사스·미주리 등)는 **선거 전 추가 변동 가능성**이 남아 있습니다.
-- 여기 날짜·판결은 보도·1차 출처로 확인했으나, 진행 중 사안은 **기준일(2026-06) 이후 갱신될 수 있습니다.**
+- 미주리는 2026-09-10 연방대법원 결정으로 종결됐지만, 소송이 진행 중인 다른 주(텍사스 등)는 **선거 전 추가 변동 가능성**이 남아 있습니다.
+- 여기 날짜·판결은 보도·1차 출처로 확인했으나, 진행 중 사안은 **기준일(2026-06 · 미주리 절차는 2026-09) 이후 갱신될 수 있습니다.**
 :::
 
 ## ③ 관련 주 및 현황 {#states}
@@ -166,6 +168,8 @@ cat(svg_redistricting_bar())
 ```{r}
 gt_redistricting_states()
 ```
+
+> **미주리 주의** — 위 차트·표의 기준일은 2026-06-15로, 미주리가 아직 신지도 '사용'으로 표기돼 있습니다. 실제로는 ②에서 설명한 9월 판결로 2022년 지도로 되돌아갔습니다(순효과 R+1 소멸). 데이터 정규화 시 반영 예정입니다.
 
 ## ④ 옛 지도와 현 지도 비교 {#maps}
 
@@ -227,5 +231,5 @@ gt_state_legislatures()
 ---
 
 ::: {.as-of}
-관련 페이지: [하원 경합구 트래커](house.qmd) · [주지사 선거](governors.qmd) · [방법론](methodology.qmd) · [Korea Watch](korea-watch.qmd). 기준일 2026-06(재획정 현황) · 2026-08(주의회 절). 진행 중 소송으로 일부 지도는 선거 전 변동될 수 있습니다.
+관련 페이지: [하원 경합구 트래커](house.qmd) · [주지사 선거](governors.qmd) · [방법론](methodology.qmd) · [Korea Watch](korea-watch.qmd). 기준일 2026-06(재획정 현황, 미주리 확정은 2026-09) · 2026-08(주의회 절). 진행 중 소송으로 일부 지도는 선거 전 변동될 수 있습니다.
 :::

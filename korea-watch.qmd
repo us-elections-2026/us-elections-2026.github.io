@@ -68,11 +68,11 @@ gt_korea_watch()
 
 ### 주시 법안 (119대 — 진행 단계 높은 순)
 
-| 법안 | 내용 | 발의 | 상태 (기준 6/11) |
+| 법안 | 내용 | 발의 | 상태 (기준일 병기) |
 |---|---|---|---|
-| [HR3429](https://www.congress.gov/bill/119th-congress/house-bill/3429) | 한미일 3자협력법 (의회간 3자 대화 설치) | Ami Bera (D-CA) | 위원회 47-3 → **하원 본회의 통과(6/8)** → 상원 계류 |
-| [S555](https://www.congress.gov/bill/119th-congress/senate-bill/555) | 한국계 이산가족 국가등록부법 | Kaine (D-VA)·Cruz (R-TX) | 위원회 통과 → 본회의 상정 대기 |
-| NDAA FY2026 한국 조항 | 주한미군 등 | — | 진행 중 |
+| [HR3429](https://www.congress.gov/bill/119th-congress/house-bill/3429) | 한미일 3자협력법 (의회간 3자 대화 설치) | Ami Bera (D-CA) | 위원회 47-3 → **하원 본회의 통과(6/8)** → 상원 계류 (6/11) |
+| [S555](https://www.congress.gov/bill/119th-congress/senate-bill/555) | 한국계 이산가족 국가등록부법 | Kaine (D-VA)·Cruz (R-TX) | 위원회 통과 → 본회의 상정 대기 (6/11) |
+| NDAA FY2027 한국 조항 | 주한미군 28,500명 하한·전작권·해외 건조 군함 등 | — | 하원안 통과(7/22, 216-212) → **9월 양원 조정회의 국면** (9/13) |
 
 : {.striped}
 
