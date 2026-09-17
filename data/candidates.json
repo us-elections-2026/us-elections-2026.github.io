@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-08-08",
+  "as_of": "2026-09-18",
   "note": "후보 프로필. 출처가 분명한 사실만 수록. null=공개 출처 미확인. 사진은 공개도메인(공식 상·하원 초상) 또는 CC 라이선스만 사용하며 photo_credit에 출처·라이선스 표기.",
   "candidates": [
     {
@@ -257,7 +257,8 @@
       "past_elections": [
         "NH 주하원(2002–06) · 힐스버러 카운티 재무관(2007–11) · 행정평의회(2013–19)",
         "2018 NH-01 하원 당선 후 4선 — 전국 대표적 스윙 지역구 수성",
-        "2025-04-03 상원 출마 선언 (Shaheen 은퇴 직후, Shaheen 지지)"
+        "2025-04-03 상원 출마 선언 (Shaheen 은퇴 직후, Shaheen 지지)",
+        "2026-09-08 민주 경선 승리 — 65.1% vs Karishma Manzur 32.7% (99% 개표, NBC 9/15 집계)"
       ],
       "fundraising": "누적 모금 986만 달러, 보유현금 422만 달러 (3/31 FEC) — 공화 양 후보 합계 상회",
       "strengths": [
@@ -282,7 +283,7 @@
         "https://ballotpedia.org/Chris_Pappas",
         "https://emersoncollegepolling.com/new-hampshire-2026-sununu-leads-gop-nomination-ties-pappas-for-senate/"
       ],
-      "status": "primary"
+      "status": "nominee"
     },
     {
       "state": "NH",
@@ -299,7 +300,8 @@
       "past_elections": [
         "1996 NH-01 하원 당선, 3선(1997–2003)",
         "2002 상원 당선 — 당시 주지사 Shaheen 격파",
-        "2008 상원 재선 실패 — Shaheen에 45 vs 52 패배 (바로 이 의석)"
+        "2008 상원 재선 실패 — Shaheen에 45 vs 52 패배 (바로 이 의석)",
+        "2026-09-08 공화 경선 승리 — 68.4% vs Scott Brown 26.8% (99% 개표, NBC 9/15 집계) · 트럼프 지지"
       ],
       "fundraising": "누적 모금 248만 달러, 보유현금 189만 달러 (3/31 FEC)",
       "strengths": [
@@ -325,7 +327,7 @@
         "https://ballotpedia.org/John_E._Sununu",
         "https://emersoncollegepolling.com/new-hampshire-2026-sununu-leads-gop-nomination-ties-pappas-for-senate/"
       ],
-      "status": "primary"
+      "status": "nominee"
     },
     {
       "state": "NH",
@@ -342,7 +344,8 @@
       "past_elections": [
         "2010 MA 상원 보궐 당선 — 케네디 의석 탈환 이변",
         "2012 MA 상원 Warren에 패배",
-        "2014 NH 상원 Shaheen에 48 vs 52 석패"
+        "2014 NH 상원 Shaheen에 48 vs 52 석패",
+        "2026-09-08 NH 상원 공화 경선 패배 — 26.8% (Sununu 68.4%)"
       ],
       "fundraising": "누적 모금 166만 달러, 보유현금 78만 달러 (3/31 FEC) — 3인 중 최하",
       "strengths": [
