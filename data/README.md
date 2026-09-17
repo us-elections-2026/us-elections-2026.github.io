@@ -21,6 +21,14 @@
 
 ## 상원 일일 로그
 
+### `senate_polls.csv` — 상원 본선 개별 조사 DB (모델·State Focus 조사표·추이 그림의 원천)
+- 스키마 고정 15열(`state,pollster,sponsor,partisan,population,n,start_date,end_date,dem_candidate,rep_candidate,dem_pct,rep_pct,margin,note,source_url`), `margin = dem_pct − rep_pct`.
+- **원천 두 경로**: ① 매일 `scripts/extract_daily_polls.py`가 상원 일일 브리핑 KR의 「새로운 여론조사」 고정 표(프롬프트 v2.8)에서 append(`publish_daily.sh`) ② 주간 (8)단계가 pending 보완·누락 추가.
+  2026-09-17 소급: 6/9~9/17 일일 100건에서 LLM 추출 → 같은 스크립트로 병합.
+- **같은 조사는 한 행** — (주·기관·종료일·후보 쌍) 또는 (주·종료일·후보 쌍·수치)가 같으면 중복. `validate_data.R`이 하드 게이트로 잡는다.
+  예비 전 가상대결(예: MI Stevens–Rogers)은 후보 쌍이 달라 별도 행으로 허용된다.
+- 날짜·%·URL 중 하나라도 없는 조사는 넣지 않는다 → `senate_polls_candidates.csv`(추출 스크립트가 매번 새로 씀, 검토용·비발행).
+
 ### `senate_daily_log.json` — 상원 일일 브리핑 로그 (**자동 생성 — 직접 편집하지 말 것**)
 - 최상위: `as_of`(최신 날짜), `source_label`, `provenance_note`, **`days`**(배열, 날짜 내림차순).
 - `days[]`: `date`, `source_file`, `chars`, `lead`(도입 문단), `summary`(오늘의 핵심 요약),

@@ -18,6 +18,7 @@ export LANG=en_US.UTF-8
 export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
 REPO="${US_ELECTIONS_REPO:-$(cd "$(dirname "$0")/.." && pwd)}"
 LOG="data/senate_daily_log.json"
+POLLS="data/senate_polls.csv"
 
 cd "$REPO" || { echo "[daily] repo 접근 불가: $REPO"; exit 1; }
 git rev-parse --git-dir >/dev/null 2>&1 || { echo "[daily] git 레포가 아님: $REPO"; exit 1; }
@@ -32,10 +33,12 @@ if [ -n "$conflicts" ]; then
   echo "[daily] ✗ Dropbox 충돌 사본이 있어 중단합니다:"; echo "$conflicts" | sed 's/^/    /'; exit 1
 fi
 
-# 로그 파일에 미커밋 변경이 있으면(사람이 손댄 것) 덮어쓰지 않는다
-if ! git diff --quiet -- "$LOG" 2>/dev/null; then
-  echo "[daily] ✗ $LOG 에 미커밋 변경이 있어 중단 — 먼저 커밋하거나 되돌리세요"; exit 1
-fi
+# 로그·조사 CSV에 미커밋 변경이 있으면(사람이 손댄 것) 덮어쓰지 않는다
+for f in "$LOG" "$POLLS"; do
+  if ! git diff --quiet -- "$f" 2>/dev/null; then
+    echo "[daily] ✗ $f 에 미커밋 변경이 있어 중단 — 먼저 커밋하거나 되돌리세요"; exit 1
+  fi
+done
 
 echo "[daily] 최신 main 동기화(pull --ff-only)"
 git fetch origin main -q && git merge --ff-only origin/main -q 2>/dev/null || echo "[daily] (ff-only 불가 — 로컬 커밋 존재, 계속)"
@@ -48,27 +51,34 @@ rc=$?
 if [ $rc -eq 2 ]; then echo "[daily] $DATE 일일 브리핑 없음 — 발행하지 않음(정상 종료)"; exit 0; fi
 [ $rc -eq 0 ] || { echo "[daily] 적재 실패(rc=$rc) — 중단"; exit 1; }
 
-if git diff --quiet -- "$LOG"; then
-  echo "[daily] 로그 변경 없음(이미 적재된 날짜) — 종료"; exit 0
+# 1.5) 여론조사 — 일일의 「새로운 여론조사」 고정 표(프롬프트 v2.8)에서 본선 조사를 뽑아
+#      senate_polls.csv 에 append. 같은 조사는 몇 번 언급돼도 한 행(중복 제거는 스크립트가 한다).
+#      날짜·%·URL 중 하나라도 '?'이면 append 하지 않고 후보 파일에만 남긴다.
+echo "[daily] 여론조사 표 → senate_polls.csv"
+python3 scripts/extract_daily_polls.py --date "$DATE" --apply || echo "[daily] ! 조사 추출 실패(건너뜀 — CSV 미변경)"
+
+if git diff --quiet -- "$LOG" "$POLLS"; then
+  echo "[daily] 로그·조사 변경 없음(이미 적재된 날짜) — 종료"; exit 0
 fi
 
 # 2) 데이터 검증 — 하드 게이트
 echo "[daily] 데이터 검증(validate_data.R)"
-Rscript scripts/validate_data.R || { echo "[daily] 데이터 검증 실패 — 발행 중단"; git checkout -- "$LOG"; exit 1; }
+Rscript scripts/validate_data.R || { echo "[daily] 데이터 검증 실패 — 발행 중단"; git checkout -- "$LOG" "$POLLS"; exit 1; }
 
 # 3) 렌더 — 하드 게이트. 일일 로그는 states/ 9쪽 + dashboard 에만 실리지만,
 #    CI가 전체를 다시 렌더하므로 로컬도 전체를 돌려 깨진 곳이 없는지 본다.
 echo "[daily] 전체 렌더(quarto render)"
-quarto render || { echo "[daily] 렌더 실패 — 발행 중단"; git checkout -- "$LOG"; exit 1; }
+quarto render || { echo "[daily] 렌더 실패 — 발행 중단"; git checkout -- "$LOG" "$POLLS"; exit 1; }
 
 if [ "${DRY_RUN:-0}" = "1" ]; then
-  echo "[daily] DRY_RUN — 커밋·push 생략. 변경 요약:"; git diff --stat -- "$LOG"; exit 0
+  echo "[daily] DRY_RUN — 커밋·push 생략. 변경 요약:"; git diff --stat -- "$LOG" "$POLLS"; exit 0
 fi
 
-# 4) 커밋·push — 로그 한 파일만
-git add "$LOG"
-git commit -m "일일 자동 발행: 상원 일일 로그 ($DATE)" \
-  -m "publish_daily.sh: _NIS senate_daily/${DATE}_일일브리핑_KR.md → data/senate_daily_log.json. State Focus 9쪽·전망 대시보드의 일일 브리핑 절에 반영." \
+# 4) 커밋·push — 로그 + 조사 CSV 두 파일만
+git add "$LOG" "$POLLS"
+NPOLL=$(git diff --cached --numstat -- "$POLLS" | awk '{print $1+0}')
+git commit -m "일일 자동 발행: 상원 일일 로그 ($DATE)${NPOLL:+ · 조사 +${NPOLL}행}" \
+  -m "publish_daily.sh: _NIS senate_daily/${DATE}_일일브리핑_KR.md → data/senate_daily_log.json(일일 절) + senate_polls.csv(고정 표 추출, 중복 제거)." \
   || { echo "[daily] 커밋 실패"; exit 1; }
 
 echo "[daily] origin/main rebase"

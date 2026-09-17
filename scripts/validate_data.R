@@ -289,6 +289,30 @@ for (f in issue_files) {
   }
 }
 
+# ---- senate_polls.csv — 스키마·부호·중복 (모델·State Focus 조사표·추이 그림의 원천) ------
+sp <- load_csv("senate_polls.csv")
+if (!is.null(sp)) {
+  f <- "senate_polls.csv"
+  need <- c("state","pollster","sponsor","partisan","population","n","start_date","end_date",
+            "dem_candidate","rep_candidate","dem_pct","rep_pct","margin","note","source_url")
+  if (!identical(names(sp), need)) err(f, paste("열 순서/이름이 스키마와 다름:", paste(names(sp), collapse=",")))
+  watch <- c("GA","MI","NH","ME","NC","TX","OH","AK","IA")
+  bad <- setdiff(unique(sp$state), watch); if (length(bad)) err(f, paste("감시 9주 밖 state:", paste(bad, collapse=",")))
+  if (any(!sp$partisan %in% c("none","D","R"))) err(f, "partisan은 none/D/R만")
+  if (any(!is.na(sp$population) & sp$population != "" & !sp$population %in% c("LV","RV","A"))) err(f, "population은 LV/RV/A/빈칸만")
+  ed <- suppressWarnings(as.Date(sp$end_date)); if (any(is.na(ed) & nzchar(sp$end_date))) err(f, "end_date 형식 오류 행 존재")
+  if (any(is.na(ed))) err(f, "end_date 빈 행 존재(발표일이라도 넣을 것)")
+  dp <- suppressWarnings(as.numeric(sp$dem_pct)); rp <- suppressWarnings(as.numeric(sp$rep_pct)); mg <- suppressWarnings(as.numeric(sp$margin))
+  okm <- !is.na(dp) & !is.na(rp) & !is.na(mg)
+  if (any(abs((dp - rp) - mg)[okm] > 0.11)) err(f, "margin != dem_pct - rep_pct 인 행 존재(양수=민주 우위)")
+  if (any(!nzchar(sp$source_url))) err(f, "source_url 빈 행 존재")
+  # 같은 조사가 여러 대진(예비 전 가상대결)을 물은 경우는 후보 쌍이 다르므로 키에 후보를 넣는다
+  k1 <- paste(sp$state, tolower(gsub("[^a-z0-9]", "", tolower(sp$pollster))), sp$end_date, sp$dem_candidate, sp$rep_candidate)
+  k2 <- paste(sp$state, sp$end_date, sp$dem_candidate, sp$rep_candidate, sp$dem_pct, sp$rep_pct)
+  if (anyDuplicated(k1)) err(f, paste("같은 조사 중복(주·기관·종료일):", paste(unique(k1[duplicated(k1)]), collapse=" | ")))
+  if (anyDuplicated(k2)) err(f, paste("같은 조사 중복(주·종료일·수치):", paste(unique(k2[duplicated(k2)]), collapse=" | ")))
+}
+
 # ---- senate_daily_log.json (선택) — 일일 로그 구조·날짜·주 약자 ---------------
 sdl <- load_json("senate_daily_log.json", optional = TRUE)
 if (!is.null(sdl)) {
