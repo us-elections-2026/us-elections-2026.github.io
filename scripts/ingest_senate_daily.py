@@ -76,6 +76,28 @@ def split_h2(text: str) -> dict[str, str]:
     return out
 
 
+HR = re.compile(r"^\s*(-{3,}|\*{3,}|_{3,})\s*$")
+HEAD = re.compile(r"^(#{1,6})\s+(.+?)\s*$")
+
+
+def sanitize(body: str) -> str:
+    """페이지 안에 들어갈 본문의 블록 구조를 무해화한다.
+    - 수평선(---/***/___)은 제거: 접힘 callout 안에서 pandoc이 `---` 줄을 YAML 메타데이터
+      블록 시작으로 읽어 렌더가 깨진다(2026-09-17 dashboard 실측).
+    - 제목(#…)은 굵은 한 줄로 낮춘다: 원천의 소제목이 사이트 목차·callout 제목과 충돌하지 않게.
+    인라인 서식·링크·표·목록은 손대지 않는다."""
+    out = []
+    for line in body.splitlines():
+        if HR.match(line):
+            continue
+        m = HEAD.match(line)
+        if m:
+            out.append(f"**{m.group(2)}**")
+            continue
+        out.append(line)
+    return "\n".join(out).strip("\n")
+
+
 def find_section(sections: dict[str, str], *needles: str) -> str | None:
     for k, v in sections.items():
         if all(n in k for n in needles):
@@ -156,14 +178,14 @@ def parse_file(path: Path) -> dict:
         "date": date,
         "source_file": path.name,
         "chars": len(text),
-        "lead": lead,
-        "summary": find_section(sec, "오늘의 핵심 요약") or "",
-        "states": {c: states[c] for c in WATCH if c in states},
-        "extras": extras,
-        "polls": find_section(sec, "새로운 여론조사") or "",
+        "lead": sanitize(lead),
+        "summary": sanitize(find_section(sec, "오늘의 핵심 요약") or ""),
+        "states": {c: sanitize(states[c]) for c in WATCH if c in states},
+        "extras": [{"title": e["title"], "body": sanitize(e["body"])} for e in extras],
+        "polls": sanitize(find_section(sec, "새로운 여론조사") or ""),
         # 제목 변형: 주시 항목 / 주시 대상 / 주목할 일정 / 내일 주목할 사항 / 내일 볼 것 / 이월 미결 항목
-        "watch": find_any(sec, ["주시", "주목", "내일", "이월"]) or "",
-        "gaps": find_any(sec, ["수집 결손", "수집 공백"]) or "",
+        "watch": sanitize(find_any(sec, ["주시", "주목", "내일", "이월"]) or ""),
+        "gaps": sanitize(find_any(sec, ["수집 결손", "수집 공백"]) or ""),
     }
 
 
