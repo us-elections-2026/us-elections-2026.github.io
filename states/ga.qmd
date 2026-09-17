@@ -25,6 +25,13 @@ cat(state_card_html("GA"))
 - **한국 함의**: 8개 경합주 중 **한국 직접 관여가 가장 풍부**(Partner with Korea Act·DMZ·현대차 단속 대응).
 :::
 
+## 일일 브리핑 {#daily}
+
+```{r}
+#| output: asis
+cat(daily_log_md("GA"))
+```
+
 ## 1. 주 개요
 
 - **인구·경제**: 인구 약 1,100만 명(2025 추정)으로 미국에서 가장 빠르게 성장하는 주 중 하나. 주도 애틀랜타는 코카콜라·델타항공·홈디포·UPS 본사가 있는 남부 상업 수도로, 물류·미디어 제작·핀테크·사이버보안이 집약돼 있습니다. ([Britannica](https://www.britannica.com/place/Georgia-state))

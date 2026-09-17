@@ -25,6 +25,13 @@ cat(state_card_html("TX"))
 - **한국 함의**: 삼성 Taylor $44B 팹이 구조적 후크이나, 후보 직접 발언은 미확인.
 :::
 
+## 일일 브리핑 {#daily}
+
+```{r}
+#| output: asis
+cat(daily_log_md("TX"))
+```
+
 ## 1. 주 개요
 
 - **선거사 — 높은 천장**: 2024 대선 **Trump +13.8**(2012년 이후 최대), 상원도 1988년 이후 민주당이 이긴 적이 없습니다. 다만 추세선은 좁아져 왔습니다 — 2018 Cruz +2.6(O'Rourke), 2024 Cruz +8.5(Allred). ([Wikipedia](https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas))

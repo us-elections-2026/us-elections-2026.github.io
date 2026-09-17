@@ -25,6 +25,13 @@ Vance 부통령 승계로 임명된 **Husted(R)의 특별선거** — 전 3선 �
 - **한국 함의**: **Brown은 KORUS 반대표**(직접 확인) — 당선 시 한국 통상에 강경 가능성(역설).
 :::
 
+## 일일 브리핑 {#daily}
+
+```{r}
+#| output: asis
+cat(daily_log_md("OH"))
+```
+
 ## 1. 주 개요
 
 - **특별선거의 배경**: JD Vance가 부통령 취임을 위해 상원직을 사임하면서 생긴 공석으로, **오하이오 1954년 이래 첫 연방 상원 특별선거**입니다. 승자는 Vance의 잔여 임기(2028 만료)를 채웁니다. ([Wikipedia](https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Ohio))

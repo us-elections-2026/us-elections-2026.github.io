@@ -1726,3 +1726,59 @@ home_kpis <- function() {
     '</div>')
   }, error = function(e) "")
 }
+
+# 1.8 상원 일일 브리핑 로그 (State Focus·전망 대시보드) --------------------------
+# data/senate_daily_log.json — _NIS 상원 일일 브리핑(KR)을 scripts/ingest_senate_daily.py가
+# 날짜·주 단위로 잘라 넣은 파일. 여기서는 마크다운을 조립만 하고(#| output: asis),
+# 본문은 원천 그대로 싣는다(요약·재서술 없음 — 종결체도 원천대로 다체).
+# scope: "SENATE"(도입 문단 + 핵심 요약·조사·주시 항목) 또는 주 약자("GA" 등).
+# 최근 n_days일만 싣고, 앞의 n_open일은 펼치고 나머지는 접는다.
+.kr_date <- function(s) {
+  d <- as.Date(s)
+  wd <- c("일", "월", "화", "수", "목", "금", "토")[as.POSIXlt(d)$wday + 1]
+  sprintf("%d월 %d일 (%s)", as.integer(format(d, "%m")), as.integer(format(d, "%d")), wd)
+}
+.callout_md <- function(title, body, open = FALSE, cls = "callout-note") {
+  paste0("\n::: {.", cls, ' appearance="simple" icon="false" collapse="',
+         if (open) "false" else "true", '"}\n## ', title, "\n\n", body, "\n:::\n")
+}
+daily_log_md <- function(scope = "SENATE", n_days = 14, n_open = 1) {
+  path <- file.path("data", "senate_daily_log.json")
+  if (!file.exists(path))
+    return("::: {.caveat}\n일일 브리핑 로그(`data/senate_daily_log.json`)가 아직 없습니다 — `scripts/ingest_senate_daily.py` 실행 후 채워집니다.\n:::\n")
+  d <- jsonlite::read_json(path, simplifyVector = FALSE)
+  days <- d$days
+  if (!length(days)) return("::: {.caveat}\n적재된 일일 브리핑이 없습니다.\n:::\n")
+  days <- days[seq_len(min(n_days, length(days)))]
+  nz <- function(x) if (is.null(x) || !nzchar(x)) "" else x
+
+  head <- sprintf(
+    '<p class="text-muted" style="font-size:.84rem;">최근 %d일 · 최신 %s · 원천은 상원 일일 브리핑(매일 오전 갱신)입니다. 본문은 그날의 기록을 그대로 옮긴 것이라 종결체가 다르고, 이후 정정된 사실이 있을 수 있습니다. 판세의 현재 값은 위 카드·표를 보세요.</p>\n',
+    length(days), .kr_date(d$as_of))
+
+  parts <- vapply(seq_along(days), function(i) {
+    x <- days[[i]]
+    title <- .kr_date(x$date)
+    if (identical(scope, "SENATE")) {
+      lead <- nz(x$lead)
+      sub  <- paste0(
+        if (nzchar(nz(x$summary))) .callout_md("오늘의 핵심 요약", x$summary) else "",
+        if (nzchar(nz(x$polls)))   .callout_md("새로운 여론조사", x$polls) else "",
+        if (nzchar(nz(x$watch)))   .callout_md("주시 항목", x$watch) else "")
+      body <- paste0(lead, "\n", sub)
+    } else {
+      body <- nz(x$states[[scope]])
+      if (!nzchar(body))
+        body <- sprintf("이 날 브리핑에는 %s 소절이 없었습니다.", scope)
+    }
+    if (i <= n_open)
+      paste0('\n::: {.daily-entry}\n<div class="daily-date">', title,
+             '</div>\n\n', body, "\n:::\n")
+    else
+      .callout_md(title, body)
+  }, character(1))
+
+  paste0(head, paste(parts, collapse = "\n"),
+         '\n<p class="text-muted" style="font-size:.78rem;">원천: `_NIS` 상원 일일 브리핑 KR(', nz(days[[length(days)]]$date), ' ~ ', nz(days[[1]]$date),
+         '). 추출 `scripts/ingest_senate_daily.py` · 렌더 `daily_log_md()`.</p>\n')
+}
