@@ -23,3 +23,6 @@ handoff.md
 *conflicted copy*
 *conflicted-copy*
 *충돌*사본*
+
+# 일일 조사 추출의 검토용 후보 파일(매 실행 덮어씀) — 발행 대상 아님
+data/senate_polls_candidates.csv

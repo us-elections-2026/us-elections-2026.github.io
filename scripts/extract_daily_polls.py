@@ -99,7 +99,24 @@ POLLSTER_ALIAS = {
     "ut austin texas politics project": "UT Austin/Texas Politics Project",
     "tpor": "Texas Public Opinion Research", "texas public opinion research": "Texas Public Opinion Research",
     "univision yougov": "Univision/YouGov", "overton": "Overton Insights", "overton insights": "Overton Insights",
+    "nyt siena college": "NYT/Siena", "new york times siena college": "NYT/Siena",
+    "university of new hampshire survey center": "UNH Survey Center", "unh granite state poll": "UNH Survey Center",
+    "ut austin": "UT Austin/Texas Politics Project", "university of texas texas politics project": "UT Austin/Texas Politics Project",
+    "wedgwood polls": "Wedgewood Polls", "wedgwood": "Wedgewood Polls",
+    "texas pulse": "Bush School/Recon MR Pulse", "texas a m university reconmr": "Bush School/Recon MR Pulse",
+    "texas a m reconmr": "Bush School/Recon MR Pulse", "bush school reconmr": "Bush School/Recon MR Pulse",
+    "carolina journal poll": "Carolina Journal", "texas southern university yougov": "Texas Southern Univ./Jordan Research Center",
+    "epic mra": "EPIC-MRA", "saint anselm college survey center": "Saint Anselm College Survey Center",
+    "peak insights": "NRSC/Peak Insights", "nrsc peak insights": "NRSC/Peak Insights",
+    "gbao": "GBAO", "global strategy group": "Global Strategy Group", "gsg": "Global Strategy Group",
 }
+# 집계 사이트·백과 페이지는 조사 원문이 아니다 — 여기가 출처면 '출처 불확실'로 pending
+AGGREGATOR_DOMAINS = ("realclearpolling.com", "realclearpolitics.com", "pollsmax.com", "wikipedia.org",
+                      "270towin.com", "fiftyplusone", "racetothewh.com", "electionbettingodds.com")
+# 지명 확정일 — 이보다 앞선 실사는 "지명 전 가상 대진"으로 표시(기존 CSV 관행: "본선 가상(8/4 예비 전)")
+NOMINATED = {"GA": "2026-06-16", "MI": "2026-08-04", "NH": "2026-09-08", "ME": "2026-07-25", "AK": "2026-08-18", "IA": "2026-06-02"}
+# 조사기관이 아닌 것(캠프 내부 플래시폴·기관 미상)은 출처 불확실로 제외
+UNNAMED = ("internal", "내부", "campaign", "캠프", "미상", "불명", "미공개", "unknown")
 
 
 def norm_key(s: str) -> str:
@@ -256,6 +273,11 @@ def normalize(o: dict) -> dict | None:
         r["_reject"] = f"대진 불일치 {r['dem_candidate']}–{r['rep_candidate']}"
     if not r["pollster"]:
         r["_reject"] = "조사기관 없음"
+    elif any(u in r["pollster"].lower() for u in UNNAMED):
+        r["_reject"] = f"조사기관 미상/내부조사({r['pollster'][:30]})"
+    if r["end_date"] and st in NOMINATED and r["end_date"] < NOMINATED[st]:
+        tag = f"지명 전 가상 대진({NOMINATED[st][5:].replace('-', '/')} 확정 전)"
+        r["notes"] = (tag + (" · " + r["notes"] if r["notes"] else ""))
     return r
 
 
@@ -267,6 +289,10 @@ def key_b(r):  # 같은 조사 판정 2
     return (r["state"], r["end_date"], r["dem_pct"], r["rep_pct"])
 
 
+def key_c(r):  # 같은 조사 판정 3 — 기관·수치가 같으면 날짜 표기(발표일/실사일)가 달라도 같은 조사로 본다
+    return (r["state"], norm_key(r["pollster"]), r["dem_pct"], r["rep_pct"])
+
+
 def dedup(rows: list[dict]) -> list[dict]:
     out: list[dict] = []
     for r in rows:
@@ -275,7 +301,8 @@ def dedup(rows: list[dict]) -> list[dict]:
             if r["state"] != o["state"]:
                 continue
             if r["end_date"] and o["end_date"]:
-                if key_a(r) == key_a(o) or key_b(r) == key_b(o):
+                if key_a(r) == key_a(o) or key_b(r) == key_b(o) or (
+                        r["dem_pct"] is not None and key_c(r) == key_c(o)):
                     hit = o
                     break
             else:
@@ -302,17 +329,24 @@ def load_csv() -> list[dict]:
 
 
 def classify(rows: list[dict], existing: list[dict]) -> None:
-    ex_a = {(e["state"], norm_key(e["pollster"]), e["end_date"]) for e in existing}
+    # 기존 행의 기관명도 같은 별칭표로 정규화해 비교한다(예: "Catawba/YouGov" ↔ "Catawba College/YouGov")
+    ek = lambda e: norm_key(canon_pollster(e["pollster"]))
+    ex_a = {(e["state"], ek(e), e["end_date"]) for e in existing}
     ex_b = {(e["state"], e["end_date"], num(e["dem_pct"]), num(e["rep_pct"])) for e in existing}
-    ex_near = [(e["state"], norm_key(e["pollster"]), e["end_date"]) for e in existing if e["end_date"]]
+    ex_c = {(e["state"], ek(e), num(e["dem_pct"]), num(e["rep_pct"])) for e in existing}
+    ex_near = [(e["state"], ek(e), e["end_date"]) for e in existing if e["end_date"]]
     for r in rows:
         if r.get("_reject"):
             r["status"] = "reject"; r["why"] = r["_reject"]; continue
         if r["end_date"] and (key_a(r) in ex_a or key_b(r) in ex_b):
             r["status"] = "dup"; r["why"] = "기존 CSV에 있음"; continue
+        if r["dem_pct"] is not None and key_c(r) in ex_c:
+            r["status"] = "dup"; r["why"] = "기존 CSV에 있음(기관·수치 일치, 날짜 표기만 다름)"; continue
         missing = [k for k in ("start_date", "end_date", "dem_pct", "rep_pct", "source_url") if r.get(k) in (None, "")]
         if missing:
             r["status"] = "pending"; r["why"] = "누락: " + ",".join(missing); continue
+        if any(d in r["source_url"].lower() for d in AGGREGATOR_DOMAINS):
+            r["status"] = "pending"; r["why"] = "출처가 집계 사이트 — 조사 원문/보도 URL 필요"; continue
         # 같은 주·기관·종료일 ±3일에 다른 조사가 있으면 사람 판단
         d = dt.date.fromisoformat(r["end_date"])
         near = [e for e in ex_near if e[0] == r["state"] and e[1] == norm_key(r["pollster"])
@@ -391,6 +425,9 @@ def main() -> int:
     if a.verify:
         for r in ready:
             r["verify"] = verify_url(r)
+            if r["verify"] == "미확인":
+                r["status"] = "pending"; r["why"] = "원문 페이지를 열었으나 D%·R% 수치가 본문에 없음"
+        ready = [r for r in rows if r["status"] == "ready"]
     counts = {}
     for r in rows:
         counts[r["status"]] = counts.get(r["status"], 0) + 1
