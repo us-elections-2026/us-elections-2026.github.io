@@ -289,6 +289,29 @@ for (f in issue_files) {
   }
 }
 
+# ---- senate_daily_log.json (선택) — 일일 로그 구조·날짜·주 약자 ---------------
+sdl <- load_json("senate_daily_log.json", optional = TRUE)
+if (!is.null(sdl)) {
+  # fromJSON 기본 simplify는 days를 data.frame으로 바꾸므로 원형(list)으로 다시 읽는다
+  sdl <- jsonlite::fromJSON(jpath("senate_daily_log.json"), simplifyVector = FALSE)
+  f <- "senate_daily_log.json"
+  require_keys(f, sdl, c("as_of", "days"))
+  if (!is.null(sdl$days) && length(sdl$days)) {
+    dates <- vapply(sdl$days, function(d) if (is.null(d$date)) NA_character_ else d$date, character(1))
+    bad <- dates[is.na(suppressWarnings(as.Date(dates, "%Y-%m-%d")))]
+    if (length(bad)) err(f, paste("date 형식 오류:", paste(bad, collapse = ", ")))
+    if (anyDuplicated(dates)) err(f, "중복 날짜 존재")
+    if (!identical(dates, sort(dates, decreasing = TRUE))) err(f, "days가 날짜 내림차순이 아님")
+    if (!is.na(sdl$as_of) && sdl$as_of != dates[1]) err(f, "as_of가 최신 날짜와 불일치")
+    watch <- c("GA","MI","NH","ME","NC","TX","OH","AK","IA")
+    for (d in sdl$days) {
+      st <- names(d$states)
+      if (length(setdiff(st, watch))) err(f, sprintf("%s: 감시 9주 밖 약자 %s", d$date, paste(setdiff(st, watch), collapse = ",")))
+      if (length(st) < 9) cat(sprintf("  · %s: 주 소절 %d/9 (결손은 페이지에 비워 둠)\n", d$date, length(st)))
+    }
+  }
+}
+
 # ---- 결과 --------------------------------------------------------------------
 if (length(errors) > 0) {
   cat(sprintf("\n✗ 데이터 검증 실패 (%d건):\n", length(errors)))

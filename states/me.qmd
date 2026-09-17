@@ -25,6 +25,13 @@ cat(state_card_html("ME"))
 - **한국 함의**: Collins의 CHIPS·세출위는 추정 연결고리; 직접 한국 표결은 미확인.
 :::
 
+## 일일 브리핑 {#daily}
+
+```{r}
+#| output: asis
+cat(daily_log_md("ME"))
+```
+
 ## 1. 주 개요
 
 - **유권자 구성**: 인구 약 140만 명. 백인(non-Hispanic) 비중 약 91%로 전국 최고 수준이며, **미국에서 가장 농촌(rural) 비율이 높은 주**(약 61%가 비도시). **무당파(unenrolled) 등록 비중이 매우 높습니다**(출처별 33~36%). ([Point2Homes](https://www.point2homes.com/US/Neighborhood/ME-Demographics.html))

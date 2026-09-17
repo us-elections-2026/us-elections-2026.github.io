@@ -78,6 +78,13 @@ mrange <- sprintf("%s \u2192 %s", rh$months[1], rh$months[length(rh$months)])
 시장 가격은 270towin의 등급 환산값이 아니라 **Kalshi 공개 API의 원가격**을, 모델 확률은 **각 기관 예측 페이지의 원 수치**를 직접 받아 싣습니다(2026-08-06부터). **원천이 확인되지 않는 수치는 게재하지 않습니다** — 그 이력은 아래 감사 주석에 남깁니다.
 :::
 
+## 일일 브리핑 — 상원 전체 {#daily}
+
+```{r}
+#| output: asis
+cat(daily_log_md("SENATE"))
+```
+
 ::: {#dash-root}
 
 <p id="dash-stamp" class="text-muted" style="font-size:.85rem;"></p>

@@ -19,6 +19,18 @@
 
 ---
 
+## 상원 일일 로그
+
+### `senate_daily_log.json` — 상원 일일 브리핑 로그 (**자동 생성 — 직접 편집하지 말 것**)
+- 최상위: `as_of`(최신 날짜), `source_label`, `provenance_note`, **`days`**(배열, 날짜 내림차순).
+- `days[]`: `date`, `source_file`, `chars`, `lead`(도입 문단), `summary`(오늘의 핵심 요약),
+  **`states`**(주 약자 → 「주별 뉴스」 소절 본문, 감시 9주), `extras[]`(로스터 외 소절 `{title, body}`),
+  `polls`(새로운 여론조사), `watch`(주시 항목), `gaps`(수집 결손). 본문은 전부 **마크다운 원문**.
+- **생성**: `scripts/ingest_senate_daily.py`가 `_NIS …/senate_daily/YYYY-MM-DD_일일브리핑_KR.md`에서
+  추출. `scripts/publish_daily.sh`(Cowork 10:15 KST)가 매일 호출. 같은 날짜는 덮어씀.
+- **소비**: `daily_log_md()`(R/helpers.R) — `states/*.qmd`·`dashboard.qmd`의 「일일 브리핑」 절.
+  요약·재서술 없이 전재하므로 종결체는 원천대로 다체(STYLE.md 예외).
+
 ## 전국 환경
 
 ### `forecast.json` — 예보 종합 (**자동 생성 — 직접 편집하지 말 것**)

@@ -480,3 +480,18 @@ main table.gt_table th.gt_col_heading { white-space: pre-line; text-align: cente
 .bd-as, .rcard-mu, .rcard-lk { font-family: var(--mono); }
 .rcard-lk a { font-family: var(--sans); }
 .pt-lab, .pt-lab-m, .pt-ax, .pt-zlab { font-family: var(--mono); }
+
+/* 일일 브리핑 로그 — State Focus·전망 대시보드 (2026-09-17) */
+.daily-entry {
+  border: 1px solid #e3e6ea; border-left: 4px solid #6c757d;
+  background: #fbfbfc; border-radius: 8px;
+  padding: 0.7rem 1rem 0.5rem; margin: 0.8rem 0 1rem;
+}
+.daily-entry .daily-date {
+  font-weight: 700; font-size: 0.82rem; color: #495057;
+  letter-spacing: 0.02em; margin-bottom: 6px;
+}
+.daily-entry .daily-date::before { content: "📅 "; }
+.daily-entry ul { padding-left: 1.15rem; }
+.daily-entry li { margin: 4px 0; line-height: 1.6; }
+.daily-entry .callout { margin: 0.6rem 0; }
