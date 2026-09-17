@@ -21,7 +21,7 @@ cat(state_card_html("NH"))
 
 ::: {.summary}
 - **구도**: 민주 수성 공개석(Shaheen 은퇴) — Cook **Lean D** vs IE Toss-up(9/3), 민주 필수 3석 중 하나.
-- **변화**: 9/8 경선 종료 — Pappas 62.5%·Sununu 69.1%로 'Pappas 대 Sununu' 본선 대진 확정.
+- **변화**: 9/8 경선 종료 — Pappas 65.1%·Sununu 68.4%(99% 개표)로 'Pappas 대 Sununu' 본선 대진 확정. 9/15 Cook이 Lean D→Toss Up으로 내려 3대 기관 중 둘이 토스업.
 - **한국 함의**: 후보 직접 한국 입장 미확인. BAE 방산 전자가 구조적 접점(추정).
 :::
 
@@ -34,9 +34,19 @@ cat(daily_log_md("NH"))
 
 ## 1. 주 개요
 
-- **유권자 구성 — 무당파가 최대 블록**: 뉴햄프셔는 **무당파(undeclared) 등록이 최대 블록**인 주로, 연방 선거에서는 민주(2004년 이후 대선 전승), 주 선거에서는 공화(Ayotte 주지사·주의회)가 강한 분할 투표 전통이 있습니다.
+- **유권자 구성 — 무당파가 최대 블록**: 2026년 8월 3일 기준 등록 유권자 약 89.9만 명 가운데 무당파(undeclared)가 약 35.2만 명입니다. 공화 약 30만 명, 민주 약 24.7만 명보다 많습니다. 연방 선거에서는 민주, 주 선거에서는 공화가 강한 분할 투표 전통이 있습니다. ([AP/InDepthNH](https://indepthnh.org/2026/09/07/ap-decision-notes-what-to-expect-in-new-hampshires-state-primary/))
 - **선거사**: 2024 대선은 **Harris +2.8**로, 2020년 Biden +7.3에서 우경화했습니다. 직전 상원 선거는 2020 Shaheen +15.6, 2022 Hassan +9.1로 민주가 여유 있게 이겼지만, 둘 다 현직 프리미엄이 있던 선거라 오픈시트인 이번과는 구조가 다릅니다.
 - **경제**: 방산 전자 산업이 축으로, **BAE Systems 전자부문 본사**(나슈아)가 주 최대급 제조업 고용주입니다.
+
+### 제도가 만드는 특이성
+
+뉴햄프셔 정치를 읽을 때 다른 주의 잣대가 잘 맞지 않는 이유는 제도에 있습니다.
+
+- **400명 주하원**: 하원의원이 400명입니다. 영어권에서 네 번째로 큰 하원이고, 의원 1인당 주민은 약 3,300명으로 전국 최소입니다. 연봉은 100달러입니다. 사실상 시민 자원봉사 의회라 정당 조직보다 동네 인물이 중요합니다. ([Wikipedia](https://en.wikipedia.org/wiki/New_Hampshire_House_of_Representatives))
+- **2년 임기 주지사·부지사 없음**: 주지사를 2년마다 뽑는 주는 버몬트와 둘뿐입니다. 연임 제한도 없습니다. 부지사는 없고, 대신 5인 행정평의회(Executive Council)가 계약·사면·판사 임명을 승인합니다. 자문기구가 아니라 주지사 권한을 실제로 견제하는 기관입니다. ([Governor of NH](https://en.wikipedia.org/wiki/Governor_of_New_Hampshire) · [Executive Council](https://www.council.nh.gov/about-us))
+- **세금 없는 주**: 일반 판매세도, 근로소득세도 없습니다. 이자·배당세마저 2025년에 폐지됐습니다. 'Live Free or Die'라는 주 표어가 재정 구조에 그대로 박혀 있어, 세금은 어느 선거에서든 1순위 쟁점입니다. ([Politics of NH](https://en.wikipedia.org/wiki/Politics_of_New_Hampshire))
+- **분할투표의 극단**: 대선은 2004년 이후 여섯 번 연속 민주가 이겼고, 연방 의회 대표단은 2017년부터 전원 민주입니다. 그런데 주지사는 공화 Ayotte이고, 그 전 8년도 공화 Chris Sununu였습니다. 같은 유권자가 워싱턴에는 민주, 콩코드에는 공화를 보냅니다. ([2026 NH Senate](https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire))
+- **상원은 2010년이 마지막**: 공화당이 이 주 연방상원 선거에서 마지막으로 이긴 것은 2010년 Ayotte입니다. 이번은 2010년 이후 첫 공개석입니다. Sununu 진영이 노리는 것은 바로 이 분할투표 습관을 연방 선거로 끌어오는 일입니다. ([NBC](https://www.nbcnews.com/politics/2026-election/chris-pappas-john-sununu-new-hampshire-senate-primary-winner-rcna596479))
 
 ## 2. 선거 제도
 
@@ -48,9 +58,17 @@ cat(daily_log_md("NH"))
 
 ## 3. 후보자
 
-9/8 경선은 파란 없이 끝났습니다 — 민주 Chris Pappas 62.5%, 공화 John E. Sununu 69.1%. 본선은 예상대로 'Pappas 대 Sununu' 구도가 됐습니다. 문제는 조사의 방향이 갈린다는 점입니다. 경선 직전 UNH는 Sununu 45–43으로 첫 공화 우위를 냈고, Saint Anselm은 Pappas +7이었습니다. 경선 직후 공화계 Rasmussen은 오히려 Pappas +11을 냈습니다. 조사 간 폭이 13%p에 이르는 만큼, 단일 조사보다 축적을 기다릴 구간입니다. 개별 조사 수치는 아래 표를 보세요.
+9/8 경선은 파란 없이 끝났습니다. 민주 Chris Pappas 65.1%, 공화 John E. Sununu 68.4%입니다(99% 개표, NBC 9/15 집계). 이 사이트가 앞서 적었던 62.5%·69.1%는 개표 초반 수치였습니다. 본선은 예상대로 'Pappas 대 Sununu' 구도가 됐습니다. 문제는 조사의 방향이 갈린다는 점입니다. 경선 직전 UNH는 Sununu 45–43으로 첫 공화 우위를 냈고, Saint Anselm은 Pappas +7이었습니다. 경선 직후 공화계 Rasmussen은 오히려 Pappas +11을 냈습니다. 조사 간 폭이 13%p에 이르는 만큼, 단일 조사보다 축적을 기다릴 구간입니다. 개별 조사 수치는 아래 표를 보세요.
 
 > **인물 주의**: 공화 선두 "Sununu"는 **John E. Sununu 전 연방상원의원**(2003–2009 재임, 2008년 Shaheen에게 패배)입니다. 그의 동생 **Chris Sununu 전 주지사**와 Kelly Ayotte 현 주지사는 이번 상원 경선에 **불출마**했습니다. (초기 여론조사의 "Sununu" 명성 측정이 두 인물 중 누구를 가리켰는지는 조사별 확인 필요 — 실제 출마·FEC 보고 후보는 John E. Sununu.)
+
+### Sununu 가문 — 뉴햄프셔 공화당의 3대
+
+- **이름의 뿌리**: Sununu는 아랍어 성입니다. 가문은 예루살렘의 그리스정교 공동체 출신으로, 팔레스타인·레바논계 기독교인이며 20세기 초 미국으로 이주했습니다. 아랍어 سنونو(sunūnū)는 '제비'라는 뜻의 명사입니다. 다만 성씨와 이 낱말의 연결은 사전 정의에서 유추한 것이고, 가문이 직접 밝힌 기록은 확인하지 못했습니다. ([Wikipedia](https://en.wikipedia.org/wiki/John_H._Sununu) · [Arab America](https://www.arabamerica.com/arabamericans/john-sununu/) · [Wiktionary](https://en.wiktionary.org/wiki/%D8%B3%D9%86%D9%88%D9%86%D9%88))
+- **1세대 John H. Sununu(1939년생)**: 부모의 출장 중 쿠바 아바나에서 태어났습니다. 어머니는 엘살바도르 출신입니다. MIT 기계공학 박사이고, 1983~89년 주지사를 지낸 뒤 1989~91년 George H. W. Bush의 백악관 비서실장이었습니다. 아랍계·그리스계·히스패닉계로는 처음인 주지사이자 비서실장입니다. 자녀는 여덟 명입니다. ([Wikipedia](https://en.wikipedia.org/wiki/John_H._Sununu))
+- **2세대 John E. Sununu(1964년생)**: 이번 공화 후보입니다. MIT 기계공학 학사·석사, 하버드 MBA를 거쳐 NH-01 하원 3선(1997~2003)을 지냈습니다. 2002년에는 당시 주지사 Jeanne Shaheen을 꺾고 상원에 갔고, 2008년에는 같은 Shaheen에게 52 대 45로 졌습니다. 은퇴하는 Shaheen의 의석을 18년 만에 되찾으려는 구도입니다. ([Wikipedia](https://en.wikipedia.org/wiki/John_E._Sununu))
+- **2세대 Chris Sununu(1974년생)**: 동생입니다. 2017~2025년 주지사를 4연임했고, 2020년과 2022년 상원 출마 요청을 두 번 고사했습니다. 트럼프와 거리를 두다 2024년 3월 지지로 돌아섰고, 2025년 9월부터 항공사 협회 Airlines for America 회장입니다. ([Wikipedia](https://en.wikipedia.org/wiki/Chris_Sununu))
+- **선거에서의 뜻**: 가문 이름은 무당파에게 통하는 브랜드입니다. 그래서 이번 선거의 질문은 "Sununu 브랜드가 트럼프의 낮은 지지율을 떼어낼 수 있는가"로 모입니다. Cook이 9/15 이 주를 Toss Up으로 내리며 든 이유가 바로 이것입니다. 트럼프는 2026년 2월 그를 지지했습니다. ([Cook](https://www.cookpolitical.com/analysis/senate/new-hampshire-senate/move-toward-gop-new-hampshire-senate-race-shifts-toss) · [Yahoo/The Hill](https://www.yahoo.com/news/articles/trump-backs-john-sununu-hampshire-195711037.html))
 
 ### 경선 후보 (9/8 종료)
 
@@ -59,7 +77,7 @@ cat(daily_log_md("NH"))
 cat(primary_cards_html("NH"))
 ```
 
-경선은 예고된 대로 흘렀습니다. **민주당은 사실상 단일 구도**였고(Pappas [집계 평균 66 vs Manzur 13, 4/23](https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire)), 9/8 실제 득표도 Pappas 62.5%였습니다. **공화당은 Sununu 우위의 2파전**이었으며(Emerson 3월 Sununu 48 vs Brown 19) Sununu가 69.1%로 통과했습니다. 경선일이 8개 경합주 중 가장 늦어 공화당의 본선 체제 전환이 두 달 가까이 늦었다는 구조적 부담은 그대로 남습니다.
+경선은 예고된 대로 흘렀습니다. **민주당은 사실상 단일 구도**였고(Pappas [집계 평균 66 vs Manzur 13, 4/23](https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire)), 9/8 실제 득표도 Pappas 65.1%였습니다. **공화당은 Sununu 우위의 2파전**이었으며(Emerson 3월 Sununu 48 vs Brown 19) Sununu가 68.4%로 통과했습니다. 경선일이 8개 경합주 중 가장 늦어 공화당의 본선 체제 전환이 두 달 가까이 늦었다는 구조적 부담은 그대로 남습니다.
 
 ## 4. roll-call / 입법 관심사
 
