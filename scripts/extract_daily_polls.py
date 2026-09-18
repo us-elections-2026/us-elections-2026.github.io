@@ -38,10 +38,31 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
 CSV = REPO / "data" / "senate_polls.csv"
-DEFAULT_SRC = Path(os.environ.get(
-    "NIS_SENATE_DAILY",
-    "~/Library/CloudStorage/Dropbox/_NIS/2026_senate_election/2026_midterm_outlook/senate_daily",
-)).expanduser()
+def _resolve_default_src() -> Path:
+    """원천 폴더 경로 결정 순서:
+    1) NIS_SENATE_DAILY 환경변수
+    2) 실제 Dropbox 경로(맥에서 직접 실행할 때)
+    3) Cowork 샌드박스(device_bash)의 마운트 경로 — Dropbox 폴더가
+       $HOME/mnt/<폴더명>/ 아래에 마운트되는 경우의 흔한 형태들을 시도
+    """
+    env = os.environ.get("NIS_SENATE_DAILY")
+    if env:
+        return Path(env).expanduser()
+    primary = Path(
+        "~/Library/CloudStorage/Dropbox/_NIS/2026_senate_election/2026_midterm_outlook/senate_daily"
+    ).expanduser()
+    if primary.is_dir():
+        return primary
+    for alt in (
+        Path.home() / "mnt" / "2026_midterm_outlook" / "senate_daily",
+        Path.home() / "mnt" / "_NIS" / "2026_senate_election" / "2026_midterm_outlook" / "senate_daily",
+    ):
+        if alt.is_dir():
+            return alt
+    return primary
+
+
+DEFAULT_SRC = _resolve_default_src()
 COLS = ["state", "pollster", "sponsor", "partisan", "population", "n", "start_date", "end_date",
         "dem_candidate", "rep_candidate", "dem_pct", "rep_pct", "margin", "note", "source_url"]
 WATCH = ["GA", "MI", "NH", "ME", "NC", "TX", "OH", "AK", "IA"]
