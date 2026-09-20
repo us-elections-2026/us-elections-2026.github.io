@@ -1,0 +1,69 @@
+{
+  "as_of": "2026-08-20",
+  "source_note": "일자는 270toWin 2026 주별 경선 캘린더(https://www.270towin.com/2026-state-primary-calendar/) 기준. 후보 확정 사실은 MI·OH를 보도로 교차 확인했고, 나머지 주의 후보명은 Kalshi 계약 라벨 기준이라 공식 인증 결과와 대조하지 않았다(이름 표기 오류 가능). 경합 8주만 수록한다.",
+  "rows": [
+    {
+      "state": "OH",
+      "event": "양당 경선",
+      "date": "2026-05-05",
+      "status": "완료",
+      "detail": "Amy Acton(D) 무경쟁 · Vivek Ramaswamy(R) 사실상 무경쟁 — 양당 모두 일찌감치 대진 확정. DeWine 임기 제한으로 열린 공석."
+    },
+    {
+      "state": "GA",
+      "event": "양당 경선",
+      "date": "2026-05-19",
+      "status": "완료",
+      "detail": "Keisha Lance Bottoms(D, 전 애틀랜타 시장) 지명. 공화는 과반 미달로 6/16 결선행. Kemp 임기 제한 공석."
+    },
+    {
+      "state": "IA",
+      "event": "양당 경선",
+      "date": "2026-06-02",
+      "status": "완료",
+      "detail": "Rob Sand(D, 주 감사원장) vs Zach Lahn(R). Reynolds 불출마로 열린 공석 — 시장은 민주 64¢로 이 사이클 최대 민주 픽업 기회로 본다."
+    },
+    {
+      "state": "NV",
+      "event": "양당 경선",
+      "date": "2026-06-09",
+      "status": "완료",
+      "detail": "Aaron Ford(D, 주 법무장관) vs 현직 Joe Lombardo(R). 8개 경합주 중 공화 현직이 방어하는 두 곳 중 하나."
+    },
+    {
+      "state": "GA",
+      "event": "공화당 결선",
+      "date": "2026-06-16",
+      "status": "완료",
+      "detail": "Rick Jackson(억만장자·자기자금, 트럼프 미보증)이 Burt Jones(트럼프·Kemp 지지)를 52.8–47.3으로 제압. 조지아 역사상 최고가 비방전(약 1.6억 달러) — \"트럼프 보증이 더는 무적이 아니다\"는 해석을 낳았다."
+    },
+    {
+      "state": "AZ",
+      "event": "양당 경선",
+      "date": "2026-07-21",
+      "status": "완료",
+      "detail": "현직 Katie Hobbs(D)가 재선 도전, 공화는 Andy Biggs(연방하원). 민주 현직 방어 3곳 중 시장 평가가 가장 안정적(민주 81¢)."
+    },
+    {
+      "state": "KS",
+      "event": "양당 경선",
+      "date": "2026-08-04",
+      "status": "완료",
+      "detail": "Cindy Holscher(D) vs Ty Masterson(R, 주 상원의장). Kelly 임기 제한 공석 — 구조적 공화 우위 주라 민주 수성이 어렵다(시장 민주 23¢)."
+    },
+    {
+      "state": "MI",
+      "event": "양당 경선",
+      "date": "2026-08-04",
+      "status": "완료",
+      "detail": "Jocelyn Benson(D, 주 국무장관)이 Chris Swanson(제네시 카운티 보안관)을 꺾고 지명, 공화는 트럼프가 지지한 John James(연방하원). 같은 날 상원 경선(El-Sayed 확정)도 함께 치러졌다."
+    },
+    {
+      "state": "WI",
+      "event": "양당 경선",
+      "date": "2026-08-11",
+      "status": "완료",
+      "detail": "공화 — Tom Tiffany 96.2%(Andy Manske와 2인 경선) 확정. 민주 — **David Crowley 39.8% 대 Francesca Hong 39.3%**(약 3,000표·0.4%p, 개표 98% 시점)로 사이클 최대 접전. AP는 홍의 승복 후 8/12 새벽 2시 34분(중부시간) 콜 — **승복으로 1%p 이내 재검표 청구 가능성이 소멸**했다. Crowley는 7/8 경선 중도 하차 후 Rodriguez 사퇴를 계기로 7/18 복귀했고 Evers 주지사 지지를 업었다. 결과는 주 개표 인증 전까지 비공식이다."
+    }
+  ]
+}
