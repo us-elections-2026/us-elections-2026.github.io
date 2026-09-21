@@ -1753,12 +1753,13 @@ daily_log_md <- function(scope = "SENATE", n_days = 14, n_open = 1) {
   nz <- function(x) if (is.null(x) || !nzchar(x)) "" else x
 
   head <- sprintf(
-    '<p class="text-muted" style="font-size:.84rem;">최근 %d일 · 최신 %s · 원천은 상원 일일 브리핑(매일 오전 갱신)입니다. 본문은 그날의 기록을 그대로 옮긴 것이라 종결체가 다르고, 이후 정정된 사실이 있을 수 있습니다. 판세의 현재 값은 위 카드·표를 보세요.</p>\n',
+    '<p class="text-muted" style="font-size:.84rem;">최근 %d일 · 최신 %s · 원천은 상원 일일 브리핑(매일 오전 갱신)입니다. '정리본'은 발행 단계에서 고정 구조로 압축한 것(원문에 없는 수치는 넣지 않음), '원문 전재'는 브리핑을 그대로 옮긴 것입니다. 종결체가 다르고, 이후 정정된 사실이 있을 수 있습니다. 판세의 현재 값은 위 카드·표를 보세요.</p>\n',
     length(days), .kr_date(d$as_of))
 
   parts <- vapply(seq_along(days), function(i) {
     x <- days[[i]]
-    title <- .kr_date(x$date)
+    kind <- if (!is.null(x$source_kind) && identical(x$source_kind, "digest")) " · 정리본" else " · 원문 전재"
+    title <- paste0(.kr_date(x$date), kind)
     if (identical(scope, "SENATE")) {
       lead <- nz(x$lead)
       sub  <- paste0(
