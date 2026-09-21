@@ -129,6 +129,9 @@ POLLSTER_ALIAS = {
     "carolina journal poll": "Carolina Journal", "texas southern university yougov": "Texas Southern Univ./Jordan Research Center",
     "epic mra": "EPIC-MRA", "saint anselm college survey center": "Saint Anselm College Survey Center",
     "peak insights": "NRSC/Peak Insights", "nrsc peak insights": "NRSC/Peak Insights",
+    "st anselm college": "Saint Anselm College Survey Center", "st anselm": "Saint Anselm College Survey Center",
+    "saint anselm college survey center": "Saint Anselm College Survey Center",
+    "telemundo mason dixon nbc5": "Telemundo/Mason-Dixon", "mason dixon nbc5 dfw telemundo": "Telemundo/Mason-Dixon",
     "gbao": "GBAO", "global strategy group": "Global Strategy Group", "gsg": "Global Strategy Group",
 }
 # 집계 사이트·백과 페이지는 조사 원문이 아니다 — 여기가 출처면 '출처 불확실'로 pending
@@ -160,13 +163,21 @@ def canon_pollster(name: str) -> str:
 
 
 def canon_cand(name: str | None, state: str, side: str) -> str:
+    """후보명을 지명자 성(姓)으로 정규화. 한글 표기와 괄호 병기를 흡수한다.
+    예: "Sullivan (Dan S.)" · "Collins(Mike)" · "존 E. 수누누" → Sullivan · Collins · Sununu.
+    지명자가 아닌 이름(예비 탈락자·가상 대진)은 그대로 두어 대진 검증에서 걸리게 한다."""
     if not name:
         return NOMINEE[state][0 if side == "D" else 1]
     n = name.strip()
     for kr, en in CAND_KR.items():
         if kr in n:
             return en
-    return n
+    cleaned = re.sub(r"\(.*?\)", " ", n)              # 괄호 병기 제거
+    cleaned = re.sub(r"\s+", " ", cleaned).strip()
+    want = NOMINEE[state][0 if side == "D" else 1]
+    if re.search(rf"(?<![A-Za-z-]){re.escape(want)}(?![A-Za-z-])", cleaned, re.I):
+        return want
+    return cleaned or n
 
 
 def num(x):
