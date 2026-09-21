@@ -429,12 +429,15 @@ def main() -> int:
     else:
         date = a.date or dt.datetime.now(zoneinfo.ZoneInfo("Asia/Seoul")).strftime("%Y-%m-%d")
         p = Path(a.src).expanduser() / f"{date}_일일브리핑_KR.md"
+        digest = Path(a.src).expanduser() / "site" / f"{date}_site_KR.md"
+        if digest.exists():
+            p = digest  # 고정 표는 사이트 정리본에 있다(2026-09-21부터)
         if not p.exists():
             print(f"[polls] {date} 일일 브리핑 없음", file=sys.stderr)
             return 2
         raw = parse_fixed_table(p.read_text(encoding="utf-8"), date)
         if not raw:
-            print(f"[polls] {date}: 고정 형식 조사 표 없음(프롬프트 v2.8 이전 형식이거나 신규 조사 0건) — 추가 없음")
+            print(f"[polls] {date}: 고정 형식 조사 표 없음(정리본 미작성이거나 신규 조사 0건) — 추가 없음")
             return 0
 
     rows = [x for x in (normalize(o) for o in raw) if x]

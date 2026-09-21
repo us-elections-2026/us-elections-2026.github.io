@@ -198,6 +198,7 @@ def parse_file(path: Path) -> dict:
     return {
         "date": date,
         "source_file": path.name,
+        "source_kind": "digest" if path.name.endswith("_site_KR.md") else "raw",
         "chars": len(text),
         "lead": sanitize(lead),
         "summary": sanitize(find_section(sec, "오늘의 핵심 요약") or ""),
@@ -249,6 +250,14 @@ def main() -> int:
         if not p.exists():
             print(f"[ingest] {date} 일일 브리핑 없음 — {p.name}", file=sys.stderr)
             return 2
+        # 사이트 정리본(site/<date>_site_KR.md)이 있으면 그것을 싣는다 — 수집은 넓게, 정리는 발행 때만(2026-09-21).
+        # 정리본↔원문 대조는 publish_daily.sh가 check_site_digest.py로 먼저 한다.
+        digest = src / "site" / f"{date}_site_KR.md"
+        if digest.exists():
+            print(f"[ingest] {date} 정리본 사용 — site/{digest.name}")
+            p = digest
+        else:
+            print(f"[ingest] {date} 정리본 없음 — 원문 전재")
         files = [p]
 
     log = load_log()
