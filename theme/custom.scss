@@ -461,14 +461,17 @@ main table.gt_table th.gt_col_heading { white-space: pre-line; text-align: cente
 .rcard-lk { font-size: .76rem; color: #6b7280; margin: 6px 0 2px; }
 
 /* 조사 마진 추이 — 각 점에 조사기관명을 얹는다(상세 수치는 §5 표). */
-.pt-svg { width: 100%; height: auto; max-height: 200px; display: block; overflow: visible; }
+.pt-svg { width: 100%; height: auto; max-height: 380px; display: block; overflow: visible; }
 .pt-zero { stroke: #cbd5e1; stroke-width: 1; stroke-dasharray: 3 3; }
 .pt-zlab { fill: #9ca3af; font-size: 10px; text-anchor: end; }
 .pt-line { fill: none; stroke: #94a3b8; stroke-width: 1.8; stroke-linejoin: round; stroke-linecap: round; }
 .pt-dot { fill: #475569; }
 .pt-part { fill: #fffdf8; stroke: #475569; stroke-width: 1.6; }
 .pt-last { fill: #2166ac; stroke: #fffdf8; stroke-width: 2; }
-.pt-lab { fill: #374151; font-size: 11px; font-weight: 600; }
+/* 라벨이 선·점 위에 겹쳐도 읽히도록 배경색 테두리를 두른다(2026-09-22) */
+.pt-lab { fill: #374151; font-size: 11px; font-weight: 600;
+  paint-order: stroke; stroke: #fffdf8; stroke-width: 3px; stroke-linejoin: round; }
+.pt-zlab { paint-order: stroke; stroke: #fffdf8; stroke-width: 3px; }
 .pt-lab-m { fill: #6b7280; font-weight: 700; }
 .pt-ax { fill: #9ca3af; font-size: 10px; }
 .pt-thin { font-size: .78rem; color: #6b7280; font-style: italic; margin: 2px 0 0; }
