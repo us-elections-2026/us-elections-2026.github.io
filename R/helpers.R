@@ -243,7 +243,10 @@ poll_trend_svg <- function(code, office = c("senate", "governor")) {
   if (n == 0)
     return('<p class="pt-empty">현 대진의 본선 여론조사가 아직 데이터베이스에 없습니다 — 추정으로 채우지 않습니다.</p>')
 
-  W <- 720; H <- 168; padL <- 10; padR <- 10; padT <- 34; padB <- 40
+  # 2026-09-22: 세로를 168 → 340으로 키웠다. 조사가 쌓이면서(TX 18건) 마진이 1~2p만
+  # 달라도 점과 라벨이 겹쳐 읽을 수 없었다 — 같은 마진 범위를 두 배 넘는 높이에 펼치고,
+  # 위아래 여백은 라벨 3줄씩을 받도록 키웠다(그림 영역 자체는 94 → 214px).
+  W <- 720; H <- 340; padL <- 10; padR <- 10; padT <- 62; padB <- 64
   x <- as.numeric(as.Date(p$.d)); y <- p$.m
   rng <- range(c(y, 0)); pad <- max(2, diff(rng) * 0.22)
   lo <- rng[1] - pad; hi <- rng[2] + pad
@@ -259,19 +262,37 @@ poll_trend_svg <- function(code, office = c("senate", "governor")) {
     s <- c(s, sprintf('<path class="pt-line" d="%s"/>',
                       paste0(ifelse(seq_len(n) == 1, "M", "L"),
                              sprintf("%.1f,%.1f", fx(x), fy(y)), collapse = " ")))
-  # 라벨 배치: x가 가까우면 겹치므로 위/아래 두 줄에 번갈아 넣되 간격을 확인한다.
-  lastX <- c(-Inf, -Inf); rowsY <- c(-1, 1)
+  # 라벨 배치: 후보 위치(점 위 3 · 아래 3) 중 이미 놓인 라벨과 겹치지 않는 첫 자리를 고른다.
+  # 줄 번호로만 관리하면 안 된다 — 자리가 점 기준 상대 위치라, 높이가 다른 두 점의
+  # "위 1번"과 "위 2번"이 같은 y에 놓일 수 있다(2026-09-22 TX Fox·TSU 실측 1.4px 차).
+  # 그래서 놓인 라벨의 절대 좌표(좌·우·y)를 쌓아 두고 상자 겹침으로 판정한다.
+  .lab_w <- function(txt) {                      # 11px 모노 기준 근사 — 한글은 라틴의 두 배 폭
+    ascii <- nchar(gsub("[^ -~]", "", txt)); wide <- nchar(txt) - ascii
+    ascii * 6.3 + wide * 11.5
+  }
+  DY <- c(-15, -30, -45, 23, 38, 53)             # 위 3 · 아래 3
+  LH <- 12                                        # 같은 줄로 보는 세로 간격
+  GAP <- 5                                        # 가로 최소 여백
+  placed <- list()
   lab <- character(n)
   short <- .pollster_short(p$pollster)
   for (i in seq_len(n)) {
-    xi <- fx(x[i]); r <- if (xi - lastX[1] >= 96) 1L else if (xi - lastX[2] >= 96) 2L else
-      if ((xi - lastX[1]) >= (xi - lastX[2])) 1L else 2L
-    lastX[r] <- xi
-    dy <- if (rowsY[r] < 0) -13 else 21
+    xi <- fx(x[i]); yi <- fy(y[i])
+    txt <- paste0(short[i], " ", .fmt_margin(y[i]))
+    w <- .lab_w(txt)
     anch <- if (xi < 60) "start" else if (xi > W - 60) "end" else "middle"
+    left <- if (anch == "start") xi else if (anch == "end") xi - w else xi - w / 2
+    right <- left + w
+    hits <- function(yl) sum(vapply(placed, function(b)
+      abs(b$y - yl) < LH && left < b$right + GAP && right > b$left - GAP, logical(1)))
+    cand <- yi + DY
+    nhit <- vapply(cand, hits, numeric(1))
+    k <- if (any(nhit == 0)) which(nhit == 0)[1] else order(nhit, -abs(DY))[1]
+    yl <- cand[k]
+    placed[[length(placed) + 1L]] <- list(left = left, right = right, y = yl)
     lab[i] <- sprintf(
       '<text class="pt-lab" x="%.1f" y="%.1f" text-anchor="%s">%s<tspan class="pt-lab-m" dx="4">%s</tspan></text>',
-      xi, fy(y[i]) + dy, anch, .esc(short[i]), .fmt_margin(y[i]))
+      xi, yl, anch, .esc(short[i]), .fmt_margin(y[i]))
   }
   s <- c(s, lab)
   part <- !is.na(p$partisan) & p$partisan %in% c("D", "R")
