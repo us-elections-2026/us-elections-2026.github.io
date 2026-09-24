@@ -37,17 +37,17 @@ fi
 #   이 레포는 CloudStorage 아래에 있어, 예약 실행이 중간에 끊기거나 Dropbox가 파일을
 #   되살리면 .git/index.lock 이 남아 이후 모든 git 명령이 막힌다(9/24에는 이 때문에
 #   이틀치 발행이 통째로 멈췄다). 돌고 있는 git 프로세스가 없고 2분 이상 묵은 잠금만 지운다.
-LOCK=".git/index.lock"
-if [ -f "$LOCK" ]; then
-  if pgrep -f "git .*us_elections" >/dev/null 2>&1; then
-    echo "[daily] ✗ 다른 git 프로세스가 실행 중 — 중단"; exit 1
-  fi
-  age=$(( $(date +%s) - $(stat -f %m "$LOCK" 2>/dev/null || echo 0) ))
-  if [ "$age" -ge 120 ]; then
-    echo "[daily] ! 낡은 잠금 제거(${age}초 경과): $LOCK"; rm -f "$LOCK"
-  else
-    echo "[daily] ✗ 방금 생긴 잠금이 있어 중단($LOCK) — 잠시 후 재시도"; exit 1
-  fi
+#   index.lock 만이 아니다 — ORIG_HEAD.lock·refs/**.lock·objects/maintenance.lock 도 남는다(9/24 실측).
+#   동시 실행 판정은 프로세스 탐지가 아니라 잠금 나이로 한다 — `pgrep -f git`은 이 스크립트를
+#   부른 셸 명령줄까지 잡아 오탐이 난다(9/24 실측). git 작업은 초 단위라 2분 넘은 잠금은 잔재다.
+now=$(date +%s); fresh=0; cleaned=0
+for lk in $(find .git -maxdepth 3 -name "*.lock" 2>/dev/null); do
+  age=$(( now - $(stat -f %m "$lk" 2>/dev/null || echo "$now") ))
+  if [ "$age" -ge 120 ]; then rm -f "$lk"; cleaned=$((cleaned+1)); else fresh=$((fresh+1)); fi
+done
+[ "$cleaned" -gt 0 ] && echo "[daily] ! 낡은 git 잠금 ${cleaned}개 제거"
+if [ "$fresh" -gt 0 ]; then
+  echo "[daily] ✗ 방금 생긴 git 잠금 ${fresh}개 — 잠시 후 재시도"; exit 1
 fi
 
 # 중단되더라도 작업트리를 깨끗이 되돌린다 — 커밋 전에 죽으면 다음 날 실행이 시작 가드에
