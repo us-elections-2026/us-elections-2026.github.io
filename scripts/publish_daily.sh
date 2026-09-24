@@ -20,17 +20,36 @@ REPO="${US_ELECTIONS_REPO:-$(cd "$(dirname "$0")/.." && pwd)}"
 LOG="data/senate_daily_log.json"
 POLLS="data/senate_polls.csv"
 
+# 실행 기록 — 예약 작업(Cowork VM 샌드박스)의 출력은 대화에만 남아 나중에 볼 수 없다.
+# 어느 단계에서 멈췄는지 파일로 남긴다(2026-09-24 신설). 10줄 남짓, 매 실행 append.
+LOGF="${PD_LOG:-$HOME/.cache/us_elections/publish_daily.log}"
+mkdir -p "$(dirname "$LOGF")" 2>/dev/null
+step() { echo "[$(date '+%m-%d %H:%M:%S')] $*" >> "$LOGF"; echo "[daily] $*"; }
+echo "===== $(date '+%Y-%m-%d %H:%M:%S') publish_daily.sh 시작 · host=$(hostname -s) · pwd=$(pwd) =====" >> "$LOGF"
+
 cd "$REPO" || { echo "[daily] repo 접근 불가: $REPO"; exit 1; }
+
+# 필요한 도구가 다 있는지 먼저 본다 — 데이터를 건드리기 전에 확인해야, 환경이 다른 곳에서
+# 돌았을 때 작업트리에 잔재를 남기지 않는다(9/23 사고의 재발 방지).
+missing=""
+for t in git python3 Rscript quarto; do
+  command -v "$t" >/dev/null 2>&1 || missing="$missing $t"
+done
+if [ -n "$missing" ]; then
+  step "✗ 실행 환경에 없는 도구:$missing — 중단(데이터 미변경). PATH=$PATH"
+  exit 1
+fi
+step "환경 확인 — $(git --version | head -1) · $(quarto --version 2>/dev/null | head -1) · R $(Rscript -e 'cat(as.character(getRversion()))' 2>/dev/null)"
 git rev-parse --git-dir >/dev/null 2>&1 || { echo "[daily] git 레포가 아님: $REPO"; exit 1; }
 br=$(git branch --show-current)
-[ "$br" = "main" ] || { echo "[daily] main 브랜치가 아님(현재 '$br') — 중단"; exit 1; }
+[ "$br" = "main" ] || { step "✗ main 브랜치가 아님(현재 '$br') — 중단"; exit 1; }
 
 # Dropbox 충돌 사본 차단 — publish_weekly.sh와 같은 패턴(한글 리터럴 금지, NFD 문제)
 conflicts=$(find . -path ./.git -prune -o -path ./.claude -prune -o -path ./_site -prune -o \
   \( -iname '* (*[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9])*' \
      -o -iname '*conflicted copy*' -o -iname '*conflicted-copy*' \) -print 2>/dev/null)
 if [ -n "$conflicts" ]; then
-  echo "[daily] ✗ Dropbox 충돌 사본이 있어 중단합니다:"; echo "$conflicts" | sed 's/^/    /'; exit 1
+  step "✗ Dropbox 충돌 사본이 있어 중단"; echo "$conflicts" | sed 's/^/    /' | tee -a "$LOGF"; exit 1
 fi
 
 # Dropbox 동기화 레포의 낡은 git 잠금 파일 처리 (2026-09-21·09-24 두 차례 실측).
@@ -54,9 +73,12 @@ fi
 # 걸려 연쇄로 멈춘다(9/23 실측). 커밋에 성공하면 되돌리지 않는다.
 WROTE=0; COMMITTED=0
 cleanup() {
+  rc=$?
   if [ "$WROTE" = "1" ] && [ "$COMMITTED" = "0" ]; then
+    echo "[$(date '+%m-%d %H:%M:%S')] ! 중단(rc=$rc) — 작업트리 되돌림" >> "$LOGF"
     echo "[daily] ! 중단 — 작업트리 되돌림($LOG, $POLLS)"
-    git checkout -- "$LOG" "$POLLS" 2>/dev/null
+    find .git -maxdepth 3 -name "*.lock" -delete 2>/dev/null   # 되돌리기가 잠금에 막히지 않게
+    git checkout -- "$LOG" "$POLLS" 2>/dev/null || echo "[daily] ! 되돌림 실패 — 다음 실행은 PD_RESET=1 필요"
   fi
 }
 trap cleanup EXIT INT TERM
@@ -92,38 +114,38 @@ PY
 )"
 RAW="$SRC_DIR/${DATE}_일일브리핑_KR.md"; DIGEST="$SRC_DIR/site/${DATE}_site_KR.md"
 if [ -f "$DIGEST" ]; then
-  echo "[daily] 정리본 대조: site/$(basename "$DIGEST")"
-  python3 scripts/check_site_digest.py "$RAW" "$DIGEST" || { echo "[daily] 정리본 대조 실패 — 발행 중단(정리본을 고친 뒤 재실행)"; exit 1; }
+  step "정리본 대조: site/$(basename "$DIGEST")"
+  python3 scripts/check_site_digest.py "$RAW" "$DIGEST" 2>&1 | tee -a "$LOGF" | tail -20; [ "${PIPESTATUS[0]:-0}" = "0" ] || { step "✗ 정리본 대조 실패 — 발행 중단(정리본을 고친 뒤 재실행)"; exit 1; }
 else
-  echo "[daily] 정리본 없음 — 원문을 그대로 싣는다"
+  step "정리본 없음 — 원문을 그대로 싣는다"
 fi
 
 # 1) 적재 — 그날 파일이 없으면 정상 종료(2 → 0). 결손은 페이지에 그대로 비워 둔다.
-echo "[daily] 상원 일일 브리핑 적재: $DATE"
+step "적재 시작: $DATE"
 WROTE=1
 python3 scripts/ingest_senate_daily.py --date "$DATE"
 rc=$?
-if [ $rc -eq 2 ]; then echo "[daily] $DATE 일일 브리핑 없음 — 발행하지 않음(정상 종료)"; exit 0; fi
-[ $rc -eq 0 ] || { echo "[daily] 적재 실패(rc=$rc) — 중단"; exit 1; }
+if [ $rc -eq 2 ]; then step "$DATE 일일 브리핑 없음 — 발행하지 않음(정상 종료)"; exit 0; fi
+[ $rc -eq 0 ] || { step "✗ 적재 실패(rc=$rc) — 중단"; exit 1; }
 
 # 1.5) 여론조사 — 정리본의 「새로운 여론조사」 고정 표에서 본선 조사를 뽑아
 #      senate_polls.csv 에 append. 같은 조사는 몇 번 언급돼도 한 행(중복 제거는 스크립트가 한다).
 #      날짜·%·URL 중 하나라도 '?'이면 append 하지 않고 후보 파일에만 남긴다.
-echo "[daily] 여론조사 표 → senate_polls.csv"
+step "여론조사 표 → senate_polls.csv"
 python3 scripts/extract_daily_polls.py --date "$DATE" --apply || echo "[daily] ! 조사 추출 실패(건너뜀 — CSV 미변경)"
 
 if git diff --quiet -- "$LOG" "$POLLS"; then
-  echo "[daily] 로그·조사 변경 없음(이미 적재된 날짜) — 종료"; exit 0
+  step "로그·조사 변경 없음(이미 적재된 날짜) — 종료"; exit 0
 fi
 
 # 2) 데이터 검증 — 하드 게이트
-echo "[daily] 데이터 검증(validate_data.R)"
-Rscript scripts/validate_data.R || { echo "[daily] 데이터 검증 실패 — 발행 중단"; git checkout -- "$LOG" "$POLLS"; exit 1; }
+step "데이터 검증(validate_data.R)"
+Rscript scripts/validate_data.R || { step "✗ 데이터 검증 실패 — 발행 중단"; exit 1; }
 
 # 3) 렌더 — 하드 게이트. 일일 로그는 states/ 9쪽 + dashboard 에만 실리지만,
 #    CI가 전체를 다시 렌더하므로 로컬도 전체를 돌려 깨진 곳이 없는지 본다.
-echo "[daily] 전체 렌더(quarto render)"
-quarto render || { echo "[daily] 렌더 실패 — 발행 중단"; git checkout -- "$LOG" "$POLLS"; exit 1; }
+step "전체 렌더(quarto render) — 로컬 기준 약 70초"
+quarto render || { step "✗ 렌더 실패 — 발행 중단"; exit 1; }
 
 if [ "${DRY_RUN:-0}" = "1" ]; then
   echo "[daily] DRY_RUN — 커밋·push 생략. 변경 요약:"; git diff --stat -- "$LOG" "$POLLS"; exit 0
@@ -137,8 +159,8 @@ git commit -m "일일 자동 발행: 상원 일일 로그 ($DATE)${NPOLL:+ · �
   || { echo "[daily] 커밋 실패"; exit 1; }
 COMMITTED=1
 
-echo "[daily] origin/main rebase"
+step "origin/main rebase"
 git fetch origin main -q && git rebase origin/main || {
   echo "[daily] rebase 충돌 — 수동 해결 필요(로컬 커밋 보존됨)"; exit 1; }
 
-git push origin main && echo "[daily] ✅ 발행·배포 트리거 완료 ($DATE)" || { echo "[daily] push 실패"; exit 1; }
+git push origin main && step "✅ 발행·배포 트리거 완료 ($DATE)" || { step "✗ push 실패"; exit 1; }
