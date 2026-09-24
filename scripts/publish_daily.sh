@@ -148,7 +148,12 @@ step "전체 렌더(quarto render) — 로컬 기준 약 70초"
 quarto render || { step "✗ 렌더 실패 — 발행 중단"; exit 1; }
 
 if [ "${DRY_RUN:-0}" = "1" ]; then
-  echo "[daily] DRY_RUN — 커밋·push 생략. 변경 요약:"; git diff --stat -- "$LOG" "$POLLS"; exit 0
+  step "DRY_RUN — 커밋·push 생략. 변경 요약:"
+  git --no-pager diff --stat -- "$LOG" "$POLLS" | sed 's/^/    /'
+  # 되돌려 놓는다 — 그냥 두면 다음 정식 실행이 '미커밋 변경' 가드에 걸린다.
+  git checkout -- "$LOG" "$POLLS" 2>/dev/null
+  step "DRY_RUN — 작업트리 원복 완료"
+  exit 0
 fi
 
 # 4) 커밋·push — 로그 + 조사 CSV 두 파일만
