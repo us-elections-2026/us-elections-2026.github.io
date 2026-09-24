@@ -33,10 +33,46 @@ if [ -n "$conflicts" ]; then
   echo "[daily] ✗ Dropbox 충돌 사본이 있어 중단합니다:"; echo "$conflicts" | sed 's/^/    /'; exit 1
 fi
 
+# Dropbox 동기화 레포의 낡은 git 잠금 파일 처리 (2026-09-21·09-24 두 차례 실측).
+#   이 레포는 CloudStorage 아래에 있어, 예약 실행이 중간에 끊기거나 Dropbox가 파일을
+#   되살리면 .git/index.lock 이 남아 이후 모든 git 명령이 막힌다(9/24에는 이 때문에
+#   이틀치 발행이 통째로 멈췄다). 돌고 있는 git 프로세스가 없고 2분 이상 묵은 잠금만 지운다.
+LOCK=".git/index.lock"
+if [ -f "$LOCK" ]; then
+  if pgrep -f "git .*us_elections" >/dev/null 2>&1; then
+    echo "[daily] ✗ 다른 git 프로세스가 실행 중 — 중단"; exit 1
+  fi
+  age=$(( $(date +%s) - $(stat -f %m "$LOCK" 2>/dev/null || echo 0) ))
+  if [ "$age" -ge 120 ]; then
+    echo "[daily] ! 낡은 잠금 제거(${age}초 경과): $LOCK"; rm -f "$LOCK"
+  else
+    echo "[daily] ✗ 방금 생긴 잠금이 있어 중단($LOCK) — 잠시 후 재시도"; exit 1
+  fi
+fi
+
+# 중단되더라도 작업트리를 깨끗이 되돌린다 — 커밋 전에 죽으면 다음 날 실행이 시작 가드에
+# 걸려 연쇄로 멈춘다(9/23 실측). 커밋에 성공하면 되돌리지 않는다.
+WROTE=0; COMMITTED=0
+cleanup() {
+  if [ "$WROTE" = "1" ] && [ "$COMMITTED" = "0" ]; then
+    echo "[daily] ! 중단 — 작업트리 되돌림($LOG, $POLLS)"
+    git checkout -- "$LOG" "$POLLS" 2>/dev/null
+  fi
+}
+trap cleanup EXIT INT TERM
+
 # 로그·조사 CSV에 미커밋 변경이 있으면(사람이 손댄 것) 덮어쓰지 않는다
+#   PD_RESET=1 로 실행하면 그 변경을 버리고 진행한다(끊긴 실행의 잔재를 치울 때).
 for f in "$LOG" "$POLLS"; do
   if ! git diff --quiet -- "$f" 2>/dev/null; then
-    echo "[daily] ✗ $f 에 미커밋 변경이 있어 중단 — 먼저 커밋하거나 되돌리세요"; exit 1
+    if [ "${PD_RESET:-0}" = "1" ]; then
+      echo "[daily] ! PD_RESET=1 — $f 의 미커밋 변경을 버리고 진행"; git checkout -- "$f"
+    else
+      echo "[daily] ✗ $f 에 미커밋 변경이 있어 중단 — 내용을 확인해 커밋하거나,"
+      echo "[daily]   끊긴 실행의 잔재라면 PD_RESET=1 scripts/publish_daily.sh 로 재실행"
+      git --no-pager diff --stat -- "$f" | sed 's/^/    /'
+      exit 1
+    fi
   fi
 done
 
@@ -64,6 +100,7 @@ fi
 
 # 1) 적재 — 그날 파일이 없으면 정상 종료(2 → 0). 결손은 페이지에 그대로 비워 둔다.
 echo "[daily] 상원 일일 브리핑 적재: $DATE"
+WROTE=1
 python3 scripts/ingest_senate_daily.py --date "$DATE"
 rc=$?
 if [ $rc -eq 2 ]; then echo "[daily] $DATE 일일 브리핑 없음 — 발행하지 않음(정상 종료)"; exit 0; fi
@@ -98,6 +135,7 @@ NPOLL=$(git diff --cached --numstat -- "$POLLS" | awk '{print $1+0}')
 git commit -m "일일 자동 발행: 상원 일일 로그 ($DATE)${NPOLL:+ · 조사 +${NPOLL}행}" \
   -m "publish_daily.sh: _NIS senate_daily/${DATE}_일일브리핑_KR.md → data/senate_daily_log.json(일일 절) + senate_polls.csv(고정 표 추출, 중복 제거)." \
   || { echo "[daily] 커밋 실패"; exit 1; }
+COMMITTED=1
 
 echo "[daily] origin/main rebase"
 git fetch origin main -q && git rebase origin/main || {
