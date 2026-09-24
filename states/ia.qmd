@@ -1,5 +1,6 @@
 ---
 title: "아이오와 Iowa"
+toc: false
 ---
 
 ```{r}
@@ -7,10 +8,9 @@ title: "아이오와 Iowa"
 source(file.path("R", "helpers.R"))
 ```
 
-```{r}
-#| output: asis
-cat(candidate_cards_html("IA"))
-```
+::::: {.panel-tabset}
+
+## 주 개요
 
 ```{r}
 #| output: asis
@@ -25,29 +25,19 @@ cat(state_card_html("IA"))
 - **한국 함의**: **Hinson의 2025년 4월 방한(CSGK·조태열 장관 면담)이 확인**되나 한국 관련 입법 기록은 1,014건 중 0건. 양측 모두 한국 명시 공약은 없음. 다만 **한국은 미국 소고기의 금액 기준 최대 시장이고 옥수수 3위·돈육 3~4위 시장**이며, 아이오와는 옥수수·돈육 수출 1위 주 — 관세 국면에서 두 나라가 만나는 지점이 뚜렷합니다(3·6절).
 :::
 
-## 일일 브리핑 {#daily}
-
-```{r}
-#| output: asis
-cat(daily_log_md("IA"))
-```
-
-## 1. 주 개요
-
 - **개방석의 배경**: **Joni Ernst**(R, 2선) 상원의원이 **2025년 9월 2일** 영상 메시지로 불출마를 발표했습니다. 아이오와 최초의 여성 연방상원의원이자 최초의 여성 전투참전용사 상원의원이었습니다. 발표문의 사유는 가족이었습니다 — "이제는 내가 가족에게 돌려줄 때"라는 취지입니다. (측근 전언으로 보도된 다른 동기들은 본인 공개 발표문에 없어 이 사이트는 싣지 않습니다.) ([Iowa Public Radio](https://www.iowapublicradio.org/political-news/2025-09-02/sen-joni-ernst-will-not-run-for-reelection-in-2026))
 - **정치 지형**: 2024년 대선에서 **트럼프 55.7% 대 해리스 42.5%(R+13.2)** — 1972년 이후 아이오와에서 어느 후보든 얻은 최대 격차이자, 1980년 이후 공화당의 첫 두 자릿수 승리입니다. ([2024 Iowa 결과](https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_Iowa))
 - **상원 이력**: 민주당의 마지막 아이오와 연방상원 **승리는 2008년 Tom Harkin의 재선**이고, 그의 임기는 2015년 1월 3일에 끝났습니다. 즉 민주당은 **18년째 이 주에서 상원 선거를 이기지 못했습니다.** ([상원의원 목록](https://en.wikipedia.org/wiki/List_of_United_States_senators_from_Iowa))
 - **등급 이동**: Cook·Sabato는 6/2 경선 직후인 **6월 3일 나란히 Likely R → Lean R**로 내렸고, **Cook은 8/20 한 단계 더 내려 Toss Up**으로 옮겼습니다(Sabato는 8/26 갱신에서도 Lean R 유지). ([Cook](https://thecookpoliticalreport.substack.com/p/iowa-senate-moves-from-likely-to) · [Sabato](https://centerforpolitics.org/crystalball/rating-changes-in-iowa-following-tuesdays-primary/))
 
-## 2. 선거 제도
+## 후보자
 
-- **준(準)개방형 경선**: 아이오와는 형식상 정당 등록제이지만, 주법이 **투표소에서 당일 당적 변경·선언**을 허용합니다 — "등록 유권자는 누구나 선거일 투표소에서 당적을 바꾸거나 선언할 수 있고 그 경선에서 투표할 자격을 갖는다"(Iowa Code §43.42). 등록 요건이 창구에서 사실상 무력화되는 구조라, 무당파의 경선 유입 장벽이 낮습니다. ([§43.42](https://www.legis.iowa.gov/docs/code/43.42.pdf))
-- **결선 없음 — 단, 35% 규칙**: 본선은 **단순다수**이고 결선투표가 없습니다(일반선거 결선을 두는 주는 조지아·미시시피·루이지애나뿐). 다만 경선에 한해, 후보가 3인 이상인데 **아무도 35%를 못 넘기면 경선이 무효가 되고 정당 전당대회가 지명**합니다(§43.65). 2026년은 양당 모두 2파전이라 발동되지 않았습니다. ([§43.65](https://www.legis.iowa.gov/docs/code/43.65.pdf) · [Ballotpedia](https://ballotpedia.org/Electoral_systems_in_Iowa))
-- **RCV 선제 금지**: 아이오와는 **RCV를 한 번도 쓴 적이 없는 상태에서 법으로 금지**했습니다 — HF 954(2025-06-02 Reynolds 주지사 서명), 금지 조항은 **2026년 1월 1일 발효**. RCV를 금지한 17번째 주입니다. 같은 사이클의 [알래스카](ak.qmd)가 RCV로 치러지는 것과 정반대의 선택입니다. ([Ballotpedia News](https://news.ballotpedia.org/2025/06/04/iowa-gov-reynolds-signs-bill-banning-rcv/))
-- **SF 413(2021) 선거법 개정**: 조기투표를 **29일에서 20일로 단축**하고(§53.8), 투표 마감을 **오후 9시 → 오후 8시**로 앞당겼으며(§49.73), 우편투표는 **소인이 아니라 선거일 오후 8시까지 도착**해야 유효하고, 드롭박스는 **카운티당 1개**로 제한됐습니다(§53.17). ※ 일부 인용에서 보이는 "18일 단축"은 **최종 통과 전 법안 버전** 기준이라 오류입니다 — 최종법은 20일입니다. ([§53.8](https://www.legis.iowa.gov/docs/code/53.8.pdf) · [§49.73](https://www.legis.iowa.gov/docs/code/49.73.pdf) · [§53.17](https://www.legis.iowa.gov/docs/code/53.17.pdf))
-- **비엄격 사진 신분증**: 1차 인정 신분증이 없어도 주 발급 무료 유권자ID카드나 **같은 선거구 등록유권자의 서면 선서**로 대체할 수 있어, 오하이오·텍사스형의 엄격(strict) ID와는 성격이 다릅니다(§49.78). ([§49.78](https://www.legis.iowa.gov/docs/code/49.78.pdf))
+```{r}
+#| output: asis
+cat(candidate_cards_html("IA"))
+```
 
-## 3. roll-call / 입법 관심사
+### roll-call / 입법 관심사
 
 **Ashley Hinson (R, 연방하원 IA-02 3선)** — 연방 표결 기록이 있는 쪽입니다.
 
@@ -71,7 +61,22 @@ cat(daily_log_md("IA"))
 - **주 의회 관심사**는 장애·의료로 뚜렷합니다. 아이오와 주의회 사상 **첫 영구 장애 의원**으로, 메디케이드 대상 **휠체어 수리권(right to repair)**, 장애 임차인의 보조견 권리, **14C 인증(장애인 최저임금 미만 지급) 폐지**, 취업 장애인의 메디케이드 소득·자산 한도를 푸는 **"Work Without Worry"**를 밀어 왔습니다. 상임위는 보건복지(HHS)입니다. ([아이오와 주의회 프로필](https://www.legis.iowa.gov/legislators/legislator?ga=91&personID=33969) · [캠페인 정책](https://turek4iowa.com/platform/))
 - **관세·농업**: "지금 우리는 두 번째 농업 위기를 지나고 있다", "농민들은 보조금이 아니라 시장을 원한다"가 대표 화법입니다. 공약은 **"1980년대식 농업 위기로 몰아가는 혼란스러운 관세의 종료"** + 연방 수리할 권리 법제화 + 의무 원산지표시(COOL) + 육가공 독점 규제입니다. ([Radio Iowa 2026-07-06](https://www.radioiowa.com/2026/07/06/turek-seeking-iowas-open-u-s-senate-seat-sees-danger-in-farm-economy/) · [Radio Iowa 2025-10-29](https://www.radioiowa.com/2025/10/29/trade-and-tariffs-a-top-topic-on-iowa-campaign-trail/))
 
-## 4. 최신 여론조사 {#polls}
+## 선거 제도
+
+- **준(準)개방형 경선**: 아이오와는 형식상 정당 등록제이지만, 주법이 **투표소에서 당일 당적 변경·선언**을 허용합니다 — "등록 유권자는 누구나 선거일 투표소에서 당적을 바꾸거나 선언할 수 있고 그 경선에서 투표할 자격을 갖는다"(Iowa Code §43.42). 등록 요건이 창구에서 사실상 무력화되는 구조라, 무당파의 경선 유입 장벽이 낮습니다. ([§43.42](https://www.legis.iowa.gov/docs/code/43.42.pdf))
+- **결선 없음 — 단, 35% 규칙**: 본선은 **단순다수**이고 결선투표가 없습니다(일반선거 결선을 두는 주는 조지아·미시시피·루이지애나뿐). 다만 경선에 한해, 후보가 3인 이상인데 **아무도 35%를 못 넘기면 경선이 무효가 되고 정당 전당대회가 지명**합니다(§43.65). 2026년은 양당 모두 2파전이라 발동되지 않았습니다. ([§43.65](https://www.legis.iowa.gov/docs/code/43.65.pdf) · [Ballotpedia](https://ballotpedia.org/Electoral_systems_in_Iowa))
+- **RCV 선제 금지**: 아이오와는 **RCV를 한 번도 쓴 적이 없는 상태에서 법으로 금지**했습니다 — HF 954(2025-06-02 Reynolds 주지사 서명), 금지 조항은 **2026년 1월 1일 발효**. RCV를 금지한 17번째 주입니다. 같은 사이클의 [알래스카](ak.qmd)가 RCV로 치러지는 것과 정반대의 선택입니다. ([Ballotpedia News](https://news.ballotpedia.org/2025/06/04/iowa-gov-reynolds-signs-bill-banning-rcv/))
+- **SF 413(2021) 선거법 개정**: 조기투표를 **29일에서 20일로 단축**하고(§53.8), 투표 마감을 **오후 9시 → 오후 8시**로 앞당겼으며(§49.73), 우편투표는 **소인이 아니라 선거일 오후 8시까지 도착**해야 유효하고, 드롭박스는 **카운티당 1개**로 제한됐습니다(§53.17). ※ 일부 인용에서 보이는 "18일 단축"은 **최종 통과 전 법안 버전** 기준이라 오류입니다 — 최종법은 20일입니다. ([§53.8](https://www.legis.iowa.gov/docs/code/53.8.pdf) · [§49.73](https://www.legis.iowa.gov/docs/code/49.73.pdf) · [§53.17](https://www.legis.iowa.gov/docs/code/53.17.pdf))
+- **비엄격 사진 신분증**: 1차 인정 신분증이 없어도 주 발급 무료 유권자ID카드나 **같은 선거구 등록유권자의 서면 선서**로 대체할 수 있어, 오하이오·텍사스형의 엄격(strict) ID와는 성격이 다릅니다(§49.78). ([§49.78](https://www.legis.iowa.gov/docs/code/49.78.pdf))
+
+## 일일 브리핑
+
+```{r}
+#| output: asis
+cat(daily_log_md("IA"))
+```
+
+## 최신 여론조사
 
 ```{r}
 gt_state_polls("IA")
@@ -79,7 +84,8 @@ gt_state_polls("IA")
 
 > 이 주의 특징은 **두 공개 조사가 서로 반대 방향**이라는 점입니다 — Fox(6/23–27, RV 1,003)는 Turek +4, NYT/Siena(6/15–29, LV 600)는 Hinson +2. 모집단(RV 대 LV)과 오차범위를 고려하면 통계적으로는 양립 가능한 범위지만, **경선 이후 두 달 넘게 신규 공개 조사가 없다**는 점이 더 중요합니다. 예측시장은 이 공백에서 민주 43¢를 매기고 있습니다.
 
-## 5. 펀드레이징 {#money}
+## 펀드레이징
+
 ```{r}
 #| output: asis
 cat(state_money_html("IA"))
@@ -91,7 +97,7 @@ gt_state_fec("IA")
 
 이 레이스의 자금 구조는 **흐름과 저량이 어긋나 있습니다.** 2분기 신규 모금은 Turek이 Hinson을 앞섰는데(각 $2.81M·$2.06M), 위 표의 사이클 누계와 보유 현금에서는 Hinson이 약 3배 우위입니다. 개방석에서 전국 소액기부가 신인 쪽으로 몰리는 전형적 패턴이며, 광고 집행이 본격화되는 가을에 이 격차가 어떻게 작용하는지가 관전 포인트입니다.
 
-## 6. 한국 함의
+## 한국 함의
 
 **Hinson은 2025년 4월 CSGK 대표단으로 방한해 외교장관을 면담했지만(3절), 한국 관련 입법·발언 기록은 사실상 없습니다. Turek은 주 의회 소속이라 애초에 연방 기록이 없습니다.** 즉 **양 후보 모두 한국을 명시한 공약은 없습니다.** 그럼에도 이 레이스의 중심 의제인 **관세와 농산물 수출**은 한국과 직접 맞닿아 있어, 아이오와는 "한국을 말하지 않는데 한국이 걸려 있는" 전형적인 주입니다.
 
@@ -103,3 +109,5 @@ gt_state_fec("IA")
 - 신규 동향은 [Korea Watch](../korea-watch.qmd)에 기록합니다.
 
 *작성 2026-08-08 · 갱신 2026-08-28 · 등급: **Cook Toss Up(8/20)** · Sabato Lean R(8/26) · Inside Elections Tilt R(8/6) · DDHQ Toss-up · Fox Toss-up(8/25) · 예측시장 민주 44¢(Kalshi 8/23)*
+
+:::::

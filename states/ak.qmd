@@ -1,5 +1,6 @@
 ---
 title: "알래스카 Alaska"
+toc: false
 ---
 
 ```{r}
@@ -7,10 +8,9 @@ title: "알래스카 Alaska"
 source(file.path("R", "helpers.R"))
 ```
 
-```{r}
-#| output: asis
-cat(candidate_cards_html("AK"))
-```
+::::: {.panel-tabset}
+
+## 주 개요
 
 ```{r}
 #| output: asis
@@ -29,26 +29,18 @@ cat(state_card_html("AK"))
 **예비 득표율을 본선 마진으로 읽지 마세요.** top-4는 전 정당이 한 용지에서 겨루는 통합 경선입니다. 민주 성향 표는 펠톨라 한 명에 결집한 반면 공화 성향 표는 현역·동명이인·Heikes 등으로 갈렸으므로, **48–43이라는 간격은 본선 D+5를 뜻하지 않습니다.** 본선은 4명이 RCV로 겨루고, 탈락자의 2순위가 어디로 가느냐가 실제 승부를 정합니다.
 :::
 
-## 일일 브리핑 {#daily}
-
-```{r}
-#| output: asis
-cat(daily_log_md("AK"))
-```
-
-## 1. 주 개요
-
 - **선거사**: 2024 대선 **Trump +13.1**. 현재 양 상원 의석 모두 공화(Murkowski·Sullivan)이며, Sullivan은 2014년 초선(현역 Begich 격파)·2020년 재선으로 **이번이 3선 도전**. 이 의석에서 민주당이 마지막으로 이긴 것은 2008년 Begich입니다. ([Senate Majority](https://senatemajority.com/states/alaska/))
 - **유권자 구성**: **무당파가 압도적 다수(약 58%)**, 공화 약 24%·민주 약 12.5%(2016년 자동유권자등록 도입 후 무당파 급증). ([Ballot Access News](https://ballot-access.org/2024/10/03/new-alaska-registration-data-6/))
 - **경제 — 에너지·수산·국방, 한국과 직접 닿는 축**: ① **Alaska LNG 프로젝트**($44B)가 한·일·대만과 오프테이크를 추진 중이며, 개발사 Glenfarne이 한국 **POSCO International**과 연 100만 톤 공급 **잠정 합의**를 발표했습니다(주지사는 "구속력 있는 한국 합의 임박"이라 주장했으나 개발사는 예비 단계라며 이견 — 구속력은 미확인). ② 수산이 정치 정체성(Peltola "fish, family and freedom"). ③ 미사일방어·인도태평양 전진기지로서 국방. ([Alaska's News Source](https://www.alaskasnewssource.com/2025/12/02/dunleavy-claims-legally-binding-south-korea-pipeline-deal-is-near-lead-lng-developer-disagrees/))
 
-## 2. 선거 제도
+## 후보자
 
-- **Top-Four 오픈 경선 + 본선 RCV**: 2024년 RCV 폐지안(Ballot Measure 2)이 **743표(0.25%p) 차로 부결**돼 제도가 존치됐습니다. 8/18 통합 예비선거에서 정당 무관 상위 4명이 본선에 올랐고, 11월 본선은 **순위선택투표(RCV)** — 과반 미달 시 최하위를 탈락시켜 차순위로 재배분합니다. Peltola가 2022년 이 방식으로 Palin을 꺾은 전례가 강점입니다. ([KTOO](https://www.ktoo.org/2024/12/10/the-recount-is-over-alaska-will-keep-ranked-choice-voting/))
-- **개표 일정**: 알래스카는 **8/18 소인이 찍힌 부재자 투표를 10일 뒤까지 접수**합니다. 선관위는 **8/25·8/28 갱신**을 예고했고 **최종 비공식 집계 8/28 · 공식 인증 8/31** 예정입니다. 아래 수치는 전부 **예비 집계**이며, 20표 차인 4위 확정은 이 일정에 달려 있습니다.
-- **동명이인 'Dan J. Sullivan' — 결말과 실측치**: 현역(Dan S., Anchorage)과 이름이 같은 **Dan J. Sullivan**(Petersburg, 전 산림청 직원·은퇴 교사)이 출마했습니다. 현역 측·NRSC는 "민주 공작"이라 주장했고 선관위는 **6/12 투표용지 제외 예비 결정**을 냈지만, 본인이 법정 다툼에서 이겨 **등재가 확정**됐습니다. 다만 표기가 갈렸습니다 — 현역은 **`Dan S. Sullivan · 공화 · 현역`**, 도전자는 **`Daniel J. Sullivan Jr. · 무당파`**로, 혼동을 줄이려는 조치였습니다. 결과는 **2.4%**. 즉 **당적과 이름 표기로 구분된 상태에서의 잠식률이 2.4%**라는 뜻이며, 아무 표시가 없었다면 어땠을지는 이 수치로 알 수 없습니다. 통신사기·공모 혐의에 대한 FBI·법무부·연방검찰 수사는 계속되고 대배심 소환장이 발부된 상태입니다. ([Alaska Public](https://alaskapublic.org/news/politics/elections/2026-08-18/u-s-senate-race-will-likely-have-two-dan-sullivans-and-a-mary-peltola))
+```{r}
+#| output: asis
+cat(candidate_cards_html("AK"))
+```
 
-## 3. roll-call / 입법 관심사
+### roll-call / 입법 관심사
 
 **Dan S. Sullivan (R, 현역)** — **군사위(SASC)·상무위(Commerce)** 소속(상무위 연안경비·해양·수산 소위원장으로 조선 청문회 주재). 8개 경합주 현역 중 **인도태평양·한국 안보에 가장 직접 관여**하는 인물입니다.
 
@@ -58,7 +50,20 @@ cat(daily_log_md("AK"))
 
 **Mary Peltola (D, 전 하원의원)** — Bristol Bay 어업 보호(Pebble Mine 차단 법안)·자원개발에 집중. ANWR 시추법엔 위원회 찬성·본회의 기권의 복합 입장. **한국·인도태평양 관련 직접 표결은 미확인**(의정 초점이 어업·자원·원주민). ([ADN](https://www.adn.com/politics/2024/05/03/in-election-year-us-rep-mary-peltola-walks-a-complicated-path-on-fisheries-and-oil-drilling/))
 
-## 4. 최신 여론조사 {#polls}
+## 선거 제도
+
+- **Top-Four 오픈 경선 + 본선 RCV**: 2024년 RCV 폐지안(Ballot Measure 2)이 **743표(0.25%p) 차로 부결**돼 제도가 존치됐습니다. 8/18 통합 예비선거에서 정당 무관 상위 4명이 본선에 올랐고, 11월 본선은 **순위선택투표(RCV)** — 과반 미달 시 최하위를 탈락시켜 차순위로 재배분합니다. Peltola가 2022년 이 방식으로 Palin을 꺾은 전례가 강점입니다. ([KTOO](https://www.ktoo.org/2024/12/10/the-recount-is-over-alaska-will-keep-ranked-choice-voting/))
+- **개표 일정**: 알래스카는 **8/18 소인이 찍힌 부재자 투표를 10일 뒤까지 접수**합니다. 선관위는 **8/25·8/28 갱신**을 예고했고 **최종 비공식 집계 8/28 · 공식 인증 8/31** 예정입니다. 아래 수치는 전부 **예비 집계**이며, 20표 차인 4위 확정은 이 일정에 달려 있습니다.
+- **동명이인 'Dan J. Sullivan' — 결말과 실측치**: 현역(Dan S., Anchorage)과 이름이 같은 **Dan J. Sullivan**(Petersburg, 전 산림청 직원·은퇴 교사)이 출마했습니다. 현역 측·NRSC는 "민주 공작"이라 주장했고 선관위는 **6/12 투표용지 제외 예비 결정**을 냈지만, 본인이 법정 다툼에서 이겨 **등재가 확정**됐습니다. 다만 표기가 갈렸습니다 — 현역은 **`Dan S. Sullivan · 공화 · 현역`**, 도전자는 **`Daniel J. Sullivan Jr. · 무당파`**로, 혼동을 줄이려는 조치였습니다. 결과는 **2.4%**. 즉 **당적과 이름 표기로 구분된 상태에서의 잠식률이 2.4%**라는 뜻이며, 아무 표시가 없었다면 어땠을지는 이 수치로 알 수 없습니다. 통신사기·공모 혐의에 대한 FBI·법무부·연방검찰 수사는 계속되고 대배심 소환장이 발부된 상태입니다. ([Alaska Public](https://alaskapublic.org/news/politics/elections/2026-08-18/u-s-senate-race-will-likely-have-two-dan-sullivans-and-a-mary-peltola))
+
+## 일일 브리핑
+
+```{r}
+#| output: asis
+cat(daily_log_md("AK"))
+```
+
+## 최신 여론조사
 
 ```{r}
 gt_state_polls("AK")
@@ -66,7 +71,8 @@ gt_state_polls("AK")
 
 > 이 표는 `data/senate_polls.csv`에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 **여러 조사의 방향**을 보세요.
 
-## 5. 펀드레이징 {#money}
+## 펀드레이징
+
 ```{r}
 #| output: asis
 cat(state_money_html("AK"))
@@ -80,7 +86,7 @@ gt_state_fec("AK")
 
 **Peltola가 신규 모금에서 약 5대 1로 Sullivan을 압도**(알래스카 상원 사상 분기 최대)했으나, **보유현금은 현역 Sullivan이 우위**($7.1M vs $5.7M)입니다 — 누적 적립 효과. 출처별 수치 편차가 있어(ADN vs 캠프 발표) FEC 원본 대조를 권합니다. ([ADN](https://www.adn.com/politics/2026/04/16/peltola-posts-massive-campaign-fundraising-but-republicans-maintain-cash-advantage-in-alaska-congressional-races/))
 
-## 6. 한국 함의
+## 한국 함의
 
 알래스카는 **GA·OH와 함께 한국 함의가 가장 깊은 주**입니다.
 
@@ -89,3 +95,5 @@ gt_state_fec("AK")
 - 신규 동향은 [Korea Watch](../korea-watch.qmd)에 기록합니다.
 
 *갱신 2026-09-06 — 9/1 본선 투표용지 확정(1D 대 3R)과 Inside Elections 9/3 Tilt R 상향 반영. 최종 예비 득표율은 개표 약 98% 기준입니다.*
+
+:::::

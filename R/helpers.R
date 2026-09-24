@@ -351,8 +351,11 @@ poll_trend_svg <- function(code, office = c("senate", "governor")) {
     '<div class="rcard-bd">', paste(bd, collapse = ""), '</div>',
     '<div class="rcard-tt">조사 마진 추이 <span class="rcard-mu">(양수 = 민주 우위 · 속 빈 점 = 당파 후원 조사)</span></div>',
     poll_trend_svg(code, office),
-    sprintf('<p class="rcard-lk">각 조사의 실사기간·표본·출처는 <a href="#polls">최신 여론조사 표</a> · 자금은 <a href="#money">%s</a> · 등급 비교는 <a href="/dashboard.html">전망 대시보드</a>.%s <span class="rcard-mu">데이터 기준 %s</span></p>',
-            cfg$money, cfg$note, d$as_of),
+    # 2026-09-25: 그림 아래 안내 문장을 뺐다(사용자 지시). State Focus가 탭 구조로 바뀌어
+    # 같은 쪽 다른 절로 보내던 링크가 무의미해졌기 때문이다. 기준일 스탬프는 남긴다 —
+    # "모든 데이터 표에 기준 시각을 노출한다"는 편집 원칙 때문.
+    sprintf('<p class="rcard-lk"><span class="rcard-mu">데이터 기준 %s</span>%s</p>',
+            d$as_of, cfg$note),
     '</div>')
 }
 
