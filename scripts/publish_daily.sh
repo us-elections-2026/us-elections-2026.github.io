@@ -74,7 +74,7 @@ fi
 WROTE=0; COMMITTED=0
 cleanup() {
   rc=$?
-  if [ "$WROTE" = "1" ] && [ "$COMMITTED" = "0" ]; then
+  if [ "$rc" != "0" ] && [ "$WROTE" = "1" ] && [ "$COMMITTED" = "0" ]; then
     echo "[$(date '+%m-%d %H:%M:%S')] ! 중단(rc=$rc) — 작업트리 되돌림" >> "$LOGF"
     echo "[daily] ! 중단 — 작업트리 되돌림($LOG, $POLLS)"
     find .git -maxdepth 3 -name "*.lock" -delete 2>/dev/null   # 되돌리기가 잠금에 막히지 않게
