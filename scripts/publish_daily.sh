@@ -25,10 +25,12 @@ LEDGER="data/state_ledger.json"
 
 # 실행 기록 — 예약 작업(Cowork VM 샌드박스)의 출력은 대화에만 남아 나중에 볼 수 없다.
 # 어느 단계에서 멈췄는지 파일로 남긴다(2026-09-24 신설). 10줄 남짓, 매 실행 append.
-LOGF="${PD_LOG:-$HOME/.cache/us_elections/publish_daily.log}"
+# 로그는 저장소 안(.publish_daily.log, gitignore)에 둔다 — 예약 실행은 $HOME이 실제 홈이 아닐 수 있어
+# ~/.cache 로 쓰면 호스트에서 찾을 수 없다(2026-09-25: 9/23~25 실행 흔적이 호스트에 전혀 없었던 이유로 추정).
+LOGF="${PD_LOG:-$REPO/.publish_daily.log}"
 mkdir -p "$(dirname "$LOGF")" 2>/dev/null
 step() { echo "[$(date '+%m-%d %H:%M:%S')] $*" >> "$LOGF"; echo "[daily] $*"; }
-echo "===== $(date '+%Y-%m-%d %H:%M:%S') publish_daily.sh 시작 · host=$(hostname -s) · pwd=$(pwd) =====" >> "$LOGF"
+echo "===== $(date '+%Y-%m-%d %H:%M:%S') publish_daily.sh 시작 · host=$(hostname -s) · user=$(id -un) · HOME=$HOME · pwd=$(pwd) · PATH=$PATH =====" >> "$LOGF"
 
 cd "$REPO" || { echo "[daily] repo 접근 불가: $REPO"; exit 1; }
 

@@ -26,3 +26,6 @@ handoff.md
 
 # 일일 조사 추출의 검토용 후보 파일(매 실행 덮어씀) — 발행 대상 아님
 data/senate_polls_candidates.csv
+
+# 일일 발행 실행 로그(호스트·샌드박스 어디서 돌아도 여기 남는다)
+.publish_daily.log
