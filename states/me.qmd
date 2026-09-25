@@ -30,15 +30,43 @@ cat(state_today_md("ME"))
 - **한국 함의**: Collins의 CHIPS·세출위는 추정 연결고리; 직접 한국 표결은 미확인.
 :::
 
-- **유권자 구성**: 인구 약 140만 명. 백인(non-Hispanic) 비중 약 91%로 전국 최고 수준이며, **미국에서 가장 농촌(rural) 비율이 높은 주**(약 61%가 비도시). **무당파(unenrolled) 등록 비중이 매우 높습니다**(출처별 33~36%). ([Point2Homes](https://www.point2homes.com/US/Neighborhood/ME-Demographics.html))
-- **선거사 — split-ticket의 주**: 2024 대선은 주 전체 **Harris +6.9**(메인은 선거인단 분할주로 Harris 3 / Trump 1 — 2지역구). 그런데 **Collins는 같은 민주 우위 주에서 반복 당선**해 왔습니다(2020 재선 +8.6, 1차 과반으로 RCV 불필요). 이 괴리가 레이스의 핵심 — 주는 민주, 현역은 공화. ([Bangor Daily News](https://www.bangordailynews.com/2024/11/06/politics/elections/kamala-harris-wins-maine-statewide-president/) · [Ballotpedia 2020](https://ballotpedia.org/United_States_Senate_election_in_Maine,_2020))
-
 ### 로컬 상황 — 일일 기록
 
 ```{r}
 #| output: asis
 cat(state_ledger_md("ME", "local"))
 ```
+
+## 배경
+
+### 개관
+
+- **유권자 구성**: 인구 약 140만 명. 백인(non-Hispanic) 비중 약 91%로 전국 최고 수준이며, **미국에서 가장 농촌(rural) 비율이 높은 주**(약 61%가 비도시). **무당파(unenrolled) 등록 비중이 매우 높습니다**(출처별 33~36%). ([Point2Homes](https://www.point2homes.com/US/Neighborhood/ME-Demographics.html))
+
+- **선거사 — split-ticket의 주**: 2024 대선은 주 전체 **Harris +6.9**(메인은 선거인단 분할주로 Harris 3 / Trump 1 — 2지역구). 그런데 **Collins는 같은 민주 우위 주에서 반복 당선**해 왔습니다(2020 재선 +8.6, 1차 과반으로 RCV 불필요). 이 괴리가 레이스의 핵심 — 주는 민주, 현역은 공화. ([Bangor Daily News](https://www.bangordailynews.com/2024/11/06/politics/elections/kamala-harris-wins-maine-statewide-president/) · [Ballotpedia 2020](https://ballotpedia.org/United_States_Senate_election_in_Maine,_2020))
+
+### 경제·인구 구성
+- 인구는 2024년 기준 약 138만 8천 명입니다. ([Census QuickFacts](https://www.census.gov/quickfacts/ME))
+- 인종 구성은 2020~2024년 추계로 백인 89.9%, 히스패닉 2.2%, 흑인 1.8%, 아시아계 1.1%입니다. 미국에서 가장 백인 비중이 높은 축에 듭니다. ([Census QuickFacts](https://www.census.gov/quickfacts/ME))
+- 중위 가구소득은 2024년 기준 74,733달러입니다. ([Census QuickFacts](https://www.census.gov/quickfacts/ME))
+- 농촌 인구 비율이 약 61%로 전국에서 가장 높습니다. 도시화 지역은 포틀랜드·뱅고어·루이스턴에 그칩니다. ([America's Health Rankings](https://www.americashealthrankings.org/explore/measures/pct_rural_b/ME))
+- 산업은 임산물·수산(랍스터)·조선·생명과학·야외레저가 축입니다. 대형 고용주는 Bath Iron Works(조선, 약 6천 명)와 L.L.Bean(약 4천 명)이며 민간 최대 고용 분야는 의료입니다. ([JobsInMaine](https://jobsinmaine.com/blog/largest-employers-in-maine))
+- 한국 기업의 대형 투자 사례는 미확인입니다.
+
+### 역대 선거 결과의 특징
+- 대선은 2012년 Obama +15.3%p, 2016년 Clinton +3.0%p, 2020년 Biden +9.1%p, 2024년 Harris +6.9%p였습니다. 2016년 이후 세 번 모두 2선거구는 Trump가 가져가 선거인단이 3:1로 갈렸습니다. ([Ballotpedia](https://ballotpedia.org/Presidential_election_in_Maine,_2024))
+- 연방상원은 2008년 Collins +22.8%p, 2014년 Collins +36%p, 2020년 Collins +8.6%p로 모두 공화 현역이 이겼습니다. ([Wikipedia 2020](https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_Maine))
+- 주지사는 2018년 Mills +7.7%p, 2022년 Mills +13.2%p로 민주가 이겼습니다. ([Wikipedia 2022](https://en.wikipedia.org/wiki/2022_Maine_gubernatorial_election))
+- 대선·주지사는 민주, 연방상원은 온건 공화 Collins를 4번 연속 당선시킨 분할투표 주입니다. 네브래스카와 함께 선거인단을 선거구별로 나누는 두 주 가운데 하나입니다. ([Ballotpedia](https://ballotpedia.org/Presidential_voting_trends_in_Maine))
+
+### 주지사·주의회
+- 현 주지사는 민주당 Janet Mills로 2019년 1월 취임했습니다. 연임 제한으로 2026년 주지사 선거는 공석 경쟁입니다. ([Ballotpedia](https://ballotpedia.org/Maine_gubernatorial_election,_2026))
+- 주상원 35석은 민주 20·공화 14·무소속 1, 주하원 151석은 민주 75·공화 73·무소속 3입니다(2026년 9월 기준). 주지사까지 민주 트라이펙타입니다. ([Ballotpedia](https://ballotpedia.org/Maine_State_Legislature))
+- 2026년 11월 3일에는 주지사(공석)·연방하원 2석·주상원 35석·주하원 151석 전체가 연방상원과 함께 걸려 있습니다. ([Wikipedia](https://en.wikipedia.org/wiki/2026_Maine_gubernatorial_election))
+
+### 유권자 등록·투표율
+- 활성 등록 유권자는 2024년 1월 18일 기준 948,734명입니다. 정당별(enrollment) 세부 수치는 미확인입니다. ([Maine SOS 등록 통계](https://www1.maine.gov/sos/elections-voting/voter-data/enrolled-layout-01-2024))
+- VEP 투표율은 2018년 64.5%, 2020년 78.0%, 2022년 60.8%, 2024년 74.2%로 전국 상위권입니다. ([U.S. Elections Project](https://www.electproject.org/election-data/voter-turnout-data))
 
 ## 후보자
 
@@ -60,9 +88,29 @@ cat(candidate_cards_html("ME"))
 
 ## 선거 제도
 
+### 경선·본선 방식
+
 - **RCV(순위선택투표) — 연방선거 전용**: 2016년 주민발의로 도입. **연방 예비·본선거(상·하원·대선)에만 적용**되고, 주지사 등 주 단위 본선거는 일반 다수제입니다. 1차 과반 미달 시 최하위 후보를 탈락시켜 차순위로 재배분합니다. ([Ballotpedia](https://ballotpedia.org/Electoral_systems_in_Maine))
 - **반개방형 예비선거 → 후보 사퇴 시 전당대회 지명**: 2024년부터 무당파도 정당 등록 없이 경선 투표 가능. 2026 민주 예선은 6/9 완료(Platner 압승)됐으나 **Platner 사퇴(7/10)로 무효화**됐고, 메인주법상 후보 교체 절차인 **7/25 뱅고어 지명전당대회**(대의원 601명 다회전 투표)에서 **Troy Jackson이 566–5로 인준**돼 본선 대진이 확정됐습니다(7/27 등재 마감). 본선 11/3, RCV 적용. ([Maine Dems](https://mainedems.org/senate-race/senate-delegate-process/))
 - 사유 불문 부재자투표(no-excuse absentee) 시행 주(2026 구체 기간은 【수집】).
+
+### 우편·조기 투표
+- 부재자(우편)투표는 사유 없이 모든 등록 유권자가 신청할 수 있습니다. 신청은 선거일 3영업일 전까지이며, 2026년 본선은 10월 29일 목요일 업무 종료 시까지입니다. ([Maine SOS 부재자투표](https://www.maine.gov/sos/elections-voting/ways-to-cast-your-ballot/absentee-voting))
+- 투표용지는 선거일 30일 전부터 각 시·타운 사무소(clerk)에서 발급합니다. 사무소를 찾아가 그 자리에서 기표하는 대면 부재자투표가 조기투표 역할을 하며 선거 전 목요일까지 가능합니다. ([Maine SOS 유권자 안내](https://www.maine.gov/sos/elections-voting/state-of-maine-voter-guide))
+- 반송 용지는 소인과 무관하게 선거일 오후 8시까지 clerk에 도착해야 합니다. ([Maine SOS 부재자투표](https://www.maine.gov/sos/elections-voting/ways-to-cast-your-ballot/absentee-voting))
+- 드롭박스는 허용되며 고정·표지·감시 요건이 법으로 정해져 있습니다. 지자체가 신청하면 청사 밖에도 추가 설치할 수 있습니다. ([Maine 주법 21-A §752-B](https://legislature.maine.gov/statutes/21-a/title21-Asec752-B.html))
+- 자격에 이의가 제기된 유권자는 챌린지(challenged) 투표용지로 투표합니다. 이 표도 일단 일반표와 같이 개표하고, 재검표에서 결과를 좌우할 때만 사후 판정합니다. ([Maine SOS 투표권 안내](https://www.maine.gov/sos/elections-voting/your-right-to-vote-in-maine))
+
+### 유권자 등록
+- 우편·온라인 등록 마감은 선거일 21일 전입니다. 2026년 본선은 10월 13일이며, 이 날짜는 규정을 적용한 계산치입니다. ([Maine SOS 등록](https://www.maine.gov/sos/elections-voting/registering-to-vote))
+- 온라인 등록이 가능합니다. ([Maine SOS 등록](https://www.maine.gov/sos/elections-voting/registering-to-vote))
+- 자동 등록(AVR) 시행 여부는 공식 사이트에서 미확인입니다.
+- 당일 등록이 허용됩니다. 마감을 넘긴 유권자도 선거일 투표 마감 전까지 지자체 사무소에서 등록해 투표할 수 있고, 이때는 신분증과 거주 증빙이 필요합니다. ([Maine SOS 등록](https://www.maine.gov/sos/elections-voting/registering-to-vote))
+
+### 신분 확인
+- 이미 등록된 유권자는 투표 때 신분증을 제시할 필요가 없습니다. 비엄격·비사진 체계입니다. ([Maine SOS 투표권 안내](https://www.maine.gov/sos/elections-voting/your-right-to-vote-in-maine))
+- 선거 당일 현장 등록하는 유권자만 신분증과 거주 증빙을 제시합니다. 없으면 챌린지 투표용지로 투표합니다. ([Maine SOS 투표권 안내](https://www.maine.gov/sos/elections-voting/your-right-to-vote-in-maine))
+- 사진 신분증 의무화와 부재자투표·드롭박스 제한을 묶은 2025년 11월 주민투표(Question 1)는 반대 64.2%로 부결됐습니다. 현행 제도가 그대로 유지됩니다. ([Maine SOS 2025 주민투표 결과](https://www.maine.gov/sos/news/official-results-november-2025-referendum-election))
 
 ## 일일 브리핑
 
