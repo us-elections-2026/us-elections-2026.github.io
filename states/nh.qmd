@@ -17,6 +17,11 @@ source(file.path("R", "helpers.R"))
 cat(state_card_html("NH"))
 ```
 
+```{r}
+#| output: asis
+cat(state_today_md("NH"))
+```
+
 민주당의 **수성 레이스**. 5선 [Jeanne Shaheen의 은퇴](https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire)로 이 의석은 1990년 이후 처음인 완전 오픈시트가 됐습니다. 등급은 Cook **Lean D**·Sabato Leans Democratic이지만, Inside Elections는 9/3 Toss-up으로 내려 기관 간 평가가 갈립니다. 민주당의 "+4 산수"에서 NH는 필수 수성 3석(GA·MI·NH) 중 하나입니다. 이곳을 잃으면 다수당 경로가 공화 보유 6곳(ME·NC·TX·OH·AK·IA) 전승으로 좁아집니다([시나리오](../scenarios.qmd) 참조).
 
 ::: {.summary}
@@ -38,6 +43,13 @@ cat(state_card_html("NH"))
 - **세금 없는 주**: 일반 판매세도, 근로소득세도 없습니다. 이자·배당세마저 2025년에 폐지됐습니다. 'Live Free or Die'라는 주 표어가 재정 구조에 그대로 박혀 있어, 세금은 어느 선거에서든 1순위 쟁점입니다. ([Politics of NH](https://en.wikipedia.org/wiki/Politics_of_New_Hampshire))
 - **분할투표의 극단**: 대선은 2004년 이후 여섯 번 연속 민주가 이겼고, 연방 의회 대표단은 2017년부터 전원 민주입니다. 그런데 주지사는 공화 Ayotte이고, 그 전 8년도 공화 Chris Sununu였습니다. 같은 유권자가 워싱턴에는 민주, 콩코드에는 공화를 보냅니다. ([2026 NH Senate](https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire))
 - **상원은 2010년이 마지막**: 공화당이 이 주 연방상원 선거에서 마지막으로 이긴 것은 2010년 Ayotte입니다. 이번은 2010년 이후 첫 공개석입니다. Sununu 진영이 노리는 것은 바로 이 분할투표 습관을 연방 선거로 끌어오는 일입니다. ([NBC](https://www.nbcnews.com/politics/2026-election/chris-pappas-john-sununu-new-hampshire-senate-primary-winner-rcna596479))
+
+### 로컬 상황 — 일일 기록
+
+```{r}
+#| output: asis
+cat(state_ledger_md("NH", "local"))
+```
 
 ## 후보자
 
@@ -99,6 +111,13 @@ gt_state_polls("NH")
 
 > 이 표는 `data/senate_polls.csv`에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 **여러 조사의 방향**을 보세요.
 
+### 조사 동향 — 일일 기록
+
+```{r}
+#| output: asis
+cat(state_ledger_md("NH", "polls"))
+```
+
 ## 펀드레이징
 
 ```{r}
@@ -113,6 +132,13 @@ gt_state_fec("NH")
 > **아래는 Q1(3/31 마감) 시점의 해설**입니다 — 위 표는 FEC 원장에서 자동 렌더되는 사이클 누적치라 기준이 다릅니다.
 
 Pappas는 기부의 97%가 $100 이하(평균 온라인 $29.56, 기업 PAC $0)이며 양 공화 후보 합산보다 많은 보유현금으로, 9/8부터 본선 TV 광고 약 $9M을 예약했습니다. 공화 경선은 **Sununu가 모금·현금 모두 Brown을 크게 앞서** 사실상 선두입니다. (Sununu·Brown 보유현금의 정확 FEC 기준일은 원본 대조 권장.) ([Pappas 캠프](https://chrispappas.org/2026/04/chris-pappas-for-senate-announces-q1-fundraising-haul-of-3-3-million-general-election-tv-ad-reservations/) · [NH Journal](https://nhjournal.com/sununus-cash-edge-grows-while-brown-falls-behind-in-q1-fundraising/))
+
+### 자금 투입·지출 — 일일 기록
+
+```{r}
+#| output: asis
+cat(state_ledger_md("NH", "money"))
+```
 
 ## 한국 함의
 

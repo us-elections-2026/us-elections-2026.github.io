@@ -17,6 +17,11 @@ source(file.path("R", "helpers.R"))
 cat(state_card_html("MI"))
 ```
 
+```{r}
+#| output: asis
+cat(state_today_md("MI"))
+```
+
 Peters 은퇴로 **민주당이 방어해야 하는 공개석**. 9개 경합주 중 본선이 공화당에 가장 유리한(오차범위 내) 유일한 주로, Cook·Sabato 모두 **Toss-up**으로 분류합니다. **8/4 민주당 경선에서 진보 성향의 Abdul El-Sayed가 온건파 Haley Stevens를 48.5–47.5(1%p)로 제압**해 본선 대진이 확정됐습니다 — 8대 1의 자금 열세와 당 주류의 반대를 뒤집은 결과입니다. 이제 2024년 Slotkin에게 0.3%p로 졌던 공화당 Mike Rogers와 맞붙습니다. 공화당은 이 대진을 공개적으로 반겼고, 트럼프·밴스·NRSC의 조직적 이슬람 혐오 공세가 이어진 뒤 Rogers는 8/7 **Stevens 지지층을 겨냥한 크로스오버 구애**로 전술을 틀었습니다 — 규정짓기에서 연합 사냥으로의 전환입니다. 경선 직후 RCP 본선 첫 평균은 Rogers 44.3–El-Sayed 44.0(R+0.3)의 순수 접전이었으나, **8/6–10 실시된 폭스뉴스/Beacon&Shaw 조사(RV 1,006, ±3)에서 Rogers 51–El-Sayed 47(R+4)**이 나오면서 경선 후 첫 주요 언론 조사가 공화 우위를 가리켰습니다 — Glengariff(+10)·EPIC-MRA(46–43)와 함께 엘사예드가 뒤지거나 동률인 조사가 4연속입니다. 다만 같은 폭스 조사의 교차분석은 양면적이고(54% "엘사예드 정책이 너무 극단" ↔ 51% "로저스는 트럼프와 너무 가까움"), **예측시장은 오히려 엘사예드를 57¢로 매겨** 조사와 가격이 정면으로 갈린 상태입니다. ([CNBC](https://www.cnbc.com/2026/08/04/abdul-el-sayed-haley-stevens-michigan-primary.html) · [Detroit News](https://www.detroitnews.com/story/news/politics/2026/08/04/michigan-senate-election-results/91144752007/) · [CNN(크로스오버 전환)](https://www.cnn.com/2026/08/07/politics/abdul-el-sayed-mike-rogers-michigan-democrats-senate) · [Fox(8/6–10 조사)](https://www.foxnews.com/politics/fox-news-poll-senate-battle-looms-michigan))
 
 ::: {.summary}
@@ -29,6 +34,13 @@ Peters 은퇴로 **민주당이 방어해야 하는 공개석**. 9개 경합주 
 - **경제 — 자동차·EV 배터리 본진**: 미시간 상원 레이스의 경제 서사는 EV 배터리에 묶여 있습니다. GM과 한국 **LG에너지솔루션**의 Ultium Cells 합작이 Lansing·Orion Township에 약 70억 달러 규모로 들어섰고, 2025년 5월 GM이 Lansing의 41GWh 공장 지분을 LG에 매각해 **LG 단독 소유**로 전환했습니다. 다만 연방 EV 보조금($7,500)이 2025년 9월 종료되자 북미 EV 수요가 급감 — LG는 Lansing 양산을 하반기로 연기했고, GM은 2025년 10월 배터리·EV 시설에서 3,400명 이상 감원을 발표했습니다. ([American Progress](https://www.americanprogress.org/article/gm-ev-and-battery-investment-in-michigan/) · [Bridge MI](https://bridgemi.com/business-watch/gm-sells-stake-michigan-ev-battery-factory-subsidized-state/))
 - **선거사 — 좁아지는 민주 마진**: 미시간 상원은 2018년 Stabenow +6.5 → 2020년 Peters 약 +1.7 → **2024년 Slotkin +0.3**으로 민주 우위가 매 사이클 축소됐습니다. 공교롭게 2024년 Slotkin에게 0.3%p로 패한 인물이 **이번 공화 후보 Mike Rogers**입니다. 동시에 대선은 2020년 Biden 승 → **2024년 Trump +1.5**(약 8.3만 표)로 역전됐습니다. ([NBC](https://www.nbcnews.com/politics/2024-elections/michigan-senate-results) · [Ballotpedia 2020](https://ballotpedia.org/United_States_Senate_election_in_Michigan,_2020))
 - 유권자 구성의 정량 변화(인종·교외/도시 비중) 수치는 현재 미확보 — 확인되면 보강합니다.
+
+### 로컬 상황 — 일일 기록
+
+```{r}
+#| output: asis
+cat(state_ledger_md("MI", "local"))
+```
 
 ## 후보자
 
@@ -81,6 +93,13 @@ gt_state_polls("MI")
 
 > 이 표는 `data/senate_polls.csv`에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 **여러 조사의 방향**을 보세요.
 
+### 조사 동향 — 일일 기록
+
+```{r}
+#| output: asis
+cat(state_ledger_md("MI", "polls"))
+```
+
 ## 펀드레이징
 
 ```{r}
@@ -95,6 +114,13 @@ gt_state_fec("MI")
 > **아래는 Q1(3/31 마감) 시점의 해설**입니다 — 위 표는 FEC 원장에서 자동 렌더되는 사이클 누적치라 기준이 다릅니다.
 
 **McMorrow가 Q1 모금 1위**(캠프 누적 $8.6M), **Rogers가 보유현금 1위**입니다. Stevens는 모금의 약 84%를 소진해 burn rate가 가장 높습니다. Rogers는 외부지출(outside spending) 약 $45M 확보가 보도됐으나, 이는 후보 캠프 직접 모금과 구분되는 외부 PAC 지출입니다(FEC 1차 확인 권장). ([Michigan Advance](https://michiganadvance.com/2026/04/28/michigan-u-s-senate-primary-tightens-as-mcmorrow-el-sayed-outpace-stevens-in-q1-fundraising/) · [Detroit News](https://www.detroitnews.com/story/news/politics/2026/04/15/mallory-mcmorrow-fundraising-lead-michigan-u-s-senate-race-mike-rogers-cash-stevens-el-sayed/89630523007/))
+
+### 자금 투입·지출 — 일일 기록
+
+```{r}
+#| output: asis
+cat(state_ledger_md("MI", "money"))
+```
 
 ## 한국 함의
 

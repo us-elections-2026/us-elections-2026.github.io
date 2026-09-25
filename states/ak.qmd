@@ -17,6 +17,11 @@ source(file.path("R", "helpers.R"))
 cat(state_card_html("AK"))
 ```
 
+```{r}
+#| output: asis
+cat(state_today_md("AK"))
+```
+
 **Toss-up** — 올해 가장 크게 움직인 주입니다. 공화 현직 Dan Sullivan을, 2022년 최초의 알래스카 원주민(Yup'ik) 연방의원이 된 Mary Peltola(D)가 도전합니다. Cook은 **1월 Solid R → Lean R**(펠톨라 출마), 다시 **7/1 Lean R → Toss-up**으로 두 단계 올렸고 Sabato도 6/11에 Toss-up으로 옮겼습니다. **9/1 본선 투표용지가 확정됐습니다 — 펠톨라(민주 단독) 대 공화 3인**(현역 Dan S. Sullivan · 동명이인 Dan J. Sullivan · Hykes)이고, 민주 4위였던 Leslie가 사퇴해 민주 표가 갈릴 위험은 사라진 반면 **동명이인 혼동 위험은 11월 용지에 그대로 고정**됐습니다. 11월 본선은 RCV입니다. 조사는 기관별 편차가 큽니다(아래 표) — 벤치마크는 NYT/Siena, 트래킹은 ASR.
 
 ::: {.summary}
@@ -32,6 +37,13 @@ cat(state_card_html("AK"))
 - **선거사**: 2024 대선 **Trump +13.1**. 현재 양 상원 의석 모두 공화(Murkowski·Sullivan)이며, Sullivan은 2014년 초선(현역 Begich 격파)·2020년 재선으로 **이번이 3선 도전**. 이 의석에서 민주당이 마지막으로 이긴 것은 2008년 Begich입니다. ([Senate Majority](https://senatemajority.com/states/alaska/))
 - **유권자 구성**: **무당파가 압도적 다수(약 58%)**, 공화 약 24%·민주 약 12.5%(2016년 자동유권자등록 도입 후 무당파 급증). ([Ballot Access News](https://ballot-access.org/2024/10/03/new-alaska-registration-data-6/))
 - **경제 — 에너지·수산·국방, 한국과 직접 닿는 축**: ① **Alaska LNG 프로젝트**($44B)가 한·일·대만과 오프테이크를 추진 중이며, 개발사 Glenfarne이 한국 **POSCO International**과 연 100만 톤 공급 **잠정 합의**를 발표했습니다(주지사는 "구속력 있는 한국 합의 임박"이라 주장했으나 개발사는 예비 단계라며 이견 — 구속력은 미확인). ② 수산이 정치 정체성(Peltola "fish, family and freedom"). ③ 미사일방어·인도태평양 전진기지로서 국방. ([Alaska's News Source](https://www.alaskasnewssource.com/2025/12/02/dunleavy-claims-legally-binding-south-korea-pipeline-deal-is-near-lead-lng-developer-disagrees/))
+
+### 로컬 상황 — 일일 기록
+
+```{r}
+#| output: asis
+cat(state_ledger_md("AK", "local"))
+```
 
 ## 후보자
 
@@ -71,6 +83,13 @@ gt_state_polls("AK")
 
 > 이 표는 `data/senate_polls.csv`에서 자동 생성됩니다 — 프로즈에 수치를 박아두지 않으므로 새 조사가 수집되면 이 페이지도 함께 갱신됩니다. 단일 조사보다 **여러 조사의 방향**을 보세요.
 
+### 조사 동향 — 일일 기록
+
+```{r}
+#| output: asis
+cat(state_ledger_md("AK", "polls"))
+```
+
 ## 펀드레이징
 
 ```{r}
@@ -85,6 +104,13 @@ gt_state_fec("AK")
 > **아래는 Q1(3/31 마감) 시점의 해설**입니다 — 위 표는 FEC 원장에서 자동 렌더되는 사이클 누적치라 기준이 다릅니다.
 
 **Peltola가 신규 모금에서 약 5대 1로 Sullivan을 압도**(알래스카 상원 사상 분기 최대)했으나, **보유현금은 현역 Sullivan이 우위**($7.1M vs $5.7M)입니다 — 누적 적립 효과. 출처별 수치 편차가 있어(ADN vs 캠프 발표) FEC 원본 대조를 권합니다. ([ADN](https://www.adn.com/politics/2026/04/16/peltola-posts-massive-campaign-fundraising-but-republicans-maintain-cash-advantage-in-alaska-congressional-races/))
+
+### 자금 투입·지출 — 일일 기록
+
+```{r}
+#| output: asis
+cat(state_ledger_md("AK", "money"))
+```
 
 ## 한국 함의
 

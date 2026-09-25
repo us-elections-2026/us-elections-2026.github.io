@@ -336,6 +336,21 @@ if (!is.null(sdl)) {
   }
 }
 
+# ---- state_ledger.json (선택) — 주별 일일 장부 구조 ------------------------------
+sl <- load_json("state_ledger.json", optional = TRUE)
+if (!is.null(sl)) {
+  f <- "state_ledger.json"
+  sl <- jsonlite::fromJSON(jpath("state_ledger.json"), simplifyVector = FALSE)
+  require_keys(f, sl, c("as_of", "states"))
+  watch <- c("GA","MI","NH","ME","NC","TX","OH","AK","IA")
+  bad <- setdiff(names(sl$states), watch); if (length(bad)) err(f, paste("감시 9주 밖 주:", paste(bad, collapse=",")))
+  for (st in names(sl$states)) for (cat in c("polls","money","local","insight")) {
+    v <- sl$states[[st]][[cat]]; if (is.null(v)) { err(f, sprintf("%s: %s 항목 없음", st, cat)); next }
+    for (it in v) { if (is.null(it$date) || is.na(suppressWarnings(as.Date(it$date)))) err(f, sprintf("%s/%s: date 형식 오류", st, cat))
+                    if (is.null(it$text) || !nzchar(it$text)) err(f, sprintf("%s/%s: 빈 text", st, cat)) }
+  }
+}
+
 # ---- 결과 --------------------------------------------------------------------
 if (length(errors) > 0) {
   cat(sprintf("\n✗ 데이터 검증 실패 (%d건):\n", length(errors)))

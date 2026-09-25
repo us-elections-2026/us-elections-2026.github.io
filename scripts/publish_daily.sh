@@ -3,7 +3,9 @@
 #   Cowork 상원 일일 작업(~07:00 KST)이 _NIS senate_daily/ 에 파일을 남긴 뒤,
 #   별도 Cowork 예약 작업(10:15 KST)이 이 스크립트를 호출한다(publish_weekly.sh와 같은 방식).
 #
-# 사용: scripts/publish_daily.sh [YYYY-MM-DD]     # 날짜 생략 시 오늘(KST)
+# 사용: scripts/publish_daily.sh [YYYY-MM-DD ...]   # 날짜 생략 시 오늘(KST). 여러 날짜 가능
+#       scripts/publish_daily.sh --catchup         # 로그 as_of 이후~오늘 중 정리본/원문이 있는 날짜 전부
+#       NO_COMMIT=1 scripts/publish_daily.sh ...   # 적재·검증·렌더까지만(주간 발행이 함께 커밋할 때)
 #       DRY_RUN=1 scripts/publish_daily.sh          # push 직전까지만(커밋 안 함)
 #
 # 설계 원칙(publish_weekly.sh 계승):
@@ -19,6 +21,7 @@ export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
 REPO="${US_ELECTIONS_REPO:-$(cd "$(dirname "$0")/.." && pwd)}"
 LOG="data/senate_daily_log.json"
 POLLS="data/senate_polls.csv"
+LEDGER="data/state_ledger.json"
 
 # 실행 기록 — 예약 작업(Cowork VM 샌드박스)의 출력은 대화에만 남아 나중에 볼 수 없다.
 # 어느 단계에서 멈췄는지 파일로 남긴다(2026-09-24 신설). 10줄 남짓, 매 실행 append.
@@ -78,14 +81,14 @@ cleanup() {
     echo "[$(date '+%m-%d %H:%M:%S')] ! 중단(rc=$rc) — 작업트리 되돌림" >> "$LOGF"
     echo "[daily] ! 중단 — 작업트리 되돌림($LOG, $POLLS)"
     find .git -maxdepth 3 -name "*.lock" -delete 2>/dev/null   # 되돌리기가 잠금에 막히지 않게
-    git checkout -- "$LOG" "$POLLS" 2>/dev/null || echo "[daily] ! 되돌림 실패 — 다음 실행은 PD_RESET=1 필요"
+    git checkout -- "$LOG" "$POLLS" "$LEDGER" 2>/dev/null || echo "[daily] ! 되돌림 실패 — 다음 실행은 PD_RESET=1 필요"
   fi
 }
 trap cleanup EXIT INT TERM
 
 # 로그·조사 CSV에 미커밋 변경이 있으면(사람이 손댄 것) 덮어쓰지 않는다
 #   PD_RESET=1 로 실행하면 그 변경을 버리고 진행한다(끊긴 실행의 잔재를 치울 때).
-for f in "$LOG" "$POLLS"; do
+for f in "$LOG" "$POLLS" "$LEDGER"; do
   if ! git diff --quiet -- "$f" 2>/dev/null; then
     if [ "${PD_RESET:-0}" = "1" ]; then
       echo "[daily] ! PD_RESET=1 — $f 의 미커밋 변경을 버리고 진행"; git checkout -- "$f"
@@ -101,41 +104,53 @@ done
 echo "[daily] 최신 main 동기화(pull --ff-only)"
 git fetch origin main -q && git merge --ff-only origin/main -q 2>/dev/null || echo "[daily] (ff-only 불가 — 로컬 커밋 존재, 계속)"
 
-# 0.5) 사이트 정리본 대조 — 하드 게이트 (2026-09-21)
-#      10:15 Cowork 작업이 원문을 압축한 정리본(site/<날짜>_site_KR.md)이 있으면, 그 안의 모든 숫자가
-#      원문에 존재하는지·9주 소절과 네 요소가 갖춰졌는지 확인한다. 실패하면 발행하지 않는다.
-#      정리본이 없으면 원문을 그대로 싣는다(종전 방식).
-DATE="${1:-$(TZ=Asia/Seoul date +%F)}"
+# 0.5) 날짜 목록 — 인자로 받은 날짜들, 또는 --catchup(로그 as_of 다음 날~오늘 중 파일이 있는 날), 기본은 오늘
 SRC_DIR="$(python3 - <<'PY'
-import importlib.util, sys
+import importlib.util
 spec = importlib.util.spec_from_file_location("ing", "scripts/ingest_senate_daily.py"); m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
 print(m.DEFAULT_SRC)
 PY
 )"
-RAW="$SRC_DIR/${DATE}_일일브리핑_KR.md"; DIGEST="$SRC_DIR/site/${DATE}_site_KR.md"
-if [ -f "$DIGEST" ]; then
-  step "정리본 대조: site/$(basename "$DIGEST")"
-  python3 scripts/check_site_digest.py "$RAW" "$DIGEST" 2>&1 | tee -a "$LOGF" | tail -20; [ "${PIPESTATUS[0]:-0}" = "0" ] || { step "✗ 정리본 대조 실패 — 발행 중단(정리본을 고친 뒤 재실행)"; exit 1; }
-else
-  step "정리본 없음 — 원문을 그대로 싣는다"
-fi
+TODAY="$(TZ=Asia/Seoul date +%F)"
+if [ "${1:-}" = "--catchup" ]; then
+  ASOF="$(python3 -c "import json;print(json.load(open('$LOG')).get('as_of') or '2000-01-01')")"
+  DATES="$(python3 - "$SRC_DIR" "$ASOF" "$TODAY" <<'PY'
+import sys, pathlib, datetime as dt
+src, asof, today = pathlib.Path(sys.argv[1]), sys.argv[2], sys.argv[3]
+d = dt.date.fromisoformat(asof) + dt.timedelta(days=1); end = dt.date.fromisoformat(today); out = []
+while d <= end:
+    s = d.isoformat()
+    if (src / "site" / f"{s}_site_KR.md").exists() or (src / f"{s}_일일브리핑_KR.md").exists(): out.append(s)
+    d += dt.timedelta(days=1)
+print(" ".join(out))
+PY
+)"
+  [ -n "$DATES" ] || { step "catch-up — $ASOF 이후 새 날짜 없음(정상 종료)"; exit 0; }
+  step "catch-up 대상: $DATES"
+elif [ $# -ge 1 ]; then DATES="$*"; else DATES="$TODAY"; fi
 
-# 1) 적재 — 그날 파일이 없으면 정상 종료(2 → 0). 결손은 페이지에 그대로 비워 둔다.
-step "적재 시작: $DATE"
-WROTE=1
-python3 scripts/ingest_senate_daily.py --date "$DATE"
-rc=$?
-if [ $rc -eq 2 ]; then step "$DATE 일일 브리핑 없음 — 발행하지 않음(정상 종료)"; exit 0; fi
-[ $rc -eq 0 ] || { step "✗ 적재 실패(rc=$rc) — 중단"; exit 1; }
+# 1) 날짜별: 정리본 대조(하드 게이트) → 적재 → 조사 표. 정리본이 없으면 원문 전재, 원문도 없으면 건너뜀.
+for DATE in $DATES; do
+  RAW="$SRC_DIR/${DATE}_일일브리핑_KR.md"; DIGEST="$SRC_DIR/site/${DATE}_site_KR.md"
+  if [ -f "$DIGEST" ]; then
+    step "정리본 대조: site/$(basename "$DIGEST")"
+    python3 scripts/check_site_digest.py "$RAW" "$DIGEST" 2>&1 | tee -a "$LOGF" | tail -20; [ "${PIPESTATUS[0]:-0}" = "0" ] || { step "✗ 정리본 대조 실패 — 발행 중단(정리본을 고친 뒤 재실행)"; exit 1; }
+  else
+    step "$DATE 정리본 없음 — 원문을 그대로 싣는다"
+  fi
+  step "적재 시작: $DATE"
+  WROTE=1
+  python3 scripts/ingest_senate_daily.py --date "$DATE"
+  rc=$?
+  if [ $rc -eq 2 ]; then step "$DATE 일일 브리핑 없음 — 건너뜀"; continue; fi
+  [ $rc -eq 0 ] || { step "✗ 적재 실패(rc=$rc) — 중단"; exit 1; }
+  step "여론조사 표 → senate_polls.csv ($DATE)"
+  python3 scripts/extract_daily_polls.py --date "$DATE" --apply || echo "[daily] ! 조사 추출 실패(건너뜀 — CSV 미변경)"
+done
+LAST="$(echo $DATES | awk '{print $NF}')"; DATE="$LAST"
 
-# 1.5) 여론조사 — 정리본의 「새로운 여론조사」 고정 표에서 본선 조사를 뽑아
-#      senate_polls.csv 에 append. 같은 조사는 몇 번 언급돼도 한 행(중복 제거는 스크립트가 한다).
-#      날짜·%·URL 중 하나라도 '?'이면 append 하지 않고 후보 파일에만 남긴다.
-step "여론조사 표 → senate_polls.csv"
-python3 scripts/extract_daily_polls.py --date "$DATE" --apply || echo "[daily] ! 조사 추출 실패(건너뜀 — CSV 미변경)"
-
-if git diff --quiet -- "$LOG" "$POLLS"; then
-  step "로그·조사 변경 없음(이미 적재된 날짜) — 종료"; exit 0
+if git diff --quiet -- "$LOG" "$POLLS" "$LEDGER"; then
+  step "로그·조사·장부 변경 없음(이미 적재된 날짜) — 종료"; exit 0
 fi
 
 # 2) 데이터 검증 — 하드 게이트
@@ -147,20 +162,26 @@ Rscript scripts/validate_data.R || { step "✗ 데이터 검증 실패 — 발�
 step "전체 렌더(quarto render) — 로컬 기준 약 70초"
 quarto render || { step "✗ 렌더 실패 — 발행 중단"; exit 1; }
 
+if [ "${NO_COMMIT:-0}" = "1" ]; then
+  step "NO_COMMIT — 적재·검증·렌더 완료, 커밋은 호출자(주간 발행)가 한다"
+  COMMITTED=1   # 되돌리지 않는다
+  exit 0
+fi
 if [ "${DRY_RUN:-0}" = "1" ]; then
   step "DRY_RUN — 커밋·push 생략. 변경 요약:"
-  git --no-pager diff --stat -- "$LOG" "$POLLS" | sed 's/^/    /'
+  git --no-pager diff --stat -- "$LOG" "$POLLS" "$LEDGER" | sed 's/^/    /'
   # 되돌려 놓는다 — 그냥 두면 다음 정식 실행이 '미커밋 변경' 가드에 걸린다.
-  git checkout -- "$LOG" "$POLLS" 2>/dev/null
+  git checkout -- "$LOG" "$POLLS" "$LEDGER" 2>/dev/null
   step "DRY_RUN — 작업트리 원복 완료"
   exit 0
 fi
 
 # 4) 커밋·push — 로그 + 조사 CSV 두 파일만
-git add "$LOG" "$POLLS"
+git add "$LOG" "$POLLS" "$LEDGER"
 NPOLL=$(git diff --cached --numstat -- "$POLLS" | awk '{print $1+0}')
-git commit -m "일일 자동 발행: 상원 일일 로그 ($DATE)${NPOLL:+ · 조사 +${NPOLL}행}" \
-  -m "publish_daily.sh: _NIS senate_daily/${DATE}_일일브리핑_KR.md → data/senate_daily_log.json(일일 절) + senate_polls.csv(고정 표 추출, 중복 제거)." \
+NDAYS=$(echo $DATES | wc -w | tr -d ' ')
+git commit -m "일일 자동 발행: 상원 일일 로그 ($DATE$([ "$NDAYS" -gt 1 ] && echo " 등 ${NDAYS}일"))${NPOLL:+ · 조사 +${NPOLL}행}" \
+  -m "publish_daily.sh: _NIS senate_daily/<날짜>_일일브리핑_KR.md → data/senate_daily_log.json(일일 절) + state_ledger.json(주별 장부) + senate_polls.csv(고정 표 추출, 중복 제거). 날짜: $DATES" \
   || { echo "[daily] 커밋 실패"; exit 1; }
 COMMITTED=1
 

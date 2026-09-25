@@ -211,6 +211,63 @@ def parse_file(path: Path) -> dict:
     }
 
 
+LEDGER = REPO / "data" / "state_ledger.json"
+# 정리본 주별 소절의 태그 줄 → 장부 항목. v1.1 태그와 v1.0 태그(판세→polls, 이월→local)를 함께 받는다.
+LEDGER_TAGS = {"여론조사": "polls", "판세": "polls", "자금": "money", "로컬": "local", "이월": "local", "주 함의": "insight"}
+EMPTY_MARKERS = ("없음", "변동 없음", "해당 없음")
+
+
+def _norm_text(t: str) -> str:
+    t = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", t)     # 링크 → 앵커 텍스트
+    t = re.sub(r"[*_`]", "", t)
+    return re.sub(r"\s+", " ", t).strip().lower()
+
+
+def ledger_entries(day: dict) -> list[dict]:
+    """한 날짜의 정리본에서 (주, 항목, 문장) 목록을 뽑는다. 태그 줄 하나가 한 항목."""
+    out = []
+    for st, body in day.get("states", {}).items():
+        for line in body.splitlines():
+            m = re.match(r"^- \*\*(여론조사|판세|자금|로컬|이월|주 함의)\*\*\s*[:：]\s*(.+?)\s*$", line)
+            if not m:
+                continue
+            cat, text = LEDGER_TAGS[m.group(1)], m.group(2).strip()
+            bare = _norm_text(text).rstrip(" .。")
+            # "없음" · "없음." · "없음(직전: …)" · "변동 없음" 은 빈 항목 — 장부에 싣지 않는다
+            if not bare or any(bare == e or bare.startswith(e + "(") or bare.startswith(e + " (") for e in EMPTY_MARKERS):
+                continue
+            urls = re.findall(r"\((https?://[^)]+)\)", text)
+            out.append({"state": st, "cat": cat, "date": day["date"], "text": text, "urls": urls, "key": bare[:160]})
+    return out
+
+
+def build_ledger(log: dict) -> dict:
+    """전체 로그(날짜 내림차순)에서 장부를 다시 만든다. 같은 문장(정규화)은 처음 본 날짜 하나만 싣고,
+    같은 주·항목·날짜에 같은 문장이 반복되면 한 번만 싣는다. 항목별 최신순."""
+    seen = {}
+    for day in sorted(log["days"], key=lambda d: d["date"]):
+        if day.get("source_kind") != "digest":
+            continue  # 원문 전재(정형 태그 없음)는 장부에 넣지 않는다
+        for e in ledger_entries(day):
+            k = (e["state"], e["cat"], e["key"])
+            if k not in seen:
+                seen[k] = {"date": e["date"], "text": e["text"], "urls": e["urls"], "last": e["date"]}
+            else:
+                seen[k]["last"] = e["date"]
+    states = {}
+    for (st, cat, _), v in seen.items():
+        states.setdefault(st, {"polls": [], "money": [], "local": [], "insight": []})[cat].append(v)
+    for st in states:
+        for cat in states[st]:
+            states[st][cat].sort(key=lambda v: (v["date"], v["text"]), reverse=True)
+    return {
+        "as_of": log.get("as_of"),
+        "source_label": "상원 일일 정리본(senate_daily/site)의 주별 태그 줄 — scripts/ingest_senate_daily.py build_ledger()",
+        "provenance_note": "여론조사·자금·로컬·주 함의 네 항목. 같은 문장은 처음 본 날짜로 한 번만 싣고 last 에 마지막 언급일. 원문 전재(정리본 이전) 날짜는 제외.",
+        "states": states,
+    }
+
+
 def load_log() -> dict:
     if OUT.exists():
         return json.loads(OUT.read_text(encoding="utf-8"))
@@ -284,6 +341,10 @@ def main() -> int:
         return 0
     OUT.write_text(json.dumps(log, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(f"[ingest] ✓ {OUT.relative_to(REPO)}  추가 {added} · 교체 {replaced} · 총 {len(log['days'])}일 · as_of {log['as_of']}")
+    led = build_ledger(log)
+    LEDGER.write_text(json.dumps(led, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    n = {c: sum(len(v[c]) for v in led["states"].values()) for c in ("polls", "money", "local", "insight")}
+    print(f"[ingest] ✓ {LEDGER.relative_to(REPO)}  주 {len(led['states'])} · 여론조사 {n['polls']} · 자금 {n['money']} · 로컬 {n['local']} · 함의 {n['insight']}")
     return 0
 
 
