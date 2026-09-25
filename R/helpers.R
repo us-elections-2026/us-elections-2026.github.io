@@ -1807,3 +1807,45 @@ daily_log_md <- function(scope = "SENATE", n_days = 14, n_open = 1) {
          '\n<p class="text-muted" style="font-size:.78rem;">원천: `_NIS` 상원 일일 브리핑 KR(', nz(days[[length(days)]]$date), ' ~ ', nz(days[[1]]$date),
          '). 추출 `scripts/ingest_senate_daily.py` · 렌더 `daily_log_md()`.</p>\n')
 }
+
+# 1.9 주별 일일 장부 (State Focus 탭별 갱신 블록) --------------------------------
+# data/state_ledger.json — 정리본의 주별 태그 줄(여론조사·자금·로컬·주 함의)을 날짜별로 쌓은 장부.
+# 같은 문장은 처음 본 날짜로 한 번만 실린다(중복 제거는 ingest가 한다).
+# cat: "polls" | "money" | "local" | "insight". n: 최근 몇 건.
+.ledger <- function() {
+  path <- file.path("data", "state_ledger.json")
+  if (!file.exists(path)) return(NULL)
+  jsonlite::read_json(path, simplifyVector = FALSE)
+}
+state_ledger_md <- function(code, cat = c("polls", "money", "local", "insight"), n = 12,
+                            title = NULL) {
+  cat <- match.arg(cat)
+  d <- .ledger()
+  lab <- c(polls = "여론조사 동향", money = "자금 투입·지출", local = "로컬 상황", insight = "주 함의")[[cat]]
+  if (is.null(title)) title <- lab
+  items <- if (!is.null(d) && !is.null(d$states[[code]])) d$states[[code]][[cat]] else list()
+  head <- sprintf('<div class="ledger-hd">%s <span class="rcard-mu">· 일일 정리본에서 날짜별 누적 · 같은 사안은 처음 본 날짜로 한 번</span></div>\n', title)
+  if (!length(items))
+    return(paste0(head, '<p class="pt-empty">아직 장부에 오른 항목이 없습니다 — 정리본이 쌓이면 자동으로 채워집니다.</p>\n'))
+  items <- items[seq_len(min(n, length(items)))]
+  rows <- vapply(items, function(it) {
+    tail <- if (!is.null(it$last) && !identical(it$last, it$date)) sprintf(' <span class="rcard-mu">(~%s 재언급)</span>', substr(it$last, 6, 10)) else ""
+    sprintf("- <b class=\"ledger-d\">%s</b> %s%s", substr(it$date, 6, 10), it$text, tail)
+  }, character(1))
+  paste0(head, "\n::: {.ledger}\n", paste(rows, collapse = "\n"), "\n:::\n",
+         sprintf('<p class="rcard-mu ledger-ft">기준 %s · 최근 %d건 표시(전체 %d건)</p>\n',
+                 nz <- if (is.null(d$as_of)) "" else d$as_of, length(items),
+                 length(d$states[[code]][[cat]])))
+}
+# 주 개요 탭 머리의 "오늘의 판세" — 최신 정리본의 여론조사·주 함의 한 줄씩
+state_today_md <- function(code) {
+  d <- .ledger()
+  if (is.null(d) || is.null(d$states[[code]])) return("")
+  pick <- function(cat) { v <- d$states[[code]][[cat]]; if (length(v)) v[[1]] else NULL }
+  po <- pick("polls"); ins <- pick("insight")
+  if (is.null(po) && is.null(ins)) return("")
+  paste0('\n::: {.today}\n',
+         if (!is.null(po))  sprintf("- **여론조사** <span class=\"rcard-mu\">%s</span> — %s\n", substr(po$date, 6, 10), po$text) else "",
+         if (!is.null(ins)) sprintf("- **판단** <span class=\"rcard-mu\">%s</span> — %s\n", substr(ins$date, 6, 10), ins$text) else "",
+         ':::\n')
+}

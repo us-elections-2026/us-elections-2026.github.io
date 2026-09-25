@@ -498,3 +498,17 @@ main table.gt_table th.gt_col_heading { white-space: pre-line; text-align: cente
 .daily-entry ul { padding-left: 1.15rem; }
 .daily-entry li { margin: 4px 0; line-height: 1.6; }
 .daily-entry .callout { margin: 0.6rem 0; }
+
+/* 주별 일일 장부 블록 — State Focus 탭(주 개요·최신 여론조사·펀드레이징) (2026-09-25) */
+.ledger-hd { font-weight: 700; font-size: 0.9rem; margin: 1rem 0 0.3rem; color: #374151; }
+.ledger ul { padding-left: 1.1rem; margin: 0; }
+.ledger li { margin: 4px 0; line-height: 1.55; font-size: 0.92rem; }
+.ledger-d { font-family: var(--mono); font-weight: 700; color: #2166ac; margin-right: 4px; }
+.ledger-ft { font-size: 0.74rem; margin: 4px 0 0; }
+.today {
+  border: 1px solid #d9e2ec; border-left: 4px solid #2166ac; background: #f7f9fc;
+  border-radius: 8px; padding: 0.6rem 1rem 0.4rem; margin: 0.8rem 0 1rem;
+}
+.today::before { content: "📌 오늘의 판세"; display: block; font-weight: 700; font-size: 0.78rem; color: #2166ac; margin-bottom: 4px; }
+.today ul { margin: 0; padding-left: 1.1rem; }
+.today li { margin: 3px 0; line-height: 1.55; font-size: 0.92rem; }

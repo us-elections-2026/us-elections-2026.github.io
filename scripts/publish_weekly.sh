@@ -79,6 +79,11 @@ python3 scripts/fetch_rtwh_forecast.py || echo "[weekly] ! RtWH 예측 취득 �
 echo "[weekly] 조사기관별 개별 조사 취득"
 python3 scripts/fetch_pollster_polls.py || echo "[weekly] ! 개별 조사 취득 실패(건너뜀 — 직전 값 유지)"
 
+# 1.9) 상원 일일 catch-up — 10:15 일일 발행이 빠진 날짜(정리본은 있으나 미발행)를 주간이 대신 싣는다(2026-09-25).
+#      NO_COMMIT: 적재·검증·렌더까지만 하고 커밋은 아래 §5가 data/ 째로 한다.
+echo "[weekly] 상원 일일 catch-up"
+NO_COMMIT=1 scripts/publish_daily.sh --catchup || echo "[weekly] ! 일일 catch-up 실패(건너뜀 — 아래 검증·렌더가 다시 본다)"
+
 # 2) Korea Watch 동기화(_NIS DB → data/korea_watch.csv, idempotent)
 echo "[weekly] Korea Watch 동기화"
 python3 scripts/sync_korea_watch.py || echo "[weekly] ! KW 동기화 경고(계속)"

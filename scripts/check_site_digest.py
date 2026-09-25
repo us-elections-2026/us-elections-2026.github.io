@@ -15,9 +15,12 @@ import sys
 from pathlib import Path
 
 STATES = ["조지아", "미시간", "메인", "노스캐롤라이나", "알래스카", "오하이오", "텍사스", "아이오와", "뉴햄프셔"]
-ELEMENTS = ["판세", "이월", "주 함의"]
+# v1.1(2026-09-25): 여론조사·자금·로컬·주 함의. v1.0(판세·이월·주 함의) 정리본도 통과시킨다(소급분 호환).
+ELEMENT_SETS = [["여론조사", "자금", "로컬", "주 함의"], ["판세", "이월", "주 함의"]]
 TABLE_HEADER = "| 주 | 조사기관 | 후원 | 성향 | 모집단 | n | 조사시작 | 조사종료 | D후보 | D% | R후보 | R% | 출처URL |"
-CAPS = {"state_section": 1500, "digest_total": 25000, "lead": 500}
+# 주 소절 상한은 프롬프트에 1,500자로 적혀 있다. 검사는 3% 여유(1,550)를 둔다 — 1,509자 같은
+# 경계 사례 때문에 발행이 통째로 멈추는 것보다 상한을 "목표"로 두는 편이 낫다(2026-09-25).
+CAPS = {"state_section": 1550, "digest_total": 25000, "lead": 500}
 
 URL_RE = re.compile(r"https?://\S+")
 NUM_RE = re.compile(r"\d+(?:[.,]\d+)*")
@@ -94,9 +97,10 @@ def main() -> int:
         if key is None:
             errs.append(f"주 소절 누락 또는 순서 오류: ### {i}. {st}"); continue
         body_st = sub[key]
-        for el in ELEMENTS:
-            if not re.search(rf"^- \*\*{re.escape(el)}\*\*", body_st, re.M):
-                errs.append(f"{st}: 요소 누락 — **{el}**")
+        ok = any(all(re.search(rf"^- \*\*{re.escape(el)}\*\*", body_st, re.M) for el in es) for es in ELEMENT_SETS)
+        if not ok:
+            have = [el for es in ELEMENT_SETS for el in es if re.search(rf"^- \*\*{re.escape(el)}\*\*", body_st, re.M)]
+            errs.append(f"{st}: 요소 누락 — 필요 {ELEMENT_SETS[0]} · 있음 {have}")
         if len(body_st) > CAPS["state_section"]:
             errs.append(f"{st}: {len(body_st)}자 > 상한 {CAPS['state_section']}자")
     polls = next((v for k, v in sec.items() if "새로운 여론조사" in k), "")

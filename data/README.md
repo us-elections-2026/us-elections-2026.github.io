@@ -29,6 +29,14 @@
   예비 전 가상대결(예: MI Stevens–Rogers)은 후보 쌍이 달라 별도 행으로 허용된다.
 - 날짜·%·URL 중 하나라도 없는 조사는 넣지 않는다 → `senate_polls_candidates.csv`(추출 스크립트가 매번 새로 씀, 검토용·비발행).
 
+### `state_ledger.json` — 주별 일일 장부 (**자동 생성 — 직접 편집하지 말 것**)
+- 최상위: `as_of`, `source_label`, `provenance_note`, **`states`**(주 약자 → `{polls, money, local, insight}` 각 배열).
+- 항목: `{date, text, urls[], last}` — `date`=처음 본 정리본 날짜, `last`=마지막 언급일, `text`=정리본 태그 줄 마크다운 원문.
+- **생성**: `scripts/ingest_senate_daily.py`의 `build_ledger()`가 로그 안 정리본(`source_kind=digest`)의 주별 태그 줄
+  (`**여론조사**`·`**자금**`·`**로컬**`·`**주 함의**`; 구 `판세`→polls, `이월`→local)에서 재구성. 같은 문장(정규화)은 한 번.
+  "없음"류는 제외. 원문 전재 날짜는 태그가 없어 제외.
+- **소비**: `state_ledger_md()`(탭별 일일 기록 블록)·`state_today_md()`(주 개요 탭 「오늘의 판세」) — R/helpers.R 1.9.
+
 ### `senate_daily_log.json` — 상원 일일 브리핑 로그 (**자동 생성 — 직접 편집하지 말 것**)
 - 최상위: `as_of`(최신 날짜), `source_label`, `provenance_note`, **`days`**(배열, 날짜 내림차순).
 - `days[]`: `date`, `source_file`, `chars`, `lead`(도입 문단), `summary`(오늘의 핵심 요약),
