@@ -31,8 +31,7 @@ cat(state_today_md("IA"))
 :::
 
 - **개방석의 배경**: **Joni Ernst**(R, 2선) 상원의원이 **2025년 9월 2일** 영상 메시지로 불출마를 발표했습니다. 아이오와 최초의 여성 연방상원의원이자 최초의 여성 전투참전용사 상원의원이었습니다. 발표문의 사유는 가족이었습니다 — "이제는 내가 가족에게 돌려줄 때"라는 취지입니다. (측근 전언으로 보도된 다른 동기들은 본인 공개 발표문에 없어 이 사이트는 싣지 않습니다.) ([Iowa Public Radio](https://www.iowapublicradio.org/political-news/2025-09-02/sen-joni-ernst-will-not-run-for-reelection-in-2026))
-- **정치 지형**: 2024년 대선에서 **트럼프 55.7% 대 해리스 42.5%(R+13.2)** — 1972년 이후 아이오와에서 어느 후보든 얻은 최대 격차이자, 1980년 이후 공화당의 첫 두 자릿수 승리입니다. ([2024 Iowa 결과](https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_Iowa))
-- **상원 이력**: 민주당의 마지막 아이오와 연방상원 **승리는 2008년 Tom Harkin의 재선**이고, 그의 임기는 2015년 1월 3일에 끝났습니다. 즉 민주당은 **18년째 이 주에서 상원 선거를 이기지 못했습니다.** ([상원의원 목록](https://en.wikipedia.org/wiki/List_of_United_States_senators_from_Iowa))
+
 - **등급 이동**: Cook·Sabato는 6/2 경선 직후인 **6월 3일 나란히 Likely R → Lean R**로 내렸고, **Cook은 8/20 한 단계 더 내려 Toss Up**으로 옮겼습니다(Sabato는 8/26 갱신에서도 Lean R 유지). ([Cook](https://thecookpoliticalreport.substack.com/p/iowa-senate-moves-from-likely-to) · [Sabato](https://centerforpolitics.org/crystalball/rating-changes-in-iowa-following-tuesdays-primary/))
 
 ### 로컬 상황 — 일일 기록
@@ -41,6 +40,37 @@ cat(state_today_md("IA"))
 #| output: asis
 cat(state_ledger_md("IA", "local"))
 ```
+
+## 배경
+
+### 개관
+
+- **정치 지형**: 2024년 대선에서 **트럼프 55.7% 대 해리스 42.5%(R+13.2)** — 1972년 이후 아이오와에서 어느 후보든 얻은 최대 격차이자, 1980년 이후 공화당의 첫 두 자릿수 승리입니다. ([2024 Iowa 결과](https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_Iowa))
+
+- **상원 이력**: 민주당의 마지막 아이오와 연방상원 **승리는 2008년 Tom Harkin의 재선**이고, 그의 임기는 2015년 1월 3일에 끝났습니다. 즉 민주당은 **18년째 이 주에서 상원 선거를 이기지 못했습니다.** ([상원의원 목록](https://en.wikipedia.org/wiki/List_of_United_States_senators_from_Iowa))
+
+### 경제·인구 구성
+- 인구는 2024년 기준 약 321만 명입니다. ([Census QuickFacts](https://www.census.gov/quickfacts/fact/table/IA/PST045224))
+- 인종 구성은 2024년 ACS 기준 비히스패닉 백인 82.3%, 히스패닉 7.3%, 흑인 3.8%입니다. 아시아계 비율은 미확인입니다. ([Data USA](https://datausa.io/profile/geo/iowa))
+- 중위 가구소득은 2024년 기준 75,059달러입니다. ([Data USA](https://datausa.io/profile/geo/iowa))
+- 도시 인구 비중은 2000년 기준 61%였습니다. 이후 디모인·시더래피즈·아이오와시티 권역이 성장하고 농촌 인구는 빠져나가는 흐름이 이어집니다. ([Wikipedia](https://en.wikipedia.org/wiki/Iowa))
+- 주력 산업은 식품가공 중심 제조업, 디모인의 보험·금융 클러스터, 옥수수·대두 농업입니다. Principal Financial, Wells Fargo, Nationwide 등 금융사가 대형 고용주입니다. ([Common Sense Institute](https://commonsenseinstituteus.org/research/made-in-iowa-the-outsized-contribution-of-manufacturing-in-the-states-economy/) · [Catch Des Moines](https://www.catchdesmoines.com/iowa-caucus/rankings-statistics/))
+- 한국 기업의 대형 투자 사례는 미확인입니다.
+
+### 역대 선거 결과의 특징
+- 대선은 2012년 Obama +5.8%p, 2016년 Trump +9.4%p, 2020년 Trump +8.2%p, 2024년 Trump +13.2%p였습니다. ([Wikipedia](https://en.wikipedia.org/wiki/United_States_presidential_elections_in_Iowa))
+- 연방상원은 2016년 Grassley +24.4%p, 2020년 Ernst +6.6%p, 2022년 Grassley +12.2%p로 모두 공화가 이겼습니다. ([Wikipedia 2020](https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_Iowa) · [Ballotpedia 2022](https://ballotpedia.org/United_States_Senate_election_in_Iowa,_2022))
+- 주지사는 2018년 Reynolds +2.8%p, 2022년 Reynolds +18.5%p였습니다. ([Wikipedia 2018](https://en.wikipedia.org/wiki/2018_Iowa_gubernatorial_election) · [2022](https://en.wikipedia.org/wiki/2022_Iowa_gubernatorial_election))
+- 2012년 Obama 승리를 끝으로 공화 우위로 재편됐고, 대선·상원·주지사 모두 격차가 갈수록 커지는 추세입니다.
+
+### 주지사·주의회
+- 현 주지사는 공화당 Kim Reynolds로 2017년 승계 취임 뒤 2018년·2022년 당선됐습니다. 2025년 4월 불출마를 선언해 2026년 주지사 선거는 공석 경쟁입니다. ([Iowa Capital Dispatch](https://iowacapitaldispatch.com/2025/04/11/gov-kim-reynolds-will-not-seek-reelection-in-2026/))
+- 주상원 50석은 공화 35·민주 15, 주하원 100석은 공화 67·민주 33입니다(2026년 회기). 주지사까지 공화 트라이펙타입니다. ([Ballotpedia](https://ballotpedia.org/2026_Iowa_legislative_session))
+- 2026년 11월 3일에는 주지사(공석)와 주하원 100석 전체, 주상원 절반이 연방상원과 함께 걸려 있습니다. ([Wikipedia](https://en.wikipedia.org/wiki/2026_Iowa_gubernatorial_election))
+
+### 유권자 등록·투표율
+- 활성 등록 유권자는 2026년 9월 1일 기준 1,819,109명입니다. 공화 711,990명, 무당적 564,581명, 민주 529,275명 순으로 공화가 민주를 18만 명 넘게 앞섭니다. ([Iowa SOS 등록 통계](https://sos.iowa.gov/elections/pdf/VRStatsArchive/2026/CongSep26.pdf))
+- VEP 투표율은 2018년 56.9%, 2020년 72.0%, 2022년 51.9%입니다. 2024년 확정치는 미확인입니다. ([U.S. Elections Project](https://election.lab.ufl.edu/voter-turnout/))
 
 ## 후보자
 
@@ -75,11 +105,31 @@ cat(candidate_cards_html("IA"))
 
 ## 선거 제도
 
+### 경선·본선 방식
+
 - **준(準)개방형 경선**: 아이오와는 형식상 정당 등록제이지만, 주법이 **투표소에서 당일 당적 변경·선언**을 허용합니다 — "등록 유권자는 누구나 선거일 투표소에서 당적을 바꾸거나 선언할 수 있고 그 경선에서 투표할 자격을 갖는다"(Iowa Code §43.42). 등록 요건이 창구에서 사실상 무력화되는 구조라, 무당파의 경선 유입 장벽이 낮습니다. ([§43.42](https://www.legis.iowa.gov/docs/code/43.42.pdf))
 - **결선 없음 — 단, 35% 규칙**: 본선은 **단순다수**이고 결선투표가 없습니다(일반선거 결선을 두는 주는 조지아·미시시피·루이지애나뿐). 다만 경선에 한해, 후보가 3인 이상인데 **아무도 35%를 못 넘기면 경선이 무효가 되고 정당 전당대회가 지명**합니다(§43.65). 2026년은 양당 모두 2파전이라 발동되지 않았습니다. ([§43.65](https://www.legis.iowa.gov/docs/code/43.65.pdf) · [Ballotpedia](https://ballotpedia.org/Electoral_systems_in_Iowa))
 - **RCV 선제 금지**: 아이오와는 **RCV를 한 번도 쓴 적이 없는 상태에서 법으로 금지**했습니다 — HF 954(2025-06-02 Reynolds 주지사 서명), 금지 조항은 **2026년 1월 1일 발효**. RCV를 금지한 17번째 주입니다. 같은 사이클의 [알래스카](ak.qmd)가 RCV로 치러지는 것과 정반대의 선택입니다. ([Ballotpedia News](https://news.ballotpedia.org/2025/06/04/iowa-gov-reynolds-signs-bill-banning-rcv/))
 - **SF 413(2021) 선거법 개정**: 조기투표를 **29일에서 20일로 단축**하고(§53.8), 투표 마감을 **오후 9시 → 오후 8시**로 앞당겼으며(§49.73), 우편투표는 **소인이 아니라 선거일 오후 8시까지 도착**해야 유효하고, 드롭박스는 **카운티당 1개**로 제한됐습니다(§53.17). ※ 일부 인용에서 보이는 "18일 단축"은 **최종 통과 전 법안 버전** 기준이라 오류입니다 — 최종법은 20일입니다. ([§53.8](https://www.legis.iowa.gov/docs/code/53.8.pdf) · [§49.73](https://www.legis.iowa.gov/docs/code/49.73.pdf) · [§53.17](https://www.legis.iowa.gov/docs/code/53.17.pdf))
 - **비엄격 사진 신분증**: 1차 인정 신분증이 없어도 주 발급 무료 유권자ID카드나 **같은 선거구 등록유권자의 서면 선서**로 대체할 수 있어, 오하이오·텍사스형의 엄격(strict) ID와는 성격이 다릅니다(§49.78). ([§49.78](https://www.legis.iowa.gov/docs/code/49.78.pdf))
+
+### 우편·조기 투표
+- 우편(부재자)투표는 사유 없이 신청할 수 있습니다. 신청서는 선거일 15일 전 오후 5시까지 카운티 오디터 사무실에 도착해야 합니다. ([Iowa SOS 부재자투표](https://sos.iowa.gov/voters/absentee-voting))
+- 대면 조기투표는 선거일 20일 전부터 선거 전날 오후 5시까지 카운티 오디터 사무실 등에서 합니다. 2026년 본선은 규정을 적용하면 10월 14일부터 11월 2일까지입니다. ([Iowa SOS 부재자투표](https://sos.iowa.gov/voters/absentee-voting))
+- 반송 용지는 소인과 무관하게 선거일 투표 마감(오후 8시) 전에 카운티 오디터 사무실에 도착해야 개표합니다. ([Iowa SOS 부재자투표](https://sos.iowa.gov/voters/absentee-voting))
+- 드롭박스는 2021년 SF 413으로 카운티당 1개로 제한됐습니다. 임시(provisional)투표 인정 기준은 공식 사이트에서 미확인입니다. ([Iowa Code §53.17](https://www.legis.iowa.gov/docs/code/53.17.pdf))
+
+### 유권자 등록
+- 사전 등록 마감은 선거일 15일 전 오후 5시이고, 온라인은 같은 날 오후 11시 59분까지입니다. ([Iowa SOS 등록](https://sos.iowa.gov/voters/voter-registration))
+- 온라인 등록은 아이오와 교통부 사이트에서 운전면허증·비운전자 ID 번호로 합니다. ([Iowa SOS 등록](https://sos.iowa.gov/voters/voter-registration))
+- 자동 등록(AVR) 시행 여부는 공식 사이트에서 미확인입니다.
+- 선거일 등록(Election Day Registration)이 있습니다. 투표소에서 신원과 거주를 증명하면 그날 등록하고 투표할 수 있습니다. ([Iowa SOS 등록](https://sos.iowa.gov/voters/voter-registration))
+
+### 신분 확인
+- 사진 신분증을 요구하되 없어도 대체 서류나 다른 등록 유권자의 보증(attest)으로 투표할 수 있는 비엄격(non-strict) 방식입니다. ([Iowa SOS 신분증 FAQ](https://sos.iowa.gov/voters/voter-id-faq))
+- 인정 신분증은 아이오와 유권자 ID 카드, 운전면허증, 비운전자 ID, 군·재향군인 ID, 미국 여권, 부족 ID입니다. ([Iowa SOS 신분증 FAQ](https://sos.iowa.gov/voters/voter-id-faq))
+- 주 발급 ID가 없는 등록 유권자에게는 무료 유권자 ID 카드가 우편으로 자동 발급됩니다. ([Iowa SOS 신분증 FAQ](https://sos.iowa.gov/voters/voter-id-faq))
+- 사진 ID 요건은 2019년 1월 1일부터 전면 시행됐습니다. 이후 개정의 연도는 공식 사이트에서 미확인입니다. ([Ballotpedia](https://ballotpedia.org/Voter_ID_in_Iowa))
 
 ## 일일 브리핑
 

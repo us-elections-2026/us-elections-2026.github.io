@@ -30,16 +30,44 @@ cat(state_today_md("TX"))
 - **한국 함의**: 삼성 Taylor $44B 팹이 구조적 후크이나, 후보 직접 발언은 미확인.
 :::
 
-- **선거사 — 높은 천장**: 2024 대선 **Trump +13.8**(2012년 이후 최대), 상원도 1988년 이후 민주당이 이긴 적이 없습니다. 다만 추세선은 좁아져 왔습니다 — 2018 Cruz +2.6(O'Rourke), 2024 Cruz +8.5(Allred). ([Wikipedia](https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas))
-- **유권자 구성**: 라티노가 등록 유권자의 **25% 이상**으로, 2026 경선에서 라티노 투표자의 65%가 민주·35%가 공화 경선에 참여했습니다. 생활비·임금·주거가 최우선 이슈입니다. ([Voto Latino](https://votolatino.org/media/press-releases/latino-voters-drive-historic-turnout-in-2026-texas-primary/))
-- **경제 — 삼성 테일러 반도체**: 삼성전자가 Taylor(Williamson County)에 **2nm EUV 팹**을 건설 중입니다(계획 투자 최대 **$44B**, CHIPS 보조 $4B+, 텍사스 반도체기금 $250M, **2026년 말 가동 목표**). Tesla의 AI 칩 위탁생산 발표로 물량 불확실성이 일부 해소됐습니다. ([American Progress](https://www.americanprogress.org/article/new-samsung-semiconductor-plant-in-taylor-texas/))
-
 ### 로컬 상황 — 일일 기록
 
 ```{r}
 #| output: asis
 cat(state_ledger_md("TX", "local"))
 ```
+
+## 배경
+
+### 개관
+
+- **선거사 — 높은 천장**: 2024 대선 **Trump +13.8**(2012년 이후 최대), 상원도 1988년 이후 민주당이 이긴 적이 없습니다. 다만 추세선은 좁아져 왔습니다 — 2018 Cruz +2.6(O'Rourke), 2024 Cruz +8.5(Allred). ([Wikipedia](https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas))
+
+- **유권자 구성**: 라티노가 등록 유권자의 **25% 이상**으로, 2026 경선에서 라티노 투표자의 65%가 민주·35%가 공화 경선에 참여했습니다. 생활비·임금·주거가 최우선 이슈입니다. ([Voto Latino](https://votolatino.org/media/press-releases/latino-voters-drive-historic-turnout-in-2026-texas-primary/))
+
+- **경제 — 삼성 테일러 반도체**: 삼성전자가 Taylor(Williamson County)에 **2nm EUV 팹**을 건설 중입니다(계획 투자 최대 **$44B**, CHIPS 보조 $4B+, 텍사스 반도체기금 $250M, **2026년 말 가동 목표**). Tesla의 AI 칩 위탁생산 발표로 물량 불확실성이 일부 해소됐습니다. ([American Progress](https://www.americanprogress.org/article/new-samsung-semiconductor-plant-in-taylor-texas/))
+
+### 경제·인구 구성
+- 인구는 2024년 7월 기준 약 3,129만 명입니다. ([Census QuickFacts](https://www.census.gov/quickfacts/TX))
+- 인종 구성은 히스패닉 39.8%, 비히스패닉 백인 39.6%, 흑인 13.6%, 아시아계 6.0%로 히스패닉이 최대 집단입니다. ([Census QuickFacts](https://www.census.gov/quickfacts/TX))
+- 중위 가구소득은 2024년 ACS 기준 78,476달러입니다. ([Census QuickFacts](https://www.census.gov/quickfacts/TX))
+- 주력 산업은 에너지(원유·가스·풍력), 오스틴의 반도체·IT, 포트워스의 항공우주·방위, 휴스턴의 의료, 전국 최다 농장을 둔 농업입니다. ([Wikipedia](https://en.wikipedia.org/wiki/Economy_of_Texas))
+- ExxonMobil, AT&T, Dell, Southwest·American Airlines 등 Fortune 500 기업 57곳의 본사가 있습니다. ([Wikipedia](https://en.wikipedia.org/wiki/Economy_of_Texas))
+
+### 역대 선거 결과의 특징
+- 대선은 2012년 Romney +15.8%p, 2016년 Trump +9.0%p, 2020년 Trump +5.6%p, 2024년 Trump +13.7%p였습니다. ([Wikipedia](https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_Texas))
+- 연방상원은 2018년 Cruz +2.6%p, 2020년 Cornyn +9.6%p, 2024년 Cruz +8.5%p로 모두 공화가 이겼습니다. ([Wikipedia](https://en.wikipedia.org/wiki/2024_United_States_Senate_election_in_Texas))
+- 주지사는 2018년 Abbott +13.3%p, 2022년 Abbott +10.9%p였습니다. ([Wikipedia](https://en.wikipedia.org/wiki/2022_Texas_gubernatorial_election))
+- 대선·상원·주지사 모두 공화가 이겨 왔습니다. 2018·2020년에 한 자릿수로 좁혀졌던 마진이 2022·2024년에 다시 벌어졌습니다.
+
+### 주지사·주의회
+- 현 주지사는 공화당 Greg Abbott으로 2023년 1월 3기를 시작했고 2026년 4선에 도전합니다. ([Wikipedia](https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election))
+- 주상원 31석은 공화 20·민주 11, 주하원 150석은 공화 88·민주 62입니다(2024년 선거 직후 기준). 2003년부터 공화 트라이펙타입니다. ([Ballotpedia](https://ballotpedia.org/Party_control_of_Texas_state_government))
+- 2026년 11월 3일에는 주지사·부지사·법무장관 등 주 전체 선출직과 주상원 16석, 주하원 150석 전체가 연방상원과 함께 걸려 있습니다. ([Ballotpedia](https://ballotpedia.org/Texas_elections,_2026))
+
+### 유권자 등록·투표율
+- 등록 유권자는 18,657,918명입니다(2026년 3월 예비선거 기준). 정당 등록제는 없습니다. ([Texas SOS](https://www.sos.state.tx.us/elections/historical/mar2026.shtml))
+- VEP 투표율은 2018년 45.1%, 2020년 59.8%, 2022년 41.6%로 전국 최하위권입니다. 2024년 확정치는 미확인입니다. ([U.S. Elections Project](https://election.lab.ufl.edu/voter-turnout/))
 
 ## 후보자
 
@@ -61,8 +89,29 @@ cat(candidate_cards_html("TX"))
 
 ## 선거 제도
 
+### 경선·본선 방식
+
 - **경선 결선 제도**: 1차 경선에서 과반(50%+1) 미달 시 상위 2인이 결선. 2026은 **1차 3/3 → 결선 5/26**(Paxton이 Cornyn을 제압)이었고, 3월 경선의 당별 투표자만 해당 당 결선에 참여할 수 있습니다. ([CBS Texas](https://www.cbsnews.com/texas/news/2026-texas-primary-runoff-elections-5-19-2026/))
 - 본선 11/3. 조기·부재자 세부 일정은 【수집】(SOS 추후 공지).
+
+### 우편·조기 투표
+- 우편투표는 사유가 있어야 합니다. 선거 기간 출타, 질병·장애, 출산 임박, 65세 이상, 수감 중 하나에 해당해야 신청할 수 있습니다. ([VoteTexas.gov FAQ](https://www.votetexas.gov/faq/index.html))
+- 2026년 본선의 신청 마감은 10월 23일입니다. 용지는 선거일 오후 7시까지 도착하거나, 그때까지 소인이 찍힌 경우 11월 4일 오후 5시까지 도착해야 합니다. ([VoteTexas.gov FAQ](https://www.votetexas.gov/faq/index.html))
+- 대면 조기투표는 2026년 본선 기준 10월 19일부터 10월 30일까지입니다. ([VoteTexas.gov FAQ](https://www.votetexas.gov/faq/index.html))
+- 드롭박스 운영 여부는 공식 사이트에서 미확인입니다.
+- 임시(provisional)투표는 명부 누락이나 사진 신분증 미지참 때 발급됩니다. 심사위원회가 6일 안에 심사해 개표 여부를 통지합니다. ([VoteTexas.gov FAQ](https://www.votetexas.gov/faq/index.html))
+
+### 유권자 등록
+- 2026년 본선의 등록 마감은 10월 5일입니다. 우편은 소인, 직접 제출은 접수일 기준입니다. ([VoteTexas.gov 등록](https://www.votetexas.gov/register-to-vote/index.html))
+- 온라인 등록은 없습니다. 온라인으로 신청서를 작성해도 출력·서명해 우편으로 내야 합니다. ([VoteTexas.gov 등록](https://www.votetexas.gov/register-to-vote/index.html))
+- 자동 등록(AVR) 시행 여부는 공식 사이트에서 미확인입니다.
+- 선거 당일 등록은 허용되지 않습니다. ([VoteTexas.gov FAQ](https://www.votetexas.gov/faq/index.html))
+
+### 신분 확인
+- 사진 신분증이 필수인 엄격(strict) 사진 ID 주입니다. ([VoteTexas.gov 신분증](https://www.votetexas.gov/voting/need-id.html))
+- 인정 신분증은 텍사스 운전면허증·선거 ID·주민 ID·총기 소지 허가증, 군 신분증, 시민권 증서, 여권의 7종입니다. ([VoteTexas.gov 신분증](https://www.votetexas.gov/voting/need-id.html))
+- 신분증을 합리적으로 구할 수 없으면 합리적 장애 신고서를 쓰고 공과금 고지서·은행 명세서·출생증명서 같은 보조 서류를 내면 정규 투표로 인정됩니다. ([VoteTexas.gov 신분증](https://www.votetexas.gov/voting/need-id.html))
+- 신분증 제도의 최근 변경 연도는 공식 사이트에서 미확인입니다.
 
 ## 일일 브리핑
 
