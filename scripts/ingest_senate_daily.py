@@ -210,6 +210,8 @@ def parse_file(path: Path) -> dict:
         "gaps": sanitize(find_any(sec, ["수집 결손", "수집 공백"]) or ""),
         # v1.2(2026-09-25): 주에 속하지 않는 자금 사실(전국 슈퍼팩 총액·당 위원회 배분 등) — 없으면 빈 문자열
         "national_money": sanitize(find_any(sec, ["전국 자금"]) or ""),
+        # v1.3(2026-09-25): 선거 법·제도 동향(행정명령·소송·판결·선거 행정 규칙) — 없으면 빈 문자열
+        "national_legal": sanitize(find_any(sec, ["법·제도", "법 제도", "선거 법·제도"]) or ""),
     }
 
 
@@ -240,17 +242,18 @@ def ledger_entries(day: dict) -> list[dict]:
                 continue
             urls = re.findall(r"\((https?://[^)]+)\)", text)
             out.append({"state": st, "cat": cat, "date": day["date"], "text": text, "urls": urls, "key": bare[:160]})
-    # 전국 자금 절(v1.2): 불릿 하나가 한 항목, 주 코드 "US"
-    for line in (day.get("national_money") or "").splitlines():
-        m = re.match(r"^- \s*(.+?)\s*$", line)
-        if not m:
-            continue
-        text = m.group(1).strip()
-        bare = _norm_text(text).rstrip(" .。")
-        if not bare or any(bare == e or bare.startswith(e + "(") or bare.startswith(e + " (") for e in EMPTY_MARKERS):
-            continue
-        urls = re.findall(r"\((https?://[^)]+)\)", text)
-        out.append({"state": "US", "cat": "money", "date": day["date"], "text": text, "urls": urls, "key": bare[:160]})
+    # 전국 절(v1.2 전국 자금 → money, v1.3 법·제도 → legal): 불릿 하나가 한 항목, 주 코드 "US"
+    for field, cat in (("national_money", "money"), ("national_legal", "legal")):
+        for line in (day.get(field) or "").splitlines():
+            m = re.match(r"^- \s*(.+?)\s*$", line)
+            if not m:
+                continue
+            text = m.group(1).strip()
+            bare = _norm_text(text).rstrip(" .。")
+            if not bare or any(bare == e or bare.startswith(e + "(") or bare.startswith(e + " (") for e in EMPTY_MARKERS):
+                continue
+            urls = re.findall(r"\((https?://[^)]+)\)", text)
+            out.append({"state": "US", "cat": cat, "date": day["date"], "text": text, "urls": urls, "key": bare[:160]})
     return out
 
 
@@ -269,14 +272,14 @@ def build_ledger(log: dict) -> dict:
                 seen[k]["last"] = e["date"]
     states = {}
     for (st, cat, _), v in seen.items():
-        states.setdefault(st, {"polls": [], "money": [], "local": [], "insight": []})[cat].append(v)
+        states.setdefault(st, {"polls": [], "money": [], "local": [], "insight": [], "legal": []})[cat].append(v)
     for st in states:
         for cat in states[st]:
             states[st][cat].sort(key=lambda v: (v["date"], v["text"]), reverse=True)
     return {
         "as_of": log.get("as_of"),
         "source_label": "상원 일일 정리본(senate_daily/site)의 주별 태그 줄 — scripts/ingest_senate_daily.py build_ledger()",
-        "provenance_note": "여론조사·자금·로컬·주 함의 네 항목. 같은 문장은 처음 본 날짜로 한 번만 싣고 last 에 마지막 언급일. 원문 전재(정리본 이전) 날짜는 제외. states.US.money 는 정리본 v1.2의 「전국 자금」 절(주에 속하지 않는 자금 사실).",
+        "provenance_note": "여론조사·자금·로컬·주 함의 네 항목. 같은 문장은 처음 본 날짜로 한 번만 싣고 last 에 마지막 언급일. 원문 전재(정리본 이전) 날짜는 제외. states.US.money 는 정리본 v1.2의 「전국 자금」 절, states.US.legal 은 v1.3의 「법·제도」 절.",
         "states": states,
     }
 

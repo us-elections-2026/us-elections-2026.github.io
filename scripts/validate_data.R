@@ -350,13 +350,29 @@ if (!is.null(ie)) {
   }
 }
 
+# ---- legal_tracker.json (선택) — 선거 법·제도 트래커 구조 --------------------------
+lt <- load_json("legal_tracker.json", optional = TRUE)
+if (!is.null(lt)) {
+  f <- "legal_tracker.json"
+  lt <- jsonlite::fromJSON(jpath(f), simplifyVector = FALSE)
+  require_keys(f, lt, c("as_of", "items"))
+  ids <- character(0)
+  for (x in lt$items) {
+    for (k in c("id","title_kr","category","status","events")) if (is.null(x[[k]])) err(f, paste("항목 필수 키 없음:", k))
+    if (!is.null(x$id)) { if (x$id %in% ids) err(f, paste("id 중복:", x$id)); ids <- c(ids, x$id) }
+    if (!is.null(x$status) && !(x$status %in% c("pending","active","ruled","closed","enjoined"))) err(f, paste(x$id, "status 값 오류:", x$status))
+    for (e in x$events) if (is.null(e$date) || is.na(suppressWarnings(as.Date(e$date)))) err(f, paste(x$id, "event date 형식 오류"))
+    if (!is.null(x$last_date) && is.na(suppressWarnings(as.Date(x$last_date)))) err(f, paste(x$id, "last_date 형식 오류"))
+  }
+}
+
 # ---- state_ledger.json (선택) — 주별 일일 장부 구조 ------------------------------
 sl <- load_json("state_ledger.json", optional = TRUE)
 if (!is.null(sl)) {
   f <- "state_ledger.json"
   sl <- jsonlite::fromJSON(jpath("state_ledger.json"), simplifyVector = FALSE)
   require_keys(f, sl, c("as_of", "states"))
-  watch <- c("GA","MI","NH","ME","NC","TX","OH","AK","IA")
+  watch <- c("GA","MI","NH","ME","NC","TX","OH","AK","IA","US")  # US = 전국 절(v1.2 자금·v1.3 법·제도)
   bad <- setdiff(names(sl$states), watch); if (length(bad)) err(f, paste("감시 9주 밖 주:", paste(bad, collapse=",")))
   for (st in names(sl$states)) for (cat in c("polls","money","local","insight")) {
     v <- sl$states[[st]][[cat]]; if (is.null(v)) { err(f, sprintf("%s: %s 항목 없음", st, cat)); next }
