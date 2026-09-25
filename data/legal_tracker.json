@@ -1,5 +1,5 @@
 {
- "as_of": "2026-09-25",
+ "as_of": "2026-09-26",
  "source_label": "1차 출처는 대법원 docket·판결문과 연방법원 기록, 2차는 SCOTUSblog·Brennan Center·Democracy Docket·언론. 사람이 주간 발행 (8)단계에서 갱신.",
  "provenance_note": "status: pending 계류 · active 진행 · ruled 판결 · closed 종결 · enjoined 집행정지. 확인 못 한 항목은 '미확인'/【수집 필요】. 2026-09-25 웹 조사(Sonnet 에이전트)와 9월 브리핑 기록으로 초기 작성. 브리핑 기반 이벤트(출처 URL 없음)는 _NIS 전국·상원 일일 브리핑 해당 날짜 기록이 근거.",
  "items": [
@@ -173,8 +173,8 @@
    "name_en": "Department of Homeland Security v. League of Women Voters (No. 26A308)",
    "court": "연방대법원 긴급신청 / DC순회항소법원 / DC 연방지법(Sooknanan)",
    "status": "pending",
-   "status_kr": "정부 집행정지 신청 계류 — 9/15 답변 뒤 결정 소식 없음(9/24 브리핑까지)",
-   "last_date": "2026-09-15",
+   "status_kr": "미결 — 9/26 대법원 docket 기준 명령 없음(마지막 기록 9/17 아미쿠스). 결정은 언제든 가능",
+   "last_date": "2026-09-17",
    "next_date": null,
    "next_kr": "대법원 결정 미정",
    "summary_kr": "DHS의 SAVE(외국인 자격 검증) 데이터베이스를 개조해 유권자 명부 대조에 쓰는 것을 지법이 막았고, 항소법원도 정지를 거부했습니다. 정부가 대법원에 긴급신청을 냈고 Roberts 대법원장이 9/15까지 답변을 명령했습니다. 의회의 SAVE Act(시민권 서류 의무화 법안)와는 다른 사안입니다.",
@@ -199,9 +199,23 @@
      "date": "2026-09-15",
      "text": "Roberts 대법원장이 정한 답변서 기한(ET 오후 4시)",
      "url": ""
+    },
+    {
+     "date": "2026-09-15",
+     "text": "상대방(LWV·EPIC) 반대의견서·텍사스 답변 제출",
+     "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/26a308.html"
+    },
+    {
+     "date": "2026-09-16",
+     "text": "정부 반박서면 제출, 플로리다·인디애나·아이오와·오하이오 아미쿠스",
+     "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/26a308.html"
     }
    ],
    "sources": [
+    {
+     "label": "대법원 docket 26A308",
+     "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/26a308.html"
+    },
     {
      "label": "SCOTUSblog",
      "url": "https://www.scotusblog.com/2026/09/citing-election-fraud-concerns-trump-administration-brings-dispute-over-voter-database-to-the-su/"
