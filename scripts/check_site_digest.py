@@ -103,11 +103,12 @@ def main() -> int:
             errs.append(f"{st}: 요소 누락 — 필요 {ELEMENT_SETS[0]} · 있음 {have}")
         if len(body_st) > CAPS["state_section"]:
             errs.append(f"{st}: {len(body_st)}자 > 상한 {CAPS['state_section']}자")
-    nat = next((v for k, v in sec.items() if "전국 자금" in k), None)
-    if nat is not None:  # v1.2 선택 절 — 있으면 불릿(또는 '없음') 형식이어야 장부에 들어간다
-        lines = [l for l in nat.splitlines() if l.strip()]
-        if lines and not all(l.startswith("- ") or l.strip() == "없음" for l in lines):
-            errs.append("전국 자금: 불릿('- ') 또는 '없음'만 허용")
+    for opt in ("전국 자금", "법·제도"):  # v1.2·v1.3 선택 절 — 있으면 불릿(또는 '없음') 형식이어야 장부에 들어간다
+        nat = next((v for k, v in sec.items() if opt in k), None)
+        if nat is not None:
+            lines = [l for l in nat.splitlines() if l.strip()]
+            if lines and not all(l.startswith("- ") or l.strip() == "없음" for l in lines):
+                errs.append(f"{opt}: 불릿('- ') 또는 '없음'만 허용")
     polls = next((v for k, v in sec.items() if "새로운 여론조사" in k), "")
     if TABLE_HEADER not in polls and "신규 본선 조사 없음" not in polls:
         errs.append("새로운 여론조사: 고정 표 헤더도 '신규 본선 조사 없음' 문구도 없음")

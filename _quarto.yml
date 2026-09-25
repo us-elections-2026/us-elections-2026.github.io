@@ -61,6 +61,10 @@ website:
         contents:
           - text: "지지율·경제·외교"
             href: national.qmd
+          - text: "선거 법·제도 분쟁 트래커"
+            href: legal.qmd
+          - text: "민주당 내부 지형 — DSA"
+            href: dsa.qmd
       - section: "상원 Senate"
         contents:
           - text: "전망 대시보드 — 주별 확률"

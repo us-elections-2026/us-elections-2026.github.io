@@ -1,0 +1,613 @@
+{
+ "as_of": "2026-09-25",
+ "source_label": "1차 출처는 대법원 docket·판결문과 연방법원 기록, 2차는 SCOTUSblog·Brennan Center·Democracy Docket·언론. 사람이 주간 발행 (8)단계에서 갱신.",
+ "provenance_note": "status: pending 계류 · active 진행 · ruled 판결 · closed 종결 · enjoined 집행정지. 확인 못 한 항목은 '미확인'/【수집 필요】. 2026-09-25 웹 조사(Sonnet 에이전트)와 9월 브리핑 기록으로 초기 작성. 브리핑 기반 이벤트(출처 URL 없음)는 _NIS 전국·상원 일일 브리핑 해당 날짜 기록이 근거.",
+ "items": [
+  {
+   "id": "usps-rule",
+   "category": "우편투표",
+   "title_kr": "USPS 우편투표 봉투·데이터 포털 규칙 — 집행정지",
+   "name_en": "United States Postal Service v. California (No. 26A305; D. Mass. Talwani J.)",
+   "court": "연방대법원 긴급신청 / 매사추세츠 연방지법 / 제1순회항소법원",
+   "status": "enjoined",
+   "status_kr": "예비적 금지명령 유효(11/3까지) — 대법원 9/14 정지 기각. 9/22 재신청 서술은 미확인",
+   "last_date": "2026-09-22",
+   "next_date": null,
+   "next_kr": "제1순회항소법원 본안 항소 계류",
+   "summary_kr": "행정명령 14399를 시행하는 USPS 규칙이 우편투표 봉투 규격과 유권자 데이터 포털 등록을 새로 요구했습니다. Talwani 판사는 선거 70일도 남지 않은 시점의 즉시 시행이 수백만 명의 참정권을 위협한다며 시행을 막았고, 연방대법원은 정부의 집행정지 신청을 기각했습니다.",
+   "impact_kr": "노스캐롤라이나(9/4)·앨라배마(9/9) 등 이미 발송이 시작된 우편투표가 기존 규격으로 진행됩니다. 감시 9주의 우편투표 절차는 이 판단으로 2026년에는 바뀌지 않습니다.",
+   "events": [
+    {
+     "date": "2026-08-26",
+     "text": "USPS 최종 규칙 관보 공포. 23개 주·DC·펜실베이니아 주지사가 규칙을 직접 제소(브리핑 8/30 주간 기준; 9/13 주간은 9/2로 기재 — 날짜 불일치)",
+     "url": ""
+    },
+    {
+     "date": "2026-08-27",
+     "text": "매사추세츠 연방지법(Talwani) 임시금지명령(TRO)",
+     "url": ""
+    },
+    {
+     "date": "2026-09-04",
+     "text": "예비적 금지명령 — 봉투 규격·포털 등록 요구를 11/3 이전 집행 금지(23개 주·DC). 제1순회항소법원은 집행정지 거부",
+     "url": "https://www.nbcnews.com/politics/2026-election/judge-blocks-trump-effort-restrict-voting-mail-ballots-start-going-rcna596097"
+    },
+    {
+     "date": "2026-09-03",
+     "text": "법무부 첫 대법원 긴급신청(26A297) — 9/4 예비적 금지명령으로 소의 이익 상실",
+     "url": ""
+    },
+    {
+     "date": "2026-09-06",
+     "text": "법무부·USPS, 연방대법원에 집행정지 신청(26A305, Jackson 대법관 담당)",
+     "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/26a305.html"
+    },
+    {
+     "date": "2026-09-14",
+     "text": "연방대법원 신청 기각 — 정부가 본안에서 이길 가능성 낮음. Kavanaugh 보충의견, Alito·Thomas 반대",
+     "url": "https://www.jurist.org/news/2026/09/us-supreme-court-rejects-doj-bid-to-stay-injunction-blocking-usps-mail-in-ballot-rule/"
+    },
+    {
+     "date": "2026-09-22",
+     "text": "행정부가 대법원에 재차 신청했다는 브리핑 서술 — 신청 성격·제출일 【수집 필요】",
+     "url": ""
+    }
+   ],
+   "sources": [
+    {
+     "label": "대법원 docket 26A305",
+     "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/26a305.html"
+    },
+    {
+     "label": "SCOTUSblog",
+     "url": "https://www.scotusblog.com/2026/09/trump-administration-again-appeals-mail-in-ballot-dispute-to-the-supreme-court/"
+    }
+   ]
+  },
+  {
+   "id": "eo14399",
+   "category": "행정명령·연방 규칙",
+   "title_kr": "행정명령 14399 — 연방 시민권 명단과 우편투표 제한",
+   "name_en": "EO 14399 'Ensuring Citizenship Verification and Integrity in Federal Elections' (2026-03-31) · California v. Trump (D. Mass. 1:26-cv-11581; No. 26A124)",
+   "court": "매사추세츠 연방지법 / 제1순회항소법원 / 연방대법원",
+   "status": "active",
+   "status_kr": "연방대법원이 8/24 지법의 영구 금지명령을 정지 — 항소 계류 중 행정명령 조항 시행 가능",
+   "last_date": "2026-08-24",
+   "next_date": null,
+   "next_kr": "제1순회항소법원 본안 판단",
+   "summary_kr": "DHS가 연방 시민권 명단을 만들고 USPS가 명단에 없는 사람에게 투표용지를 보내지 못하게 하는 행정명령입니다. 24개 민주당 주가 제소해 지법이 시행을 막았으나, 연방대법원이 정부의 정지 신청을 받아들여 항소 중에는 시행할 수 있게 했습니다. 합법성 본안 판단은 아직 없습니다.",
+   "impact_kr": "위 USPS 규칙 사건과 짝을 이룹니다. 행정명령 자체는 살아 있지만 그 시행 규칙은 막혀 있어, 2026년 우편투표 실무는 주 규칙대로 갑니다.",
+   "events": [
+    {
+     "date": "2026-03-31",
+     "text": "행정명령 14399 서명",
+     "url": ""
+    },
+    {
+     "date": "2026-04-03",
+     "text": "24개 민주당 주 제소(California v. Trump)",
+     "url": "https://www.aljazeera.com/news/2026/4/3/two-dozen-democrat-led-states-sue-trump-over-mail-in-ballot-limits"
+    },
+    {
+     "date": "2026-06-25",
+     "text": "매사추세츠 연방지법 약식판결 — 원고 주에 한해 §2·§3 시행 영구 금지(2026 사이클)",
+     "url": ""
+    },
+    {
+     "date": "2026-08-24",
+     "text": "연방대법원, 금지명령 집행정지 인용(26A124). Sotomayor·Kagan·Jackson 반대",
+     "url": "https://www.supremecourt.gov/opinions/25pdf/26a124_hgci.pdf"
+    }
+   ],
+   "sources": [
+    {
+     "label": "대법원 명령 26A124",
+     "url": "https://www.supremecourt.gov/opinions/25pdf/26a124_hgci.pdf"
+    },
+    {
+     "label": "SCOTUSblog",
+     "url": "https://www.scotusblog.com/cases/trump-v-california/"
+    }
+   ]
+  },
+  {
+   "id": "eo14248",
+   "category": "행정명령·연방 규칙",
+   "title_kr": "행정명령 14248 — 연방 등록 양식의 시민권 증명",
+   "name_en": "EO 14248 'Preserving and Protecting the Integrity of American Elections' (2025-03-25) · LULAC v. Executive Office of the President (D.D.C. 1:25-cv-00946)",
+   "court": "워싱턴DC 연방지법 / DC순회항소법원",
+   "status": "active",
+   "status_kr": "지법이 §2(d)·§3(d) 위헌 판단(1/30) — 공화당전국위·법무부 교차 항소 계류",
+   "last_date": "2026-07-13",
+   "next_date": null,
+   "next_kr": "DC순회항소법원 판단 시기 미확인",
+   "summary_kr": "연방 유권자 등록 양식과 군·재외 유권자 신청서에 시민권 서류를 요구하고 EAC에 지시하는 2025년 행정명령입니다. 지법은 대통령이 선거 규칙을 정할 권한이 없다며 핵심 조항을 무효로 봤고, 항소가 진행 중입니다.",
+   "impact_kr": "2026년 등록 절차에는 적용되지 않습니다. 항소심 결과는 2028년 규칙에 영향을 줍니다.",
+   "events": [
+    {
+     "date": "2025-03-25",
+     "text": "행정명령 14248 서명",
+     "url": "https://www.govinfo.gov/app/details/DCPD-202500397"
+    },
+    {
+     "date": "2025-04-24",
+     "text": "DC 연방지법(Kollar-Kotelly) 일부 예비적 금지명령",
+     "url": "https://clearinghouse.net/case/46322/"
+    },
+    {
+     "date": "2026-01-30",
+     "text": "§2(d)·§3(d) 권력분립 위반 판결",
+     "url": "https://www.courtlistener.com/docket/69823792/league-of-united-latin-american-citizens-v-executive-office-of-the/"
+    },
+    {
+     "date": "2026-03-31",
+     "text": "공화당전국위 항소",
+     "url": ""
+    },
+    {
+     "date": "2026-05-28",
+     "text": "법무부 항소(DC Cir. 26-5102)",
+     "url": "https://www.courtlistener.com/docket/73136570/league-of-united-latin-american-citizens-v-executive-office-of-the/"
+    },
+    {
+     "date": "2026-07-13",
+     "text": "남은 §7(b) 청구 합의 종결",
+     "url": ""
+    }
+   ],
+   "sources": [
+    {
+     "label": "Clearinghouse",
+     "url": "https://clearinghouse.net/case/46322/"
+    },
+    {
+     "label": "Democracy Docket",
+     "url": "https://www.democracydocket.com/cases/washington-d-c-trump-election-integrity-executive-order-challenge/"
+    }
+   ]
+  },
+  {
+   "id": "save-db",
+   "category": "유권자 등록·명부",
+   "title_kr": "SAVE 데이터베이스로 유권자 명부 검증 — 대법원 긴급신청",
+   "name_en": "Department of Homeland Security v. League of Women Voters (No. 26A308)",
+   "court": "연방대법원 긴급신청 / DC순회항소법원 / DC 연방지법(Sooknanan)",
+   "status": "pending",
+   "status_kr": "정부 집행정지 신청 계류 — 9/15 답변 뒤 결정 소식 없음(9/24 브리핑까지)",
+   "last_date": "2026-09-15",
+   "next_date": null,
+   "next_kr": "대법원 결정 미정",
+   "summary_kr": "DHS의 SAVE(외국인 자격 검증) 데이터베이스를 개조해 유권자 명부 대조에 쓰는 것을 지법이 막았고, 항소법원도 정지를 거부했습니다. 정부가 대법원에 긴급신청을 냈고 Roberts 대법원장이 9/15까지 답변을 명령했습니다. 의회의 SAVE Act(시민권 서류 의무화 법안)와는 다른 사안입니다.",
+   "impact_kr": "인용되면 선거 직전 주 명부 대조·삭제가 늘 수 있습니다. 법무부 명부 소송(아래)과 같은 흐름입니다.",
+   "events": [
+    {
+     "date": "2026-06-22",
+     "text": "DC 연방지법(Sooknanan) — 개조된 SAVE의 명부 목적 사용 금지",
+     "url": ""
+    },
+    {
+     "date": "2026-09-05",
+     "text": "DC순회항소법원 2–1로 원심 유지, 항소는 신속 진행",
+     "url": ""
+    },
+    {
+     "date": "2026-09-08",
+     "text": "정부 대법원 긴급신청(26A308, 추정일)",
+     "url": "https://www.scotusblog.com/2026/09/citing-election-fraud-concerns-trump-administration-brings-dispute-over-voter-database-to-the-su/"
+    },
+    {
+     "date": "2026-09-15",
+     "text": "Roberts 대법원장이 정한 답변서 기한(ET 오후 4시)",
+     "url": ""
+    }
+   ],
+   "sources": [
+    {
+     "label": "SCOTUSblog",
+     "url": "https://www.scotusblog.com/2026/09/citing-election-fraud-concerns-trump-administration-brings-dispute-over-voter-database-to-the-su/"
+    }
+   ]
+  },
+  {
+   "id": "doj-rolls",
+   "category": "유권자 등록·명부",
+   "title_kr": "법무부의 주 유권자 명부 제출 요구·소송",
+   "name_en": "DOJ Civil Rights Division statewide voter-roll lawsuits (2025–2026)",
+   "court": "각 주 연방지법",
+   "status": "active",
+   "status_kr": "29개 주·DC 상대 소송 진행, 약 16개 주는 자발 제출 — 주별 판결 미확인",
+   "last_date": "2025-12-18",
+   "next_date": null,
+   "next_kr": "주별 판결 【수집 필요】",
+   "summary_kr": "법무부가 2025년 5월부터 운전면허·사회보장번호가 포함된 미가공 유권자 명부를 전 주에 요구했고, 거부한 주를 잇달아 제소했습니다. 감시 9주 중 뉴햄프셔·메인·미시간이 피소됐고 알래스카·아이오와·오하이오·텍사스는 제출했습니다.",
+   "impact_kr": "명부 데이터가 연방 SAVE 대조로 이어지면 선거 직전 등록 삭제 논란이 커집니다. 각 주 State Focus의 「선거 제도」 탭 등록 절차와 함께 보십시오.",
+   "events": [
+    {
+     "date": "2025-05-01",
+     "text": "법무부, 전 주에 명부 요구 시작(월 기준)",
+     "url": "https://www.brennancenter.org/our-work/research-reports/tracker-justice-department-requests-voter-information"
+    },
+    {
+     "date": "2025-09-18",
+     "text": "오리건·메인 제소",
+     "url": ""
+    },
+    {
+     "date": "2025-09-25",
+     "text": "캘리포니아·미시간·미네소타·뉴욕·뉴햄프셔·펜실베이니아 제소",
+     "url": "https://www.foxnews.com/politics/doj-sues-six-states-refusing-turn-over-voter-registration-rolls-warns-open-defiance-federal-law.amp"
+    },
+    {
+     "date": "2025-12-18",
+     "text": "위스콘신 제소",
+     "url": "https://www.votebeat.org/wisconsin/2025/12/18/doj-sues-elections-commission-for-not-providing-voter-list/"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Brennan Center 트래커",
+     "url": "https://www.brennancenter.org/our-work/research-reports/tracker-justice-department-requests-voter-information"
+    },
+    {
+     "label": "DOJ 보도자료",
+     "url": "https://www.justice.gov/opa/pr/justice-department-sues-five-additional-states-failure-produce-voter-rolls"
+    }
+   ]
+  },
+  {
+   "id": "save-act",
+   "category": "유권자 등록·명부",
+   "title_kr": "SAVE Act — 시민권 서류 의무화 법안",
+   "name_en": "Safeguard American Voter Eligibility Act (H.R. 22, 119th Congress)",
+   "court": "연방의회(입법)",
+   "status": "pending",
+   "status_kr": "하원 통과(2025-04-10, 220–208), 상원 본회의 표결 없음 — 미입법",
+   "last_date": "2026-02-11",
+   "next_date": null,
+   "next_kr": "상원 60표 경로 없음(Thune)",
+   "summary_kr": "연방 선거 등록 때 시민권 서류 제시를 의무화하는 법안입니다. 하원은 통과시켰으나 상원은 표결하지 않았고, 2026년 2월 관련 법안이 다시 하원을 218–213으로 통과했습니다. 트럼프는 FISA 재승인에 이 법안을 붙이라고 요구했습니다.",
+   "impact_kr": "입법이 없어 2026년에는 적용되지 않습니다. 같은 이름의 SAVE 데이터베이스 사건(위)과 혼동하지 마십시오.",
+   "events": [
+    {
+     "date": "2025-04-10",
+     "text": "하원 통과 220–208",
+     "url": "https://www.congress.gov/bill/119th-congress/house-bill/22/text"
+    },
+    {
+     "date": "2026-02-11",
+     "text": "관련 법안(SAVE America Act) 하원 218–213 통과 — 원안과의 관계 미확인",
+     "url": "https://www.govtrack.us/congress/bills/119/hr22"
+    }
+   ],
+   "sources": [
+    {
+     "label": "congress.gov H.R.22",
+     "url": "https://www.congress.gov/bill/119th-congress/house-bill/22/text"
+    }
+   ]
+  },
+  {
+   "id": "nrsc-fec",
+   "category": "선거자금",
+   "title_kr": "정당 협조지출 한도 위헌 — NRSC v. FEC",
+   "name_en": "National Republican Senatorial Committee v. FEC, 609 U.S. ___ (2026)",
+   "court": "연방대법원",
+   "status": "ruled",
+   "status_kr": "6/30 판결(6–3) — 정당이 자당 후보와 협조해 쓰는 지출 한도 폐지",
+   "last_date": "2026-06-30",
+   "next_date": null,
+   "next_kr": "",
+   "summary_kr": "정당 위원회가 자당 후보와 협조해 집행하는 지출의 상한이 수정헌법 1조 위반이라며 2001년 Colorado II 판례를 뒤집었습니다. 정당 위원회에 대한 개인 기부 한도와 지정 기부 금지는 유지됩니다.",
+   "impact_kr": "NRSC가 판결 직후 노스캐롤라이나에 7~8월 약 800만 달러를 넣는 등 협조지출이 급증했습니다. 공화가 후보 계좌의 열세를 정당 돈으로 메우는 경로가 열렸습니다(전국 환경 「정당·자금」 탭). ※ 9/22~24 전국 일일 브리핑의 '대법원 계류' 정형 문구에 이 사건과 Callais·Watson이 그대로 남아 있는데, 셋 다 이미 선고됐습니다. 브리핑 템플릿 잔재로 보이며 원문 수정 대상입니다.",
+   "events": [
+    {
+     "date": "2026-06-30",
+     "text": "판결 선고 6–3, Colorado II 파기",
+     "url": "https://www.fec.gov/updates/supreme-court-finds-limits-on-coordinated-party-expenditures-unconstitutional-in-nrsc-v-fec-609-us-____2026/"
+    },
+    {
+     "date": "2026-09-24",
+     "text": "AP — 판결 뒤 NRSC 협조지출 기록적 증가, 노스캐롤라이나 약 800만 달러",
+     "url": "https://wtvbam.com/2026/09/24/republican-coordinated-campaign-spending-surges-after-us-supreme-court-ruling/"
+    }
+   ],
+   "sources": [
+    {
+     "label": "FEC 안내",
+     "url": "https://www.fec.gov/updates/supreme-court-finds-limits-on-coordinated-party-expenditures-unconstitutional-in-nrsc-v-fec-609-us-____2026/"
+    },
+    {
+     "label": "CBS",
+     "url": "https://www.cbsnews.com/news/supreme-court-nrsc-v-federal-election-commission-coordinated-spending/"
+    }
+   ]
+  },
+  {
+   "id": "callais",
+   "category": "투표권법·재획정",
+   "title_kr": "투표권법 2조 축소 — Louisiana v. Callais",
+   "name_en": "Louisiana v. Callais, No. 24-109, 609 U.S. ___ (2026)",
+   "court": "연방대법원",
+   "status": "ruled",
+   "status_kr": "4/29 판결(6–3, Alito) — 제2 다수흑인 선거구는 인종 게리맨더, §2 소송 요건 강화",
+   "last_date": "2026-05-04",
+   "next_date": null,
+   "next_kr": "",
+   "summary_kr": "루이지애나가 투표권법 2조에 따라 만든 두 번째 흑인 다수 선거구를 위헌으로 봤습니다. 2조를 폐기하지는 않았지만 희석 소송의 입증 문턱을 크게 올렸습니다.",
+   "impact_kr": "남부 주들의 중간 재획정 논리에 힘을 실었습니다. 하원 재획정 페이지의 실질 순증 계산과 연결됩니다.",
+   "events": [
+    {
+     "date": "2025-10-15",
+     "text": "재변론(2025년 10월)",
+     "url": ""
+    },
+    {
+     "date": "2026-04-29",
+     "text": "판결 선고(신속 발부), 5/4 최종 문안",
+     "url": "https://www.supremecourt.gov/opinions/25pdf/24-109_21o3.pdf"
+    }
+   ],
+   "sources": [
+    {
+     "label": "판결문",
+     "url": "https://www.supremecourt.gov/opinions/25pdf/24-109_21o3.pdf"
+    },
+    {
+     "label": "CRS",
+     "url": "https://www.congress.gov/crs-product/LSB11431"
+    }
+   ]
+  },
+  {
+   "id": "watson",
+   "category": "우편투표",
+   "title_kr": "우편투표 소인 유예 합헌 — Watson v. RNC",
+   "name_en": "Watson v. Republican National Committee, No. 24-1260 (2026)",
+   "court": "연방대법원",
+   "status": "ruled",
+   "status_kr": "6/29 판결(5–4) — 선거일 소인·5영업일 내 도착 인정하는 미시시피법 유지",
+   "last_date": "2026-06-29",
+   "next_date": null,
+   "next_kr": "",
+   "summary_kr": "연방법이 정하는 '선거일'은 투표를 마치는 날이지 용지가 도착해야 하는 날이 아니라고 봤습니다. 제5순회항소법원의 반대 판단을 뒤집었습니다.",
+   "impact_kr": "소인 유예를 둔 주(알래스카 등)의 규칙이 유지됩니다. 감시 9주 중 도착 마감을 엄격히 둔 주(조지아·미시간·오하이오·노스캐롤라이나 등)에는 변화가 없습니다.",
+   "events": [
+    {
+     "date": "2025-11-10",
+     "text": "상고 허가",
+     "url": "https://www.scotusblog.com/cases/watson-v-republican-national-committee/"
+    },
+    {
+     "date": "2026-03-23",
+     "text": "변론",
+     "url": ""
+    },
+    {
+     "date": "2026-06-29",
+     "text": "판결 5–4, 제5순회 파기",
+     "url": "https://www.supremecourt.gov/opinions/25pdf/24-1260_g3cn.pdf"
+    }
+   ],
+   "sources": [
+    {
+     "label": "판결문",
+     "url": "https://www.supremecourt.gov/opinions/25pdf/24-1260_g3cn.pdf"
+    }
+   ]
+  },
+  {
+   "id": "missouri-map",
+   "category": "투표권법·재획정",
+   "title_kr": "미주리 2025년 선거구 지도 — 세 번째 대법원행",
+   "name_en": "Missouri congressional map litigation (Mo. Sup. Ct. 9/3 · 8th Cir. 9/21 · SCOTUS applications incl. People Not Politicians v. Onder, 26A326)",
+   "court": "미주리주 대법원 / 제8순회항소법원 / 연방대법원",
+   "status": "pending",
+   "status_kr": "9/21 항소법원이 2025년 공화 지도 사용 명령(9/28 발효) — 대법원 세 번째 긴급신청 계류",
+   "last_date": "2026-09-22",
+   "next_date": "2026-09-28",
+   "next_kr": "9/28 제8순회 명령 발효 — 그 전 대법원 개입 여부",
+   "summary_kr": "공화당이 2025년에 다시 그린 지도를 주 대법원이 9/3 막고 2022년 지도를 명령했습니다. Kavanaugh 대법관이 9/8 공화당 측 정지 신청을 기각했으나, 제8순회항소법원이 9/21 정반대로 2025년 지도를 쓰라고 명령해 사안이 세 번째로 연방대법원에 갔습니다.",
+   "impact_kr": "하원 의석 1석(캔자스시티 선거구)이 걸려 있으며, 하원 트랙의 '실질 순증' 계산이 이 결정에 따라 움직입니다.",
+   "events": [
+    {
+     "date": "2026-08-19",
+     "text": "주 순회법원(Green) — 주민투표 규정은 하원 재획정에 미적용",
+     "url": ""
+    },
+    {
+     "date": "2026-09-03",
+     "text": "미주리주 대법원 — 2025년 지도는 유권자 승인 전 효력 없음, 2022년 지도로 11월 선거. 주민투표를 Proposition A로 회부",
+     "url": "https://www.cnn.com/2026/09/03/politics/missouri-supreme-court-blocks-trump-backed-map-midterms"
+    },
+    {
+     "date": "2026-09-05",
+     "text": "Onder 하원의원·Brattin 주상원의원 등이 연방지법에 별건 제소(브리핑은 9/24에 원고명 정정)",
+     "url": ""
+    },
+    {
+     "date": "2026-09-08",
+     "text": "Kavanaugh 대법관, 공화당 측 정지 신청 기각. 같은 날 연방지법(Clark) 정반대 TRO → 주무장관 Hoskins가 연방 명령 선택",
+     "url": ""
+    },
+    {
+     "date": "2026-09-10",
+     "text": "연방대법원, Clark TRO 정지 — Hoskins 2022년 지도 사용 지시, 법정모독 해소",
+     "url": ""
+    },
+    {
+     "date": "2026-09-21",
+     "text": "제8순회항소법원 — 2025년 지도 11월 사용 명령, 금지명령 9/28 발효 예정",
+     "url": "https://www.cnn.com/2026/09/21/politics/missouri-redistricting-map-supreme-court"
+    },
+    {
+     "date": "2026-09-22",
+     "text": "재획정 반대 진영, 연방대법원 세 번째 긴급신청(docket 번호 미확인)",
+     "url": "https://www.cnn.com/2026/09/23/politics/missouri-redistricting-map-scotus-third-time"
+    }
+   ],
+   "sources": [
+    {
+     "label": "대법원 docket 26A326",
+     "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/26a326.html"
+    },
+    {
+     "label": "CNN 9/23",
+     "url": "https://www.cnn.com/2026/09/23/politics/missouri-redistricting-map-scotus-third-time"
+    }
+   ]
+  },
+  {
+   "id": "az-mfv",
+   "category": "유권자 등록·명부",
+   "title_kr": "애리조나 시민권 서류 요건 — RNC v. Mi Familia Vota",
+   "name_en": "Republican National Committee v. Mi Familia Vota, No. 25-1017",
+   "court": "연방대법원",
+   "status": "pending",
+   "status_kr": "상고 허가(6/29) — 변론 12/8, 2026년 선거에는 영향 없음",
+   "last_date": "2026-06-29",
+   "next_date": "2026-12-08",
+   "next_kr": "변론 2026-12-08",
+   "summary_kr": "주가 등록 때 시민권 서류를 요구할 수 있는지, 선거 90일 전 비시민 등록 삭제를 연방법이 막는지가 쟁점입니다. 제9순회항소법원은 애리조나법 차단을 유지했고 대법원이 사건을 받았습니다.",
+   "impact_kr": "판결은 2027년에 나옵니다. 2028년 등록 규칙의 전국 기준이 됩니다.",
+   "events": [
+    {
+     "date": "2025-02-25",
+     "text": "제9순회항소법원 차단 유지",
+     "url": ""
+    },
+    {
+     "date": "2026-06-29",
+     "text": "상고 허가",
+     "url": "https://news.ballotpedia.org/2026/07/02/u-s-supreme-court-agrees-to-review-arizonas-documentary-proof-of-citizenship-and-noncitizen-voter-removal-laws/"
+    },
+    {
+     "date": "2026-12-08",
+     "text": "변론 예정",
+     "url": "https://www.oyez.org/cases/2026/25-1017"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Oyez",
+     "url": "https://www.oyez.org/cases/2026/25-1017"
+    }
+   ]
+  },
+  {
+   "id": "nh-hb1569",
+   "category": "유권자 등록·명부",
+   "title_kr": "뉴햄프셔 HB 1569 — 등록 시 시민권 서류 의무화 위헌",
+   "name_en": "Coalition for Open Democracy v. Scanlan (D.N.H.)",
+   "court": "뉴햄프셔 연방지법 / 항소 여부 미확인",
+   "status": "enjoined",
+   "status_kr": "5/29 위헌·집행금지 — 9월 예비·11월 본선에 적용 안 됨, 주 항소 상태 미확인",
+   "last_date": "2026-06-29",
+   "next_date": null,
+   "next_kr": "주 항소 【수집 필요】",
+   "summary_kr": "2024년 법이 최초 등록자에게 예외 없는 시민권 서류를 요구하며 기존 서약서 절차를 없앴습니다. 연방지법은 2주 재판 뒤 위헌으로 판단했고, 주는 집행정지를 신청했습니다.",
+   "impact_kr": "뉴햄프셔 상원 레이스의 당일 등록 유권자에게 직접 영향을 줍니다. State Focus 뉴햄프셔 「선거 제도」 탭의 신분 확인 항목과 함께 보십시오.",
+   "events": [
+    {
+     "date": "2026-02-10",
+     "text": "2주 재판 시작",
+     "url": ""
+    },
+    {
+     "date": "2026-05-29",
+     "text": "위헌 판결·집행금지",
+     "url": "https://newhampshirebulletin.com/2026/05/29/ahead-of-midterms-federal-court-strikes-down-nh-proof-of-citizenship-voter-registration-law/"
+    },
+    {
+     "date": "2026-06-29",
+     "text": "주, 항소 중 집행정지 신청(보도 기준)",
+     "url": ""
+    }
+   ],
+   "sources": [
+    {
+     "label": "ACLU 사건 페이지",
+     "url": "https://www.aclu.org/cases/coalition-for-open-democracy-v-scanlan"
+    }
+   ]
+  },
+  {
+   "id": "ga-sb189",
+   "category": "유권자 등록·명부",
+   "title_kr": "조지아 SB 189 — 대량 유권자 이의신청 절차",
+   "name_en": "Georgia SB 189 consolidated challenge (N.D. Ga.)",
+   "court": "조지아 북부 연방지법",
+   "status": "active",
+   "status_kr": "병합 소송 진행 — 본안 판결 미확인",
+   "last_date": "2026-05-11",
+   "next_date": null,
+   "next_kr": "【수집 필요】",
+   "summary_kr": "유권자 자격 이의신청을 쉽게 한 2024년 법의 4·5조가 연방 유권자등록법에 어긋난다는 소송입니다. 별건의 명부 정비 소송은 제11순회항소법원이 5/11 원고 적격 없음으로 종결했습니다.",
+   "impact_kr": "조지아 상원 레이스의 명부 정비 논란과 결선 가능성(1월)에 걸쳐 있습니다.",
+   "events": [
+    {
+     "date": "2024-12-16",
+     "text": "공화당전국위·조지아 공화당 참가",
+     "url": "https://www.democracydocket.com/cases/georgia-mass-voter-challenges-lawsuit/"
+    },
+    {
+     "date": "2026-05-11",
+     "text": "별건 명부 정비 소송 — 제11순회, 적격 없음 확정",
+     "url": ""
+    }
+   ],
+   "sources": [
+    {
+     "label": "Democracy Docket",
+     "url": "https://www.democracydocket.com/cases/georgia-mass-voter-challenges-lawsuit/"
+    }
+   ]
+  },
+  {
+   "id": "ak-taylor",
+   "category": "후보 자격",
+   "title_kr": "알래스카 주지사 후보 재산공개 분쟁 — Taylor 복권과 APOC",
+   "name_en": "Alaska Division of Elections / APOC — candidate financial-disclosure dispute (Taylor; HD13·HD22 suits)",
+   "court": "알래스카 선거관리국 / APOC / 알래스카 주법원",
+   "status": "active",
+   "status_kr": "Taylor 복권(9/4) 직접 제소 0건 — 주하원 후보 관련 소송 2건·APOC 절차(10/8까지) 진행",
+   "last_date": "2026-09-21",
+   "next_date": "2026-10-08",
+   "next_kr": "APOC(Johnson 건) 본안 절차 10/8까지",
+   "summary_kr": "선거관리국이 8/31 재산공개 미비로 주지사 후보 Taylor를 실격시켰다가, 부지사 Dahlstrom이 9/4 밤 법무부 검토를 근거로 번복해 4인 후보로 인증했습니다. Alaska Beacon은 그 법무부 검토가 파라리걸이 하루 반 만에 만든 것이며 지적 다수가 실체가 없다고 보도했습니다. 후보 명단은 주 대법원 명령 없이는 바꿀 수 없다는 것이 주지사의 입장입니다.",
+   "impact_kr": "상원 RCV 본선의 공화 표 분산(설리번·동명이인·Heikes)과 겹쳐, 주지사 후보 구성이 2순위 배분에 영향을 줄 수 있습니다. 상원 트랙 알래스카 판단의 신뢰구간을 넓히는 요인으로 기록돼 있습니다.",
+   "events": [
+    {
+     "date": "2026-08-31",
+     "text": "선거관리국, Taylor 실격(재산공개 미비)",
+     "url": ""
+    },
+    {
+     "date": "2026-09-04",
+     "text": "투표용지 확정 마감(17시) — 같은 날 밤 Dahlstrom 부지사 번복, Taylor 인증. APOC 진정 2건(Wilson·Johnson 대상)",
+     "url": ""
+    },
+    {
+     "date": "2026-09-07",
+     "text": "Dunleavy 주지사 — 후보 명단은 주 대법원 명령 없이 변경 불가",
+     "url": ""
+    },
+    {
+     "date": "2026-09-11",
+     "text": "Alaska Beacon — 법무부 검토 전수 검증(121명 중 91명 지목, 확인 오류 6건 이상). 같은 날 HD22·HD13 관련 소송 2건 제기",
+     "url": "https://alaskabeacon.com"
+    },
+    {
+     "date": "2026-09-21",
+     "text": "APOC(Johnson 건) 사무국 보고서 → 9/25 답변 → 9/28 재반박 → 10/8 본안",
+     "url": ""
+    }
+   ],
+   "sources": [
+    {
+     "label": "알래스카 상원 State Focus 로컬 기록",
+     "url": "states/ak.html"
+    }
+   ]
+  }
+ ]
+}

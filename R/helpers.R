@@ -1924,6 +1924,87 @@ gt_fec_ie_committees <- function(n = 15) {
     .tbl_opts()
 }
 
+
+# 1.11 전국 절 장부(states$US) + 선거 법·제도 트래커 -----------------------------
+# 정리본 v1.2 「전국 자금」(money)·v1.3 「법·제도」(legal)가 states$US 아래 쌓인다.
+us_ledger_md <- function(cat = c("legal", "money"), n = 30, title = NULL) {
+  cat <- match.arg(cat)
+  d <- .ledger()
+  lab <- c(legal = "법·제도 동향 — 일일 기록", money = "전국 자금 — 일일 기록")[[cat]]
+  if (is.null(title)) title <- lab
+  items <- if (!is.null(d) && !is.null(d$states[["US"]])) d$states[["US"]][[cat]] else list()
+  head <- sprintf('<div class="ledger-hd">%s <span class="rcard-mu">· 상원 일일 정리본의 「%s」 절에서 날짜별 누적 · 같은 사안은 처음 본 날짜로 한 번</span></div>\n',
+                  title, if (cat == "legal") "법·제도" else "전국 자금")
+  if (!length(items))
+    return(paste0(head, '<p class="pt-empty">아직 장부에 오른 항목이 없습니다 — 정리본 v1.3부터 채워집니다(첫 적재 예정 2026-09-26).</p>\n'))
+  items <- items[seq_len(min(n, length(items)))]
+  rows <- vapply(items, function(it) {
+    tail <- if (!is.null(it$last) && !identical(it$last, it$date)) sprintf(' <span class="rcard-mu">(~%s 재언급)</span>', substr(it$last, 6, 10)) else ""
+    sprintf("- <b class=\"ledger-d\">%s</b> %s%s", substr(it$date, 6, 10), it$text, tail)
+  }, character(1))
+  paste0(head, "\n::: {.ledger}\n", paste(rows, collapse = "\n"), "\n:::\n",
+         sprintf('<p class="rcard-mu ledger-ft">기준 %s · 최근 %d건 표시(전체 %d건)</p>\n',
+                 if (is.null(d$as_of)) "" else d$as_of, length(items), length(d$states[["US"]][[cat]])))
+}
+
+# data/legal_tracker.json — 사건·행정명령 단위의 고정 트래커(사람이 주간 (8)단계에서 갱신).
+.legal <- function() {
+  path <- file.path("data", "legal_tracker.json")
+  if (!file.exists(path)) return(NULL)
+  jsonlite::read_json(path, simplifyVector = FALSE)
+}
+.legal_status_kr <- c(pending = "계류", active = "진행", ruled = "판결", closed = "종결", enjoined = "집행정지")
+
+gt_legal_tracker <- function() {
+  d <- .legal()
+  if (is.null(d)) return(gt(tibble(안내 = "data/legal_tracker.json 이 아직 없습니다.")) |> .tbl_opts())
+  it <- d$items
+  nz <- function(x) if (is.null(x) || !nzchar(x)) "—" else x
+  tb <- tibble(
+    분류 = vapply(it, function(x) nz(x$category), character(1)),
+    사건 = vapply(it, function(x) sprintf("[%s](#%s)", x$title_kr, x$id), character(1)),
+    `법원·주체` = vapply(it, function(x) nz(x$court), character(1)),
+    상태 = vapply(it, function(x) { s <- .legal_status_kr[[x$status]]; if (is.null(s)) x$status else s }, character(1)),
+    `현재 상태` = vapply(it, function(x) nz(x$status_kr), character(1)),
+    최근 = vapply(it, function(x) nz(x$last_date), character(1)),
+    `다음 기일` = vapply(it, function(x) nz(x$next_kr), character(1))
+  )
+  tb <- tb[order(tb$최근, decreasing = TRUE), ]
+  tb |>
+    gt() |>
+    fmt_markdown(columns = 사건) |>
+    tab_header(title = "선거 법·제도 분쟁 — 사건별 현황", subtitle = sprintf("기준 %s · %d건", d$as_of, length(it))) |>
+    tab_source_note(d$source_label) |>
+    .tbl_opts()
+}
+
+# 사건별 상세: 쟁점·시간순 이벤트·선거 영향. 분류(category) 순으로 묶는다.
+legal_items_md <- function() {
+  d <- .legal()
+  if (is.null(d)) return("")
+  it <- d$items
+  cats <- unique(vapply(it, function(x) x$category, character(1)))
+  out <- character(0)
+  for (cg in cats) {
+    out <- c(out, sprintf("\n## %s\n", cg))
+    for (x in it[vapply(it, function(y) identical(y$category, cg), logical(1))]) {
+      st <- .legal_status_kr[[x$status]]; if (is.null(st)) st <- x$status
+      ev <- vapply(x$events, function(e) sprintf("- <b class=\"ledger-d\">%s</b> %s%s", e$date, e$text,
+                                                if (!is.null(e$url) && nzchar(e$url)) sprintf(" ([출처](%s))", e$url) else ""), character(1))
+      src <- if (length(x$sources)) paste(sprintf("[%s](%s)", vapply(x$sources, function(s) s$label, character(1)),
+                                                  vapply(x$sources, function(s) s$url, character(1))), collapse = " · ") else ""
+      out <- c(out, sprintf("\n### %s {#%s}\n", x$title_kr, x$id),
+               sprintf('<p class="rcard-mu">%s · %s · <b>%s</b>%s</p>\n', x$name_en, x$court, st,
+                       if (!is.null(x$next_kr) && nzchar(x$next_kr)) paste0(" · 다음: ", x$next_kr) else ""),
+               paste0(x$summary_kr, "\n"),
+               "\n::: {.ledger}\n", paste(ev, collapse = "\n"), "\n:::\n",
+               if (!is.null(x$impact_kr) && nzchar(x$impact_kr)) paste0("\n**선거 영향** — ", x$impact_kr, "\n") else "",
+               if (nzchar(src)) paste0('\n<p class="rcard-mu">출처: ', src, "</p>\n") else "")
+    }
+  }
+  paste(out, collapse = "\n")
+}
+
 # 주 개요 탭 머리의 "오늘의 판세" — 최신 정리본의 여론조사·주 함의 한 줄씩
 state_today_md <- function(code) {
   d <- .ledger()
