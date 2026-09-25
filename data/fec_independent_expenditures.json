@@ -1,0 +1,5322 @@
+{
+ "as_of": "2026-09-25",
+ "source_label": "FEC Schedule E 독립지출 (api.open.fec.gov) — 본선(G2026) 신고분, 단위 $M",
+ "provenance_note": "정기 보고 + 마지막 정기 보고 이후의 24/48시간 통지. 위원회×후보×지지(S)/반대(O) 집계. pro_D = 민주 지지+공화 반대, pro_R = 그 반대. 예비선거·메모·정정 전 행 제외. 광고 '예약'(AdImpact 등)이 아니라 신고된 '집행'이며, 단체가 신고를 늦추면 실제보다 작다.",
+ "states": {
+  "GA": {
+   "pro_D": 5.51,
+   "pro_R": 10.34,
+   "n_rows": 253,
+   "last_date": "2026-09-23",
+   "rows": [
+    {
+     "committee_id": "C00571703",
+     "committee": "SLF PAC",
+     "candidate_id": "S8GA00180",
+     "candidate": "OSSOFF, T. JONATHAN",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 7.31,
+     "last_date": "2026-09-18",
+     "total": 7.31,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00953398",
+     "committee": "THE GEORGIA WAY",
+     "candidate_id": "S6GA00390",
+     "candidate": "COLLINS, MIKE",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 4.62,
+     "last_date": "2026-09-22",
+     "total": 4.62,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00960435",
+     "committee": "NO GOING BACK PAC INC.",
+     "candidate_id": "S8GA00180",
+     "candidate": "OSSOFF, T. JONATHAN",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 2.23,
+     "last_date": "2026-09-21",
+     "total": 2.23,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00851584",
+     "committee": "NEW ENGAGEMENT PAC",
+     "candidate_id": "S6GA00390",
+     "candidate": "COLLINS, MICHAEL A. JR.",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.7,
+     "last_date": "2026-09-23",
+     "total": 0.7,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00960435",
+     "committee": "NO GOING BACK PAC INC.",
+     "candidate_id": "S6GA00390",
+     "candidate": "COLLINS, MICHAEL A JR",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.5,
+     "last_date": "2026-09-18",
+     "total": 0.5,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00509893",
+     "committee": "NATIONAL RIGHT TO LIFE VICTORY FUND",
+     "candidate_id": "S8GA00180",
+     "candidate": "OSSOFF, T. JONATHAN",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.14,
+     "last_date": "2026-09-15",
+     "total": 0.14,
+     "side": "R"
+    },
+    {
+     "committee_id": "C90018904",
+     "committee": "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY",
+     "candidate_id": "S8GA00180",
+     "candidate": "OSSOFF, T. JONATHAN",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.05,
+     "last_date": "2026-09-04",
+     "total": 0.05,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00953398",
+     "committee": "THE GEORGIA WAY",
+     "candidate_id": "S8GA00180",
+     "candidate": "OSSOFF, JONATHAN T.",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.05,
+     "last_date": "2026-09-01",
+     "total": 0.05,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00448696",
+     "committee": "SENATE CONSERVATIVES FUND",
+     "candidate_id": "S6GA00390",
+     "candidate": "COLLINS, MICHAEL A JR",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.03,
+     "notice_recent": 0.01,
+     "last_date": "2026-09-03",
+     "total": 0.04,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00685693",
+     "committee": "CASA IN ACTION PAC",
+     "candidate_id": "S8GA00180",
+     "candidate": "OSSOFF, T. JONATHAN",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.04,
+     "last_date": "2026-09-02",
+     "total": 0.04,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00835041",
+     "committee": "FORWARD BLUE",
+     "candidate_id": "S8GA00180",
+     "candidate": "OSSOFF, JON",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.03,
+     "notice_recent": 0.01,
+     "last_date": "2026-07-25",
+     "total": 0.03,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00909994",
+     "committee": "FIELD TEAM 6, INC.",
+     "candidate_id": "S8GA00180",
+     "candidate": "OSSOFF, T. JONATHAN",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.01,
+     "notice_recent": 0.01,
+     "last_date": "2026-09-09",
+     "total": 0.02,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00640300",
+     "committee": "ACTIVATE AMERICA",
+     "candidate_id": "S8GA00180",
+     "candidate": "OSSOFF, JON",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.02,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-31",
+     "total": 0.02,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00524181",
+     "committee": "SENATE CONSERVATIVES ACTION",
+     "candidate_id": "S6GA00390",
+     "candidate": "COLLINS, MICHAEL A JR",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.02,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-24",
+     "total": 0.02,
+     "side": "R"
+    },
+    {
+     "committee_id": "C90011800",
+     "committee": "CATHOLICVOTE.ORG",
+     "candidate_id": "S8GA00180",
+     "candidate": "OSSOFF, T. JONATHAN",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.02,
+     "notice_recent": 0.0,
+     "last_date": "2026-05-18",
+     "total": 0.02,
+     "side": "R"
+    },
+    {
+     "committee_id": "C90011156",
+     "committee": "WORKING AMERICA",
+     "candidate_id": "S8GA00180",
+     "candidate": "OSSOFF, JON",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.01,
+     "last_date": "2026-09-10",
+     "total": 0.01,
+     "side": "D"
+    },
+    {
+     "committee_id": "C90011156",
+     "committee": "WORKING AMERICA",
+     "candidate_id": "H4GA10071",
+     "candidate": "COLLINS, MICHAEL JR",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.01,
+     "last_date": "2026-09-10",
+     "total": 0.01,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00528455",
+     "committee": "INTERNATIONAL ALLIANCE OF THEATRICAL STAGE EMPLOYEES FEDERAL SPEECH PAC",
+     "candidate_id": null,
+     "candidate": "OSSOFF, T. JONATHAN SEN.",
+     "party": "",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.01,
+     "last_date": "2026-09-09",
+     "total": 0.01,
+     "side": null
+    },
+    {
+     "committee_id": "C00432260",
+     "committee": "CLUB FOR GROWTH PAC",
+     "candidate_id": "S6GA00390",
+     "candidate": "COLLINS, MICHAEL A JR",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.01,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-13",
+     "total": 0.01,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00827030",
+     "committee": "CEDAR KEY PROGRESS",
+     "candidate_id": "S6GA00390",
+     "candidate": "COLLINS, MICHAEL A JR",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.01,
+     "last_date": "2026-07-10",
+     "total": 0.01,
+     "side": "D"
+    },
+    {
+     "committee_id": "C99002396",
+     "committee": "AMERICAN POLITICAL ACTION COMMITTEE",
+     "candidate_id": "S8GA00180",
+     "candidate": "JON OSSOFF FOR SENATE, JON",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.01,
+     "notice_recent": 0.0,
+     "last_date": "2026-06-24",
+     "total": 0.01,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00486845",
+     "committee": "LCV VICTORY FUND",
+     "candidate_id": "S6GA00390",
+     "candidate": "COLLINS, MICHAEL JR",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-09-11",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00951376",
+     "committee": "DEMOCRATS FIGHT BACK PAC",
+     "candidate_id": "S8GA00180",
+     "candidate": "OSSOFF, T. JONATHAN",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-07",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00802389",
+     "committee": "GIVEGREEN UNITED ACTION",
+     "candidate_id": "S8GA00180",
+     "candidate": "OSSOFF, T. JONATHAN",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-07-15",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00640300",
+     "committee": "ACTIVATE AMERICA",
+     "candidate_id": null,
+     "candidate": "OSSOFF, JON",
+     "party": "",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-07-14",
+     "total": 0.0,
+     "side": null
+    },
+    {
+     "committee_id": "C00747121",
+     "committee": "RED SENATE",
+     "candidate_id": "S6GA00390",
+     "candidate": "COLLINS, MIKE",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-06-30",
+     "total": 0.0,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00747121",
+     "committee": "RED SENATE",
+     "candidate_id": "S8GA00180",
+     "candidate": "OSSOFF, T. JONATHAN",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-06-19",
+     "total": 0.0,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00486845",
+     "committee": "LCV VICTORY FUND",
+     "candidate_id": "S8GA00180",
+     "candidate": "OSSOFF, T. JONATHAN",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-06-17",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00909465",
+     "committee": "INDIGO PAC",
+     "candidate_id": "S8GA00180",
+     "candidate": "OSSOFF, JONATHAN",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2025-12-16",
+     "total": 0.0,
+     "side": "D"
+    }
+   ]
+  },
+  "MI": {
+   "pro_D": 21.7,
+   "pro_R": 49.69,
+   "n_rows": 508,
+   "last_date": "2026-09-23",
+   "rows": [
+    {
+     "committee_id": "C00571703",
+     "committee": "SLF PAC",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 20.29,
+     "last_date": "2026-09-22",
+     "total": 20.29,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00865444",
+     "committee": "WINSENATE",
+     "candidate_id": "S4MI00595",
+     "candidate": "ROGERS, MICHAEL",
+     "party": "REP",
+     "so": "O",
+     "reported": 1.89,
+     "notice_recent": 7.41,
+     "last_date": "2026-09-22",
+     "total": 9.3,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00960435",
+     "committee": "NO GOING BACK PAC INC.",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 8.13,
+     "last_date": "2026-09-21",
+     "total": 8.13,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00853861",
+     "committee": "GLCF, INC.",
+     "candidate_id": "S4MI00595",
+     "candidate": "ROGERS, MICHAEL J",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 5.62,
+     "last_date": "2026-09-17",
+     "total": 5.62,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00687103",
+     "committee": "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION",
+     "candidate_id": "S4MI00595",
+     "candidate": "ROGERS, MICHAEL J",
+     "party": "REP",
+     "so": "S",
+     "reported": 2.06,
+     "notice_recent": 2.9,
+     "last_date": "2026-09-22",
+     "total": 4.96,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00764233",
+     "committee": "DEFEND THE VOTE",
+     "candidate_id": "S4MI00595",
+     "candidate": "ROGERS, MICHAEL J",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 4.59,
+     "last_date": "2026-09-21",
+     "total": 4.59,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00687103",
+     "committee": "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.3,
+     "notice_recent": 2.63,
+     "last_date": "2026-09-21",
+     "total": 2.93,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00879510",
+     "committee": "AMERICA PAC",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 1.91,
+     "last_date": "2026-09-21",
+     "total": 1.91,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00486845",
+     "committee": "LCV VICTORY FUND",
+     "candidate_id": "S4MI00595",
+     "candidate": "ROGERS, MICHAEL J",
+     "party": "REP",
+     "so": "O",
+     "reported": 1.02,
+     "notice_recent": 0.48,
+     "last_date": "2026-09-22",
+     "total": 1.5,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00811166",
+     "committee": "THE SENTINEL ACTION FUND",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 1.43,
+     "last_date": "2026-09-17",
+     "total": 1.43,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00853861",
+     "committee": "GLCF, INC.",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 1.29,
+     "last_date": "2026-09-17",
+     "total": 1.29,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00879510",
+     "committee": "AMERICA PAC",
+     "candidate_id": "S4MI00595",
+     "candidate": "ROGERS, MICHAEL J",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 1.19,
+     "last_date": "2026-09-21",
+     "total": 1.19,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00540443",
+     "committee": "GIFFORDS PAC",
+     "candidate_id": "S4MI00595",
+     "candidate": "ROGERS, MICHAEL J",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 1.03,
+     "last_date": "2026-09-01",
+     "total": 1.03,
+     "side": "D"
+    },
+    {
+     "committee_id": "C90011172",
+     "committee": "AFSCME WORKING FAMILIES FUND",
+     "candidate_id": "S4MI00595",
+     "candidate": "ROGERS, MICHAEL J",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 1.0,
+     "last_date": "2026-08-05",
+     "total": 1.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00489799",
+     "committee": "PLANNED PARENTHOOD VOTES",
+     "candidate_id": "S4MI00595",
+     "candidate": "ROGERS, MICHAEL",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.78,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-20",
+     "total": 0.78,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00865444",
+     "committee": "WINSENATE",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.68,
+     "last_date": "2026-09-22",
+     "total": 0.68,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00960435",
+     "committee": "NO GOING BACK PAC INC.",
+     "candidate_id": "S4MI00595",
+     "candidate": "ROGERS, MICHAEL J",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.5,
+     "last_date": "2026-09-15",
+     "total": 0.5,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00811166",
+     "committee": "THE SENTINEL ACTION FUND",
+     "candidate_id": "S4MI00595",
+     "candidate": "ROGERS, MICHAEL J",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.47,
+     "last_date": "2026-09-17",
+     "total": 0.47,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00919373",
+     "committee": "FIGHTING FOR MICHIGAN PAC",
+     "candidate_id": "S4MI00595",
+     "candidate": "ROGERS, MICHAEL J",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.4,
+     "last_date": "2026-09-22",
+     "total": 0.4,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00919373",
+     "committee": "FIGHTING FOR MICHIGAN PAC",
+     "candidate_id": null,
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.4,
+     "last_date": "2026-09-22",
+     "total": 0.4,
+     "side": null
+    },
+    {
+     "committee_id": "C00881011",
+     "committee": "UNITY & JUSTICE FUND",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.4,
+     "last_date": "2026-09-19",
+     "total": 0.4,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00744920",
+     "committee": "CFFE PAC",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.37,
+     "last_date": "2026-09-22",
+     "total": 0.37,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00754069",
+     "committee": "PAF",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.31,
+     "last_date": "2026-09-12",
+     "total": 0.31,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00754069",
+     "committee": "PAF",
+     "candidate_id": "S4MI00595",
+     "candidate": "ROGERS, MICHAEL J",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.31,
+     "last_date": "2026-09-12",
+     "total": 0.31,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00875039",
+     "committee": "HIGH PLAINS PAC",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.26,
+     "last_date": "2026-09-16",
+     "total": 0.26,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00875039",
+     "committee": "HIGH PLAINS PAC",
+     "candidate_id": "S4MI00595",
+     "candidate": "ROGERS, MICHAEL J",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.26,
+     "last_date": "2026-09-16",
+     "total": 0.26,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00544387",
+     "committee": "AMERICAN PRINCIPLES PROJECT PAC",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.26,
+     "last_date": "2026-09-14",
+     "total": 0.26,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00707844",
+     "committee": "EDF ACTION VOTES",
+     "candidate_id": "S4MI00595",
+     "candidate": "ROGERS, MICHAEL J.",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.25,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-11",
+     "total": 0.25,
+     "side": "D"
+    },
+    {
+     "committee_id": "C99002396",
+     "committee": "AMERICAN POLITICAL ACTION COMMITTEE",
+     "candidate_id": null,
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.23,
+     "last_date": "2026-09-16",
+     "total": 0.23,
+     "side": null
+    },
+    {
+     "committee_id": "C00486845",
+     "committee": "LCV VICTORY FUND",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.19,
+     "last_date": "2026-09-22",
+     "total": 0.19,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00724203",
+     "committee": "SOMOS PAC",
+     "candidate_id": "S4MI00470",
+     "candidate": "SLOTKIN, ELISSA",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.11,
+     "last_date": "2024-10-15",
+     "total": 0.11,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00754051",
+     "committee": "WORKERS VOTE",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.1,
+     "last_date": "2026-09-17",
+     "total": 0.1,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00718353",
+     "committee": "MILLIONS OF MICHIGANIANS",
+     "candidate_id": "S4MI00595",
+     "candidate": "ROGERS, MICHAEL J",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.1,
+     "last_date": "2026-08-11",
+     "total": 0.1,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00953406",
+     "committee": "THE FRONT LINE ACTION",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.09,
+     "last_date": "2026-09-11",
+     "total": 0.09,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00010421",
+     "committee": "ASSOCIATED BUILDERS AND CONTRACTORS, INC. POLITICAL ACTION COMMITTEE (ABC PAC)",
+     "candidate_id": "S4MI00595",
+     "candidate": "ROGERS, MIKE J.",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.05,
+     "last_date": "2026-09-18",
+     "total": 0.05,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00489799",
+     "committee": "PLANNED PARENTHOOD VOTES",
+     "candidate_id": null,
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.05,
+     "last_date": "2026-09-16",
+     "total": 0.05,
+     "side": null
+    },
+    {
+     "committee_id": "C00886093",
+     "committee": "FOR MICHIGAN ACTION FUND",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.05,
+     "last_date": "2026-09-10",
+     "total": 0.05,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00747121",
+     "committee": "RED SENATE",
+     "candidate_id": "S4MI00595",
+     "candidate": "ROGERS, MIKE",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.04,
+     "last_date": "2026-09-21",
+     "total": 0.04,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00909994",
+     "committee": "FIELD TEAM 6, INC.",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.04,
+     "last_date": "2026-08-29",
+     "total": 0.04,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00930321",
+     "committee": "NEIGHBOR VOICES PAC",
+     "candidate_id": "S4MI00595",
+     "candidate": "ROGERS, MICHAEL J",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.03,
+     "last_date": "2026-09-17",
+     "total": 0.03,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00886093",
+     "committee": "FOR MICHIGAN ACTION FUND",
+     "candidate_id": "S4MI00595",
+     "candidate": "ROGERS, MICHAEL J",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.03,
+     "last_date": "2026-09-10",
+     "total": 0.03,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00718353",
+     "committee": "MILLIONS OF MICHIGANIANS",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.03,
+     "last_date": "2026-08-11",
+     "total": 0.03,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00489799",
+     "committee": "PLANNED PARENTHOOD VOTES",
+     "candidate_id": null,
+     "candidate": "ROGERS, MICHAEL",
+     "party": "",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.02,
+     "last_date": "2026-09-16",
+     "total": 0.02,
+     "side": null
+    },
+    {
+     "committee_id": "C00612820",
+     "committee": "COMMUNITY CHANGE VOTERS",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.02,
+     "last_date": "2026-08-21",
+     "total": 0.02,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00341396",
+     "committee": "MOVEON.ORG POLITICAL ACTION",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.01,
+     "last_date": "2026-09-23",
+     "total": 0.01,
+     "side": "D"
+    },
+    {
+     "committee_id": "C90011156",
+     "committee": "WORKING AMERICA",
+     "candidate_id": "S4MI00595",
+     "candidate": "ROGERS, MICHAEL J",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.01,
+     "last_date": "2026-09-22",
+     "total": 0.01,
+     "side": "D"
+    },
+    {
+     "committee_id": "C90011156",
+     "committee": "WORKING AMERICA",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.01,
+     "last_date": "2026-09-22",
+     "total": 0.01,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00580068",
+     "committee": "PROGRESSIVE TURNOUT PROJECT",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.01,
+     "last_date": "2026-09-20",
+     "total": 0.01,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00930321",
+     "committee": "NEIGHBOR VOICES PAC",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.01,
+     "last_date": "2026-09-17",
+     "total": 0.01,
+     "side": "D"
+    },
+    {
+     "committee_id": "C90018904",
+     "committee": "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.01,
+     "last_date": "2026-09-17",
+     "total": 0.01,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00640300",
+     "committee": "ACTIVATE AMERICA",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.01,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-31",
+     "total": 0.01,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00747121",
+     "committee": "RED SENATE",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.01,
+     "last_date": "2026-08-05",
+     "total": 0.01,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00004036",
+     "committee": "SEIU COPE (SERVICE EMPLOYEES INTERNATIONAL UNION COMMITTEE ON POLITICAL EDUCATION)",
+     "candidate_id": "S4MI00470",
+     "candidate": "SLOTKIN, ELISSA",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.01,
+     "notice_recent": 0.0,
+     "last_date": "2025-04-15",
+     "total": 0.01,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00490375",
+     "committee": "NATIONAL NURSES UNITED FOR PATIENT PROTECTION",
+     "candidate_id": "S4MI00470",
+     "candidate": "SLOTKIN, ELISSA",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.01,
+     "notice_recent": 0.0,
+     "last_date": "2025-02-04",
+     "total": 0.01,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00747121",
+     "committee": "RED SENATE",
+     "candidate_id": "S4MI00470",
+     "candidate": "SLOTKIN, ELISSA",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.01,
+     "notice_recent": 0.0,
+     "last_date": "2025-01-15",
+     "total": 0.01,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00741710",
+     "committee": "NRA VICTORY FUND, INC.",
+     "candidate_id": "S4MI00595",
+     "candidate": "ROGERS, MICHAEL J",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-09-20",
+     "total": 0.0,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00528455",
+     "committee": "INTERNATIONAL ALLIANCE OF THEATRICAL STAGE EMPLOYEES FEDERAL SPEECH PAC",
+     "candidate_id": null,
+     "candidate": "EL-SAYED, ABDUL DR.",
+     "party": "",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-09-09",
+     "total": 0.0,
+     "side": null
+    },
+    {
+     "committee_id": "C00776419",
+     "committee": "THE PEOPLE UNITED PAC",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-31",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00489799",
+     "committee": "PLANNED PARENTHOOD VOTES",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-10",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00802389",
+     "committee": "GIVEGREEN UNITED ACTION",
+     "candidate_id": "S6MI00418",
+     "candidate": "EL-SAYED, ABDUL",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-05",
+     "total": 0.0,
+     "side": "D"
+    }
+   ]
+  },
+  "NH": {
+   "pro_D": 6.17,
+   "pro_R": 10.48,
+   "n_rows": 143,
+   "last_date": "2026-09-22",
+   "rows": [
+    {
+     "committee_id": "C00865444",
+     "committee": "WINSENATE",
+     "candidate_id": "S6NH00208",
+     "candidate": "SUNUNU, JOHN E.",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 5.9,
+     "last_date": "2026-09-22",
+     "total": 5.9,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00960435",
+     "committee": "NO GOING BACK PAC INC.",
+     "candidate_id": "S6NH00141",
+     "candidate": "PAPPAS, CHRIS",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 3.54,
+     "last_date": "2026-09-21",
+     "total": 3.54,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00571703",
+     "committee": "SLF PAC",
+     "candidate_id": "S6NH00141",
+     "candidate": "PAPPAS, CHRIS",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 3.04,
+     "last_date": "2026-09-22",
+     "total": 3.04,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00687103",
+     "committee": "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION",
+     "candidate_id": "S6NH00208",
+     "candidate": "SUNUNU, JOHN E",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 1.35,
+     "last_date": "2026-09-22",
+     "total": 1.35,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00687103",
+     "committee": "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION",
+     "candidate_id": "S6NH00141",
+     "candidate": "PAPPAS, CHRIS",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 1.35,
+     "last_date": "2026-09-16",
+     "total": 1.35,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00811166",
+     "committee": "THE SENTINEL ACTION FUND",
+     "candidate_id": "S6NH00141",
+     "candidate": "PAPPAS, CHRIS",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.43,
+     "last_date": "2026-09-17",
+     "total": 0.43,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00879510",
+     "committee": "AMERICA PAC",
+     "candidate_id": "S6NH00141",
+     "candidate": "PAPPAS, CHRIS",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.41,
+     "last_date": "2026-09-18",
+     "total": 0.41,
+     "side": "R"
+    },
+    {
+     "committee_id": "C90023565",
+     "committee": "AMERICA'S CREDIT UNIONS",
+     "candidate_id": "S6NH00141",
+     "candidate": "PAPPAS, CHRIS",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.23,
+     "last_date": "2026-09-16",
+     "total": 0.23,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00879510",
+     "committee": "AMERICA PAC",
+     "candidate_id": "S6NH00208",
+     "candidate": "SUNUNU, JOHN E",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.16,
+     "last_date": "2026-09-16",
+     "total": 0.16,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00811166",
+     "committee": "THE SENTINEL ACTION FUND",
+     "candidate_id": "S6NH00208",
+     "candidate": "SUNUNU, JOHN E",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.08,
+     "last_date": "2026-09-17",
+     "total": 0.08,
+     "side": "R"
+    },
+    {
+     "committee_id": "C99002396",
+     "committee": "AMERICAN POLITICAL ACTION COMMITTEE",
+     "candidate_id": null,
+     "candidate": "PAPPAS, CHRIS",
+     "party": "",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.05,
+     "last_date": "2026-09-16",
+     "total": 0.05,
+     "side": null
+    },
+    {
+     "committee_id": "C00960435",
+     "committee": "NO GOING BACK PAC INC.",
+     "candidate_id": "S6NH00208",
+     "candidate": "SUNUNU, JOHN E",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.04,
+     "last_date": "2026-09-16",
+     "total": 0.04,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00550970",
+     "committee": "EQUALITY PAC",
+     "candidate_id": "S6NH00141",
+     "candidate": "PAPPAS, CHRIS",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.04,
+     "last_date": "2026-09-09",
+     "total": 0.04,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00814152",
+     "committee": "TURNING POINT PAC INC.",
+     "candidate_id": "S6NH00208",
+     "candidate": "SUNUNU, JOHN E",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.03,
+     "last_date": "2026-09-16",
+     "total": 0.03,
+     "side": "R"
+    },
+    {
+     "committee_id": "C90018904",
+     "committee": "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY",
+     "candidate_id": "S6NH00182",
+     "candidate": "MANZUR, KARISHMA",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.03,
+     "last_date": "2026-09-04",
+     "total": 0.03,
+     "side": "R"
+    },
+    {
+     "committee_id": "C90018904",
+     "committee": "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY",
+     "candidate_id": "S6NH00141",
+     "candidate": "PAPPAS, CHRIS",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.02,
+     "last_date": "2026-09-04",
+     "total": 0.02,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00528455",
+     "committee": "INTERNATIONAL ALLIANCE OF THEATRICAL STAGE EMPLOYEES FEDERAL SPEECH PAC",
+     "candidate_id": null,
+     "candidate": "PAPPAS, CHRIS",
+     "party": "",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-09-09",
+     "total": 0.0,
+     "side": null
+    }
+   ]
+  },
+  "ME": {
+   "pro_D": 16.24,
+   "pro_R": 34.45,
+   "n_rows": 484,
+   "last_date": "2026-09-24",
+   "rows": [
+    {
+     "committee_id": "C00571703",
+     "committee": "SLF PAC",
+     "candidate_id": "S6ME00464",
+     "candidate": "JACKSON, TROY DALE",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 13.29,
+     "last_date": "2026-09-18",
+     "total": 13.29,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00894709",
+     "committee": "PINE TREE RESULTS PAC",
+     "candidate_id": "S6ME00464",
+     "candidate": "JACKSON, TROY DALE",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 9.29,
+     "last_date": "2026-08-28",
+     "total": 9.29,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00894709",
+     "committee": "PINE TREE RESULTS PAC",
+     "candidate_id": "S6ME00373",
+     "candidate": "PLATNER, GRAHAM",
+     "party": "DEM",
+     "so": "O",
+     "reported": 4.86,
+     "notice_recent": 1.86,
+     "last_date": "2026-06-26",
+     "total": 6.72,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00865444",
+     "committee": "WINSENATE",
+     "candidate_id": "S6ME00159",
+     "candidate": "COLLINS, SUSAN",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 6.63,
+     "last_date": "2026-09-22",
+     "total": 6.63,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00865444",
+     "committee": "WINSENATE",
+     "candidate_id": "S6ME00464",
+     "candidate": "JACKSON, TROY DALE",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 3.64,
+     "last_date": "2026-09-15",
+     "total": 3.64,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00915595",
+     "committee": "GOVERNMENT THAT WORKS PAC",
+     "candidate_id": "S6ME00464",
+     "candidate": "JACKSON, TROY DALE",
+     "party": "DEM",
+     "so": "S",
+     "reported": 1.65,
+     "notice_recent": 0.11,
+     "last_date": "2026-08-20",
+     "total": 1.76,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00961342",
+     "committee": "THE MAINE STANDARD",
+     "candidate_id": "S6ME00464",
+     "candidate": "JACKSON, TROY DALE",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 1.19,
+     "last_date": "2026-09-19",
+     "total": 1.19,
+     "side": "R"
+    },
+    {
+     "committee_id": "C90023607",
+     "committee": "END CITIZENS UNITED ACTION FUND",
+     "candidate_id": "S6ME00159",
+     "candidate": "COLLINS, SUSAN",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 1.02,
+     "last_date": "2026-09-24",
+     "total": 1.02,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00489799",
+     "committee": "PLANNED PARENTHOOD VOTES",
+     "candidate_id": "S6ME00159",
+     "candidate": "COLLINS, SUSAN",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.76,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-30",
+     "total": 0.76,
+     "side": "D"
+    },
+    {
+     "committee_id": "C90023565",
+     "committee": "AMERICA'S CREDIT UNIONS",
+     "candidate_id": "S6ME00159",
+     "candidate": "COLLINS, SUSAN",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.75,
+     "last_date": "2026-09-15",
+     "total": 0.75,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00744920",
+     "committee": "CFFE PAC",
+     "candidate_id": "S6ME00464",
+     "candidate": "JACKSON, TROY DALE",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.61,
+     "last_date": "2026-09-22",
+     "total": 0.61,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00879510",
+     "committee": "AMERICA PAC",
+     "candidate_id": "S6ME00464",
+     "candidate": "JACKSON, TROY DALE",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.57,
+     "last_date": "2026-09-21",
+     "total": 0.57,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00922294",
+     "committee": "STRONGER MAINE",
+     "candidate_id": "S6ME00159",
+     "candidate": "COLLINS, SUSAN M.",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.25,
+     "notice_recent": 0.3,
+     "last_date": "2026-09-17",
+     "total": 0.55,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00490375",
+     "committee": "NATIONAL NURSES UNITED FOR PATIENT PROTECTION",
+     "candidate_id": "S6ME00464",
+     "candidate": "JACKSON, TROY",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.48,
+     "last_date": "2026-09-16",
+     "total": 0.48,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00946921",
+     "committee": "LEAD MAINE COMMITTEE, INC.",
+     "candidate_id": "S6ME00159",
+     "candidate": "COLLINS, SUSAN M.",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.16,
+     "notice_recent": 0.32,
+     "last_date": "2026-07-28",
+     "total": 0.48,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00915595",
+     "committee": "GOVERNMENT THAT WORKS PAC",
+     "candidate_id": "S6ME00159",
+     "candidate": "COLLINS, SUSAN M.",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.35,
+     "notice_recent": 0.11,
+     "last_date": "2026-08-20",
+     "total": 0.46,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00946921",
+     "committee": "LEAD MAINE COMMITTEE, INC.",
+     "candidate_id": "S6ME00464",
+     "candidate": "JACKSON, TROY DALE",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.42,
+     "last_date": "2026-09-17",
+     "total": 0.42,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00879510",
+     "committee": "AMERICA PAC",
+     "candidate_id": "S6ME00159",
+     "candidate": "COLLINS, SUSAN M.",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.34,
+     "last_date": "2026-09-21",
+     "total": 0.34,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00922294",
+     "committee": "STRONGER MAINE",
+     "candidate_id": "S6ME00464",
+     "candidate": "JACKSON, TROY DALE",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.31,
+     "last_date": "2026-09-17",
+     "total": 0.31,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00608943",
+     "committee": "CLEARPATH ACTION FUND, INC.",
+     "candidate_id": "S6ME00159",
+     "candidate": "COLLINS, SUSAN",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.28,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-14",
+     "total": 0.28,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00738674",
+     "committee": "REPRODUCTIVE FREEDOM FOR ALL FREEDOM FUND",
+     "candidate_id": "S6ME00159",
+     "candidate": "COLLINS, SUSAN M.",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.17,
+     "notice_recent": 0.08,
+     "last_date": "2026-09-15",
+     "total": 0.25,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00620021",
+     "committee": "COMMON DEFENSE ACTION FUND",
+     "candidate_id": "S6ME00373",
+     "candidate": "PLATNER, GRAHAM",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.22,
+     "notice_recent": 0.0,
+     "last_date": "2026-06-15",
+     "total": 0.22,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00946921",
+     "committee": "LEAD MAINE COMMITTEE, INC.",
+     "candidate_id": "S6ME00373",
+     "candidate": "PLATNER, GRAHAM",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.1,
+     "notice_recent": 0.01,
+     "last_date": "2026-07-09",
+     "total": 0.12,
+     "side": "R"
+    },
+    {
+     "committee_id": "C90011172",
+     "committee": "AFSCME WORKING FAMILIES FUND",
+     "candidate_id": "S6ME00159",
+     "candidate": "COLLINS, SUSAN M.",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.09,
+     "last_date": "2026-09-09",
+     "total": 0.09,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00754069",
+     "committee": "PAF",
+     "candidate_id": "S6ME00159",
+     "candidate": "COLLINS, SUSAN M.",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.07,
+     "last_date": "2026-09-20",
+     "total": 0.07,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00754069",
+     "committee": "PAF",
+     "candidate_id": "S6ME00464",
+     "candidate": "JACKSON, TROY DALE",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.07,
+     "last_date": "2026-09-20",
+     "total": 0.07,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00010421",
+     "committee": "ASSOCIATED BUILDERS AND CONTRACTORS, INC. POLITICAL ACTION COMMITTEE (ABC PAC)",
+     "candidate_id": "S6ME00159",
+     "candidate": "COLLINS, SUSAN SEN.",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.05,
+     "last_date": "2026-09-18",
+     "total": 0.05,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00913178",
+     "committee": "LEAGUE OF LABOR VOTERS",
+     "candidate_id": "S6ME00159",
+     "candidate": "COLLINS, SUSAN M.",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.05,
+     "notice_recent": 0.0,
+     "last_date": "2026-06-11",
+     "total": 0.05,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00913178",
+     "committee": "LEAGUE OF LABOR VOTERS",
+     "candidate_id": "S6ME00373",
+     "candidate": "PLATNER, GRAHAM",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.05,
+     "notice_recent": 0.0,
+     "last_date": "2026-06-11",
+     "total": 0.05,
+     "side": "D"
+    },
+    {
+     "committee_id": "C99002396",
+     "committee": "AMERICAN POLITICAL ACTION COMMITTEE",
+     "candidate_id": null,
+     "candidate": "JACKSON, TROY",
+     "party": "",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.04,
+     "last_date": "2026-09-16",
+     "total": 0.04,
+     "side": null
+    },
+    {
+     "committee_id": "C90018904",
+     "committee": "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY",
+     "candidate_id": "S6ME00159",
+     "candidate": "COLLINS, SUSAN M.",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.03,
+     "last_date": "2026-08-07",
+     "total": 0.03,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00959684",
+     "committee": "WIN THE WHOLE THING PAC",
+     "candidate_id": "S6ME00464",
+     "candidate": "JACKSON, TROY DALE",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.02,
+     "last_date": "2026-09-14",
+     "total": 0.02,
+     "side": "D"
+    },
+    {
+     "committee_id": "C90018904",
+     "committee": "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY",
+     "candidate_id": "H4ME02218",
+     "candidate": "JACKSON, TROY",
+     "party": "",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.02,
+     "last_date": "2026-09-04",
+     "total": 0.02,
+     "side": null
+    },
+    {
+     "committee_id": "C00747121",
+     "committee": "RED SENATE",
+     "candidate_id": "S6ME00159",
+     "candidate": "COLLINS, SUSAN M.",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.02,
+     "notice_recent": 0.0,
+     "last_date": "2026-07-29",
+     "total": 0.02,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00580068",
+     "committee": "PROGRESSIVE TURNOUT PROJECT",
+     "candidate_id": "S6ME00464",
+     "candidate": "JACKSON, TROY DALE",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.01,
+     "last_date": "2026-09-20",
+     "total": 0.01,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00004036",
+     "committee": "SEIU COPE (SERVICE EMPLOYEES INTERNATIONAL UNION COMMITTEE ON POLITICAL EDUCATION)",
+     "candidate_id": "S6ME00464",
+     "candidate": "JACKSON, TROY DALE",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.01,
+     "last_date": "2026-09-11",
+     "total": 0.01,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00811166",
+     "committee": "THE SENTINEL ACTION FUND",
+     "candidate_id": "S6ME00159",
+     "candidate": "COLLINS, SUSAN M.",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.01,
+     "last_date": "2026-09-09",
+     "total": 0.01,
+     "side": "R"
+    },
+    {
+     "committee_id": "C99002396",
+     "committee": "AMERICAN POLITICAL ACTION COMMITTEE",
+     "candidate_id": "S6ME00373",
+     "candidate": "PLATNER, GRAHAM",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.01,
+     "notice_recent": 0.0,
+     "last_date": "2026-06-19",
+     "total": 0.01,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00486845",
+     "committee": "LCV VICTORY FUND",
+     "candidate_id": "S6ME00159",
+     "candidate": "COLLINS, SUSAN M",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-09-19",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C90023573",
+     "committee": "REGISTRATION NATION ACTION FUND",
+     "candidate_id": null,
+     "candidate": "JACKSON, TROY",
+     "party": "",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-09-13",
+     "total": 0.0,
+     "side": null
+    },
+    {
+     "committee_id": "C00528455",
+     "committee": "INTERNATIONAL ALLIANCE OF THEATRICAL STAGE EMPLOYEES FEDERAL SPEECH PAC",
+     "candidate_id": null,
+     "candidate": "JACKSON, TROY",
+     "party": "",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-09-09",
+     "total": 0.0,
+     "side": null
+    },
+    {
+     "committee_id": "C00640300",
+     "committee": "ACTIVATE AMERICA",
+     "candidate_id": "S6ME00464",
+     "candidate": "JACKSON, TROY",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-31",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00640300",
+     "committee": "ACTIVATE AMERICA",
+     "candidate_id": "S6ME00159",
+     "candidate": "COLLINS, SUSAN M.",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-31",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00951376",
+     "committee": "DEMOCRATS FIGHT BACK PAC",
+     "candidate_id": "S6ME00464",
+     "candidate": "JACKSON, TROY DALE",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-07",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00640300",
+     "committee": "ACTIVATE AMERICA",
+     "candidate_id": null,
+     "candidate": "JACKSON, TROY",
+     "party": "",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-07-31",
+     "total": 0.0,
+     "side": null
+    },
+    {
+     "committee_id": "C00802389",
+     "committee": "GIVEGREEN UNITED ACTION",
+     "candidate_id": "S6ME00464",
+     "candidate": "JACKSON, TROY DALE",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-07-27",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00776419",
+     "committee": "THE PEOPLE UNITED PAC",
+     "candidate_id": "S6ME00464",
+     "candidate": "JACKSON, TROY DALE",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-07-25",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00179408",
+     "committee": "MAINE DEMOCRATIC PARTY",
+     "candidate_id": "S6ME00159",
+     "candidate": "COLLINS, SUSAN",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-06-24",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00909994",
+     "committee": "FIELD TEAM 6, INC.",
+     "candidate_id": "S6ME00373",
+     "candidate": "PLATNER, GRAHAM",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-06-24",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00811166",
+     "committee": "THE SENTINEL ACTION FUND",
+     "candidate_id": "S6ME00373",
+     "candidate": "PLATNER, GRAHAM",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-06-10",
+     "total": 0.0,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00909465",
+     "committee": "INDIGO PAC",
+     "candidate_id": "S6ME00159",
+     "candidate": "COLLINS, SUSAN",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2025-12-30",
+     "total": 0.0,
+     "side": "D"
+    }
+   ]
+  },
+  "NC": {
+   "pro_D": 22.01,
+   "pro_R": 37.05,
+   "n_rows": 467,
+   "last_date": "2026-09-23",
+   "rows": [
+    {
+     "committee_id": "C00571703",
+     "committee": "SLF PAC",
+     "candidate_id": "S6NC00407",
+     "candidate": "COOPER, ROY",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.37,
+     "notice_recent": 25.15,
+     "last_date": "2026-09-16",
+     "total": 25.52,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00865444",
+     "committee": "WINSENATE",
+     "candidate_id": "S6NC00415",
+     "candidate": "WHATLEY, MICHAEL",
+     "party": "REP",
+     "so": "O",
+     "reported": 8.78,
+     "notice_recent": 10.39,
+     "last_date": "2026-09-22",
+     "total": 19.16,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00960435",
+     "committee": "NO GOING BACK PAC INC.",
+     "candidate_id": "S6NC00407",
+     "candidate": "COOPER, ROY",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 5.76,
+     "last_date": "2026-09-23",
+     "total": 5.76,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00687103",
+     "committee": "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION",
+     "candidate_id": "S6NC00415",
+     "candidate": "WHATLEY, MICHAEL",
+     "party": "REP",
+     "so": "S",
+     "reported": 2.54,
+     "notice_recent": 0.0,
+     "last_date": "2026-09-01",
+     "total": 2.55,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00687103",
+     "committee": "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION",
+     "candidate_id": "S6NC00407",
+     "candidate": "COOPER, ROY",
+     "party": "DEM",
+     "so": "O",
+     "reported": 1.7,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-19",
+     "total": 1.7,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00960435",
+     "committee": "NO GOING BACK PAC INC.",
+     "candidate_id": "S6NC00415",
+     "candidate": "WHATLEY, MICHAEL",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 1.04,
+     "last_date": "2026-09-22",
+     "total": 1.04,
+     "side": "R"
+    },
+    {
+     "committee_id": "C90022427",
+     "committee": "PROGRESS NORTH CAROLINA ACTION",
+     "candidate_id": null,
+     "candidate": "COOPER, ROY",
+     "party": "",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.77,
+     "last_date": "2026-09-09",
+     "total": 0.77,
+     "side": null
+    },
+    {
+     "committee_id": "C00887182",
+     "committee": "PLANNED PARENTHOOD VOTES NORTH CAROLINA",
+     "candidate_id": "S6NC00407",
+     "candidate": "COOPER, ROY",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.03,
+     "notice_recent": 0.59,
+     "last_date": "2026-09-04",
+     "total": 0.62,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00740225",
+     "committee": "NRDC ACTION VOTES",
+     "candidate_id": "S6NC00415",
+     "candidate": "WHATLEY, MICHAEL",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.5,
+     "last_date": "2026-09-18",
+     "total": 0.5,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00486845",
+     "committee": "LCV VICTORY FUND",
+     "candidate_id": "S6NC00415",
+     "candidate": "WHATLEY, MICHAEL",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.5,
+     "last_date": "2026-09-17",
+     "total": 0.5,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00707844",
+     "committee": "EDF ACTION VOTES",
+     "candidate_id": "S6NC00415",
+     "candidate": "WHATLEY, MICHAEL",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.5,
+     "last_date": "2026-09-17",
+     "total": 0.5,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00571703",
+     "committee": "SLF PAC",
+     "candidate_id": "S6NC00415",
+     "candidate": "WHATLEY, MICHAEL",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.36,
+     "notice_recent": 0.0,
+     "last_date": "2026-06-04",
+     "total": 0.36,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00754051",
+     "committee": "WORKERS VOTE",
+     "candidate_id": "S6NC00407",
+     "candidate": "COOPER, ROY",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.17,
+     "notice_recent": 0.07,
+     "last_date": "2026-09-10",
+     "total": 0.23,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00580068",
+     "committee": "PROGRESSIVE TURNOUT PROJECT",
+     "candidate_id": "S6NC00407",
+     "candidate": "COOPER, ROY",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.04,
+     "notice_recent": 0.07,
+     "last_date": "2026-09-20",
+     "total": 0.11,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00744920",
+     "committee": "CFFE PAC",
+     "candidate_id": "S6NC00407",
+     "candidate": "COOPER, ROY",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.11,
+     "last_date": "2026-09-01",
+     "total": 0.11,
+     "side": "D"
+    },
+    {
+     "committee_id": "C90022427",
+     "committee": "PROGRESS NORTH CAROLINA ACTION",
+     "candidate_id": "S6NC00415",
+     "candidate": "WHATLEY, MICHAEL",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.07,
+     "last_date": "2026-09-23",
+     "total": 0.07,
+     "side": "D"
+    },
+    {
+     "committee_id": "C90019910",
+     "committee": "CAROLINA FEDERATION",
+     "candidate_id": "S6NC00407",
+     "candidate": "COOPER, ROY",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.06,
+     "last_date": "2026-09-22",
+     "total": 0.06,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00010421",
+     "committee": "ASSOCIATED BUILDERS AND CONTRACTORS, INC. POLITICAL ACTION COMMITTEE (ABC PAC)",
+     "candidate_id": "S6NC00415",
+     "candidate": "WHATLEY, MICHAEL",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.05,
+     "last_date": "2026-09-18",
+     "total": 0.05,
+     "side": "R"
+    },
+    {
+     "committee_id": "C90018904",
+     "committee": "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY",
+     "candidate_id": "S6NC00407",
+     "candidate": "COOPER, ROY",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.05,
+     "last_date": "2026-09-04",
+     "total": 0.05,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00865444",
+     "committee": "WINSENATE",
+     "candidate_id": "S6NC00407",
+     "candidate": "COOPER, ROY",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.05,
+     "last_date": "2026-09-01",
+     "total": 0.05,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00835041",
+     "committee": "FORWARD BLUE",
+     "candidate_id": "S6NC00407",
+     "candidate": "COOPER, ROY",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.03,
+     "notice_recent": 0.0,
+     "last_date": "2026-07-25",
+     "total": 0.03,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00004036",
+     "committee": "SEIU COPE (SERVICE EMPLOYEES INTERNATIONAL UNION COMMITTEE ON POLITICAL EDUCATION)",
+     "candidate_id": "S6NC00407",
+     "candidate": "COOPER, ROY",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.02,
+     "last_date": "2026-09-21",
+     "total": 0.02,
+     "side": "D"
+    },
+    {
+     "committee_id": "C90011800",
+     "committee": "CATHOLICVOTE.ORG",
+     "candidate_id": "S6NC00407",
+     "candidate": "COOPER, ROY",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.02,
+     "notice_recent": 0.0,
+     "last_date": "2026-05-18",
+     "total": 0.02,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00960385",
+     "committee": "UNITED FUTURES PAC",
+     "candidate_id": "S6NC00407",
+     "candidate": "COOPER, ROY",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.01,
+     "last_date": "2026-09-16",
+     "total": 0.01,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00930321",
+     "committee": "NEIGHBOR VOICES PAC",
+     "candidate_id": "S6NC00415",
+     "candidate": "WHATLEY, MICHAEL",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.01,
+     "last_date": "2026-09-10",
+     "total": 0.01,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00640300",
+     "committee": "ACTIVATE AMERICA",
+     "candidate_id": "S6NC00407",
+     "candidate": "COOPER, ROY",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.01,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-31",
+     "total": 0.01,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00909994",
+     "committee": "FIELD TEAM 6, INC.",
+     "candidate_id": "S6NC00407",
+     "candidate": "COOPER, ROY",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.01,
+     "notice_recent": 0.0,
+     "last_date": "2026-06-30",
+     "total": 0.01,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00747121",
+     "committee": "RED SENATE",
+     "candidate_id": "S6NC00407",
+     "candidate": "COOPER, ROY",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.01,
+     "notice_recent": 0.0,
+     "last_date": "2026-03-04",
+     "total": 0.01,
+     "side": "R"
+    },
+    {
+     "committee_id": "C90023557",
+     "committee": "NORTH CAROLINANS AGAINST GUN VIOLENCE ACTION FUND",
+     "candidate_id": "S6NC00407",
+     "candidate": "COOPER, ROY",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-09-10",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00528455",
+     "committee": "INTERNATIONAL ALLIANCE OF THEATRICAL STAGE EMPLOYEES FEDERAL SPEECH PAC",
+     "candidate_id": null,
+     "candidate": "COOPER, ROY III",
+     "party": "",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-09-09",
+     "total": 0.0,
+     "side": null
+    },
+    {
+     "committee_id": "C90018904",
+     "committee": "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY",
+     "candidate_id": "S6NH00182",
+     "candidate": "MANZUR, KARISHMA",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-07",
+     "total": 0.0,
+     "side": "R"
+    },
+    {
+     "committee_id": "C90018904",
+     "committee": "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY",
+     "candidate_id": "S6NH00141",
+     "candidate": "PAPPAS, CHRIS",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-07",
+     "total": 0.0,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00448696",
+     "committee": "SENATE CONSERVATIVES FUND",
+     "candidate_id": "S6NC00415",
+     "candidate": "WHATLEY, MICHAEL",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-04",
+     "total": 0.0,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00640300",
+     "committee": "ACTIVATE AMERICA",
+     "candidate_id": null,
+     "candidate": "COOPER, ROY",
+     "party": "",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-07-31",
+     "total": 0.0,
+     "side": null
+    },
+    {
+     "committee_id": "C00135368",
+     "committee": "SIERRA CLUB POLITICAL COMMITTEE",
+     "candidate_id": "S6NC00415",
+     "candidate": "WHATLEY, MICHAEL",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-07-17",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00802389",
+     "committee": "GIVEGREEN UNITED ACTION",
+     "candidate_id": "S6NC00407",
+     "candidate": "COOPER, ROY",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-07-15",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00747121",
+     "committee": "RED SENATE",
+     "candidate_id": "S6NC00415",
+     "candidate": "WHATLEY, MICHAEL",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-06-30",
+     "total": 0.0,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00909465",
+     "committee": "INDIGO PAC",
+     "candidate_id": "S6NC00407",
+     "candidate": "COOPER, ROY",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-03-19",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00640300",
+     "committee": "ACTIVATE AMERICA",
+     "candidate_id": "S4NC00162",
+     "candidate": "TILLIS, THOM",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2025-05-28",
+     "total": 0.0,
+     "side": "D"
+    }
+   ]
+  },
+  "TX": {
+   "pro_D": 11.5,
+   "pro_R": 115.72,
+   "n_rows": 482,
+   "last_date": "2026-09-23",
+   "rows": [
+    {
+     "committee_id": "C00960211",
+     "committee": "TEXAS PAC",
+     "candidate_id": "S6TX00388",
+     "candidate": "PAXTON, WARREN KENNETH JR.",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 36.75,
+     "last_date": "2026-09-18",
+     "total": 36.75,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00960211",
+     "committee": "TEXAS PAC",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 32.62,
+     "last_date": "2026-09-18",
+     "total": 32.62,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00901223",
+     "committee": "LONE STAR LIBERTY PAC",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.2,
+     "notice_recent": 13.89,
+     "last_date": "2026-09-04",
+     "total": 14.09,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00918268",
+     "committee": "LONE STAR RISING PAC",
+     "candidate_id": "S6TX00388",
+     "candidate": "PAXTON, WARREN KENNETH JR.",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.09,
+     "notice_recent": 8.44,
+     "last_date": "2026-09-23",
+     "total": 8.53,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00892471",
+     "committee": "MAGA INC.",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 7.5,
+     "last_date": "2026-09-15",
+     "total": 7.5,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00892471",
+     "committee": "MAGA INC.",
+     "candidate_id": "S6TX00388",
+     "candidate": "PAXTON, WARREN KENNETH JR.",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 7.5,
+     "last_date": "2026-09-15",
+     "total": 7.5,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00879510",
+     "committee": "AMERICA PAC",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 4.66,
+     "last_date": "2026-09-17",
+     "total": 4.66,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00901223",
+     "committee": "LONE STAR LIBERTY PAC",
+     "candidate_id": "S6TX00388",
+     "candidate": "PAXTON, WARREN KENNETH JR.",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 3.59,
+     "last_date": "2026-09-04",
+     "total": 3.59,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00960435",
+     "committee": "NO GOING BACK PAC INC.",
+     "candidate_id": "S6TX00388",
+     "candidate": "PAXTON, WARREN KENNETH JR.",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 2.81,
+     "last_date": "2026-09-08",
+     "total": 2.81,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00960435",
+     "committee": "NO GOING BACK PAC INC.",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 2.81,
+     "last_date": "2026-09-08",
+     "total": 2.81,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00796045",
+     "committee": "TRUTH AND COURAGE PAC",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 1.75,
+     "last_date": "2026-08-24",
+     "total": 1.75,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00918268",
+     "committee": "LONE STAR RISING PAC",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 1.23,
+     "last_date": "2026-09-08",
+     "total": 1.23,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00890608",
+     "committee": "PROTECTING AMERICA'S FUTURE",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.52,
+     "last_date": "2026-09-19",
+     "total": 0.52,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00879510",
+     "committee": "AMERICA PAC",
+     "candidate_id": "S6TX00388",
+     "candidate": "PAXTON, WARREN KENNETH JR.",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.51,
+     "last_date": "2026-09-09",
+     "total": 0.51,
+     "side": "R"
+    },
+    {
+     "committee_id": "C99002396",
+     "committee": "AMERICAN POLITICAL ACTION COMMITTEE",
+     "candidate_id": null,
+     "candidate": "TALARICO, JAMES",
+     "party": "",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.47,
+     "last_date": "2026-09-16",
+     "total": 0.47,
+     "side": null
+    },
+    {
+     "committee_id": "C00887968",
+     "committee": "EVANGELICALS FOR A BETTER FUTURE",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.4,
+     "last_date": "2026-09-01",
+     "total": 0.4,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00744920",
+     "committee": "CFFE PAC",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.22,
+     "last_date": "2026-09-22",
+     "total": 0.22,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00756940",
+     "committee": "TEXAS ORGANIZING PROJECT POLITICAL ACTION COMMITTEE",
+     "candidate_id": "S6TX00388",
+     "candidate": "PAXTON, WARREN JR.",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.21,
+     "last_date": "2026-09-11",
+     "total": 0.21,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00960930",
+     "committee": "CONSTITUTIONAL VANGUARD SUPER PAC",
+     "candidate_id": "S6TX00388",
+     "candidate": "PAXTON, KEN",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.2,
+     "last_date": "2026-09-22",
+     "total": 0.2,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00756940",
+     "committee": "TEXAS ORGANIZING PROJECT POLITICAL ACTION COMMITTEE",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.19,
+     "last_date": "2026-09-21",
+     "total": 0.19,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00909994",
+     "committee": "FIELD TEAM 6, INC.",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.01,
+     "notice_recent": 0.11,
+     "last_date": "2026-09-20",
+     "total": 0.12,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00769232",
+     "committee": "JEFFERSON RISING",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.11,
+     "last_date": "2026-07-31",
+     "total": 0.11,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00747121",
+     "committee": "RED SENATE",
+     "candidate_id": "S6TX00388",
+     "candidate": "PAXTON, KENNETH JR.",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.01,
+     "notice_recent": 0.09,
+     "last_date": "2026-09-16",
+     "total": 0.1,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00544387",
+     "committee": "AMERICAN PRINCIPLES PROJECT PAC",
+     "candidate_id": "S6TX00388",
+     "candidate": "PAXTON, WARREN KENNETH JR.",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.1,
+     "last_date": "2026-08-21",
+     "total": 0.1,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00754069",
+     "committee": "PAF",
+     "candidate_id": "S6TX00388",
+     "candidate": "PAXTON, WARREN JR.",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.08,
+     "last_date": "2026-09-14",
+     "total": 0.08,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00754069",
+     "committee": "PAF",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.08,
+     "last_date": "2026-09-14",
+     "total": 0.08,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00580068",
+     "committee": "PROGRESSIVE TURNOUT PROJECT",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.06,
+     "last_date": "2026-09-20",
+     "total": 0.06,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00448696",
+     "committee": "SENATE CONSERVATIVES FUND",
+     "candidate_id": "S6TX00388",
+     "candidate": "PAXTON, WARREN KENNETH JR.",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.04,
+     "notice_recent": 0.01,
+     "last_date": "2026-09-03",
+     "total": 0.06,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00865444",
+     "committee": "WINSENATE",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.05,
+     "last_date": "2026-09-01",
+     "total": 0.05,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00524181",
+     "committee": "SENATE CONSERVATIVES ACTION",
+     "candidate_id": "S6TX00388",
+     "candidate": "PAXTON, WARREN KENNETH JR.",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.05,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-27",
+     "total": 0.05,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00835041",
+     "committee": "FORWARD BLUE",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.05,
+     "notice_recent": 0.0,
+     "last_date": "2026-07-24",
+     "total": 0.05,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00738039",
+     "committee": "MIJENTE PAC",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.04,
+     "last_date": "2026-09-21",
+     "total": 0.04,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00844613",
+     "committee": "WIN IT BACK PAC",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.04,
+     "notice_recent": 0.0,
+     "last_date": "2026-05-27",
+     "total": 0.04,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00959973",
+     "committee": "LUPE VOTES FEDERAL SUPER PAC, INC.",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.03,
+     "last_date": "2026-09-21",
+     "total": 0.03,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00724203",
+     "committee": "SOMOS PAC",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.03,
+     "last_date": "2026-09-15",
+     "total": 0.03,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00004036",
+     "committee": "SEIU COPE (SERVICE EMPLOYEES INTERNATIONAL UNION COMMITTEE ON POLITICAL EDUCATION)",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.03,
+     "last_date": "2026-09-08",
+     "total": 0.03,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00951723",
+     "committee": "THE EDGE ACTION FUND",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.03,
+     "last_date": "2026-09-08",
+     "total": 0.03,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00640300",
+     "committee": "ACTIVATE AMERICA",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.02,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-31",
+     "total": 0.02,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00432260",
+     "committee": "CLUB FOR GROWTH PAC",
+     "candidate_id": "S6TX00388",
+     "candidate": "PAXTON, WARREN KENNETH JR.",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.02,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-13",
+     "total": 0.02,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00528455",
+     "committee": "INTERNATIONAL ALLIANCE OF THEATRICAL STAGE EMPLOYEES FEDERAL SPEECH PAC",
+     "candidate_id": null,
+     "candidate": "TALARICO, JAMES",
+     "party": "",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.01,
+     "last_date": "2026-09-21",
+     "total": 0.01,
+     "side": null
+    },
+    {
+     "committee_id": "C00956920",
+     "committee": "THE LOWDOWN",
+     "candidate_id": null,
+     "candidate": "PAXTON, KENNETH WARREN JR.",
+     "party": "",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.01,
+     "last_date": "2026-08-27",
+     "total": 0.01,
+     "side": null
+    },
+    {
+     "committee_id": "C00747121",
+     "committee": "RED SENATE",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.01,
+     "last_date": "2026-08-19",
+     "total": 0.01,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00956920",
+     "committee": "THE LOWDOWN",
+     "candidate_id": "S6TX00388",
+     "candidate": "PAXTON, KENNETH WARREN JR.",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.01,
+     "last_date": "2026-08-18",
+     "total": 0.01,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00544387",
+     "committee": "AMERICAN PRINCIPLES PROJECT PAC",
+     "candidate_id": "S6TX00388",
+     "candidate": "PAXTON, WARREN KENNETH JR.",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.01,
+     "last_date": "2026-08-10",
+     "total": 0.01,
+     "side": "R"
+    },
+    {
+     "committee_id": "C99002396",
+     "committee": "AMERICAN POLITICAL ACTION COMMITTEE",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO FOR TEXAS, JAMES",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.01,
+     "notice_recent": 0.0,
+     "last_date": "2026-06-19",
+     "total": 0.01,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00858852",
+     "committee": "NRRC",
+     "candidate_id": "S2TX00312",
+     "candidate": "CRUZ, RAFAEL TED",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.01,
+     "notice_recent": 0.0,
+     "last_date": "2025-01-29",
+     "total": 0.01,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00747121",
+     "committee": "RED SENATE",
+     "candidate_id": "S4TX00722",
+     "candidate": "ALLRED, COLIN",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.01,
+     "notice_recent": 0.0,
+     "last_date": "2025-01-15",
+     "total": 0.01,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00640300",
+     "committee": "ACTIVATE AMERICA",
+     "candidate_id": null,
+     "candidate": "TALARICO, JAMES",
+     "party": "",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-07-31",
+     "total": 0.0,
+     "side": null
+    },
+    {
+     "committee_id": "C00802389",
+     "committee": "GIVEGREEN UNITED ACTION",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-07-15",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00940155",
+     "committee": "PATRIOT PARTNERS",
+     "candidate_id": "S6TX00388",
+     "candidate": "PAXTON, WARREN KENNETH JR.",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-06-30",
+     "total": 0.0,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00933796",
+     "committee": "BLUE DEMOCRACY NETWORK",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-04-20",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00909465",
+     "committee": "INDIGO PAC",
+     "candidate_id": "S6TX00479",
+     "candidate": "TALARICO, JAMES",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-03-24",
+     "total": 0.0,
+     "side": "D"
+    }
+   ]
+  },
+  "OH": {
+   "pro_D": 29.67,
+   "pro_R": 43.92,
+   "n_rows": 401,
+   "last_date": "2026-09-22",
+   "rows": [
+    {
+     "committee_id": "C00571703",
+     "committee": "SLF PAC",
+     "candidate_id": "S6OH00163",
+     "candidate": "BROWN, SHERROD",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.11,
+     "notice_recent": 20.73,
+     "last_date": "2026-09-17",
+     "total": 20.83,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00865444",
+     "committee": "WINSENATE",
+     "candidate_id": "S6OH00304",
+     "candidate": "HUSTED, JON",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.01,
+     "notice_recent": 19.89,
+     "last_date": "2026-09-22",
+     "total": 19.9,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00687103",
+     "committee": "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION",
+     "candidate_id": "S6OH00304",
+     "candidate": "HUSTED, JON",
+     "party": "REP",
+     "so": "S",
+     "reported": 3.07,
+     "notice_recent": 2.79,
+     "last_date": "2026-09-21",
+     "total": 5.86,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00687103",
+     "committee": "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION",
+     "candidate_id": "S6OH00163",
+     "candidate": "BROWN, SHERROD",
+     "party": "DEM",
+     "so": "O",
+     "reported": 1.77,
+     "notice_recent": 2.44,
+     "last_date": "2026-09-21",
+     "total": 4.21,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00740225",
+     "committee": "NRDC ACTION VOTES",
+     "candidate_id": "S6OH00304",
+     "candidate": "HUSTED, JON",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 3.0,
+     "last_date": "2026-09-17",
+     "total": 3.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00912865",
+     "committee": "OHIO FLYER PAC",
+     "candidate_id": "S6OH00163",
+     "candidate": "BROWN, SHERROD",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.7,
+     "notice_recent": 1.81,
+     "last_date": "2026-09-22",
+     "total": 2.51,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00707844",
+     "committee": "EDF ACTION VOTES",
+     "candidate_id": "S6OH00304",
+     "candidate": "HUSTED, JON",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 2.5,
+     "last_date": "2026-09-04",
+     "total": 2.5,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00879510",
+     "committee": "AMERICA PAC",
+     "candidate_id": "S6OH00163",
+     "candidate": "BROWN, SHERROD",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 2.16,
+     "last_date": "2026-09-21",
+     "total": 2.16,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00961060",
+     "committee": "BUCKEYES PAC",
+     "candidate_id": "S6OH00163",
+     "candidate": "BROWN, SHERROD",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 2.0,
+     "last_date": "2026-09-16",
+     "total": 2.0,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00960435",
+     "committee": "NO GOING BACK PAC INC.",
+     "candidate_id": "S6OH00163",
+     "candidate": "BROWN, SHERROD",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 1.78,
+     "last_date": "2026-09-11",
+     "total": 1.78,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00486845",
+     "committee": "LCV VICTORY FUND",
+     "candidate_id": "S6OH00304",
+     "candidate": "HUSTED, JON",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 1.5,
+     "last_date": "2026-09-22",
+     "total": 1.5,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00811166",
+     "committee": "THE SENTINEL ACTION FUND",
+     "candidate_id": "S6OH00304",
+     "candidate": "HUSTED, JON",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 1.27,
+     "last_date": "2026-09-17",
+     "total": 1.27,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00912865",
+     "committee": "OHIO FLYER PAC",
+     "candidate_id": "S6OH00304",
+     "candidate": "HUSTED, JON",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 1.12,
+     "last_date": "2026-09-01",
+     "total": 1.12,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00879510",
+     "committee": "AMERICA PAC",
+     "candidate_id": "S6OH00304",
+     "candidate": "HUSTED, JON",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 1.04,
+     "last_date": "2026-09-21",
+     "total": 1.04,
+     "side": "R"
+    },
+    {
+     "committee_id": "C90011172",
+     "committee": "AFSCME WORKING FAMILIES FUND",
+     "candidate_id": "S6OH00304",
+     "candidate": "HUSTED, JON",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 1.0,
+     "last_date": "2026-09-15",
+     "total": 1.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00744920",
+     "committee": "CFFE PAC",
+     "candidate_id": "S6OH00163",
+     "candidate": "BROWN, SHERROD",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.87,
+     "last_date": "2026-09-22",
+     "total": 0.87,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00875039",
+     "committee": "HIGH PLAINS PAC",
+     "candidate_id": "S6OH00304",
+     "candidate": "HUSTED, JON",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.52,
+     "last_date": "2026-09-16",
+     "total": 0.52,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00625533",
+     "committee": "NEW AMERICAN JOBS FUND",
+     "candidate_id": "S6OH00163",
+     "candidate": "BROWN, SHERROD",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.43,
+     "last_date": "2026-09-04",
+     "total": 0.43,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00811166",
+     "committee": "THE SENTINEL ACTION FUND",
+     "candidate_id": "S6OH00163",
+     "candidate": "BROWN, SHERROD",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.39,
+     "last_date": "2026-09-17",
+     "total": 0.39,
+     "side": "R"
+    },
+    {
+     "committee_id": "C90011578",
+     "committee": "AMERICAN CHEMISTRY COUNCIL, INC",
+     "candidate_id": null,
+     "candidate": "HUSTED, JON",
+     "party": "",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.39,
+     "last_date": "2026-08-21",
+     "total": 0.39,
+     "side": null
+    },
+    {
+     "committee_id": "C99002396",
+     "committee": "AMERICAN POLITICAL ACTION COMMITTEE",
+     "candidate_id": null,
+     "candidate": "BROWN, SHERROD",
+     "party": "",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.24,
+     "last_date": "2026-09-16",
+     "total": 0.24,
+     "side": null
+    },
+    {
+     "committee_id": "C00754051",
+     "committee": "WORKERS VOTE",
+     "candidate_id": "S6OH00163",
+     "candidate": "BROWN, SHERROD",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.23,
+     "last_date": "2026-09-17",
+     "total": 0.23,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00608943",
+     "committee": "CLEARPATH ACTION FUND, INC.",
+     "candidate_id": "S6OH00304",
+     "candidate": "HUSTED, JON",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.09,
+     "notice_recent": 0.05,
+     "last_date": "2026-09-04",
+     "total": 0.14,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00580068",
+     "committee": "PROGRESSIVE TURNOUT PROJECT",
+     "candidate_id": "S6OH00163",
+     "candidate": "BROWN, SHERROD",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.08,
+     "last_date": "2026-09-20",
+     "total": 0.08,
+     "side": "D"
+    },
+    {
+     "committee_id": "C90018904",
+     "committee": "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY",
+     "candidate_id": "S6OH00163",
+     "candidate": "BROWN, SHERROD",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.05,
+     "last_date": "2026-09-04",
+     "total": 0.05,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00865444",
+     "committee": "WINSENATE",
+     "candidate_id": "S6OH00163",
+     "candidate": "BROWN, SHERROD",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.05,
+     "last_date": "2026-09-01",
+     "total": 0.05,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00571703",
+     "committee": "SLF PAC",
+     "candidate_id": "S6OH00304",
+     "candidate": "HUSTED, JON",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.04,
+     "notice_recent": 0.0,
+     "last_date": "2026-06-04",
+     "total": 0.04,
+     "side": "R"
+    },
+    {
+     "committee_id": "C90021726",
+     "committee": "OHIO CITIZEN ACTION",
+     "candidate_id": "S6OH00163",
+     "candidate": "BROWN, SHERROD",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.03,
+     "last_date": "2026-09-18",
+     "total": 0.03,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00909994",
+     "committee": "FIELD TEAM 6, INC.",
+     "candidate_id": "S6OH00163",
+     "candidate": "BROWN, SHERROD",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.03,
+     "last_date": "2026-09-09",
+     "total": 0.03,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00930321",
+     "committee": "NEIGHBOR VOICES PAC",
+     "candidate_id": "S6OH00304",
+     "candidate": "HUSTED, JON",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.02,
+     "last_date": "2026-09-17",
+     "total": 0.02,
+     "side": "D"
+    },
+    {
+     "committee_id": "C90022476",
+     "committee": "STAND UP FOR OHIO (OHIO ORGANIZING CAMPAIGN)",
+     "candidate_id": null,
+     "candidate": "BROWN, SHERROD",
+     "party": "",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.02,
+     "last_date": "2026-09-15",
+     "total": 0.02,
+     "side": null
+    },
+    {
+     "committee_id": "C00835041",
+     "committee": "FORWARD BLUE",
+     "candidate_id": "S6OH00304",
+     "candidate": "HUSTED, JON",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.01,
+     "last_date": "2026-08-23",
+     "total": 0.01,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00640300",
+     "committee": "ACTIVATE AMERICA",
+     "candidate_id": "S6OH00304",
+     "candidate": "HUSTED, JON",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.01,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-13",
+     "total": 0.01,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00490375",
+     "committee": "NATIONAL NURSES UNITED FOR PATIENT PROTECTION",
+     "candidate_id": "S6OH00163",
+     "candidate": "BROWN, SHERROD",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.01,
+     "notice_recent": 0.0,
+     "last_date": "2025-02-04",
+     "total": 0.01,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00747121",
+     "committee": "RED SENATE",
+     "candidate_id": "S6OH00163",
+     "candidate": "BROWN, SHERROD",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.01,
+     "notice_recent": 0.0,
+     "last_date": "2025-01-15",
+     "total": 0.01,
+     "side": "R"
+    },
+    {
+     "committee_id": "C90022476",
+     "committee": "STAND UP FOR OHIO (OHIO ORGANIZING CAMPAIGN)",
+     "candidate_id": null,
+     "candidate": "HUSTED, JON",
+     "party": "",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-28",
+     "total": 0.0,
+     "side": null
+    },
+    {
+     "committee_id": "C00640300",
+     "committee": "ACTIVATE AMERICA",
+     "candidate_id": "S6OH00163",
+     "candidate": "BROWN, SHERROD",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-13",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00640300",
+     "committee": "ACTIVATE AMERICA",
+     "candidate_id": null,
+     "candidate": "BROWN, SHERROD",
+     "party": "",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-07-31",
+     "total": 0.0,
+     "side": null
+    },
+    {
+     "committee_id": "C00640300",
+     "committee": "ACTIVATE AMERICA",
+     "candidate_id": null,
+     "candidate": "HUSTED, JON",
+     "party": "",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-07-31",
+     "total": 0.0,
+     "side": null
+    },
+    {
+     "committee_id": "C00835041",
+     "committee": "FORWARD BLUE",
+     "candidate_id": "S6OH00163",
+     "candidate": "BROWN, SHERROD",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-07-24",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00802389",
+     "committee": "GIVEGREEN UNITED ACTION",
+     "candidate_id": "S6OH00163",
+     "candidate": "BROWN, SHERROD",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-07-15",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00776419",
+     "committee": "THE PEOPLE UNITED PAC",
+     "candidate_id": "S6OH00163",
+     "candidate": "BROWN, SHERROD",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-07-08",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00640300",
+     "committee": "ACTIVATE AMERICA",
+     "candidate_id": "S6OH00304",
+     "candidate": "HUSTED, JON",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-06-30",
+     "total": 0.0,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00902569",
+     "committee": "OHIO ERIE PAC",
+     "candidate_id": "S6OH00379",
+     "candidate": "BROWN, SHERROD",
+     "party": "",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-06-30",
+     "total": 0.0,
+     "side": null
+    },
+    {
+     "committee_id": "C90017492",
+     "committee": "INDIVISIBLE PROJECT INC.",
+     "candidate_id": "S6OH00304",
+     "candidate": "HUSTED, JON",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-05-16",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00902569",
+     "committee": "OHIO ERIE PAC",
+     "candidate_id": "S6OH00163",
+     "candidate": "BROWN, SHERROD",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-03-20",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00902569",
+     "committee": "OHIO ERIE PAC",
+     "candidate_id": "H6SC05178",
+     "candidate": "BROWN, SHERROD",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2025-12-05",
+     "total": 0.0,
+     "side": "D"
+    }
+   ]
+  },
+  "AK": {
+   "pro_D": 12.17,
+   "pro_R": 13.24,
+   "n_rows": 201,
+   "last_date": "2026-09-24",
+   "rows": [
+    {
+     "committee_id": "C00571703",
+     "committee": "SLF PAC",
+     "candidate_id": "S6AK00276",
+     "candidate": "PELTOLA, MARY",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 5.2,
+     "last_date": "2026-09-21",
+     "total": 5.2,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00957522",
+     "committee": "NORTH STAR",
+     "candidate_id": "S4AK00214",
+     "candidate": "SULLIVAN, DAN",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 4.0,
+     "last_date": "2026-09-22",
+     "total": 4.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00473918",
+     "committee": "WOMEN VOTE",
+     "candidate_id": "S4AK00214",
+     "candidate": "SULLIVAN, DAN",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 2.78,
+     "last_date": "2026-09-24",
+     "total": 2.78,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00875278",
+     "committee": "LAST FRONTIER PAC",
+     "candidate_id": "S6AK00276",
+     "candidate": "PELTOLA, MARY",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 2.36,
+     "last_date": "2026-09-21",
+     "total": 2.36,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00865444",
+     "committee": "WINSENATE",
+     "candidate_id": "S4AK00214",
+     "candidate": "SULLIVAN, DAN",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 1.97,
+     "last_date": "2026-09-22",
+     "total": 1.97,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00687103",
+     "committee": "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION",
+     "candidate_id": "S4AK00214",
+     "candidate": "SULLIVAN, DAN",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.3,
+     "notice_recent": 1.22,
+     "last_date": "2026-09-22",
+     "total": 1.52,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00957845",
+     "committee": "FORWARD ALASKA",
+     "candidate_id": "S6AK00276",
+     "candidate": "PELTOLA, MARY",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 1.34,
+     "last_date": "2026-09-17",
+     "total": 1.34,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00687103",
+     "committee": "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION",
+     "candidate_id": "S6AK00276",
+     "candidate": "PELTOLA, MARY",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.17,
+     "notice_recent": 0.97,
+     "last_date": "2026-09-18",
+     "total": 1.14,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00960435",
+     "committee": "NO GOING BACK PAC INC.",
+     "candidate_id": "S6AK00276",
+     "candidate": "PELTOLA, MARY",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.98,
+     "last_date": "2026-09-22",
+     "total": 0.98,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00960435",
+     "committee": "NO GOING BACK PAC INC.",
+     "candidate_id": "S4AK00214",
+     "candidate": "SULLIVAN, DAN",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.92,
+     "last_date": "2026-09-22",
+     "total": 0.92,
+     "side": "R"
+    },
+    {
+     "committee_id": "C90023581",
+     "committee": "907 INITIATIVE INC.",
+     "candidate_id": "S4AK00214",
+     "candidate": "SULLIVAN, DAN",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.55,
+     "last_date": "2026-09-19",
+     "total": 0.55,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00956284",
+     "committee": "MIDNIGHT SUN PAC",
+     "candidate_id": "S6AK00276",
+     "candidate": "PELTOLA, MARY",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.52,
+     "last_date": "2026-09-01",
+     "total": 0.52,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00752691",
+     "committee": "ONE FOR ALL COMMITTEE",
+     "candidate_id": "S6AK00276",
+     "candidate": "PELTOLA, MARY",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.47,
+     "last_date": "2026-08-19",
+     "total": 0.47,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00492140",
+     "committee": "AB PAC",
+     "candidate_id": "S4AK00214",
+     "candidate": "SULLIVAN, DAN",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.36,
+     "last_date": "2026-08-04",
+     "total": 0.36,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00487470",
+     "committee": "CLUB FOR GROWTH ACTION",
+     "candidate_id": "S4AK00214",
+     "candidate": "SULLIVAN, DAN",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.34,
+     "last_date": "2026-09-15",
+     "total": 0.34,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00879510",
+     "committee": "AMERICA PAC",
+     "candidate_id": "S6AK00276",
+     "candidate": "PELTOLA, MARY",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.33,
+     "last_date": "2026-09-21",
+     "total": 0.33,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00875039",
+     "committee": "HIGH PLAINS PAC",
+     "candidate_id": "S4AK00214",
+     "candidate": "SULLIVAN, DAN",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.27,
+     "last_date": "2026-09-16",
+     "total": 0.27,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00879510",
+     "committee": "AMERICA PAC",
+     "candidate_id": "S4AK00214",
+     "candidate": "SULLIVAN, DAN",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.18,
+     "last_date": "2026-09-21",
+     "total": 0.18,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00888065",
+     "committee": "907 INITIATIVE ACTION",
+     "candidate_id": "S4AK00214",
+     "candidate": "SULLIVAN, DAN",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.1,
+     "last_date": "2026-09-15",
+     "total": 0.1,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00957522",
+     "committee": "NORTH STAR",
+     "candidate_id": "S6AK00276",
+     "candidate": "PELTOLA, MARY",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.05,
+     "last_date": "2026-09-01",
+     "total": 0.05,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00948000",
+     "committee": "MAJORITY BLUE PAC",
+     "candidate_id": "S6AK00276",
+     "candidate": "PELTOLA, MARY",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.01,
+     "last_date": "2026-09-19",
+     "total": 0.01,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00960385",
+     "committee": "UNITED FUTURES PAC",
+     "candidate_id": "S6AK00276",
+     "candidate": "PELTOLA, MARY",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.01,
+     "last_date": "2026-09-16",
+     "total": 0.01,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00509893",
+     "committee": "NATIONAL RIGHT TO LIFE VICTORY FUND",
+     "candidate_id": "S6AK00276",
+     "candidate": "PELTOLA, MARY",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.01,
+     "last_date": "2026-09-15",
+     "total": 0.01,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00528455",
+     "committee": "INTERNATIONAL ALLIANCE OF THEATRICAL STAGE EMPLOYEES FEDERAL SPEECH PAC",
+     "candidate_id": null,
+     "candidate": "PELTOLA, MARY",
+     "party": "",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-09-09",
+     "total": 0.0,
+     "side": null
+    }
+   ]
+  },
+  "IA": {
+   "pro_D": 18.33,
+   "pro_R": 30.74,
+   "n_rows": 340,
+   "last_date": "2026-09-23",
+   "rows": [
+    {
+     "committee_id": "C00571703",
+     "committee": "SLF PAC",
+     "candidate_id": "S6IA00298",
+     "candidate": "TUREK, JOSHUA",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.01,
+     "notice_recent": 13.24,
+     "last_date": "2026-09-22",
+     "total": 13.26,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00865444",
+     "committee": "WINSENATE",
+     "candidate_id": "S6IA00314",
+     "candidate": "ARENHOLZ, ASHLEY HINSON",
+     "party": "REP",
+     "so": "O",
+     "reported": 1.79,
+     "notice_recent": 7.92,
+     "last_date": "2026-09-22",
+     "total": 9.71,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00687103",
+     "committee": "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION",
+     "candidate_id": "S6IA00314",
+     "candidate": "ARENHOLZ, ASHLEY HINSON",
+     "party": "REP",
+     "so": "S",
+     "reported": 3.12,
+     "notice_recent": 1.66,
+     "last_date": "2026-09-18",
+     "total": 4.78,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00492140",
+     "committee": "AB PAC",
+     "candidate_id": "S6IA00314",
+     "candidate": "ARENHOLZ, ASHLEY HINSON",
+     "party": "REP",
+     "so": "O",
+     "reported": 2.05,
+     "notice_recent": 1.99,
+     "last_date": "2026-09-22",
+     "total": 4.04,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00844613",
+     "committee": "WIN IT BACK PAC",
+     "candidate_id": "S6IA00298",
+     "candidate": "TUREK, JOSHUA",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 3.78,
+     "last_date": "2026-09-04",
+     "total": 3.78,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00904482",
+     "committee": "FIGHT ON IOWA",
+     "candidate_id": "S6IA00298",
+     "candidate": "TUREK, JOSHUA",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 2.38,
+     "last_date": "2026-09-23",
+     "total": 2.38,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00904482",
+     "committee": "FIGHT ON IOWA",
+     "candidate_id": "S6IA00314",
+     "candidate": "ARENHOLZ, ASHLEY HINSON",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 2.22,
+     "last_date": "2026-09-23",
+     "total": 2.22,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00687103",
+     "committee": "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION",
+     "candidate_id": "S6IA00298",
+     "candidate": "TUREK, JOSHUA",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.2,
+     "notice_recent": 1.5,
+     "last_date": "2026-09-21",
+     "total": 1.71,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00486845",
+     "committee": "LCV VICTORY FUND",
+     "candidate_id": "S6IA00314",
+     "candidate": "ARENHOLZ, ASHLEY HINSON",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 1.63,
+     "last_date": "2026-09-22",
+     "total": 1.63,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00752691",
+     "committee": "ONE FOR ALL COMMITTEE",
+     "candidate_id": "S6IA00298",
+     "candidate": "TUREK, JOSHUA",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 1.27,
+     "last_date": "2026-09-14",
+     "total": 1.27,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00915595",
+     "committee": "GOVERNMENT THAT WORKS PAC",
+     "candidate_id": "S6IA00314",
+     "candidate": "HINSON, ASHLEY",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 1.1,
+     "last_date": "2026-09-12",
+     "total": 1.1,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00879510",
+     "committee": "AMERICA PAC",
+     "candidate_id": "S6IA00298",
+     "candidate": "TUREK, JOSHUA",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.93,
+     "last_date": "2026-09-18",
+     "total": 0.93,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00960435",
+     "committee": "NO GOING BACK PAC INC.",
+     "candidate_id": "S6IA00298",
+     "candidate": "TUREK, JOSHUA",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.82,
+     "last_date": "2026-09-16",
+     "total": 0.82,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00744920",
+     "committee": "CFFE PAC",
+     "candidate_id": "S6IA00298",
+     "candidate": "TUREK, JOSHUA",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.34,
+     "last_date": "2026-09-22",
+     "total": 0.34,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00875039",
+     "committee": "HIGH PLAINS PAC",
+     "candidate_id": "S6IA00298",
+     "candidate": "TUREK, JOSHUA",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.26,
+     "last_date": "2026-09-16",
+     "total": 0.26,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00875039",
+     "committee": "HIGH PLAINS PAC",
+     "candidate_id": "H0IA01174",
+     "candidate": "ARENHOLZ, ASHLEY HINSON",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.26,
+     "last_date": "2026-09-16",
+     "total": 0.26,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00571703",
+     "committee": "SLF PAC",
+     "candidate_id": "S6IA00314",
+     "candidate": "ARENHOLZ, ASHLEY HINSON",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.19,
+     "notice_recent": 0.0,
+     "last_date": "2026-06-04",
+     "total": 0.19,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00934307",
+     "committee": "IOWA ACTION",
+     "candidate_id": "S6IA00272",
+     "candidate": "WAHLS, ZACH P.",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.15,
+     "notice_recent": 0.0,
+     "last_date": "2026-05-07",
+     "total": 0.15,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00879510",
+     "committee": "AMERICA PAC",
+     "candidate_id": "S6IA00314",
+     "candidate": "ARENHOLZ, ASHLEY HINSON",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.09,
+     "last_date": "2026-09-09",
+     "total": 0.09,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00010421",
+     "committee": "ASSOCIATED BUILDERS AND CONTRACTORS, INC. POLITICAL ACTION COMMITTEE (ABC PAC)",
+     "candidate_id": "S6IA00314",
+     "candidate": "HINSON, ASHLEY REP.",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.05,
+     "last_date": "2026-09-18",
+     "total": 0.05,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00865444",
+     "committee": "WINSENATE",
+     "candidate_id": "S6IA00298",
+     "candidate": "TUREK, JOSH",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.05,
+     "last_date": "2026-09-01",
+     "total": 0.05,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00608943",
+     "committee": "CLEARPATH ACTION FUND, INC.",
+     "candidate_id": "S6IA00314",
+     "candidate": "ARENHOLZ, ASHLEY HINSON",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.03,
+     "notice_recent": 0.0,
+     "last_date": "2026-06-08",
+     "total": 0.03,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00580068",
+     "committee": "PROGRESSIVE TURNOUT PROJECT",
+     "candidate_id": "S6IA00298",
+     "candidate": "TUREK, JOSHUA",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.02,
+     "last_date": "2026-09-20",
+     "total": 0.02,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00951376",
+     "committee": "DEMOCRATS FIGHT BACK PAC",
+     "candidate_id": "S6IA00298",
+     "candidate": "TUREK, JOSHUA",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.01,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-07",
+     "total": 0.01,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00909994",
+     "committee": "FIELD TEAM 6, INC.",
+     "candidate_id": "S6IA00298",
+     "candidate": "TUREK, JOSHUA",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.01,
+     "notice_recent": 0.0,
+     "last_date": "2026-06-24",
+     "total": 0.01,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00741710",
+     "committee": "NRA VICTORY FUND, INC.",
+     "candidate_id": "S6IA00314",
+     "candidate": "ARENHOLZ, ASHLEY HINSON",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-09-11",
+     "total": 0.0,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00528455",
+     "committee": "INTERNATIONAL ALLIANCE OF THEATRICAL STAGE EMPLOYEES FEDERAL SPEECH PAC",
+     "candidate_id": null,
+     "candidate": "TUREK, JOSHUA",
+     "party": "",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-09-09",
+     "total": 0.0,
+     "side": null
+    },
+    {
+     "committee_id": "C00640300",
+     "committee": "ACTIVATE AMERICA",
+     "candidate_id": "S6IA00298",
+     "candidate": "TUREK, JOSHUA",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-31",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00948000",
+     "committee": "MAJORITY BLUE PAC",
+     "candidate_id": "S6IA00298",
+     "candidate": "TUREK, JOSHUA",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-07",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00802389",
+     "committee": "GIVEGREEN UNITED ACTION",
+     "candidate_id": "S6IA00298",
+     "candidate": "TUREK, JOSHUA",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-06-25",
+     "total": 0.0,
+     "side": "D"
+    }
+   ]
+  }
+ },
+ "committees": [
+  {
+   "committee_id": "C00571703",
+   "name": "SLF PAC",
+   "total": 109.33,
+   "by_state": {
+    "GA": {
+     "D": 0.0,
+     "R": 7.31
+    },
+    "MI": {
+     "D": 0.0,
+     "R": 20.29
+    },
+    "NH": {
+     "D": 0.0,
+     "R": 3.04
+    },
+    "ME": {
+     "D": 0.0,
+     "R": 13.29
+    },
+    "NC": {
+     "D": 0.0,
+     "R": 25.88
+    },
+    "OH": {
+     "D": 0.0,
+     "R": 20.87
+    },
+    "AK": {
+     "D": 0.0,
+     "R": 5.2
+    },
+    "IA": {
+     "D": 0.0,
+     "R": 13.45
+    }
+   }
+  },
+  {
+   "committee_id": "C00865444",
+   "name": "WINSENATE",
+   "total": 77.09,
+   "by_state": {
+    "MI": {
+     "D": 9.98,
+     "R": 0.0
+    },
+    "NH": {
+     "D": 5.9,
+     "R": 0.0
+    },
+    "ME": {
+     "D": 10.27,
+     "R": 0.0
+    },
+    "NC": {
+     "D": 19.21,
+     "R": 0.0
+    },
+    "TX": {
+     "D": 0.05,
+     "R": 0.0
+    },
+    "OH": {
+     "D": 19.95,
+     "R": 0.0
+    },
+    "AK": {
+     "D": 1.97,
+     "R": 0.0
+    },
+    "IA": {
+     "D": 9.76,
+     "R": 0.0
+    }
+   }
+  },
+  {
+   "committee_id": "C00960211",
+   "name": "TEXAS PAC",
+   "total": 69.37,
+   "by_state": {
+    "TX": {
+     "D": 0.0,
+     "R": 69.37
+    }
+   }
+  },
+  {
+   "committee_id": "C00687103",
+   "name": "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION",
+   "total": 34.06,
+   "by_state": {
+    "MI": {
+     "D": 0.0,
+     "R": 7.89
+    },
+    "NH": {
+     "D": 0.0,
+     "R": 2.7
+    },
+    "NC": {
+     "D": 0.0,
+     "R": 4.25
+    },
+    "OH": {
+     "D": 0.0,
+     "R": 10.07
+    },
+    "AK": {
+     "D": 0.0,
+     "R": 2.66
+    },
+    "IA": {
+     "D": 0.0,
+     "R": 6.49
+    }
+   }
+  },
+  {
+   "committee_id": "C00960435",
+   "name": "NO GOING BACK PAC INC.",
+   "total": 31.86,
+   "by_state": {
+    "GA": {
+     "D": 0.0,
+     "R": 2.73
+    },
+    "MI": {
+     "D": 0.0,
+     "R": 8.63
+    },
+    "NH": {
+     "D": 0.0,
+     "R": 3.58
+    },
+    "NC": {
+     "D": 0.0,
+     "R": 6.8
+    },
+    "TX": {
+     "D": 0.0,
+     "R": 5.62
+    },
+    "OH": {
+     "D": 0.0,
+     "R": 1.78
+    },
+    "AK": {
+     "D": 0.0,
+     "R": 1.9
+    },
+    "IA": {
+     "D": 0.0,
+     "R": 0.82
+    }
+   }
+  },
+  {
+   "committee_id": "C00901223",
+   "name": "LONE STAR LIBERTY PAC",
+   "total": 17.68,
+   "by_state": {
+    "TX": {
+     "D": 0.0,
+     "R": 17.68
+    }
+   }
+  },
+  {
+   "committee_id": "C00894709",
+   "name": "PINE TREE RESULTS PAC",
+   "total": 16.01,
+   "by_state": {
+    "ME": {
+     "D": 0.0,
+     "R": 16.01
+    }
+   }
+  },
+  {
+   "committee_id": "C00892471",
+   "name": "MAGA INC.",
+   "total": 15.0,
+   "by_state": {
+    "TX": {
+     "D": 0.0,
+     "R": 15.0
+    }
+   }
+  },
+  {
+   "committee_id": "C00879510",
+   "name": "AMERICA PAC",
+   "total": 14.48,
+   "by_state": {
+    "MI": {
+     "D": 0.0,
+     "R": 3.1
+    },
+    "NH": {
+     "D": 0.0,
+     "R": 0.57
+    },
+    "ME": {
+     "D": 0.0,
+     "R": 0.91
+    },
+    "TX": {
+     "D": 0.0,
+     "R": 5.17
+    },
+    "OH": {
+     "D": 0.0,
+     "R": 3.2
+    },
+    "AK": {
+     "D": 0.0,
+     "R": 0.51
+    },
+    "IA": {
+     "D": 0.0,
+     "R": 1.02
+    }
+   }
+  },
+  {
+   "committee_id": "C00918268",
+   "name": "LONE STAR RISING PAC",
+   "total": 9.76,
+   "by_state": {
+    "TX": {
+     "D": 9.76,
+     "R": 0.0
+    }
+   }
+  },
+  {
+   "committee_id": "C00853861",
+   "name": "GLCF, INC.",
+   "total": 6.91,
+   "by_state": {
+    "MI": {
+     "D": 0.0,
+     "R": 6.91
+    }
+   }
+  },
+  {
+   "committee_id": "C00486845",
+   "name": "LCV VICTORY FUND",
+   "total": 5.32,
+   "by_state": {
+    "GA": {
+     "D": 0.0,
+     "R": 0.0
+    },
+    "MI": {
+     "D": 1.69,
+     "R": 0.0
+    },
+    "ME": {
+     "D": 0.0,
+     "R": 0.0
+    },
+    "NC": {
+     "D": 0.5,
+     "R": 0.0
+    },
+    "OH": {
+     "D": 1.5,
+     "R": 0.0
+    },
+    "IA": {
+     "D": 1.63,
+     "R": 0.0
+    }
+   }
+  },
+  {
+   "committee_id": "C00953398",
+   "name": "THE GEORGIA WAY",
+   "total": 4.67,
+   "by_state": {
+    "GA": {
+     "D": 4.67,
+     "R": 0.0
+    }
+   }
+  },
+  {
+   "committee_id": "C00904482",
+   "name": "FIGHT ON IOWA",
+   "total": 4.6,
+   "by_state": {
+    "IA": {
+     "D": 0.0,
+     "R": 4.6
+    }
+   }
+  },
+  {
+   "committee_id": "C00764233",
+   "name": "DEFEND THE VOTE",
+   "total": 4.59,
+   "by_state": {
+    "MI": {
+     "D": 4.59,
+     "R": 0.0
+    }
+   }
+  },
+  {
+   "committee_id": "C00492140",
+   "name": "AB PAC",
+   "total": 4.4,
+   "by_state": {
+    "AK": {
+     "D": 0.36,
+     "R": 0.0
+    },
+    "IA": {
+     "D": 4.04,
+     "R": 0.0
+    }
+   }
+  },
+  {
+   "committee_id": "C00811166",
+   "name": "THE SENTINEL ACTION FUND",
+   "total": 4.08,
+   "by_state": {
+    "MI": {
+     "D": 0.0,
+     "R": 1.9
+    },
+    "NH": {
+     "D": 0.0,
+     "R": 0.51
+    },
+    "ME": {
+     "D": 0.0,
+     "R": 0.01
+    },
+    "OH": {
+     "D": 0.0,
+     "R": 1.66
+    }
+   }
+  },
+  {
+   "committee_id": "C00957522",
+   "name": "NORTH STAR",
+   "total": 4.05,
+   "by_state": {
+    "AK": {
+     "D": 4.05,
+     "R": 0.0
+    }
+   }
+  },
+  {
+   "committee_id": "C00844613",
+   "name": "WIN IT BACK PAC",
+   "total": 3.82,
+   "by_state": {
+    "TX": {
+     "D": 0.0,
+     "R": 0.04
+    },
+    "IA": {
+     "D": 0.0,
+     "R": 3.78
+    }
+   }
+  },
+  {
+   "committee_id": "C00912865",
+   "name": "OHIO FLYER PAC",
+   "total": 3.63,
+   "by_state": {
+    "OH": {
+     "D": 0.0,
+     "R": 3.63
+    }
+   }
+  },
+  {
+   "committee_id": "C00740225",
+   "name": "NRDC ACTION VOTES",
+   "total": 3.5,
+   "by_state": {
+    "NC": {
+     "D": 0.5,
+     "R": 0.0
+    },
+    "OH": {
+     "D": 3.0,
+     "R": 0.0
+    }
+   }
+  },
+  {
+   "committee_id": "C00915595",
+   "name": "GOVERNMENT THAT WORKS PAC",
+   "total": 3.32,
+   "by_state": {
+    "ME": {
+     "D": 2.22,
+     "R": 0.0
+    },
+    "IA": {
+     "D": 1.1,
+     "R": 0.0
+    }
+   }
+  },
+  {
+   "committee_id": "C00707844",
+   "name": "EDF ACTION VOTES",
+   "total": 3.25,
+   "by_state": {
+    "MI": {
+     "D": 0.25,
+     "R": 0.0
+    },
+    "NC": {
+     "D": 0.5,
+     "R": 0.0
+    },
+    "OH": {
+     "D": 2.5,
+     "R": 0.0
+    }
+   }
+  },
+  {
+   "committee_id": "C00473918",
+   "name": "WOMEN VOTE",
+   "total": 2.78,
+   "by_state": {
+    "AK": {
+     "D": 2.78,
+     "R": 0.0
+    }
+   }
+  },
+  {
+   "committee_id": "C00744920",
+   "name": "CFFE PAC",
+   "total": 2.52,
+   "by_state": {
+    "MI": {
+     "D": 0.37,
+     "R": 0.0
+    },
+    "ME": {
+     "D": 0.61,
+     "R": 0.0
+    },
+    "NC": {
+     "D": 0.11,
+     "R": 0.0
+    },
+    "TX": {
+     "D": 0.22,
+     "R": 0.0
+    },
+    "OH": {
+     "D": 0.87,
+     "R": 0.0
+    },
+    "IA": {
+     "D": 0.34,
+     "R": 0.0
+    }
+   }
+  },
+  {
+   "committee_id": "C00875278",
+   "name": "LAST FRONTIER PAC",
+   "total": 2.36,
+   "by_state": {
+    "AK": {
+     "D": 0.0,
+     "R": 2.36
+    }
+   }
+  },
+  {
+   "committee_id": "C90011172",
+   "name": "AFSCME WORKING FAMILIES FUND",
+   "total": 2.09,
+   "by_state": {
+    "MI": {
+     "D": 1.0,
+     "R": 0.0
+    },
+    "ME": {
+     "D": 0.09,
+     "R": 0.0
+    },
+    "OH": {
+     "D": 1.0,
+     "R": 0.0
+    }
+   }
+  },
+  {
+   "committee_id": "C00961060",
+   "name": "BUCKEYES PAC",
+   "total": 2.0,
+   "by_state": {
+    "OH": {
+     "D": 0.0,
+     "R": 2.0
+    }
+   }
+  },
+  {
+   "committee_id": "C00875039",
+   "name": "HIGH PLAINS PAC",
+   "total": 1.83,
+   "by_state": {
+    "MI": {
+     "D": 0.0,
+     "R": 0.52
+    },
+    "OH": {
+     "D": 0.0,
+     "R": 0.52
+    },
+    "AK": {
+     "D": 0.0,
+     "R": 0.27
+    },
+    "IA": {
+     "D": 0.0,
+     "R": 0.52
+    }
+   }
+  },
+  {
+   "committee_id": "C00796045",
+   "name": "TRUTH AND COURAGE PAC",
+   "total": 1.75,
+   "by_state": {
+    "TX": {
+     "D": 0.0,
+     "R": 1.75
+    }
+   }
+  },
+  {
+   "committee_id": "C00752691",
+   "name": "ONE FOR ALL COMMITTEE",
+   "total": 1.74,
+   "by_state": {
+    "AK": {
+     "D": 0.47,
+     "R": 0.0
+    },
+    "IA": {
+     "D": 1.27,
+     "R": 0.0
+    }
+   }
+  },
+  {
+   "committee_id": "C00489799",
+   "name": "PLANNED PARENTHOOD VOTES",
+   "total": 1.61,
+   "by_state": {
+    "MI": {
+     "D": 0.78,
+     "R": 0.0
+    },
+    "ME": {
+     "D": 0.76,
+     "R": 0.0
+    }
+   }
+  },
+  {
+   "committee_id": "C00957845",
+   "name": "FORWARD ALASKA",
+   "total": 1.34,
+   "by_state": {
+    "AK": {
+     "D": 1.34,
+     "R": 0.0
+    }
+   }
+  },
+  {
+   "committee_id": "C00961342",
+   "name": "THE MAINE STANDARD",
+   "total": 1.19,
+   "by_state": {
+    "ME": {
+     "D": 0.0,
+     "R": 1.19
+    }
+   }
+  },
+  {
+   "committee_id": "C99002396",
+   "name": "AMERICAN POLITICAL ACTION COMMITTEE",
+   "total": 1.06,
+   "by_state": {
+    "GA": {
+     "D": 0.0,
+     "R": 0.01
+    },
+    "MI": {
+     "D": 0.0,
+     "R": 0.0
+    },
+    "NH": {
+     "D": 0.0,
+     "R": 0.0
+    },
+    "ME": {
+     "D": 0.0,
+     "R": 0.01
+    },
+    "TX": {
+     "D": 0.0,
+     "R": 0.01
+    },
+    "OH": {
+     "D": 0.0,
+     "R": 0.0
+    }
+   }
+  },
+  {
+   "committee_id": "C00540443",
+   "name": "GIFFORDS PAC",
+   "total": 1.03,
+   "by_state": {
+    "MI": {
+     "D": 1.03,
+     "R": 0.0
+    }
+   }
+  },
+  {
+   "committee_id": "C90023607",
+   "name": "END CITIZENS UNITED ACTION FUND",
+   "total": 1.02,
+   "by_state": {
+    "ME": {
+     "D": 1.02,
+     "R": 0.0
+    }
+   }
+  },
+  {
+   "committee_id": "C00946921",
+   "name": "LEAD MAINE COMMITTEE, INC.",
+   "total": 1.02,
+   "by_state": {
+    "ME": {
+     "D": 0.0,
+     "R": 1.02
+    }
+   }
+  },
+  {
+   "committee_id": "C90023565",
+   "name": "AMERICA'S CREDIT UNIONS",
+   "total": 0.98,
+   "by_state": {
+    "NH": {
+     "D": 0.23,
+     "R": 0.0
+    },
+    "ME": {
+     "D": 0.0,
+     "R": 0.75
+    }
+   }
+  },
+  {
+   "committee_id": "C00754069",
+   "name": "PAF",
+   "total": 0.92,
+   "by_state": {
+    "MI": {
+     "D": 0.62,
+     "R": 0.0
+    },
+    "ME": {
+     "D": 0.14,
+     "R": 0.0
+    },
+    "TX": {
+     "D": 0.16,
+     "R": 0.0
+    }
+   }
+  }
+ ]
+}

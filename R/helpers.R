@@ -1837,6 +1837,93 @@ state_ledger_md <- function(code, cat = c("polls", "money", "local", "insight"),
                  nz <- if (is.null(d$as_of)) "" else d$as_of, length(items),
                  length(d$states[[code]][[cat]])))
 }
+
+# 1.10 전국 자금 장부 + FEC 독립지출 표 (전국 환경 「정당·자금」 탭) ------------------
+# 9개 주 장부의 money 항목 + 정리본 v1.2의 「전국 자금」 절(states$US)을 날짜순으로 한 줄에 모은다.
+money_ledger_md <- function(n = 30) {
+  d <- .ledger()
+  if (is.null(d)) return('<p class="pt-empty">장부가 아직 없습니다.</p>\n')
+  nm <- c(GA = "조지아", MI = "미시간", NH = "뉴햄프셔", ME = "메인", NC = "노스캐롤라이나",
+          TX = "텍사스", OH = "오하이오", AK = "알래스카", IA = "아이오와", US = "전국")
+  rows <- list()
+  for (code in names(d$states)) {
+    for (it in d$states[[code]][["money"]]) {
+      if (is.null(it)) next
+      rows[[length(rows) + 1]] <- list(date = it$date, last = it$last, st = code, text = it$text)
+    }
+  }
+  if (!length(rows)) return('<p class="pt-empty">아직 장부에 오른 자금 항목이 없습니다.</p>\n')
+  ord <- order(vapply(rows, function(r) r$date, character(1)),
+               vapply(rows, function(r) match(r$st, names(nm)), numeric(1)), decreasing = c(TRUE, FALSE), method = "radix")
+  rows <- rows[ord]
+  total <- length(rows)
+  rows <- rows[seq_len(min(n, total))]
+  head <- '<div class="ledger-hd">자금 투입·지출 — 일일 기록 <span class="rcard-mu">· 9개 주 정리본의 「자금」 줄과 「전국 자금」 절을 날짜별로 모음 · 같은 사안은 처음 본 날짜로 한 번</span></div>\n'
+  body <- vapply(rows, function(r) {
+    tail <- if (!is.null(r$last) && !identical(r$last, r$date)) sprintf(' <span class="rcard-mu">(~%s 재언급)</span>', substr(r$last, 6, 10)) else ""
+    lab <- if (is.null(nm[[r$st]]) || is.na(nm[[r$st]])) r$st else nm[[r$st]]
+    sprintf("- <b class=\"ledger-d\">%s</b> <span class=\"ledger-st\">%s</span> %s%s", substr(r$date, 6, 10), lab, r$text, tail)
+  }, character(1))
+  paste0(head, "\n::: {.ledger}\n", paste(body, collapse = "\n"), "\n:::\n",
+         sprintf('<p class="rcard-mu ledger-ft">기준 %s · 최근 %d건 표시(전체 %d건)</p>\n',
+                 if (is.null(d$as_of)) "" else d$as_of, length(rows), total))
+}
+
+.fec_ie <- function() {
+  path <- file.path("data", "fec_independent_expenditures.json")
+  if (!file.exists(path)) return(NULL)
+  jsonlite::read_json(path, simplifyVector = FALSE)
+}
+.m <- function(x) ifelse(is.na(x), "—", paste0("$", formatC(x, format = "f", digits = 1), "M"))
+
+# 주별 요약: 민주 우호 대 공화 우호 신고 집행액 + 최대 집행 단체
+gt_fec_ie_states <- function() {
+  d <- .fec_ie()
+  if (is.null(d)) return(gt(tibble(안내 = "data/fec_independent_expenditures.json 미생성 — scripts/fetch_fec_independent_expenditures.py 실행 후 채워집니다.")) |> .tbl_opts())
+  nm <- c(GA = "조지아", MI = "미시간", NH = "뉴햄프셔", ME = "메인", NC = "노스캐롤라이나", TX = "텍사스", OH = "오하이오", AK = "알래스카", IA = "아이오와")
+  rows <- lapply(names(nm), function(st) {
+    x <- d$states[[st]]
+    if (is.null(x)) return(tibble(주 = nm[[st]], `민주 우호` = NA_real_, `공화 우호` = NA_real_, 합계 = NA_real_, `최대 집행 단체` = "【수집】", `최근 신고` = "—"))
+    top <- if (length(x$rows)) x$rows[[1]] else NULL
+    tibble(주 = nm[[st]], `민주 우호` = x$pro_D, `공화 우호` = x$pro_R, 합계 = x$pro_D + x$pro_R,
+           `최대 집행 단체` = if (is.null(top)) "—" else sprintf("%s (%s %s, $%.1fM)", top$committee, if (identical(top$so, "S")) "지지" else "반대", top$candidate, top$total),
+           `최근 신고` = if (is.null(x$last_date)) "—" else x$last_date)
+  })
+  tb <- do.call(rbind, rows)
+  tb <- tb[order(-ifelse(is.na(tb$합계), -1, tb$합계)), ]
+  tb |>
+    mutate(`민주 우호` = .m(`민주 우호`), `공화 우호` = .m(`공화 우호`), 합계 = .m(합계)) |>
+    gt() |>
+    tab_header(title = "슈퍼팩·위원회 독립지출 — 주별 신고 집행액",
+               subtitle = sprintf("FEC Schedule E · 본선 · 단위 $M · 취득 %s", d$as_of)) |>
+    tab_source_note("민주 우호 = 민주 후보 지지 + 공화 후보 반대, 공화 우호는 그 반대. 신고된 집행이므로 언론의 광고 '예약' 총액보다 작다. 24/48시간 통지는 마지막 정기 보고 이후분만 더했다.") |>
+    .tbl_opts()
+}
+
+# 단체별 상위: 어느 단체가 어느 주에 얼마를 집행했나
+gt_fec_ie_committees <- function(n = 15) {
+  d <- .fec_ie()
+  if (is.null(d)) return(invisible(NULL))
+  cs <- d$committees[seq_len(min(n, length(d$committees)))]
+  side_of <- function(bs) { D <- sum(vapply(bs, function(v) v$D, numeric(1))); R <- sum(vapply(bs, function(v) v$R, numeric(1)))
+    if (D > 0 && R == 0) "민주 우호" else if (R > 0 && D == 0) "공화 우호" else if (D == 0 && R == 0) "—" else "혼합" }
+  tibble(
+    단체 = vapply(cs, function(c) c$name, character(1)),
+    성향 = vapply(cs, function(c) side_of(c$by_state), character(1)),
+    합계 = vapply(cs, function(c) c$total, numeric(1)),
+    `주별 집행` = vapply(cs, function(c) {
+      bs <- c$by_state; ks <- names(bs)
+      v <- vapply(ks, function(k) bs[[k]]$D + bs[[k]]$R, numeric(1))
+      o <- order(-v); paste(sprintf("%s %.1f", ks[o], v[o]), collapse = " · ")
+    }, character(1))
+  ) |>
+    mutate(합계 = .m(합계)) |>
+    gt() |>
+    tab_header(title = "독립지출 상위 단체", subtitle = "감시 9주 합산 · 단위 $M") |>
+    tab_source_note("단체명은 FEC 등록명(예: TEXAS PAC = Senate Leadership Fund의 텍사스 계열, WINSENATE = Senate Majority PAC 계열). 성향은 지지·반대 대상 후보의 정당으로 기계 분류.") |>
+    .tbl_opts()
+}
+
 # 주 개요 탭 머리의 "오늘의 판세" — 최신 정리본의 여론조사·주 함의 한 줄씩
 state_today_md <- function(code) {
   d <- .ledger()
