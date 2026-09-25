@@ -55,6 +55,7 @@ if [ -n "${FRED_API_KEY:-}" ]; then
 else echo "[weekly] ! FRED_API_KEY 없음 — national_econ 건너뜀"; fi
 if [ -n "${FEC_API_KEY:-}" ]; then
   echo "[weekly] FEC 모금 취득(스테이징)"; python3 scripts/fetch_fec_fundraising.py || echo "[weekly] ! FEC 실패(건너뜀)"
+  echo "[weekly] FEC 독립지출 취득"; python3 scripts/fetch_fec_independent_expenditures.py || echo "[weekly] ! FEC 독립지출 실패(건너뜀)"
 else echo "[weekly] ! FEC_API_KEY 없음 — fec_fundraising 건너뜀"; fi
 
 # 1.5) Cook 하원 등급 자동 취득(270towin 재게시분 · 435개구 해독) — 실패해도 계속

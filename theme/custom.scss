@@ -512,3 +512,5 @@ main table.gt_table th.gt_col_heading { white-space: pre-line; text-align: cente
 .today::before { content: "📌 오늘의 판세"; display: block; font-weight: 700; font-size: 0.78rem; color: #2166ac; margin-bottom: 4px; }
 .today ul { margin: 0; padding-left: 1.1rem; }
 .today li { margin: 3px 0; line-height: 1.55; font-size: 0.92rem; }
+
+.ledger-st { display:inline-block; font-size:.74rem; padding:0 .35em; margin-right:.25em; border-radius:3px; background:#e9ecef; color:#495057; vertical-align:middle; }

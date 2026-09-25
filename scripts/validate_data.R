@@ -336,6 +336,20 @@ if (!is.null(sdl)) {
   }
 }
 
+# ---- fec_independent_expenditures.json (선택) — 독립지출 집계 구조 ----------------
+ie <- load_json("fec_independent_expenditures.json", optional = TRUE)
+if (!is.null(ie)) {
+  f <- "fec_independent_expenditures.json"
+  ie <- jsonlite::fromJSON(jpath(f), simplifyVector = FALSE)
+  if (is.null(ie$as_of) || is.null(ie$states)) fail(f, "as_of·states 필수")
+  for (st in names(ie$states)) {
+    x <- ie$states[[st]]
+    if (is.null(x)) next
+    if (!is.numeric(x$pro_D) || !is.numeric(x$pro_R) || x$pro_D < 0 || x$pro_R < 0) fail(f, paste(st, "pro_D/pro_R 는 0 이상 숫자"))
+    for (r in x$rows) if (!(r$so %in% c("S", "O"))) fail(f, paste(st, "so 는 S/O"))
+  }
+}
+
 # ---- state_ledger.json (선택) — 주별 일일 장부 구조 ------------------------------
 sl <- load_json("state_ledger.json", optional = TRUE)
 if (!is.null(sl)) {
