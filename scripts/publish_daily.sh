@@ -16,6 +16,9 @@
 #     (주간 발행은 디렉터리째 스테이징하지만, 일일은 매일 돌므로 범위를 좁힌다).
 #   - 주간 발행(일요일 밤)과 시간대가 겹치지 않는다. 겹치더라도 rebase로 흡수한다.
 set -u
+# zsh는 기본적으로 $VAR를 단어로 나누지 않는다 — `for DATE in $DATES`가 18개 날짜를 한 문자열로 돌린
+# 사고(2026-09-25). sh 방식 단어 분리를 켠다(bash에서는 무해).
+setopt sh_word_split 2>/dev/null || true
 export LANG=en_US.UTF-8
 export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
 REPO="${US_ELECTIONS_REPO:-$(cd "$(dirname "$0")/.." && pwd)}"
