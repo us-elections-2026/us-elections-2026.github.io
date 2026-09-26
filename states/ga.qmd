@@ -39,6 +39,10 @@ cat(state_ledger_md("GA", "local"))
 
 ## 배경
 
+### 의석 현황 — 현직·공석
+
+- **현직 재선 도전**: Jon Ossoff(민주)가 2021년 1월 결선에서 당선된 초선 현직입니다. 당내 경선 없이 본선에 직행했습니다. 공석이 아닙니다. ([Ballotpedia](https://ballotpedia.org/United_States_Senate_election_in_Georgia,_2026))
+
 ### 개관
 
 - **인구·경제**: 인구 약 1,100만 명(2025 추정)으로 미국에서 가장 빠르게 성장하는 주 중 하나. 주도 애틀랜타는 코카콜라·델타항공·홈디포·UPS 본사가 있는 남부 상업 수도로, 물류·미디어 제작·핀테크·사이버보안이 집약돼 있습니다. ([Britannica](https://www.britannica.com/place/Georgia-state))

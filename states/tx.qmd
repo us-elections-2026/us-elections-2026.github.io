@@ -39,6 +39,10 @@ cat(state_ledger_md("TX", "local"))
 
 ## 배경
 
+### 의석 현황 — 현직·공석
+
+- **현직 의석이지만 본선에 현직 없음**: 4선 현직 John Cornyn(공화)이 재선에 나섰으나 5월 26일 공화 결선에서 Ken Paxton 법무장관에게 63.8%로 패배했습니다. 1970년 이후 텍사스 현직 상원의원이 경선에서 탈락한 첫 사례입니다. 은퇴가 아니라 낙마로 생긴 사실상의 공석입니다. ([NPR](https://www.npr.org/2026/05/26/nx-s1-5835745/paxton-republican-texas-senate-nominee-trump-cornyn-talarico))
+
 ### 개관
 
 - **선거사 — 높은 천장**: 2024 대선 **Trump +13.8**(2012년 이후 최대), 상원도 1988년 이후 민주당이 이긴 적이 없습니다. 다만 추세선은 좁아져 왔습니다 — 2018 Cruz +2.6(O'Rourke), 2024 Cruz +8.5(Allred). ([Wikipedia](https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas))
