@@ -41,6 +41,10 @@ cat(state_ledger_md("OH", "local"))
 
 ## 배경
 
+### 의석 현황 — 현직·공석
+
+- **특별선거 — 임명직 현직**: JD Vance(공화)가 부통령 취임을 위해 2025년 1월 상원직을 사임했고, DeWine 주지사가 Jon Husted 부지사를 후임으로 임명했습니다. 이번 선거는 2028년까지 남은 잔여 임기를 채우는 특별선거이며, 선출된 적 없는 임명직 현직 Husted가 전직 상원의원 Brown과 맞섭니다. ([Wikipedia](https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Ohio))
+
 ### 개관
 
 - **선거사**: 2024 대선 **Trump +11**(2016·2020의 +8보다 확대). 같은 해 상원에서 **Brown은 Moreno에게 +4.6 패배**해 18년 임기를 마쳤습니다 — 즉 이번은 그의 비연속 4선 도전입니다. 오하이오는 2008·2012 Obama 지지 후 우경화한 중강 공화 우세 주입니다. ([Ohio Capital Journal](https://ohiocapitaljournal.com/2024/11/05/republican-bernie-moreno-defeats-incumbent-sherrod-brown-for-ohio-u-s-senate-seat-ap-projects/))

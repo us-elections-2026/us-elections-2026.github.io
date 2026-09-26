@@ -43,6 +43,10 @@ cat(state_ledger_md("AK", "local"))
 
 ## 배경
 
+### 의석 현황 — 현직·공석
+
+- **현직 재선 도전**: Dan Sullivan(공화)이 2014년 초선·2020년 재선을 거쳐 3선에 도전합니다. 공석이 아닙니다. ([Ballotpedia](https://ballotpedia.org/United_States_Senate_election_in_Alaska,_2026))
+
 ### 개관
 
 - **선거사**: 2024 대선 **Trump +13.1**. 현재 양 상원 의석 모두 공화(Murkowski·Sullivan)이며, Sullivan은 2014년 초선(현역 Begich 격파)·2020년 재선으로 **이번이 3선 도전**. 이 의석에서 민주당이 마지막으로 이긴 것은 2008년 Begich입니다. ([Senate Majority](https://senatemajority.com/states/alaska/))

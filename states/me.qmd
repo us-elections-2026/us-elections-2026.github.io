@@ -39,6 +39,10 @@ cat(state_ledger_md("ME", "local"))
 
 ## 배경
 
+### 의석 현황 — 현직·공석
+
+- **현직 재선 도전**: Susan Collins(공화)가 1997년부터 5선을 지낸 현직으로 6선에 도전합니다. 공석이 아닙니다. ([Ballotpedia](https://ballotpedia.org/United_States_Senate_election_in_Maine,_2026))
+
 ### 개관
 
 - **유권자 구성**: 인구 약 140만 명. 백인(non-Hispanic) 비중 약 91%로 전국 최고 수준이며, **미국에서 가장 농촌(rural) 비율이 높은 주**(약 61%가 비도시). **무당파(unenrolled) 등록 비중이 매우 높습니다**(출처별 33~36%). ([Point2Homes](https://www.point2homes.com/US/Neighborhood/ME-Demographics.html))
