@@ -1,6 +1,6 @@
 {
   "version": "v0.1",
-  "run_date": "2026-09-21",
+  "run_date": "2026-09-28",
   "seed": 20261103,
   "n_sims": 10000,
   "assumptions": {
@@ -18,122 +18,122 @@
     {
       "state": "GA",
       "defense": "D",
-      "rating": "Lean D (Cook 9/15 유지) / Likely D (Sabato 8/26) · Tilt D (Inside Elections 9/17) — 감시 9주 중 Cook·Sabato가 두 칸 갈리는 유일한 주",
-      "p_rating": 0.75,
+      "rating": "**Likely D (Cook 9/23 — Lean D에서 상향)** / Likely D (Sabato 9/22) · Tilt D (Inside Elections 9/17) — **Cook·Sabato가 처음으로 같은 칸에 섰다.** 사수 3곳 중 첫 번째로 토스업 두 칸 위",
+      "p_rating": 0.9,
       "p_market": 0.94,
-      "poll_margin": 4.4,
-      "n_polls": 7,
-      "p_poll": 0.766,
-      "p_blend": 0.818
+      "poll_margin": 6.4,
+      "n_polls": 8,
+      "p_poll": 0.857,
+      "p_blend": 0.895
     },
     {
       "state": "MI",
       "defense": "D",
-      "rating": "Toss-up (Cook 9/15 · Sabato 8/26 · Inside Elections 9/17) — 3사 전부 Toss-up, 이번 주 이동 없음",
+      "rating": "Toss-up (Cook 9/23) / **Lean D (Sabato 9/22 — Toss-up에서 상향)** · Toss-up (Inside Elections 9/17) — 사바토 표현은 \"약한 우세 — 아직 삐끗할 수 있다\"",
       "p_rating": 0.5,
-      "p_market": 0.66,
-      "poll_margin": 1.7,
-      "n_polls": 13,
-      "p_poll": 0.609,
-      "p_blend": 0.596
+      "p_market": 0.72,
+      "poll_margin": 2.3,
+      "n_polls": 16,
+      "p_poll": 0.652,
+      "p_blend": 0.633
     },
     {
       "state": "NH",
       "defense": "D",
-      "rating": "**Toss-up (Cook 9/15 — Lean D에서 하향)** / Lean D (Sabato 8/26) · Toss-up (Inside Elections 9/17) — **이번 주 감시 9주 중 유일한 등급 이동이자 의석 산술을 실제로 바꾼 사건**",
+      "rating": "Toss-up (Cook 9/15) / Lean D (Sabato — 9/22 피드 값) · Toss-up (Inside Elections 9/17) — **원천 상원 브리핑은 사바토 NH를 Toss-up으로 기재하나 이 사이트가 받는 9/22자 피드는 Lean D**(아래 불일치 참조)",
       "p_rating": 0.5,
-      "p_market": 0.83,
+      "p_market": 0.86,
       "poll_margin": 2.5,
       "n_polls": 6,
       "p_poll": 0.661,
-      "p_blend": 0.672
+      "p_blend": 0.682
     },
     {
       "state": "ME",
       "defense": "R",
-      "rating": "Toss-up (Cook 9/15 · Sabato 8/26) / **Toss-up (Inside Elections 9/17 — Tilt R에서 상향)** — **13개월 넘게 낡은 값으로 남아 있던 IE 메인 등급이 이번 주에 갱신됐다**(종전 2025-07-24자 Tilt R)",
+      "rating": "Toss-up (Cook 9/23 · Sabato 9/22) · Toss-up (Inside Elections 9/17) — 이번 주 이동 없음",
       "p_rating": 0.5,
-      "p_market": 0.67,
-      "poll_margin": 3.1,
-      "n_polls": 7,
-      "p_poll": 0.696,
-      "p_blend": 0.635
+      "p_market": 0.6,
+      "poll_margin": 1.8,
+      "n_polls": 9,
+      "p_poll": 0.621,
+      "p_blend": 0.581
     },
     {
       "state": "NC",
       "defense": "R",
-      "rating": "Lean D (Cook 9/15 · Sabato 8/26) · Tilt D (Inside Elections 9/17) — 이번 주 이동 없음",
+      "rating": "Lean D (Cook 9/23 · Sabato 9/22) · Tilt D (Inside Elections 9/17) — 이번 주 이동 없음",
       "p_rating": 0.75,
-      "p_market": 0.93,
+      "p_market": 0.94,
       "poll_margin": 9.9,
-      "n_polls": 10,
+      "n_polls": 9,
       "p_poll": 0.951,
-      "p_blend": 0.89
+      "p_blend": 0.893
     },
     {
       "state": "TX",
       "defense": "R",
-      "rating": "Toss-up (Cook 9/15 · Sabato 8/26) / Lean R (Inside Elections 9/17) — 이번 주 이동 없음",
+      "rating": "Toss-up (Cook 9/23 · Sabato 9/22) / Lean R (Inside Elections 9/17) — 이번 주 이동 없음",
       "p_rating": 0.5,
-      "p_market": 0.6,
-      "poll_margin": 2.6,
-      "n_polls": 15,
-      "p_poll": 0.666,
-      "p_blend": 0.6
+      "p_market": 0.61,
+      "poll_margin": 2.4,
+      "n_polls": 14,
+      "p_poll": 0.655,
+      "p_blend": 0.598
     },
     {
       "state": "OH",
       "defense": "R",
-      "rating": "Toss-up (Cook 9/15 · Sabato 8/26 · Inside Elections 9/17) — 3사 전부 Toss-up, 이번 주 이동 없음",
+      "rating": "Toss-up (Cook 9/23 · Sabato 9/22 · Inside Elections 9/17) — 3사 전부 Toss-up, 이번 주 이동 없음",
       "p_rating": 0.5,
-      "p_market": 0.57,
+      "p_market": 0.58,
       "poll_margin": 3.9,
-      "n_polls": 5,
+      "n_polls": 4,
       "p_poll": 0.745,
-      "p_blend": 0.622
+      "p_blend": 0.625
     },
     {
       "state": "AK",
       "defense": "R",
-      "rating": "Toss-up (Cook 9/15 · Sabato 8/26) / Tilt R (Inside Elections 9/17) — 이번 주 이동 없음",
+      "rating": "Toss-up (Cook 9/23 · Sabato 9/22) / Tilt R (Inside Elections 9/17) — 이번 주 이동 없음",
       "p_rating": 0.5,
-      "p_market": 0.72,
+      "p_market": 0.71,
       "poll_margin": 2.7,
-      "n_polls": 4,
+      "n_polls": 3,
       "p_poll": 0.676,
-      "p_blend": 0.643
+      "p_blend": 0.639
     },
     {
       "state": "IA",
       "defense": "R",
-      "rating": "Toss-up (Cook 9/15) / Lean R (Sabato 8/26) / Tilt R (Inside Elections 9/17) — **감시 9주 중 Cook·Sabato가 갈리는 유일한 주**, 이번 주 이동 없음",
+      "rating": "Toss-up (Cook 9/23) / **Toss-up (Sabato 9/22 — Leans R에서 이동)** / Tilt R (Inside Elections 9/17) — **Cook·Sabato가 처음으로 같은 칸**",
       "p_rating": 0.5,
-      "p_market": 0.41,
-      "poll_margin": -0.3,
-      "n_polls": 7,
-      "p_poll": 0.482,
-      "p_blend": 0.463
+      "p_market": 0.43,
+      "poll_margin": 2.2,
+      "n_polls": 6,
+      "p_poll": 0.643,
+      "p_blend": 0.535
     }
   ],
-  "dem_majority_prob": 49,
+  "dem_majority_prob": 50.7,
   "seats": {
-    "mean": 49.95,
+    "mean": 50.09,
     "p05": 45,
     "p25": 48,
-    "median": 50,
+    "median": 51,
     "p75": 52,
     "p95": 53
   },
   "seat_pmf": {
-    "44": 0.0248,
-    "45": 0.0387,
-    "46": 0.0618,
-    "47": 0.0712,
-    "48": 0.0898,
-    "49": 0.1023,
-    "50": 0.1216,
-    "51": 0.1404,
-    "52": 0.1562,
-    "53": 0.1932
+    "44": 0.0178,
+    "45": 0.035,
+    "46": 0.0555,
+    "47": 0.0695,
+    "48": 0.0877,
+    "49": 0.1037,
+    "50": 0.1239,
+    "51": 0.1405,
+    "52": 0.157,
+    "53": 0.2094
   }
 }
