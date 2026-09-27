@@ -350,6 +350,20 @@ if (!is.null(ie)) {
   }
 }
 
+# ---- fec_house.json (선택) — 하원 District Focus FEC 구조 --------------------------
+fh <- load_json("fec_house.json", optional = TRUE)
+if (!is.null(fh)) {
+  f <- "fec_house.json"
+  fh <- jsonlite::fromJSON(jpath(f), simplifyVector = FALSE)
+  require_keys(f, fh, c("as_of", "districts"))
+  for (k in names(fh$districts)) {
+    x <- fh$districts[[k]]; if (is.null(x)) next
+    if (!grepl("^[A-Z]{2}-[0-9]{2}$", k)) err(f, paste("지역구 키 형식 오류:", k))
+    for (c in x$candidates) if (is.null(c$name) || !is.numeric(c$receipts)) err(f, paste(k, "후보 name/receipts 오류"))
+    if (!is.numeric(x$ie$pro_D) || !is.numeric(x$ie$pro_R)) err(f, paste(k, "ie pro_D/pro_R 숫자 아님"))
+  }
+}
+
 # ---- legal_tracker.json (선택) — 선거 법·제도 트래커 구조 --------------------------
 lt <- load_json("legal_tracker.json", optional = TRUE)
 if (!is.null(lt)) {

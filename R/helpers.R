@@ -2005,6 +2005,49 @@ legal_items_md <- function() {
   paste(out, collapse = "\n")
 }
 
+
+# 1.12 하원 District Focus — FEC 후보 모금·독립지출 (data/fec_house.json) ----------------
+.fec_house <- function() {
+  path <- file.path("data", "fec_house.json")
+  if (!file.exists(path)) return(NULL)
+  jsonlite::read_json(path, simplifyVector = FALSE)
+}
+gt_house_fec <- function(district, n = 4) {
+  d <- .fec_house()
+  x <- if (!is.null(d)) d$districts[[district]] else NULL
+  if (is.null(x)) return(gt(tibble(안내 = "data/fec_house.json 미생성 — scripts/fetch_fec_house.py 실행 후 채워집니다.")) |> .tbl_opts())
+  cs <- x$candidates[seq_len(min(n, length(x$candidates)))]
+  m <- function(v) if (is.null(v) || is.na(v)) "【수집】" else paste0("$", formatC(v, format = "f", digits = 2), "M")
+  tibble(
+    후보 = vapply(cs, function(c) c$name, character(1)),
+    정당 = vapply(cs, function(c) { p <- unname(.party_kr[c$party]); if (length(p) != 1 || is.na(p)) c$party else p }, character(1)),
+    `사이클 누적 모금` = vapply(cs, function(c) m(c$receipts), character(1)),
+    `보유 현금` = vapply(cs, function(c) m(c$cash_on_hand), character(1)),
+    `보고 마감` = vapply(cs, function(c) if (is.null(c$coverage_end)) "—" else c$coverage_end, character(1))
+  ) |>
+    gt() |>
+    tab_header(title = paste0(district, " — FEC 분기 신고"), subtitle = sprintf("모금 상위 %d명 · 취득 %s", length(cs), d$as_of)) |>
+    tab_source_note("경선 탈락자도 모금 순으로 실립니다(자기자금 포함). 현금은 보고 마감일 기준.") |>
+    .tbl_opts()
+}
+gt_house_ie <- function(district, n = 8) {
+  d <- .fec_house()
+  x <- if (!is.null(d)) d$districts[[district]] else NULL
+  if (is.null(x) || !length(x$ie$rows)) return(invisible(NULL))
+  rs <- x$ie$rows[seq_len(min(n, length(x$ie$rows)))]
+  tibble(
+    단체 = vapply(rs, function(r) r$committee, character(1)),
+    대상 = vapply(rs, function(r) paste0(if (identical(r$so, "S")) "지지 " else "반대 ", r$candidate), character(1)),
+    집행 = vapply(rs, function(r) paste0("$", formatC(r$total, format = "f", digits = 2), "M"), character(1)),
+    `최근 신고` = vapply(rs, function(r) r$last_date, character(1))
+  ) |>
+    gt() |>
+    tab_header(title = paste0(district, " — 독립지출(본선)"),
+               subtitle = sprintf("민주 우호 $%.2fM · 공화 우호 $%.2fM · 취득 %s", x$ie$pro_D, x$ie$pro_R, d$as_of)) |>
+    tab_source_note("FEC Schedule E 신고 집행(예비선거 제외). 광고 예약 총액과 다릅니다.") |>
+    .tbl_opts()
+}
+
 # 주 개요 탭 머리의 "오늘의 판세" — 최신 정리본의 여론조사·주 함의 한 줄씩
 state_today_md <- function(code) {
   d <- .ledger()

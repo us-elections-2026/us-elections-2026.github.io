@@ -1,0 +1,569 @@
+{
+ "as_of": "2026-09-27",
+ "source_label": "FEC (api.open.fec.gov) — 후보 분기 보고 + Schedule E 독립지출(본선), 단위 $M",
+ "provenance_note": "candidates 는 사이클 누적 모금·현금(coverage_end 기준). ie 는 상원 독립지출 파일과 같은 규칙(정기 보고 + 이후 통지, 예비선거 제외).",
+ "districts": {
+  "NY-17": {
+   "candidates": [
+    {
+     "name": "CHATZKY, PETER",
+     "party": "DEM",
+     "candidate_id": "H6NY17213",
+     "receipts": 11.71,
+     "disbursements": 11.71,
+     "cash_on_hand": 0.0,
+     "coverage_end": "2026-06-30"
+    },
+    {
+     "name": "LAWLER, MICHAEL VINCENT",
+     "party": "REP",
+     "candidate_id": "H2NY17162",
+     "receipts": 8.17,
+     "disbursements": 3.5,
+     "cash_on_hand": 4.84,
+     "coverage_end": "2026-06-30"
+    },
+    {
+     "name": "CONLEY, CAIT",
+     "party": "DEM",
+     "candidate_id": "H6NY17171",
+     "receipts": 4.32,
+     "disbursements": 3.0,
+     "cash_on_hand": 1.32,
+     "coverage_end": "2026-06-30"
+    },
+    {
+     "name": "DAVIDSON, BETH",
+     "party": "DEM",
+     "candidate_id": "H6NY17163",
+     "receipts": 2.18,
+     "disbursements": 2.0,
+     "cash_on_hand": 0.18,
+     "coverage_end": "2026-06-30"
+    },
+    {
+     "name": "PHILLIPS-STALEY, EFFIE",
+     "party": "DEM",
+     "candidate_id": "H6NY17205",
+     "receipts": 0.79,
+     "disbursements": 0.78,
+     "cash_on_hand": 0.01,
+     "coverage_end": "2026-06-30"
+    },
+    {
+     "name": "REINMANN, JESSICA",
+     "party": "DEM",
+     "candidate_id": "H6NY17155",
+     "receipts": 0.66,
+     "disbursements": 0.66,
+     "cash_on_hand": 0.0,
+     "coverage_end": "2026-07-06"
+    },
+    {
+     "name": "SULLIVAN, JOHN",
+     "party": "DEM",
+     "candidate_id": "H6NY17197",
+     "receipts": 0.49,
+     "disbursements": 0.48,
+     "cash_on_hand": 0.0,
+     "coverage_end": "2026-06-30"
+    },
+    {
+     "name": "SACKS, MIKE",
+     "party": "DEM",
+     "candidate_id": "H6NY17189",
+     "receipts": 0.3,
+     "disbursements": 0.28,
+     "cash_on_hand": 0.02,
+     "coverage_end": "2026-06-03"
+    },
+    {
+     "name": "CAPPELLO, JOHN",
+     "party": "DEM",
+     "candidate_id": "H6NY17221",
+     "receipts": 0.08,
+     "disbursements": 0.08,
+     "cash_on_hand": 0.0,
+     "coverage_end": "2026-06-30"
+    }
+   ],
+   "ie": {
+    "pro_D": 0.88,
+    "pro_R": 0.63,
+    "n_rows": 72,
+    "last_date": "2026-09-25",
+    "rows": [
+     {
+      "committee_id": "C00504530",
+      "committee": "CLF",
+      "candidate_id": null,
+      "candidate": "CONLEY, CAIT",
+      "party": "",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.69,
+      "last_date": "2026-09-11",
+      "total": 0.69,
+      "side": null
+     },
+     {
+      "committee_id": "C00486845",
+      "committee": "LCV VICTORY FUND",
+      "candidate_id": "H2NY17162",
+      "candidate": "LAWLER, MICHAEL VINCENT",
+      "party": "REP",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.53,
+      "last_date": "2026-09-15",
+      "total": 0.53,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00495028",
+      "committee": "HMP",
+      "candidate_id": "H2NY17162",
+      "candidate": "LAWLER, MICHAEL VINCENT",
+      "party": "REP",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.33,
+      "last_date": "2026-09-22",
+      "total": 0.33,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00906701",
+      "committee": "AMERICA FIRST AGRICULTURE ACTION INC.",
+      "candidate_id": "H2NY17162",
+      "candidate": "LAWLER, MICHAEL VINCENT",
+      "party": "REP",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.29,
+      "last_date": "2026-09-08",
+      "total": 0.29,
+      "side": "R"
+     },
+     {
+      "committee_id": "C00489799",
+      "committee": "PLANNED PARENTHOOD VOTES",
+      "candidate_id": null,
+      "candidate": "LAWLER, MICHAEL",
+      "party": "",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.25,
+      "last_date": "2026-09-11",
+      "total": 0.25,
+      "side": null
+     },
+     {
+      "committee_id": "C00875450",
+      "committee": "CENTER FORWARD INITIATIVE INC (CFI)",
+      "candidate_id": "H2NY17162",
+      "candidate": "LAWLER, MICHAEL VINCENT",
+      "party": "REP",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.2,
+      "last_date": "2026-09-19",
+      "total": 0.2,
+      "side": "R"
+     },
+     {
+      "committee_id": "C00879510",
+      "committee": "AMERICA PAC",
+      "candidate_id": "H2NY17162",
+      "candidate": "LAWLER, MICHAEL VINCENT",
+      "party": "REP",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.05,
+      "last_date": "2026-09-10",
+      "total": 0.05,
+      "side": "R"
+     },
+     {
+      "committee_id": "C00960435",
+      "committee": "NO GOING BACK PAC INC.",
+      "candidate_id": "H6NY17171",
+      "candidate": "CONLEY, CAIT",
+      "party": "DEM",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.03,
+      "last_date": "2026-09-17",
+      "total": 0.03,
+      "side": "R"
+     },
+     {
+      "committee_id": "C00960435",
+      "committee": "NO GOING BACK PAC INC.",
+      "candidate_id": "H2NY17162",
+      "candidate": "LAWLER, MICHAEL VINCENT",
+      "party": "REP",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.03,
+      "last_date": "2026-09-17",
+      "total": 0.03,
+      "side": "R"
+     },
+     {
+      "committee_id": "C00879510",
+      "committee": "AMERICA PAC",
+      "candidate_id": "H6NY17171",
+      "candidate": "CONLEY, CAIT",
+      "party": "DEM",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.02,
+      "last_date": "2026-09-25",
+      "total": 0.02,
+      "side": "R"
+     },
+     {
+      "committee_id": "C00737411",
+      "committee": "THE GOVERNING MAJORITY FUND",
+      "candidate_id": "H6NY17171",
+      "candidate": "CONLEY, CAIT",
+      "party": "DEM",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.02,
+      "last_date": "2026-09-17",
+      "total": 0.02,
+      "side": "R"
+     },
+     {
+      "committee_id": "C00943811",
+      "committee": "NEW YORKERS FOR A RETURN TO FAIR AND HONEST GOVERNMENT",
+      "candidate_id": "H2NY17162",
+      "candidate": "LAWLER, MICHAEL VINCENT",
+      "party": "REP",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.01,
+      "last_date": "2026-09-18",
+      "total": 0.01,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00943811",
+      "committee": "NEW YORKERS FOR A RETURN TO FAIR AND HONEST GOVERNMENT",
+      "candidate_id": "H6NY17171",
+      "candidate": "CONLEY, CAIT",
+      "party": "DEM",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.0,
+      "last_date": "2026-09-18",
+      "total": 0.0,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00489799",
+      "committee": "PLANNED PARENTHOOD VOTES",
+      "candidate_id": "H2NY17162",
+      "candidate": "LAWLER, MICHAEL",
+      "party": "REP",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.0,
+      "last_date": "2026-08-30",
+      "total": 0.0,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00640300",
+      "committee": "ACTIVATE AMERICA",
+      "candidate_id": null,
+      "candidate": "LAWLER, MICHAEL",
+      "party": "",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.0,
+      "last_date": "2026-07-14",
+      "total": 0.0,
+      "side": null
+     },
+     {
+      "committee_id": "C00640300",
+      "committee": "ACTIVATE AMERICA",
+      "candidate_id": "H2NY17162",
+      "candidate": "LAWLER, MICHAEL",
+      "party": "REP",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.0,
+      "last_date": "2026-05-31",
+      "total": 0.0,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00647966",
+      "committee": "RURAL FREEDOM NETWORK",
+      "candidate_id": "H2NY17162",
+      "candidate": "LAWLER, MICHAEL VINCENT",
+      "party": "REP",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.0,
+      "last_date": "2026-05-07",
+      "total": 0.0,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00606962",
+      "committee": "WORKING FAMILIES PARTY PAC",
+      "candidate_id": "H0NY17174",
+      "candidate": "JONES, MONDAIRE",
+      "party": "DEM",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.0,
+      "last_date": "2025-04-10",
+      "total": 0.0,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00489799",
+      "committee": "PLANNED PARENTHOOD VOTES",
+      "candidate_id": "H0NY17174",
+      "candidate": "JONES, MONDAIRE",
+      "party": "DEM",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.0,
+      "last_date": "2025-03-30",
+      "total": 0.0,
+      "side": "D"
+     }
+    ]
+   }
+  },
+  "PA-01": {
+   "candidates": [
+    {
+     "name": "FITZPATRICK, BRIAN",
+     "party": "REP",
+     "candidate_id": "H6PA08277",
+     "receipts": 6.73,
+     "disbursements": 4.8,
+     "cash_on_hand": 6.36,
+     "coverage_end": "2026-06-30"
+    },
+    {
+     "name": "HARVIE, ROBERT J",
+     "party": "DEM",
+     "candidate_id": "H6PA01181",
+     "receipts": 2.01,
+     "disbursements": 1.21,
+     "cash_on_hand": 0.79,
+     "coverage_end": "2026-06-30"
+    },
+    {
+     "name": "SIMONELLI, LUCIA DORA",
+     "party": "DEM",
+     "candidate_id": "H6PA01223",
+     "receipts": 0.09,
+     "disbursements": 0.09,
+     "cash_on_hand": 0.0,
+     "coverage_end": "2026-06-30"
+    },
+    {
+     "name": "HUNT, TRACY",
+     "party": "DEM",
+     "candidate_id": "H6PA01199",
+     "receipts": 0.04,
+     "disbursements": 0.04,
+     "cash_on_hand": 0.0,
+     "coverage_end": "2026-06-30"
+    },
+    {
+     "name": "STRICKLER, ROBERT J",
+     "party": "DEM",
+     "candidate_id": "H6PA01207",
+     "receipts": 0.03,
+     "disbursements": 0.03,
+     "cash_on_hand": -0.01,
+     "coverage_end": "2026-03-31"
+    },
+    {
+     "name": "ZELTAKALNS, MICHAEL",
+     "party": "DEM",
+     "candidate_id": "H6PA01249",
+     "receipts": 0.01,
+     "disbursements": 0.0,
+     "cash_on_hand": 0.01,
+     "coverage_end": "2026-03-31"
+    }
+   ],
+   "ie": {
+    "pro_D": 0.68,
+    "pro_R": 1.17,
+    "n_rows": 79,
+    "last_date": "2026-09-25",
+    "rows": [
+     {
+      "committee_id": "C00848739",
+      "committee": "DEFENDING AMERICA PAC, INC.",
+      "candidate_id": "H6PA01181",
+      "candidate": "HARVIE, ROBERT J",
+      "party": "DEM",
+      "so": "O",
+      "reported": 0.01,
+      "notice_recent": 0.65,
+      "last_date": "2026-09-22",
+      "total": 0.66,
+      "side": "R"
+     },
+     {
+      "committee_id": "C00886614",
+      "committee": "YOUR COMMUNITY PAC",
+      "candidate_id": "H6PA08277",
+      "candidate": "FITZPATRICK, BRIAN",
+      "party": "REP",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.5,
+      "last_date": "2026-09-21",
+      "total": 0.5,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00707844",
+      "committee": "EDF ACTION VOTES",
+      "candidate_id": "H6PA08277",
+      "candidate": "FITZPATRICK, BRIAN",
+      "party": "REP",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.16,
+      "last_date": "2026-09-23",
+      "total": 0.16,
+      "side": "R"
+     },
+     {
+      "committee_id": "C00906701",
+      "committee": "AMERICA FIRST AGRICULTURE ACTION INC.",
+      "candidate_id": "H6PA08277",
+      "candidate": "FITZPATRICK, BRIAN",
+      "party": "REP",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.16,
+      "last_date": "2026-09-04",
+      "total": 0.16,
+      "side": "R"
+     },
+     {
+      "committee_id": "C00495028",
+      "committee": "HMP",
+      "candidate_id": "H6PA08277",
+      "candidate": "FITZPATRICK, BRIAN",
+      "party": "REP",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.15,
+      "last_date": "2026-09-25",
+      "total": 0.15,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00890335",
+      "committee": "STRATEGIC MAJORITY PAC",
+      "candidate_id": "H6PA01181",
+      "candidate": "HARVIE, ROBERT J",
+      "party": "DEM",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.1,
+      "last_date": "2026-09-23",
+      "total": 0.1,
+      "side": "R"
+     },
+     {
+      "committee_id": "C00890335",
+      "committee": "STRATEGIC MAJORITY PAC",
+      "candidate_id": "H6PA08277",
+      "candidate": "FITZPATRICK, BRIAN",
+      "party": "REP",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.09,
+      "last_date": "2026-09-23",
+      "total": 0.09,
+      "side": "R"
+     },
+     {
+      "committee_id": "C00760835",
+      "committee": "LOSERS AND SUCKERS VOTE",
+      "candidate_id": "H6PA08277",
+      "candidate": "FITZPATRICK, BRIAN",
+      "party": "REP",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.02,
+      "last_date": "2026-04-15",
+      "total": 0.02,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00010421",
+      "committee": "ASSOCIATED BUILDERS AND CONTRACTORS, INC. POLITICAL ACTION COMMITTEE (ABC PAC)",
+      "candidate_id": "H6PA08277",
+      "candidate": "FITZPATRICK, BRIAN REP.",
+      "party": "REP",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.01,
+      "last_date": "2026-09-18",
+      "total": 0.01,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00489799",
+      "committee": "PLANNED PARENTHOOD VOTES",
+      "candidate_id": "H6PA08277",
+      "candidate": "FITZPATRICK, BRIAN",
+      "party": "REP",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.0,
+      "last_date": "2026-08-30",
+      "total": 0.0,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00640300",
+      "committee": "ACTIVATE AMERICA",
+      "candidate_id": null,
+      "candidate": "HARVIE, BOB",
+      "party": "",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.0,
+      "last_date": "2026-07-07",
+      "total": 0.0,
+      "side": null
+     },
+     {
+      "committee_id": "C00761064",
+      "committee": "API PA VOTES",
+      "candidate_id": "H2PA01099",
+      "candidate": "EHASZ, ASHLEY",
+      "party": "DEM",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.0,
+      "last_date": "2025-01-26",
+      "total": 0.0,
+      "side": "D"
+     }
+    ]
+   }
+  }
+ }
+}
