@@ -1,0 +1,104 @@
+---
+title: "NY-17 New York 17th — Lawler"
+toc: false
+---
+
+```{r}
+#| include: false
+source(file.path("R", "helpers.R"))
+```
+
+**해리스가 이긴 구를 지키는 공화 현직, 이번 사이클 하원 최대 격전지 중 하나.** 허드슨밸리(록랜드·퍼트넘·웨스트체스터 북부)의 이 지역구는 2024년 대선에서 해리스가 1%p 차로 이겼지만, 같은 날 Mike Lawler(공화)가 6%p 차로 재선됐습니다. 도전자는 육군 장교 출신으로 NSC·CISA를 거친 Cait Conley(민주)입니다. 세 기관 모두 토스업이고, 노동절 이후 독립 공개 조사는 아직 없습니다. 공화계 CLF가 이 구 하나에 700만 달러를 예약해 광고 예약은 공화가 7대 1로 앞섭니다.
+
+::: {.summary}
+- **구도**: 공화 현직 방어 — Lawler(재선, 금융서비스위 부위원장) vs Conley(전 NSC 대테러국장). Cook·Sabato·IE 모두 **Toss-up**.
+- **변화**: 2분기 모금은 Conley가 역전했으나 현금은 Lawler 480만 대 130만. 9/21 민주 Jared Golden 의원의 교차 지지. 9/28 News 12·10/14 PIX11 토론.
+- **한국 함의**: 인도태평양 의회대표단 방한에서 한미 동맹을 강조한 발언 있음. 무역 표결은 미확인.
+:::
+
+::::: {.panel-tabset}
+
+## 지역구 배경
+
+- 록랜드 카운티 전역, 퍼트넘 카운티 전역, 웨스트체스터 카운티 북부 대부분, 더치스 카운티 남부 일부로 구성됩니다([Wikipedia](https://en.wikipedia.org/wiki/New_York%27s_17th_congressional_district)).
+- 2024년 기준 인구 78만 3,152명이며 백인 64.4%·히스패닉 19.9%·흑인 7.1%·아시아계 5.0%입니다([Wikipedia](https://en.wikipedia.org/wiki/New_York%27s_17th_congressional_district)).
+- 중위가구소득은 12만 3,436달러로 뉴욕주 평균을 크게 웃돕니다([Wikipedia](https://en.wikipedia.org/wiki/New_York%27s_17th_congressional_district)).
+- Cook PVI는 D+1로 공화당 현역이 있는 전국 3개 민주 성향 지역구 중 하나입니다([Wikipedia](https://en.wikipedia.org/wiki/New_York%27s_17th_congressional_district)).
+- 2024년 대선은 해리스 50%·트럼프 49%로 근소하게 갈렸습니다([Wikipedia](https://en.wikipedia.org/wiki/New_York%27s_17th_congressional_district)).
+- 2022년 하원 선거는 롤러 49.4%·매틀로니 48.5%로 0.9%p(2,639표) 차 신승이었습니다([Wikipedia](https://en.wikipedia.org/wiki/Mike_Lawler)).
+- 2024년 하원 선거는 롤러 52.2%·존스 45.9%로 6.3%p(2만 3,946표) 차 재선이었습니다([Wikipedia](https://en.wikipedia.org/wiki/Mike_Lawler)).
+- 해리스가 이긴 지역구를 지키는 전국 3개 공화당 사례(NY-17·NE-02 공석·CA-13) 중 하나로 분할투표 성향이 뚜렷합니다([The Inquirer/NYT](https://www.inquirer.com/politics/nation/trump-midterm-spending-republicans-20260916.html)).
+
+## 후보자
+
+### 현직
+
+- 1986년 서퍼른 출생으로 맨해튼 칼리지 회계·재무학과를 수석 졸업했습니다([Wikipedia](https://en.wikipedia.org/wiki/Mike_Lawler)).
+- 올랜지타운 부읍장·뉴욕주공화당 사무총장을 거쳐 2020년 주하원 97선거구에 당선됐습니다([Wikipedia](https://en.wikipedia.org/wiki/Mike_Lawler)).
+- 2022년 당시 DCCC 위원장이던 숀 패트릭 매틀로니를 꺾고 연방하원에 입성했습니다([Wikipedia](https://en.wikipedia.org/wiki/Mike_Lawler)).
+- 하원 금융서비스위원회 부위원장(자본시장·주택보험 소위)과 외교위원회에서 활동합니다([Lawler 의원실](https://lawler.house.gov/about/committees-and-caucuses.htm)).
+- SALT 공제는 상원의 1만 달러 상한안을 거부하고 4만 달러 상한을 관철해 7월 예산법안에 찬성했습니다([Yonkers Times](https://yonkerstimes.com/lawler-votes-yes-on-big-beautiful-bill/)).
+- 예산법안(OBBBA)은 하원에서 215–214, 최종안은 218–214로 간신히 통과됐고 찬성표를 던졌습니다([Yonkers Times](https://yonkerstimes.com/lawler-votes-yes-on-big-beautiful-bill/)).
+- 관세는 트럼프의 협상 도구론을 지지하며 관세 유지 표결에 반복해서 찬성표를 던졌습니다([DCCC](https://dccc.org/trumps-cost-spiking-tariffs-have-cost-new-yorkers-15-billion-mike-lawler-voted-for-them-eight-times/)).
+- 이란 전쟁권한 결의안은 갓하이머 의원과 공동성명으로 반대하며 대통령의 군사 재량권을 옹호했습니다([The Hill](https://thehill.com/homenews/house/5748330-lawler-gottheimer-oppose-iran-strike/)).
+- 트럼프와의 거리는 초당파성 하원 4위 평가와 은퇴하는 민주당 골든 의원의 9/21 교차 지지로 뒷받침됩니다([lohud](https://eu.lohud.com/story/opinion/2026/09/21/jared-golden-endorsesmike-lawler/91868053007/)).
+- 지역 이슈로 록랜드·웨스트체스터 통근자를 위해 맨해튼 혼잡통행료 도입에 반대해 왔습니다([Lawler 의원실](https://lawler.house.gov/news/documentsingle.aspx?DocumentID=3478)).
+- 아이티 TPS 연장 법안을 공동 발의해 223–204로 통과시키며 지역구 아이티계 주민을 대변했습니다([The Hill](https://thehill.com/homenews/house/5941141-mike-lawler-haitian-tps/)).
+- 한국 관련해서는 인도태평양 의회대표단으로 방한해 한미 안보동맹을 공산주의 억지력으로 강조한 발언이 있습니다([Lawler 의원실](https://lawler.house.gov/news/documentsingle.aspx?DocumentID=4682)).
+- 한국 무역정책에 대한 별도 표결·발언은 미확인입니다.
+
+### 도전자
+
+- 6월 23일 경선에서 케이트 콘리가 5파전 중 49.6%로 1위를 차지해 본선 후보가 됐습니다([WAMC](https://www.wamc.org/news/2026-06-23/ny-primary-election-2026-ny-17-democrat-conley)).
+- 2위 베스 데이비드슨은 31.5%, 3위 에피 필립스-스탤리는 15.1%를 얻었습니다([Ballotpedia](https://ballotpedia.org/New_York's_17th_Congressional_District_election,_2026_(June_23_Democratic_primary))).
+- 콘리는 웨스트포인트를 졸업하고 16년간 육군 장교로 복무하며 이라크·아프가니스탄에 파병됐습니다([Wikipedia](https://en.wikipedia.org/wiki/Cait_Conley)).
+- 특수작전 여성 지휘관 초기 사례 중 한 명이며 브론즈스타 3회를 받았습니다([Wikipedia](https://en.wikipedia.org/wiki/Cait_Conley)).
+- 전역 후 국가안보회의(NSC) 대테러국장과 사이버안보·기반시설안보국(CISA)에서 대테러 정책을 이끌었습니다([Wikipedia](https://en.wikipedia.org/wiki/Cait_Conley)).
+- 핵심 메시지는 어포더빌리티·의료비이며 공공보험 옵션 도입과 처방약 가격 인하, 관세 정책 시정을 내세웁니다([Cait Conley for Congress](https://caitconley.com/policy/)).
+
+## 판세
+
+- Cook Political Report는 6월 중순 이후 Toss-Up 등급을 유지하고 있습니다([270toWin/Cook](https://www.270towin.com/2026-house-election/cook-political-report-2026-house-ratings)).
+- Sabato's Crystal Ball은 7월 30일 Lean R에서 Toss-up으로 하향 조정했습니다([Sabato's Crystal Ball](https://centerforpolitics.org/crystalball/thirteen-house-rating-changes-toward-democrats-as-seat-by-seat-assessment-better-aligns-with-our-november-expectations/)).
+- Inside Elections도 Toss-up으로 분류하며 변경일은 미확인입니다([Inside Elections](https://insideelections.com/election-year/2026/?state-district=ny-17&office=house)).
+- 롤러 캠프가 배포한 co/efficient 조사(7/22 마감, 유권자 1,292명, 오차 ±2.7%p)는 롤러 50%·콘리 45%였습니다. 캠프 배포 조사라 할인해 읽어야 합니다([Yonkers Times](https://yonkerstimes.com/lawler-leads-cait-conley-50-45-in-new-independent-poll-of-ny-17/)).
+- 하원다수당PAC(HMP) 의뢰 FM3 조사(6/27~7/1, 유권자 509명)는 콘리 51%·롤러 45%였습니다([House Majority PAC](https://www.thehousemajoritypac.com/news/hmp-poll-cait-conley-leads-mike-lawler-in-ny-17)).
+- 두 조사 모두 노동절 이전 자료이며 9/27 현재까지 독립 공개 조사는 나오지 않았습니다([Zoose](https://zoose.substack.com/p/the-zoose-house-and-us-senate-maps)).
+- 예측시장에서는 9월 중순 콘리 승리 확률이 58~67%까지 출렁였습니다([PredictionHunt](https://www.predictionhunt.com/news/lawler-leads-ny-17-by-5-points-but-markets-sep-13-2026)).
+- 9월 21일 분석 매체 Zoose는 등급을 "공화 우세"에서 "판정 보류"로 낮췄습니다([Zoose](https://zoose.substack.com/p/the-zoose-house-and-us-senate-maps)).
+
+## 자금
+
+```{r}
+#| output: asis
+gt_house_fec("NY-17")
+```
+
+```{r}
+#| output: asis
+gt_house_ie("NY-17")
+```
+
+### 보도된 예약·집행
+
+- 2분기(6/30 마감, 7/15 신고) 기준 콘리가 170만 달러, 롤러가 140만 달러를 모금했습니다([Punchbowl](https://punchbowl.news/article/house/incumbents-outraised/)).
+- 현금 보유는 롤러 480만 달러로 콘리 130만 달러를 크게 앞섰습니다([Punchbowl](https://punchbowl.news/article/house/incumbents-outraised/)).
+- 3분기(9/30 마감, 10/15 신고) 수치는 이 창에서 아직 확인되지 않아 미확인입니다.
+- 공화당계 CLF는 지역구 단독으로 700만 달러를 예약해 AOC 소재 광고를 9/23부터 방영 중입니다([Punchbowl](https://punchbowl.news/article/house/aoc-gop-ad-lawler/)).
+- HMP는 뉴욕·뉴저지 두 지역구에 나눠 245만 달러를 예약했고 NY-17 개별 배분액은 미확인입니다([Axios](https://www.axios.com/2026/09/21/jared-golden-mike-lawler-house-democrats-reaction)).
+- 노동절부터 선거일까지 예약 광고는 공화 1,430만 달러 대 민주 210만 달러로 약 7대1 격차입니다([Punchbowl](https://punchbowl.news/article/campaigns/house-map-mapped/)).
+- 트럼프계 Safety and Affordability PAC의 하원 15개 표적 중 NY-17이 확인된 최대 표적 3곳(FL-25·MI-04 포함)에 듭니다([AP](https://www.local10.com/news/politics/2026/09/16/trump-aligned-groups-are-pouring-money-into-the-midterm-races/)).
+
+## 일정·관전 포인트
+
+- 1차 토론은 9월 28일 오후 8시 30분 News 12에서 테라 로젠블럼 진행으로 녹화 방송됩니다([Rockland County Times](https://rocklandtimes.com/2026/09/24/news-12-to-host-ny-17-congressional-debate-with-conley-and-lawler/)).
+- 2차 토론은 10월 14일 오후 7시 PIX11에서 열립니다([PIX11](https://pix11.com/pressrelease/pix11-news-to-host-ny-17-debate-with-candidates-mike-lawler-and-cait-conley/)).
+- 11/3 총선 기준 유권자 등록 마감은 10월 24일입니다([뉴욕주선거관리위원회](https://elections.ny.gov/2026-election-deadlines-poster)).
+- 조기투표는 10월 24일부터 11월 1일까지 9일간 진행됩니다([뉴욕주선거관리위원회](https://elections.ny.gov/2026-election-deadlines-poster)).
+- 다음 분수령은 9/28 토론 직후 양측의 유료광고 대응과 노동절 이후 첫 독립 여론조사 등장 여부입니다([Zoose](https://zoose.substack.com/p/the-zoose-house-and-us-senate-maps)).
+
+::: {.caveat}
+**갱신 규약** — 표는 주간 발행이 FEC에서 자동 갱신합니다(`scripts/fetch_fec_house.py`). 산문은 2026-09-27 조사 기준이며, 하원 일일 브리핑을 이 페이지에 매일 반영하는 체계는 설계안(`pipeline_prompts/하원_일일_사이트반영_설계안.md`) 단계입니다. 확인하지 못한 항목은 '미확인'으로 두었습니다.
+:::
+
+:::::

@@ -7,6 +7,7 @@ project:
     - "issues/"
     - "states/"
     - "governors/"
+    - "house/"
     - "!handoff.md"
     - "!NOTES_LOCAL.md"
     - "!README.md"
@@ -90,6 +91,10 @@ website:
             href: house.qmd
           - text: "재획정 — 왜·어디서 (설명)"
             href: redistricting.qmd
+          - section: "District Focus"
+            contents:
+              - house/ny17.qmd
+              - house/pa01.qmd
       - section: "주지사·주의회"
         contents:
           - text: "주지사 — 36개 주 경합"

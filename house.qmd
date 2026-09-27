@@ -85,6 +85,8 @@ gt_house_races()
 
 ## 주목 레이스 {#featured}
 
+지역구 단위 상세 페이지(District Focus)는 [NY-17 Lawler](house/ny17.qmd)·[PA-01 Fitzpatrick](house/pa01.qmd)부터 시작합니다. 해리스가 이긴 구를 지키는 공화 현직 두 곳입니다.
+
 선별 기준: 전국적 상징성, 다수당 결정 기여도, 한국 함의. 마진은 양수=민주 우위(D+), 재획정 4개구는 신지도 기준입니다.
 
 ### 공석 픽업 표적 — 은퇴가 만든 빈자리
