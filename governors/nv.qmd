@@ -20,7 +20,7 @@ cat(governor_card_html("NV"))
 **현직 공화 주지사 가운데 유일한 진성 경합**입니다. Lombardo는 2022년 민주 파도 속에서 **그 해 전국에서 유일하게 현직 주지사(Sisolak)를 축출**하고 당선된 인물이고, 도전자 Ford는 주 전체 선거(법무장관)를 두 번 이긴 검증된 후보입니다 — 당선 시 네바다 최초의 흑인 주지사가 됩니다.
 
 ::: {.summary}
-- **구도**: 공화 현직 방어 — Ford(주 법무장관 2선) vs Lombardo(현직·전 클라크카운티 셰리프). **Cook Toss-up / Sabato Lean R(7/23) / IE Tilt R** — 기관 이견.
+- **구도**: 공화 현직 방어 — Ford(주 법무장관 2선) vs Lombardo(현직·전 클라크카운티 셰리프). **Cook Toss-up / Sabato Toss-up(9/22↑ — 이 사이트 등급 피드 기준) / IE Tilt R** — 기관 이견.
 - **변화**: 6/9 경선으로 일찍 확정(Ford 63.3%·Lombardo 90.8% — 확정 집계 기준). 조사는 동률~Lombardo +3(집계 평균 +3~4), 시장은 민주 56¢로 **조사와 시장이 반대 방향**.
 - **한국 함의**: 직접 연결 미확인.
 :::
@@ -60,4 +60,4 @@ cat(governor_money_html("NV"))
 
 **직접 연결이 확인되지 않았습니다.** 후보 발언·투자 연계가 확인되면 [Korea Watch](../korea-watch.qmd)에 기록합니다.
 
-*작성 2026-08-12 · 등급: Cook Toss-up · Sabato Lean R(7/23) · IE Tilt R · 시장 민주 56¢(Kalshi 8/10) · 프로필·조사 상세 기준 2026-08-07*
+*작성 2026-08-12 · 갱신 2026-09-27 · 등급: Cook Toss-up · Sabato Toss-up(9/22↑) · IE Tilt R · 시장 민주 46¢(Kalshi 9/27) · 프로필·조사 상세 기준 2026-08-07*
