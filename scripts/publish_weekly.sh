@@ -58,6 +58,7 @@ if [ -n "${FEC_API_KEY:-}" ]; then
   echo "[weekly] FEC 독립지출 취득"; python3 scripts/fetch_fec_independent_expenditures.py || echo "[weekly] ! FEC 독립지출 실패(건너뜀)"
   echo "[weekly] FEC 하원 District Focus 취득"; python3 scripts/fetch_fec_house.py || echo "[weekly] ! FEC 하원 실패(건너뜀)"
 else echo "[weekly] ! FEC_API_KEY 없음 — fec_fundraising 건너뜀"; fi
+echo "[weekly] EIA 휘발유 주간가 취득(키 불필요)"; python3 scripts/fetch_gas_prices.py || echo "[weekly] ! EIA 휘발유 실패(건너뜀)"
 
 # 1.5) Cook 하원 등급 자동 취득(270towin 재게시분 · 435개구 해독) — 실패해도 계속
 echo "[weekly] Cook 하원 등급 취득"
