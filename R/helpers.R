@@ -2048,6 +2048,30 @@ gt_house_ie <- function(district, n = 8) {
     .tbl_opts()
 }
 
+
+# 1.13 휘발유 주간 소매가 표 (data/gas_prices.json) — 전국 환경 「경제」 탭 --------------
+gt_gas_prices <- function() {
+  path <- file.path("data", "gas_prices.json")
+  if (!file.exists(path)) return(gt(tibble(안내 = "data/gas_prices.json 미생성 — scripts/fetch_gas_prices.py 실행 후 채워집니다.")) |> .tbl_opts())
+  d <- jsonlite::read_json(path, simplifyVector = FALSE)
+  ss <- d$series
+  f <- function(v) if (is.null(v)) "—" else sprintf("$%.2f", v)
+  fd <- function(v) if (is.null(v)) "—" else sprintf("%s%.2f", if (v >= 0) "+" else "−", abs(v))
+  tibble(
+    지역 = vapply(ss, function(s) s$label, character(1)),
+    자료 = vapply(ss, function(s) if (isTRUE(s$proxy)) "PADD 대리" else "주 실측", character(1)),
+    `최근 주` = vapply(ss, function(s) f(s$latest), character(1)),
+    `1년 전` = vapply(ss, function(s) f(s$year_ago), character(1)),
+    `1년 변화` = vapply(ss, function(s) fd(s$yoy), character(1)),
+    `52주 최저–최고` = vapply(ss, function(s) sprintf("$%.2f – $%.2f", s$min, s$max), character(1))
+  ) |>
+    gt() |>
+    tab_header(title = "휘발유 소매가 — 지역별 최근 주와 1년 변화",
+               subtitle = sprintf("Regular, 달러/갤런 · 마지막 주 %s · 취득 %s", d$data_through, d$as_of)) |>
+    tab_source_note(d$provenance_note) |>
+    .tbl_opts()
+}
+
 # 주 개요 탭 머리의 "오늘의 판세" — 최신 정리본의 여론조사·주 함의 한 줄씩
 state_today_md <- function(code) {
   d <- .ledger()

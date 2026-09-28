@@ -187,6 +187,24 @@ gt_national_econ()
 
 데이터는 `scripts/fetch_national_econ.py`(FRED API)가 주 1회 `data/national_econ.json`으로 갱신합니다(표=최신 스냅샷, 그래프=1월 이후 월별). 관세 관련 조치는 API가 없어 주간 브리핑(뉴스 기반)에서 추적합니다.
 
+#### 휘발유 소매가 — 주별 주간 추이 (지난 1년) {#gas}
+
+생활비 채널에서 유권자가 매일 보는 숫자입니다. 아래는 EIA가 매주 월요일 집계하는 일반(Regular) 휘발유 소매가입니다. EIA의 주 단위 주간 시계열은 아홉 주에만 있어, 감시 9주 중 오하이오·텍사스만 주 실측이고 나머지는 소속 PADD 지역 평균을 점선으로 대신 그렸습니다. 브리핑이 인용하는 AAA 일일가와 수준이 조금 다를 수 있습니다.
+
+::: {#gas-root}
+<div style="height:380px"><canvas id="gasChart"></canvas></div>
+<p id="gas-note" class="text-muted" style="font-size:.78rem; margin-top:.5rem;"></p>
+:::
+
+<script src="assets/gas.js"></script>
+
+```{r}
+#| output: asis
+gt_gas_prices()
+```
+
+자료는 `scripts/fetch_gas_prices.py`가 주 1회 `data/gas_prices.json`으로 갱신합니다(EIA xls 직접 다운로드, 키 불필요).
+
 ## 정당·자금
 
 ### 선거 자금 지형 {#money}
