@@ -23,6 +23,7 @@ project:
     - data/trends.json
     - data/national_econ.json
     - data/pollster_series.json
+    - data/gas_prices.json
     - assets/candidates
 
 lang: ko
