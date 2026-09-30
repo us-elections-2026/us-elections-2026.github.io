@@ -58,6 +58,12 @@ cat(state_ledger_md("MI", "local"))
 - 주력 산업은 자동차로 GM·Ford·Stellantis 본사가 디트로이트권에 있습니다. 그랜드래피즈는 Steelcase 등 가구 산업의 중심입니다. ([Wikipedia](https://en.wikipedia.org/wiki/Michigan))
 
 ### 역대 선거 결과의 특징
+
+```{r}
+#| output: asis
+cat(state_history_svg("MI"))
+```
+
 - 대선은 2012년 Obama +9.5%p, 2016년 Trump +0.2%p, 2020년 Biden +2.8%p, 2024년 Trump +1.4%p였습니다. ([Wikipedia](https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_Michigan))
 - 연방상원은 2018년 Stabenow +6.5%p, 2020년 Peters +1.7%p, 2024년 Slotkin +0.3%p였습니다. 민주가 세 번 연속 이겼지만 마진은 계속 줄었습니다. ([Wikipedia](https://en.wikipedia.org/wiki/2024_United_States_Senate_election_in_Michigan))
 - 주지사는 2018년 Whitmer +9.6%p, 2022년 Whitmer +10.5%p로 민주가 여유 있게 이겼습니다. ([Wikipedia](https://en.wikipedia.org/wiki/2022_Michigan_gubernatorial_election))

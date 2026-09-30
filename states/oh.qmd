@@ -59,6 +59,12 @@ cat(state_ledger_md("OH", "local"))
 - 제조업 규모는 전국 3위, 자동차 생산은 2위입니다. Intel이 뉴올버니에 280억 달러 규모 반도체 공장을 짓고 있습니다. ([Wikipedia](https://en.wikipedia.org/wiki/Ohio) · [NIST](https://www.nist.gov/system/files/documents/2024/07/18/07102024%20OH%20Fact%20Sheet.pdf))
 
 ### 역대 선거 결과의 특징
+
+```{r}
+#| output: asis
+cat(state_history_svg("OH"))
+```
+
 - 대선은 2012년 Obama +3.0%p, 2016년 Trump +8.1%p, 2020년 Trump +8.0%p, 2024년 Trump +11.2%p였습니다. ([Ballotpedia](https://ballotpedia.org/Presidential_election_in_Ohio,_2024))
 - 연방상원은 2018년 Brown(D) 53.4% 대 46.6%, 2022년 Vance(R) 53.0% 대 46.9%였습니다. 2024년은 Moreno(R) 50.1% 대 Brown 46.5%였습니다. ([Ballotpedia](https://ballotpedia.org/United_States_Senate_election_in_Ohio,_2024))
 - 주지사는 2018년 DeWine(R) 50.4% 대 46.7%, 2022년 DeWine 62.4%로 공화가 이겼습니다. ([Ballotpedia](https://ballotpedia.org/Mike_DeWine))

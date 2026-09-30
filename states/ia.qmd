@@ -62,6 +62,12 @@ cat(state_ledger_md("IA", "local"))
 - 한국 기업의 대형 투자 사례는 미확인입니다.
 
 ### 역대 선거 결과의 특징
+
+```{r}
+#| output: asis
+cat(state_history_svg("IA"))
+```
+
 - 대선은 2012년 Obama +5.8%p, 2016년 Trump +9.4%p, 2020년 Trump +8.2%p, 2024년 Trump +13.2%p였습니다. ([Wikipedia](https://en.wikipedia.org/wiki/United_States_presidential_elections_in_Iowa))
 - 연방상원은 2016년 Grassley +24.4%p, 2020년 Ernst +6.6%p, 2022년 Grassley +12.2%p로 모두 공화가 이겼습니다. ([Wikipedia 2020](https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_Iowa) · [Ballotpedia 2022](https://ballotpedia.org/United_States_Senate_election_in_Iowa,_2022))
 - 주지사는 2018년 Reynolds +2.8%p, 2022년 Reynolds +18.5%p였습니다. ([Wikipedia 2018](https://en.wikipedia.org/wiki/2018_Iowa_gubernatorial_election) · [2022](https://en.wikipedia.org/wiki/2022_Iowa_gubernatorial_election))

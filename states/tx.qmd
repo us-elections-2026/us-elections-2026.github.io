@@ -59,6 +59,12 @@ cat(state_ledger_md("TX", "local"))
 - ExxonMobil, AT&T, Dell, Southwest·American Airlines 등 Fortune 500 기업 57곳의 본사가 있습니다. ([Wikipedia](https://en.wikipedia.org/wiki/Economy_of_Texas))
 
 ### 역대 선거 결과의 특징
+
+```{r}
+#| output: asis
+cat(state_history_svg("TX"))
+```
+
 - 대선은 2012년 Romney +15.8%p, 2016년 Trump +9.0%p, 2020년 Trump +5.6%p, 2024년 Trump +13.7%p였습니다. ([Wikipedia](https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_Texas))
 - 연방상원은 2018년 Cruz +2.6%p, 2020년 Cornyn +9.6%p, 2024년 Cruz +8.5%p로 모두 공화가 이겼습니다. ([Wikipedia](https://en.wikipedia.org/wiki/2024_United_States_Senate_election_in_Texas))
 - 주지사는 2018년 Abbott +13.3%p, 2022년 Abbott +10.9%p였습니다. ([Wikipedia](https://en.wikipedia.org/wiki/2022_Texas_gubernatorial_election))

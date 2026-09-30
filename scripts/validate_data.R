@@ -364,6 +364,19 @@ if (!is.null(fh)) {
   }
 }
 
+# ---- state_election_history.json (선택) — 40년 선거 결과 구조 -----------------------
+seh <- load_json("state_election_history.json", optional = TRUE)
+if (!is.null(seh)) {
+  f <- "state_election_history.json"
+  seh <- jsonlite::fromJSON(jpath(f), simplifyVector = FALSE)
+  require_keys(f, seh, c("as_of", "states"))
+  for (st in names(seh$states)) for (off in c("pres","sen","gov")) for (e in seh$states[[st]][[off]]) {
+    if (is.null(e$year) || is.null(e$party) || is.null(e$winner)) err(f, paste(st, off, "year/party/winner 필수"))
+    if (!is.null(e$party) && !(e$party %in% c("D","R","I"))) err(f, paste(st, off, e$year, "party 는 D/R/I"))
+    if (off == "sen" && is.null(e$class)) err(f, paste(st, "sen", e$year, "class 필수"))
+  }
+}
+
 # ---- legal_tracker.json (선택) — 선거 법·제도 트래커 구조 --------------------------
 lt <- load_json("legal_tracker.json", optional = TRUE)
 if (!is.null(lt)) {

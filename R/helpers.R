@@ -2112,6 +2112,62 @@ gt_priority_polls <- function(n = 30) {
     .tbl_opts()
 }
 
+
+# 1.15 주별 40년 선거 결과 띠 그림 (data/state_election_history.json) — 배경 탭 -------------
+# 행: 대선 · 상원(두 의석, class별) · 주지사. 칸 색 = 승자 정당(파랑 D · 빨강 R · 회색 I), 특별선거는 점선 테두리.
+# 칸 위 글자 = 승자 성, 툴팁 = 연도·승자·마진. 아래 요약 줄은 승수 집계.
+state_history_svg <- function(code, y0 = 1986, y1 = 2026) {
+  path <- file.path("data", "state_election_history.json")
+  if (!file.exists(path)) return('<p class="pt-empty">40년 선거 결과 자료(data/state_election_history.json)가 아직 없습니다.</p>')
+  d <- jsonlite::read_json(path, simplifyVector = FALSE)
+  h <- d$states[[code]]
+  if (is.null(h)) return('<p class="pt-empty">이 주의 40년 선거 결과 자료가 아직 없습니다.</p>')
+  sen_classes <- sort(unique(vapply(h$sen, function(e) as.integer(e$class), integer(1))))
+  rows <- list(list(lab = "대선", items = h$pres))
+  for (cl in sen_classes) rows[[length(rows) + 1]] <- list(lab = sprintf("상원 (class %d)", cl),
+                                                          items = Filter(function(e) as.integer(e$class) == cl, h$sen))
+  rows[[length(rows) + 1]] <- list(lab = "주지사", items = h$gov)
+  W <- 720; padL <- 96; padR <- 8; padT <- 22; rowH <- 40; cellH <- 18
+  H <- padT + rowH * length(rows) + 26
+  cw <- (W - padL - padR) / (y1 - y0 + 1)          # 1년 칸 폭
+  fx <- function(yr) padL + (yr - y0) * cw
+  col <- c(D = "#2166ac", R = "#c92a2a", I = "#6b7280")
+  esc <- function(x) gsub("&", "&amp;", gsub("<", "&lt;", x))
+  out <- sprintf('<svg class="hist-svg" viewBox="0 0 %d %d" role="img" aria-label="%s 1986~2024 선거 결과">', W, H, code)
+  # 연도 눈금(4년)
+  for (yr in seq(y0 + 2, y1, by = 4)) {
+    out <- c(out, sprintf('<line class="hist-grid" x1="%.1f" y1="%d" x2="%.1f" y2="%d"/>', fx(yr) + cw / 2, padT - 4, fx(yr) + cw / 2, H - 22),
+             sprintf('<text class="hist-ax" x="%.1f" y="%d" text-anchor="middle">%d</text>', fx(yr) + cw / 2, H - 8, yr))
+  }
+  tally <- character(0)
+  for (i in seq_along(rows)) {
+    r <- rows[[i]]; y <- padT + rowH * (i - 1) + 10
+    out <- c(out, sprintf('<text class="hist-row" x="%d" y="%.1f" text-anchor="end">%s</text>', padL - 8, y + cellH - 4, esc(r$lab)))
+    items <- r$items[order(vapply(r$items, function(e) as.integer(e$year), integer(1)))]
+    for (k in seq_along(items)) {
+      e <- items[[k]]; yr <- as.integer(e$year); pt <- if (is.null(e$party)) "I" else e$party
+      if (yr < y0 || yr > y1) next
+      x <- fx(yr) + 1
+      w <- if (i == 1 || r$lab == "주지사" && code != "NH") cw * 1.6 else cw * 1.6   # 칸을 연도폭보다 넓게 — 4·6년 간격이라 겹치지 않는다
+      w <- min(w, cw * 1.9)
+      m <- if (is.null(e$margin)) "마진 미확인" else if (as.numeric(e$margin) >= 99) "무투표 당선" else sprintf("%+.1f%%p", as.numeric(e$margin))
+      sp <- isTRUE(e$special)
+      out <- c(out, sprintf('<rect class="hist-cell%s" x="%.1f" y="%.1f" width="%.1f" height="%d" rx="2" fill="%s"><title>%d %s (%s) %s%s</title></rect>',
+                            if (sp) " hist-sp" else "", x, y, w, cellH, col[[pt]], yr, esc(e$winner), pt, m, if (sp) " · 특별선거" else ""))
+      # 승자 성 — 위·아래 번갈아 놓아 겹침을 줄인다
+      ty <- if (k %% 2 == 1) y - 3 else y + cellH + 10
+      out <- c(out, sprintf('<text class="hist-nm" x="%.1f" y="%.1f" text-anchor="middle">%s</text>', x + w / 2, ty, esc(e$winner)))
+    }
+    n <- table(factor(vapply(items, function(e) if (is.null(e$party)) "I" else e$party, character(1)), levels = c("D", "R", "I")))
+    tally <- c(tally, sprintf("%s %d회 — 민주 %d · 공화 %d%s", r$lab, length(items), n[["D"]], n[["R"]],
+                              if (n[["I"]] > 0) sprintf(" · 무소속 %d", n[["I"]]) else ""))
+  }
+  out <- c(out, "</svg>")
+  paste0(paste(out, collapse = ""),
+         '<p class="rcard-mu hist-ft">', paste(tally, collapse = " / "),
+         sprintf(' · 파랑 = 민주, 빨강 = 공화, 회색 = 무소속 · 점선 테두리 = 특별선거 · 칸에 마우스를 올리면 마진 · 출처 위키백과 개별 선거 문서(기준 %s)</p>', if (is.null(d$as_of)) "" else d$as_of))
+}
+
 # 주 개요 탭 머리의 "오늘의 판세" — 최신 정리본의 여론조사·주 함의 한 줄씩
 state_today_md <- function(code) {
   d <- .ledger()

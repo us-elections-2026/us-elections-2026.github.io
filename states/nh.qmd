@@ -69,6 +69,12 @@ cat(state_ledger_md("NH", "local"))
 - 도시·농촌 비율의 구체 수치와 한국 기업의 대형 투자 사례는 미확인입니다.
 
 ### 역대 선거 결과의 특징
+
+```{r}
+#| output: asis
+cat(state_history_svg("NH"))
+```
+
 - 대선은 2012년 Obama +5.6%p, 2016년 Clinton +0.3%p, 2020년 Biden +7.0%p, 2024년 Harris +2.8%p였습니다. 2000년 이후 공화 후보가 이긴 적이 없습니다. ([Ballotpedia](https://ballotpedia.org/Presidential_election_in_New_Hampshire,_2024))
 - 연방상원은 2016년 Hassan +0.1%p, 2020년 Shaheen +15.6%p, 2022년 Hassan +9.2%p로 모두 민주가 이겼습니다. ([Ballotpedia](https://ballotpedia.org/United_States_Senate_election_in_New_Hampshire,_2022))
 - 주지사는 2022년 Sununu +15.5%p, 2024년 Ayotte +9.3%p로 공화가 이겼습니다. ([Wikipedia](https://en.wikipedia.org/wiki/2024_New_Hampshire_gubernatorial_election))
