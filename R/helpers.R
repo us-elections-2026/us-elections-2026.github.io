@@ -2127,8 +2127,8 @@ state_history_svg <- function(code, y0 = 1986, y1 = 2026) {
   for (cl in sen_classes) rows[[length(rows) + 1]] <- list(lab = sprintf("상원 (class %d)", cl),
                                                           items = Filter(function(e) as.integer(e$class) == cl, h$sen))
   rows[[length(rows) + 1]] <- list(lab = "주지사", items = h$gov)
-  W <- 720; padL <- 96; padR <- 8; padT <- 22; rowH <- 40; cellH <- 18
-  H <- padT + rowH * length(rows) + 26
+  W <- 720; padL <- 96; padR <- 8; padT <- 20; rowH <- 42; cellH <- 16
+  H <- padT + rowH * length(rows) + 24
   cw <- (W - padL - padR) / (y1 - y0 + 1)          # 1년 칸 폭
   fx <- function(yr) padL + (yr - y0) * cw
   col <- c(D = "#2166ac", R = "#c92a2a", I = "#6b7280")
@@ -2144,6 +2144,7 @@ state_history_svg <- function(code, y0 = 1986, y1 = 2026) {
     r <- rows[[i]]; y <- padT + rowH * (i - 1) + 10
     out <- c(out, sprintf('<text class="hist-row" x="%d" y="%.1f" text-anchor="end">%s</text>', padL - 8, y + cellH - 4, esc(r$lab)))
     items <- r$items[order(vapply(r$items, function(e) as.integer(e$year), integer(1)))]
+    prev_top <- TRUE
     for (k in seq_along(items)) {
       e <- items[[k]]; yr <- as.integer(e$year); pt <- if (is.null(e$party)) "I" else e$party
       if (yr < y0 || yr > y1) next
@@ -2154,8 +2155,11 @@ state_history_svg <- function(code, y0 = 1986, y1 = 2026) {
       sp <- isTRUE(e$special)
       out <- c(out, sprintf('<rect class="hist-cell%s" x="%.1f" y="%.1f" width="%.1f" height="%d" rx="2" fill="%s"><title>%d %s (%s) %s%s</title></rect>',
                             if (sp) " hist-sp" else "", x, y, w, cellH, col[[pt]], yr, esc(e$winner), pt, m, if (sp) " · 특별선거" else ""))
-      # 승자 성 — 위·아래 번갈아 놓아 겹침을 줄인다
-      ty <- if (k %% 2 == 1) y - 3 else y + cellH + 10
+      # 승자 성 — 기본은 칸 위 한 줄. 이웃 칸과 3년 이내로 붙어 있으면(NH 주지사 2년 주기) 위·아래로 번갈아 놓는다.
+      tight <- k > 1 && (yr - as.integer(items[[k - 1]]$year)) <= 3
+      top <- if (!tight) TRUE else !prev_top           # 붙어 있으면 직전 라벨의 반대쪽
+      prev_top <- top
+      ty <- if (top) y - 3 else y + cellH + 9
       out <- c(out, sprintf('<text class="hist-nm" x="%.1f" y="%.1f" text-anchor="middle">%s</text>', x + w / 2, ty, esc(e$winner)))
     }
     n <- table(factor(vapply(items, function(e) if (is.null(e$party)) "I" else e$party, character(1)), levels = c("D", "R", "I")))
