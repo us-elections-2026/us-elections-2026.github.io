@@ -1,10 +1,19 @@
 {
- "as_of": "2026-09-27",
+ "as_of": "2026-09-30",
  "source_label": "상원 일일 정리본(senate_daily/site)의 주별 태그 줄 — scripts/ingest_senate_daily.py build_ledger()",
  "provenance_note": "여론조사·자금·로컬·주 함의 네 항목. 같은 문장은 처음 본 날짜로 한 번만 싣고 last 에 마지막 언급일. 원문 전재(정리본 이전) 날짜는 제외. states.US.money 는 정리본 v1.2의 「전국 자금」 절, states.US.legal 은 v1.3의 「법·제도」 절.",
  "states": {
   "GA": {
    "polls": [
+    {
+     "date": "2026-09-28",
+     "text": "YouGov(9/15-18, 등록유권자 3,447명, 표본오차 ±2.7%p): 오소프 51%-콜린스 41%(전체), 엄격 유력투표층 기준 51%-43%, 미결정 5~6% 수준. 폭스뉴스 자체 조사에서도 이번 주기 중 오소프가 두 자릿수 우위를 보인 시점이 있었다(배경, 정확한 조사기간 미확인). [Breitbart](https://www.breitbart.com/politics/2026/09/24/poll-jon-ossoff-leads-mike-collins-in-georgia-senate-race-jackson-and-bottoms-in-dead-heat/) · [Fox News](https://www.foxnews.com/politics/fox-news-poll-early-look-georgia-senate-race)",
+     "urls": [
+      "https://www.breitbart.com/politics/2026/09/24/poll-jon-ossoff-leads-mike-collins-in-georgia-senate-race-jackson-and-bottoms-in-dead-heat/",
+      "https://www.foxnews.com/politics/fox-news-poll-early-look-georgia-senate-race"
+     ],
+     "last": "2026-09-28"
+    },
     {
      "date": "2026-09-27",
      "text": "InsiderAdvantage(9/22~23 실시, 가능성 유권자 1,200명, 9/25 보도): 오소프 50% - 콜린스 42%(민주 +8) — 최근 유고브(민주 +10)·퀀터스(민주 +3.8~4) 조사와 궤를 같이함. [Breitbart](https://www.breitbart.com/politics/2026/09/25/poll-ossoff-ahead-collins-georgia-senate-race-jackson-leads-bottoms-governors-race/)",
@@ -355,6 +364,12 @@
    ],
    "insight": [
     {
+     "date": "2026-09-28",
+     "text": "대형 표본에 더해 보수 매체(폭스뉴스)가 오소프의 두 자릿수 우위를 보도했다는 점 자체가, 공화당이 조지아에서 막판 결집에 성공했다는 서사와는 어긋난다.",
+     "urls": [],
+     "last": "2026-09-28"
+    },
+    {
      "date": "2026-09-27",
      "text": "9/23 쿡폴리티컬리포트의 Likely D 상향 이후 등급이나 자원 배분에 새로운 변화는 없다. 오늘 뉴스는 기존 판세를 재확인하는 여론조사와 유세 현장 반박 수준에 그친다.",
      "urls": [],
@@ -522,6 +537,12 @@
   "MI": {
    "polls": [
     {
+     "date": "2026-09-28",
+     "text": "Torchlight Strategies(공화 PAC 의뢰, 9/15-19): 로저스 +1.3%p. 이보다 최근의 라스무센 조사는 엘사예드 +3%p — 가장 경합이 치열한 민주 수성 필수주의 흐름이 어느 방향인지는 여전히 불분명하다.",
+     "urls": [],
+     "last": "2026-09-28"
+    },
+    {
      "date": "2026-09-27",
      "text": "Torchlight Strategies(공화 PAC 'Common Sense for America' 의뢰, 9/15~19 실시, 가능성 유권자 643명, ±4.7%p, 9/25 보도): 로저스 44.4% - 엘사예드 43.1%(공화 +1.3) — 당파적 의뢰 조사로 중립적 결과가 아님. [Breitbart](https://www.breitbart.com/midterm-election/2026/09/25/poll-michigan-voters-view-socialist-abdul-el-sayed-unfavorably-as-mike-rogers-leads/)",
      "urls": [
@@ -666,6 +687,15 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-09-28",
+     "text": "카멀라 해리스 전 부통령이 이번 주 엘사예드를 위해 유세에 나섰다. [CNN](https://www.cnn.com/2026/09/22/politics/kamala-harris-abdul-el-sayed-michigan-midterms) 엘사예드는 앤아버에서 AI발 일자리 위협 방지·주거비·기업 PAC 정치자금 거부 서약을 내세웠고, 로저스는 셜비타운십에서 엘사예드가 \"아메리칸 드림\" 가치와 배치된다 공격하며 유가 부담을 이유로 이란전 종식을 촉구했다. 두 후보 모두 유류세 유예에는 찬성이다. [Michigan Public](https://www.michiganpublic.org/politics-government/2026-09-23/el-sayed-casts-campaign-as-students-vs-billionaires-as-rogers-assails-him-on-american-values)",
+     "urls": [
+      "https://www.cnn.com/2026/09/22/politics/kamala-harris-abdul-el-sayed-michigan-midterms",
+      "https://www.michiganpublic.org/politics-government/2026-09-23/el-sayed-casts-campaign-as-students-vs-billionaires-as-rogers-assails-him-on-american-values"
+     ],
+     "last": "2026-09-28"
+    },
     {
      "date": "2026-09-26",
      "text": "NRSC 내부 메모는 미시간을 뉴햄프셔와 함께 당의 최우선 공격(뒤집기) 목표로 지목했다([액시오스](https://www.axios.com/2026/09/24/nrsc-republicans-alaska-iowa-ohio)). 엘사예드는 앤아버에서 \"학생 대 억만장자\" 구도를 내세우며 기업 정치자금을 받지 않는다고 강조했고, 로저스는 셸비타운십 유세에서 유가를 이유로 이란전쟁 종결을 촉구하며 \"미국적 가치\"로 엘사예드를 공격했다. 부재자 투표용지는 9/24부터 발송됐다([미시간퍼블릭라디오](https://www.michiganpublic.org/politics-government/2026-09-23/el-sayed-casts-campaign-as-students-vs-billionaires-as-rogers-assails-him-on-american-values)). 워싱턴이그재미너는 본선 경험 부재를 이유로 엘사예드를 \"약한 우세 후보\"로 평가했다([워싱턴이그재미너](https://www.washingtonexaminer.com/news/campaigns/congressional/4737790/el-sayed-favorite-win-michigan-sabato/)).",
@@ -856,6 +886,12 @@
    ],
    "insight": [
     {
+     "date": "2026-09-28",
+     "text": "민주당 전국 지도부의 외부 지원 투입은, 세 개 민주당 '수성 필수'주 중 가장 경합이 치열한 미시간에서 하위 투표(다운밸럿) 동력만으로는 부족하다고 본다는 신호다.",
+     "urls": [],
+     "last": "2026-09-28"
+    },
+    {
      "date": "2026-09-27",
      "text": "이 결과는 어제 브리핑의 라스무센 조사(9/22 실시, 엘사예드 +3)와 정면으로 배치되며, 두 조사기관 모두 보수 성향이면서도 며칠 사이 정반대 방향을 가리켰다. 이번 창에서 둘을 판정할 비당파 조사는 나오지 않았다. 9/22 사바토의 Leans D 이동과 NRSC의 내부 방어적 태세를 함께 고려하면 미시간은 9개 주 중 데이터가 가장 엇갈리는 곳으로 남아 있다.",
      "urls": [],
@@ -1025,6 +1061,14 @@
   "NH": {
    "polls": [
     {
+     "date": "2026-09-28",
+     "text": "UNH 서베이센터 Granite State Poll(9/17-21, 유력투표층 1,392명, ±2.6%p): 파파스 50%, 서누누 42%, 헌법당 에드먼드 라플란트 2%, 미결정 4% — 한 달 전 서누누가 2%p 앞섰던 것과는 정반대다. 지지층은 이념에 따라 뚜렷이 갈려, 진보·리버럴층은 파파스, 보수·자유주의(리버테리안)층은 서누누를 지지한다. [WCAX](https://www.wcax.com/2026/09/24/poll-shows-pappas-opens-lead-new-hampshire-senate-race/)",
+     "urls": [
+      "https://www.wcax.com/2026/09/24/poll-shows-pappas-opens-lead-new-hampshire-senate-race/"
+     ],
+     "last": "2026-09-28"
+    },
+    {
      "date": "2026-09-26",
      "text": "NYT/시에나(9/15-22, 투표가능유권자 613명, 발표 ~9/24): 파파스 49.82% - 수누누 44.82%(민주 +5).",
      "urls": [],
@@ -1092,6 +1136,14 @@
     }
    ],
    "money": [
+    {
+     "date": "2026-09-28",
+     "text": "(배경자료, 8/19 기준) 파파스는 1,460만 달러를 모금해 79%를 지출(현금 384만 달러 보유)했고, 서누누는 410만 달러를 모금해 26.8%를 지출(현금 302만 달러 보유)했다. 두 캠프 모두 주 밖 기부자 비중이 매우 높다(파파스 80.6%, 서누누 85.6%). [New Hampshire Bulletin](https://newhampshirebulletin.com/2026/09/14/sununu-vs-pappas-where-the-candidates-stand-in-the-fundraising-battle/)",
+     "urls": [
+      "https://newhampshirebulletin.com/2026/09/14/sununu-vs-pappas-where-the-candidates-stand-in-the-fundraising-battle/"
+     ],
+     "last": "2026-09-28"
+    },
     {
      "date": "2026-09-27",
      "text": "(배경자료, 8/19 기준) 파파스 1,460만 달러 모금(79% 지출, 현금 잔고 384만 달러) 대 서누누 410만 달러 모금(26.8% 지출, 현금 잔고 302만 달러) — 파파스의 모금액 우위는 실질적이나 서누누가 지출을 아낀 덕분에 가을 시즌 진입 시점 현금 잔고는 비교적 비슷하다. 양측 모두 주 밖 기부자 비중이 높다(파파스 80.6%, 서누누 85.6%). [New Hampshire Bulletin](https://newhampshirebulletin.com/2026/09/14/sununu-vs-pappas-where-the-candidates-stand-in-the-fundraising-battle/)",
@@ -1365,6 +1417,12 @@
    ],
    "insight": [
     {
+     "date": "2026-09-28",
+     "text": "이번 조사는 9월 8일 경선 이후 처음으로 널리 보도된 본선 전용 뉴햄프셔 여론조사이며, 그 변동폭(전달 서누누 우세에서 파파스 쪽으로 순 10%p 이동)은 이번 주 9개 주 중 가장 큰 움직임이다.",
+     "urls": [],
+     "last": "2026-09-28"
+    },
+    {
      "date": "2026-09-27",
      "text": "위 모금 현황 외에 이번 창에서 새로 확인된 뉴햄프셔 개별 뉴스는 없다. 신선도 규칙에 따라 예비선거 결과 등 오래된 내용을 채우기보다 가장 최근 가용 자료만 표기했다.",
      "urls": [],
@@ -1532,6 +1590,15 @@
   "ME": {
    "polls": [
     {
+     "date": "2026-09-28",
+     "text": "NYT/시에나칼리지/포틀랜드 프레스헤럴드(9/15-22, 유력투표층 619명, ±4.9%p): 콜린스 49%-잭슨 46%. [Portland Press Herald](https://www.pressherald.com/2026/09/24/susan-collins-polling-maine-senate-race/) UNH 서베이센터의 별도 조사는 잭슨 51%-콜린스 47%(조사기관 스스로 \"통계적 동률\"). [Political Wire](https://politicalwire.com/2026/09/26/maine-senate-race-is-tied/)",
+     "urls": [
+      "https://www.pressherald.com/2026/09/24/susan-collins-polling-maine-senate-race/",
+      "https://politicalwire.com/2026/09/26/maine-senate-race-is-tied/"
+     ],
+     "last": "2026-09-28"
+    },
+    {
      "date": "2026-09-26",
      "text": "NYT/시에나/포틀랜드프레스헤럴드(9/15-22, 발표 9/24): 콜린스 49% - 잭슨 46%(공화 +3) — 콜린스 호감도(긍정 51%)가 다른 최근 조사보다 눈에 띄게 높고 무당층 47-47 동률로 나타나 이례적이라는 평가 · 뉴햄프셔대학교(발표 9/24): 잭슨 51% - 콜린스 47%(민주 +4, ±2.7) · 유매스로웰/유고브(8/28-9/14, ±4.66): 잭슨 +5(48-43) — 두 조사 모두 콜린스 호감도를 37~40%로, NYT/시에나보다 훨씬 낮게 측정했다.",
      "urls": [],
@@ -1636,6 +1703,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-09-28",
+     "text": "8월 중순 불거진 잭슨의 1988년 경찰 신고 관련 의혹은 공화당이 민주당 지지층 열기를 낮추길 기대하는 요인으로 계속 거론되지만, 이번 두 신규 조사 어느 쪽도 이번 변동을 이 사건과 직접 연결짓지 않았다.",
+     "urls": [],
+     "last": "2026-09-28"
+    },
     {
      "date": "2026-09-26",
      "text": "프로퍼블리카는 FBI가 하와이 방위산업 계약업체 마틴 카오와 관련해 콜린스와 사무실을 2024~25년까지 수사했다고 보도했다 — 카오는 정부 계약 대가로 불법 정치자금을 제공했다고 인정한 바 있다([ProPublica](https://www.propublica.org/article/fbi-susan-collins-navatek-campaign-donations-investigation)). 포틀랜드 프레스헤럴드는 콜린스가 \"바이든 시절 이미 혐의없음으로 정리됐다\"고 주장했으나 실제 수사는 트럼프 행정부 시기인 2025년에 종결됐다고 지적했다([프레스헤럴드](https://www.pressherald.com/2026/09/24/propublica-debunks-susan-collins-claims-about-fbi-anti-corruption-probe/)). 잭슨 캠프는 이를 윤리 공격에 활용 중이고 콜린스는 \"완전히 거짓\"이라 반박했다([PBS뉴스아워](https://www.pbs.org/newshour/politics/maine-dems-hammer-collins-over-report-of-pay-to-play-probe-gop-senator-calls-it-completely-false)).",
@@ -1815,6 +1888,12 @@
    ],
    "insight": [
     {
+     "date": "2026-09-28",
+     "text": "콜린스의 호감도(긍정 51%/부정 48%)는 한때 10%p 열세였던 이전 조사보다 뚜렷이 개선됐고, 2024년 해리스 지지층의 12%를 흡수한 반면 잭슨은 트럼프 지지층의 3%만 가져왔다. 트럼프의 메인 지지율은 32%에 불과하고 유권자는 민주당의 상원 다수당 유지를 55%-43%로 선호한다는 점에서, 콜린스는 주 전체 여론 흐름을 거스르며 선전 중이다. 메인은 민주당 4대 '핵심 탈환 목표주' 중 실제로 가장 팽팽한 곳으로 남아 있다.",
+     "urls": [],
+     "last": "2026-09-28"
+    },
+    {
      "date": "2026-09-27",
      "text": "이번 창에서 UNH 조사에 대한 후속 논평, 그리고 어제 이미 다룬 NYT/시에나(콜린스 +3) 및 프로퍼블리카의 FBI 수사 보도 외에 새로운 조사나 취재는 없었다. 메인은 여전히 데이터 출처 간 합의가 이뤄지지 않은 상태다.",
      "urls": [],
@@ -1984,6 +2063,15 @@
   "NC": {
    "polls": [
     {
+     "date": "2026-09-28",
+     "text": "Carolina Journal Poll(9월): 쿠퍼 49.2%-왓틀리 34.1%(민주 +15.1) — 다른 한 자릿수 격차 조사들에 비하면 상단 이례치이지만, 쿠퍼 우위가 지속된다는 방향성은 같다. [Carolina Journal](https://www.carolinajournal.com/polls/september-2026-roy-coopers-lead-grows-to-15-points-in-nc-senate-race/) 최근 조사들은 왓틀리가 격차를 두 자릿수에서 한 자릿수로 좁혔다고 보지만, 왓틀리가 앞선다고 본 조사는 없다. [WRAL](https://www.wral.com/news/nccapitol/cooper-whatley-poll-fundraising-support-ads-campaign-midterm-us-senate-september-2026/)",
+     "urls": [
+      "https://www.carolinajournal.com/polls/september-2026-roy-coopers-lead-grows-to-15-points-in-nc-senate-race/",
+      "https://www.wral.com/news/nccapitol/cooper-whatley-poll-fundraising-support-ads-campaign-midterm-us-senate-september-2026/"
+     ],
+     "last": "2026-09-28"
+    },
+    {
      "date": "2026-09-27",
      "text": "Carolina Journal Poll(유선전화 여론조사, 세부 실사 날짜 미공개, 9/17 보도): 쿠퍼 49.2% - 왓틀리 34.1%(민주 +15.1, 미결정 12.3%) — 이 경선에서 나온 것 중 가장 큰 격차 중 하나. 다만 방법론 미공개, 유권자 31.6%가 왓틀리에 의견 없음. [Carolina Journal](https://www.carolinajournal.com/polls/september-2026-roy-coopers-lead-grows-to-15-points-in-nc-senate-race/)",
      "urls": [
@@ -2020,6 +2108,14 @@
     }
    ],
    "money": [
+    {
+     "date": "2026-09-28",
+     "text": "쿠퍼는 여전히 왓틀리를 크게 앞지르는 선거자금을 모으고 있고, 현재 방송 중인 왓틀리 우호 광고 대부분은 그의 캠프가 아니라 공화당 전국 단체들이 집행한 것이다. 폴리티코는 별도로 NRSC가 노스캐롤라이나에서 다른 경합주로 광고비를 재배치할 수 있다고 보도했다. [WRAL](https://www.wral.com/news/nccapitol/cooper-whatley-poll-fundraising-support-ads-campaign-midterm-us-senate-september-2026/)",
+     "urls": [
+      "https://www.wral.com/news/nccapitol/cooper-whatley-poll-fundraising-support-ads-campaign-midterm-us-senate-september-2026/"
+     ],
+     "last": "2026-09-28"
+    },
     {
      "date": "2026-09-26",
      "text": "NRSC는 와틀리 지원에 약 800만 달러를 지출했다(6월 대법원 판결로 공동지출 한도 폐지 이후 옛 한도를 초과한 9개 상원 레이스 중 하나)([액시오스](https://www.axios.com/2026/09/18/senate-republicans-supreme-court-campaign-spending)).",
@@ -2136,6 +2232,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-09-28",
+     "text": "쿠퍼와 왓틀리는 허리케인 헬레인 복구 기록을 두고도 서로 재난지원을 정치화한다고 비난하고 있다 — 전국 매체에서는 잘 다루지 않는, 지역 유권자 체감도가 큰 쟁점이다.",
+     "urls": [],
+     "last": "2026-09-28"
+    },
     {
      "date": "2026-09-27",
      "text": "공공기록 청구 결과 트럼프 행정부의 헐린 '복구 총괄' 마이클 왓틀리가 약 1년간 문자 6건·통화 5건(총 38분)만 주고받았고, 조사 대상 12개 카운티 중 11곳과 FEMA·국토안보부 등에 접촉 기록이 전혀 없었다. 캔턴 시장 젭 스매더스는 \"왓틀리가 복구 과정에 부재했다는 추가 증거\"라고 평했다. [Cardinal Pine](https://cardinalpine.com/news/public-records-michael-whatley-helene/) 쿠퍼·왓틀리 양측 캠프는 헐린 대응 서사를 놓고 공방했다. [CBS17](https://www.cbs17.com/news/capitol-report/whatley-cooper-clash-over-helene-recovery-records-in-north-carolina-senate-race/)",
@@ -2299,6 +2401,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-09-28",
+     "text": "NRSC의 광고비 재배치 가능성 보도는 공화당 전국 지도부가 이 주의 흐름에 대해 신중해지고 있다는 신호다.",
+     "urls": [],
+     "last": "2026-09-28"
+    },
     {
      "date": "2026-09-27",
      "text": "노스캐롤라이나는 여전히 민주당의 가장 강력한 탈환 목표주이며, 오늘 나온 왓틀리 소통 부재 보도는 기존 여론조사 격차 위에 문서로 뒷받침된 실질적 약점을 하나 더 얹었다 — 다만 기존 흐름을 강화하는 성격이지 흐름 자체를 바꾸는 것은 아니다.",
@@ -2466,6 +2574,14 @@
   },
   "TX": {
    "polls": [
+    {
+     "date": "2026-09-28",
+     "text": "텍사스서던대 바버라 조던 공공정책연구·조사센터(9/15-19, 유력투표층 1,800명, ±2.31%p): 탈라리코 47%-팩스턴 46%, 자유당 테드 브라운 3%, 미결정 4%. 팩스턴의 호감도는 공화당 지지층 내에서도 취약해, 공화 응답자의 84%만 그를 지지했고 7%는 탈라리코 쪽으로 넘어갔다. [The Hill](https://thehill.com/homenews/campaign/6113603-talarico-leads-paxton-texas-senate/)",
+     "urls": [
+      "https://thehill.com/homenews/campaign/6113603-talarico-leads-paxton-texas-senate/"
+     ],
+     "last": "2026-09-28"
+    },
     {
      "date": "2026-09-26",
      "text": "텍사스서던대(TSU, ~9/22-24): 탈라리코 47% - 팩스턴 45%(민주 +2) — 마리스트(9/17-20, 등록유권자 1,139명, ±4.4): 탈라리코 50% - 팩스턴 44%(민주 +6)와 다소 상충된다.",
@@ -2652,6 +2768,12 @@
    ],
    "local": [
     {
+     "date": "2026-09-28",
+     "text": "팩스턴과 탈라리코 모두 텍사스 주유류세와 연료비 문제를 놓고 공방을 벌이고 있는데, 이는 이번 주 오하이오·아이오와를 휩쓴 것과 같은 물가 메시지 흐름의 일부다.",
+     "urls": [],
+     "last": "2026-09-28"
+    },
+    {
      "date": "2026-09-27",
      "text": "탈라리코는 미·이스라엘의 이란 공습 이전인 2026년 2월 수준으로 가격이 돌아올 때까지 연방 유류세·경유세를 한시적으로 유예하자며 이 전쟁을 \"재앙\"이라 칭했고, 팩스턴은 유류세를 영구 폐지해 \"운전자들의 주머니에 곧바로 돈을 돌려줘야 한다\"고 맞섰다 — 텍사스 휘발유 평균가는 갤런당 3.94달러, 경유는 5.90달러로 전년 대비 각각 69%, 53% 상승했다. [Texas Tribune](https://www.texastribune.org/2026/09/26/texas-gas-tax-paxton-talarico-senate/)",
      "urls": [
@@ -2828,6 +2950,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-09-28",
+     "text": "이번 결과는 8월 말 에머슨칼리지의 동률(47-46 팩스턴 우세) 조사나 그 이전 탈라리코의 소폭 우위 조사들보다도 더 팽팽하다 — 텍사스가 민주당에 확실히 유리하다고도, 불리하다고도 말하기 어려운 진짜 경합주로 남아 있다는 점을 재확인하며, 쿡폴리티컬리포트가 8/20 텍사스를 경합주로 상향한 판단과도 일치한다.",
+     "urls": [],
+     "last": "2026-09-28"
+    },
     {
      "date": "2026-09-27",
      "text": "이번 창에는 새로운 판세 조사가 없다. 어제 브리핑에 인용된 텍사스서던대(민주 +2), 마리스트(민주 +6) 조사와 상원지도부기금(SLF)의 1억 달러 광고 투입 결정이 여전히 유효한 데이터다. 오늘 보도는 오하이오·아이오와에서도 나타나는 생활물가·이란전쟁 메시지로 양 캠프가 수렴하고 있음을 보여준다.",
@@ -3153,6 +3281,15 @@
    ],
    "local": [
     {
+     "date": "2026-09-28",
+     "text": "폴리티팩트는 브라운 캠프의 광고(서스티드가 오하이오 데이터센터 세제 혜택을 주도했다는 주장)에 \"대체로 사실(Mostly True)\" 판정을 내렸다 — 서스티드는 부지사 재임(2019~2025년) 중 데이터센터 확장을 적극 추진했고, 그 기간 오하이오 세액공제청은 관련 세제 혜택 약 25억 달러(2017~2024년)를 승인했으나, 최종 승인권자는 서스티드 개인이 아니라 세액공제청이었다. [PolitiFact](https://politifact.com/factchecks/2026/sep/23/sherrod-brown/jon-husted-pushed-for-data-centers-and-tax-incentives-in-ohio-as-sherrod-brown-ads-say/) Local 12/WKRC는 양측 광고의 물가·이민·건강보험 주장을 별도로 검증했다(배경). [Local 12](https://local12.com/news/local/fact-check-accusations-by-both-jon-husted-sherrod-brown-senate-campaign-ads-campaigns-advertisement-television-online-social-media-senators-government-congress-claims-inflation-costs-prices-groceries-immigration-war-health-care)",
+     "urls": [
+      "https://politifact.com/factchecks/2026/sep/23/sherrod-brown/jon-husted-pushed-for-data-centers-and-tax-incentives-in-ohio-as-sherrod-brown-ads-say/",
+      "https://local12.com/news/local/fact-check-accusations-by-both-jon-husted-sherrod-brown-senate-campaign-ads-campaigns-advertisement-television-online-social-media-senators-government-congress-claims-inflation-costs-prices-groceries-immigration-war-health-care"
+     ],
+     "last": "2026-09-28"
+    },
+    {
      "date": "2026-09-27",
      "text": "셰러드 브라운은 9/26 프리몬트 유세에서 허스티드가 \"이란 전쟁에 계속 찬성표를 던지고 보험료 인상에도 계속 찬성해왔다\"고 비판하며 관세와 전쟁을 인플레이션 주요 원인으로 지목했다. 데이터센터에 대한 24억 5천만 달러 규모 세금 지원 지지 의혹을 놓고도 양 캠프가 공방했다(허스티드 캠프는 허위라 반박, 브라운도 2015년 아마존 데이터센터 지지 이력으로 반격당함). [13abc](https://www.13abc.com/2026/09/26/sherrod-brown-rallies-voters-fremont-criticizes-husted-tariffs-data-centers/) 워싱턴타임스는 브라운의 2024년 낙선 관련 유권자 인지도 이슈를 다룬 기사를 냈다(접근 제한으로 본문 미확인). [Washington Times](https://www.washingtontimes.com/news/2026/sep/26/sherrod-brown-lost-2024-quarter-ohio-hasnt-noticed/)",
      "urls": [
@@ -3290,6 +3427,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-09-28",
+     "text": "양 캠프의 광고전은 점점 물가(유가·식료품)와 데이터센터/AI 투자 쟁점에 집중되고 있으며, 이는 이번 주 아이오와·텍사스에서도 나타난 \"이란전-유가 거리두기\" 흐름과 맞닿아 있다.",
+     "urls": [],
+     "last": "2026-09-28"
+    },
     {
      "date": "2026-09-27",
      "text": "이번 창에는 새로운 판세 조사가 없다. 어제 브리핑에 인용된 RealClearPolitics 평균(브라운 +4)이 여전히 기준점이며, 양 캠프 모두 오늘 전국적으로도 부각된 이란전쟁·생활물가 쟁점을 놓고 계속 공방 중이다.",
@@ -3544,6 +3687,16 @@
    ],
    "local": [
     {
+     "date": "2026-09-28",
+     "text": "서스히번(오하이오 출생, 1990년대 후반 알래스카 이주)은 펠톨라를 석유·가스 개발에 반대하는 \"본토 48개주 진보 진영\"과 한통속으로 규정하고, 펠톨라(유픽 원주민, 알래스카 출신)는 윌로우 유전 프로젝트 지지 실적을 들어 자신이 진짜 알래스카를 대표한다고 반박한다. 공화당을 지원하는 외부 단체 광고도 \"알래스카 사람처럼 보이지만 워싱턴처럼 투표한다\"는 같은 프레임을 밀고 있다. [Fortune](https://fortune.com/2026/09/27/alaska-politics-lower-48-insult-us-senate-race-dan-sullivan-mary-peltola/) 블룸버그는 생활비 논쟁을 다룬 심층 보도를 냈고(배경), [Bloomberg](https://www.bloomberg.com/news/features/2026-09-25/alaska-senate-race-mary-peltola-dan-sullivan-battle-over-cost-of-living) 리사 머카우스키 상원의원은 참모 처우 의혹 속 펠톨라를 공개 옹호했다(배경). [CNN](https://www.cnn.com/2026/09/24/politics/a-republican-comes-to-alaska-senate-candidate-mary-peltolas-defense-after-reports-of-abusive-behavior)",
+     "urls": [
+      "https://fortune.com/2026/09/27/alaska-politics-lower-48-insult-us-senate-race-dan-sullivan-mary-peltola/",
+      "https://www.bloomberg.com/news/features/2026-09-25/alaska-senate-race-mary-peltola-dan-sullivan-battle-over-cost-of-living",
+      "https://www.cnn.com/2026/09/24/politics/a-republican-comes-to-alaska-senate-candidate-mary-peltolas-defense-after-reports-of-abusive-behavior"
+     ],
+     "last": "2026-09-28"
+    },
+    {
      "date": "2026-09-27",
      "text": "공화당 리사 머카우스키 상원의원이 뉴욕타임스의 참모 처우 보도 중 일부를 \"선동적\"이라 평하며 2023년 남편 유진 펠톨라 주니어를 비행기 추락 사고로 잃은 뒤 펠톨라가 겪었을 압박감을 언급, 펠톨라를 공개 옹호했다. [CNN](https://www.cnn.com/2026/09/24/politics/a-republican-comes-to-alaska-senate-candidate-mary-peltolas-defense-after-reports-of-abusive-behavior) 블룸버그는 생활물가 중심의 경선 구도를 다룬 심층 기사를 냈다(유료 구독 장벽으로 본문 미확인). [Bloomberg](https://www.bloomberg.com/news/features/2026-09-25/alaska-senate-race-mary-peltola-dan-sullivan-battle-over-cost-of-living)",
      "urls": [
@@ -3739,6 +3892,12 @@
    ],
    "insight": [
     {
+     "date": "2026-09-28",
+     "text": "원격 지역일수록 석유 수입 의존도가 높아 이 쟁점의 체감도가 가장 크다. 머카우스키의 옹호는 알래스카 공화당이 펠톨라에 대한 단일한 공격 노선으로 결집하지 못하고 있음을 보여준다.",
+     "urls": [],
+     "last": "2026-09-28"
+    },
+    {
      "date": "2026-09-27",
      "text": "이번 창에는 새로운 판세 조사가 없다. 어제 브리핑의 Decision Desk HQ 평균과 예측시장은 여전히 박빙이나 펠톨라 우세로 가격을 매기고 있으며, 오늘 머카우스키의 발언은 참모 처우 논란이 공화당의 단일 공세로 굳어지지 않았음을 시사한다.",
      "urls": [],
@@ -3906,6 +4065,14 @@
   "IA": {
    "polls": [
     {
+     "date": "2026-09-28",
+     "text": "마리스트 조사(9/17-20, 등록유권자 1,050명): 투렉 50%-힌슨 42%. 예측시장 폴리마켓도 이제 이 경주를 경합으로 분류한다(투렉 승률 약 48%). [Newsweek](https://www.newsweek.com/josh-turek-poll-surge-ashely-hinson-has-echoes-of-democrats-last-iowa-senate-win-12474065)",
+     "urls": [
+      "https://www.newsweek.com/josh-turek-poll-surge-ashely-hinson-has-echoes-of-democrats-last-iowa-senate-win-12474065"
+     ],
+     "last": "2026-09-28"
+    },
+    {
      "date": "2026-09-26",
      "text": "마리스트(9/17-20, 등록유권자 1,050명, ±4.4, 9/22 첫 보도): 투렉 50% - 힌슨 42%(민주 +8) — 이번 주 등급 조정의 근거가 된 최신 데이터. 같은 조사에서 응답자의 59%는 투렉의 표면적 우위에도 힌슨의 승리를 예상해, 인식과 수치 간 괴리를 보여준다.",
      "urls": [],
@@ -4046,6 +4213,14 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-09-28",
+     "text": "힌슨은 이번 주 트럼프와 거리를 두며 이란전 즉각 종식을 촉구했는데, 2025년 트럼프가 그녀를 지지 선언했던 것과는 결이 다른 행보다. 투렉은 \"트윗은 쉽지만, 실제로 이 전쟁을 끝낼 표결 기회가 있었을 때 당신은 그렇게 하지 않았다\"고 맞받았다. [Iowa Public Radio](https://www.iowapublicradio.org/political-news/2026-09-25/hinson-turek-iran-war-iowa-senate-race)",
+     "urls": [
+      "https://www.iowapublicradio.org/political-news/2026-09-25/hinson-turek-iran-war-iowa-senate-race"
+     ],
+     "last": "2026-09-28"
+    },
     {
      "date": "2026-09-27",
      "text": "힌슨은 \"즉각적이고 성공적인\" 이란전쟁 종전을 촉구하며 유류세 유예·경유 수출 일시 중단·E15 연료 접근 확대·경유 지원 프로그램을 제안했다 — 그간 전쟁권한 제한 결의안에 7차례 반대해온 것과 대비되는 입장 선회다. 투렉은 선회가 너무 늦었다며 아이오와 출신 전사자 3명과 수확철 기록적 경유 가격을 근거로 들었다. [Iowa Public Radio](https://www.iowapublicradio.org/political-news/2026-09-25/hinson-turek-iran-war-iowa-senate-race) PAC Defend the Vote는 힌슨이 남편에게 의회 특혜 접근권을 줬다는 의혹으로 윤리 문제를 제기했다(힌슨은 정치적 동기라고 일축). 은퇴를 앞둔 조니 언스트 의원은 레이건 디너에서 힌슨 지지를 재확인했다. [Iowa Capital Dispatch](https://iowacapitaldispatch.com/2026/09/25/iowas-u-s-senate-candidates-share-fuel-cost-policies-trade-criticisms-on-campaign-trail/)",
@@ -4197,6 +4372,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-09-28",
+     "text": "두 캠프 모두 연료비 문제로 서로를 공격하고 있으며, 이는 이번 주 오하이오·텍사스를 지배한 물가 메시지 흐름과 같은 맥락이다 — 공화 우세에서 경합으로 이동한 세 개 주에서 동시에 나타나는 현상이라는 점이 눈에 띈다.",
+     "urls": [],
+     "last": "2026-09-28"
+    },
     {
      "date": "2026-09-27",
      "text": "이번 창에는 새로운 판세 조사가 없다. 어제 브리핑에 인용된 마리스트 조사(투렉 +8)가 여전히 기준점이며, 힌슨의 이란 관련 입장 선회는 오하이오·텍사스에서도 나타난 생활물가를 이유로 한 취약·도전지역 공화당 후보들의 트럼프 노선 이탈 패턴이 공통된 메시지 전략으로 수렴하고 있음을 시사한다.",
