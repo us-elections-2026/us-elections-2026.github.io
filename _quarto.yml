@@ -66,6 +66,8 @@ website:
             href: national.qmd
           - text: "선거 법·제도 분쟁 트래커"
             href: legal.qmd
+          - text: "캐나다 무역전쟁과 상원 선거"
+            href: trade-canada.qmd
           - text: "민주당 내부 지형 — DSA"
             href: dsa.qmd
       - section: "상원 Senate"
