@@ -1,0 +1,106 @@
+---
+title: "캐나다 무역전쟁과 상원 선거"
+subtitle: "관세 → 보복 → 수입금지 — 감시 9주 어디에, 어떤 경로로 닿는가"
+toc: true
+---
+
+```{r}
+#| include: false
+source(file.path("R", "helpers.R"))
+```
+
+::: {.summary}
+- **어디까지 왔나**: 2025년 2월 IEEPA 관세로 시작해 2026년 2월 대법원 위헌 판결까지 갔습니다. 이어 8월 22일 무역법 338조 50% 관세, 9월 8일 캐나다의 276억 캐나다달러 보복관세, 9월 29일 미국의 수입금지가 잇따랐습니다. USMCA는 7월 공동검토에서 16년 연장이 거부돼 매년 심사 체제로 넘어갔습니다.
+- **상원 선거에 닿는 경로는 셋**입니다. 농업 투입원가(아이오와), 국경 경제와 관광(메인·미시간·뉴햄프셔), 전국 생활비 정서(9개 주 공통)입니다. 아이오와는 Cook이 8월 20일 토스업 이동의 근거로 관세를 명시한 유일한 주입니다.
+- **여론은 한 방향**입니다. 트럼프의 대캐나다 무역 대응은 지지 28% 대 반대 62%였고 56%가 "너무 강경"하다고 답했습니다(Quinnipiac 9/10). 아이오와 유권자 58%가 캐나다산 관세에 반대하고 71%가 보복관세를 걱정합니다(Emerson). 공화 후보들은 전당대회에서 관세를 아예 입에 올리지 않았고, 메인의 Collins는 수입금지에 공개 반대했습니다.
+- **한국 독자에게**: 같은 도구(IEEPA→122조→301조·232조·338조)가 한국에도 적용됩니다. 캐나다 사례는 미국 관세 체제가 법원·의회·선거로 어떻게 제약되는지 보여주는 선행 지표입니다.
+:::
+
+## 1. 무역전쟁의 경과 {#timeline}
+
+날짜순입니다. 출처가 브리핑인 항목은 `[브리핑 날짜]`로 표시했고, 그 밖은 1차 자료 링크입니다.
+
+- **2025-02-01** — 행정명령 14193. IEEPA를 근거로 캐나다산 에너지 10%, 그 밖 전 품목 25% 관세를 선언했습니다. 이틀 뒤 30일 유예. ([White House](https://www.whitehouse.gov/fact-sheets/2025/02/fact-sheet-president-donald-j-trump-imposes-tariffs-on-imports-from-canada-mexico-and-china/))
+- **2025-03-04** — 관세 발효. 캐나다는 미국산 300억 캐나다달러에 25% 1차 보복관세를 시행했습니다. 3일 뒤 미국은 USMCA 적격 상품을 무기한 면제했습니다. ([Canada.ca](https://www.canada.ca/en/department-finance/news/2025/03/list-of-products-from-the-united-states-subject-to-25-per-cent-tariffs-effective-march-4-2025.html))
+- **2025-03-12 / 04-03 / 05-03** — 232조 철강·알루미늄 25%, 자동차 25%, 자동차 부품 관세가 차례로 발효했습니다. 캐나다는 4월 9일 비적격 미국산 자동차에 25%로 맞섰습니다. 6월 철강·알루미늄은 50%로 올랐습니다. ([CRS](https://www.congress.gov/crs-product/IN12545))
+- **2025-03-14** — Mark Carney가 캐나다 총리로 취임했습니다. ([Al Jazeera](https://www.aljazeera.com/news/2025/3/14/mark-carney-sworn-in-as-canadas-new-prime-minister-replacing-trudeau))
+- **2025-09-01** — 캐나다가 USMCA 적격 미국산 상품의 보복관세를 철회했습니다. 철강·알루미늄·자동차는 유지했습니다. ([KPMG](https://kpmg.com/ca/en/insights/2025/09/canada-removes-surtax-on-certain-us-goods.html))
+- **2025-10-14** — 232조 목재·연목재 관세 10%가 발효했습니다. 캐나다산 연목재는 별도의 반덤핑·상계관세와 겹칩니다. ([CRS](https://www.congress.gov/crs-product/R48781))
+- **2025-10-23** — 온타리오주의 레이건 광고를 이유로 트럼프가 협상 중단을 선언했습니다. 11월 1일 Carney가 사과했지만 협상은 재개되지 않았습니다. ([CNN](https://www.cnn.com/2025/10/23/politics/trump-ends-trade-negotiations-canada))
+- **2026-02-20** — 연방대법원이 6대 3으로 IEEPA는 관세 부과 권한을 주지 않는다고 판결했습니다. 4일 뒤 행정부는 무역법 122조로 10% 관세를 대체했고, 이 관세는 150일 시한이 끝난 7월 23일 종료됐습니다. ([Sidley](https://www.sidley.com/en/insights/newsupdates/2026/02/us-supreme-court-issues-international-emergency-economic-powers-act-tariff-decision) · [White & Case](https://www.whitecase.com/insight-alert/trump-administration-imposes-10-section-122-tariff-plan-replace-ieepa-tariffs))
+- **2026-04-02** — 철강·알루미늄·구리 232조 관세를 완제품 50%, 파생상품 25%로 강화했습니다. ([White House](https://www.whitehouse.gov/fact-sheets/2026/04/fact-sheet-president-donald-j-trump-strengthens-tariffs-on-steel-aluminum-and-copper-imports/))
+- **2026-07-01~02** — USMCA 공동검토. 미국은 16년 연장을 거부했고 협정은 매년 심사 체제로 남았습니다. ([White & Case](https://www.whitecase.com/insight-alert/usmca-2026-joint-review-united-states-declines-extend-agreement-triggering-annual))
+- **2026-07-24** — 301조 강제노동 관세가 60개 경제권에 10~12.5%로 발효했습니다. 한국은 12.5%입니다. `[전국 7/25]`
+- **2026-08-22** — 미·캐나다 협상이 결렬된 뒤 미국이 캐나다산 약 200억 달러(280억 달러 보도도 있음)에 50% 관세를 발효했습니다. 근거는 1930년 관세법 338조로, 96년 만의 첫 발동입니다. Carney는 이를 "오판"이라 불렀습니다. `[전국 8/23]`
+- **2026-08-25** — 캐나다 재무부가 700여 품목에 15·25·50% 보복관세 목록(276억 캐나다달러)과 75억 캐나다달러 지원책을 발표했습니다. ([Canada.ca](https://www.canada.ca/en/department-finance/news/2026/08/canada-announces-targeted-countermeasures-and-substantive-support-for-workers-and-businesses-in-response-to-us-tariffs.html))
+- **2026-09-08** — 캐나다 보복관세 발효. 유제품·농기계·펄프·가전·전자에 15~25%, 철강·알루미늄·가구·의류에 50%입니다. ([Al Jazeera](https://www.aljazeera.com/news/2026/9/8/canadas-retaliatory-tariffs-on-20bn-of-us-goods-take-effect))
+- **2026-09-09** — 24시간 뒤 트럼프가 포고 3건으로 캐나다산 주류·당밀·오토바이·유청 제품의 수입금지를 9월 29일부로 예고했습니다. 캐나다산은 연 500억 달러 규모 GSA 조달 목록에서도 빠졌습니다. 같은 날 메인의 Susan Collins 상원의원이 "캐나다는 중국이 아니다. 우리의 친구이자 이웃이며 가장 가까운 교역 상대다"라며 공개 반대했습니다. ([Bangor Daily News](https://www.bangordailynews.com/2026/09/08/politics/washington/susan-collins-trump-tariff-impacts-maine/)) `[전국·상원 9/10]`
+- **2026-09-29** — 수입금지 발효. 68개 관세라인, 약 10억 달러 규모입니다. ([CNBC](https://www.cnbc.com/2026/09/29/canada-import-ban-trade-war.html))
+
+### 2026년 9월 30일 현재 적용 중인 조치
+
+- **미국→캐나다**: 232조 철강·알루미늄 50%(파생 25%), 자동차 25%(비적격분), 목재 10%가 유지됩니다. 여기에 338조 50% 관세(8/22, 약 200억 달러분)와 338조 수입금지(9/29, 68개 라인)가 얹혔습니다. IEEPA 관세와 122조 관세는 종료됐고, 301조 대체관세의 캐나다 적용 세율은 미확인입니다. ([CRS](https://www.congress.gov/crs-product/R48781) · [CNBC](https://www.cnbc.com/2026/09/29/canada-import-ban-trade-war.html))
+- **캐나다→미국**: 9/8부터 700여 품목 15·25·50% 보복관세. USMCA 적격 상품은 2025년 9월 이후 대부분 면제이지만 철강·알루미늄·자동차는 계속 과세합니다. ([Canada.ca](https://www.canada.ca/en/department-finance/news/2026/08/canada-announces-targeted-countermeasures-and-substantive-support-for-workers-and-businesses-in-response-to-us-tariffs.html))
+- **거시 지표**: 2025년 미국의 대캐나다 수출은 3,336억 달러(−4.8%), 수입 3,819억 달러(−7.2%)였습니다. 캐나다인의 미국 방문은 2025년 25.4% 줄어 현지 지출이 33억 캐나다달러 감소했고, 2026년 1~2월에도 14~23% 감소가 이어졌습니다. ([Census](https://www.census.gov/foreign-trade/balance/c1220.html) · [StatCan](https://www150.statcan.gc.ca/n1/pub/36-28-0001/2026007/article/00005-eng.htm) · [RBC](https://www.rbc.com/en/economics/canadian-analysis/featured-analysis/insights/rebalancing-canadian-travel-continues-as-u-s-cross-border-trips-decline/))
+- **물가 경로**: 미니애폴리스 연준은 관세의 근원 인플레이션 기여를 0.2~0.4%p, 소비자 전가율을 50% 이상으로 추정했습니다(7월 기준, 전체 관세). `[전국 9/21]`
+
+## 2. 어느 주가 얼마나 노출돼 있나 {#exposure}
+
+```{r}
+#| output: asis
+gt_canada_trade()
+```
+
+```{r}
+#| output: asis
+gt_canada_trade(states = c("PA", "NY"), title = "하원 District Focus 주(PA-01·NY-17)의 대캐나다 통상")
+```
+
+::: {#exposure-notes}
+```{r}
+#| output: asis
+cat(canada_state_notes_md())
+```
+:::
+
+## 3. 여론 — 관세는 어느 쪽 이슈인가 {#polls}
+
+| 조사 | 시기 | 수치 | 읽는 법 |
+|---|---|---|---|
+| Quinnipiac(RV 970) | 9/3~6 | 대캐나다 무역 대응 지지 28 / 반대 62, "너무 강경" 56 | 이슈별 순지지 −34로 경제(32/65)와 함께 최저권 |
+| Emerson/Nexstar 아이오와(LV 750) | 8/31~9/1 | 캐나다산 관세 반대 58(무당층 60), 보복관세 우려 71 | 같은 표본에서 상원은 Hinson 50–45 — 환경과 후보 경쟁력이 반대 방향 |
+| CNN/SSRS 메인·미시간 | 9월 초 | 캐나다 관세 긍정 15% 미만 | Collins 이탈의 직접 근거 |
+| Marquette(성인) | 9/2~9 | 관세 30(7월 33), 생활비 19 | 시리즈 전 이슈 통틀어 최저 |
+| Harvard CAPS/Harris | 8/28~30 | 전 품목 15% 관세 지지 40 | 트럼프 정책 중 가장 인기 없는 항목 |
+| Verasight/Morris | 9/16~21 | 무역·관세 순 −27, 물가 −54 | 관세보다 물가가 더 큰 부담 |
+
+출처는 각 조사의 브리핑 수록일(`[상원 9/4·9/8·9/13]`, `[전국 9/10~9/27]`)입니다. 원 보고서 링크는 전국 환경 「조사 품질」 탭과 주별 표를 보십시오. 캐나다 쪽은 Angus Reid 조사에서 76%가 협상 중단을 옳았다고 답했고, 미국을 우방으로 보는 응답은 약 4분의 1로 떨어졌습니다. ([Angus Reid](https://angusreid.org/resolve-apprehension-76-say-canada-was-right-to-ditch-trade-talks-but-two-in-five-have-fear-for-their-jobs/))
+
+## 4. 레이스별 — 세 가지 경로 {#races}
+
+| 주 | 경로 | 쟁점화 정도 | 후보 대응 | 이 사이트의 판단 |
+|---|---|---|---|---|
+| **아이오와** | 농업 투입원가(비료·경유·농기계), 캐나다 보복관세의 농기계·펄프 | **최고** — Cook 8/20 토스업 이동 사유가 관세 | Turek "관세가 농촌을 초토화"(전국 1위 농장 압류) · SMP 3,000만 달러 관세 소재 공격 · Hinson은 감세 실적으로 응수, Vance가 9/19 아이오와에서 관세 표결 방어 | 지도 전체에서 관세 경로를 검증하는 가장 깨끗한 시험대. 다만 무당층이 상원에서는 Turek +2에 그쳐 환경이 후보 경쟁력을 넘지 못함 |
+| **메인** | 국경 경제(목재·수산·에너지), 캐나다 관광, 난방유 | **높음** — 현직이 당론 이탈 | Collins 9/9 수입금지 공개 반대(유일한 공화 상원의원) · 전당대회 불참 · Jackson은 토론 4회 제안 | 관세 반대는 메인 유권자 85% 이상과 같은 편에 서는 선택. 2020년처럼 조사 열세를 뒤집을 재료인지가 관건 |
+| **미시간** | 자동차 공급망(USMCA 부품 왕복), 국경 | **높음** — 로이터가 관세 노출 주로 지목 | Rogers는 전당대회에서 관세 대신 9·11 안보 프레임 · El-Sayed는 관세 정책 시정 공약 | 양방향 변수. 집권당 경제 메시지를 훼손하지만 자동차 부문 충격의 책임을 누구에게 묻느냐가 갈림 |
+| **뉴햄프셔** | 캐나다 관광·소매(퀘벡), 국경 | 중간 — 개별 수치 미보도 | 두 후보 모두 직접 언급 미확인 | 등급 이동(Cook 9/15 토스업)의 근거는 관세가 아니라 자금·조사 |
+| **오하이오** | 철강·자동차 232조, 데이터센터 | 중간 | Brown이 9/26 관세·이란전을 물가 원인으로 묶어 공격 · Husted는 임명직이라 표결 기록 없음 | 관세보다 이란전·유가가 앞선 프레임 |
+| **알래스카** | 국경 접경이나 교역 소규모 | 낮음 | Sullivan 전당대회 불참(군사위 경력) | 관세 수치 미보도 【수집 필요】 |
+| **텍사스** | 에너지·기계 수출 대국이나 대캐나다 의존 낮음 | 낮음 | 유류세 유예 공방(이란전 유가) | 관세는 결이 다른 이슈 |
+| **노스캐롤라이나** | — | 낮음 | 직접 언급 없음 | 하원 NC-11에서만 관세 등장 |
+| **조지아** | — | 낮음 | M. Collins는 전당대회에서 관세·이란전 모두 생략 | 이민·오소프 공격에 집중 |
+
+표의 사실은 상원 일일·주간 브리핑(8/23~9/27)에서 옮겼습니다. 후보의 새 발언·표결이 나오면 각 주 State Focus의 「로컬 상황 — 일일 기록」에 먼저 쌓입니다.
+
+### 공화 후보들의 '드러난 선호'
+
+9월 9~10일 댈러스 공화 전당대회에서 상원 연설자 4명은 이란전과 관세를 한 번도 언급하지 않았습니다. 가장 접전인 세 후보(Collins·Sullivan·Sununu)는 아예 불참했습니다. 브리핑은 이를 "공화당 스스로가 두 이슈를 부채로 본다는 드러난 선호"로 읽었습니다. `[상원 9/11]` 반대로 민주는 아이오와(SMP 3,000만 달러)와 오하이오(Brown 유세)에서 관세를 생활비 서사에 묶어 공격합니다.
+
+## 5. 하원과 한국 함의 {#house-korea}
+
+- **하원**: Cook은 9/25 TX-15·NC-11을 토스업으로 옮기며 관세·이민 단속 반발을 근거로 들었습니다. NY-17 Lawler는 관세 유지 표결에 반복 찬성해 9/28 토론에서 공격받았고, 농업주 공화 의원들은 외국산 소고기 관세 유예에 반발했습니다. `[하원 9/26·9/28]` 상세는 [NY-17](house/ny17.qmd)·[PA-01](house/pa01.qmd).
+- **한국**: 캐나다에 쓰인 법적 도구는 한국에도 그대로 쓰입니다. IEEPA 무효화 뒤 301조 12.5%가 한국에 적용됐고, 한미 자동차 관세 15% 합의와 10월 무역합의 비준이 걸려 있습니다. 캐나다가 보복관세와 USMCA 적격 면제를 지렛대로 쓴 경로, 그리고 대법원·의회·선거가 관세 권한을 어떻게 좁히는지가 한국 협상의 참고 자료입니다. 한반도 직결 사안은 [Korea Watch](korea-watch.qmd)에서 추적합니다.
+
+::: {.caveat}
+**갱신 규약** — 타임라인과 조치 목록은 사람이 주간 발행 때 고칩니다. 1차 출처 링크가 필수이고 브리핑만 있는 항목은 `[트랙 날짜]`로 표시합니다. 주별 노출도 표는 `data/canada_trade.json`을 연 1회(Census 주별 수출입 확정 시) 갱신합니다. 레이스별 표는 상원 브리핑의 새 사실이 있을 때 갱신하며, 확인하지 못한 항목은 【수집 필요】로 둡니다. 8/22 관세 규모(200억 대 280억 달러)는 보도가 엇갈려 그대로 적었습니다.
+:::

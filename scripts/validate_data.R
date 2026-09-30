@@ -377,6 +377,17 @@ if (!is.null(seh)) {
   }
 }
 
+# ---- canada_trade.json (선택) — 주별 대캐나다 통상 노출 구조 ---------------------------
+ct <- load_json("canada_trade.json", optional = TRUE)
+if (!is.null(ct)) {
+  f <- "canada_trade.json"
+  ct <- jsonlite::fromJSON(jpath(f), simplifyVector = FALSE)
+  require_keys(f, ct, c("as_of", "states"))
+  for (st in names(ct$states)) { x <- ct$states[[st]]
+    if (!is.null(x$exports_bn) && !is.numeric(x$exports_bn)) err(f, paste(st, "exports_bn 숫자 아님"))
+    if (is.null(x$sources) || !length(x$sources)) err(f, paste(st, "sources 없음")) }
+}
+
 # ---- legal_tracker.json (선택) — 선거 법·제도 트래커 구조 --------------------------
 lt <- load_json("legal_tracker.json", optional = TRUE)
 if (!is.null(lt)) {

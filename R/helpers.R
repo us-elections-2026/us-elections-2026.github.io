@@ -2172,6 +2172,54 @@ state_history_svg <- function(code, y0 = 1986, y1 = 2026) {
          sprintf(' · 파랑 = 민주, 빨강 = 공화, 회색 = 무소속 · 점선 테두리 = 특별선거 · 칸에 마우스를 올리면 마진 · 출처 위키백과 개별 선거 문서(기준 %s)</p>', if (is.null(d$as_of)) "" else d$as_of))
 }
 
+
+# 1.16 캐나다 무역전쟁 페이지 — 주별 통상 노출도 표 (data/canada_trade.json) -----------------
+gt_canada_trade <- function(states = c("MI","ME","NH","OH","IA","TX","NC","GA","AK"), title = "감시 9주의 대캐나다 통상 노출") {
+  path <- file.path("data", "canada_trade.json")
+  if (!file.exists(path)) return(gt(tibble(안내 = "data/canada_trade.json 이 아직 없습니다.")) |> .tbl_opts())
+  d <- jsonlite::read_json(path, simplifyVector = FALSE)
+  nm <- c(GA = "조지아", MI = "미시간", NH = "뉴햄프셔", ME = "메인", NC = "노스캐롤라이나", TX = "텍사스", OH = "오하이오", AK = "알래스카", IA = "아이오와", PA = "펜실베이니아", NY = "뉴욕")
+  bn <- function(v) if (is.null(v)) "미확인" else sprintf("$%.1fB", as.numeric(v))
+  pc <- function(v) if (is.null(v)) "미확인" else sprintf("%.0f%%", as.numeric(v))
+  rk <- function(v) if (is.null(v)) "—" else paste0(v, "위")
+  rows <- lapply(states, function(st) {
+    x <- d$states[[st]]
+    if (is.null(x)) return(tibble(주 = nm[[st]], `대캐나다 수출` = "미확인", `수출 비중·순위` = "—", `캐나다산 수입` = "미확인", `수입 비중·순위` = "—", `주력 품목` = "—", `연도` = "—"))
+    tibble(주 = nm[[st]],
+           `대캐나다 수출` = bn(x$exports_bn),
+           `수출 비중·순위` = paste0(pc(x$exports_share), " · ", rk(x$exports_rank)),
+           `캐나다산 수입` = bn(x$imports_bn),
+           `수입 비중·순위` = paste0(pc(x$imports_share), " · ", rk(x$imports_rank)),
+           `주력 품목` = paste0("수출 ", paste(unlist(x$top_exports)[1:min(2, length(x$top_exports))], collapse = "·"),
+                            " / 수입 ", paste(unlist(x$top_imports)[1:min(2, length(x$top_imports))], collapse = "·")),
+           `연도` = if (is.null(x$exports_year)) "—" else as.character(x$exports_year))
+  })
+  do.call(rbind, rows) |>
+    gt() |>
+    tab_header(title = title, subtitle = sprintf("상품 무역, 단위 10억 달러 · 취득 %s", d$as_of)) |>
+    tab_source_note(if (is.null(d$source_label)) "" else d$source_label) |>
+    .tbl_opts()
+}
+
+
+# 주별 통상 노트(canada_trade.json 의 sector_note·tourism_note) — 표 아래 불릿
+canada_state_notes_md <- function(states = c("IA","ME","MI","NH","OH","TX","AK","GA","NC","PA","NY")) {
+  path <- file.path("data", "canada_trade.json")
+  if (!file.exists(path)) return("")
+  d <- jsonlite::read_json(path, simplifyVector = FALSE)
+  nm <- c(GA = "조지아", MI = "미시간", NH = "뉴햄프셔", ME = "메인", NC = "노스캐롤라이나", TX = "텍사스", OH = "오하이오", AK = "알래스카", IA = "아이오와", PA = "펜실베이니아", NY = "뉴욕")
+  out <- character(0)
+  for (st in states) {
+    x <- d$states[[st]]; if (is.null(x)) next
+    txt <- paste(c(if (!is.null(x$sector_note) && nzchar(x$sector_note)) x$sector_note,
+                   if (!is.null(x$tourism_note) && nzchar(x$tourism_note)) x$tourism_note), collapse = " ")
+    if (!nzchar(txt)) next
+    src <- if (length(x$sources)) paste0(" (", paste(sprintf("[출처%d](%s)", seq_along(x$sources), unlist(x$sources)), collapse = " · "), ")") else ""
+    out <- c(out, sprintf("- **%s**: %s%s", nm[[st]], txt, src))
+  }
+  paste(out, collapse = "\n")
+}
+
 # 주 개요 탭 머리의 "오늘의 판세" — 최신 정리본의 여론조사·주 함의 한 줄씩
 state_today_md <- function(code) {
   d <- .ledger()
