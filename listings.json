@@ -1,6 +1,6 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/archive.html",
     "items": [
       "/issues/2026-09-21.html",
       "/issues/2026-09-14.html",
@@ -32,7 +32,7 @@
     ]
   },
   {
-    "listing": "/archive.html",
+    "listing": "/index.html",
     "items": [
       "/issues/2026-09-21.html",
       "/issues/2026-09-14.html",
