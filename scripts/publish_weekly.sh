@@ -57,6 +57,7 @@ if [ -n "${FEC_API_KEY:-}" ]; then
   echo "[weekly] FEC 모금 취득(스테이징)"; python3 scripts/fetch_fec_fundraising.py || echo "[weekly] ! FEC 실패(건너뜀)"
   echo "[weekly] FEC 독립지출 취득"; python3 scripts/fetch_fec_independent_expenditures.py || echo "[weekly] ! FEC 독립지출 실패(건너뜀)"
   echo "[weekly] FEC 하원 District Focus 취득"; python3 scripts/fetch_fec_house.py || echo "[weekly] ! FEC 하원 실패(건너뜀)"
+  echo "[weekly] FEC 주별 자금 누적 추이 취득"; python3 scripts/fetch_fec_timeline.py || echo "[weekly] ! FEC 추이 실패(건너뜀)"
 else echo "[weekly] ! FEC_API_KEY 없음 — fec_fundraising 건너뜀"; fi
 echo "[weekly] EIA 휘발유 주간가 취득(키 불필요)"; python3 scripts/fetch_gas_prices.py || echo "[weekly] ! EIA 휘발유 실패(건너뜀)"
 
