@@ -24,6 +24,7 @@ project:
     - data/national_econ.json
     - data/pollster_series.json
     - data/gas_prices.json
+    - data/fec_timeline.json
     - assets/candidates
 
 lang: ko

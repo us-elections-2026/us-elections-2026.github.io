@@ -221,6 +221,50 @@ gt_fec_ie_states()
 gt_fec_ie_committees()
 ```
 
+#### 주별 자금 누적 추이 — 후보 + 슈퍼팩 {#money-trend}
+
+주마다 민주 측과 공화 측이 쓸 수 있었던 돈을 한 선으로 합쳤습니다. 실선은 본선 후보의 2025년 이후 누적 모금(FEC 분기 보고)에 그 편을 돕는 독립지출 신고액을 더한 것이고, 점선은 독립지출만입니다. 현직 상원의원의 2021~24년 모금은 들어가지 않아 펀드레이징 탭의 사이클 누적보다 작습니다. 메인의 Jackson은 7월 교체 후보라 첫 보고가 10/15에 나옵니다. 후보 계좌는 분기 보고라 계단처럼 오르고 마지막 보고(6/30) 뒤로는 평평합니다. 3분기 보고가 10/15에 나오면 한 계단 더 오릅니다. 실선과 점선의 간격이 후보 자체 자금이며, 점선이 실선에 붙을수록 그 편은 슈퍼팩에 기대는 구조입니다.
+
+::: {#money-root}
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+<div style="height:200px"><canvas id="money-GA"></canvas></div>
+:::
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+<div style="height:200px"><canvas id="money-MI"></canvas></div>
+:::
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+<div style="height:200px"><canvas id="money-NH"></canvas></div>
+:::
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+<div style="height:200px"><canvas id="money-ME"></canvas></div>
+:::
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+<div style="height:200px"><canvas id="money-NC"></canvas></div>
+:::
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+<div style="height:200px"><canvas id="money-TX"></canvas></div>
+:::
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+<div style="height:200px"><canvas id="money-OH"></canvas></div>
+:::
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+<div style="height:200px"><canvas id="money-AK"></canvas></div>
+:::
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+<div style="height:200px"><canvas id="money-IA"></canvas></div>
+:::
+
+:::
+
+<p id="money-note" class="text-muted" style="font-size:.78rem; margin-top:.5rem;"></p>
+
+:::
+
+<script src="assets/money.js"></script>
+
 #### 누가 어디에 돈을 대는가
 
 - **Senate Leadership Fund(SLF, 상원 공화 지도부 계열)**: 8개 주 3억 4,200만 달러 프로그램이 뼈대입니다. 언론이 전한 주별 예약은 오하이오 7,900만, 노스캐롤라이나 7,100만, 미시간 5,100만, 조지아 4,400만 달러입니다. 메인 4,200만, 아이오와 3,300만, 뉴햄프셔 1,700만, 알래스카 1,700만 달러가 뒤를 잇습니다. 텍사스는 별도 계열(FEC 등록명 TEXAS PAC)로 들어갔고 9월 하순 팩스턴 광고를 1억 달러로 늘렸습니다. ([The Hill](https://thehill.com/homenews/campaign/5818507-gop-super-pac-announces-342m-investment-in-midterm-senate-races/) · [Texas Tribune](https://www.texastribune.org/2026/09/22/texas-paxton-ads-100-million-senate-race-talarico/))
