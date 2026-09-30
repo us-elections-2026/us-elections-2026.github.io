@@ -236,6 +236,10 @@ gt_senate_primaries <- function() {
   p[order(p$.d), ]
 }
 
+# 주목 기관(2026-09-30 사용자 지시): NYT/Siena · Fox News · Marist · AARP(Fabrizio Ward+Impact Research 초당적).
+# 표에는 ★, 추이 그림에는 큰 점으로 표시하고, senate.qmd 「주목 기관 조사」 절에 최신순으로 모아 보여준다.
+.PRIORITY_RE <- "siena|fox news|marist|aarp"
+.is_priority <- function(pollster) grepl(.PRIORITY_RE, tolower(pollster))
 # 조사 마진 추이 SVG — 각 점에 조사기관 명칭을 얹는다(상세 수치는 §5 표).
 poll_trend_svg <- function(code, office = c("senate", "governor")) {
   p <- .poll_series(code, match.arg(office))
@@ -296,8 +300,9 @@ poll_trend_svg <- function(code, office = c("senate", "governor")) {
   }
   s <- c(s, lab)
   part <- !is.na(p$partisan) & p$partisan %in% c("D", "R")
-  s <- c(s, sprintf('<circle class="pt-dot%s" cx="%.1f" cy="%.1f" r="4.2"/>',
-                    ifelse(part, " pt-part", ""), fx(x), fy(y)))
+  pri <- .is_priority(p$pollster)
+  s <- c(s, sprintf('<circle class="pt-dot%s%s" cx="%.1f" cy="%.1f" r="%s"/>',
+                    ifelse(part, " pt-part", ""), ifelse(pri, " pt-pri", ""), fx(x), fy(y), ifelse(pri, "6.5", "4.2")))
   s <- c(s, sprintf('<circle class="pt-last" cx="%.1f" cy="%.1f" r="5.4"/>', fx(x[n]), fy(y[n])))
   s <- c(s, sprintf('<text class="pt-ax" x="%.1f" y="%d" text-anchor="start">%s</text>',
                     padL, H - 8, format(as.Date(p$.d[1]), "%m/%d")))
@@ -388,7 +393,7 @@ gt_state_polls <- function(code) {
   res <- paste0(fld(p$dem_candidate), " ", fld(p$dem_pct), " – ",
                 fld(p$rep_pct), " ", fld(p$rep_candidate))
   tibble(
-    조사기관 = paste0(p$pollster, house),
+    조사기관 = paste0(ifelse(.is_priority(p$pollster), "★ ", ""), p$pollster, house),
     실사기간 = period,
     모집단 = fld(p$population),
     표본 = fld(p$n),
@@ -401,7 +406,8 @@ gt_state_polls <- function(code) {
                subtitle = paste0("최신순 · ", nrow(p), "건 · 양수 = 민주 우위(D+)")) |>
     tab_source_note(paste0(
       "출처 URL은 `data/senate_polls.csv`에 행별로 보관합니다. 당파 후원(D/R 성향) 조사는 공개 선택 편향이 있으니 ",
-      "단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다.")) |>
+      "단일 조사보다 여러 조사의 방향을 함께 보세요. 표는 데이터에서 자동 렌더되며 새 조사가 들어오면 갱신됩니다. ",
+      "★ = 주목 기관(NYT/Siena·Fox News·Marist·AARP) — 추이 그림에서도 큰 점으로 표시합니다.")) |>
     # 종전에 레이스 카드 한 칸을 통째로 차지하던 서술형 해설(최대 436자)을 여기로 옮겼다
     # (2026-08-30) — 카드는 한눈에 보는 자리이고, 읽는 자리는 표 아래다.
     (\(g) if (nrow(rr) && !is.na(rr$poll_source))
@@ -2069,6 +2075,40 @@ gt_gas_prices <- function() {
     tab_header(title = "휘발유 소매가 — 지역별 최근 주와 1년 변화",
                subtitle = sprintf("Regular, 달러/갤런 · 마지막 주 %s · 취득 %s", d$data_through, d$as_of)) |>
     tab_source_note(d$provenance_note) |>
+    .tbl_opts()
+}
+
+
+# 1.14 주목 기관 조사 모음 (senate.qmd) — 최신순, 같은 주·같은 기관의 직전 조사 대비 변화
+gt_priority_polls <- function(n = 30) {
+  p <- readr::read_csv(file.path("data", "senate_polls.csv"), show_col_types = FALSE, col_types = readr::cols(.default = "c"))
+  p <- p[.is_priority(p$pollster), ]
+  if (!nrow(p)) return(gt(tibble(안내 = "주목 기관 조사가 아직 없습니다.")) |> .tbl_opts())
+  nm <- c(GA = "조지아", MI = "미시간", NH = "뉴햄프셔", ME = "메인", NC = "노스캐롤라이나", TX = "텍사스", OH = "오하이오", AK = "알래스카", IA = "아이오와")
+  fam <- function(x) { x <- tolower(x); ifelse(grepl("siena", x), "NYT/Siena", ifelse(grepl("fox", x), "Fox News", ifelse(grepl("marist", x), "Marist", "AARP"))) }
+  p$.fam <- fam(p$pollster); p$.m <- suppressWarnings(as.numeric(p$margin))
+  p$.d <- ifelse(is.na(p$end_date) | p$end_date == "", p$start_date, p$end_date)
+  p <- p[order(p$.d), ]
+  p$.prev <- NA_real_
+  for (i in seq_len(nrow(p))) {
+    j <- which(p$state == p$state[i] & p$.fam == p$.fam[i] & seq_len(nrow(p)) < i)
+    if (length(j)) p$.prev[i] <- p$.m[max(j)]
+  }
+  p <- p[order(p$.d, decreasing = TRUE), ][seq_len(min(n, nrow(p))), ]
+  fld <- function(x, alt = "—") ifelse(is.na(x) | x == "", alt, as.character(x))
+  tibble(
+    조사종료 = fld(p$.d),
+    주 = unname(nm[p$state]),
+    기관 = p$pollster,
+    `모집단·표본` = paste0(fld(p$population), " ", fld(p$n)),
+    결과 = paste0(fld(p$dem_candidate), " ", fld(p$dem_pct), " – ", fld(p$rep_pct), " ", fld(p$rep_candidate)),
+    마진 = .fmt_margin(p$.m),
+    `같은 기관 직전 대비` = ifelse(is.na(p$.prev), "첫 조사", .fmt_delta(p$.m - p$.prev))
+  ) |>
+    gt() |>
+    tab_header(title = "주목 기관 조사 — NYT/Siena · Fox News · Marist · AARP",
+               subtitle = sprintf("감시 9주 합산 최신순 · %d건 · 양수 = 민주 우위", nrow(p))) |>
+    tab_source_note("네 기관은 비당파·공개 방법론·과거 정확도 기준으로 특별히 추적합니다(2026-09-30 지시). '같은 기관 직전 대비'는 같은 주에서 같은 기관이 낸 직전 조사와의 마진 차이로, 기관 간 하우스 이펙트가 섞이지 않는 변화량입니다. 원자료 data/senate_polls.csv.") |>
     .tbl_opts()
 }
 
