@@ -466,6 +466,7 @@ main table.gt_table th.gt_col_heading { white-space: pre-line; text-align: cente
 .pt-zlab { fill: #9ca3af; font-size: 10px; text-anchor: end; }
 .pt-line { fill: none; stroke: #94a3b8; stroke-width: 1.8; stroke-linejoin: round; stroke-linecap: round; }
 .pt-dot { fill: #475569; }
+.pt-dot.pt-pri { fill: #b45309; stroke: #fffdf8; stroke-width: 1.5; }
 .pt-part { fill: #fffdf8; stroke: #475569; stroke-width: 1.6; }
 .pt-last { fill: #2166ac; stroke: #fffdf8; stroke-width: 2; }
 /* 라벨이 선·점 위에 겹쳐도 읽히도록 배경색 테두리를 두른다(2026-09-22) */
