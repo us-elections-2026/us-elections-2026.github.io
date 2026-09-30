@@ -66,6 +66,12 @@ cat(state_ledger_md("NC", "local"))
 - 한국 기업의 대형 투자 사례는 이번 조사에서 확인되지 않았습니다.
 
 ### 역대 선거 결과의 특징
+
+```{r}
+#| output: asis
+cat(state_history_svg("NC"))
+```
+
 - 대선은 2012년 Romney +2.0%p, 2016년 Trump +3.7%p, 2020년 Trump +1.3%p, 2024년 Trump +3.2%p였습니다. 네 번 모두 공화가 근소하게 이겼습니다. ([Wikipedia 2024](https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_North_Carolina) · [2020](https://en.wikipedia.org/wiki/2020_United_States_presidential_election_in_North_Carolina))
 - 연방상원은 2016년 Burr +5.8%p, 2020년 Tillis +1.8%p, 2022년 Budd +3.2%p로 모두 공화가 이겼습니다. ([Wikipedia 2020](https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_North_Carolina) · [2022](https://en.wikipedia.org/wiki/2022_United_States_Senate_election_in_North_Carolina))
 - 주지사는 2020년 Cooper +4.5%p, 2024년 Stein +14.8%p로 민주가 이겼습니다. ([Wikipedia 2020](https://en.wikipedia.org/wiki/2020_North_Carolina_gubernatorial_election) · [2024](https://en.wikipedia.org/wiki/2024_North_Carolina_gubernatorial_election))

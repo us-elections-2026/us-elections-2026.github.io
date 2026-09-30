@@ -63,6 +63,12 @@ cat(state_ledger_md("AK", "local"))
 - 한국 기업의 대형 투자 사례는 미확인입니다. 에너지·수산 축의 한국 접점은 위 개관에 있습니다.
 
 ### 역대 선거 결과의 특징
+
+```{r}
+#| output: asis
+cat(state_history_svg("AK"))
+```
+
 - 대선은 2012년 Romney +14.0%p, 2016년 Trump +14.7%p, 2020년 Trump +10.1%p, 2024년 Trump +13.1%p였습니다. ([Wikipedia](https://en.wikipedia.org/wiki/Elections_in_Alaska))
 - 연방상원은 2016년 Murkowski가 44.4% 최다득표로, 2020년 Sullivan이 +12.7%p로 이겼습니다. 2022년은 Murkowski가 RCV 최종 라운드 53.7% 대 46.3%로 이겼습니다. ([Ballotpedia](https://ballotpedia.org/United_States_Senate_election_in_Alaska,_2022))
 - 주지사는 2018년 Dunleavy +7.0%p, 2022년 Dunleavy +26.1%p였습니다. ([Wikipedia](https://en.wikipedia.org/wiki/Elections_in_Alaska))

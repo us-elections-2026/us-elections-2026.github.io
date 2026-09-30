@@ -59,6 +59,12 @@ cat(state_ledger_md("GA", "local"))
 - 주력 산업은 물류·운송, 항공, 자동차·첨단제조, 영화 제작, 금융입니다. Delta Air Lines, Home Depot, UPS, Coca-Cola가 대표 고용주입니다. ([Metro Atlanta Chamber](https://metroatlantachamber.com/wp-content/uploads/2025/03/2025-Top-Employers-Survey.pdf))
 
 ### 역대 선거 결과의 특징
+
+```{r}
+#| output: asis
+cat(state_history_svg("GA"))
+```
+
 - 대선은 2012년 Romney +7.8%p, 2016년 Trump +5.1%p, 2020년 Biden +0.2%p, 2024년 Trump +2.2%p였습니다. ([Wikipedia 2024](https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_Georgia) · [2020](https://en.wikipedia.org/wiki/2020_United_States_presidential_election_in_Georgia))
 - 연방상원은 2021년 1월 결선에서 Ossoff +1.2%p·Warnock +2.1%p, 2022년 12월 결선에서 Warnock +2.8%p로 민주가 이겼습니다. ([Wikipedia 2020–21](https://en.wikipedia.org/wiki/2020%E2%80%9321_United_States_Senate_election_in_Georgia) · [2022](https://en.wikipedia.org/wiki/2022_United_States_Senate_election_in_Georgia))
 - 주지사는 2018년 Kemp +1.4%p, 2022년 Kemp +7.5%p로 공화가 지켰습니다. ([Wikipedia 2018](https://en.wikipedia.org/wiki/2018_Georgia_gubernatorial_election) · [2022](https://en.wikipedia.org/wiki/2022_Georgia_gubernatorial_election))

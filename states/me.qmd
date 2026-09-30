@@ -58,6 +58,12 @@ cat(state_ledger_md("ME", "local"))
 - 한국 기업의 대형 투자 사례는 미확인입니다.
 
 ### 역대 선거 결과의 특징
+
+```{r}
+#| output: asis
+cat(state_history_svg("ME"))
+```
+
 - 대선은 2012년 Obama +15.3%p, 2016년 Clinton +3.0%p, 2020년 Biden +9.1%p, 2024년 Harris +6.9%p였습니다. 2016년 이후 세 번 모두 2선거구는 Trump가 가져가 선거인단이 3:1로 갈렸습니다. ([Ballotpedia](https://ballotpedia.org/Presidential_election_in_Maine,_2024))
 - 연방상원은 2008년 Collins +22.8%p, 2014년 Collins +36%p, 2020년 Collins +8.6%p로 모두 공화 현역이 이겼습니다. ([Wikipedia 2020](https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_Maine))
 - 주지사는 2018년 Mills +7.7%p, 2022년 Mills +13.2%p로 민주가 이겼습니다. ([Wikipedia 2022](https://en.wikipedia.org/wiki/2022_Maine_gubernatorial_election))
