@@ -1,5 +1,5 @@
 {
- "as_of": "2026-09-30",
+ "as_of": "2026-10-02",
  "source_label": "상원 일일 정리본(senate_daily/site)의 주별 태그 줄 — scripts/ingest_senate_daily.py build_ledger()",
  "provenance_note": "여론조사·자금·로컬·주 함의 네 항목. 같은 문장은 처음 본 날짜로 한 번만 싣고 last 에 마지막 언급일. 원문 전재(정리본 이전) 날짜는 제외. states.US.money 는 정리본 v1.2의 「전국 자금」 절, states.US.legal 은 v1.3의 「법·제도」 절.",
  "states": {
