@@ -7,6 +7,7 @@
 #       scripts/publish_daily.sh --catchup         # 로그 as_of 이후~오늘 중 정리본/원문이 있는 날짜 전부
 #       NO_COMMIT=1 scripts/publish_daily.sh ...   # 적재·검증·렌더까지만(주간 발행이 함께 커밋할 때)
 #       DRY_RUN=1 scripts/publish_daily.sh          # push 직전까지만(커밋 안 함)
+#       PD_CI=1 scripts/publish_daily.sh --catchup   # GitHub Actions(daily.yml): R·quarto 없이 적재·커밋·push, 검증·렌더는 publish.yml
 #
 # 설계 원칙(publish_weekly.sh 계승):
 #   - main 브랜치에서만 동작. Dropbox 충돌 사본이 있으면 중단.
@@ -40,14 +41,15 @@ cd "$REPO" || { echo "[daily] repo 접근 불가: $REPO"; exit 1; }
 # 필요한 도구가 다 있는지 먼저 본다 — 데이터를 건드리기 전에 확인해야, 환경이 다른 곳에서
 # 돌았을 때 작업트리에 잔재를 남기지 않는다(9/23 사고의 재발 방지).
 missing=""
-for t in git python3 Rscript quarto; do
+TOOLS="git python3 Rscript quarto"; [ "${PD_CI:-0}" = "1" ] && TOOLS="git python3"
+for t in $TOOLS; do
   command -v "$t" >/dev/null 2>&1 || missing="$missing $t"
 done
 if [ -n "$missing" ]; then
   step "✗ 실행 환경에 없는 도구:$missing — 중단(데이터 미변경). PATH=$PATH"
   exit 1
 fi
-step "환경 확인 — $(git --version | head -1) · $(quarto --version 2>/dev/null | head -1) · R $(Rscript -e 'cat(as.character(getRversion()))' 2>/dev/null)"
+step "환경 확인 — $(git --version | head -1) · $(quarto --version 2>/dev/null | head -1) · R $(Rscript -e 'cat(as.character(getRversion()))' 2>/dev/null)${PD_CI:+ · CI 모드(검증·렌더는 publish.yml)}"
 git rev-parse --git-dir >/dev/null 2>&1 || { echo "[daily] git 레포가 아님: $REPO"; exit 1; }
 br=$(git branch --show-current)
 [ "$br" = "main" ] || { step "✗ main 브랜치가 아님(현재 '$br') — 중단"; exit 1; }
@@ -69,7 +71,7 @@ fi
 #   부른 셸 명령줄까지 잡아 오탐이 난다(9/24 실측). git 작업은 초 단위라 2분 넘은 잠금은 잔재다.
 now=$(date +%s); fresh=0; cleaned=0
 for lk in $(find .git -maxdepth 3 -name "*.lock" 2>/dev/null); do
-  age=$(( now - $(stat -f %m "$lk" 2>/dev/null || echo "$now") ))
+  age=$(( now - $(stat -f %m "$lk" 2>/dev/null || stat -c %Y "$lk" 2>/dev/null || echo "$now") ))
   if [ "$age" -ge 120 ]; then rm -f "$lk"; cleaned=$((cleaned+1)); else fresh=$((fresh+1)); fi
 done
 [ "$cleaned" -gt 0 ] && echo "[daily] ! 낡은 git 잠금 ${cleaned}개 제거"
@@ -158,6 +160,9 @@ if git diff --quiet -- "$LOG" "$POLLS" "$LEDGER"; then
   step "로그·조사·장부 변경 없음(이미 적재된 날짜) — 종료"; exit 0
 fi
 
+if [ "${PD_CI:-0}" = "1" ]; then
+  step "CI 모드 — 검증·렌더는 publish.yml 이 수행(여기서는 건너뜀)"
+else
 # 2) 데이터 검증 — 하드 게이트
 step "데이터 검증(validate_data.R)"
 Rscript scripts/validate_data.R || { step "✗ 데이터 검증 실패 — 발행 중단"; exit 1; }
@@ -166,6 +171,7 @@ Rscript scripts/validate_data.R || { step "✗ 데이터 검증 실패 — 발�
 #    CI가 전체를 다시 렌더하므로 로컬도 전체를 돌려 깨진 곳이 없는지 본다.
 step "전체 렌더(quarto render) — 로컬 기준 약 70초"
 quarto render || { step "✗ 렌더 실패 — 발행 중단"; exit 1; }
+fi
 
 if [ "${NO_COMMIT:-0}" = "1" ]; then
   step "NO_COMMIT — 적재·검증·렌더 완료, 커밋은 호출자(주간 발행)가 한다"
@@ -195,3 +201,7 @@ git fetch origin main -q && git rebase origin/main || {
   echo "[daily] rebase 충돌 — 수동 해결 필요(로컬 커밋 보존됨)"; exit 1; }
 
 git push origin main && step "✅ 발행·배포 트리거 완료 ($DATE)" || { step "✗ push 실패"; exit 1; }
+if [ "${PD_CI:-0}" = "1" ]; then
+  # Actions 안에서 GITHUB_TOKEN 으로 push 한 커밋은 다른 워크플로를 깨우지 않는다 → 발행 워크플로를 직접 호출
+  gh workflow run publish.yml --ref main && step "publish.yml 수동 트리거" || step "! publish.yml 트리거 실패 — Actions 탭에서 수동 실행 필요"
+fi

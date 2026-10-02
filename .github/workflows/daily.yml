@@ -1,0 +1,85 @@
+name: Daily senate digest and publish
+
+# 매일 10:45 KST(01:45 UTC): Dropbox의 상원 일일 원문을 받아 → 정리본(Anthropic API) → 대조 → 적재 → 커밋 → publish.yml 호출.
+# Cowork 10:15 작업(호스트에서 발행이 돌지 않던 문제)을 대신한다(2026-10-03). 맥이 꺼져 있어도 돈다.
+# 필요한 Secrets: DROPBOX_APP_KEY · DROPBOX_APP_SECRET · DROPBOX_REFRESH_TOKEN (또는 DROPBOX_SHARED_LINK) · ANTHROPIC_API_KEY
+on:
+  schedule:
+    - cron: "45 1 * * *"
+  workflow_dispatch:
+    inputs:
+      since:
+        description: "이 날짜부터 적재(비우면 사이트 로그 as_of 다음 날부터)"
+        required: false
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: daily-publish
+  cancel-in-progress: false
+
+jobs:
+  digest-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Pull senate_daily from Dropbox
+        env:
+          DROPBOX_APP_KEY: ${{ secrets.DROPBOX_APP_KEY }}
+          DROPBOX_APP_SECRET: ${{ secrets.DROPBOX_APP_SECRET }}
+          DROPBOX_REFRESH_TOKEN: ${{ secrets.DROPBOX_REFRESH_TOKEN }}
+          DROPBOX_SHARED_LINK: ${{ secrets.DROPBOX_SHARED_LINK }}
+        run: |
+          ASOF=$(python3 -c "import json;print(json.load(open('data/senate_daily_log.json')).get('as_of') or '2026-09-01')")
+          SINCE="${{ github.event.inputs.since }}"; [ -n "$SINCE" ] || SINCE="$ASOF"
+          echo "since=$SINCE" >> "$GITHUB_ENV"
+          python3 scripts/dropbox_sync.py pull --out "$RUNNER_TEMP/senate_daily" --since "$SINCE"
+          ls -la "$RUNNER_TEMP/senate_daily" "$RUNNER_TEMP/senate_daily/site" || true
+
+      - name: Make digests for dates without one (Anthropic API)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DIGEST_MODEL: claude-opus-5
+          DROPBOX_APP_KEY: ${{ secrets.DROPBOX_APP_KEY }}
+          DROPBOX_APP_SECRET: ${{ secrets.DROPBOX_APP_SECRET }}
+          DROPBOX_REFRESH_TOKEN: ${{ secrets.DROPBOX_REFRESH_TOKEN }}
+        run: |
+          SRC="$RUNNER_TEMP/senate_daily"
+          PROMPT="$SRC/_prompt.md"; [ -f "$PROMPT" ] || PROMPT="pipeline_prompts/상원_일일_사이트정리_프롬프트.md"
+          if [ -z "$ANTHROPIC_API_KEY" ]; then echo "ANTHROPIC_API_KEY 없음 — 정리본 생략(원문 전재)"; exit 0; fi
+          ASOF=$(python3 -c "import json;print(json.load(open('data/senate_daily_log.json')).get('as_of') or '2026-09-01')")
+          for RAW in $(ls "$SRC"/*_일일브리핑_KR.md 2>/dev/null | sort); do
+            D=$(basename "$RAW" | cut -c1-10)
+            [ "$D" \> "$ASOF" ] || continue
+            OUT="$SRC/site/${D}_site_KR.md"
+            [ -f "$OUT" ] && { echo "$D 정리본 있음"; continue; }
+            echo "== $D 정리본 작성"
+            if python3 scripts/make_site_digest.py "$RAW" "$PROMPT" "$OUT"; then
+              python3 scripts/dropbox_sync.py push "$OUT" --dest site || true
+              mkdir -p senate_daily_site && cp "$OUT" senate_daily_site/   # 저장소 보관본(투명성)
+            fi
+          done
+
+      - name: Ingest, commit, push (CI mode)
+        env:
+          PD_CI: "1"
+          NIS_SENATE_DAILY: ${{ runner.temp }}/senate_daily
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "daily-publish[bot]"
+          git config user.email "daily-publish@users.noreply.github.com"
+          if [ -d senate_daily_site ] && [ -n "$(git status --porcelain senate_daily_site)" ]; then
+            git add senate_daily_site && git commit -q -m "일일 정리본 보관: $(ls senate_daily_site | tail -1 | cut -c1-10)" || true
+          fi
+          bash scripts/publish_daily.sh --catchup
+
+      - name: Show log
+        if: always()
+        run: tail -30 .publish_daily.log || true
