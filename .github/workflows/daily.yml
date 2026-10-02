@@ -3,9 +3,8 @@ name: Daily senate digest and publish
 # 매일 10:45 KST(01:45 UTC): Dropbox의 상원 일일 원문을 받아 → 정리본(Anthropic API) → 대조 → 적재 → 커밋 → publish.yml 호출.
 # Cowork 10:15 작업(호스트에서 발행이 돌지 않던 문제)을 대신한다(2026-10-03). 맥이 꺼져 있어도 돈다.
 # 필요한 Secrets: DROPBOX_APP_KEY · DROPBOX_APP_SECRET · DROPBOX_REFRESH_TOKEN (또는 DROPBOX_SHARED_LINK) · ANTHROPIC_API_KEY
+# 2026-10-03: 사용자가 Cowork 안에서 해결하기를 원해 예약(cron)은 끈다. 수동 실행(workflow_dispatch)만 남긴다 — 예비 경로.
 on:
-  schedule:
-    - cron: "45 1 * * *"
   workflow_dispatch:
     inputs:
       since:
