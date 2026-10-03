@@ -16,6 +16,7 @@ fetch_fec_fundraising.py(후보 계좌)의 짝. 기사가 전하는 '예약'과 
   - 집계: 위원회×후보×지지/반대. 주 요약은 '민주 우호'(민주 지지+공화 반대) 대 '공화 우호'.
 표준 라이브러리만 사용. 실패한 주는 null — 추정으로 채우지 않는다.
 """
+from __future__ import annotations  # 호스트 python3(3.9)의 `X | None` 힌트 호환
 import json
 import os
 import sys

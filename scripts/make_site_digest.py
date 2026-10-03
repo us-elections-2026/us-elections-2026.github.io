@@ -6,6 +6,7 @@
       check_site_digest.py 로 대조해 실패하면 지적 사항을 붙여 한 번 더 요청한다. 그래도 실패하면 1 반환(원문 전재로 폴백).
 모델: DIGEST_MODEL 환경변수(기본 claude-opus-5). 표준 라이브러리만 사용.
 """
+from __future__ import annotations  # 호스트 python3(3.9)의 `X | None` 힌트 호환
 import json
 import os
 import re

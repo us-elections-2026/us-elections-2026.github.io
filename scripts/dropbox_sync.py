@@ -12,6 +12,7 @@
 사용:  python3 scripts/dropbox_sync.py pull --out <dir> [--since YYYY-MM-DD]
        python3 scripts/dropbox_sync.py push <local_file> [--dest site]
 """
+from __future__ import annotations  # 호스트 python3(3.9)의 `X | None` 힌트 호환
 import argparse
 import io
 import json

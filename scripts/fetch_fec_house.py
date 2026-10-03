@@ -5,6 +5,7 @@ data/fec_house.json 으로 저장. 상원용 fetch_fec_fundraising.py + fetch_fe
 사용법:  export FEC_API_KEY=... ; python3 scripts/fetch_fec_house.py
 지역구는 아래 DISTRICTS 에 추가한다(사이트 house/<st><dd>.qmd 와 짝).
 """
+from __future__ import annotations  # 호스트 python3(3.9)의 `X | None` 힌트 호환
 import json
 import os
 import sys

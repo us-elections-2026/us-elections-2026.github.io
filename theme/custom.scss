@@ -526,3 +526,11 @@ main table.gt_table th.gt_col_heading { white-space: pre-line; text-align: cente
 .hist-cell { stroke: #fffdf8; stroke-width: 1; }
 .hist-cell.hist-sp { stroke: #111827; stroke-dasharray: 2 2; }
 .hist-ft { font-size: .76rem; margin-bottom: .6rem; }
+
+/* 홈 「주간 브리핑 아카이브」 목록 — 글자 줄이고 날짜 칸 폭 고정(2026-10-03 사용자 요청) */
+.quarto-listing-default .quarto-post { font-size: .88rem; gap: .75rem; }
+.quarto-listing-default .quarto-post .listing-title { font-size: .98rem; margin-bottom: .15rem; }
+.quarto-listing-default .quarto-post .listing-description { font-size: .82rem; line-height: 1.45; color: #4b5563; }
+.quarto-listing-default .quarto-post .listing-date { font-size: .78rem; }
+.quarto-listing-default .quarto-post .metadata { flex: 0 0 6.5rem; max-width: 6.5rem; }
+.quarto-listing-default .quarto-post .body { flex: 1 1 auto; min-width: 0; }

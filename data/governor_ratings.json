@@ -1,12 +1,12 @@
 {
  "generated_from": "https://www.270towin.com/2026-governor-election/",
- "fetched_at": "2026-09-27",
+ "fetched_at": "2026-10-03",
  "n_races": 36,
  "sources": [
   {
    "key": "cook-political-report-2026-governor",
    "label": "Cook Political Report",
-   "as_of": "2026-09-18",
+   "as_of": "2026-10-01",
    "ratings": {
     "AK": "Toss-up",
     "AL": "Solid R",
@@ -15,7 +15,7 @@
     "CA": "Solid D",
     "CO": "Solid D",
     "CT": "Solid D",
-    "FL": "Solid R",
+    "FL": "Lean R",
     "GA": "Toss-up",
     "HI": "Solid D",
     "IA": "Lean D",
@@ -40,7 +40,7 @@
     "SC": "Solid R",
     "SD": "Solid R",
     "TN": "Solid R",
-    "TX": "Likely R",
+    "TX": "Lean R",
     "VT": "Solid R",
     "WI": "Toss-up",
     "WY": "Solid R"
@@ -49,6 +49,7 @@
    "competitive": {
     "AK": "Toss-up",
     "AZ": "Lean D",
+    "FL": "Lean R",
     "GA": "Toss-up",
     "IA": "Lean D",
     "KS": "Lean R",
@@ -56,13 +57,14 @@
     "NV": "Toss-up",
     "OH": "Toss-up",
     "OR": "Lean D",
+    "TX": "Lean R",
     "WI": "Toss-up"
    }
   },
   {
    "key": "sabatos-crystal-ball-2026-governor",
    "label": "Sabato's Crystal Ball",
-   "as_of": "2026-09-22",
+   "as_of": "2026-09-29",
    "ratings": {
     "AK": "Toss-up",
     "AL": "Solid R",
@@ -83,7 +85,7 @@
     "ME": "Likely D",
     "MI": "Lean D",
     "MN": "Solid D",
-    "NE": "Solid R",
+    "NE": "Likely R",
     "NH": "Likely R",
     "NM": "Solid D",
     "NV": "Toss-up",
@@ -97,7 +99,7 @@
     "SD": "Solid R",
     "TN": "Solid R",
     "TX": "Lean R",
-    "VT": "Solid R",
+    "VT": "Likely R",
     "WI": "Lean D",
     "WY": "Solid R"
    },
@@ -119,9 +121,9 @@
   {
    "key": "inside-elections-governor-2026",
    "label": "Inside Elections",
-   "as_of": "2026-09-17",
+   "as_of": "2026-10-02",
    "ratings": {
-    "AK": "Lean R",
+    "AK": "Toss-up",
     "AL": "Solid R",
     "AR": "Solid R",
     "AZ": "Tilt D",
@@ -145,8 +147,8 @@
     "NM": "Likely D",
     "NV": "Tilt R",
     "NY": "Likely D",
-    "OH": "Tilt R",
-    "OK": "Solid R",
+    "OH": "Toss-up",
+    "OK": "Likely R",
     "OR": "Lean D",
     "PA": "Solid D",
     "RI": "Solid D",
@@ -160,7 +162,7 @@
    },
    "unknown_codes": 0,
    "competitive": {
-    "AK": "Lean R",
+    "AK": "Toss-up",
     "AZ": "Tilt D",
     "FL": "Lean R",
     "GA": "Toss-up",
@@ -168,7 +170,7 @@
     "KS": "Tilt R",
     "MI": "Tilt D",
     "NV": "Tilt R",
-    "OH": "Tilt R",
+    "OH": "Toss-up",
     "OR": "Lean D",
     "WI": "Toss-up"
    }
@@ -347,7 +349,7 @@
   {
    "key": "kalshi-2026-governor-prediction-market-prices",
    "label": "Kalshi (예측시장 가격)",
-   "as_of": "2026-09-27",
+   "as_of": "2026-10-03",
    "ratings": {
     "AK": "Lean D",
     "AL": "Solid R",
@@ -357,7 +359,7 @@
     "CO": "Solid D",
     "CT": "Solid D",
     "FL": "Lean R",
-    "GA": "Toss-up",
+    "GA": "Tilt R",
     "HI": "Solid D",
     "IA": "Likely D",
     "ID": "Solid R",
@@ -375,14 +377,14 @@
     "NY": "Solid D",
     "OH": "Tilt D",
     "OK": "Solid R",
-    "OR": "Likely D",
+    "OR": "Lean D",
     "PA": "Solid D",
     "RI": "Solid D",
     "SC": "Solid R",
     "SD": "Solid R",
     "TN": "Solid R",
-    "TX": "Lean R",
-    "VT": "Likely R",
+    "TX": "Likely R",
+    "VT": "Lean R",
     "WI": "Likely D",
     "WY": "Solid R"
    },
@@ -390,17 +392,18 @@
    "competitive": {
     "AK": "Lean D",
     "FL": "Lean R",
-    "GA": "Toss-up",
+    "GA": "Tilt R",
     "KS": "Lean R",
     "NV": "Toss-up",
     "OH": "Tilt D",
-    "TX": "Lean R"
+    "OR": "Lean D",
+    "VT": "Lean R"
    }
   },
   {
    "key": "consensus-2026-governor-forecast",
    "label": "270toWin Consensus",
-   "as_of": "2026-09-22",
+   "as_of": "2026-10-01",
    "ratings": {
     "AK": "Toss-up",
     "AL": "Solid R",
@@ -409,7 +412,7 @@
     "CA": "Solid D",
     "CO": "Solid D",
     "CT": "Solid D",
-    "FL": "Likely R",
+    "FL": "Lean R",
     "GA": "Toss-up",
     "HI": "Solid D",
     "IA": "Lean D",
@@ -421,7 +424,7 @@
     "ME": "Likely D",
     "MI": "Lean D",
     "MN": "Likely D",
-    "NE": "Solid R",
+    "NE": "Likely R",
     "NH": "Likely R",
     "NM": "Likely D",
     "NV": "Toss-up",
@@ -443,6 +446,7 @@
    "competitive": {
     "AK": "Toss-up",
     "AZ": "Lean D",
+    "FL": "Lean R",
     "GA": "Toss-up",
     "IA": "Lean D",
     "KS": "Lean R",

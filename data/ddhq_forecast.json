@@ -1,12 +1,12 @@
 {
- "as_of": "2026-09-27",
- "fetched_at_utc": "2026-09-27T21:18:58Z",
+ "as_of": "2026-10-03",
+ "fetched_at_utc": "2026-10-03T09:29:33Z",
  "type": "model",
  "source_label": "Decision Desk HQ",
  "note": "seats는 시뮬레이션 평균 의석, dem_majority_prob는 다수당 확률로 서로 다른 값이다. 상원 50–50 의석은 부통령 캐스팅보트로 공화 다수를 뜻하므로 '민주 50% 확률'이 아니다.",
  "senate": {
   "source_url": "https://votes.decisiondeskhq.com/forecast/2026/senate",
-  "model_updated_at": "2026-09-25 14:27:41.671789",
+  "model_updated_at": "2026-10-02 14:06:54.237766",
   "rating": "Toss Up",
   "dem_majority_prob": 54.0,
   "rep_majority_prob": 46.0,
@@ -15,11 +15,11 @@
  },
  "house": {
   "source_url": "https://votes.decisiondeskhq.com/forecast/2026/house",
-  "model_updated_at": "2026-09-25 14:27:13.192541",
-  "rating": "Lean",
-  "dem_majority_prob": 72.0,
-  "rep_majority_prob": 28.0,
-  "dem_seats_mean": 232,
-  "rep_seats_mean": 203
+  "model_updated_at": "2026-10-02 14:02:43.692836",
+  "rating": "Likely",
+  "dem_majority_prob": 75.0,
+  "rep_majority_prob": 25.0,
+  "dem_seats_mean": 234,
+  "rep_seats_mean": 201
  }
 }

@@ -7,6 +7,7 @@
    나머지는 그 주가 속한 PADD 지역 평균을 **대리값**으로 쓴다(JSON에 proxy 로 표시, 그래프는 점선).
 사용법: python3 scripts/fetch_gas_prices.py   (xlrd·pandas 필요 — 호스트 python3 확인됨)
 """
+from __future__ import annotations  # 호스트 python3(3.9)의 `X | None` 힌트 호환
 import io
 import json
 import os

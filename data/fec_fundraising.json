@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-28",
+  "as_of": "2026-10-03",
   "source_label": "FEC (api.open.fec.gov) — 분기 보고 기준, 단위 $M",
   "provenance_note": "coverage_end가 분기 마감일. 슈퍼팩 외부지출은 별도(independent expenditures) — 이 파일에 미포함.",
   "states": {
@@ -640,7 +640,7 @@
       {
         "name": "VOLPE, CHRISTOPHER",
         "party": "DEM",
-        "candidate_id": "S6OH00353",
+        "candidate_id": "S6OH00346",
         "receipts": 0.0,
         "disbursements": 0.0,
         "cash_on_hand": 0.0,
@@ -649,7 +649,7 @@
       {
         "name": "VOLPE, CHRISTOPHER",
         "party": "DEM",
-        "candidate_id": "S6OH00346",
+        "candidate_id": "S6OH00353",
         "receipts": 0.0,
         "disbursements": 0.0,
         "cash_on_hand": 0.0,

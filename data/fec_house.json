@@ -1,5 +1,5 @@
 {
- "as_of": "2026-09-27",
+ "as_of": "2026-10-03",
  "source_label": "FEC (api.open.fec.gov) — 후보 분기 보고 + Schedule E 독립지출(본선), 단위 $M",
  "provenance_note": "candidates 는 사이클 누적 모금·현금(coverage_end 기준). ie 는 상원 독립지출 파일과 같은 규칙(정기 보고 + 이후 통지, 예비선거 제외).",
  "districts": {
@@ -88,10 +88,10 @@
     }
    ],
    "ie": {
-    "pro_D": 0.88,
-    "pro_R": 0.63,
-    "n_rows": 72,
-    "last_date": "2026-09-25",
+    "pro_D": 0.95,
+    "pro_R": 0.75,
+    "n_rows": 94,
+    "last_date": "2026-09-30",
     "rows": [
      {
       "committee_id": "C00504530",
@@ -101,9 +101,9 @@
       "party": "",
       "so": "O",
       "reported": 0.0,
-      "notice_recent": 0.69,
-      "last_date": "2026-09-11",
-      "total": 0.69,
+      "notice_recent": 1.86,
+      "last_date": "2026-09-25",
+      "total": 1.86,
       "side": null
      },
      {
@@ -179,9 +179,9 @@
       "party": "REP",
       "so": "S",
       "reported": 0.0,
-      "notice_recent": 0.05,
-      "last_date": "2026-09-10",
-      "total": 0.05,
+      "notice_recent": 0.07,
+      "last_date": "2026-09-29",
+      "total": 0.07,
       "side": "R"
      },
      {
@@ -192,9 +192,9 @@
       "party": "DEM",
       "so": "O",
       "reported": 0.0,
-      "notice_recent": 0.03,
-      "last_date": "2026-09-17",
-      "total": 0.03,
+      "notice_recent": 0.06,
+      "last_date": "2026-09-30",
+      "total": 0.06,
       "side": "R"
      },
      {
@@ -205,9 +205,9 @@
       "party": "REP",
       "so": "S",
       "reported": 0.0,
-      "notice_recent": 0.03,
-      "last_date": "2026-09-17",
-      "total": 0.03,
+      "notice_recent": 0.05,
+      "last_date": "2026-09-30",
+      "total": 0.05,
       "side": "R"
      },
      {
@@ -218,10 +218,23 @@
       "party": "DEM",
       "so": "O",
       "reported": 0.0,
-      "notice_recent": 0.02,
-      "last_date": "2026-09-25",
-      "total": 0.02,
+      "notice_recent": 0.05,
+      "last_date": "2026-09-29",
+      "total": 0.05,
       "side": "R"
+     },
+     {
+      "committee_id": "C00707844",
+      "committee": "EDF ACTION VOTES",
+      "candidate_id": "H2NY17162",
+      "candidate": "LAWLER, MICHAEL VINCENT",
+      "party": "REP",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.05,
+      "last_date": "2026-09-28",
+      "total": 0.05,
+      "side": "D"
      },
      {
       "committee_id": "C00737411",
@@ -231,10 +244,23 @@
       "party": "DEM",
       "so": "O",
       "reported": 0.0,
-      "notice_recent": 0.02,
-      "last_date": "2026-09-17",
-      "total": 0.02,
+      "notice_recent": 0.03,
+      "last_date": "2026-09-28",
+      "total": 0.03,
       "side": "R"
+     },
+     {
+      "committee_id": "C00647966",
+      "committee": "RURAL FREEDOM NETWORK",
+      "candidate_id": "H6NY17171",
+      "candidate": "CONLEY, CAIT",
+      "party": "DEM",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.02,
+      "last_date": "2026-09-18",
+      "total": 0.02,
+      "side": "D"
      },
      {
       "committee_id": "C00943811",
@@ -259,6 +285,19 @@
       "reported": 0.0,
       "notice_recent": 0.0,
       "last_date": "2026-09-18",
+      "total": 0.0,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00647966",
+      "committee": "RURAL FREEDOM NETWORK",
+      "candidate_id": "H2NY17162",
+      "candidate": "LAWLER, MICHAEL VINCENT",
+      "party": "REP",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.0,
+      "last_date": "2026-09-15",
       "total": 0.0,
       "side": "D"
      },
@@ -298,19 +337,6 @@
       "reported": 0.0,
       "notice_recent": 0.0,
       "last_date": "2026-05-31",
-      "total": 0.0,
-      "side": "D"
-     },
-     {
-      "committee_id": "C00647966",
-      "committee": "RURAL FREEDOM NETWORK",
-      "candidate_id": "H2NY17162",
-      "candidate": "LAWLER, MICHAEL VINCENT",
-      "party": "REP",
-      "so": "O",
-      "reported": 0.0,
-      "notice_recent": 0.0,
-      "last_date": "2026-05-07",
       "total": 0.0,
       "side": "D"
      },
@@ -401,10 +427,10 @@
     }
    ],
    "ie": {
-    "pro_D": 0.68,
-    "pro_R": 1.17,
-    "n_rows": 79,
-    "last_date": "2026-09-25",
+    "pro_D": 0.76,
+    "pro_R": 1.25,
+    "n_rows": 89,
+    "last_date": "2026-09-30",
     "rows": [
      {
       "committee_id": "C00848739",
@@ -414,9 +440,9 @@
       "party": "DEM",
       "so": "O",
       "reported": 0.01,
-      "notice_recent": 0.65,
-      "last_date": "2026-09-22",
-      "total": 0.66,
+      "notice_recent": 0.7,
+      "last_date": "2026-09-28",
+      "total": 0.71,
       "side": "R"
      },
      {
@@ -430,6 +456,19 @@
       "notice_recent": 0.5,
       "last_date": "2026-09-21",
       "total": 0.5,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00495028",
+      "committee": "HMP",
+      "candidate_id": "H6PA08277",
+      "candidate": "FITZPATRICK, BRIAN",
+      "party": "REP",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.19,
+      "last_date": "2026-09-28",
+      "total": 0.19,
       "side": "D"
      },
      {
@@ -459,19 +498,6 @@
       "side": "R"
      },
      {
-      "committee_id": "C00495028",
-      "committee": "HMP",
-      "candidate_id": "H6PA08277",
-      "candidate": "FITZPATRICK, BRIAN",
-      "party": "REP",
-      "so": "O",
-      "reported": 0.0,
-      "notice_recent": 0.15,
-      "last_date": "2026-09-25",
-      "total": 0.15,
-      "side": "D"
-     },
-     {
       "committee_id": "C00890335",
       "committee": "STRATEGIC MAJORITY PAC",
       "candidate_id": "H6PA01181",
@@ -479,9 +505,9 @@
       "party": "DEM",
       "so": "O",
       "reported": 0.0,
-      "notice_recent": 0.1,
-      "last_date": "2026-09-23",
-      "total": 0.1,
+      "notice_recent": 0.12,
+      "last_date": "2026-09-30",
+      "total": 0.12,
       "side": "R"
      },
      {
@@ -498,6 +524,19 @@
       "side": "R"
      },
      {
+      "committee_id": "C00580068",
+      "committee": "PROGRESSIVE TURNOUT PROJECT",
+      "candidate_id": "H6PA01181",
+      "candidate": "HARVIE, ROBERT J",
+      "party": "DEM",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.02,
+      "last_date": "2026-09-27",
+      "total": 0.02,
+      "side": "D"
+     },
+     {
       "committee_id": "C00760835",
       "committee": "LOSERS AND SUCKERS VOTE",
       "candidate_id": "H6PA08277",
@@ -508,6 +547,19 @@
       "notice_recent": 0.02,
       "last_date": "2026-04-15",
       "total": 0.02,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00934059",
+      "committee": "SENIORS EMPOWERING AN EFFECTIVE DEMOCRACY (SEED-PAC)",
+      "candidate_id": "H6PA01181",
+      "candidate": "HARVIE, ROBERT J",
+      "party": "DEM",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.01,
+      "last_date": "2026-09-28",
+      "total": 0.01,
       "side": "D"
      },
      {
@@ -522,6 +574,32 @@
       "last_date": "2026-09-18",
       "total": 0.01,
       "side": "D"
+     },
+     {
+      "committee_id": "C00953588",
+      "committee": "CIVIC RENEWAL FUND INC.",
+      "candidate_id": "H6PA08277",
+      "candidate": "FITZPATRICK, BRIAN",
+      "party": "REP",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.0,
+      "last_date": "2026-09-28",
+      "total": 0.0,
+      "side": "R"
+     },
+     {
+      "committee_id": "C00953588",
+      "committee": "CIVIC RENEWAL FUND INC.",
+      "candidate_id": "H6PA01181",
+      "candidate": "HARVIE, ROBERT J",
+      "party": "DEM",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.0,
+      "last_date": "2026-09-28",
+      "total": 0.0,
+      "side": "R"
      },
      {
       "committee_id": "C00489799",

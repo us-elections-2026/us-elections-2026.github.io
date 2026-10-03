@@ -1,6 +1,6 @@
 {
  "generated_from": "https://www.270towin.com/2026-senate-election/",
- "fetched_at": "2026-09-27",
+ "fetched_at": "2026-10-03",
  "n_races": 35,
  "sources": [
   {
@@ -112,15 +112,15 @@
   {
    "key": "inside-elections-2026-senate-ratings",
    "label": "Inside Elections",
-   "as_of": "2026-09-17",
+   "as_of": "2026-10-02",
    "ratings": {
-    "AK": "Tilt R",
+    "AK": "Toss-up",
     "AL": "Solid R",
     "AR": "Solid R",
     "CO": "Solid D",
     "DE": "Solid D",
     "FL": "Solid R",
-    "GA": "Tilt D",
+    "GA": "Lean D",
     "IA": "Tilt R",
     "ID": "Solid R",
     "IL": "Solid D",
@@ -129,12 +129,12 @@
     "LA": "Solid R",
     "MA": "Solid D",
     "ME": "Toss-up",
-    "MI": "Toss-up",
-    "MN": "Likely D",
+    "MI": "Tilt D",
+    "MN": "Lean D",
     "MS": "Solid R",
     "MT": "Solid R",
-    "NC": "Tilt D",
-    "NE": "Likely R",
+    "NC": "Lean D",
+    "NE": "Lean R",
     "NH": "Toss-up",
     "NJ": "Solid D",
     "NM": "Solid D",
@@ -145,27 +145,27 @@
     "SC": "Likely R",
     "SD": "Solid R",
     "TN": "Solid R",
-    "TX": "Lean R",
+    "TX": "Tilt R",
     "VA": "Solid D",
     "WV": "Solid R",
     "WY": "Solid R"
    },
    "unknown_codes": 0,
    "watch": {
-    "GA": "Tilt D",
-    "NC": "Tilt D",
+    "GA": "Lean D",
+    "NC": "Lean D",
     "NH": "Toss-up",
-    "MI": "Toss-up",
+    "MI": "Tilt D",
     "ME": "Toss-up",
-    "AK": "Tilt R",
+    "AK": "Toss-up",
     "OH": "Toss-up",
-    "TX": "Lean R"
+    "TX": "Tilt R"
    }
   },
   {
    "key": "split-ticket-2026-senate-ratings",
    "label": "Split Ticket",
-   "as_of": "2026-09-26",
+   "as_of": "2026-10-02",
    "ratings": {
     "AK": "Lean D",
     "AL": "Solid R",
@@ -183,7 +183,7 @@
     "MA": "Solid D",
     "ME": "Lean D",
     "MI": "Lean D",
-    "MN": "Likely D",
+    "MN": "Lean D",
     "MS": "Solid R",
     "MT": "Solid R",
     "NC": "Likely D",
@@ -191,12 +191,12 @@
     "NH": "Likely D",
     "NJ": "Solid D",
     "NM": "Solid D",
-    "OH": "Toss-up",
+    "OH": "Lean D",
     "OK": "Solid R",
     "OR": "Solid D",
     "RI": "Solid D",
-    "SC": "Likely R",
-    "SD": "Solid R",
+    "SC": "Lean R",
+    "SD": "Likely R",
     "TN": "Solid R",
     "TX": "Lean D",
     "VA": "Solid D",
@@ -211,7 +211,7 @@
     "MI": "Lean D",
     "ME": "Lean D",
     "AK": "Lean D",
-    "OH": "Toss-up",
+    "OH": "Lean D",
     "TX": "Lean D"
    }
   },
@@ -324,7 +324,7 @@
   {
    "key": "decision-desk-hq-2026-senate-forecast",
    "label": "Decision Desk HQ",
-   "as_of": "2026-09-21",
+   "as_of": "2026-09-28",
    "ratings": {
     "AK": "Toss-up",
     "AL": "Solid R",
@@ -430,7 +430,7 @@
   {
    "key": "kalshi-2026-senate-prediction-market-prices",
    "label": "Kalshi (예측시장 가격)",
-   "as_of": "2026-09-27",
+   "as_of": "2026-10-03",
    "ratings": {
     "AK": "Lean D",
     "AL": "Solid R",
@@ -483,7 +483,7 @@
   {
    "key": "consensus-2026-senate-forecast",
    "label": "270toWin Consensus",
-   "as_of": "2026-09-22",
+   "as_of": "2026-10-02",
    "ratings": {
     "AK": "Toss-up",
     "AL": "Solid R",

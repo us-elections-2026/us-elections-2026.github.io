@@ -8,6 +8,7 @@
 - 주(week) 격자: 2026-01-05(월)부터 오늘 이전 마지막 월요일까지. 값은 그 주 일요일까지의 누적.
 사용법: export FEC_API_KEY=... ; python3 scripts/fetch_fec_timeline.py
 """
+from __future__ import annotations  # 호스트 python3(3.9)의 `X | None` 힌트 호환
 import json
 import os
 import sys

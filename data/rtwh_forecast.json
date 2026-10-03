@@ -1,18 +1,18 @@
 {
- "as_of": "2026-09-27",
- "fetched_at_utc": "2026-09-27T21:19:08Z",
+ "as_of": "2026-10-03",
+ "fetched_at_utc": "2026-10-03T09:29:40Z",
  "type": "model",
  "source_label": "Race to the WH",
  "source_url": "https://www.racetothewh.com/senate/26",
  "chamber": "senate",
- "series_refreshed": "2026-09-27T21:17:19.553Z",
- "last_point_label": "Sep 27",
- "dem_majority_prob": 70.7,
- "rep_majority_prob": 29.3,
+ "series_refreshed": "2026-10-03T09:29:13.107Z",
+ "last_point_label": "Oct 3",
+ "dem_majority_prob": 72.7,
+ "rep_majority_prob": 27.3,
  "seats_projected": {
-  "dem": 52.4,
-  "rep": 47.6
+  "dem": 52.7,
+  "rep": 47.3
  },
- "n_points": 139,
+ "n_points": 140,
  "note": "Infogram 라이브 시계열의 마지막 관측치. 페이지 본문에 보이는 71.8%·73.4% 같은 수치는 과거 모델 업데이트를 설명하는 서술문이므로 현재 예측이 아니다."
 }
