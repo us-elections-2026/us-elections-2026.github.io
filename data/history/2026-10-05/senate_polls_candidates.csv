@@ -1,0 +1,10 @@
+status,why,verify,state,pollster,sponsor,partisan,population,n,start_date,end_date,dem_candidate,rep_candidate,dem_pct,rep_pct,margin,note,source_url,mentions,confidence
+pending,"누락: start_date,end_date",,AK,Quantus Insights,,none,,,,,Peltola,Sullivan,47,48,-1,일일 브리핑 10/03 추출,https://politicalwire.com/2026/10/02/sullivan-and-peltola-dead-heat-in-alaska/,2026-10-03,
+ready,,,IA,Fox News/Beacon·Shaw,,none,LV,,2026-09-24,2026-09-28,Turek,Hinson,49,47,2,일일 브리핑 10/03 추출,https://static.foxnews.com/foxnews.com/content/uploads/2026/10/fox_september-24-28-2026_iowa_topline_october-1-release.pdf,2026-10-03,
+ready,,,ME,UMass Lowell/YouGov,,none,LV,650,2026-08-28,2026-09-14,Jackson,Collins,48,43,5,일일 브리핑 10/03 추출,https://www.uml.edu/news/press-releases/2026/09242026-maine-poll.aspx,2026-10-03,
+pending,"누락: start_date,end_date,source_url",,MI,Marist Poll,,none,RV,,,,El-Sayed,Rogers,51,44,7,일일 브리핑 10/03 추출,,2026-10-03,
+pending,"누락: start_date,end_date,source_url",,MI,Trafalgar Group,,none,,,,,El-Sayed,Rogers,47,45,2,일일 브리핑 10/03 추출,,2026-10-03,
+dup,기존 CSV에 있음,,MI,Rasmussen Reports,,none,LV,1099,,2026-09-22,El-Sayed,Rogers,47,44,3,일일 브리핑 10/03 추출,https://www.newsweek.com/abdul-el-sayed-leading-in-michigan-with-republican-pollster-12490204,2026-10-03,
+ready,,,OH,Marist Poll,,none,RV,1298,2026-09-24,2026-09-27,Brown,Husted,51,43,8,일일 브리핑 10/03 추출,https://www.newsweek.com/ohio-disapprove-donald-trump-sherrod-brown-poll-12500125,2026-10-03,
+ready,,,OH,InsiderAdvantage,,none,LV,1200,2026-09-28,2026-09-29,Brown,Husted,44,43,1,일일 브리핑 10/03 추출,https://insideradvantage.com/insideradvantage-ohio-senate-race-narrows-to-brown-up-by-one/,2026-10-03,
+ready,,,TX,Fox News/Beacon·Shaw,,none,LV,881,2026-09-24,2026-09-28,Talarico,Paxton,51,49,2,일일 브리핑 10/03 추출,https://www.fox7austin.com/election/talarico-paxton-texas-senate-poll-october,2026-10-03,
