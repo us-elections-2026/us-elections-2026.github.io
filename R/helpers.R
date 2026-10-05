@@ -578,7 +578,7 @@ gt_state_fec <- function(code) {
 # data/candidates.json 을 읽어 HTML 카드 문자열을 반환. qmd 청크에서
 # `#| output: asis` 와 함께 cat() 으로 출력한다. status="primary"는 경선 후보(하단 가로),
 # 그 외는 확정 후보(상단 정식 카드)로 분리 렌더한다.
-.party_kr <- c(D = "민주", R = "공화")
+.party_kr <- c(D = "민주", R = "공화", I = "무소속")
 
 .c_ul <- function(v) { v <- v[!is.na(v) & nzchar(v)]
   if (!length(v)) "" else paste0("<ul>", paste0("<li>", v, "</li>", collapse = ""), "</ul>") }
@@ -656,7 +656,9 @@ candidate_cards_html <- function(code) {
   is_prim <- !is.na(st) & st == "primary"
   pr <- .load_json("senate_primaries")$rows
   cards <- character(0)
-  for (pty in c("D", "R")) {
+  # 2026-10-05: 무소속(I) 후보가 민주 자리를 대신하는 주(NE Osborn)는 I 카드를 D 자리에 놓는다
+  parties <- if (any(cc$party == "I")) c("I", "R") else c("D", "R")
+  for (pty in parties) {
     nom_p <- cc[!is_prim & cc$party == pty, ]
     if (nrow(nom_p) > 0) {
       for (i in seq_len(nrow(nom_p))) cards <- c(cards, .full_card(nom_p[i, ]))
@@ -1008,7 +1010,7 @@ gt_kalshi_races <- function(kind = c("senate", "governor"), states = NULL, min_d
 gt_senate_rating_sources <- function() {
   d <- .load_json("senate_ratings_feed"); src <- d$sources
   rt <- src$ratings   # data.frame: 행=기관, 열=주 약자
-  key <- c("GA", "NC", "NH", "MI", "ME", "AK", "OH", "TX", "IA")
+  key <- c("GA", "NC", "NH", "MI", "ME", "AK", "OH", "TX", "IA", "NE", "KS")
   # 열 이름은 한글+약자 2줄. 종전에는 NC·NH만 영문 약자여서(폭 때문으로 보인다)
   # 같은 표 안에서 표기가 갈렸다 — 줄바꿈으로 폭 문제를 풀고 표기를 통일한다(2026-09-05).
   skr <- .state_kr()
@@ -1038,7 +1040,7 @@ gt_senate_rating_sources <- function() {
   tb <- bind_cols(tibble(예측기관 = lbl, 기준일 = as_of), as_tibble(cols))
   g <- tb |>
     gt() |>
-    tab_header(title = "상원 감시 9주 — 기관별 등급",
+    tab_header(title = "상원 감시주 — 기관별 등급",
                subtitle = "270towin 재게시 피드 자동 취득 · 등급은 확률이 아님") |>
     tab_source_note(paste0(
       "칸 색은 등급의 **방향과 순서**를 나타냅니다(파랑=민주 쪽, 회색=Toss-up, 붉은색=공화 쪽). ",
@@ -1363,7 +1365,7 @@ rating_tiles_html <- function() {
           '<div class="rt-st"><a href="/states/%s.html">%s%s</a><span class="rt-hold rt-hold-%s">%s</span></div>',
           s$id[i], s$name[i], if (diverge[i]) '<span class="rt-div" title="Cook과 Sabato 평가가 갈림">◆</span>' else "",
           tolower(s$defense[i]), s$defense[i])
-        else sprintf('<div class="rt-st"><span title="감시 9주 밖 — State Focus 페이지 없음">%s</span></div>',
+        else sprintf('<div class="rt-st"><span title="감시주 밖 — State Focus 페이지 없음">%s</span></div>',
                      if (!is.null(kr) && !is.null(kr[[ab]])) kr[[ab]] else ab)
       }, character(1)), collapse = "")
     sprintf('<div class="rtile %s"><div class="rt-num">%d</div><div class="rt-lab">%s</div><div class="rt-states">%s</div></div>',
@@ -1850,7 +1852,7 @@ money_ledger_md <- function(n = 30) {
   d <- .ledger()
   if (is.null(d)) return('<p class="pt-empty">장부가 아직 없습니다.</p>\n')
   nm <- c(GA = "조지아", MI = "미시간", NH = "뉴햄프셔", ME = "메인", NC = "노스캐롤라이나",
-          TX = "텍사스", OH = "오하이오", AK = "알래스카", IA = "아이오와", US = "전국")
+          TX = "텍사스", OH = "오하이오", AK = "알래스카", IA = "아이오와", NE = "네브래스카", KS = "캔자스", US = "전국")
   rows <- list()
   for (code in names(d$states)) {
     for (it in d$states[[code]][["money"]]) {
@@ -1864,7 +1866,7 @@ money_ledger_md <- function(n = 30) {
   rows <- rows[ord]
   total <- length(rows)
   rows <- rows[seq_len(min(n, total))]
-  head <- '<div class="ledger-hd">자금 투입·지출 — 일일 기록 <span class="rcard-mu">· 9개 주 정리본의 「자금」 줄과 「전국 자금」 절을 날짜별로 모음 · 같은 사안은 처음 본 날짜로 한 번</span></div>\n'
+  head <- '<div class="ledger-hd">자금 투입·지출 — 일일 기록 <span class="rcard-mu">· 감시주 정리본의 「자금」 줄과 「전국 자금」 절을 날짜별로 모음 · 같은 사안은 처음 본 날짜로 한 번</span></div>\n'
   body <- vapply(rows, function(r) {
     tail <- if (!is.null(r$last) && !identical(r$last, r$date)) sprintf(' <span class="rcard-mu">(~%s 재언급)</span>', substr(r$last, 6, 10)) else ""
     lab <- if (is.null(nm[[r$st]]) || is.na(nm[[r$st]])) r$st else nm[[r$st]]
@@ -1886,7 +1888,7 @@ money_ledger_md <- function(n = 30) {
 gt_fec_ie_states <- function() {
   d <- .fec_ie()
   if (is.null(d)) return(gt(tibble(안내 = "data/fec_independent_expenditures.json 미생성 — scripts/fetch_fec_independent_expenditures.py 실행 후 채워집니다.")) |> .tbl_opts())
-  nm <- c(GA = "조지아", MI = "미시간", NH = "뉴햄프셔", ME = "메인", NC = "노스캐롤라이나", TX = "텍사스", OH = "오하이오", AK = "알래스카", IA = "아이오와")
+  nm <- c(GA = "조지아", MI = "미시간", NH = "뉴햄프셔", ME = "메인", NC = "노스캐롤라이나", TX = "텍사스", OH = "오하이오", AK = "알래스카", IA = "아이오와", NE = "네브래스카", KS = "캔자스")
   rows <- lapply(names(nm), function(st) {
     x <- d$states[[st]]
     if (is.null(x)) return(tibble(주 = nm[[st]], `민주 우호` = NA_real_, `공화 우호` = NA_real_, 합계 = NA_real_, `최대 집행 단체` = "【수집】", `최근 신고` = "—"))
@@ -1925,7 +1927,7 @@ gt_fec_ie_committees <- function(n = 15) {
   ) |>
     mutate(합계 = .m(합계)) |>
     gt() |>
-    tab_header(title = "독립지출 상위 단체", subtitle = "감시 9주 합산 · 단위 $M") |>
+    tab_header(title = "독립지출 상위 단체", subtitle = "감시주 합산 · 단위 $M") |>
     tab_source_note("단체명은 FEC 등록명(예: TEXAS PAC = Senate Leadership Fund의 텍사스 계열, WINSENATE = Senate Majority PAC 계열). 성향은 지지·반대 대상 후보의 정당으로 기계 분류.") |>
     .tbl_opts()
 }
@@ -2084,7 +2086,7 @@ gt_priority_polls <- function(n = 30) {
   p <- readr::read_csv(file.path("data", "senate_polls.csv"), show_col_types = FALSE, col_types = readr::cols(.default = "c"))
   p <- p[.is_priority(p$pollster), ]
   if (!nrow(p)) return(gt(tibble(안내 = "주목 기관 조사가 아직 없습니다.")) |> .tbl_opts())
-  nm <- c(GA = "조지아", MI = "미시간", NH = "뉴햄프셔", ME = "메인", NC = "노스캐롤라이나", TX = "텍사스", OH = "오하이오", AK = "알래스카", IA = "아이오와")
+  nm <- c(GA = "조지아", MI = "미시간", NH = "뉴햄프셔", ME = "메인", NC = "노스캐롤라이나", TX = "텍사스", OH = "오하이오", AK = "알래스카", IA = "아이오와", NE = "네브래스카", KS = "캔자스")
   fam <- function(x) { x <- tolower(x); ifelse(grepl("siena", x), "NYT/Siena", ifelse(grepl("fox", x), "Fox News", ifelse(grepl("marist", x), "Marist", "AARP"))) }
   p$.fam <- fam(p$pollster); p$.m <- suppressWarnings(as.numeric(p$margin))
   p$.d <- ifelse(is.na(p$end_date) | p$end_date == "", p$start_date, p$end_date)
@@ -2107,7 +2109,7 @@ gt_priority_polls <- function(n = 30) {
   ) |>
     gt() |>
     tab_header(title = "주목 기관 조사 — NYT/Siena · Fox News · Marist · AARP",
-               subtitle = sprintf("감시 9주 합산 최신순 · %d건 · 양수 = 민주 우위", nrow(p))) |>
+               subtitle = sprintf("감시주 합산 최신순 · %d건 · 양수 = 민주 우위", nrow(p))) |>
     tab_source_note("네 기관은 비당파·공개 방법론·과거 정확도 기준으로 특별히 추적합니다(2026-09-30 지시). '같은 기관 직전 대비'는 같은 주에서 같은 기관이 낸 직전 조사와의 마진 차이로, 기관 간 하우스 이펙트가 섞이지 않는 변화량입니다. 원자료 data/senate_polls.csv.") |>
     .tbl_opts()
 }
@@ -2178,7 +2180,7 @@ gt_canada_trade <- function(states = c("MI","ME","NH","OH","IA","TX","NC","GA","
   path <- file.path("data", "canada_trade.json")
   if (!file.exists(path)) return(gt(tibble(안내 = "data/canada_trade.json 이 아직 없습니다.")) |> .tbl_opts())
   d <- jsonlite::read_json(path, simplifyVector = FALSE)
-  nm <- c(GA = "조지아", MI = "미시간", NH = "뉴햄프셔", ME = "메인", NC = "노스캐롤라이나", TX = "텍사스", OH = "오하이오", AK = "알래스카", IA = "아이오와", PA = "펜실베이니아", NY = "뉴욕")
+  nm <- c(GA = "조지아", MI = "미시간", NH = "뉴햄프셔", ME = "메인", NC = "노스캐롤라이나", TX = "텍사스", OH = "오하이오", AK = "알래스카", IA = "아이오와", NE = "네브래스카", KS = "캔자스", PA = "펜실베이니아", NY = "뉴욕")
   bn <- function(v) if (is.null(v)) "미확인" else sprintf("$%.1fB", as.numeric(v))
   pc <- function(v) if (is.null(v)) "미확인" else sprintf("%.0f%%", as.numeric(v))
   rk <- function(v) if (is.null(v)) "—" else paste0(v, "위")
@@ -2207,7 +2209,7 @@ canada_state_notes_md <- function(states = c("IA","ME","MI","NH","OH","TX","AK",
   path <- file.path("data", "canada_trade.json")
   if (!file.exists(path)) return("")
   d <- jsonlite::read_json(path, simplifyVector = FALSE)
-  nm <- c(GA = "조지아", MI = "미시간", NH = "뉴햄프셔", ME = "메인", NC = "노스캐롤라이나", TX = "텍사스", OH = "오하이오", AK = "알래스카", IA = "아이오와", PA = "펜실베이니아", NY = "뉴욕")
+  nm <- c(GA = "조지아", MI = "미시간", NH = "뉴햄프셔", ME = "메인", NC = "노스캐롤라이나", TX = "텍사스", OH = "오하이오", AK = "알래스카", IA = "아이오와", NE = "네브래스카", KS = "캔자스", PA = "펜실베이니아", NY = "뉴욕")
   out <- character(0)
   for (st in states) {
     x <- d$states[[st]]; if (is.null(x)) next

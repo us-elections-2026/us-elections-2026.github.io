@@ -1,2498 +1,3046 @@
 {
-"as_of": "2026-09-30",
-"source_label": "위키백과 개별 선거 문서 결과표(승자 득표율 − 2위 득표율). 1986~2024, 상원은 두 의석·특별선거 포함, RCV·결선은 최종 라운드.",
-"provenance_note": "Sonnet 에이전트가 2026-09-30 수집, 승자·정당은 편집자가 알려진 결과와 대조. NC 상원 class는 수집본이 뒤바뀌어 있어 정정(Helms→Dole→Hagan→Tillis = class 2, Sanford→…→Burr→Budd = class 3). 무투표(GA 1990 Nunn)는 margin 100.",
-"states": {
-"GA": {
-"pres": [
-{
-"year": 1988,
-"party": "R",
-"winner": "Bush",
-"margin": 20.3,
-"url": "https://en.wikipedia.org/wiki/1988_United_States_presidential_election_in_Georgia"
-},
-{
-"year": 1992,
-"party": "D",
-"winner": "Clinton",
-"margin": 0.6,
-"url": "https://en.wikipedia.org/wiki/1992_United_States_presidential_election_in_Georgia"
-},
-{
-"year": 1996,
-"party": "R",
-"winner": "Dole",
-"margin": 1.2,
-"url": "https://en.wikipedia.org/wiki/1996_United_States_presidential_election_in_Georgia"
-},
-{
-"year": 2000,
-"party": "R",
-"winner": "Bush",
-"margin": 11.7,
-"url": "https://en.wikipedia.org/wiki/2000_United_States_presidential_election_in_Georgia"
-},
-{
-"year": 2004,
-"party": "R",
-"winner": "Bush",
-"margin": 16.6,
-"url": "https://en.wikipedia.org/wiki/2004_United_States_presidential_election_in_Georgia"
-},
-{
-"year": 2008,
-"party": "R",
-"winner": "McCain",
-"margin": 5.2,
-"url": "https://en.wikipedia.org/wiki/2008_United_States_presidential_election_in_Georgia"
-},
-{
-"year": 2012,
-"party": "R",
-"winner": "Romney",
-"margin": 7.8,
-"url": "https://en.wikipedia.org/wiki/2012_United_States_presidential_election_in_Georgia"
-},
-{
-"year": 2016,
-"party": "R",
-"winner": "Trump",
-"margin": 5.1,
-"url": "https://en.wikipedia.org/wiki/2016_United_States_presidential_election_in_Georgia"
-},
-{
-"year": 2020,
-"party": "D",
-"winner": "Biden",
-"margin": 0.2,
-"url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election_in_Georgia"
-},
-{
-"year": 2024,
-"party": "R",
-"winner": "Trump",
-"margin": 2.2,
-"url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_Georgia"
-}
-],
-"sen": [
-{
-"year": 1986,
-"class": 3,
-"party": "D",
-"winner": "Fowler",
-"margin": 1.8,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1986_United_States_Senate_election_in_Georgia"
-},
-{
-"year": 1990,
-"class": 2,
-"party": "D",
-"winner": "Nunn",
-"margin": 100.0,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1990_United_States_Senate_election_in_Georgia"
-},
-{
-"year": 1992,
-"class": 3,
-"party": "R",
-"winner": "Coverdell",
-"margin": 1.3,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1992_United_States_Senate_election_in_Georgia"
-},
-{
-"year": 1996,
-"class": 2,
-"party": "D",
-"winner": "Cleland",
-"margin": 1.3,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1996_United_States_Senate_election_in_Georgia"
-},
-{
-"year": 1998,
-"class": 3,
-"party": "R",
-"winner": "Coverdell",
-"margin": 7.2,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1998_United_States_Senate_election_in_Georgia"
-},
-{
-"year": 2000,
-"class": 3,
-"party": "D",
-"winner": "Miller",
-"margin": 20.3,
-"special": true,
-"url": "https://en.wikipedia.org/wiki/2000_United_States_Senate_special_election_in_Georgia"
-},
-{
-"year": 2002,
-"class": 2,
-"party": "R",
-"winner": "Chambliss",
-"margin": 6.9,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2002_United_States_Senate_election_in_Georgia"
-},
-{
-"year": 2004,
-"class": 3,
-"party": "R",
-"winner": "Isakson",
-"margin": 17.9,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2004_United_States_Senate_election_in_Georgia"
-},
-{
-"year": 2008,
-"class": 2,
-"party": "R",
-"winner": "Chambliss",
-"margin": 14.9,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2008_United_States_Senate_election_in_Georgia"
-},
-{
-"year": 2010,
-"class": 3,
-"party": "R",
-"winner": "Isakson",
-"margin": 19.3,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2010_United_States_Senate_election_in_Georgia"
-},
-{
-"year": 2014,
-"class": 2,
-"party": "R",
-"winner": "Perdue",
-"margin": 7.7,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2014_United_States_Senate_election_in_Georgia"
-},
-{
-"year": 2016,
-"class": 3,
-"party": "R",
-"winner": "Isakson",
-"margin": 13.8,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2016_United_States_Senate_election_in_Georgia"
-},
-{
-"year": 2020,
-"class": 2,
-"party": "D",
-"winner": "Ossoff",
-"margin": 1.2,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_Georgia"
-},
-{
-"year": 2020,
-"class": 3,
-"party": "D",
-"winner": "Warnock",
-"margin": 2.1,
-"special": true,
-"url": "https://en.wikipedia.org/wiki/2020_United_States_Senate_special_election_in_Georgia"
-},
-{
-"year": 2022,
-"class": 3,
-"party": "D",
-"winner": "Warnock",
-"margin": 2.8,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2022_United_States_Senate_election_in_Georgia"
-}
-],
-"gov": [
-{
-"year": 1986,
-"party": "D",
-"winner": "Harris",
-"margin": 41.0,
-"url": "https://en.wikipedia.org/wiki/1986_Georgia_gubernatorial_election"
-},
-{
-"year": 1990,
-"party": "D",
-"winner": "Miller",
-"margin": 8.3,
-"url": "https://en.wikipedia.org/wiki/1990_Georgia_gubernatorial_election"
-},
-{
-"year": 1994,
-"party": "D",
-"winner": "Miller",
-"margin": 2.1,
-"url": "https://en.wikipedia.org/wiki/1994_Georgia_gubernatorial_election"
-},
-{
-"year": 1998,
-"party": "D",
-"winner": "Barnes",
-"margin": 8.4,
-"url": "https://en.wikipedia.org/wiki/1998_Georgia_gubernatorial_election"
-},
-{
-"year": 2002,
-"party": "R",
-"winner": "Perdue",
-"margin": 5.2,
-"url": "https://en.wikipedia.org/wiki/2002_Georgia_gubernatorial_election"
-},
-{
-"year": 2006,
-"party": "R",
-"winner": "Perdue",
-"margin": 19.7,
-"url": "https://en.wikipedia.org/wiki/2006_Georgia_gubernatorial_election"
-},
-{
-"year": 2010,
-"party": "R",
-"winner": "Deal",
-"margin": 10.1,
-"url": "https://en.wikipedia.org/wiki/2010_Georgia_gubernatorial_election"
-},
-{
-"year": 2014,
-"party": "R",
-"winner": "Deal",
-"margin": 7.9,
-"url": "https://en.wikipedia.org/wiki/2014_Georgia_gubernatorial_election"
-},
-{
-"year": 2018,
-"party": "R",
-"winner": "Kemp",
-"margin": 1.4,
-"url": "https://en.wikipedia.org/wiki/2018_Georgia_gubernatorial_election"
-},
-{
-"year": 2022,
-"party": "R",
-"winner": "Kemp",
-"margin": 7.5,
-"url": "https://en.wikipedia.org/wiki/2022_Georgia_gubernatorial_election"
-}
-]
-},
-"MI": {
-"pres": [
-{
-"year": 1988,
-"party": "R",
-"winner": "Bush",
-"margin": 7.9,
-"url": "https://en.wikipedia.org/wiki/1988_United_States_presidential_election_in_Michigan"
-},
-{
-"year": 1992,
-"party": "D",
-"winner": "Clinton",
-"margin": 7.4,
-"url": "https://en.wikipedia.org/wiki/1992_United_States_presidential_election_in_Michigan"
-},
-{
-"year": 1996,
-"party": "D",
-"winner": "Clinton",
-"margin": 13.2,
-"url": "https://en.wikipedia.org/wiki/1996_United_States_presidential_election_in_Michigan"
-},
-{
-"year": 2000,
-"party": "D",
-"winner": "Gore",
-"margin": 5.1,
-"url": "https://en.wikipedia.org/wiki/2000_United_States_presidential_election_in_Michigan"
-},
-{
-"year": 2004,
-"party": "D",
-"winner": "Kerry",
-"margin": 3.4,
-"url": "https://en.wikipedia.org/wiki/2004_United_States_presidential_election_in_Michigan"
-},
-{
-"year": 2008,
-"party": "D",
-"winner": "Obama",
-"margin": 16.4,
-"url": "https://en.wikipedia.org/wiki/2008_United_States_presidential_election_in_Michigan"
-},
-{
-"year": 2012,
-"party": "D",
-"winner": "Obama",
-"margin": 9.5,
-"url": "https://en.wikipedia.org/wiki/2012_United_States_presidential_election_in_Michigan"
-},
-{
-"year": 2016,
-"party": "R",
-"winner": "Trump",
-"margin": 0.2,
-"url": "https://en.wikipedia.org/wiki/2016_United_States_presidential_election_in_Michigan"
-},
-{
-"year": 2020,
-"party": "D",
-"winner": "Biden",
-"margin": 2.8,
-"url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election_in_Michigan"
-},
-{
-"year": 2024,
-"party": "R",
-"winner": "Trump",
-"margin": 1.4,
-"url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_Michigan"
-}
-],
-"sen": [
-{
-"year": 1988,
-"class": 1,
-"party": "D",
-"winner": "Riegle",
-"margin": 21.9,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1988_United_States_Senate_election_in_Michigan"
-},
-{
-"year": 1990,
-"class": 2,
-"party": "D",
-"winner": "Levin",
-"margin": 16.2,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1990_United_States_Senate_election_in_Michigan"
-},
-{
-"year": 1994,
-"class": 1,
-"party": "R",
-"winner": "Abraham",
-"margin": 9.1,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1994_United_States_Senate_election_in_Michigan"
-},
-{
-"year": 1996,
-"class": 2,
-"party": "D",
-"winner": "Levin",
-"margin": 18.5,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1996_United_States_Senate_election_in_Michigan"
-},
-{
-"year": 2000,
-"class": 1,
-"party": "D",
-"winner": "Stabenow",
-"margin": 1.6,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2000_United_States_Senate_election_in_Michigan"
-},
-{
-"year": 2002,
-"class": 2,
-"party": "D",
-"winner": "Levin",
-"margin": 22.7,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2002_United_States_Senate_election_in_Michigan"
-},
-{
-"year": 2006,
-"class": 1,
-"party": "D",
-"winner": "Stabenow",
-"margin": 15.7,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2006_United_States_Senate_election_in_Michigan"
-},
-{
-"year": 2008,
-"class": 2,
-"party": "D",
-"winner": "Levin",
-"margin": 28.8,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2008_United_States_Senate_election_in_Michigan"
-},
-{
-"year": 2012,
-"class": 1,
-"party": "D",
-"winner": "Stabenow",
-"margin": 20.8,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2012_United_States_Senate_election_in_Michigan"
-},
-{
-"year": 2014,
-"class": 2,
-"party": "D",
-"winner": "Peters",
-"margin": 13.3,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2014_United_States_Senate_election_in_Michigan"
-},
-{
-"year": 2018,
-"class": 1,
-"party": "D",
-"winner": "Stabenow",
-"margin": 6.5,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2018_United_States_Senate_election_in_Michigan"
-},
-{
-"year": 2020,
-"class": 2,
-"party": "D",
-"winner": "Peters",
-"margin": 1.7,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_Michigan"
-},
-{
-"year": 2024,
-"class": 1,
-"party": "D",
-"winner": "Slotkin",
-"margin": 0.3,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2024_United_States_Senate_election_in_Michigan"
-}
-],
-"gov": [
-{
-"year": 1986,
-"party": "D",
-"winner": "Blanchard",
-"margin": 36.7,
-"url": "https://en.wikipedia.org/wiki/1986_Michigan_gubernatorial_election"
-},
-{
-"year": 1990,
-"party": "R",
-"winner": "Engler",
-"margin": 0.7,
-"url": "https://en.wikipedia.org/wiki/1990_Michigan_gubernatorial_election"
-},
-{
-"year": 1994,
-"party": "R",
-"winner": "Engler",
-"margin": 23.0,
-"url": "https://en.wikipedia.org/wiki/1994_Michigan_gubernatorial_election"
-},
-{
-"year": 1998,
-"party": "R",
-"winner": "Engler",
-"margin": 24.4,
-"url": "https://en.wikipedia.org/wiki/1998_Michigan_gubernatorial_election"
-},
-{
-"year": 2002,
-"party": "D",
-"winner": "Granholm",
-"margin": 4.0,
-"url": "https://en.wikipedia.org/wiki/2002_Michigan_gubernatorial_election"
-},
-{
-"year": 2006,
-"party": "D",
-"winner": "Granholm",
-"margin": 14.1,
-"url": "https://en.wikipedia.org/wiki/2006_Michigan_gubernatorial_election"
-},
-{
-"year": 2010,
-"party": "R",
-"winner": "Snyder",
-"margin": 18.2,
-"url": "https://en.wikipedia.org/wiki/2010_Michigan_gubernatorial_election"
-},
-{
-"year": 2014,
-"party": "R",
-"winner": "Snyder",
-"margin": 4.1,
-"url": "https://en.wikipedia.org/wiki/2014_Michigan_gubernatorial_election"
-},
-{
-"year": 2018,
-"party": "D",
-"winner": "Whitmer",
-"margin": 9.6,
-"url": "https://en.wikipedia.org/wiki/2018_Michigan_gubernatorial_election"
-},
-{
-"year": 2022,
-"party": "D",
-"winner": "Whitmer",
-"margin": 10.5,
-"url": "https://en.wikipedia.org/wiki/2022_Michigan_gubernatorial_election"
-}
-]
-},
-"NH": {
-"pres": [
-{
-"year": 1988,
-"party": "R",
-"winner": "Bush",
-"margin": 26.2,
-"url": "https://en.wikipedia.org/wiki/1988_United_States_presidential_election_in_New_Hampshire"
-},
-{
-"year": 1992,
-"party": "D",
-"winner": "Clinton",
-"margin": 1.2,
-"url": "https://en.wikipedia.org/wiki/1992_United_States_presidential_election_in_New_Hampshire"
-},
-{
-"year": 1996,
-"party": "D",
-"winner": "Clinton",
-"margin": 10.0,
-"url": "https://en.wikipedia.org/wiki/1996_United_States_presidential_election_in_New_Hampshire"
-},
-{
-"year": 2000,
-"party": "R",
-"winner": "Bush",
-"margin": 1.3,
-"url": "https://en.wikipedia.org/wiki/2000_United_States_presidential_election_in_New_Hampshire"
-},
-{
-"year": 2004,
-"party": "D",
-"winner": "Kerry",
-"margin": 1.4,
-"url": "https://en.wikipedia.org/wiki/2004_United_States_presidential_election_in_New_Hampshire"
-},
-{
-"year": 2008,
-"party": "D",
-"winner": "Obama",
-"margin": 9.6,
-"url": "https://en.wikipedia.org/wiki/2008_United_States_presidential_election_in_New_Hampshire"
-},
-{
-"year": 2012,
-"party": "D",
-"winner": "Obama",
-"margin": 5.6,
-"url": "https://en.wikipedia.org/wiki/2012_United_States_presidential_election_in_New_Hampshire"
-},
-{
-"year": 2016,
-"party": "D",
-"winner": "Clinton",
-"margin": 0.4,
-"url": "https://en.wikipedia.org/wiki/2016_United_States_presidential_election_in_New_Hampshire"
-},
-{
-"year": 2020,
-"party": "D",
-"winner": "Biden",
-"margin": 7.4,
-"url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election_in_New_Hampshire"
-},
-{
-"year": 2024,
-"party": "D",
-"winner": "Harris",
-"margin": 2.8,
-"url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_New_Hampshire"
-}
-],
-"sen": [
-{
-"year": 1986,
-"class": 3,
-"party": "R",
-"winner": "Rudman",
-"margin": 30.6,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1986_United_States_Senate_election_in_New_Hampshire"
-},
-{
-"year": 1990,
-"class": 2,
-"party": "R",
-"winner": "Smith",
-"margin": 33.8,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1990_United_States_Senate_election_in_New_Hampshire"
-},
-{
-"year": 1992,
-"class": 3,
-"party": "R",
-"winner": "Gregg",
-"margin": 2.8,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1992_United_States_Senate_election_in_New_Hampshire"
-},
-{
-"year": 1996,
-"class": 2,
-"party": "R",
-"winner": "Smith",
-"margin": 3.0,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1996_United_States_Senate_election_in_New_Hampshire"
-},
-{
-"year": 1998,
-"class": 3,
-"party": "R",
-"winner": "Gregg",
-"margin": 39.6,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1998_United_States_Senate_election_in_New_Hampshire"
-},
-{
-"year": 2002,
-"class": 2,
-"party": "R",
-"winner": "Sununu",
-"margin": 4.5,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2002_United_States_Senate_election_in_New_Hampshire"
-},
-{
-"year": 2004,
-"class": 3,
-"party": "R",
-"winner": "Gregg",
-"margin": 32.5,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2004_United_States_Senate_election_in_New_Hampshire"
-},
-{
-"year": 2008,
-"class": 2,
-"party": "D",
-"winner": "Shaheen",
-"margin": 6.3,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2008_United_States_Senate_election_in_New_Hampshire"
-},
-{
-"year": 2010,
-"class": 3,
-"party": "R",
-"winner": "Ayotte",
-"margin": 23.2,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2010_United_States_Senate_election_in_New_Hampshire"
-},
-{
-"year": 2014,
-"class": 2,
-"party": "D",
-"winner": "Shaheen",
-"margin": 3.3,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2014_United_States_Senate_election_in_New_Hampshire"
-},
-{
-"year": 2016,
-"class": 3,
-"party": "D",
-"winner": "Hassan",
-"margin": 0.1,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2016_United_States_Senate_election_in_New_Hampshire"
-},
-{
-"year": 2020,
-"class": 2,
-"party": "D",
-"winner": "Shaheen",
-"margin": 15.6,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_New_Hampshire"
-},
-{
-"year": 2022,
-"class": 3,
-"party": "D",
-"winner": "Hassan",
-"margin": 9.2,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2022_United_States_Senate_election_in_New_Hampshire"
-}
-],
-"gov": [
-{
-"year": 1986,
-"party": "R",
-"winner": "Sununu",
-"margin": 7.4,
-"url": "https://en.wikipedia.org/wiki/1986_New_Hampshire_gubernatorial_election"
-},
-{
-"year": 1988,
-"party": "R",
-"winner": "Gregg",
-"margin": 21.4,
-"url": "https://en.wikipedia.org/wiki/1988_New_Hampshire_gubernatorial_election"
-},
-{
-"year": 1990,
-"party": "R",
-"winner": "Gregg",
-"margin": 25.7,
-"url": "https://en.wikipedia.org/wiki/1990_New_Hampshire_gubernatorial_election"
-},
-{
-"year": 1992,
-"party": "R",
-"winner": "Merrill",
-"margin": 16.1,
-"url": "https://en.wikipedia.org/wiki/1992_New_Hampshire_gubernatorial_election"
-},
-{
-"year": 1994,
-"party": "R",
-"winner": "Merrill",
-"margin": 44.4,
-"url": "https://en.wikipedia.org/wiki/1994_New_Hampshire_gubernatorial_election"
-},
-{
-"year": 1996,
-"party": "D",
-"winner": "Shaheen",
-"margin": 17.7,
-"url": "https://en.wikipedia.org/wiki/1996_New_Hampshire_gubernatorial_election"
-},
-{
-"year": 1998,
-"party": "D",
-"winner": "Shaheen",
-"margin": 35.2,
-"url": "https://en.wikipedia.org/wiki/1998_New_Hampshire_gubernatorial_election"
-},
-{
-"year": 2000,
-"party": "D",
-"winner": "Shaheen",
-"margin": 5.0,
-"url": "https://en.wikipedia.org/wiki/2000_New_Hampshire_gubernatorial_election"
-},
-{
-"year": 2002,
-"party": "R",
-"winner": "Benson",
-"margin": 20.4,
-"url": "https://en.wikipedia.org/wiki/2002_New_Hampshire_gubernatorial_election"
-},
-{
-"year": 2004,
-"party": "D",
-"winner": "Lynch",
-"margin": 2.2,
-"url": "https://en.wikipedia.org/wiki/2004_New_Hampshire_gubernatorial_election"
-},
-{
-"year": 2006,
-"party": "D",
-"winner": "Lynch",
-"margin": 48.2,
-"url": "https://en.wikipedia.org/wiki/2006_New_Hampshire_gubernatorial_election"
-},
-{
-"year": 2008,
-"party": "D",
-"winner": "Lynch",
-"margin": 42.5,
-"url": "https://en.wikipedia.org/wiki/2008_New_Hampshire_gubernatorial_election"
-},
-{
-"year": 2010,
-"party": "D",
-"winner": "Lynch",
-"margin": 7.6,
-"url": "https://en.wikipedia.org/wiki/2010_New_Hampshire_gubernatorial_election"
-},
-{
-"year": 2012,
-"party": "D",
-"winner": "Hassan",
-"margin": 12.1,
-"url": "https://en.wikipedia.org/wiki/2012_New_Hampshire_gubernatorial_election"
-},
-{
-"year": 2014,
-"party": "D",
-"winner": "Hassan",
-"margin": 4.9,
-"url": "https://en.wikipedia.org/wiki/2014_New_Hampshire_gubernatorial_election"
-},
-{
-"year": 2016,
-"party": "R",
-"winner": "Sununu",
-"margin": 2.3,
-"url": "https://en.wikipedia.org/wiki/2016_New_Hampshire_gubernatorial_election"
-},
-{
-"year": 2018,
-"party": "R",
-"winner": "Sununu",
-"margin": 7.0,
-"url": "https://en.wikipedia.org/wiki/2018_New_Hampshire_gubernatorial_election"
-},
-{
-"year": 2020,
-"party": "R",
-"winner": "Sununu",
-"margin": 31.8,
-"url": "https://en.wikipedia.org/wiki/2020_New_Hampshire_gubernatorial_election"
-},
-{
-"year": 2022,
-"party": "R",
-"winner": "Sununu",
-"margin": 15.5,
-"url": "https://en.wikipedia.org/wiki/2022_New_Hampshire_gubernatorial_election"
-},
-{
-"year": 2024,
-"party": "R",
-"winner": "Ayotte",
-"margin": 9.3,
-"url": "https://en.wikipedia.org/wiki/2024_New_Hampshire_gubernatorial_election"
-}
-]
-},
-"ME": {
-"pres": [
-{
-"year": 1988,
-"party": "R",
-"winner": "Bush",
-"margin": 11.5,
-"url": "https://en.wikipedia.org/wiki/1988_United_States_presidential_election_in_Maine"
-},
-{
-"year": 1992,
-"party": "D",
-"winner": "Clinton",
-"margin": 8.3,
-"url": "https://en.wikipedia.org/wiki/1992_United_States_presidential_election_in_Maine"
-},
-{
-"year": 1996,
-"party": "D",
-"winner": "Clinton",
-"margin": 20.9,
-"url": "https://en.wikipedia.org/wiki/1996_United_States_presidential_election_in_Maine"
-},
-{
-"year": 2000,
-"party": "D",
-"winner": "Gore",
-"margin": 5.1,
-"url": "https://en.wikipedia.org/wiki/2000_United_States_presidential_election_in_Maine"
-},
-{
-"year": 2004,
-"party": "D",
-"winner": "Kerry",
-"margin": 9.0,
-"url": "https://en.wikipedia.org/wiki/2004_United_States_presidential_election_in_Maine"
-},
-{
-"year": 2008,
-"party": "D",
-"winner": "Obama",
-"margin": 17.3,
-"url": "https://en.wikipedia.org/wiki/2008_United_States_presidential_election_in_Maine"
-},
-{
-"year": 2012,
-"party": "D",
-"winner": "Obama",
-"margin": 15.3,
-"url": "https://en.wikipedia.org/wiki/2012_United_States_presidential_election_in_Maine"
-},
-{
-"year": 2016,
-"party": "D",
-"winner": "Clinton",
-"margin": 3.0,
-"url": "https://en.wikipedia.org/wiki/2016_United_States_presidential_election_in_Maine"
-},
-{
-"year": 2020,
-"party": "D",
-"winner": "Biden",
-"margin": 9.1,
-"url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election_in_Maine"
-},
-{
-"year": 2024,
-"party": "D",
-"winner": "Harris",
-"margin": 6.9,
-"url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_Maine"
-}
-],
-"sen": [
-{
-"year": 1988,
-"class": 1,
-"party": "D",
-"winner": "Mitchell",
-"margin": 62.6,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1988_United_States_Senate_election_in_Maine"
-},
-{
-"year": 1990,
-"class": 2,
-"party": "R",
-"winner": "Cohen",
-"margin": 22.7,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1990_United_States_Senate_election_in_Maine"
-},
-{
-"year": 1994,
-"class": 1,
-"party": "R",
-"winner": "Snowe",
-"margin": 23.9,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1994_United_States_Senate_election_in_Maine"
-},
-{
-"year": 1996,
-"class": 2,
-"party": "R",
-"winner": "Collins",
-"margin": 5.3,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1996_United_States_Senate_election_in_Maine"
-},
-{
-"year": 2000,
-"class": 1,
-"party": "R",
-"winner": "Snowe",
-"margin": 37.9,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2000_United_States_Senate_election_in_Maine"
-},
-{
-"year": 2002,
-"class": 2,
-"party": "R",
-"winner": "Collins",
-"margin": 16.9,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2002_United_States_Senate_election_in_Maine"
-},
-{
-"year": 2006,
-"class": 1,
-"party": "R",
-"winner": "Snowe",
-"margin": 53.4,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2006_United_States_Senate_election_in_Maine"
-},
-{
-"year": 2008,
-"class": 2,
-"party": "R",
-"winner": "Collins",
-"margin": 22.8,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2008_United_States_Senate_election_in_Maine"
-},
-{
-"year": 2012,
-"class": 1,
-"party": "I",
-"winner": "King",
-"margin": 22.1,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2012_United_States_Senate_election_in_Maine"
-},
-{
-"year": 2014,
-"class": 2,
-"party": "R",
-"winner": "Collins",
-"margin": 37.0,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2014_United_States_Senate_election_in_Maine"
-},
-{
-"year": 2018,
-"class": 1,
-"party": "I",
-"winner": "King",
-"margin": 19.1,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2018_United_States_Senate_election_in_Maine"
-},
-{
-"year": 2020,
-"class": 2,
-"party": "R",
-"winner": "Collins",
-"margin": 8.6,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_Maine"
-},
-{
-"year": 2024,
-"class": 1,
-"party": "I",
-"winner": "King",
-"margin": 17.4,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2024_United_States_Senate_election_in_Maine"
-}
-],
-"gov": [
-{
-"year": 1986,
-"party": "R",
-"winner": "McKernan",
-"margin": 9.7,
-"url": "https://en.wikipedia.org/wiki/1986_Maine_gubernatorial_election"
-},
-{
-"year": 1990,
-"party": "R",
-"winner": "McKernan",
-"margin": 2.6,
-"url": "https://en.wikipedia.org/wiki/1990_Maine_gubernatorial_election"
-},
-{
-"year": 1994,
-"party": "I",
-"winner": "King",
-"margin": 1.5,
-"url": "https://en.wikipedia.org/wiki/1994_Maine_gubernatorial_election"
-},
-{
-"year": 1998,
-"party": "I",
-"winner": "King",
-"margin": 39.7,
-"url": "https://en.wikipedia.org/wiki/1998_Maine_gubernatorial_election"
-},
-{
-"year": 2002,
-"party": "D",
-"winner": "Baldacci",
-"margin": 5.7,
-"url": "https://en.wikipedia.org/wiki/2002_Maine_gubernatorial_election"
-},
-{
-"year": 2006,
-"party": "D",
-"winner": "Baldacci",
-"margin": 7.9,
-"url": "https://en.wikipedia.org/wiki/2006_Maine_gubernatorial_election"
-},
-{
-"year": 2010,
-"party": "R",
-"winner": "LePage",
-"margin": 1.7,
-"url": "https://en.wikipedia.org/wiki/2010_Maine_gubernatorial_election"
-},
-{
-"year": 2014,
-"party": "R",
-"winner": "LePage",
-"margin": 4.8,
-"url": "https://en.wikipedia.org/wiki/2014_Maine_gubernatorial_election"
-},
-{
-"year": 2018,
-"party": "D",
-"winner": "Mills",
-"margin": 7.7,
-"url": "https://en.wikipedia.org/wiki/2018_Maine_gubernatorial_election"
-},
-{
-"year": 2022,
-"party": "D",
-"winner": "Mills",
-"margin": 13.2,
-"url": "https://en.wikipedia.org/wiki/2022_Maine_gubernatorial_election"
-}
-]
-},
-"NC": {
-"pres": [
-{
-"year": 1988,
-"party": "R",
-"winner": "Bush",
-"margin": 16.3,
-"url": "https://en.wikipedia.org/wiki/1988_United_States_presidential_election_in_North_Carolina"
-},
-{
-"year": 1992,
-"party": "R",
-"winner": "Bush",
-"margin": 0.8,
-"url": "https://en.wikipedia.org/wiki/1992_United_States_presidential_election_in_North_Carolina"
-},
-{
-"year": 1996,
-"party": "R",
-"winner": "Dole",
-"margin": 4.7,
-"url": "https://en.wikipedia.org/wiki/1996_United_States_presidential_election_in_North_Carolina"
-},
-{
-"year": 2000,
-"party": "R",
-"winner": "Bush",
-"margin": 12.8,
-"url": "https://en.wikipedia.org/wiki/2000_United_States_presidential_election_in_North_Carolina"
-},
-{
-"year": 2004,
-"party": "R",
-"winner": "Bush",
-"margin": 12.4,
-"url": "https://en.wikipedia.org/wiki/2004_United_States_presidential_election_in_North_Carolina"
-},
-{
-"year": 2008,
-"party": "D",
-"winner": "Obama",
-"margin": 0.3,
-"url": "https://en.wikipedia.org/wiki/2008_United_States_presidential_election_in_North_Carolina"
-},
-{
-"year": 2012,
-"party": "R",
-"winner": "Romney",
-"margin": 2.0,
-"url": "https://en.wikipedia.org/wiki/2012_United_States_presidential_election_in_North_Carolina"
-},
-{
-"year": 2016,
-"party": "R",
-"winner": "Trump",
-"margin": 3.7,
-"url": "https://en.wikipedia.org/wiki/2016_United_States_presidential_election_in_North_Carolina"
-},
-{
-"year": 2020,
-"party": "R",
-"winner": "Trump",
-"margin": 1.3,
-"url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election_in_North_Carolina"
-},
-{
-"year": 2024,
-"party": "R",
-"winner": "Trump",
-"margin": 3.2,
-"url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_North_Carolina"
-}
-],
-"sen": [
-{
-"year": 1986,
-"class": 3,
-"party": "D",
-"winner": "Sanford",
-"margin": 1.8,
-"special": true,
-"url": "https://en.wikipedia.org/wiki/1986_United_States_Senate_election_in_North_Carolina"
-},
-{
-"year": 1990,
-"class": 2,
-"party": "R",
-"winner": "Helms",
-"margin": 5.2,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1990_United_States_Senate_election_in_North_Carolina"
-},
-{
-"year": 1992,
-"class": 3,
-"party": "R",
-"winner": "Faircloth",
-"margin": 4.0,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1992_United_States_Senate_election_in_North_Carolina"
-},
-{
-"year": 1996,
-"class": 2,
-"party": "R",
-"winner": "Helms",
-"margin": 6.7,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1996_United_States_Senate_election_in_North_Carolina"
-},
-{
-"year": 1998,
-"class": 3,
-"party": "D",
-"winner": "Edwards",
-"margin": 4.1,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1998_United_States_Senate_election_in_North_Carolina"
-},
-{
-"year": 2002,
-"class": 2,
-"party": "R",
-"winner": "Dole",
-"margin": 8.6,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2002_United_States_Senate_election_in_North_Carolina"
-},
-{
-"year": 2004,
-"class": 3,
-"party": "R",
-"winner": "Burr",
-"margin": 4.6,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2004_United_States_Senate_election_in_North_Carolina"
-},
-{
-"year": 2008,
-"class": 2,
-"party": "D",
-"winner": "Hagan",
-"margin": 8.5,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2008_United_States_Senate_election_in_North_Carolina"
-},
-{
-"year": 2010,
-"class": 3,
-"party": "R",
-"winner": "Burr",
-"margin": 11.8,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2010_United_States_Senate_election_in_North_Carolina"
-},
-{
-"year": 2014,
-"class": 2,
-"party": "R",
-"winner": "Tillis",
-"margin": 1.6,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2014_United_States_Senate_election_in_North_Carolina"
-},
-{
-"year": 2016,
-"class": 3,
-"party": "R",
-"winner": "Burr",
-"margin": 5.7,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2016_United_States_Senate_election_in_North_Carolina"
-},
-{
-"year": 2020,
-"class": 2,
-"party": "R",
-"winner": "Tillis",
-"margin": 1.8,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_North_Carolina"
-},
-{
-"year": 2022,
-"class": 3,
-"party": "R",
-"winner": "Budd",
-"margin": 3.2,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2022_United_States_Senate_election_in_North_Carolina"
-}
-],
-"gov": [
-{
-"year": 1988,
-"party": "R",
-"winner": "Martin",
-"margin": 10.1,
-"url": "https://en.wikipedia.org/wiki/1988_North_Carolina_gubernatorial_election"
-},
-{
-"year": 1992,
-"party": "D",
-"winner": "Hunt",
-"margin": 9.5,
-"url": "https://en.wikipedia.org/wiki/1992_North_Carolina_gubernatorial_election"
-},
-{
-"year": 1996,
-"party": "D",
-"winner": "Hunt",
-"margin": 13.2,
-"url": "https://en.wikipedia.org/wiki/1996_North_Carolina_gubernatorial_election"
-},
-{
-"year": 2000,
-"party": "D",
-"winner": "Easley",
-"margin": 5.8,
-"url": "https://en.wikipedia.org/wiki/2000_North_Carolina_gubernatorial_election"
-},
-{
-"year": 2004,
-"party": "D",
-"winner": "Easley",
-"margin": 12.7,
-"url": "https://en.wikipedia.org/wiki/2004_North_Carolina_gubernatorial_election"
-},
-{
-"year": 2008,
-"party": "D",
-"winner": "Perdue",
-"margin": 3.4,
-"url": "https://en.wikipedia.org/wiki/2008_North_Carolina_gubernatorial_election"
-},
-{
-"year": 2012,
-"party": "R",
-"winner": "McCrory",
-"margin": 11.4,
-"url": "https://en.wikipedia.org/wiki/2012_North_Carolina_gubernatorial_election"
-},
-{
-"year": 2016,
-"party": "D",
-"winner": "Cooper",
-"margin": 0.2,
-"url": "https://en.wikipedia.org/wiki/2016_North_Carolina_gubernatorial_election"
-},
-{
-"year": 2020,
-"party": "D",
-"winner": "Cooper",
-"margin": 4.5,
-"url": "https://en.wikipedia.org/wiki/2020_North_Carolina_gubernatorial_election"
-},
-{
-"year": 2024,
-"party": "D",
-"winner": "Stein",
-"margin": 14.8,
-"url": "https://en.wikipedia.org/wiki/2024_North_Carolina_gubernatorial_election"
-}
-]
-},
-"TX": {
-"pres": [
-{
-"year": 1988,
-"party": "R",
-"winner": "Bush",
-"margin": 12.6,
-"url": "https://en.wikipedia.org/wiki/1988_United_States_presidential_election_in_Texas"
-},
-{
-"year": 1992,
-"party": "R",
-"winner": "Bush",
-"margin": 3.5,
-"url": "https://en.wikipedia.org/wiki/1992_United_States_presidential_election_in_Texas"
-},
-{
-"year": 1996,
-"party": "R",
-"winner": "Dole",
-"margin": 4.9,
-"url": "https://en.wikipedia.org/wiki/1996_United_States_presidential_election_in_Texas"
-},
-{
-"year": 2000,
-"party": "R",
-"winner": "Bush",
-"margin": 21.3,
-"url": "https://en.wikipedia.org/wiki/2000_United_States_presidential_election_in_Texas"
-},
-{
-"year": 2004,
-"party": "R",
-"winner": "Bush",
-"margin": 22.9,
-"url": "https://en.wikipedia.org/wiki/2004_United_States_presidential_election_in_Texas"
-},
-{
-"year": 2008,
-"party": "R",
-"winner": "McCain",
-"margin": 11.8,
-"url": "https://en.wikipedia.org/wiki/2008_United_States_presidential_election_in_Texas"
-},
-{
-"year": 2012,
-"party": "R",
-"winner": "Romney",
-"margin": 15.8,
-"url": "https://en.wikipedia.org/wiki/2012_United_States_presidential_election_in_Texas"
-},
-{
-"year": 2016,
-"party": "R",
-"winner": "Trump",
-"margin": 9.0,
-"url": "https://en.wikipedia.org/wiki/2016_United_States_presidential_election_in_Texas"
-},
-{
-"year": 2020,
-"party": "R",
-"winner": "Trump",
-"margin": 5.6,
-"url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election_in_Texas"
-},
-{
-"year": 2024,
-"party": "R",
-"winner": "Trump",
-"margin": 13.7,
-"url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_Texas"
-}
-],
-"sen": [
-{
-"year": 1988,
-"class": 1,
-"party": "D",
-"winner": "Bentsen",
-"margin": 19.2,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1988_United_States_Senate_election_in_Texas"
-},
-{
-"year": 1990,
-"class": 2,
-"party": "R",
-"winner": "Gramm",
-"margin": 22.8,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1990_United_States_Senate_election_in_Texas"
-},
-{
-"year": 1993,
-"class": 1,
-"party": "R",
-"winner": "Hutchison",
-"margin": 34.7,
-"special": true,
-"url": "https://en.wikipedia.org/wiki/1993_United_States_Senate_special_election_in_Texas"
-},
-{
-"year": 1994,
-"class": 1,
-"party": "R",
-"winner": "Hutchison",
-"margin": 23.5,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1994_United_States_Senate_election_in_Texas"
-},
-{
-"year": 1996,
-"class": 2,
-"party": "R",
-"winner": "Gramm",
-"margin": 10.8,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1996_United_States_Senate_election_in_Texas"
-},
-{
-"year": 2000,
-"class": 1,
-"party": "R",
-"winner": "Hutchison",
-"margin": 32.8,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2000_United_States_Senate_election_in_Texas"
-},
-{
-"year": 2002,
-"class": 2,
-"party": "R",
-"winner": "Cornyn",
-"margin": 12.0,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2002_United_States_Senate_election_in_Texas"
-},
-{
-"year": 2006,
-"class": 1,
-"party": "R",
-"winner": "Hutchison",
-"margin": 25.7,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2006_United_States_Senate_election_in_Texas"
-},
-{
-"year": 2008,
-"class": 2,
-"party": "R",
-"winner": "Cornyn",
-"margin": 12.0,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2008_United_States_Senate_election_in_Texas"
-},
-{
-"year": 2012,
-"class": 1,
-"party": "R",
-"winner": "Cruz",
-"margin": 15.8,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2012_United_States_Senate_election_in_Texas"
-},
-{
-"year": 2014,
-"class": 2,
-"party": "R",
-"winner": "Cornyn",
-"margin": 27.2,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2014_United_States_Senate_election_in_Texas"
-},
-{
-"year": 2018,
-"class": 1,
-"party": "R",
-"winner": "Cruz",
-"margin": 2.6,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2018_United_States_Senate_election_in_Texas"
-},
-{
-"year": 2020,
-"class": 2,
-"party": "R",
-"winner": "Cornyn",
-"margin": 9.6,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_Texas"
-},
-{
-"year": 2024,
-"class": 1,
-"party": "R",
-"winner": "Cruz",
-"margin": 8.5,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2024_United_States_Senate_election_in_Texas"
-}
-],
-"gov": [
-{
-"year": 1986,
-"party": "R",
-"winner": "Clements",
-"margin": 6.7,
-"url": "https://en.wikipedia.org/wiki/1986_Texas_gubernatorial_election"
-},
-{
-"year": 1990,
-"party": "D",
-"winner": "Richards",
-"margin": 2.6,
-"url": "https://en.wikipedia.org/wiki/1990_Texas_gubernatorial_election"
-},
-{
-"year": 1994,
-"party": "R",
-"winner": "Bush",
-"margin": 7.6,
-"url": "https://en.wikipedia.org/wiki/1994_Texas_gubernatorial_election"
-},
-{
-"year": 1998,
-"party": "R",
-"winner": "Bush",
-"margin": 37.1,
-"url": "https://en.wikipedia.org/wiki/1998_Texas_gubernatorial_election"
-},
-{
-"year": 2002,
-"party": "R",
-"winner": "Perry",
-"margin": 17.9,
-"url": "https://en.wikipedia.org/wiki/2002_Texas_gubernatorial_election"
-},
-{
-"year": 2006,
-"party": "R",
-"winner": "Perry",
-"margin": 9.2,
-"url": "https://en.wikipedia.org/wiki/2006_Texas_gubernatorial_election"
-},
-{
-"year": 2010,
-"party": "R",
-"winner": "Perry",
-"margin": 12.7,
-"url": "https://en.wikipedia.org/wiki/2010_Texas_gubernatorial_election"
-},
-{
-"year": 2014,
-"party": "R",
-"winner": "Abbott",
-"margin": 20.4,
-"url": "https://en.wikipedia.org/wiki/2014_Texas_gubernatorial_election"
-},
-{
-"year": 2018,
-"party": "R",
-"winner": "Abbott",
-"margin": 13.3,
-"url": "https://en.wikipedia.org/wiki/2018_Texas_gubernatorial_election"
-},
-{
-"year": 2022,
-"party": "R",
-"winner": "Abbott",
-"margin": 10.9,
-"url": "https://en.wikipedia.org/wiki/2022_Texas_gubernatorial_election"
-}
-]
-},
-"OH": {
-"pres": [
-{
-"year": 1988,
-"party": "R",
-"winner": "Bush",
-"margin": 10.8,
-"url": "https://en.wikipedia.org/wiki/1988_United_States_presidential_election_in_Ohio"
-},
-{
-"year": 1992,
-"party": "D",
-"winner": "Clinton",
-"margin": 1.8,
-"url": "https://en.wikipedia.org/wiki/1992_United_States_presidential_election_in_Ohio"
-},
-{
-"year": 1996,
-"party": "D",
-"winner": "Clinton",
-"margin": 6.4,
-"url": "https://en.wikipedia.org/wiki/1996_United_States_presidential_election_in_Ohio"
-},
-{
-"year": 2000,
-"party": "R",
-"winner": "Bush",
-"margin": 3.5,
-"url": "https://en.wikipedia.org/wiki/2000_United_States_presidential_election_in_Ohio"
-},
-{
-"year": 2004,
-"party": "R",
-"winner": "Bush",
-"margin": 2.1,
-"url": "https://en.wikipedia.org/wiki/2004_United_States_presidential_election_in_Ohio"
-},
-{
-"year": 2008,
-"party": "D",
-"winner": "Obama",
-"margin": 4.6,
-"url": "https://en.wikipedia.org/wiki/2008_United_States_presidential_election_in_Ohio"
-},
-{
-"year": 2012,
-"party": "D",
-"winner": "Obama",
-"margin": 3.0,
-"url": "https://en.wikipedia.org/wiki/2012_United_States_presidential_election_in_Ohio"
-},
-{
-"year": 2016,
-"party": "R",
-"winner": "Trump",
-"margin": 8.1,
-"url": "https://en.wikipedia.org/wiki/2016_United_States_presidential_election_in_Ohio"
-},
-{
-"year": 2020,
-"party": "R",
-"winner": "Trump",
-"margin": 8.0,
-"url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election_in_Ohio"
-},
-{
-"year": 2024,
-"party": "R",
-"winner": "Trump",
-"margin": 11.3,
-"url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_Ohio"
-}
-],
-"sen": [
-{
-"year": 1986,
-"class": 3,
-"party": "D",
-"winner": "Glenn",
-"margin": 24.9,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1986_United_States_Senate_election_in_Ohio"
-},
-{
-"year": 1988,
-"class": 1,
-"party": "D",
-"winner": "Metzenbaum",
-"margin": 14.7,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1988_United_States_Senate_election_in_Ohio"
-},
-{
-"year": 1992,
-"class": 3,
-"party": "D",
-"winner": "Glenn",
-"margin": 8.7,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1992_United_States_Senate_election_in_Ohio"
-},
-{
-"year": 1994,
-"class": 1,
-"party": "R",
-"winner": "DeWine",
-"margin": 14.2,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1994_United_States_Senate_election_in_Ohio"
-},
-{
-"year": 1998,
-"class": 3,
-"party": "R",
-"winner": "Voinovich",
-"margin": 12.9,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1998_United_States_Senate_election_in_Ohio"
-},
-{
-"year": 2000,
-"class": 1,
-"party": "R",
-"winner": "DeWine",
-"margin": 24.0,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2000_United_States_Senate_election_in_Ohio"
-},
-{
-"year": 2004,
-"class": 3,
-"party": "R",
-"winner": "Voinovich",
-"margin": 27.7,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2004_United_States_Senate_election_in_Ohio"
-},
-{
-"year": 2006,
-"class": 1,
-"party": "D",
-"winner": "Brown",
-"margin": 12.3,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2006_United_States_Senate_election_in_Ohio"
-},
-{
-"year": 2010,
-"class": 3,
-"party": "R",
-"winner": "Portman",
-"margin": 17.4,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2010_United_States_Senate_election_in_Ohio"
-},
-{
-"year": 2012,
-"class": 1,
-"party": "D",
-"winner": "Brown",
-"margin": 6.0,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2012_United_States_Senate_election_in_Ohio"
-},
-{
-"year": 2016,
-"class": 3,
-"party": "R",
-"winner": "Portman",
-"margin": 20.9,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2016_United_States_Senate_election_in_Ohio"
-},
-{
-"year": 2018,
-"class": 1,
-"party": "D",
-"winner": "Brown",
-"margin": 6.8,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2018_United_States_Senate_election_in_Ohio"
-},
-{
-"year": 2022,
-"class": 3,
-"party": "R",
-"winner": "Vance",
-"margin": 6.1,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2022_United_States_Senate_election_in_Ohio"
-},
-{
-"year": 2024,
-"class": 1,
-"party": "R",
-"winner": "Moreno",
-"margin": 3.6,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2024_United_States_Senate_election_in_Ohio"
-}
-],
-"gov": [
-{
-"year": 1986,
-"party": "D",
-"winner": "Celeste",
-"margin": 21.2,
-"url": "https://en.wikipedia.org/wiki/1986_Ohio_gubernatorial_election"
-},
-{
-"year": 1990,
-"party": "R",
-"winner": "Voinovich",
-"margin": 11.5,
-"url": "https://en.wikipedia.org/wiki/1990_Ohio_gubernatorial_election"
-},
-{
-"year": 1994,
-"party": "R",
-"winner": "Voinovich",
-"margin": 46.8,
-"url": "https://en.wikipedia.org/wiki/1994_Ohio_gubernatorial_election"
-},
-{
-"year": 1998,
-"party": "R",
-"winner": "Taft",
-"margin": 5.4,
-"url": "https://en.wikipedia.org/wiki/1998_Ohio_gubernatorial_election"
-},
-{
-"year": 2002,
-"party": "R",
-"winner": "Taft",
-"margin": 19.4,
-"url": "https://en.wikipedia.org/wiki/2002_Ohio_gubernatorial_election"
-},
-{
-"year": 2006,
-"party": "D",
-"winner": "Strickland",
-"margin": 23.9,
-"url": "https://en.wikipedia.org/wiki/2006_Ohio_gubernatorial_election"
-},
-{
-"year": 2010,
-"party": "R",
-"winner": "Kasich",
-"margin": 2.0,
-"url": "https://en.wikipedia.org/wiki/2010_Ohio_gubernatorial_election"
-},
-{
-"year": 2014,
-"party": "R",
-"winner": "Kasich",
-"margin": 30.6,
-"url": "https://en.wikipedia.org/wiki/2014_Ohio_gubernatorial_election"
-},
-{
-"year": 2018,
-"party": "R",
-"winner": "DeWine",
-"margin": 3.7,
-"url": "https://en.wikipedia.org/wiki/2018_Ohio_gubernatorial_election"
-},
-{
-"year": 2022,
-"party": "R",
-"winner": "DeWine",
-"margin": 25.0,
-"url": "https://en.wikipedia.org/wiki/2022_Ohio_gubernatorial_election"
-}
-]
-},
-"AK": {
-"pres": [
-{
-"year": 1988,
-"party": "R",
-"winner": "Bush",
-"margin": 23.3,
-"url": "https://en.wikipedia.org/wiki/1988_United_States_presidential_election_in_Alaska"
-},
-{
-"year": 1992,
-"party": "R",
-"winner": "Bush",
-"margin": 9.2,
-"url": "https://en.wikipedia.org/wiki/1992_United_States_presidential_election_in_Alaska"
-},
-{
-"year": 1996,
-"party": "R",
-"winner": "Dole",
-"margin": 17.5,
-"url": "https://en.wikipedia.org/wiki/1996_United_States_presidential_election_in_Alaska"
-},
-{
-"year": 2000,
-"party": "R",
-"winner": "Bush",
-"margin": 30.9,
-"url": "https://en.wikipedia.org/wiki/2000_United_States_presidential_election_in_Alaska"
-},
-{
-"year": 2004,
-"party": "R",
-"winner": "Bush",
-"margin": 25.6,
-"url": "https://en.wikipedia.org/wiki/2004_United_States_presidential_election_in_Alaska"
-},
-{
-"year": 2008,
-"party": "R",
-"winner": "McCain",
-"margin": 21.5,
-"url": "https://en.wikipedia.org/wiki/2008_United_States_presidential_election_in_Alaska"
-},
-{
-"year": 2012,
-"party": "R",
-"winner": "Romney",
-"margin": 14.0,
-"url": "https://en.wikipedia.org/wiki/2012_United_States_presidential_election_in_Alaska"
-},
-{
-"year": 2016,
-"party": "R",
-"winner": "Trump",
-"margin": 14.7,
-"url": "https://en.wikipedia.org/wiki/2016_United_States_presidential_election_in_Alaska"
-},
-{
-"year": 2020,
-"party": "R",
-"winner": "Trump",
-"margin": 10.1,
-"url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election_in_Alaska"
-},
-{
-"year": 2024,
-"party": "R",
-"winner": "Trump",
-"margin": 13.1,
-"url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_Alaska"
-}
-],
-"sen": [
-{
-"year": 1986,
-"class": 3,
-"party": "R",
-"winner": "Murkowski",
-"margin": 9.9,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1986_United_States_Senate_election_in_Alaska"
-},
-{
-"year": 1990,
-"class": 2,
-"party": "R",
-"winner": "Stevens",
-"margin": 34.0,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1990_United_States_Senate_election_in_Alaska"
-},
-{
-"year": 1992,
-"class": 3,
-"party": "R",
-"winner": "Murkowski",
-"margin": 14.6,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1992_United_States_Senate_election_in_Alaska"
-},
-{
-"year": 1996,
-"class": 2,
-"party": "R",
-"winner": "Stevens",
-"margin": 64.2,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1996_United_States_Senate_election_in_Alaska"
-},
-{
-"year": 1998,
-"class": 3,
-"party": "R",
-"winner": "Murkowski",
-"margin": 54.8,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1998_United_States_Senate_election_in_Alaska"
-},
-{
-"year": 2002,
-"class": 2,
-"party": "R",
-"winner": "Stevens",
-"margin": 67.7,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2002_United_States_Senate_election_in_Alaska"
-},
-{
-"year": 2004,
-"class": 3,
-"party": "R",
-"winner": "Murkowski",
-"margin": 3.0,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2004_United_States_Senate_election_in_Alaska"
-},
-{
-"year": 2008,
-"class": 2,
-"party": "D",
-"winner": "Begich",
-"margin": 1.2,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2008_United_States_Senate_election_in_Alaska"
-},
-{
-"year": 2010,
-"class": 3,
-"party": "R",
-"winner": "Murkowski",
-"margin": 4.0,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2010_United_States_Senate_election_in_Alaska"
-},
-{
-"year": 2014,
-"class": 2,
-"party": "R",
-"winner": "Sullivan",
-"margin": 2.1,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2014_United_States_Senate_election_in_Alaska"
-},
-{
-"year": 2016,
-"class": 3,
-"party": "R",
-"winner": "Murkowski",
-"margin": 15.2,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2016_United_States_Senate_election_in_Alaska"
-},
-{
-"year": 2020,
-"class": 2,
-"party": "R",
-"winner": "Sullivan",
-"margin": 12.7,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_Alaska"
-},
-{
-"year": 2022,
-"class": 3,
-"party": "R",
-"winner": "Murkowski",
-"margin": 7.4,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2022_United_States_Senate_election_in_Alaska"
-}
-],
-"gov": [
-{
-"year": 1986,
-"party": "D",
-"winner": "Cowper",
-"margin": 4.7,
-"url": "https://en.wikipedia.org/wiki/1986_Alaska_gubernatorial_election"
-},
-{
-"year": 1990,
-"party": "I",
-"winner": "Hickel",
-"margin": 8.0,
-"url": "https://en.wikipedia.org/wiki/1990_Alaska_gubernatorial_election"
-},
-{
-"year": 1994,
-"party": "D",
-"winner": "Knowles",
-"margin": 0.2,
-"url": "https://en.wikipedia.org/wiki/1994_Alaska_gubernatorial_election"
-},
-{
-"year": 1998,
-"party": "D",
-"winner": "Knowles",
-"margin": 33.0,
-"url": "https://en.wikipedia.org/wiki/1998_Alaska_gubernatorial_election"
-},
-{
-"year": 2002,
-"party": "R",
-"winner": "Murkowski",
-"margin": 15.2,
-"url": "https://en.wikipedia.org/wiki/2002_Alaska_gubernatorial_election"
-},
-{
-"year": 2006,
-"party": "R",
-"winner": "Palin",
-"margin": 7.4,
-"url": "https://en.wikipedia.org/wiki/2006_Alaska_gubernatorial_election"
-},
-{
-"year": 2010,
-"party": "R",
-"winner": "Parnell",
-"margin": 21.4,
-"url": "https://en.wikipedia.org/wiki/2010_Alaska_gubernatorial_election"
-},
-{
-"year": 2014,
-"party": "I",
-"winner": "Walker",
-"margin": 2.2,
-"url": "https://en.wikipedia.org/wiki/2014_Alaska_gubernatorial_election"
-},
-{
-"year": 2018,
-"party": "R",
-"winner": "Dunleavy",
-"margin": 7.0,
-"url": "https://en.wikipedia.org/wiki/2018_Alaska_gubernatorial_election"
-},
-{
-"year": 2022,
-"party": "R",
-"winner": "Dunleavy",
-"margin": 26.1,
-"url": "https://en.wikipedia.org/wiki/2022_Alaska_gubernatorial_election"
-}
-]
-},
-"IA": {
-"pres": [
-{
-"year": 1988,
-"party": "D",
-"winner": "Dukakis",
-"margin": 10.2,
-"url": "https://en.wikipedia.org/wiki/1988_United_States_presidential_election_in_Iowa"
-},
-{
-"year": 1992,
-"party": "D",
-"winner": "Clinton",
-"margin": 6.0,
-"url": "https://en.wikipedia.org/wiki/1992_United_States_presidential_election_in_Iowa"
-},
-{
-"year": 1996,
-"party": "D",
-"winner": "Clinton",
-"margin": 10.3,
-"url": "https://en.wikipedia.org/wiki/1996_United_States_presidential_election_in_Iowa"
-},
-{
-"year": 2000,
-"party": "D",
-"winner": "Gore",
-"margin": 0.3,
-"url": "https://en.wikipedia.org/wiki/2000_United_States_presidential_election_in_Iowa"
-},
-{
-"year": 2004,
-"party": "R",
-"winner": "Bush",
-"margin": 0.7,
-"url": "https://en.wikipedia.org/wiki/2004_United_States_presidential_election_in_Iowa"
-},
-{
-"year": 2008,
-"party": "D",
-"winner": "Obama",
-"margin": 9.5,
-"url": "https://en.wikipedia.org/wiki/2008_United_States_presidential_election_in_Iowa"
-},
-{
-"year": 2012,
-"party": "D",
-"winner": "Obama",
-"margin": 5.8,
-"url": "https://en.wikipedia.org/wiki/2012_United_States_presidential_election_in_Iowa"
-},
-{
-"year": 2016,
-"party": "R",
-"winner": "Trump",
-"margin": 9.4,
-"url": "https://en.wikipedia.org/wiki/2016_United_States_presidential_election_in_Iowa"
-},
-{
-"year": 2020,
-"party": "R",
-"winner": "Trump",
-"margin": 8.2,
-"url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election_in_Iowa"
-},
-{
-"year": 2024,
-"party": "R",
-"winner": "Trump",
-"margin": 13.2,
-"url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_Iowa"
-}
-],
-"sen": [
-{
-"year": 1986,
-"class": 3,
-"party": "R",
-"winner": "Grassley",
-"margin": 32.5,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1986_United_States_Senate_election_in_Iowa"
-},
-{
-"year": 1990,
-"class": 2,
-"party": "D",
-"winner": "Harkin",
-"margin": 9.1,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1990_United_States_Senate_election_in_Iowa"
-},
-{
-"year": 1992,
-"class": 3,
-"party": "R",
-"winner": "Grassley",
-"margin": 42.8,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1992_United_States_Senate_election_in_Iowa"
-},
-{
-"year": 1996,
-"class": 2,
-"party": "D",
-"winner": "Harkin",
-"margin": 5.1,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1996_United_States_Senate_election_in_Iowa"
-},
-{
-"year": 1998,
-"class": 3,
-"party": "R",
-"winner": "Grassley",
-"margin": 37.9,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/1998_United_States_Senate_election_in_Iowa"
-},
-{
-"year": 2002,
-"class": 2,
-"party": "D",
-"winner": "Harkin",
-"margin": 10.4,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2002_United_States_Senate_election_in_Iowa"
-},
-{
-"year": 2004,
-"class": 3,
-"party": "R",
-"winner": "Grassley",
-"margin": 42.3,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2004_United_States_Senate_election_in_Iowa"
-},
-{
-"year": 2008,
-"class": 2,
-"party": "D",
-"winner": "Harkin",
-"margin": 25.4,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2008_United_States_Senate_election_in_Iowa"
-},
-{
-"year": 2010,
-"class": 3,
-"party": "R",
-"winner": "Grassley",
-"margin": 31.1,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2010_United_States_Senate_election_in_Iowa"
-},
-{
-"year": 2014,
-"class": 2,
-"party": "R",
-"winner": "Ernst",
-"margin": 8.3,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2014_United_States_Senate_election_in_Iowa"
-},
-{
-"year": 2016,
-"class": 3,
-"party": "R",
-"winner": "Grassley",
-"margin": 24.4,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2016_United_States_Senate_election_in_Iowa"
-},
-{
-"year": 2020,
-"class": 2,
-"party": "R",
-"winner": "Ernst",
-"margin": 6.6,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_Iowa"
-},
-{
-"year": 2022,
-"class": 3,
-"party": "R",
-"winner": "Grassley",
-"margin": 12.2,
-"special": false,
-"url": "https://en.wikipedia.org/wiki/2022_United_States_Senate_election_in_Iowa"
-}
-],
-"gov": [
-{
-"year": 1986,
-"party": "R",
-"winner": "Branstad",
-"margin": 3.9,
-"url": "https://en.wikipedia.org/wiki/1986_Iowa_gubernatorial_election"
-},
-{
-"year": 1990,
-"party": "R",
-"winner": "Branstad",
-"margin": 21.8,
-"url": "https://en.wikipedia.org/wiki/1990_Iowa_gubernatorial_election"
-},
-{
-"year": 1994,
-"party": "R",
-"winner": "Branstad",
-"margin": 15.2,
-"url": "https://en.wikipedia.org/wiki/1994_Iowa_gubernatorial_election"
-},
-{
-"year": 1998,
-"party": "D",
-"winner": "Vilsack",
-"margin": 5.8,
-"url": "https://en.wikipedia.org/wiki/1998_Iowa_gubernatorial_election"
-},
-{
-"year": 2002,
-"party": "D",
-"winner": "Vilsack",
-"margin": 8.2,
-"url": "https://en.wikipedia.org/wiki/2002_Iowa_gubernatorial_election"
-},
-{
-"year": 2006,
-"party": "D",
-"winner": "Culver",
-"margin": 9.6,
-"url": "https://en.wikipedia.org/wiki/2006_Iowa_gubernatorial_election"
-},
-{
-"year": 2010,
-"party": "R",
-"winner": "Branstad",
-"margin": 9.6,
-"url": "https://en.wikipedia.org/wiki/2010_Iowa_gubernatorial_election"
-},
-{
-"year": 2014,
-"party": "R",
-"winner": "Branstad",
-"margin": 21.7,
-"url": "https://en.wikipedia.org/wiki/2014_Iowa_gubernatorial_election"
-},
-{
-"year": 2018,
-"party": "R",
-"winner": "Reynolds",
-"margin": 2.7,
-"url": "https://en.wikipedia.org/wiki/2018_Iowa_gubernatorial_election"
-},
-{
-"year": 2022,
-"party": "R",
-"winner": "Reynolds",
-"margin": 18.5,
-"url": "https://en.wikipedia.org/wiki/2022_Iowa_gubernatorial_election"
-}
-]
-}
-}
+ "as_of": "2026-09-30",
+ "source_label": "위키백과 개별 선거 문서 결과표(승자 득표율 − 2위 득표율). 1986~2024, 상원은 두 의석·특별선거 포함, RCV·결선은 최종 라운드.",
+ "provenance_note": "Sonnet 에이전트가 2026-09-30 수집, 승자·정당은 편집자가 알려진 결과와 대조. NC 상원 class는 수집본이 뒤바뀌어 있어 정정(Helms→Dole→Hagan→Tillis = class 2, Sanford→…→Burr→Budd = class 3). 무투표(GA 1990 Nunn)는 margin 100.",
+ "states": {
+  "GA": {
+   "pres": [
+    {
+     "year": 1988,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 20.3,
+     "url": "https://en.wikipedia.org/wiki/1988_United_States_presidential_election_in_Georgia"
+    },
+    {
+     "year": 1992,
+     "party": "D",
+     "winner": "Clinton",
+     "margin": 0.6,
+     "url": "https://en.wikipedia.org/wiki/1992_United_States_presidential_election_in_Georgia"
+    },
+    {
+     "year": 1996,
+     "party": "R",
+     "winner": "Dole",
+     "margin": 1.2,
+     "url": "https://en.wikipedia.org/wiki/1996_United_States_presidential_election_in_Georgia"
+    },
+    {
+     "year": 2000,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 11.7,
+     "url": "https://en.wikipedia.org/wiki/2000_United_States_presidential_election_in_Georgia"
+    },
+    {
+     "year": 2004,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 16.6,
+     "url": "https://en.wikipedia.org/wiki/2004_United_States_presidential_election_in_Georgia"
+    },
+    {
+     "year": 2008,
+     "party": "R",
+     "winner": "McCain",
+     "margin": 5.2,
+     "url": "https://en.wikipedia.org/wiki/2008_United_States_presidential_election_in_Georgia"
+    },
+    {
+     "year": 2012,
+     "party": "R",
+     "winner": "Romney",
+     "margin": 7.8,
+     "url": "https://en.wikipedia.org/wiki/2012_United_States_presidential_election_in_Georgia"
+    },
+    {
+     "year": 2016,
+     "party": "R",
+     "winner": "Trump",
+     "margin": 5.1,
+     "url": "https://en.wikipedia.org/wiki/2016_United_States_presidential_election_in_Georgia"
+    },
+    {
+     "year": 2020,
+     "party": "D",
+     "winner": "Biden",
+     "margin": 0.2,
+     "url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election_in_Georgia"
+    },
+    {
+     "year": 2024,
+     "party": "R",
+     "winner": "Trump",
+     "margin": 2.2,
+     "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_Georgia"
+    }
+   ],
+   "sen": [
+    {
+     "year": 1986,
+     "class": 3,
+     "party": "D",
+     "winner": "Fowler",
+     "margin": 1.8,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1986_United_States_Senate_election_in_Georgia"
+    },
+    {
+     "year": 1990,
+     "class": 2,
+     "party": "D",
+     "winner": "Nunn",
+     "margin": 100.0,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1990_United_States_Senate_election_in_Georgia"
+    },
+    {
+     "year": 1992,
+     "class": 3,
+     "party": "R",
+     "winner": "Coverdell",
+     "margin": 1.3,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1992_United_States_Senate_election_in_Georgia"
+    },
+    {
+     "year": 1996,
+     "class": 2,
+     "party": "D",
+     "winner": "Cleland",
+     "margin": 1.3,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1996_United_States_Senate_election_in_Georgia"
+    },
+    {
+     "year": 1998,
+     "class": 3,
+     "party": "R",
+     "winner": "Coverdell",
+     "margin": 7.2,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1998_United_States_Senate_election_in_Georgia"
+    },
+    {
+     "year": 2000,
+     "class": 3,
+     "party": "D",
+     "winner": "Miller",
+     "margin": 20.3,
+     "special": true,
+     "url": "https://en.wikipedia.org/wiki/2000_United_States_Senate_special_election_in_Georgia"
+    },
+    {
+     "year": 2002,
+     "class": 2,
+     "party": "R",
+     "winner": "Chambliss",
+     "margin": 6.9,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2002_United_States_Senate_election_in_Georgia"
+    },
+    {
+     "year": 2004,
+     "class": 3,
+     "party": "R",
+     "winner": "Isakson",
+     "margin": 17.9,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2004_United_States_Senate_election_in_Georgia"
+    },
+    {
+     "year": 2008,
+     "class": 2,
+     "party": "R",
+     "winner": "Chambliss",
+     "margin": 14.9,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2008_United_States_Senate_election_in_Georgia"
+    },
+    {
+     "year": 2010,
+     "class": 3,
+     "party": "R",
+     "winner": "Isakson",
+     "margin": 19.3,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2010_United_States_Senate_election_in_Georgia"
+    },
+    {
+     "year": 2014,
+     "class": 2,
+     "party": "R",
+     "winner": "Perdue",
+     "margin": 7.7,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2014_United_States_Senate_election_in_Georgia"
+    },
+    {
+     "year": 2016,
+     "class": 3,
+     "party": "R",
+     "winner": "Isakson",
+     "margin": 13.8,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2016_United_States_Senate_election_in_Georgia"
+    },
+    {
+     "year": 2020,
+     "class": 2,
+     "party": "D",
+     "winner": "Ossoff",
+     "margin": 1.2,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_Georgia"
+    },
+    {
+     "year": 2020,
+     "class": 3,
+     "party": "D",
+     "winner": "Warnock",
+     "margin": 2.1,
+     "special": true,
+     "url": "https://en.wikipedia.org/wiki/2020_United_States_Senate_special_election_in_Georgia"
+    },
+    {
+     "year": 2022,
+     "class": 3,
+     "party": "D",
+     "winner": "Warnock",
+     "margin": 2.8,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2022_United_States_Senate_election_in_Georgia"
+    }
+   ],
+   "gov": [
+    {
+     "year": 1986,
+     "party": "D",
+     "winner": "Harris",
+     "margin": 41.0,
+     "url": "https://en.wikipedia.org/wiki/1986_Georgia_gubernatorial_election"
+    },
+    {
+     "year": 1990,
+     "party": "D",
+     "winner": "Miller",
+     "margin": 8.3,
+     "url": "https://en.wikipedia.org/wiki/1990_Georgia_gubernatorial_election"
+    },
+    {
+     "year": 1994,
+     "party": "D",
+     "winner": "Miller",
+     "margin": 2.1,
+     "url": "https://en.wikipedia.org/wiki/1994_Georgia_gubernatorial_election"
+    },
+    {
+     "year": 1998,
+     "party": "D",
+     "winner": "Barnes",
+     "margin": 8.4,
+     "url": "https://en.wikipedia.org/wiki/1998_Georgia_gubernatorial_election"
+    },
+    {
+     "year": 2002,
+     "party": "R",
+     "winner": "Perdue",
+     "margin": 5.2,
+     "url": "https://en.wikipedia.org/wiki/2002_Georgia_gubernatorial_election"
+    },
+    {
+     "year": 2006,
+     "party": "R",
+     "winner": "Perdue",
+     "margin": 19.7,
+     "url": "https://en.wikipedia.org/wiki/2006_Georgia_gubernatorial_election"
+    },
+    {
+     "year": 2010,
+     "party": "R",
+     "winner": "Deal",
+     "margin": 10.1,
+     "url": "https://en.wikipedia.org/wiki/2010_Georgia_gubernatorial_election"
+    },
+    {
+     "year": 2014,
+     "party": "R",
+     "winner": "Deal",
+     "margin": 7.9,
+     "url": "https://en.wikipedia.org/wiki/2014_Georgia_gubernatorial_election"
+    },
+    {
+     "year": 2018,
+     "party": "R",
+     "winner": "Kemp",
+     "margin": 1.4,
+     "url": "https://en.wikipedia.org/wiki/2018_Georgia_gubernatorial_election"
+    },
+    {
+     "year": 2022,
+     "party": "R",
+     "winner": "Kemp",
+     "margin": 7.5,
+     "url": "https://en.wikipedia.org/wiki/2022_Georgia_gubernatorial_election"
+    }
+   ]
+  },
+  "MI": {
+   "pres": [
+    {
+     "year": 1988,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 7.9,
+     "url": "https://en.wikipedia.org/wiki/1988_United_States_presidential_election_in_Michigan"
+    },
+    {
+     "year": 1992,
+     "party": "D",
+     "winner": "Clinton",
+     "margin": 7.4,
+     "url": "https://en.wikipedia.org/wiki/1992_United_States_presidential_election_in_Michigan"
+    },
+    {
+     "year": 1996,
+     "party": "D",
+     "winner": "Clinton",
+     "margin": 13.2,
+     "url": "https://en.wikipedia.org/wiki/1996_United_States_presidential_election_in_Michigan"
+    },
+    {
+     "year": 2000,
+     "party": "D",
+     "winner": "Gore",
+     "margin": 5.1,
+     "url": "https://en.wikipedia.org/wiki/2000_United_States_presidential_election_in_Michigan"
+    },
+    {
+     "year": 2004,
+     "party": "D",
+     "winner": "Kerry",
+     "margin": 3.4,
+     "url": "https://en.wikipedia.org/wiki/2004_United_States_presidential_election_in_Michigan"
+    },
+    {
+     "year": 2008,
+     "party": "D",
+     "winner": "Obama",
+     "margin": 16.4,
+     "url": "https://en.wikipedia.org/wiki/2008_United_States_presidential_election_in_Michigan"
+    },
+    {
+     "year": 2012,
+     "party": "D",
+     "winner": "Obama",
+     "margin": 9.5,
+     "url": "https://en.wikipedia.org/wiki/2012_United_States_presidential_election_in_Michigan"
+    },
+    {
+     "year": 2016,
+     "party": "R",
+     "winner": "Trump",
+     "margin": 0.2,
+     "url": "https://en.wikipedia.org/wiki/2016_United_States_presidential_election_in_Michigan"
+    },
+    {
+     "year": 2020,
+     "party": "D",
+     "winner": "Biden",
+     "margin": 2.8,
+     "url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election_in_Michigan"
+    },
+    {
+     "year": 2024,
+     "party": "R",
+     "winner": "Trump",
+     "margin": 1.4,
+     "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_Michigan"
+    }
+   ],
+   "sen": [
+    {
+     "year": 1988,
+     "class": 1,
+     "party": "D",
+     "winner": "Riegle",
+     "margin": 21.9,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1988_United_States_Senate_election_in_Michigan"
+    },
+    {
+     "year": 1990,
+     "class": 2,
+     "party": "D",
+     "winner": "Levin",
+     "margin": 16.2,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1990_United_States_Senate_election_in_Michigan"
+    },
+    {
+     "year": 1994,
+     "class": 1,
+     "party": "R",
+     "winner": "Abraham",
+     "margin": 9.1,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1994_United_States_Senate_election_in_Michigan"
+    },
+    {
+     "year": 1996,
+     "class": 2,
+     "party": "D",
+     "winner": "Levin",
+     "margin": 18.5,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1996_United_States_Senate_election_in_Michigan"
+    },
+    {
+     "year": 2000,
+     "class": 1,
+     "party": "D",
+     "winner": "Stabenow",
+     "margin": 1.6,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2000_United_States_Senate_election_in_Michigan"
+    },
+    {
+     "year": 2002,
+     "class": 2,
+     "party": "D",
+     "winner": "Levin",
+     "margin": 22.7,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2002_United_States_Senate_election_in_Michigan"
+    },
+    {
+     "year": 2006,
+     "class": 1,
+     "party": "D",
+     "winner": "Stabenow",
+     "margin": 15.7,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2006_United_States_Senate_election_in_Michigan"
+    },
+    {
+     "year": 2008,
+     "class": 2,
+     "party": "D",
+     "winner": "Levin",
+     "margin": 28.8,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2008_United_States_Senate_election_in_Michigan"
+    },
+    {
+     "year": 2012,
+     "class": 1,
+     "party": "D",
+     "winner": "Stabenow",
+     "margin": 20.8,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2012_United_States_Senate_election_in_Michigan"
+    },
+    {
+     "year": 2014,
+     "class": 2,
+     "party": "D",
+     "winner": "Peters",
+     "margin": 13.3,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2014_United_States_Senate_election_in_Michigan"
+    },
+    {
+     "year": 2018,
+     "class": 1,
+     "party": "D",
+     "winner": "Stabenow",
+     "margin": 6.5,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2018_United_States_Senate_election_in_Michigan"
+    },
+    {
+     "year": 2020,
+     "class": 2,
+     "party": "D",
+     "winner": "Peters",
+     "margin": 1.7,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_Michigan"
+    },
+    {
+     "year": 2024,
+     "class": 1,
+     "party": "D",
+     "winner": "Slotkin",
+     "margin": 0.3,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2024_United_States_Senate_election_in_Michigan"
+    }
+   ],
+   "gov": [
+    {
+     "year": 1986,
+     "party": "D",
+     "winner": "Blanchard",
+     "margin": 36.7,
+     "url": "https://en.wikipedia.org/wiki/1986_Michigan_gubernatorial_election"
+    },
+    {
+     "year": 1990,
+     "party": "R",
+     "winner": "Engler",
+     "margin": 0.7,
+     "url": "https://en.wikipedia.org/wiki/1990_Michigan_gubernatorial_election"
+    },
+    {
+     "year": 1994,
+     "party": "R",
+     "winner": "Engler",
+     "margin": 23.0,
+     "url": "https://en.wikipedia.org/wiki/1994_Michigan_gubernatorial_election"
+    },
+    {
+     "year": 1998,
+     "party": "R",
+     "winner": "Engler",
+     "margin": 24.4,
+     "url": "https://en.wikipedia.org/wiki/1998_Michigan_gubernatorial_election"
+    },
+    {
+     "year": 2002,
+     "party": "D",
+     "winner": "Granholm",
+     "margin": 4.0,
+     "url": "https://en.wikipedia.org/wiki/2002_Michigan_gubernatorial_election"
+    },
+    {
+     "year": 2006,
+     "party": "D",
+     "winner": "Granholm",
+     "margin": 14.1,
+     "url": "https://en.wikipedia.org/wiki/2006_Michigan_gubernatorial_election"
+    },
+    {
+     "year": 2010,
+     "party": "R",
+     "winner": "Snyder",
+     "margin": 18.2,
+     "url": "https://en.wikipedia.org/wiki/2010_Michigan_gubernatorial_election"
+    },
+    {
+     "year": 2014,
+     "party": "R",
+     "winner": "Snyder",
+     "margin": 4.1,
+     "url": "https://en.wikipedia.org/wiki/2014_Michigan_gubernatorial_election"
+    },
+    {
+     "year": 2018,
+     "party": "D",
+     "winner": "Whitmer",
+     "margin": 9.6,
+     "url": "https://en.wikipedia.org/wiki/2018_Michigan_gubernatorial_election"
+    },
+    {
+     "year": 2022,
+     "party": "D",
+     "winner": "Whitmer",
+     "margin": 10.5,
+     "url": "https://en.wikipedia.org/wiki/2022_Michigan_gubernatorial_election"
+    }
+   ]
+  },
+  "NH": {
+   "pres": [
+    {
+     "year": 1988,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 26.2,
+     "url": "https://en.wikipedia.org/wiki/1988_United_States_presidential_election_in_New_Hampshire"
+    },
+    {
+     "year": 1992,
+     "party": "D",
+     "winner": "Clinton",
+     "margin": 1.2,
+     "url": "https://en.wikipedia.org/wiki/1992_United_States_presidential_election_in_New_Hampshire"
+    },
+    {
+     "year": 1996,
+     "party": "D",
+     "winner": "Clinton",
+     "margin": 10.0,
+     "url": "https://en.wikipedia.org/wiki/1996_United_States_presidential_election_in_New_Hampshire"
+    },
+    {
+     "year": 2000,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 1.3,
+     "url": "https://en.wikipedia.org/wiki/2000_United_States_presidential_election_in_New_Hampshire"
+    },
+    {
+     "year": 2004,
+     "party": "D",
+     "winner": "Kerry",
+     "margin": 1.4,
+     "url": "https://en.wikipedia.org/wiki/2004_United_States_presidential_election_in_New_Hampshire"
+    },
+    {
+     "year": 2008,
+     "party": "D",
+     "winner": "Obama",
+     "margin": 9.6,
+     "url": "https://en.wikipedia.org/wiki/2008_United_States_presidential_election_in_New_Hampshire"
+    },
+    {
+     "year": 2012,
+     "party": "D",
+     "winner": "Obama",
+     "margin": 5.6,
+     "url": "https://en.wikipedia.org/wiki/2012_United_States_presidential_election_in_New_Hampshire"
+    },
+    {
+     "year": 2016,
+     "party": "D",
+     "winner": "Clinton",
+     "margin": 0.4,
+     "url": "https://en.wikipedia.org/wiki/2016_United_States_presidential_election_in_New_Hampshire"
+    },
+    {
+     "year": 2020,
+     "party": "D",
+     "winner": "Biden",
+     "margin": 7.4,
+     "url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election_in_New_Hampshire"
+    },
+    {
+     "year": 2024,
+     "party": "D",
+     "winner": "Harris",
+     "margin": 2.8,
+     "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_New_Hampshire"
+    }
+   ],
+   "sen": [
+    {
+     "year": 1986,
+     "class": 3,
+     "party": "R",
+     "winner": "Rudman",
+     "margin": 30.6,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1986_United_States_Senate_election_in_New_Hampshire"
+    },
+    {
+     "year": 1990,
+     "class": 2,
+     "party": "R",
+     "winner": "Smith",
+     "margin": 33.8,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1990_United_States_Senate_election_in_New_Hampshire"
+    },
+    {
+     "year": 1992,
+     "class": 3,
+     "party": "R",
+     "winner": "Gregg",
+     "margin": 2.8,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1992_United_States_Senate_election_in_New_Hampshire"
+    },
+    {
+     "year": 1996,
+     "class": 2,
+     "party": "R",
+     "winner": "Smith",
+     "margin": 3.0,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1996_United_States_Senate_election_in_New_Hampshire"
+    },
+    {
+     "year": 1998,
+     "class": 3,
+     "party": "R",
+     "winner": "Gregg",
+     "margin": 39.6,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1998_United_States_Senate_election_in_New_Hampshire"
+    },
+    {
+     "year": 2002,
+     "class": 2,
+     "party": "R",
+     "winner": "Sununu",
+     "margin": 4.5,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2002_United_States_Senate_election_in_New_Hampshire"
+    },
+    {
+     "year": 2004,
+     "class": 3,
+     "party": "R",
+     "winner": "Gregg",
+     "margin": 32.5,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2004_United_States_Senate_election_in_New_Hampshire"
+    },
+    {
+     "year": 2008,
+     "class": 2,
+     "party": "D",
+     "winner": "Shaheen",
+     "margin": 6.3,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2008_United_States_Senate_election_in_New_Hampshire"
+    },
+    {
+     "year": 2010,
+     "class": 3,
+     "party": "R",
+     "winner": "Ayotte",
+     "margin": 23.2,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2010_United_States_Senate_election_in_New_Hampshire"
+    },
+    {
+     "year": 2014,
+     "class": 2,
+     "party": "D",
+     "winner": "Shaheen",
+     "margin": 3.3,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2014_United_States_Senate_election_in_New_Hampshire"
+    },
+    {
+     "year": 2016,
+     "class": 3,
+     "party": "D",
+     "winner": "Hassan",
+     "margin": 0.1,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2016_United_States_Senate_election_in_New_Hampshire"
+    },
+    {
+     "year": 2020,
+     "class": 2,
+     "party": "D",
+     "winner": "Shaheen",
+     "margin": 15.6,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_New_Hampshire"
+    },
+    {
+     "year": 2022,
+     "class": 3,
+     "party": "D",
+     "winner": "Hassan",
+     "margin": 9.2,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2022_United_States_Senate_election_in_New_Hampshire"
+    }
+   ],
+   "gov": [
+    {
+     "year": 1986,
+     "party": "R",
+     "winner": "Sununu",
+     "margin": 7.4,
+     "url": "https://en.wikipedia.org/wiki/1986_New_Hampshire_gubernatorial_election"
+    },
+    {
+     "year": 1988,
+     "party": "R",
+     "winner": "Gregg",
+     "margin": 21.4,
+     "url": "https://en.wikipedia.org/wiki/1988_New_Hampshire_gubernatorial_election"
+    },
+    {
+     "year": 1990,
+     "party": "R",
+     "winner": "Gregg",
+     "margin": 25.7,
+     "url": "https://en.wikipedia.org/wiki/1990_New_Hampshire_gubernatorial_election"
+    },
+    {
+     "year": 1992,
+     "party": "R",
+     "winner": "Merrill",
+     "margin": 16.1,
+     "url": "https://en.wikipedia.org/wiki/1992_New_Hampshire_gubernatorial_election"
+    },
+    {
+     "year": 1994,
+     "party": "R",
+     "winner": "Merrill",
+     "margin": 44.4,
+     "url": "https://en.wikipedia.org/wiki/1994_New_Hampshire_gubernatorial_election"
+    },
+    {
+     "year": 1996,
+     "party": "D",
+     "winner": "Shaheen",
+     "margin": 17.7,
+     "url": "https://en.wikipedia.org/wiki/1996_New_Hampshire_gubernatorial_election"
+    },
+    {
+     "year": 1998,
+     "party": "D",
+     "winner": "Shaheen",
+     "margin": 35.2,
+     "url": "https://en.wikipedia.org/wiki/1998_New_Hampshire_gubernatorial_election"
+    },
+    {
+     "year": 2000,
+     "party": "D",
+     "winner": "Shaheen",
+     "margin": 5.0,
+     "url": "https://en.wikipedia.org/wiki/2000_New_Hampshire_gubernatorial_election"
+    },
+    {
+     "year": 2002,
+     "party": "R",
+     "winner": "Benson",
+     "margin": 20.4,
+     "url": "https://en.wikipedia.org/wiki/2002_New_Hampshire_gubernatorial_election"
+    },
+    {
+     "year": 2004,
+     "party": "D",
+     "winner": "Lynch",
+     "margin": 2.2,
+     "url": "https://en.wikipedia.org/wiki/2004_New_Hampshire_gubernatorial_election"
+    },
+    {
+     "year": 2006,
+     "party": "D",
+     "winner": "Lynch",
+     "margin": 48.2,
+     "url": "https://en.wikipedia.org/wiki/2006_New_Hampshire_gubernatorial_election"
+    },
+    {
+     "year": 2008,
+     "party": "D",
+     "winner": "Lynch",
+     "margin": 42.5,
+     "url": "https://en.wikipedia.org/wiki/2008_New_Hampshire_gubernatorial_election"
+    },
+    {
+     "year": 2010,
+     "party": "D",
+     "winner": "Lynch",
+     "margin": 7.6,
+     "url": "https://en.wikipedia.org/wiki/2010_New_Hampshire_gubernatorial_election"
+    },
+    {
+     "year": 2012,
+     "party": "D",
+     "winner": "Hassan",
+     "margin": 12.1,
+     "url": "https://en.wikipedia.org/wiki/2012_New_Hampshire_gubernatorial_election"
+    },
+    {
+     "year": 2014,
+     "party": "D",
+     "winner": "Hassan",
+     "margin": 4.9,
+     "url": "https://en.wikipedia.org/wiki/2014_New_Hampshire_gubernatorial_election"
+    },
+    {
+     "year": 2016,
+     "party": "R",
+     "winner": "Sununu",
+     "margin": 2.3,
+     "url": "https://en.wikipedia.org/wiki/2016_New_Hampshire_gubernatorial_election"
+    },
+    {
+     "year": 2018,
+     "party": "R",
+     "winner": "Sununu",
+     "margin": 7.0,
+     "url": "https://en.wikipedia.org/wiki/2018_New_Hampshire_gubernatorial_election"
+    },
+    {
+     "year": 2020,
+     "party": "R",
+     "winner": "Sununu",
+     "margin": 31.8,
+     "url": "https://en.wikipedia.org/wiki/2020_New_Hampshire_gubernatorial_election"
+    },
+    {
+     "year": 2022,
+     "party": "R",
+     "winner": "Sununu",
+     "margin": 15.5,
+     "url": "https://en.wikipedia.org/wiki/2022_New_Hampshire_gubernatorial_election"
+    },
+    {
+     "year": 2024,
+     "party": "R",
+     "winner": "Ayotte",
+     "margin": 9.3,
+     "url": "https://en.wikipedia.org/wiki/2024_New_Hampshire_gubernatorial_election"
+    }
+   ]
+  },
+  "ME": {
+   "pres": [
+    {
+     "year": 1988,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 11.5,
+     "url": "https://en.wikipedia.org/wiki/1988_United_States_presidential_election_in_Maine"
+    },
+    {
+     "year": 1992,
+     "party": "D",
+     "winner": "Clinton",
+     "margin": 8.3,
+     "url": "https://en.wikipedia.org/wiki/1992_United_States_presidential_election_in_Maine"
+    },
+    {
+     "year": 1996,
+     "party": "D",
+     "winner": "Clinton",
+     "margin": 20.9,
+     "url": "https://en.wikipedia.org/wiki/1996_United_States_presidential_election_in_Maine"
+    },
+    {
+     "year": 2000,
+     "party": "D",
+     "winner": "Gore",
+     "margin": 5.1,
+     "url": "https://en.wikipedia.org/wiki/2000_United_States_presidential_election_in_Maine"
+    },
+    {
+     "year": 2004,
+     "party": "D",
+     "winner": "Kerry",
+     "margin": 9.0,
+     "url": "https://en.wikipedia.org/wiki/2004_United_States_presidential_election_in_Maine"
+    },
+    {
+     "year": 2008,
+     "party": "D",
+     "winner": "Obama",
+     "margin": 17.3,
+     "url": "https://en.wikipedia.org/wiki/2008_United_States_presidential_election_in_Maine"
+    },
+    {
+     "year": 2012,
+     "party": "D",
+     "winner": "Obama",
+     "margin": 15.3,
+     "url": "https://en.wikipedia.org/wiki/2012_United_States_presidential_election_in_Maine"
+    },
+    {
+     "year": 2016,
+     "party": "D",
+     "winner": "Clinton",
+     "margin": 3.0,
+     "url": "https://en.wikipedia.org/wiki/2016_United_States_presidential_election_in_Maine"
+    },
+    {
+     "year": 2020,
+     "party": "D",
+     "winner": "Biden",
+     "margin": 9.1,
+     "url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election_in_Maine"
+    },
+    {
+     "year": 2024,
+     "party": "D",
+     "winner": "Harris",
+     "margin": 6.9,
+     "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_Maine"
+    }
+   ],
+   "sen": [
+    {
+     "year": 1988,
+     "class": 1,
+     "party": "D",
+     "winner": "Mitchell",
+     "margin": 62.6,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1988_United_States_Senate_election_in_Maine"
+    },
+    {
+     "year": 1990,
+     "class": 2,
+     "party": "R",
+     "winner": "Cohen",
+     "margin": 22.7,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1990_United_States_Senate_election_in_Maine"
+    },
+    {
+     "year": 1994,
+     "class": 1,
+     "party": "R",
+     "winner": "Snowe",
+     "margin": 23.9,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1994_United_States_Senate_election_in_Maine"
+    },
+    {
+     "year": 1996,
+     "class": 2,
+     "party": "R",
+     "winner": "Collins",
+     "margin": 5.3,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1996_United_States_Senate_election_in_Maine"
+    },
+    {
+     "year": 2000,
+     "class": 1,
+     "party": "R",
+     "winner": "Snowe",
+     "margin": 37.9,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2000_United_States_Senate_election_in_Maine"
+    },
+    {
+     "year": 2002,
+     "class": 2,
+     "party": "R",
+     "winner": "Collins",
+     "margin": 16.9,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2002_United_States_Senate_election_in_Maine"
+    },
+    {
+     "year": 2006,
+     "class": 1,
+     "party": "R",
+     "winner": "Snowe",
+     "margin": 53.4,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2006_United_States_Senate_election_in_Maine"
+    },
+    {
+     "year": 2008,
+     "class": 2,
+     "party": "R",
+     "winner": "Collins",
+     "margin": 22.8,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2008_United_States_Senate_election_in_Maine"
+    },
+    {
+     "year": 2012,
+     "class": 1,
+     "party": "I",
+     "winner": "King",
+     "margin": 22.1,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2012_United_States_Senate_election_in_Maine"
+    },
+    {
+     "year": 2014,
+     "class": 2,
+     "party": "R",
+     "winner": "Collins",
+     "margin": 37.0,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2014_United_States_Senate_election_in_Maine"
+    },
+    {
+     "year": 2018,
+     "class": 1,
+     "party": "I",
+     "winner": "King",
+     "margin": 19.1,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2018_United_States_Senate_election_in_Maine"
+    },
+    {
+     "year": 2020,
+     "class": 2,
+     "party": "R",
+     "winner": "Collins",
+     "margin": 8.6,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_Maine"
+    },
+    {
+     "year": 2024,
+     "class": 1,
+     "party": "I",
+     "winner": "King",
+     "margin": 17.4,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2024_United_States_Senate_election_in_Maine"
+    }
+   ],
+   "gov": [
+    {
+     "year": 1986,
+     "party": "R",
+     "winner": "McKernan",
+     "margin": 9.7,
+     "url": "https://en.wikipedia.org/wiki/1986_Maine_gubernatorial_election"
+    },
+    {
+     "year": 1990,
+     "party": "R",
+     "winner": "McKernan",
+     "margin": 2.6,
+     "url": "https://en.wikipedia.org/wiki/1990_Maine_gubernatorial_election"
+    },
+    {
+     "year": 1994,
+     "party": "I",
+     "winner": "King",
+     "margin": 1.5,
+     "url": "https://en.wikipedia.org/wiki/1994_Maine_gubernatorial_election"
+    },
+    {
+     "year": 1998,
+     "party": "I",
+     "winner": "King",
+     "margin": 39.7,
+     "url": "https://en.wikipedia.org/wiki/1998_Maine_gubernatorial_election"
+    },
+    {
+     "year": 2002,
+     "party": "D",
+     "winner": "Baldacci",
+     "margin": 5.7,
+     "url": "https://en.wikipedia.org/wiki/2002_Maine_gubernatorial_election"
+    },
+    {
+     "year": 2006,
+     "party": "D",
+     "winner": "Baldacci",
+     "margin": 7.9,
+     "url": "https://en.wikipedia.org/wiki/2006_Maine_gubernatorial_election"
+    },
+    {
+     "year": 2010,
+     "party": "R",
+     "winner": "LePage",
+     "margin": 1.7,
+     "url": "https://en.wikipedia.org/wiki/2010_Maine_gubernatorial_election"
+    },
+    {
+     "year": 2014,
+     "party": "R",
+     "winner": "LePage",
+     "margin": 4.8,
+     "url": "https://en.wikipedia.org/wiki/2014_Maine_gubernatorial_election"
+    },
+    {
+     "year": 2018,
+     "party": "D",
+     "winner": "Mills",
+     "margin": 7.7,
+     "url": "https://en.wikipedia.org/wiki/2018_Maine_gubernatorial_election"
+    },
+    {
+     "year": 2022,
+     "party": "D",
+     "winner": "Mills",
+     "margin": 13.2,
+     "url": "https://en.wikipedia.org/wiki/2022_Maine_gubernatorial_election"
+    }
+   ]
+  },
+  "NC": {
+   "pres": [
+    {
+     "year": 1988,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 16.3,
+     "url": "https://en.wikipedia.org/wiki/1988_United_States_presidential_election_in_North_Carolina"
+    },
+    {
+     "year": 1992,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 0.8,
+     "url": "https://en.wikipedia.org/wiki/1992_United_States_presidential_election_in_North_Carolina"
+    },
+    {
+     "year": 1996,
+     "party": "R",
+     "winner": "Dole",
+     "margin": 4.7,
+     "url": "https://en.wikipedia.org/wiki/1996_United_States_presidential_election_in_North_Carolina"
+    },
+    {
+     "year": 2000,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 12.8,
+     "url": "https://en.wikipedia.org/wiki/2000_United_States_presidential_election_in_North_Carolina"
+    },
+    {
+     "year": 2004,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 12.4,
+     "url": "https://en.wikipedia.org/wiki/2004_United_States_presidential_election_in_North_Carolina"
+    },
+    {
+     "year": 2008,
+     "party": "D",
+     "winner": "Obama",
+     "margin": 0.3,
+     "url": "https://en.wikipedia.org/wiki/2008_United_States_presidential_election_in_North_Carolina"
+    },
+    {
+     "year": 2012,
+     "party": "R",
+     "winner": "Romney",
+     "margin": 2.0,
+     "url": "https://en.wikipedia.org/wiki/2012_United_States_presidential_election_in_North_Carolina"
+    },
+    {
+     "year": 2016,
+     "party": "R",
+     "winner": "Trump",
+     "margin": 3.7,
+     "url": "https://en.wikipedia.org/wiki/2016_United_States_presidential_election_in_North_Carolina"
+    },
+    {
+     "year": 2020,
+     "party": "R",
+     "winner": "Trump",
+     "margin": 1.3,
+     "url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election_in_North_Carolina"
+    },
+    {
+     "year": 2024,
+     "party": "R",
+     "winner": "Trump",
+     "margin": 3.2,
+     "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_North_Carolina"
+    }
+   ],
+   "sen": [
+    {
+     "year": 1986,
+     "class": 3,
+     "party": "D",
+     "winner": "Sanford",
+     "margin": 1.8,
+     "special": true,
+     "url": "https://en.wikipedia.org/wiki/1986_United_States_Senate_election_in_North_Carolina"
+    },
+    {
+     "year": 1990,
+     "class": 2,
+     "party": "R",
+     "winner": "Helms",
+     "margin": 5.2,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1990_United_States_Senate_election_in_North_Carolina"
+    },
+    {
+     "year": 1992,
+     "class": 3,
+     "party": "R",
+     "winner": "Faircloth",
+     "margin": 4.0,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1992_United_States_Senate_election_in_North_Carolina"
+    },
+    {
+     "year": 1996,
+     "class": 2,
+     "party": "R",
+     "winner": "Helms",
+     "margin": 6.7,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1996_United_States_Senate_election_in_North_Carolina"
+    },
+    {
+     "year": 1998,
+     "class": 3,
+     "party": "D",
+     "winner": "Edwards",
+     "margin": 4.1,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1998_United_States_Senate_election_in_North_Carolina"
+    },
+    {
+     "year": 2002,
+     "class": 2,
+     "party": "R",
+     "winner": "Dole",
+     "margin": 8.6,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2002_United_States_Senate_election_in_North_Carolina"
+    },
+    {
+     "year": 2004,
+     "class": 3,
+     "party": "R",
+     "winner": "Burr",
+     "margin": 4.6,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2004_United_States_Senate_election_in_North_Carolina"
+    },
+    {
+     "year": 2008,
+     "class": 2,
+     "party": "D",
+     "winner": "Hagan",
+     "margin": 8.5,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2008_United_States_Senate_election_in_North_Carolina"
+    },
+    {
+     "year": 2010,
+     "class": 3,
+     "party": "R",
+     "winner": "Burr",
+     "margin": 11.8,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2010_United_States_Senate_election_in_North_Carolina"
+    },
+    {
+     "year": 2014,
+     "class": 2,
+     "party": "R",
+     "winner": "Tillis",
+     "margin": 1.6,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2014_United_States_Senate_election_in_North_Carolina"
+    },
+    {
+     "year": 2016,
+     "class": 3,
+     "party": "R",
+     "winner": "Burr",
+     "margin": 5.7,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2016_United_States_Senate_election_in_North_Carolina"
+    },
+    {
+     "year": 2020,
+     "class": 2,
+     "party": "R",
+     "winner": "Tillis",
+     "margin": 1.8,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_North_Carolina"
+    },
+    {
+     "year": 2022,
+     "class": 3,
+     "party": "R",
+     "winner": "Budd",
+     "margin": 3.2,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2022_United_States_Senate_election_in_North_Carolina"
+    }
+   ],
+   "gov": [
+    {
+     "year": 1988,
+     "party": "R",
+     "winner": "Martin",
+     "margin": 10.1,
+     "url": "https://en.wikipedia.org/wiki/1988_North_Carolina_gubernatorial_election"
+    },
+    {
+     "year": 1992,
+     "party": "D",
+     "winner": "Hunt",
+     "margin": 9.5,
+     "url": "https://en.wikipedia.org/wiki/1992_North_Carolina_gubernatorial_election"
+    },
+    {
+     "year": 1996,
+     "party": "D",
+     "winner": "Hunt",
+     "margin": 13.2,
+     "url": "https://en.wikipedia.org/wiki/1996_North_Carolina_gubernatorial_election"
+    },
+    {
+     "year": 2000,
+     "party": "D",
+     "winner": "Easley",
+     "margin": 5.8,
+     "url": "https://en.wikipedia.org/wiki/2000_North_Carolina_gubernatorial_election"
+    },
+    {
+     "year": 2004,
+     "party": "D",
+     "winner": "Easley",
+     "margin": 12.7,
+     "url": "https://en.wikipedia.org/wiki/2004_North_Carolina_gubernatorial_election"
+    },
+    {
+     "year": 2008,
+     "party": "D",
+     "winner": "Perdue",
+     "margin": 3.4,
+     "url": "https://en.wikipedia.org/wiki/2008_North_Carolina_gubernatorial_election"
+    },
+    {
+     "year": 2012,
+     "party": "R",
+     "winner": "McCrory",
+     "margin": 11.4,
+     "url": "https://en.wikipedia.org/wiki/2012_North_Carolina_gubernatorial_election"
+    },
+    {
+     "year": 2016,
+     "party": "D",
+     "winner": "Cooper",
+     "margin": 0.2,
+     "url": "https://en.wikipedia.org/wiki/2016_North_Carolina_gubernatorial_election"
+    },
+    {
+     "year": 2020,
+     "party": "D",
+     "winner": "Cooper",
+     "margin": 4.5,
+     "url": "https://en.wikipedia.org/wiki/2020_North_Carolina_gubernatorial_election"
+    },
+    {
+     "year": 2024,
+     "party": "D",
+     "winner": "Stein",
+     "margin": 14.8,
+     "url": "https://en.wikipedia.org/wiki/2024_North_Carolina_gubernatorial_election"
+    }
+   ]
+  },
+  "TX": {
+   "pres": [
+    {
+     "year": 1988,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 12.6,
+     "url": "https://en.wikipedia.org/wiki/1988_United_States_presidential_election_in_Texas"
+    },
+    {
+     "year": 1992,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 3.5,
+     "url": "https://en.wikipedia.org/wiki/1992_United_States_presidential_election_in_Texas"
+    },
+    {
+     "year": 1996,
+     "party": "R",
+     "winner": "Dole",
+     "margin": 4.9,
+     "url": "https://en.wikipedia.org/wiki/1996_United_States_presidential_election_in_Texas"
+    },
+    {
+     "year": 2000,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 21.3,
+     "url": "https://en.wikipedia.org/wiki/2000_United_States_presidential_election_in_Texas"
+    },
+    {
+     "year": 2004,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 22.9,
+     "url": "https://en.wikipedia.org/wiki/2004_United_States_presidential_election_in_Texas"
+    },
+    {
+     "year": 2008,
+     "party": "R",
+     "winner": "McCain",
+     "margin": 11.8,
+     "url": "https://en.wikipedia.org/wiki/2008_United_States_presidential_election_in_Texas"
+    },
+    {
+     "year": 2012,
+     "party": "R",
+     "winner": "Romney",
+     "margin": 15.8,
+     "url": "https://en.wikipedia.org/wiki/2012_United_States_presidential_election_in_Texas"
+    },
+    {
+     "year": 2016,
+     "party": "R",
+     "winner": "Trump",
+     "margin": 9.0,
+     "url": "https://en.wikipedia.org/wiki/2016_United_States_presidential_election_in_Texas"
+    },
+    {
+     "year": 2020,
+     "party": "R",
+     "winner": "Trump",
+     "margin": 5.6,
+     "url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election_in_Texas"
+    },
+    {
+     "year": 2024,
+     "party": "R",
+     "winner": "Trump",
+     "margin": 13.7,
+     "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_Texas"
+    }
+   ],
+   "sen": [
+    {
+     "year": 1988,
+     "class": 1,
+     "party": "D",
+     "winner": "Bentsen",
+     "margin": 19.2,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1988_United_States_Senate_election_in_Texas"
+    },
+    {
+     "year": 1990,
+     "class": 2,
+     "party": "R",
+     "winner": "Gramm",
+     "margin": 22.8,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1990_United_States_Senate_election_in_Texas"
+    },
+    {
+     "year": 1993,
+     "class": 1,
+     "party": "R",
+     "winner": "Hutchison",
+     "margin": 34.7,
+     "special": true,
+     "url": "https://en.wikipedia.org/wiki/1993_United_States_Senate_special_election_in_Texas"
+    },
+    {
+     "year": 1994,
+     "class": 1,
+     "party": "R",
+     "winner": "Hutchison",
+     "margin": 23.5,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1994_United_States_Senate_election_in_Texas"
+    },
+    {
+     "year": 1996,
+     "class": 2,
+     "party": "R",
+     "winner": "Gramm",
+     "margin": 10.8,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1996_United_States_Senate_election_in_Texas"
+    },
+    {
+     "year": 2000,
+     "class": 1,
+     "party": "R",
+     "winner": "Hutchison",
+     "margin": 32.8,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2000_United_States_Senate_election_in_Texas"
+    },
+    {
+     "year": 2002,
+     "class": 2,
+     "party": "R",
+     "winner": "Cornyn",
+     "margin": 12.0,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2002_United_States_Senate_election_in_Texas"
+    },
+    {
+     "year": 2006,
+     "class": 1,
+     "party": "R",
+     "winner": "Hutchison",
+     "margin": 25.7,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2006_United_States_Senate_election_in_Texas"
+    },
+    {
+     "year": 2008,
+     "class": 2,
+     "party": "R",
+     "winner": "Cornyn",
+     "margin": 12.0,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2008_United_States_Senate_election_in_Texas"
+    },
+    {
+     "year": 2012,
+     "class": 1,
+     "party": "R",
+     "winner": "Cruz",
+     "margin": 15.8,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2012_United_States_Senate_election_in_Texas"
+    },
+    {
+     "year": 2014,
+     "class": 2,
+     "party": "R",
+     "winner": "Cornyn",
+     "margin": 27.2,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2014_United_States_Senate_election_in_Texas"
+    },
+    {
+     "year": 2018,
+     "class": 1,
+     "party": "R",
+     "winner": "Cruz",
+     "margin": 2.6,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2018_United_States_Senate_election_in_Texas"
+    },
+    {
+     "year": 2020,
+     "class": 2,
+     "party": "R",
+     "winner": "Cornyn",
+     "margin": 9.6,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_Texas"
+    },
+    {
+     "year": 2024,
+     "class": 1,
+     "party": "R",
+     "winner": "Cruz",
+     "margin": 8.5,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2024_United_States_Senate_election_in_Texas"
+    }
+   ],
+   "gov": [
+    {
+     "year": 1986,
+     "party": "R",
+     "winner": "Clements",
+     "margin": 6.7,
+     "url": "https://en.wikipedia.org/wiki/1986_Texas_gubernatorial_election"
+    },
+    {
+     "year": 1990,
+     "party": "D",
+     "winner": "Richards",
+     "margin": 2.6,
+     "url": "https://en.wikipedia.org/wiki/1990_Texas_gubernatorial_election"
+    },
+    {
+     "year": 1994,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 7.6,
+     "url": "https://en.wikipedia.org/wiki/1994_Texas_gubernatorial_election"
+    },
+    {
+     "year": 1998,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 37.1,
+     "url": "https://en.wikipedia.org/wiki/1998_Texas_gubernatorial_election"
+    },
+    {
+     "year": 2002,
+     "party": "R",
+     "winner": "Perry",
+     "margin": 17.9,
+     "url": "https://en.wikipedia.org/wiki/2002_Texas_gubernatorial_election"
+    },
+    {
+     "year": 2006,
+     "party": "R",
+     "winner": "Perry",
+     "margin": 9.2,
+     "url": "https://en.wikipedia.org/wiki/2006_Texas_gubernatorial_election"
+    },
+    {
+     "year": 2010,
+     "party": "R",
+     "winner": "Perry",
+     "margin": 12.7,
+     "url": "https://en.wikipedia.org/wiki/2010_Texas_gubernatorial_election"
+    },
+    {
+     "year": 2014,
+     "party": "R",
+     "winner": "Abbott",
+     "margin": 20.4,
+     "url": "https://en.wikipedia.org/wiki/2014_Texas_gubernatorial_election"
+    },
+    {
+     "year": 2018,
+     "party": "R",
+     "winner": "Abbott",
+     "margin": 13.3,
+     "url": "https://en.wikipedia.org/wiki/2018_Texas_gubernatorial_election"
+    },
+    {
+     "year": 2022,
+     "party": "R",
+     "winner": "Abbott",
+     "margin": 10.9,
+     "url": "https://en.wikipedia.org/wiki/2022_Texas_gubernatorial_election"
+    }
+   ]
+  },
+  "OH": {
+   "pres": [
+    {
+     "year": 1988,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 10.8,
+     "url": "https://en.wikipedia.org/wiki/1988_United_States_presidential_election_in_Ohio"
+    },
+    {
+     "year": 1992,
+     "party": "D",
+     "winner": "Clinton",
+     "margin": 1.8,
+     "url": "https://en.wikipedia.org/wiki/1992_United_States_presidential_election_in_Ohio"
+    },
+    {
+     "year": 1996,
+     "party": "D",
+     "winner": "Clinton",
+     "margin": 6.4,
+     "url": "https://en.wikipedia.org/wiki/1996_United_States_presidential_election_in_Ohio"
+    },
+    {
+     "year": 2000,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 3.5,
+     "url": "https://en.wikipedia.org/wiki/2000_United_States_presidential_election_in_Ohio"
+    },
+    {
+     "year": 2004,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 2.1,
+     "url": "https://en.wikipedia.org/wiki/2004_United_States_presidential_election_in_Ohio"
+    },
+    {
+     "year": 2008,
+     "party": "D",
+     "winner": "Obama",
+     "margin": 4.6,
+     "url": "https://en.wikipedia.org/wiki/2008_United_States_presidential_election_in_Ohio"
+    },
+    {
+     "year": 2012,
+     "party": "D",
+     "winner": "Obama",
+     "margin": 3.0,
+     "url": "https://en.wikipedia.org/wiki/2012_United_States_presidential_election_in_Ohio"
+    },
+    {
+     "year": 2016,
+     "party": "R",
+     "winner": "Trump",
+     "margin": 8.1,
+     "url": "https://en.wikipedia.org/wiki/2016_United_States_presidential_election_in_Ohio"
+    },
+    {
+     "year": 2020,
+     "party": "R",
+     "winner": "Trump",
+     "margin": 8.0,
+     "url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election_in_Ohio"
+    },
+    {
+     "year": 2024,
+     "party": "R",
+     "winner": "Trump",
+     "margin": 11.3,
+     "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_Ohio"
+    }
+   ],
+   "sen": [
+    {
+     "year": 1986,
+     "class": 3,
+     "party": "D",
+     "winner": "Glenn",
+     "margin": 24.9,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1986_United_States_Senate_election_in_Ohio"
+    },
+    {
+     "year": 1988,
+     "class": 1,
+     "party": "D",
+     "winner": "Metzenbaum",
+     "margin": 14.7,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1988_United_States_Senate_election_in_Ohio"
+    },
+    {
+     "year": 1992,
+     "class": 3,
+     "party": "D",
+     "winner": "Glenn",
+     "margin": 8.7,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1992_United_States_Senate_election_in_Ohio"
+    },
+    {
+     "year": 1994,
+     "class": 1,
+     "party": "R",
+     "winner": "DeWine",
+     "margin": 14.2,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1994_United_States_Senate_election_in_Ohio"
+    },
+    {
+     "year": 1998,
+     "class": 3,
+     "party": "R",
+     "winner": "Voinovich",
+     "margin": 12.9,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1998_United_States_Senate_election_in_Ohio"
+    },
+    {
+     "year": 2000,
+     "class": 1,
+     "party": "R",
+     "winner": "DeWine",
+     "margin": 24.0,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2000_United_States_Senate_election_in_Ohio"
+    },
+    {
+     "year": 2004,
+     "class": 3,
+     "party": "R",
+     "winner": "Voinovich",
+     "margin": 27.7,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2004_United_States_Senate_election_in_Ohio"
+    },
+    {
+     "year": 2006,
+     "class": 1,
+     "party": "D",
+     "winner": "Brown",
+     "margin": 12.3,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2006_United_States_Senate_election_in_Ohio"
+    },
+    {
+     "year": 2010,
+     "class": 3,
+     "party": "R",
+     "winner": "Portman",
+     "margin": 17.4,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2010_United_States_Senate_election_in_Ohio"
+    },
+    {
+     "year": 2012,
+     "class": 1,
+     "party": "D",
+     "winner": "Brown",
+     "margin": 6.0,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2012_United_States_Senate_election_in_Ohio"
+    },
+    {
+     "year": 2016,
+     "class": 3,
+     "party": "R",
+     "winner": "Portman",
+     "margin": 20.9,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2016_United_States_Senate_election_in_Ohio"
+    },
+    {
+     "year": 2018,
+     "class": 1,
+     "party": "D",
+     "winner": "Brown",
+     "margin": 6.8,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2018_United_States_Senate_election_in_Ohio"
+    },
+    {
+     "year": 2022,
+     "class": 3,
+     "party": "R",
+     "winner": "Vance",
+     "margin": 6.1,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2022_United_States_Senate_election_in_Ohio"
+    },
+    {
+     "year": 2024,
+     "class": 1,
+     "party": "R",
+     "winner": "Moreno",
+     "margin": 3.6,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2024_United_States_Senate_election_in_Ohio"
+    }
+   ],
+   "gov": [
+    {
+     "year": 1986,
+     "party": "D",
+     "winner": "Celeste",
+     "margin": 21.2,
+     "url": "https://en.wikipedia.org/wiki/1986_Ohio_gubernatorial_election"
+    },
+    {
+     "year": 1990,
+     "party": "R",
+     "winner": "Voinovich",
+     "margin": 11.5,
+     "url": "https://en.wikipedia.org/wiki/1990_Ohio_gubernatorial_election"
+    },
+    {
+     "year": 1994,
+     "party": "R",
+     "winner": "Voinovich",
+     "margin": 46.8,
+     "url": "https://en.wikipedia.org/wiki/1994_Ohio_gubernatorial_election"
+    },
+    {
+     "year": 1998,
+     "party": "R",
+     "winner": "Taft",
+     "margin": 5.4,
+     "url": "https://en.wikipedia.org/wiki/1998_Ohio_gubernatorial_election"
+    },
+    {
+     "year": 2002,
+     "party": "R",
+     "winner": "Taft",
+     "margin": 19.4,
+     "url": "https://en.wikipedia.org/wiki/2002_Ohio_gubernatorial_election"
+    },
+    {
+     "year": 2006,
+     "party": "D",
+     "winner": "Strickland",
+     "margin": 23.9,
+     "url": "https://en.wikipedia.org/wiki/2006_Ohio_gubernatorial_election"
+    },
+    {
+     "year": 2010,
+     "party": "R",
+     "winner": "Kasich",
+     "margin": 2.0,
+     "url": "https://en.wikipedia.org/wiki/2010_Ohio_gubernatorial_election"
+    },
+    {
+     "year": 2014,
+     "party": "R",
+     "winner": "Kasich",
+     "margin": 30.6,
+     "url": "https://en.wikipedia.org/wiki/2014_Ohio_gubernatorial_election"
+    },
+    {
+     "year": 2018,
+     "party": "R",
+     "winner": "DeWine",
+     "margin": 3.7,
+     "url": "https://en.wikipedia.org/wiki/2018_Ohio_gubernatorial_election"
+    },
+    {
+     "year": 2022,
+     "party": "R",
+     "winner": "DeWine",
+     "margin": 25.0,
+     "url": "https://en.wikipedia.org/wiki/2022_Ohio_gubernatorial_election"
+    }
+   ]
+  },
+  "AK": {
+   "pres": [
+    {
+     "year": 1988,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 23.3,
+     "url": "https://en.wikipedia.org/wiki/1988_United_States_presidential_election_in_Alaska"
+    },
+    {
+     "year": 1992,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 9.2,
+     "url": "https://en.wikipedia.org/wiki/1992_United_States_presidential_election_in_Alaska"
+    },
+    {
+     "year": 1996,
+     "party": "R",
+     "winner": "Dole",
+     "margin": 17.5,
+     "url": "https://en.wikipedia.org/wiki/1996_United_States_presidential_election_in_Alaska"
+    },
+    {
+     "year": 2000,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 30.9,
+     "url": "https://en.wikipedia.org/wiki/2000_United_States_presidential_election_in_Alaska"
+    },
+    {
+     "year": 2004,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 25.6,
+     "url": "https://en.wikipedia.org/wiki/2004_United_States_presidential_election_in_Alaska"
+    },
+    {
+     "year": 2008,
+     "party": "R",
+     "winner": "McCain",
+     "margin": 21.5,
+     "url": "https://en.wikipedia.org/wiki/2008_United_States_presidential_election_in_Alaska"
+    },
+    {
+     "year": 2012,
+     "party": "R",
+     "winner": "Romney",
+     "margin": 14.0,
+     "url": "https://en.wikipedia.org/wiki/2012_United_States_presidential_election_in_Alaska"
+    },
+    {
+     "year": 2016,
+     "party": "R",
+     "winner": "Trump",
+     "margin": 14.7,
+     "url": "https://en.wikipedia.org/wiki/2016_United_States_presidential_election_in_Alaska"
+    },
+    {
+     "year": 2020,
+     "party": "R",
+     "winner": "Trump",
+     "margin": 10.1,
+     "url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election_in_Alaska"
+    },
+    {
+     "year": 2024,
+     "party": "R",
+     "winner": "Trump",
+     "margin": 13.1,
+     "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_Alaska"
+    }
+   ],
+   "sen": [
+    {
+     "year": 1986,
+     "class": 3,
+     "party": "R",
+     "winner": "Murkowski",
+     "margin": 9.9,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1986_United_States_Senate_election_in_Alaska"
+    },
+    {
+     "year": 1990,
+     "class": 2,
+     "party": "R",
+     "winner": "Stevens",
+     "margin": 34.0,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1990_United_States_Senate_election_in_Alaska"
+    },
+    {
+     "year": 1992,
+     "class": 3,
+     "party": "R",
+     "winner": "Murkowski",
+     "margin": 14.6,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1992_United_States_Senate_election_in_Alaska"
+    },
+    {
+     "year": 1996,
+     "class": 2,
+     "party": "R",
+     "winner": "Stevens",
+     "margin": 64.2,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1996_United_States_Senate_election_in_Alaska"
+    },
+    {
+     "year": 1998,
+     "class": 3,
+     "party": "R",
+     "winner": "Murkowski",
+     "margin": 54.8,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1998_United_States_Senate_election_in_Alaska"
+    },
+    {
+     "year": 2002,
+     "class": 2,
+     "party": "R",
+     "winner": "Stevens",
+     "margin": 67.7,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2002_United_States_Senate_election_in_Alaska"
+    },
+    {
+     "year": 2004,
+     "class": 3,
+     "party": "R",
+     "winner": "Murkowski",
+     "margin": 3.0,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2004_United_States_Senate_election_in_Alaska"
+    },
+    {
+     "year": 2008,
+     "class": 2,
+     "party": "D",
+     "winner": "Begich",
+     "margin": 1.2,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2008_United_States_Senate_election_in_Alaska"
+    },
+    {
+     "year": 2010,
+     "class": 3,
+     "party": "R",
+     "winner": "Murkowski",
+     "margin": 4.0,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2010_United_States_Senate_election_in_Alaska"
+    },
+    {
+     "year": 2014,
+     "class": 2,
+     "party": "R",
+     "winner": "Sullivan",
+     "margin": 2.1,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2014_United_States_Senate_election_in_Alaska"
+    },
+    {
+     "year": 2016,
+     "class": 3,
+     "party": "R",
+     "winner": "Murkowski",
+     "margin": 15.2,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2016_United_States_Senate_election_in_Alaska"
+    },
+    {
+     "year": 2020,
+     "class": 2,
+     "party": "R",
+     "winner": "Sullivan",
+     "margin": 12.7,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_Alaska"
+    },
+    {
+     "year": 2022,
+     "class": 3,
+     "party": "R",
+     "winner": "Murkowski",
+     "margin": 7.4,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2022_United_States_Senate_election_in_Alaska"
+    }
+   ],
+   "gov": [
+    {
+     "year": 1986,
+     "party": "D",
+     "winner": "Cowper",
+     "margin": 4.7,
+     "url": "https://en.wikipedia.org/wiki/1986_Alaska_gubernatorial_election"
+    },
+    {
+     "year": 1990,
+     "party": "I",
+     "winner": "Hickel",
+     "margin": 8.0,
+     "url": "https://en.wikipedia.org/wiki/1990_Alaska_gubernatorial_election"
+    },
+    {
+     "year": 1994,
+     "party": "D",
+     "winner": "Knowles",
+     "margin": 0.2,
+     "url": "https://en.wikipedia.org/wiki/1994_Alaska_gubernatorial_election"
+    },
+    {
+     "year": 1998,
+     "party": "D",
+     "winner": "Knowles",
+     "margin": 33.0,
+     "url": "https://en.wikipedia.org/wiki/1998_Alaska_gubernatorial_election"
+    },
+    {
+     "year": 2002,
+     "party": "R",
+     "winner": "Murkowski",
+     "margin": 15.2,
+     "url": "https://en.wikipedia.org/wiki/2002_Alaska_gubernatorial_election"
+    },
+    {
+     "year": 2006,
+     "party": "R",
+     "winner": "Palin",
+     "margin": 7.4,
+     "url": "https://en.wikipedia.org/wiki/2006_Alaska_gubernatorial_election"
+    },
+    {
+     "year": 2010,
+     "party": "R",
+     "winner": "Parnell",
+     "margin": 21.4,
+     "url": "https://en.wikipedia.org/wiki/2010_Alaska_gubernatorial_election"
+    },
+    {
+     "year": 2014,
+     "party": "I",
+     "winner": "Walker",
+     "margin": 2.2,
+     "url": "https://en.wikipedia.org/wiki/2014_Alaska_gubernatorial_election"
+    },
+    {
+     "year": 2018,
+     "party": "R",
+     "winner": "Dunleavy",
+     "margin": 7.0,
+     "url": "https://en.wikipedia.org/wiki/2018_Alaska_gubernatorial_election"
+    },
+    {
+     "year": 2022,
+     "party": "R",
+     "winner": "Dunleavy",
+     "margin": 26.1,
+     "url": "https://en.wikipedia.org/wiki/2022_Alaska_gubernatorial_election"
+    }
+   ]
+  },
+  "IA": {
+   "pres": [
+    {
+     "year": 1988,
+     "party": "D",
+     "winner": "Dukakis",
+     "margin": 10.2,
+     "url": "https://en.wikipedia.org/wiki/1988_United_States_presidential_election_in_Iowa"
+    },
+    {
+     "year": 1992,
+     "party": "D",
+     "winner": "Clinton",
+     "margin": 6.0,
+     "url": "https://en.wikipedia.org/wiki/1992_United_States_presidential_election_in_Iowa"
+    },
+    {
+     "year": 1996,
+     "party": "D",
+     "winner": "Clinton",
+     "margin": 10.3,
+     "url": "https://en.wikipedia.org/wiki/1996_United_States_presidential_election_in_Iowa"
+    },
+    {
+     "year": 2000,
+     "party": "D",
+     "winner": "Gore",
+     "margin": 0.3,
+     "url": "https://en.wikipedia.org/wiki/2000_United_States_presidential_election_in_Iowa"
+    },
+    {
+     "year": 2004,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 0.7,
+     "url": "https://en.wikipedia.org/wiki/2004_United_States_presidential_election_in_Iowa"
+    },
+    {
+     "year": 2008,
+     "party": "D",
+     "winner": "Obama",
+     "margin": 9.5,
+     "url": "https://en.wikipedia.org/wiki/2008_United_States_presidential_election_in_Iowa"
+    },
+    {
+     "year": 2012,
+     "party": "D",
+     "winner": "Obama",
+     "margin": 5.8,
+     "url": "https://en.wikipedia.org/wiki/2012_United_States_presidential_election_in_Iowa"
+    },
+    {
+     "year": 2016,
+     "party": "R",
+     "winner": "Trump",
+     "margin": 9.4,
+     "url": "https://en.wikipedia.org/wiki/2016_United_States_presidential_election_in_Iowa"
+    },
+    {
+     "year": 2020,
+     "party": "R",
+     "winner": "Trump",
+     "margin": 8.2,
+     "url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election_in_Iowa"
+    },
+    {
+     "year": 2024,
+     "party": "R",
+     "winner": "Trump",
+     "margin": 13.2,
+     "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_Iowa"
+    }
+   ],
+   "sen": [
+    {
+     "year": 1986,
+     "class": 3,
+     "party": "R",
+     "winner": "Grassley",
+     "margin": 32.5,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1986_United_States_Senate_election_in_Iowa"
+    },
+    {
+     "year": 1990,
+     "class": 2,
+     "party": "D",
+     "winner": "Harkin",
+     "margin": 9.1,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1990_United_States_Senate_election_in_Iowa"
+    },
+    {
+     "year": 1992,
+     "class": 3,
+     "party": "R",
+     "winner": "Grassley",
+     "margin": 42.8,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1992_United_States_Senate_election_in_Iowa"
+    },
+    {
+     "year": 1996,
+     "class": 2,
+     "party": "D",
+     "winner": "Harkin",
+     "margin": 5.1,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1996_United_States_Senate_election_in_Iowa"
+    },
+    {
+     "year": 1998,
+     "class": 3,
+     "party": "R",
+     "winner": "Grassley",
+     "margin": 37.9,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1998_United_States_Senate_election_in_Iowa"
+    },
+    {
+     "year": 2002,
+     "class": 2,
+     "party": "D",
+     "winner": "Harkin",
+     "margin": 10.4,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2002_United_States_Senate_election_in_Iowa"
+    },
+    {
+     "year": 2004,
+     "class": 3,
+     "party": "R",
+     "winner": "Grassley",
+     "margin": 42.3,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2004_United_States_Senate_election_in_Iowa"
+    },
+    {
+     "year": 2008,
+     "class": 2,
+     "party": "D",
+     "winner": "Harkin",
+     "margin": 25.4,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2008_United_States_Senate_election_in_Iowa"
+    },
+    {
+     "year": 2010,
+     "class": 3,
+     "party": "R",
+     "winner": "Grassley",
+     "margin": 31.1,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2010_United_States_Senate_election_in_Iowa"
+    },
+    {
+     "year": 2014,
+     "class": 2,
+     "party": "R",
+     "winner": "Ernst",
+     "margin": 8.3,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2014_United_States_Senate_election_in_Iowa"
+    },
+    {
+     "year": 2016,
+     "class": 3,
+     "party": "R",
+     "winner": "Grassley",
+     "margin": 24.4,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2016_United_States_Senate_election_in_Iowa"
+    },
+    {
+     "year": 2020,
+     "class": 2,
+     "party": "R",
+     "winner": "Ernst",
+     "margin": 6.6,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_Iowa"
+    },
+    {
+     "year": 2022,
+     "class": 3,
+     "party": "R",
+     "winner": "Grassley",
+     "margin": 12.2,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2022_United_States_Senate_election_in_Iowa"
+    }
+   ],
+   "gov": [
+    {
+     "year": 1986,
+     "party": "R",
+     "winner": "Branstad",
+     "margin": 3.9,
+     "url": "https://en.wikipedia.org/wiki/1986_Iowa_gubernatorial_election"
+    },
+    {
+     "year": 1990,
+     "party": "R",
+     "winner": "Branstad",
+     "margin": 21.8,
+     "url": "https://en.wikipedia.org/wiki/1990_Iowa_gubernatorial_election"
+    },
+    {
+     "year": 1994,
+     "party": "R",
+     "winner": "Branstad",
+     "margin": 15.2,
+     "url": "https://en.wikipedia.org/wiki/1994_Iowa_gubernatorial_election"
+    },
+    {
+     "year": 1998,
+     "party": "D",
+     "winner": "Vilsack",
+     "margin": 5.8,
+     "url": "https://en.wikipedia.org/wiki/1998_Iowa_gubernatorial_election"
+    },
+    {
+     "year": 2002,
+     "party": "D",
+     "winner": "Vilsack",
+     "margin": 8.2,
+     "url": "https://en.wikipedia.org/wiki/2002_Iowa_gubernatorial_election"
+    },
+    {
+     "year": 2006,
+     "party": "D",
+     "winner": "Culver",
+     "margin": 9.6,
+     "url": "https://en.wikipedia.org/wiki/2006_Iowa_gubernatorial_election"
+    },
+    {
+     "year": 2010,
+     "party": "R",
+     "winner": "Branstad",
+     "margin": 9.6,
+     "url": "https://en.wikipedia.org/wiki/2010_Iowa_gubernatorial_election"
+    },
+    {
+     "year": 2014,
+     "party": "R",
+     "winner": "Branstad",
+     "margin": 21.7,
+     "url": "https://en.wikipedia.org/wiki/2014_Iowa_gubernatorial_election"
+    },
+    {
+     "year": 2018,
+     "party": "R",
+     "winner": "Reynolds",
+     "margin": 2.7,
+     "url": "https://en.wikipedia.org/wiki/2018_Iowa_gubernatorial_election"
+    },
+    {
+     "year": 2022,
+     "party": "R",
+     "winner": "Reynolds",
+     "margin": 18.5,
+     "url": "https://en.wikipedia.org/wiki/2022_Iowa_gubernatorial_election"
+    }
+   ]
+  },
+  "NE": {
+   "pres": [
+    {
+     "year": 1988,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 20.9,
+     "url": "https://en.wikipedia.org/wiki/1988_United_States_presidential_election_in_Nebraska"
+    },
+    {
+     "year": 1992,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 17.2,
+     "url": "https://en.wikipedia.org/wiki/1992_United_States_presidential_election_in_Nebraska"
+    },
+    {
+     "year": 1996,
+     "party": "R",
+     "winner": "Dole",
+     "margin": 18.7,
+     "url": "https://en.wikipedia.org/wiki/1996_United_States_presidential_election_in_Nebraska"
+    },
+    {
+     "year": 2000,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 29.0,
+     "url": "https://en.wikipedia.org/wiki/2000_United_States_presidential_election_in_Nebraska"
+    },
+    {
+     "year": 2004,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 33.2,
+     "url": "https://en.wikipedia.org/wiki/2004_United_States_presidential_election_in_Nebraska"
+    },
+    {
+     "year": 2008,
+     "party": "R",
+     "winner": "McCain",
+     "margin": 14.9,
+     "url": "https://en.wikipedia.org/wiki/2008_United_States_presidential_election_in_Nebraska"
+    },
+    {
+     "year": 2012,
+     "party": "R",
+     "winner": "Romney",
+     "margin": 21.8,
+     "url": "https://en.wikipedia.org/wiki/2012_United_States_presidential_election_in_Nebraska"
+    },
+    {
+     "year": 2016,
+     "party": "R",
+     "winner": "Trump",
+     "margin": 25.1,
+     "url": "https://en.wikipedia.org/wiki/2016_United_States_presidential_election_in_Nebraska"
+    },
+    {
+     "year": 2020,
+     "party": "R",
+     "winner": "Trump",
+     "margin": 19.1,
+     "url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election_in_Nebraska"
+    },
+    {
+     "year": 2024,
+     "party": "R",
+     "winner": "Trump",
+     "margin": 20.5,
+     "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_Nebraska"
+    }
+   ],
+   "sen": [
+    {
+     "year": 1988,
+     "class": 1,
+     "party": "D",
+     "winner": "Kerrey",
+     "margin": 15.1,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1988_United_States_Senate_election_in_Nebraska"
+    },
+    {
+     "year": 1990,
+     "class": 2,
+     "party": "D",
+     "winner": "Exon",
+     "margin": 18.0,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1990_United_States_Senate_election_in_Nebraska"
+    },
+    {
+     "year": 1994,
+     "class": 1,
+     "party": "D",
+     "winner": "Kerrey",
+     "margin": 9.8,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1994_United_States_Senate_election_in_Nebraska"
+    },
+    {
+     "year": 1996,
+     "class": 2,
+     "party": "R",
+     "winner": "Hagel",
+     "margin": 14.5,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1996_United_States_Senate_election_in_Nebraska"
+    },
+    {
+     "year": 2000,
+     "class": 1,
+     "party": "D",
+     "winner": "Nelson",
+     "margin": 2.2,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2000_United_States_Senate_election_in_Nebraska"
+    },
+    {
+     "year": 2002,
+     "class": 2,
+     "party": "R",
+     "winner": "Hagel",
+     "margin": 68.1,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2002_United_States_Senate_election_in_Nebraska"
+    },
+    {
+     "year": 2006,
+     "class": 1,
+     "party": "D",
+     "winner": "Nelson",
+     "margin": 27.8,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2006_United_States_Senate_election_in_Nebraska"
+    },
+    {
+     "year": 2008,
+     "class": 2,
+     "party": "R",
+     "winner": "Johanns",
+     "margin": 17.5,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2008_United_States_Senate_election_in_Nebraska"
+    },
+    {
+     "year": 2012,
+     "class": 1,
+     "party": "R",
+     "winner": "Fischer",
+     "margin": 15.5,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2012_United_States_Senate_election_in_Nebraska"
+    },
+    {
+     "year": 2014,
+     "class": 2,
+     "party": "R",
+     "winner": "Sasse",
+     "margin": 32.9,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2014_United_States_Senate_election_in_Nebraska"
+    },
+    {
+     "year": 2018,
+     "class": 1,
+     "party": "R",
+     "winner": "Fischer",
+     "margin": 19.1,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2018_United_States_Senate_election_in_Nebraska"
+    },
+    {
+     "year": 2020,
+     "class": 2,
+     "party": "R",
+     "winner": "Sasse",
+     "margin": 38.3,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_Nebraska"
+    },
+    {
+     "year": 2024,
+     "class": 1,
+     "party": "R",
+     "winner": "Fischer",
+     "margin": 6.7,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2024_United_States_Senate_election_in_Nebraska"
+    },
+    {
+     "year": 2024,
+     "class": 2,
+     "party": "R",
+     "winner": "Ricketts",
+     "margin": 25.2,
+     "special": true,
+     "url": "https://en.wikipedia.org/wiki/2024_United_States_Senate_special_election_in_Nebraska"
+    }
+   ],
+   "gov": [
+    {
+     "year": 1986,
+     "party": "R",
+     "winner": "Orr",
+     "margin": 5.9,
+     "url": "https://en.wikipedia.org/wiki/1986_Nebraska_gubernatorial_election"
+    },
+    {
+     "year": 1990,
+     "party": "D",
+     "winner": "Nelson",
+     "margin": 0.7,
+     "url": "https://en.wikipedia.org/wiki/1990_Nebraska_gubernatorial_election"
+    },
+    {
+     "year": 1994,
+     "party": "D",
+     "winner": "Nelson",
+     "margin": 47.5,
+     "url": "https://en.wikipedia.org/wiki/1994_Nebraska_gubernatorial_election"
+    },
+    {
+     "year": 1998,
+     "party": "R",
+     "winner": "Johanns",
+     "margin": 7.9,
+     "url": "https://en.wikipedia.org/wiki/1998_Nebraska_gubernatorial_election"
+    },
+    {
+     "year": 2002,
+     "party": "R",
+     "winner": "Johanns",
+     "margin": 41.2,
+     "url": "https://en.wikipedia.org/wiki/2002_Nebraska_gubernatorial_election"
+    },
+    {
+     "year": 2006,
+     "party": "R",
+     "winner": "Heineman",
+     "margin": 48.9,
+     "url": "https://en.wikipedia.org/wiki/2006_Nebraska_gubernatorial_election"
+    },
+    {
+     "year": 2010,
+     "party": "R",
+     "winner": "Heineman",
+     "margin": 47.8,
+     "url": "https://en.wikipedia.org/wiki/2010_Nebraska_gubernatorial_election"
+    },
+    {
+     "year": 2014,
+     "party": "R",
+     "winner": "Ricketts",
+     "margin": 17.9,
+     "url": "https://en.wikipedia.org/wiki/2014_Nebraska_gubernatorial_election"
+    },
+    {
+     "year": 2018,
+     "party": "R",
+     "winner": "Ricketts",
+     "margin": 18.0,
+     "url": "https://en.wikipedia.org/wiki/2018_Nebraska_gubernatorial_election"
+    },
+    {
+     "year": 2022,
+     "party": "R",
+     "winner": "Pillen",
+     "margin": 23.2,
+     "url": "https://en.wikipedia.org/wiki/2022_Nebraska_gubernatorial_election"
+    }
+   ]
+  },
+  "KS": {
+   "pres": [
+    {
+     "year": 1988,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 13.2,
+     "url": "https://en.wikipedia.org/wiki/1988_United_States_presidential_election_in_Kansas"
+    },
+    {
+     "year": 1992,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 5.1,
+     "url": "https://en.wikipedia.org/wiki/1992_United_States_presidential_election_in_Kansas"
+    },
+    {
+     "year": 1996,
+     "party": "R",
+     "winner": "Dole",
+     "margin": 18.2,
+     "url": "https://en.wikipedia.org/wiki/1996_United_States_presidential_election_in_Kansas"
+    },
+    {
+     "year": 2000,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 20.8,
+     "url": "https://en.wikipedia.org/wiki/2000_United_States_presidential_election_in_Kansas"
+    },
+    {
+     "year": 2004,
+     "party": "R",
+     "winner": "Bush",
+     "margin": 25.4,
+     "url": "https://en.wikipedia.org/wiki/2004_United_States_presidential_election_in_Kansas"
+    },
+    {
+     "year": 2008,
+     "party": "R",
+     "winner": "McCain",
+     "margin": 14.9,
+     "url": "https://en.wikipedia.org/wiki/2008_United_States_presidential_election_in_Kansas"
+    },
+    {
+     "year": 2012,
+     "party": "R",
+     "winner": "Romney",
+     "margin": 21.6,
+     "url": "https://en.wikipedia.org/wiki/2012_United_States_presidential_election_in_Kansas"
+    },
+    {
+     "year": 2016,
+     "party": "R",
+     "winner": "Trump",
+     "margin": 20.4,
+     "url": "https://en.wikipedia.org/wiki/2016_United_States_presidential_election_in_Kansas"
+    },
+    {
+     "year": 2020,
+     "party": "R",
+     "winner": "Trump",
+     "margin": 14.6,
+     "url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election_in_Kansas"
+    },
+    {
+     "year": 2024,
+     "party": "R",
+     "winner": "Trump",
+     "margin": 16.1,
+     "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_Kansas"
+    }
+   ],
+   "sen": [
+    {
+     "year": 1986,
+     "class": 3,
+     "party": "R",
+     "winner": "Dole",
+     "margin": 40.1,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1986_United_States_Senate_election_in_Kansas"
+    },
+    {
+     "year": 1990,
+     "class": 2,
+     "party": "R",
+     "winner": "Kassebaum",
+     "margin": 47.2,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1990_United_States_Senate_election_in_Kansas"
+    },
+    {
+     "year": 1992,
+     "class": 3,
+     "party": "R",
+     "winner": "Dole",
+     "margin": 31.7,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1992_United_States_Senate_election_in_Kansas"
+    },
+    {
+     "year": 1996,
+     "class": 2,
+     "party": "R",
+     "winner": "Roberts",
+     "margin": 27.6,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1996_United_States_Senate_election_in_Kansas"
+    },
+    {
+     "year": 1996,
+     "class": 3,
+     "party": "R",
+     "winner": "Brownback",
+     "margin": 10.6,
+     "special": true,
+     "url": "https://en.wikipedia.org/wiki/1996_United_States_Senate_special_election_in_Kansas"
+    },
+    {
+     "year": 1998,
+     "class": 3,
+     "party": "R",
+     "winner": "Brownback",
+     "margin": 33.7,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/1998_United_States_Senate_election_in_Kansas"
+    },
+    {
+     "year": 2002,
+     "class": 2,
+     "party": "R",
+     "winner": "Roberts",
+     "margin": 73.4,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2002_United_States_Senate_election_in_Kansas"
+    },
+    {
+     "year": 2004,
+     "class": 3,
+     "party": "R",
+     "winner": "Brownback",
+     "margin": 41.7,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2004_United_States_Senate_election_in_Kansas"
+    },
+    {
+     "year": 2008,
+     "class": 2,
+     "party": "R",
+     "winner": "Roberts",
+     "margin": 23.6,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2008_United_States_Senate_election_in_Kansas"
+    },
+    {
+     "year": 2010,
+     "class": 3,
+     "party": "R",
+     "winner": "Moran",
+     "margin": 43.7,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2010_United_States_Senate_election_in_Kansas"
+    },
+    {
+     "year": 2014,
+     "class": 2,
+     "party": "R",
+     "winner": "Roberts",
+     "margin": 10.6,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2014_United_States_Senate_election_in_Kansas"
+    },
+    {
+     "year": 2016,
+     "class": 3,
+     "party": "R",
+     "winner": "Moran",
+     "margin": 29.9,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2016_United_States_Senate_election_in_Kansas"
+    },
+    {
+     "year": 2020,
+     "class": 2,
+     "party": "R",
+     "winner": "Marshall",
+     "margin": 11.4,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_Kansas"
+    },
+    {
+     "year": 2022,
+     "class": 3,
+     "party": "R",
+     "winner": "Moran",
+     "margin": 23.0,
+     "special": false,
+     "url": "https://en.wikipedia.org/wiki/2022_United_States_Senate_election_in_Kansas"
+    }
+   ],
+   "gov": [
+    {
+     "year": 1986,
+     "party": "R",
+     "winner": "Hayden",
+     "margin": 3.8,
+     "url": "https://en.wikipedia.org/wiki/1986_Kansas_gubernatorial_election"
+    },
+    {
+     "year": 1990,
+     "party": "D",
+     "winner": "Finney",
+     "margin": 6.0,
+     "url": "https://en.wikipedia.org/wiki/1990_Kansas_gubernatorial_election"
+    },
+    {
+     "year": 1994,
+     "party": "R",
+     "winner": "Graves",
+     "margin": 28.2,
+     "url": "https://en.wikipedia.org/wiki/1994_Kansas_gubernatorial_election"
+    },
+    {
+     "year": 1998,
+     "party": "R",
+     "winner": "Graves",
+     "margin": 50.7,
+     "url": "https://en.wikipedia.org/wiki/1998_Kansas_gubernatorial_election"
+    },
+    {
+     "year": 2002,
+     "party": "D",
+     "winner": "Sebelius",
+     "margin": 7.8,
+     "url": "https://en.wikipedia.org/wiki/2002_Kansas_gubernatorial_election"
+    },
+    {
+     "year": 2006,
+     "party": "D",
+     "winner": "Sebelius",
+     "margin": 17.5,
+     "url": "https://en.wikipedia.org/wiki/2006_Kansas_gubernatorial_election"
+    },
+    {
+     "year": 2010,
+     "party": "R",
+     "winner": "Brownback",
+     "margin": 31.1,
+     "url": "https://en.wikipedia.org/wiki/2010_Kansas_gubernatorial_election"
+    },
+    {
+     "year": 2014,
+     "party": "R",
+     "winner": "Brownback",
+     "margin": 3.7,
+     "url": "https://en.wikipedia.org/wiki/2014_Kansas_gubernatorial_election"
+    },
+    {
+     "year": 2018,
+     "party": "D",
+     "winner": "Kelly",
+     "margin": 5.0,
+     "url": "https://en.wikipedia.org/wiki/2018_Kansas_gubernatorial_election"
+    },
+    {
+     "year": 2022,
+     "party": "D",
+     "winner": "Kelly",
+     "margin": 2.2,
+     "url": "https://en.wikipedia.org/wiki/2022_Kansas_gubernatorial_election"
+    }
+   ]
+  }
+ }
 }

@@ -20,7 +20,7 @@ import urllib.parse
 import urllib.request
 from datetime import date
 
-STATES = ["GA", "MI", "NH", "ME", "NC", "TX", "OH", "AK", "IA"]  # 감시 9주 (IA 2026-08-08 편입)
+STATES = ["GA", "MI", "NH", "ME", "NC", "TX", "OH", "AK", "IA", "NE", "KS"]  # 감시 9주 (IA 2026-08-08 편입)
 API = "https://api.open.fec.gov/v1/candidates/totals/"
 OUT = os.path.join(os.path.dirname(__file__), "..", "data", "fec_fundraising.json")
 

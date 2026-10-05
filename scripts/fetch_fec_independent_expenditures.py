@@ -25,7 +25,7 @@ import urllib.request
 from collections import defaultdict
 from datetime import date
 
-STATES = ["GA", "MI", "NH", "ME", "NC", "TX", "OH", "AK", "IA"]
+STATES = ["GA", "MI", "NH", "ME", "NC", "TX", "OH", "AK", "IA", "NE", "KS"]
 API = "https://api.open.fec.gov/v1/schedules/schedule_e/"
 OUT = os.path.join(os.path.dirname(__file__), "..", "data", "fec_independent_expenditures.json")
 
@@ -86,6 +86,8 @@ def aggregate(rows: list[dict]) -> dict:
         side = None
         if a["party"] == "DEM": side = "D" if a["so"] == "S" else "R"
         elif a["party"] == "REP": side = "R" if a["so"] == "S" else "D"
+        elif a["party"] in ("IND", "NNE", "UNK") and a["candidate"] and "OSBORN" in a["candidate"].upper():
+            side = "D" if a["so"] == "S" else "R"   # NE: 무소속 Osborn(민주당이 지지) — 'D 측'으로 집계(2026-10-05)
         a["side"] = side
         if side: pro[side] += a["total"]
         for f in ("reported", "notice_recent", "total"):

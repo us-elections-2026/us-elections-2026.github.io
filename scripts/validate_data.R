@@ -296,7 +296,7 @@ if (!is.null(sp)) {
   need <- c("state","pollster","sponsor","partisan","population","n","start_date","end_date",
             "dem_candidate","rep_candidate","dem_pct","rep_pct","margin","note","source_url")
   if (!identical(names(sp), need)) err(f, paste("열 순서/이름이 스키마와 다름:", paste(names(sp), collapse=",")))
-  watch <- c("GA","MI","NH","ME","NC","TX","OH","AK","IA")
+  watch <- c("GA","MI","NH","ME","NC","TX","OH","AK","IA","NE","KS")
   bad <- setdiff(unique(sp$state), watch); if (length(bad)) err(f, paste("감시 9주 밖 state:", paste(bad, collapse=",")))
   if (any(!sp$partisan %in% c("none","D","R"))) err(f, "partisan은 none/D/R만")
   if (any(!is.na(sp$population) & sp$population != "" & !sp$population %in% c("LV","RV","A"))) err(f, "population은 LV/RV/A/빈칸만")
@@ -327,7 +327,7 @@ if (!is.null(sdl)) {
     if (anyDuplicated(dates)) err(f, "중복 날짜 존재")
     if (!identical(dates, sort(dates, decreasing = TRUE))) err(f, "days가 날짜 내림차순이 아님")
     if (!is.na(sdl$as_of) && sdl$as_of != dates[1]) err(f, "as_of가 최신 날짜와 불일치")
-    watch <- c("GA","MI","NH","ME","NC","TX","OH","AK","IA")
+    watch <- c("GA","MI","NH","ME","NC","TX","OH","AK","IA","NE","KS")
     for (d in sdl$days) {
       st <- names(d$states)
       if (length(setdiff(st, watch))) err(f, sprintf("%s: 감시 9주 밖 약자 %s", d$date, paste(setdiff(st, watch), collapse = ",")))
