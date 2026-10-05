@@ -5625,13 +5625,380 @@
      "side": "D"
     }
    ]
+  },
+  "NE": {
+   "pro_D": 7.38,
+   "pro_R": 7.15,
+   "n_rows": 174,
+   "last_date": "2026-10-01",
+   "rows": [
+    {
+     "committee_id": "C00961227",
+     "committee": "CORNHUSKER MAJORITY",
+     "candidate_id": "S4NE00207",
+     "candidate": "OSBORN, DAN",
+     "party": "IND",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 4.75,
+     "last_date": "2026-09-30",
+     "total": 4.75,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00956292",
+     "committee": "NEBRASKA VALUES PAC",
+     "candidate_id": "S6NE00129",
+     "candidate": "RICKETTS, PETE",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 3.42,
+     "last_date": "2026-09-28",
+     "total": 3.42,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00844613",
+     "committee": "WIN IT BACK PAC",
+     "candidate_id": "S4NE00207",
+     "candidate": "OSBORN, DAN",
+     "party": "IND",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 2.06,
+     "last_date": "2026-09-09",
+     "total": 2.06,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00954503",
+     "committee": "WORKING CLASS MAJORITY PAC, INC",
+     "candidate_id": "S4NE00207",
+     "candidate": "OSBORN, DAN",
+     "party": "IND",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 1.9,
+     "last_date": "2026-09-25",
+     "total": 1.9,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00954503",
+     "committee": "WORKING CLASS MAJORITY PAC, INC",
+     "candidate_id": "S6NE00129",
+     "candidate": "RICKETTS, PETE",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 1.5,
+     "last_date": "2026-09-25",
+     "total": 1.5,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00960385",
+     "committee": "UNITED FUTURES PAC",
+     "candidate_id": "S4NE00207",
+     "candidate": "OSBORN, DAN",
+     "party": "IND",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.5,
+     "last_date": "2026-10-01",
+     "total": 0.5,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00891549",
+     "committee": "AMERICA FIRST ACTION FUND",
+     "candidate_id": "S6NE00129",
+     "candidate": "RICKETTS, PETE",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.2,
+     "last_date": "2026-09-30",
+     "total": 0.2,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00571703",
+     "committee": "SLF PAC",
+     "candidate_id": "S4NE00207",
+     "candidate": "OSBORN, DAN",
+     "party": "IND",
+     "so": "O",
+     "reported": 0.1,
+     "notice_recent": 0.0,
+     "last_date": "2026-06-04",
+     "total": 0.1,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00580068",
+     "committee": "PROGRESSIVE TURNOUT PROJECT",
+     "candidate_id": "S4NE00207",
+     "candidate": "OSBORN, DAN",
+     "party": "IND",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.05,
+     "last_date": "2026-09-27",
+     "total": 0.05,
+     "side": "D"
+    },
+    {
+     "committee_id": "C90018904",
+     "committee": "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY",
+     "candidate_id": "S4NE00207",
+     "candidate": "OSBORN, DAN",
+     "party": "IND",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.03,
+     "last_date": "2026-09-04",
+     "total": 0.03,
+     "side": "R"
+    },
+    {
+     "committee_id": "C90020231",
+     "committee": "THOMAS PAINE SOCIETY L.L.C.",
+     "candidate_id": null,
+     "candidate": "OSBORN, DANIEL L.",
+     "party": "",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.01,
+     "last_date": "2026-08-23",
+     "total": 0.01,
+     "side": null
+    },
+    {
+     "committee_id": "C00747121",
+     "committee": "RED SENATE",
+     "candidate_id": "S4NE00207",
+     "candidate": "OSBORN, DAN",
+     "party": "IND",
+     "so": "O",
+     "reported": 0.01,
+     "notice_recent": 0.0,
+     "last_date": "2025-01-15",
+     "total": 0.01,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00722884",
+     "committee": "LGBTQ CONNECTION PAC",
+     "candidate_id": null,
+     "candidate": "OSBORN, DAN",
+     "party": "",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-09-29",
+     "total": 0.0,
+     "side": null
+    },
+    {
+     "committee_id": "C00722884",
+     "committee": "LGBTQ CONNECTION PAC",
+     "candidate_id": "S4NE00207",
+     "candidate": "OSBORN, DAN",
+     "party": "IND",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-31",
+     "total": 0.0,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00432260",
+     "committee": "CLUB FOR GROWTH PAC",
+     "candidate_id": "S6NE00129",
+     "candidate": "RICKETTS, PETE",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-07-20",
+     "total": 0.0,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00909465",
+     "committee": "INDIGO PAC",
+     "candidate_id": "S6NE00129",
+     "candidate": "RICKETTS, PETE",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2025-12-30",
+     "total": 0.0,
+     "side": "D"
+    }
+   ]
+  },
+  "KS": {
+   "pro_D": 5.25,
+   "pro_R": 2.05,
+   "n_rows": 76,
+   "last_date": "2026-10-01",
+   "rows": [
+    {
+     "committee_id": "C00953299",
+     "committee": "PEOPLE OVER POLITICS ACTION FUND",
+     "candidate_id": "S0KS00315",
+     "candidate": "MARSHALL, ROGER",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 3.45,
+     "last_date": "2026-09-29",
+     "total": 3.45,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00957928",
+     "committee": "MAIN STREET FUND",
+     "candidate_id": "S6KS00312",
+     "candidate": "HAMILTON, ADAM",
+     "party": "DEM",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 2.0,
+     "last_date": "2026-09-30",
+     "total": 2.0,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00961276",
+     "committee": "LOWER COSTS NOW",
+     "candidate_id": "S0KS00315",
+     "candidate": "MARSHALL, ROGER W",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.7,
+     "last_date": "2026-09-29",
+     "total": 0.7,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00945733",
+     "committee": "THE 1861 INITIATIVE",
+     "candidate_id": "S0KS00315",
+     "candidate": "MARSHALL, ROGER W",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.6,
+     "last_date": "2026-09-11",
+     "total": 0.6,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00960385",
+     "committee": "UNITED FUTURES PAC",
+     "candidate_id": "S6KS00312",
+     "candidate": "HAMILTON, ADAM",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.46,
+     "last_date": "2026-10-01",
+     "total": 0.46,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00960385",
+     "committee": "UNITED FUTURES PAC",
+     "candidate_id": "S6KS00318",
+     "candidate": "HAMILTON, ADAM",
+     "party": "",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.04,
+     "last_date": "2026-09-16",
+     "total": 0.04,
+     "side": null
+    },
+    {
+     "committee_id": "C00899096",
+     "committee": "UNITED FUTURES",
+     "candidate_id": "S0KS00315",
+     "candidate": "MARSHALL, ROGER W",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.03,
+     "last_date": "2026-09-30",
+     "total": 0.03,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00448696",
+     "committee": "SENATE CONSERVATIVES FUND",
+     "candidate_id": "S0KS00315",
+     "candidate": "MARSHALL, ROGER W",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.01,
+     "notice_recent": 0.02,
+     "last_date": "2026-09-24",
+     "total": 0.03,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00960385",
+     "committee": "UNITED FUTURES PAC",
+     "candidate_id": "S0KS00315",
+     "candidate": "MARSHALL, ROGER",
+     "party": "REP",
+     "so": "O",
+     "reported": 0.0,
+     "notice_recent": 0.02,
+     "last_date": "2026-09-29",
+     "total": 0.02,
+     "side": "D"
+    },
+    {
+     "committee_id": "C00524181",
+     "committee": "SENATE CONSERVATIVES ACTION",
+     "candidate_id": "S0KS00315",
+     "candidate": "MARSHALL, ROGER W",
+     "party": "REP",
+     "so": "S",
+     "reported": 0.01,
+     "notice_recent": 0.0,
+     "last_date": "2026-08-24",
+     "total": 0.01,
+     "side": "R"
+    },
+    {
+     "committee_id": "C00961276",
+     "committee": "LOWER COSTS NOW",
+     "candidate_id": "S6KS00312",
+     "candidate": "HAMILTON, ADAM",
+     "party": "DEM",
+     "so": "S",
+     "reported": 0.0,
+     "notice_recent": 0.0,
+     "last_date": "2026-09-29",
+     "total": 0.0,
+     "side": "D"
+    }
+   ]
   }
  },
  "committees": [
   {
    "committee_id": "C00571703",
    "name": "SLF PAC",
-   "total": 166.82,
+   "total": 166.92,
    "by_state": {
     "GA": {
      "D": 0.0,
@@ -5664,6 +6031,10 @@
     "IA": {
      "D": 0.0,
      "R": 23.44
+    },
+    "NE": {
+     "D": 0.0,
+     "R": 0.1
     }
    }
   },
@@ -5895,7 +6266,7 @@
   {
    "committee_id": "C00961276",
    "name": "LOWER COSTS NOW",
-   "total": 8.35,
+   "total": 9.05,
    "by_state": {
     "GA": {
      "D": 1.51,
@@ -5915,6 +6286,10 @@
     },
     "IA": {
      "D": 1.37,
+     "R": 0.0
+    },
+    "KS": {
+     "D": 0.7,
      "R": 0.0
     }
    }
@@ -5949,6 +6324,25 @@
     "GA": {
      "D": 6.1,
      "R": 0.0
+    }
+   }
+  },
+  {
+   "committee_id": "C00844613",
+   "name": "WIN IT BACK PAC",
+   "total": 5.89,
+   "by_state": {
+    "TX": {
+     "D": 0.0,
+     "R": 0.04
+    },
+    "IA": {
+     "D": 0.0,
+     "R": 3.79
+    },
+    "NE": {
+     "D": 0.0,
+     "R": 2.06
     }
    }
   },
@@ -6029,6 +6423,17 @@
    }
   },
   {
+   "committee_id": "C00961227",
+   "name": "CORNHUSKER MAJORITY",
+   "total": 4.75,
+   "by_state": {
+    "NE": {
+     "D": 0.0,
+     "R": 4.75
+    }
+   }
+  },
+  {
    "committee_id": "C00492140",
    "name": "AB PAC",
    "total": 4.62,
@@ -6040,21 +6445,6 @@
     "IA": {
      "D": 4.07,
      "R": 0.0
-    }
-   }
-  },
-  {
-   "committee_id": "C00844613",
-   "name": "WIN IT BACK PAC",
-   "total": 3.83,
-   "by_state": {
-    "TX": {
-     "D": 0.0,
-     "R": 0.04
-    },
-    "IA": {
-     "D": 0.0,
-     "R": 3.79
     }
    }
   },
@@ -6106,6 +6496,39 @@
     },
     "IA": {
      "D": 1.26,
+     "R": 0.0
+    }
+   }
+  },
+  {
+   "committee_id": "C00953299",
+   "name": "PEOPLE OVER POLITICS ACTION FUND",
+   "total": 3.45,
+   "by_state": {
+    "KS": {
+     "D": 3.45,
+     "R": 0.0
+    }
+   }
+  },
+  {
+   "committee_id": "C00956292",
+   "name": "NEBRASKA VALUES PAC",
+   "total": 3.42,
+   "by_state": {
+    "NE": {
+     "D": 3.42,
+     "R": 0.0
+    }
+   }
+  },
+  {
+   "committee_id": "C00954503",
+   "name": "WORKING CLASS MAJORITY PAC, INC",
+   "total": 3.4,
+   "by_state": {
+    "NE": {
+     "D": 3.4,
      "R": 0.0
     }
    }
@@ -6254,73 +6677,13 @@
    }
   },
   {
-   "committee_id": "C00875039",
-   "name": "HIGH PLAINS PAC",
-   "total": 1.83,
+   "committee_id": "C00957928",
+   "name": "MAIN STREET FUND",
+   "total": 2.0,
    "by_state": {
-    "MI": {
+    "KS": {
      "D": 0.0,
-     "R": 0.52
-    },
-    "OH": {
-     "D": 0.0,
-     "R": 0.52
-    },
-    "AK": {
-     "D": 0.0,
-     "R": 0.27
-    },
-    "IA": {
-     "D": 0.0,
-     "R": 0.52
-    }
-   }
-  },
-  {
-   "committee_id": "C00922294",
-   "name": "STRONGER MAINE",
-   "total": 1.79,
-   "by_state": {
-    "ME": {
-     "D": 0.0,
-     "R": 1.79
-    }
-   }
-  },
-  {
-   "committee_id": "C00796045",
-   "name": "TRUTH AND COURAGE PAC",
-   "total": 1.75,
-   "by_state": {
-    "TX": {
-     "D": 0.0,
-     "R": 1.75
-    }
-   }
-  },
-  {
-   "committee_id": "C00489799",
-   "name": "PLANNED PARENTHOOD VOTES",
-   "total": 1.65,
-   "by_state": {
-    "MI": {
-     "D": 0.79,
-     "R": 0.0
-    },
-    "ME": {
-     "D": 0.76,
-     "R": 0.0
-    }
-   }
-  },
-  {
-   "committee_id": "C00947762",
-   "name": "MOMENT OF TRUTH PAC INC.",
-   "total": 1.63,
-   "by_state": {
-    "TX": {
-     "D": 1.63,
-     "R": 0.0
+     "R": 2.0
     }
    }
   }

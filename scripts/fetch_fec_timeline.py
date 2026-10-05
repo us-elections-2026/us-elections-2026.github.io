@@ -40,12 +40,13 @@ def nominees():
     for c in cands:
         if c.get("status") != "nominee" or c["state"] not in STATES:
             continue
+        if c["party"] == "I": c = {**c, "party": "I"}   # NE Osborn — 아래에서 D 칸에 배정
         sur = c["name"].split()[-1].upper()
         rows = [r for r in (fec.get(c["state"]) or []) if sur in (r.get("name") or "").upper()
-                and (r.get("party") or "")[:1] == c["party"]]
+                and ((r.get("party") or "")[:1] == c["party"] or c["party"] == "I")]
         rows.sort(key=lambda r: -(r.get("receipts") or 0))
         cid = rows[0]["candidate_id"] if rows else FALLBACK_ID.get((c["state"], c["party"]))
-        out[(c["state"], c["party"])] = {"name": c["name"], "name_kr": c.get("name_kr"), "candidate_id": cid}
+        out[(c["state"], "D" if c["party"] == "I" else c["party"])] = {"name": c["name"], "name_kr": c.get("name_kr"), "candidate_id": cid}
     return out
 
 
@@ -81,6 +82,7 @@ def ie_daily(rows):
         side = None
         if p == "DEM": side = "D" if so == "S" else "R"
         elif p == "REP": side = "R" if so == "S" else "D"
+        elif "OSBORN" in (x.get("candidate_name") or "").upper(): side = "D" if so == "S" else "R"  # NE 무소속 → D 측
         if side:
             out[side][ed] += float(x["expenditure_amount"])
     return out

@@ -92,6 +92,26 @@
       "poll_source": "**편차 최대 경합의 지위가 유지됐고, 토론 국면에 들어간다.** Fox 투렉 +2(LV) 대 Quantus 힌슨 +1.3이다. PolitiFact는 \"투렉 하원 본회의 표결 58% 불참\"을 True로 판정했다 — 공화 광고 소재가 될 공산이 크다. TV토론은 10/7(Iowa PBS)·10/13(Nexstar/WHO-TV) 두 차례이고, 10/7이 사이클 첫 대면 검증이다. SLF는 힌슨 지원 $2,000만을 추가했다 — NRSC '방어 5곳' 지도의 이행이다. 등급 피드(Cook·Sabato Toss-up / IE Tilt R)는 이번 주 변동이 없다.",
       "cash_on_hand": "**SLF 힌슨 지원 $2,000만 추가**(원천 10/4) · Turek Q2 $2.81M·현금 $2.4M vs Hinson Q2 $2.06M·현금 $6.7M(이월)",
       "kr_relevance": "농업(대두·에탄올) 관세 — 직접 연결은 미확인"
+    },
+    {
+      "state": "NE",
+      "defense": "R",
+      "incumbent": "Osborn (무소속) vs Ricketts (R·현직)",
+      "rating": "Likely R (Cook 9/23 · Sabato 9/22) · Lean R (Inside Elections 10/1)",
+      "latest_poll": "Ricketts 48–45 Osborn (co/efficient, R 성향, 9/28–30) · Ricketts 52–48 (Wedgewood, 9/14–16) · Osborn 46–42 (SurveyUSA, 9/8–13)",
+      "poll_source": "2026-10-05 편입. 민주 후보 Cindy Burbank가 7월 사퇴하고 무소속 Dan Osborn(노조 지도자)을 지지해 사실상 양자 구도. 조사는 기관 성향대로 갈려 SurveyUSA는 Osborn +4, 공화계 co/efficient와 Wedgewood는 Ricketts +3~4. 세 기관 모두 Likely R/Lean R. Osborn은 교섭단체를 밝히지 않아 민주 순증 계산에서는 별도 표기한다.",
+      "cash_on_hand": "【수집】 — FEC 2분기(펀드레이징 탭 표 자동)",
+      "kr_relevance": "농축산 수출(쇠고기) · 미확인"
+    },
+    {
+      "state": "KS",
+      "defense": "R",
+      "incumbent": "Hamilton (D) vs Marshall (R·현직)",
+      "rating": "Lean R (Cook 9/23 · Sabato 9/22) · Likely R (Inside Elections 10/1)",
+      "latest_poll": "Marshall 45–45 Hamilton (NYT/Siena, 9/22–30) · 44–44 (Trafalgar, 9/29–10/1) · Hamilton 50–48 (Wedgewood, 9/22–24) · Hamilton 45–43 (Emerson)",
+      "poll_source": "2026-10-05 편입. 8/4 경선에서 목사 Adam Hamilton이 34.6%로 민주 후보가 됐고, 현직 Marshall은 79.9%. 9월 말 조사가 연속 동률이라 1932년 이후 첫 민주 상원 승리 가능성이 거론된다. 자유당 David Graham 2~5%. 공화 관계자가 '캔자스·텍사스·알래스카에 돈이 필요하다'고 토로(10/4 주간).",
+      "cash_on_hand": "【수집】 — FEC 2분기(펀드레이징 탭 표 자동)",
+      "kr_relevance": "항공(위치타)·농산물 수출 · 미확인"
     }
   ]
 }

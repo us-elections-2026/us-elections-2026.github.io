@@ -536,3 +536,9 @@ main table.gt_table th.gt_col_heading { white-space: pre-line; text-align: cente
 .quarto-listing-default .quarto-post .listing-date { font-size: .78rem; }
 .quarto-listing-default .quarto-post .metadata { flex: 0 0 6.5rem; max-width: 6.5rem; }
 .quarto-listing-default .quarto-post .body { flex: 1 1 auto; min-width: 0; }
+
+/* 무소속 후보 카드(NE Osborn) — 2026-10-05 */
+.cand-card.cand-I { grid-column: 1; border-top-color: #6b21a8; }
+.cand-mini.cand-I { border-top-color: #6b21a8; }
+.cand-badge.b-I { background: #6b21a8; color: #fff; }
+.rt-hold-i { background: #6b21a8; }

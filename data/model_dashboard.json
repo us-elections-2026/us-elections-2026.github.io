@@ -144,6 +144,36 @@
       "rating_sabato": "Toss Up",
       "rating_as_of": "Cook 9/23 · 사바토 9/22 Toss-up 유지 · Inside Elections 10/2 Tilt R 유지",
       "rating_history": "Cook: Likely R →(6/3) Lean R →(8/20) Toss Up · Sabato: Likely R →(6/3) Leans R →(9/22) Toss-up · IE: Lean R →(8/6) Tilt R"
+    },
+    {
+      "id": "ne",
+      "name": "네브래스카",
+      "nameEn": "Nebraska",
+      "defense": "R",
+      "rating": "Likely R (Cook 9/23 · Sabato 9/22) · Lean R (Inside Elections 10/1)",
+      "prob": null,
+      "matchup": "Osborn (무소속) vs Ricketts (R·현직)",
+      "key_var": "무소속 Osborn의 2024년 재현 여부 — 민주 후보 Burbank 사퇴·지지, 조사는 기관별 엇갈림(SurveyUSA Osborn +4 / Wedgewood·co/efficient Ricketts +3~4)",
+      "note": "2026-10-05 감시주 편입(수집 프롬프트 v2.8). Kalshi 시장은 D/R 두 후보만 상장돼 무소속 Osborn 가격이 없다(R 73¢는 '공화 승리' 가격). 교섭단체 미정이라 민주 순증 산수에는 넣지 않는다.",
+      "rating_cook": "Likely R",
+      "rating_sabato": "Likely R",
+      "rating_as_of": "Cook 9/23 · Sabato 9/22 Likely R · Inside Elections 10/1 Lean R",
+      "rating_history": "미확인(편입 전)"
+    },
+    {
+      "id": "ks",
+      "name": "캔자스",
+      "nameEn": "Kansas",
+      "defense": "R",
+      "rating": "Lean R (Cook 9/23 · Sabato 9/22) · Likely R (Inside Elections 10/1)",
+      "prob": 34,
+      "matchup": "Hamilton (D) vs Marshall (R·현직)",
+      "key_var": "동률 조사 연속(NYT/Siena 45–45 · Trafalgar 44–44 · Emerson Hamilton +2) — 1932년 이후 첫 민주 상원 승리 가능성",
+      "note": "2026-10-05 감시주 편입(수집 프롬프트 v2.8). Kalshi 민주 34¢(10/3). 자유당 David Graham 2~5%가 변수.",
+      "rating_cook": "Lean R",
+      "rating_sabato": "Lean R",
+      "rating_as_of": "Cook 9/23 · Sabato 9/22 Lean R · Inside Elections 10/1 Likely R",
+      "rating_history": "미확인(편입 전)"
     }
   ],
   "scenarios": [

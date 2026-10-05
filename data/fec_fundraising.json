@@ -758,6 +758,145 @@
         "cash_on_hand": 0.01,
         "coverage_end": "2026-06-30"
       }
+    ],
+    "NE": [
+      {
+        "name": "RICKETTS, PETE",
+        "party": "REP",
+        "candidate_id": "S6NE00129",
+        "receipts": 11.23,
+        "disbursements": 4.81,
+        "cash_on_hand": 6.91,
+        "coverage_end": "2026-06-30"
+      },
+      {
+        "name": "OSBORN, DAN",
+        "party": "IND",
+        "candidate_id": "S4NE00207",
+        "receipts": 5.75,
+        "disbursements": 3.39,
+        "cash_on_hand": 2.42,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "BURBANK, CINDY",
+        "party": "DE",
+        "candidate_id": "S6NE00145",
+        "receipts": 0.04,
+        "disbursements": 0.02,
+        "cash_on_hand": 0.02,
+        "coverage_end": "2026-06-30"
+      },
+      {
+        "name": "MARVIN, MIKE",
+        "party": "OTH",
+        "candidate_id": "S6NE00152",
+        "receipts": 0.03,
+        "disbursements": 0.03,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-09-11"
+      },
+      {
+        "name": "FORBES, WILLIAM",
+        "party": "DEM",
+        "candidate_id": "S6NE00160",
+        "receipts": 0.0,
+        "disbursements": 0.0,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-05-21"
+      }
+    ],
+    "KS": [
+      {
+        "name": "MARSHALL, ROGER W",
+        "party": "REP",
+        "candidate_id": "S0KS00315",
+        "receipts": 6.21,
+        "disbursements": 1.03,
+        "cash_on_hand": 5.39,
+        "coverage_end": "2026-07-15"
+      },
+      {
+        "name": "HAMILTON, ADAM",
+        "party": "DEM",
+        "candidate_id": "S6KS00312",
+        "receipts": 4.17,
+        "disbursements": 2.44,
+        "cash_on_hand": 1.73,
+        "coverage_end": "2026-07-15"
+      },
+      {
+        "name": "SPIDEL NEUMANN, SANDY",
+        "party": "DEM",
+        "candidate_id": "S6KS00262",
+        "receipts": 0.41,
+        "disbursements": 0.25,
+        "cash_on_hand": 0.16,
+        "coverage_end": "2026-07-15"
+      },
+      {
+        "name": "SCHMIDT, PATRICK",
+        "party": "DEM",
+        "candidate_id": "S6KS00288",
+        "receipts": 0.26,
+        "disbursements": 0.25,
+        "cash_on_hand": 0.01,
+        "coverage_end": "2026-07-15"
+      },
+      {
+        "name": "MURRAY, ERIK",
+        "party": "DEM",
+        "candidate_id": "S6KS00270",
+        "receipts": 0.21,
+        "disbursements": 0.2,
+        "cash_on_hand": 0.01,
+        "coverage_end": "2026-07-15"
+      },
+      {
+        "name": "DAVIS, CHRISTY",
+        "party": "DEM",
+        "candidate_id": "S6KS00247",
+        "receipts": 0.19,
+        "disbursements": 0.11,
+        "cash_on_hand": 0.09,
+        "coverage_end": "2026-06-30"
+      },
+      {
+        "name": "TAYLOR, NOAH",
+        "party": "DEM",
+        "candidate_id": "S6KS00296",
+        "receipts": 0.16,
+        "disbursements": 0.15,
+        "cash_on_hand": 0.01,
+        "coverage_end": "2026-07-15"
+      },
+      {
+        "name": "HART, JASON",
+        "party": "DEM",
+        "candidate_id": "S6KS00304",
+        "receipts": 0.05,
+        "disbursements": 0.05,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-07-19"
+      },
+      {
+        "name": "LATZ, KEVIN",
+        "party": "DEM",
+        "candidate_id": "S6KS00320",
+        "receipts": 0.04,
+        "disbursements": 0.01,
+        "cash_on_hand": 0.08,
+        "coverage_end": "2026-07-15"
+      },
+      {
+        "name": "PARELKAR, LOIS ANNE ELIZABETH LEA",
+        "party": "DEM",
+        "candidate_id": "S6KS00239",
+        "receipts": 0.03,
+        "disbursements": 0.03,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-07-15"
+      }
     ]
   }
 }

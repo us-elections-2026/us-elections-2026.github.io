@@ -1,0 +1,178 @@
+---
+title: "캔자스 Kansas"
+toc: false
+---
+
+```{r}
+#| include: false
+source(file.path("R", "helpers.R"))
+```
+
+::::: {.panel-tabset}
+
+## 주 개요
+
+```{r}
+#| output: asis
+cat(state_card_html("KS"))
+```
+
+```{r}
+#| output: asis
+cat(state_today_md("KS"))
+```
+
+공화당 방어석이지만 **2026-10-05 감시주로 새로 편입한 곳**입니다. 현직 Roger Marshall(공화)에게 대형 교회 목사 Adam Hamilton(민주)이 도전합니다. 9월 말 조사가 연속 동률입니다. NYT/Siena 45–45, Trafalgar 44–44, Emerson은 Hamilton +2, Wedgewood는 Hamilton +2입니다. 캔자스는 1932년 이후 민주당 상원의원을 내지 못한 주라 등급은 아직 Lean R(Cook·Sabato)과 Likely R(Inside Elections)입니다. 그러나 공화 관계자가 10월 초 "캔자스에 돈이 필요하다"고 말했고, SLF가 약 1,000만 달러를 옮겨 왔습니다.
+
+::: {.summary}
+- **구도**: 공화 방어 — Marshall(R·현직, 산부인과 의사 출신) vs Hamilton(D·Church of the Resurrection 설립 목사, 첫 출마). Cook·Sabato Lean R, IE Likely R(10/1). 자유당 Graham 2~5%.
+- **변화**: Sabato 9/22 Likely R→Lean R · 9월 Hamilton 광고가 Marshall의 의사 시절 환자 소송·체포 이력을 재조명 · SLF 약 1,000만 달러 캔자스 예약(10월 초, NC에서 이동) · Kalshi 민주 34¢.
+- **한국 함의**: 항공우주(위치타)와 농산물 수출이 접점. Marshall은 한국 포함 아시아 무역협상을 긍정 평가했고, Hamilton의 한국 관련 발언은 미확인입니다.
+:::
+
+### 로컬 상황 — 일일 기록
+
+```{r}
+#| output: asis
+cat(state_ledger_md("KS", "local"))
+```
+
+## 배경
+
+### 의석 현황 — 현직·공석
+
+- **현직 재선 도전**: Roger Marshall(공화)은 2020년 Bollier를 53.2 대 41.8로 꺾고 당선된 초선 현직입니다. 2026년 8월 4일 경선을 79.9%로 통과했습니다. 공석이 아닙니다. ([Wikipedia](https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_Kansas))
+
+### 개관
+
+- **공화 우위의 역사**: 캔자스가 민주당 연방상원의원을 마지막으로 뽑은 것은 1932년입니다. 반면 주지사는 2018·2022년 민주 Laura Kelly가 이겼습니다. 2022년 8월 주민투표에서는 '주헌법상 낙태권 불인정' 개헌이 59 대 41로 부결됐습니다. 연방 선거는 공화, 주 단위 쟁점 투표는 온건 쪽으로 갈리는 주입니다. ([Religion News Service](https://religionnews.com/2026/05/01/kansas-last-sent-a-democrat-to-the-senate-in-1932-a-megachurch-pastor-aims-to-change-that/) · [19th News](https://19thnews.org/2026/08/kansas-amendment-no-abortion-supreme-court-justices/))
+- **편입 사유**: 9월 말 비당파 조사 동률, 무당파에서 Hamilton 42–27 우위(Emerson), 공화 지도부의 자금 이동이 겹쳤습니다. 주지사 선거도 같은 날 치러져 분할투표 양상이 변수입니다.
+- **스캔들 변수**: Marshall이 의사 시절 환자 700명 이상을 의료비 미납으로 고소해 81명이 체포된 이력이 9월 Hamilton 광고로 되살아났습니다. Marshall 측의 명예훼손 경고장은 역풍을 불렀습니다. ([KCUR](https://www.kcur.org/politics-elections-and-government/2026-09-29/roger-marshall-defamation-patient-arrested-adam-hamilton))
+
+### 경제·인구 구성
+- 인구는 약 297만 621명입니다 (2024년 7월 1일 추계) ([Census QuickFacts: Kansas](https://www.census.gov/quickfacts/KS)).
+- 인종 구성(2024년 추계)은 비히스패닉 백인 72.9%, 흑인 6.2%, 히스패닉 14.2%, 아시아계 3.4%입니다 ([Census QuickFacts: Kansas](https://www.census.gov/quickfacts/KS)).
+- 중위 가구소득은 74,275달러입니다 (2020–2024년 ACS 5년 추정, 2024년 달러 기준) ([Census QuickFacts: Kansas](https://www.census.gov/quickfacts/KS)).
+- 2020년 기준 도시 거주 인구가 57.3%로, 농촌 인구는 약 42.7%입니다 (2020년 센서스) ([Kansas Health Institute](https://www.khi.org/articles/2021-2020-census-data-reveal-a-changing-kansas/)).
+- 주요 산업은 위치타 중심의 항공기 제조(세스나·빔크래프트·봄바디어 리어젯·스피릿 에어로시스템스)와 농업(밀·수수 생산 전국 1위)입니다. 항공 제조업이 연 73억 달러 경제효과를 냅니다 ([8 Wonders of Kansas Commerce](https://kansassampler.org/8wondersofkansas-commerce/wichita-aviation-industry)).
+- 대형 고용주로는 스피릿 에어로시스템스(1만 3천 명), 텍스트론 에비에이션(9,350명) 등이 있습니다 ([8 Wonders of Kansas Commerce](https://kansassampler.org/8wondersofkansas-commerce/wichita-aviation-industry)).
+- 한국 관련 대형 투자로 CJ제일제당(Schwan's 모회사)이 살리나에 6억 달러를 투입해 세계 최대 냉동피자 공장을 짓고 2023년 가동했습니다 ([KED Global](https://www.kedglobal.com/food-beverage/newsView/ked202305220004)).
+
+### 역대 선거 결과의 특징
+
+```{r}
+#| output: asis
+cat(state_history_svg("KS"))
+```
+
+- 대선 결과는 2012년 롬니 +21.7%p, 2016년 트럼프 +20.6%p, 2020년 트럼프 +14.6%p, 2024년 트럼프 +16.1%p였습니다 ([Wikipedia: 2024 presidential election in Kansas](https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_Kansas)).
+- 연방상원 최근 3회는 2014년 로버츠 +10.6%p, 2020년 마셜 +11.4%p, 2022년 모런 +23%p였습니다 ([Ballotpedia: 2022 US Senate election in Kansas](https://ballotpedia.org/United_States_Senate_election_in_Kansas,_2022)).
+- 주지사 최근 2회는 2018년 켈리 +5%p, 2022년 켈리 +2.2%p였습니다 ([Wikipedia: 2022 Kansas gubernatorial election](https://en.wikipedia.org/wiki/2022_Kansas_gubernatorial_election)).
+- 대선·연방상원에서는 공화당이 꾸준히 큰 격차로 승리하는 안정적 공화당 강세주이지만, 주지사 선거에서는 민주당 켈리가 2회 연속 당선되는 분리투표 패턴을 보입니다 (위 개별 선거 결과 종합).
+
+### 주지사·주의회
+- 현 주지사는 민주당 로라 켈리이며 2019년 1월 취임, 2022년 재선됐고, 2연속 임기 제한으로 2026년 11월 3일 선거에 출마하지 않습니다 ([termlimits.com](https://termlimits.com/ksgovernor/)).
+- 2026년 주지사 선거는 공화당 타이 매스터슨(주상원 의장)과 민주당 신디 홀셔의 대결로 확정됐습니다 (2026년 8월 4일 예비선거 결과) ([KCUR](https://www.kcur.org/podcast/up-to-date/2026-06-02/kansas-governor-candidates-2026-election)).
+- 주상원은 40석 중 공화당 31석·민주당 9석, 주하원은 125석 중 공화당 88석·민주당 37석으로, 양원 모두 거부권 무력화(veto-proof)가 가능한 공화당 수퍼머조리티입니다 (2025년 1월 회기 기준) ([Kansas Reflector](https://kansasreflector.com/2025/01/13/kansas-legislature-convenes-2025-session-with-emboldened-republican-supermajority/)).
+- 주지사는 민주당, 주의회 양원은 공화당 수퍼머조리티인 분점정부로, 트라이펙타는 아닙니다 (위 자료 종합).
+- 2026년에는 주지사·연방상원 1석(현 마셜 의석)과 주상원·주하원 전 의석이 함께 걸려 있습니다 (후보 확정 자료 종합).
+
+### 유권자 등록·투표율
+- 등록 유권자는 총 1,877,427명(공화당 843,174명 44.9%, 민주당 462,475명 24.6%, 무소속 548,649명 29.2%, 기타 23,129명 1.2%)입니다 (2026년 10월 3일 기준) ([Independent Voter Project: Kansas](https://independentvoterproject.org/voter-stats/ks)).
+- VEP 기준 투표율은 2018년 51.1%, 2020년 65.7%, 2022년 47.6%였습니다 (U.S. Elections Project 인용 자료, 원문 electproject.org 직접 확인은 미확인) ([Independent Voter Project: Kansas](https://independentvoterproject.org/voter-stats/ks)).
+- 2024년 확정 VEP 투표율은 미확인이며, 2024년 일반 투표율(등록 유권자 기준 추정)은 63.2%로 보도됐습니다 (출처 교차확인, VEP 기준 여부 미확인) ([같은 자료](https://independentvoterproject.org/voter-stats/ks)).
+
+## 후보자
+
+```{r}
+#| output: asis
+cat(candidate_cards_html("KS"))
+```
+
+### 경선 결과 (8/4)
+
+공화 경선은 현직 Marshall이 79.9%로 통과했습니다(Naramore 20.1%). 민주 경선은 11명이 나선 가운데 Hamilton이 34.6%(77,607표)로 1위였습니다(Davis 14.2%, Taylor 13.6%). 캔자스는 경선 결선이 없어 단순 최다득표로 확정됐습니다. 자유당은 2022년에도 출마했던 David Graham을 지명했습니다. ([NBC News](https://www.nbcnews.com/politics/2026-primary-elections/kansas-senate-results) · [Lawrence KS Times](https://lawrencekstimes.com/2026/07/27/kns-ks-sen-candidates-202608/))
+
+### roll-call / 입법 관심사
+
+**Roger Marshall (R, 현역)** — 2022년 'Value Them Both' 낙태 제한 개헌을 지지했고, 트럼프 관세를 "캔자스 농민·축산업자에 유리한 재협상"으로 옹호합니다. 트럼프의 한국 포함 아시아 무역협상을 수출시장 확대로 긍정 평가하는 성명을 냈습니다. ([Marshall 상원실](https://www.marshall.senate.gov/newsroom/press-releases/senator-marshall-applauds-the-trump-administrations-successful-america-first-trade-negotiations/))
+
+**Adam Hamilton (D)** — 선출직 경력이 없어 표결 기록이 없습니다. 낙태권 지지(2022년 개헌 반대표)와 관세 반대를 공약으로 내걸었고, '통합·치유' 메시지로 무당파와 온건 공화층을 공략합니다. 한국 관련 발언은 미확인입니다. ([Christian Post](https://www.christianpost.com/news/adam-hamilton-releases-pro-choice-anti-tariff-platform.html?page=2))
+
+## 선거 제도
+
+### 경선·본선 방식
+
+- **폐쇄형 경선·단순다수 본선**: 8월 첫째 화요일(2026년 8/4) 당파 경선은 등록 당원만 참여합니다. 무당파는 투표소에서 당적을 선언하면 참여할 수 있습니다. 경선 결선이 없어 11명이 나선 민주 경선도 34.6%로 지명이 확정됐습니다. 11/3 본선은 단순다수제입니다. ([Kansas SOS](https://sos.ks.gov))
+- **같은 날 주지사 선거**: 2026년에는 주지사(Kelly 연임 제한으로 공석)와 연방상원이 같은 용지에 오릅니다. 2018·2022년 주지사는 민주가 이겼고, 상원은 공화가 이겨 온 분할투표 전통이 이번 레이스의 핵심 변수입니다.
+
+### 우편·조기 투표
+- 우편(사전)투표는 사유를 요구하지 않습니다. 신청은 선거일 전 화요일(2026년 본선은 10월 27일) 영업 종료까지 군 선거관리관에게 도착해야 하며, 신청서에 운전면허번호 또는 사진신분증 사본을 첨부해야 합니다 ([Kansas SOS: Application for Advance Ballot](https://sos.ks.gov/forms/elections/AV1.pdf)).
+- 완료된 우편투표지는 선거일 오후 7시까지 도착해야 한다고 공식 안내되어 있습니다. 다만 2021년 법(SB 307)이 도입한 '선거일 소인 시 3일 이내 도착 인정' 유예기간을 2025년 법(SB 4)이 폐지하려 했고, 법원이 이를 가집행 정지시켰습니다. 그래서 2026년 선거에서는 3일 유예기간이 그대로 적용됩니다 (2026년 10월 2일 캔자스 항소법원 결정 기준) ([Democracy Docket](https://www.democracydocket.com/news-alerts/gop-bid-to-scrap-kansas-mail-ballot-grace-period-fails-again/)).
+- 대면 조기투표(advance voting)는 2026년 본선 기준 10월 14일부터 시작되며, 모든 군에서 늦어도 10월 27일까지는 개시해야 하고 11월 2일 낮 12시까지 계속됩니다 ([Kansas SOS: Important Election Dates](https://sos.ks.gov/elections/important-election-dates.html)).
+- 드롭박스는 주법에 명문 규정이 없고 군 재량으로 설치됩니다. 105개 군 중 약 70개 군이 국무장관실에 드롭박스 위치 정보를 제공했습니다 (2025년 10월 기준) ([Kansas SOS: Drop Box Locations](https://sos.ks.gov/elections/drop-box-locations.html)).
+- 임시(provisional)투표는 신분증 미제시·확인 불가 시 발급되며, 해당 군의 개표위원회(board of canvassers) 개최 전까지 신분증을 제출해야 유효 처리됩니다. 개표위원회 개최일은 군마다 선거 후 월요일부터 그다음 주 목요일까지 달라 공식 사이트에서 통일된 기한은 미확인입니다 ([VoteRiders: Cure Deadlines](https://www.voteriders.org/curedeadline/)).
+
+### 유권자 등록
+- 2026년 본선 기준 유권자 등록 마감은 10월 13일이며, 이후 선거 종료 시까지 등록부가 마감됩니다 ([Kansas SOS: Voter Registration](https://sos.ks.gov/elections/voter-registration.html)).
+- 온라인 등록이 가능합니다 (kdor.ks.gov 포털을 통한 운전면허 연계 등록) ([Kansas SOS: Voter Registration](https://sos.ks.gov/elections/voter-registration.html)).
+- 자동유권자등록(AVR)은 도입되어 있지 않습니다. 다만 연방 NVRA에 따라 운전면허 신청·갱신 시 등록 여부를 묻는 절차는 있습니다 ([NCSL 자료 종합](https://www.ncsl.org/elections-and-campaigns/automatic-voter-registration)).
+- 당일 등록(same-day registration)은 허용되지 않습니다. 등록 마감이 선거일 21일 전으로 고정되어 있습니다 ([Kansas SOS: Voter Registration](https://sos.ks.gov/elections/voter-registration.html)).
+
+### 신분 확인
+- 캔자스는 strict photo ID 주로, 대면 투표 시 사진 신분증 제시가 법적으로 요구됩니다 ([Kansas SOS: Photo ID](https://www.sos.ks.gov/elections/photo-id.html)).
+- 인정되는 신분증은 캔자스 또는 타주 발급 운전면허증·주민증, 미국 여권, 군인증, 원주민 부족 신분증, 정부기관 직원증, 캔자스 내 공인 대학 학생증, 총기 휴대 허가증, 정부 발급 공공부조 카드입니다 ([Kansas SOS: Photo ID](https://www.sos.ks.gov/elections/photo-id.html)).
+- 65세 이상은 만료된 신분증도 사용할 수 있고, 영구 사전투표자(질병·장애)·군인 및 해외 유권자와 그 가족·종교적 이유로 선언서(DRO)를 작성한 유권자는 면제됩니다. 신분증이 없으면 임시투표 후 신분증을 제출해야 합니다 ([Kansas SOS: Photo ID](https://www.sos.ks.gov/elections/photo-id.html)).
+- 최근 변경으로 2024년 법(HB 2572)이 사전투표 봉투 서명이 등록 서명과 불일치하면 해당 표를 집계하지 않도록 했습니다 (전자 또는 수기 대조, 불일치 시 보완 기회 없음) (연도: 2024년) ([Kansas Legislature: HB 2572](https://www.kslegislature.gov/li_2024/b2023_24/measures/documents/hb2572_00_0000.pdf)).
+
+## 일일 브리핑
+
+```{r}
+#| output: asis
+cat(daily_log_md("KS"))
+```
+
+## 최신 여론조사
+
+```{r}
+gt_state_polls("KS")
+```
+
+### 조사 동향 — 일일 기록
+
+```{r}
+#| output: asis
+cat(state_ledger_md("KS", "polls"))
+```
+
+## 펀드레이징
+
+```{r}
+#| output: asis
+cat(state_money_html("KS"))
+```
+
+```{r}
+gt_state_fec("KS")
+```
+
+이 레이스의 자금은 **도전자가 모금에서 앞서고 현직이 현금에서 앞서는** 구도입니다. Hamilton은 경선 이후 모금에서 Marshall을 앞섰다고 보도됐습니다. 현금 보유는 Marshall이 약 540만 달러로 우위입니다. 외부 자금은 10월 초 급변했습니다. SLF가 노스캐롤라이나에서 뺀 돈으로 캔자스에 약 1,000만 달러를 예약했습니다. Marshall 측도 280만 달러를 더 예약했습니다. Hamilton 측 예약은 59만 달러, 외부 지원은 55.6만 달러에 그칩니다. Senate Majority PAC의 대응 규모는 미확인입니다. ([Semafor](https://www.semafor.com/article/10/02/2026/republicans-pull-ad-spending-from-north-carolina) · [KWCH](https://www.kwch.com/2026/10/02/senate-republicans-move-more-cash-kansas-marshall-hamilton-race-heats-up/))
+
+### 자금 투입·지출 — 일일 기록
+
+```{r}
+#| output: asis
+cat(state_ledger_md("KS", "money"))
+```
+
+## 한국 함의
+
+**캔자스와 한국의 접점은 항공우주와 농산물입니다.** 항공우주는 캔자스 수출의 약 20%(연 23억 달러)로 Textron Aviation·Spirit AeroSystems가 위치타에 있습니다. 밀·소고기·대두가 아시아 시장에 나갑니다. 한국을 특정한 거래·발언은 이번 조사에서 확인되지 않았습니다.
+
+- **Marshall**은 트럼프의 한국 포함 아시아 무역협상을 캔자스 농축산 수출 확대로 긍정 평가했습니다. 관세 국면에서 행정부 노선 안에서 시장 접근을 말합니다.
+- **Hamilton**은 관세 반대를 공약으로 내걸었습니다. 한국 관련 발언은 미확인입니다.
+- 신규 동향은 [Korea Watch](../korea-watch.qmd)에 기록합니다. ([Kansas Dept. of Commerce](https://www.kansascommerce.gov/industry/aerospace/) · [Marshall 상원실](https://www.marshall.senate.gov/newsroom/press-releases/senator-marshall-applauds-the-trump-administrations-successful-america-first-trade-negotiations/))
+
+*작성 2026-10-05 · 등급: Cook Lean R(9/23) · Sabato Lean R(9/22) · Inside Elections Likely R(10/1) · 예측시장 Kalshi 민주 34¢(10/3)*
+
+:::::

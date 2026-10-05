@@ -89,6 +89,8 @@ website:
               - states/oh.qmd
               - states/ak.qmd
               - states/ia.qmd
+              - states/ne.qmd
+              - states/ks.qmd
       - section: "하원 House"
         contents:
           - text: "경합구 트래커 — 토스업·재획정"

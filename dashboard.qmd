@@ -106,7 +106,7 @@ cat(daily_log_md("SENATE"))
 
 ### 주별 민주 승리 전망 — 모델 막대 × 시장가 ◆
 
-막대 = 자체 모델 v0(등급+시장+조사 블렌드), ◆ = 예측시장 가격(Kalshi 원가격, 9주 전부). 점선 = 50%.
+막대 = 자체 모델 v0(등급+시장+조사 블렌드), ◆ = 예측시장 가격(Kalshi 원가격, 감시주 전부). 점선 = 50%.
 
 두 값이 벌어지는 주를 보세요. 현재 격차가 가장 큰 곳은 **`r kr(gmax$state)`**로, 시장 `r n1(gmax$market)`¢ 대 모델 `r n1(gmax$model)`%로 `r n1(abs(gmax$gap))`포인트 차이입니다. 반대로 **`r kr(gmin$state)`**는 시장 `r n1(gmin$market)`¢ · 모델 `r n1(gmin$model)`%로 두 값이 가장 가깝습니다. 모델은 조사를 반영하고 시장은 반영하지 않으므로, **조사가 얇거나 오래된 주에서 격차가 벌어지는 경향**이 있습니다.
 
@@ -139,7 +139,7 @@ cat(kalshi_control_html())
 gt_kalshi_races("senate", states = WATCH)
 ```
 
-거래액을 함께 보세요. 감시 9주 중 가장 두꺼운 시장은 **`r kr(thick[1])`**(`r money(vol[[1]])`)와 **`r kr(thick[2])`**(`r money(vol[[2]])`), 가장 얇은 곳은 **`r kr(thin)`**(`r money(vol[[length(vol)]])`)입니다 — 얇은 시장은 소수 거래에 흔들립니다. 가격이 반반에 가까운데 거래액까지 큰 곳(`r krs(close_thick)`)이야말로 시장이 "정말 모르겠다"고 말하는 지점입니다.
+거래액을 함께 보세요. 감시주 중 가장 두꺼운 시장은 **`r kr(thick[1])`**(`r money(vol[[1]])`)와 **`r kr(thick[2])`**(`r money(vol[[2]])`), 가장 얇은 곳은 **`r kr(thin)`**(`r money(vol[[length(vol)]])`)입니다 — 얇은 시장은 소수 거래에 흔들립니다. 가격이 반반에 가까운데 거래액까지 큰 곳(`r krs(close_thick)`)이야말로 시장이 "정말 모르겠다"고 말하는 지점입니다.
 
 ### 경합주 등급 — Cook · Sabato 올해 변동 (`r mrange`)
 

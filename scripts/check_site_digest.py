@@ -15,6 +15,8 @@ import sys
 from pathlib import Path
 
 STATES = ["조지아", "미시간", "메인", "노스캐롤라이나", "알래스카", "오하이오", "텍사스", "아이오와", "뉴햄프셔"]
+# 2026-10-05 네브래스카·캔자스 편입(수집 프롬프트 v2.8). v2.7 원문·정리본(9주)과 호환되도록 10·11은 선택 — 있으면 검사, 없으면 경고.
+OPTIONAL_STATES = ["네브래스카", "캔자스"]
 # v1.1(2026-09-25): 여론조사·자금·로컬·주 함의. v1.0(판세·이월·주 함의) 정리본도 통과시킨다(소급분 호환).
 ELEMENT_SETS = [["여론조사", "자금", "로컬", "주 함의"], ["판세", "이월", "주 함의"]]
 TABLE_HEADER = "| 주 | 조사기관 | 후원 | 성향 | 모집단 | n | 조사시작 | 조사종료 | D후보 | D% | R후보 | R% | 출처URL |"
@@ -92,9 +94,11 @@ def main() -> int:
             errs.append(f"절 누락: ## {need}")
     news = next((v for k, v in sec.items() if "주별 뉴스" in k), "")
     sub = split_h3(news)
-    for i, st in enumerate(STATES, 1):
+    for i, st in enumerate(STATES + OPTIONAL_STATES, 1):
         key = next((k for k in sub if k.startswith(f"{i}. ") and st in k), None)
         if key is None:
+            if st in OPTIONAL_STATES:
+                print(f"[digest] ⚠ 선택 주 소절 없음: ### {i}. {st} (v2.8 이전 원문이면 정상)"); continue
             errs.append(f"주 소절 누락 또는 순서 오류: ### {i}. {st}"); continue
         body_st = sub[key]
         ok = any(all(re.search(rf"^- \*\*{re.escape(el)}\*\*", body_st, re.M) for el in es) for es in ELEMENT_SETS)

@@ -1,0 +1,197 @@
+---
+title: "네브래스카 Nebraska"
+toc: false
+---
+
+```{r}
+#| include: false
+source(file.path("R", "helpers.R"))
+```
+
+::::: {.panel-tabset}
+
+## 주 개요
+
+```{r}
+#| output: asis
+cat(state_card_html("NE"))
+```
+
+```{r}
+#| output: asis
+cat(state_today_md("NE"))
+```
+
+공화당 방어석이지만 **2026-10-05 감시주로 새로 편입한 곳**입니다. 현직 Pete Ricketts(공화)가 무소속 Dan Osborn과 맞섭니다. 민주당 후보 Cindy Burbank가 7월 사퇴해 사실상 양자 구도이고, Osborn은 2024년에도 무소속으로 Fischer 상원의원에게 46.5 대 53.2로 좁혀 진 전력이 있습니다. 9월 조사는 기관별로 엇갈립니다. SurveyUSA는 Osborn +4, 공화계 co/efficient와 Wedgewood는 Ricketts +3~4입니다. 세 기관 등급은 Likely R(Cook·Sabato)과 Lean R(Inside Elections)입니다.
+
+::: {.summary}
+- **구도**: 공화 방어 — Ricketts(R·현직, 2023년 임명·2024년 특별선거 당선) vs Osborn(무소속·노조 지도자). Cook·Sabato Likely R, IE Lean R(10/1).
+- **변화**: 민주 후보 Burbank 7/17 사퇴로 Osborn 단일화 · Ricketts 2분기 자기자금 520만 달러 투입 · SLF 계열 Cornhusker Majority 누적 380만 달러 광고. Kalshi는 D/R 두 후보만 상장돼 Osborn 가격이 없습니다.
+- **한국 함의**: 한국은 네브래스카 소고기 최대 수출시장(2022년 5.84억 달러). Ricketts는 상원 외교위 동아시아 소위원장입니다.
+:::
+
+### 로컬 상황 — 일일 기록
+
+```{r}
+#| output: asis
+cat(state_ledger_md("NE", "local"))
+```
+
+## 배경
+
+### 의석 현황 — 현직·공석
+
+- **현직 재선 도전**: Pete Ricketts(공화)는 2023년 1월 Ben Sasse 사임으로 Pillen 주지사가 임명했고, 2024년 11월 특별선거에서 62.6%로 잔여 임기를 채웠습니다. 2026년이 첫 정규 임기 도전이며 공석이 아닙니다. ([Nebraska Examiner](https://nebraskaexaminer.com/2024/11/05/former-nebraska-gov-ricketts-wins-first-election-to-u-s-senate-defeating-love/))
+
+### 개관
+
+- **2024년의 선례**: 무소속 Osborn은 2024년 정기 선거에서 민주당이 후보를 내지 않은 가운데 현직 Deb Fischer를 46.5 대 53.2까지 추격했습니다. 트럼프가 같은 날 약 20%p로 이긴 주에서 나온 결과입니다. ([Washington Post](https://www.washingtonpost.com/elections/results/2024/11/05/nebraska-senate/))
+- **유권자 구성**: 등록 유권자 1,217,351명 가운데 공화 49.7%, 민주 25.9%, 무당파 22.2%입니다. 무소속 후보가 이기려면 무당파 결집에 더해 공화 이탈표가 필요한 구조입니다. ([Nebraska SOS](https://sos.nebraska.gov))
+- **편입 사유**: 조사 접전과 민주당의 Osborn 지원, 공화 슈퍼팩의 뒤늦은 진입이 겹쳐 전국 매체가 '확장 지도'로 다루기 시작했습니다. 다만 Osborn은 교섭단체를 밝히지 않아 이 사이트의 민주 순증 산수에는 넣지 않고 따로 셉니다.
+
+### 경제·인구 구성
+- 네브래스카 인구는 2024년 7월 1일 기준 약 200만 5465명으로 추산됩니다 ([Census QuickFacts](https://www.census.gov/quickfacts/NE)).
+- 인종 구성은 비히스패닉 백인 73.3%, 흑인 5.8%, 히스패닉 14.4%, 아시아계 3.2%입니다 ([Census QuickFacts](https://www.census.gov/quickfacts/NE)).
+- 2024년 기준 중위 가구소득은 7만 6475달러입니다 ([Census QuickFacts](https://www.census.gov/quickfacts/NE)).
+- 인구 대부분이 오마하·링컨 광역권에 몰려 있고 그 외 지역은 농업 중심의 농촌 지역입니다 ([Redfin](https://www.redfin.com/blog/nebraska-major-industries/)).
+- 주요 산업은 농업·축산, 식품가공, 보험·금융, 운송업이며 옥수수·대두 재배와 소 사육 비중이 큽니다 ([Redfin](https://www.redfin.com/blog/nebraska-major-industries/)).
+- 최대 고용주는 오마하 본사의 버크셔 해서웨이이고 유니언 퍼시픽, 키위트도 대형 고용주입니다 ([Zippia](https://www.zippia.com/advice/largest-companies-in-nebraska/)).
+- 한국 관련 대형 투자 사례는 미확인입니다.
+
+### 역대 선거 결과의 특징
+
+```{r}
+#| output: asis
+cat(state_history_svg("NE"))
+```
+
+- 2012년 대선은 롬니(R)가 60.1%로 21.9%p 격차로 승리했습니다 ([Ballotpedia](https://ballotpedia.org/Presidential_election_in_Nebraska,_2024)).
+- 2016년 대선은 트럼프(R)가 59.9%로 25.5%p 격차로 승리했습니다 ([Ballotpedia](https://ballotpedia.org/Presidential_election_in_Nebraska,_2024)).
+- 2020년 대선은 트럼프(R)가 58%로 약 19%p 격차로 승리했습니다 ([Wikipedia](https://en.wikipedia.org/wiki/2020_United_States_presidential_election_in_Nebraska)).
+- 2024년 대선은 트럼프(R)가 59.3%로 22.4%p 격차로 승리했습니다 ([Wikipedia](https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_Nebraska)).
+- 2020년과 2024년에는 분할 배분 방식에 따라 2선거구에서만 민주당이 선거인단 1석을 가져갔습니다 ([Wikipedia](https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_Nebraska)).
+- 2018년 연방상원은 피셔(R)가 57.69%로 19.1%p 격차로 승리했습니다 ([Ballotpedia](https://ballotpedia.org/United_States_Senate_election_in_Nebraska,_2018)).
+- 2020년 연방상원은 새스(R)가 62.7%로 38.3%p 격차로 승리했습니다 ([Wikipedia](https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_Nebraska)).
+- 2024년 정규 연방상원 선거는 피셔(R)가 53.19%로 6.67%p 격차로 승리했습니다 ([Wikipedia](https://en.wikipedia.org/wiki/2024_Nebraska_elections)).
+- 2024년에는 새스 사임에 따른 보궐선거도 함께 치러져 리켓츠(R)가 62.5%로 당선됐습니다 ([Nebraska Examiner](https://nebraskaexaminer.com/2024/11/05/former-nebraska-gov-ricketts-wins-first-election-to-u-s-senate-defeating-love/)).
+- 주지사는 2018년 리켓츠(R)가 59.0%로 18%p 격차로 승리했습니다 ([Wikipedia](https://en.wikipedia.org/wiki/2022_Nebraska_gubernatorial_election)).
+- 2022년 주지사는 필런(R)이 59.22%로 23%p 격차로 승리했습니다 ([Wikipedia](https://en.wikipedia.org/wiki/2022_Nebraska_gubernatorial_election)).
+- 네브래스카는 연방·주 선거 전반에서 공화당이 안정적으로 승리하는 강세주이며 오마하 2선거구만 경합성을 보이는 패턴입니다 ([Ballotpedia](https://ballotpedia.org/Voting_in_Nebraska)).
+
+### 주지사·주의회
+- 현 주지사는 짐 필런(공화, 2023년 1월 5일 취임)이며 임기는 2027년 1월까지입니다 ([Ballotpedia](https://ballotpedia.org/Jim_Pillen)).
+- 필런은 2026년 재선에 도전한다고 선언했습니다 ([WOWT](https://www.wowt.com/2025/05/29/nebraska-gov-jim-pillen-run-reelection-2026/)).
+- 주의회는 단원제 49석으로 공식적으로 비정파 선거입니다 ([Ballotpedia](https://ballotpedia.org/Nebraska_State_Senate_(Unicameral))).
+- 사실상 정당별 구성은 공화 33석, 민주 14석, 기타 2석입니다 (기준일 2024년 11월) ([Ballotpedia](https://ballotpedia.org/Nebraska_State_Senate_(Unicameral))).
+- 주지사와 단원제 의회를 공화당이 사실상 장악해 공화 트라이펙타로 분류됩니다 ([270toWin](https://www.270towin.com/content/state-government-trifectas)).
+- 2026년에는 주지사·부지사, 주무장관, 단원제 49석 중 24석이 함께 걸려 있습니다 ([Ballotpedia](https://ballotpedia.org/2026_Nebraska_legislative_session)).
+
+### 유권자 등록·투표율
+- 2026년 9월 28일 기준 등록 유권자는 총 121만 7351명입니다 ([Independent Voter Project](https://independentvoterproject.org/voter-stats/ne)).
+- 정당별로는 공화 49.7%, 민주 25.9%, 무소속 22.2%, 기타 2.2%입니다 ([Independent Voter Project](https://independentvoterproject.org/voter-stats/ne)).
+- 적격인구 기준(VEP) 투표율은 2018년 51.5%, 2020년 69.5%였습니다 ([Ballotpedia](https://ballotpedia.org/Voter_turnout_in_Nebraska)).
+- 적격인구 기준(VEP) 투표율은 2022년 48.4%, 2024년 68.0%였습니다 ([Ballotpedia](https://ballotpedia.org/Voter_turnout_in_Nebraska)).
+
+## 후보자
+
+```{r}
+#| output: asis
+cat(candidate_cards_html("NE"))
+```
+
+### 경선 결과 (5/12)
+
+공화 경선은 현직 Ricketts가 81.5%로 통과했습니다(Knobel 8.1%, Schultz 6.0%). 민주 경선은 Cindy Burbank가 89.5%로 지명됐으나 7월 17일 사퇴했고, 주무장관은 그를 투표용지에서 뺐습니다. Burbank는 공식 지지 선언 없이 "Osborn이 공정한 기회를 가질 자격이 있다"고 말했습니다. 본선 용지에는 Ricketts·Osborn 외에 America First Party의 Chuck Conboy, Working People Party의 Robin Richards 등이 오릅니다. ([NE Public Media](https://nebraskapublicmedia.org/en/news/news-articles/2026-us-senate-primary-results/) · [Nebraska Examiner](https://nebraskaexaminer.com/2026/07/21/nebraska-secretary-of-state-says-democrat-cindy-burbank-wont-appear-on-us-senate-ballot/))
+
+### roll-call / 입법 관심사
+
+**Pete Ricketts (R, 현역)** — 상원 외교위 동아시아·태평양 소위원장. 트럼프의 한국 포함 아시아 무역협상을 "약 1조 달러 투자 유치"로 환영하는 성명을 냈습니다. 농업 관세와 소고기 관세면제 논쟁에서는 행정부 노선을 옹호합니다. ([Ricketts 상원실](https://www.ricketts.senate.gov/news/press-releases/ricketts-issues-statement-following-trumps-successful-asia-trip-trade-negotiations-with-xi-jinping/))
+
+**Dan Osborn (무소속)** — 선출직 경력이 없어 표결 기록이 없습니다. 주 박람회 토론에서 전면 관세 반대·표적 관세 지지, 소고기 관세면제 비판, Roe 기준 낙태권을 밝혔습니다. 한국 관련 발언은 미확인입니다. ([Sandhills Express](https://sandhillsexpress.com/state-news/ricketts-osborn-talk-tariffs-iran-war-during-nebraska-state-fair-debate/))
+
+## 선거 제도
+
+### 경선·본선 방식
+
+- **당파 경선·단순다수 본선**: 5월 둘째 화요일(2026년 5/12) 당파 경선 뒤 11/3 본선은 단순다수제이고 결선은 없습니다. 무소속은 청원 서명으로 본선에 직행하며, 경선에서 지명된 정당 후보가 사퇴하면 그 자리는 공석으로 남습니다(Burbank 사례). ([Nebraska SOS](https://sos.nebraska.gov/elections))
+- **초당파 단원제 의회**: 네브래스카 주의회는 49석 단원제이며 공식적으로 무당파로 선출됩니다. 주 정치에서 '무소속' 호소가 다른 주보다 낯설지 않은 배경입니다.
+- **선거인단 분할**: 대선 선거인단을 선거구별로 배분하는 두 주 가운데 하나로, 오마하의 NE-02가 2008·2020·2024년 민주 쪽으로 갈렸습니다.
+
+### 우편·조기 투표
+- 사전(부재자)투표는 사유 불문 신청 가능한 무자격사유 제도입니다 ([Nebraska SOS](https://sos.nebraska.gov/elections/early-voting)).
+- 2026년 본선 신청 마감은 선거 전 둘째 금요일인 10월 23일 오후 6시입니다 ([Nebraska SOS](https://sos.nebraska.gov/elections/early-voting)).
+- 용지는 우편·드롭박스·직접제출 모두 선거일 투표 마감까지 도착해야 유효하며 소인만으로는 인정되지 않습니다 ([Nebraska SOS](https://sos.nebraska.gov/elections/early-voting)).
+- 대면 조기투표는 카운티 선거사무소에서 진행되며 통상 총선 35일 전부터 용지가 발송됩니다 ([Nebraska SOS](https://sos.nebraska.gov/elections/early-voting)).
+- 인구 1만 명 미만인 11개 카운티는 투표소 없이 전면 우편투표를 실시합니다 ([Nebraska Public Media](https://nebraskapublicmedia.org/en/news/news-articles/turnout-spikes-in-nebraskas-by-mail-voting-counties-as-conspiracy-theories-and-opposition-remain-loud/)).
+- 해당 11개 카운티는 분·시더·체리·클레이·도스·딕슨·가든·녹스·메릭·모릴·스탠턴입니다 ([Nebraska Public Media](https://nebraskapublicmedia.org/en/news/news-articles/turnout-spikes-in-nebraskas-by-mail-voting-counties-as-conspiracy-theories-and-opposition-remain-loud/)).
+- 오마하·링컨 등 대도시 카운티는 주법상 전면 우편투표가 금지됩니다 ([Nebraska Public Media](https://nebraskapublicmedia.org/en/news/news-articles/turnout-spikes-in-nebraskas-by-mail-voting-counties-as-conspiracy-theories-and-opposition-remain-loud/)).
+- 드롭박스는 카운티별로 운영되며 세부 위치는 공식 조회 서비스에서 확인할 수 있습니다 ([Nebraska SOS](https://sos.nebraska.gov/elections)).
+- 임시투표는 투표소 명부에 이름이 없거나 신분증이 없을 때 인정됩니다 ([Nebraska Legislature](https://nebraskalegislature.gov/laws/statutes.php?statute=32-915)).
+
+### 유권자 등록
+- 2026년 본선 등록 마감은 온라인·우편이 10월 16일입니다 ([Nebraska SOS](https://sos.nebraska.gov/elections/registering-vote)).
+- 방문 등록 마감은 10월 23일 오후 6시입니다 ([Nebraska SOS](https://sos.nebraska.gov/elections/registering-vote)).
+- 온라인 등록이 가능하며 주무장관 홈페이지에서 신청할 수 있습니다 ([Nebraska SOS](https://sos.nebraska.gov/elections/registering-vote)).
+- 자동유권자등록(AVR) 여부는 공식 사이트에서 미확인입니다.
+- 당일등록은 허용되지 않습니다 ([Nebraska SOS](https://sos.nebraska.gov/elections/registering-vote)).
+
+### 신분 확인
+- 2022년 주민투표(이니셔티브 432)로 사진 신분증 제시를 의무화하는 헌법개정이 통과됐습니다 ([Nebraska SOS](https://sos.nebraska.gov/voter-id)).
+- 시행법 LB514에 따라 2024년 5월 14일 예비선거부터 사진 신분증 제시가 요구됩니다 ([Nebraska SOS](https://sos.nebraska.gov/voter-id)).
+- 신분증 요건은 사진 포함을 요구하는 방식입니다 ([Nebraska SOS](https://sos.nebraska.gov/voter-id)).
+- 인정 신분증은 네브래스카 운전면허증·주 ID, 대학 ID, 부족 ID, 지방정부 발행 ID, 미국 여권, 군 ID입니다 ([Nebraska SOS](https://sos.nebraska.gov/sites/default/files/doc/Fact%20Sheet%207.23.2024.pdf)).
+- 신분증이 없는 유권자는 투표용 주 ID를 무료로 발급받을 수 있습니다 ([Nebraska SOS](https://sos.nebraska.gov/sites/default/files/doc/Fact%20Sheet%207.23.2024.pdf)).
+- 신분증이 없어도 합당한 장애나 촬영에 대한 종교적 거부가 있으면 임시투표가 허용됩니다 ([Nebraska SOS](https://sos.nebraska.gov/sites/default/files/doc/FAQ%20Rev.%207.22.24.pdf)).
+- 이 제도는 2024년에 새로 시행된 변경 사항입니다 ([Nebraska SOS](https://sos.nebraska.gov/voter-id)).
+
+## 일일 브리핑
+
+```{r}
+#| output: asis
+cat(daily_log_md("NE"))
+```
+
+## 최신 여론조사
+
+```{r}
+gt_state_polls("NE")
+```
+
+### 조사 동향 — 일일 기록
+
+```{r}
+#| output: asis
+cat(state_ledger_md("NE", "polls"))
+```
+
+## 펀드레이징
+
+```{r}
+#| output: asis
+cat(state_money_html("NE"))
+```
+
+```{r}
+gt_state_fec("NE")
+```
+
+이 레이스의 자금은 **현직의 자기자금 대 도전자의 소액기부** 구도입니다. Ricketts는 2분기 모금 630만 달러 가운데 520만 달러를 자기 돈으로 넣어 현금 690만 달러를 쌓았고, Osborn은 1분기에 모금액으로 현직을 앞섰지만 현금은 240만 달러에 그칩니다. 외부에서는 SLF 계열 신생 단체 Cornhusker Majority가 9월 중순 140만 달러 광고로 들어와 누적 380만 달러에 이르렀습니다. 네브래스카는 SLF의 당초 우선 5개 주에 없던 곳이라, 이 진입 자체가 공화 지도부가 레이스를 접전으로 본다는 신호로 읽힙니다. ([Nebraska Examiner](https://nebraskaexaminer.com/2026/07/28/ricketts-outraises-osborn-in-latest-report-for-nebraska-us-senate-race/) · [Axios](https://www.axios.com/2026/09/15/gop-super-pac-jumps-into-nebraska-senate-race-with-14m-ad-buy))
+
+### 자금 투입·지출 — 일일 기록
+
+```{r}
+#| output: asis
+cat(state_ledger_md("NE", "money"))
+```
+
+## 한국 함의
+
+**한국은 네브래스카 소고기의 최대 수출시장입니다.** 2022년 기준 5.84억 달러로, 이 주 농축산 경제의 가격 민감도가 한미 통상 조건에 직접 닿습니다. Pillen 주지사는 2023년 한국·일본 무역사절단을 이끌었고, 2026년 7월 사절단은 일본·필리핀 중심이었습니다.
+
+- **Ricketts**는 상원 외교위 동아시아 소위원장으로 한국 관련 발언 창구가 가장 넓은 후보입니다. 트럼프의 아시아 무역협상을 환영했고, 관세 국면에서 농업 수출시장 확보를 행정부 노선 안에서 말합니다.
+- **Osborn**은 전면 관세에 반대하고 소고기 관세면제를 비판합니다. 한국을 직접 거론한 발언은 미확인입니다.
+- 어느 쪽이 이기든 네브래스카의 이해는 **소고기·옥수수의 아시아 시장 접근**으로 수렴합니다. 신규 동향은 [Korea Watch](../korea-watch.qmd)에 기록합니다. ([Nebraska Examiner](https://nebraskaexaminer.com/2023/09/01/gov-pillen-and-delegation-to-press-trade-in-japan-south-korea/) · [KLIN](https://klin.com/2026/07/28/pillen-promotes-nebraska-exports-during-asia-trade-mission/))
+
+*작성 2026-10-05 · 등급: Cook Likely R(9/23) · Sabato Likely R(9/22) · Inside Elections Lean R(10/1) · 예측시장 Kalshi 공화 73¢(무소속 미상장)*
+
+:::::

@@ -67,11 +67,12 @@ COLS = ["state", "pollster", "sponsor", "partisan", "population", "n", "start_da
         "dem_candidate", "rep_candidate", "dem_pct", "rep_pct", "margin", "note", "source_url"]
 WATCH = ["GA", "MI", "NH", "ME", "NC", "TX", "OH", "AK", "IA"]
 STATE_KR = {"조지아": "GA", "미시간": "MI", "뉴햄프셔": "NH", "메인": "ME", "노스캐롤라이나": "NC",
-            "텍사스": "TX", "오하이오": "OH", "알래스카": "AK", "아이오와": "IA"}
+            "텍사스": "TX", "오하이오": "OH", "알래스카": "AK", "아이오와": "IA", "네브래스카": "NE", "캔자스": "KS"}
 NOMINEE = {  # 주별 지명자 성(姓) — 대진 검증용
     "GA": ("Ossoff", "Collins"), "MI": ("El-Sayed", "Rogers"), "NH": ("Pappas", "Sununu"),
     "ME": ("Jackson", "Collins"), "NC": ("Cooper", "Whatley"), "TX": ("Talarico", "Paxton"),
     "OH": ("Brown", "Husted"), "AK": ("Peltola", "Sullivan"), "IA": ("Turek", "Hinson"),
+    "NE": ("Osborn", "Ricketts"), "KS": ("Hamilton", "Marshall"),  # NE: Osborn은 무소속(민주 후보 사퇴) — D 칸에 둔다
 }
 CAND_KR = {  # 한글 표기 → 영문 성
     "오소프": "Ossoff", "콜린스": "Collins", "엘사예드": "El-Sayed", "엘사이드": "El-Sayed", "로저스": "Rogers",
@@ -79,6 +80,7 @@ CAND_KR = {  # 한글 표기 → 영문 성
     "왯틀리": "Whatley", "와틀리": "Whatley", "워틀리": "Whatley", "탈라리코": "Talarico", "탤라리코": "Talarico",
     "팩스턴": "Paxton", "브라운": "Brown", "허스테드": "Husted", "허스티드": "Husted", "펠톨라": "Peltola",
     "설리번": "Sullivan", "튜렉": "Turek", "투렉": "Turek", "힌슨": "Hinson",
+    "오즈번": "Osborn", "오스본": "Osborn", "리케츠": "Ricketts", "리켓츠": "Ricketts", "해밀턴": "Hamilton", "마셜": "Marshall", "마샬": "Marshall",
 }
 
 # 조사기관 정규화 — 기존 CSV 표기(왼쪽 정본)에 일일의 변형을 맞춘다. 키는 소문자·기호 제거 후 비교.
