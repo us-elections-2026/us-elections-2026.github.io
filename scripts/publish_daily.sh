@@ -146,6 +146,7 @@ elif [ $# -ge 1 ]; then DATES="$*"; else DATES="$TODAY"; fi
 # 1) 날짜별: 정리본 대조(하드 게이트) → 적재 → 조사 표. 정리본이 없으면 원문 전재, 원문도 없으면 건너뜀.
 for DATE in $DATES; do
   RAW="$SRC_DIR/${DATE}_일일브리핑_KR.md"; DIGEST="$SRC_DIR/site/${DATE}_site_KR.md"
+  [ -f "$RAW" ] && { python3 scripts/check_raw_briefing.py "$RAW" 2>&1 | tee -a "$LOGF" | tail -12; }   # 원문 점검(경고 전용, v2.8 §13)
   if [ -f "$DIGEST" ]; then
     step "정리본 대조: site/$(basename "$DIGEST")"
     python3 scripts/check_site_digest.py "$RAW" "$DIGEST" 2>&1 | tee -a "$LOGF" | tail -20; [ "${PIPESTATUS[0]:-0}" = "0" ] || { step "✗ 정리본 대조 실패 — 발행 중단(정리본을 고친 뒤 재실행)"; exit 1; }
