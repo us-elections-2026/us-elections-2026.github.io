@@ -95,18 +95,25 @@ trap cleanup EXIT INT TERM
 
 # 로그·조사 CSV에 미커밋 변경이 있으면(사람이 손댄 것) 덮어쓰지 않는다
 #   PD_RESET=1 로 실행하면 그 변경을 버리고 진행한다(끊긴 실행의 잔재를 치울 때).
+# NO_COMMIT(주간 발행이 부른 경우)은 예외 — 주간의 (8)단계가 방금 senate_polls.csv 등을 고쳐 둔 상태라
+# 이 가드에 늘 걸린다(2026-10-05 실측: 주간이 조사 4행을 더해 둔 뒤 catch-up이 조용히 중단돼 10/4가 빠짐).
+# 그 변경은 주간이 함께 커밋하므로 덮어쓰기 위험이 없다. 같은 이유로 실패 시 되돌림(trap)도 하지 않는다.
+if [ "${NO_COMMIT:-0}" = "1" ]; then
+  step "NO_COMMIT — 미커밋 변경 가드·실패 시 되돌림 생략(주간 발행이 커밋)"
+  COMMITTED=1
+else
 for f in "$LOG" "$POLLS" "$LEDGER"; do
   if ! git diff --quiet -- "$f" 2>/dev/null; then
     if [ "${PD_RESET:-0}" = "1" ]; then
       echo "[daily] ! PD_RESET=1 — $f 의 미커밋 변경을 버리고 진행"; git checkout -- "$f"
     else
-      echo "[daily] ✗ $f 에 미커밋 변경이 있어 중단 — 내용을 확인해 커밋하거나,"
-      echo "[daily]   끊긴 실행의 잔재라면 PD_RESET=1 scripts/publish_daily.sh 로 재실행"
+      step "✗ $f 에 미커밋 변경이 있어 중단 — 내용을 확인해 커밋하거나, 끊긴 실행의 잔재라면 PD_RESET=1 로 재실행"
       git --no-pager diff --stat -- "$f" | sed 's/^/    /'
       exit 1
     fi
   fi
 done
+fi
 
 echo "[daily] 최신 main 동기화(pull --ff-only)"
 git fetch origin main -q && git merge --ff-only origin/main -q 2>/dev/null || echo "[daily] (ff-only 불가 — 로컬 커밋 존재, 계속)"
@@ -175,7 +182,6 @@ fi
 
 if [ "${NO_COMMIT:-0}" = "1" ]; then
   step "NO_COMMIT — 적재·검증·렌더 완료, 커밋은 호출자(주간 발행)가 한다"
-  COMMITTED=1   # 되돌리지 않는다
   exit 0
 fi
 if [ "${DRY_RUN:-0}" = "1" ]; then
