@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.kang.us-elections-daily</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/zsh</string>
+        <string>/Users/kang/.local/us_elections/run_daily.sh</string>
+    </array>
+    <!-- 매일 10:15 KST (상원 일일 수집 07:00 → 파일 ~07:12). 잠자기 중 놓친 실행은 깨어날 때 한 번 보충된다. -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key><integer>10</integer>
+        <key>Minute</key><integer>15</integer>
+    </dict>
+    <key>RunAtLoad</key>
+    <false/>
+    <key>StandardOutPath</key>
+    <string>/Users/kang/.cache/us_elections/launchd.out</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/kang/.cache/us_elections/launchd.err</string>
+</dict>
+</plist>
