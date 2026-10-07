@@ -6,6 +6,12 @@
   "GA": {
    "polls": [
     {
+     "date": "2026-10-08",
+     "text": "InsiderAdvantage(9/25)는 오소프 50–콜린스 42다(목록상 날짜·격차만 확인). RCP는 이 레이스를 Leans D(오소프 +7.8)로 분류한다.",
+     "urls": [],
+     "last": "2026-10-08"
+    },
+    {
      "date": "2026-10-03",
      "text": "InsiderAdvantage(9/22–23, LV 1,200명): 오소프 50, 콜린스 42. 기사는 오소프 약 8포인트 우세를 인용한다. 더 새로운 조지아 조사는 확인되지 않았다. Cook은 Likely D다. [Breitbart](https://www.breitbart.com/politics/2026/09/25/poll-ossoff-ahead-collins-georgia-senate-race-jackson-leads-bottoms-governors-race/)",
      "urls": [
@@ -71,6 +77,14 @@
     }
    ],
    "money": [
+    {
+     "date": "2026-10-08",
+     "text": "SMP가 광고 시간을 확보한 9개 주에 조지아가 들어 있다([Ohio Capital Journal, 좌](https://ohiocapitaljournal.com/2026/10/07/repub/top-democratic-us-senate-pac-commits-to-9-states-eyes-more-republican-targets/)).",
+     "urls": [
+      "https://ohiocapitaljournal.com/2026/10/07/repub/top-democratic-us-senate-pac-commits-to-9-states-eyes-more-republican-targets/"
+     ],
+     "last": "2026-10-08"
+    },
     {
      "date": "2026-10-03",
      "text": "SLF의 기투입 2,590만 달러·예약 1,730만 달러. 오소프 보유현금 약 4,200만 달러 대 콜린스 약 220만 달러(현금 수치의 기준일은 명시되지 않아 근사치). [Georgia Recorder](https://georgiarecorder.com/2026/09/25/top-u-s-senate-republican-stumps-with-collins-in-georgia-as-seat-appears-to-slip-out-of-reach/)",
@@ -210,6 +224,14 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-10-08",
+     "text": "첫 토론 10/8 · 켐프 주지사가 9/14 콜린스 지지 선언([WRDW](https://www.wrdw.com/2026/09/14/gov-kemp-endorses-rep-mike-collins-us-senate-bid/)) · 조기투표 10/13 시작 · Georgia Recorder(좌)에는 오소프–콜린스 기사가 없었고, 우파 매체(Georgia Star News 우 ⚠)는 수집하지 못했다.",
+     "urls": [
+      "https://www.wrdw.com/2026/09/14/gov-kemp-endorses-rep-mike-collins-us-senate-bid/"
+     ],
+     "last": "2026-10-08"
+    },
     {
      "date": "2026-10-03",
      "text": "24시간 내 새 조지아 이벤트는 없음.",
@@ -385,6 +407,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-10-08",
+     "text": "첫 대면 토론을 앞두고 있으며, 원문은 RCP의 Leans D 분류 외에 새 판단을 내리지 않는다.",
+     "urls": [],
+     "last": "2026-10-08"
+    },
     {
      "date": "2026-10-03",
      "text": "우파 성향 조사기관에서도 오소프가 앞서고 전국 공화당이 우선순위를 낮춘 것으로 보도돼, 원문은 조지아를 Likely D로 유지한다.",
@@ -565,6 +593,12 @@
   "MI": {
    "polls": [
     {
+     "date": "2026-10-08",
+     "text": "Quantus(10/7) 48–47 · Mitchell Research(10/5) 엘사예드 46–41(+5) · YouGov(10/6) 49–48 · Marist(9/30) 51–44 · Fox(9/30) 50–49 · RCP 평균 엘사예드 +3.6(Toss-up).",
+     "urls": [],
+     "last": "2026-10-08"
+    },
+    {
      "date": "2026-10-03",
      "text": "Fox News(9/24–28) LV 엘사이드 50, 로저스 49(RV 51–48), 8월 로저스 +4에서 역전. Rasmussen(9/22, LV 1,099명) 47–44. RCP에는 Trafalgar(10/1 등재) 47–45와 Marist 51–44도 있으나 세부 정보는 수집하지 못했다. GBAO(9/28) 엘사이드 +4는 엘사이드 캠프 의뢰 조사라 비중을 낮게 본다. [Fox News](https://www.foxnews.com/politics/fox-news-poll-michigan-voters-split-between-el-sayed-rogers) · [Newsweek](https://www.newsweek.com/abdul-el-sayed-leading-in-michigan-with-republican-pollster-12490204)",
      "urls": [
@@ -658,6 +692,14 @@
    ],
    "money": [
     {
+     "date": "2026-10-08",
+     "text": "SMP가 광고 시간을 확보한 9개 주에 미시간이 들어 있다([Ohio Capital Journal, 좌](https://ohiocapitaljournal.com/2026/10/07/repub/top-democratic-us-senate-pac-commits-to-9-states-eyes-more-republican-targets/)).",
+     "urls": [
+      "https://ohiocapitaljournal.com/2026/10/07/repub/top-democratic-us-senate-pac-commits-to-9-states-eyes-more-republican-targets/"
+     ],
+     "last": "2026-10-08"
+    },
+    {
      "date": "2026-10-03",
      "text": "MAGA Inc. 연계 No Going Back PAC가 로저스에 1,300만 달러 이상(오하이오 다음으로 큰 트럼프 측 단일 주 지출). 본선까지 6,500만 달러 예약 중 약 4,200만 달러가 로저스에 유리. [Bridge Michigan](https://bridgemi.com/michigan-government/trump-pac-helps-drive-michigan-senate-race-toward-record-spending/)",
      "urls": [
@@ -732,6 +774,14 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-10-08",
+     "text": "이월: 로저스–엘사예드 토론 10/8(목)(오늘 재확인 못 함) · 로저스는 9/15 Fox 2 토론에 불참했다 · Denver Gazette에 따르면 엘사예드는 10/5 뉴욕에서 맘다니 시장, 오카시오-코르테스 의원과 유세할 예정이었다([Denver Gazette](https://www.denvergazette.com/2026/10/06/el-sayed-announces-campaign-stops-with-obama-aoc-and-mamdani/)) · Michigan Advance(좌)에는 9/30 기사(슬롯킨 상원의원이 워런 타운홀에서 엘사예드와 합류)만 있었고, 우파 대응 매체는 수집하지 못했다 · 유세: 2026-10-24(예고) · 디트로이트 · 버락 오바마(민주) → 압둘 엘사예드(제니퍼 벤슨 동반) · 미시간 상원 후보로는 첫 오바마 유세이며 장소는 미공개(PBS NewsHour).",
+     "urls": [
+      "https://www.denvergazette.com/2026/10/06/el-sayed-announces-campaign-stops-with-obama-aoc-and-mamdani/"
+     ],
+     "last": "2026-10-08"
+    },
     {
      "date": "2026-10-03",
      "text": "Detroit Free Press 편집위원회가 엘사이드를 지지했고, Fox News는 Detroit News가 로저스를 지지했다고 보도했다. [Newsweek](https://www.newsweek.com/michigans-largest-newspaper-endorses-el-sayed-calls-rogers-extremist-12495020)",
@@ -939,6 +989,12 @@
    ],
    "insight": [
     {
+     "date": "2026-10-08",
+     "text": "신규 두 조사(Quantus +1, Mitchell +5)는 모두 엘사예드 우세다. RCP 평균은 Toss-up 구간에 있다. 원문은 미시간에 대한 별도 판세 판단을 내리지 않는다.",
+     "urls": [],
+     "last": "2026-10-08"
+    },
+    {
      "date": "2026-10-03",
      "text": "Fox 역전과 여러 조사의 엘사이드 우위에도 로저스 측 대규모 예약이 있어 Toss-up이 유지된다. 사설 지지의 설득 효과는 제한적이나 지역 언론의 분열을 보여준다.",
      "urls": [],
@@ -1120,6 +1176,12 @@
   "NH": {
    "polls": [
     {
+     "date": "2026-10-08",
+     "text": "Rasmussen(10/5) 파파스 49–44 · St. Anselm(10/6) 51–44 · YouGov(10/6) 51–43 · Trafalgar(9/27) 47–41 · RCP 평균 파파스 +5.3 · AARP: 쿡 요약상 파파스 +7이나 조사기관·기간·표본은 확인하지 못했다.",
+     "urls": [],
+     "last": "2026-10-08"
+    },
+    {
      "date": "2026-09-28",
      "text": "UNH 서베이센터 Granite State Poll(9/17-21, 유력투표층 1,392명, ±2.6%p): 파파스 50%, 서누누 42%, 헌법당 에드먼드 라플란트 2%, 미결정 4% — 한 달 전 서누누가 2%p 앞섰던 것과는 정반대다. 지지층은 이념에 따라 뚜렷이 갈려, 진보·리버럴층은 파파스, 보수·자유주의(리버테리안)층은 서누누를 지지한다. [WCAX](https://www.wcax.com/2026/09/24/poll-shows-pappas-opens-lead-new-hampshire-senate-race/)",
      "urls": [
@@ -1195,6 +1257,14 @@
     }
    ],
    "money": [
+    {
+     "date": "2026-10-08",
+     "text": "SMP의 광고 시간 확보 9개 주에 포함됐다([Ohio Capital Journal, 좌](https://ohiocapitaljournal.com/2026/10/07/repub/top-democratic-us-senate-pac-commits-to-9-states-eyes-more-republican-targets/)).",
+     "urls": [
+      "https://ohiocapitaljournal.com/2026/10/07/repub/top-democratic-us-senate-pac-commits-to-9-states-eyes-more-republican-targets/"
+     ],
+     "last": "2026-10-08"
+    },
     {
      "date": "2026-10-03",
      "text": "외곽 자금 약 5천만 달러(매체 추정치), 트럼프 연계 PAC를 포함해 파파스를 겨냥한 공격 광고로 서누누에게 크게 유리하다. [NHPR](https://www.nhpr.org/nh-news/2026-09-28/nh-newhampshire-senate-race-pappas-sununu-midterms-election)",
@@ -1320,6 +1390,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-10-08",
+     "text": "없음. New Hampshire Bulletin(좌) 첫 화면에는 파파스–서누누 기사가 없었다. Union Leader(중도우)·WMUR·NH Journal은 수집하지 못해 오늘은 로컬 시각을 확인할 수 없다.",
+     "urls": [],
+     "last": "2026-10-08"
+    },
     {
      "date": "2026-10-03",
      "text": "Cook은 이 경합을 Toss-up(9/23 갱신)으로 평가해 여론조사 평균보다 파파스에게 한 단계 덜 우호적이다. [Cook](https://www.cookpolitical.com/senate/race/488636)",
@@ -1491,6 +1567,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-10-08",
+     "text": "원문은 쿡의 NH 조정과 강세 조사로 가장 뚜렷했던 뒤집힘 위험이 줄었다고 보고, 이를 Bear 시나리오 약화의 근거로 든다.",
+     "urls": [],
+     "last": "2026-10-08"
+    },
     {
      "date": "2026-10-03",
      "text": "조사는 파파스 우위이나 외곽 자금이 서누누에게 유리해, 원문은 Toss-up 평가를 유지한다.",
@@ -1671,6 +1753,12 @@
   "ME": {
    "polls": [
     {
+     "date": "2026-10-08",
+     "text": "MPRC(10/5) 잭슨 49–콜린스 47(+2) · Marist(10/6) 잭슨 51–47 · CBS(10/2) 50–50 동률 · Trafalgar(10/2) 46–46 동률 · Fabrizio/Anzalone(10/1) 잭슨 +3 · co/efficient(공화당 성향, 9/30) 콜린스 +2 · NYT/Siena(9/24) 콜린스 49–46 · RCP 평균 잭슨 +0.7.",
+     "urls": [],
+     "last": "2026-10-08"
+    },
+    {
      "date": "2026-10-03",
      "text": "AARP(Fabrizio Ward R / Impact Research D; 9/20–22; LV 982명, ±3.1) 잭슨 50, 콜린스 47. UMass Lowell/YouGov(8/28–9/14, LV 650명) 잭슨 48, 콜린스 43. NYT/Siena(9/15–22, LV 619명) 콜린스 49, 잭슨 46. 최근 세 양질 조사는 잭슨 +5부터 콜린스 +3까지 분포하며, 스캔들 이후만 포괄한 깨끗한 조사는 아직 없다. [The Hill](https://thehill.com/homenews/campaign/6123742-troy-jackson-susan-collins-maine-aarp-poll/) · [UMass Lowell](https://www.uml.edu/news/press-releases/2026/09242026-maine-poll.aspx) · [Press Herald](https://www.pressherald.com/2026/09/24/susan-collins-polling-maine-senate-race/)",
      "urls": [
@@ -1742,6 +1830,14 @@
    ],
    "money": [
     {
+     "date": "2026-10-08",
+     "text": "SMP가 메인에 광고 시간을 확보했다([Maine Morning Star, 좌](https://mainemorningstar.com/2026/10/07/repub/top-democratic-us-senate-pac-spending-in-maine-eyes-more-gop-targets/)).",
+     "urls": [
+      "https://mainemorningstar.com/2026/10/07/repub/top-democratic-us-senate-pac-spending-in-maine-eyes-more-gop-targets/"
+     ],
+     "last": "2026-10-08"
+    },
+    {
      "date": "2026-09-22",
      "text": "콜린스 보유 현금 약 1,100만 달러 · SLF 예약 4,200만 달러 + One Nation 3,000만 달러 계획, 합계 7,200만 달러(판 위 1인당 최대)",
      "urls": [],
@@ -1794,6 +1890,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-10-08",
+     "text": "첫 토론에서 양측이 서로 부패를 비난했다(콜린스는 ProPublica가 보도한 기부자 대가성 의혹을 부인하고 잭슨의 출장비 정산을 공격) · 콜린스는 트럼프와 함께 유세할지 답하지 않았다 · 좌파 성향 States Newsroom 매체만 확인됐고 Maine Wire(우 ⚠)는 수집하지 못했다.",
+     "urls": [],
+     "last": "2026-10-08"
+    },
     {
      "date": "2026-10-03",
      "text": "이월: AARP 조사에서 50세 이상 표 분산 유권자는 콜린스가 70–17로 앞선다. UMass Lowell 조사에서 메인 내 트럼프 지지율은 37%/반대 64%다.",
@@ -1985,6 +2087,12 @@
    ],
    "insight": [
     {
+     "date": "2026-10-08",
+     "text": "아이오와를 빼면 조사기관별 편차가 가장 큰 경합이다. 원문은 Bear 시나리오의 잔존 위험으로 메인 조사기관 간 엇갈림(co/efficient 콜린스 +2, NYT/Siena 9/24)을 꼽는다.",
+     "urls": [],
+     "last": "2026-10-08"
+    },
+    {
      "date": "2026-10-03",
      "text": "조사 분포가 넓어 방향이 갈리며, 스캔들 효과는 아직 측정되지 않았다. 원문은 이를 Bear 위험 요인으로 꼽는다.",
      "urls": [],
@@ -2166,6 +2274,12 @@
   "NC": {
    "polls": [
     {
+     "date": "2026-10-08",
+     "text": "Big Data Poll(9/30) 쿠퍼 51–39(+12) · Fabrizio/Anzalone(9/29) 쿠퍼 53–42(+11) · RCP 평균 쿠퍼 +9.0 · 쿡 Likely D.",
+     "urls": [],
+     "last": "2026-10-08"
+    },
+    {
      "date": "2026-10-03",
      "text": "Carolina Journal(9월) 쿠퍼 +15, The Hill 보도 쿠퍼 +11(제목 수준 이월). RCP는 Big Data Poll(9/30) 쿠퍼 51, 웟틀리 39도 등재. 범위는 쿠퍼 +8(High Point)~+15이며 Carolina Journal이 보수 성향 매체라 두 자릿수 우위가 주목된다. [Carolina Journal](https://www.carolinajournal.com/polls/september-2026-roy-coopers-lead-grows-to-15-points-in-nc-senate-race/) · [The Hill](https://thehill.com/homenews/campaign/6114153-cooper-leads-whatley-poll/)",
      "urls": [
@@ -2220,6 +2334,12 @@
     }
    ],
    "money": [
+    {
+     "date": "2026-10-08",
+     "text": "SLF 직전 주 지출 동결 · SMP는 이번 주 NC TV·디지털 광고 취소 · 공화당 전국 조직이 NC에서 캔자스로 자금을 옮겨 마셜을 지원했다(AOL/WaPo 요약).",
+     "urls": [],
+     "last": "2026-10-08"
+    },
     {
      "date": "2026-10-03",
      "text": "Prosperity Action·Old North Action은 10월 지출 계획이 없고, 10월 3,300만 달러 이상이 예약돼 있었다. 한 공화당 관계자는 캔자스·텍사스·알래스카에 자금이 필요하다고 말했다. [Axios Raleigh](https://www.axios.com/local/raleigh/2026/10/02/michael-whatley-roy-cooper-republican-ad-spending)",
@@ -2352,6 +2472,14 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-10-08",
+     "text": "이월: SLF 광고 중단(쿡·SMP 보도로 재확인) · [NC Newsline, 중도좌~좌, 10/5 칼럼 \"A sad song for Whatley\"](https://ncnewsline.com/2026/10/05/a-sad-song-for-whatley/)는 오피니언이며 본문은 확인하지 못했다 · Carolina Journal(중도우)은 수집하지 못했다 · 조기투표 10/15 시작.",
+     "urls": [
+      "https://ncnewsline.com/2026/10/05/a-sad-song-for-whatley/"
+     ],
+     "last": "2026-10-08"
+    },
     {
      "date": "2026-10-03",
      "text": "웟틀리 대변인 DJ 그리핀은 쿠퍼의 \"40년의 실패\"를 부각할 자원이 있다고 말했고, 한 공화당 관계자는 Politico에 웟틀리가 \"팀을 위해 희생했다\"고 말했다.",
@@ -2527,6 +2655,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-10-08",
+     "text": "등급 상향과 양당의 동시 광고 철수로 NC는 민주당 우세 쪽으로 굳어 가는 흐름이다. 원문은 이를 판세 지도가 민주당 쪽으로 이동한 근거의 하나로 든다.",
+     "urls": [],
+     "last": "2026-10-08"
+    },
     {
      "date": "2026-10-03",
      "text": "공화당 자금 철수라는 '돈의 행동'이 여론조사와 함께 노스캐롤라이나를 가장 안정적인 D 핵심 탈환 후보로 뒷받침한다. Cook은 Lean D다.",
@@ -2707,6 +2841,12 @@
   "TX": {
    "polls": [
     {
+     "date": "2026-10-08",
+     "text": "YouGov(10/6) 탈라리코 50–44 · NYT/Siena(10/3) 탈라리코 51–45 · Fox News(10/2) 탈라리코 51–49 · Rasmussen(10/1) 탈라리코 46–45 · Big Data Poll(9/27) 탈라리코 +2 · RCP 평균 탈라리코 +2.8.",
+     "urls": [],
+     "last": "2026-10-08"
+    },
+    {
      "date": "2026-10-03",
      "text": "Fox News(9/24–28, LV 881명, ±3) 탈라리코 51, 팩스턴 49. 호감도 탈라리코 +8, 팩스턴 −18. 코닌 경선 지지자의 약 20%가 탈라리코 지지로 이동했고, 탈라리코는 히스패닉 64%·중도층 65%에서, 팩스턴은 농촌(57%)·백인 복음주의(74%)에서 앞선다. RCP에는 Rasmussen Reports 탈라리코 46–45(10/1 등재, 세부 미수집)도 있고, Big Data Poll(9/24–26) 탈라리코 +2가 이월된다. [FOX 7 Austin](https://www.fox7austin.com/election/talarico-paxton-texas-senate-poll-october)",
      "urls": [
@@ -2792,6 +2932,14 @@
     }
    ],
    "money": [
+    {
+     "date": "2026-10-08",
+     "text": "The Hill에 따르면 MAGA Inc., 머스크 PAC, SLF 계열 등 친팩스턴 단체가 막대한 자금을 투입해 올 시즌 가장 비싼 상원 선거가 됐다([The Hill](https://thehill.com/homenews/campaign/6131875-trump-visits-texas-paxton-talarico-senate/amp/)) · SMP의 광고 시간 확보 9개 주에 포함됐다.",
+     "urls": [
+      "https://thehill.com/homenews/campaign/6131875-trump-visits-texas-paxton-talarico-senate/amp/"
+     ],
+     "last": "2026-10-08"
+    },
     {
      "date": "2026-10-03",
      "text": "공화당 관계자가 텍사스를 재배치 자금의 행선지로 꼽았다(Axios Raleigh 경유). [Axios Raleigh](https://www.axios.com/local/raleigh/2026/10/02/michael-whatley-roy-cooper-republican-ad-spending)",
@@ -2915,6 +3063,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-10-08",
+     "text": "조기투표까지 2주가 남아, 25년 만의 토론 없는 텍사스 상원 선거가 될 수 있다 · The Hill은 이번이 한 달 새 세 번째 텍사스 방문이며 공화당이 팩스턴을 우려한다고 전했다. 공화당 댈러스 전당대회 뒤 지지율이 빠졌다고 팩스턴이 인정한 녹취가 유출됐다고도 보도했고, RNC는 \"만들어진 드라마\"로 일축했다 · 애벗 주지사는 불참한다 · Texas Scorecard(우)는 수집하지 못했다 · 조기투표 10/19 시작 · 유세: 2026-10-07(예정, 결과 미보도) · 샌안토니오 · 도널드 트럼프(공화) → 켄 팩스턴 · 프리먼 콜리세움, 오후 6시 CT. 오바마도 탈라리코와 텍사스에서 유세한다(날짜 미공개)(KSAT; The Hill).",
+     "urls": [],
+     "last": "2026-10-08"
+    },
     {
      "date": "2026-10-03",
      "text": "양 캠프의 광고전 강화, 조기투표는 10/19 시작.",
@@ -3105,6 +3259,12 @@
    ],
    "insight": [
     {
+     "date": "2026-10-08",
+     "text": "원문은 텍사스(NYT/Siena +6)를 Bull 시나리오의 확장주 경로로 든다. 오늘 트럼프 유세는 Bear 쪽 잔존 위험으로 꼽힌다.",
+     "urls": [],
+     "last": "2026-10-08"
+    },
+    {
      "date": "2026-10-03",
      "text": "고품질 조사에서 탈라리코가 근소하게 앞서고 공화당 자금 재배치 대상으로도 거론돼, 원문은 텍사스를 Bull 시나리오의 살아 있는 reach 주로 본다.",
      "urls": [],
@@ -3284,6 +3444,12 @@
   "OH": {
    "polls": [
     {
+     "date": "2026-10-08",
+     "text": "YouGov(10/6) 브라운 49–45 · NYT/Siena(10/3) 브라운 49–46 · InsiderAdvantage(10/1) 브라운 44–43 · Suffolk/USA Today(9/30) 브라운 47–44 · Marist(9/29) 브라운 51–43(+8) · Big Data Poll(9/29) 브라운 +3 · RCP 평균 브라운 +3.1(Toss-up).",
+     "urls": [],
+     "last": "2026-10-08"
+    },
+    {
      "date": "2026-10-03",
      "text": "InsiderAdvantage(9/28–29, LV 1,200명, ±2.83) 브라운 44, 허스테드 43. Marist(9/24–27, RV 1,298명, ±3.8) 브라운 51, 허스테드 43, 오하이오 내 트럼프 지지 42/반대 56. Forbes는 USA Today/Suffolk 브라운 47, 허스테드 43을 게재했으며 직전 브리핑의 47–44와 불일치가 미해결이다. [InsiderAdvantage](https://insideradvantage.com/insideradvantage-ohio-senate-race-narrows-to-brown-up-by-one/) · [Forbes](https://www.forbes.com/sites/saradorn/2026/09/30/hottest-2026-midterm-races-democrat-sherrod-brown-up-3-points-in-ohio-senate-race-updated-daily/)",
      "urls": [
@@ -3328,6 +3494,12 @@
     }
    ],
    "money": [
+    {
+     "date": "2026-10-08",
+     "text": "SMP의 광고 시간 확보 9개 주에 포함됐다.",
+     "urls": [],
+     "last": "2026-10-08"
+    },
     {
      "date": "2026-09-26",
      "text": "애드임팩트 집계로 약 3억 700만 달러 규모의 광고 지출·예약이 확인됐다(공화 계열 약 1억 6,900만 달러, 민주 계열 약 1억 3,800만 달러) — 전국 최고가 상원 레이스로, 2024년 브라운-모레노 레이스를 넘어설 기세다([액시오스 클리블랜드](https://www.axios.com/local/cleveland/2026/09/23/ohio-political-ads-brown-husted-2026-senate)).",
@@ -3449,6 +3621,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-10-08",
+     "text": "이월: 10/3 트럼프의 데이턴 인근 허스테드 지원 유세(PBS NewsHour/AP, 오늘 재수집 안 함) · 우파 로컬 시각(The Ohio Star 우 ⚠)은 찾지 못해 공화당 측 로컬 보도가 빈약하다 · 유세: 2026-10-03 · 데이턴 인근 · 도널드 트럼프(공화) → 존 허스테드 · AP는 박빙 구도의 지원 사격으로 평가했고, 브라운은 데이터센터 세금 감면·에너지 비용으로 반격했다(PBS NewsHour/AP, 이월).",
+     "urls": [],
+     "last": "2026-10-08"
+    },
     {
      "date": "2026-10-03",
      "text": "이월: 트럼프는 10/3 허스테드 지원 유세 예정이다.",
@@ -3602,6 +3780,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-10-08",
+     "text": "최근 2주 동안 모든 조사에서 브라운이 앞섰다. 원문은 이를 Bull 시나리오 강화의 근거로 든다.",
+     "urls": [],
+     "last": "2026-10-08"
+    },
     {
      "date": "2026-10-03",
      "text": "우파 성향 조사기관에서도 브라운이 앞서지만 격차는 조사별로 크게 다르다. 오하이오는 Toss-up이며 원문은 이를 Bull 시나리오의 부족한 고리로 본다.",
@@ -3782,6 +3966,12 @@
   "AK": {
    "polls": [
     {
+     "date": "2026-10-08",
+     "text": "알래스카서베이리서치(10/7) 펠톨라 51–49(양자), RCV 1라운드 펠톨라 47·설리번 45·\"Dan J. Sullivan\" 5·하이케스 3 · NYT/Siena(10/3) 펠톨라 50–43 · Quantus(10/2) 설리번 48–47 · 사바토가 10/6 펠톨라 쪽으로 이동(새 등급 미확인) · RCP 평균 펠톨라 +1.8.",
+     "urls": [],
+     "last": "2026-10-08"
+    },
+    {
      "date": "2026-10-03",
      "text": "Quantus Insights(RCP 10/2 등재) 설리번 48, 펠톨라 47, 무소속에서는 펠톨라가 22포인트 앞선다. 표본·조사기간은 확인하지 못했으며 인지도가 낮은 업체다. Trafalgar(9/22–24, LV 1,079명, ±2.9) 설리번 46.8, 펠톨라 45.5. [Alaska Story](https://thealaskastory.com/new-alaska-senate-poll-puts-sullivan-narrowly-ahead-but-cannot-measure-full-impact-of-peltola-revelations/)",
      "urls": [
@@ -3803,6 +3993,14 @@
     }
    ],
    "money": [
+    {
+     "date": "2026-10-08",
+     "text": "SMP가 광고 시간을 확보한 9개 주에 알래스카가 들어 있다([Ohio Capital Journal, 좌](https://ohiocapitaljournal.com/2026/10/07/repub/top-democratic-us-senate-pac-commits-to-9-states-eyes-more-republican-targets/)).",
+     "urls": [
+      "https://ohiocapitaljournal.com/2026/10/07/repub/top-democratic-us-senate-pac-commits-to-9-states-eyes-more-republican-targets/"
+     ],
+     "last": "2026-10-08"
+    },
     {
      "date": "2026-10-03",
      "text": "공화당 관계자가 알래스카를 자금 재배치 대상 중 하나로 언급했다(Axios Raleigh 경유). [Axios Raleigh](https://www.axios.com/local/raleigh/2026/10/02/michael-whatley-roy-cooper-republican-ad-spending)",
@@ -3883,6 +4081,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-10-08",
+     "text": "설리번은 \"No Show Peltola\" 구호를 주도했고, 펠톨라 캠프는 이를 반박하며 설리번을 이란전쟁·에너지 가격과 연결했다 · 트럼프는 이달 말 알래스카 방문이 예상된다 · 우파 대응 매체(Alaska Watchman/Must Read Alaska 우)는 수집하지 못했다 · 유세: 2026-10-05 · 페어뱅크스 · J.D. 밴스(공화) → 댄 설리번 · 4억 달러 송전 사업 발표, 펠톨라의 기록과 동명이인 후보 공격(Alaska Public Media; Alaska Beacon, 좌).",
+     "urls": [],
+     "last": "2026-10-08"
+    },
     {
      "date": "2026-10-03",
      "text": "이월: NYT가 직원에 대한 변덕스러운 행동 등을 보도했고, 캠프는 연이은 개인적 상실에 따른 슬픔 탓이라고 설명한다. 현지 여론조사 전문가 이반 무어는 영향이 제한적일 것으로 봤고 전직 직원들의 평가는 엇갈린다. [Alaska Beacon](https://alaskabeacon.com/2026/09/25/a-new-york-times-article-claimed-hostility-by-mary-peltola-will-it-affect-alaskas-senate-race/)",
@@ -4097,6 +4301,12 @@
    ],
    "insight": [
     {
+     "date": "2026-10-08",
+     "text": "원문은 최근 알래스카 조사 4건 중 3건이 펠톨라 우세라는 점을 Bull 시나리오 강화의 근거로 든다. 이달 말 트럼프 방문은 Bear 쪽 잔존 위험으로 남아 있다.",
+     "urls": [],
+     "last": "2026-10-08"
+    },
+    {
      "date": "2026-10-03",
      "text": "오늘 유일하게 공화당 우위를 보인 조사지만 신뢰도가 중하여, 원문은 사실상 동전 던지기로 본다.",
      "urls": [],
@@ -4276,6 +4486,12 @@
   "IA": {
    "polls": [
     {
+     "date": "2026-10-08",
+     "text": "Suffolk(10/1–4, LV 500명) 투렉 48–44로, **8월 Suffolk(힌슨 45–41) 대비 8%p 이동** · NYT/Siena(9/22–10/1, LV 606명, ±4.6) 힌슨 48–47 · Quantus(9/28–29) 힌슨 47.1–45.8 · Fox News(9/24–28, LV 1,008명, ±3) 투렉 49–47 · Kalshi/Polymarket 힌슨 약 55% · Cook Toss-up, Inside Elections Tilt R · RCP 평균 D+0.7.",
+     "urls": [],
+     "last": "2026-10-08"
+    },
+    {
      "date": "2026-10-03",
      "text": "Fox News(9/24–28, RV 1,204명, ±2.5) LV 투렉 49, 힌슨 47; RV 투렉 50, 힌슨 46. LV 호감도 투렉 48/40, 힌슨 42/50, 트럼프 직무 지지 42/57. 주지사는 샌드 53, 란 44(LV). RV 격차는 6월 말 Fox 조사(50–46)와 동일하고 LV 보정으로 좁혀진다. 직전 기준 Quantus(9/28–29) 힌슨 +1.3, InsiderAdvantage(9/22–23) 투렉 +1.7로 조사 간 편차가 가장 큰 경합이다. [Fox News](https://static.foxnews.com/foxnews.com/content/uploads/2026/10/fox_september-24-28-2026_iowa_topline_october-1-release.pdf)",
      "urls": [
@@ -4357,6 +4573,14 @@
    ],
    "money": [
     {
+     "date": "2026-10-08",
+     "text": "SMP의 광고 시간 확보 9개 주에 포함됐다([Ohio Capital Journal, 좌](https://ohiocapitaljournal.com/2026/10/07/repub/top-democratic-us-senate-pac-commits-to-9-states-eyes-more-republican-targets/)).",
+     "urls": [
+      "https://ohiocapitaljournal.com/2026/10/07/repub/top-democratic-us-senate-pac-commits-to-9-states-eyes-more-republican-targets/"
+     ],
+     "last": "2026-10-08"
+    },
+    {
      "date": "2026-09-22",
      "text": "SLF 힌슨 지원 3,300만 달러 대 SMP 투렉 지원 3,000만 달러(9개 주 중 격차 최소, SLF 최초 예약 2,900만 달러 대비 증액) · 9/12~14 집행: Government That Works PAC 힌슨 반대 968,750달러, SLF PAC 투렉 반대 53,100달러 · Punchbowl은 왈스가 지출 격차를 문제 삼았다고 시사【수집 필요 — 유료 장벽, 구체 격차 미검증】",
      "urls": [],
@@ -4432,6 +4656,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-10-08",
+     "text": "첫 토론 10/7(결과 미반영) · 조기투표 10/14 시작 · Iowa Capital Dispatch(좌) 첫 화면에는 10/6 주지사 토론(샌드–란)과 SMP 기사만 있고 상원 경합 기사는 없었다.",
+     "urls": [],
+     "last": "2026-10-08"
+    },
     {
      "date": "2026-10-03",
      "text": "이월: PolitiFact가 투렉이 1/12–4/2 아이오와 하원 회기에서 445건 중 261건 표결에 불참했다는 힌슨의 주장을 \"True\"로 판정했다. 공화당 광고 소재가 될 전망이다. [PolitiFact](https://politifact.com/factchecks/2026/sep/30/ashley-hinson/josh-turek-iowa-senate-house-votes/)",
@@ -4599,6 +4829,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-10-08",
+     "text": "원문은 서퍽 조사의 이동을 Base 시나리오 약화 근거의 하나로 든다. 주목 기관 조사는 NYT/Siena 힌슨 +1, Fox 투렉 +2로 엇갈린다.",
+     "urls": [],
+     "last": "2026-10-08"
+    },
     {
      "date": "2026-10-03",
      "text": "Fox의 투렉 우위는 오차범위 내이고 다른 조사와 방향이 갈려, 아이오와는 Toss-up이며 Bull 시나리오의 reach 주로 남는다.",
@@ -4781,6 +5017,14 @@
   "US": {
    "polls": [],
    "money": [
+    {
+     "date": "2026-10-08",
+     "text": "SMP는 10/6 기자들에게 AK·GA·IA·ME·MI·NH·NC·OH·TX에 광고 시간이 있고(NC는 이번 주 지출 취소), FL·SC·MS·KS를 주시 중이라고 밝혔다. 8월 말 현금은 SMP 약 5,700만 달러, MAGA Inc. 4억 달러 이상이다([Ohio Capital Journal, 좌](https://ohiocapitaljournal.com/2026/10/07/repub/top-democratic-us-senate-pac-commits-to-9-states-eyes-more-republican-targets/)).",
+     "urls": [
+      "https://ohiocapitaljournal.com/2026/10/07/repub/top-democratic-us-senate-pac-commits-to-9-states-eyes-more-republican-targets/"
+     ],
+     "last": "2026-10-08"
+    },
     {
      "date": "2026-09-26",
      "text": "NRSC 내부 메모(액시오스, 9/24)에 따르면 위원회는 알래스카·아이오와·오하이오 현직 후보 방어에 약 890만 달러를 요청하는 한편, 공격 목표로는 미시간·뉴햄프셔만 남기고 노스캐롤라이나·조지아에서는 조용히 발을 빼고 있다 — 공개적으로는 이를 부인하고 있다([액시오스](https://www.axios.com/2026/09/24/nrsc-republicans-alaska-iowa-ohio)).",
