@@ -83,7 +83,7 @@ def main() -> int:
     else: warn.append("D 「새로운 여론조사」 절 없음")
 
     # E self-audit
-    a = re.search(r"^## Run self-audit\s*$(.*)\Z", text, re.M | re.S)
+    a = re.search(r"^## (?:Run self-audit|실행 자체 점검|자체 점검|Run self-audit \(실행 자체 점검\))\s*$(.*)\Z", text, re.M | re.S)  # KR 제목 변형도 받는다(10/7 실측)
     if not a: warn.append("E 「## Run self-audit」 블록 없음(v2.8 §13)")
     else:
         claimed = dict(re.findall(r"^- ([A-F])\S*[^:：]*[:：]\s*(.+)$", a.group(1), re.M))
