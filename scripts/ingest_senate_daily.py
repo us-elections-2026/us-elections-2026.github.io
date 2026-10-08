@@ -73,7 +73,8 @@ STATE_KR = {
     "알래스카": "AK", "아이오와": "IA",
     "네브래스카": "NE", "캔자스": "KS",  # 2026-10-05 편입
 }
-WATCH = ["GA", "MI", "NH", "ME", "NC", "TX", "OH", "AK", "IA"]
+WATCH = ["GA", "MI", "NH", "ME", "NC", "TX", "OH", "AK", "IA", "NE", "KS"]  # 2026-10-05 NE·KS 편입(정리본 소절 10·11)
+REQUIRED = WATCH[:9]  # 누락 경고는 9개 주만 — NE·KS는 v2.8 이전 원문엔 없다
 
 H2 = re.compile(r"^## +(.+?)\s*$")
 H3 = re.compile(r"^### +(.+?)\s*$")
@@ -339,7 +340,7 @@ def main() -> int:
     added, replaced = 0, 0
     for p in files:
         day = parse_file(p)
-        missing = [c for c in WATCH if c not in day["states"]]
+        missing = [c for c in REQUIRED if c not in day["states"]]
         if day["date"] in by_date:
             replaced += 1
         else:
