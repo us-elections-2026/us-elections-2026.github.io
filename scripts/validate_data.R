@@ -410,8 +410,8 @@ if (!is.null(sl)) {
   f <- "state_ledger.json"
   sl <- jsonlite::fromJSON(jpath("state_ledger.json"), simplifyVector = FALSE)
   require_keys(f, sl, c("as_of", "states"))
-  watch <- c("GA","MI","NH","ME","NC","TX","OH","AK","IA","US")  # US = 전국 절(v1.2 자금·v1.3 법·제도)
-  bad <- setdiff(names(sl$states), watch); if (length(bad)) err(f, paste("감시 9주 밖 주:", paste(bad, collapse=",")))
+  watch <- c("GA","MI","NH","ME","NC","TX","OH","AK","IA","NE","KS","US")  # US = 전국 절(v1.2 자금·v1.3 법·제도); NE·KS 2026-10-05 편입
+  bad <- setdiff(names(sl$states), watch); if (length(bad)) err(f, paste("감시주 밖 주:", paste(bad, collapse=",")))
   for (st in names(sl$states)) for (cat in c("polls","money","local","insight")) {
     v <- sl$states[[st]][[cat]]; if (is.null(v)) { err(f, sprintf("%s: %s 항목 없음", st, cat)); next }
     for (it in v) { if (is.null(it$date) || is.na(suppressWarnings(as.Date(it$date)))) err(f, sprintf("%s/%s: date 형식 오류", st, cat))
