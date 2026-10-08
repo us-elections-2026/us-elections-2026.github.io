@@ -5757,6 +5757,171 @@
    "local": [],
    "insight": [],
    "legal": []
+  },
+  "NE": {
+   "polls": [
+    {
+     "date": "2026-10-08",
+     "text": "YouGov(10/6) 오스본 48–47 · co/efficient(공화당 성향, 조사 9/28–30) 리케츠 48–43 · RCP는 9/23 Leans R → Toss-up으로 조정했으나 평균은 공표하지 않았다.",
+     "urls": [],
+     "last": "2026-10-08"
+    },
+    {
+     "date": "2026-10-07",
+     "text": "YouGov(10/6) 오스번 48–리켓츠 47 · co/efficient(공화 성향, 9/28–30) 리켓츠 +3 · Wedgewood(9/14–16) 리켓츠 +4로 조사기관별로 갈린다([RealClearPolling](https://realclearpolling.com/latest-polls/senate))",
+     "urls": [
+      "https://realclearpolling.com/latest-polls/senate"
+     ],
+     "last": "2026-10-07"
+    },
+    {
+     "date": "2026-10-06",
+     "text": "co/efficient(공화당 성향 조사기관) 10/2 리케츠 48–43(RCP 목록. 프롬프트 명단은 48–45, 9/28–30으로 서로 달라 미해결) · 명단에 SurveyUSA 9/8–13 오스본 46–42, Wedgewood 9/14–16 리케츠 52–48도 있다.",
+     "urls": [],
+     "last": "2026-10-06"
+    }
+   ],
+   "money": [
+    {
+     "date": "2026-10-08",
+     "text": "SMP의 9개 지원 주에 네브래스카는 없다([States Newsroom](https://ohiocapitaljournal.com/2026/10/07/repub/top-democratic-us-senate-pac-commits-to-9-states-eyes-more-republican-targets/)).",
+     "urls": [
+      "https://ohiocapitaljournal.com/2026/10/07/repub/top-democratic-us-senate-pac-commits-to-9-states-eyes-more-republican-targets/"
+     ],
+     "last": "2026-10-08"
+    },
+    {
+     "date": "2026-10-06",
+     "text": "배경: [FEC 6월 기준 보유 현금은 리케츠 690만 달러, 오스본 240만 달러](https://nebraskapublicmedia.org/en/news/news-articles/money-power-take-center-stage-during-ricketts-and-osborns-state-fair-debate/)(Nebraska Public Media, 중도좌, 9/1).",
+     "urls": [
+      "https://nebraskapublicmedia.org/en/news/news-articles/money-power-take-center-stage-during-ricketts-and-osborns-state-fair-debate/"
+     ],
+     "last": "2026-10-06"
+    }
+   ],
+   "local": [
+    {
+     "date": "2026-10-08",
+     "text": "이월: 10/5 그랜드아일랜드 트럼프의 리케츠 지원 유세(오늘 재확인 못 함) · Nebraska Examiner(좌) 첫 화면에 10/5–10/7 오스본–리케츠 기사가 없었다 · 유세: 2026-10-05 · 그랜드아일랜드 · 도널드 트럼프(공화) → 피트 리케츠 · \"내가 투표용지에 있다고 생각해 달라\"고 요청했고, 오스본을 \"가짜 무소속\"이라 불렀으며, 디젤세 면제 행정명령에 서명했다. 주 박람회 엑스포센터에 수천 명이 모였다(Nebraska Public Media; Nebraska Examiner 좌 — 이월, 재확인 안 됨).",
+     "urls": [],
+     "last": "2026-10-08"
+    },
+    {
+     "date": "2026-10-07",
+     "text": "이전에 미확인이던 트럼프 유세가 실제로 열린 것으로 확인됐다 · 우파 매체 보도는 찾지 못했다 · 유세: 2026-10-05 · 그랜드아일랜드 · 도널드 트럼프(공화) → 피트 리켓츠 · \"내가 투표용지에 있다고 생각하라\", 오스번은 \"가짜 무소속\"이라고 발언했고 디젤 세금 유예 명령에 서명했다. 네브래스카 주 박람회장 Pinnacle Bank Expo Center에 수천 명이 모였고, 오스번 캠프는 디젤·수리권 조치에 감사를 표했다",
+     "urls": [],
+     "last": "2026-10-07"
+    },
+    {
+     "date": "2026-10-06",
+     "text": "유세: 2026-10-05 · 그랜드아일랜드 · 도널드 트럼프(공화) → 피트 리케츠 · 주 박람회 Pinnacle Bank Expo Center 대중 유세 · 예정 사항이며 메시지·규모는 미확인, 민주당 클리브 위원장이 방문을 비판했다(Nebraska Examiner 9/29 사전 보도. 개최 여부는 독립적으로 확인하지 못함) · 오스본의 Red Cloud 타운홀 사과 · 이월: 오스본의 코커스 선택은 미선언.",
+     "urls": [],
+     "last": "2026-10-06"
+    }
+   ],
+   "insight": [
+    {
+     "date": "2026-10-08",
+     "text": "의석 계산에서 리케츠 패배는 \"R −1\", 오스본 승리는 \"I +1(코커스 미선언)\"이며 민주당 칸에 더하지 않는다. 원문은 오스본이 민주당 코커스 합류를 선언해야만 Bull 계산에 포함된다고 본다.",
+     "urls": [],
+     "last": "2026-10-08"
+    },
+    {
+     "date": "2026-10-07",
+     "text": "원문은 트럼프의 방문을 공화당이 붉은 주 의석을 방어하는 상황으로 본다. 의석 계산에서는 리켓츠 패배를 \"공화 −1\", 오스번 승리를 \"무소속 +1(코커스 미정)\"으로 따로 적고 민주당 칸에 넣지 않는다.",
+     "urls": [],
+     "last": "2026-10-07"
+    },
+    {
+     "date": "2026-10-06",
+     "text": "대통령이 하루를 이 주에 쓴다는 것은 공화당이 공세가 아니라 방어에 나섰다는 신호다. 다만 오스본이 코커스를 선언하기 전에는 민주당 몫으로 세지 않는다. 원문 집계 규칙에 따르면 리케츠가 지면 R −1이 되고, 오스본은 \"I +1(코커스 미선언)\"으로 따로 보고한다.",
+     "urls": [],
+     "last": "2026-10-06"
+    }
+   ],
+   "legal": []
+  },
+  "KS": {
+   "polls": [
+    {
+     "date": "2026-10-08",
+     "text": "YouGov(10/6) 해밀턴 48–45 · NYT/Siena(10/3) 마셜 47–46 · Trafalgar(10/2) 44–44 동률 · RCP 평균 마셜 +1.0 · 쿡이 10/6 Toss-up으로 조정(기존 Lean R)([Daily Caller](https://dailycaller.com/2026/10/06/kansas-senate-race-roger-marshall-toss-up-cook-political-report/), [Mediaite](https://www.mediaite.com/politics/new-cook-political-report-officially-declares-toss-up-senate-race-in-kansas-where-a-democrat-hasnt-won-in-94-years/)).",
+     "urls": [
+      "https://dailycaller.com/2026/10/06/kansas-senate-race-roger-marshall-toss-up-cook-political-report/",
+      "https://www.mediaite.com/politics/new-cook-political-report-officially-declares-toss-up-senate-race-in-kansas-where-a-democrat-hasnt-won-in-94-years/"
+     ],
+     "last": "2026-10-08"
+    },
+    {
+     "date": "2026-10-07",
+     "text": "YouGov(10/6) 해밀턴 48–마셜 45 · RCP 평균은 여전히 마셜 +1.0(Toss-up) · 이월: co/efficient(공화 성향, 9/8–10) 마셜 49–44 · 당시 Kalshi·Polymarket은 마셜 약 79–80%였고 오늘 갱신하지 못했다",
+     "urls": [],
+     "last": "2026-10-07"
+    },
+    {
+     "date": "2026-10-06",
+     "text": "NYT/Siena 10/3 마샬 47–46(RCP 목록. Newsweek를 인용한 프롬프트 명단은 45–45로 불일치) · Trafalgar 10/2 44–44 동률 · 명단상 Cook/Sabato는 Lean R.",
+     "urls": [],
+     "last": "2026-10-06"
+    }
+   ],
+   "money": [
+    {
+     "date": "2026-10-08",
+     "text": "공화당 전국 조직이 NC에서 캔자스로 자금을 옮겨 마셜을 지원했다(AOL/WaPo 요약) · SMP는 캔자스를 \"주시\"하지만 자금은 투입하지 않았다.",
+     "urls": [],
+     "last": "2026-10-08"
+    },
+    {
+     "date": "2026-10-06",
+     "text": "해밀턴은 첫 두 달 동안 350만 달러 이상을 모금했다(캔자스 상원 기록, KCUR).",
+     "urls": [],
+     "last": "2026-10-06"
+    }
+   ],
+   "local": [
+    {
+     "date": "2026-10-08",
+     "text": "광고 이미지 논란과 톨 오크스의 중지 요구서 · 해밀턴은 은폐가 없었다고 주장한다 · KCUR만 확인했고 우파 매체(The Sentinel 우)의 기사는 수집하지 못했다.",
+     "urls": [],
+     "last": "2026-10-08"
+    },
+    {
+     "date": "2026-10-07",
+     "text": "이월: 9/13 캔자스 주 박람회 토론에서 마셜은 환자 대상 700여 건 소송에 관한 New York Times 보도와 관련해 야유를 받았다([Newsweek](https://newsweek.com/roger-marshall-chances-kansas-senate-race-raucous-debate-12436148)) · KCUR, Wichita Eagle, Kansas Reflector(좌), The Sentinel(우)에서는 새 기사를 찾지 못했다",
+     "urls": [
+      "https://newsweek.com/roger-marshall-chances-kansas-senate-race-raucous-debate-12436148"
+     ],
+     "last": "2026-10-07"
+    },
+    {
+     "date": "2026-10-06",
+     "text": "지역 매체 KCUR은 이 선거를 전국적 흐름보다 후보 자질과 자금의 이야기로 본다 · Kansas Reflector(좌)와 The Sentinel(우)은 검색 결과 제목으로만 확인했다(Kansas Reflector 8/7, \"Safe R\"에서 \"Likely R\"로 조정).",
+     "urls": [],
+     "last": "2026-10-06"
+    }
+   ],
+   "insight": [
+    {
+     "date": "2026-10-08",
+     "text": "원문은 쿡의 캔자스 Toss-up 조정을 Bull 시나리오의 확장주 경로 근거로 든다. 반면 Base 시나리오는 캔자스가 평균에서 공화 우세로 남는 데 기대고 있다.",
+     "urls": [],
+     "last": "2026-10-08"
+    },
+    {
+     "date": "2026-10-07",
+     "text": "원문은 캔자스를 늦게 합류한 접전 지역으로 본다. 새 YouGov 조사는 해밀턴 우세지만, 평균과 공화 성향 조사는 마셜 우세다.",
+     "urls": [],
+     "last": "2026-10-07"
+    },
+    {
+     "date": "2026-10-06",
+     "text": "조사로는 접전이다(마샬 +1 또는 동률). 그러나 원문은 이를 민주당의 도전 단계로만 본다.",
+     "urls": [],
+     "last": "2026-10-06"
+    }
+   ],
+   "legal": []
   }
  }
 }
