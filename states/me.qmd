@@ -12,6 +12,8 @@ source(file.path("R", "helpers.R"))
 
 ## 주 개요
 
+민주당의 **최우선 탈환 표적**입니다. 바이든·해리스가 이긴 주에서 살아남아 온 5선 현직 Susan Collins(공화, 세출위원장)에게 전 메인 주상원의장 Troy Jackson(민주)이 도전합니다. 당초 지명자 Graham Platner가 사퇴한 뒤 Jackson이 지명전당대회 인준으로 후보가 됐고, 그 과정의 검증 이슈가 공화 측 공격 소재로 남아 있습니다. 현직의 개인표가 전국 역풍을 또 한 번 견디는지가 핵심이며, 유권자 1인당 광고비가 전국에서 가장 높은 주입니다.
+
 ```{r}
 #| output: asis
 cat(state_card_html("ME"))
@@ -21,8 +23,6 @@ cat(state_card_html("ME"))
 #| output: asis
 cat(state_today_md("ME"))
 ```
-
-민주당의 **최우선 탈환 표적**입니다. 바이든·해리스가 이긴 주에서 살아남아 온 5선 현직 Susan Collins(공화, 세출위원장)에게 전 메인 주상원의장 Troy Jackson(민주)이 도전합니다. 당초 지명자 Graham Platner가 사퇴한 뒤 Jackson이 지명전당대회 인준으로 후보가 됐고, 그 과정의 검증 이슈가 공화 측 공격 소재로 남아 있습니다. 현직의 개인표가 전국 역풍을 또 한 번 견디는지가 핵심이며, 유권자 1인당 광고비가 전국에서 가장 높은 주입니다.
 
 ::: {.summary}
 - **구도**: 민주 최우선 탈환 표적 — 5선 Collins(R, 세출위원장) vs Jackson(D, 전 주상원의장, Platner 사퇴 후 인준).

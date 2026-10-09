@@ -12,6 +12,8 @@ source(file.path("R", "helpers.R"))
 
 ## 주 개요
 
+5선 Jeanne Shaheen의 은퇴로 **1990년 이후 처음 완전히 열린 민주당 수성석**입니다. 연방하원의원 Chris Pappas(민주)와 전 상원의원 John E. Sununu(공화, 전 주지사의 형제)가 맞붙습니다. 민주당의 다수당 산수에서 NH는 필수 수성 3석(GA·MI·NH) 중 하나라, 이곳을 잃으면 경로가 공화 보유 의석 전승으로 좁아집니다([시나리오](../scenarios.qmd)). 무당파 비중이 높은 주에서 Sununu 가문의 인지도와 현직 하원의원의 조직이 맞서고, 외부자금은 공화 쪽에 치우쳐 있습니다.
+
 ```{r}
 #| output: asis
 cat(state_card_html("NH"))
@@ -21,8 +23,6 @@ cat(state_card_html("NH"))
 #| output: asis
 cat(state_today_md("NH"))
 ```
-
-5선 Jeanne Shaheen의 은퇴로 **1990년 이후 처음 완전히 열린 민주당 수성석**입니다. 연방하원의원 Chris Pappas(민주)와 전 상원의원 John E. Sununu(공화, 전 주지사의 형제)가 맞붙습니다. 민주당의 다수당 산수에서 NH는 필수 수성 3석(GA·MI·NH) 중 하나라, 이곳을 잃으면 경로가 공화 보유 의석 전승으로 좁아집니다([시나리오](../scenarios.qmd)). 무당파 비중이 높은 주에서 Sununu 가문의 인지도와 현직 하원의원의 조직이 맞서고, 외부자금은 공화 쪽에 치우쳐 있습니다.
 
 ::: {.summary}
 - **구도**: 민주 수성 공개석(Shaheen 은퇴) — Pappas(D, 연방하원) vs John E. Sununu(R, 전 상원의원). 민주 필수 3석 중 하나.
