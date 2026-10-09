@@ -26,8 +26,29 @@ from collections import defaultdict
 from datetime import date
 
 STATES = ["GA", "MI", "NH", "ME", "NC", "TX", "OH", "AK", "IA", "NE", "KS"]
+# candidate_party가 빈 신고(CLF 등 일부 위원회는 후보 ID·정당 없이 이름만 적는다 — 2026-10-09 실측)를
+# 본선 후보 성(姓)으로 보충한다. 주마다 성이 유일한 후보만 적는다.
+SURNAME_PARTY = {
+    "GA": {"OSSOFF": "DEM", "COLLINS": "REP"}, "MI": {"EL-SAYED": "DEM", "ROGERS": "REP"},
+    "NH": {"PAPPAS": "DEM", "SUNUNU": "REP"}, "ME": {"JACKSON": "DEM", "COLLINS": "REP"},
+    "NC": {"COOPER": "DEM", "WHATLEY": "REP"}, "TX": {"TALARICO": "DEM", "PAXTON": "REP"},
+    "OH": {"BROWN": "DEM", "HUSTED": "REP"}, "AK": {"PELTOLA": "DEM", "SULLIVAN": "REP"},
+    "IA": {"TUREK": "DEM", "HINSON": "REP", "ARENHOLZ": "REP"}, "NE": {"OSBORN": "IND", "RICKETTS": "REP"},
+    "KS": {"HAMILTON": "DEM", "MARSHALL": "REP"},
+}
+ABSURD_ROW = 100_000_000  # 한 행 ≥ $1억은 장난성 신고(FL 2026 실측: 10억~90억 행) — 그 위원회를 통째로 뺀다
 API = "https://api.open.fec.gov/v1/schedules/schedule_e/"
 OUT = os.path.join(os.path.dirname(__file__), "..", "data", "fec_independent_expenditures.json")
+
+
+def _party(state: str, x: dict) -> str:
+    """신고된 candidate_party, 없으면 본선 후보 성(姓)으로 보충. 못 맞추면 빈 문자열(진영 미상)."""
+    p = (x.get("candidate_party") or "")[:3]
+    if p:
+        return p
+    name = (x.get("candidate_name") or "").upper()
+    hits = {party for sur, party in SURNAME_PARTY.get(state, {}).items() if sur in name}
+    return hits.pop() if len(hits) == 1 else ""
 
 
 def fetch_rows(state: str, key: str) -> list[dict] | None:
@@ -49,7 +70,7 @@ def fetch_rows(state: str, key: str) -> list[dict] | None:
     return rows
 
 
-def aggregate(rows: list[dict]) -> dict:
+def aggregate(rows: list[dict], state: str = "") -> dict:
     keep = []
     for x in rows:
         if x.get("most_recent") is False or x.get("memo_code") == "X":
@@ -57,10 +78,17 @@ def aggregate(rows: list[dict]) -> dict:
         et = x.get("election_type") or ""
         if et and not et.startswith("G"):
             continue  # 예비선거 지출 제외 — 본선만
+        ed_ = (x.get("expenditure_date") or "")[:10]
+        if ed_ and not ("2025-01-01" <= ed_ <= "2026-12-31"):
+            print(f"  ! {state}: 사이클 밖 날짜 {ed_} ({(x.get('committee') or {}).get('name')}) — 행 제외", file=sys.stderr); continue
         if not x.get("expenditure_amount") or not x.get("expenditure_date"):
             continue
         keep.append(x)
     # 통지 중복 제거: 위원회별 마지막 정기 보고 지출일 이후의 통지만 산입
+    absurd = {x["committee_id"] for x in keep if float(x.get("expenditure_amount") or 0) >= ABSURD_ROW}
+    if absurd:
+        print(f"  ! {state}: 행 ≥ $1억 위원회 제외 {sorted(absurd)}", file=sys.stderr)
+        keep = [x for x in keep if x["committee_id"] not in absurd]
     last_rep = defaultdict(str)
     for x in keep:
         if not x.get("is_notice"):
@@ -75,7 +103,7 @@ def aggregate(rows: list[dict]) -> dict:
         a = agg.setdefault(k, {
             "committee_id": cid, "committee": (x.get("committee") or {}).get("name") or cid,
             "candidate_id": x.get("candidate_id"), "candidate": x.get("candidate_name"),
-            "party": (x.get("candidate_party") or "")[:3], "so": x.get("support_oppose_indicator"),
+            "party": _party(state, x), "so": x.get("support_oppose_indicator"),
             "reported": 0.0, "notice_recent": 0.0, "last_date": ""})
         a["notice_recent" if notice else "reported"] += float(x["expenditure_amount"])
         a["last_date"] = max(a["last_date"], ed)
@@ -116,7 +144,7 @@ def main() -> int:
         if rows is None:
             out["states"][st] = None
             continue
-        agg = aggregate(rows)
+        agg = aggregate(rows, st)
         out["states"][st] = agg
         ok += 1
         for a in agg["rows"]:
