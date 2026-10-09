@@ -282,7 +282,9 @@ main table.gt_table th.gt_col_heading { white-space: pre-line; text-align: cente
   color: $dem-fg; letter-spacing: 0.02em; margin-bottom: 6px;
 }
 .summary ul { margin: 0; padding-left: 1.15rem; }
-.summary li { margin: 3px 0; line-height: 1.55; font-size: 0.92rem; }  /* 오늘의 판세(.today li)와 같은 크기 (2026-10-09) */
+.summary li { margin: 3px 0; line-height: 1.55; font-size: 0.92rem; font-family: var(--sans); }  /* 오늘의 판세(.today li)와 같은 글꼴·크기 (2026-10-10) */
+/* 요약 안의 R 청크 때문에 목록이 loose(li > p)로 렌더돼 문단 여백·세리프가 붙는다 — 오늘의 판세(tight 목록)와 같게 */
+.summary li p { margin: 0; font-family: inherit; font-size: inherit; line-height: inherit; }
 
 /* 표·차트 앞 "무엇을 볼까" 한 줄 안내 */
 .lookfor {
