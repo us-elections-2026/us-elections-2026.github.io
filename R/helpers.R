@@ -1955,64 +1955,6 @@ us_ledger_md <- function(cat = c("legal", "money"), n = 30, title = NULL) {
                  if (is.null(d$as_of)) "" else d$as_of, length(items), length(d$states[["US"]][[cat]])))
 }
 
-# data/legal_tracker.json — 사건·행정명령 단위의 고정 트래커(사람이 주간 (8)단계에서 갱신).
-.legal <- function() {
-  path <- file.path("data", "legal_tracker.json")
-  if (!file.exists(path)) return(NULL)
-  jsonlite::read_json(path, simplifyVector = FALSE)
-}
-.legal_status_kr <- c(pending = "계류", active = "진행", ruled = "판결", closed = "종결", enjoined = "집행정지")
-
-gt_legal_tracker <- function() {
-  d <- .legal()
-  if (is.null(d)) return(gt(tibble(안내 = "data/legal_tracker.json 이 아직 없습니다.")) |> .tbl_opts())
-  it <- d$items
-  nz <- function(x) if (is.null(x) || !nzchar(x)) "—" else x
-  tb <- tibble(
-    분류 = vapply(it, function(x) nz(x$category), character(1)),
-    사건 = vapply(it, function(x) sprintf("[%s](#%s)", x$title_kr, x$id), character(1)),
-    `법원·주체` = vapply(it, function(x) nz(x$court), character(1)),
-    상태 = vapply(it, function(x) { s <- .legal_status_kr[[x$status]]; if (is.null(s)) x$status else s }, character(1)),
-    `현재 상태` = vapply(it, function(x) nz(x$status_kr), character(1)),
-    최근 = vapply(it, function(x) nz(x$last_date), character(1)),
-    `다음 기일` = vapply(it, function(x) nz(x$next_kr), character(1))
-  )
-  tb <- tb[order(tb$최근, decreasing = TRUE), ]
-  tb |>
-    gt() |>
-    fmt_markdown(columns = 사건) |>
-    tab_header(title = "선거 법·제도 분쟁 — 사건별 현황", subtitle = sprintf("기준 %s · %d건", d$as_of, length(it))) |>
-    tab_source_note(d$source_label) |>
-    .tbl_opts()
-}
-
-# 사건별 상세: 쟁점·시간순 이벤트·선거 영향. 분류(category) 순으로 묶는다.
-legal_items_md <- function() {
-  d <- .legal()
-  if (is.null(d)) return("")
-  it <- d$items
-  cats <- unique(vapply(it, function(x) x$category, character(1)))
-  out <- character(0)
-  for (cg in cats) {
-    out <- c(out, sprintf("\n## %s\n", cg))
-    for (x in it[vapply(it, function(y) identical(y$category, cg), logical(1))]) {
-      st <- .legal_status_kr[[x$status]]; if (is.null(st)) st <- x$status
-      ev <- vapply(x$events, function(e) sprintf("- <b class=\"ledger-d\">%s</b> %s%s", e$date, e$text,
-                                                if (!is.null(e$url) && nzchar(e$url)) sprintf(" ([출처](%s))", e$url) else ""), character(1))
-      src <- if (length(x$sources)) paste(sprintf("[%s](%s)", vapply(x$sources, function(s) s$label, character(1)),
-                                                  vapply(x$sources, function(s) s$url, character(1))), collapse = " · ") else ""
-      out <- c(out, sprintf("\n### %s {#%s}\n", x$title_kr, x$id),
-               sprintf('<p class="rcard-mu">%s · %s · <b>%s</b>%s</p>\n', x$name_en, x$court, st,
-                       if (!is.null(x$next_kr) && nzchar(x$next_kr)) paste0(" · 다음: ", x$next_kr) else ""),
-               paste0(x$summary_kr, "\n"),
-               "\n::: {.ledger}\n", paste(ev, collapse = "\n"), "\n:::\n",
-               if (!is.null(x$impact_kr) && nzchar(x$impact_kr)) paste0("\n**선거 영향** — ", x$impact_kr, "\n") else "",
-               if (nzchar(src)) paste0('\n<p class="rcard-mu">출처: ', src, "</p>\n") else "")
-    }
-  }
-  paste(out, collapse = "\n")
-}
-
 
 # 1.12 하원 District Focus — FEC 후보 모금·독립지출 (data/fec_house.json) ----------------
 .fec_house <- function() {
