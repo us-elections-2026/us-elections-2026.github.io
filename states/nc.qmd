@@ -12,6 +12,8 @@ source(file.path("R", "helpers.R"))
 
 ## 주 개요
 
+Thom Tillis 불출마로 생긴 **공화당 방어 공개석**입니다. 전 주지사 2선의 Roy Cooper(민주)가 전 RNC 위원장 Michael Whatley(공화)와 맞붙습니다. 2024년 트럼프가 약 3%p로 이긴 주지만 주지사 선거에서는 민주가 이어 이겨 온 분할투표의 주로, 전직 주지사의 인지도와 조직에 신인이 맞서는 구도입니다. 공화 외부자금이 이 주에 머무는지 다른 주로 옮겨 가는지가 레이스의 온도를 보여주는 지표입니다.
+
 ```{r}
 #| output: asis
 cat(state_card_html("NC"))
@@ -21,8 +23,6 @@ cat(state_card_html("NC"))
 #| output: asis
 cat(state_today_md("NC"))
 ```
-
-Thom Tillis 불출마로 생긴 **공화당 방어 공개석**입니다. 전 주지사 2선의 Roy Cooper(민주)가 전 RNC 위원장 Michael Whatley(공화)와 맞붙습니다. 2024년 트럼프가 약 3%p로 이긴 주지만 주지사 선거에서는 민주가 이어 이겨 온 분할투표의 주로, 전직 주지사의 인지도와 조직에 신인이 맞서는 구도입니다. 공화 외부자금이 이 주에 머무는지 다른 주로 옮겨 가는지가 레이스의 온도를 보여주는 지표입니다.
 
 ::: {.summary}
 - **구도**: 공화 방어 공개석(Tillis 불출마) — Cooper(D, 전 주지사 2선) vs Whatley(R, 전 RNC 위원장).
