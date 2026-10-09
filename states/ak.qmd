@@ -22,12 +22,17 @@ cat(state_card_html("AK"))
 cat(state_today_md("AK"))
 ```
 
-**Toss-up** — 올해 가장 크게 움직인 주입니다. 공화 현직 Dan Sullivan을, 2022년 최초의 알래스카 원주민(Yup'ik) 연방의원이 된 Mary Peltola(D)가 도전합니다. Cook은 **1월 Solid R → Lean R**(펠톨라 출마), 다시 **7/1 Lean R → Toss-up**으로 두 단계 올렸고 Sabato도 6/11에 Toss-up으로 옮겼습니다. **9/1 본선 투표용지가 확정됐습니다 — 펠톨라(민주 단독) 대 공화 3인**(현역 Dan S. Sullivan · 동명이인 Dan J. Sullivan · Hykes)이고, 민주 4위였던 Leslie가 사퇴해 민주 표가 갈릴 위험은 사라진 반면 **동명이인 혼동 위험은 11월 용지에 그대로 고정**됐습니다. 11월 본선은 RCV입니다. 조사는 기관별 편차가 큽니다(아래 표) — 벤치마크는 NYT/Siena, 트래킹은 ASR.
+**공화당 방어석**이지만 이번 사이클에 가장 크게 움직인 주입니다. 2선 현직 Dan Sullivan(공화, 군사위)에게 알래스카 원주민(Yup'ik) 최초의 연방의원인 전 하원의원 Mary Peltola(민주)가 도전합니다. 알래스카는 모든 정당이 한 용지에서 겨루는 top-4 예비선거와 선호투표(RCV) 본선을 쓰고, 현직과 이름이 같은 동명이인 후보가 본선 용지에 함께 올라 있습니다. 공화 우위 주에서 Peltola의 개인 인기가 얼마나 넓은 연합을 만드는지, 탈락 후보의 2순위 표가 어디로 가는지가 승부를 정합니다.
 
 ::: {.summary}
-- **구도**: 공화 방어 — 현역 Sullivan(R, 군사위) vs Peltola(D, 전 하원의원). **Cook·Sabato 모두 Toss-up**(Cook 7/1 이동).
-- **변화**: **9/1 본선 용지 확정 — 1D 대 3R**. 8/18 예비 최종 개표(약 98%)는 펠톨라 48.1 · 현역 설리번 42.7이었고 동명이인 **Daniel J. Sullivan Jr.가 약 2.5%로 3위**, 4위 Leslie(D)는 사퇴했습니다. 사이클 내내 최대 미지수였던 **동명이인 잠식률이 처음 실측**됐고, 그 위험은 본선 용지에 남았습니다. **Inside Elections가 9/3 Lean R → Tilt R, 10/2 Tilt R → Toss-up으로 두 차례 민주 쪽에 올려** Cook·Sabato와 같은 칸이 됐습니다. 연방 대배심 수사는 계속되고 있으나 기소는 없습니다.
-- **한국 함의**: **Sullivan 인도태평양법(한국 명시)·한화 필리 조선소·Alaska LNG-POSCO**(직접 풍부).
+- **구도**: 공화 방어 — 현직 Sullivan(R, 군사위) vs Peltola(D, 전 하원의원).
+- **구조 변수**: top-4 예비 + RCV 본선. 동명이인 Dan J. Sullivan의 용지 등재, 탈락 후보 2순위 표의 향방, Peltola의 개인표.
+- **한국 함의**: **Sullivan의 인도태평양법(한국 명시)·한화 필리 조선소·Alaska LNG-POSCO**(직접 관여 풍부).
+
+```{r}
+#| output: asis
+cat(state_weekly_var_md("AK"))
+```
 :::
 
 ::: {.callout-warning appearance="simple"}

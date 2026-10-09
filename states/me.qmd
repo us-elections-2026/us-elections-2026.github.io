@@ -22,12 +22,17 @@ cat(state_card_html("ME"))
 cat(state_today_md("ME"))
 ```
 
-민주당의 **최우선 탈환 표적**. 5선 현직 Collins(R)는 바이든·해리스가 이긴 주에서 살아남아온 생존자지만, 이번 사이클의 전국 역풍이 변수입니다. 6/9 민주 경선에서 압승했던 Graham Platner가 성폭행 의혹으로 **7/10 사퇴**한 뒤, **트로이 잭슨(Troy Jackson, 전 메인 주상원의장)**이 **7/25 뱅고어 지명전당대회에서 566–5로 공식 인준**받아 3주간의 후보 공백이 종결됐습니다(7/27 등재 마감). 플래트너 사퇴 후 첫 공개 조사(**UNH 7/15–20, 잭슨 49–콜린스 46**, 무당파 46–42)는 후보 교체 혼란이 아직 콜린스에게 우위를 넘기지 않았음을 확인했으나, 잭슨의 다혈질 논란·2025년 세금 유치권·이스라엘/AIPAC 침묵이 인준 전부터 지속형 네거티브로 축적됐습니다. **8/12에는 뱅고어 데일리 뉴스가 1988년 포트켄트 경찰 보고서를 입수·보도해 당시 19세였던 잭슨의 폭행·가정폭력 의혹이 부상**했고, RNC는 즉각 "그레이엄 플래트너 2.0" 프레임을 가동했습니다(잭슨은 남성과의 싸움은 인정하되 여성에 대한 폭력은 부인했고, 파트너 라나 펠레티어도 부인). **현재 공개된 세 조사(폭스 48–46·UNH 파인트리 49–46·하트/SMP 49–45)는 모두 이 보도 이전에 실사돼 스캔들이 반영돼 있지 않습니다** — 사건 이후 첫 공개 조사가 진짜 시험대입니다. ([Maine Morning Star(566–5 인준)](https://mainemorningstar.com/2026/07/25/troy-jackson-officially-clinches-maine-democratic-u-s-senate-nomination/) · [The Hill(경찰 기록·부인)](https://thehill.com/homenews/campaign/6027615-jackson-partner-denies-allegations/) · [Maine Wire(3조사 수렴)](https://www.themainewire.com/2026/08/jackson-holds-narrow-lead-over-collins-as-new-abuse-allegations-roil-maine-senate-race/))
+민주당의 **최우선 탈환 표적**입니다. 바이든·해리스가 이긴 주에서 살아남아 온 5선 현직 Susan Collins(공화, 세출위원장)에게 전 메인 주상원의장 Troy Jackson(민주)이 도전합니다. 당초 지명자 Graham Platner가 사퇴한 뒤 Jackson이 지명전당대회 인준으로 후보가 됐고, 그 과정의 검증 이슈가 공화 측 공격 소재로 남아 있습니다. 현직의 개인표가 전국 역풍을 또 한 번 견디는지가 핵심이며, 유권자 1인당 광고비가 전국에서 가장 높은 주입니다.
 
 ::: {.summary}
-- **구도**: 민주 최우선 탈환 표적 — 5선 Collins(R, 세출위원장) vs **Troy Jackson(D, 7/25 인준)**.
-- **변화**: Platner 7/10 사퇴 → 잭슨 **566–5 인준**으로 후보 확정. 조사는 잭슨 +2~4로 근소 우위이나, **8/12 1988년 경찰 기록 보도로 지명자 2차 검증 위기** — 현재 조사 3건은 전부 보도 이전 필드라 미반영.
-- **한국 함의**: Collins의 CHIPS·세출위는 추정 연결고리; 직접 한국 표결은 미확인.
+- **구도**: 민주 최우선 탈환 표적 — 5선 Collins(R, 세출위원장) vs Jackson(D, 전 주상원의장, Platner 사퇴 후 인준).
+- **구조 변수**: 민주 우세 주에서 현직의 개인표 대 전국 역풍. 지명자 교체 과정의 검증 이슈, 1인당 광고비 전국 최고.
+- **한국 함의**: Collins의 CHIPS·세출위는 추정 연결고리. 직접 한국 표결은 미확인.
+
+```{r}
+#| output: asis
+cat(state_weekly_var_md("ME"))
+```
 :::
 
 ### 로컬 상황 — 일일 기록

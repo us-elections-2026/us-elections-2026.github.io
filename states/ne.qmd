@@ -22,12 +22,17 @@ cat(state_card_html("NE"))
 cat(state_today_md("NE"))
 ```
 
-공화당 방어석이지만 **2026-10-05 감시주로 새로 편입한 곳**입니다. 현직 Pete Ricketts(공화)가 무소속 Dan Osborn과 맞섭니다. 민주당 후보 Cindy Burbank가 7월 사퇴해 사실상 양자 구도이고, Osborn은 2024년에도 무소속으로 Fischer 상원의원에게 46.5 대 53.2로 좁혀 진 전력이 있습니다. 9월 조사는 기관별로 엇갈립니다. SurveyUSA는 Osborn +4, 공화계 co/efficient와 Wedgewood는 Ricketts +3~4입니다. 세 기관 등급은 Likely R(Cook·Sabato)과 Lean R(Inside Elections)입니다.
+**공화당 방어석**이지만 2026년 10월 감시주에 편입됐습니다. 2023년 임명돼 2024년 특별선거로 잔여 임기를 채운 현직 Pete Ricketts(공화, 전 주지사)가 무소속 노조 지도자 Dan Osborn과 맞섭니다. 민주당 후보가 사퇴해 사실상 양자 구도이고, Osborn은 2024년에도 무소속으로 Deb Fischer 상원의원을 6.7%p 차까지 추격한 전력이 있습니다. 무소속이 이기려면 무당파 결집에 더해 공화 이탈표가 필요하며, Osborn이 교섭단체를 밝히지 않아 이 사이트는 그를 민주 순증 산수에 넣지 않고 따로 셉니다.
 
 ::: {.summary}
-- **구도**: 공화 방어 — Ricketts(R·현직, 2023년 임명·2024년 특별선거 당선) vs Osborn(무소속·노조 지도자). Cook·Sabato Likely R, IE Lean R(10/1).
-- **변화**: 민주 후보 Burbank 7/17 사퇴로 Osborn 단일화 · Ricketts 2분기 자기자금 520만 달러 투입 · SLF 계열 Cornhusker Majority 누적 380만 달러 광고. Kalshi는 D/R 두 후보만 상장돼 Osborn 가격이 없습니다.
-- **한국 함의**: 한국은 네브래스카 소고기 최대 수출시장(2022년 5.84억 달러). Ricketts는 상원 외교위 동아시아 소위원장입니다.
+- **구도**: 공화 방어 — Ricketts(R, 현직·전 주지사) vs Osborn(무소속·노조 지도자, 2024년 재도전). 민주 후보 사퇴로 사실상 양자.
+- **구조 변수**: 등록 유권자의 절반이 공화인 주에서 무당파 결집 + 공화 이탈표. 현직의 자기자금 대 도전자의 소액기부. Osborn 교섭단체 미정 → 민주 순증 산수 미포함.
+- **한국 함의**: 한국은 네브래스카 소고기 최대 수출시장. Ricketts는 상원 외교위 동아시아 소위원장.
+
+```{r}
+#| output: asis
+cat(state_weekly_var_md("NE"))
+```
 :::
 
 ### 로컬 상황 — 일일 기록

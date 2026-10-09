@@ -2222,6 +2222,17 @@ canada_state_notes_md <- function(states = c("IA","ME","MI","NH","OH","TX","AK",
   paste(out, collapse = "\n")
 }
 
+# 1분 요약의 자동 갱신 줄 — 주간 대시보드(model_dashboard.json)의 '이번 주 변수'(key_var)와 기준일.
+# 주 개요 탭의 도입 문단·1분 요약은 2026-10-09부터 고정 내용만 두고, 시간에 묶인 내용은 이 줄과
+# 「오늘의 판세」(일일 장부)·레이스 카드(등급·시장·조사)에서 자동으로 채운다.
+state_weekly_var_md <- function(code) {
+  d <- tryCatch(.load_json("model_dashboard"), error = function(e) NULL)
+  if (is.null(d) || is.null(d$states)) return("")
+  r <- d$states[d$states$id == tolower(code), ]
+  if (!nrow(r) || is.na(r$key_var[1]) || !nzchar(r$key_var[1])) return("")
+  sprintf("- **이번 주 변수** <span class=\"rcard-mu\">주간 %s</span> — %s\n", substr(d$as_of, 6, 10), r$key_var[1])
+}
+
 # 주 개요 탭 머리의 "오늘의 판세" — 최신 정리본의 여론조사·주 함의 한 줄씩
 state_today_md <- function(code) {
   d <- .ledger()

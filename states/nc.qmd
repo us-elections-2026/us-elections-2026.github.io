@@ -22,19 +22,18 @@ cat(state_card_html("NC"))
 cat(state_today_md("NC"))
 ```
 
-Tillis 은퇴로 생긴 공개석이며 공화가 방어합니다. 전 주지사 Roy Cooper(D)가 인지도와 모금 양쪽에서 전 RNC 위원장 Michael Whatley(R)를 앞섭니다. 봄 내내 한 자릿수 후반에서 두 자릿수 초반의 리드를 일관되게 유지했고, 예측시장도 약 83%를 매깁니다.
-
-양당 경선은 3/3에 이미 끝났습니다. 민주는 Cooper가 92%, 공화는 Whatley가 64.6%를 얻어 일찍 본선 체제로 넘어갔습니다. **6/11 Cook이 Toss-up에서 Lean D로 내렸습니다.**
-
-최대 변수는 둘입니다. 하나는 Whatley의 낮은 인지도를 둘러싼 정의 싸움입니다 — 유권자 과반이 아직 그를 모른다고 답합니다. 다른 하나는 공화 슈퍼팩 SLF의 7,100만 달러 광고전입니다. ([WRAL](https://www.wral.com/news/nccapitol/nc-senate-cooper-whatley-spending-election-2026-republican-slf-march-2026/) · [Carolina Journal](https://www.carolinajournal.com/cook-political-report-shifts-nc-senate-race-from-toss-up-to-lean-democrat/))
+Thom Tillis 불출마로 생긴 **공화당 방어 공개석**입니다. 전 주지사 2선의 Roy Cooper(민주)가 전 RNC 위원장 Michael Whatley(공화)와 맞붙습니다. 2024년 트럼프가 약 3%p로 이긴 주지만 주지사 선거에서는 민주가 이어 이겨 온 분할투표의 주로, 전직 주지사의 인지도와 조직에 신인이 맞서는 구도입니다. 공화 외부자금이 이 주에 머무는지 다른 주로 옮겨 가는지가 레이스의 온도를 보여주는 지표입니다.
 
 ::: {.summary}
-- **구도**: 공화 방어 공개석(Tillis 은퇴) — Cooper(D) 우세, **6/11 Cook이 Toss-up→Lean D 하향**.
-- **변화**: Cooper 보유현금 7배 우위 vs 공화 슈퍼팩 SLF $71M 광고전.
+- **구도**: 공화 방어 공개석(Tillis 불출마) — Cooper(D, 전 주지사 2선) vs Whatley(R, 전 RNC 위원장).
+- **구조 변수**: 분할투표 주(대선 공화·주지사 민주)에서 전직 주지사의 인지도 대 신인. 공화 외부자금의 투입·철수.
 - **한국 함의**: 한국 직접 투자 없음(대형 투자는 조지아 집중), 후보 입장 미확인.
-:::
 
-- **공석의 배경**: Thom Tillis(R)는 2025-06-29 3선 불출마를 발표했습니다. 트럼프의 "big beautiful bill" 표결에 반대한 직후였고, 트럼프가 경선 도전자 지원을 위협한 지 몇 시간 뒤였습니다. ([Axios](https://axios.com/2025/06/29/thom-tillis-retire-senate-north-carolina))
+```{r}
+#| output: asis
+cat(state_weekly_var_md("NC"))
+```
+:::
 
 ### 로컬 상황 — 일일 기록
 
