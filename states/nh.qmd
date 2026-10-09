@@ -22,12 +22,17 @@ cat(state_card_html("NH"))
 cat(state_today_md("NH"))
 ```
 
-민주당의 **수성 레이스**. 5선 [Jeanne Shaheen의 은퇴](https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire)로 이 의석은 1990년 이후 처음인 완전 오픈시트가 됐습니다. 등급은 Cook **Lean D**·Sabato Leans Democratic이지만, Inside Elections는 9/3 Toss-up으로 내려 기관 간 평가가 갈립니다. 민주당의 "+4 산수"에서 NH는 필수 수성 3석(GA·MI·NH) 중 하나입니다. 이곳을 잃으면 다수당 경로가 공화 보유 6곳(ME·NC·TX·OH·AK·IA) 전승으로 좁아집니다([시나리오](../scenarios.qmd) 참조).
+5선 Jeanne Shaheen의 은퇴로 **1990년 이후 처음 완전히 열린 민주당 수성석**입니다. 연방하원의원 Chris Pappas(민주)와 전 상원의원 John E. Sununu(공화, 전 주지사의 형제)가 맞붙습니다. 민주당의 다수당 산수에서 NH는 필수 수성 3석(GA·MI·NH) 중 하나라, 이곳을 잃으면 경로가 공화 보유 의석 전승으로 좁아집니다([시나리오](../scenarios.qmd)). 무당파 비중이 높은 주에서 Sununu 가문의 인지도와 현직 하원의원의 조직이 맞서고, 외부자금은 공화 쪽에 치우쳐 있습니다.
 
 ::: {.summary}
-- **구도**: 민주 수성 공개석(Shaheen 은퇴) — Cook **Lean D** vs IE Toss-up(9/3), 민주 필수 3석 중 하나.
-- **변화**: 9/8 경선 종료 — Pappas 65.1%·Sununu 68.4%(99% 개표)로 'Pappas 대 Sununu' 본선 대진 확정. 9/15 Cook이 Lean D→Toss Up으로 내려 3대 기관 중 둘이 토스업.
+- **구도**: 민주 수성 공개석(Shaheen 은퇴) — Pappas(D, 연방하원) vs John E. Sununu(R, 전 상원의원). 민주 필수 3석 중 하나.
+- **구조 변수**: 무당파 비중이 높은 주. Sununu 가문 인지도 대 현직 하원의원의 조직, 공화 편중 외부자금.
 - **한국 함의**: 후보 직접 한국 입장 미확인. BAE 방산 전자가 구조적 접점(추정).
+
+```{r}
+#| output: asis
+cat(state_weekly_var_md("NH"))
+```
 :::
 
 ### 로컬 상황 — 일일 기록

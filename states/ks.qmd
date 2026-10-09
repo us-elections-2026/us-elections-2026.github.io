@@ -22,12 +22,17 @@ cat(state_card_html("KS"))
 cat(state_today_md("KS"))
 ```
 
-공화당 방어석이지만 **2026-10-05 감시주로 새로 편입한 곳**입니다. 현직 Roger Marshall(공화)에게 대형 교회 목사 Adam Hamilton(민주)이 도전합니다. 9월 말 조사가 연속 동률입니다. NYT/Siena 45–45, Trafalgar 44–44, Emerson은 Hamilton +2, Wedgewood는 Hamilton +2입니다. 캔자스는 1932년 이후 민주당 상원의원을 내지 못한 주라 등급은 아직 Lean R(Cook·Sabato)과 Likely R(Inside Elections)입니다. 그러나 공화 관계자가 10월 초 "캔자스에 돈이 필요하다"고 말했고, SLF가 약 1,000만 달러를 옮겨 왔습니다.
+**공화당 방어석**이지만 2026년 10월 감시주에 편입됐습니다. 의사 출신 초선 현직 Roger Marshall(공화)에게 대형 교회 Church of the Resurrection을 세운 목사 Adam Hamilton(민주, 첫 출마)이 도전합니다. 캔자스는 1932년 이후 민주당 연방상원의원을 내지 못했지만, 주지사는 두 번 연속 민주가 이겼고 2022년 낙태권 개헌 주민투표를 부결시킨 분할투표의 주입니다. 임기 제한으로 공석이 된 주지사 선거가 같은 날 치러져 분할투표 양상이 핵심 변수입니다.
 
 ::: {.summary}
-- **구도**: 공화 방어 — Marshall(R·현직, 산부인과 의사 출신) vs Hamilton(D·Church of the Resurrection 설립 목사, 첫 출마). Cook·Sabato Lean R, IE Likely R(10/1). 자유당 Graham 2~5%.
-- **변화**: Sabato 9/22 Likely R→Lean R · 9월 Hamilton 광고가 Marshall의 의사 시절 환자 소송·체포 이력을 재조명 · SLF 약 1,000만 달러 캔자스 예약(10월 초, NC에서 이동) · Kalshi 민주 34¢.
-- **한국 함의**: 항공우주(위치타)와 농산물 수출이 접점. Marshall은 한국 포함 아시아 무역협상을 긍정 평가했고, Hamilton의 한국 관련 발언은 미확인입니다.
+- **구도**: 공화 방어 — Marshall(R, 현직 초선·의사 출신) vs Hamilton(D, 대형교회 목사·첫 출마). 자유당 Graham 출마.
+- **구조 변수**: 연방 선거는 공화, 주 단위 쟁점 투표는 온건으로 갈리는 분할투표 전통. 주지사 선거 동반, 공화 외부자금의 뒤늦은 진입.
+- **한국 함의**: 항공우주(위치타)와 농산물 수출이 접점. Marshall은 한국 포함 아시아 무역협상을 긍정 평가, Hamilton의 한국 관련 발언은 미확인.
+
+```{r}
+#| output: asis
+cat(state_weekly_var_md("KS"))
+```
 :::
 
 ### 로컬 상황 — 일일 기록
