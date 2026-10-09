@@ -1,5 +1,5 @@
 {
- "as_of": "2026-10-08",
+ "as_of": "2026-10-09",
  "source_label": "상원 일일 정리본(senate_daily/site)의 주별 태그 줄 — scripts/ingest_senate_daily.py build_ledger()",
  "provenance_note": "여론조사·자금·로컬·주 함의 네 항목. 같은 문장은 처음 본 날짜로 한 번만 싣고 last 에 마지막 언급일. 원문 전재(정리본 이전) 날짜는 제외. states.US.money 는 정리본 v1.2의 「전국 자금」 절, states.US.legal 은 v1.3의 「법·제도」 절.",
  "states": {
@@ -231,6 +231,14 @@
    ],
    "local": [
     {
+     "date": "2026-10-09",
+     "text": "이월: 켐프가 9/14 콜린스 지지를 선언했다([WRDW](https://www.wrdw.com/2026/09/14/gov-kemp-endorses-rep-mike-collins-us-senate-bid/)) · 조기투표는 10/13에 시작한다 · Georgia Recorder(좌)는 상원 기사가 없었고 Georgia Star News(우 ⚠)는 수집하지 못했다.",
+     "urls": [
+      "https://www.wrdw.com/2026/09/14/gov-kemp-endorses-rep-mike-collins-us-senate-bid/"
+     ],
+     "last": "2026-10-09"
+    },
+    {
      "date": "2026-10-08",
      "text": "첫 토론 10/8 · 켐프 주지사가 9/14 콜린스 지지 선언([WRDW](https://www.wrdw.com/2026/09/14/gov-kemp-endorses-rep-mike-collins-us-senate-bid/)) · 조기투표 10/13 시작 · Georgia Recorder(좌)에는 오소프–콜린스 기사가 없었고, 우파 매체(Georgia Star News 우 ⚠)는 수집하지 못했다.",
      "urls": [
@@ -441,6 +449,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-10-09",
+     "text": "판단을 바꿀 새 정보는 없다. 10/8 토론 결과가 다음 회차의 변수다.",
+     "urls": [],
+     "last": "2026-10-09"
+    },
     {
      "date": "2026-10-08",
      "text": "첫 대면 토론을 앞두고 있으며, 원문은 RCP의 Leans D 분류 외에 새 판단을 내리지 않는다.",
@@ -863,6 +877,15 @@
    ],
    "local": [
     {
+     "date": "2026-10-09",
+     "text": "이월 정정: 10/8 브리핑에 적었던 10/8 토론은 확인되지 않아 삭제했다. 확인된 일정은 9/15 Fox 2 Detroit 토론(로저스 불참)과 10/21 WXYZ 주관 2차 토론이다([ABC 계열](https://abcnews4.com/news/nation-world/democrat-abdul-el-sayed-republican-mike-rogers-agree-to-second-debate-for-michigans-senate-race-midterm-election); [Fox 2 Detroit](https://www.fox2detroit.com/news/u-s-senate-debate-abdul-el-sayed-mike-rogers-takeaways-analysis)) · 유세: 2026-10-24(예고) · 디트로이트 · 버락 오바마(민주) → 압둘 엘사예드 · 제니스 벤슨과 함께하는 집회, 장소 미공개(PBS NewsHour, 이월).",
+     "urls": [
+      "https://abcnews4.com/news/nation-world/democrat-abdul-el-sayed-republican-mike-rogers-agree-to-second-debate-for-michigans-senate-race-midterm-election",
+      "https://www.fox2detroit.com/news/u-s-senate-debate-abdul-el-sayed-mike-rogers-takeaways-analysis"
+     ],
+     "last": "2026-10-09"
+    },
+    {
      "date": "2026-10-08",
      "text": "이월: 로저스–엘사예드 토론 10/8(목)(오늘 재확인 못 함) · 로저스는 9/15 Fox 2 토론에 불참했다 · Denver Gazette에 따르면 엘사예드는 10/5 뉴욕에서 맘다니 시장, 오카시오-코르테스 의원과 유세할 예정이었다([Denver Gazette](https://www.denvergazette.com/2026/10/06/el-sayed-announces-campaign-stops-with-obama-aoc-and-mamdani/)) · Michigan Advance(좌)에는 9/30 기사(슬롯킨 상원의원이 워런 타운홀에서 엘사예드와 합류)만 있었고, 우파 대응 매체는 수집하지 못했다 · 유세: 2026-10-24(예고) · 디트로이트 · 버락 오바마(민주) → 압둘 엘사예드(제니퍼 벤슨 동반) · 미시간 상원 후보로는 첫 오바마 유세이며 장소는 미공개(PBS NewsHour).",
      "urls": [
@@ -1101,6 +1124,12 @@
    ],
    "insight": [
     {
+     "date": "2026-10-09",
+     "text": "조사는 엘사예드 근소 우세가 이어지는 초접전이다. 새 로컬 보도가 없어 판단은 바뀌지 않는다.",
+     "urls": [],
+     "last": "2026-10-09"
+    },
+    {
      "date": "2026-10-08",
      "text": "신규 두 조사(Quantus +1, Mitchell +5)는 모두 엘사예드 우세다. RCP 평균은 Toss-up 구간에 있다. 원문은 미시간에 대한 별도 판세 판단을 내리지 않는다.",
      "urls": [],
@@ -1311,6 +1340,12 @@
   },
   "NH": {
    "polls": [
+    {
+     "date": "2026-10-09",
+     "text": "쿡이 NH를 Toss-up에서 **Lean Democrat**으로 조정했다 · St. Anselm 10/6 파파스 51–44 · YouGov 10/6 파파스 51–43 · UNH 9/17–21 파파스 50–42 · co/efficient(공화 성향) 9/9–11 46–46.",
+     "urls": [],
+     "last": "2026-10-09"
+    },
     {
      "date": "2026-10-08",
      "text": "Rasmussen(10/5) 파파스 49–44 · St. Anselm(10/6) 51–44 · YouGov(10/6) 51–43 · Trafalgar(9/27) 47–41 · RCP 평균 파파스 +5.3 · AARP: 쿡 요약상 파파스 +7이나 조사기관·기간·표본은 확인하지 못했다.",
@@ -1581,6 +1616,12 @@
    ],
    "local": [
     {
+     "date": "2026-10-09",
+     "text": "없음. 로컬 매체 기사는 읽지 못했다.",
+     "urls": [],
+     "last": "2026-10-09"
+    },
+    {
      "date": "2026-10-08",
      "text": "없음. New Hampshire Bulletin(좌) 첫 화면에는 파파스–서누누 기사가 없었다. Union Leader(중도우)·WMUR·NH Journal은 수집하지 못해 오늘은 로컬 시각을 확인할 수 없다.",
      "urls": [],
@@ -1781,6 +1822,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-10-09",
+     "text": "원문은 가장 뚜렷했던 뒤집힘 위험이 민주당에 유리하게 재평가됐다고 본다.",
+     "urls": [],
+     "last": "2026-10-09"
+    },
     {
      "date": "2026-10-08",
      "text": "원문은 쿡의 NH 조정과 강세 조사로 가장 뚜렷했던 뒤집힘 위험이 줄었다고 보고, 이를 Bear 시나리오 약화의 근거로 든다.",
@@ -2158,6 +2205,12 @@
    ],
    "local": [
     {
+     "date": "2026-10-09",
+     "text": "없음. Maine Wire(우 ⚠)는 수집하지 못했다.",
+     "urls": [],
+     "last": "2026-10-09"
+    },
+    {
      "date": "2026-10-08",
      "text": "첫 토론에서 양측이 서로 부패를 비난했다(콜린스는 ProPublica가 보도한 기부자 대가성 의혹을 부인하고 잭슨의 출장비 정산을 공격) · 콜린스는 트럼프와 함께 유세할지 답하지 않았다 · 좌파 성향 States Newsroom 매체만 확인됐고 Maine Wire(우 ⚠)는 수집하지 못했다.",
      "urls": [],
@@ -2380,6 +2433,12 @@
    ],
    "insight": [
     {
+     "date": "2026-10-09",
+     "text": "원문은 조사기관마다 결과가 엇갈리는 점을 민주당 쪽 잔존 위험으로 꼽는다. 오늘 바뀐 것은 없다.",
+     "urls": [],
+     "last": "2026-10-09"
+    },
+    {
      "date": "2026-10-08",
      "text": "아이오와를 빼면 조사기관별 편차가 가장 큰 경합이다. 원문은 Bear 시나리오의 잔존 위험으로 메인 조사기관 간 엇갈림(co/efficient 콜린스 +2, NYT/Siena 9/24)을 꼽는다.",
      "urls": [],
@@ -2591,6 +2650,12 @@
   "NC": {
    "polls": [
     {
+     "date": "2026-10-09",
+     "text": "ECU 쿠퍼 50–43 · YouGov/Catawba College 쿠퍼 47–35(Forbes 트래커 10/7 인용, 세부 미확인) · 쿡 등급은 Likely D.",
+     "urls": [],
+     "last": "2026-10-09"
+    },
+    {
      "date": "2026-10-08",
      "text": "Big Data Poll(9/30) 쿠퍼 51–39(+12) · Fabrizio/Anzalone(9/29) 쿠퍼 53–42(+11) · RCP 평균 쿠퍼 +9.0 · 쿡 Likely D.",
      "urls": [],
@@ -2665,6 +2730,12 @@
     }
    ],
    "money": [
+    {
+     "date": "2026-10-09",
+     "text": "이월: NC 내 SLF/SMP 지출 중단(10/8 브리핑)은 오늘 재확인하지 못했다.",
+     "urls": [],
+     "last": "2026-10-09"
+    },
     {
      "date": "2026-10-08",
      "text": "SLF 직전 주 지출 동결 · SMP는 이번 주 NC TV·디지털 광고 취소 · 공화당 전국 조직이 NC에서 캔자스로 자금을 옮겨 마셜을 지원했다(AOL/WaPo 요약).",
@@ -2834,6 +2905,14 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-10-09",
+     "text": "[Carolina Journal(우–중도우)](https://www.carolinajournal.com/new-polls-indicate-cooper-still-leads-whatley-in-senate-race/)은 쿠퍼가 50% 미만인 조사들을 와틀리의 '밝은 면'으로 부각했다. 그러나 10/3 ECU 자료에서는 미정층이 도전자 쪽으로 옮겨 가는 경향이 아직 보이지 않는다 · 조기투표는 10/15에 시작한다.",
+     "urls": [
+      "https://www.carolinajournal.com/new-polls-indicate-cooper-still-leads-whatley-in-senate-race/"
+     ],
+     "last": "2026-10-09"
+    },
     {
      "date": "2026-10-08",
      "text": "이월: SLF 광고 중단(쿡·SMP 보도로 재확인) · [NC Newsline, 중도좌~좌, 10/5 칼럼 \"A sad song for Whatley\"](https://ncnewsline.com/2026/10/05/a-sad-song-for-whatley/)는 오피니언이며 본문은 확인하지 못했다 · Carolina Journal(중도우)은 수집하지 못했다 · 조기투표 10/15 시작.",
@@ -3035,6 +3114,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-10-09",
+     "text": "쿠퍼 우세가 안정적이다. 원문은 이 주를 민주당의 가장 안정적인 탈환 후보로 본다.",
+     "urls": [],
+     "last": "2026-10-09"
+    },
     {
      "date": "2026-10-08",
      "text": "등급 상향과 양당의 동시 광고 철수로 NC는 민주당 우세 쪽으로 굳어 가는 흐름이다. 원문은 이를 판세 지도가 민주당 쪽으로 이동한 근거의 하나로 든다.",
@@ -3244,6 +3329,14 @@
   },
   "TX": {
    "polls": [
+    {
+     "date": "2026-10-09",
+     "text": "UMass Lowell/YouGov(9/18–28, LV 850명, ±4.5)에서 탈라리코 45, 팩스턴 45, 테드 브라운 2, 미정 7이다. 조사는 유출 음성 보도 이전에 진행됐다([UMass Lowell](https://www.uml.edu/news/press-releases/2026/10092026-texas-poll.aspx)).",
+     "urls": [
+      "https://www.uml.edu/news/press-releases/2026/10092026-texas-poll.aspx"
+     ],
+     "last": "2026-10-09"
+    },
     {
      "date": "2026-10-08",
      "text": "YouGov(10/6) 탈라리코 50–44 · NYT/Siena(10/3) 탈라리코 51–45 · Fox News(10/2) 탈라리코 51–49 · Rasmussen(10/1) 탈라리코 46–45 · Big Data Poll(9/27) 탈라리코 +2 · RCP 평균 탈라리코 +2.8.",
@@ -3523,6 +3616,12 @@
    ],
    "local": [
     {
+     "date": "2026-10-09",
+     "text": "유세: 2026-10-07 · 샌안토니오 · 도널드 트럼프(공화) → 켄 팩스턴 · 프리먼 콜리세움 집회, 애벗 불참, 관중 규모 미보도 · 이월: 팩스턴은 어떤 토론도 수락하지 않았다(Texas Tribune, 10/7) · Texas Scorecard(우)는 읽지 못했다.",
+     "urls": [],
+     "last": "2026-10-09"
+    },
+    {
      "date": "2026-10-08",
      "text": "조기투표까지 2주가 남아, 25년 만의 토론 없는 텍사스 상원 선거가 될 수 있다 · The Hill은 이번이 한 달 새 세 번째 텍사스 방문이며 공화당이 팩스턴을 우려한다고 전했다. 공화당 댈러스 전당대회 뒤 지지율이 빠졌다고 팩스턴이 인정한 녹취가 유출됐다고도 보도했고, RNC는 \"만들어진 드라마\"로 일축했다 · 애벗 주지사는 불참한다 · Texas Scorecard(우)는 수집하지 못했다 · 조기투표 10/19 시작 · 유세: 2026-10-07(예정, 결과 미보도) · 샌안토니오 · 도널드 트럼프(공화) → 켄 팩스턴 · 프리먼 콜리세움, 오후 6시 CT. 오바마도 탈라리코와 텍사스에서 유세한다(날짜 미공개)(KSAT; The Hill).",
      "urls": [],
@@ -3742,6 +3841,12 @@
    ],
    "insight": [
     {
+     "date": "2026-10-09",
+     "text": "원문은 동률 조사로 텍사스가 경합 확장 의석이 됐다고 본다. 조기투표는 10/19에 시작한다.",
+     "urls": [],
+     "last": "2026-10-09"
+    },
+    {
      "date": "2026-10-08",
      "text": "원문은 텍사스(NYT/Siena +6)를 Bull 시나리오의 확장주 경로로 든다. 오늘 트럼프 유세는 Bear 쪽 잔존 위험으로 꼽힌다.",
      "urls": [],
@@ -3951,6 +4056,12 @@
   "OH": {
    "polls": [
     {
+     "date": "2026-10-09",
+     "text": "CNN 브라운 49–43 · co/efficient(공화 성향, 10/8) 허스테드 46–45 · 직전 YouGov 10/6 브라운 49–45, NYT/Siena 10/3 브라운 49–46. 9월 중순 이후 비당파 조사는 모두 브라운 우세다.",
+     "urls": [],
+     "last": "2026-10-09"
+    },
+    {
      "date": "2026-10-08",
      "text": "YouGov(10/6) 브라운 49–45 · NYT/Siena(10/3) 브라운 49–46 · InsiderAdvantage(10/1) 브라운 44–43 · Suffolk/USA Today(9/30) 브라운 47–44 · Marist(9/29) 브라운 51–43(+8) · Big Data Poll(9/29) 브라운 +3 · RCP 평균 브라운 +3.1(Toss-up).",
      "urls": [],
@@ -4152,6 +4263,12 @@
    ],
    "local": [
     {
+     "date": "2026-10-09",
+     "text": "유세: 2026-10-03 · 데이턴 일대 · 도널드 트럼프(공화) → 존 허스테드 · 집회(PBS NewsHour/AP, 이월) · The Ohio Star(우 ⚠)는 수집하지 못했다.",
+     "urls": [],
+     "last": "2026-10-09"
+    },
+    {
      "date": "2026-10-08",
      "text": "이월: 10/3 트럼프의 데이턴 인근 허스테드 지원 유세(PBS NewsHour/AP, 오늘 재수집 안 함) · 우파 로컬 시각(The Ohio Star 우 ⚠)은 찾지 못해 공화당 측 로컬 보도가 빈약하다 · 유세: 2026-10-03 · 데이턴 인근 · 도널드 트럼프(공화) → 존 허스테드 · AP는 박빙 구도의 지원 사격으로 평가했고, 브라운은 데이터센터 세금 감면·에너지 비용으로 반격했다(PBS NewsHour/AP, 이월).",
      "urls": [],
@@ -4336,6 +4453,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-10-09",
+     "text": "원문은 CNN 조사를 공화당 여유를 줄이는 요인으로 본다. co/efficient의 접전 결과는 남은 위험으로 꼽는다.",
+     "urls": [],
+     "last": "2026-10-09"
+    },
     {
      "date": "2026-10-08",
      "text": "최근 2주 동안 모든 조사에서 브라운이 앞섰다. 원문은 이를 Bull 시나리오 강화의 근거로 든다.",
@@ -4546,6 +4669,12 @@
   "AK": {
    "polls": [
     {
+     "date": "2026-10-09",
+     "text": "ASR 선호순위 개표 후 펠톨라 +2(±3, 표본·의뢰처 미표기) · NYT/Siena 10/3 펠톨라 50–43은 Forbes 트래커가 50세 이상 유권자만 대상이라고 설명해 신중하게 볼 필요가 있다.",
+     "urls": [],
+     "last": "2026-10-09"
+    },
+    {
      "date": "2026-10-08",
      "text": "알래스카서베이리서치(10/7) 펠톨라 51–49(양자), RCV 1라운드 펠톨라 47·설리번 45·\"Dan J. Sullivan\" 5·하이케스 3 · NYT/Siena(10/3) 펠톨라 50–43 · Quantus(10/2) 설리번 48–47 · 사바토가 10/6 펠톨라 쪽으로 이동(새 등급 미확인) · RCP 평균 펠톨라 +1.8.",
      "urls": [],
@@ -4683,6 +4812,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-10-09",
+     "text": "이월: 트럼프의 이달 말 방문이 예상된다(Alaska Beacon, 좌, 10/6) · 유세: 2026-10-05 · 페어뱅크스 · J.D. 밴스(공화) → 댄 설리번 · 공항 격납고 집회에서 4억 달러 송전선을 공약하고 펠톨라를 공격했다(Alaska Public Media; Alaska Beacon, 좌 — 이월).",
+     "urls": [],
+     "last": "2026-10-09"
+    },
     {
      "date": "2026-10-08",
      "text": "설리번은 \"No Show Peltola\" 구호를 주도했고, 펠톨라 캠프는 이를 반박하며 설리번을 이란전쟁·에너지 가격과 연결했다 · 트럼프는 이달 말 알래스카 방문이 예상된다 · 우파 대응 매체(Alaska Watchman/Must Read Alaska 우)는 수집하지 못했다 · 유세: 2026-10-05 · 페어뱅크스 · J.D. 밴스(공화) → 댄 설리번 · 4억 달러 송전 사업 발표, 펠톨라의 기록과 동명이인 후보 공격(Alaska Public Media; Alaska Beacon, 좌).",
@@ -4929,6 +5064,12 @@
    ],
    "insight": [
     {
+     "date": "2026-10-09",
+     "text": "등급은 민주당 쪽으로 움직였지만 같은 업체 조사의 격차는 줄었다. 등급과 조사를 함께 놓고 볼 지점이다.",
+     "urls": [],
+     "last": "2026-10-09"
+    },
+    {
      "date": "2026-10-08",
      "text": "원문은 최근 알래스카 조사 4건 중 3건이 펠톨라 우세라는 점을 Bull 시나리오 강화의 근거로 든다. 이달 말 트럼프 방문은 Bear 쪽 잔존 위험으로 남아 있다.",
      "urls": [],
@@ -5138,6 +5279,12 @@
   "IA": {
    "polls": [
     {
+     "date": "2026-10-09",
+     "text": "CNN(10/8) 힌슨 45, 투렉 43(세부 미확인) · 배경: Suffolk 10/7 투렉 48–44, NYT/Siena 10/3 힌슨 48–47, Fox News(9/24–28) 투렉 49–47. 조사기관에 따라 결과가 세 갈래로 갈린다.",
+     "urls": [],
+     "last": "2026-10-09"
+    },
+    {
      "date": "2026-10-08",
      "text": "Suffolk(10/1–4, LV 500명) 투렉 48–44로, **8월 Suffolk(힌슨 45–41) 대비 8%p 이동** · NYT/Siena(9/22–10/1, LV 606명, ±4.6) 힌슨 48–47 · Quantus(9/28–29) 힌슨 47.1–45.8 · Fox News(9/24–28, LV 1,008명, ±3) 투렉 49–47 · Kalshi/Polymarket 힌슨 약 55% · Cook Toss-up, Inside Elections Tilt R · RCP 평균 D+0.7.",
      "urls": [],
@@ -5324,6 +5471,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-10-09",
+     "text": "투렉 캠프는 토론에서 이겼다고 주장한다(캠프 출처) · 조기투표는 10/14에 시작한다 · The Iowa Standard(우)는 수집하지 못했다.",
+     "urls": [],
+     "last": "2026-10-09"
+    },
     {
      "date": "2026-10-08",
      "text": "첫 토론 10/7(결과 미반영) · 조기투표 10/14 시작 · Iowa Capital Dispatch(좌) 첫 화면에는 10/6 주지사 토론(샌드–란)과 SMP 기사만 있고 상원 경합 기사는 없었다.",
@@ -5525,6 +5678,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-10-09",
+     "text": "원문은 CNN 힌슨 우세를 공화 수성 경로를 살리는 요인으로 본다. 여전히 지도에서 조사 간 편차가 가장 크다.",
+     "urls": [],
+     "last": "2026-10-09"
+    },
     {
      "date": "2026-10-08",
      "text": "원문은 서퍽 조사의 이동을 Base 시나리오 약화 근거의 하나로 든다. 주목 기관 조사는 NYT/Siena 힌슨 +1, Fox 투렉 +2로 엇갈린다.",
@@ -5738,6 +5897,14 @@
    "polls": [],
    "money": [
     {
+     "date": "2026-10-09",
+     "text": "Nebraska Examiner(좌) 첫 화면에 SMP의 9개 주 지출을 다룬 States Newsroom 기사가 실렸다. 세부 내용은 읽지 않았다([Nebraska Examiner](https://nebraskaexaminer.com/)).",
+     "urls": [
+      "https://nebraskaexaminer.com/"
+     ],
+     "last": "2026-10-09"
+    },
+    {
      "date": "2026-10-08",
      "text": "SMP는 10/6 기자들에게 AK·GA·IA·ME·MI·NH·NC·OH·TX에 광고 시간이 있고(NC는 이번 주 지출 취소), FL·SC·MS·KS를 주시 중이라고 밝혔다. 8월 말 현금은 SMP 약 5,700만 달러, MAGA Inc. 4억 달러 이상이다([Ohio Capital Journal, 좌](https://ohiocapitaljournal.com/2026/10/07/repub/top-democratic-us-senate-pac-commits-to-9-states-eyes-more-republican-targets/)).",
      "urls": [
@@ -5801,6 +5968,12 @@
    ],
    "local": [
     {
+     "date": "2026-10-09",
+     "text": "유세: 2026-10-05 · 그랜드아일랜드 · 도널드 트럼프(공화) → 피트 리켓츠 · 집회(Nebraska Public Media; Nebraska Examiner, 좌 — 이월, 재확인 못 함).",
+     "urls": [],
+     "last": "2026-10-09"
+    },
+    {
      "date": "2026-10-08",
      "text": "이월: 10/5 그랜드아일랜드 트럼프의 리케츠 지원 유세(오늘 재확인 못 함) · Nebraska Examiner(좌) 첫 화면에 10/5–10/7 오스본–리케츠 기사가 없었다 · 유세: 2026-10-05 · 그랜드아일랜드 · 도널드 트럼프(공화) → 피트 리케츠 · \"내가 투표용지에 있다고 생각해 달라\"고 요청했고, 오스본을 \"가짜 무소속\"이라 불렀으며, 디젤세 면제 행정명령에 서명했다. 주 박람회 엑스포센터에 수천 명이 모였다(Nebraska Public Media; Nebraska Examiner 좌 — 이월, 재확인 안 됨).",
      "urls": [],
@@ -5820,6 +5993,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-10-09",
+     "text": "오스본은 코커스를 선언하지 않았으므로 민주당 칸에 넣지 않는다. 원문은 이 주를 공화 수성 경로가 남아 있는 접전으로 본다.",
+     "urls": [],
+     "last": "2026-10-09"
+    },
     {
      "date": "2026-10-08",
      "text": "의석 계산에서 리케츠 패배는 \"R −1\", 오스본 승리는 \"I +1(코커스 미선언)\"이며 민주당 칸에 더하지 않는다. 원문은 오스본이 민주당 코커스 합류를 선언해야만 Bull 계산에 포함된다고 본다.",
@@ -5843,6 +6022,12 @@
   },
   "KS": {
    "polls": [
+    {
+     "date": "2026-10-09",
+     "text": "쿡이 Lean R에서 Toss-up으로 조정했다 · YouGov 10/6 해밀턴 48–45 · NYT/Siena 10/3 마셜 47–46.",
+     "urls": [],
+     "last": "2026-10-09"
+    },
     {
      "date": "2026-10-08",
      "text": "YouGov(10/6) 해밀턴 48–45 · NYT/Siena(10/3) 마셜 47–46 · Trafalgar(10/2) 44–44 동률 · RCP 평균 마셜 +1.0 · 쿡이 10/6 Toss-up으로 조정(기존 Lean R)([Daily Caller](https://dailycaller.com/2026/10/06/kansas-senate-race-roger-marshall-toss-up-cook-political-report/), [Mediaite](https://www.mediaite.com/politics/new-cook-political-report-officially-declares-toss-up-senate-race-in-kansas-where-a-democrat-hasnt-won-in-94-years/)).",
@@ -5881,6 +6066,12 @@
    ],
    "local": [
     {
+     "date": "2026-10-09",
+     "text": "이월: 마셜 광고 이미지 논란 · The Sentinel(우)은 수집하지 못해 일방적 출처다.",
+     "urls": [],
+     "last": "2026-10-09"
+    },
+    {
      "date": "2026-10-08",
      "text": "광고 이미지 논란과 톨 오크스의 중지 요구서 · 해밀턴은 은폐가 없었다고 주장한다 · KCUR만 확인했고 우파 매체(The Sentinel 우)의 기사는 수집하지 못했다.",
      "urls": [],
@@ -5902,6 +6093,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-10-09",
+     "text": "등급이 Toss-up으로 이동했다. 원문은 공화 수성 경로가 남아 있는 접전으로 본다.",
+     "urls": [],
+     "last": "2026-10-09"
+    },
     {
      "date": "2026-10-08",
      "text": "원문은 쿡의 캔자스 Toss-up 조정을 Bull 시나리오의 확장주 경로 근거로 든다. 반면 Base 시나리오는 캔자스가 평균에서 공화 우세로 남는 데 기대고 있다.",
