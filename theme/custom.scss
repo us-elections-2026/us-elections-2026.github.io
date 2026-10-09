@@ -273,8 +273,8 @@ main table.gt_table th.gt_col_heading { white-space: pre-line; text-align: cente
   border-left: 4px solid $dem;
   background: #f4f8fd;
   border-radius: 8px;
-  padding: 0.75rem 1rem 0.45rem;
-  margin: 0.9rem 0 1.2rem;
+  padding: 0.6rem 1rem 0.4rem;
+  margin: 0.8rem 0 1rem;
 }
 .summary::before {
   content: "⏱ 1분 요약";
@@ -282,7 +282,7 @@ main table.gt_table th.gt_col_heading { white-space: pre-line; text-align: cente
   color: $dem-fg; letter-spacing: 0.02em; margin-bottom: 6px;
 }
 .summary ul { margin: 0; padding-left: 1.15rem; }
-.summary li { margin: 3px 0; line-height: 1.55; }
+.summary li { margin: 3px 0; line-height: 1.55; font-size: 0.92rem; }  /* 오늘의 판세(.today li)와 같은 크기 (2026-10-09) */
 
 /* 표·차트 앞 "무엇을 볼까" 한 줄 안내 */
 .lookfor {
