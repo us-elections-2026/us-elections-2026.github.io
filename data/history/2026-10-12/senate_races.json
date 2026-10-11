@@ -1,0 +1,117 @@
+{
+  "as_of": "2026-10-11",
+  "dem_needed_net": 4,
+  "current_balance": "R 53 / D 47",
+  "races": [
+    {
+      "state": "GA",
+      "defense": "D",
+      "incumbent": "Ossoff (D·현직) vs Collins (R)",
+      "rating": "Likely D (Cook 9/23 · Sabato 10/9 피드) · Lean D (Inside Elections 10/2) — 이번 주 이동 없음",
+      "latest_poll": "Ossoff 51–43 Collins (Trafalgar, 공화 성향, 10/10 RCP 등재 — D+8, **원천이 RCP 링크 파일명 오류 가능성으로 미검증 취급**) · RCP 평균 오소프 +7.8 · 직전 InsiderAdvantage +8(9/22–23)·YouGov +10(9/15–18) 이월",
+      "poll_source": "**첫 토론(10/8, Atlanta News First)은 인신공방이었다.** 오소프는 콜린스의 하원 윤리위 조사·참모 채용·사위의 네오나치 게시물·2020년 선거 부정 입장을 추궁했고(콜린스는 답을 피했다), 콜린스는 오소프를 \"trust fund kid\"·급진파로 몰았다. 정책에서는 관세(콜린스 옹호 vs 오소프 \"다수당이 되면 폐지\")·이란전·의료 삭감이 갈렸다. 신규 조사는 미검증 Trafalgar 1건뿐이다. 2차 토론과 조기투표 개시가 10/13이다.",
+      "cash_on_hand": "Ossoff 현금 약 $4,200만 vs Collins 약 $220만(10/4 원천, 이월) — 이번 주 신규 자금 보도 없음 · 3분기 FEC 공시 10/15",
+      "kr_relevance": "통상·반도체"
+    },
+    {
+      "state": "MI",
+      "defense": "D",
+      "incumbent": "공개석 (Peters 은퇴) — El-Sayed (D, 8/4 예비 승 약 1%p) vs Rogers (R)",
+      "rating": "Toss-up (Cook 9/23) / Lean D (Sabato 10/9 피드) / Tilt D (Inside Elections 10/2) — 이번 주 이동 없음, Cook만 토스업에 남았다",
+      "latest_poll": "El-Sayed 49–48 Rogers (YouGov, 10/6 RCP 등재 — D+1) · 48–47 (Quantus, 10/7 — D+1) · 46–41 (Mitchell, 10/5 — D+5) · 47–45 (Trafalgar, 10/2 — D+2) · 직전 Fox 50–49(9/24–28)·Marist 51–44 이월 — **이번 주 공개 조사 전부 엘사예드 우위**(D+1~5, 기간·표본은 RCP 목록 기준 미확인)",
+      "poll_source": "**첫 토론(10/8, WOOD-TV 그랜드래피즈)은 서로 말을 끊는 난타전이었다.** 전날 밤 트럼프가 Truth Social로 엘사예드를 \"급진 극단주의자\"로 공격했고, 로저스는 토론에서 이란전·캐나다 관세에 대해 트럼프와 거리를 뒀다. 조사는 전부 엘사예드 쪽이지만 폭은 1~5로 좁다. 오바마가 10/24 디트로이트 유세를 예고했다(광고 약 24편 녹화). 2차 토론 10/21(WXYZ).",
+      "cash_on_hand": "주 역사상 최대 지출 — 공개 집계 $2.05억+ · 트럼프 계열 No Going Back PAC $1,300만+ · 잔여 예약 약 $4,200만이 로저스 측(10/4 원천, 이월) — 이번 주 신규 자금 보도 없음",
+      "kr_relevance": "자동차·관세"
+    },
+    {
+      "state": "NH",
+      "defense": "D",
+      "incumbent": "공개석 (Shaheen 은퇴) — Pappas (D) vs Sununu (R)",
+      "rating": "Toss-up (Cook 9/23 피드) → **Lean D (Cook 10/6 — 원천 보도, 2차 출처 DNyuz·Forbes 경유, 피드 미반영)** / Lean D (Sabato 10/9 피드) / Toss-up (Inside Elections 10/2)",
+      "latest_poll": "Pappas 51–44 Sununu (St. Anselm, 10/6 RCP 등재 — D+7) · 51–43 (YouGov, 10/6 — D+8) · **49–44 (Rasmussen, 10/2–4, LV 979, ±3 — D+5, 직전 Rasmussen +11에서 축소)** · 직전 UNH +8 이월",
+      "poll_source": "**5주 동안 이어진 '등급 대 조사' 괴리가 풀렸다 — 원천 보도로는 Cook이 10/6 Toss-up → Lean D로 옮겼다.** 이번 주 조사도 전부 파파스 +5~8이다. TIME(10/5)은 서누누 지원 외부자금이 SLF $1,700만 + No Going Back $1,000만 + AFP $200만+로 총 $5,000만을 넘고, SMP가 파파스에 $1,000만을 약정했다고 전했다. 주 내 트럼프 비호감 60%(무당파 65%), NYT 조사 인품 항목에서도 파파스 +10. 다만 이 사이트 피드의 Cook 스탬프는 아직 9/23이다.",
+      "cash_on_hand": "**서누누 지원 외부자금 $5,000만+**(SLF $1,700만 · No Going Back $1,000만 · AFP $200만+, TIME 10/5) vs **SMP 파파스 $1,000만 약정** · 모금(8/19 기준) Pappas $1,460만·잔고 $384만 vs Sununu $410만·잔고 $302만(이월)",
+      "kr_relevance": "민주 수성 필수 3석 중 하나"
+    },
+    {
+      "state": "ME",
+      "defense": "R",
+      "incumbent": "Jackson (D, 7/25 인준) vs Collins (R·6선)",
+      "rating": "Toss-up (Cook 9/23 · Sabato 10/9 · Inside Elections 10/2) — 3사 전부 Toss-up, 이번 주 이동 없음 · Split Ticket은 10/10 Lean D로 이동",
+      "latest_poll": "**Jackson 50–46 Collins (Washington Post/Schar School, 9/30–10/5, LV 800, ±3.6 — D+4, 무당층 53–40)** · Jackson 51–47 (Marist, 10/6 발표 — D+4, 기간 미확인) · 49–47 (MPRC, 10/5 RCP 등재 — D+2) · 반대편 동률 병존 — Trafalgar 46–46(10/2)·CBS/YouGov 50–50(9/23–10/1)",
+      "poll_source": "**'동률 고착'에서 '잭슨 소폭 우위'로 움직였다.** WaPo/Schar에서 \"콜린스가 트럼프에 너무 동조한다\"가 58%, 민주당 상원 승리 희망이 55%였다. 토론 1차(10/6)·2차(10/8)는 인신공방이었다 — Bangor Daily News 팩트체크는 잭슨의 '콜린스 부부 전쟁 수혜' 주장을 근거 없음으로, 콜린스의 '담배 돈 0' 주장을 OpenSecrets와 배치로 판정했고, 콜린스는 ProPublica FBI 수사 보도의 핵심에 답하지 않았다. 오바마 지지 영상, 샌더스 10/10 뱅고어 유세. 콜린스의 '최종 조사 상회' 이력은 여전한 단서다.",
+      "cash_on_hand": "집행 비대칭 — 콜린스 진영 약 $8,000만 대 잭슨 진영 약 $4,500만(이월, 이번 주 원천 신규 수치 없음)",
+      "kr_relevance": "민주 최우선 탈환 표적"
+    },
+    {
+      "state": "NC",
+      "defense": "R",
+      "incumbent": "공석 — Cooper (D) vs Whatley (R)",
+      "rating": "Lean D (Cook 9/23 피드) → **Likely D (Cook 10/6 — 원천 보도, 2차 출처, 피드 미반영)** / Lean D (Sabato 10/9 피드) / Lean D (Inside Elections 10/2)",
+      "latest_poll": "**Cooper 50–43 Whatley (ECU, 9/30–10/3, LV 810, ±4 — D+7, 미정 14%→6%)** · Cooper 47–35 (YouGov/Catawba, Forbes 경유·세부 미확인 — D+12) · RCP 평균 쿠퍼 +9.0",
+      "poll_source": "**양당이 모두 '끝난 주'로 취급하기 시작했다.** SLF 철수에 이어 민주 SMP도 노스캐롤라이나 TV·디지털 예약을 취소했다(Ohio Capital Journal/States Newsroom). 원천 보도로는 Cook이 10/6 Lean D → Likely D로 올렸다. ECU에서 미정층이 14%에서 6%로 줄며 쿠퍼 +7이 유지돼, '쿠퍼 50% 미만'을 와틀리의 기회로 보던 Carolina Journal의 경로가 좁아졌다. 조기투표 10/15.",
+      "cash_on_hand": "Cooper $36M vs Whatley $16M(이월) · SLF 철수(9월 $1,700만 후 타주 재배치) · **SMP도 NC 예약 취소**(10/7 보도) — 양당 외곽자금 동시 이탈",
+      "kr_relevance": "—"
+    },
+    {
+      "state": "TX",
+      "defense": "R",
+      "incumbent": "Talarico (D) vs Paxton (R)",
+      "rating": "Toss-up (Cook 9/23 · Sabato 10/9) / Tilt R (Inside Elections 10/2) — 이번 주 이동 없음",
+      "latest_poll": "Talarico 50–44 Paxton (YouGov, 10/6 — D+6) · 47–44 (Trafalgar, 10/10 — D+3) · **45–45 (UMass Lowell/YouGov, 9/18–28, LV 850, ±4.5 — 동률)** · 직전 NYT/Siena +6·Fox +2 이월 · RCP 평균 +2.8",
+      "poll_source": "**팩스턴이 모든 토론 초청을 거부했다** — 탈라리코는 4건 수락에 Fox 포럼까지 제안했고 Fox도 동의했다. 성사되지 않으면 25년 만의 토론 없는 텍사스 상원 선거다(Texas Tribune). 트럼프는 10/7 샌안토니오 유세에서 탈라리코를 \"Tala-freako\"로 불렀다(한 달 새 세 번째 텍사스 방문, 애벗 불참). Axios가 입수한 팩스턴 음성 — 이란전·휘발유가 캠페인에 타격이라는 비공개 인정 — 은 유세에서 언급되지 않았다. UMass 조사에서 텍사스 LV 72%가 이란전을 에너지 비용 최대 요인으로 꼽았다. 조기투표 10/19.",
+      "cash_on_hand": "SLF 계열 PAC 17일간 $1.31억(약 5:1, 이월) · 캠프 누적 Talarico $7,200만 vs Paxton $1,680만(이월) — 이번 주 신규 자금 보도 없음",
+      "kr_relevance": "블루웨이브 시 도전"
+    },
+    {
+      "state": "OH",
+      "defense": "R",
+      "incumbent": "Brown (D) vs Husted (R·임명직)",
+      "rating": "Toss-up (Cook 9/23 · Sabato 10/9 · Inside Elections 10/2) — 3사 전부 Toss-up, 이번 주 이동 없음",
+      "latest_poll": "**Brown 49–43 Husted (CNN/SSRS, 9/29–10/5, LV 760, ±4.5 — D+6)** · 49–45 (YouGov, 10/6 — D+4) · 직전 Marist +8·NYT/Siena +3 이월 · 반대편 **Husted 44–43 (co/efficient, 공화 성향, 10/5–6, 925명 — R+1, RCP 표기 46–45와 불일치)**",
+      "poll_source": "**괴리는 그대로이고, 공화 대리인 총력전이 붙었다.** 트럼프 10/3 밴달리아에 이어 밴스가 10/9 리마에서 브라운을 \"사기꾼\"으로 공격하고 주지사 후보 액턴을 조롱했다. 브라운 캠프는 이란전 표결·데이터센터·의료로 반격했다. 트럼프는 10/12 영스타운 유세가 예정돼 있다. 애크런대 정치학자는 유세가 결집용이라 무당층 이반 위험이 있다고 봤다. CNN은 실사 일부가 10/3 유세 이후지만, 원천은 '유세 이후 실사분'을 다음 주 최대 검증 항목으로 남긴다.",
+      "cash_on_hand": "누적 광고 $3억 700만(AdImpact, 이월) · Fairshake 반브라운 $3,000만 계획(이월) — 이번 주 신규 자금 보도 없음",
+      "kr_relevance": "철강·제조업"
+    },
+    {
+      "state": "AK",
+      "defense": "R",
+      "incumbent": "Peltola (D) vs Sullivan (R·현직)",
+      "rating": "Toss-up (Cook 9/23) / **Lean D (Sabato — 10/9 피드로 확인, 원천 10/6: 알래스카 상원에서 민주 유리 등급은 18년 만)** / Toss-up (Inside Elections 10/2)",
+      "latest_poll": "**Peltola 51–49 Sullivan (Alaska Survey Research, 10/1–3, ±3 — RCV 후 D+2, 1라운드 47–45, 동명이인 5%)** — 직전 같은 기관 +3.8에서 축소 · NYT/Siena 50–43(10/3 발표 — 원천은 연령 조건 단서 미해결로 신중 취급) · 직전 Trafalgar 설리번 46.8–45.5(표본 의심으로 DB 보류 지속)",
+      "poll_source": "**전주 '유일한 역류'가 부분 재반전했다.** ASR RCV 후 펠톨라 +2(축소지만 우위 복귀)와 사바토 Leans D가 같은 주에 나왔다. 공화 수뇌부가 들어왔다 — 밴스가 10/5 페어뱅크스에서 $4억 송전 사업을 발표하며 펠톨라를 \"게으르고 부패\"하다고 공격했고(동명이인 후보 배후 암시는 Alaska Beacon이 근거 없음으로 지적), **트럼프가 10/13 워실라 메나드 센터 유세를 확정**했다. 크루즈 10/16 앵커리지 모금. 광고는 공화 $4,500만 대 민주 $3,200만(AdImpact). [K] 알래스카 LNG 후속 보도는 이번 주 없다.",
+      "cash_on_hand": "광고 공화 $4,500만 vs 민주 $3,200만(AdImpact, Daily Wire 경유) · 현금 Sullivan $7.3M vs Peltola $4.6M(7/29 기준, 이월)",
+      "kr_relevance": "—"
+    },
+    {
+      "state": "IA",
+      "defense": "R",
+      "incumbent": "Turek (D) vs Hinson (R) — 개방석(Ernst 은퇴)",
+      "rating": "Toss-up (Cook 9/23 · Sabato 10/9) / Tilt R (Inside Elections 10/2) — 이번 주 이동 없음",
+      "latest_poll": "**Turek 48–44 Hinson (Suffolk, 10/1–4, LV 500, ±4.4 — D+4, 8월 Suffolk 힌슨 +4에서 8p 이동)** vs **Hinson 45–43 (CNN/SSRS, 9/29–10/5, LV 801, ±4.2 — R+2)** · Hinson 47–45 (Emerson/Nexstar, 10/5–6, LV 650, ±3.8 — R+2, 9월 +5에서 축소) · 직전 NYT/Siena 힌슨 +1·Fox 투렉 +2 이월",
+      "poll_source": "**지도 최대 편차가 유지됐다 — 같은 주에 D+4와 R+2가 나란히 나왔다.** CNN에서는 약 30%가 아직 확정하지 않았고, Emerson은 연령 균열(50세 이상 힌슨 +13, 50세 미만 투렉 +14)을 보였다. 첫 토론(10/7, Iowa PBS)은 이란전·관세→휘발유·농가, 메디케이드, 출석(힌슨 193회 결석 vs 투렉 주 하원 58% 불참)과 힌슨 가족 재산을 두고 맞섰다. 2차 토론 10/13, 조기투표 10/14. 광고비 $9,000만+.",
+      "cash_on_hand": "광고비 $9,000만+(원천 10/11) · SLF 힌슨 지원 $2,000만 추가(10/4, 이월) · Turek Q2 $2.81M·현금 $2.4M vs Hinson Q2 $2.06M·현금 $6.7M(이월)",
+      "kr_relevance": "농업(대두·에탄올) 관세 — 직접 연결은 미확인"
+    },
+    {
+      "state": "NE",
+      "defense": "R",
+      "incumbent": "Osborn (무소속) vs Ricketts (R·현직)",
+      "rating": "Likely R (Cook 9/23 · Sabato 10/9 피드) · Lean R (Inside Elections 10/2) — 피드 이동 없음 · RCP는 9/23 Leans R→Toss-up(원천 기재)",
+      "latest_poll": "**Osborn 48–47 Ricketts (YouGov, 10/6 RCP 등재 — 오스본 +1)** vs Ricketts 48–45 (co/efficient, 공화 성향, 9/28–30 — R+3) · 직전 Wedgewood 리케츠 +4·SurveyUSA 오스본 +4 이월",
+      "poll_source": "**트럼프가 10/5 그랜드아일랜드 유세로 직접 들어왔다** — \"내가 투표용지에 있다고 생각하고 투표하라\", 오스본은 \"가짜 무소속\"이라며 적색 디젤 행정명령에 서명했다. 오스본 캠프는 디젤·수리권 조치에 감사를 표하는 방식으로 받아쳤다. 원천은 이 주 보도가 중도좌·좌 매체(Nebraska Public Media·Nebraska Examiner)에 치우쳐 있다고 표시했다. 오스본은 교섭단체를 밝히지 않았다 — 승리해도 이 사이트 산수에서는 'R −1 · I +1'로 따로 센다.",
+      "cash_on_hand": "【수집】 — FEC 분기 신고(펀드레이징 탭 표 자동)",
+      "kr_relevance": "농축산 수출(쇠고기) · 미확인"
+    },
+    {
+      "state": "KS",
+      "defense": "R",
+      "incumbent": "Hamilton (D) vs Marshall (R·현직)",
+      "rating": "Lean R (Cook 9/23 피드) → **Toss-up (Cook 10/6 — 원천 보도, 2차 출처, 피드 미반영)** / Lean R (Sabato 10/9 피드) / Likely R (Inside Elections 10/2)",
+      "latest_poll": "Hamilton 48–45 Marshall (YouGov, 10/6 RCP 등재 — D+3) · **Marshall 47–46 (NYT/Siena, 10/3 발표 — R+1)** · 44–44 (Trafalgar, 9/29–10/1 — 동률) · 직전 Wedgewood 해밀턴 +2·GSG 해밀턴 +4 이월",
+      "poll_source": "**원천 보도로는 Cook이 10/6 Lean R → Toss-up으로 옮겼다** — 1932년 이후 민주 상원의원이 없는 주다. Kansas Reflector 칼럼은 SLF가 노스캐롤라이나에서 뺀 자금 중 **$800만+를 캔자스에 예약**했다고 썼다(독립 확인 안 됨). 마셜 공격 광고가 지역 업체 두 곳의 사진을 무단 사용했다는 논란이 나왔다(KCUR — 업체 중지 요구, 마셜 측 \"스톡 이미지·수정\"). KCUR은 이 선거를 전국 파도보다 후보 자질·자금의 이야기로 읽는다. 해밀턴의 초동 모금 $350만은 주 기록이다. 주지사 레이스는 공화 우위라 티켓 내 분할이 나타난다.",
+      "cash_on_hand": "SLF 캔자스 예약 $800만+(Kansas Reflector 칼럼 — 미검증) · 해밀턴 초동 모금 $350만(주 기록) · FEC 분기 신고는 펀드레이징 탭 표 자동",
+      "kr_relevance": "항공(위치타)·농산물 수출 · 미확인"
+    }
+  ]
+}

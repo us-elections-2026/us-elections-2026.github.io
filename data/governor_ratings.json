@@ -1,6 +1,6 @@
 {
  "generated_from": "https://www.270towin.com/2026-governor-election/",
- "fetched_at": "2026-10-04",
+ "fetched_at": "2026-10-11",
  "n_races": 36,
  "sources": [
   {
@@ -64,9 +64,9 @@
   {
    "key": "sabatos-crystal-ball-2026-governor",
    "label": "Sabato's Crystal Ball",
-   "as_of": "2026-09-29",
+   "as_of": "2026-10-09",
    "ratings": {
-    "AK": "Toss-up",
+    "AK": "Lean D",
     "AL": "Solid R",
     "AR": "Solid R",
     "AZ": "Lean D",
@@ -92,7 +92,7 @@
     "NY": "Solid D",
     "OH": "Toss-up",
     "OK": "Solid R",
-    "OR": "Likely D",
+    "OR": "Lean D",
     "PA": "Solid D",
     "RI": "Solid D",
     "SC": "Solid R",
@@ -105,7 +105,7 @@
    },
    "unknown_codes": 0,
    "competitive": {
-    "AK": "Toss-up",
+    "AK": "Lean D",
     "AZ": "Lean D",
     "FL": "Lean R",
     "GA": "Toss-up",
@@ -114,6 +114,7 @@
     "MI": "Lean D",
     "NV": "Toss-up",
     "OH": "Toss-up",
+    "OR": "Lean D",
     "TX": "Lean R",
     "WI": "Lean D"
    }
@@ -344,61 +345,6 @@
     "OR": "Toss-up",
     "TX": "Tilt R",
     "WI": "Toss-up"
-   }
-  },
-  {
-   "key": "kalshi-2026-governor-prediction-market-prices",
-   "label": "Kalshi (예측시장 가격)",
-   "as_of": "2026-10-04",
-   "ratings": {
-    "AK": "Lean D",
-    "AL": "Solid R",
-    "AR": "Solid R",
-    "AZ": "Solid D",
-    "CA": "Solid D",
-    "CO": "Solid D",
-    "CT": "Solid D",
-    "FL": "Lean R",
-    "GA": "Toss-up",
-    "HI": "Solid D",
-    "IA": "Likely D",
-    "ID": "Solid R",
-    "IL": "Solid D",
-    "KS": "Lean R",
-    "MA": "Solid D",
-    "MD": "Solid D",
-    "ME": "Solid D",
-    "MI": "Solid D",
-    "MN": "Solid D",
-    "NE": "Solid R",
-    "NH": "Solid R",
-    "NM": "Solid D",
-    "NV": "Toss-up",
-    "NY": "Solid D",
-    "OH": "Lean D",
-    "OK": "Solid R",
-    "OR": "Lean D",
-    "PA": "Solid D",
-    "RI": "Solid D",
-    "SC": "Solid R",
-    "SD": "Solid R",
-    "TN": "Solid R",
-    "TX": "Lean R",
-    "VT": "Lean R",
-    "WI": "Likely D",
-    "WY": "Solid R"
-   },
-   "unknown_codes": 0,
-   "competitive": {
-    "AK": "Lean D",
-    "FL": "Lean R",
-    "GA": "Toss-up",
-    "KS": "Lean R",
-    "NV": "Toss-up",
-    "OH": "Lean D",
-    "OR": "Lean D",
-    "TX": "Lean R",
-    "VT": "Lean R"
    }
   },
   {

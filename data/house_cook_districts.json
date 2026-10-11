@@ -1,16 +1,16 @@
 {
- "as_of": "2026-09-25",
+ "as_of": "2026-10-09",
  "source_label": "Cook Political Report (270towin 재게시 · 자동 취득)",
  "source_url": "https://www.270towin.com/2026-house-election/index_show_table.php?map_title=cook-political-report-2026-house-ratings",
  "decode_note": "0=Toss-up 1=Solid D 2=Solid R 3=Likely D 4=Likely R 5=Leans D 6=Leans R · 주 약자순×지역구번호순",
  "counts": {
   "solid_d": 185,
-  "likely_d": 12,
-  "lean_d": 11,
-  "tossup": 22,
-  "lean_r": 10,
-  "likely_r": 19,
-  "solid_r": 176
+  "likely_d": 16,
+  "lean_d": 12,
+  "tossup": 21,
+  "lean_r": 9,
+  "likely_r": 18,
+  "solid_r": 174
  },
  "districts": [
   {
@@ -71,9 +71,10 @@
   },
   {
    "district": "AR-2",
-   "rating": "Solid R",
-   "key": "solid_r",
-   "party": "R"
+   "rating": "Likely R",
+   "key": "likely_r",
+   "party": "R",
+   "incumbent": "Hill"
   },
   {
    "district": "AR-3",
@@ -821,23 +822,23 @@
   },
   {
    "district": "IA-1",
-   "rating": "Toss-up",
-   "key": "tossup",
-   "party": "T",
+   "rating": "Lean D",
+   "key": "lean_d",
+   "party": "D",
    "incumbent": "Miller-Meeks"
   },
   {
    "district": "IA-2",
-   "rating": "Lean R",
-   "key": "lean_r",
-   "party": "R",
+   "rating": "Toss-up",
+   "key": "tossup",
+   "party": "T",
    "incumbent": "OPEN"
   },
   {
    "district": "IA-3",
-   "rating": "Toss-up",
-   "key": "tossup",
-   "party": "T",
+   "rating": "Lean D",
+   "key": "lean_d",
+   "party": "D",
    "incumbent": "Nunn"
   },
   {
@@ -987,9 +988,10 @@
   },
   {
    "district": "IN-5",
-   "rating": "Solid R",
-   "key": "solid_r",
-   "party": "R"
+   "rating": "Likely R",
+   "key": "likely_r",
+   "party": "R",
+   "incumbent": "Spartz"
   },
   {
    "district": "IN-6",
@@ -1071,8 +1073,8 @@
   },
   {
    "district": "KY-6",
-   "rating": "Likely R",
-   "key": "likely_r",
+   "rating": "Lean R",
+   "key": "lean_r",
    "party": "R",
    "incumbent": "OPEN"
   },
@@ -1222,8 +1224,8 @@
   },
   {
    "district": "ME-2",
-   "rating": "Likely R",
-   "key": "likely_r",
+   "rating": "Lean R",
+   "key": "lean_r",
    "party": "R",
    "incumbent": "OPEN"
   },
@@ -1247,9 +1249,9 @@
   },
   {
    "district": "MI-4",
-   "rating": "Lean R",
-   "key": "lean_r",
-   "party": "R",
+   "rating": "Toss-up",
+   "key": "tossup",
+   "party": "T",
    "incumbent": "Huizenga"
   },
   {
@@ -1447,9 +1449,9 @@
   },
   {
    "district": "NC-1",
-   "rating": "Lean R",
-   "key": "lean_r",
-   "party": "R",
+   "rating": "Toss-up",
+   "key": "tossup",
+   "party": "T",
    "incumbent": "Davis"
   },
   {
@@ -1545,8 +1547,8 @@
   },
   {
    "district": "NE-2",
-   "rating": "Lean D",
-   "key": "lean_d",
+   "rating": "Likely D",
+   "key": "likely_d",
    "party": "D",
    "incumbent": "OPEN"
   },
@@ -1678,8 +1680,8 @@
   },
   {
    "district": "NV-3",
-   "rating": "Lean D",
-   "key": "lean_d",
+   "rating": "Likely D",
+   "key": "likely_d",
    "party": "D",
    "incumbent": "Lee"
   },
@@ -1704,15 +1706,15 @@
   },
   {
    "district": "NY-3",
-   "rating": "Lean D",
-   "key": "lean_d",
+   "rating": "Likely D",
+   "key": "likely_d",
    "party": "D",
    "incumbent": "Suozzi"
   },
   {
    "district": "NY-4",
-   "rating": "Lean D",
-   "key": "lean_d",
+   "rating": "Likely D",
+   "key": "likely_d",
    "party": "D",
    "incumbent": "Gillen"
   },
@@ -2015,8 +2017,8 @@
   },
   {
    "district": "PA-1",
-   "rating": "Likely R",
-   "key": "likely_r",
+   "rating": "Lean R",
+   "key": "lean_r",
    "party": "R",
    "incumbent": "Fitzpatrick"
   },
@@ -2052,9 +2054,9 @@
   },
   {
    "district": "PA-7",
-   "rating": "Toss-up",
-   "key": "tossup",
-   "party": "T",
+   "rating": "Lean D",
+   "key": "lean_d",
+   "party": "D",
    "incumbent": "Mackenzie"
   },
   {
@@ -2072,9 +2074,9 @@
   },
   {
    "district": "PA-10",
-   "rating": "Toss-up",
-   "key": "tossup",
-   "party": "T",
+   "rating": "Lean D",
+   "key": "lean_d",
+   "party": "D",
    "incumbent": "Perry"
   },
   {
@@ -2494,9 +2496,9 @@
   },
   {
    "district": "VA-1",
-   "rating": "Lean R",
-   "key": "lean_r",
-   "party": "R",
+   "rating": "Toss-up",
+   "key": "tossup",
+   "party": "T",
    "incumbent": "Wittman"
   },
   {
@@ -2581,9 +2583,9 @@
   },
   {
    "district": "WA-3",
-   "rating": "Toss-up",
-   "key": "tossup",
-   "party": "T",
+   "rating": "Lean D",
+   "key": "lean_d",
+   "party": "D",
    "incumbent": "Perez"
   },
   {

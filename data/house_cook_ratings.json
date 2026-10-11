@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-25",
+  "as_of": "2026-10-09",
   "source_label": "Cook Political Report (270towin 재게시 · 자동 취득)",
   "source_url": "https://www.270towin.com/2026-house-election/index_show_table.php?map_title=cook-political-report-2026-house-ratings",
   "majority": 218,
@@ -15,37 +15,37 @@
       "key": "likely_d",
       "label": "Likely D",
       "party": "D",
-      "seats": 12
+      "seats": 16
     },
     {
       "key": "lean_d",
       "label": "Lean D",
       "party": "D",
-      "seats": 11
+      "seats": 12
     },
     {
       "key": "tossup",
       "label": "Toss-up",
       "party": "T",
-      "seats": 22
+      "seats": 21
     },
     {
       "key": "lean_r",
       "label": "Lean R",
       "party": "R",
-      "seats": 10
+      "seats": 9
     },
     {
       "key": "likely_r",
       "label": "Likely R",
       "party": "R",
-      "seats": 19
+      "seats": 18
     },
     {
       "key": "solid_r",
       "label": "Solid R",
       "party": "R",
-      "seats": 176
+      "seats": 174
     }
   ]
 }

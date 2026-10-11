@@ -1,6 +1,6 @@
 {
  "generated_from": "https://www.270towin.com/2026-senate-election/",
- "fetched_at": "2026-10-04",
+ "fetched_at": "2026-10-11",
  "n_races": 35,
  "sources": [
   {
@@ -59,9 +59,9 @@
   {
    "key": "sabatos-crystal-ball-senate-2026",
    "label": "Sabato's Crystal Ball",
-   "as_of": "2026-09-22",
+   "as_of": "2026-10-09",
    "ratings": {
-    "AK": "Toss-up",
+    "AK": "Lean D",
     "AL": "Solid R",
     "AR": "Solid R",
     "CO": "Solid D",
@@ -89,7 +89,7 @@
     "OK": "Solid R",
     "OR": "Solid D",
     "RI": "Solid D",
-    "SC": "Solid R",
+    "SC": "Likely R",
     "SD": "Solid R",
     "TN": "Solid R",
     "TX": "Toss-up",
@@ -104,7 +104,7 @@
     "NH": "Lean D",
     "MI": "Lean D",
     "ME": "Toss-up",
-    "AK": "Toss-up",
+    "AK": "Lean D",
     "OH": "Toss-up",
     "TX": "Toss-up"
    }
@@ -165,7 +165,7 @@
   {
    "key": "split-ticket-2026-senate-ratings",
    "label": "Split Ticket",
-   "as_of": "2026-10-03",
+   "as_of": "2026-10-10",
    "ratings": {
     "AK": "Lean D",
     "AL": "Solid R",
@@ -181,7 +181,7 @@
     "KY": "Solid R",
     "LA": "Solid R",
     "MA": "Solid D",
-    "ME": "Toss-up",
+    "ME": "Lean D",
     "MI": "Lean D",
     "MN": "Lean D",
     "MS": "Solid R",
@@ -195,7 +195,7 @@
     "OK": "Solid R",
     "OR": "Solid D",
     "RI": "Solid D",
-    "SC": "Lean R",
+    "SC": "Likely R",
     "SD": "Likely R",
     "TN": "Solid R",
     "TX": "Lean D",
@@ -209,7 +209,7 @@
     "NC": "Solid D",
     "NH": "Likely D",
     "MI": "Lean D",
-    "ME": "Toss-up",
+    "ME": "Lean D",
     "AK": "Lean D",
     "OH": "Lean D",
     "TX": "Lean D"
@@ -324,9 +324,9 @@
   {
    "key": "decision-desk-hq-2026-senate-forecast",
    "label": "Decision Desk HQ",
-   "as_of": "2026-09-28",
+   "as_of": "2026-10-05",
    "ratings": {
-    "AK": "Toss-up",
+    "AK": "Lean D",
     "AL": "Solid R",
     "AR": "Solid R",
     "CO": "Solid D",
@@ -336,7 +336,7 @@
     "IA": "Toss-up",
     "ID": "Solid R",
     "IL": "Solid D",
-    "KS": "Likely R",
+    "KS": "Lean R",
     "KY": "Solid R",
     "LA": "Likely R",
     "MA": "Solid D",
@@ -369,7 +369,7 @@
     "NH": "Likely D",
     "MI": "Lean D",
     "ME": "Toss-up",
-    "AK": "Toss-up",
+    "AK": "Lean D",
     "OH": "Toss-up",
     "TX": "Toss-up"
    }
@@ -425,59 +425,6 @@
     "AK": "Toss-up",
     "OH": "Tilt D",
     "TX": "Tilt D"
-   }
-  },
-  {
-   "key": "kalshi-2026-senate-prediction-market-prices",
-   "label": "Kalshi (예측시장 가격)",
-   "as_of": "2026-10-04",
-   "ratings": {
-    "AK": "Lean D",
-    "AL": "Solid R",
-    "AR": "Solid R",
-    "CO": "Solid D",
-    "DE": "Solid D",
-    "FL": "Likely R",
-    "GA": "Solid D",
-    "IA": "Tilt R",
-    "ID": "Solid R",
-    "IL": "Solid D",
-    "KS": "Lean R",
-    "KY": "Solid R",
-    "LA": "Solid R",
-    "MA": "Solid D",
-    "ME": "Tilt D",
-    "MI": "Lean D",
-    "MN": "Likely D",
-    "MS": "Solid R",
-    "MT": "Solid R",
-    "NC": "Solid D",
-    "NE": "Lean R",
-    "NH": "Likely D",
-    "NJ": "Solid D",
-    "NM": "Solid D",
-    "OH": "Lean D",
-    "OK": "Solid R",
-    "OR": "Solid D",
-    "RI": "Solid D",
-    "SC": "Likely R",
-    "SD": "Solid R",
-    "TN": "Solid R",
-    "TX": "Lean D",
-    "VA": "Solid D",
-    "WV": "Solid R",
-    "WY": "Solid R"
-   },
-   "unknown_codes": 0,
-   "watch": {
-    "GA": "Solid D",
-    "NC": "Solid D",
-    "NH": "Likely D",
-    "MI": "Lean D",
-    "ME": "Tilt D",
-    "AK": "Lean D",
-    "OH": "Lean D",
-    "TX": "Lean D"
    }
   },
   {
