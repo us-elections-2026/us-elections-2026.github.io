@@ -81,6 +81,7 @@ cat(state_history_svg("KS"))
 - 주상원은 40석 중 공화당 31석·민주당 9석, 주하원은 125석 중 공화당 88석·민주당 37석으로, 양원 모두 거부권 무력화(veto-proof)가 가능한 공화당 수퍼머조리티입니다 (2025년 1월 회기 기준) ([Kansas Reflector](https://kansasreflector.com/2025/01/13/kansas-legislature-convenes-2025-session-with-emboldened-republican-supermajority/)).
 - 주지사는 민주당, 주의회 양원은 공화당 수퍼머조리티인 분점정부로, 트라이펙타는 아닙니다 (위 자료 종합).
 - 2026년에는 주지사·연방상원 1석(현 마셜 의석)과 주상원·주하원 전 의석이 함께 걸려 있습니다 (후보 확정 자료 종합).
+- 주지사 선거의 판세·조사·경과 기록은 [캔자스 주지사 페이지](../governors/ks.qmd)에서 다룹니다.
 
 ### 유권자 등록·투표율
 - 등록 유권자는 총 1,877,427명(공화당 843,174명 44.9%, 민주당 462,475명 24.6%, 무소속 548,649명 29.2%, 기타 23,129명 1.2%)입니다 (2026년 10월 3일 기준) ([Independent Voter Project: Kansas](https://independentvoterproject.org/voter-stats/ks)).

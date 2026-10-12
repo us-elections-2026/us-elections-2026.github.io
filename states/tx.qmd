@@ -79,6 +79,7 @@ cat(state_history_svg("TX"))
 - 현 주지사는 공화당 Greg Abbott으로 2023년 1월 3기를 시작했고 2026년 4선에 도전합니다. ([Wikipedia](https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election))
 - 주상원 31석은 공화 20·민주 11, 주하원 150석은 공화 88·민주 62입니다(2024년 선거 직후 기준). 2003년부터 공화 트라이펙타입니다. ([Ballotpedia](https://ballotpedia.org/Party_control_of_Texas_state_government))
 - 2026년 11월 3일에는 주지사·부지사·법무장관 등 주 전체 선출직과 주상원 16석, 주하원 150석 전체가 연방상원과 함께 걸려 있습니다. ([Ballotpedia](https://ballotpedia.org/Texas_elections,_2026))
+- 주지사 선거의 판세·조사·경과 기록은 [텍사스 주지사 페이지](../governors/tx.qmd)에서 다룹니다.
 
 ### 유권자 등록·투표율
 - 등록 유권자는 18,657,918명입니다(2026년 3월 예비선거 기준). 정당 등록제는 없습니다. ([Texas SOS](https://www.sos.state.tx.us/elections/historical/mar2026.shtml))

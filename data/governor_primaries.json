@@ -1,69 +1,110 @@
 {
-  "as_of": "2026-08-20",
-  "source_note": "일자는 270toWin 2026 주별 경선 캘린더(https://www.270towin.com/2026-state-primary-calendar/) 기준. 후보 확정 사실은 MI·OH를 보도로 교차 확인했고, 나머지 주의 후보명은 Kalshi 계약 라벨 기준이라 공식 인증 결과와 대조하지 않았다(이름 표기 오류 가능). 경합 8주만 수록한다.",
+  "as_of": "2026-10-13",
+  "source_note": "일자는 270toWin 2026 주별 경선 캘린더(https://www.270towin.com/2026-state-primary-calendar/) 기준이다. 기존 8주 중 MI·OH 후보 확정은 보도로 교차 확인했고, 나머지 6주의 후보명은 Kalshi 계약 라벨 기준이라 공식 인증 결과와 대조하지 않았다. 2026-10-13에 추가한 AK·FL·TX·OR 4행은 _NIS 주정부 브리핑의 링크를 행별 출처로 달았다. TX·OR 경선 일자는 원천에 없어 【수집】으로 둔다.",
   "rows": [
     {
       "state": "OH",
       "event": "양당 경선",
       "date": "2026-05-05",
       "status": "완료",
-      "detail": "Amy Acton(D) 무경쟁 · Vivek Ramaswamy(R) 사실상 무경쟁 — 양당 모두 일찌감치 대진 확정. DeWine 임기 제한으로 열린 공석."
+      "detail": "Amy Acton(D) 무경쟁 · Vivek Ramaswamy(R) 사실상 무경쟁 — 양당 모두 일찌감치 대진 확정. DeWine 임기 제한으로 열린 공석.",
+      "source_url": null
     },
     {
       "state": "GA",
       "event": "양당 경선",
       "date": "2026-05-19",
       "status": "완료",
-      "detail": "Keisha Lance Bottoms(D, 전 애틀랜타 시장) 지명. 공화는 과반 미달로 6/16 결선행. Kemp 임기 제한 공석."
+      "detail": "Keisha Lance Bottoms(D, 전 애틀랜타 시장) 지명. 공화는 과반 미달로 6/16 결선행. Kemp 임기 제한 공석.",
+      "source_url": null
     },
     {
       "state": "IA",
       "event": "양당 경선",
       "date": "2026-06-02",
       "status": "완료",
-      "detail": "Rob Sand(D, 주 감사원장) vs Zach Lahn(R). Reynolds 불출마로 열린 공석 — 시장은 민주 64¢로 이 사이클 최대 민주 픽업 기회로 본다."
+      "detail": "Rob Sand(D, 주 감사원장) vs Zach Lahn(R). Reynolds 불출마로 열린 공석 — 시장은 민주 64¢로 이 사이클 최대 민주 픽업 기회로 본다.",
+      "source_url": null
     },
     {
       "state": "NV",
       "event": "양당 경선",
       "date": "2026-06-09",
       "status": "완료",
-      "detail": "Aaron Ford(D, 주 법무장관) vs 현직 Joe Lombardo(R). 8개 경합주 중 공화 현직이 방어하는 두 곳 중 하나."
+      "detail": "Aaron Ford(D, 주 법무장관) vs 현직 Joe Lombardo(R). 8개 경합주 중 공화 현직이 방어하는 두 곳 중 하나.",
+      "source_url": null
     },
     {
       "state": "GA",
       "event": "공화당 결선",
       "date": "2026-06-16",
       "status": "완료",
-      "detail": "Rick Jackson(억만장자·자기자금, 트럼프 미보증)이 Burt Jones(트럼프·Kemp 지지)를 52.8–47.3으로 제압. 조지아 역사상 최고가 비방전(약 1.6억 달러) — \"트럼프 보증이 더는 무적이 아니다\"는 해석을 낳았다."
+      "detail": "Rick Jackson(억만장자·자기자금, 트럼프 미보증)이 Burt Jones(트럼프·Kemp 지지)를 52.8–47.3으로 제압. 조지아 역사상 최고가 비방전(약 1.6억 달러) — \"트럼프 보증이 더는 무적이 아니다\"는 해석을 낳았다.",
+      "source_url": null
     },
     {
       "state": "AZ",
       "event": "양당 경선",
       "date": "2026-07-21",
       "status": "완료",
-      "detail": "현직 Katie Hobbs(D)가 재선 도전, 공화는 Andy Biggs(연방하원). 민주 현직 방어 3곳 중 시장 평가가 가장 안정적(민주 81¢)."
+      "detail": "현직 Katie Hobbs(D)가 재선 도전, 공화는 Andy Biggs(연방하원). 민주 현직 방어 3곳 중 시장 평가가 가장 안정적(민주 81¢).",
+      "source_url": null
     },
     {
       "state": "KS",
       "event": "양당 경선",
       "date": "2026-08-04",
       "status": "완료",
-      "detail": "Cindy Holscher(D) vs Ty Masterson(R, 주 상원의장). Kelly 임기 제한 공석 — 구조적 공화 우위 주라 민주 수성이 어렵다(시장 민주 23¢)."
+      "detail": "Cindy Holscher(D) vs Ty Masterson(R, 주 상원의장). Kelly 임기 제한 공석 — 구조적 공화 우위 주라 민주 수성이 어렵다(시장 민주 23¢).",
+      "source_url": null
     },
     {
       "state": "MI",
       "event": "양당 경선",
       "date": "2026-08-04",
       "status": "완료",
-      "detail": "Jocelyn Benson(D, 주 국무장관)이 Chris Swanson(제네시 카운티 보안관)을 꺾고 지명, 공화는 트럼프가 지지한 John James(연방하원). 같은 날 상원 경선(El-Sayed 확정)도 함께 치러졌다."
+      "detail": "Jocelyn Benson(D, 주 국무장관)이 Chris Swanson(제네시 카운티 보안관)을 꺾고 지명, 공화는 트럼프가 지지한 John James(연방하원). 같은 날 상원 경선(El-Sayed 확정)도 함께 치러졌다.",
+      "source_url": null
     },
     {
       "state": "WI",
       "event": "양당 경선",
       "date": "2026-08-11",
       "status": "완료",
-      "detail": "공화 — Tom Tiffany 96.2%(Andy Manske와 2인 경선) 확정. 민주 — **David Crowley 39.8% 대 Francesca Hong 39.3%**(약 3,000표·0.4%p, 개표 98% 시점)로 사이클 최대 접전. AP는 홍의 승복 후 8/12 새벽 2시 34분(중부시간) 콜 — **승복으로 1%p 이내 재검표 청구 가능성이 소멸**했다. Crowley는 7/8 경선 중도 하차 후 Rodriguez 사퇴를 계기로 7/18 복귀했고 Evers 주지사 지지를 업었다. 결과는 주 개표 인증 전까지 비공식이다."
+      "detail": "공화 — Tom Tiffany 96.2%(Andy Manske와 2인 경선) 확정. 민주 — **David Crowley 39.8% 대 Francesca Hong 39.3%**(약 3,000표·0.4%p, 개표 98% 시점)로 사이클 최대 접전. AP는 홍의 승복 후 8/12 새벽 2시 34분(중부시간) 콜 — **승복으로 1%p 이내 재검표 청구 가능성이 소멸**했다. Crowley는 7/8 경선 중도 하차 후 Rodriguez 사퇴를 계기로 7/18 복귀했고 Evers 주지사 지지를 업었다. 결과는 주 개표 인증 전까지 비공식이다.",
+      "source_url": null
+    },
+    {
+      "state": "AK",
+      "event": "top-4 예선 (상위 4명 RCV 본선 진출)",
+      "date": "2026-08-18",
+      "status": "완료 — 후속 변동 있음(베기치 사퇴, 테일러 실격→복권)",
+      "detail": "17인 출마(민주 2·공화 12·무소속 3). 최종 공식 득표: JKT(D) 22.5% · 윌슨(R) 약 10% · 브론슨(R) 8.1% · T.테일러(R) 7.3%(5위). 2위 Begich(D) 20.8%는 8/28 사퇴·JKT 지지, 테일러는 8/31 실격 후 9/4 심야 번복 복권 → 본선 4인 = JKT(D)·윌슨·브론슨·테일러(R). 1차 정당 합계 공화 약 49% vs 민주 약 43%.",
+      "source_url": "https://alaskabeacon.com/2026/09/03/amid-fractured-gop-field-a-democrat-could-be-headed-for-the-alaska-governors-mansion/"
+    },
+    {
+      "state": "FL",
+      "event": "양당 경선",
+      "date": "2026-08-18",
+      "status": "완료",
+      "detail": "Byron Donalds(R, 트럼프 지지) 승리 · David Jolly(D, 전 공화 하원의원) 지명. 득표율은 원문 미기재.",
+      "source_url": "https://www.cnn.com/2026/08/18/politics/takeaways-florida-alaska-primaries"
+    },
+    {
+      "state": "TX",
+      "event": "양당 경선",
+      "date": null,
+      "status": "대진 확정 (경선 일자·득표율 원문 미기재)",
+      "detail": "Greg Abbott(R·현직, 4선 도전) vs Hinojosa(D). 경선 결과 세부는 원문에 없음.",
+      "source_url": "https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election"
+    },
+    {
+      "state": "OR",
+      "event": "양당 경선",
+      "date": null,
+      "status": "대진 확정 (경선 일자·득표율 원문 미기재)",
+      "detail": "Tina Kotek(D·현직) vs Drazan(R) — 2022 리매치(Cook). 경선 결과 세부는 원문에 없음.",
+      "source_url": "https://www.cookpolitical.com/analysis/governors/governors-overview/oregon-governor-shifts-toward-gop-while-alaska-moves"
     }
   ]
 }

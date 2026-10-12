@@ -403,6 +403,71 @@ if (!is.null(sl)) {
   }
 }
 
+# ---- 주지사 트랙 — roster·레이스·조사·후보 집합 일치 (2026-10-13, 8→12주 확장) -------------
+# roster 정본은 R/helpers.R의 GOV_FOCUS. 렌더 스택(gt 등)을 띄우지 않으려고 정규식으로 읽는다.
+hl <- readLines(file.path("R", "helpers.R"), warn = FALSE)
+gl <- grep("^GOV_FOCUS <- c\\(", hl, value = TRUE)
+if (length(gl) != 1) err("R/helpers.R", "GOV_FOCUS 정의를 찾지 못함") else {
+  roster <- regmatches(gl, gregexpr('"[A-Z]{2}"', gl))[[1]]; roster <- gsub('"', "", roster)
+  f <- "governor_races.json"; gr <- load_json(f)
+  require_keys(f, gr, c("as_of", "races"))
+  require_cols(f, gr$races, c("state", "defense", "incumbent", "rating", "latest_poll",
+                              "poll_source", "cash_on_hand", "kr_relevance"))
+  enum_ok(f, gr$races, "defense", c("D", "R"))
+  if (!is.null(gr$races) && anyDuplicated(gr$races$state)) err(f, "state 중복")
+  same <- function(lab, x) if (!setequal(x, roster))
+    err(lab, sprintf("주 집합이 GOV_FOCUS와 다름 — 빠짐: %s / 남음: %s",
+                     paste(setdiff(roster, x), collapse = ","), paste(setdiff(x, roster), collapse = ",")))
+  same(f, gr$races$state)
+  gc <- load_json("governor_candidates.json", optional = TRUE)
+  if (!is.null(gc)) {
+    same("governor_candidates.json", unique(gc$candidates$state))
+    ph <- gc$candidates$photo; cr <- gc$candidates$photo_credit
+    for (i in which(!is.na(ph) & nzchar(ph))) {
+      if (is.na(cr[i]) || !nzchar(cr[i])) err("governor_candidates.json", paste("photo_credit 없는 사진:", gc$candidates$name[i]))
+      if (!file.exists(ph[i])) err("governor_candidates.json", paste("사진 파일 없음:", ph[i]))
+    }
+  }
+  gp <- load_json("governor_primaries.json", optional = TRUE)
+  if (!is.null(gp)) {
+    same("governor_primaries.json", unique(gp$rows$state))
+    if (!"source_url" %in% names(gp$rows)) err("governor_primaries.json", "rows.source_url 열 없음")
+  }
+  pg <- toupper(sub("\\.qmd$", "", list.files("governors", pattern = "\\.qmd$")))
+  same("governors/*.qmd", pg)
+  qy <- readLines("_quarto.yml", warn = FALSE)
+  sb <- toupper(sub(".*governors/([a-z]{2})\\.qmd.*", "\\1", grep("governors/[a-z]{2}\\.qmd", qy, value = TRUE)))
+  same("_quarto.yml 사이드바", unique(sb))
+  # 피드 규칙(3사 중 1곳 이상 Toss/Lean/Tilt)과 roster가 어긋나면 경고만 — 편입·제외는 사람 결정.
+  rf <- load_json("governor_ratings.json")
+  if (!is.null(rf)) {
+    rt <- rf$sources$ratings; core <- which(rf$sources$label %in%
+      c("Cook Political Report", "Sabato's Crystal Ball", "Inside Elections"))
+    comp <- names(rt)[vapply(names(rt), function(a) any(grepl("Toss|Lean|Tilt", unlist(rt[core, a]))), logical(1))]
+    if (!setequal(comp, roster))
+      cat(sprintf("  ⚠ 주지사 roster 점검 필요(경고, 실패 아님) — 피드상 경합인데 roster 밖: %s / roster인데 피드상 비경합: %s\n",
+                  paste(setdiff(comp, roster), collapse = ","), paste(setdiff(roster, comp), collapse = ",")))
+  }
+}
+
+gpc <- load_csv("governor_polls.csv")
+if (!is.null(gpc)) {
+  f <- "governor_polls.csv"
+  need <- c("state","pollster","sponsor","partisan","population","n","start_date","end_date",
+            "dem_candidate","rep_candidate","dem_pct","rep_pct","margin","note","source_url")
+  if (!identical(names(gpc), need)) err(f, paste("열 순서/이름이 스키마와 다름:", paste(names(gpc), collapse=",")))
+  if (any(!gpc$partisan %in% c("none","D","R"))) err(f, "partisan은 none/D/R만")
+  if (any(!is.na(gpc$population) & gpc$population != "" & !gpc$population %in% c("LV","RV","A"))) err(f, "population은 LV/RV/A/빈칸만")
+  ed <- suppressWarnings(as.Date(gpc$end_date))
+  if (any(is.na(ed))) err(f, "end_date 빈 행·형식 오류 존재(실사기간 미수집이면 공개일을 넣고 note에 명기)")
+  dp <- suppressWarnings(as.numeric(gpc$dem_pct)); rp <- suppressWarnings(as.numeric(gpc$rep_pct)); mg <- suppressWarnings(as.numeric(gpc$margin))
+  okm <- !is.na(dp) & !is.na(rp) & !is.na(mg)
+  if (any(abs((dp - rp) - mg)[okm] > 0.11)) err(f, "margin != dem_pct - rep_pct 인 행 존재(양수=민주 우위)")
+  if (any(is.na(gpc$source_url) | !nzchar(gpc$source_url))) err(f, "source_url 빈 행 존재")
+  k1 <- paste(gpc$state, gsub("[^a-z0-9]", "", tolower(gpc$pollster)), gpc$end_date, gpc$dem_candidate, gpc$rep_candidate)
+  if (anyDuplicated(k1)) err(f, paste("같은 조사 중복(주·기관·종료일·후보쌍):", paste(unique(k1[duplicated(k1)]), collapse=" | ")))
+}
+
 # ---- 결과 --------------------------------------------------------------------
 if (length(errors) > 0) {
   cat(sprintf("\n✗ 데이터 검증 실패 (%d건):\n", length(errors)))

@@ -105,7 +105,7 @@ website:
         contents:
           - text: "주지사 — 36개 주 경합"
             href: governors.qmd
-          - section: "State Focus (경합 8주)"
+          - section: "State Focus (경합 12주)"
             contents:
               - governors/az.qmd
               - governors/ga.qmd
@@ -115,6 +115,10 @@ website:
               - governors/nv.qmd
               - governors/ia.qmd
               - governors/ks.qmd
+              - governors/ak.qmd
+              - governors/tx.qmd
+              - governors/fl.qmd
+              - governors/or.qmd
           - text: "주의회 — 다음 지도를 그리는 주체"
             href: redistricting.qmd#legislature
       - section: "Korea Watch"

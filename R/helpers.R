@@ -342,7 +342,8 @@ poll_trend_svg <- function(code, office = c("senate", "governor")) {
     }
   }
   if (!is.null(kal) && !is.null(kal[[cfg$kal]][[code]]$dem))
-    bd <- c(bd, sprintf('<b class="bd bd-mkt">Kalshi 민주 %d¢</b>', round(kal[[cfg$kal]][[code]]$dem)))
+    bd <- c(bd, sprintf('<b class="bd bd-mkt">Kalshi 민주 %d¢ <span class="bd-as">%s</span></b>',
+                        round(kal[[cfg$kal]][[code]]$dem), substr(kal$as_of %||% "", 6, 10)))
 
   p <- .poll_series(code, office); n <- nrow(p)
   head <- if (n == 0) "본선 조사 없음" else
@@ -1086,6 +1087,27 @@ gt_senate_rating_sources <- function() {
   g
 }
 
+# 주지사 경합 roster — 주별 State Focus 페이지(governors/<주>.qmd)를 가진 주. 사람이 승인한 목록이며
+# 메인 페이지·기관 비교표·경선 캘린더·후보 루프가 모두 이 한 곳을 따른다(2026-10-13, 8→12주).
+# 편입 규칙: Cook·Sabato·Inside Elections 중 1곳 이상이 Toss-up/Lean/Tilt. 피드가 이 규칙으로 계산한
+# 목록(governor_competitive_states())과 roster가 어긋나면 scripts/validate_data.R가 경고한다.
+GOV_FOCUS <- c("AZ", "GA", "IA", "KS", "MI", "NV", "OH", "WI", "AK", "FL", "OR", "TX")
+GOV_CORE_RATERS <- c("Cook Political Report", "Sabato's Crystal Ball", "Inside Elections")
+
+# 피드에서 3사 등급으로 경합(Toss/Lean/Tilt)·감시(Likely만) 주를 계산한다. 결측 기관은 Solid로 보지 않고 건너뛴다.
+governor_competitive_states <- function() {
+  d <- .load_json("governor_ratings"); src <- d$sources; rt <- src$ratings
+  core <- which(src$label %in% GOV_CORE_RATERS)
+  grade <- function(ab) vapply(core, function(i) {
+    v <- if (ab %in% names(rt)) rt[i, ab] else NA
+    if (is.null(v) || length(v) == 0 || is.na(v)) NA_character_ else as.character(v)
+  }, character(1))
+  ab <- names(rt)
+  comp <- ab[vapply(ab, function(a) any(grepl("Toss|Lean|Tilt", grade(a))), logical(1))]
+  watch <- setdiff(ab[vapply(ab, function(a) any(grepl("Likely", grade(a))), logical(1))], comp)
+  list(competitive = sort(comp), watch = sort(watch))
+}
+
 # 1.7 주지사·주의회 -----------------------------------------------------------
 # 주지사 경합주 — Cook·Sabato 등급을 나란히, 기관이 갈리는 곳을 드러낸다.
 gt_governor_races <- function() {
@@ -1123,43 +1145,51 @@ gt_governor_races <- function() {
     .tbl_opts()
 }
 
-# 주지사 — 8개 기관 등급 비교(경합주 한정)
+# 주지사 — 기관별 등급 비교(경합 roster). 행 = 주, 열 = 기관 — 주가 12개라 주를 열로 두면 모바일에서 넘친다.
 gt_governor_sources <- function() {
   d <- .load_json("governor_ratings"); src <- d$sources; kr <- d$state_names_kr
-  key <- c("AZ", "GA", "IA", "KS", "MI", "NV", "OH", "WI")
+  key <- GOV_FOCUS
   rt <- src$ratings   # data.frame: 행=기관, 열=주 약자
   is_mkt <- grepl("Kalshi|예측시장", src$label)
   kal <- .kalshi()
   cell <- function(i, ab) {
     if (is_mkt[i]) {   # 등급 환산값 대신 Kalshi 원가격 (상원 표와 같은 규칙)
       p <- .kalshi_dem(kal, "governor", ab)
-      return(if (is.na(p)) "—" else paste0("민주 ", round(p), "¢"))
+      return(if (is.na(p)) "—" else paste0(round(p), "¢"))
     }
     if (!(ab %in% names(rt))) return("—")
     v <- rt[i, ab]; if (is.null(v) || length(v) == 0 || is.na(v)) "—" else as.character(v)
   }
-  cols <- lapply(key, function(ab) vapply(seq_len(nrow(src)), cell, character(1), ab = ab))
-  names(cols) <- vapply(key, function(a) kr[[a]], character(1))
-  lbl <- ifelse(is_mkt, paste0(src$label, " ※"), src$label)
+  short <- c("Cook Political Report" = "Cook", "Sabato's Crystal Ball" = "Sabato",
+             "Inside Elections" = "IE", "Almanac of American Politics" = "Almanac",
+             "Fox News Power Rankings" = "Fox", "Race to the WH" = "RtWH",
+             "270toWin Consensus" = "270 합의")
+  lab <- ifelse(is_mkt, "Kalshi ※", ifelse(src$label %in% names(short), short[src$label], src$label))
   as_of <- ifelse(is_mkt & !is.null(kal), substr(kal$fetched_at_utc %||% "", 1, 10), src$as_of)
-  bind_cols(tibble(예측기관 = lbl, 기준일 = as_of), as_tibble(cols)) |>
+  cols <- lapply(seq_len(nrow(src)), function(i) vapply(key, cell, character(1), i = i))
+  names(cols) <- lab
+  tbl <- bind_cols(tibble(주 = vapply(key, function(a) paste0(kr[[a]], " ", a), character(1))),
+                   as_tibble(cols))
+  tbl |>
     gt() |>
-    tab_header(title = "주지사 경합 8주 — 기관별 등급",
+    tab_header(title = paste0("주지사 경합 ", length(key), "주 — 기관별 등급"),
                subtitle = "같은 주를 기관마다 어떻게 보는지 (등급은 확률이 아님)") |>
     tab_source_note(paste0(
-      "※ Kalshi 행만 성격이 다릅니다 — 등급이 아니라 **예측시장 가격**(민주 승리 계약의 마지막 체결가)이며 ",
+      "기준일 — ", paste0(lab, " ", substr(as_of, 6, 10), collapse = " · "), ". ",
+      "※ Kalshi 열만 성격이 다릅니다 — 등급이 아니라 **예측시장 가격**(민주 승리 계약의 마지막 체결가, ¢)이며 ",
       "공개 API에서 원가격을 직접 받아 싣습니다. 등급과 같은 잣대로 비교하지 마세요. ",
       "'Tilt'는 Lean보다 좁은 등급으로 Inside Elections·RaceToTheWH가 씁니다. ",
-      "'—'는 경합으로 분류하지 않았거나 해당 시장이 없는 칸(추정으로 채우지 않음).")) |>
+      "'—'는 해당 기관 등급이 없거나 해당 시장이 없는 칸(추정으로 채우지 않음).")) |>
     .tbl_opts()
 }
 
-# 주지사 경선 캘린더 — 경합 8주만. 상원과 같은 스키마라 렌더 규칙도 같다.
+# 주지사 경선 캘린더 — 경합 roster만. 상원과 같은 스키마라 렌더 규칙도 같다(행별 source_url은 내용 끝 링크).
 gt_governor_primaries <- function() {
   p <- file.path("data", "governor_primaries.json")
   if (!file.exists(p)) return(invisible(NULL))
   d <- jsonlite::read_json(p, simplifyVector = TRUE)
   r <- d$rows
+  r <- r[r$state %in% GOV_FOCUS, , drop = FALSE]
   kr <- tryCatch(.load_json("governor_ratings")$state_names_kr, error = function(e) NULL)
   nm <- vapply(r$state, function(a)
     if (!is.null(kr) && !is.null(kr[[a]])) paste0(kr[[a]], " (", a, ")") else a, character(1))
@@ -1168,11 +1198,14 @@ gt_governor_primaries <- function() {
     경선 = r$event,
     일자 = ifelse(is.na(r$date), "【수집】", r$date),
     상태 = r$status,
-    내용 = ifelse(is.na(r$detail), "—", r$detail)
+    내용 = paste0(ifelse(is.na(r$detail), "—", r$detail),
+                ifelse(is.na(r$source_url %||% NA), "",
+                       paste0(" [출처](", r$source_url, ")")))
   ) |>
     arrange(일자 == "【수집】", 일자) |>
     gt() |>
-    tab_header(title = "주지사 경선 캘린더 — 경합 8주",
+    fmt_markdown(columns = 내용) |>
+    tab_header(title = paste0("주지사 경선 캘린더 — 경합 ", length(GOV_FOCUS), "주"),
                subtitle = paste0("기준 ", d$as_of, " · 본선 대진이 언제 확정됐는지")) |>
     tab_source_note(d$source_note) |>
     .tbl_opts()
@@ -1206,6 +1239,98 @@ governor_history_html <- function() {
   if (!length(items)) return("")
   paste0('<div class="gov-hist"><p><b>등급 변동 이력</b> (바뀐 시점만 기록)</p><ul>',
          paste(items, collapse = ""), '</ul></div>')
+}
+
+# 주별 등급 이동 이력 — governor_rating_snapshots.json의 '바뀐 것만' 기록에서 3사(Cook·Sabato·IE)만 뽑는다.
+# 날짜는 스냅샷 취득일(주간 발행일)이라 기관의 실제 발표일보다 최대 1주 늦을 수 있다 — 표 주석에 명시.
+governor_rating_trail_html <- function(code) {
+  p <- file.path("data", "history", "governor_rating_snapshots.json")
+  if (!file.exists(p)) return("")
+  h <- jsonlite::read_json(p, simplifyVector = FALSE)
+  snaps <- h$snapshots
+  if (!length(snaps)) return("")
+  nm <- c("Cook Political Report" = "Cook", "Sabato's Crystal Ball" = "Sabato", "Inside Elections" = "IE")
+  first <- snaps[[1]]
+  start <- vapply(names(nm), function(lb) {
+    v <- first$sources[[lb]]$ratings[[code]]
+    if (is.null(v)) "—" else v
+  }, character(1))
+  rows <- character(0)
+  pat <- paste0("^(", paste(names(nm), collapse = "|"), ") ", code, ": ")
+  for (s in snaps[-1]) {
+    ch <- unlist(s$changes)
+    ch <- ch[grepl(pat, ch)]
+    for (x in ch) {
+      lb <- sub(paste0(" ", code, ": .*$"), "", x)
+      mv <- sub("^.*: ", "", x); mv <- gsub("None", "미평가", mv, fixed = TRUE)
+      rows <- c(rows, sprintf("<li><b>%s</b> · %s %s</li>", s$captured, nm[[lb]], .esc(mv)))
+    }
+  }
+  body <- if (length(rows)) paste0("<ul>", paste(rev(rows), collapse = ""), "</ul>") else
+    "<p>첫 스냅샷 이후 3사 등급 이동 없음.</p>"
+  paste0('<div class="gov-hist"><p><b>등급 이동 이력</b> — 출발점(', first$captured, '): ',
+         paste0(nm, " ", start, collapse = " · "), '</p>', body,
+         '<p class="muted">날짜는 이 사이트의 주간 등급 스냅샷 취득일이며 기관 발표일보다 최대 1주 늦을 수 있습니다. ',
+         '원천: 270towin 재게시 피드의 주간 스냅샷.</p></div>')
+}
+
+# 주별 경과 기록 — data/governor_timeline.json(_NIS 주정부 주간 브리핑에서 옮긴 사건, 사건마다 원문 링크).
+# 최신이 위. 사건 일자를 모르는 항목은 보도(브리핑) 일자로 정렬하고 그 사실을 표시한다.
+governor_timeline_md <- function(code, n_max = 30) {
+  p <- file.path("data", "governor_timeline.json")
+  if (!file.exists(p)) return("")
+  d <- jsonlite::read_json(p, simplifyVector = FALSE)
+  ev <- d$states[[code]]
+  if (is.null(ev) || !length(ev))
+    return("<p class=\"muted\">이 주의 경과 기록은 아직 없습니다(원천 주간 브리핑에 출처가 붙은 사건이 없음).</p>\n")
+  key <- vapply(ev, function(e) e$date %||% e$reported %||% "", character(1))
+  ev <- ev[order(key, decreasing = TRUE)][seq_len(min(length(ev), n_max))]
+  md <- function(x) { x <- as.Date(x); paste0(as.integer(format(x, "%m")), "/", as.integer(format(x, "%d"))) }
+  lines <- vapply(ev, function(e) {
+    dt <- if (!is.null(e$date)) md(e$date) else paste0(md(e$reported), " 보도")
+    cav <- if (!is.null(e$caveat) && nzchar(e$caveat)) paste0(" <span class=\"muted\">", e$caveat, "</span>") else ""
+    sprintf("- **%s** · %s · %s ([출처](%s))%s", dt, e$kind, e$text, e$source_url, cav)
+  }, character(1))
+  paste0(paste(lines, collapse = "\n"),
+         "\n\n<p class=\"muted\">원천: _NIS 주정부 주간·일일 브리핑(", d$source_range,
+         ")에서 출처 링크가 붙은 사건만 옮겼습니다. 원천 문장을 옮긴 기록이라 다체로 둡니다. 기록 기준 ", d$as_of, ".</p>\n")
+}
+
+# 감시 주 — 3사 중 Likely만 있는 주(경합 roster 밖). 주별 페이지 없이 한 줄씩.
+# 상원 State Focus가 있는 주는 그 페이지의 주지사·주의회 소절로 링크한다.
+gt_governor_watch <- function() {
+  w <- setdiff(governor_competitive_states()$watch, GOV_FOCUS)
+  if (!length(w)) return(invisible(NULL))
+  d <- .load_json("governor_ratings"); src <- d$sources; rt <- src$ratings; kr <- d$state_names_kr
+  g <- function(lb, ab) { i <- which(src$label == lb)
+    if (!length(i) || !(ab %in% names(rt))) return("—")
+    v <- rt[i[1], ab]; if (is.null(v) || is.na(v)) "—" else as.character(v) }
+  kal <- .kalshi()
+  polls <- readr::read_csv(file.path("data", "governor_polls.csv"), show_col_types = FALSE,
+                           col_types = readr::cols(.default = "c"))
+  last_poll <- function(ab) {
+    p <- polls[polls$state == ab & !is.na(polls$end_date), ]
+    if (!nrow(p)) return("—")
+    p <- p[order(p$end_date, decreasing = TRUE), ][1, ]
+    paste0(p$pollster, " ", substr(p$end_date, 6, 10), " ", .fmt_margin(as.numeric(p$margin)))
+  }
+  senate_pages <- sub("\\.qmd$", "", toupper(list.files("states", pattern = "\\.qmd$")))
+  tibble(
+    주 = vapply(w, function(a) if (a %in% senate_pages)
+      sprintf("[%s %s](states/%s.qmd)", kr[[a]], a, tolower(a)) else paste0(kr[[a]], " ", a), character(1)),
+    Cook = vapply(w, function(a) g("Cook Political Report", a), character(1)),
+    Sabato = vapply(w, function(a) g("Sabato's Crystal Ball", a), character(1)),
+    IE = vapply(w, function(a) g("Inside Elections", a), character(1)),
+    `Kalshi 민주` = vapply(w, function(a) { p <- .kalshi_dem(kal, "governor", a)
+      if (is.na(p)) "—" else paste0(round(p), "¢") }, character(1)),
+    `최신 조사` = vapply(w, last_poll, character(1))
+  ) |>
+    gt() |>
+    fmt_markdown(columns = 주) |>
+    tab_header(title = "감시 주 — 3사 중 Likely만 있는 곳",
+               subtitle = paste0("경합 roster 밖 · 등급 기준 피드 ", substr(d$fetched_at, 1, 10))) |>
+    tab_source_note("주별 상세 페이지는 두지 않습니다. 상원 State Focus가 있는 주는 이름을 누르면 그 페이지로 갑니다(「배경」 탭의 주지사·주의회 소절). 3사 중 한 곳이라도 Toss-up/Lean/Tilt로 옮기면 경합 편입을 검토합니다(사람 결정).") |>
+    .tbl_opts()
 }
 
 # 주의회 — 경합 의회(수동 큐레이션)

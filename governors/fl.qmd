@@ -1,0 +1,72 @@
+---
+title: "플로리다 주지사 Florida Governor"
+toc: false
+---
+
+```{r}
+#| include: false
+source(file.path("R", "helpers.R"))
+```
+
+::::: {.panel-tabset}
+
+## 주 개요
+
+현직이 나오지 않는 공화 방어 개방석입니다. 8/18 경선에서 트럼프가 지지한 Byron Donalds가 공화 후보가 됐습니다. 민주 후보 David Jolly는 공화당 연방하원의원 출신으로 민주당으로 옮긴 인물입니다. Cook은 8/27 Solid R에서 Likely R로, 10/1 Lean R로 등급을 내렸습니다.
+
+```{r}
+#| output: asis
+cat(governor_card_html("FL"))
+```
+
+::: {.summary}
+- **구도**: 공화 방어 개방석. Jolly(민주, 전 공화 하원의원) 대 Donalds(공화, 트럼프 지지).
+- **흐름**: 9월 중순 St. Pete Polls가 사실상 동률을 냈습니다. 10월 초 조사는 동률에서 Donalds +7 사이에 퍼져 있습니다.
+- **한국 함의**: 원자료에서 직접 단서는 확인되지 않았습니다.
+:::
+
+```{r}
+#| output: asis
+cat(governor_rating_trail_html("FL"))
+```
+
+## 후보자
+
+```{r}
+#| output: asis
+cat(governor_cards_html("FL"))
+```
+
+Cook은 Jolly가 자금에서 10배 넘게 뒤진다고 명시했습니다. 그러면서도 무당파와 이탈 공화 유권자에게 소구할 여지를 등급 하향의 근거로 들었습니다. St. Pete Polls 조사에서 무당파는 Jolly +12였습니다.
+
+## 경과 기록
+
+```{r}
+#| output: asis
+cat(governor_timeline_md("FL"))
+```
+
+## 여론조사
+
+```{r}
+gt_governor_polls("FL")
+```
+
+> Change Research 조사는 민주계 단체 의뢰라 당파 후원 조사로 표시했습니다. 비당파 조사만 보면 동률에서 Donalds 소폭 우위 사이입니다.
+
+## 자금
+
+```{r}
+#| output: asis
+cat(governor_money_html("FL"))
+```
+
+## 배경·제도
+
+플로리다에는 이 사이트의 상원 페이지가 없습니다. 주지사 선거 제도의 특이 사항은 원자료에서 아직 정리되지 않았고, 이 사이트의 40년 선거 결과 자료에도 플로리다가 없습니다. 둘 다 수집을 요청해 두었습니다.
+
+## 한국 함의
+
+후보와 관련한 한국 단서는 원자료에서 확인되지 않았습니다. 관련 발언이나 투자 연계가 나오면 [Korea Watch](../korea-watch.qmd)에 기록합니다.
+
+:::::

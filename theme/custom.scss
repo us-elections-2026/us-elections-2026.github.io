@@ -544,3 +544,8 @@ main table.gt_table th.gt_col_heading { white-space: pre-line; text-align: cente
 .cand-mini.cand-I { border-top-color: #6b21a8; }
 .cand-badge.b-I { background: #6b21a8; color: #fff; }
 .rt-hold-i { background: #6b21a8; }
+
+/* 주지사 등급 변동 이력 — 긴 코드·경로가 모바일에서 페이지를 가로로 밀던 문제(2026-10-13) */
+.gov-hist { overflow-wrap: anywhere; }
+.gov-hist code { white-space: normal; }
+.gov-rules code { white-space: normal; overflow-wrap: anywhere; }
