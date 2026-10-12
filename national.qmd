@@ -205,6 +205,8 @@ gt_gas_prices()
 
 자료는 `scripts/fetch_gas_prices.py`가 주 1회 `data/gas_prices.json`으로 갱신합니다(EIA xls 직접 다운로드, 키 불필요).
 
+50개 주 전체의 휘발유·디젤 일일 평균(AAA)과 1990년 이후 장기 추세는 별도 사이트 **[미국 유가 트래커](https://woochangkang.github.io/gas-prices-2026/)**에서 볼 수 있습니다.
+
 ## 정당·자금
 
 ### 선거 자금 지형 {#money}
