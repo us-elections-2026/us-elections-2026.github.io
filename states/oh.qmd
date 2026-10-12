@@ -77,6 +77,7 @@ cat(state_history_svg("OH"))
 - 현 주지사는 공화당 Mike DeWine으로 2019년 1월 취임해 2023년 재취임했습니다. 연임 제한으로 2026년 주지사 선거는 공석 경쟁입니다. ([Ballotpedia](https://ballotpedia.org/Mike_DeWine))
 - 주상원 33석은 공화 24·민주 9, 주하원 99석은 공화 65·민주 34입니다(136대 주의회). 2010년 이후 공화 트라이펙타가 이어집니다. ([Wikipedia](https://en.wikipedia.org/wiki/136th_Ohio_General_Assembly))
 - 2026년 11월 3일에는 주지사·검찰총장·재무관 등 주 전체 선출직과 주하원 99석 전체, 주상원 17석이 상원 특별선거와 함께 걸려 있습니다. ([Ballotpedia](https://ballotpedia.org/2026_Ohio_legislative_session))
+- 주지사 선거의 판세·조사·경과 기록은 [오하이오 주지사 페이지](../governors/oh.qmd)에서 다룹니다.
 
 ### 유권자 등록·투표율
 - 등록 유권자는 7,896,681명입니다(2026년 5월 프라이머리 인증 기준). 정당 등록제가 없어 정당별 집계는 없습니다. ([Ohio SOS](https://www.ohiosos.gov/office/media-center/categories/press-releases/2026-06-03))

@@ -1,0 +1,72 @@
+---
+title: "텍사스 주지사 Texas Governor"
+toc: false
+---
+
+```{r}
+#| include: false
+source(file.path("R", "helpers.R"))
+```
+
+::::: {.panel-tabset}
+
+## 주 개요
+
+현직 Greg Abbott(공화)가 4선에 도전하고 민주 Hinojosa가 맞섭니다. 8월 중순까지 Solid R이던 Cook 등급이 단계적으로 내려와 10/1 Cook이 Lean R로 옮겼습니다. 10월 초에는 Abbott가 뒤지는 조사가 처음 나왔습니다. 같은 시기 Abbott 우위 조사도 있어 방향은 혼조입니다.
+
+주의 배경(경제·인구·역대 선거)과 선거 제도, 주의회 구성은 [상원 텍사스 페이지](../states/tx.qmd)의 「배경」·「선거 제도」 탭에 있습니다.
+
+```{r}
+#| output: asis
+cat(governor_card_html("TX"))
+```
+
+::: {.summary}
+- **구도**: 공화 현직 방어. Hinojosa(민주) 대 Abbott(현직, 4선 도전).
+- **흐름**: NYT/Siena가 Hinojosa +3을 냈고, 같은 시기 Fox·UMass Lowell은 Abbott +4~5였습니다.
+- **한국 함의**: 원자료에서 주지사 후보 관련 직접 단서는 확인되지 않았습니다.
+:::
+
+```{r}
+#| output: asis
+cat(governor_rating_trail_html("TX"))
+```
+
+## 후보자
+
+```{r}
+#| output: asis
+cat(governor_cards_html("TX"))
+```
+
+Abbott는 2018년과 2022년에 각각 두 자릿수 차로 이겼습니다. Cook은 8/20 등급을 내리면서 Abbott의 데이터센터 입장 선회, 학교 바우처, 재획정을 취약점으로 들었습니다. Hinojosa의 자산으로는 라티노 유권자 소구를 꼽았습니다. 조사에서는 히스패닉과 무당파에서 Hinojosa가 앞서고, 남성에서 Abbott가 크게 앞섭니다.
+
+## 경과 기록
+
+```{r}
+#| output: asis
+cat(governor_timeline_md("TX"))
+```
+
+## 여론조사
+
+```{r}
+gt_governor_polls("TX")
+```
+
+> 9월 비당파 조사는 대체로 Abbott +3~4였습니다. 10월 Siena가 처음으로 Hinojosa 우위를 냈지만 단일 조사입니다. 여러 조사의 범위를 함께 보세요.
+
+## 자금
+
+```{r}
+#| output: asis
+cat(governor_money_html("TX"))
+```
+
+양측 모금·보유현금은 원자료에서 아직 확인되지 않았습니다. 확인되는 대로 채웁니다.
+
+## 한국 함의
+
+주지사 후보와 관련한 한국 단서는 원자료에서 확인되지 않았습니다. 텍사스의 한국 투자 접점은 [상원 텍사스 페이지](../states/tx.qmd)의 「한국 함의」 탭에서 다룹니다. 주지사는 인허가·인센티브·전력망 정책을 쥐고 있어 그 투자 환경과 닿습니다.
+
+:::::

@@ -78,6 +78,7 @@ cat(state_history_svg("MI"))
 - 주상원 38석은 민주 20·공화 18(2026년 5월 기준), 주하원 110석은 공화 58·민주 51·무소속 1(2025년 1월 기준)입니다. ([Wikipedia 주상원](https://en.wikipedia.org/wiki/Michigan_Senate) · [주하원](https://en.wikipedia.org/wiki/Michigan_House_of_Representatives))
 - 주지사·국무장관·법무장관은 민주지만 주하원이 공화라 트라이펙타가 아닌 분점 정부입니다. ([Ballotpedia](https://ballotpedia.org/Party_control_of_Michigan_state_government))
 - 2026년 11월 3일에는 주지사(공석)와 주상원 38석·주하원 110석 전체가 연방상원과 함께 걸려 있습니다. ([Michigan Advance](https://michiganadvance.com/voter-guides/contests/governor/))
+- 주지사 선거의 판세·조사·경과 기록은 [미시간 주지사 페이지](../governors/mi.qmd)에서 다룹니다.
 
 ### 유권자 등록·투표율
 - 등록 유권자는 약 794만 명입니다(2026년 9월 조회). 정당 등록제는 없습니다. ([Independent Voter Project](https://independentvoterproject.org/voter-stats/mi))

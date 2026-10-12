@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-08-20",
+  "as_of": "2026-10-13",
   "purpose": "수집 대장 — 어떤 자료를 누가·어떻게 수집하며 지금 무슨 상태인지의 단일 기록. 두 가지 목적: ① 중복 수집 방지(수집 전에 여기부터 읽는다) ② 리뷰 대상 제공(데이터 PR의 근거를 여기에 대조한다). 스키마 정의는 data/README.md, 값의 출처 대조는 data/trends_verification.md.",
   "rules": [
     "수집을 시작하기 전에 이 파일을 먼저 읽는다. 해당 항목이 이미 '확보'이거나 다른 담당에게 배정돼 있으면 중복 수집하지 않는다.",
@@ -313,7 +313,7 @@
       "note": "확인 완료(2026-08-13): snapshot_ratings.py는 이 파일이 아니라 data/history/*_rating_snapshots.json을 쓴다. 이 파일은 편집 커밋으로만 갱신돼 온 수동 자산이다."
     },
     {
-      "item": "주지사 State Focus 레이스 데이터 (8주)",
+      "item": "주지사 State Focus 레이스 데이터 (경합 12주)",
       "files": [
         "data/governor_races.json"
       ],
@@ -322,9 +322,9 @@
       "producer": null,
       "method": "수동 편집. 자금은 주(州) 선관위 신고 기준 — FEC 자동 취득 없음",
       "cadence": "주 1회",
-      "last_updated": "2026-08-12",
+      "last_updated": "2026-10-13",
       "status": "확보",
-      "note": "AZ·GA·OH·MI·WI·NV·IA·KS."
+      "note": "AZ·GA·OH·MI·WI·NV·IA·KS + AK·FL·OR·TX(2026-10-13 편입). roster 정본은 R/helpers.R GOV_FOCUS — validate_data.R가 집합 일치를 검사. TX·OR 자금 미확보."
     },
     {
       "item": "주지사 본선 여론조사 DB",
@@ -336,9 +336,9 @@
       "producer": null,
       "method": "수동 편집 — 전 행에 원문 URL 필수",
       "cadence": "주 1회",
-      "last_updated": "2026-08-12",
+      "last_updated": "2026-10-13",
       "status": "확보",
-      "note": null
+      "note": "2026-10-13 _NIS state_weekly·state_daily에서 46행 소급(원문 URL 있는 행만). URL·날짜·수치 미확인 25건은 data/governor_polls_candidates.csv(비발행·.gitignore)에 보류."
     },
     {
       "item": "주지사 경선 캘린더",
@@ -350,12 +350,12 @@
       "producer": null,
       "method": "수동 편집",
       "cadence": "경선 일정에 따라",
-      "last_updated": "2026-08-06",
+      "last_updated": "2026-10-13",
       "status": "확보",
-      "note": null
+      "note": "2026-10-13 4주 추가·행별 source_url 필드 신설(기존 8주 행은 null)."
     },
     {
-      "item": "주지사 후보 프로필 카드 (경합 8주 16명)",
+      "item": "주지사 후보 프로필 카드 (경합 12주 26명)",
       "files": [
         "data/governor_candidates.json"
       ],
@@ -364,9 +364,9 @@
       "producer": null,
       "method": "수동 편집 + 사진(Wikimedia PD·CC만)",
       "cadence": "경선 확정 시",
-      "last_updated": "2026-08-12",
-      "status": "확보",
-      "note": "candidates.json과 동일 스키마 + office 필드."
+      "last_updated": "2026-10-13",
+      "status": "확보 (신규 10명 부분)",
+      "note": "candidates.json과 동일 스키마 + office 필드. 2026-10-13 추가 10명은 _NIS 브리핑 사실만 — 생년·학력·가족·사진 null(gaps 참조)."
     },
     {
       "item": "경합주 투표 마감일 (조기투표·등록·우편신청·우편반환)",
@@ -496,6 +496,20 @@
       "last_updated": "2026-08-12",
       "status": "확보",
       "note": "rating_history.json과 다른 파일이다 — 이쪽이 자동 축적분, rating_history.json은 수동 편집분. 같은 data/history/ 아래 있지만 이쪽은 publish_weekly.sh 안에서 돌아 정상 작동해 왔고(2026-08-12 갱신), 주간 데이터 스냅샷은 launchd 미설치로 멈춰 있었다 — 경로가 다르면 생사도 다르다."
+    },
+    {
+      "item": "주지사 경과 기록",
+      "files": [
+        "data/governor_timeline.json"
+      ],
+      "owner": "cowork",
+      "owner_status": "신설 2026-10-13",
+      "producer": null,
+      "method": "_NIS 주정부 주간 브리핑에서 출처 링크가 붙은 사건만 수동 이관(사건당 1회)",
+      "cadence": "주 1회 (주간 브리핑 후)",
+      "last_updated": "2026-10-13",
+      "status": "확보 (주간 8/2~10/11)",
+      "note": "governor_timeline_md()가 주별 페이지 「경과 기록」 탭에 렌더. ME는 감시 주라 보관만. 주지사 일일 로그 자동 파서는 후속 과제."
     }
   ],
   "blocked_sources": [
@@ -682,6 +696,55 @@
       "raw_data_note": "2026-06-08 스냅샷과 현재 값의 차이는 두 달치라 '지난 주 대비'로 쓸 수 없다.",
       "needed": "주간 발행 2회 경과 후 delta 계산 스크립트 추가. 그 전까지 표의 *_delta는 수동 기재 유지.",
       "owner": "auto-script",
+      "priority": "중"
+    },
+    {
+      "gap": "주지사 신규 4주 후보 프로필 공백",
+      "files": [
+        "data/governor_candidates.json"
+      ],
+      "detail": "AK 4명·FL·TX·OR 각 2명의 생년·학력·가족·사진이 null. Hinojosa·Drazan은 이름(first name)도 원천에 없음.",
+      "raw_data_exists": false,
+      "raw_data_note": "_NIS 브리핑에 없음.",
+      "needed": "Ballotpedia·공식 약력 대조 + Wikimedia PD·CC 사진",
+      "owner": "cowork",
+      "priority": "중"
+    },
+    {
+      "gap": "상원 페이지 없는 주지사 5주의 40년 선거 결과",
+      "files": [
+        "data/state_election_history.json"
+      ],
+      "detail": "AZ·WI·NV·FL·OR이 없음(주지사 페이지 「배경·제도」 탭이 수집 대기로 안내 중). 기존 11주와 같은 1986~2024 pres·sen·gov 계열로 채워야 규약이 깨지지 않음.",
+      "raw_data_exists": false,
+      "raw_data_note": null,
+      "needed": "Wikipedia 주별 선거 페이지 URL과 함께 일괄 수집",
+      "owner": "cowork",
+      "priority": "낮"
+    },
+    {
+      "gap": "TX·OR 주지사 경선 일자·자금",
+      "files": [
+        "data/governor_primaries.json",
+        "data/governor_races.json"
+      ],
+      "detail": "원천 브리핑에 경선 일자·득표율, 후보 자금이 없음.",
+      "raw_data_exists": false,
+      "raw_data_note": null,
+      "needed": "270toWin 경선 캘린더·주 선관위 신고",
+      "owner": "cowork",
+      "priority": "중"
+    },
+    {
+      "gap": "OR 주지사 10월 조사 방향 충돌",
+      "files": [
+        "data/governor_polls.csv"
+      ],
+      "detail": "10/3 일일은 OPB/DHM(9/30) Drazan 46–Kotek 44, 10/9 일일·10/11 주간은 Oregonian/DHM Kotek 46–Drazan 44. CSV에는 후자를 실었다.",
+      "raw_data_exists": true,
+      "raw_data_note": "두 브리핑 모두 원문 미열람.",
+      "needed": "DHM Research 원문 확인",
+      "owner": "cowork",
       "priority": "중"
     }
   ]

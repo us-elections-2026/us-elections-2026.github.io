@@ -141,19 +141,31 @@
 
 ### `governor_candidates.json` — 주지사 후보 프로필 카드
 - 스키마는 `candidates.json`과 동일하며 **`office`**(="governor") 한 필드만 더 있다.
-- 경합 8주(AZ·GA·IA·KS·MI·NV·OH·WI) 16명. `status`는 `nominee` 외에
+- 경합 12주(`GOV_FOCUS`: AZ·GA·IA·KS·MI·NV·OH·WI + 2026-10-13 편입 AK·FL·OR·TX) 26명. AK는 RCV 본선이라 공화 3명. `status`는 `nominee` 외에
   `presumptive (8/11)`처럼 경선 전 상태를 표기하며, 이 경우 카드 위에 "지명 확정 전" 주석이 붙는다.
 - `photo`가 `null`이면 `_placeholder.svg`로 렌더된다(`.c_photo()`) — 저작권 미확인 캠페인 사진은 쓰지 않는다.
-- 소비: `governor_cards_html()` → `governors.qmd#candidates`. **수동 갱신**(경선 확정·자금 신고 시).
+- 소비: `governor_cards_html()` → `governors/*.qmd` 「후보자」 탭. **수동 갱신**(경선 확정·자금 신고 시).
 
 ### `governor_races.json` — 주지사 State Focus 레이스 데이터 (수동)
-- `senate_races.json`과 동일 스키마(state·defense·incumbent·rating·latest_poll·poll_source·cash_on_hand·kr_relevance). 경합 8주.
+- `senate_races.json`과 동일 스키마(state·defense·incumbent·rating·latest_poll·poll_source·cash_on_hand·kr_relevance). 경합 12주 — 주 집합은 `GOV_FOCUS`와 같아야 한다(`validate_data.R`).
 - **자금은 주(州) 선관위 신고 기준**(연방 FEC 아님 — 자동 피드 없음). 등급 정본은 `governor_ratings.json`(자동)이고 여기엔 표시용 요약만.
 - 소비: `gt_governor_detail()`·`governor_money_html()` → `governors/*.qmd`.
 
 ### `governor_polls.csv` — 주지사 본선 여론조사 DB (수동)
 - `senate_polls.csv`와 동일 스키마. **전 행 원문 URL 확보**(2026-08-12 검증 — Marquette 동률·AARP 초당 합동 등 5건 정정 포함).
-- 소비: `gt_governor_polls()` → `governors/*.qmd` 4절.
+- 2026-10-13 _NIS 주정부 브리핑에서 46행 소급. 실사기간이 없고 공개일만 있으면 end_date에 공개일을 넣고 note에 `end_date=공개일(실사기간 미수집)`을 남긴다(상원과 같은 규칙). AK는 양자 가정 또는 RCV 결선 수치를 본 수치로, 1순위 다자 수치는 note에.
+- URL·날짜·수치 미확인 조사는 `governor_polls_candidates.csv`(비발행, .gitignore)에 `reason`과 함께 보류한다.
+- 검증: `validate_data.R` — 15열 순서·partisan·population·end_date·margin=dem−rep·source_url·(주·기관·종료일·후보쌍) 중복.
+- 소비: `gt_governor_polls()` → `governors/*.qmd` 「여론조사」 탭, `gt_governor_watch()`(감시 주 최신 조사).
+
+### `governor_primaries.json` — 주지사 경선 캘린더 (수동)
+- `rows[]`: `state`·`event`·`date`·`status`·`detail`·`source_url`(2026-10-13 신설, 기존 8주 행은 null). 주 집합은 `GOV_FOCUS`와 같아야 한다.
+- 소비: `gt_governor_primaries()` → `governors.qmd#primaries`.
+
+### `governor_timeline.json` — 주지사 경과 기록 (수동, 2026-10-13 신설)
+- 최상위: `as_of`·`source_range`·`note`·`states`(`{ST: [사건…]}`). 사건: `date`(없으면 `reported`=브리핑 날짜), `kind`(경선/토론/지지/유세/등급/조사/자금/일정/기타), `text`(다체 — 원천 문장 이관), `source_url`(필수), `caveat`(선택), `source_brief`(_NIS 원천 파일:줄).
+- 원천: _NIS `state_weekly/` 주간 브리핑. 출처 링크가 없는 사건은 넣지 않는다. ME(감시 주)는 보관만 하고 렌더하지 않는다.
+- 소비: `governor_timeline_md()` → `governors/*.qmd` 「경과 기록」 탭.
 
 ### `fec_fundraising.json` — FEC 분기 신고 (자동 취득)
 - `scripts/fetch_fec_fundraising.py`가 생성(단위 $M, 감시 9주). 최상위: `as_of`, `source_label`, `provenance_note`, `states`(`{ST: [후보…]}`).

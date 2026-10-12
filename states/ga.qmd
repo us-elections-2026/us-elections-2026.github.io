@@ -80,6 +80,7 @@ cat(state_history_svg("GA"))
 - 2026년 주지사 선거는 공화 Rick Jackson 대 민주 Keisha Lance Bottoms 대결입니다. Jackson은 6/16 결선에서 Burt Jones를 꺾었습니다. ([Wikipedia](https://en.wikipedia.org/wiki/2026_Georgia_gubernatorial_election))
 - 주상원은 56석 중 공화 33·민주 23, 주하원은 180석 중 공화 100·민주 80입니다(2025년 1월 기준). 주지사까지 공화 트라이펙타입니다. ([Wikipedia](https://en.wikipedia.org/wiki/158th_Georgia_General_Assembly))
 - 2026년에는 주지사·부지사·국무장관 등 주 전체 선출직과 주의회 전 의석이 연방상원과 함께 걸려 있습니다. ([Wikipedia](https://en.wikipedia.org/wiki/2026_Georgia_State_Senate_election))
+- 주지사 선거의 판세·조사·경과 기록은 [조지아 주지사 페이지](../governors/ga.qmd)에서 다룹니다.
 
 ### 유권자 등록·투표율
 - 등록 유권자는 약 757만 명입니다(2026년 9월 조회). 조지아는 정당 등록제가 없어 정당별 집계가 없습니다. ([Independent Voter Project](https://independentvoterproject.org/voter-stats/ga))

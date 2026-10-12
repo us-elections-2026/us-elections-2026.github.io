@@ -78,6 +78,7 @@ cat(state_history_svg("IA"))
 - 현 주지사는 공화당 Kim Reynolds로 2017년 승계 취임 뒤 2018년·2022년 당선됐습니다. 2025년 4월 불출마를 선언해 2026년 주지사 선거는 공석 경쟁입니다. ([Iowa Capital Dispatch](https://iowacapitaldispatch.com/2025/04/11/gov-kim-reynolds-will-not-seek-reelection-in-2026/))
 - 주상원 50석은 공화 35·민주 15, 주하원 100석은 공화 67·민주 33입니다(2026년 회기). 주지사까지 공화 트라이펙타입니다. ([Ballotpedia](https://ballotpedia.org/2026_Iowa_legislative_session))
 - 2026년 11월 3일에는 주지사(공석)와 주하원 100석 전체, 주상원 절반이 연방상원과 함께 걸려 있습니다. ([Wikipedia](https://en.wikipedia.org/wiki/2026_Iowa_gubernatorial_election))
+- 주지사 선거의 판세·조사·경과 기록은 [아이오와 주지사 페이지](../governors/ia.qmd)에서 다룹니다.
 
 ### 유권자 등록·투표율
 - 활성 등록 유권자는 2026년 9월 1일 기준 1,819,109명입니다. 공화 711,990명, 무당적 564,581명, 민주 529,275명 순으로 공화가 민주를 18만 명 넘게 앞섭니다. ([Iowa SOS 등록 통계](https://sos.iowa.gov/elections/pdf/VRStatsArchive/2026/CongSep26.pdf))

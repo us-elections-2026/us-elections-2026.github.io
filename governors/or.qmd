@@ -1,0 +1,74 @@
+---
+title: "오리건 주지사 Oregon Governor"
+toc: false
+---
+
+```{r}
+#| include: false
+source(file.path("R", "helpers.R"))
+```
+
+::::: {.panel-tabset}
+
+## 주 개요
+
+현직 Tina Kotek(민주)과 공화 Drazan의 2022년 재대결입니다. 2022년에는 Kotek이 3.4%p 차로 이겼습니다. Cook은 Kotek의 낮은 지지율을 이유로 7/10 Solid D에서 Likely D로, 9/10 Lean D로 등급을 내렸습니다. 공화 쪽으로 등급이 움직인 드문 사례입니다.
+
+이 주는 _NIS 주정부 브리핑에서 2순위 감시 주라 일일 기록이 없습니다. 그래서 경과 기록이 다른 주보다 짧습니다.
+
+```{r}
+#| output: asis
+cat(governor_card_html("OR"))
+```
+
+::: {.summary}
+- **구도**: 민주 현직 방어. Kotek(현직) 대 Drazan(2022 공화 후보).
+- **흐름**: 원자료에 실린 10월 조사는 Kotek +2 한 건입니다. 직전에 같은 기관의 Drazan +2 기재도 있었습니다. 두 기록이 엇갈려 원문 확인이 필요합니다.
+- **한국 함의**: 원자료에서 직접 단서는 확인되지 않았습니다.
+:::
+
+```{r}
+#| output: asis
+cat(governor_rating_trail_html("OR"))
+```
+
+## 후보자
+
+```{r}
+#| output: asis
+cat(governor_cards_html("OR"))
+```
+
+Kotek은 9/8 주 소유 부지에서 데이터센터 개발을 일시 중단하는 조치를 냈습니다. 시위대는 더 나아가라고 요구했습니다. Drazan 측은 7월 자체 의뢰 조사에서 우세를 주장했습니다.
+
+## 경과 기록
+
+```{r}
+#| output: asis
+cat(governor_timeline_md("OR"))
+```
+
+## 여론조사
+
+```{r}
+gt_governor_polls("OR")
+```
+
+> 조사가 한 건뿐이고 실사 기간·표본도 확보되지 않았습니다. 단독으로 판세를 읽지 마세요.
+
+## 자금
+
+```{r}
+#| output: asis
+cat(governor_money_html("OR"))
+```
+
+## 배경·제도
+
+오리건에는 이 사이트의 상원 페이지가 없습니다. 주지사 선거 제도의 특이 사항은 원자료에서 아직 정리되지 않았고, 이 사이트의 40년 선거 결과 자료에도 오리건이 없습니다. 둘 다 수집을 요청해 두었습니다.
+
+## 한국 함의
+
+후보와 관련한 한국 단서는 원자료에서 확인되지 않았습니다. 관련 발언이나 투자 연계가 나오면 [Korea Watch](../korea-watch.qmd)에 기록합니다.
+
+:::::
