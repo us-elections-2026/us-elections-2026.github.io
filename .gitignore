@@ -30,3 +30,5 @@ data/senate_polls_candidates.csv
 # 일일 발행 실행 로그(호스트·샌드박스 어디서 돌아도 여기 남는다)
 .publish_daily.log
 data/governor_polls_candidates.csv
+data/votehub_senate_polls.json
+data/senate_polls_candidates_votehub.csv

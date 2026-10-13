@@ -138,6 +138,7 @@ POLLSTER_ALIAS = {
     "saint anselm college survey center": "Saint Anselm College Survey Center",
     "telemundo mason dixon nbc5": "Telemundo/Mason-Dixon", "mason dixon nbc5 dfw telemundo": "Telemundo/Mason-Dixon",
     "fabrizio lee associates impact research": "AARP/Fabrizio Ward·Impact Research", "fabrizio lee impact research": "AARP/Fabrizio Ward·Impact Research",  # VoteHub 표기(2026-10-13)
+    "the washington post george mason university school of policy and government": "Washington Post/Schar School", "washington post schar school": "Washington Post/Schar School", "the washington post george mason university schar school of policy and government": "Washington Post/Schar School",
     "gbao": "GBAO", "global strategy group": "Global Strategy Group", "gsg": "Global Strategy Group",
 }
 # 집계 사이트·백과 페이지는 조사 원문이 아니다 — 여기가 출처면 '출처 불확실'로 pending
@@ -414,14 +415,15 @@ def to_csv_row(r: dict, verify: str | None) -> dict:
     if r.get("moe") is not None:
         note_bits.append(f"±{fmt_num(r['moe'])}")
     src_days = r.get("mentions") or []
-    if "VoteHub" in (r.get("notes") or ""):
-        note_bits.append(r.pop("notes"))   # fetch_votehub_senate_polls.py 경유 — 출처 태그를 그대로
+    notes = r.get("notes") or ""
+    if "VoteHub" in notes:
+        note_bits.append(notes)   # fetch_votehub_senate_polls.py 경유 — 출처 태그를 그대로(입력 객체는 바꾸지 않는다: 후보 CSV·본 CSV에 같은 객체를 두 번 쓴다)
     else:
         note_bits.append(f"일일 브리핑 {src_days[0][5:].replace('-', '/') if src_days else '?'} 추출" + (f"(언급 {len(src_days)}회)" if len(src_days) > 1 else ""))
     if verify:
         note_bits.append(f"원문 대조 {verify}")
-    if r.get("notes"):
-        note_bits.append(r["notes"])
+    if notes and "VoteHub" not in notes:
+        note_bits.append(notes)
     margin = None
     if r["dem_pct"] is not None and r["rep_pct"] is not None:
         margin = round(float(r["dem_pct"]) - float(r["rep_pct"]), 1)

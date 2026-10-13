@@ -153,7 +153,11 @@ PY
 elif [ $# -ge 1 ]; then DATES="$*"; else DATES="$TODAY"; fi
 
 # 0.5) VoteHub 공개 API로 상원 조사 보충(실사 기간·원출처 URL 있는 행만 append; 실패해도 계속) — 2026-10-13
+#      생성 파일(data/votehub_senate_polls.json·senate_polls_candidates_votehub.csv)은 git 추적 안 함(.gitignore) —
+#      추적하면 stage·DRY_RUN 복원·실패 정리 목록 밖의 변경이 남아 rebase가 dirty worktree로 막힌다(Codex 검토 10/13).
+#      여기서 POLLS가 바뀌므로 WROTE=1을 먼저 세워, 이후 정리본 대조 실패 등으로 중단돼도 cleanup이 되돌린다.
 if [ "${PD_CI:-0}" != "1" ]; then
+  WROTE=1
   step "VoteHub 조사 보충"
   if python3 scripts/fetch_votehub_senate_polls.py >> "$LOGF" 2>&1; then
     python3 scripts/extract_daily_polls.py --from-json data/votehub_senate_polls.json --apply --candidates data/senate_polls_candidates_votehub.csv 2>&1 | tail -3 | tee -a "$LOGF" || true

@@ -261,14 +261,14 @@
       "files": [
         "data/senate_polls.csv"
       ],
-      "owner": "cowork",
+      "owner": "script+cowork",
       "owner_status": "확정 — 커밋 이력",
       "producer": null,
-      "method": "수동 편집",
-      "cadence": "주 1회",
-      "last_updated": "2026-08-12",
+      "method": "① 일일: publish_daily.sh → extract_daily_polls.py(정리본 「새로운 여론조사」 표, 실사 기간+양측 %+1차 출처 URL 있는 행만 append) + fetch_votehub_senate_polls.py(VoteHub 공개 API 보충, 같은 중복 규칙) ② 주간: STEP6-8 (8)단계 상원 주간 §4 ③ 수동 보강(1차 출처 검증)",
+      "cadence": "매일(10:15 launchd) + 주 1회",
+      "last_updated": "2026-10-13",
       "status": "확보",
-      "note": "자체 모델 v0의 입력. 이 파일이 갱신돼야 publish_weekly.sh §2.5의 모델 재실행이 의미를 갖는다."
+      "note": "자체 모델 v0의 입력. partisan 열은 후원자(의뢰) 당파만(D/R), 조사기관 자체 성향은 note '하우스 성향'. 알래스카는 1순위 수치를 본열에, RCV 최종은 note. 집계 사이트(RCP·270toWin) URL은 출처로 인정하지 않아 pending(후보 파일)."
     },
     {
       "item": "상원 경선 캘린더·결과",
