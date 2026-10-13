@@ -34,14 +34,47 @@ class QualityTests(unittest.TestCase):
             self.assertTrue(any('aarp' in w for w in day['source_validation']['warnings']))
             raw.unlink();day=ingest.parse_file(site)
             self.assertEqual(day['source_validation']['status'],'원문 점검 불가')
-    def test_only_oregon_poll_is_marked_unverified(self):
+    def test_oregon_polls_distinct_dates_samples_and_direction(self):
         import csv
-        with (Path(__file__).resolve().parents[1]/'data/governor_polls.csv').open() as source:
+        root=Path(__file__).resolve().parents[1]
+        with (root/'data/governor_polls.csv').open() as source:
             rows=list(csv.DictReader(source))
-        marked=[r for r in rows if '후보 방향 미확인' in r['note']]
-        self.assertEqual([(r['state'],r['pollster']) for r in marked],[('OR','Oregonian/DHM Research')])
+        polls=[r for r in rows if r['state']=='OR']
+        self.assertEqual(len(polls),2)
+        self.assertEqual(len({(r['pollster'],r['sponsor'],r['end_date'],r['n']) for r in polls}),2)
+        opb=next(r for r in polls if r['sponsor']=='OPB')
+        other=next(r for r in polls if r['sponsor']=='Oregonian')
+        self.assertEqual((opb['start_date'],opb['end_date'],opb['population'],opb['n']),('2026-09-17','2026-09-27','LV','915'))
+        self.assertEqual((other['start_date'],other['end_date'],other['population'],other['n']),('2026-09-24','2026-10-01','LV','549'))
+        self.assertEqual((opb['dem_pct'],opb['rep_pct'],opb['margin']),('44','46','-2'))
+        self.assertEqual((other['dem_pct'],other['rep_pct'],other['margin']),('46','44','2'))
+        for r in polls:
+            self.assertEqual((r['dem_candidate'],r['rep_candidate']),('Kotek','Drazan'))
+            self.assertEqual(float(r['margin']),float(r['dem_pct'])-float(r['rep_pct']))
+            self.assertNotIn('후보 방향 미확인',r['note'])
+            self.assertNotIn('방향 원문 확인 필요',r['note'])
+        self.assertIn('발표 2026-10-08',other['note'])
+        self.assertIn('OPB 보도 기준 확인',other['note'])
+        self.assertIn('Oregonian 원표 직접 미열람',other['note'])
+        self.assertIn('/pressroom/',opb['source_url'])
+        self.assertIn('/article/2026/10/08/',other['source_url'])
         texas=next(r for r in rows if r['state']=='TX' and r['pollster']=='UMass Lowell')
         self.assertEqual((texas['dem_pct'],texas['rep_pct'],texas['margin']),('44','48','-4'))
+
+    def test_oregon_provenance_and_leaners_remain_separate(self):
+        root=Path(__file__).resolve().parents[1]
+        ledger=json.loads((root/'data/_collection_ledger.json').read_text())
+        item=next(i for i in ledger['items'] if i['item']=='주지사 본선 여론조사 DB')
+        opb=next(p for p in item['verified_polls'] if p['sponsor']=='OPB')
+        other=next(p for p in item['verified_polls'] if p['sponsor']=='Oregonian')
+        self.assertEqual((opb['dem_pct'],opb['rep_pct'],opb['margin']),(44,46,-2))
+        self.assertEqual(opb['leaners_included'],{'dem_pct':46,'rep_pct':47,'margin':-1,'separate_from_csv_base_response':True})
+        self.assertEqual(opb['verification_level'],'commissioner_release')
+        self.assertEqual(other['verification_level'],'secondary_report')
+        self.assertFalse(other['original_table_read'])
+        self.assertEqual(other['published_date'],'2026-10-08')
+        self.assertNotEqual(other['published_date'],other['end_date'])
+        self.assertNotIn('leaners_included',other)
 
     def test_priority_absence_and_presence(self):
         self.assertTrue(digest_check.priority_warnings('AARP Marist', 'Marist'))

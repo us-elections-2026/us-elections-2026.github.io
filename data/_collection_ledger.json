@@ -338,7 +338,54 @@
       "cadence": "주 1회",
       "last_updated": "2026-10-13",
       "status": "확보",
-      "note": "2026-10-13 _NIS state_weekly·state_daily에서 46행 소급(원문 URL 있는 행만). URL·날짜·수치 미확인 25건은 data/governor_polls_candidates.csv(비발행·.gitignore)에 보류."
+      "note": "2026-10-13 _NIS state_weekly·state_daily에서 46행 소급(원문 URL 있는 행만). URL·날짜·수치 미확인 25건은 data/governor_polls_candidates.csv(비발행·.gitignore)에 보류. 2026-10-13 사용자 승인 OR 정정: OPB 의뢰와 Oregonian 의뢰 DHM은 별개 조사. OPB 자체 발표와 OPB 보도를 직접 확인했고, Oregonian 원표는 미열람 상태를 보존했다. 아래 verified_polls의 기본 응답만 CSV에 반영하고 leaners 포함 수치는 주석으로 구분한다.",
+      "verified_polls": [
+        {
+          "state": "OR",
+          "pollster": "OPB/DHM Research",
+          "sponsor": "OPB",
+          "population": "LV",
+          "start_date": "2026-09-17",
+          "end_date": "2026-09-27",
+          "dem_candidate": "Kotek",
+          "rep_candidate": "Drazan",
+          "source_url": "https://www.opb.org/pressroom/oregon-governors-race-remains-tight-with-share-of-undecideds-shrinking-according-to-new-opb-commissioned-poll/",
+          "n": 915,
+          "dem_pct": 44,
+          "rep_pct": 46,
+          "margin": -2,
+          "published_date": "2026-09-30",
+          "moe_pp": 3.24,
+          "verification_level": "commissioner_release",
+          "verified_on": "2026-10-13",
+          "leaners_included": {
+            "dem_pct": 46,
+            "rep_pct": 47,
+            "margin": -1,
+            "separate_from_csv_base_response": true
+          }
+        },
+        {
+          "state": "OR",
+          "pollster": "Oregonian/DHM Research",
+          "sponsor": "Oregonian",
+          "population": "LV",
+          "start_date": "2026-09-24",
+          "end_date": "2026-10-01",
+          "dem_candidate": "Kotek",
+          "rep_candidate": "Drazan",
+          "source_url": "https://www.opb.org/article/2026/10/08/new-polls-kotek-may-lead/",
+          "n": 549,
+          "dem_pct": 46,
+          "rep_pct": 44,
+          "margin": 2,
+          "published_date": "2026-10-08",
+          "moe_pp": 4.2,
+          "verification_level": "secondary_report",
+          "verified_on": "2026-10-13",
+          "original_table_read": false
+        }
+      ]
     },
     {
       "item": "주지사 경선 캘린더",
@@ -736,16 +783,17 @@
       "priority": "중"
     },
     {
-      "gap": "OR 주지사 10월 조사 방향 충돌",
+      "gap": "OR Oregonian/DHM 원표 직접 확인(방향 충돌 해소)",
       "files": [
         "data/governor_polls.csv"
       ],
-      "detail": "10/3 일일은 OPB/DHM(9/30) Drazan 46–Kotek 44, 10/9 일일·10/11 주간은 Oregonian/DHM Kotek 46–Drazan 44. CSV에는 후자를 실었다.",
+      "detail": "OPB 의뢰 조사: 9/17–27 LV 915, Kotek 44–Drazan 46(R+2). Oregonian 의뢰 조사: 9/24–10/1 LV 549, Kotek 46–Drazan 44(D+2). 별개 조사임을 OPB 자체 발표와 10/8 보도에서 확인했다.",
       "raw_data_exists": true,
-      "raw_data_note": "두 브리핑 모두 원문 미열람.",
-      "needed": "DHM Research 원문 확인",
+      "raw_data_note": "OPB 자체 발표 직접 확인. Oregonian 조사는 OPB 보도 기준 확인이며 원표 직접 미열람.",
+      "needed": "Oregonian/DHM 원표 직접 열람은 후속 확인. 현재 후보 방향·기간·표본은 OPB 보도에 근거해 확인됨.",
       "owner": "cowork",
-      "priority": "중"
+      "priority": "중",
+      "status": "방향 충돌 해소·Oregonian 원표 직접 확인 미완료"
     }
   ]
 }

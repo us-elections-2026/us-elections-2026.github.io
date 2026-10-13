@@ -23,7 +23,7 @@ cat(governor_card_html("OR"))
 
 ::: {.summary}
 - **구도**: 민주 현직 방어. Kotek(현직) 대 Drazan(2022 공화 후보).
-- **흐름**: Oregonian/DHM의 46–44 기록은 후보 방향이 원자료 사이에서 엇갈립니다. 원문이 검증될 때까지 어느 후보의 우위인지 미확인으로 표시하며 마진 추이에서 제외합니다.
+- **흐름**: 의뢰 매체가 다른 두 DHM 조사입니다. OPB 의뢰 조사(9/17–27, LV 915)는 기본 응답에서 Drazan +2, Oregonian 의뢰 조사(9/24–10/1, LV 549)는 Kotek +2였습니다. 두 결과 모두 오차범위 안이며, 실사 구간도 겹쳐 두 점만으로 추세를 단정할 수 없습니다.
 - **한국 함의**: 원자료에서 직접 단서는 확인되지 않았습니다.
 :::
 
@@ -54,7 +54,14 @@ cat(governor_timeline_md("OR"))
 gt_governor_polls("OR")
 ```
 
-> 조사가 한 건뿐이고 실사 기간·표본·46–44의 후보 방향도 미확인입니다. 원문 확인 전에는 후보 우위 판단에 사용하지 마세요.
+두 조사는 의뢰자·실사 기간·표본이 다릅니다. 아래 표와 추이는 기본 응답만 사용합니다.
+
+| 의뢰자 / 조사기관 | 실사 기간 | 모집단·표본 | 기본 응답 Kotek–Drazan | 오차 | 발표일 | 확인 근거 |
+|---|---|---|---|---|---|---|
+| OPB / DHM Research | 9/17–9/27 | LV 915 | 44–46 (R+2) | ±3.24%p | 9/30 | [OPB 자체 발표](https://www.opb.org/pressroom/oregon-governors-race-remains-tight-with-share-of-undecideds-shrinking-according-to-new-opb-commissioned-poll/) 직접 확인 |
+| Oregonian / DHM Research | 9/24–10/1 | LV 549 | 46–44 (D+2) | ±4.2%p | 10/8 | [OPB 10/8 보도](https://www.opb.org/article/2026/10/08/new-polls-kotek-may-lead/) 기준 확인 · Oregonian 원표 직접 미열람 |
+
+OPB 조사에서 기울어진 응답(leaners)을 포함하면 Kotek 46–Drazan 47(R+1)입니다. 이 수치를 기본 응답 44–46이나 Oregonian 조사와 혼합하지 않았습니다. Oregonian의 발표일 10/8은 조사 종료일이 아닙니다. 두 조사 모두 오차범위 안이며, 두 건만으로 판세의 추세를 단정하지 마세요.
 
 ## 자금
 
