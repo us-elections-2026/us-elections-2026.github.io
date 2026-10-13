@@ -13,7 +13,7 @@ internal=true(캠프 내부) 제외, 지명자 성(姓)이 answers 에 둘 다 �
  이어서: python3 scripts/extract_daily_polls.py --from-json PATH --apply
 """
 from __future__ import annotations
-import argparse, json, os, sys, urllib.request
+import argparse, json, os, re, sys, urllib.request
 from datetime import date, timedelta
 
 API = "https://api.votehub.com/polls"
@@ -28,6 +28,46 @@ NOMINEE = {"GA": ("Ossoff", "Collins"), "MI": ("El-Sayed", "Rogers"), "NH": ("Pa
 EXCLUDE_CHOICE = {"AK": ("daniel j",)}
 
 
+PARTY_COMMITTEE = re.compile(r"(republican|democratic) .*committee|\b(nrsc|dscc|dccc|nrcc)\b|campaign", re.I)
+
+
+def partisan_of(p: dict) -> tuple[str, str, str]:
+    """(sponsor, partisan, note) — 사이트 규약: partisan 열은 **후원자(의뢰) 당파만** D/R.
+    VoteHub의 partisan 필드는 후원자가 없을 때 조사기관 자체 성향(예: Trafalgar=REP)을 담으므로
+    후원자가 없으면 partisan을 비우고 upstream 표기를 note에 보존한다(Codex 검토 2026-10-13).
+    예외: 후원자가 없고 '조사기관' 자리에 당 위원회·캠프가 적힌 경우(NRSC 등)는 그 이름을 후원자로 본다."""
+    up = (p.get("partisan") or "").upper()
+    code = {"DEM": "D", "REP": "R"}.get(up, "")
+    sponsor = ", ".join(p.get("sponsors") or [])
+    pollster = p.get("pollster") or ""
+    if not sponsor and code and PARTY_COMMITTEE.search(pollster):
+        sponsor = pollster
+    if sponsor and code:
+        return sponsor, code, ""
+    if code and not sponsor:
+        return "", "", f"VoteHub partisan 표기 {up}(후원자 없음 → 하우스 성향, partisan 열은 의뢰 당파만)"
+    return sponsor, "", ""
+
+
+def selftest() -> int:
+    cases = [
+        ({"pollster": "Trafalgar Group", "sponsors": [], "partisan": "REP"}, ("", "", True)),
+        ({"pollster": "co/efficient", "sponsors": [], "partisan": "REP"}, ("", "", True)),
+        ({"pollster": "Pulse Decision Science", "sponsors": ["Lone Star Liberty PAC"], "partisan": "REP"}, ("Lone Star Liberty PAC", "R", False)),
+        ({"pollster": "Public Policy Polling", "sponsors": ["Senate Majority PAC"], "partisan": "DEM"}, ("Senate Majority PAC", "D", False)),
+        ({"pollster": "Emerson College", "sponsors": ["Nexstar"], "partisan": None}, ("Nexstar", "", False)),
+        ({"pollster": "National Republican Senatorial Committee", "sponsors": [], "partisan": "REP"}, ("National Republican Senatorial Committee", "R", False)),
+    ]
+    bad = 0
+    for p, (es, ec, has_note) in cases:
+        s, c, note = partisan_of(p)
+        ok = (s == es and c == ec and bool(note) == has_note)
+        bad += (not ok)
+        print(("ok  " if ok else "FAIL"), p["pollster"], p["sponsors"], p.get("partisan"), "→", (s, c, note[:40]))
+    print(f"[selftest] {len(cases) - bad}/{len(cases)} passed")
+    return 1 if bad else 0
+
+
 def pick(answers: list[dict], surname: str, st: str) -> float | None:
     hits = [a for a in answers if surname.lower() in (a.get("choice") or "").lower()
             and not any(x in (a.get("choice") or "").lower() for x in EXCLUDE_CHOICE.get(st, ()))]
@@ -39,8 +79,11 @@ def pick(answers: list[dict], surname: str, st: str) -> float | None:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--since", default=(date.today() - timedelta(days=120)).isoformat())
+    ap.add_argument("--selftest", action="store_true", help="partisan 매핑 회귀 시험만")
     ap.add_argument("--out", default=os.path.join(os.path.dirname(__file__), "..", "data", "votehub_senate_polls.json"))
     a = ap.parse_args()
+    if a.selftest:
+        return selftest()
     try:
         with urllib.request.urlopen(urllib.request.Request(API, headers={"User-Agent": "us-elections-2026 site"}), timeout=60) as r:
             data = json.load(r)
@@ -65,13 +108,14 @@ def main() -> int:
         if dp is None or rp is None:
             skipped["nominee"] += 1; continue
         newest = max(newest, p.get("end_date") or "")
+        sponsor, partisan, pnote = partisan_of(p)
         out.append({
-            "state": st, "pollster": p.get("pollster") or "", "sponsor": ", ".join(p.get("sponsors") or []),
-            "partisan": {"dem": "D", "rep": "R"}.get((p.get("partisan") or "").lower(), ""),
+            "state": st, "pollster": p.get("pollster") or "", "sponsor": sponsor,
+            "partisan": partisan,
             "population": (p.get("population") or "").upper(), "n": p.get("sample_size"),
             "start_date": p.get("start_date"), "end_date": p.get("end_date"),
             "dem_candidate": d_s, "rep_candidate": r_s, "dem_pct": dp, "rep_pct": rp,
-            "notes": "VoteHub 경유(원출처 URL)", "source_url": p.get("url") or "",
+            "notes": "VoteHub 경유(원출처 URL)" + (" · " + pnote if pnote else ""), "source_url": p.get("url") or "",
         })
     os.makedirs(os.path.dirname(a.out), exist_ok=True)
     with open(a.out, "w", encoding="utf-8") as f:
