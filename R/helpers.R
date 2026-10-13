@@ -439,6 +439,9 @@ gt_state_polls <- function(code) {
     # (2026-08-30) — 카드는 한눈에 보는 자리이고, 읽는 자리는 표 아래다.
     (\(g) if (nrow(rr) && !is.na(rr$poll_source))
             tab_source_note(g, paste0("이번 주 판독 — ", rr$poll_source)) else g)() |>
+    (\(g) if (code == "AK") tab_source_note(g, paste0(
+      "알래스카 주의 — 본선은 선호투표(RCV)라 조사마다 '1순위 의향'과 'RCV 최종 라운드 시뮬레이션'이 다르게 보고됩니다. ",
+      "이 표의 수치는 원칙적으로 1순위 기준이며, 최종 라운드 수치만 공개된 조사는 비고에 'RCV 최종'으로 표시했습니다. 기준이 다른 조사끼리 마진을 직접 비교하지 마세요.")) else g)() |>
     .tbl_opts()
 }
 
