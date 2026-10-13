@@ -258,7 +258,7 @@ gt_senate_primaries <- function() {
 # 주목 기관(2026-09-30 사용자 지시): NYT/Siena · Fox News · Marist · AARP(Fabrizio Ward+Impact Research 초당적).
 # 표에는 ★, 추이 그림에는 큰 점으로 표시하고, senate.qmd 「주목 기관 조사」 절에 최신순으로 모아 보여준다.
 .PRIORITY_RE <- "siena|fox news|marist|aarp"
-.is_priority <- function(pollster) grepl(.PRIORITY_RE, tolower(pollster))
+.is_priority <- function(pollster, sponsor = "") grepl(.PRIORITY_RE, tolower(paste(pollster, ifelse(is.na(sponsor), "", sponsor))))  # AARP는 후원자명(Fabrizio Ward·Impact Research 시행) — sponsor도 본다 (2026-10-13)
 # 조사 마진 추이 SVG — 각 점에 조사기관 명칭을 얹는다(상세 수치는 §5 표).
 poll_trend_svg <- function(code, office = c("senate", "governor")) {
   office <- match.arg(office)
@@ -326,7 +326,7 @@ poll_trend_svg <- function(code, office = c("senate", "governor")) {
   }
   s <- c(s, lab)
   part <- !is.na(p$partisan) & p$partisan %in% c("D", "R")
-  pri <- .is_priority(p$pollster)
+  pri <- .is_priority(p$pollster, p$sponsor)
   s <- c(s, sprintf('<circle class="pt-dot%s%s" cx="%.1f" cy="%.1f" r="%s"/>',
                     ifelse(part, " pt-part", ""), ifelse(pri, " pt-pri", ""), fx(x), fy(y), ifelse(pri, "6.5", "4.2")))
   s <- c(s, sprintf('<circle class="pt-last" cx="%.1f" cy="%.1f" r="5.4"/>', fx(x[n]), fy(y[n])))
@@ -420,7 +420,7 @@ gt_state_polls <- function(code) {
   res <- paste0(fld(p$dem_candidate), " ", fld(p$dem_pct), " – ",
                 fld(p$rep_pct), " ", fld(p$rep_candidate))
   tibble(
-    조사기관 = paste0(ifelse(.is_priority(p$pollster), "★ ", ""), p$pollster, house),
+    조사기관 = paste0(ifelse(.is_priority(p$pollster, p$sponsor), "★ ", ""), p$pollster, house),
     실사기간 = period,
     모집단 = fld(p$population),
     표본 = fld(p$n),
@@ -2203,7 +2203,7 @@ gt_gas_prices <- function() {
 # 1.14 주목 기관 조사 모음 (senate.qmd) — 최신순, 같은 주·같은 기관의 직전 조사 대비 변화
 gt_priority_polls <- function(n = 30) {
   p <- readr::read_csv(file.path("data", "senate_polls.csv"), show_col_types = FALSE, col_types = readr::cols(.default = "c"))
-  p <- p[.is_priority(p$pollster), ]
+  p <- p[.is_priority(p$pollster, p$sponsor), ]
   if (!nrow(p)) return(gt(tibble(안내 = "주목 기관 조사가 아직 없습니다.")) |> .tbl_opts())
   nm <- c(GA = "조지아", MI = "미시간", NH = "뉴햄프셔", ME = "메인", NC = "노스캐롤라이나", TX = "텍사스", OH = "오하이오", AK = "알래스카", IA = "아이오와", NE = "네브래스카", KS = "캔자스")
   fam <- function(x) { x <- tolower(x); ifelse(grepl("siena", x), "NYT/Siena", ifelse(grepl("fox", x), "Fox News", ifelse(grepl("marist", x), "Marist", "AARP"))) }

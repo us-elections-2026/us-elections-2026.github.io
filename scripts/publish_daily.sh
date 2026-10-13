@@ -152,6 +152,16 @@ PY
   step "catch-up 대상: $DATES"
 elif [ $# -ge 1 ]; then DATES="$*"; else DATES="$TODAY"; fi
 
+# 0.5) VoteHub 공개 API로 상원 조사 보충(실사 기간·원출처 URL 있는 행만 append; 실패해도 계속) — 2026-10-13
+if [ "${PD_CI:-0}" != "1" ]; then
+  step "VoteHub 조사 보충"
+  if python3 scripts/fetch_votehub_senate_polls.py >> "$LOGF" 2>&1; then
+    python3 scripts/extract_daily_polls.py --from-json data/votehub_senate_polls.json --apply --candidates data/senate_polls_candidates_votehub.csv 2>&1 | tail -3 | tee -a "$LOGF" || true
+  else
+    step "! VoteHub 취득 실패(건너뜀)"
+  fi
+fi
+
 # 1) 날짜별: 정리본 대조(하드 게이트) → 적재 → 조사 표. 정리본이 없으면 원문 전재, 원문도 없으면 건너뜀.
 for DATE in $DATES; do
   RAW="$SRC_DIR/${DATE}_일일브리핑_KR.md"; DIGEST="$SRC_DIR/site/${DATE}_site_KR.md"

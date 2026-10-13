@@ -1,4 +1,4 @@
-state,pollster,sponsor,partisan,population,n,start_date,end_date,dem_candidate,rep_candidate,dem_pct,rep_pct,margin,note,source_url
+﻿state,pollster,sponsor,partisan,population,n,start_date,end_date,dem_candidate,rep_candidate,dem_pct,rep_pct,margin,note,source_url
 GA,Fox News/Beacon·Shaw,,none,RV,1002,2026-06-23,2026-06-27,Ossoff,Collins,56,43,13,,https://www.foxnews.com/politics/fox-news-poll-early-look-georgia-senate-race
 GA,AARP/Fabrizio·Impact,AARP,none,LV,1060,2026-07-13,2026-07-16,Ossoff,Collins,52,43,9,유력투표층,https://thehill.com/homenews/campaign/5986198-ossoff-leads-collins-ga-poll/amp/
 NC,NYT/Siena,,none,LV,,2026-06-15,2026-06-29,Cooper,Whatley,50,43,7,6개 주 패키지,https://sri.siena.edu/2026/07/01/new-york-times-siena-polls-in-alaska-iowa-north-carolina-and-ohio/
@@ -124,3 +124,53 @@ IA,Emerson College/Nexstar,Nexstar,none,LV,650,2026-10-05,2026-10-06,Turek,Hinso
 ME,Washington Post/Schar School,Washington Post/Schar School,none,LV,800,2026-09-30,2026-10-05,Jackson,Collins,50,46,4,일일 브리핑 10/10 추출,https://www.bangordailynews.com/2026/10/09/politics/elections/maine-elections-senate-2026-troy-jackson-washington-post-poll/
 OH,CNN/SSRS,,none,LV,760,2026-09-29,2026-10-05,Brown,Husted,49,43,6,±4.5·_NIS 상원 주간 2026-10-11 §4·CNN 원문(CNN Wire)으로 실사기간·LV 확인·득표율 49–43은 The Hill 10/8 보도(The Hill은 760명을 '등록유권자'로 표기 — 원천·CNN은 LV 결과),https://kioncentralcoast.com/politics/cnn-us-politics/2026/10/08/an-ohio-edge-an-iowa-tossup-new-cnn-polls-give-democrats-hope-in-a-pair-of-red-states/
 IA,CNN/SSRS,,none,LV,801,2026-09-29,2026-10-05,Turek,Hinson,43,45,-2,±4.2·_NIS 상원 주간 2026-10-11 §4(원천은 'RCP 목록·10/8'로 기재)·CNN 원문으로 실사기간·LV 801·45–43 확인·미결정 약 30%,https://kioncentralcoast.com/politics/cnn-us-politics/2026/10/08/an-ohio-edge-an-iowa-tossup-new-cnn-polls-give-democrats-hope-in-a-pair-of-red-states/
+AK,Alaska Survey Research,,none,LV,1495,2026-08-20,2026-08-23,Peltola,Sullivan,50.6,49.4,1.2,VoteHub 경유(원출처 URL),https://x.com/The_Real_ASR/status/2095186398882287632
+AK,co/efficient,,none,LV,799,2026-09-14,2026-09-17,Peltola,Sullivan,46,49,-3,VoteHub 경유(원출처 URL),https://battlegrounds.coefficient.org/ak/
+AK,Quantus Insights,,none,LV,758,2026-09-28,2026-09-30,Peltola,Sullivan,47.2,47.8,-0.6,VoteHub 경유(원출처 URL),https://quantusinsights.org/polling/f/quantus-insights-survey-sullivan-peltola-deadlocked-in-alaska
+GA,Big Data Poll,Public Polling Project,none,LV,678,2026-09-21,2026-09-23,Ossoff,Collins,55.4,44.6,10.8,VoteHub 경유(원출처 URL),https://www.bigdatapoll.com/blog/peach-state-poll-jon-ossoff-opens-up-lead-over-mike-collins-in-georgia/
+GA,Wedgewood Polls,,none,LV,600,2026-10-02,2026-10-03,Ossoff,Collins,55,45,10,VoteHub 경유(원출처 URL),https://drive.google.com/file/d/1ztqd_FYClBh1OknXwKOqi6zJXxECcqDK/view?usp=sharing
+IA,Cygnal,Iowans for Tax Relief,R,LV,600,2026-06-16,2026-06-19,Turek,Hinson,44.2,46,-1.8,VoteHub 경유(원출처 URL),https://taxrelief.org/itr-foundation-poll-shows-iowans-want-taxpayer-protection/
+IA,The New York Times/Siena University,,none,LV,600,2026-06-15,2026-06-27,Turek,Hinson,46,48,-2,VoteHub 경유(원출처 URL),https://www.nytimes.com/interactive/2026/07/01/polls/times-siena-iowa-poll-crosstabs.html
+IA,Emerson College/Nexstar,Nexstar Media,none,LV,712,2026-08-02,2026-08-04,Turek,Hinson,45,48,-3,VoteHub 경유(원출처 URL),https://emersoncollegepolling.com/iowa-2026-poll/
+IA,co/efficient,,R,LV,831,2026-09-14,2026-09-16,Turek,Hinson,42,46,-4,VoteHub 경유(원출처 URL),https://battlegrounds.coefficient.org/ia/
+KS,Emerson College/Nexstar,Nexstar Media,none,LV,750,2026-09-15,2026-09-16,Hamilton,Marshall,45,43,2,VoteHub 경유(원출처 URL),https://emersoncollegepolling.com/kansas-2026/
+ME,YouGov,,none,LV,1335,2026-09-02,2026-09-08,Jackson,Collins,48,44,4,VoteHub 경유(원출처 URL),https://d3nkl3psvxxpe9.cloudfront.net/documents/ttw_me_20260902.pdf
+ME,co/efficient,,none,LV,1240,2026-09-28,2026-09-30,Jackson,Collins,46,48,-2,VoteHub 경유(원출처 URL),https://battlegrounds.coefficient.org/me/
+ME,Wedgewood Polls,,none,LV,400,2026-09-27,2026-10-01,Jackson,Collins,52,48,4,VoteHub 경유(원출처 URL),https://drive.google.com/file/d/1sycfLKEWvUxaW7oNYTdih5DzlXlcmtXC/view
+ME,Marist Poll,,none,RV,1505,2026-10-01,2026-10-04,Jackson,Collins,51,47,4,VoteHub 경유(원출처 URL),https://maristpoll.marist.edu/polls/midterm-elections-in-maine-october-2026/
+ME,The Washington Post/George Mason University School of Policy and Government,,none,LV,800,2026-09-30,2026-10-05,Jackson,Collins,50,45,5,VoteHub 경유(원출처 URL),https://www.washingtonpost.com/tablet/2026/10/09/sept-30-oct-5-2026-washington-post-schar-school-poll-maine-voters
+MI,Quantus Insights,,none,LV,947,2026-06-29,2026-06-30,El-Sayed,Rogers,45.2,44.1,1.1,VoteHub 경유(원출처 URL),https://quantusinsights.org/f/michigan-senate-el-sayed-leads-primary-fall-race-remains-tight
+MI,Mitchell Research & Communications,,none,LV,672,2026-07-28,2026-07-29,El-Sayed,Rogers,45,45,0,VoteHub 경유(원출처 URL),https://static1.squarespace.com/static/5f14ae6fb2a20e01e9c6d608/t/6a6d26262f442f133d15fa49/1785538087149/MITCHELL+MI+Poll+Nov+Electio+Press+Release+7-31-2026+305PM_A.pdf
+MI,SoCal Strategies,Red Eagle Politics,R,LV,640,2026-07-28,2026-07-30,El-Sayed,Rogers,41,42,-1,VoteHub 경유(원출처 URL),https://socalstrategies.substack.com/p/abdul-el-sayed-holds-17-point-primary
+MI,The Washington Post/George Mason University School of Policy and Government,,none,LV,803,2026-09-10,2026-09-14,El-Sayed,Rogers,48,45,3,VoteHub 경유(원출처 URL),https://www.washingtonpost.com/documents/08fa9b5e-43ac-456c-a706-4c33ec6506dc.pdf
+MI,Cygnal/Beacon Research,Michigan Enjoyer,none,LV,600,2026-09-18,2026-09-21,El-Sayed,Rogers,45,40,5,VoteHub 경유(원출처 URL),https://enjoyer.com/michigan-poll-fall-2026/
+MI,The New York Times/Siena University,,none,LV,605,2026-09-15,2026-09-22,El-Sayed,Rogers,49,44,5,VoteHub 경유(원출처 URL),https://www.nytimes.com/2026/09/24/us/politics/democrats-show-strength-in-michigan-senate-race-but-trail-in-maine-polls-find.html
+MI,co/efficient,,none,LV,843,2026-09-21,2026-09-23,El-Sayed,Rogers,50,50,0,VoteHub 경유(원출처 URL),https://battlegrounds.coefficient.org/mi/
+MI,Guidant Polling and Strategy,Public First Action,none,LV,800,2026-09-20,2026-09-27,El-Sayed,Rogers,48,43,5,VoteHub 경유(원출처 URL),https://x.com/burgessev/status/2107923538392776875?s=20
+MI,Trafalgar Group,,R,LV,1085,2026-09-28,2026-09-30,El-Sayed,Rogers,47,45,2,VoteHub 경유(원출처 URL),https://www.thetrafalgargroup.org/news/mi-senate-general-1001/
+MI,Mitchell Research & Communications,,none,LV,682,2026-10-01,2026-10-01,El-Sayed,Rogers,46,41,5,VoteHub 경유(원출처 URL),https://wwmt.com/news/michigan-politics/mitchell-poll-michigan-us-senate-election-abdul-el-sayed-mike-rogers-politics-government-vote-polls-state
+MI,Z to A Research,Rust Belt Rising,D,LV,483,2026-09-28,2026-10-01,El-Sayed,Rogers,49,42,7,VoteHub 경유(원출처 URL),https://x.com/rbrtraining/status/2108302504446337272
+NC,The New York Times/Siena University,,none,LV,601,2026-06-15,2026-06-27,Cooper,Whatley,50,43,7,VoteHub 경유(원출처 URL),https://www.nytimes.com/interactive/2026/07/01/polls/times-siena-north-carolina-poll-crosstabs.html
+NC,Elon University,,none,RV,717,2026-07-21,2026-07-23,Cooper,Whatley,51,35,16,VoteHub 경유(원출처 URL),https://eloncdn.blob.core.windows.net/eu3/sites/819/2026/08/Elon-University-Poll-Topline-8-12-26.pdf
+NC,Change Research,Talking About Politics,none,LV,967,2026-07-29,2026-08-01,Cooper,Whatley,50,41,9,VoteHub 경유(원출처 URL),https://garypearcenc.substack.com/p/cooper-up-by-9-trump-still-slumps
+NC,High Point University,,none,LV,706,2026-09-09,2026-09-16,Cooper,Whatley,50,42,8,VoteHub 경유(원출처 URL),https://www.highpoint.edu/src/files/2023/08/HPUPoll127MemoA-1.pdf
+NC,InsiderAdvantage,,none,LV,1200,2026-09-16,2026-09-17,Cooper,Whatley,48.4,42.5,5.9,VoteHub 경유(원출처 URL),https://insideradvantage.com/nc-top-line-tabs
+NC,Big Data Poll,Public Polling Project,none,LV,642,2026-09-27,2026-09-29,Cooper,Whatley,51,39,12,VoteHub 경유(원출처 URL),https://www.bigdatapoll.com/blog/tar-heel-state-poll-roy-cooper-holds-solid-lead-over-michael-whatley-for-us-senate-in-north-carolina/
+NE,GBAO,Working Class Majority PAC,D,LV,800,2026-09-03,2026-09-08,Osborn,Ricketts,47,46,1,VoteHub 경유(원출처 URL),https://www.washingtonsun.com/newsletters/panic-week
+NH,University of New Hampshire,,none,LV,2232,2026-06-18,2026-06-23,Pappas,Sununu,47,44,3,VoteHub 경유(원출처 URL),https://scholars.unh.edu/survey_center_polls/974/
+NH,Saint Anselm College Survey Center,,none,RV,1614,2026-06-24,2026-06-25,Pappas,Sununu,47,41,6,VoteHub 경유(원출처 URL),https://www.anselm.edu/about/anselmian-hub/news/saint-anselm-college-survey-center-june-poll-finds-democrats-expand-generic-ballot-lead
+NH,InsiderAdvantage,,none,LV,1200,2026-09-16,2026-09-17,Pappas,Sununu,48,40,8,VoteHub 경유(원출처 URL),https://insideradvantage.com/insideradvantage-national-u-s-senate-surveys-n-c-cooper-48-whatley-43-mi-elsayed-47-rogers-45-nh-pappas-48-sununu-40/
+NH,The New York Times/Siena University,,none,LV,613,2026-09-15,2026-09-22,Pappas,Sununu,50,45,5,VoteHub 경유(원출처 URL),https://www.nytimes.com/2026/09/24/us/politics/democrats-show-strength-in-michigan-senate-race-but-trail-in-maine-polls-find.html
+OH,The New York Times/Siena University,,none,LV,601,2026-06-15,2026-06-28,Brown,Husted,47,50,-3,VoteHub 경유(원출처 URL),https://www.nytimes.com/interactive/2026/07/01/polls/times-siena-ohio-poll-crosstabs.html
+OH,Wedgewood Polls,,none,LV,800,2026-08-11,2026-08-13,Brown,Husted,48,44,4,VoteHub 경유(원출처 URL),https://drive.google.com/file/u/1/d/1rP-26-yqNx9jy_gRqoLDmgJgzm5X8a4O/view
+OH,Trafalgar Group,,R,LV,1085,2026-09-14,2026-09-16,Brown,Husted,45,42,3,VoteHub 경유(원출처 URL),https://www.thetrafalgargroup.org/wp-content/uploads/2026/09/OH-Midterms-Full-Report-0917.pdf
+OH,Quantus Insights,,none,LV,695,2026-09-21,2026-09-23,Brown,Husted,47.8,47.3,0.5,VoteHub 경유(원출처 URL),https://quantusinsights.org/polling/f/brown-and-husted-deadlocked-in-ohio-senate-race
+OH,Big Data Poll,Public Polling Project,none,LV,680,2026-09-26,2026-09-27,Brown,Husted,46.3,42.6,3.7,VoteHub 경유(원출처 URL),https://www.bigdatapoll.com/blog/buckeye-state-poll-sherrod-brown-leads-jon-husted-for-us-senate-in-ohio/
+OH,co/efficient,,R,LV,925,2026-10-05,2026-10-06,Brown,Husted,45,46,-1,VoteHub 경유(원출처 URL),https://battlegrounds.coefficient.org/oh
+TX,SoCal Strategies,Red Eagle Politics,R,LV,800,2026-06-21,2026-06-21,Talarico,Paxton,47.1,48.5,-1.4,VoteHub 경유(원출처 URL),https://socalstrategies.substack.com/p/ken-paxton-leads-narrow-texas-senate
+TX,A2 Insights,,none,LV,618,2026-06-23,2026-06-28,Talarico,Paxton,48.4,46.1,2.3,VoteHub 경유(원출처 URL),https://substack.com/@a2insights/note/c-285306220
+TX,YouGov,254 Labs,D,RV,1001,2026-07-15,2026-07-31,Talarico,Paxton,48,45,3,VoteHub 경유(원출처 URL),https://254labs.io/news/2026-07-txsen
+TX,Slingshot Strategies,Texas Public Opinion Research,none,LV,1000,2026-08-21,2026-08-24,Talarico,Paxton,48,42,6,VoteHub 경유(원출처 URL),https://texaspublicopinionresearch.substack.com/p/new-poll-in-texas-general-election
+TX,ReconMR/Siena University,,none,LV,614,2026-09-08,2026-09-11,Talarico,Paxton,49,43,6,VoteHub 경유(원출처 URL),https://sri.siena.edu/2026/09/17/hinojosa-now-leads-abbott-by-4-points-talarico-widens-lead-to-6-points/
+TX,Slingshot Strategies,Texas Public Opinion Research,none,LV,1007,2026-09-19,2026-09-22,Talarico,Paxton,49,45,4,VoteHub 경유(원출처 URL),https://texaspublicopinionresearch.substack.com/p/new-poll-in-texas-general-election-662
+TX,Guidant Polling and Strategy,Public First Action,none,LV,800,2026-09-20,2026-09-28,Talarico,Paxton,46.6,44.2,2.4,VoteHub 경유(원출처 URL),https://x.com/burgessev/status/2107923538392776875?s=20
