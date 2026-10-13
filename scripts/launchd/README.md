@@ -25,3 +25,9 @@ launchctl bootout gui/$(id -u)/com.kang.us-elections-daily          # 중지
 ```
 성공 판정: `daily.log`에 `✓ 정리본 저장` + `✅ 발행·배포 트리거 완료`, `senate_daily/site/<날짜>_site_KR.md` 생성, 커밋 `일일 자동 발행: …`.
 래퍼를 고치면 `scripts/launchd/run_daily.sh`를 고치고 `~/.local/us_elections/`로 다시 복사한다(정본은 저장소).
+
+## 수집 품질 점검
+
+`check_raw_briefing.py`의 원문 경고와 정리본의 주목 기관 누락 경고를 `senate_daily_log.json`의 날짜별 `source_validation`에 보존한다. 원문의 수집 결손도 정리본에 없더라도 보존하며, 사이트 일일 브리핑의 「수집 품질 점검」에 표시한다. 링크 누락은 원문에서 링크를 확인하지 못했다는 뜻이며 실제 수집 실패와 같다고 단정하지 않는다.
+
+수집 담당자가 보충 여부를 판단할 때는 `python3 scripts/check_raw_briefing.py <원문.md> --strict`(경고 시 종료 코드 1) 또는 `--json`을 사용할 수 있다. 기본 발행은 기존처럼 경고를 보존해 표시하며 숫자·구조 대조는 기존 하드 게이트를 따른다. 로컬 표시 검증은 `python3 -m unittest discover -s tests`와 `Rscript tests/test_rendering.R`로 실행한다.

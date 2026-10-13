@@ -36,6 +36,9 @@ import os
 import re
 import sys
 import zoneinfo
+
+from check_raw_briefing import audit_file
+from check_site_digest import priority_warnings
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
@@ -197,11 +200,26 @@ def parse_file(path: Path) -> dict:
         if ("이벤트" in k or "로스터 외" in k or "명단 외" in k) and v.strip():
             extras.append({"title": k, "body": v})
 
+    raw_path = path.parent.parent / f"{date}_일일브리핑_KR.md" if path.name.endswith("_site_KR.md") else path
+    if raw_path.exists():
+        validation = audit_file(raw_path)
+        raw_text = raw_path.read_text(encoding="utf-8")
+        if raw_path != path:
+            validation["warnings"] += priority_warnings(raw_text, text)
+        raw_sections = split_h2(raw_text)
+        raw_gaps = sanitize(find_any(raw_sections, ["수집 결손", "수집 공백"]) or "")
+        validation["status"] = "경고 있음" if validation["warnings"] else "구조 점검 통과"
+    else:
+        validation = {"status": "원문 점검 불가", "source_file": raw_path.name,
+                      "checks": [], "warnings": ["원문 파일 없음 — 수집 품질 미확인"]}
+        raw_gaps = ""
+
     return {
         "date": date,
         "source_file": path.name,
         "source_kind": "digest" if path.name.endswith("_site_KR.md") else "raw",
         "chars": len(text),
+        "source_validation": validation,
         "lead": sanitize(lead),
         "summary": sanitize(find_section(sec, "오늘의 핵심 요약") or ""),
         "states": {c: sanitize(states[c]) for c in WATCH if c in states},
@@ -209,7 +227,7 @@ def parse_file(path: Path) -> dict:
         "polls": sanitize(find_section(sec, "새로운 여론조사") or ""),
         # 제목 변형: 주시 항목 / 주시 대상 / 주목할 일정 / 내일 주목할 사항 / 내일 볼 것 / 이월 미결 항목
         "watch": sanitize(find_any(sec, ["주시", "주목", "내일", "이월"]) or ""),
-        "gaps": sanitize(find_any(sec, ["수집 결손", "수집 공백"]) or ""),
+        "gaps": raw_gaps or sanitize(find_any(sec, ["수집 결손", "수집 공백"]) or ""),
         # v1.2(2026-09-25): 주에 속하지 않는 자금 사실(전국 슈퍼팩 총액·당 위원회 배분 등) — 없으면 빈 문자열
         "national_money": sanitize(find_any(sec, ["전국 자금"]) or ""),
         # v1.3(2026-09-25): 선거 법·제도 동향(행정명령·소송·판결·선거 행정 규칙) — 없으면 빈 문자열

@@ -18,6 +18,7 @@ cookpolitical.com은 직접 접근이 403으로 막혀 있다. 270towin이 Cook 
 실패 시 파일을 건드리지 않고 비정상 종료한다(주간 발행 스크립트가 경고 후 계속).
 """
 import argparse
+from datetime import datetime, timezone
 import json
 import os
 import re
@@ -113,8 +114,11 @@ def main():
         if r["district"] in INCUMBENT_FIX:
             r["incumbent"] = INCUMBENT_FIX[r["district"]]
 
+    fetched_at = datetime.now(timezone.utc).isoformat()
     ratings = {
         "as_of": as_of,
+        "fetched_at": fetched_at,
+        "source_date_kind": "270towin date_created (기관 원문 발표일 미확인)",
         "source_label": "Cook Political Report (270towin 재게시 · 자동 취득)",
         "source_url": TABLE_URL,
         "majority": 218,
@@ -132,6 +136,8 @@ def main():
 
     districts = {
         "as_of": as_of,
+        "fetched_at": fetched_at,
+        "source_date_kind": "270towin date_created (기관 원문 발표일 미확인)",
         "source_label": ratings["source_label"],
         "source_url": TABLE_URL,
         "decode_note": "0=Toss-up 1=Solid D 2=Solid R 3=Likely D 4=Likely R 5=Leans D 6=Leans R · 주 약자순×지역구번호순",

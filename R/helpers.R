@@ -15,6 +15,24 @@ suppressPackageStartupMessages({
                       simplifyVector = TRUE)
 }
 
+# 취득일은 원자료를 새로 만든 날이 아니다. as_of는 270towin 피드의 date_created다.
+.ratings_dates_note <- function(d, today = as.Date(format(Sys.time(), tz = "Asia/Seoul", format = "%Y-%m-%d"))) {
+  src <- d$sources
+  if (is.null(src)) src <- data.frame(label = d$source_label, as_of = d$as_of)
+  dates <- as.Date(src$as_of)
+  old <- !is.na(dates) & as.integer(today - dates) >= 14L
+  labels <- paste0(src$label, " ", src$as_of, ifelse(old, " (14일 이상 경과)", ""))
+  fetched <- if (is.null(d$fetched_at) || !nzchar(d$fetched_at)) "기록 없음" else d$fetched_at
+  paste0("재게시 피드 기준일 — ", paste(labels, collapse = " · "),
+         ". 사이트 취득일 ", fetched, ". 취득은 등급 갱신을 뜻하지 않습니다. ",
+         "피드 날짜는 270towin의 date_created이며 기관 원문 발표일은 별도 확인이 필요합니다.")
+}
+
+.poll_direction_unknown <- function(p) {
+  if (is.null(p$note)) return(rep(FALSE, nrow(p)))
+  !is.na(p$note) & grepl("후보 방향 미확인|방향 원문 확인 필요", p$note)
+}
+
 # 종류 라벨(영문 -> 한글)
 .type_kr <- c(market = "시장", model = "모델", rating = "등급", aggregate = "집계")
 
@@ -232,6 +250,7 @@ gt_senate_primaries <- function() {
   if (!is.na(nomd)) p <- p[grepl(nomd, p$dem_candidate, fixed = TRUE), ]
   p$.d <- ifelse(is.na(p$end_date) | p$end_date == "", p$start_date, p$end_date)
   p$.m <- suppressWarnings(as.numeric(p$margin))
+  p$.m[.poll_direction_unknown(p)] <- NA_real_
   p <- p[!is.na(p$.d) & p$.d != "" & !is.na(p$.m), ]
   p[order(p$.d), ]
 }
@@ -242,8 +261,15 @@ gt_senate_primaries <- function() {
 .is_priority <- function(pollster) grepl(.PRIORITY_RE, tolower(pollster))
 # 조사 마진 추이 SVG — 각 점에 조사기관 명칭을 얹는다(상세 수치는 §5 표).
 poll_trend_svg <- function(code, office = c("senate", "governor")) {
-  p <- .poll_series(code, match.arg(office))
+  office <- match.arg(office)
+  p <- .poll_series(code, office)
   n <- nrow(p)
+  if (n == 0 && office == "governor") {
+    races <- .load_json("governor_races")$races
+    r <- races[races$state == code, ]
+    if (nrow(r) && !is.na(r$latest_poll) && grepl("후보 방향 미확인", r$latest_poll))
+      return('<p class="pt-empty">후보 방향 미확인 · 추이 제외 — 원문 검증 전에는 46–44를 후보 우위로 해석하지 않습니다.</p>')
+  }
   if (n == 0)
     return('<p class="pt-empty">현 대진의 본선 여론조사가 아직 데이터베이스에 없습니다 — 추정으로 채우지 않습니다.</p>')
 
@@ -481,13 +507,17 @@ gt_governor_polls <- function(code) {
                   paste0(" (", p$partisan, " 성향)"))
   res <- paste0(fld(p$dem_candidate), " ", fld(p$dem_pct), " – ",
                 fld(p$rep_pct), " ", fld(p$rep_candidate))
+  unknown <- .poll_direction_unknown(p)
+  res[unknown] <- "후보 방향 미확인 (원문 검증 대기)"
+  margins <- .fmt_margin(suppressWarnings(as.numeric(p$margin)))
+  margins[unknown] <- "미확인"
   tibble(
     조사기관 = paste0(p$pollster, house),
     실사기간 = period,
     모집단 = fld(p$population),
     표본 = fld(p$n),
     결과 = res,
-    마진 = .fmt_margin(suppressWarnings(as.numeric(p$margin))),
+    마진 = margins,
     비고 = fld(p$note, "")
   ) |>
     gt() |>
@@ -1043,6 +1073,7 @@ gt_senate_rating_sources <- function() {
     gt() |>
     tab_header(title = "상원 감시주 — 기관별 등급",
                subtitle = "270towin 재게시 피드 자동 취득 · 등급은 확률이 아님") |>
+    tab_source_note(.ratings_dates_note(d)) |>
     tab_source_note(paste0(
       "칸 색은 등급의 **방향과 순서**를 나타냅니다(파랑=민주 쪽, 회색=Toss-up, 붉은색=공화 쪽). ",
       "색은 서수 인코딩이며 **확률이 아닙니다** — 그래서 연속 그라데이션이 아니라 등급별 이산 계단으로 칠했고, ",
@@ -1174,6 +1205,7 @@ gt_governor_sources <- function() {
     gt() |>
     tab_header(title = paste0("주지사 경합 ", length(key), "주 — 기관별 등급"),
                subtitle = "같은 주를 기관마다 어떻게 보는지 (등급은 확률이 아님)") |>
+    tab_source_note(.ratings_dates_note(d)) |>
     tab_source_note(paste0(
       "기준일 — ", paste0(lab, " ", substr(as_of, 6, 10), collapse = " · "), ". ",
       "※ Kalshi 열만 성격이 다릅니다 — 등급이 아니라 **예측시장 가격**(민주 승리 계약의 마지막 체결가, ¢)이며 ",
@@ -1312,7 +1344,8 @@ gt_governor_watch <- function() {
     p <- polls[polls$state == ab & !is.na(polls$end_date), ]
     if (!nrow(p)) return("—")
     p <- p[order(p$end_date, decreasing = TRUE), ][1, ]
-    paste0(p$pollster, " ", substr(p$end_date, 6, 10), " ", .fmt_margin(as.numeric(p$margin)))
+    paste0(p$pollster, " ", substr(p$end_date, 6, 10), " ",
+           if (.poll_direction_unknown(p)) "후보 방향 미확인" else .fmt_margin(as.numeric(p$margin)))
   }
   senate_pages <- sub("\\.qmd$", "", toupper(list.files("states", pattern = "\\.qmd$")))
   tibble(
@@ -1328,7 +1361,8 @@ gt_governor_watch <- function() {
     gt() |>
     fmt_markdown(columns = 주) |>
     tab_header(title = "감시 주 — 3사 중 Likely만 있는 곳",
-               subtitle = paste0("경합 roster 밖 · 등급 기준 피드 ", substr(d$fetched_at, 1, 10))) |>
+               subtitle = "경합 roster 밖 · 기관별 피드 기준일은 아래에 표시") |>
+    tab_source_note(.ratings_dates_note(d)) |>
     tab_source_note("주별 상세 페이지는 두지 않습니다. 상원 State Focus가 있는 주는 이름을 누르면 그 페이지로 갑니다(「배경」 탭의 주지사·주의회 소절). 3사 중 한 곳이라도 Toss-up/Lean/Tilt로 옮기면 경합 편입을 검토합니다(사람 결정).") |>
     .tbl_opts()
 }
@@ -1369,8 +1403,8 @@ gt_cook_tossups <- function() {
   ) |>
     gt() |>
     tab_header(
-      title = paste0("Cook 현행 토스업 ", nrow(ts), "개구"),
-      subtitle = paste0("자동 취득 · 기준 ", d$as_of, " · 등급은 확률이 아님")
+      title = paste0("Cook 피드 토스업 ", nrow(ts), "개구"),
+      subtitle = paste0("재게시 피드 기준 ", d$as_of, " · 등급은 확률이 아님")
     ) |>
     tab_source_note(paste0(
       "‘사이트 추적’은 아래 트래커(6월 초 토스업 출발선)에 포함돼 있는지 여부입니다. ",
@@ -1599,6 +1633,7 @@ house_cook_bar_html <- function() {
   src <- sprintf(paste0('<p class="cook-src">출처: <a href="%s">%s</a> · 기준일 %s · ',
                         '등급은 확률이 아닙니다. 435개 지역구 등급을 <code>scripts/fetch_cook_house.py</code>가 주 1회 자동 취득해 집계합니다.</p>'),
                  d$source_url, d$source_label, d$as_of)
+  src <- paste0(src, '<p class="cook-src">', .esc(.ratings_dates_note(d)), "</p>")
   paste0('<figure class="cook-bar-wrap">', svg, legend, src, '</figure>')
 }
 
@@ -1899,6 +1934,22 @@ home_kpis <- function() {
   paste0("\n::: {.", cls, ' appearance="simple" icon="false" collapse="',
          if (open) "false" else "true", '"}\n## ', title, "\n\n", body, "\n:::\n")
 }
+.daily_quality_md <- function(x) {
+  v <- x$source_validation
+  if (is.null(v)) {
+    quality <- "이 날짜의 기계 점검 기록이 없습니다. 수집 성공 여부는 미확인입니다."
+  } else {
+    warnings <- unlist(v$warnings, use.names = FALSE)
+    quality <- paste0("원문 점검: ", .esc(v$status), " · ", .esc(v$source_file),
+                      "\n\n", if (length(warnings)) paste0("- ", .esc(warnings), collapse = "\n") else
+                        "구조 점검에서 경고가 없었습니다. 사실 검증 완료를 뜻하지 않습니다.")
+    quality <- paste0(quality, "\n\n지정 지역매체 링크 미확인은 §5.1 목록의 링크를 원문에서 확인하지 못했다는 뜻이며, 다른 매체 보도나 실제 수집 실패 여부는 별도 확인이 필요합니다.")
+  }
+  if (!is.null(x$gaps) && nzchar(x$gaps)) quality <- paste0(quality, "\n\n**원문 수집 결손·미확인 기록**\n\n", x$gaps)
+  .callout_md("수집 품질 점검", quality, open = TRUE,
+              cls = if (is.null(v) || length(v$warnings) || (!is.null(x$gaps) && nzchar(x$gaps))) "callout-warning" else "callout-note")
+}
+
 daily_log_md <- function(scope = "SENATE", n_days = 14, n_open = 1) {
   path <- file.path("data", "senate_daily_log.json")
   if (!file.exists(path))
@@ -1929,6 +1980,7 @@ daily_log_md <- function(scope = "SENATE", n_days = 14, n_open = 1) {
       if (!nzchar(body))
         body <- sprintf("이 날 브리핑에는 %s 소절이 없었습니다.", scope)
     }
+    body <- paste0(body, "\n", .daily_quality_md(x))
     if (i <= n_open)
       paste0('\n::: {.daily-entry}\n<div class="daily-date">', title,
              '</div>\n\n', body, "\n:::\n")

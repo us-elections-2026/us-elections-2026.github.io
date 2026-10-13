@@ -72,6 +72,13 @@ def split_h3(text: str) -> dict[str, str]:
     return out
 
 
+def priority_warnings(raw: str, site: str) -> list[str]:
+    pattern = re.compile(r"siena|fox news|marist|aarp", re.I)
+    missing = sorted({m.group(0).lower() for m in pattern.finditer(raw)} -
+                     {m.group(0).lower() for m in pattern.finditer(site)})
+    return [f"주목 기관이 원문에는 있는데 정리본에 없음: {', '.join(missing)} — 원문 대조 필요"] if missing else []
+
+
 def main() -> int:
     if len(sys.argv) != 3:
         print(__doc__); return 2
@@ -118,12 +125,8 @@ def main() -> int:
         errs.append("새로운 여론조사: 고정 표 헤더도 '신규 본선 조사 없음' 문구도 없음")
 
     # 2.5) 주목 기관(2026-09-30): 원문에 네 기관 조사가 보이는데 정리본에 기관명이 전혀 없으면 경고(차단은 아님 — 하위집단 조사 등 예외 있음)
-    PRI = re.compile(r"siena|fox news|marist|aarp", re.I)
-    raw_hits = sorted({m.group(0).lower() for m in PRI.finditer(raw)})
-    site_hits = {m.group(0).lower() for m in PRI.finditer(site)}
-    missing = [h for h in raw_hits if h not in site_hits]
-    if missing:
-        print(f"[digest] ⚠ 주목 기관이 원문에는 있는데 정리본에 없음: {', '.join(missing)} — 표나 여론조사 줄에 넣을 것(프롬프트 v1.4)")
+    for warning in priority_warnings(raw, site):
+        print(f"[digest] ⚠ {warning}")
 
     # 3) 분량
     if len(site) > CAPS["digest_total"]:

@@ -13,7 +13,8 @@
   F EN/KR 주 소절 수 일치
 """
 from __future__ import annotations
-import re, sys, pathlib
+import re, sys, pathlib, argparse, json
+from urllib.parse import urlparse
 
 STATES = ["조지아", "미시간", "메인", "노스캐롤라이나", "알래스카", "오하이오", "텍사스", "아이오와", "뉴햄프셔"]
 OPTIONAL = ["네브래스카", "캔자스"]
@@ -43,10 +44,13 @@ def sections(text: str, names: list[str]) -> dict[str, str]:
     return out
 
 
-def main() -> int:
-    if len(sys.argv) < 2:
-        print(__doc__); return 2
-    kr = pathlib.Path(sys.argv[1]); text = kr.read_text(encoding="utf-8")
+def linked_domains(text):
+    return {urlparse(url.rstrip(").,;")).hostname or "" for url in re.findall(r"https?://[^\s<>]+", text)}
+
+
+def audit_file(kr):
+    kr = pathlib.Path(kr)
+    text = kr.read_text(encoding="utf-8")
     date = kr.name[:10]
     en = kr.with_name(f"{date}_daily-briefing_EN.md")
     warn: list[str] = []; ok: list[str] = []
@@ -65,8 +69,9 @@ def main() -> int:
     nov = [s for s in secs if not re.search(r"^\s*-?\s*\[유세\]", secs[s], re.M)]
     if nov: warn.append(f"B [유세] 줄 없음({len(nov)}/{len(secs)}): {nov}")
     else: ok.append(f"B [유세] 줄 {len(secs)}/{len(secs)}")
-    noloc = [s for s in secs if not any(d in secs[s] for d in LOCAL[s])]
-    if noloc: warn.append(f"C §5.1 로컬 매체 링크 없음({len(noloc)}/{len(secs)}): {noloc}")
+    noloc = [s for s in secs if not any(host == d or host.endswith("." + d)
+             for host in linked_domains(secs[s]) for d in LOCAL[s])]
+    if noloc: warn.append(f"C §5.1 지정 지역매체 링크 미확인({len(noloc)}/{len(secs)}): {noloc}")
     else: ok.append(f"C 로컬 매체 링크 {len(secs)}/{len(secs)}")
 
     # D 여론조사
@@ -92,6 +97,11 @@ def main() -> int:
         if cb and int(cb.group(1)) != len(secs) - len(nov):
             warn.append(f"E 자기보고 B {cb.group(0)} ≠ 실측 {len(secs)-len(nov)}/{len(secs)}")
 
+    if a:
+        cc = re.search(r"(\d+)\s*/\s*(\d+)", claimed.get("C", ""))
+        if cc and int(cc.group(1)) != len(secs) - len(noloc):
+            warn.append(f"E 자기보고 C {cc.group(0)} ≠ 링크 실측 {len(secs)-len(noloc)}/{len(secs)}")
+
     # F EN 대조
     if en.exists():
         et = en.read_text(encoding="utf-8")
@@ -102,11 +112,25 @@ def main() -> int:
         if ev != kv: warn.append(f"F [VISIT] {ev} ≠ [유세] {kv}")
     else: warn.append(f"F EN 파일 없음: {en.name}")
 
-    print(f"[raw-check] {kr.name}")
-    for o in ok: print(f"  ✓ {o}")
-    for w in warn: print(f"  ⚠ {w}")
-    print(f"[raw-check] 통과 {len(ok)} · 경고 {len(warn)} (경고는 발행을 막지 않음 — 수집 프롬프트 준수 여부 참고용)")
-    return 0
+    return {"source_file": kr.name, "checks": ok, "warnings": warn,
+            "missing_local_states": noloc, "status": "경고 있음" if warn else "구조 점검 통과"}
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("path", type=pathlib.Path)
+    ap.add_argument("--json", action="store_true")
+    ap.add_argument("--strict", action="store_true", help="경고가 있으면 종료 코드 1(수집 점검용)")
+    args = ap.parse_args()
+    result = audit_file(args.path)
+    if args.json:
+        print(json.dumps(result, ensure_ascii=False, indent=2))
+    else:
+        print(f"[raw-check] {args.path.name}")
+        for o in result["checks"]: print(f"  ✓ {o}")
+        for w in result["warnings"]: print(f"  ⚠ {w}")
+        print(f"[raw-check] 통과 {len(result['checks'])} · 경고 {len(result['warnings'])} (구조 점검이며 원문 사실 확인 완료를 뜻하지 않음)")
+    return 1 if args.strict and result["warnings"] else 0
 
 
 if __name__ == "__main__":
