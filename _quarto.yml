@@ -18,6 +18,7 @@ project:
     - "!*conflicted copy*"
     - "!*충돌*사본*"
   resources:
+    - hub.html
     - data/model_dashboard.json
     - data/model_v0.json
     - data/trends.json
