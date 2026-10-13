@@ -31,3 +31,9 @@ launchctl bootout gui/$(id -u)/com.kang.us-elections-daily          # 중지
 `check_raw_briefing.py`의 원문 경고와 정리본의 주목 기관 누락 경고를 `senate_daily_log.json`의 날짜별 `source_validation`에 보존한다. 원문의 수집 결손도 정리본에 없더라도 보존하며, 사이트 일일 브리핑의 「수집 품질 점검」에 표시한다. 링크 누락은 원문에서 링크를 확인하지 못했다는 뜻이며 실제 수집 실패와 같다고 단정하지 않는다.
 
 수집 담당자가 보충 여부를 판단할 때는 `python3 scripts/check_raw_briefing.py <원문.md> --strict`(경고 시 종료 코드 1) 또는 `--json`을 사용할 수 있다. 기본 발행은 기존처럼 경고를 보존해 표시하며 숫자·구조 대조는 기존 하드 게이트를 따른다. 로컬 표시 검증은 `python3 -m unittest discover -s tests`와 `Rscript tests/test_rendering.R`로 실행한다.
+
+## 발행 실패와 정상 무변경 구분
+
+`publish_daily.sh`는 루트 stdin의 `importlib` 호출로 원천 경로를 결정한다. 적재 모듈은 자신의 `scripts/` 경로에서 형제 검사 모듈을 찾도록 보장한다. 경로 결정·날짜 탐색·검사 프로그램·적재·렌더·push 실패는 비정상 종료하며, 정상적으로 탐색한 결과 새 날짜가 없을 때만 0으로 종료한다. zsh 검사 파이프라인에는 `pipefail`을 적용한다. 정확한 호출 방식과 실패 전파 검사는 `tests/test_daily_publisher.py`에 있다.
+
+원문·정리본이 이미 생성된 발행 복구는 정리본 생성 래퍼를 다시 실행하지 않고 `scripts/publish_daily.sh --catchup`을 사용한다. 데이터·원격 커밋·Pages를 확인한 뒤 재실행이 정상 무변경으로 끝나는지 확인한다.

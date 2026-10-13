@@ -17,6 +17,7 @@
 #     (주간 발행은 디렉터리째 스테이징하지만, 일일은 매일 돌므로 범위를 좁힌다).
 #   - 주간 발행(일요일 밤)과 시간대가 겹치지 않는다. 겹치더라도 rebase로 흡수한다.
 set -u
+set -o pipefail  # 검사 → tee → tail에서 앞단 Python 실패를 숨기지 않는다
 # zsh는 기본적으로 $VAR를 단어로 나누지 않는다 — `for DATE in $DATES`가 18개 날짜를 한 문자열로 돌린
 # 사고(2026-09-25). sh 방식 단어 분리를 켠다(bash에서는 무해).
 setopt sh_word_split 2>/dev/null || true
@@ -116,19 +117,25 @@ done
 fi
 
 echo "[daily] 최신 main 동기화(pull --ff-only)"
-git fetch origin main -q && git merge --ff-only origin/main -q 2>/dev/null || echo "[daily] (ff-only 불가 — 로컬 커밋 존재, 계속)"
+git fetch origin main -q || { step "✗ main 동기화 fetch 실패 — 중단"; exit 1; }
+git merge --ff-only origin/main -q 2>/dev/null || echo "[daily] (ff-only 불가 — 로컬 커밋 존재, 계속)"
 
 # 0.5) 날짜 목록 — 인자로 받은 날짜들, 또는 --catchup(로그 as_of 다음 날~오늘 중 파일이 있는 날), 기본은 오늘
-SRC_DIR="$(python3 - <<'PY'
+if ! SRC_DIR="$(python3 - <<'PY'
 import importlib.util
 spec = importlib.util.spec_from_file_location("ing", "scripts/ingest_senate_daily.py"); m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
 print(m.DEFAULT_SRC)
 PY
-)"
+)"; then
+  step "✗ 원천 경로 결정 실패 — 중단(새 날짜 없음으로 처리하지 않음)"; exit 1
+fi
+[ -n "$SRC_DIR" ] && [ -d "$SRC_DIR" ] && [ -r "$SRC_DIR" ] || {
+  step "✗ 원천 폴더가 없거나 읽을 수 없음 — 중단"; exit 1; }
 TODAY="$(TZ=Asia/Seoul date +%F)"
 if [ "${1:-}" = "--catchup" ]; then
-  ASOF="$(python3 -c "import json;print(json.load(open('$LOG')).get('as_of') or '2000-01-01')")"
-  DATES="$(python3 - "$SRC_DIR" "$ASOF" "$TODAY" <<'PY'
+  ASOF="$(python3 -c "import json;print(json.load(open('$LOG')).get('as_of') or '2000-01-01')")" || {
+    step "✗ 현재 데이터 기준일 읽기 실패 — 중단"; exit 1; }
+  if ! DATES="$(python3 - "$SRC_DIR" "$ASOF" "$TODAY" <<'PY'
 import sys, pathlib, datetime as dt
 src, asof, today = pathlib.Path(sys.argv[1]), sys.argv[2], sys.argv[3]
 d = dt.date.fromisoformat(asof) + dt.timedelta(days=1); end = dt.date.fromisoformat(today); out = []
@@ -138,7 +145,9 @@ while d <= end:
     d += dt.timedelta(days=1)
 print(" ".join(out))
 PY
-)"
+)"; then
+    step "✗ catch-up 날짜 탐색 실패 — 중단"; exit 1
+  fi
   [ -n "$DATES" ] || { step "catch-up — $ASOF 이후 새 날짜 없음(정상 종료)"; exit 0; }
   step "catch-up 대상: $DATES"
 elif [ $# -ge 1 ]; then DATES="$*"; else DATES="$TODAY"; fi
@@ -146,10 +155,14 @@ elif [ $# -ge 1 ]; then DATES="$*"; else DATES="$TODAY"; fi
 # 1) 날짜별: 정리본 대조(하드 게이트) → 적재 → 조사 표. 정리본이 없으면 원문 전재, 원문도 없으면 건너뜀.
 for DATE in $DATES; do
   RAW="$SRC_DIR/${DATE}_일일브리핑_KR.md"; DIGEST="$SRC_DIR/site/${DATE}_site_KR.md"
-  [ -f "$RAW" ] && { python3 scripts/check_raw_briefing.py "$RAW" 2>&1 | tee -a "$LOGF" | tail -12; }   # 원문 점검(경고 전용, v2.8 §13)
+  if [ -f "$RAW" ]; then
+    # 경고는 0으로 통과하되 검사 프로그램 자체가 실패하면 발행을 중단한다.
+    python3 scripts/check_raw_briefing.py "$RAW" 2>&1 | tee -a "$LOGF" | tail -12 || {
+      step "✗ 원문 점검 실행 실패 — 발행 중단"; exit 1; }
+  fi
   if [ -f "$DIGEST" ]; then
     step "정리본 대조: site/$(basename "$DIGEST")"
-    python3 scripts/check_site_digest.py "$RAW" "$DIGEST" 2>&1 | tee -a "$LOGF" | tail -20; [ "${PIPESTATUS[0]:-0}" = "0" ] || { step "✗ 정리본 대조 실패 — 발행 중단(정리본을 고친 뒤 재실행)"; exit 1; }
+    python3 scripts/check_site_digest.py "$RAW" "$DIGEST" 2>&1 | tee -a "$LOGF" | tail -20 || { step "✗ 정리본 대조 실패 — 발행 중단(정리본을 고친 뒤 재실행)"; exit 1; }
   else
     step "$DATE 정리본 없음 — 원문을 그대로 싣는다"
   fi

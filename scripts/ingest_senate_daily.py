@@ -37,9 +37,15 @@ import re
 import sys
 import zoneinfo
 
+from pathlib import Path
+
+# publish_daily.sh는 저장소 루트의 stdin Python에서 importlib로 이 파일을 읽는다.
+# 그 호출은 scripts/를 sys.path에 넣지 않으므로 CLI와 동일하게 형제 모듈 경로를 보장한다.
+SCRIPT_DIR = str(Path(__file__).resolve().parent)
+if SCRIPT_DIR not in sys.path:
+    sys.path.insert(0, SCRIPT_DIR)
 from check_raw_briefing import audit_file
 from check_site_digest import priority_warnings
-from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
 OUT = REPO / "data" / "senate_daily_log.json"
