@@ -2489,7 +2489,7 @@ korea_plants_summary_md <- function() {
 }
 
 # Leaflet 지도. 데이터는 페이지에 인라인 JSON으로 싣는다(별도 fetch 없음).
-korea_plants_map_html <- function() {
+korea_plants_map_html <- function(base = "") {
   p <- korea_plants_data()
   geo <- paste(readLines(file.path("data", "korea", "plant_districts.geojson"), warn = FALSE), collapse = "")
   pts <- p[!is.na(p$lat), ]
@@ -2510,7 +2510,7 @@ korea_plants_map_html <- function() {
     '<script type="application/json" id="kp-data">', .kp_json_safe(js), '</script>\n',
     '<script type="application/json" id="kp-geo">', .kp_json_safe(geo), '</script>\n',
     '<script type="application/json" id="kp-rating">', .kp_json_safe(rmap), '</script>\n',
-    '<script src="assets/korea_plants_map.js"></script>\n')
+    '<script src="', base, 'assets/korea_plants_map.js"></script>\n')
 }
 
 # Census 대조 문장 — 생성물(us_plants_districts.json)의 census_match에서 센다.

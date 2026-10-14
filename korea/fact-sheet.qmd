@@ -1,0 +1,50 @@
+---
+title: "한미 조인트 팩트시트 (2025-11)"
+subtitle: "경주 정상회담 합의를 경제·안보로 나눠 읽기"
+toc: false
+---
+
+```{r}
+#| include: false
+source(file.path("R", "helpers.R"))
+```
+
+2025년 10월 29일 경주 정상회담의 합의 사항을 정리한 문서입니다. 백악관이 11월 13일(미 동부) 영문본을, 대통령실이 14일 국문본을 공개했습니다. 원문 8개 절, 41개 문단을 경제와 안보로 나눠 다시 묶었습니다.
+
+::: {.lookfor}
+굵은 항목 이름은 이 사이트가 붙인 요약입니다. '원문 보기'를 펼치면 국문·영문 원문이 나옵니다. 숫자와 조건은 원문을 기준으로 읽으세요.
+:::
+
+::: {.panel-tabset}
+
+### 경제
+
+```{r}
+#| output: asis
+cat(korea_jfs_md("경제"))
+```
+
+### 안보
+
+```{r}
+#| output: asis
+cat(korea_jfs_md("안보"))
+```
+
+### 이후 이행 경과
+
+```{r}
+#| output: asis
+cat(korea_jfs_followup_md())
+```
+
+:::
+
+### 출처
+
+- 영문: [백악관](https://www.whitehouse.gov/briefings-statements/2025/11/joint-fact-sheet-on-president-donald-j-trumps-meeting-with-president-lee-jae-myung/) 공개본입니다.
+- 국문: 대통령실 배포본의 [뉴시스 전재](https://www.newsis.com/view/NISX20251114_0003403106)입니다. 정부 사이트 원문과는 대조하지 못했습니다.
+- 관련 문서: 3,500억 달러 [전략투자 MOU](https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/f6603c070021c7f86001fdd38b1fd7a6/778bdbf5db9ced7c8fd52756c00bf0cd)(산업통상부)입니다.
+- 원문 사본은 저장소 `data/korea/sources/`에 있습니다.
+
+[← Korea Watch로](../korea-watch.qmd)
