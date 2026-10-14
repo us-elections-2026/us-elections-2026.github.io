@@ -8,6 +8,7 @@ project:
     - "states/"
     - "governors/"
     - "house/"
+    - "korea/"
     - "!handoff.md"
     - "!NOTES_LOCAL.md"
     - "!README.md"
@@ -127,6 +128,10 @@ website:
         contents:
           - text: "한국 정책 함의"
             href: korea-watch.qmd
+          - text: "한미 조인트 팩트시트"
+            href: korea/fact-sheet.qmd
+          - text: "한국 기업 미국 공장 지도"
+            href: korea/plants.qmd
       - section: "데이터·방법론 (부록)"
         contents:
           - text: "트래커 — 전체 표"
