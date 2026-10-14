@@ -468,6 +468,36 @@ if (!is.null(gpc)) {
   if (anyDuplicated(k1)) err(f, paste("같은 조사 중복(주·기관·종료일·후보쌍):", paste(unique(k1[duplicated(k1)]), collapse=" | ")))
 }
 
+# ---- Korea Watch: 한국 기업 미국 공장(data/korea/) — 2026-10-14 ------------------
+kpc <- load_csv("korea/us_plants.csv")
+kpd <- load_json("korea/us_plants_districts.json")
+kpg <- load_json("korea/plant_districts.geojson")
+kpj <- load_json("korea/joint_fact_sheet.json")
+if (!is.null(kpc) && !is.null(kpd)) {
+  f <- "korea/us_plants.csv"
+  if (anyDuplicated(kpc$id)) err(f, paste("id 중복:", paste(unique(kpc$id[duplicated(kpc$id)]), collapse=",")))
+  if (!setequal(kpc$id, kpd$plants$id)) err(f, "us_plants_districts.json과 id 집합이 다름 — scripts/build_korea_plants.py 재실행")
+  if (any(!kpc$status %in% c("operating","under_construction","announced","paused","closed"))) err(f, "status 허용값 밖")
+  if (any(!kpc$verified %in% c("fetched","partial"))) err(f, "verified는 fetched/partial만")
+  if (any(!grepl("^https?://", kpc$source_url))) err(f, "source_url이 비었거나 http(s)가 아님")
+  u2 <- kpc$source_url_2[!is.na(kpc$source_url_2) & nzchar(kpc$source_url_2)]
+  if (any(!grepl("^https?://", u2))) err(f, "source_url_2가 http(s)가 아님")
+  d <- kpd$plants$district
+  if (any(is.na(d) | !grepl("^[A-Z]{2}-[1-9][0-9]*$", d))) err("korea/us_plants_districts.json", "지역구 형식 오류(예: GA-1) 또는 미배정")
+  cook <- load_json("house_cook_districts.json")
+  if (!is.null(cook) && any(!d %in% cook$districts$district)) err("korea/us_plants_districts.json", paste("Cook 정본에 없는 지역구:", paste(setdiff(d, cook$districts$district), collapse=",")))
+  if (!is.null(kpg) && any(!d %in% kpg$features$properties$cd)) err("korea/plant_districts.geojson", "배정 지역구의 경계가 geojson에 없음 — 스크립트 재실행")
+  if (any(kpd$plants$census_match %in% FALSE)) err("korea/us_plants_districts.json", "Census 120대 지역구와 불일치 행 존재")
+  if (any(is.na(kpd$plants$census_match))) err("korea/us_plants_districts.json", "Census 대조 결과가 비어 있는 행 존재 — 네트워크 확인 후 스크립트 재실행")
+}
+if (!is.null(kpj)) {
+  f <- "korea/joint_fact_sheet.json"
+  it <- kpj$items
+  if (any(!it$sector %in% c("경제","안보"))) err(f, "sector는 경제/안보만")
+  if (any(!it$theme %in% unlist(kpj$theme_order))) err(f, "theme_order에 없는 theme")
+  if (any(!nzchar(it$ko) | !nzchar(it$en))) err(f, "ko/en 원문 빈 항목")
+}
+
 # ---- 결과 --------------------------------------------------------------------
 if (length(errors) > 0) {
   cat(sprintf("\n✗ 데이터 검증 실패 (%d건):\n", length(errors)))

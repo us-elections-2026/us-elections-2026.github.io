@@ -549,3 +549,18 @@ main table.gt_table th.gt_col_heading { white-space: pre-line; text-align: cente
 .gov-hist { overflow-wrap: anywhere; }
 .gov-hist code { white-space: normal; }
 .gov-rules code { white-space: normal; overflow-wrap: anywhere; }
+
+/* Korea Watch — 한미 팩트시트 원문 접기 · 한국 기업 공장 지도(2026-10-14) */
+.jfs-src { margin: 2px 0 8px; font-size: .84rem; color: #495057; }
+.jfs-src summary { cursor: pointer; color: #6b7280; font-size: .76rem; }
+.jfs-src p { margin: 4px 0 4px 2px; line-height: 1.55; }
+.kp-map { height: 560px; width: 100%; border: 1px solid #e6e8eb; border-radius: 8px; margin: .6rem 0 .3rem; }
+@media (max-width: 680px) { .kp-map { height: 420px; } }
+.kp-legend { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: .74rem; color: #6b7280; margin: 2px 0 10px; }
+.kp-legend .kp-lh { font-weight: 700; color: #343a40; margin-left: 4px; }
+.kp-legend .kp-key { display: inline-flex; align-items: center; gap: 4px; }
+.kp-legend i { width: 13px; height: 13px; border-radius: 3px; display: inline-block; }
+.kp-legend i.dot { border-radius: 50%; }
+.kp-pop { font-size: .8rem; line-height: 1.5; }
+.kp-pop hr { margin: 5px 0; }
+.kp-nomap { padding: 1rem; color: #6b7280; font-size: .85rem; }
