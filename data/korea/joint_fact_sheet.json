@@ -1,0 +1,506 @@
+{
+ "title_ko": "이재명 대통령과 도널드 트럼프 대통령 간 회담 공동 설명자료(조인트 팩트시트)",
+ "title_en": "Joint Fact Sheet on President Donald J. Trump's Meeting with President Lee Jae Myung",
+ "released": "2025-11-13 (미 동부) / 2025-11-14 (한국)",
+ "source_en": "https://www.whitehouse.gov/briefings-statements/2025/11/joint-fact-sheet-on-president-donald-j-trumps-meeting-with-president-lee-jae-myung/",
+ "source_ko": "https://www.newsis.com/view/NISX20251114_0003403106",
+ "source_ko_note": "대통령실 배포 국문본을 뉴시스가 전재한 것. 정부 사이트 원문과는 대조하지 못함.",
+ "retrieved": "2026-10-14",
+ "label_note": "label·sector·theme는 이 사이트의 편집 분류다. ko·en은 원문 그대로다.",
+ "theme_order": {
+  "경제": [
+   "투자·산업",
+   "관세",
+   "외환·투자 집행",
+   "비관세·통상 규범",
+   "경제안보"
+  ],
+  "안보": [
+   "동맹·억제",
+   "국방비·부담",
+   "전작권·방산",
+   "조선·원자력",
+   "한반도·지역"
+  ]
+ },
+ "key_numbers": [
+  {
+   "sector": "경제",
+   "value": "3,500억 달러",
+   "label": "대미 투자 합계(조선 1,500억 + MOU 2,000억)",
+   "ids": [
+    "s1b2",
+    "s1b3"
+   ]
+  },
+  {
+   "sector": "경제",
+   "value": "15%",
+   "label": "상호관세·232조 자동차 관세 상한",
+   "ids": [
+    "s1b4",
+    "s1b5"
+   ]
+  },
+  {
+   "sector": "경제",
+   "value": "연 200억 달러",
+   "label": "MOU 투자 자금 조달 연간 상한",
+   "ids": [
+    "s2i"
+   ]
+  },
+  {
+   "sector": "경제",
+   "value": "1,500억 달러",
+   "label": "한국 기업 대미 직접투자 발표액(트럼프 임기 중)",
+   "ids": [
+    "s3b1"
+   ]
+  },
+  {
+   "sector": "안보",
+   "value": "GDP 3.5%",
+   "label": "국방비 증액 목표(가능한 한 조속히)",
+   "ids": [
+    "s6b2"
+   ]
+  },
+  {
+   "sector": "안보",
+   "value": "250억 달러",
+   "label": "미국산 무기 구매(2030년까지)",
+   "ids": [
+    "s6b3"
+   ]
+  },
+  {
+   "sector": "안보",
+   "value": "330억 달러",
+   "label": "주한미군 포괄 지원",
+   "ids": [
+    "s6b3"
+   ]
+  },
+  {
+   "sector": "안보",
+   "value": "승인",
+   "label": "한국 핵추진 공격잠수함 건조",
+   "ids": [
+    "s8b4"
+   ]
+  }
+ ],
+ "items": [
+  {
+   "id": "s1i",
+   "sector": "경제",
+   "theme": "투자·산업",
+   "label": "‘한국 전략 무역·투자 합의’(2025년 7월 발표) 재확인",
+   "section_en": "REBUILDING AND EXPANDING CRITICAL INDUSTRIES",
+   "section_ko": "핵심 산업 재건 및 확장",
+   "ko": "이재명 대통령과 트럼프 대통령은 한미동맹의 강인함과 지속력을 반영하는 지난 7월의 역사적인 ‘한국 전략 무역 및 투자 합의’ 발표를 재확인하였다.",
+   "en": "President Trump and President Lee reaffirmed the historic announcement in July of The Korea Strategic Trade and Investment deal, which reflects the strength and endurance of the U.S.-ROK Alliance."
+  },
+  {
+   "id": "s1b1",
+   "sector": "경제",
+   "theme": "투자·산업",
+   "label": "투자 환영 분야 — 조선·에너지·반도체·의약품·핵심광물·AI/양자",
+   "section_en": "REBUILDING AND EXPANDING CRITICAL INDUSTRIES",
+   "section_ko": "핵심 산업 재건 및 확장",
+   "ko": "양국 정상은 조선, 에너지, 반도체, 의약품, 핵심광물, AI/양자 컴퓨팅을 포함하되 이에 국한되지 않는 다양한 분야에서 경제 및 국가 안보 이익 증진을 위한 한국의 투자를 환영한다.",
+   "en": "Both leaders welcome Korean investments in various sectors to advance economic and national security interests, including but not limited to shipbuilding, energy, semiconductors, pharmaceuticals, critical minerals, and artificial intelligence/quantum computing."
+  },
+  {
+   "id": "s1b2",
+   "sector": "경제",
+   "theme": "투자·산업",
+   "label": "조선 분야 투자 1,500억 달러(‘승인 투자’)",
+   "section_en": "REBUILDING AND EXPANDING CRITICAL INDUSTRIES",
+   "section_ko": "핵심 산업 재건 및 확장",
+   "ko": "금번 합의는 미국에 의해 승인된 한국의 1,500억 불 규모 조선 분야 투자(‘승인 투자’)를 포함한다.",
+   "en": "This deal includes $150 billion of Korean investment in the shipbuilding sector approved by the United States, which is referred to as the Approved Investments."
+  },
+  {
+   "id": "s1b3",
+   "sector": "경제",
+   "theme": "투자·산업",
+   "label": "전략투자 MOU에 따른 추가 투자 2,000억 달러",
+   "section_en": "REBUILDING AND EXPANDING CRITICAL INDUSTRIES",
+   "section_ko": "핵심 산업 재건 및 확장",
+   "ko": "또한 금번 합의는 양국 대표가 서명할 예정인 전략적 투자에 관한 양해각서(MOU) 체결에 따른 한국의 2,000억 불 규모 추가 투자를 포함한다.",
+   "en": "This deal also includes $200 billion of additional Korean investment committed pursuant to the Memorandum of Understanding with respect to Strategic Investments (MOU), which is expected to be signed by representatives of the United States and ROK."
+  },
+  {
+   "id": "s1b4",
+   "sector": "경제",
+   "theme": "관세",
+   "label": "상호관세 — 한국산 15%(FTA·MFN 세율이 더 높으면 그 세율)",
+   "section_en": "REBUILDING AND EXPANDING CRITICAL INDUSTRIES",
+   "section_ko": "핵심 산업 재건 및 확장",
+   "ko": "미국은 2025년 4월 2일자 행정명령 제14257호 및 그 개정에 따른 상호관세 목적으로 한국산 상품에 대해 한미 FTA나 미국의 최혜국(MFN) 관세율 중 적용가능한 세율, 또는 15% 중 더 높은 세율을 적용한다.",
+   "en": "The United States will apply the higher of either the U.S.-Korea Free Trade Agreement (“KORUS FTA”) or U.S. Most Favored Nation (“MFN”) tariff rate, as applicable, or a tariff rate of 15 percent on originating goods of the ROK, for purposes of the reciprocal tariff provided under Executive Order 14257 of April 2, 2025, as amended."
+  },
+  {
+   "id": "s1b5",
+   "sector": "경제",
+   "theme": "관세",
+   "label": "232조 자동차·부품·목재 관세 15%로 인하",
+   "section_en": "REBUILDING AND EXPANDING CRITICAL INDUSTRIES",
+   "section_ko": "핵심 산업 재건 및 확장",
+   "ko": "미국은 한국산 자동차 및 부품, 원목·제재목과 목재 제품에 대한 232조 관세를 15%로 인하한다. 한미 FTA 또는 미국의 최혜국(MFN) 관세율 중 적용가능한 세율이 15% 이상인 한국산 상품에 대해서는 232조 관세를 추가로 부과하지 않고, 15% 미만인 한국산 상품에 대해서는 한미 FTA 또는 미국의 최혜국(MFN) 관세와 추가되는 232조 관세의 합이 15%가 되도록 한다.",
+   "en": "The United States will reduce its Section 232 sectoral tariffs on automobiles, auto parts, timber, lumber, and wood derivatives of the ROK to 15 percent. For such products of the ROK with a KORUS FTA or MFN tariff rate, as applicable, equal to or greater than 15 percent, no additional Section 232 tariff shall apply. For such products of the ROK with a KORUS FTA or MFN tariff, as applicable, less than 15 percent, the sum of the KORUS FTA or MFN tariff and the additional Section 232 tariff shall be 15 percent."
+  },
+  {
+   "id": "s1b6",
+   "sector": "경제",
+   "theme": "관세",
+   "label": "232조 의약품 관세 — 15% 초과하지 않게",
+   "section_en": "REBUILDING AND EXPANDING CRITICAL INDUSTRIES",
+   "section_ko": "핵심 산업 재건 및 확장",
+   "ko": "의약품에 부과되는 어떠한 232조 관세의 경우에도, 미국은 한국산 상품에 대한 232조 관세율이 15%를 초과하지 않도록 적용하고자 한다.",
+   "en": "For any Section 232 tariffs imposed on pharmaceuticals, the United States intends to apply to originating goods of the ROK a Section 232 tariff rate no greater than 15 percent."
+  },
+  {
+   "id": "s1b7",
+   "sector": "경제",
+   "theme": "관세",
+   "label": "232조 반도체 관세 — 교역규모가 한국 이상인 국가보다 불리하지 않게",
+   "section_en": "REBUILDING AND EXPANDING CRITICAL INDUSTRIES",
+   "section_ko": "핵심 산업 재건 및 확장",
+   "ko": "반도체(반도체 장비 포함)에 부과되는 어떠한 232조 관세의 경우에도, 미국은 한국에 대한 232조 관세에 대해 미국이 판단하기에 한국의 반도체 교역규모 이상의 반도체 교역을 대상으로 하는 미래 합의에서 제공될 조건보다 불리하지 않은 조건을 부여하고자 한다.",
+   "en": "For any Section 232 tariffs imposed on semiconductors (including semiconductor manufacturing equipment), the United States intends to provide terms for such Section 232 tariffs on Korea that are no less favorable than terms that may be offered in a future agreement covering a volume of semiconductor trade at least as large as Korea’s, as determined by the United States."
+  },
+  {
+   "id": "s1b8",
+   "sector": "경제",
+   "theme": "관세",
+   "label": "제네릭 의약품·미국 내 미생산 천연자원·항공기 부품 관세 철폐",
+   "section_en": "REBUILDING AND EXPANDING CRITICAL INDUSTRIES",
+   "section_ko": "핵심 산업 재건 및 확장",
+   "ko": "미국은 2025년 4월 2일자 행정명령 제14257호 및 그 개정에 따른 추가 관세를 제네릭 의약품·원료·화학전구체, 미국 내 생산되지 않는 특정 천연자원 등 ‘조율된 파트너국에 대한 잠재적 관세 조정(Potential Tariff Adjustments for Aligned Partners)’ 목록에 명시된 특정 상품에 대해 철폐하고자 한다. 또한 미국은 특정 한국산 항공기·부품에 대해 행정명령 제14257호 및 그 개정, 포고령 제9704호 및 그 개정, 포고령 제9705호 및 그 개정, 포고령 제10962호에 따른 관세를 철폐한다.",
+   "en": "The United States intends to remove supplemental tariffs imposed pursuant to Executive Order 14257 of April 2, 2025, as amended for certain products identified on the list of Potential Tariff Adjustments for Aligned Partners, such as generic pharmaceuticals, generic pharmaceutical ingredients, generic pharmaceutical chemical precursors, and certain natural resources unavailable in the United States. The United States will also remove tariffs on certain aircraft and parts of the ROK from the tariffs imposed pursuant to Executive Order 14257, as amended, by Proclamation 9704, as amended, Proclamation 9705, as amended, and Proclamation 10962."
+  },
+  {
+   "id": "s2i",
+   "sector": "경제",
+   "theme": "외환·투자 집행",
+   "label": "MOU 투자 자금 조달 연 200억 달러 상한·외환시장 불안 시 조정 요청 가능",
+   "section_en": "FOREIGN EXCHANGE MARKET STABILITY",
+   "section_ko": "외환시장 안정",
+   "ko": "MOU에 포함된 각측의 공약과 관련하여, 한국과 미국은 MOU가 한국의 외환시장 안정에 미칠 잠재적 영향에 대해 충분히 논의하였다. 양국은 MOU 상 공약이 시장 불안을 야기해서는 안 된다는 데 대한 상호 이해에 도달하였다. 상호 신뢰하는 파트너로서, 양국은 한국이 어느 특정 연도에도 연간 200억 불을 초과하는 금액의 조달을 요구받지 않을 것이라는 점에 동의한다. 한국은 가능한 한 최선을 다해 미화를 시장에서 매입하는 방식이 아닌 다른 방법을 통해 조달함으로써 시장에 미치는 잠재적 영향을 최소화할 것이다. MOU 상 공약의 이행이 원화의 불규칙한 변동 등 시장 불안을 야기할 우려가 있을 것으로 예상되는 경우, 한국은 조달 금액과 시점을 조정할 것을 요청할 수 있으며, 미국은 신의를 가지고 그와 같은 요청을 적절히 검토할 것이다.",
+   "en": "The United States and the ROK, in connection with their respective commitments included in the MOU, have thoroughly discussed the potential impact of the MOU on the foreign exchange market stability of the ROK. They have reached a mutual understanding that commitments in the MOU shall not be allowed to give rise to market instability. As trusted partners, the two nations agree that the ROK shall not be required to fund an aggregate amount of U.S. dollars greater than $20 billion in any calendar year.  The ROK will use its best efforts, to the greatest extent possible, to source the U.S. dollars through means other than market purchases so as to minimize any potential impact on the market. Should it appear that the fulfillment of the commitments in the MOU may cause market instability, such as disorderly movements of Korean won, the ROK may request an adjustment in the amount and timing of the funding, and the United States will, in good faith, give due consideration to such request."
+  },
+  {
+   "id": "s3i",
+   "sector": "경제",
+   "theme": "투자·산업",
+   "label": "민간 부문 상업적 공약 환영",
+   "section_en": "ENHANCING COMMERCIAL TIES",
+   "section_ko": "상업적 유대 강화",
+   "ko": "양 정상은 양국 간 굳건한 경제적 파트너십에 대한 민간 부문의 신뢰를 반영하는 전략 분야에서의 일련의 상업적 공약들을 환영하였다.",
+   "en": "The two leaders welcomed a series of commercial commitments in strategic sectors, reflecting the confidence of the private sector in the strong bilateral economic partnership."
+  },
+  {
+   "id": "s3b1",
+   "sector": "경제",
+   "theme": "투자·산업",
+   "label": "한국 기업 대미 직접투자 1,500억 달러(트럼프 임기 중, 2025년 8월 발표)",
+   "section_en": "ENHANCING COMMERCIAL TIES",
+   "section_ko": "상업적 유대 강화",
+   "ko": "양 정상은 8월에 이루어진 한국기업들의 트럼프 대통령 임기 내 총 1,500억 불 규모의 대미 직접투자 발표를 환영하였다. 양국은 동 투자의 원활한 집행을 위해 최선을 다한다.",
+   "en": "The two leaders welcomed the announcement in August by ROK companies of foreign direct investments in the United States totaling $150 billion during President Trump’s term. Both countries will use their best efforts to facilitate these investments."
+  },
+  {
+   "id": "s3b2",
+   "sector": "경제",
+   "theme": "투자·산업",
+   "label": "대한항공 보잉 103대 구매(360억 달러)",
+   "section_en": "ENHANCING COMMERCIAL TIES",
+   "section_ko": "상업적 유대 강화",
+   "ko": "양 정상은 8월에 이루어진 대한항공의 GE 에어로스페이스 엔진을 장착한 보잉 항공기 103대 구매 발표를 환영하였다. 동 공약은 360억 불 규모로, 보잉 737 MAX 제트기, 787 드림라이너, 777X 여객기 및 화물기 등이 포함되며, 이에 따라 2025년 대한항공의 보잉 항공기 총 주문량은 150대를 초과할 예정이다.",
+   "en": "The two leaders welcomed the announcement by Korean Air (KAL) in August of a purchase order of 103 Boeing aircraft powered by GE Aerospace engines. The Boeing commitment is valued at U.S. $36 billion and will include a mix of Boeing 737 MAX jets, 787 Dreamliners, and 777X passenger and freighters, bringing KAL’s total order in 2025 to more than 150 Boeing airplanes."
+  },
+  {
+   "id": "s3b3",
+   "sector": "경제",
+   "theme": "비관세·통상 규범",
+   "label": "‘Buy America in Seoul’ 연례 전시회",
+   "section_en": "ENHANCING COMMERCIAL TIES",
+   "section_ko": "상업적 유대 강화",
+   "ko": "한국과 미국은 ‘Buy America in Seoul’ 이니셔티브를 환영한다. 동 이니셔티브는 한국이 미국 주정부와 협력하에 중소기업을 포함한 미국 기업이 참가하는 연례 전시회를 개최하여 미국산 상품의 대한국 수출을 촉진하는 구상이다.",
+   "en": "The United States and the ROK welcome the Buy America in Seoul initiative, whereby the ROK, in collaboration with the State Governments, will organize an annual exhibition featuring U.S. companies, including Small and Medium-sized Enterprises, to promote the export of U.S. goods into Korea."
+  },
+  {
+   "id": "s4i",
+   "sector": "경제",
+   "theme": "비관세·통상 규범",
+   "label": "비관세장벽 해소 — 연내 한미 FTA 공동위원회에서 이행계획 채택",
+   "section_en": "PROMOTING RECIPROCAL TRADE",
+   "section_ko": "상호무역 촉진",
+   "ko": "양 정상은 최근 발표된 합의가 상호호혜적 무역 및 투자 확대라는 공동 목표를 반영하고 있음을 확인하였다. 동 합의의 정신에 따라, 한국과 미국은 비관세 장벽을 논의할 것이며, 상호무역 촉진을 위한 공약과 이행계획을 명문화하여 올해 안에 한미 FTA 공동위원회에서 채택할 것이다. 합의는 다음과 같은 분야를 포함하나, 이에 국한되지는 않는다.",
+   "en": "The two leaders recognized that the recently announced deal reflects a common goal to increase mutually beneficial trade and investment. In the spirit of the deal, the United States and the ROK will address non-tariff barriers and memorialize commitments and a plan of action to promote reciprocal trade, to be adopted by the KORUS Joint Committee before the end of the year. This will include but not be limited to the following:"
+  },
+  {
+   "id": "s4b1",
+   "sector": "경제",
+   "theme": "비관세·통상 규범",
+   "label": "자동차 — FMVSS 차량 5만 대 상한 폐지·배출가스 인증 서류 간소화",
+   "section_en": "PROMOTING RECIPROCAL TRADE",
+   "section_ko": "상호무역 촉진",
+   "ko": "한국은 미국 연방 자동차 안전기준(FMVSS)을 준수하는 미국 원산지 자동차를 연간 5만 대까지 추가 개조 없이 수입 가능하도록 한 조치 관련하여 5만 대 상한을 폐지한다. 한국은 배출가스 인증 과정에서 미국 인증 당국에 제출된 서류 외 추가 서류 제출을 요구하지 않음으로써 미국 자동차 수출에 있어 규제 부담을 완화한다.",
+   "en": "The ROK will eliminate the 50,000-unit cap on U.S.-originating Federal Motor Vehicle Safety Standards (FMVSS)-compliant vehicles that can enter the ROK without further modifications.  The ROK will also reduce regulatory burdens for U.S. automotive exports by not requiring additional documentation in its emissions certification process other than those submitted to U.S certification authorities."
+  },
+  {
+   "id": "s4b2",
+   "sector": "경제",
+   "theme": "비관세·통상 규범",
+   "label": "농식품 — 생명공학 승인 적체 해소·U.S. Desk·육류·치즈 명칭",
+   "section_en": "PROMOTING RECIPROCAL TRADE",
+   "section_ko": "상호무역 촉진",
+   "ko": "한국은 식품 및 농산물 교역에 영향을 미치는 비관세 장벽을 논의하기 위해 미국과 협력한다. 이를 위해 양자 간 협정 및 의정서 상의 기존 공약 이행을 보장하고, 농업 생명공학 제품의 규제 승인 절차를 효율화하고 미국 신청 건의 지연을 해소하며, 미국산 원예작물 관련 요청을 전담하는 U.S. Desk를 설치하고, 특정 명칭을 사용하는 미국산 육류와 치즈에 대한 시장접근을 유지한다.",
+   "en": "The ROK will work together with the United States to address non-tariff barriers affecting trade in food and agricultural products, including by: ensuring that existing commitments under bilateral agreements and protocols are met; streamlining the regulatory approval process for agricultural biotechnology products and resolving the backlog of U.S. applications; establishing a U.S. Desk dedicated to requests for U.S. horticultural products; and preserving market access for U.S. meats and cheeses that use certain terms."
+  },
+  {
+   "id": "s4b3",
+   "sector": "경제",
+   "theme": "비관세·통상 규범",
+   "label": "디지털 — 망 사용료·온라인플랫폼 규제 비차별·데이터 국경 간 이전",
+   "section_en": "PROMOTING RECIPROCAL TRADE",
+   "section_ko": "상호무역 촉진",
+   "ko": "한국과 미국은 망 사용료, 온라인플랫폼 규제를 포함한 디지털 서비스 관련 법과 정책에 있어서 미국 기업들이 차별당하거나 불필요한 장벽에 직면하지 않도록 보장할 것을 약속하고, 위치·재보험·개인정보에 대한 것을 포함하여 정보의 국경 간 이전을 원활하게 할 것을 약속한다. 또한 한국과 미국은 세계무역기구(WTO) 내 전자적 전송물에 대한 관세 모라토리엄의 영구화를 지지한다.",
+   "en": "The United States and the ROK commit to ensure that U.S. companies are not discriminated against and do not face unnecessary barriers in terms of laws and policies concerning digital services, including network usage fees and online platform regulations, and to facilitate cross-border transfer of data, including for location, reinsurance, and personal data. Further, the United States and the ROK will support the permanent moratorium on customs duties on electronic transmissions at the World Trade Organization."
+  },
+  {
+   "id": "s4b4",
+   "sector": "경제",
+   "theme": "비관세·통상 규범",
+   "label": "경쟁 절차 — 변호사-의뢰인 비밀유지권 등 절차적 공정성",
+   "section_en": "PROMOTING RECIPROCAL TRADE",
+   "section_ko": "상호무역 촉진",
+   "ko": "한국은 변호사-의뢰인 비밀유지권 인정 등을 포함하여, 경쟁 관련 절차에서 추가적인 절차적 공정성 규정을 마련할 것을 약속한다.",
+   "en": "The ROK commits to provide additional procedural fairness provisions in competition proceedings, including the recognition of attorney-client privilege."
+  },
+  {
+   "id": "s4b5",
+   "sector": "경제",
+   "theme": "비관세·통상 규범",
+   "label": "지식재산권 — 특허법조약 가입 추진",
+   "section_en": "PROMOTING RECIPROCAL TRADE",
+   "section_ko": "상호무역 촉진",
+   "ko": "한국과 미국은 지식재산권을 보호하기 위해 협력한다. 이를 위해 한국은 특허법조약에 가입하기 위해 필요한 조치를 지속적으로 취한다.",
+   "en": "The United States and the ROK will work together to protect intellectual property rights. The ROK will continue to take the necessary steps to accede to the Patent Law Treaty."
+  },
+  {
+   "id": "s4b6",
+   "sector": "경제",
+   "theme": "비관세·통상 규범",
+   "label": "노동권 보호·강제노동 상품 수입 대응",
+   "section_en": "PROMOTING RECIPROCAL TRADE",
+   "section_ko": "상호무역 촉진",
+   "ko": "한국과 미국은 국제적으로 인정된 노동권의 강력한 보호를 보장하기 위해 협력할 것을 약속한다. 한국과 미국은 강제노동으로 생산된 상품의 수입에 대응하는 것을 포함하여 전 세계적으로 모든 형태의 강제노동에 대응하기 위해 협력한다.",
+   "en": "The United States and the ROK commit to work together to ensure strong protection of internationally-recognized labor rights. The United States and the ROK will work together to combat all forms of forced labor globally, including by combatting the importation of goods made with forced labor."
+  },
+  {
+   "id": "s4b7",
+   "sector": "경제",
+   "theme": "비관세·통상 규범",
+   "label": "환경법 집행·WTO 수산보조금 협정 이행",
+   "section_en": "PROMOTING RECIPROCAL TRADE",
+   "section_ko": "상호무역 촉진",
+   "ko": "한국과 미국은 환경보호에서의 차이가 무역 및 투자를 왜곡하지 않도록 보장하는 것의 중요성을 재확인한다. 이를 위해 한국은 WTO 수산보조금 협정을 충실히 이행하는 것을 포함하여 상호무역을 촉진하기 위하여 국내 환경법을 효과적으로 집행한다.",
+   "en": "The United States and the ROK reaffirm the importance of ensuring differences in environmental protection do not distort trade and investment. To this end, the ROK will effectively enforce its environmental laws to facilitate reciprocal trade, including by fully implementing the WTO Agreement on Fisheries Subsidies."
+  },
+  {
+   "id": "s5i",
+   "sector": "경제",
+   "theme": "경제안보",
+   "label": "관세 회피 방지·비시장 관행 대응·투자 규제·공공조달 공조",
+   "section_en": "PROTECTING ECONOMIC PROSPERITY",
+   "section_ko": "경제 번영 수호",
+   "ko": "양국 정상은 양국의 경쟁력 유지와 안전한 공급망 확보를 위해 경제 및 국가안보 공조를 강화할 필요가 있음을 인정하였다. 이는 관세 회피 방지를 위한 협력, 불공정하고 비시장적인 정책 및 관행에 대응하기 위한 보완적 조치, 외국인 투자 및 해외 투자 규제 개선을 포함하며, 양국은 국제 공공조달 의무가 이와 동일한 공약을 수락한 국가들에 대해 혜택이 되도록 보장한다.",
+   "en": "The two leaders acknowledged the need to strengthen economic and national security alignment in order to preserve our competitiveness and maintain secure supply chains. This includes cooperation to combat duty evasion and taking complementary actions to address unfair and non-market policies and practices, enhancing inbound investment and outbound investment regulations, and both countries will ensure that international procurement obligations provide a benefit to those countries that have taken on the same commitments."
+  },
+  {
+   "id": "s6i",
+   "sector": "안보",
+   "theme": "동맹·억제",
+   "label": "주한미군 주둔을 통한 대한방위공약",
+   "section_en": "MODERNIZING THE U.S.-ROK ALLIANCE",
+   "section_ko": "한미동맹 현대화",
+   "ko": "미국은 지속적인 주한미군 주둔을 통한 대한방위공약을 강조하였다.",
+   "en": "The United States underscored its commitment to the defense of the ROK through the enduring presence of the U.S. Forces Korea (USFK)."
+  },
+  {
+   "id": "s6b1",
+   "sector": "안보",
+   "theme": "동맹·억제",
+   "label": "핵 포함 확장억제·핵협의그룹(NCG)",
+   "section_en": "MODERNIZING THE U.S.-ROK ALLIANCE",
+   "section_ko": "한미동맹 현대화",
+   "ko": "미국은 핵을 포함한 모든 범주의 능력을 활용하여 확장억제를 제공한다는 공약을 재확인하였다. 양 정상은 핵협의그룹(NCG)을 포함한 협의 메커니즘을 통해 협력을 강화하기로 하였다.",
+   "en": "The United States reaffirmed its pledge to provide extended deterrence, leveraging the full range of its capabilities, including nuclear. The two leaders committed to strengthening cooperation through consultation mechanisms including the Nuclear Consultative Group."
+  },
+  {
+   "id": "s6b2",
+   "sector": "안보",
+   "theme": "국방비·부담",
+   "label": "국방비 GDP 3.5%로 증액 계획",
+   "section_en": "MODERNIZING THE U.S.-ROK ALLIANCE",
+   "section_ko": "한미동맹 현대화",
+   "ko": "이 대통령은 가능한 한 조속히 한국의 법적 요건에 부합하게 국방비 지출을 GDP의 3.5%로 증액한다는 한국의 계획을 공유하였으며, 트럼프 대통령은 이를 환영하였다.",
+   "en": "President Lee shared the ROK’s plan to increase its defense spending to 3.5% of GDP as soon as possible in accordance with ROK legal requirements, which President Trump welcomed."
+  },
+  {
+   "id": "s6b3",
+   "sector": "안보",
+   "theme": "국방비·부담",
+   "label": "미국산 무기 구매 250억 달러(2030년까지)·주한미군 포괄 지원 330억 달러",
+   "section_en": "MODERNIZING THE U.S.-ROK ALLIANCE",
+   "section_ko": "한미동맹 현대화",
+   "ko": "한국은 또한 2030년까지 미국산 군사 장비 구매에 250억 불을 지출하기로 하였고, 한국의 법적 요건에 부합하게 주한미군을 위한 330억 불 상당의 포괄적 지원을 제공한다는 계획을 공유하였다.",
+   "en": "The ROK also committed to spending $25 billion on U.S. military equipment purchases by 2030, and shared its plan to provide comprehensive support for U.S. Forces Korea amounting to $33 billion in accordance with ROK legal requirements."
+  },
+  {
+   "id": "s6b4",
+   "sector": "안보",
+   "theme": "전작권·방산",
+   "label": "전시작전통제권 전환 협력·첨단 무기 획득·방산 협력",
+   "section_en": "MODERNIZING THE U.S.-ROK ALLIANCE",
+   "section_ko": "한미동맹 현대화",
+   "ko": "양 정상은 전시작전통제권 전환을 위한 동맹 차원의 협력을 지속해 나가기로 하였다. 미국의 지원 하에, 한국은 대북 연합 재래식 방위를 주도하기 위한 필수적인 군사적 역량 강화 노력을 가속화하기로 약속하였다. 여기에는 미국의 첨단 무기 체계 획득과 첨단 무기 체계를 포함한 양자 방산 협력 확대가 포함된다.",
+   "en": "The two leaders committed to continue alliance cooperation toward the transition of wartime operational control.  With the support of the United States, the ROK pledged to accelerate efforts to strengthen its military capabilities necessary to lead the combined conventional defense against the Democratic People’s Republic of Korea (DPRK). These include acquisition of advanced U.S. weapons systems and expansion of bilateral defense industrial cooperation, including in high-tech weapons systems."
+  },
+  {
+   "id": "s6b5",
+   "sector": "안보",
+   "theme": "동맹·억제",
+   "label": "미국 재래식 억제 태세 강화·2006년 이래 관련 양해 확인",
+   "section_en": "MODERNIZING THE U.S.-ROK ALLIANCE",
+   "section_ko": "한미동맹 현대화",
+   "ko": "한미 양국은 북한을 포함하여, 동맹에 대한 모든 역내의 위협에 대한 미국의 재래식 억제 태세를 강화할 것이다. 양측은 2006년 이래의 관련 양해를 확인한다. 양측은 긴밀한 협의를 지속하고, 이행 진전 상황을 각측 지도부에 보고할 것이다.",
+   "en": "The United States and the ROK will enhance U.S. conventional deterrence posture against all regional threats to the Alliance, including the DPRK. The two sides affirm relevant understandings since 2006. Both sides will continue close consultation and report the progress on implementation to their leadership."
+  },
+  {
+   "id": "s6b6",
+   "sector": "안보",
+   "theme": "동맹·억제",
+   "label": "사이버·우주·군사 분야 AI 협력",
+   "section_en": "MODERNIZING THE U.S.-ROK ALLIANCE",
+   "section_ko": "한미동맹 현대화",
+   "ko": "한미 양국은 사이버 공간과 우주에서의 협력을 확대하기로 약속하였다. 양 정상은 또한 군사 영역에서의 인공지능(AI) 관련 협력을 지속하겠다는 의사를 재확인하였다.",
+   "en": "The United States and the ROK pledged to expand cooperation in cyberspace and outer space. The two leaders also reaffirmed their intention to continue working together on AI in the military domain."
+  },
+  {
+   "id": "s7i",
+   "sector": "안보",
+   "theme": "한반도·지역",
+   "label": "한반도·인도태평양의 평화·안전·번영",
+   "section_en": "COORDINATING ON KOREAN PENINSULA AND REGIONAL ISSUES",
+   "section_ko": "한반도 및 지역 사안에 대한 공조",
+   "ko": "양 정상은 한반도와 인태 지역에서의 평화, 안전, 번영을 공약하였다.",
+   "en": "The two leaders committed to peace, security, and prosperity both on the Korean Peninsula and in the Indo-Pacific region."
+  },
+  {
+   "id": "s7b1",
+   "sector": "안보",
+   "theme": "한반도·지역",
+   "label": "북한 완전한 비핵화·2018 싱가포르 공동성명 이행",
+   "section_en": "COORDINATING ON KOREAN PENINSULA AND REGIONAL ISSUES",
+   "section_ko": "한반도 및 지역 사안에 대한 공조",
+   "ko": "양 정상은 북한의 완전한 비핵화와 한반도의 평화와 안정에 대한 의지를 재확인하고, 2018년 싱가포르 북미 정상 공동성명을 이행하기 위해 협력할 것을 약속하였다.",
+   "en": "The two leaders reiterated their commitment to the complete denuclearization of the DPRK and peace and stability on the Korean Peninsula, and pledged to work together to implement the Joint Statement of the 2018 U.S.-DPRK Singapore Summit."
+  },
+  {
+   "id": "s7b2",
+   "sector": "안보",
+   "theme": "한반도·지역",
+   "label": "대북 정책 공조·북한 대화 복귀 촉구",
+   "section_en": "COORDINATING ON KOREAN PENINSULA AND REGIONAL ISSUES",
+   "section_ko": "한반도 및 지역 사안에 대한 공조",
+   "ko": "양 정상은 대북 정책과 관련하여 긴밀히 공조하기로 합의하고, 북한이 의미 있는 대화로 복귀하고 대량살상무기(WMD)와 탄도미사일 프로그램 포기를 포함한 국제적 의무를 준수하기를 촉구하였다.",
+   "en": "Both leaders agreed to coordinate closely on DPRK policy and called on the DPRK to return to meaningful dialogue and abide by its international obligations, including by abandoning its weapons of mass destruction (WMD) and ballistic missile programs."
+  },
+  {
+   "id": "s7b3",
+   "sector": "안보",
+   "theme": "한반도·지역",
+   "label": "한미일 3자 협력 강화",
+   "section_en": "COORDINATING ON KOREAN PENINSULA AND REGIONAL ISSUES",
+   "section_ko": "한반도 및 지역 사안에 대한 공조",
+   "ko": "양 정상은 일본과의 3자 협력을 강화해 나가기로 하였다.",
+   "en": "The two leaders committed to strengthen the trilateral partnership with Japan."
+  },
+  {
+   "id": "s7b4",
+   "sector": "안보",
+   "theme": "한반도·지역",
+   "label": "항행·상공비행의 자유·국제해양법",
+   "section_en": "COORDINATING ON KOREAN PENINSULA AND REGIONAL ISSUES",
+   "section_ko": "한반도 및 지역 사안에 대한 공조",
+   "ko": "양 정상은 항행·상공비행의 자유와 여타 합법적인 해양 이용을 수호하기 위한 노력을 재확인하였다. 양 정상은 모든 국가의 해양 권익 주장은 국제해양법과 합치해야 함을 재확인하였다.",
+   "en": "The two leaders reaffirmed efforts to uphold freedoms of navigation and overflight and other lawful uses of the sea. They reaffirmed that the maritime claims of all nations should comply with the international law of the sea."
+  },
+  {
+   "id": "s7b5",
+   "sector": "안보",
+   "theme": "한반도·지역",
+   "label": "대만해협 평화·안정, 일방적 현상 변경 반대",
+   "section_en": "COORDINATING ON KOREAN PENINSULA AND REGIONAL ISSUES",
+   "section_ko": "한반도 및 지역 사안에 대한 공조",
+   "ko": "양 정상은 대만해협에서의 평화와 안정 유지의 중요성을 강조하였다. 양 정상은 양안 문제의 평화적 해결을 독려하였으며, 일방적 현상 변경에 반대하였다.",
+   "en": "They emphasized the importance of preserving peace and stability across the Taiwan Strait. They encouraged the peaceful resolution of cross-Strait issues and opposed unilateral changes to the status quo."
+  },
+  {
+   "id": "s8i",
+   "sector": "안보",
+   "theme": "조선·원자력",
+   "label": "미국 조선 역량 확대 기여·한국 민간·해군 원자력 프로그램 지지",
+   "section_en": "FURTHERING OUR MARITIME AND NUCLEAR PARTNERSHIP",
+   "section_ko": "해양 및 원자력 분야 파트너십 발전",
+   "ko": "미국은 미국 조선소와 미국 인력에 대한 투자 등을 통해 미국 조선 산업을 현대화하고 그 역량을 확대하는데 기여하겠다는 한국의 공약을 환영하였다. 한국은 미국이 한국 민간 및 해군 원자력 프로그램을 지지해 준 것을 환영하였다.",
+   "en": "The United States welcomed the ROK’s commitment to contribute to modernizing and expanding the capacity of American shipbuilding industries, including through investments in U.S. shipyards and America’s workforce.  The ROK welcomed the United States’ support for the ROK’s civil and naval nuclear power programs."
+  },
+  {
+   "id": "s8b1",
+   "sector": "경제",
+   "theme": "투자·산업",
+   "label": "조선 실무협의체 — MRO·인력·조선소 현대화·공급망",
+   "section_en": "FURTHERING OUR MARITIME AND NUCLEAR PARTNERSHIP",
+   "section_ko": "해양 및 원자력 분야 파트너십 발전",
+   "ko": "한미 양국은 조선 분야 실무협의체를 통하여 유지·정비·보수, 인력 양성, 조선소 현대화, 공급망 회복력을 포함한 분야에서 협력을 진전시키기로 하였다.",
+   "en": "Both countries committed to collaborate further through a shipbuilding working group, including on maintenance, repair, and overhaul, workforce development, shipyard modernization, and supply chain resilience."
+  },
+  {
+   "id": "s8b2",
+   "sector": "안보",
+   "theme": "조선·원자력",
+   "label": "미국 상선·군함 증가 — 한국 내 미국 선박 건조 가능성 포함",
+   "section_en": "FURTHERING OUR MARITIME AND NUCLEAR PARTNERSHIP",
+   "section_ko": "해양 및 원자력 분야 파트너십 발전",
+   "ko": "이러한 구상들은 한국 내에서의 잠재적 미국 선박 건조를 포함하여, 최대한 신속하게 미국 상업용 선박과 전투수행이 가능한 미군 전투함의 수를 증가시킬 것이다.",
+   "en": "These initiatives will increase the number of U.S. commercial ships and combat-ready U.S. military vessels as quickly as possible, including the potential construction of U.S. vessels in the ROK."
+  },
+  {
+   "id": "s8b3",
+   "sector": "안보",
+   "theme": "조선·원자력",
+   "label": "한국 민간 우라늄 농축·사용후핵연료 재처리 절차 지지",
+   "section_en": "FURTHERING OUR MARITIME AND NUCLEAR PARTNERSHIP",
+   "section_ko": "해양 및 원자력 분야 파트너십 발전",
+   "ko": "미국은 한미 원자력 협력 협정에 부합하고, 미국의 법적 요건을 준수하는 범위 내에서 한국의 평화적 이용을 위한 민간 우라늄 농축 및 사용후핵연료 재처리로 귀결될 절차를 지지한다.",
+   "en": "Consistent with the bilateral 123 agreement and subject to U.S. legal requirements, the United States supports the process that will lead to the ROK’s civil uranium enrichment and spent fuel reprocessing for peaceful uses."
+  },
+  {
+   "id": "s8b4",
+   "sector": "안보",
+   "theme": "조선·원자력",
+   "label": "한국 핵추진 공격잠수함 건조 승인·연료 조달 협력",
+   "section_en": "FURTHERING OUR MARITIME AND NUCLEAR PARTNERSHIP",
+   "section_ko": "해양 및 원자력 분야 파트너십 발전",
+   "ko": "미국은 한국이 핵추진 잠수함을 건조하는 것을 승인하였다. 미국은 이 조선 사업의 요건들을 진전시키기 위해, 연료 조달 방안을 포함하여, 한국과 긴밀히 협력해 나갈 것이다.",
+   "en": "The United States has given approval for the ROK to build nuclear-powered attack submarines. The United States will work closely with the ROK to advance requirements for this shipbuilding project, including avenues to source fuel."
+  }
+ ]
+}

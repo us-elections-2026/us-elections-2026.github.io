@@ -27,6 +27,7 @@ project:
     - data/gas_prices.json
     - data/fec_timeline.json
     - assets/candidates
+    - assets/korea_plants_map.js
 
 lang: ko
 

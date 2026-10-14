@@ -1,0 +1,730 @@
+{
+ "generated_by": "scripts/build_korea_plants.py",
+ "generated_at": "2026-10-14",
+ "census_check": "Census geocoder geographies/coordinates · 120th Congressional Districts",
+ "plants": [
+  {
+   "id": "p53",
+   "lat": 32.25841,
+   "lon": -86.36837,
+   "coord_method": "osm:way/836908965 Hyundai Power Transformers",
+   "district": "AL-2",
+   "district_map": "2026 신지도 — Alabama GeoHub — 2023 주의회안(Livingston Plan 3)",
+   "district_certain": true,
+   "census_cd120": "AL-2",
+   "census_match": true
+  },
+  {
+   "id": "p54",
+   "lat": 32.25841,
+   "lon": -86.36837,
+   "coord_method": "osm:way/836908965 Hyundai Power Transformers",
+   "district": "AL-2",
+   "district_map": "2026 신지도 — Alabama GeoHub — 2023 주의회안(Livingston Plan 3)",
+   "district_certain": true,
+   "census_cd120": "AL-2",
+   "census_match": true
+  },
+  {
+   "id": "g03",
+   "lat": 32.70783,
+   "lon": -85.31833,
+   "coord_method": "osm:way/742341964 Hanwha (Northpark Drive, Opelika)",
+   "district": "AL-3",
+   "district_map": "2026 신지도 — Alabama GeoHub — 2023 주의회안(Livingston Plan 3)",
+   "district_certain": true,
+   "census_cd120": "AL-3",
+   "census_match": true
+  },
+  {
+   "id": "p52",
+   "lat": 32.64541,
+   "lon": -85.37828,
+   "coord_method": "city_centroid",
+   "district": "AL-3",
+   "district_map": "2026 신지도 — Alabama GeoHub — 2023 주의회안(Livingston Plan 3)",
+   "district_candidates": [
+    "AL-3"
+   ],
+   "district_certain": true,
+   "census_cd120": "AL-3",
+   "census_match": true
+  },
+  {
+   "id": "p03",
+   "lat": 32.28262,
+   "lon": -86.32596,
+   "coord_method": "osm:relation/19742646 Hyundai Motor Manufacturing Alabama (Photon/OSM)",
+   "district": "AL-2",
+   "district_map": "2026 신지도 — Alabama GeoHub — 2023 주의회안(Livingston Plan 3)",
+   "district_certain": true,
+   "census_cd120": "AL-2",
+   "census_match": true
+  },
+  {
+   "id": "p05",
+   "lat": 32.28015,
+   "lon": -86.33637,
+   "coord_method": "osm:relation/19742650 Mobis North America Electrified Powertrain (Photon/OSM)",
+   "district": "AL-2",
+   "district_map": "2026 신지도 — Alabama GeoHub — 2023 주의회안(Livingston Plan 3)",
+   "district_certain": true,
+   "census_cd120": "AL-2",
+   "census_match": true
+  },
+  {
+   "id": "p51",
+   "lat": 34.32663,
+   "lon": -92.08668,
+   "coord_method": "osm:way/209340971 Pine Bluff Arsenal",
+   "district": "AR-4",
+   "district_map": "119대 의회 경계(Census)",
+   "district_certain": true,
+   "census_cd120": "AR-4",
+   "census_match": true
+  },
+  {
+   "id": "p19",
+   "lat": 33.24839,
+   "lon": -111.63416,
+   "coord_method": "city_centroid",
+   "district": "AZ-5",
+   "district_map": "119대 의회 경계(Census)",
+   "district_candidates": [
+    "AZ-5"
+   ],
+   "district_certain": true,
+   "census_cd120": "AZ-5",
+   "census_match": true
+  },
+  {
+   "id": "p46",
+   "lat": 38.58907,
+   "lon": -121.30273,
+   "coord_method": "city_centroid",
+   "district": "CA-3",
+   "district_map": "2026 신지도 — Statewide Database — AB 604(Prop 50)",
+   "district_candidates": [
+    "CA-3",
+    "CA-6",
+    "CA-7"
+   ],
+   "district_certain": false,
+   "census_cd120": "CA-3",
+   "census_match": true
+  },
+  {
+   "id": "p12",
+   "lat": 34.2369,
+   "lon": -83.48623,
+   "coord_method": "osm:way/1017448108 SK Battery (Haggard Road, Commerce; Photon/OSM)",
+   "district": "GA-9",
+   "district_map": "119대 의회 경계(Census)",
+   "district_certain": true,
+   "census_cd120": "GA-9",
+   "census_match": true
+  },
+  {
+   "id": "p44",
+   "lat": 33.61941,
+   "lon": -83.8149,
+   "coord_method": "osm:way/34770711 SKC Films — 앱솔릭스 공장이 SKC 필름 공장 바로 옆이라는 보도(JoongAng)에 따른 인접 근사",
+   "district": "GA-10",
+   "district_map": "119대 의회 경계(Census)",
+   "district_certain": true,
+   "census_cd120": "GA-10",
+   "census_match": true
+  },
+  {
+   "id": "p28",
+   "lat": 34.16523,
+   "lon": -84.79976,
+   "coord_method": "city_centroid",
+   "district": "GA-11",
+   "district_map": "119대 의회 경계(Census)",
+   "district_candidates": [
+    "GA-11"
+   ],
+   "district_certain": true,
+   "census_cd120": "GA-11",
+   "census_match": true
+  },
+  {
+   "id": "p49",
+   "lat": 34.2873,
+   "lon": -84.79169,
+   "coord_method": "osm:way/1525009658 Hanwha QCells",
+   "district": "GA-11",
+   "district_map": "119대 의회 경계(Census)",
+   "district_certain": true,
+   "census_cd120": "GA-11",
+   "census_match": true
+  },
+  {
+   "id": "p50",
+   "lat": 34.76919,
+   "lon": -84.97025,
+   "coord_method": "city_centroid",
+   "district": "GA-14",
+   "district_map": "119대 의회 경계(Census)",
+   "district_candidates": [
+    "GA-14"
+   ],
+   "district_certain": true,
+   "census_cd120": "GA-14",
+   "census_match": true
+  },
+  {
+   "id": "p01",
+   "lat": 32.16053,
+   "lon": -81.451,
+   "coord_method": "osm:way/1207640268 Hyundai Motor Group Metaplant America (Photon/OSM)",
+   "district": "GA-1",
+   "district_map": "119대 의회 경계(Census)",
+   "district_certain": true,
+   "census_cd120": "GA-1",
+   "census_match": true
+  },
+  {
+   "id": "p02",
+   "lat": 32.16053,
+   "lon": -81.451,
+   "coord_method": "osm:way/1207640268 Hyundai Motor Group Metaplant America (Photon/OSM)",
+   "district": "GA-1",
+   "district_map": "119대 의회 경계(Census)",
+   "district_certain": true,
+   "census_cd120": "GA-1",
+   "census_match": true
+  },
+  {
+   "id": "p04",
+   "lat": 32.91709,
+   "lon": -85.12521,
+   "coord_method": "osm:way/230519208 Kia Motors Manufacturing Georgia (Photon/OSM)",
+   "district": "GA-3",
+   "district_map": "119대 의회 경계(Census)",
+   "district_certain": true,
+   "census_cd120": "GA-3",
+   "census_match": true
+  },
+  {
+   "id": "p07",
+   "lat": 32.91236,
+   "lon": -85.12548,
+   "coord_method": "osm:way/230519215 Hyundai Transys (Photon/OSM; Census 주소 매칭 실패)",
+   "district": "GA-3",
+   "district_map": "119대 의회 경계(Census)",
+   "district_certain": true,
+   "census_cd120": "GA-3",
+   "census_match": true
+  },
+  {
+   "id": "p08",
+   "lat": 32.8913,
+   "lon": -85.14242,
+   "coord_method": "osm:way/1007833864 Hyundai Transys — OSM의 두 Transys 건물 중 p07에 쓰지 않은 쪽, 어느 건물이 시트 공장인지 미확인",
+   "district": "GA-3",
+   "district_map": "119대 의회 경계(Census)",
+   "district_certain": true,
+   "census_cd120": "GA-3",
+   "census_match": true
+  },
+  {
+   "id": "p11",
+   "lat": 34.16523,
+   "lon": -84.79976,
+   "coord_method": "city_centroid",
+   "district": "GA-11",
+   "district_map": "119대 의회 경계(Census)",
+   "district_candidates": [
+    "GA-11"
+   ],
+   "district_certain": true,
+   "census_cd120": "GA-11",
+   "census_match": true
+  },
+  {
+   "id": "p62",
+   "lat": 42.50986,
+   "lon": -94.17567,
+   "coord_method": "city_centroid",
+   "district": "IA-4",
+   "district_map": "119대 의회 경계(Census)",
+   "district_candidates": [
+    "IA-4"
+   ],
+   "district_certain": true,
+   "census_cd120": "IA-4",
+   "census_match": true
+  },
+  {
+   "id": "p42",
+   "lat": 40.42587,
+   "lon": -86.90807,
+   "coord_method": "city_centroid",
+   "district": "IN-4",
+   "district_map": "119대 의회 경계(Census)",
+   "district_candidates": [
+    "IN-4"
+   ],
+   "district_certain": true,
+   "census_cd120": "IN-4",
+   "census_match": true
+  },
+  {
+   "id": "p16",
+   "lat": 40.51538,
+   "lon": -86.1172,
+   "coord_method": "census_address:2644 N 50 E, KOKOMO, IN, 46901",
+   "district": "IN-5",
+   "district_map": "119대 의회 경계(Census)",
+   "district_certain": true,
+   "census_cd120": "IN-5",
+   "census_match": true
+  },
+  {
+   "id": "p17",
+   "lat": 40.51538,
+   "lon": -86.1172,
+   "coord_method": "census_address:2644 N 50 E, KOKOMO, IN, 46901 (1공장 주소, 2공장은 인접)",
+   "district": "IN-5",
+   "district_map": "119대 의회 경계(Census)",
+   "district_certain": true,
+   "census_cd120": "IN-5",
+   "census_match": true
+  },
+  {
+   "id": "p18",
+   "lat": 41.70569,
+   "lon": -86.50982,
+   "coord_method": "city_centroid",
+   "district": "IN-2",
+   "district_map": "119대 의회 경계(Census)",
+   "district_candidates": [
+    "IN-2"
+   ],
+   "district_certain": true,
+   "census_cd120": "IN-2",
+   "census_match": true
+  },
+  {
+   "id": "g02",
+   "lat": 38.78057,
+   "lon": -97.63595,
+   "coord_method": "census_address:3019 SCANLAN AVE, SALINA, KS, 67401",
+   "district": "KS-1",
+   "district_map": "119대 의회 경계(Census)",
+   "district_certain": true,
+   "census_cd120": "KS-1",
+   "census_match": true
+  },
+  {
+   "id": "g04",
+   "lat": 37.69395,
+   "lon": -85.85913,
+   "coord_method": "city_centroid",
+   "district": "KY-2",
+   "district_map": "119대 의회 경계(Census)",
+   "district_candidates": [
+    "KY-2"
+   ],
+   "district_certain": true,
+   "census_cd120": "KY-2",
+   "census_match": true
+  },
+  {
+   "id": "p27",
+   "lat": 30.21892,
+   "lon": -93.30236,
+   "coord_method": "osm:way/510863219 LOTTE Chemical Louisiana",
+   "district": "LA-4",
+   "district_map": "2026 신지도 — Louisiana Legislature — Act 2 (2026 RS)",
+   "district_certain": true,
+   "census_cd120": "LA-4",
+   "census_match": true
+  },
+  {
+   "id": "p09",
+   "lat": 30.10519,
+   "lon": -90.98759,
+   "coord_method": "city_centroid",
+   "district": "LA-2",
+   "district_map": "2026 신지도 — Louisiana Legislature — Act 2 (2026 RS)",
+   "district_candidates": [
+    "LA-2",
+    "LA-6"
+   ],
+   "district_certain": false,
+   "census_cd120": "LA-2",
+   "census_match": true
+  },
+  {
+   "id": "p41",
+   "lat": 39.10437,
+   "lon": -77.20963,
+   "coord_method": "census_address:9911 BELWARD CAMPUS DR, ROCKVILLE, MD, 20850",
+   "district": "MD-6",
+   "district_map": "119대 의회 경계(Census)",
+   "district_certain": true,
+   "census_cd120": "MD-6",
+   "census_match": true
+  },
+  {
+   "id": "p22",
+   "lat": 42.68672,
+   "lon": -84.69329,
+   "coord_method": "osm:way/1430055535 LG Energy Solution (Davis Highway, Lansing; Photon/OSM)",
+   "district": "MI-7",
+   "district_map": "119대 의회 경계(Census)",
+   "district_certain": true,
+   "census_cd120": "MI-7",
+   "census_match": true
+  },
+  {
+   "id": "p24",
+   "lat": 42.75646,
+   "lon": -86.07058,
+   "coord_method": "osm:way/477060132 LG Chem (Holland)",
+   "district": "MI-4",
+   "district_map": "119대 의회 경계(Census)",
+   "district_certain": true,
+   "census_cd120": "MI-4",
+   "census_match": true
+  },
+  {
+   "id": "p43",
+   "lat": 43.59621,
+   "lon": -83.88817,
+   "coord_method": "city_centroid",
+   "district": "MI-8",
+   "district_map": "119대 의회 경계(Census)",
+   "district_candidates": [
+    "MI-8"
+   ],
+   "district_certain": true,
+   "census_cd120": "MI-8",
+   "census_match": true
+  },
+  {
+   "id": "p56",
+   "lat": 35.91152,
+   "lon": -77.58764,
+   "coord_method": "census_address:2800 ANACONDA RD, TARBORO, NC, 27886",
+   "district": "NC-1",
+   "district_map": "2026 신지도 — NC General Assembly — S.L. 2025-95",
+   "district_certain": true,
+   "census_cd120": "NC-1",
+   "census_match": true
+  },
+  {
+   "id": "g01",
+   "lat": 35.81067,
+   "lon": -80.86405,
+   "coord_method": "census_address:1293 GLENWAY DR, STATESVILLE, NC, 28625",
+   "district": "NC-10",
+   "district_map": "2026 신지도 — NC General Assembly — S.L. 2025-95",
+   "district_certain": true,
+   "census_cd120": "NC-10",
+   "census_match": true
+  },
+  {
+   "id": "p36",
+   "lat": 46.22907,
+   "lon": -97.65895,
+   "coord_method": "osm:relation/13008942 Bobcat of Gwinner",
+   "district": "ND-1",
+   "district_map": "119대 의회 경계(Census)",
+   "district_certain": true,
+   "census_cd120": "ND-1",
+   "census_match": true
+  },
+  {
+   "id": "p59",
+   "lat": 40.556,
+   "lon": -74.71086,
+   "coord_method": "osm:way/760902027 Eli Lilly and Company Branchburg",
+   "district": "NJ-7",
+   "district_map": "119대 의회 경계(Census)",
+   "district_certain": true,
+   "census_cd120": "NJ-7",
+   "census_match": true
+  },
+  {
+   "id": "p60",
+   "lat": 43.06477,
+   "lon": -76.08544,
+   "coord_method": "osm:way/899638487 Lotte Biologics",
+   "district": "NY-22",
+   "district_map": "119대 의회 경계(Census)",
+   "district_certain": true,
+   "census_cd120": "NY-22",
+   "census_match": true
+  },
+  {
+   "id": "g06",
+   "lat": 39.28131,
+   "lon": -81.63603,
+   "coord_method": "osm:way/837660013 Kraton Polymers",
+   "district": "OH-2",
+   "district_map": "2026 신지도 — Ohio OGRIP — 2026–2032 연방하원 선거구",
+   "district_certain": true,
+   "census_cd120": "OH-2",
+   "census_match": true
+  },
+  {
+   "id": "p20",
+   "lat": 41.15251,
+   "lon": -80.86362,
+   "coord_method": "osm:way/1165459849 Ultium Cells (Tod Avenue SW, Lordstown; Photon/OSM)",
+   "district": "OH-14",
+   "district_map": "2026 신지도 — Ohio OGRIP — 2026–2032 연방하원 선거구",
+   "district_certain": true,
+   "census_cd120": "OH-14",
+   "census_match": true
+  },
+  {
+   "id": "p23",
+   "lat": 39.62504,
+   "lon": -83.57156,
+   "coord_method": "osm:way/1434505595 L-H Battery Company",
+   "district": "OH-15",
+   "district_map": "2026 신지도 — Ohio OGRIP — 2026–2032 연방하원 선거구",
+   "district_certain": true,
+   "census_cd120": "OH-15",
+   "census_match": true
+  },
+  {
+   "id": "p47",
+   "lat": 39.88791,
+   "lon": -75.19081,
+   "coord_method": "osm:way/588943442 Hanwha Philly Shipyard",
+   "district": "PA-5",
+   "district_map": "119대 의회 경계(Census)",
+   "district_certain": true,
+   "census_cd120": "PA-5",
+   "census_match": true
+  },
+  {
+   "id": "p48",
+   "lat": 39.88791,
+   "lon": -75.19081,
+   "coord_method": "osm:way/588943442 Hanwha Philly Shipyard",
+   "district": "PA-5",
+   "district_map": "119대 의회 경계(Census)",
+   "district_certain": true,
+   "census_cd120": "PA-5",
+   "census_match": true
+  },
+  {
+   "id": "p40",
+   "lat": 34.28741,
+   "lon": -81.54394,
+   "coord_method": "osm:way/503828724 SAMSUNG Manufacturing Plant",
+   "district": "SC-3",
+   "district_map": "119대 의회 경계(Census)",
+   "district_certain": true,
+   "census_cd120": "SC-3",
+   "census_match": true
+  },
+  {
+   "id": "p61",
+   "lat": 43.5407,
+   "lon": -96.73196,
+   "coord_method": "city_centroid",
+   "district": "SD-1",
+   "district_map": "119대 의회 경계(Census)",
+   "district_candidates": [
+    "SD-1"
+   ],
+   "district_certain": true,
+   "census_cd120": "SD-1",
+   "census_match": true
+  },
+  {
+   "id": "p21",
+   "lat": 35.72381,
+   "lon": -86.96868,
+   "coord_method": "osm:way/1221276101 Ultium Cells (Station Loop, Spring Hill; Nominatim/OSM)",
+   "district": "TN-5",
+   "district_map": "2026 신지도 — State of Tennessee STS GIS — 2026 선거구",
+   "district_certain": true,
+   "census_cd120": "TN-5",
+   "census_match": true
+  },
+  {
+   "id": "p25",
+   "lat": 36.52776,
+   "lon": -87.35887,
+   "coord_method": "city_centroid",
+   "district": "TN-7",
+   "district_map": "2026 신지도 — State of Tennessee STS GIS — 2026 선거구",
+   "district_candidates": [
+    "TN-5",
+    "TN-7"
+   ],
+   "district_certain": false,
+   "census_cd120": "TN-7",
+   "census_match": true
+  },
+  {
+   "id": "p65",
+   "lat": 36.63381,
+   "lon": -87.24683,
+   "coord_method": "osm:way/849110279 LG Electronics (Lawson-Poindexter Rd)",
+   "district": "TN-7",
+   "district_map": "2026 신지도 — State of Tennessee STS GIS — 2026 선거구",
+   "district_certain": true,
+   "census_cd120": "TN-7",
+   "census_match": true
+  },
+  {
+   "id": "p15",
+   "lat": 35.41754,
+   "lon": -89.41716,
+   "coord_method": "osm:way/1080359755 BlueOval City (Photon/OSM)",
+   "district": "TN-8",
+   "district_map": "2026 신지도 — State of Tennessee STS GIS — 2026 선거구",
+   "district_certain": true,
+   "census_cd120": "TN-8",
+   "census_match": true
+  },
+  {
+   "id": "p26",
+   "lat": 36.51429,
+   "lon": -87.40721,
+   "coord_method": "osm:relation/6314484 Nyrstar Clarksville Zinc Mill",
+   "district": "TN-7",
+   "district_map": "2026 신지도 — State of Tennessee STS GIS — 2026 선거구",
+   "district_certain": true,
+   "census_cd120": "TN-7",
+   "census_match": true
+  },
+  {
+   "id": "p31",
+   "lat": 35.07185,
+   "lon": -90.09588,
+   "coord_method": "osm:way/916488829 Hyosung HICO",
+   "district": "TN-5",
+   "district_map": "2026 신지도 — State of Tennessee STS GIS — 2026 선거구",
+   "district_certain": true,
+   "census_cd120": "TN-5",
+   "census_match": true
+  },
+  {
+   "id": "p32",
+   "lat": 35.07185,
+   "lon": -90.09588,
+   "coord_method": "osm:way/916488829 Hyosung HICO",
+   "district": "TN-5",
+   "district_map": "2026 신지도 — State of Tennessee STS GIS — 2026 선거구",
+   "district_certain": true,
+   "census_cd120": "TN-5",
+   "census_match": true
+  },
+  {
+   "id": "p57",
+   "lat": 30.09724,
+   "lon": -97.31212,
+   "coord_method": "census_address:409 TECHNOLOGY DR, BASTROP, TX, 78602",
+   "district": "TX-27",
+   "district_map": "2026 신지도 — Texas Legislative Council — PLANC2333",
+   "district_certain": true,
+   "census_cd120": "TX-27",
+   "census_match": true
+  },
+  {
+   "id": "g05",
+   "lat": 33.00868,
+   "lon": -96.65446,
+   "coord_method": "census_address:4101 E PLANO PKWY, PLANO, TX, 75074",
+   "district": "TX-3",
+   "district_map": "2026 신지도 — Texas Legislative Council — PLANC2333",
+   "district_certain": true,
+   "census_cd120": "TX-3",
+   "census_match": true
+  },
+  {
+   "id": "p37",
+   "lat": 30.37499,
+   "lon": -97.63777,
+   "coord_method": "osm:way/639164539 Samsung Austin Semiconductor",
+   "district": "TX-37",
+   "district_map": "2026 신지도 — Texas Legislative Council — PLANC2333",
+   "district_certain": true,
+   "census_cd120": "TX-37",
+   "census_match": true
+  },
+  {
+   "id": "p38",
+   "lat": 30.5374,
+   "lon": -97.45258,
+   "coord_method": "osm:way/1454508020 Samsung Taylor Fab 1",
+   "district": "TX-17",
+   "district_map": "2026 신지도 — Texas Legislative Council — PLANC2333",
+   "district_certain": true,
+   "census_cd120": "TX-17",
+   "census_match": true
+  },
+  {
+   "id": "p39",
+   "lat": 30.5374,
+   "lon": -97.45258,
+   "coord_method": "osm:way/1454508020 Samsung Taylor Fab 1",
+   "district": "TX-17",
+   "district_map": "2026 신지도 — Texas Legislative Council — PLANC2333",
+   "district_certain": true,
+   "census_cd120": "TX-17",
+   "census_match": true
+  },
+  {
+   "id": "p58",
+   "lat": 37.76451,
+   "lon": -113.04435,
+   "coord_method": "city_centroid",
+   "district": "UT-3",
+   "district_map": "2026 신지도 — Utah UGRC — 2026–2032 연방하원 선거구",
+   "district_candidates": [
+    "UT-3"
+   ],
+   "district_certain": true,
+   "census_cd120": "UT-3",
+   "census_match": true
+  },
+  {
+   "id": "p29",
+   "lat": 36.80936,
+   "lon": -76.28683,
+   "coord_method": "osm:way/667428324 South Norfolk Jordan Bridge (근사: 부지가 Jordan Bridge 인근, WTKR)",
+   "district": "VA-3",
+   "district_map": "119대 의회 경계(Census)",
+   "district_certain": true,
+   "census_cd120": "VA-3",
+   "census_match": true
+  },
+  {
+   "id": "p30",
+   "lat": 36.75744,
+   "lon": -76.23386,
+   "coord_method": "census_address:802 YUPO CT, CHESAPEAKE, VA, 23320",
+   "district": "VA-3",
+   "district_map": "119대 의회 경계(Census)",
+   "district_certain": true,
+   "census_cd120": "VA-3",
+   "census_match": true
+  },
+  {
+   "id": "p45",
+   "lat": 37.22793,
+   "lon": -77.40193,
+   "coord_method": "city_centroid",
+   "district": "VA-4",
+   "district_map": "119대 의회 경계(Census)",
+   "district_candidates": [
+    "VA-4"
+   ],
+   "district_certain": true,
+   "census_cd120": "VA-4",
+   "census_match": true
+  }
+ ]
+}
