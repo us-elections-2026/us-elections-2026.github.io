@@ -1,5 +1,7 @@
 {
  "as_of": "2026-10-09",
+ "fetched_at": "2026-10-18T21:30:31.701436+00:00",
+ "source_date_kind": "270towin date_created (기관 원문 발표일 미확인)",
  "source_label": "Cook Political Report (270towin 재게시 · 자동 취득)",
  "source_url": "https://www.270towin.com/2026-house-election/index_show_table.php?map_title=cook-political-report-2026-house-ratings",
  "decode_note": "0=Toss-up 1=Solid D 2=Solid R 3=Likely D 4=Likely R 5=Leans D 6=Leans R · 주 약자순×지역구번호순",

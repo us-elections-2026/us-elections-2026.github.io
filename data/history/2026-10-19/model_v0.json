@@ -1,0 +1,162 @@
+{
+  "version": "v0.1",
+  "run_date": "2026-10-19",
+  "seed": 20261103,
+  "n_sims": 10000,
+  "assumptions": {
+    "sigma_poll": 6,
+    "half_life_days": 21,
+    "rho": 0.5,
+    "weights": {
+      "rating": 1,
+      "market": 1.2,
+      "poll_max": 1.5
+    }
+  },
+  "method_note": "등급(사전)+시장가+조사(시간감쇠·당파보정) 블렌드 → 가우시안 코퓰러(ρ=0.5) 1만회. 조사·시장 없는 주는 등급만 사용(MI 등). 사퇴 후보 조사 제외(ME=Jackson만). σ·ρ·가중치는 문서화된 가정 — 11월 실측으로 캘리브레이션 예정.",
+  "states": [
+    {
+      "state": "GA",
+      "defense": "D",
+      "rating": "Likely D (Cook 10/12 · Sabato 10/15 피드) · Lean D (Inside Elections 10/2) — 이번 주 이동 없음",
+      "p_rating": 0.9,
+      "p_market": 0.95,
+      "poll_margin": 7.7,
+      "n_polls": 9,
+      "p_poll": 0.9,
+      "p_blend": 0.916
+    },
+    {
+      "state": "MI",
+      "defense": "D",
+      "rating": "Toss-up (Cook 10/12) / Lean D (Sabato 10/15 피드) / Tilt D (Inside Elections 10/2) — 이번 주 이동 없음, Cook만 토스업에 남았다(\"민주 의석 중 가장 취약\")",
+      "p_rating": 0.5,
+      "p_market": 0.67,
+      "poll_margin": 2.6,
+      "n_polls": 31,
+      "p_poll": 0.668,
+      "p_blend": 0.623
+    },
+    {
+      "state": "NH",
+      "defense": "D",
+      "rating": "**Lean D (Cook 10/12 피드 — 10/6 Toss-up→Lean D 확인)** / **Likely D (Sabato 10/15 피드 — Lean D→Likely D, 원천 주간 미기재·피드로만 확인)** / Toss-up (Inside Elections 10/2)",
+      "p_rating": 0.75,
+      "p_market": 0.89,
+      "poll_margin": 5.8,
+      "n_polls": 11,
+      "p_poll": 0.834,
+      "p_blend": 0.829
+    },
+    {
+      "state": "ME",
+      "defense": "R",
+      "rating": "Toss-up (Cook 10/12 · Sabato 10/15 · Inside Elections 10/2) — **10/16 Fox 집계로 Cook·IE·Sabato·Fox 전 기관 Toss-up 교차 확인** · Split Ticket 10/17 Lean D",
+      "p_rating": 0.5,
+      "p_market": 0.58,
+      "poll_margin": 2.1,
+      "n_polls": 17,
+      "p_poll": 0.634,
+      "p_blend": 0.58
+    },
+    {
+      "state": "NC",
+      "defense": "R",
+      "rating": "**Likely D (Cook 10/12 피드 — 10/6 Lean D→Likely D 확인)** / Lean D (Sabato 10/15 피드) / Lean D (Inside Elections 10/2) · Split Ticket 10/17 Solid D",
+      "p_rating": 0.9,
+      "p_market": 0.96,
+      "poll_margin": 10.2,
+      "n_polls": 17,
+      "p_poll": 0.955,
+      "p_blend": 0.942
+    },
+    {
+      "state": "TX",
+      "defense": "R",
+      "rating": "Toss-up (Cook 10/12 · Sabato 10/15) / Tilt R (Inside Elections 10/2) — 이번 주 이동 없음 · Split Ticket 10/17 Lean D",
+      "p_rating": 0.5,
+      "p_market": 0.62,
+      "poll_margin": 2.7,
+      "n_polls": 28,
+      "p_poll": 0.675,
+      "p_blend": 0.61
+    },
+    {
+      "state": "OH",
+      "defense": "R",
+      "rating": "Toss-up (Cook 10/12 · Sabato 10/15 · Inside Elections 10/2) — 3사 전부 Toss-up, 이번 주 이동 없음 · Split Ticket 10/17 Lean D",
+      "p_rating": 0.5,
+      "p_market": 0.64,
+      "poll_margin": 3.4,
+      "n_polls": 14,
+      "p_poll": 0.717,
+      "p_blend": 0.634
+    },
+    {
+      "state": "AK",
+      "defense": "R",
+      "rating": "Toss-up (Cook 10/12) / **Lean D (Sabato 10/15 피드 — 10/6 이동 유지)** / Toss-up (Inside Elections 10/2) · Fox Power Rankings Toss-up(10/16)",
+      "p_rating": 0.5,
+      "p_market": 0.75,
+      "poll_margin": 2,
+      "n_polls": 11,
+      "p_poll": 0.632,
+      "p_blend": 0.634
+    },
+    {
+      "state": "IA",
+      "defense": "R",
+      "rating": "Toss-up (Cook 10/12 · Sabato 10/15) / Tilt R (Inside Elections 10/2) — 이번 주 이동 없음 · Split Ticket 10/17 Toss-up",
+      "p_rating": 0.5,
+      "p_market": 0.43,
+      "poll_margin": 1.1,
+      "n_polls": 16,
+      "p_poll": 0.571,
+      "p_blend": 0.506
+    },
+    {
+      "state": "NE",
+      "defense": "R",
+      "rating": "Likely R (Cook 10/12) / **Lean R (Sabato 10/15 피드 — Likely R→Lean R, 원천 주간 미기재·피드로만 확인)** / Lean R (Inside Elections 10/2) · Race to the WH Toss-up",
+      "p_rating": 0.1,
+      "poll_margin": -1.1,
+      "n_polls": 6,
+      "p_poll": 0.424,
+      "p_blend": 0.294
+    },
+    {
+      "state": "KS",
+      "defense": "R",
+      "rating": "**Toss-up (Cook 10/12 피드 — 10/6 Lean R→Toss-up 확인)** / **Toss-up (Sabato 10/15 피드 — Lean R→Toss-up, 원천 주간 미기재·피드로만 확인)** / Likely R (Inside Elections 10/2) · Split Ticket 10/17 Toss-up",
+      "p_rating": 0.5,
+      "p_market": 0.36,
+      "poll_margin": 1.2,
+      "n_polls": 7,
+      "p_poll": 0.582,
+      "p_blend": 0.488
+    }
+  ],
+  "dem_majority_prob": 60.5,
+  "seats": {
+    "mean": 51.08,
+    "p05": 46,
+    "p25": 49,
+    "median": 51,
+    "p75": 53,
+    "p95": 55
+  },
+  "seat_pmf": {
+    "44": 0.0088,
+    "45": 0.0238,
+    "46": 0.0427,
+    "47": 0.0569,
+    "48": 0.073,
+    "49": 0.0893,
+    "50": 0.1009,
+    "51": 0.1125,
+    "52": 0.1234,
+    "53": 0.1223,
+    "54": 0.1267,
+    "55": 0.1197
+  }
+}

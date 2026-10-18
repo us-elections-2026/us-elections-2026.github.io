@@ -1,0 +1,126 @@
+{
+  "as_of": "2026-10-18",
+  "note": "주지사 경합 8주 레이스 데이터 — senate_races.json과 동일 스키마. 등급은 governor_ratings.json(자동 취득)이 정본이고 여기엔 표시용 요약만 둔다. 자금은 주(州) 선관위 신고 기준(연방 FEC 아님) — 자동 피드가 없어 수동 갱신. **2026-10-04 갱신**: 원천 주정부 주간은 사바토 9/22 회차의 OH Lean R→Toss-up을 12일 만에 소급 확인했고, 같은 회차 주지사 이동 4곳 중 나머지 3곳을 미특정으로 남겼다. 이 사이트 피드(9/27 취득)는 그 3곳을 **NV Lean R→Toss-up · FL·TX Likely R→Lean R**로 보여준다(전주 기록) — 사바토 FL·TX 등급도 피드상 Lean R로 확인된다. 사바토 피드 스탬프는 9/29로 다시 바뀌었지만 이 표의 8주는 변동이 없다(이동은 감시 밖 NE·VT). 원천과 피드는 사바토 AZ(원천 Likely D / 피드 Lean D)를 여전히 다르게 읽는다 — 이 표는 피드를 따른다. 알래스카·메인은 이 표의 8주에 포함되지 않으므로(State Focus 미보유) 주간호 본문에서만 다룬다. · **2026-10-11 갱신**: 사바토 피드 스탬프가 10/9로 바뀌었고, 이 표의 8주는 변동이 없다(사바토가 움직인 주지사는 감시 8주 밖 알래스카 — Toss-up→Lean D, 원천 주정부 주간은 AK를 여전히 Toss-up으로 기재). 원천은 1순위를 10곳에서 12곳(FL·TX 승격)으로 넓혔다 — FL·TX는 이 표의 8주에 없으므로 주간호 본문에서 다룬다. · **2026-10-13 확장**: 경합 roster 8→12주(AK·FL·OR·TX 추가). 신규 4행은 _NIS 주정부 주간(10/11)·일일 브리핑에서 옮겼고 등급 문구는 피드(10/11 취득) 기준으로 맞췄다. TX·OR 자금은 원천 미기재로 null. · **2026-10-18 갱신**: Cook 피드 스탬프가 10/15로 바뀌었고 **알래스카 Toss-up → Lean D(10/13 상향)**가 확인됐다 — 원천 주정부 주간과 일치, 1순위 유일 이동. 사바토 피드는 10/9 그대로(AK Lean D — 원천은 Toss-up(미확인) 기재, 3주째 차이). 12주 roster 변동 없음. 텍사스·아이오와는 10월 중순 실사 조사에서 민주 마진이 축소됐다(TX Marist R+4·Siena R+1, IA Marist D+7·YouGov D+6).",
+  "races": [
+    {
+      "state": "AZ",
+      "defense": "D",
+      "incumbent": "Hobbs (D·현직) vs Biggs (R)",
+      "rating": "Lean D (Cook 10/15 · Sabato 10/9) / Tilt D (IE 10/2) — 이동 없음 · 원천 주간은 사바토 AZ를 Likely D로 기재(피드와 불일치 지속)",
+      "latest_poll": "**Hobbs 51–34 Biggs (Highground, 10/13 등재 — D+17; 8/25 조사[LV 400 ±4.9] 재등재 가능성·RCP상 후원 표기)** · 47–34 (Arizona State Univ., 10/6 등재 — D+13) 이월",
+      "poll_source": "**민주 방어선 경화.** Highground D+17은 8/25 조사의 재등재일 가능성이 있어 신규 실측으로 세지 않는다(원천 단서). ASU D+13·Noble D+13과 같은 방향이다. 조기투표는 10/7 개시. 이번 주 Kalshi 홉스 가격은 85¢에서 **91.5¢**로 올랐다(10/18) — 전주 조사·시장 반대 방향이 되돌려졌다. 주의회(AZ 상·하원)는 토스업 체임버로 변동 없음.",
+      "cash_on_hand": "자원배분 약 15:1 민주 불변(빅스+주 공화당 3주 집행 $175만 vs 홉스 플랫폼 우위) · Hobbs Q2 모금 $2.6M·잔고 $2.4M vs Biggs $0.9M·잔고 $1.2M(주 선관위, 이월) + DGA $10M 투입 발표",
+      "kr_relevance": "반도체·배터리 투자처(간접) — 인허가·인센티브 결정권"
+    },
+    {
+      "state": "GA",
+      "defense": "R",
+      "incumbent": "Bottoms (D) vs Jackson (R) — 개방석(Kemp 임기 제한)",
+      "rating": "Toss-up (Cook 10/15 · Sabato 10/9 · IE 10/2) — 이동 없음. **원천 주정부 트랙 하향 심사 5주차**(가중치는 등급 추종 규약상 .50 유지)",
+      "latest_poll": "**신규 비당파 0건 — 5주째** · Jackson 49–47 Bottoms (InsiderAdvantage, 공화 성향, 10/14 등재, 상세 미공개 — R+2)",
+      "poll_source": "**조기투표 첫날(10/13) 약 19만 표로 주 역대 기록**(2022 중간선거 첫날 대비 +5.5만 이상, 이틀 누계 약 34.6만 — 수치 간 불일치 190K/199K로 확정치 미확보)이지만 정당·인구 구성 데이터가 없어 방향 해석은 불가하다. 잭슨은 10/12 애틀랜타 프레스클럽 토론에 불참했고(바텀스 단독 출연), 켐프가 잭슨 유세에 동행했다. 오바마는 10/8 영상으로 바텀스를 지지했다. 원천은 GA .50을 '정보 부재의 .50'으로 부르며 12/1 결선(50% 미달 시) 변수를 유지한다. Kalshi 바텀스 **49¢**(10/18, 전주 46¢).",
+      "cash_on_hand": "공중전 **약 9.5:1 공화** — AdImpact 친잭슨 $7,600만 vs 바텀스+우군 $800만 · 바텀스 캠프 전통 TV 예약 **$42,000** · 잭슨 자기 재산 실측 집행 $1억 800만(6월까지, AJC) · \"약 $2억\"은 레이스 전체 **예상치**(캠프 주장·장부 수치 아님 — 범주 분리, 합산 금지)",
+      "kr_relevance": "현대차 메타플랜트·SK온 배터리 — 주지사가 인허가·세제 인센티브 실질 결정권자"
+    },
+    {
+      "state": "OH",
+      "defense": "R",
+      "incumbent": "Acton (D) vs Ramaswamy (R) — 개방석",
+      "rating": "Toss-up (Cook 10/15 · Sabato 10/9 · IE 10/2) — 3사 전부 Toss-up, 이동 없음",
+      "latest_poll": "**Acton 50–44 Ramaswamy (BGSU/YouGov, 10/16 등재 — D+6; RCP 개별 페이지와 수치 불일치, 미확정)** · 반대편 Ramaswamy 48–47 (Big Data Poll, 공화 성향, 10/12 등재 — R+1) · 직전 CNN/SSRS D+8 · NYT/Siena D+4 · YouGov D+4 이월 — 비당파 범위 D+4~8",
+      "poll_source": "**비당파 범위 D+4~8이 유지되고, 공화 성향 조사만 R+1~2다.** BGSU/YouGov 수치는 RCP 개별 페이지와 어긋나 미확정으로 둔다. 같은 주 상원은 트럼프 영스타운 유세(10/12) 청중 급감 보도가 있었고 주지사 레이스 직접 언급은 원천에 없다. 조기투표는 10/6 개시. Kalshi 액턴 **71¢**(10/18, 전주 70¢).",
+      "cash_on_hand": "3분할 — ⓒ외부 약 7.4:1 공화($8,230만 vs $1,110만 · 야스 V-PAC $3,000만+) / ⓐ모금 흐름 액턴 $1,150만 > 라마스와미 $960만 / ⓑ라마스와미 자기 대여 $2,500만 · 9월 현재 보유현금 미확보(6월경 $2,680만 vs $810만)",
+      "kr_relevance": "Honda–LG에너지솔루션 배터리 합작·한화 등 제조 투자 — 전기요금(AI 데이터센터) 이슈와 교차"
+    },
+    {
+      "state": "MI",
+      "defense": "D",
+      "incumbent": "Benson (D) vs James (R) — 개방석(Whitmer 임기 제한)",
+      "rating": "Lean D (Cook 10/15 · Sabato 10/9) / Tilt D (IE 10/2) — 이동 없음 · 원천의 상향(Likely D) 감시는 약화",
+      "latest_poll": "창 내 신규 조사 없음 — Benson 48–45 James (YouGov, 10/6 — D+3) · 46–39 (Mitchell, 10/6 등재 — D+7) · Marist D+12 이월(분산 D+3~12)",
+      "poll_source": "**신규 실측 0건.** YouGov D+3부터 Marist D+12까지의 분산이 그대로 이월됐다. 2차 토론 일정은 미확정이다【수집 필요】. 상원 쪽에서는 밴스 10/15 먼로 유세가 있었다. Kalshi 벤슨 **92.5¢**(10/18, 전주와 동일).",
+      "cash_on_hand": "보유현금 벤슨 $590만 vs 제임스 $150만(8/24 기준, 9/4 공시) · 공화 외부 Mission Michigan $470만+(미공시) 상쇄",
+      "kr_relevance": "LG에너지솔루션 Ultium(랜싱) 본진 — 주지사가 투자 환경·전력 요금 실질 결정권자"
+    },
+    {
+      "state": "WI",
+      "defense": "D",
+      "incumbent": "Crowley (D, 8/11 경선 승) vs Tiffany (R) — 개방석(Evers 불출마)",
+      "rating": "Toss-up (Cook 10/15) / Lean D (Sabato 10/9) · Toss-up (IE 10/2) — 이동 없음",
+      "latest_poll": "창 내 신규 조사 없음 — **Crowley 49–46 Tiffany (Marquette Law School, 9/16–23, LV — D+3; RV D+1)** 이월 · **정정**: 최신 마케트는 9/30 발표(9/16~23 실사)이며 종전 D+5는 8/26자",
+      "poll_source": "**신규 실측 0건.** 원천은 위스콘신을 NV·KS와 함께 고용·물가 쇼크 이후 실사 없이 조기투표 구간에 들어가는 곳으로 분류한다. 단일 토론은 10/21 — 신규 실측 공백 속 유일 판별 이벤트다. Kalshi 크롤리 **79¢**(10/18, 전주 81¢).",
+      "cash_on_hand": "공중전 약 3:1 공화 — ⓒ 티파니 예약 $1,050만(예비 후 $420만) · AFP 누적 $500만+ · 反크롤리 TV $400만+ / **크롤리 절대액 미확보**(비율 역산 금지)",
+      "kr_relevance": "경선에서 탈락한 Hong이 한국계 미국인이었다 — 지명됐다면 경합 8주 주지사 후보 중 유일한 직접 연결이었으나, Crowley 확정으로 현재 남은 직접 연결은 없다"
+    },
+    {
+      "state": "NV",
+      "defense": "R",
+      "incumbent": "Ford (D) vs Lombardo (R·현직)",
+      "rating": "Toss-up (Cook 10/15 · Sabato 10/9) · Tilt R (IE 10/2) — 이동 없음",
+      "latest_poll": "**Lombardo 45–43 Ford (Noble Predictive Insights, 9/22–26, LV 708, ±3.68 — D−2, 무소속 Danielle Ford 7%·미결정 9%)** — 5주 만의 첫 비당파 · 직전 기준선 Emerson/KLAS 포드 +2(9/5–8) · RCP 표기 42–40 불일치 미해소",
+      "poll_source": "**신규 실측 0건 — 3주째 Noble D−2(공화 우위)가 최신인 채 잠겨 있다.** 조기투표 구간에서 1순위의 25%(NV·WI·KS)가 미계측이라는 것이 원천의 반증 기록이다. RCP 표기(42–40) 불일치는 미해소. 다만 Kalshi 포드 가격은 51¢에서 **57¢**(10/18)로 올랐다 — 신규 조사 없이 움직인 시장이다.",
+      "cash_on_hand": "지출 롬바르도 ≈168:1 우위(보유 $9.2M 대 $2.6M) — 감시 8주 중 자금 비대칭이 가장 큰 주",
+      "kr_relevance": "직접 연결 미확인"
+    },
+    {
+      "state": "IA",
+      "defense": "R",
+      "incumbent": "Sand (D) vs Lahn (R) — 개방석(Reynolds 불출마)",
+      "rating": "Lean D (Cook 10/15 · Sabato 10/9) / Tilt D (IE 10/2) — 이동 없음 · **원천 상향(Likely D) 감시 논거 완화**",
+      "latest_poll": "**Sand 52–45 Lahn (Marist, 10/8–11, RV 1,100·LV ±6.6 — LV D+7; 9/22 Marist D+12 대비 5p 축소)** · 50–44 (YouGov, 10/14 등재, 상세 【수집 필요】 — D+6; 9/11 D+11 대비 축소) · 직전 CNN D+9 · Suffolk D+12 · Siena D+11 이월",
+      "poll_source": "**전주 D+9~12 군집에서 D+6~7로 내려왔다.** 원천은 'Likely D 실현 시 +0.125' 상방 시나리오의 개연성이 낮아졌다며 상향 감시 논거를 완화했다(Lean D .75가 실측과 정합). 2차 토론(10/14, 수시티)은 러닝메이트·학교 재정·비자가 쟁점이었고 잔여 토론은 10/21(디모인)·10/27(시더래피즈). 같은 주 상원 Marist는 투렉 48–힌슨 45라 주지사가 상원을 끌어주는 구조는 유지되나 양쪽 다 10월 초 대비 축소됐다. Kalshi 샌드 **87¢**(10/18, 전주와 동일).",
+      "cash_on_hand": "**본선 진입 보유현금 샌드 $1,830만 vs 란 $636,189 — 28.8:1**(Iowa Capital Dispatch 7/20 원문으로 실증) · 란 모금의 ~80%($500만)가 RGA 연계 PAC 단일 출처",
+      "kr_relevance": "직접 연결 미확인 — 농업·통상 간접 경로는 상원 아이오와 페이지 참조"
+    },
+    {
+      "state": "KS",
+      "defense": "D",
+      "incumbent": "Holscher (D) vs Masterson (R) — 개방석(Kelly 임기 제한)",
+      "rating": "Lean R (Cook 10/15 · Sabato 10/9) / Tilt R (IE 10/2) — 이동 없음",
+      "latest_poll": "**Masterson 49–44 Holscher (NYT/Siena, 10/3 — R+5)** · 47–44 (YouGov, 10/6 — R+3) · 직전 Emerson R+7(9/15–16) 이월",
+      "poll_source": "**신규 실측 0건** — NYT/Siena R+5·YouGov R+3 이월, 1순위 중 유일한 민주 보유 열세 고착. 같은 주 상원은 **Cook Toss-up이 이 사이트 피드(10/12)로 확인됐고 사바토(10/15)도 Toss-up으로 올려** 티켓 내 분할(상원 경합 vs 주지사 열세)이 더 뚜렷해졌다. Kalshi 홀셔 **25¢**(10/18, 전주와 동일).",
+      "cash_on_hand": "매스터슨 첫 TV 약 $134K(예비 국면) · 본선 양측 광고 집행 미확보",
+      "kr_relevance": "직접 연결 미확인"
+    },
+    {
+      "state": "AK",
+      "defense": "R",
+      "incumbent": "Kreiss-Tomkins (D) vs Wilson·Bronson·Taylor (R 3인) — 개방석 (Dunleavy 연임 제한, 4인 RCV 본선)",
+      "rating": "**Lean D (Cook 10/15 피드 — 10/13 Toss-up→Lean D 상향 · Sabato 10/9)** / Toss-up (IE 10/2) — 원천 주정부 주간은 Sabato를 Toss-up(미확인)으로 기재(3주째 피드와 차이)",
+      "latest_poll": "지지 선언·Cook 상향 이후 조사 0건 — Alaska Survey Research 1순위 Kreiss-Tomkins 48 (10/6 등재, 양자 54–46 — D+8) · NYT/Siena 양자 52–48 (10/3 — D+4, 1순위 JKT 40) · AARP RCV 결선 55–45 (9/8~11) 이월",
+      "poll_source": "**Cook이 10/13 Toss-up → Lean D로 올렸다** — 공석에서 유일 민주 후보 JKT가 공화 3인을 여유 있게 앞서며 아이오와 제외 시 레드 주 민주 최고 기회라는 논거(같은 회차 NE·OK·VT Solid R→Likely R). **같은 날 트럼프가 워실라 유세 직전 트루스소셜로 버나뎃 윌슨(R)을 공식 지지**했으나 공화 3인(윌슨·브론슨·테일러) 모두 투표용지 잔류(8/31 시한 경과)·브론슨 \"계속 선거운동\" 공개 반박. 유세에서 \"브론슨·테일러는 사퇴했어야\", RCV를 \"phony rigged deal\"로 비난하며 RCV 폐지 주민투표(Ballot Measure 2) 찬성 촉구 — 제도 자체가 쟁점화. 던리비는 \"공화 후보 투표\", 브론슨·테일러는 \"공화 3인 모두 순위 기입\"으로 결집 메시지가 엇갈린다. 원천의 가중 기대 순증 +1.75석(Sabato Toss-up 가정), 이 사이트 피드로는 +1.875석. Kalshi **80¢**(10/18, 전주와 동일).",
+      "cash_on_hand": "DGA → Forward Frontier $65만 (민주 측 외부자금 첫 실측) · 공화 측 \"Kodiak PAC\" 등록 (RGA 개입 미확인) · 후보별 보유현금 원문 미확인",
+      "kr_relevance": "트럼프 9/30 \"한국 알래스카 LNG $540억 투자\" 발표 → 한국 산업부 \"결정된 바 없음\" 부인 (ADN: 합의 범위를 크게 넘어섬); 주지사 후보 4인 전원 사업 환영, \"외국 자본\" 프레임 부재. 수산물(명태·수리미 등) 수출시장 담론은 토론에서 부재. 10/8 토론 보도에 LNG·한국 언급 미확인."
+    },
+    {
+      "state": "FL",
+      "defense": "R",
+      "incumbent": "Jolly (D) vs Donalds (R) — 개방석 (R 방어)",
+      "rating": "Lean R (Cook 10/15 · Sabato 10/9 · IE 10/2) — 3사 Lean R · 10/11 주간에서 1순위 승격",
+      "latest_poll": "**Donalds 52–41 Jolly (Stetson, 10/13 등재 — R+11; 9/24 조사[LV 522 ±4.3] 재등재 가능성 【수집 필요】)** · 52–42 (James Madison Institute/Targoz, 9/28–10/4, LV ±2.77, 10/9 보도 — R+10, 싱크탱크 주관) · 직전 Mason-Dixon R+7 · YouGov R+2 · St. Pete 동률 이월",
+      "poll_source": "**Lean R 하단이 굳었다** — R+10~11 두 건이 이번 주 들어왔고, 원천은 .25 가중치가 과대일 가능성을 재병기했다. 상단은 Change Research D+2(민주계 의뢰)다. Kalshi 졸리 **20¢**(10/18, 전주 23¢).",
+      "cash_on_hand": "Cook: 졸리가 도널즈에게 자금 10:1 이상 열세 (9/16 일일 인용) · 도널즈 $90M+ (8/12 보고서, 8/18 예비 시점 표기)",
+      "kr_relevance": "직접 단서 미확인 — 원천 [K] 노트: 2순위 FL 한국 관련 신규 단서 없음, 데이터센터 감시 주(FL 포함) 한국 자본 연계 0건"
+    },
+    {
+      "state": "TX",
+      "defense": "R",
+      "incumbent": "Abbott (R·현직) vs Hinojosa (D)",
+      "rating": "Lean R (Cook 10/15 · Sabato 10/9) / Likely R (IE 10/2) — 10/11 주간에서 1순위 승격",
+      "latest_poll": "**Abbott 49–45 Hinojosa (Marist, 10/8–11, RV 1,196 ±4.3·LV ±4.9 — LV R+4; 9월 Marist D+3 대비 약 7p 이동)** · Abbott 48–47 (Siena, 10/13 등재, LV 617 — R+1; 10/4 Siena D+3과 별개 조사) · Hinojosa 49–48 (UT/Texas Politics Project, 10/14 공개, RV 1,200, 기간 【수집 필요】 — D+1)",
+      "poll_source": "**10월 초 민주 우위가 약화됐다** — 신규 3건 중 2건 공화 우위. 전주 \"ReconMR/Siena 불일치\"는 별개의 2차 Siena 조사로 해소됐다. 범위 D+1~R+5, Lean R·가중치 .25 유지. 같은 Marist 조사에서 상원은 탈라리코 47–팩스턴 45라 **주지사–상원 역방향 분할**(현직 애벗의 개인 방어력이 티켓 하단으로 전이되지 않는 신호)이 나타난다. 히노호사 표기는 원천에 이노호사/히노호사 혼용. Kalshi 히노호사 **27¢**(10/18, 전주 20¢) — 공화 우위 조사 2건이 나온 주에 시장은 올랐다.",
+      "cash_on_hand": null,
+      "kr_relevance": "직접 단서 미확인 — 원천 [K] 노트: 2순위 TX 한국 관련 신규 단서 없음"
+    },
+    {
+      "state": "OR",
+      "defense": "D",
+      "incumbent": "Kotek (D·현직) vs Drazan (R) — 2022 리매치",
+      "rating": "Lean D (Cook 10/15 · Sabato 10/9 · IE 10/2) — 3사 Lean D · 원천은 2순위(일일 기록 대상 아님)",
+      "latest_poll": "Oregonian/DHM Kotek 46–Drazan 44 (D+2; 실사 9/24–10/1, LV 549, ±4.2%p; 10/8 발표) — OPB 보도 기준 확인",
+      "poll_source": "OPB 의뢰 DHM 조사(9/17–27, LV 915, 9/30 발표)는 기본 응답 Kotek 44–Drazan 46(R+2), ±3.24%p다. Leaners 포함 응답은 Kotek 46–Drazan 47(R+1)로 별도 수치다. Oregonian 의뢰 DHM 조사(9/24–10/1, LV 549, 10/8 발표)는 Kotek 46–Drazan 44(D+2), ±4.2%p다. 두 조사는 의뢰자·실사 기간·표본이 다른 별개 조사이며 모두 오차범위 안이다. OPB 자체 발표와 10/8 보도를 확인했다. Oregonian 원표는 직접 열람하지 않았다.",
+      "cash_on_hand": null,
+      "kr_relevance": "직접 단서 미확인 — 원천 [K] 노트: 2순위 OR 한국 관련 신규 단서 없음, 데이터센터 감시 주(OR 포함) 한국 자본 연계 0건"
+    }
+  ]
+}

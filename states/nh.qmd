@@ -111,7 +111,7 @@ cat(candidate_cards_html("NH"))
 - **1세대 John H. Sununu(1939년생)**: 부모의 출장 중 쿠바 아바나에서 태어났습니다. 어머니는 엘살바도르 출신입니다. MIT 기계공학 박사이고, 1983~89년 주지사를 지낸 뒤 1989~91년 George H. W. Bush의 백악관 비서실장이었습니다. 아랍계·그리스계·히스패닉계로는 처음인 주지사이자 비서실장입니다. 자녀는 여덟 명입니다. ([Wikipedia](https://en.wikipedia.org/wiki/John_H._Sununu))
 - **2세대 John E. Sununu(1964년생)**: 이번 공화 후보입니다. MIT 기계공학 학사·석사, 하버드 MBA를 거쳐 NH-01 하원 3선(1997~2003)을 지냈습니다. 2002년에는 당시 주지사 Jeanne Shaheen을 꺾고 상원에 갔고, 2008년에는 같은 Shaheen에게 52 대 45로 졌습니다. 은퇴하는 Shaheen의 의석을 18년 만에 되찾으려는 구도입니다. ([Wikipedia](https://en.wikipedia.org/wiki/John_E._Sununu))
 - **2세대 Chris Sununu(1974년생)**: 동생입니다. 2017~2025년 주지사를 4연임했고, 2020년과 2022년 상원 출마 요청을 두 번 고사했습니다. 트럼프와 거리를 두다 2024년 3월 지지로 돌아섰고, 2025년 9월부터 항공사 협회 Airlines for America 회장입니다. ([Wikipedia](https://en.wikipedia.org/wiki/Chris_Sununu))
-- **선거에서의 뜻**: 가문 이름은 무당파에게 통하는 브랜드입니다. 그래서 이번 선거의 질문은 "Sununu 브랜드가 트럼프의 낮은 지지율을 떼어낼 수 있는가"로 모입니다. Cook이 9/15 이 주를 Toss Up으로 내리며 든 이유가 바로 이것입니다. 트럼프는 2026년 2월 그를 지지했습니다. ([Cook](https://www.cookpolitical.com/analysis/senate/new-hampshire-senate/move-toward-gop-new-hampshire-senate-race-shifts-toss) · [Yahoo/The Hill](https://www.yahoo.com/news/articles/trump-backs-john-sununu-hampshire-195711037.html))
+- **선거에서의 뜻**: 가문 이름은 무당파에게 통하는 브랜드입니다. 그래서 이번 선거의 질문은 "Sununu 브랜드가 트럼프의 낮은 지지율을 떼어낼 수 있는가"로 모입니다. Cook이 9/15 이 주를 Toss Up으로 내리며 든 이유가 바로 이것입니다(10/6 Lean D로 복귀 — 현재 등급은 위 카드가 피드에서 그립니다). 트럼프는 2026년 2월 그를 지지했습니다. ([Cook](https://www.cookpolitical.com/analysis/senate/new-hampshire-senate/move-toward-gop-new-hampshire-senate-race-shifts-toss) · [Yahoo/The Hill](https://www.yahoo.com/news/articles/trump-backs-john-sununu-hampshire-195711037.html))
 
 ### 경선 후보 (9/8 종료)
 

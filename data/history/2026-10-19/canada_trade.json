@@ -1,0 +1,312 @@
+{
+ "as_of": "2026-09-30",
+ "source_label": "주캐나다 미국대사관 주별 통상 팩트시트(2025년 Census 자료, 2026년 3~5월 발간) + USTR state benefits. 수입 비중·순위는 원자료에 없어 미확인. 고용은 주에 따라 '수출 지원 고용'(TX·PA) 또는 '캐나다계 기업 고용'(그 외)이라 표에는 싣지 않음.",
+ "provenance_note": "Sonnet 에이전트 수집(2026-09-30). 상품 무역 기준, 서비스 제외. 관광 수치는 StatCan·주 관광청 인용.",
+ "states": {
+  "GA": {
+   "exports_bn": 6.8,
+   "exports_year": 2025,
+   "exports_rank": 1,
+   "exports_share": 11.3,
+   "imports_bn": 6.6,
+   "imports_rank": null,
+   "imports_share": null,
+   "top_exports": [
+    "Aircraft & parts ($449M)",
+    "Plastics & plastic articles ($443M)",
+    "Optical/medical/precision instruments ($392M)"
+   ],
+   "top_imports": [
+    "Engines & turbines ($1.1B)",
+    "Plastics & plastic articles ($570M)",
+    "Pasta/breads/cereal preparations ($324M)"
+   ],
+   "jobs": 45750,
+   "jobs_type": "canadian_fdi_employment",
+   "tourism_note": null,
+   "sector_note": "캐나다가 조지아 수출 1위 시장(11%). 항공기부품·기계 수출입 비중 크고 애틀랜타에 캐나다 총영사관 소재.",
+   "sources": [
+    "https://canada-in-usa.com/state/georgia/",
+    "https://canada-in-usa.com/wp-content/fact-sheets/ga.pdf",
+    "https://ustr.gov/map/state-benefits/ga"
+   ]
+  },
+  "MI": {
+   "exports_bn": 21.2,
+   "exports_year": 2025,
+   "exports_rank": 1,
+   "exports_share": 36,
+   "imports_bn": 43.5,
+   "imports_rank": 1,
+   "imports_share": null,
+   "top_exports": [
+    "Trucks ($4.2B)",
+    "Automobiles ($3.1B)",
+    "Motor vehicle parts ($2.9B)"
+   ],
+   "top_imports": [
+    "Automobiles ($10.5B)",
+    "Motor vehicle parts ($5.9B)",
+    "Trucks ($4.3B)"
+   ],
+   "jobs": 40300,
+   "jobs_type": "canadian_fdi_employment",
+   "tourism_note": "2025년 온타리오발 MI 4대 관문 입국 약 10.2% 감소(980만→880만명), 수세인트마리·포트휴런 각 -18%, 동남미시간은 -30%(1000만→830만). 캐나다 관광객 지출 연 $3.6억(주 관광수입 약 10%).",
+   "sector_note": "대캐나다 수입의 50%가 운송장비. 트럭·완성차·부품 수출입 모두 최상위 품목, 온타리오와 자동차 산업 통합.",
+   "sources": [
+    "https://canada-in-usa.com/state/michigan/",
+    "https://www.crainsgrandrapids.com/news/hospitality-tourism/canadian-visits-to-michigan-dropped-10-in-2025-amid-trump-trade-threats/",
+    "https://www.mackinac.org/blog/2025/canada-trade-is-also-a-state-issue"
+   ]
+  },
+  "NH": {
+   "exports_bn": 0.852,
+   "exports_year": 2025,
+   "exports_rank": 2,
+   "exports_share": 11.8,
+   "imports_bn": 1.9,
+   "imports_rank": null,
+   "imports_share": null,
+   "top_exports": [
+    "Aircraft & parts ($208M)",
+    "Plastics & plastic articles ($42M)",
+    "Cocoa & chocolate ($36M)"
+   ],
+   "top_imports": [
+    "Fuel oil ($447M)",
+    "Fish & crustaceans ($179M)",
+    "Engines & turbines ($133M)"
+   ],
+   "jobs": 5150,
+   "jobs_type": "canadian_fdi_employment",
+   "tourism_note": "2026년 8월 NH·ME·VT 관문 캐나다 입국 29.7만명, 전년동월 대비 +6%지만 2024년 8월 대비는 -23%로 완전 회복 아님.",
+   "sector_note": "캐나다는 NH 수출 2위 시장(독일 다음). 유제품 특화 언급은 원자료에서 확인 못함(미확인).",
+   "sources": [
+    "https://canada-in-usa.com/state/new-hampshire/",
+    "https://ustr.gov/map/state-benefits/nh",
+    "https://www.nhpr.org/nh-news/2026-09-27/canadians-tourism-visitnh-numbers-down-newhampshire",
+    "https://ledgertranscript.com/2026/09/29/political-tension-impacts-nh-border-crossings/"
+   ]
+  },
+  "ME": {
+   "exports_bn": 1.3,
+   "exports_year": 2025,
+   "exports_rank": 1,
+   "exports_share": 41,
+   "imports_bn": 4.1,
+   "imports_rank": null,
+   "imports_share": null,
+   "top_exports": [
+    "Fish & crustaceans ($299M)",
+    "Natural gas & other gases ($219M)",
+    "Wood & semi-finished wood products ($132M)"
+   ],
+   "top_imports": [
+    "Fuel oil ($2.0B)",
+    "Wood pulp ($286M)",
+    "Electricity ($263M)"
+   ],
+   "jobs": 4750,
+   "jobs_type": "canadian_fdi_employment",
+   "tourism_note": "2025년 캐나다인이 메인주 방문객의 3.6%(2024년 5.4%에서 감소). 2024년 기준 캐나다 방문 약 80만건·지출 약 $5억. 2025년 2~4월 육로 입국 26%(16.6만명) 감소.",
+   "sector_note": "대캐나다 수입의 59%가 에너지(연료유 $20억, 전력 NB·QC발). 랍스터 등 수산물 수출 핵심, 목재펄프·제재목 교역 큼. 2025년 대캐나다 수출 관세 여파로 약 20% 감소.",
+   "sources": [
+    "https://canada-in-usa.com/state/maine/",
+    "https://ustr.gov/map/state-benefits/me",
+    "https://www.pressherald.com/2026/05/08/who-visited-maine-in-2025-and-how-much-did-they-spend/",
+    "https://mainemorningstar.com/2025/12/11/maine-exports-to-canada-down-nearly-20-with-forest-products-hardest-hit-by-tariffs/"
+   ]
+  },
+  "NC": {
+   "exports_bn": 8.6,
+   "exports_year": 2025,
+   "exports_rank": 1,
+   "exports_share": 20,
+   "imports_bn": 4.6,
+   "imports_rank": null,
+   "imports_share": null,
+   "top_exports": [
+    "Pharmaceutical products ($1.8B)",
+    "Copper & copper articles ($457M)",
+    "Plastics & plastic articles ($348M)"
+   ],
+   "top_imports": [
+    "Plastics & plastic articles ($496M)",
+    "Pearls/gems/precious metals & jewelry ($207M)",
+    "Softwood lumber ($185M)"
+   ],
+   "jobs": 42500,
+   "jobs_type": "canadian_fdi_employment",
+   "tourism_note": null,
+   "sector_note": "캐나다는 노스캐롤라이나 수출 1위 시장(20%). 의약품이 대캐나다 수출 최대 품목, 구리·플라스틱도 상위.",
+   "sources": [
+    "https://canada-in-usa.com/state/north-carolina/",
+    "https://ustr.gov/map/state-benefits/nc"
+   ]
+  },
+  "TX": {
+   "exports_bn": 34.6,
+   "exports_year": 2025,
+   "exports_rank": 2,
+   "exports_share": 7.7,
+   "imports_bn": 34.4,
+   "imports_rank": null,
+   "imports_share": null,
+   "top_exports": [
+    "Crude petroleum ($7.4B)",
+    "Fuel oil ($3.1B)",
+    "Plastics & plastic articles ($2.3B)"
+   ],
+   "top_imports": [
+    "Automobiles ($12.2B)",
+    "Crude petroleum ($5.1B)",
+    "Engines & turbines ($1.6B)"
+   ],
+   "jobs": 138000,
+   "jobs_type": "exports_supported",
+   "tourism_note": null,
+   "sector_note": "캐나다는 텍사스 수출 2위 시장(멕시코 다음, 7.7%). 원유·연료유 중심 에너지 교역이 최대 품목, 완성차 수입도 최상위.",
+   "sources": [
+    "https://canada-in-usa.com/state/texas/",
+    "https://ustr.gov/map/state-benefits/tx"
+   ]
+  },
+  "OH": {
+   "exports_bn": 17.5,
+   "exports_year": 2025,
+   "exports_rank": 1,
+   "exports_share": 31,
+   "imports_bn": 16.3,
+   "imports_rank": null,
+   "imports_share": null,
+   "top_exports": [
+    "Engines & turbines ($2.7B)",
+    "Motor vehicle parts ($1.8B)",
+    "Plastics & plastic articles ($1.0B)"
+   ],
+   "top_imports": [
+    "Crude petroleum ($3.2B)",
+    "Motor vehicle parts ($1.1B)",
+    "Plastics & plastic articles ($1.0B)"
+   ],
+   "jobs": 28650,
+   "jobs_type": "canadian_fdi_employment",
+   "tourism_note": null,
+   "sector_note": "캐나다는 오하이오 수출 1위 시장(31%). 자동차부품·철강·알루미늄 수출입 비중 크고, 원유가 대캐나다 수입 1위 품목.",
+   "sources": [
+    "https://canada-in-usa.com/state/ohio/",
+    "https://ustr.gov/map/state-benefits/oh"
+   ]
+  },
+  "AK": {
+   "exports_bn": 0.633,
+   "exports_year": 2025,
+   "exports_rank": 5,
+   "exports_share": 9.4,
+   "imports_bn": 1.3,
+   "imports_rank": null,
+   "imports_share": null,
+   "top_exports": [
+    "Ores, slag & ash ($435M)",
+    "Fish & crustaceans ($77M)",
+    "Fuel oil ($62M)"
+   ],
+   "top_imports": [
+    "Crude petroleum ($435M)",
+    "Fuel oil ($281M)",
+    "Ores, slag & ash ($127M)"
+   ],
+   "jobs": 6350,
+   "jobs_type": "canadian_fdi_employment",
+   "tourism_note": null,
+   "sector_note": "교역 규모 최소 수준. 캐나다는 알래스카 수출 5위 시장(한국·호주·일본·중국 다음). 광물(광석)·수산물이 대캐나다 수출 중심.",
+   "sources": [
+    "https://canada-in-usa.com/state/alaska/",
+    "https://ustr.gov/map/state-benefits/ak"
+   ]
+  },
+  "IA": {
+   "exports_bn": 4.9,
+   "exports_year": 2025,
+   "exports_rank": 1,
+   "exports_share": 30,
+   "imports_bn": 3.2,
+   "imports_rank": null,
+   "imports_share": null,
+   "top_exports": [
+    "Beverages & alcohol ($604M)",
+    "Tractors ($384M)",
+    "Animal feed & food residues ($300M)"
+   ],
+   "top_imports": [
+    "Aluminum & aluminum articles ($401M)",
+    "Inorganic chemicals ($338M)",
+    "Fertilizers/potash ($202M)"
+   ],
+   "jobs": 9050,
+   "jobs_type": "canadian_fdi_employment",
+   "tourism_note": null,
+   "sector_note": "캐나다는 아이오와 수출 1위 시장(30%). 돼지고기·옥수수·대두 전미 상위 수출주. 캐나다산 칼륨비료(포타시) 의존도 85%+.",
+   "sources": [
+    "https://canada-in-usa.com/state/iowa/",
+    "https://ustr.gov/map/state-benefits/ia",
+    "https://www.iowapublicradio.org/agriculture/2026-06-04/iowa-farmers-pork-producers-usmca"
+   ]
+  },
+  "PA": {
+   "exports_bn": 13.9,
+   "exports_year": 2025,
+   "exports_rank": 1,
+   "exports_share": 27,
+   "imports_bn": 13.4,
+   "imports_rank": null,
+   "imports_share": null,
+   "top_exports": [
+    "Telephones & AV recording equipment ($1.3B)",
+    "Pharmaceutical products ($1.1B)",
+    "Cocoa & chocolate ($850M)"
+   ],
+   "top_imports": [
+    "Crude petroleum ($1.5B)",
+    "Aluminum & aluminum articles ($660M)",
+    "Pharmaceutical products ($639M)"
+   ],
+   "jobs": 66800,
+   "jobs_type": "exports_supported",
+   "tourism_note": null,
+   "sector_note": "캐나다는 펜실베이니아 수출 1위 시장(27%). Westinghouse 원자력(Cameco·Brookfield 투자) 등 청정에너지 협력 사례.",
+   "sources": [
+    "https://canada-in-usa.com/wp-content/fact-sheets/pa.pdf",
+    "https://ustr.gov/map/state-benefits/pa"
+   ]
+  },
+  "NY": {
+   "exports_bn": 16.5,
+   "exports_year": 2025,
+   "exports_rank": 3,
+   "exports_share": 10.8,
+   "imports_bn": 21.4,
+   "imports_rank": null,
+   "imports_share": null,
+   "top_exports": [
+    "Pearls, gems, precious metals & jewelry ($3.6B)",
+    "Paper & paperboard ($664M)",
+    "Aluminum & aluminum articles ($482M)"
+   ],
+   "top_imports": [
+    "Pearls, gems, precious metals & jewelry ($5.3B)",
+    "Natural gas & other gases ($1.4B)",
+    "Aluminum & aluminum articles ($1.1B)"
+   ],
+   "jobs": 88700,
+   "jobs_type": "canadian_fdi_employment",
+   "tourism_note": "2025년 뉴욕 방문 캐나다인 26% 이상 감소, 지출은 28% 감소($17.1억→$12.3억, 약 $4.8억 감소).",
+   "sector_note": "캐나다는 뉴욕 수출 3위 시장(10.8%). 보석·귀금속이 최대 교역품목. 퀘벡 수력 뉴욕 송전(Champlain Hudson, $60억, 2026 개통) 협력.",
+   "sources": [
+    "https://canada-in-usa.com/wp-content/fact-sheets/ny.pdf",
+    "https://ustr.gov/map/state-benefits/ny",
+    "https://www.travelweekly.com/North-America-Travel/Canadian-travel-slump-persists-one-year-later"
+   ]
+  }
+ }
+}

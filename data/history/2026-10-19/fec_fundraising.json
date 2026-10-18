@@ -1,0 +1,938 @@
+{
+  "as_of": "2026-10-19",
+  "source_label": "FEC (api.open.fec.gov) — 분기 보고 기준, 단위 $M",
+  "provenance_note": "coverage_end가 분기 마감일. 슈퍼팩 외부지출은 별도(independent expenditures) — 이 파일에 미포함.",
+  "states": {
+    "GA": [
+      {
+        "name": "OSSOFF, T. JONATHAN",
+        "party": "DEM",
+        "candidate_id": "S8GA00180",
+        "receipts": 131.13,
+        "disbursements": 109.2,
+        "cash_on_hand": 26.27,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "COLLINS, MICHAEL A JR",
+        "party": "REP",
+        "candidate_id": "S6GA00390",
+        "receipts": 10.25,
+        "disbursements": 9.69,
+        "cash_on_hand": 1.16,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "CARTER, EARL LEROY",
+        "party": "REP",
+        "candidate_id": "S6GA00374",
+        "receipts": 7.32,
+        "disbursements": 10.28,
+        "cash_on_hand": 0.06,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "KING, JOHN",
+        "party": "REP",
+        "candidate_id": "S6GA00382",
+        "receipts": 0.56,
+        "disbursements": 0.56,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-01-31"
+      },
+      {
+        "name": "MCCOLUMN, JONATHAN MR",
+        "party": "REP",
+        "candidate_id": "S2GA00282",
+        "receipts": 0.04,
+        "disbursements": 0.02,
+        "cash_on_hand": 0.01,
+        "coverage_end": "2026-03-31"
+      },
+      {
+        "name": "BOX, REAGAN",
+        "party": "REP",
+        "candidate_id": "S6GA00267",
+        "receipts": 0.03,
+        "disbursements": 0.03,
+        "cash_on_hand": 0.01,
+        "coverage_end": "2024-12-31"
+      }
+    ],
+    "MI": [
+      {
+        "name": "EL-SAYED, ABDUL",
+        "party": "DEM",
+        "candidate_id": "S6MI00418",
+        "receipts": 45.18,
+        "disbursements": 41.38,
+        "cash_on_hand": 3.79,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "ROGERS, MICHAEL J",
+        "party": "REP",
+        "candidate_id": "S4MI00595",
+        "receipts": 20.57,
+        "disbursements": 14.29,
+        "cash_on_hand": 6.53,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "STEVENS, HALEY",
+        "party": "DEM",
+        "candidate_id": "S6MI00426",
+        "receipts": 13.3,
+        "disbursements": 13.15,
+        "cash_on_hand": 0.15,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "MCMORROW, MALLORY",
+        "party": "DEM",
+        "candidate_id": "S6MI00392",
+        "receipts": 11.41,
+        "disbursements": 10.99,
+        "cash_on_hand": 0.41,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "TATE, JOSEPH ALLEN",
+        "party": "DEM",
+        "candidate_id": "S6MI00459",
+        "receipts": 0.24,
+        "disbursements": 0.24,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2025-09-30"
+      },
+      {
+        "name": "SCOTT, GENEVIEVE",
+        "party": "REP",
+        "candidate_id": "S6MI00434",
+        "receipts": 0.08,
+        "disbursements": 0.08,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-06-30"
+      },
+      {
+        "name": "SMITH, BERNADETTE",
+        "party": "REP",
+        "candidate_id": "S6MI00517",
+        "receipts": 0.08,
+        "disbursements": 0.07,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "HOWARD, RACHEL ELIZABETH",
+        "party": "DEM",
+        "candidate_id": "S6MI00467",
+        "receipts": 0.01,
+        "disbursements": 0.01,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2025-09-30"
+      },
+      {
+        "name": "HEURTEBISE, FREDERICK",
+        "party": "REP",
+        "candidate_id": "S6MI00384",
+        "receipts": 0.01,
+        "disbursements": 0.01,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2025-05-03"
+      },
+      {
+        "name": "CHRISTENSEN, LYDIA LYNN",
+        "party": "LIB",
+        "candidate_id": "S6MI00442",
+        "receipts": 0.01,
+        "disbursements": 0.0,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "STEPHENS, THOMAS WAYNE",
+        "party": "NPA",
+        "candidate_id": "S6MI00509",
+        "receipts": 0.0,
+        "disbursements": 0.0,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-06-30"
+      }
+    ],
+    "NH": [
+      {
+        "name": "PAPPAS, CHRIS",
+        "party": "DEM",
+        "candidate_id": "S6NH00141",
+        "receipts": 21.5,
+        "disbursements": 18.62,
+        "cash_on_hand": 3.28,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "SUNUNU, JOHN E",
+        "party": "REP",
+        "candidate_id": "S6NH00208",
+        "receipts": 5.33,
+        "disbursements": 2.8,
+        "cash_on_hand": 2.5,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "BROWN, SCOTT P.",
+        "party": "REP",
+        "candidate_id": "S6NH00166",
+        "receipts": 2.26,
+        "disbursements": 1.9,
+        "cash_on_hand": 0.36,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "MANZUR, KARISHMA",
+        "party": "DEM",
+        "candidate_id": "S6NH00182",
+        "receipts": 0.56,
+        "disbursements": 0.54,
+        "cash_on_hand": 0.02,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "SULLIVAN, JARED",
+        "party": "DEM",
+        "candidate_id": "S6NH00190",
+        "receipts": 0.1,
+        "disbursements": 0.1,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-06-30"
+      },
+      {
+        "name": "INNIS, DAN",
+        "party": "REP",
+        "candidate_id": "S6NH00174",
+        "receipts": 0.05,
+        "disbursements": 0.05,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-01-25"
+      },
+      {
+        "name": "MORSE, CHUCK",
+        "party": "REP",
+        "candidate_id": "S2NH00249",
+        "receipts": 0.01,
+        "disbursements": 0.12,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2023-10-31"
+      },
+      {
+        "name": "SIVALINGAM, TEJASINHA",
+        "party": "REP",
+        "candidate_id": "S6NH00133",
+        "receipts": 0.0,
+        "disbursements": 0.0,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2023-02-21"
+      }
+    ],
+    "ME": [
+      {
+        "name": "COLLINS, SUSAN M.",
+        "party": "REP",
+        "candidate_id": "S6ME00159",
+        "receipts": 24.13,
+        "disbursements": 20.04,
+        "cash_on_hand": 5.39,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "JACKSON, TROY DALE",
+        "party": "DEM",
+        "candidate_id": "S6ME00464",
+        "receipts": 20.43,
+        "disbursements": 16.47,
+        "cash_on_hand": 3.96,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "WOOD, JORDAN",
+        "party": "DEM",
+        "candidate_id": "S6ME00332",
+        "receipts": 6.39,
+        "disbursements": 6.37,
+        "cash_on_hand": 0.02,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "MILLS, JANET TRAFTON",
+        "party": "DEM",
+        "candidate_id": "S6ME00407",
+        "receipts": 6.12,
+        "disbursements": 6.04,
+        "cash_on_hand": 0.07,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "KLEBAN, DAN",
+        "party": "DEM",
+        "candidate_id": "S6ME00381",
+        "receipts": 0.54,
+        "disbursements": 0.52,
+        "cash_on_hand": 0.02,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "PELLETIER, SAUNDRA",
+        "party": "DEM",
+        "candidate_id": "S6ME00498",
+        "receipts": 0.43,
+        "disbursements": 0.43,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "BELLOWS, SHENNA",
+        "party": "DEM",
+        "candidate_id": "S6ME00456",
+        "receipts": 0.38,
+        "disbursements": 0.38,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-08-31"
+      },
+      {
+        "name": "SHAH, NIRAV",
+        "party": "DEM",
+        "candidate_id": "S6ME00449",
+        "receipts": 0.28,
+        "disbursements": 0.28,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "RODRIGUEZ, DAIRA",
+        "party": "DEM",
+        "candidate_id": "S6ME00365",
+        "receipts": 0.24,
+        "disbursements": 0.24,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2025-12-31"
+      },
+      {
+        "name": "COSTELLO, DAVID",
+        "party": "DEM",
+        "candidate_id": "S4ME00113",
+        "receipts": 0.15,
+        "disbursements": 0.15,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-08-26"
+      },
+      {
+        "name": "LOUD, PAIGE",
+        "party": "DEM",
+        "candidate_id": "S6ME00431",
+        "receipts": 0.06,
+        "disbursements": 0.06,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "RENCH, PHILLIP",
+        "party": "IND",
+        "candidate_id": "S6ME00282",
+        "receipts": 0.06,
+        "disbursements": 0.05,
+        "cash_on_hand": 0.01,
+        "coverage_end": "2025-12-31"
+      },
+      {
+        "name": "CALABRESE, CARMEN VINCENT MR.",
+        "party": "REP",
+        "candidate_id": "S6ME00324",
+        "receipts": 0.02,
+        "disbursements": 0.02,
+        "cash_on_hand": -0.0,
+        "coverage_end": "2025-09-30"
+      },
+      {
+        "name": "CALABRESE, CARMEM VINCENT MR.",
+        "party": "REP",
+        "candidate_id": "S6ME00316",
+        "receipts": 0.02,
+        "disbursements": 0.02,
+        "cash_on_hand": -0.0,
+        "coverage_end": "2025-09-30"
+      },
+      {
+        "name": "LAFLAMME, ANDREA",
+        "party": "DEM",
+        "candidate_id": "S6ME00340",
+        "receipts": 0.02,
+        "disbursements": 0.01,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "FAVREAU, TUCKER",
+        "party": "DEM",
+        "candidate_id": "S6ME00357",
+        "receipts": 0.01,
+        "disbursements": 0.01,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-07-12"
+      },
+      {
+        "name": "EVANS, DAVID ALAN",
+        "party": "IND",
+        "candidate_id": "S6ME00399",
+        "receipts": 0.01,
+        "disbursements": 0.01,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2025-12-31"
+      }
+    ],
+    "NC": [
+      {
+        "name": "COOPER, ROY",
+        "party": "DEM",
+        "candidate_id": "S6NC00407",
+        "receipts": 47.19,
+        "disbursements": 34.71,
+        "cash_on_hand": 12.48,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "WHATLEY, MICHAEL",
+        "party": "REP",
+        "candidate_id": "S6NC00415",
+        "receipts": 13.42,
+        "disbursements": 12.5,
+        "cash_on_hand": 0.92,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "NICKEL, WILEY",
+        "party": "DEM",
+        "candidate_id": "S6NC00340",
+        "receipts": 2.97,
+        "disbursements": 3.01,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-03-20"
+      },
+      {
+        "name": "BROWN, DON",
+        "party": "REP",
+        "candidate_id": "S6NC00373",
+        "receipts": 0.22,
+        "disbursements": 0.23,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-04-13"
+      },
+      {
+        "name": "DUBLIN, MICHAEL LOUIS JR.",
+        "party": "GRE",
+        "candidate_id": "S6NC00563",
+        "receipts": 0.03,
+        "disbursements": 0.03,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "MORROW, MICHELE",
+        "party": "REP",
+        "candidate_id": "S6NC00522",
+        "receipts": 0.01,
+        "disbursements": 0.01,
+        "cash_on_hand": -0.0,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "JOHNSON, THOMAS LEE",
+        "party": "REP",
+        "candidate_id": "S6NC00480",
+        "receipts": 0.01,
+        "disbursements": 0.0,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-04-13"
+      },
+      {
+        "name": "WILLIAMS, MARCUS W.",
+        "party": "DEM",
+        "candidate_id": "S8NC00270",
+        "receipts": 0.01,
+        "disbursements": 0.01,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-03-17"
+      },
+      {
+        "name": "DANSIE, RICHARD",
+        "party": "REP",
+        "candidate_id": "S6NC00472",
+        "receipts": 0.0,
+        "disbursements": 0.0,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2025-12-31"
+      }
+    ],
+    "TX": [
+      {
+        "name": "TALARICO, JAMES",
+        "party": "DEM",
+        "candidate_id": "S6TX00479",
+        "receipts": 128.77,
+        "disbursements": 114.18,
+        "cash_on_hand": 14.59,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "PAXTON, WARREN KENNETH JR.",
+        "party": "REP",
+        "candidate_id": "S6TX00388",
+        "receipts": 19.5,
+        "disbursements": 14.57,
+        "cash_on_hand": 4.93,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "CORNYN, JOHN SEN",
+        "party": "REP",
+        "candidate_id": "S2TX00106",
+        "receipts": 14.27,
+        "disbursements": 14.4,
+        "cash_on_hand": 0.5,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "CROCKETT, JASMINE",
+        "party": "DEM",
+        "candidate_id": "S6TX00552",
+        "receipts": 11.1,
+        "disbursements": 11.1,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-08-13"
+      },
+      {
+        "name": "ALLRED, COLIN",
+        "party": "DEM",
+        "candidate_id": "S4TX00722",
+        "receipts": 7.63,
+        "disbursements": 7.77,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "HUNT, WESLEY",
+        "party": "REP",
+        "candidate_id": "S6TX00511",
+        "receipts": 2.15,
+        "disbursements": 4.64,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "BROWN, THEODORE E. JR.",
+        "party": "LIB",
+        "candidate_id": "S4TX00888",
+        "receipts": 0.01,
+        "disbursements": 0.01,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "SIMS, DANIEL M",
+        "party": "LIB",
+        "candidate_id": "S6TX00586",
+        "receipts": 0.01,
+        "disbursements": 0.01,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-05-19"
+      },
+      {
+        "name": "KHAN, GULREZ",
+        "party": "REP",
+        "candidate_id": "S6TX00362",
+        "receipts": 0.01,
+        "disbursements": 0.01,
+        "cash_on_hand": -0.0,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "BIERSCHWALE, VIRGIL",
+        "party": "REP",
+        "candidate_id": "S0TX00365",
+        "receipts": 0.01,
+        "disbursements": 0.01,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-03-16"
+      },
+      {
+        "name": "SIMMONS, JADE",
+        "party": "IND",
+        "candidate_id": "S6TX00495",
+        "receipts": 0.01,
+        "disbursements": 0.01,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-06-30"
+      },
+      {
+        "name": "SWANSON, MICHAEL",
+        "party": "DEM",
+        "candidate_id": "S6TX00396",
+        "receipts": 0.01,
+        "disbursements": 0.01,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2025-09-30"
+      },
+      {
+        "name": "HALL, BRADFORD WINSTON",
+        "party": "W",
+        "candidate_id": "S6TX00636",
+        "receipts": 0.01,
+        "disbursements": 0.01,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "SCHMOKER, TONY",
+        "party": "REP",
+        "candidate_id": "S6TX00321",
+        "receipts": 0.0,
+        "disbursements": 0.0,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2025-12-31"
+      },
+      {
+        "name": "CANADY, SARA LARUE",
+        "party": "REP",
+        "candidate_id": "S6TX00545",
+        "receipts": 0.0,
+        "disbursements": 0.01,
+        "cash_on_hand": -0.0,
+        "coverage_end": "2026-03-31"
+      },
+      {
+        "name": "ALLEN, KEITH",
+        "party": "REP",
+        "candidate_id": "S6TX00305",
+        "receipts": 0.0,
+        "disbursements": 0.0,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2024-12-31"
+      }
+    ],
+    "OH": [
+      {
+        "name": "BROWN, SHERROD",
+        "party": "DEM",
+        "candidate_id": "S6OH00163",
+        "receipts": 61.69,
+        "disbursements": 56.83,
+        "cash_on_hand": 4.86,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "HUSTED, JON",
+        "party": "REP",
+        "candidate_id": "S6OH00304",
+        "receipts": 19.21,
+        "disbursements": 10.33,
+        "cash_on_hand": 8.88,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "ODE, FREDERICK J",
+        "party": "DEM",
+        "candidate_id": "S6OH00387",
+        "receipts": 5.0,
+        "disbursements": 4.98,
+        "cash_on_hand": 0.02,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "LEVY, GREGORY LEE",
+        "party": "IND",
+        "candidate_id": "S6OH00395",
+        "receipts": 0.12,
+        "disbursements": 0.1,
+        "cash_on_hand": 0.02,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "REDPATH, WILLIAM",
+        "party": "LIB",
+        "candidate_id": "S6OH00429",
+        "receipts": 0.06,
+        "disbursements": 0.05,
+        "cash_on_hand": 0.01,
+        "coverage_end": "2026-10-14"
+      },
+      {
+        "name": "KINCAID, RONALD E JR",
+        "party": "DEM",
+        "candidate_id": "S6OH00361",
+        "receipts": 0.05,
+        "disbursements": 0.05,
+        "cash_on_hand": 0.02,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "VOLPE, CHRISTOPHER",
+        "party": "DEM",
+        "candidate_id": "S6OH00346",
+        "receipts": 0.0,
+        "disbursements": 0.0,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-02-15"
+      },
+      {
+        "name": "VOLPE, CHRISTOPHER",
+        "party": "DEM",
+        "candidate_id": "S6OH00353",
+        "receipts": 0.0,
+        "disbursements": 0.0,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-02-15"
+      },
+      {
+        "name": "FARIS, STEPHEN I MR",
+        "party": "IND",
+        "candidate_id": "S8OH00144",
+        "receipts": 0.0,
+        "disbursements": 0.0,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-09-30"
+      }
+    ],
+    "AK": [
+      {
+        "name": "PELTOLA, MARY",
+        "party": "DEM",
+        "candidate_id": "S6AK00276",
+        "receipts": 32.62,
+        "disbursements": 29.46,
+        "cash_on_hand": 3.16,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "SULLIVAN, DAN",
+        "party": "REP",
+        "candidate_id": "S4AK00214",
+        "receipts": 13.76,
+        "disbursements": 9.39,
+        "cash_on_hand": 5.1,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "SULLIVAN, DANIEL J",
+        "party": "REP",
+        "candidate_id": "S6AK00326",
+        "receipts": 0.03,
+        "disbursements": 0.03,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-09-30"
+      }
+    ],
+    "IA": [
+      {
+        "name": "TUREK, JOSHUA",
+        "party": "DEM",
+        "candidate_id": "S6IA00298",
+        "receipts": 20.15,
+        "disbursements": 16.55,
+        "cash_on_hand": 3.61,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "ARENHOLZ, ASHLEY HINSON",
+        "party": "REP",
+        "candidate_id": "S6IA00314",
+        "receipts": 13.47,
+        "disbursements": 8.48,
+        "cash_on_hand": 6.92,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "SAGE, NATHAN",
+        "party": "DEM",
+        "candidate_id": "S6IA00256",
+        "receipts": 1.43,
+        "disbursements": 1.43,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "CARLIN, JAMES",
+        "party": "REP",
+        "candidate_id": "S6IA00249",
+        "receipts": 0.49,
+        "disbursements": 0.49,
+        "cash_on_hand": 0.01,
+        "coverage_end": "2026-06-30"
+      },
+      {
+        "name": "NORRIS, JACKIE",
+        "party": "DEM",
+        "candidate_id": "S6IA00280",
+        "receipts": 0.36,
+        "disbursements": 0.36,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-03-20"
+      },
+      {
+        "name": "SCHOLTEN, JAMES",
+        "party": "DEM",
+        "candidate_id": "S6IA00264",
+        "receipts": 0.21,
+        "disbursements": 0.21,
+        "cash_on_hand": 0.01,
+        "coverage_end": "2025-12-31"
+      },
+      {
+        "name": "LAEHN, THOMAS RAYMOND DR.",
+        "party": "LIB",
+        "candidate_id": "S6IA00181",
+        "receipts": 0.08,
+        "disbursements": 0.07,
+        "cash_on_hand": 0.01,
+        "coverage_end": "2026-09-30"
+      }
+    ],
+    "NE": [
+      {
+        "name": "RICKETTS, PETE",
+        "party": "REP",
+        "candidate_id": "S6NE00129",
+        "receipts": 13.41,
+        "disbursements": 12.82,
+        "cash_on_hand": 1.07,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "OSBORN, DAN",
+        "party": "IND",
+        "candidate_id": "S4NE00207",
+        "receipts": 9.81,
+        "disbursements": 7.66,
+        "cash_on_hand": 2.21,
+        "coverage_end": "2026-10-14"
+      },
+      {
+        "name": "BURBANK, CINDY",
+        "party": "DE",
+        "candidate_id": "S6NE00145",
+        "receipts": 0.05,
+        "disbursements": 0.03,
+        "cash_on_hand": 0.02,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "MARVIN, MIKE",
+        "party": "OTH",
+        "candidate_id": "S6NE00152",
+        "receipts": 0.03,
+        "disbursements": 0.03,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-09-11"
+      },
+      {
+        "name": "FORBES, WILLIAM",
+        "party": "DEM",
+        "candidate_id": "S6NE00160",
+        "receipts": 0.0,
+        "disbursements": 0.0,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-05-21"
+      }
+    ],
+    "KS": [
+      {
+        "name": "HAMILTON, ADAM",
+        "party": "DEM",
+        "candidate_id": "S6KS00312",
+        "receipts": 13.53,
+        "disbursements": 10.35,
+        "cash_on_hand": 3.18,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "MARSHALL, ROGER W",
+        "party": "REP",
+        "candidate_id": "S0KS00315",
+        "receipts": 7.01,
+        "disbursements": 6.29,
+        "cash_on_hand": 0.92,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "SPIDEL NEUMANN, SANDY",
+        "party": "DEM",
+        "candidate_id": "S6KS00262",
+        "receipts": 0.41,
+        "disbursements": 0.39,
+        "cash_on_hand": 0.03,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "SCHMIDT, PATRICK",
+        "party": "DEM",
+        "candidate_id": "S6KS00288",
+        "receipts": 0.26,
+        "disbursements": 0.26,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "MURRAY, ERIK",
+        "party": "DEM",
+        "candidate_id": "S6KS00270",
+        "receipts": 0.21,
+        "disbursements": 0.2,
+        "cash_on_hand": 0.01,
+        "coverage_end": "2026-07-15"
+      },
+      {
+        "name": "DAVIS, CHRISTY",
+        "party": "DEM",
+        "candidate_id": "S6KS00247",
+        "receipts": 0.19,
+        "disbursements": 0.11,
+        "cash_on_hand": 0.09,
+        "coverage_end": "2026-06-30"
+      },
+      {
+        "name": "TAYLOR, NOAH",
+        "party": "DEM",
+        "candidate_id": "S6KS00296",
+        "receipts": 0.16,
+        "disbursements": 0.15,
+        "cash_on_hand": 0.01,
+        "coverage_end": "2026-07-15"
+      },
+      {
+        "name": "HART, JASON",
+        "party": "DEM",
+        "candidate_id": "S6KS00304",
+        "receipts": 0.05,
+        "disbursements": 0.05,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-09-30"
+      },
+      {
+        "name": "LATZ, KEVIN",
+        "party": "DEM",
+        "candidate_id": "S6KS00320",
+        "receipts": 0.04,
+        "disbursements": 0.04,
+        "cash_on_hand": 0.05,
+        "coverage_end": "2026-10-31"
+      },
+      {
+        "name": "PARELKAR, LOIS ANNE ELIZABETH LEA",
+        "party": "DEM",
+        "candidate_id": "S6KS00239",
+        "receipts": 0.03,
+        "disbursements": 0.03,
+        "cash_on_hand": 0.0,
+        "coverage_end": "2026-07-15"
+      }
+    ]
+  }
+}

@@ -91,3 +91,5 @@ TX,TSU/YouGov,,none,LV,1800,2026-09-15,2026-09-19,Hinojosa,Abbott,45,49,-4,±2.3
 TX,NYT/Siena,,none,,,,2026-10-03,Hinojosa,Abbott,49,46,3,end_date=공개일(실사기간 미수집)·표본·오차 미확보,https://sri.siena.edu/2026/10/04/nytimes-siena-poll-of-likely-voters-gubernatorial-races-2/
 TX,UMass Lowell,,none,,,,2026-10-08,Hinojosa,Abbott,44,48,-4,end_date=공개일(실사기간 미수집)·10/8 목록 등재·표본·오차 미확보·출처=RCP 목록,https://www.realclearpolling.com/latest-polls/governor
 WI,TIPP,,none,,,,2026-08-21,Crowley,Tiffany,47,43,4,end_date=공개일(실사기간 미수집)·RCP 8/21 수록·출처=RCP 목록,https://www.realclearpolling.com/latest-polls/governor
+TX,Marist,,none,LV,1196,2026-10-08,2026-10-11,Hinojosa,Abbott,45,49,-4,"RV 1,196 ±4.3·LV ±4.9 — n은 RV 전체 표본(LV 하위표본 수 원문 미확인)·LV 결과 기준·9월 Marist D+3 대비 약 7p 이동·원천 주정부 주간 10/18",https://maristpoll.marist.edu/polls/2026-midterm-elections-in-texas-october-2026/
+IA,Marist,,none,LV,1100,2026-10-08,2026-10-11,Sand,Lahn,52,45,7,"RV 1,100·LV ±6.6 — n은 RV 전체 표본(LV 하위표본 수 원문 미확인)·LV 결과 기준·9/22 Marist D+12 대비 5p 축소·원천 주정부 주간 10/18",https://maristpoll.marist.edu/polls/2026-midterm-elections-in-iowa-october-2026/

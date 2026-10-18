@@ -1,0 +1,496 @@
+{
+  "as_of": "2026-10-18",
+  "facts_updated": "2026-10-18",
+  "source_label": "외부 예측 종합 — 예측시장 원가격(Kalshi) · 모델 확률(RtWH·DDHQ) · 등급(Cook·Sabato)",
+  "provenance_note": "이 대시보드는 자체 정성 추정 대신 외부 예측을 종합해 표시합니다(2026-07-29 전환). 종류가 다른 수치를 같은 잣대로 비교하지 마세요 — 등급(Cook·Sabato)은 확률이 아닌 서수적 전문가 판단, 예측시장 가격(Kalshi)은 확률의 근사일 뿐(유동성·편향 혼입)입니다. 2026-08-06부터 주별 %는 270towin의 등급 환산값이 아니라 **Kalshi 공개 API의 원가격**을 직접 받아 표시합니다(scripts/fetch_kalshi_prices.py, 기준 2026-10-18 — 네브래스카는 무소속 Osborn 계약이 없어 빈칸). 외부 모델 확률(Race to the WH·Decision Desk HQ)은 시나리오 항목에만 넣고 시장가와 섞지 않습니다 — 이번 주에는 **62%(시장) / 72.4%(RtWH) / 56.0%(DDHQ — 3주째 취득 실패로 10/4 값)**입니다. **이번 주는 등급 피드가 따라왔습니다** — Cook 피드(10/12)가 10/6 이동 3건(NH Lean D·NC Likely D·KS Toss-up)을 확인했고, 사바토 피드(10/15)가 NH Likely D·KS Toss-up·NE Lean R 3건을 더 옮겼습니다(원천 주간 미기재). 등급가중 순 기대의석은 +2.9에서 +3.5석이 됐고, 시장 상원 다수 계약은 61¢에서 62¢로 돌아섰습니다.",
+  "current_balance": "R 53 / D 47",
+  "dem_needed_net": 4,
+  "dem_majority_prob": 62,
+  "majority_note": "Kalshi 상원 다수 계약(\"Will Democrats win the U.S. Senate in 2026?\") 민주 **62¢**(10/18 공개 API 직접 취득, 전주 61¢ — 거래액 $682만·미결제 $353만). 전주 2센트 하락을 1센트 되돌렸다. 같은 주 Race to the WH는 72.5% → **72.4%**(예상 의석 D 52.5)로 보합이고, Decision Desk HQ는 3주째 취득에 실패해(HTTP 429) 10/4 값 56.0%를 유지한다. **이번 주 등급은 피드가 따라왔다** — Cook 피드 10/12로 NH Lean D·NC Likely D·KS Toss-up이 확인됐고, 사바토 피드 10/15가 NH Likely D·KS Toss-up·NE Lean R을 더 옮겼다(원천 상원 주간은 \"신규 이동 0건\"이라 피드로만 확인). 시장은 OH +4¢·AK +2¢·NH·TX +1¢가 오르고 KS −2¢·MI −1¢가 내렸다 — 전주의 \"등급은 오르는데 시장은 내리는\" 괴리가 한 주 만에 좁혀졌다. 이 사이트는 어느 쪽이 맞는지 판단하지 않고 그 간격을 그대로 싣는다.",
+  "net_expected_seats": 3,
+  "net_display": "+3.5",
+  "states": [
+    {
+      "id": "ga",
+      "name": "조지아",
+      "nameEn": "Georgia",
+      "defense": "D",
+      "rating": "Likely D (Cook 10/12 · Sabato 10/15)",
+      "prob": 95,
+      "matchup": "Ossoff (D·현직) vs Collins (R)",
+      "key_var": "2차 토론(10/13) 콜린스 공세 전환 — 트럼프 10/16 돌턴, 양당 자금 철수, 조기투표 개시",
+      "note": "Kalshi **95.2¢**(10/18, 전주 95.4¢ ▼0.2). 2차 토론(10/13)에서 콜린스는 공세로 전환해 오소프를 \"거짓말하는 겁쟁이\"·\"신탁자금 도련님\"으로 불렀고, 트럼프는 10/16 돌턴 격납고 유세의 대부분을 오소프 조롱에 썼다. AP·Punchbowl은 양당 상원 지출 조직이 모두 조지아에서 철수했다고 전한다 — 공화는 열세 인정, 민주는 안전 판단. 오소프 3분기 $33M·현금 $26M. 신규 비당파 조사는 없고 Trafalgar(공화 성향) +8뿐이다. 조기투표 10/13 개시.",
+      "rating_cook": "Likely D",
+      "rating_sabato": "Likely D",
+      "rating_as_of": "Cook 10/12 · 사바토 10/15 Likely D 유지 · Inside Elections 10/2 Lean D",
+      "rating_history": "Cook: Toss-up →(4/13) Lean D →(9/23) Likely D · Sabato: Lean D(5/18 확인, 이동일 미확인) →(7/30) Likely D"
+    },
+    {
+      "id": "nc",
+      "name": "노스캐롤라이나",
+      "nameEn": "North Carolina",
+      "defense": "R",
+      "rating": "Likely D (Cook 10/12 피드 확인) / Lean D (Sabato·IE)",
+      "prob": 96,
+      "matchup": "Cooper (D·전 주지사) vs Whatley (R)",
+      "key_var": "SurveyUSA 쿠퍼 54–40 — 와틀리 TV 중단·SLF 동결, Cook Likely D 피드 확인",
+      "note": "Kalshi **95.8¢**(10/18, 전주 95.6¢ ▲0.2). **Cook 10/6 Lean D → Likely D가 이 사이트 피드(10/12)로 확인됐다.** SurveyUSA(WRAL/WSOC, 10/7~11, LV·기투표 643) 쿠퍼 54–40. WRAL에 따르면 와틀리는 TV 광고를 중단했고 SLF는 최소 $30M 집행 후 지출을 동결했으며, 트럼프도 와틀리가 \"걱정된다\"고 발언했다. AP(10/13)는 SLF의 NC 철수를 확인했다. 조기투표 10/15 개시. 쿠퍼 3분기 $19.5M.",
+      "rating_cook": "Likely D",
+      "rating_sabato": "Lean D",
+      "rating_as_of": "Cook 10/12 피드 Likely D(10/6 이동 확인) · 사바토 10/15 Lean D · Inside Elections 10/2 Lean D",
+      "rating_history": "Cook: Toss-up →(4/13) Lean D →(10/6) Likely D(피드 10/12 확인) · Sabato: →(6/11) Lean D"
+    },
+    {
+      "id": "nh",
+      "name": "뉴햄프셔",
+      "nameEn": "New Hampshire",
+      "defense": "D",
+      "rating": "Lean D (Cook 10/12 피드 확인) / Likely D (Sabato 10/15↑)",
+      "prob": 89,
+      "matchup": "Pappas (D) vs Sununu (R 예비 압도)",
+      "key_var": "볼덕(2022 공화 후보) 파파스 지지 확인 — Cook Lean D 피드 확인 + 사바토 Likely D 상향",
+      "note": "Kalshi **89¢**(10/18, 전주 88¢ ▲1). **Cook 10/6 Toss-up → Lean D 복귀가 이 사이트 피드(10/12)로 확인됐고, 사바토 피드(10/15)는 Lean D → Likely D로 한 단계 더 올렸다** — 사바토 이동은 원천 상원 주간에 없고 피드로만 확인된다(원문 날짜 10/9~15 사이). 2022년 트럼프 지명 공화 상원 후보 돈 볼덕이 파파스 지지를 선언했다(Axios 10/15 확인). AARP/St. Anselm 10월 초 파파스 +7, Rasmussen(10/2~4) 49–44. 파파스 3분기 $8.1M. 툰 원내대표의 서누누 모금 행사 예고.",
+      "rating_cook": "Lean D",
+      "rating_sabato": "Likely D",
+      "rating_as_of": "Cook 10/12 피드 Lean D(10/6 이동 확인) · 사바토 10/15 피드 Likely D(원천 미기재) · Inside Elections 10/2 Toss-up",
+      "rating_history": "Cook: 2025-02-11 이후 Lean D →(9/15) Toss-up →(10/6) Lean D 복귀(피드 10/12 확인) · Sabato: 2025-03-12 Likely D→Leans D →(10/9~15 사이) Likely D(피드 10/15 확인, 원문 날짜 미특정)"
+    },
+    {
+      "id": "mi",
+      "name": "미시간",
+      "nameEn": "Michigan",
+      "defense": "D",
+      "rating": "Toss-up (Cook) / Lean D (Sabato)",
+      "prob": 67,
+      "matchup": "El-Sayed (D, 8/4 지명) vs Rogers (R)",
+      "key_var": "모금 3:1 우위 vs 광고 2:1 열세 — 밴스 10/15 먼로, 조사 6건 전부 엘사예드 +1~7",
+      "note": "Kalshi **67¢**(10/18, 전주 68¢ ▼1). 3분기 모금은 엘사예드 약 $33M 대 로저스 $10M(Punchbowl)인데 TV 광고는 약 2대 1 열세(AP)다. 밴스가 10/15 먼로 유세에서 이 경합을 \"감사 대 불만\"의 시험으로 규정했고, 로저스의 무슬림형제단 연계 주장은 Bridge Michigan이 뒷받침 증거를 찾지 못했다고 밝혔다. 조사는 6건 전부 엘사예드 +1~+7(InsiderAdvantage D+2 · Wedgewood D+6 · YouGov D+1). 2차 토론 10/21, 조기 대면투표·오바마 디트로이트 10/24.",
+      "rating_cook": "Toss-up",
+      "rating_sabato": "Lean D",
+      "rating_as_of": "Cook 10/12 Toss-up · 사바토 10/15 Lean D · Inside Elections 10/2 Tilt D",
+      "rating_history": "Cook: Toss-up 유지(공석 확정 후 이동 없음) · Sabato: Toss-up →(9/22) Lean D"
+    },
+    {
+      "id": "me",
+      "name": "메인",
+      "nameEn": "Maine",
+      "defense": "R",
+      "rating": "Toss-up (Cook·Sabato·IE)",
+      "prob": 58,
+      "matchup": "Jackson (D, 7/25 인준) vs Collins (R·6선)",
+      "key_var": "접전화 — YouGov/CBS 50–50·Suffolk +2, RCP +1.3 · 4개 기관 전부 Toss-up 교차 확인",
+      "note": "Kalshi **58¢**(10/18, 전주 58¢ —). **이번 주의 핵심 역류.** 3차(10/13)·4차 최종 토론(10/15, 뱅고어)은 결정적 우열 없이 끝났다(Press Herald). 조사는 WaPo/GMU 50–46 · Marist 51–47 · AARP 50–47 · Suffolk 49–47 · InsiderAdvantage 49–47 대 YouGov/CBS 50–50 — RCP 평균 잭슨 +1.3(10/14), 예측시장 잭슨 60/59%로 한 달 전 66/71%에서 하락. 자금은 잭슨 $20.4M 대 콜린스 $5.2M으로 4:1. 10/16 Fox 집계로 Cook·IE·사바토·Fox 전 기관 Toss-up이 교차 확인됐다. 콜린스의 '최종 조사 상회' 이력이 다시 유효한 단서다.",
+      "rating_cook": "Toss-up",
+      "rating_sabato": "Toss-up",
+      "rating_as_of": "Cook 10/12 · 사바토 10/15 · Inside Elections 10/2 — 3사 전부 Toss-up(Fox 10/16 교차 확인)",
+      "rating_history": "Cook: Toss-up(6/28 확인, 이동일 미확인) · Sabato: 8/13 피드에서 Toss-up 확인"
+    },
+    {
+      "id": "ak",
+      "name": "알래스카",
+      "nameEn": "Alaska",
+      "defense": "R",
+      "rating": "Toss-up (Cook) / Lean D (Sabato 10/6↑)",
+      "prob": 75,
+      "matchup": "Peltola (D) vs Sullivan (R·현직)",
+      "key_var": "트럼프 와실라 유세(10/13, [K] LNG $500억 주장)에도 4개 조사 연속 펠톨라 +2~+7",
+      "note": "Kalshi **75¢**(10/18, 전주 73¢ ▲2). 와실라 유세(10/13, 약 3,500명 만원)에서 트럼프는 설리번·베기치 지지를 호소하고 [K] \"한국이 LNG 파이프라인에 $500억 투자\"를 주장했다(한국 측 부인). 최종 토론(10/15)에서 펠톨라는 이란전을 생활비(AK 휘발유 $4.96)와 연결했다. 조사는 InsiderAdvantage(10/9~10) RCV 최종 50.1–48 · ASR 51–49 · NYT/Siena 50–43 · PPP(10/14~15) 48–47 — 설리번 우위는 보수 성향 Trafalgar 1건뿐. 자금 펠톨라 $17M 대 설리번 $2.7M. 유세 후 실사분은 미착지.",
+      "rating_cook": "Toss-up",
+      "rating_sabato": "Lean D",
+      "rating_as_of": "Cook 10/12 Toss-up · 사바토 10/15 피드 Lean D(10/6 이동 유지) · Inside Elections 10/2 Toss-up · Fox 10/16 Toss-up",
+      "rating_history": "Cook: Solid R →(1월) Lean R →(7/1) Toss-up · Sabato: Safe R →(2026-01-12) Lean R →(6/11) Toss-up →(10/6) Lean D"
+    },
+    {
+      "id": "oh",
+      "name": "오하이오",
+      "nameEn": "Ohio",
+      "defense": "R",
+      "rating": "Toss-up (Cook·Sabato·IE)",
+      "prob": 64,
+      "matchup": "Brown (D·전 상원) vs Husted (R·임명직)",
+      "key_var": "영스타운 유세 청중 급감(2,500~3,000) — 조사는 전부 유세 전, 시장은 +4¢ 되돌림",
+      "note": "Kalshi **64¢**(10/18, 전주 60¢ ▲4 — 감시주 중 최대 상승). 전주 최대 하락분(−5¢)의 대부분을 되돌렸다. 트럼프 10/12 영스타운 유세의 청중은 약 2,500~3,000명으로 2017년(~7,000)·2022년(~5,500)보다 적었고 상설 좌석 절반이 폐쇄됐다(The Vindicator). 조사는 CNN 49–43 · Suffolk 47–44 · Marist 51–43 · BGSU 48–45로 민주 우위 일관이나 **전부 유세 전 실사분**이다. Fairshake 허스테드 지원 누계 $45M. 자금 브라운 $23.1M 대 허스테드 $4.8M. 오바마 10/24 클리블랜드 예고. 유세 후 실사분이 다음 주 판별점이다.",
+      "rating_cook": "Toss-up",
+      "rating_sabato": "Toss-up",
+      "rating_as_of": "Cook 10/12 · 사바토 10/15 · Inside Elections 10/2 — 3사 전부 Toss-up",
+      "rating_history": "Cook: Lean R →(4/13) Toss-up, 이후 무변경 · Sabato: Leans R →(6/11) Toss-up"
+    },
+    {
+      "id": "tx",
+      "name": "텍사스",
+      "nameEn": "Texas",
+      "defense": "R",
+      "rating": "Toss-up (Cook·Sabato)",
+      "prob": 62,
+      "matchup": "Talarico (D) vs Paxton (R)",
+      "key_var": "탈라리코 $64M 기록 모금 vs Siena D+4·Marist D+2 축소 — 무토론 고착, 조기투표 10/19",
+      "note": "Kalshi **62¢**(10/18, 전주 61¢ ▲1). 탈라리코 3분기 $64M(캠프 발표, 상원 분기 기록 주장) 대 팩스턴 $18M(Texas Tribune; Punchbowl $10.2M+공동위 $8.5M). 조사는 NYT/Siena D+6 → D+4(48–44) · Marist D+6 → D+2(47–45) · UT/TPP 50–47 · InsiderAdvantage(10/13~14) 48–49로 축소 추세다. 팩스턴은 토론 초청 0건 수락(탈라리코 4건). 조기투표 10/19 개시.",
+      "rating_cook": "Toss Up",
+      "rating_sabato": "Toss Up",
+      "rating_as_of": "Cook 10/12 · 사바토 10/15 Toss-up 유지 · Inside Elections 10/2 Tilt R",
+      "rating_history": "Cook: Likely R →(5/27) Lean R — 팩스턴 경선승(5/26) 여파 · Sabato: Lean R(6/28 확인, 이동일 미확인)"
+    },
+    {
+      "id": "ia",
+      "name": "아이오와",
+      "nameEn": "Iowa",
+      "defense": "R",
+      "rating": "Toss Up (Cook · Sabato) / Tilt R (IE)",
+      "prob": 43,
+      "matchup": "Turek (D) vs Hinson (R)",
+      "key_var": "혼조 지속 — YouGov·Marist·Suffolk 투렉 +1~4 vs Emerson·CNN 힌슨 +2, 시장 힌슨 57%",
+      "note": "Kalshi **43¢**(10/18, 전주 43¢ —). 최종 토론(10/13, WHO-TV)에서 두 후보 모두 러시아산 디젤 수입에 반대했고 투렉은 힌슨의 전쟁권한 결의안 7차례 반대표를 공격했다. 조사는 YouGov(10/6~12, LV 2,245) 47–46 · Marist(10/8~11, LV 1,100) 48–45 · Suffolk 48–44 대 Emerson 47–45 · CNN 45–43의 혼조다. 자금 투렉 $13.9M 대 힌슨 $3.3M. 트럼프 아이오와 유세 10/22·11/1 예고(Fox 블로그 단독).",
+      "rating_cook": "Toss Up",
+      "rating_sabato": "Toss Up",
+      "rating_as_of": "Cook 10/12 · 사바토 10/15 Toss-up 유지 · Inside Elections 10/2 Tilt R 유지",
+      "rating_history": "Cook: Likely R →(6/3) Lean R →(8/20) Toss Up · Sabato: Likely R →(6/3) Leans R →(9/22) Toss-up · IE: Lean R →(8/6) Tilt R"
+    },
+    {
+      "id": "ne",
+      "name": "네브래스카",
+      "nameEn": "Nebraska",
+      "defense": "R",
+      "rating": "Likely R (Cook 10/12) · Lean R (Sabato 10/15↑ · Inside Elections 10/2)",
+      "prob": null,
+      "matchup": "Osborn (무소속) vs Ricketts (R·현직)",
+      "key_var": "SLF $1,500만·Fairshake $7M 투입 — 오스본 코커스 거부 재확인, 사바토 Lean R 상향",
+      "note": "Kalshi 시장은 D/R 두 후보만 상장돼 무소속 Osborn 가격이 없다(R 73¢는 '공화 승리' 가격, 전주 74¢). SLF $1,500만(AP 10/13)+Fairshake $7M — 트럼프가 2024년 20p+로 이긴 주가 유료 방어 대상이 됐다. 오스본은 \"무소속은 무소속\"이라며 어느 당과도 코커스하지 않겠다는 입장을 재확인했다(Nebraska Examiner 10/17). 조사 co/efficient(공화 성향, 10/2) 리케츠 45–40 · National Public Affairs(10/2~5) 49–46 대 YouGov(9/24~10/3) 오스본 48–47. **사바토 피드(10/15)가 Likely R → Lean R로 옮겼다**(원천 미기재). 교섭단체 미정이라 민주 순증 산수에는 넣지 않고 'R −1 · I +1'로 따로 센다.",
+      "rating_cook": "Likely R",
+      "rating_sabato": "Lean R",
+      "rating_as_of": "Cook 10/12 Likely R · Sabato 10/15 피드 Lean R(원천 미기재) · Inside Elections 10/2 Lean R",
+      "rating_history": "미확인(편입 전) · Sabato Likely R →(10/9~15 사이) Lean R(피드 10/15 확인)"
+    },
+    {
+      "id": "ks",
+      "name": "캔자스",
+      "nameEn": "Kansas",
+      "defense": "R",
+      "rating": "Toss-up (Cook 10/12 피드 확인 · Sabato 10/15↑)",
+      "prob": 36,
+      "matchup": "Hamilton (D) vs Marshall (R·현직)",
+      "key_var": "Cook Toss-up 피드 확인 + 사바토 Toss-up 상향 — SMP $5M 투입 발표(단일 출처), 시장은 −2¢",
+      "note": "Kalshi **36¢**(10/18, 전주 38¢ ▼2). **Cook 10/6 Lean R → Toss-up이 이 사이트 피드(10/12)로 확인됐고, 사바토 피드(10/15)·Split Ticket(10/17)도 Toss-up에 합류했다** — 사바토 이동은 원천 미기재. SMP의 주 전역 TV $5M 집행 발표는 DeFi Rate 단일 2차 출처이고 10/8 KCUR \"구매 없음\"과 상반된다. 트럼프는 10/12 Truth Social로 해밀턴을 공격했고, 해밀턴은 마셜의 2020년 정부 자원 유용 의혹에 윤리 조사를 요구했다(KCUR). 조사 NYT/Siena 45–45 · InsiderAdvantage(10/13~14) 47–48. 자금 해밀턴 $9.9M 대 마셜 $86.6만 — 11배.",
+      "rating_cook": "Toss-up",
+      "rating_sabato": "Toss-up",
+      "rating_as_of": "Cook 10/12 피드 Toss-up(10/6 이동 확인) · Sabato 10/15 피드 Toss-up(원천 미기재) · Inside Elections 10/2 Likely R · Split Ticket 10/17 Toss-up",
+      "rating_history": "미확인(편입 전) · Cook Lean R →(10/6) Toss-up(피드 10/12 확인) · Sabato Lean R →(10/9~15 사이) Toss-up(피드 10/15 확인)"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "rtwh",
+      "name": "Race to the WH",
+      "subname": "확률 모델 · 원천 확인",
+      "prob": 72,
+      "prob_label": "72.4%",
+      "seats": "예상 의석 D 52.5 – R 47.5",
+      "majority": "민주 탈환 72.4%",
+      "desc": "Infogram 라이브 시계열에서 직접 취득(마지막 관측 Oct 18, 시계열 143점). 72.5% → **72.4%**로 2주 연속 0.1%p 안팎의 보합이다. 예상 의석도 D 52.6 → 52.5로 거의 그대로다. 네 수치 중 여전히 가장 높다."
+    },
+    {
+      "id": "ddhq",
+      "name": "Decision Desk HQ",
+      "subname": "확률 모델 · 원천 확인",
+      "prob": 56,
+      "prob_label": "56.0%",
+      "seats": "평균 의석 D 51 – R 49",
+      "majority": "민주 탈환 56.0%",
+      "desc": "공개 예측 페이지의 구조화 데이터에서 직접 취득한다. **이번 주 실행(10/18)도 HTTP 429(요청 과다)로 실패해 10/4 모델 갱신분(56.0%, 평균 의석 D 51 – R 49)을 그대로 둔다 — 3주째.** 이번 주 값이 아니다. 원천 하원 주간은 하원 DDHQ를 10/17 기준 77%(D 236)로 적지만 상원 DDHQ 신규 수치는 원천에도 없다."
+    },
+    {
+      "id": "inside",
+      "name": "등급가중 산수",
+      "subname": "자체 계산 · 컨센서스",
+      "prob": null,
+      "prob_label": "+3.5석",
+      "seats": "민주 순증 +3.5 (피드 Cook 10/12 · Sabato 10/15)",
+      "majority": "다수 문턱(+4) 미달",
+      "desc": "Solid/Likely=확정, Lean=75%, Toss-up=50% 가중을 Cook·Sabato 두 기관 평균에 적용(KS 포함 10주, NE 무소속 제외). **이번 주 피드(Cook 10/12 · Sabato 10/15)**: 탈환 ME .50 + NC .875 + AK .625 + OH .50 + TX .50 + IA .50 + KS .50 = 4.0, 방어 손실 GA 0 + MI .375 + NH .125 = 0.5 → **+3.5석**. 전주 피드 +2.875에서 +0.625 올랐다 — Cook NH·NC·KS(10/6 이동, 피드 10/12 확인) 각 +0.125, 사바토 NH Likely D·KS Toss-up(피드 10/15, 원천 미기재) 각 +0.125. 전주 이 사이트가 적은 수렴점(+3.25)을 사바토 2건만큼 넘었다. 원천 상원 주간은 등급 정지 전제로 +3.2~3.4석이다. 결론은 같다 — **필요치 +4에 미달.** Toss-up 5곳(ME·OH·TX·IA·KS) 중 최소 하나가 Lean D로 옮겨야 +4를 넘는다."
+    },
+    {
+      "id": "market",
+      "name": "예측시장 (Kalshi)",
+      "subname": "원가격 · 대표값",
+      "prob": 62,
+      "prob_label": "62%",
+      "seats": "NC 95.8¢ · GA 95.2¢ · NH 89¢ · AK 75¢ · MI 67¢ · OH 64¢ · TX 62¢ · ME 58¢ · IA 43¢ · KS 36¢",
+      "majority": "민주 다수 62%",
+      "desc": "Kalshi 상원 다수 계약 민주 **62¢** — 거래액 $682만·미결제약정 $353만, 전주 61¢에서 1센트 상승(전주 하락 일부 되돌림). 개별 주는 **OH +4¢ · AK +2¢ · NH +1¢ · TX +1¢ · NC +0.2¢ / GA −0.2¢ · MI −1¢ · KS −2¢ / ME·IA 보합**. 등급이 민주 쪽으로 움직인 KS는 시장이 내렸고, 등급이 그대로인 OH·AK는 시장이 올랐다 — 전주와 반대 방향의 괴리다. 가격은 확률의 근사일 뿐이며(유동성·편향 혼입) 모델과 평균 내지 말 것."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "7/25",
+      "event": "ME 민주 지명전당대회",
+      "detail": "Troy Jackson 566–5 인준 → Collins 도전 확정 (3주 혼란 종결)",
+      "party": "dem",
+      "status": "done"
+    },
+    {
+      "date": "8/4",
+      "event": "MI 민주당 예비",
+      "detail": "El-Sayed 48.5–Stevens 47.5(약 1%p)로 승리 — 공화가 반긴 대진 성립",
+      "party": "dem",
+      "status": "done"
+    },
+    {
+      "date": "8/11",
+      "event": "SC 특별 공화 예비",
+      "detail": "D. Graham 33% – Norman 25%, 과반 미달로 8/25 결선 확정 (Safe R — 다수 산술 무영향)",
+      "party": "rep",
+      "status": "done"
+    },
+    {
+      "date": "8/12",
+      "event": "ME 잭슨 1988년 경찰 기록 보도",
+      "detail": "뱅고어 데일리 뉴스 보도 → RNC '플래트너 2.0' 공세. 기존 3조사는 모두 보도 이전 필드",
+      "party": "dem",
+      "status": "done"
+    },
+    {
+      "date": "8/18",
+      "event": "AK top-4 예비",
+      "detail": "펠톨라 48.2 – 현역 설리번 42.9(개표 93%, D+5.3). 동명이인 스포일러는 합산 ~3.5%로 실패, DOJ 전신사기 대배심 소환장 발부. 부재자 개표 8/25·8/28 갱신, 인증 8/31",
+      "party": "neutral",
+      "status": "done"
+    },
+    {
+      "date": "8/20",
+      "event": "Cook, TX·IA 토스업 편입",
+      "detail": "Cook이 텍사스·아이오와를 Lean R→Toss Up으로 옮기며 상원 전체를 \"공화 약간 우위의 토스업\"으로 규정 — 72시간 내 4개 기관 10건 민주 방향 이동의 마지막이자 이 사이트 피드가 확인한 하드 이동 2건",
+      "party": "dem",
+      "status": "done"
+    },
+    {
+      "date": "8/25",
+      "event": "SC 특별 예비 결선",
+      "detail": "D. Graham이 Norman을 약 52–48로 격파 — Safe R이라 다수 산술은 무영향이나, 예비선거 3주 9패 이후 \"닫힌 공화 유권자층에서 트럼프 지지가 아직 작동한다\"는 직접 측정치",
+      "party": "rep",
+      "status": "done"
+    },
+    {
+      "date": "8/26",
+      "event": "사바토, TX 토스업 편입",
+      "detail": "Leans R → Toss-up. Cook 8/20 이동에 6일 뒤 합류해 **텍사스가 컨센서스 토스업**이 됐다 — 이번 주 상원 지도의 유일한 공식 등급 이동. 같은 주 조사 2건(TPOR D+7·UT/TPP D+3)이 동반",
+      "party": "dem",
+      "status": "done"
+    },
+    {
+      "date": "8/28",
+      "event": "NH UNH 조사 — 시리즈 첫 R 우위",
+      "detail": "수누누 45 – 파파스 43(필드 8/20–24). 작년 9월 파파스 +6에서 1년 새 8p 이동으로 **세 번째 필수 사수 리스크 진입**. 세인트앤셀름 D+7이 부분 반박, Kalshi는 −8¢로 반응",
+      "party": "rep",
+      "status": "done"
+    },
+    {
+      "date": "9/3",
+      "event": "Inside Elections 상원 3건 조정",
+      "detail": "NH Tilt D→**Toss-up**(공화 방향) · OH Tilt R→**Toss-up** · AK Lean R→**Tilt R**(둘 다 민주 방향). 순방향은 민주 2 대 공화 1인데 전국 보도는 NH 강등만 다뤘다",
+      "party": "neutral",
+      "status": "done"
+    },
+    {
+      "date": "9/4",
+      "event": "우편투표 규칙 예비적 금지명령",
+      "detail": "탈와니 판사가 9/4 밤 USPS 최종규칙에 예비적 금지명령 발부 — 선거관리조항 위반 판시, 법무부의 연방대법원 긴급신청은 실익 상실. 최소 항소심까지 규칙 정지",
+      "party": "dem",
+      "status": "done"
+    },
+    {
+      "date": "9/8",
+      "event": "뉴햄프셔 예비선거",
+      "detail": "파파스 62.5–35.4(만주르) · 서누누 69.1–25.6(브라운) — 양당 주류가 무상처로 관철됐고, 이로써 감시 9개 주 본선 대진이 전부 확정됐다(남은 경쟁 예비선거 없음). 만주르의 35%는 미시간에 이어 좌파 진영이 대규모 동원된 두 번째 사수 주라는 뜻",
+      "party": "neutral",
+      "status": "done"
+    },
+    {
+      "date": "9/9–10",
+      "event": "댈러스 공화 중간선거 전당대회",
+      "detail": "공화당 사상 첫 중간선거 전당대회(연사 109명). 산출물은 자해에 가까웠다 — 1인당 $5,000 \"트럼프 배당\"(비용 약 1.25조 달러)을 밴스가 몇 시간 만에 수정했고, \"cheat like hell\" 투표 선서가 금요일 보도를 지배했으며, 트럼프 본인이 휘발유 값은 선거 전에 안 내려간다고, 밴스는 이란 전쟁이 유권자를 이탈시켰다고 인정했다. 경합주 상원 연사 4명(팩스턴·허스티드·왯틀리·M.콜린스)은 이란·관세를 한 번도 언급하지 않았고, 가장 접전인 3곳의 공화 후보(S.콜린스·설리번·서누누)는 불참했다",
+      "party": "rep",
+      "status": "done"
+    },
+    {
+      "date": "9/10",
+      "event": "미주리 재획정 종결 + 우편투표 금지명령 유지",
+      "detail": "연방대법원이 연방지법 클라크 판사의 TRO를 정지시키면서 주 대법원 7-0 판결이 단독 유효 명령으로 남아 **11월은 2022년 지도(6R–2D)**로 치른다 — 하원 실질 필요 순증이 ~+7 단일값으로 확정. 같은 날 제1순회항소법원이 USPS 우편투표 규칙 금지명령의 정지 신청을 기각해 11/3까지 차단 유지. 구조 변수 두 개가 같은 날 민주 쪽으로 정리됐다",
+      "party": "dem",
+      "status": "done"
+    },
+    {
+      "date": "9/11",
+      "event": "8월 CPI · 9·11 25주기",
+      "detail": "8월 CPI 헤드라인 3.4% / **근원 2.4%로 둔화** — 인플레가 배럴로 수입되는 에너지 충격이라는 최명확 증거이자 이번 주 유일한 반전 경로. 그런데 같은 날 9/16 FOMC 인상 확률이 **85.6~90%로 확정**됐고 경유가 사상 첫 $6($6.05)를 찍었으며 미시간대 소비자심리가 **47.8**(48년 시계열 2위 최저·1퍼센타일 미만·양당 동반 하락)로 나왔다. 미시간 9·11 25주기 공방은 양방향으로 오갔다",
+      "party": "neutral",
+      "status": "done"
+    },
+    {
+      "date": "9/11",
+      "event": "Rasmussen 3개 주 동시 공표",
+      "detail": "공화 성향 하우스가 단일 기간(9/8–10)으로 **IA 투렉 +5 · ME 잭슨 +1 · NH 파파스 +11**을 동시 공표 — 같은 하우스·같은 기간이라 독립 관측 3건이 아니지만, 하우스 이펙트는 보통 자기 성향에 반하는 쪽으로 틀리지 않는다. 이틀 전 공화계 Trafalgar도 MI 엘사예드 +1.5를 냈다",
+      "party": "dem",
+      "status": "done"
+    },
+    {
+      "date": "9/14",
+      "event": "살랄라 회담 + 뉴욕 개장",
+      "detail": "이란·걸프 외교장관·이라크의 오만 살랄라 호르무즈 임시 항로 논의 — 결과는 원천 주간에 별도 기재가 없다(미확인). 이후 9/22 유엔에서 개전 후 첫 미·이란 직접 회담이 열렸다(아래)",
+      "party": "neutral",
+      "status": "done"
+    },
+    {
+      "date": "9/15–16",
+      "event": "FOMC",
+      "detail": "**만장일치(12–0) 25bp 인상 → 3.75~4.00%**, 점도표 18명 중 16명이 추가 인상. 선거 7주 전 \"인플레이션이 안 잡혔다\"는 공식 선언이 됐다. 이후 실사된 조사 다섯 건이 트럼프 순지지를 사상 최저(−22.4)로 끌어내렸다",
+      "party": "neutral",
+      "status": "done"
+    },
+    {
+      "date": "9/18–19",
+      "event": "UOCAVA 재외·군인 투표용지 발송 기한",
+      "detail": "UOCAVA 재외·군인 투표용지 발송 기한 경과 — 이후 지역구 단위 절차 변경은 물리적으로 종료. 미시간 부재자 용지는 9/24 발송 개시",
+      "party": "neutral",
+      "status": "done"
+    },
+    {
+      "date": "9/22",
+      "event": "텍사스 토론 시한",
+      "detail": "Hearst/NBC–Telemundo 토론 시한 — **팩스턴의 수락 여부·토론 개최 결과는 원천 주간에 기재가 없어 미확인**이다. 같은 주 SLF가 텍사스를 1억 달러로 증액했고 코닌이 팩스턴을 \"게으르다\"고 공개 비판했다",
+      "party": "rep",
+      "status": "done"
+    },
+    {
+      "date": "9/22–23",
+      "event": "등급 3건 민주 방향 · 공화 방향 0건",
+      "detail": "사바토 9/22 **MI Toss-up→Leans D · IA Leans R→Toss-up**, Cook 9/23 **GA Lean D→Likely D**. 사수 3곳 중 2곳(GA·MI)이 사이클 처음으로 토스업 위로 올라섰고, 이 사이트의 등급가중 순 기대의석이 +2.125 → **+2.5석**이 됐다(여전히 +4 미달)",
+      "party": "dem",
+      "status": "done"
+    },
+    {
+      "date": "9/23",
+      "event": "NRSC 우선순위 재편 보도",
+      "detail": "팀 스콧 위원장이 비공개 회의에서 **방어 5곳(ME·AK·OH·IA·TX) + 공격 2곳(MI·NH)**으로 확정하고 GA·NC를 제외했다는 보도(공개적으로는 \"100% 가짜뉴스\" 부인). 9/24 Axios 입수 내부 메모는 AK·IA·OH 방어에 890만 달러를 요청한다",
+      "party": "rep",
+      "status": "done"
+    },
+    {
+      "date": "9/24",
+      "event": "상원 이란 전쟁권한 결의안 부결(50–49)",
+      "detail": "허스티드(OH)는 전날 종전을 요구하고도 반대표 — 브라운 캠프 \"14번째 전쟁 지속 표결\". 로저스(MI)·힌슨(IA)·허스티드의 종전 요구로 접전지 공화 후보 이탈이 3인으로 확대된 주다",
+      "party": "neutral",
+      "status": "done"
+    },
+    {
+      "date": "9/30",
+      "event": "백악관, 한국 알래스카 LNG 투자 발표 [K]",
+      "detail": "트럼프가 2,000억 달러 전략투자 패키지의 일부로 **약 540억 달러** 알래스카 LNG 투자를 발표하고 설리번(R-AK)을 \"최대 공로자\"로 호명. 한국 산업부는 \"투자 여부도 규모도 결정된 바 없다\"며 러트닉 장관에 공식 항의, 펠톨라 지원 SMP는 \"엄청난 거짓말\"로 공격 — 한국 자본이 경합 레이스의 공수 양방향 소재가 된 첫 사례",
+      "party": "rep",
+      "status": "done"
+    },
+    {
+      "date": "10/2",
+      "event": "상원 H.Con.Res.89 이란 전쟁권한 상정 시한",
+      "detail": "상정 시한 경과 — **표결 결과는 원천 주간(10/4 상원·전국)에서 확인되지 않았다(미확인, 이월).** 9/24 표결의 콜린스(ME)·설리번(AK) 기록도 원천 미확인으로 남아 있다",
+      "party": "neutral",
+      "status": "done"
+    },
+    {
+      "date": "10/2",
+      "event": "9월 고용보고서 — 선거 전 마지막",
+      "detail": "비농업 **+2.9만**(예상 약 +8.4만) · 실업률 **4.2%** · 7~8월 합산 −6만 하향 · 임금 3.0% < 물가 3.4%. 다음 고용보고서는 11/6로 선거 이후다. 이후 실사된 경합주 조사는 아직 없다",
+      "party": "rep",
+      "status": "done"
+    },
+    {
+      "date": "10/3",
+      "event": "트럼프 오하이오 유세",
+      "detail": "데이턴 인근에서 허스티드 첫 직접 지원 유세. 같은 주 NRSC 팀 스콧 위원장은 격차가 \"이제 정확히 동률\"이라고 공개 발언 — 유세 후 첫 조사가 판별점",
+      "party": "rep",
+      "status": "done"
+    },
+    {
+      "date": "10/6–8",
+      "event": "토론 블록",
+      "detail": "IA 상원 1차(10/7, Iowa PBS) · ME 상원 1·2차(10/6·10/8) · GA·MI 상원 1차(10/8) · GA 주지사 ANF(10/6) — **결정타는 어디에도 없었다.** 메인은 BDN 팩트체크가 양측 주장 모두에 흠집, 조지아·미시간은 인신공방. 텍사스는 팩스턴이 모든 토론을 거부했다",
+      "party": "neutral",
+      "status": "done"
+    },
+    {
+      "date": "10/6",
+      "event": "상원 등급 4건 동시 이동 — 전부 민주 방향",
+      "detail": "원천 보도(2차 출처) Cook NH Toss-up→Lean D · NC Lean D→Likely D · KS Lean R→Toss-up, 사바토 AK Toss-up→Leans D(18년 만의 민주 유리 등급 — 이 사이트 피드 10/9로 확인). Cook 이동 3건은 이 사이트 피드(Cook 9/23)에 아직 반영되지 않았다",
+      "party": "dem",
+      "status": "done"
+    },
+    {
+      "date": "10/5–10/9",
+      "event": "트럼프·밴스 적지 수비 순회",
+      "detail": "트럼프 네브래스카 그랜드아일랜드(10/5)·샌안토니오(10/7), 밴스 페어뱅크스(10/5)·리마(10/9) — 전부 공화 현역 방어. 팩스턴은 이란전·휘발유가 캠페인에 타격이라고 비공개 인정(Axios 10/7)",
+      "party": "rep",
+      "status": "done"
+    },
+    {
+      "date": "10/12",
+      "event": "트럼프 영스타운 유세(OH)",
+      "detail": "코벨리 센터 약 2,500~3,000명 — 2017년(~7,000)·2022년(~5,500)보다 급감, 상설 좌석 절반 폐쇄(The Vindicator). 브라운을 \"마르크스주의자·공산주의자\"의 후보라 공격. 유세 후 실사 조사는 아직 착지하지 않았고, 시장은 60¢ → 64¢로 전주 하락분을 되돌렸다",
+      "party": "rep",
+      "status": "done"
+    },
+    {
+      "date": "10/13–16",
+      "event": "워실라 유세·조기투표·CPI·FEC",
+      "detail": "트럼프 워실라(10/13, [K] \"한국 LNG $500억\" 주장 — 한국 측 부인) · GA 조기투표 첫날 약 19만 표(주 기록)·2차 토론 · IA 최종 토론 · **9월 CPI 3.7% 재가속(10/14, 휘발유 전월비 +9.1%) → FOMC 인상 확률 22→45%** · **3분기 FEC(10/15): 핵심 6개 주 민주 3~6배 모금, 탈라리코 $64M** · NC 조기투표 · AK 최종 토론 · 트럼프 돌턴(10/16)",
+      "party": "neutral",
+      "status": "done"
+    },
+    {
+      "date": "10/12–15",
+      "event": "등급 피드 갱신 — Cook 3건 확인 + 사바토 3건",
+      "detail": "이 사이트 Cook 피드(10/12)가 10/6 이동 3건(NH Toss-up→Lean D · NC Lean D→Likely D · KS Lean R→Toss-up)을 확인했고, 사바토 피드(10/15)는 **NH Lean D→Likely D · KS Lean R→Toss-up · NE Likely R→Lean R** 3건을 더 옮겼다(원천 상원 주간 \"신규 이동 0건\" — 피드로만 확인). 등급가중 순 기대의석 +2.875 → **+3.5석**(여전히 +4 미달)",
+      "party": "dem",
+      "status": "done"
+    },
+    {
+      "date": "10/13",
+      "event": "SLF 자금 재배치 보도 (AP)",
+      "detail": "SLF가 조지아·노스캐롤라이나에서 철수하고 네브래스카에 $1,500만, 캔자스·사우스캐롤라이나에 신규 자금 투입. CLF는 하원 4개 전선 선거구 지원 중단·16곳 증액 — 공화 수비선이 하원 전선에서 상원 적지로 후퇴했다는 행동 증거",
+      "party": "rep",
+      "status": "done"
+    },
+    {
+      "date": "10/19",
+      "event": "TX 조기투표 개시",
+      "detail": "$64M 모금 대 Siena D+4·Marist D+2 축소의 어느 쪽이 투표로 번역되는지 첫 신호",
+      "party": "neutral",
+      "status": "upcoming"
+    },
+    {
+      "date": "10/21–24",
+      "event": "MI 2차 토론 · 트럼프 IA · 오바마 더블헤더",
+      "detail": "10/21 미시간 상원 2차 토론(WXYZ) · ~10/22 사바토 갱신 예상(상원 NH·KS·NE 원문 날짜 확인) · 10/22 트럼프 아이오와(Fox 블로그 단독 — 개최 확인 필요) · 10/23 UMich 확정치 · 10/24 오바마 디트로이트(엘사예드)·클리블랜드(브라운), MI 조기 대면투표 개시. 유세 후 실사 조사(OH·AK·GA) 착지가 최대 검증 항목",
+      "party": "neutral",
+      "status": "upcoming"
+    },
+    {
+      "date": "10/27–28",
+      "event": "FOMC — 선거 6일 전 금리 결정",
+      "detail": "CPI 쇼크 후 첫 금리 결정, 추가 인상 확률 약 45%(CME). 10/27 이스라엘 총선(이란 선제타격 변수)과 겹친다",
+      "party": "neutral",
+      "status": "upcoming"
+    },
+    {
+      "date": "9~10월",
+      "event": "본선 토론·광고전",
+      "detail": "슈퍼팩 투입 효과 가시화(SLF NC $71M·MI $51M·ME $42M+), 10월 서프라이즈",
+      "party": "neutral",
+      "status": "upcoming"
+    },
+    {
+      "date": "11/3",
+      "event": "선거일",
+      "detail": "2026 중간선거 투표일",
+      "party": "neutral",
+      "status": "upcoming"
+    }
+  ]
+}
