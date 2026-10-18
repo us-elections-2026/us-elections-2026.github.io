@@ -1,10 +1,16 @@
 {
- "as_of": "2026-10-17",
+ "as_of": "2026-10-18",
  "source_label": "상원 일일 정리본(senate_daily/site)의 주별 태그 줄 — scripts/ingest_senate_daily.py build_ledger()",
  "provenance_note": "여론조사·자금·로컬·주 함의 네 항목. 같은 문장은 처음 본 날짜로 한 번만 싣고 last 에 마지막 언급일. 원문 전재(정리본 이전) 날짜는 제외. states.US.money 는 정리본 v1.2의 「전국 자금」 절, states.US.legal 은 v1.3의 「법·제도」 절.",
  "states": {
   "GA": {
    "polls": [
+    {
+     "date": "2026-10-18",
+     "text": "Trafalgar Group(보수 성향, 기간·표본 미기재)은 오소프 51–43이다 · Decision Desk HQ 평균 52–43(날짜 미표기) · RCP 평균 오소프 +8.1(10/9) · 예측시장 약 95%(Newsweek).",
+     "urls": [],
+     "last": "2026-10-18"
+    },
     {
      "date": "2026-10-15",
      "text": "Decision Desk HQ 수치 오소프 52–43(조사 기간·표본 미상, Hoodline 경유) · 270toWin 최신은 Wedgewood(10/4) 55–45.",
@@ -117,6 +123,14 @@
     }
    ],
    "money": [
+    {
+     "date": "2026-10-18",
+     "text": "이월: 6/30 기준 현금은 오소프 약 $42M, 콜린스 약 $2M이다([Hoodline](https://hoodline.com/2026/10/trump-heads-to-dalton-friday-as-collins-jackson-fight-for-georgia/), 10/12) · 오소프 3분기 $33M(The Well News).",
+     "urls": [
+      "https://hoodline.com/2026/10/trump-heads-to-dalton-friday-as-collins-jackson-fight-for-georgia/"
+     ],
+     "last": "2026-10-18"
+    },
     {
      "date": "2026-10-17",
      "text": "오소프 3분기 $33M, 현금 $26M(The Well News) · 콜린스 보고서는 기사 시점에 미게재 · Punchbowl은 공화당이 조지아를 사실상 포기했다고 평가했다([Punchbowl](https://punchbowl.news/article/campaigns/democratic-candidates-dominate-fundraising/)).",
@@ -300,6 +314,14 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-10-18",
+     "text": "[Daily-Tribune/Chatsworth Times](https://www.daily-tribune.com/chatsworth_times/news/trump-returns-president-criticizes-ossoff-praises-collins-in-speech-at-second-visit-to-dalton-municipal/article_4ebfd229-e172-5ae6-9797-767431ea5692.html)(현지지, 성향 미평가)에 따르면 격납고에 수천 명이 모였다. 트럼프는 조기투표(10/30까지)를 독려했고 \"한 번 이겼고, 두 번째도 이기겠다\"고 말했다. 콜린스 발언 인용은 없다 · 유세: 2026-10-16 · 돌턴 · 도널드 트럼프(공화) → 마이크 콜린스(및 주지사 후보 릭 잭슨) · 공항 격납고 집회. 오소프를 공격하고 조기투표와 5,000달러 지급 공약을 내세웠으며, 군중 규모는 \"수천 명\"(Daily-Tribune)이고 Newsweek는 인원을 적지 않았다 · 이월: 유세: 2026-10-14 · 애틀랜타 · JD 밴스(공화) · 예고(Atlanta News First) · AJC, Georgia Recorder(좌), Georgia Star News(우 ⚠)는 읽지 못했다.",
+     "urls": [
+      "https://www.daily-tribune.com/chatsworth_times/news/trump-returns-president-criticizes-ossoff-praises-collins-in-speech-at-second-visit-to-dalton-municipal/article_4ebfd229-e172-5ae6-9797-767431ea5692.html"
+     ],
+     "last": "2026-10-18"
+    },
     {
      "date": "2026-10-17",
      "text": "조기투표 10/13~10/30 · 지난주 토론에서 콜린스는 트럼프를 강하게 옹호했고 오소프는 둘 다 비판했다([Atlanta News First](https://www.atlantanewsfirst.com/2026/10/13/jon-ossoff-casts-his-ballot-georgia-early-voting-opens-closely-watched-senate-race/)) · 유세: 2026-10-16 · 돌턴 · 도널드 트럼프(공화) → 마이크 콜린스(및 릭 잭슨) · 돌턴 시립공항 집회, 관중 미보도 · 유세: 2026-10-14 · 애틀랜타 · JD 밴스(공화) · 하츠필드-잭슨 공항 집회(예고 기사 기준).",
@@ -577,6 +599,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-10-18",
+     "text": "원문은 오소프가 여름 이후 모든 공개조사에서 앞선다고 보고, 오소프의 리드를 Bull 시나리오 유지 요인으로 든다. 돌턴 유세 후기는 확보됐지만 군중 규모는 출처마다 다르거나 빠져 있다.",
+     "urls": [],
+     "last": "2026-10-18"
+    },
     {
      "date": "2026-10-17",
      "text": "공화당 자금 철수 평가와 오소프의 모금 우위가 겹친다. 트럼프의 직접 개입은 투표율 목표를 겨냥하지만 유세 효과는 측정되지 않았다. 지역 방송만 열람했고 AJC 등은 미열람이다.",
@@ -1113,6 +1141,14 @@
    ],
    "local": [
     {
+     "date": "2026-10-18",
+     "text": "Fox News(우편향, 10/17 라이브 블로그)에 따르면 로저스는 버치런 유세에서 \"민주사회주의자 상원의원\"을 경고했다. 트럼프는 엘사예드를 \"재앙\"이라 불렀다. 둘 다 독립 검증되지 않은 주장이다 · 스태브노·브링크스 등이 밴스 방문을 비판했다 · 이월: 휘트머 10/8 엘사예드 지원 유세 · 2차 토론 10/21 · 조기 대면투표 10/24 개시(Newsweek) · 유세: 2026-10-15 · 먼로 · JD 밴스(공화) → 마이크 로저스 · 스포츠센터 집회, 규모 미기재 · 유세: 2026-10-24 · 디트로이트 · 버락 오바마(민주) → 압둘 엘사예드 · 예고, 장소 미공개([Daily Beast](https://www.thedailybeast.com/obama-takes-on-maga-in-must-win-senate-race/), 좌편향).",
+     "urls": [
+      "https://www.thedailybeast.com/obama-takes-on-maga-in-must-win-senate-race/"
+     ],
+     "last": "2026-10-18"
+    },
+    {
      "date": "2026-10-17",
      "text": "이월: 2차 토론 10/21 · Fox 라이브 블로그(우편향) 단독으로 엘사예드 가족의 무슬림형제단 연계 의혹이 제기됐고, 본인은 부인했다. 두 번째 출처가 없어 미확인이다 · 유세: 2026-10-24(예고) · 디트로이트 · 버락 오바마(민주) → 압둘 엘사예드 · 장소 미공개(AP via News4JAX).",
      "urls": [],
@@ -1415,6 +1451,12 @@
    ],
    "insight": [
     {
+     "date": "2026-10-18",
+     "text": "원문은 미시간(광고 열세, 근소한 여론조사)과 메인을 Bear 시나리오의 남은 하방 경로로 본다. Michigan Advance와 Fox 블로그는 유세 사실관계는 일치하지만 프레임이 다르다.",
+     "urls": [],
+     "last": "2026-10-18"
+    },
+    {
      "date": "2026-10-17",
      "text": "조사 우세는 유지되지만 TV 광고 열세가 실질 위험이다. 원문은 Bear 시나리오의 위험이 미시간과 메인으로 좁혀졌다고 본다. §5.1 미시간 매체는 미열람이다.",
      "urls": [],
@@ -1680,6 +1722,12 @@
   "NH": {
    "polls": [
     {
+     "date": "2026-10-18",
+     "text": "AARP(NH정치연구소, 10월 초, 기간·표본 미기재)는 LV 기준 파파스 +7이다 · Axios는 다른 조사도 파파스에 유리하다고 전한다 · 10/17 브리핑의 Cook Lean D는 명단의 Toss-up과 달라 등급은 미재확인이다.",
+     "urls": [],
+     "last": "2026-10-18"
+    },
+    {
      "date": "2026-10-16",
      "text": "St. Anselm(10/7) 파파스 51–44 · Rasmussen(10/2~4) 49–44(이월) · 270toWin 최신 항목은 Trafalgar(9/27), UNH(9/24), 시에나(9/24), InsiderAdvantage(9/18)이지만 득표율은 수집하지 못했다([270toWin NH](https://www.270towin.com/2026-senate-polls/new-hampshire)).",
      "urls": [
@@ -1819,6 +1867,12 @@
     }
    ],
    "money": [
+    {
+     "date": "2026-10-18",
+     "text": "이월: 파파스 3분기 $8.1M · 툰 원내대표가 서누누 모금행사를 주재한다(날짜 미공개).",
+     "urls": [],
+     "last": "2026-10-18"
+    },
     {
      "date": "2026-10-17",
      "text": "파파스 3분기 $8.1M(The Well News) · 수누누 수치는 미확보.",
@@ -1996,6 +2050,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-10-18",
+     "text": "서누누 캠프는 즉각 논평하지 않았다 · 공화당은 NH를 최우선 탈환 목표로 본다 · 유세: 날짜 미공개 · 뉴햄프셔 · 존 툰(공화) → 존 E. 서누누 · 모금행사 주재(Axios 10/15) · WMUR, NHPR, Union Leader, NH Journal(중도우), NH Bulletin(좌)은 확인하지 못했다.",
+     "urls": [],
+     "last": "2026-10-18"
+    },
     {
      "date": "2026-10-17",
      "text": "볼덕의 파파스 지지(미확인, Fox 단독).",
@@ -2233,6 +2293,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-10-18",
+     "text": "원문은 볼덕 지지 확인과 AARP의 파파스 +7이 뉴햄프셔 위험을 낮춘다고 보고, 이를 Bear 시나리오의 약화 요인으로 든다.",
+     "urls": [],
+     "last": "2026-10-18"
+    },
     {
      "date": "2026-10-17",
      "text": "원문은 볼덕 지지가 확인되면 뉴햄프셔 하방 위험이 더 줄어든다고 본다. 확인 전에는 판단 변화가 없다.",
@@ -2497,6 +2563,12 @@
   "ME": {
    "polls": [
     {
+     "date": "2026-10-18",
+     "text": "WaPo/조지메이슨(9/30–10/5, LV 800명) 잭슨 50–46 · Marist Poll(10/1–4, RV 1,505명) 잭슨 51–47, 직전 Marist 메인 조사는 미확인 · YouGov/CBS(9/23–10/1, LV 1,136명) 50–50 · Suffolk는 기사에 전체 수치 없음 · RCP 평균 잭슨 +1.3(10/14) · Cook·Inside Elections·Sabato 모두 Toss-up(Fox, 10/16).",
+     "urls": [],
+     "last": "2026-10-18"
+    },
+    {
      "date": "2026-10-16",
      "text": "RCP 평균은 잭슨 +1.2(10/13)다. Kalshi/Polymarket의 잭슨 승률은 60%/59%로, 한 달 전에는 66%/71%였다. 서폭(10/14)은 잭슨 49–47이다. 뉴스위크가 인용한 조사는 Washington Post–Schar/GMU(9/30~10/5, LV 800, ±3.6) 50–46, 마리스트(10/1~4, RV 1,505, ±3.8) 51–47, YouGov/CBS(9/23~10/1, LV 1,136, ±4.7) 50–50이다. 270toWin에는 Trafalgar(10/3) 46–46, Maine People's Resource Center(10/5) 49–47, Wedgewood(10/1) 52–48, AARP(10/1, LV 982, ±3.1) 50–47이 실려 있다([270toWin ME](https://www.270towin.com/2026-senate-polls/maine)).",
      "urls": [
@@ -2648,6 +2720,12 @@
    ],
    "money": [
     {
+     "date": "2026-10-18",
+     "text": "3분기 모금은 잭슨 $20.4M, 콜린스 $5.2M이다(Punchbowl) · 이월: 토론에서 공동광고 자금을 두고 공방이 있었다.",
+     "urls": [],
+     "last": "2026-10-18"
+    },
+    {
      "date": "2026-10-17",
      "text": "3분기 잭슨 $20.4M 대 콜린스 $5.2M(+공동위원회 $1.5M)(Punchbowl).",
      "urls": [],
@@ -2726,6 +2804,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-10-18",
+     "text": "이월: 10/15 뱅고어 마지막 토론에서 야유꾼이 퇴장당했다(Press Herald, 중도좌) · Maine Public, Maine Morning Star(좌), Maine Wire(우 ⚠)는 오늘 확인하지 못했다.",
+     "urls": [],
+     "last": "2026-10-18"
+    },
     {
      "date": "2026-10-17",
      "text": "10/13 3차 토론(WABI/WAGM, political.org 경유 — 성향 미평가 매체)에서 잭슨이 \"FBI가 콜린스를 사기로 지목했다\"고 주장했다. 기사는 인용된 ProPublica 보도가 FBI의 수사 준비를 말할 뿐 지목은 아니라고 지적했다([political.org](https://political.org/2026/10/13/collins-jackson-clash-over-iran-war-canada-tariffs-and-campaign-finance-in-third-maine-senate-debate/)).",
@@ -3012,6 +3096,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-10-18",
+     "text": "원문은 3분기 모금까지 감안하면 설문상 잭슨이 근소 우위지만 모든 평가기관에서 여전히 Toss-up이라고 본다. 메인 조사는 Base 시나리오의 소폭 약화 요인이고, 콜린스의 역전은 Bear 시나리오의 남은 하방 경로다.",
+     "urls": [],
+     "last": "2026-10-18"
+    },
     {
      "date": "2026-10-17",
      "text": "최종 토론은 결정적 우세를 만들지 못했다. 모든 평가기관이 Toss-up으로 두고 있어 메인은 미시간과 함께 남은 실질 위험 지역이다. Press Herald(중도좌)만 열람했다.",
@@ -3373,6 +3463,14 @@
    ],
    "money": [
     {
+     "date": "2026-10-18",
+     "text": "[WRAL 10/2](https://www.wral.com/news/nccapitol/senate-leadership-fund-pulls-ad-spending-in-nc-us-senate-race-as-whatley-trails-cooper-october-2026/)에 따르면 4월 $71M을 약속했던 Senate Leadership Fund가 NC 광고를 중단하고 자금을 재배치한다. 최소 $30M을 집행했고 마지막 구매는 9/22 $35만이다 · Old North Action은 $6.5M을 취소했으나 약 $14.5M 예약은 유지한다 · WRAL 10/8 헤드라인은 워틀리 캠프의 방송 광고 후퇴를 전한다(제목만 확인) · 워틀리 캠프는 자원이 충분하다고 밝혔다.",
+     "urls": [
+      "https://www.wral.com/news/nccapitol/senate-leadership-fund-pulls-ad-spending-in-nc-us-senate-race-as-whatley-trails-cooper-october-2026/"
+     ],
+     "last": "2026-10-18"
+    },
+    {
      "date": "2026-10-17",
      "text": "3분기 쿠퍼 $19.5M(The Well News) · Punchbowl은 공화당이 NC를 사실상 포기했다고 평가했다. 이는 SLF 지출 동결·SMP 광고 취소(KCUR 10/8, 이월)와 일치한다.",
      "urls": [],
@@ -3588,6 +3686,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-10-18",
+     "text": "트럼프는 워틀리가 \"걱정된다\"고 말했다 · Carolina Journal(중도우)과 NC Newsline은 확인하지 못해 공화당 측 프레임이 빈약하다.",
+     "urls": [],
+     "last": "2026-10-18"
+    },
     {
      "date": "2026-10-17",
      "text": "조기투표 첫날 10/15 쿠퍼·와틀리가 모두 투표했다(WSOC·NC Newsline 중도좌~좌, 제목만 확인).",
@@ -3852,6 +3956,12 @@
    ],
    "insight": [
     {
+     "date": "2026-10-18",
+     "text": "원문은 쿠퍼의 WRAL/WSOC 14%p 격차를 '수성+핵심 석권' 경로를 유지시키는 요인으로 든다. 오늘 새 정보는 없다.",
+     "urls": [],
+     "last": "2026-10-18"
+    },
+    {
      "date": "2026-10-17",
      "text": "공화당 자금 철수 정황은 원문이 말하는 방어+핵심 석권 경로를 뒷받침한다. 판단을 바꿀 새 정보는 없다.",
      "urls": [],
@@ -4115,6 +4225,12 @@
   "TX": {
    "polls": [
     {
+     "date": "2026-10-18",
+     "text": "Texas Politics Project(9/25–10/5, LV 861명, ±3.34)는 탈라리코 50, 팩스턴 47이다. 자유당 테드 브라운이 1, 기타가 2다.",
+     "urls": [],
+     "last": "2026-10-18"
+    },
+    {
      "date": "2026-10-16",
      "text": "포브스: 마리스트(10/14) 탈라리코 47–45, 텍사스대(10/14) 50–47. 270toWin: 시에나(10/13, LV 617, 오차 미기재) 48–44, 시에나(10/3, LV 615, ±4.5) 51–45, Fox News(10/1, LV 881, ±3) 51–49, Texas Public Opinion Research(9/25) 49–44, 마리스트(9/23, RV 1,139, ±4.4) 50–44, Texas Southern(9/22) 47–46([270toWin TX](https://www.270towin.com/2026-senate-polls/texas)).",
      "urls": [
@@ -4284,6 +4400,12 @@
     }
    ],
    "money": [
+    {
+     "date": "2026-10-18",
+     "text": "이월: 탈라리코 캠프는 3분기 $64M을 발표했고 팩스턴은 $18M이다(Texas Tribune, 중도좌).",
+     "urls": [],
+     "last": "2026-10-18"
+    },
     {
      "date": "2026-10-17",
      "text": "탈라리코 $64M, 보유 현금 미공개 · 팩스턴 $18M, Punchbowl 집계는 $10.2M(+두 공동위원회 $8.5M) · Tribune은 공화당 외곽의 대규모 광고와, 머스크가 팩스턴 지원 노력의 기부자라는 제목을 전했다(제목만, 미확인).",
@@ -4460,6 +4582,15 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-10-18",
+     "text": "조기투표 10/19 개시 · [Fox News 10/17 라이브 블로그](https://foxnews.com/live-news/fiery-texas-house-race-minnesota-fraud-scandal-2026-midterm-elections-october-17)(우편향)에 따르면 팩스턴은 록월 유세에서 화이자 백신 소송을 내세웠다(연방판사 기각, 항소 계류). 트럼프는 탈라리코를 \"급진 좌파 광인\"이라 불렀다 · [CNN 10/15 라이브 블로그](https://www.cnn.com/2026/10/15/politics/live-news/midterm-election-congress) 제목은 트럼프가 텍사스 패배에 대비해 책임 전가 대상을 찾는다고 전한다(제목만 확인).",
+     "urls": [
+      "https://foxnews.com/live-news/fiery-texas-house-race-minnesota-fraud-scandal-2026-midterm-elections-october-17",
+      "https://www.cnn.com/2026/10/15/politics/live-news/midterm-election-congress"
+     ],
+     "last": "2026-10-18"
+    },
     {
      "date": "2026-10-17",
      "text": "이월: 조기투표 10/19 시작.",
@@ -4737,6 +4868,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-10-18",
+     "text": "원문은 조기투표를 앞둔 오차범위 내 접전으로 정리했다. 팩스턴 유세 내용은 Fox 단독 출처라고 유의했다.",
+     "urls": [],
+     "last": "2026-10-18"
+    },
     {
      "date": "2026-10-17",
      "text": "원문은 기록적 모금이 민주당의 reach 경로(TX)를 넓힌다고 본다. 다만 수치는 캠프 발표이고 공화당 외곽 자금은 정량화되지 않았다.",
@@ -5121,6 +5258,12 @@
    ],
    "money": [
     {
+     "date": "2026-10-18",
+     "text": "이월: 3분기 모금은 브라운 $23.1M, 허스티드 $4.8M이다(Punchbowl).",
+     "urls": [],
+     "last": "2026-10-18"
+    },
+    {
      "date": "2026-10-17",
      "text": "3분기 브라운 $23.1M(Punchbowl) 또는 위원회 합산 $28.2M(The Well News — 집계 방식 차이) 대 허스테드 $4.8M(+공동위원회 $3.2M).",
      "urls": [],
@@ -5265,6 +5408,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-10-18",
+     "text": "유세: 2026-10-12 · 영스타운 · 도널드 트럼프(공화) → 존 허스티드 · 코벨리센터 집회, 약 2,500~3,000명(이월, 재확인 안 함) · 유세: 2026-10-24 · 클리블랜드 · 버락 오바마(민주) → 셰러드 브라운 · 예고.",
+     "urls": [],
+     "last": "2026-10-18"
+    },
     {
      "date": "2026-10-17",
      "text": "유세: 2026-10-12 · 영스타운 · 도널드 트럼프(공화) → 존 허스테드 · 코벨리센터 집회, 약 2,500~3,000명(이월, The Vindicator) · 유세: 2026-10-24(예고) · 클리블랜드 · 버락 오바마(민주) → 셔로드 브라운.",
@@ -5508,6 +5657,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-10-18",
+     "text": "원문은 기간 내 새 여론조사·사건이 없다고 적었다. 공화당 측 현지 보도가 빈약하다는 점도 유의했다.",
+     "urls": [],
+     "last": "2026-10-18"
+    },
     {
      "date": "2026-10-17",
      "text": "원문은 오하이오에서 공화당이 모금에서 밀린다고 본다. 새 판단 변화는 없고, 공화당 측 지역 보도는 여전히 빈약하다.",
@@ -5772,6 +5927,12 @@
   "AK": {
    "polls": [
     {
+     "date": "2026-10-18",
+     "text": "InsiderAdvantage(10/9–10, LV 1,200명)는 1라운드 펠톨라 48.2–42.6, 최종 RCV 50.1–48이다 · Alaska Survey Research(10/1–3, LV 1,512명)는 1라운드 47–45, 최종 51–49다 · NYT/Siena(9/24–10/1, LV 504명) 펠톨라 50–43, 직전 Siena 알래스카 조사는 미확인 · Trafalgar Group(보수 성향, 9/22–24, LV 1,079명) 설리번 47–46 · Fox Toss-up.",
+     "urls": [],
+     "last": "2026-10-18"
+    },
+    {
      "date": "2026-10-14",
      "text": "없음. 직전 조사는 NYT/Siena(10/3) 펠톨라 50–43(504명 LV, ±5.1), Quantus(10/2) 47–47, Trafalgar(9/26) 설리번 47–46, Alaska Survey Research(9/22) 펠톨라 48–44, co/efficient(9/17) 설리번 48–46, AARP(9/17) 펠톨라 46–41이다.",
      "urls": [],
@@ -5853,6 +6014,12 @@
     }
    ],
    "money": [
+    {
+     "date": "2026-10-18",
+     "text": "이월: 3분기 모금은 펠톨라 $17M, 설리번 $2.7M이다(Punchbowl) · 테드 크루즈(공화) 앵커리지 모금행사 2026-10-16(예고, 미재확인).",
+     "urls": [],
+     "last": "2026-10-18"
+    },
     {
      "date": "2026-10-17",
      "text": "3분기 펠톨라 $17M 대 설리번 $2.7M(+공동위원회 $885K)(Punchbowl).",
@@ -5959,6 +6126,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-10-18",
+     "text": "Fox는 동명이인 \"설리번\" 후보를 언급했다 · 유세: 2026-10-13 · 와실라 · 도널드 트럼프(공화) → 댄 설리번 · 메나드 스포츠센터 집회, 약 3,500명(이월, 재확인 안 함) · Alaska Public Media(중도좌), ADN, Must Read Alaska(우), Alaska Beacon(좌)은 확인하지 못했다.",
+     "urls": [],
+     "last": "2026-10-18"
+    },
     {
      "date": "2026-10-17",
      "text": "Fox는 설리번과 이름이 같은 후보가 변수라고 언급했다 · 유세: 2026-10-13 · 와실라 · 도널드 트럼프(공화) → 댄 설리번 · 메나드 스포츠센터 집회, 약 3,500명(이월, Alaska Public Media 중도좌) · 유세: 2026-10-16(예고) · 앵커리지 · 테드 크루즈(공화) · 모금행사(이월).",
@@ -6268,6 +6441,12 @@
    ],
    "insight": [
     {
+     "date": "2026-10-18",
+     "text": "원문은 펠톨라의 4연속 우세를 민주당 핵심 탈환 목표에서 유리한 움직임으로 보고, Base 시나리오의 소폭 약화 요인으로 든다.",
+     "urls": [],
+     "last": "2026-10-18"
+    },
+    {
      "date": "2026-10-17",
      "text": "모금 격차는 크지만 토론 평가는 Fox 단독이다. Toss-up 판단은 그대로다.",
      "urls": [],
@@ -6531,6 +6710,12 @@
   "IA": {
    "polls": [
     {
+     "date": "2026-10-18",
+     "text": "투렉이 앞선 조사는 YouGov(10/6–12, LV 2,245명) 47–46, Suffolk(10/1–4) 48–44, Beacon(9/24–28) 49–47, InsiderAdvantage(9/22–23) 47–46, Marist(9/17–20) 50–42다 · 힌슨이 앞선 조사는 Emerson(10/5–6) 47–45, CNN(9/29–10/5) 45–43, NYT/Siena(9/22–10/1) 1%p, Quantus 2건 각 2%p다 · 예측시장은 힌슨 우세다(Polymarket 57%, Kalshi 58%) · 불일치: 10/17 브리핑의 Marist 10/15 수치(투렉 48–45)는 이 출처에 없어 미검증이다.",
+     "urls": [],
+     "last": "2026-10-18"
+    },
+    {
      "date": "2026-10-16",
      "text": "마리스트(10/15) 투렉 48–45 · 270toWin: 에머슨(10/9, LV 650, ±3.8) 힌슨 47–45(레인 2), 시에나(10/3, LV 606, ±4.6) 힌슨 48–47, Fox News(10/1, LV 1,008, ±3) 투렉 49–47, Quantus(9/30) 힌슨 49–47, InsiderAdvantage(9/26) 투렉 47–46([270toWin IA](https://www.270towin.com/2026-senate-polls/iowa)).",
      "urls": [
@@ -6688,6 +6873,12 @@
    ],
    "money": [
     {
+     "date": "2026-10-18",
+     "text": "이월: 3분기 모금은 투렉 $13.9M, 힌슨 $3.3M이다.",
+     "urls": [],
+     "last": "2026-10-18"
+    },
+    {
      "date": "2026-10-17",
      "text": "3분기 투렉 $13.9M 대 힌슨 $3.3M(Punchbowl).",
      "urls": [],
@@ -6791,6 +6982,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-10-18",
+     "text": "유세: 2026-10-22 및 2026-11-01 · 아이오와(장소 미공개) · 도널드 트럼프(공화) → 애슐리 힌슨 · 집회 예고(Fox News 라이브 블로그 10/16, 이월).",
+     "urls": [],
+     "last": "2026-10-18"
+    },
     {
      "date": "2026-10-17",
      "text": "유세: 2026-10-22 및 2026-11-01(예고) · 아이오와 · 도널드 트럼프(공화) → 애슐리 힌슨 · 장소 미공개(Fox 단독).",
@@ -7046,6 +7243,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-10-18",
+     "text": "원문은 아이오와를 여론조사상 접전으로 본다. 공화당의 기대가 걸린 곳 중 하나로 아이오와의 시장 우위를 든다.",
+     "urls": [],
+     "last": "2026-10-18"
+    },
     {
      "date": "2026-10-17",
      "text": "원문은 아이오와를 민주당 reach 경로 중 하나로 본다. 트럼프 두 차례 방문 예고는 공화당이 이 주를 관리 대상으로 본다는 신호다. 새 조사는 없다.",
@@ -7441,6 +7644,12 @@
    ],
    "money": [
     {
+     "date": "2026-10-18",
+     "text": "SLF 연계 슈퍼팩 Cornhusker Majority가 오스본의 민주당 코커스 발언 보도(Plains Sentinel)를 광고에 썼다. 금액은 기사에 없다.",
+     "urls": [],
+     "last": "2026-10-18"
+    },
+    {
      "date": "2026-10-16",
      "text": "이월(AP, 10/13): SLF가 리케츠 지원에 1,500만 달러, Fairshake가 700만 달러를 쓴다.",
      "urls": [],
@@ -7470,6 +7679,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-10-18",
+     "text": "NRSC는 오스본을 \"가짜 무소속\"이라 부른다. 리케츠 캠프와 공화당은 오스본이 2025년 라비스타 타운홀에서 민주당과 코커스하겠다고 말했다는 Plains Sentinel 보도를 근거로 든다. 오스본은 맥락을 떼어낸 가짜뉴스라고 반박했다 · 오스본은 브렝스(SD)·보드나(MT) 무소속 후보와 가상 기자회견을 열었다 · 합법대마 후보 마이크 마빈은 사퇴하며 오스본을 지지했다(나머지 후보 3명) · 조기투표가 진행 중이다.",
+     "urls": [],
+     "last": "2026-10-18"
+    },
     {
      "date": "2026-10-17",
      "text": "트럼프 그랜드아일랜드 집회 약 10/5(7일 범위 밖).",
@@ -7544,6 +7759,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-10-18",
+     "text": "원문의 집계 규칙에서 리케츠 패배는 R −1, 오스본은 \"I +1(코커스 미선언)\"이다. 원문은 오스본이 민주당과 코커스하지 않겠다고 하는 한 네브래스카는 민주당 계산 밖이라고 본다.",
+     "urls": [],
+     "last": "2026-10-18"
+    },
     {
      "date": "2026-10-17",
      "text": "새 정보가 없어 판단 변화도 없다. 네브래스카 매체는 미열람이다.",
@@ -7685,6 +7906,12 @@
    ],
    "money": [
     {
+     "date": "2026-10-18",
+     "text": "이월: SMP $5M 구매(DeFi Rate, 단일 2차 출처) · 3분기 모금은 해밀턴 $9.9M, 마셜 $86.6만이다.",
+     "urls": [],
+     "last": "2026-10-18"
+    },
+    {
      "date": "2026-10-17",
      "text": "SMP가 자체 내부조사를 근거로 선거일까지 주 전역 TV $5M과 디지털 광고 집행을 발표했다([DeFi Rate](https://defirate.com/news/democrats-money-kansas-senate-race-traders-favor-marshall/), 암호화폐 뉴스 사이트, 2차 단일 출처 — 10/8 KCUR의 \"캔자스 광고 없음\"과 상반) · 3분기 해밀턴 $9.9M 대 마셜 $866K(Punchbowl; The Well News는 해밀턴 $10.6M).",
      "urls": [
@@ -7740,6 +7967,14 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-10-18",
+     "text": "이월: 트럼프 10/12 Truth Social 공격 · 제목 수준: Kansas Reflector(좌)는 10/5 마셜 공격광고의 아동 사진 무단 사용을, 10/11 칼럼에서 민주당 당선 가능성을 다뤘다 · [KCUR 10/15](https://kcur.org/politics-elections-and-government/2026-10-15/kansas-senate-marshall-hamilton-trump-unpopular) \"새롭게 경합 중인 상원 선거, 트럼프 비인기 정책의 한계 시험\"(페이지 접근 차단) · The Sentinel(우)과 Wichita Eagle은 확인하지 못했다.",
+     "urls": [
+      "https://kcur.org/politics-elections-and-government/2026-10-15/kansas-senate-marshall-hamilton-trump-unpopular"
+     ],
+     "last": "2026-10-18"
+    },
     {
      "date": "2026-10-17",
      "text": "트럼프의 10/12 Truth Social 해밀턴 공격(방문 아님).",
@@ -7818,6 +8053,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-10-18",
+     "text": "원문은 캔자스에 신규 조사가 없다고 적었고, 이 주의 판단 변화를 언급하지 않았다. KCUR(중도좌)만 읽었다는 점을 유의했다.",
+     "urls": [],
+     "last": "2026-10-18"
+    },
     {
      "date": "2026-10-17",
      "text": "원문은 전국 프레임이 10/8의 \"경합 가능\"에서 일주일 만에 트럼프 직접 개입과 SMP 자금 투입 쪽으로 옮겨 갔다고 본다. 시장가는 여전히 마셜 우세다. SMP 수치는 단일 출처다.",
