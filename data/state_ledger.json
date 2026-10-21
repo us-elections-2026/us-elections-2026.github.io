@@ -1,10 +1,18 @@
 {
- "as_of": "2026-10-20",
+ "as_of": "2026-10-21",
  "source_label": "상원 일일 정리본(senate_daily/site)의 주별 태그 줄 — scripts/ingest_senate_daily.py build_ledger()",
  "provenance_note": "여론조사·자금·로컬·주 함의 네 항목. 같은 문장은 처음 본 날짜로 한 번만 싣고 last 에 마지막 언급일. 원문 전재(정리본 이전) 날짜는 제외. states.US.money 는 정리본 v1.2의 「전국 자금」 절, states.US.legal 은 v1.3의 「법·제도」 절.",
  "states": {
   "GA": {
    "polls": [
+    {
+     "date": "2026-10-21",
+     "text": "Quantus Insights(R) 10/17(755 LV) 오소프 52, 콜린스 45 · Pollsmax 20건 평균 오소프 52.0–42.7(+9.3, 10/17 갱신; 직전 +9.2) · 이전 조사 Trafalgar(R) 10/9 오소프 +8, Wedgewood 10/3 오소프 +10 ([Pollsmax](https://www.pollsmax.com/senate/georgia/))",
+     "urls": [
+      "https://www.pollsmax.com/senate/georgia/"
+     ],
+     "last": "2026-10-21"
+    },
     {
      "date": "2026-10-20",
      "text": "Trafalgar(R) 10/9 오소프 +8(1,101명 LV) · Wedgewood 10/3 오소프 +10(600명 LV) · [Pollsmax](https://www.pollsmax.com/senate/georgia/) 19개 조사 평균 오소프 51.6–42.5(+9.2).",
@@ -323,6 +331,12 @@
    ],
    "local": [
     {
+     "date": "2026-10-21",
+     "text": "조기투표는 10/30까지 계속된다 · 이월: 조기투표 첫날 기록적 투표(18만 명 이상)는 10/20 브리핑에서 이월 · 유세: 2026-10-14 · 애틀랜타 · JD 밴스(공화) → 마이크 콜린스 · 이월(재확인 안 됨, 제목만 확인) · 유세: 2026-10-28 · 애틀랜타 · 버락 오바마(민주) → 존 오소프 · 예정",
+     "urls": [],
+     "last": "2026-10-21"
+    },
+    {
      "date": "2026-10-20",
      "text": "조기투표 10/30 종료, 선거일 11/3 · 제목만 확인(미열람): Daily Signal(우) \"Collins Gears Up as Early Voting Commences, Vance Visits Atlanta\"(10/14) · 유세: 2026-10-14 · 애틀랜타 · JD 밴스(공화) → 마이크 콜린스 · 조기투표 주간 방문, 내용 미확인(제목만, Daily Signal 10/14) · 이월·재확인 못함: 2026-10-28 · 애틀랜타 · 버락 오바마(민주) → 존 오소프 · \"United for Georgia Rally\"(예고) · 카멀라 해리스(민주) \"이달 말\" 방문(날짜 미정)",
      "urls": [],
@@ -614,6 +628,12 @@
    ],
    "insight": [
     {
+     "date": "2026-10-21",
+     "text": "공화 성향 조사에서도 오소프 우위가 유지되고 평균이 +9.3으로 소폭 넓어져 Bull 경로를 유지시키는 주로 남는다. 신규 뉴스가 없어 판단 변화는 없다.",
+     "urls": [],
+     "last": "2026-10-21"
+    },
+    {
      "date": "2026-10-20",
      "text": "조기투표 첫날 기록과 평균 오소프 +9.2로 Bull 경로의 조지아 부분은 유지된다. 원문은 오늘 판단 변화를 적지 않았다.",
      "urls": [],
@@ -888,6 +908,14 @@
   },
   "MI": {
    "polls": [
+    {
+     "date": "2026-10-21",
+     "text": "Rasmussen Reports(R) 10/14(798 LV) 엘사이드 46–44 · InsiderAdvantage(R) 10/10(1,200 LV) 엘사이드 48–46 · Wedgewood 10/9(607 LV) 엘사이드 53–47 · Tyson Group(R) 10/8(600 LV) 로저스 46–44 · 52건 평균 엘사이드 47.4–44.5(+2.9, 10/14 갱신이라 뒤처졌을 수 있음) · 등급(9월 이후 변경 없음): Cook·Sabato·Fox·RCP·Inside Elections 접전(Toss-up), Silver Bulletin·DDHQ·Economist·Split Ticket 민주 우세(Lean D) ([Pollsmax](https://www.pollsmax.com/senate/michigan/))",
+     "urls": [
+      "https://www.pollsmax.com/senate/michigan/"
+     ],
+     "last": "2026-10-21"
+    },
     {
      "date": "2026-10-20",
      "text": "Fox News/Beacon(주목 기관, 9/28, 1,028명 LV) 엘사이드 +1 · YouGov 10/4(3,949명 LV) +1 · Quantus(R) 10/6(762명 LV) +1 · [Pollsmax](https://www.pollsmax.com/senate/michigan/) 평균 엘사이드 +3.3.",
@@ -1168,6 +1196,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-10-21",
+     "text": "마지막 2차 토론이 오늘 밤(10/21) 열린다 · 이월: 무슬림형제단·감시명단 보도는 재확인하지 못했다 · 유세: 2026-10-17 · 플랫록 · JD 밴스(공화) → 마이크 로저스 · 타운홀(이월, 재확인 안 됨) · 유세: 2026-10-24 · 미시간 · 버락 오바마(민주) → 압둘 엘사이드 · 예정",
+     "urls": [],
+     "last": "2026-10-21"
+    },
     {
      "date": "2026-10-20",
      "text": "2차 토론 10/21(수) · 이월: 이전 브리핑의 무슬림형제단·감시명단 의혹은 이 기사에 언급이 없어 재확인 못함 · 이월·재확인 못함: 2026-10-17 · 플랫록 · JD 밴스(공화) → 마이크 로저스 · CBS 주최 타운홀; 2026-10-24 · 미시간 · 버락 오바마(민주) → 압둘 엘사이드(예고)",
@@ -1485,6 +1519,12 @@
    ],
    "insight": [
     {
+     "date": "2026-10-21",
+     "text": "공화 성향 조사인 Rasmussen도 엘사이드 +2여서 공화 쪽 강화 징후는 없다. 평균 +2.9는 10/14 갱신이라 뒤처졌을 수 있다. 오늘 밤 2차 토론이 남아 있다.",
+     "urls": [],
+     "last": "2026-10-21"
+    },
+    {
      "date": "2026-10-20",
      "text": "원문은 미시간에서 공화당이 굳어진다는 증거가 오늘 없다고 보며, 남은 공화 경로로 미시간 이변을 든다. 평균 엘사이드 +3.3은 유지.",
      "urls": [],
@@ -1761,6 +1801,14 @@
   },
   "NH": {
    "polls": [
+    {
+     "date": "2026-10-21",
+     "text": "신규 등재 확인: Trafalgar(R) 9/27(1,082 LV) 파파스 47–41 · 최신은 여전히 National Public Affairs(공화 성향) 10/12(600 LV) 파파스 50–43; YouGov 10/5(1,520 LV) 파파스 51–43; Saint Anselm 9/29(1,042 LV) 51–44 · 27건 평균 파파스 48.0–42.4(+5.6, 10/12 갱신) · 등급(Wikipedia): Cook 접전(9/23), Inside Elections 접전(9/17), Sabato Lean D(9/22), Fox/CBS/RCP Lean D ([Pollsmax](https://www.pollsmax.com/senate/new-hampshire/))",
+     "urls": [
+      "https://www.pollsmax.com/senate/new-hampshire/"
+     ],
+     "last": "2026-10-21"
+    },
     {
      "date": "2026-10-20",
      "text": "[Pollsmax](https://www.pollsmax.com/senate/new-hampshire/) 최신 목록 National Public Affairs(공화 성향) 10/12 파파스 +7(600명 LV) · YouGov 10/5 파파스 +8(1,520명 LV) · 세인트앤셀름 9/29 파파스 +7(1,042명 LV) · 27개 조사 평균 파파스 48.0–42.4(+5.6) · 오늘 등급 변경은 찾지 못함.",
@@ -2105,6 +2153,12 @@
    ],
    "local": [
     {
+     "date": "2026-10-21",
+     "text": "Wikipedia에 \"이번 주 후반\" 부티지지 방문 언급이 있으나 날짜·도시가 없다",
+     "urls": [],
+     "last": "2026-10-21"
+    },
+    {
      "date": "2026-10-18",
      "text": "서누누 캠프는 즉각 논평하지 않았다 · 공화당은 NH를 최우선 탈환 목표로 본다 · 유세: 날짜 미공개 · 뉴햄프셔 · 존 툰(공화) → 존 E. 서누누 · 모금행사 주재(Axios 10/15) · WMUR, NHPR, Union Leader, NH Journal(중도우), NH Bulletin(좌)은 확인하지 못했다.",
      "urls": [],
@@ -2347,6 +2401,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-10-21",
+     "text": "오늘 내용 중 \"NH 공화 쪽 강화\" Bear 경로를 뒷받침하는 것은 없다. 평균은 10/12 기준으로 오래됐다.",
+     "urls": [],
+     "last": "2026-10-21"
+    },
     {
      "date": "2026-10-20",
      "text": "원문은 \"NH에서 공화당 강세 굳어짐\" 약세 경로와 반대 방향이라고 보며, 파파스 평균 +5.6에서 공화당이 굳어진다는 증거는 오늘 없다고 평가한다.",
@@ -2879,6 +2939,12 @@
    ],
    "local": [
     {
+     "date": "2026-10-21",
+     "text": "이월: 10/15 마지막 토론 관련 보도는 찾지 못했다",
+     "urls": [],
+     "last": "2026-10-21"
+    },
+    {
      "date": "2026-10-20",
      "text": "마지막 토론 10/15(Press Herald/NEWS CENTER Maine) 예정이었으나 관련 보도는 찾지 못함 · 오바마 10/8 잭슨 지지 선언 · 콜린스는 러시아산 디젤 수입 계획에서 트럼프와 결별 · 난방유 갤런당 약 6달러 · 트럼프 메인 방문 가능성은 있으나 콜린스는 오지 않을 것으로 예상 · 10/2 기준 부재자투표 신청 7만 건 이상 · 대면 부재자투표 10/5~10/29 · 유세: 2026-10-10/11(정확한 날짜 미제공) · 메인(도시 미제공) · 버니 샌더스(무소속·민주 성향) → 트로이 잭슨 · 유세 참석, 인파 정보 없음(Newsweek 10/13)",
      "urls": [],
@@ -3176,6 +3242,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-10-21",
+     "text": "Quantus의 콜린스 우세를 검증할 신규 조사가 없고 평균은 10/8 이후 갱신되지 않았다. 원문이 보는 현실적인 공화 경로는 오하이오·아이오와·알래스카 분할과 콜린스 수성이다.",
+     "urls": [],
+     "last": "2026-10-21"
+    },
     {
      "date": "2026-10-20",
      "text": "여론조사는 잭슨 우세이나 예측시장은 식었다. 원문은 남은 공화 경로 중 하나로 접전인 메인에서의 콜린스 수성을 든다.",
@@ -4056,6 +4128,12 @@
    ],
    "insight": [
     {
+     "date": "2026-10-21",
+     "text": "쿠퍼 +8.6이 Bull 경로를 유지시키지만 10/11 기준이라 오래된 수치다. 판단 변화는 없다.",
+     "urls": [],
+     "last": "2026-10-21"
+    },
+    {
      "date": "2026-10-20",
      "text": "평균 쿠퍼 +8.6으로 Bull 경로 유지. 원문은 집계 사이트만 읽었고 WRAL, News & Observer, NC Newsline(중도좌~좌), Carolina Journal(중도우) 기사는 읽지 못했다.",
      "urls": [],
@@ -4330,6 +4408,14 @@
   },
   "TX": {
    "polls": [
+    {
+     "date": "2026-10-21",
+     "text": "CBS News/YouGov 10/16(1,492 LV) 탈라리코 51–49 · ActiVote 10/14(400 LV) 탈라리코 52–48 · 휴스턴대/텍사스서던대 10/14(2,000 LV) 탈라리코 48–46 · InsiderAdvantage(R) 10/14(1,200 LV) 팩스턴 49–48 · Trafalgar(R) 10/8(1,086 LV) 탈라리코 47–44 · Marist Poll 10/11 탈라리코 47–45 · 57건 평균 탈라리코 48.2–45.7(+2.5, 10/16 갱신) ([Pollsmax](https://www.pollsmax.com/senate/texas/))",
+     "urls": [
+      "https://www.pollsmax.com/senate/texas/"
+     ],
+     "last": "2026-10-21"
+    },
     {
      "date": "2026-10-20",
      "text": "위 UT/TPP 조사 · CBS News/YouGov(10/16, 1,492명 LV) 탈라리코 51–49 · InsiderAdvantage(R) 10/14 팩스턴 49–48(1,200명 LV) · Marist(주목 기관) 10/11 탈라리코 47–45 · Quantus(R) 10/11 47–47(854명 LV) · [Pollsmax](https://www.pollsmax.com/senate/texas/) 평균 탈라리코 48.2–45.7(+2.5, 56개 조사).",
@@ -4697,6 +4783,12 @@
    ],
    "local": [
     {
+     "date": "2026-10-21",
+     "text": "조기투표는 10/19부터 진행 중이다",
+     "urls": [],
+     "last": "2026-10-21"
+    },
+    {
      "date": "2026-10-20",
      "text": "조기투표 10/19 개시 · 이월: Fox 10/2 조사는 재확인 못해 삭제.",
      "urls": [],
@@ -4989,6 +5081,12 @@
    ],
    "insight": [
     {
+     "date": "2026-10-21",
+     "text": "신규 4건 중 3건이 탈라리코 우세이지만 모두 오차범위 내다. Bull 경로를 유지시키는 주로 남으며 판단 변화는 없다.",
+     "urls": [],
+     "last": "2026-10-21"
+    },
+    {
      "date": "2026-10-20",
      "text": "원문은 텍사스를 진짜 접전으로 보며, CBS/YouGov 탈라리코 +2는 Bull 경로를 유지하지만 InsiderAdvantage(R) 팩스턴 +1은 Base를 떠받친다고 평가한다.",
      "urls": [],
@@ -5264,6 +5362,14 @@
   "OH": {
    "polls": [
     {
+     "date": "2026-10-21",
+     "text": "Rasmussen Reports(R) 10/14(901 LV) 허스테드 49, 브라운 47 · ActiVote 10/18(400 LV) 50–50 · BGSU/YouGov 10/9(1,000 LV) 브라운 48–42 · SSRS 10/5(760 LV) 브라운 49–43 · co/efficient(R) 10/6(925 LV) 허스테드 44–43 · 35건 평균 브라운 47.6–44.7(+2.9, 10/18 갱신)로 **+3.3에서 하락** ([Pollsmax](https://www.pollsmax.com/senate/ohio/))",
+     "urls": [
+      "https://www.pollsmax.com/senate/ohio/"
+     ],
+     "last": "2026-10-21"
+    },
+    {
      "date": "2026-10-20",
      "text": "[Pollsmax](https://www.pollsmax.com/senate/ohio/) 목록상 최신 ActiVote(10/18, 400명 LV) 브라운 50–허스테드 50 · 보울링그린주립대/YouGov(10/9, 1,000명 LV) 브라운 48–42 · co/efficient(R) 10/6 허스테드 44–43 · 34개 조사 평균 브라운 47.6–44.3(+3.3).",
      "urls": [
@@ -5391,6 +5497,14 @@
     }
    ],
    "money": [
+    {
+     "date": "2026-10-21",
+     "text": "오하이오는 광고 지출·예약 기준으로 전국에서 가장 비싼 상원 선거가 될 전망(Axios 10/8; 본문에 금액 없음) ([Axios Cleveland](https://www.axios.com/local/cleveland/2026/10/14/obama-trump-ohio-midterm-rallies))",
+     "urls": [
+      "https://www.axios.com/local/cleveland/2026/10/14/obama-trump-ohio-midterm-rallies"
+     ],
+     "last": "2026-10-21"
+    },
     {
      "date": "2026-10-20",
      "text": "이월·재확인 못함: SLF 지출 약 1,400만 달러(Newsweek 10/6).",
@@ -5548,6 +5662,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-10-21",
+     "text": "트럼프는 10/12 영스타운 유세에서 클리블랜드 해군 잠수함 부품 시설 설립을 발표했다 · 밴스는 10/9 리마를 방문했다 · 유세: 2026-10-24 · 클리블랜드 · 버락 오바마(민주) → 셰로드 브라운 · 에이미 액턴과 합동 유세(예정) · 유세: 2026-10-12 · 영스타운 · 도널드 트럼프(공화) → 존 허스테드 · 유세(이월)",
+     "urls": [],
+     "last": "2026-10-21"
+    },
     {
      "date": "2026-10-20",
      "text": "이월·재확인 못함: 2026-10-12 · 영스타운 · 도널드 트럼프(공화) → 존 허스테드 · 집회; 2026-10-24 · 클리블랜드 · 버락 오바마(민주) → 셰러드 브라운(예고)",
@@ -5803,6 +5923,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-10-21",
+     "text": "공화 성향 Rasmussen의 허스테드 +2와 ActiVote 동률로 평균이 +2.9로 내려왔다. 핵심 4개 주 석권이 확정적이지 않다는 신호로 Base 경로를 소폭 강화한다.",
+     "urls": [],
+     "last": "2026-10-21"
+    },
     {
      "date": "2026-10-20",
      "text": "최신 ActiVote 50–50을 원문은 Base 소폭 강화 근거 중 하나로 들지만 평균은 **브라운 +3.3**이다. 집계 사이트만 읽어 다른 변화는 확인하지 못했다.",
@@ -6079,6 +6205,14 @@
   "AK": {
    "polls": [
     {
+     "date": "2026-10-21",
+     "text": "Wikipedia 보강 신규 확인: InsiderAdvantage(R) 10/9–10(1,200 LV; ±2.8) 펠톨라 48–43 · NYT/Siena 9/24–10/1(504 LV; ±5.1) 펠톨라 50–43, 미정 6(직전 Siena 알래스카 수치 확인 못함) · Alaska Survey Research 10/1–3(1,512 LV; ±3.0) 펠톨라 47–45 · 직전 PPP(D) 10/14–15(578 RV) 펠톨라 48–47 · 평균: Pollsmax 펠톨라 47.1–45.9(+1.1, 25건), Wikipedia 집계(DDHQ·FiftyPlusOne·RCP·Silver Bulletin, 10/8–12) +2.4~+2.8 · 등급: Cook·Fox·Inside Elections·RCP·Economist 접전; Sabato·DDHQ·Silver Bulletin·Split Ticket 민주 우세(의석 전환); CBS 공화 우세 ([Wikipedia — Alaska](https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska))",
+     "urls": [
+      "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska"
+     ],
+     "last": "2026-10-21"
+    },
+    {
      "date": "2026-10-20",
      "text": "[Pollsmax](https://www.pollsmax.com/senate/alaska/) 최신 목록 PPP(D) 10/15 펠톨라 +1(578명 RV) · InsiderAdvantage(R) 10/10 펠톨라 +5(1,200명 LV) · Alaska Survey Research 10/3 펠톨라 +2(1,512명 LV) · Quantus(R) 9/30 설리번 47–46 · NYT/Siena(주목 기관) 9/30 펠톨라 +7(504명 LV) · 평균 펠톨라 47.1–45.9(+1.1).",
      "urls": [
@@ -6174,6 +6308,14 @@
     }
    ],
    "money": [
+    {
+     "date": "2026-10-21",
+     "text": "FEC(9/30) 펠톨라 모금 $32.6M·지출 $29.5M; 설리번 모금 $13.8M·지출 $9.4M ([Wikipedia — Alaska](https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska))",
+     "urls": [
+      "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska"
+     ],
+     "last": "2026-10-21"
+    },
     {
      "date": "2026-10-18",
      "text": "이월: 3분기 모금은 펠톨라 $17M, 설리번 $2.7M이다(Punchbowl) · 테드 크루즈(공화) 앵커리지 모금행사 2026-10-16(예고, 미재확인).",
@@ -6286,6 +6428,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-10-21",
+     "text": "동명이인 Dan J. Sullivan 투표용지 유지 · 유세: 2026-10-13 · 와실라 · 도널드 트럼프(공화) → 댄 설리번 · 유세(이월, 재확인 안 됨)",
+     "urls": [],
+     "last": "2026-10-21"
+    },
     {
      "date": "2026-10-20",
      "text": "이월: 10/15 마지막 토론(Alaska Beacon 좌, 10/16)은 10/19 브리핑에서 다룸 · 미해결: Alaska Beacon은 8월 예비선거를 펠톨라 49.5–41.4로 보도해 명단의 48.1–42.7과 다름 · 이월·재확인 못함: 2026-10-13 · 워실라 · 도널드 트럼프(공화) → 댄 설리번 · 집회",
@@ -6607,6 +6755,12 @@
    ],
    "insight": [
     {
+     "date": "2026-10-21",
+     "text": "평균이 출처별로 +1.1~+2.8로 갈려 펠톨라 우위는 좁다. 핵심 4개 주 석권이 확정적이지 않음을 보여주는 주로, Base 경로를 소폭 강화한다.",
+     "urls": [],
+     "last": "2026-10-21"
+    },
+    {
      "date": "2026-10-20",
      "text": "평균 펠톨라 +1.1과 PPP +1을 원문은 Base 소폭 강화 근거로 든다. 오늘은 집계 사이트만 읽어 새 판단은 없다.",
      "urls": [],
@@ -6881,6 +7035,14 @@
   },
   "IA": {
    "polls": [
+    {
+     "date": "2026-10-21",
+     "text": "Marist Poll(10/8–11) 투표예정자 기준 투렉 +3으로 9월 +8에서 하락, 트럼프의 아이오와 지지율 44/53(9월 41/58) · Trafalgar(R) 10/15(1,094 LV) 힌슨 46–44 · NPA Polling 10/12(678 LV) 힌슨 47–44 · YouGov 10/12(2,245 LV) 투렉 47–46 · Emerson 10/6(650 LV) 힌슨 47–45 · SSRS 10/5(801 LV) 힌슨 45–43 · 32건 평균 **45.8–45.8 동률**(직전 브리핑: 투렉 +0.3) ([Pollsmax](https://www.pollsmax.com/senate/iowa/))",
+     "urls": [
+      "https://www.pollsmax.com/senate/iowa/"
+     ],
+     "last": "2026-10-21"
+    },
     {
      "date": "2026-10-20",
      "text": "Marist(주목 기관, 10/8~11, 1,100명 RV, LV 하위표본) LV 투렉 48–45(±6.6), RV +7(±4.5); 9월 Marist(9/17~20, RV 1,050명, ±4.4) 투렉 50–42 대비 축소 · 아이오와 내 트럼프 지지 44/반대 53, 9월 41/58보다 개선 · YouGov(10/6~12, 2,245명 LV) 투렉 47, +1 · Emerson(10/5~6, 650명 LV, ±3.8) 힌슨 47–45, 8/31~9/1의 힌슨 50–45에서 좁혀짐 · Trafalgar(R) 10/15 힌슨 +2(1,094명 LV) · [Pollsmax](https://www.pollsmax.com/senate/iowa/) 평균 투렉 +0.3(31개 조사) · 10/9 Polymarket 힌슨 57%.",
@@ -7163,6 +7325,12 @@
    ],
    "local": [
     {
+     "date": "2026-10-21",
+     "text": "조기투표 10/14–11/2 · 2차 토론은 Newsweek 10/15 갱신 직전 화요일에 열렸다 · 유세: 2026-10-22 및 2026-11-01 · 아이오와(도시 미공개) · 도널드 트럼프(공화) → 애슐리 힌슨 · 유세(주 공화당 의장 발표, 장소 미정) (Newsweek)",
+     "urls": [],
+     "last": "2026-10-21"
+    },
+    {
      "date": "2026-10-20",
      "text": "힌슨은 이란전쟁·관세에서 트럼프와 거리를 두고 있으나 한 정치학자는 선거 전술이라고 평가, 경제가 최우선 이슈(42%)([Newsweek 10/9](https://www.newsweek.com/ashley-hinsons-trump-strategy-might-be-working-in-iowa-12547892)) · 유세: 2026-10-22, 2026-11-01 · 아이오와(도시 미발표) · 도널드 트럼프(공화) → 애슐리 힌슨 · 집회(주 공화당 의장 발표), 장소 미정(Newsweek)",
      "urls": [
@@ -7431,6 +7599,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-10-21",
+     "text": "평균이 동률로 내려와 핵심 4개 주 석권이 확정적이지 않음을 보여주며 Base 경로를 소폭 강화한다. 트럼프 유세 두 차례가 남아 있다.",
+     "urls": [],
+     "last": "2026-10-21"
+    },
     {
      "date": "2026-10-20",
      "text": "Marist·Emerson 격차 축소와 트럼프 유세 예정을 원문은 **Base 소폭 강화** 근거로 든다. 평균은 투렉 +0.3이다.",
@@ -7882,6 +8056,12 @@
    ],
    "local": [
     {
+     "date": "2026-10-21",
+     "text": "이월: 오스번의 코커스 발언은 찾지 못했다 · 의석 계산 규칙 불변: 리켓츠 패배 = R −1, 오스번 = \"I +1(코커스 미선언)\"",
+     "urls": [],
+     "last": "2026-10-21"
+    },
+    {
      "date": "2026-10-20",
      "text": "집계 규칙 불변: 리케츠 패배는 R −1, 오스본은 \"I +1(코커스 미선언)\" · 코커스 관련 새 발언 없음.",
      "urls": [],
@@ -7967,6 +8147,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-10-21",
+     "text": "네브래스카는 여전히 \"I +1(코커스 미선언)\"이지 민주당 의석이 아니다. 신규 조사가 없어 판단 변화는 없다.",
+     "urls": [],
+     "last": "2026-10-21"
+    },
     {
      "date": "2026-10-20",
      "text": "특이사항 없음. 원문은 네브래스카가 여전히 \"I +1(코커스 미선언)\"으로 민주당 의석이 아니라고 본다.",
@@ -8128,6 +8314,14 @@
    ],
    "money": [
     {
+     "date": "2026-10-21",
+     "text": "양측 외부 단체가 캔자스 시장에 광고를 쏟아붓고 있다(총액 미공개; 8월 워시번대 교수가 $50M 이상 전망) ([News From The States, 8/10](https://www.newsfromthestates.com/article/us-senate-race-kansas-between-marshall-hamilton-likely-consume-more-50-million))",
+     "urls": [
+      "https://www.newsfromthestates.com/article/us-senate-race-kansas-between-marshall-hamilton-likely-consume-more-50-million"
+     ],
+     "last": "2026-10-21"
+    },
+    {
      "date": "2026-10-18",
      "text": "이월: SMP $5M 구매(DeFi Rate, 단일 2차 출처) · 3분기 모금은 해밀턴 $9.9M, 마셜 $86.6만이다.",
      "urls": [],
@@ -8189,6 +8383,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-10-21",
+     "text": "해밀턴 대변인은 트럼프 방문이 마셜이 \"가라앉고 있다는 신호\"라고 말했다 · NRSC는 교회 자원봉사자의 2005–06년 학대 사건을 들어 해밀턴을 공격하는 성명을 냈다 · 해밀턴–마셜 TV 토론은 오늘(10/21)이며 자유당 그레이엄은 배제됐다 · 유세: 2026-10-19 · 파크시티(위치타 인근) · 도널드 트럼프(공화) → 로저 마셜 · Heartland Credit Union Arena 유세(약 6,000석), 마셜의 의료비 소송 옹호, 농업용 경유 지원 발표, 해밀턴을 \"급진 좌파\"로 규정 (Kansas Reflector 좌, 10/19)",
+     "urls": [],
+     "last": "2026-10-21"
+    },
     {
      "date": "2026-10-20",
      "text": "9/8 NYT의 마셜 환자 약 700명 소송 보도 · 마이크 헤이든 전 주지사의 해밀턴 지지(10/2) · JD 밴스의 마셜 지원은 9월 중순으로 기간 밖.",
@@ -8281,6 +8481,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-10-21",
+     "text": "현직 대통령의 방문은 공화당이 한때 안전하다고 보던 의석을 방어 중임을 시사한다. 이는 캔자스가 민주당 확정이 아닌 **진짜 접전**으로 남는다는 뜻이기도 하다. 오늘 토론이 남아 있고 신규 조사는 없다.",
+     "urls": [],
+     "last": "2026-10-21"
+    },
     {
      "date": "2026-10-20",
      "text": "원문은 캔자스를 Trafalgar(R) 동률과 함께 진짜 접전으로 본다. Cook 접전 등급은 이월 재확인.",
