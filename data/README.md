@@ -167,6 +167,12 @@
 - 원천: _NIS `state_weekly/` 주간 브리핑. 출처 링크가 없는 사건은 넣지 않는다. ME(감시 주)는 보관만 하고 렌더하지 않는다.
 - 소비: `governor_timeline_md()` → `governors/*.qmd` 「경과 기록」 탭.
 
+### `tracker_senate_ads.json` — 선거운동 트래커의 상원 외부지출 (일일 자동 취득, 2026-10-24)
+- `scripts/fetch_tracker_senate_ads.py`가 선거운동 트래커 공개 배포본 `data/ads_fec.json`(FEC Schedule E, 트래커가 매일 09:30 KST 갱신)에서
+  감시주 `senate-ST` 행만 옮긴다. `publish_daily.sh` 0.6단계. 최상위: `as_of`, `source_label`, `source_url`, `provenance_note`, `races`.
+- `races[ST]`: `pro_D`·`pro_R`(달러, 민주(NE는 무소속 Osborn) 지지+공화 반대 / 그 반대), `ads_D`·`ads_R`, `last_date`, `independent_note`, `page`(트래커 광고 페이지).
+- 소비: `.c_fund()` → 후보 카드 「펀드레이징」 행(후보 위원회는 `fec_fundraising.json`, 외부지출은 이 파일). 손글 `candidates.json` fundraising은 둘 다 없을 때만.
+
 ### `fec_fundraising.json` — FEC 분기 신고 (자동 취득)
 - `scripts/fetch_fec_fundraising.py`가 생성(단위 $M, 감시 9주). 최상위: `as_of`, `source_label`, `provenance_note`, `states`(`{ST: [후보…]}`).
 - `states[ST][]`: `name`(FEC 법적 표기), `party`, `candidate_id`, `receipts`, `disbursements`, `cash_on_hand`, `coverage_end`(분기 마감).

@@ -27,6 +27,7 @@ REPO="${US_ELECTIONS_REPO:-$(cd "$(dirname "$0")/.." && pwd)}"
 LOG="data/senate_daily_log.json"
 POLLS="data/senate_polls.csv"
 LEDGER="data/state_ledger.json"
+TRACKER="data/tracker_senate_ads.json"   # 선거운동 트래커 FEC 독립지출(후보 카드 펀드레이징 행) — 2026-10-24
 
 # 실행 기록 — 예약 작업(Cowork VM 샌드박스)의 출력은 대화에만 남아 나중에 볼 수 없다.
 # 어느 단계에서 멈췄는지 파일로 남긴다(2026-09-24 신설). 10줄 남짓, 매 실행 append.
@@ -89,7 +90,7 @@ cleanup() {
     echo "[$(date '+%m-%d %H:%M:%S')] ! 중단(rc=$rc) — 작업트리 되돌림" >> "$LOGF"
     echo "[daily] ! 중단 — 작업트리 되돌림($LOG, $POLLS)"
     find .git -maxdepth 3 -name "*.lock" -delete 2>/dev/null   # 되돌리기가 잠금에 막히지 않게
-    git checkout -- "$LOG" "$POLLS" "$LEDGER" 2>/dev/null || echo "[daily] ! 되돌림 실패 — 다음 실행은 PD_RESET=1 필요"
+    git checkout -- "$LOG" "$POLLS" "$LEDGER" "$TRACKER" 2>/dev/null || echo "[daily] ! 되돌림 실패 — 다음 실행은 PD_RESET=1 필요"
   fi
 }
 trap cleanup EXIT INT TERM
@@ -103,7 +104,7 @@ if [ "${NO_COMMIT:-0}" = "1" ]; then
   step "NO_COMMIT — 미커밋 변경 가드·실패 시 되돌림 생략(주간 발행이 커밋)"
   COMMITTED=1
 else
-for f in "$LOG" "$POLLS" "$LEDGER"; do
+for f in "$LOG" "$POLLS" "$LEDGER" "$TRACKER"; do
   if ! git diff --quiet -- "$f" 2>/dev/null; then
     if [ "${PD_RESET:-0}" = "1" ]; then
       echo "[daily] ! PD_RESET=1 — $f 의 미커밋 변경을 버리고 진행"; git checkout -- "$f"
@@ -166,6 +167,12 @@ if [ "${PD_CI:-0}" != "1" ]; then
   fi
 fi
 
+# 0.6) 선거운동 트래커의 FEC 독립지출(공개 배포본 ads_fec.json, 트래커가 매일 09:30 KST 갱신) → 후보 카드
+#      펀드레이징 행의 '우호 외부지출'. 실패하면 기존 파일 유지하고 계속 — 2026-10-24
+WROTE=1
+step "선거운동 트래커 외부지출"
+python3 scripts/fetch_tracker_senate_ads.py 2>&1 | tee -a "$LOGF" || step "! 트래커 취득 실패(건너뜀 — 기존 파일 유지)"
+
 # 1) 날짜별: 정리본 대조(하드 게이트) → 적재 → 조사 표. 정리본이 없으면 원문 전재, 원문도 없으면 건너뜀.
 for DATE in $DATES; do
   RAW="$SRC_DIR/${DATE}_일일브리핑_KR.md"; DIGEST="$SRC_DIR/site/${DATE}_site_KR.md"
@@ -191,7 +198,7 @@ for DATE in $DATES; do
 done
 LAST="$(echo $DATES | awk '{print $NF}')"; DATE="$LAST"
 
-if git diff --quiet -- "$LOG" "$POLLS" "$LEDGER"; then
+if git diff --quiet -- "$LOG" "$POLLS" "$LEDGER" "$TRACKER"; then
   step "로그·조사·장부 변경 없음(이미 적재된 날짜) — 종료"; exit 0
 fi
 
@@ -214,15 +221,15 @@ if [ "${NO_COMMIT:-0}" = "1" ]; then
 fi
 if [ "${DRY_RUN:-0}" = "1" ]; then
   step "DRY_RUN — 커밋·push 생략. 변경 요약:"
-  git --no-pager diff --stat -- "$LOG" "$POLLS" "$LEDGER" | sed 's/^/    /'
+  git --no-pager diff --stat -- "$LOG" "$POLLS" "$LEDGER" "$TRACKER" | sed 's/^/    /'
   # 되돌려 놓는다 — 그냥 두면 다음 정식 실행이 '미커밋 변경' 가드에 걸린다.
-  git checkout -- "$LOG" "$POLLS" "$LEDGER" 2>/dev/null
+  git checkout -- "$LOG" "$POLLS" "$LEDGER" "$TRACKER" 2>/dev/null
   step "DRY_RUN — 작업트리 원복 완료"
   exit 0
 fi
 
 # 4) 커밋·push — 로그 + 조사 CSV 두 파일만
-git add "$LOG" "$POLLS" "$LEDGER"
+git add "$LOG" "$POLLS" "$LEDGER" "$TRACKER"
 NPOLL=$(git diff --cached --numstat -- "$POLLS" | awk '{print $1+0}')
 NDAYS=$(echo $DATES | wc -w | tr -d ' ')
 git commit -m "일일 자동 발행: 상원 일일 로그 ($DATE$([ "$NDAYS" -gt 1 ] && echo " 등 ${NDAYS}일"))${NPOLL:+ · 조사 +${NPOLL}행}" \
