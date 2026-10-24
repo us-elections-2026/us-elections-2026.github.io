@@ -81,7 +81,7 @@ website:
             href: senate.qmd
           - text: "시나리오 — 소수·50:50·다수"
             href: scenarios.qmd
-          - section: "State Focus (9주)"
+          - section: "State Focus (11주)"
             contents:
               - states/ga.qmd
               - states/mi.qmd

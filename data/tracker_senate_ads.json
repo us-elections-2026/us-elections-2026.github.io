@@ -1,0 +1,107 @@
+{
+ "as_of": "2026-10-23",
+ "source_label": "선거운동 트래커 광고 페이지 — FEC Schedule E 독립지출 (api.open.fec.gov) — 2026 상원·하원 본선 신고분",
+ "source_url": "https://woochangkang.github.io/campaign-tracker-2026-site/data/ads_fec.json",
+ "provenance_note": "pro_D = 민주(무소속 포함, independent_note=true) 지지 + 공화 반대, pro_R = 그 반대. 단위 달러. 후보 캠프 자금이 아니라 외부 단체의 신고 집행액이다.",
+ "races": {
+  "AK": {
+   "pro_D": 33285775,
+   "pro_R": 38412493,
+   "ads_D": 29670025,
+   "ads_R": 33430792,
+   "last_date": "2026-10-22",
+   "independent_note": false,
+   "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-AK.html"
+  },
+  "GA": {
+   "pro_D": 18802680,
+   "pro_R": 17674962,
+   "ads_D": 18098629,
+   "ads_R": 14967348,
+   "last_date": "2026-10-21",
+   "independent_note": false,
+   "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-GA.html"
+  },
+  "IA": {
+   "pro_D": 59001763,
+   "pro_R": 72209183,
+   "ads_D": 56276997,
+   "ads_R": 60265763,
+   "last_date": "2026-10-21",
+   "independent_note": false,
+   "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-IA.html"
+  },
+  "KS": {
+   "pro_D": 20797979,
+   "pro_R": 16919955,
+   "ads_D": 19241878,
+   "ads_R": 15991846,
+   "last_date": "2026-10-21",
+   "independent_note": false,
+   "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-KS.html"
+  },
+  "ME": {
+   "pro_D": 34695825,
+   "pro_R": 70795845,
+   "ads_D": 31310492,
+   "ads_R": 63398491,
+   "last_date": "2026-10-21",
+   "independent_note": false,
+   "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-ME.html"
+  },
+  "MI": {
+   "pro_D": 60381520,
+   "pro_R": 120242019,
+   "ads_D": 53131499,
+   "ads_R": 93167676,
+   "last_date": "2026-10-21",
+   "independent_note": false,
+   "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-MI.html"
+  },
+  "NC": {
+   "pro_D": 28183889,
+   "pro_R": 46055280,
+   "ads_D": 24389686,
+   "ads_R": 42931480,
+   "last_date": "2026-10-21",
+   "independent_note": false,
+   "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-NC.html"
+  },
+  "NE": {
+   "pro_D": 24017237,
+   "pro_R": 18314019,
+   "ads_D": 21945720,
+   "ads_R": 17244749,
+   "last_date": "2026-10-21",
+   "independent_note": true,
+   "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-NE.html"
+  },
+  "NH": {
+   "pro_D": 16596661,
+   "pro_R": 32816374,
+   "ads_D": 15362238,
+   "ads_R": 27800223,
+   "last_date": "2026-10-21",
+   "independent_note": false,
+   "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-NH.html"
+  },
+  "OH": {
+   "pro_D": 97084274,
+   "pro_R": 201689649,
+   "ads_D": 88987293,
+   "ads_R": 165687139,
+   "last_date": "2026-10-21",
+   "independent_note": false,
+   "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-OH.html"
+  },
+  "TX": {
+   "pro_D": 62501013,
+   "pro_R": 286854314,
+   "ads_D": 57976973,
+   "ads_R": 241724209,
+   "last_date": "2026-10-21",
+   "independent_note": false,
+   "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-TX.html"
+  }
+ }
+}
