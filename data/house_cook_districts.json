@@ -1,24 +1,24 @@
 {
- "as_of": "2026-10-09",
- "fetched_at": "2026-10-18T21:30:31.701436+00:00",
+ "as_of": "2026-10-23",
+ "fetched_at": "2026-10-25T21:26:11.589083+00:00",
  "source_date_kind": "270towin date_created (기관 원문 발표일 미확인)",
  "source_label": "Cook Political Report (270towin 재게시 · 자동 취득)",
  "source_url": "https://www.270towin.com/2026-house-election/index_show_table.php?map_title=cook-political-report-2026-house-ratings",
  "decode_note": "0=Toss-up 1=Solid D 2=Solid R 3=Likely D 4=Likely R 5=Leans D 6=Leans R · 주 약자순×지역구번호순",
  "counts": {
-  "solid_d": 185,
-  "likely_d": 16,
-  "lean_d": 12,
-  "tossup": 21,
-  "lean_r": 9,
-  "likely_r": 18,
-  "solid_r": 174
+  "solid_d": 186,
+  "likely_d": 18,
+  "lean_d": 16,
+  "tossup": 17,
+  "lean_r": 17,
+  "likely_r": 13,
+  "solid_r": 168
  },
  "districts": [
   {
    "district": "AK-1",
-   "rating": "Likely R",
-   "key": "likely_r",
+   "rating": "Lean R",
+   "key": "lean_r",
    "party": "R",
    "incumbent": "Begich"
   },
@@ -30,8 +30,8 @@
   },
   {
    "district": "AL-2",
-   "rating": "Likely R",
-   "key": "likely_r",
+   "rating": "Lean R",
+   "key": "lean_r",
    "party": "R",
    "incumbent": "Figures"
   },
@@ -99,8 +99,8 @@
   },
   {
    "district": "AZ-2",
-   "rating": "Likely R",
-   "key": "likely_r",
+   "rating": "Lean R",
+   "key": "lean_r",
    "party": "R",
    "incumbent": "Crane"
   },
@@ -124,9 +124,9 @@
   },
   {
    "district": "AZ-6",
-   "rating": "Toss-up",
-   "key": "tossup",
-   "party": "T",
+   "rating": "Lean D",
+   "key": "lean_d",
+   "party": "D",
    "incumbent": "Ciscomani"
   },
   {
@@ -221,8 +221,8 @@
   },
   {
    "district": "CA-13",
-   "rating": "Lean D",
-   "key": "lean_d",
+   "rating": "Likely D",
+   "key": "likely_d",
    "party": "D",
    "incumbent": "Gray"
   },
@@ -270,10 +270,9 @@
   },
   {
    "district": "CA-21",
-   "rating": "Likely D",
-   "key": "likely_d",
-   "party": "D",
-   "incumbent": "Costa"
+   "rating": "Solid D",
+   "key": "solid_d",
+   "party": "D"
   },
   {
    "district": "CA-22",
@@ -485,9 +484,10 @@
   },
   {
    "district": "CO-4",
-   "rating": "Solid R",
-   "key": "solid_r",
-   "party": "R"
+   "rating": "Lean R",
+   "key": "lean_r",
+   "party": "R",
+   "incumbent": "Boebert"
   },
   {
    "district": "CO-5",
@@ -510,9 +510,9 @@
   },
   {
    "district": "CO-8",
-   "rating": "Toss-up",
-   "key": "tossup",
-   "party": "T",
+   "rating": "Lean D",
+   "key": "lean_d",
+   "party": "D",
    "incumbent": "Evans"
   },
   {
@@ -647,9 +647,10 @@
   },
   {
    "district": "FL-16",
-   "rating": "Solid R",
-   "key": "solid_r",
-   "party": "R"
+   "rating": "Likely R",
+   "key": "likely_r",
+   "party": "R",
+   "incumbent": "OPEN"
   },
   {
    "district": "FL-17",
@@ -702,9 +703,9 @@
   },
   {
    "district": "FL-25",
-   "rating": "Toss-up",
-   "key": "tossup",
-   "party": "T",
+   "rating": "Lean D",
+   "key": "lean_d",
+   "party": "D",
    "incumbent": "Moskowitz"
   },
   {
@@ -1027,9 +1028,10 @@
   },
   {
    "district": "KS-2",
-   "rating": "Solid R",
-   "key": "solid_r",
-   "party": "R"
+   "rating": "Likely R",
+   "key": "likely_r",
+   "party": "R",
+   "incumbent": "Schmidt"
   },
   {
    "district": "KS-3",
@@ -1075,9 +1077,9 @@
   },
   {
    "district": "KY-6",
-   "rating": "Lean R",
-   "key": "lean_r",
-   "party": "R",
+   "rating": "Toss-up",
+   "key": "tossup",
+   "party": "T",
    "incumbent": "OPEN"
   },
   {
@@ -1315,8 +1317,8 @@
   },
   {
    "district": "MN-1",
-   "rating": "Likely R",
-   "key": "likely_r",
+   "rating": "Lean R",
+   "key": "lean_r",
    "party": "R",
    "incumbent": "Finstad"
   },
@@ -1438,9 +1440,9 @@
   },
   {
    "district": "MT-1",
-   "rating": "Lean R",
-   "key": "lean_r",
-   "party": "R",
+   "rating": "Toss-up",
+   "key": "tossup",
+   "party": "T",
    "incumbent": "OPEN"
   },
   {
@@ -1464,9 +1466,10 @@
   },
   {
    "district": "NC-3",
-   "rating": "Solid R",
-   "key": "solid_r",
-   "party": "R"
+   "rating": "Likely R",
+   "key": "likely_r",
+   "party": "R",
+   "incumbent": "Murphy"
   },
   {
    "district": "NC-4",
@@ -1512,9 +1515,9 @@
   },
   {
    "district": "NC-11",
-   "rating": "Toss-up",
-   "key": "tossup",
-   "party": "T",
+   "rating": "Lean D",
+   "key": "lean_d",
+   "party": "D",
    "incumbent": "Edwards"
   },
   {
@@ -1525,9 +1528,10 @@
   },
   {
    "district": "NC-13",
-   "rating": "Solid R",
-   "key": "solid_r",
-   "party": "R"
+   "rating": "Likely R",
+   "key": "likely_r",
+   "party": "R",
+   "incumbent": "Knott"
   },
   {
    "district": "NC-14",
@@ -1543,9 +1547,10 @@
   },
   {
    "district": "NE-1",
-   "rating": "Solid R",
-   "key": "solid_r",
-   "party": "R"
+   "rating": "Likely R",
+   "key": "likely_r",
+   "party": "R",
+   "incumbent": "Flood"
   },
   {
    "district": "NE-2",
@@ -1675,8 +1680,8 @@
   },
   {
    "district": "NV-2",
-   "rating": "Likely R",
-   "key": "likely_r",
+   "rating": "Lean R",
+   "key": "lean_r",
    "party": "R",
    "incumbent": "OPEN"
   },
@@ -1820,8 +1825,8 @@
   },
   {
    "district": "NY-21",
-   "rating": "Likely R",
-   "key": "likely_r",
+   "rating": "Lean R",
+   "key": "lean_r",
    "party": "R",
    "incumbent": "OPEN"
   },
@@ -1857,8 +1862,8 @@
   },
   {
    "district": "OH-1",
-   "rating": "Lean D",
-   "key": "lean_d",
+   "rating": "Likely D",
+   "key": "likely_d",
    "party": "D",
    "incumbent": "Landsman"
   },
@@ -1914,8 +1919,8 @@
   },
   {
    "district": "OH-10",
-   "rating": "Likely R",
-   "key": "likely_r",
+   "rating": "Lean R",
+   "key": "lean_r",
    "party": "R",
    "incumbent": "Turner"
   },
@@ -1946,8 +1951,8 @@
   },
   {
    "district": "OH-15",
-   "rating": "Likely R",
-   "key": "likely_r",
+   "rating": "Lean R",
+   "key": "lean_r",
    "party": "R",
    "incumbent": "Carey"
   },
@@ -2137,8 +2142,8 @@
   },
   {
    "district": "SC-1",
-   "rating": "Likely R",
-   "key": "likely_r",
+   "rating": "Lean R",
+   "key": "lean_r",
    "party": "R",
    "incumbent": "OPEN"
   },
@@ -2374,8 +2379,8 @@
   },
   {
    "district": "TX-23",
-   "rating": "Likely R",
-   "key": "likely_r",
+   "rating": "Lean R",
+   "key": "lean_r",
    "party": "R",
    "incumbent": "OPEN"
   },
@@ -2405,8 +2410,8 @@
   },
   {
    "district": "TX-28",
-   "rating": "Lean D",
-   "key": "lean_d",
+   "rating": "Likely D",
+   "key": "likely_d",
    "party": "D",
    "incumbent": "Cuellar"
   },
@@ -2442,16 +2447,16 @@
   },
   {
    "district": "TX-34",
-   "rating": "Toss-up",
-   "key": "tossup",
-   "party": "T",
+   "rating": "Lean D",
+   "key": "lean_d",
+   "party": "D",
    "incumbent": "Gonzalez"
   },
   {
    "district": "TX-35",
-   "rating": "Lean R",
-   "key": "lean_r",
-   "party": "R",
+   "rating": "Toss-up",
+   "key": "tossup",
+   "party": "T",
    "incumbent": "OPEN (Casar)"
   },
   {
@@ -2505,9 +2510,9 @@
   },
   {
    "district": "VA-2",
-   "rating": "Toss-up",
-   "key": "tossup",
-   "party": "T",
+   "rating": "Lean D",
+   "key": "lean_d",
+   "party": "D",
    "incumbent": "Kiggans"
   },
   {
@@ -2647,9 +2652,9 @@
   },
   {
    "district": "WI-3",
-   "rating": "Toss-up",
-   "key": "tossup",
-   "party": "T",
+   "rating": "Lean D",
+   "key": "lean_d",
+   "party": "D",
    "incumbent": "Van Orden"
   },
   {

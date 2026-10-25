@@ -1,5 +1,5 @@
 {
- "as_of": "2026-10-19",
+ "as_of": "2026-10-26",
  "source_label": "FEC (api.open.fec.gov) — 후보 분기 보고 + Schedule E 독립지출(본선), 단위 $M",
  "provenance_note": "candidates 는 사이클 누적 모금·현금(coverage_end 기준). ie 는 상원 독립지출 파일과 같은 규칙(정기 보고 + 이후 통지, 예비선거 제외).",
  "districts": {
@@ -15,22 +15,22 @@
      "coverage_end": "2026-06-30"
     },
     {
-     "name": "LAWLER, MICHAEL VINCENT",
-     "party": "REP",
-     "candidate_id": "H2NY17162",
-     "receipts": 10.0,
-     "disbursements": 7.32,
-     "cash_on_hand": 2.85,
-     "coverage_end": "2026-09-30"
-    },
-    {
      "name": "CONLEY, CAIT",
      "party": "DEM",
      "candidate_id": "H6NY17171",
-     "receipts": 9.69,
-     "disbursements": 8.52,
-     "cash_on_hand": 1.17,
-     "coverage_end": "2026-09-30"
+     "receipts": 10.71,
+     "disbursements": 9.76,
+     "cash_on_hand": 0.95,
+     "coverage_end": "2026-10-14"
+    },
+    {
+     "name": "LAWLER, MICHAEL VINCENT",
+     "party": "REP",
+     "candidate_id": "H2NY17162",
+     "receipts": 10.32,
+     "disbursements": 8.53,
+     "cash_on_hand": 1.96,
+     "coverage_end": "2026-10-14"
     },
     {
      "name": "DAVIDSON, BETH",
@@ -39,7 +39,7 @@
      "receipts": 2.23,
      "disbursements": 2.2,
      "cash_on_hand": 0.03,
-     "coverage_end": "2026-09-30"
+     "coverage_end": "2026-10-14"
     },
     {
      "name": "REINMANN, JESSICA",
@@ -79,10 +79,10 @@
     }
    ],
    "ie": {
-    "pro_D": 4.26,
-    "pro_R": 1.54,
-    "n_rows": 248,
-    "last_date": "2026-10-17",
+    "pro_D": 5.96,
+    "pro_R": 3.94,
+    "n_rows": 458,
+    "last_date": "2026-10-23",
     "rows": [
      {
       "committee_id": "C00504530",
@@ -92,9 +92,9 @@
       "party": "",
       "so": "O",
       "reported": 0.0,
-      "notice_recent": 6.47,
-      "last_date": "2026-10-14",
-      "total": 6.47,
+      "notice_recent": 8.72,
+      "last_date": "2026-10-21",
+      "total": 8.72,
       "side": null
      },
      {
@@ -104,36 +104,10 @@
       "candidate": "LAWLER, MICHAEL VINCENT",
       "party": "REP",
       "so": "O",
-      "reported": 0.0,
-      "notice_recent": 1.15,
-      "last_date": "2026-10-13",
-      "total": 1.15,
-      "side": "D"
-     },
-     {
-      "committee_id": "C00707844",
-      "committee": "EDF ACTION VOTES",
-      "candidate_id": "H2NY17162",
-      "candidate": "LAWLER, MICHAEL VINCENT",
-      "party": "REP",
-      "so": "O",
-      "reported": 0.0,
-      "notice_recent": 0.72,
-      "last_date": "2026-10-15",
-      "total": 0.72,
-      "side": "D"
-     },
-     {
-      "committee_id": "C00859355",
-      "committee": "BATTLEGROUND NEW YORK",
-      "candidate_id": "H6NY17171",
-      "candidate": "CONLEY, CAIT",
-      "party": "DEM",
-      "so": "S",
-      "reported": 0.0,
-      "notice_recent": 0.7,
-      "last_date": "2026-10-15",
-      "total": 0.7,
+      "reported": 0.47,
+      "notice_recent": 1.19,
+      "last_date": "2026-10-20",
+      "total": 1.66,
       "side": "D"
      },
      {
@@ -144,9 +118,61 @@
       "party": "REP",
       "so": "O",
       "reported": 0.0,
-      "notice_recent": 0.53,
-      "last_date": "2026-09-15",
-      "total": 0.53,
+      "notice_recent": 1.06,
+      "last_date": "2026-10-22",
+      "total": 1.06,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00960443",
+      "committee": "SAFETY & AFFORDABILITY PAC INC.",
+      "candidate_id": "H2NY17162",
+      "candidate": "LAWLER, MICHAEL VINCENT",
+      "party": "REP",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.91,
+      "last_date": "2026-10-19",
+      "total": 0.91,
+      "side": "R"
+     },
+     {
+      "committee_id": "C00960443",
+      "committee": "SAFETY & AFFORDABILITY PAC INC.",
+      "candidate_id": "H6NY17171",
+      "candidate": "CONLEY, CAIT",
+      "party": "DEM",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.91,
+      "last_date": "2026-10-19",
+      "total": 0.91,
+      "side": "R"
+     },
+     {
+      "committee_id": "C00707844",
+      "committee": "EDF ACTION VOTES",
+      "candidate_id": "H2NY17162",
+      "candidate": "LAWLER, MICHAEL VINCENT",
+      "party": "REP",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.86,
+      "last_date": "2026-10-23",
+      "total": 0.86,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00859355",
+      "committee": "BATTLEGROUND NEW YORK",
+      "candidate_id": "H6NY17171",
+      "candidate": "CONLEY, CAIT",
+      "party": "DEM",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.8,
+      "last_date": "2026-10-23",
+      "total": 0.8,
       "side": "D"
      },
      {
@@ -161,6 +187,45 @@
       "last_date": "2026-10-13",
       "total": 0.51,
       "side": "D"
+     },
+     {
+      "committee_id": "C00875450",
+      "committee": "CENTER FORWARD INITIATIVE INC (CFI)",
+      "candidate_id": "H2NY17162",
+      "candidate": "LAWLER, MICHAEL VINCENT",
+      "party": "REP",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.43,
+      "last_date": "2026-10-16",
+      "total": 0.43,
+      "side": "R"
+     },
+     {
+      "committee_id": "C00879510",
+      "committee": "AMERICA PAC",
+      "candidate_id": "H2NY17162",
+      "candidate": "LAWLER, MICHAEL VINCENT",
+      "party": "REP",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.31,
+      "last_date": "2026-10-22",
+      "total": 0.31,
+      "side": "R"
+     },
+     {
+      "committee_id": "C00879510",
+      "committee": "AMERICA PAC",
+      "candidate_id": "H6NY17171",
+      "candidate": "CONLEY, CAIT",
+      "party": "DEM",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.31,
+      "last_date": "2026-10-21",
+      "total": 0.31,
+      "side": "R"
      },
      {
       "committee_id": "C00489799",
@@ -189,42 +254,16 @@
       "side": "R"
      },
      {
-      "committee_id": "C00879510",
-      "committee": "AMERICA PAC",
-      "candidate_id": "H2NY17162",
-      "candidate": "LAWLER, MICHAEL VINCENT",
-      "party": "REP",
-      "so": "S",
-      "reported": 0.0,
-      "notice_recent": 0.26,
-      "last_date": "2026-10-15",
-      "total": 0.26,
-      "side": "R"
-     },
-     {
-      "committee_id": "C00879510",
-      "committee": "AMERICA PAC",
+      "committee_id": "C00960435",
+      "committee": "NO GOING BACK PAC INC.",
       "candidate_id": "H6NY17171",
       "candidate": "CONLEY, CAIT",
       "party": "DEM",
       "so": "O",
       "reported": 0.0,
-      "notice_recent": 0.24,
-      "last_date": "2026-10-14",
-      "total": 0.24,
-      "side": "R"
-     },
-     {
-      "committee_id": "C00875450",
-      "committee": "CENTER FORWARD INITIATIVE INC (CFI)",
-      "candidate_id": "H2NY17162",
-      "candidate": "LAWLER, MICHAEL VINCENT",
-      "party": "REP",
-      "so": "S",
-      "reported": 0.0,
-      "notice_recent": 0.2,
-      "last_date": "2026-09-19",
-      "total": 0.2,
+      "notice_recent": 0.25,
+      "last_date": "2026-10-22",
+      "total": 0.25,
       "side": "R"
      },
      {
@@ -234,37 +273,11 @@
       "candidate": "LAWLER, MICHAEL VINCENT",
       "party": "REP",
       "so": "O",
-      "reported": 0.0,
-      "notice_recent": 0.18,
+      "reported": 0.17,
+      "notice_recent": 0.01,
       "last_date": "2026-10-13",
       "total": 0.18,
       "side": "D"
-     },
-     {
-      "committee_id": "C00173153",
-      "committee": "AMERICAN ASSOCIATION OF NURSE ANESTHETISTS SEPARATE SEGREGATED FUND (CRNA-PAC)",
-      "candidate_id": "H2NY17162",
-      "candidate": "LAWLER, MIKE REP.",
-      "party": "REP",
-      "so": "S",
-      "reported": 0.0,
-      "notice_recent": 0.13,
-      "last_date": "2026-09-24",
-      "total": 0.13,
-      "side": "R"
-     },
-     {
-      "committee_id": "C00960435",
-      "committee": "NO GOING BACK PAC INC.",
-      "candidate_id": "H6NY17171",
-      "candidate": "CONLEY, CAIT",
-      "party": "DEM",
-      "so": "O",
-      "reported": 0.0,
-      "notice_recent": 0.12,
-      "last_date": "2026-10-14",
-      "total": 0.12,
-      "side": "R"
      },
      {
       "committee_id": "C00960435",
@@ -274,8 +287,60 @@
       "party": "REP",
       "so": "S",
       "reported": 0.0,
+      "notice_recent": 0.17,
+      "last_date": "2026-10-22",
+      "total": 0.17,
+      "side": "R"
+     },
+     {
+      "committee_id": "C00550970",
+      "committee": "EQUALITY PAC",
+      "candidate_id": "H6NY17171",
+      "candidate": "CONLEY, CAIT",
+      "party": "DEM",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.14,
+      "last_date": "2026-10-23",
+      "total": 0.14,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00173153",
+      "committee": "AMERICAN ASSOCIATION OF NURSE ANESTHETISTS SEPARATE SEGREGATED FUND (CRNA-PAC)",
+      "candidate_id": "H2NY17162",
+      "candidate": "LAWLER, MIKE REP.",
+      "party": "REP",
+      "so": "S",
+      "reported": 0.13,
+      "notice_recent": 0.0,
+      "last_date": "2026-09-24",
+      "total": 0.13,
+      "side": "R"
+     },
+     {
+      "committee_id": "C00508440",
+      "committee": "HUMAN RIGHTS CAMPAIGN EQUALITY VOTES PAC",
+      "candidate_id": "H6NY17171",
+      "candidate": "CONLEY, CAIT",
+      "party": "DEM",
+      "so": "S",
+      "reported": 0.0,
       "notice_recent": 0.12,
-      "last_date": "2026-10-14",
+      "last_date": "2026-10-23",
+      "total": 0.12,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00737411",
+      "committee": "THE GOVERNING MAJORITY FUND",
+      "candidate_id": "H6NY17171",
+      "candidate": "CONLEY, CAIT",
+      "party": "DEM",
+      "so": "O",
+      "reported": 0.03,
+      "notice_recent": 0.09,
+      "last_date": "2026-10-21",
       "total": 0.12,
       "side": "R"
      },
@@ -308,28 +373,28 @@
      {
       "committee_id": "C00550970",
       "committee": "EQUALITY PAC",
+      "candidate_id": "H2NY17162",
+      "candidate": "LAWLER, MICHAEL VINCENT",
+      "party": "REP",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.07,
+      "last_date": "2026-10-23",
+      "total": 0.07,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00684969",
+      "committee": "JDCA PAC",
       "candidate_id": "H6NY17171",
       "candidate": "CONLEY, CAIT",
       "party": "DEM",
       "so": "S",
       "reported": 0.0,
-      "notice_recent": 0.11,
-      "last_date": "2026-10-15",
-      "total": 0.11,
-      "side": "D"
-     },
-     {
-      "committee_id": "C00737411",
-      "committee": "THE GOVERNING MAJORITY FUND",
-      "candidate_id": "H6NY17171",
-      "candidate": "CONLEY, CAIT",
-      "party": "DEM",
-      "so": "O",
-      "reported": 0.0,
       "notice_recent": 0.07,
-      "last_date": "2026-10-14",
+      "last_date": "2026-10-22",
       "total": 0.07,
-      "side": "R"
+      "side": "D"
      },
      {
       "committee_id": "C00030718",
@@ -345,16 +410,42 @@
       "side": "R"
      },
      {
-      "committee_id": "C00550970",
-      "committee": "EQUALITY PAC",
+      "committee_id": "C00955393",
+      "committee": "AMERICAN DEMOCRACY PROJECT",
       "candidate_id": "H2NY17162",
       "candidate": "LAWLER, MICHAEL VINCENT",
       "party": "REP",
       "so": "O",
       "reported": 0.0,
-      "notice_recent": 0.04,
-      "last_date": "2026-10-15",
-      "total": 0.04,
+      "notice_recent": 0.05,
+      "last_date": "2026-10-16",
+      "total": 0.05,
+      "side": "D"
+     },
+     {
+      "committee_id": "C90019357",
+      "committee": "FOOD AND WATER ACTION",
+      "candidate_id": "H6NY17171",
+      "candidate": "CONLEY, CAIT",
+      "party": "DEM",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.03,
+      "last_date": "2026-10-22",
+      "total": 0.03,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00955393",
+      "committee": "AMERICAN DEMOCRACY PROJECT",
+      "candidate_id": "H6NY17171",
+      "candidate": "CONLEY, CAIT",
+      "party": "DEM",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.03,
+      "last_date": "2026-10-16",
+      "total": 0.03,
       "side": "D"
      },
      {
@@ -371,16 +462,68 @@
       "side": "R"
      },
      {
-      "committee_id": "C00647966",
-      "committee": "RURAL FREEDOM NETWORK",
+      "committee_id": "C00348540",
+      "committee": "1199 SEIU UNITED HEALTHCARE WORKERS EAST FEDERAL POLITICAL ACTION FUND",
       "candidate_id": "H6NY17171",
       "candidate": "CONLEY, CAIT",
       "party": "DEM",
       "so": "S",
       "reported": 0.0,
       "notice_recent": 0.02,
+      "last_date": "2026-10-23",
+      "total": 0.02,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00647966",
+      "committee": "RURAL FREEDOM NETWORK",
+      "candidate_id": "H6NY17171",
+      "candidate": "CONLEY, CAIT",
+      "party": "DEM",
+      "so": "S",
+      "reported": 0.02,
+      "notice_recent": 0.0,
       "last_date": "2026-09-18",
       "total": 0.02,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00904961",
+      "committee": "OUR TURN HUDSON VALLEY",
+      "candidate_id": "H6NY17171",
+      "candidate": "CONLEY, CAIT",
+      "party": "DEM",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.01,
+      "last_date": "2026-10-22",
+      "total": 0.01,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00717728",
+      "committee": "FREE AND FAIR DEMOCRACY PAC",
+      "candidate_id": "H2NY17162",
+      "candidate": "LAWLER, MICHAEL VINCENT",
+      "party": "REP",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.01,
+      "last_date": "2026-10-22",
+      "total": 0.01,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00807321",
+      "committee": "LEADERSHIP NOW PAC",
+      "candidate_id": "H6NY17171",
+      "candidate": "CONLEY, CAIT",
+      "party": "DEM",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.01,
+      "last_date": "2026-10-21",
+      "total": 0.01,
       "side": "D"
      },
      {
@@ -444,9 +587,48 @@
       "so": "S",
       "reported": 0.0,
       "notice_recent": 0.0,
-      "last_date": "2026-10-17",
+      "last_date": "2026-10-23",
       "total": 0.0,
       "side": null
+     },
+     {
+      "committee_id": "C00930321",
+      "committee": "NEIGHBOR VOICES PAC",
+      "candidate_id": "H6NY17171",
+      "candidate": "CONLEY, CAIT",
+      "party": "DEM",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.0,
+      "last_date": "2026-10-22",
+      "total": 0.0,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00930321",
+      "committee": "NEIGHBOR VOICES PAC",
+      "candidate_id": "H2NY17162",
+      "candidate": "LAWLER, MICHAEL VINCENT",
+      "party": "REP",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.0,
+      "last_date": "2026-10-19",
+      "total": 0.0,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00418897",
+      "committee": "VOTEVETS",
+      "candidate_id": "H6NY17171",
+      "candidate": "CONLEY, CAIT",
+      "party": "DEM",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.0,
+      "last_date": "2026-10-19",
+      "total": 0.0,
+      "side": "D"
      },
      {
       "committee_id": "C00909994",
@@ -462,45 +644,6 @@
       "side": "D"
      },
      {
-      "committee_id": "C00904961",
-      "committee": "OUR TURN HUDSON VALLEY",
-      "candidate_id": "H6NY17171",
-      "candidate": "CONLEY, CAIT",
-      "party": "DEM",
-      "so": "S",
-      "reported": 0.0,
-      "notice_recent": 0.0,
-      "last_date": "2026-10-15",
-      "total": 0.0,
-      "side": "D"
-     },
-     {
-      "committee_id": "C00930321",
-      "committee": "NEIGHBOR VOICES PAC",
-      "candidate_id": "H6NY17171",
-      "candidate": "CONLEY, CAIT",
-      "party": "DEM",
-      "so": "S",
-      "reported": 0.0,
-      "notice_recent": 0.0,
-      "last_date": "2026-10-15",
-      "total": 0.0,
-      "side": "D"
-     },
-     {
-      "committee_id": "C00930321",
-      "committee": "NEIGHBOR VOICES PAC",
-      "candidate_id": "H2NY17162",
-      "candidate": "LAWLER, MICHAEL VINCENT",
-      "party": "REP",
-      "so": "O",
-      "reported": 0.0,
-      "notice_recent": 0.0,
-      "last_date": "2026-10-15",
-      "total": 0.0,
-      "side": "D"
-     },
-     {
       "committee_id": "C90023672",
       "committee": "GUARDRAILS ACTION INC.",
       "candidate_id": "H2NY17162",
@@ -512,6 +655,19 @@
       "last_date": "2026-10-10",
       "total": 0.0,
       "side": "D"
+     },
+     {
+      "committee_id": "C00736009",
+      "committee": "POPULAR DEMOCRACY PAC",
+      "candidate_id": null,
+      "candidate": "LAWLER, MIKE",
+      "party": "",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.0,
+      "last_date": "2026-10-09",
+      "total": 0.0,
+      "side": null
      },
      {
       "committee_id": "C00943811",
@@ -548,7 +704,7 @@
       "so": "O",
       "reported": 0.0,
       "notice_recent": 0.0,
-      "last_date": "2026-08-30",
+      "last_date": "2026-07-19",
       "total": 0.0,
       "side": "D"
      },
@@ -613,19 +769,19 @@
      "name": "FITZPATRICK, BRIAN",
      "party": "REP",
      "candidate_id": "H6PA08277",
-     "receipts": 7.77,
-     "disbursements": 9.81,
-     "cash_on_hand": 2.39,
-     "coverage_end": "2026-09-30"
+     "receipts": 8.02,
+     "disbursements": 11.73,
+     "cash_on_hand": 0.71,
+     "coverage_end": "2026-10-14"
     },
     {
      "name": "HARVIE, ROBERT J",
      "party": "DEM",
      "candidate_id": "H6PA01181",
-     "receipts": 2.9,
-     "disbursements": 2.17,
-     "cash_on_hand": 0.72,
-     "coverage_end": "2026-09-30"
+     "receipts": 3.17,
+     "disbursements": 2.76,
+     "cash_on_hand": 0.41,
+     "coverage_end": "2026-10-14"
     },
     {
      "name": "SIMONELLI, LUCIA DORA",
@@ -665,10 +821,10 @@
     }
    ],
    "ie": {
-    "pro_D": 4.28,
-    "pro_R": 2.88,
-    "n_rows": 252,
-    "last_date": "2026-10-16",
+    "pro_D": 6.9,
+    "pro_R": 3.51,
+    "n_rows": 312,
+    "last_date": "2026-10-24",
     "rows": [
      {
       "committee_id": "C00495028",
@@ -677,23 +833,23 @@
       "candidate": "FITZPATRICK, BRIAN",
       "party": "REP",
       "so": "O",
-      "reported": 0.0,
-      "notice_recent": 3.01,
-      "last_date": "2026-10-15",
-      "total": 3.01,
+      "reported": 0.42,
+      "notice_recent": 5.07,
+      "last_date": "2026-10-20",
+      "total": 5.5,
       "side": "D"
      },
      {
       "committee_id": "C00504530",
       "committee": "CLF",
       "candidate_id": null,
-      "candidate": "HARVIE, ROBERT J",
+      "candidate": "HARVIE, ROBERT J.",
       "party": "",
       "so": "O",
       "reported": 0.0,
-      "notice_recent": 1.36,
-      "last_date": "2026-10-14",
-      "total": 1.36,
+      "notice_recent": 2.7,
+      "last_date": "2026-10-19",
+      "total": 2.7,
       "side": null
      },
      {
@@ -704,9 +860,9 @@
       "party": "DEM",
       "so": "O",
       "reported": 0.01,
-      "notice_recent": 1.3,
-      "last_date": "2026-10-09",
-      "total": 1.31,
+      "notice_recent": 1.4,
+      "last_date": "2026-10-21",
+      "total": 1.41,
       "side": "R"
      },
      {
@@ -736,6 +892,19 @@
       "side": "R"
      },
      {
+      "committee_id": "C00953588",
+      "committee": "CIVIC RENEWAL FUND INC.",
+      "candidate_id": "H6PA08277",
+      "candidate": "FITZPATRICK, BRIAN",
+      "party": "REP",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.29,
+      "last_date": "2026-10-19",
+      "total": 0.29,
+      "side": "R"
+     },
+     {
       "committee_id": "C00890335",
       "committee": "STRATEGIC MAJORITY PAC",
       "candidate_id": "H6PA01181",
@@ -743,9 +912,9 @@
       "party": "DEM",
       "so": "O",
       "reported": 0.0,
-      "notice_recent": 0.24,
-      "last_date": "2026-10-15",
-      "total": 0.24,
+      "notice_recent": 0.27,
+      "last_date": "2026-10-22",
+      "total": 0.27,
       "side": "R"
      },
      {
@@ -756,21 +925,21 @@
       "party": "REP",
       "so": "S",
       "reported": 0.0,
-      "notice_recent": 0.24,
-      "last_date": "2026-10-14",
-      "total": 0.24,
+      "notice_recent": 0.26,
+      "last_date": "2026-10-21",
+      "total": 0.26,
       "side": "R"
      },
      {
-      "committee_id": "C00953588",
-      "committee": "CIVIC RENEWAL FUND INC.",
+      "committee_id": "C00899419",
+      "committee": "PATRIOTIC FUND, INC.",
       "candidate_id": "H6PA08277",
       "candidate": "FITZPATRICK, BRIAN",
       "party": "REP",
       "so": "S",
       "reported": 0.0,
       "notice_recent": 0.21,
-      "last_date": "2026-10-16",
+      "last_date": "2026-10-23",
       "total": 0.21,
       "side": "R"
      },
@@ -786,6 +955,19 @@
       "last_date": "2026-10-05",
       "total": 0.21,
       "side": null
+     },
+     {
+      "committee_id": "C00580068",
+      "committee": "PROGRESSIVE TURNOUT PROJECT",
+      "candidate_id": "H6PA01181",
+      "candidate": "HARVIE, ROBERT J",
+      "party": "DEM",
+      "so": "S",
+      "reported": 0.02,
+      "notice_recent": 0.14,
+      "last_date": "2026-10-24",
+      "total": 0.16,
+      "side": "D"
      },
      {
       "committee_id": "C00906701",
@@ -808,23 +990,36 @@
       "party": "REP",
       "so": "S",
       "reported": 0.0,
-      "notice_recent": 0.11,
-      "last_date": "2026-10-14",
-      "total": 0.11,
+      "notice_recent": 0.14,
+      "last_date": "2026-10-15",
+      "total": 0.14,
       "side": "R"
      },
      {
-      "committee_id": "C00580068",
-      "committee": "PROGRESSIVE TURNOUT PROJECT",
+      "committee_id": "C00495028",
+      "committee": "HMP",
       "candidate_id": "H6PA01181",
       "candidate": "HARVIE, ROBERT J",
       "party": "DEM",
       "so": "S",
       "reported": 0.0,
-      "notice_recent": 0.1,
-      "last_date": "2026-10-15",
-      "total": 0.1,
+      "notice_recent": 0.11,
+      "last_date": "2026-10-20",
+      "total": 0.11,
       "side": "D"
+     },
+     {
+      "committee_id": "C00953588",
+      "committee": "CIVIC RENEWAL FUND INC.",
+      "candidate_id": "H6PA01181",
+      "candidate": "HARVIE, ROBERT J",
+      "party": "DEM",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.1,
+      "last_date": "2026-10-19",
+      "total": 0.1,
+      "side": "R"
      },
      {
       "committee_id": "C00892471",
@@ -840,17 +1035,17 @@
       "side": "R"
      },
      {
-      "committee_id": "C00495028",
-      "committee": "HMP",
-      "candidate_id": "H6PA01181",
-      "candidate": "HARVIE, ROBERT J",
-      "party": "DEM",
+      "committee_id": "C00875450",
+      "committee": "CENTER FORWARD INITIATIVE INC (CFI)",
+      "candidate_id": "H6PA08277",
+      "candidate": "FITZPATRICK, BRIAN",
+      "party": "REP",
       "so": "S",
       "reported": 0.0,
-      "notice_recent": 0.07,
-      "last_date": "2026-10-14",
-      "total": 0.07,
-      "side": "D"
+      "notice_recent": 0.05,
+      "last_date": "2026-10-19",
+      "total": 0.05,
+      "side": "R"
      },
      {
       "committee_id": "C00929828",
@@ -866,6 +1061,32 @@
       "side": "R"
      },
      {
+      "committee_id": "C00937094",
+      "committee": "STRONG PAC",
+      "candidate_id": "H6PA01181",
+      "candidate": "HARVIE, ROBERT J",
+      "party": "DEM",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.04,
+      "last_date": "2026-10-19",
+      "total": 0.04,
+      "side": "R"
+     },
+     {
+      "committee_id": "C00829721",
+      "committee": "EARLY VOTE ACTION PAC",
+      "candidate_id": null,
+      "candidate": "FITZPATRICK, BRIAN",
+      "party": "",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.03,
+      "last_date": "2026-10-15",
+      "total": 0.03,
+      "side": null
+     },
+     {
       "committee_id": "C90018227",
       "committee": "ANIMAL WELLNESS ACTION",
       "candidate_id": "H6PA08277",
@@ -877,6 +1098,19 @@
       "last_date": "2026-10-15",
       "total": 0.03,
       "side": "R"
+     },
+     {
+      "committee_id": "C00760835",
+      "committee": "LOSERS AND SUCKERS VOTE",
+      "candidate_id": "H6PA08277",
+      "candidate": "FITZPATRICK, BRIAN",
+      "party": "REP",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.03,
+      "last_date": "2026-10-07",
+      "total": 0.03,
+      "side": "D"
      },
      {
       "committee_id": "C90023599",
@@ -892,19 +1126,6 @@
       "side": "D"
      },
      {
-      "committee_id": "C00953588",
-      "committee": "CIVIC RENEWAL FUND INC.",
-      "candidate_id": "H6PA01181",
-      "candidate": "HARVIE, ROBERT J",
-      "party": "DEM",
-      "so": "O",
-      "reported": 0.0,
-      "notice_recent": 0.02,
-      "last_date": "2026-10-09",
-      "total": 0.02,
-      "side": "R"
-     },
-     {
       "committee_id": "C00934059",
       "committee": "SENIORS EMPOWERING AN EFFECTIVE DEMOCRACY (SEED-PAC)",
       "candidate_id": "H6PA01181",
@@ -918,16 +1139,29 @@
       "side": "D"
      },
      {
-      "committee_id": "C00760835",
-      "committee": "LOSERS AND SUCKERS VOTE",
-      "candidate_id": "H6PA08277",
-      "candidate": "FITZPATRICK, BRIAN",
-      "party": "REP",
-      "so": "O",
+      "committee_id": "C00902189",
+      "committee": "FREEDOM PA",
+      "candidate_id": "H6PA01181",
+      "candidate": "HARVIE, ROBERT J",
+      "party": "DEM",
+      "so": "S",
       "reported": 0.0,
-      "notice_recent": 0.02,
-      "last_date": "2026-04-15",
-      "total": 0.02,
+      "notice_recent": 0.01,
+      "last_date": "2026-10-22",
+      "total": 0.01,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00761064",
+      "committee": "API PA VOTES",
+      "candidate_id": "H6PA01181",
+      "candidate": "HARVIE, ROBERT J",
+      "party": "DEM",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.01,
+      "last_date": "2026-10-19",
+      "total": 0.01,
       "side": "D"
      },
      {
@@ -955,19 +1189,6 @@
       "last_date": "2026-10-05",
       "total": 0.01,
       "side": "D"
-     },
-     {
-      "committee_id": "C00829721",
-      "committee": "EARLY VOTE ACTION PAC",
-      "candidate_id": null,
-      "candidate": "FITZPATRICK, BRIAN",
-      "party": "",
-      "so": "S",
-      "reported": 0.0,
-      "notice_recent": 0.01,
-      "last_date": "2026-10-02",
-      "total": 0.01,
-      "side": null
      },
      {
       "committee_id": "C00954065",
@@ -1009,6 +1230,19 @@
       "side": "D"
      },
      {
+      "committee_id": "C00032979",
+      "committee": "D.R.I.V.E. - DEM, REP, IND VOTER ED (THE PAC OF THE INT'L BRHD OF TEAMSTERS)",
+      "candidate_id": null,
+      "candidate": "FITZPATRICK, BRIAN REP.",
+      "party": "",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.0,
+      "last_date": "2026-10-23",
+      "total": 0.0,
+      "side": null
+     },
+     {
       "committee_id": "C00930321",
       "committee": "NEIGHBOR VOICES PAC",
       "candidate_id": "H6PA01181",
@@ -1017,9 +1251,48 @@
       "so": "S",
       "reported": 0.0,
       "notice_recent": 0.0,
-      "last_date": "2026-10-13",
+      "last_date": "2026-10-22",
       "total": 0.0,
       "side": "D"
+     },
+     {
+      "committee_id": "C00930321",
+      "committee": "NEIGHBOR VOICES PAC",
+      "candidate_id": "H6PA08277",
+      "candidate": "FITZPATRICK, BRIAN",
+      "party": "REP",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.0,
+      "last_date": "2026-10-22",
+      "total": 0.0,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00004036",
+      "committee": "SEIU COPE (SERVICE EMPLOYEES INTERNATIONAL UNION COMMITTEE ON POLITICAL EDUCATION)",
+      "candidate_id": "H6PA08277",
+      "candidate": "FITZPATRICK, BRIAN",
+      "party": "REP",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.0,
+      "last_date": "2026-10-21",
+      "total": 0.0,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00829721",
+      "committee": "EARLY VOTE ACTION PAC",
+      "candidate_id": "H6PA01181",
+      "candidate": "HARVIE, ROBERT J",
+      "party": "DEM",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.0,
+      "last_date": "2026-10-19",
+      "total": 0.0,
+      "side": "R"
      },
      {
       "committee_id": "C00829721",
@@ -1046,6 +1319,32 @@
       "last_date": "2026-09-30",
       "total": 0.0,
       "side": "D"
+     },
+     {
+      "committee_id": "C00172361",
+      "committee": "PENNSYLVANIA PRO-LIFE FEDERATION PAC",
+      "candidate_id": "H6PA08277",
+      "candidate": "FITZPATRICK, BRIAN",
+      "party": "REP",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.0,
+      "last_date": "2026-09-22",
+      "total": 0.0,
+      "side": "R"
+     },
+     {
+      "committee_id": "C00172361",
+      "committee": "PENNSYLVANIA PRO-LIFE FEDERATION PAC",
+      "candidate_id": "H6PA01181",
+      "candidate": "HARVIE, ROBERT J",
+      "party": "DEM",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.0,
+      "last_date": "2026-09-22",
+      "total": 0.0,
+      "side": "R"
      },
      {
       "committee_id": "C00640300",

@@ -1,7 +1,6 @@
 date_end,date_start,pollster,sponsor,population,n,approve,disapprove,value,partisan,internal,poll_id,source_url
 2025-01-20,2025-01-20,InsiderAdvantage,,RV,800,56.0,39.0,17.0,,,appdoninsm57hlnce,https://insideradvantage.com/first-insideradvantage-trump-job-performance-survey-approval-hits-fifty-six-percent-post-inaugural-address/
 2025-01-21,2025-01-20,Ipsos,Reuters,A,1077,47.0,41.0,6.0,,,appdonips08b5hfrm,https://www.ipsos.com/en-us/reuters-ipsos-trump-inauguration-survey
-2025-01-21,2025-01-21,SoCal Strategies,On Point Politics,A,742,49.0,36.0,13.0,,,appdonsocfdrw07ag,https://substack.com/inbox/post/155392047
 2025-01-22,2025-01-19,Big Data Poll,Public Polling Project,RV,2979,55.5,37.4,18.1,,,appdonbig63pt0ppx,https://www.bigdatapoll.com/blog/poll-trump-begins-second-term-with-highest-approval-rating-on-record/
 2025-01-23,2025-01-21,AtlasIntel,,A,1882,50.1,49.7,0.4,,,appdonatlijev5o5n,https://cdn.atlasintel.org/ed3f5238-e823-495e-a877-628217de9e68.pdf
 2025-01-23,2025-01-22,Quantus Insights,TrendingPolitics,RV,1000,54.0,40.0,14.0,REP,,appdonquar0mvzlng,https://quantusinsights.org/f/trump%E2%80%99s-second-term-begins-what-voters-think
@@ -396,7 +395,6 @@ date_end,date_start,pollster,sponsor,population,n,approve,disapprove,value,parti
 2025-08-18,2025-08-14,Echelon Insights,,LV,1057,47.0,51.0,-4.0,,,appdonech2dj237rm,https://echeloninsights.com/in-the-news/august-2025-verified-voter-omnibus/
 2025-08-18,2025-08-13,Ipsos,Reuters,A,4446,40.0,54.0,-14.0,,,appdonips6twwj32z,https://www.reuters.com/world/us/trump-approval-holds-40-lowest-level-his-term-reutersipsos-poll-finds-2025-08-18/
 2025-08-18,2025-08-15,Morning Consult,,RV,2201,47.0,51.0,-4.0,,,appdonmorapzazig0,https://pro.morningconsult.com/trackers/donald-trump-congress-policy-republicans-polling#08-18-2025
-2025-08-19,2025-08-19,SoCal Strategies,Red Eagle Politics; On Point Politics,A,700,45.0,48.0,-3.0,REP,,appdonsochqv0wwac,https://substack.com/inbox/post/171344467?utm_campaign=post&triedRedirect=true
 2025-08-19,2025-08-15,YouGov,The Economist,RV,1408,43.0,54.0,-11.0,,,appdonyoum27sd6dh,https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_sBoaiA0.pdf
 2025-08-19,2025-08-15,YouGov,The Economist,A,1568,40.0,56.0,-16.0,,,appdonyourxi19mo4,https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_sBoaiA0.pdf
 2025-08-20,2025-08-17,American Research Group,,A,1100,38.0,59.0,-21.0,,,appdoname5qkcsq4q,https://americanresearchgroup.com/economy#08-20-2025

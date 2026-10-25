@@ -1,0 +1,162 @@
+{
+  "version": "v0.1",
+  "run_date": "2026-10-26",
+  "seed": 20261103,
+  "n_sims": 10000,
+  "assumptions": {
+    "sigma_poll": 6,
+    "half_life_days": 21,
+    "rho": 0.5,
+    "weights": {
+      "rating": 1,
+      "market": 1.2,
+      "poll_max": 1.5
+    }
+  },
+  "method_note": "등급(사전)+시장가+조사(시간감쇠·당파보정) 블렌드 → 가우시안 코퓰러(ρ=0.5) 1만회. 조사·시장 없는 주는 등급만 사용(MI 등). 사퇴 후보 조사 제외(ME=Jackson만). σ·ρ·가중치는 문서화된 가정 — 11월 실측으로 캘리브레이션 예정.",
+  "states": [
+    {
+      "state": "GA",
+      "defense": "D",
+      "rating": "Likely D (Cook 10/23 · Sabato 10/15 피드) · Lean D (Inside Elections 10/23) — 이번 주 이동 없음 · Split Ticket 10/24 Solid D",
+      "p_rating": 0.9,
+      "p_market": 0.95,
+      "poll_margin": 7.7,
+      "n_polls": 12,
+      "p_poll": 0.899,
+      "p_blend": 0.916
+    },
+    {
+      "state": "MI",
+      "defense": "D",
+      "rating": "Toss-up (Cook 10/23) / Lean D (Sabato 10/15 피드) / Tilt D (Inside Elections 10/23) — 이번 주 이동 없음 · 원천 주간은 사바토 MI를 Toss-up으로 기재(피드와 불일치)",
+      "p_rating": 0.5,
+      "p_market": 0.68,
+      "poll_margin": 2.4,
+      "n_polls": 33,
+      "p_poll": 0.656,
+      "p_blend": 0.621
+    },
+    {
+      "state": "NH",
+      "defense": "D",
+      "rating": "Lean D (Cook 10/23) / Likely D (Sabato 10/15 피드) / **Tilt D (Inside Elections 10/23 피드 — Toss-up→Tilt D, 원천 주간 미기재)** · Split Ticket 10/24 Likely D",
+      "p_rating": 0.75,
+      "p_market": 0.89,
+      "poll_margin": 6.1,
+      "n_polls": 12,
+      "p_poll": 0.843,
+      "p_blend": 0.833
+    },
+    {
+      "state": "ME",
+      "defense": "R",
+      "rating": "Toss-up (Cook 10/23 · Sabato 10/15 · Inside Elections 10/23) — 3사 Toss-up, 이동 없음 · Split Ticket 10/24 Lean D",
+      "p_rating": 0.5,
+      "p_market": 0.61,
+      "poll_margin": 1.8,
+      "n_polls": 18,
+      "p_poll": 0.618,
+      "p_blend": 0.584
+    },
+    {
+      "state": "NC",
+      "defense": "R",
+      "rating": "Likely D (Cook 10/23) / Lean D (Sabato 10/15 피드) / Lean D (Inside Elections 10/23) — 이동 없음 · Split Ticket 10/24 Solid D",
+      "p_rating": 0.9,
+      "p_market": 0.97,
+      "poll_margin": 10.9,
+      "n_polls": 18,
+      "p_poll": 0.966,
+      "p_blend": 0.949
+    },
+    {
+      "state": "TX",
+      "defense": "R",
+      "rating": "Toss-up (Cook 10/23 · Sabato 10/15) / **Toss-up (Inside Elections 10/23 피드 — Tilt R→Toss-up, 원천 주간은 Tilt R 기재)** · Split Ticket 10/24 Lean D",
+      "p_rating": 0.5,
+      "p_market": 0.65,
+      "poll_margin": 2.8,
+      "n_polls": 34,
+      "p_poll": 0.678,
+      "p_blend": 0.621
+    },
+    {
+      "state": "OH",
+      "defense": "R",
+      "rating": "Toss-up (Cook 10/23 · Sabato 10/15 · Inside Elections 10/23) — 3사 Toss-up, 이동 없음 · Split Ticket 10/24 Lean D",
+      "p_rating": 0.5,
+      "p_market": 0.68,
+      "poll_margin": 3.8,
+      "n_polls": 19,
+      "p_poll": 0.738,
+      "p_blend": 0.655
+    },
+    {
+      "state": "AK",
+      "defense": "R",
+      "rating": "Toss-up (Cook 10/23) / Lean D (Sabato 10/15 피드) / Toss-up (Inside Elections 10/23) — 이동 없음 · Split Ticket 10/24 Lean D",
+      "p_rating": 0.5,
+      "p_market": 0.74,
+      "poll_margin": 2,
+      "n_polls": 13,
+      "p_poll": 0.631,
+      "p_blend": 0.631
+    },
+    {
+      "state": "IA",
+      "defense": "R",
+      "rating": "Toss-up (Cook 10/23 · Sabato 10/15) / Tilt R (Inside Elections 10/23) — 이동 없음 · Split Ticket 10/24 Toss-up",
+      "p_rating": 0.5,
+      "p_market": 0.42,
+      "poll_margin": 0.1,
+      "n_polls": 20,
+      "p_poll": 0.509,
+      "p_blend": 0.478
+    },
+    {
+      "state": "NE",
+      "defense": "R",
+      "rating": "Likely R (Cook 10/23) / Lean R (Sabato 10/15 피드) / Lean R (Inside Elections 10/23) — 이동 없음 · Split Ticket 10/24 Lean R",
+      "p_rating": 0.1,
+      "poll_margin": -1.7,
+      "n_polls": 7,
+      "p_poll": 0.391,
+      "p_blend": 0.275
+    },
+    {
+      "state": "KS",
+      "defense": "R",
+      "rating": "Toss-up (Cook 10/23 · Sabato 10/15) / **Tilt R (Inside Elections 10/23 피드 — Likely R→Tilt R)** · Split Ticket 10/24 Toss-up",
+      "p_rating": 0.5,
+      "p_market": 0.4,
+      "poll_margin": 1.2,
+      "n_polls": 7,
+      "p_poll": 0.582,
+      "p_blend": 0.501
+    }
+  ],
+  "dem_majority_prob": 60.7,
+  "seats": {
+    "mean": 51.08,
+    "p05": 46,
+    "p25": 49,
+    "median": 51,
+    "p75": 53,
+    "p95": 55
+  },
+  "seat_pmf": {
+    "44": 0.0085,
+    "45": 0.0216,
+    "46": 0.043,
+    "47": 0.0552,
+    "48": 0.0747,
+    "49": 0.0904,
+    "50": 0.0996,
+    "51": 0.1138,
+    "52": 0.128,
+    "53": 0.1229,
+    "54": 0.1293,
+    "55": 0.113
+  }
+}

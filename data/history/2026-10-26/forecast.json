@@ -1,0 +1,43 @@
+{
+ "as_of": "2026-10-25",
+ "generated_by": "scripts/build_forecast.py",
+ "provenance_note": "이 표는 이미 취득된 원천 파일에서 자동 조립됩니다 — Kalshi 공개 API(시장가), Decision Desk HQ·Race to the WH(외부 모델), 자체 모델 v0. 빈 칸은 해당 원천이 그 원(院)을 예측하지 않는다는 뜻이며 추정으로 채우지 않습니다. Δ는 직전 발행분 대비입니다. 등급(Cook·Sabato)은 확률이 아니라 이 표에 넣지 않습니다 — 등급 비교는 상원·주지사 페이지의 기관별 표를 보세요.",
+ "rows": [
+  {
+   "source": "Kalshi (예측시장)",
+   "type": "market",
+   "house_dem": 0.901,
+   "senate_dem": 0.64,
+   "house_delta": -0.001,
+   "senate_delta": 0.02,
+   "note": "민주 승리 계약의 마지막 체결가 — 확률의 근사일 뿐 확률이 아니다. 누적 거래액 상원 $8,219,404·하원 $22,189,161"
+  },
+  {
+   "source": "Decision Desk HQ",
+   "type": "model",
+   "house_dem": 0.76,
+   "senate_dem": 0.56,
+   "house_delta": 0.0,
+   "senate_delta": 0.0,
+   "note": "다수당 확률. 평균 의석은 상원 51·하원 235석 — 상원 50–50은 부통령 캐스팅보트로 공화 다수를 뜻한다"
+  },
+  {
+   "source": "Race to the WH",
+   "type": "model",
+   "house_dem": null,
+   "senate_dem": 0.729,
+   "house_delta": null,
+   "senate_delta": 0.005,
+   "note": "상원 전용(하원 미취득). 예상 의석 민주 52.6석. Infogram 라이브 시계열의 마지막 관측치(Oct 25)"
+  },
+  {
+   "source": "자체 모델 v0",
+   "type": "model",
+   "house_dem": null,
+   "senate_dem": 0.607,
+   "house_delta": null,
+   "senate_delta": 0.002,
+   "note": "이 사이트의 재현 가능한 모델(고정 시드). 의석 중앙값 51·90% 구간 46–55. 감시주만 시뮬레이션하므로 감시 목록을 바꾸면 확률도 바뀐다(방법론 참조)"
+  }
+ ]
+}

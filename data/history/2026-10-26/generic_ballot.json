@@ -1,0 +1,63 @@
+{
+  "as_of": "2026-10-23",
+  "aggregators": [
+    {
+      "source": "RealClearPolitics",
+      "dem": 50.4,
+      "rep": 42.1,
+      "margin": 8.3,
+      "agg_as_of": "2026-10-21",
+      "population": "종합 — **D+8.3**(50.4–42.1, ~10/21 확인 후 갱신 미확인). 주초 D+8.6(50.9–42.3, 조사 9/28~10/19)에서 집계 창 이동 범위 내 보합 — 원천은 0.3p 등락을 잡음으로 판독(원천 10/25 전국 주간). 집계 간 하단"
+    },
+    {
+      "source": "USPollingData",
+      "dem": 49.3,
+      "rep": 41.9,
+      "margin": 7.4,
+      "agg_as_of": "2026-10-05",
+      "population": "종합 — **D+7.4**(49.3–41.9, 10/12 재확인 — 기준일 불명, 주중 갱신 미확인). 밴드 하단 앵커. agg_as_of는 직전 확인일(10/5) 유지"
+    },
+    {
+      "source": "Silver Bulletin",
+      "dem": null,
+      "rep": null,
+      "margin": 9.1,
+      "agg_as_of": "2026-10-23",
+      "population": "원자료 평균 — 페이지 표기 **D+9.1**(10/23), 적극투표층(LV) 보정 **D+9.6**(10/23; 주중 D+9.7). 주간 궤적 D+8.9(10/18~19) → **D+9.2(10/21~22, 사이클 최고 경신)** → D+9.1(10/23). 6주 고원(D+8~9)에서 상향 돌파 — Silver 평가 \"짧은 정체 후 다시 상승세\". 득표 분해는 원천이 Forbes 인용 50.5–41.1(10/20 기준)만 전해 9.1과 합산이 어긋나므로 빈칸"
+    },
+    {
+      "source": "FiftyPlusOne",
+      "dem": 51.9,
+      "rep": 42.8,
+      "margin": 9.1,
+      "agg_as_of": "2026-10-21",
+      "population": "품질·최신성 가중. **D+9(51.9–42.8, 10/21)** — 중심 경향 추인(전주 D+8.1)"
+    },
+    {
+      "source": "Morning Consult",
+      "dem": null,
+      "rep": null,
+      "margin": 7.0,
+      "agg_as_of": "2026-10-18",
+      "population": "등록유권자(RV) — **D+7(10/12~18, RCP 수록)**. 3웨이브 연속 D+7. 득표 분해는 원천에 없어 빈칸"
+    }
+  ],
+  "spread_examples": [
+    {
+      "pollster": "Reuters/Ipsos·NYT/Siena(LV)·RMG",
+      "dem": "—",
+      "rep": "—",
+      "margin": 12,
+      "population": "상단 (LV)",
+      "note": "상단 — **CPI(10/14) 이후 실사분이 상단~중심에 포진했다.** Reuters/Ipsos **D+12**(10/16~19) · NYT/Siena **D+11**(10/12~19, LV) · RMG D+11 — 중심 CNN D+10(10/15~18) · NBC/DDHQ D+10 · Fox D+9(10/9~12) · Economist/YouGov D+8 · WaPo/ABC/Ipsos D+8. **10월 실사 조사 중 공화 우위 0건**(이번 주에도 유지). 쇼크의 밸럿 전이는 '상향'으로 확인됐다(원천 10/25 전국 주간). 조사별 모집단(RV/LV/A)은 일부 원천 【수집 필요】"
+    },
+    {
+      "pollster": "Rasmussen·Echelon·Morning Consult(RV)",
+      "dem": "—",
+      "rep": "—",
+      "margin": 4,
+      "population": "하단",
+      "note": "하단 — Rasmussen **D+4**(10/8~14) · Echelon D+5(10/15~19) · Morning Consult D+7(10/12~18). 9월 말 최저였던 Harvard CAPS/해리스 D+2(9/26~28)는 10월 실사분이 아니다. 하단 조사군도 D+4 이상으로 올라와 있으나 집계 간 분산(RCP D+8.3 대 Silver D+9.1)은 남아 있다"
+    }
+  ]
+}
