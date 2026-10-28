@@ -1,6 +1,6 @@
 {
  "generated_by": "scripts/build_korea_plants.py",
- "generated_at": "2026-10-14",
+ "generated_at": "2026-10-26",
  "census_check": "Census geocoder geographies/coordinates · 120th Congressional Districts",
  "plants": [
   {
@@ -23,6 +23,17 @@
    "district_map": "2026 신지도 — Alabama GeoHub — 2023 주의회안(Livingston Plan 3)",
    "district_certain": true,
    "census_cd120": "AL-2",
+   "census_match": true
+  },
+  {
+   "id": "n56_01",
+   "lat": 32.704,
+   "lon": -85.31496,
+   "coord_method": "photon:osm:way/742341962 HL Mando (Northpark Drive)",
+   "district": "AL-3",
+   "district_map": "2026 신지도 — Alabama GeoHub — 2023 주의회안(Livingston Plan 3)",
+   "district_certain": true,
+   "census_cd120": "AL-3",
    "census_match": true
   },
   {
@@ -111,6 +122,49 @@
    ],
    "district_certain": false,
    "census_cd120": "CA-3",
+   "census_match": true
+  },
+  {
+   "id": "n81_01",
+   "lat": 34.08566,
+   "lon": -117.54012,
+   "coord_method": "photon:Nongshim America - Rancho Cucamonga Plant (HQ)",
+   "district": "CA-33",
+   "district_map": "2026 신지도 — Statewide Database — AB 604(Prop 50)",
+   "district_certain": true,
+   "census_cd120": "CA-33",
+   "census_match": true
+  },
+  {
+   "id": "n81_02",
+   "lat": 34.08566,
+   "lon": -117.54012,
+   "coord_method": "city_centroid(1공장 Photon 좌표 차용)",
+   "district": "CA-33",
+   "district_map": "2026 신지도 — Statewide Database — AB 604(Prop 50)",
+   "district_candidates": [
+    "CA-28",
+    "CA-33",
+    "CA-35",
+    "CA-39"
+   ],
+   "district_certain": false,
+   "census_cd120": "CA-33",
+   "census_match": true
+  },
+  {
+   "id": "n31_06",
+   "lat": 34.36833,
+   "lon": -84.93491,
+   "coord_method": "city_centroid",
+   "district": "GA-11",
+   "district_map": "119대 의회 경계(Census)",
+   "district_candidates": [
+    "GA-11",
+    "GA-14"
+   ],
+   "district_certain": false,
+   "census_cd120": "GA-11",
    "census_match": true
   },
   {
@@ -494,6 +548,34 @@
    "census_match": true
   },
   {
+   "id": "n81_03",
+   "lat": 41.52901,
+   "lon": -75.62043,
+   "coord_method": "city_centroid(Scott Twp Municipal Park, Photon)",
+   "district": "PA-8",
+   "district_map": "119대 의회 경계(Census)",
+   "district_candidates": [
+    "PA-8"
+   ],
+   "district_certain": true,
+   "census_cd120": "PA-8",
+   "census_match": true
+  },
+  {
+   "id": "n81_04",
+   "lat": 41.52901,
+   "lon": -75.62043,
+   "coord_method": "city_centroid(Scott Twp Municipal Park, Photon)",
+   "district": "PA-8",
+   "district_map": "119대 의회 경계(Census)",
+   "district_candidates": [
+    "PA-8"
+   ],
+   "district_certain": true,
+   "census_cd120": "PA-8",
+   "census_match": true
+  },
+  {
    "id": "p47",
    "lat": 39.88791,
    "lon": -75.19081,
@@ -600,6 +682,31 @@
    "census_match": true
   },
   {
+   "id": "n31_01",
+   "lat": 36.56592,
+   "lon": -87.2464,
+   "coord_method": "photon:Hankook Tire(osm works)",
+   "district": "TN-7",
+   "district_map": "2026 신지도 — State of Tennessee STS GIS — 2026 선거구",
+   "district_certain": true,
+   "census_cd120": "TN-7",
+   "census_match": true
+  },
+  {
+   "id": "n31_02",
+   "lat": 35.749,
+   "lon": -84.32029,
+   "coord_method": "city_centroid",
+   "district": "TN-2",
+   "district_map": "2026 신지도 — State of Tennessee STS GIS — 2026 선거구",
+   "district_candidates": [
+    "TN-2"
+   ],
+   "district_certain": true,
+   "census_cd120": "TN-2",
+   "census_match": true
+  },
+  {
    "id": "p31",
    "lat": 35.07185,
    "lon": -90.09588,
@@ -630,6 +737,17 @@
    "district_map": "2026 신지도 — Texas Legislative Council — PLANC2333",
    "district_certain": true,
    "census_cd120": "TX-27",
+   "census_match": true
+  },
+  {
+   "id": "n31_03",
+   "lat": 29.33794,
+   "lon": -98.44054,
+   "coord_method": "photon:Mission Solar Energy(osm building)",
+   "district": "TX-35",
+   "district_map": "2026 신지도 — Texas Legislative Council — PLANC2333",
+   "district_certain": true,
+   "census_cd120": "TX-35",
    "census_match": true
   },
   {
@@ -674,6 +792,43 @@
    "district_map": "2026 신지도 — Texas Legislative Council — PLANC2333",
    "district_certain": true,
    "census_cd120": "TX-17",
+   "census_match": true
+  },
+  {
+   "id": "n31_04",
+   "lat": 31.09837,
+   "lon": -97.34296,
+   "coord_method": "city_centroid",
+   "district": "TX-17",
+   "district_map": "2026 신지도 — Texas Legislative Council — PLANC2333",
+   "district_candidates": [
+    "TX-17",
+    "TX-31"
+   ],
+   "district_certain": false,
+   "census_cd120": "TX-17",
+   "census_match": true
+  },
+  {
+   "id": "n31_05",
+   "lat": 29.84762,
+   "lon": -95.12757,
+   "coord_method": "census_geocode(주소 미확정)",
+   "district": "TX-9",
+   "district_map": "2026 신지도 — Texas Legislative Council — PLANC2333",
+   "district_certain": true,
+   "census_cd120": "TX-9",
+   "census_match": true
+  },
+  {
+   "id": "n81_05",
+   "lat": 30.35202,
+   "lon": -97.4999,
+   "coord_method": "photon:Old Kimbro Road, Manor (도로 중심)",
+   "district": "TX-27",
+   "district_map": "2026 신지도 — Texas Legislative Council — PLANC2333",
+   "district_certain": true,
+   "census_cd120": "TX-27",
    "census_match": true
   },
   {

@@ -50,6 +50,7 @@
         `위치: ${esc(p.city)}, ${esc(p.state)} · <b>${esc(p.district || "지역구 미배정")}</b><hr>` +
         `하원(Cook): ${esc(p.house_rating || "—")}${p.house_inc ? " · 현역 " + esc(p.house_inc) : ""}${p.house_party ? " (" + esc(p.house_party) + ")" : ""}<br>` +
         `상원(Cook): ${esc(p.senate_rating || "올해 선거 없음")} · 주지사(Cook): ${esc(p.gov_rating || "올해 선거 없음")}<br>` +
+        (p.latest_news ? `최근 보도: ${safeUrl(p.latest_news_url) ? `<a href="${safeUrl(p.latest_news_url)}" target="_blank" rel="noopener">${esc(p.latest_news)}</a>` : esc(p.latest_news)}<br>` : "") +
         (safeUrl(p.source_url) ? `<a href="${safeUrl(p.source_url)}" target="_blank" rel="noopener">출처</a>` : "") + `</div>`;
       L.circleMarker([p.lat, p.lon], {
         radius: 7, color: "#fff", weight: 1.5, fillColor: STATUS[p.status] || "#000", fillOpacity: 0.95

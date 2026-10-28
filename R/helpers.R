@@ -2498,7 +2498,7 @@ korea_plants_map_html <- function(base = "") {
   js <- jsonlite::toJSON(pts[, c("id", "group", "company", "facility", "product", "status", "status_kr",
                                  "city", "state", "lat", "lon", "district", "investment_usd_m", "jobs",
                                  "house_rating", "house_key", "house_party", "house_inc",
-                                 "senate_rating", "gov_rating", "source_url")],
+                                 "senate_rating", "gov_rating", "source_url", "latest_news", "latest_news_url")],
                          dataframe = "rows", na = "null", auto_unbox = TRUE)
   cdr <- .load_json("house_cook_districts")$districts
   rmap <- jsonlite::toJSON(setNames(as.list(cdr$key), cdr$district), auto_unbox = TRUE)
@@ -2580,16 +2580,48 @@ gt_korea_plants <- function() {
     고용 = ifelse(is.na(p$jobs), "—", p$jobs),
     출처 = paste0(ifelse(is.na(.kp_url(p$source_url)), "—", paste0("<a href=\"", .kp_url(p$source_url), "\">링크</a>")),
                 ifelse(is.na(.kp_url(p$source_url_2)), "", paste0(" · <a href=\"", .kp_url(p$source_url_2), "\">2</a>"))),
+    `최근 보도` = ifelse(is.na(p$latest_news), "—",
+                     ifelse(is.na(.kp_url(p$latest_news_url)), .kp_esc(p$latest_news),
+                            paste0("<a href=\"", .kp_url(p$latest_news_url), "\">", .kp_esc(p$latest_news), "</a>"))),
     검증 = c(fetched = "출처 확인", partial = "일부 확인")[p$verified]
   ) |>
     gt(groupname_col = "주") |>
-    fmt_markdown(columns = c("그룹", "시설", "위치", "상태", "출처")) |>
+    fmt_markdown(columns = c("그룹", "시설", "위치", "상태", "출처", "최근 보도")) |>
     cols_align("left") |>
-    cols_width(그룹 ~ pct(11), 시설 ~ pct(30), 위치 ~ pct(16), 상태 ~ pct(13), 투자 ~ pct(9),
-               고용 ~ pct(7), 출처 ~ pct(7), 검증 ~ pct(7)) |>
+    cols_width(그룹 ~ pct(11), 시설 ~ pct(27), 위치 ~ pct(14), 상태 ~ pct(12), 투자 ~ pct(8),
+               고용 ~ pct(6), 출처 ~ pct(6), `최근 보도` ~ pct(9), 검증 ~ pct(7)) |>
     tab_options(table.width = pct(100)) |>
-    tab_header(title = "한국 30대 그룹의 미국 공장 — 전체 목록",
+    tab_header(title = "한국 100대 그룹의 미국 공장 — 전체 목록",
                subtitle = "그룹 순위는 공정위 2026년 공시대상기업집단(4/29 발표) · 투자·고용은 발표치") |>
     tab_source_note("검증: '출처 확인'은 연 페이지에서 위치·상태·금액을 확인한 행, '일부 확인'은 일부 항목이 검색 요약에만 기댄 행입니다. 행별 검증 메모는 data/korea/us_plants.csv의 notes 열에 있습니다.") |>
     .tbl_opts()
+}
+
+# 공장별 보도 경과 — data/korea/plant_news.csv(공장 id·날짜·사건·요약·매체·URL·열람 여부).
+# 최근 보도가 새로운 공장부터, 공장 안에서는 날짜순. 검색 요약으로만 확인한 보도는 표시를 단다.
+.KP_EVENT <- c(announce = "발표", groundbreaking = "착공", construction = "건설", start = "가동",
+               expansion = "증설", pause = "중단", closure = "폐쇄", sale = "매각·인수",
+               incident = "사건", policy = "정책", other = "기타")
+korea_plants_news_md <- function() {
+  p <- korea_plants_data()
+  n <- readr::read_csv(file.path("data", "korea", "plant_news.csv"), show_col_types = FALSE,
+                       col_types = readr::cols(.default = readr::col_character()))
+  p <- p[order(p$latest_news, decreasing = TRUE, na.last = TRUE), ]
+  blocks <- vapply(seq_len(nrow(p)), function(i) {
+    x <- n[n$plant_id == p$id[i], ]
+    if (!nrow(x)) return("")
+    x <- x[order(x$date), ]
+    items <- sprintf("<li><b>%s</b> · %s · %s (%s)%s</li>",
+                     .kp_esc(x$date), .KP_EVENT[x$event], .kp_esc(x$summary_kr),
+                     ifelse(is.na(.kp_url(x$url)), .kp_esc(x$outlet),
+                            paste0("<a href=\"", .kp_url(x$url), "\">", .kp_esc(x$outlet), "</a>")),
+                     ifelse(x$fetched == "Y", "", " <span class='muted'>[검색 요약]</span>"))
+    sprintf("<details class=\"kp-news\"><summary><b>%s</b> · %s <span class='muted'>%s · %s · 최근 보도 %s</span></summary><ul>%s</ul></details>",
+            .kp_esc(p$group[i]), .kp_esc(p$facility[i]), .kp_esc(p$state[i]),
+            ifelse(is.na(p$district[i]), "", p$district[i]), ifelse(is.na(p$latest_news[i]), "—", .kp_esc(p$latest_news[i])),
+            paste(items, collapse = ""))
+  }, character(1))
+  paste0(sprintf('<p class="muted">공장 %d곳의 보도 %d건입니다. 최근 보도가 새로운 공장부터 정렬했습니다. 날짜가 연·월까지만 있는 것은 기사에서 일자를 확인하지 못한 경우입니다. [검색 요약]은 기사를 열지 못하고 검색 결과로만 확인한 보도입니다.</p>\n',
+                 sum(nzchar(blocks)), nrow(n)),
+         paste(blocks[nzchar(blocks)], collapse = "\n"), "\n")
 }
