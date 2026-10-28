@@ -490,6 +490,19 @@ if (!is.null(kpc) && !is.null(kpd)) {
   if (any(kpd$plants$census_match %in% FALSE)) err("korea/us_plants_districts.json", "Census 120대 지역구와 불일치 행 존재")
   if (any(is.na(kpd$plants$census_match))) err("korea/us_plants_districts.json", "Census 대조 결과가 비어 있는 행 존재 — 네트워크 확인 후 스크립트 재실행")
 }
+kpn <- tryCatch(utils::read.csv(jpath("korea/plant_news.csv"), stringsAsFactors = FALSE, colClasses = "character"),
+                error = function(e) { err("korea/plant_news.csv", paste("CSV 파싱 실패:", conditionMessage(e))); NULL })
+if (!is.null(kpn) && !is.null(kpc)) {
+  f <- "korea/plant_news.csv"
+  if (any(!kpn$plant_id %in% kpc$id)) err(f, paste("us_plants.csv에 없는 plant_id:", paste(unique(setdiff(kpn$plant_id, kpc$id)), collapse=",")))
+  if (any(!grepl("^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$", kpn$date))) err(f, "date는 YYYY / YYYY-MM / YYYY-MM-DD만")
+  if (any(!kpn$event %in% c("announce","groundbreaking","construction","start","expansion","pause","closure","sale","incident","policy","other"))) err(f, "event 허용값 밖")
+  if (any(!grepl("^https?://", kpn$url))) err(f, "url이 비었거나 http(s)가 아님")
+  if (any(!kpn$fetched %in% c("Y","N"))) err(f, "fetched는 Y/N만")
+  ln <- kpc$latest_news[!is.na(kpc$latest_news) & nzchar(kpc$latest_news)]
+  if (any(!grepl("^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$", ln))) err("korea/us_plants.csv", "latest_news 형식 오류")
+}
+
 if (!is.null(kpj)) {
   f <- "korea/joint_fact_sheet.json"
   it <- kpj$items

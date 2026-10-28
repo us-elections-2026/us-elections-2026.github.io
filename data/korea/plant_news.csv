@@ -1,0 +1,149 @@
+plant_id,date,event,summary_kr,outlet,url,fetched
+g01,2021-05-04,announce,"두산밥캣 스테이츠빌 7,000만 달러 증설 발표, 250명 고용",Business Wire,https://www.businesswire.com/news/home/20210504005395/en/Doosan-Bobcat-to-Invest-70-Million-to-Add-Jobs-and-Expand-Manufacturing-Operations-in-Statesville-N.C.,N
+g01,2022-10,start,"스테이츠빌 증설 준공식(Turf Magazine, 검색 요약 기준)",Turf Magazine,https://turfmagazine.com/tag/statesville,N
+g02,2022-11,announce,CJ 슈완스 살라이나 피자 공장 40만 평방피트 증설 발표(캔자스 상무부),Kansas Commerce,https://www.kansascommerce.gov/2022/11/governor-laura-kelly-announces-expansion-of-salina-pizza-manufacturer/,N
+g02,2026-04-14,other,푸드엔지니어링 2026 올해의 공장 선정(검색 요약 기준),Food Engineering,https://www.foodengineeringmag.com/articles/103609-recipe-for-growth-how-cj-schwans-powers-pizza-production-with-people-and-automation,N
+g03,2021-08-03,announce,한화시마론 오펠라이카에 1억3000만 달러 투자·261명 고용 발표,Made in Alabama,https://www.madeinalabama.com/2021/08/hanwha-cimarron-to-invest-130-million-in-new-alabama-manufacturing-facility/,N
+g03,2021-09-27,groundbreaking,오펠라이카 산업단지 신공장 기공식(검색 요약),Opelika 시청,https://www.opelika-al.gov/CivicAlerts.aspx?AID=672&ARC=1196,N
+g04,2022-08-04,announce,"롯데알미늄·롯데케미칼 엘리자베스타운 2.39억 달러, 122명 고용 양극박 공장 발표",Kentucky Gov,https://newkentuckyhome.ky.gov/Newsroom/NewsPage/20220804_LOTTE,N
+g04,2026-06-19,other,"영국 Bridgnorth Aluminium과 5년 배터리박용 알루미늄 공급 계약, 엘리자베스타운 시설에서 체결",AL Circle,https://www.alcircle.com/news/bridgnorth-aluminium-secures-five-year-battery-foil-supply-deal-with-lotte-aluminium-materials-usa-119991,Y
+g05,2023-06-05,start,SK시그넷 플레이노 전기차 충전기 공장 개소,SK Inc.,https://eng.sk.com/news/sk-signet-celebrates-grand-opening-of-new-plano-based-ev-charger-manufacturing-facility,N
+g05,2026-04,other,"플레이노 시장, SK시그넷 본사·연구소 방문(4월 보도, 일자 미확인)",Decarbonfuse,https://decarbonfuse.com/posts/mayor-of-plano-u-s-visits-sk-signet-headquarters-to-strengthen-north-american-ev-charging-infrastructure-partnership,N
+g06,2022-03-15,sale,DL케미칼의 크레이튼 인수 완료(약 25억 달러),StockTitan,https://www.stocktitan.net/news/KRA,N
+g06,2023-03-29,announce,"크레이튼 벨프리 SBS 증설 발표: 2024년 착수, 2025년까지 연 2.4만 톤 증가",Kraton,https://kraton.com/newsroom/kraton-announces-sbs-capacity-expansion-at-belpre-facility-by-2024/,N
+n31_01,2022-08-29,announce,한국타이어 테네시 공장 16억 달러 증설 발표(TBR 첫 미국 생산 포함),Hankook Tire,https://www.hankooktire.com/us/en/company/media-center/media-detail.627001.html,Y
+n31_01,2025-03-11,expansion,한국타이어 클락스빌 증설 완공 목표 2026년 말로 조정,European Rubber Journal,https://www.european-rubber-journal.com/article/2097067/hankook-on-track-with-capacity-expansion-project-at-us-plant,Y
+n31_01,2026-05,start,한국타이어 클락스빌 미국산 트럭·버스 타이어 생산 개시,TTNews,https://www.ttnews.com/articles/hankook-us-truck-tire,Y
+n31_01,2026-08-21,other,"TBR 라인 가동률 약 30%, 2027년 말 완전 가동 목표",TTNews,https://www.ttnews.com/articles/hankook-us-truck-tire,Y
+n31_02,2023-08-07,announce,한온시스템 테네시 라우던 1.7억 달러 공장·600명 고용 발표,Manufacturing Dive,https://www.manufacturingdive.com/news/hyundai-supplier-hanon-systems-to-establish-170-million-loudon-tennessee-facility/690063/,Y
+n31_02,2025-10-24,construction,"테네시 주지사 한국앤컴퍼니 면담, 한온 테네시 공장 건설 중",뉴스토마토,https://newstomato.com/ReadNews.aspx?no=1278998,Y
+n31_03,2025-03-20,announce,미션솔라 샌안토니오 2GW 셀 공장 2.65억 달러 투자 발표,PR Newswire,https://www.prnewswire.com/news-releases/mission-solar-energy-expands-operations-with-solar-cell-manufacturing-302407064.html,Y
+n31_03,2025-03-26,announce,"OCI홀딩스 미션솔라 셀 증설, 2026 상반기 양산 목표 보도",Manufacturing Dive,https://www.manufacturingdive.com/news/oci-holdings-mission-solar-energy-solar-cell-expansion-san-antonio-texas/743484/,Y
+n31_04,2024-07-12,announce,세아슈퍼알로이 텍사스 템플 1.1억 달러 특수합금 공장 발표,Area Development,https://www.areadevelopment.com/newsitems/7-12-2024/seah-superalloy-technologies-temple-texas.shtml,Y
+n31_04,2026-06-25,construction,템플 공장 2026년 하반기 준공 예정 보도자료(일정 지연),Metal AM,https://www.metal-am.com/seah-superalloy-updates-progress-on-110-million-texas-facility/,N
+n31_05,2016-11-21,other,세아제강 휴스턴 OCTG 공장 2곳 인수(약 1억 달러),SteelOrbis,https://www.steelorbis.com/steel-news/latest-news/seah-to-buy-two-houston-octg-manufacturers-959515.htm,Y
+n31_05,2018-09-28,expansion,"세아제강 미국법인 2,500만 달러 증설, 유정관 연 10만 톤",Yieh Corp,https://www.yieh.com/en/News/south-korean-seah-steel-to-increase-its-us-output/97812,Y
+n31_06,2010-04-29,groundbreaking,LG하우시스 조지아 고든카운티 엔지니어드 스톤 공장 착공(5천만 달러),Gray Construction,https://www.gray.com/insights/lg-hausys-america-breaks-ground-on-new-facility-in-gordon-county/,Y
+n31_06,2020-03-17,expansion,LG하우시스 미국 조지아 인조대리석 3호 라인 양산(5천만 달러),Asia Business Daily,https://www.asiae.co.kr/en/article/2020031710432133509,Y
+n56_01,2013-06-07,expansion,"오펠라이카 공장 3,500만 달러 증설, 67명 추가 고용 계획",Made in Alabama,https://www.madeinalabama.com/2013/06/expanding-parts-suppliers-add-nearly-500-jobs/,Y
+n56_01,2016-04-06,expansion,"1,900만 달러 증설·32명 신규 고용 발표(시의회 보고)",Made in Alabama,https://www.madeinalabama.com/2016/04/auto-supplier-mando/,Y
+n56_01,2022-12-22,expansion,"기존 시설 1,110만 달러 업그레이드, 26명 고용 예상",Area Development,https://www.areadevelopment.com/newsItems/12-22-2022/hl-mando-america-corporation-opelika-alabama.shtml,Y
+n81_01,2005,start,랜초쿠카몽가 1공장 가동,Korea Economic Daily(KED),https://www.kedglobal.com/newsView/ked202303240023,Y
+n81_02,2022-04-29,start,랜초쿠카몽가 2공장 준공·라면 생산 시작,Korea JoongAng Daily,https://www.koreajoongangdaily.com/business/nongshim-doubles-down-in-rancho-cucamonga-to-be-no-1-in-us/11738885,Y
+n81_03,2019-09-20,expansion,Seokoh 스콧타운십 신규 공장 $27.9M 투자·280명 고용 발표,PowderBulkSolids,https://www.powderbulksolids.com/cosmetics-personal-care/cosmetics-firm-invests-27m-to-expand-u-s-footprint,Y
+n81_04,2019-09-20,announce,"200,000sqft 신공장 포함 확장 발표(2공장과 동일 여부 미확인)",PowderBulkSolids,https://www.powderbulksolids.com/cosmetics-personal-care/cosmetics-firm-invests-27m-to-expand-u-s-footprint,Y
+n81_04,2025-07-16,start,"콜마 펜실베이니아 2공장 가동, 미국 생산능력 연 3억 개",The Korea Times,https://www.koreatimes.co.kr/amp/business/companies/20250717/kolmar-koreas-new-pennsylvania-plant-courts-cosmetic-exporters-to-us,Y
+n81_05,2024-07,announce,"맨터 $46M 특수가스 공장 계획, 3단계",KVUE,https://www.kvue.com/article/money/economy/boomtown-2040/wonik-materials-manor-facility/269-bcd08299-aabb-4b5d-9ed3-96039942d55b,N
+n81_05,2025-07-30,construction,맨터 올드킴브로로드 $46M 시설 건설 중,Business View Magazine,https://businessviewmagazine.com/manor-tx/,Y
+p01,2025-03-26,start,메타플랜트 준공식(검색 요약),Benzinga/Fidelity,https://fidelity.com/news/article/default/202503270813BENZINGAFULLNGTH44512324,N
+p01,2025-09-04,incident,이민단속으로 현대차·LG엔솔 배터리 공사현장 475명 구금,TheGrio,https://thegrio.com/2025/09/05/homeland-security-official-says-475-people-were-detained-during-an-immigration-raid-in-georgia/,N
+p01,2026-06-02,start,"기아 스포티지 하이브리드 생산 개시(첫 기아 모델), 2교대 가을 예정(검색 요약)",SEDA,https://seda.org/2026/06/hmgma-and-kia-america-celebrate-production-of-kia-sportage-hybrid/,N
+p02,2025-09-04,incident,배터리 공사현장 단속으로 가동 수개월 지연,TheGrio,https://thegrio.com/2025/09/05/homeland-security-official-says-475-people-were-detained-during-an-immigration-raid-in-georgia/,N
+p02,2026-04-14,start,"무뇨스 CEO, 4월 중 개소 예정 발표, 직원 500명 이상",AJC,https://www.ajc.com/business/2026/04/hyundai-battery-plant-in-georgia-set-to-open-months-after-ice-raid/,Y
+p03,2026-08,announce,HMMA 2027년 신규 모델 최대 5종 생산 계획 발표(8월),Alabama Reporter,https://www.alreporter.com/2026/09/30/hyundai-to-invest-500-million-in-montgomery-hybrid-production/,Y
+p03,2026-09-30,expansion,"현대차 몽고메리에 약 5억 달러 투자, 투싼 하이브리드·싼타페 EREV 현지 생산",Alabama Reporter,https://www.alreporter.com/2026/09/30/hyundai-to-invest-500-million-in-montgomery-hybrid-production/,Y
+p04,2026-02-24,start,"기아 조지아 2027 텔루라이드 생산 개시, 조지아 첫 하이브리드·500만 대째",Kia 뉴스룸,https://kiaoldnewsroom.newsmarket.com/news/kia-georgia-celebrates-trio-of-major-milestones--including-start-of-production-for-2027-kia-tellurid/s/0bb12809-1042-41e9-a1d4-ae3b0706b930,Y
+p05,2022-10-28,announce,"현대모비스 몽고메리 2억500만 달러 배터리 모듈 공장 발표, 400명 고용·2024 생산 목표",Area Development,https://www.areadevelopment.com/newsitems/10-28-2022/hyundai-mobis-montgomery-alabama.shtml,Y
+p07,2020-12-02,announce,현대트랜시스 웨스트포인트 2억4000만 달러 변속기 공장 발표,Area Development,https://www.areadevelopment.com/newsItems/12-2-2020/hyundai-transys-manufacturing-west-point-georgia.shtml,N
+p07,2026-10-08,expansion,"약 5억6000만 달러 투자·320명 신규 고용, 1·2공장 개선과 3공장 신설",Georgia.org,https://georgia.org/press-releases/2026/hyundai-transys-bringing-320-new-jobs-west-point,Y
+p08,2021-04-05,expansion,현대트랜시스 조지아 시트 공장 900만 달러 증설·150명 고용,Georgia 주정부,https://gov.georgia.gov/press-releases/2021-04-05/hyundai-transys-georgia-seating-system-llc-expands-manufacturing,N
+p09,2025-03-24,announce,현대제철 루이지애나 58억 달러 전기로 제철소 발표(트럼프·랜드리),WRKF,https://www.wrkf.org/2025-03-24/louisiana-nabs-hyundais-first-us-based-steel-mill-as-part-of-21b-investment,N
+p09,2026-09-04,groundbreaking,"도널드슨빌 의례적 기공식, 직접고용 1,300명·2029년 초 상업생산 목표",WAFB,https://www.wafb.com/2026/09/04/58b-hyundai-posco-steel-plant-launches-ascension-parish-amid-some-opposition/,Y
+p09,2026-09-04,construction,"부지 정지 착수, 본공사 전 필요한 대기 허가는 미취득",WAFB,https://www.wafb.com/2026/09/04/58b-hyundai-posco-steel-plant-launches-ascension-parish-amid-some-opposition/,Y
+p11,2026-06,start,"현대차·SK온 합작 HSBMA 배터리셀 양산 개시, 직원 약 3,500명",electrive,https://electrive.com/2026/07/15/sk-on-and-hyundai-start-battery-cell-production-in-georgia,Y
+p11,2026-07-14,other,"AJC, 50억 달러 규모 합작 배터리 공장 개소 보도",AJC,https://www.ajc.com/business/2026/07/sk-and-hyundai-open-new-5b-ev-battery-plant-northwest-of-atlanta/,N
+p12,2025-12-12,other,포드·SK온 블루오벌SK 합작 해체 합의,electrive,https://www.electrive.com/2025/12/12/sk-on-and-ford-split-us-battery-venture/,N
+p12,2026-03-06,other,"SK배터리아메리카 커머스 공장 958명(전체 2,566명의 약 37%) 감원",electrive,https://www.electrive.com/es/2026/03/09/sk-on-cuts-over-950-jobs-at-us-battery-plant/,Y
+p15,2025-12-11,sale,"포드-SK온 블루오벌SK 합작 해체 계획 발표, SK온이 테네시 공장 운영",Tennessee Lookout,https://tennesseelookout.com/2025/12/11/ford-sk-on-plan-to-end-blueoval-sk-joint-venture-sk-on-will-operate-tennessee-battery-plant/,N
+p15,2026-03-23,other,스탠턴 공장 150명 감원 WARN 통지,WBBJ,https://www.wbbjtv.com/?p=2775917,N
+p15,2026-05-22,sale,"SK On Tennessee 출범, 공장 단독 소유, 양산 2028년 예정",Action News 5,https://www.actionnews5.com/2026/05/22/sk-manufacturer-unveils-new-tenn-company-after-cutting-ties-with-ford/,Y
+p16,2023-10-11,announce,"스텔란티스·삼성SDI 코코모 2공장 발표, 32억 달러·1,400명 고용",Stellantis,https://www.stellantis.com/en/news/press-releases/2023/october/stellantis-samsung-sdi-announce-kokomo-indiana-as-site-for-second-us-starplus-energy-gigafactory,N
+p16,2024-12-03,policy,스타플러스에너지 미 에너지부 75.4억 달러 조건부 대출 확약,electrive,https://www.electrive.com/es/2024/12/03/starplus-energy-recibe-un-compromiso-condicional-para-un-prestamo-de-mil-millones-de-dolares/,N
+p16,2025-08-06,other,"스텔란티스, 코코모 공장 사무직 318명 중 59명(18%) 감축",WRTV,https://www.wrtv.com/news/local-news/automaker-announces-59-job-cuts-at-kokomo-ev-battery-plant,Y
+p17,2023-10-11,announce,"코코모 2공장 발표: 34GWh, 2027년 초 가동 목표, 32억 달러",Stellantis,https://www.stellantis.com/en/news/press-releases/2023/october/stellantis-samsung-sdi-announce-kokomo-indiana-as-site-for-second-us-starplus-energy-gigafactory,N
+p17,2025-08-06,other,"스텔란티스, 코코모 사무직 59명 감축(EV 전략 재검토)",WRTV,https://www.wrtv.com/news/local-news/automaker-announces-59-job-cuts-at-kokomo-ev-battery-plant,Y
+p18,2026-05-14,pause,"GM·삼성SDI, EV 수요 부진으로 뉴칼라일 배터리 공장 공사 일시 중단",WVPE,https://www.wvpe.org/wvpe-news/2026-05-14/samsung-gm-pausing-construction-of-new-carlisle-ev-battery-plant,N
+p18,2026-08-11,sale,"삼성SDI, GM 지분 인수로 합작 종료·단독 소유, ESS 라인 추가 계획(지분율 기술 불일치)",Webull,https://www.webull.com/news/15382860535178240,Y
+p18,2026-08-13,other,Electrive: 삼성SDI가 인디애나 건설 중 공장의 GM 지분 인수 확인,electrive,https://electrive.com/2026/08/13/gm-and-lges-ramp-up-cell-production-in-ohio-again,Y
+p19,2024-04-04,groundbreaking,"LG엔솔 애리조나 퀸크릭 공장 착공, 2026년 원통형 46시리즈 생산 목표",Daum(뉴스1 등),https://v.daum.net/v/20240404081306327,N
+p19,2025-03-06,other,원통형 배터리 2026년 상반기(봄) 양산 시작 예정 보도,JoongAng Daily,https://www.koreajoongangdaily.com/business/lg/12367853,Y
+p20,2026,pause,얼티엄셀즈 오하이오(워런) 공장 EV 수요 감소로 셀 생산 중단,InsideEVs,https://www.insideevs.com/news/804775/gm-lg-ultium-cells-production-restart-ohio/,Y
+p20,2026-08-17,start,"약 7개월 중단 후 생산 재개, 인력 약 1,400명 복귀 예정",electrive,https://electrive.com/2026/08/13/gm-and-lges-ramp-up-cell-production-in-ohio-again,Y
+p21,2026-03-18,policy,"얼티엄셀즈 스프링힐, 7000만 달러로 ESS용 LFP 셀 라인 전환 계획, 해고 700명 재고용",Just Auto,https://www.just-auto.com/news/lg-gm-lfp-ess-batteries-tennessee/,Y
+p21,2026-07-07,start,"스프링힐에서 ESS용 LFP 셀 양산 개시(7월 9일자 보도, 사건일 추정)",Just Auto,https://www.just-auto.com/newsletters/ultium-cells-launches-production-of-lfp-batteries-for-energy-storage-systems,N
+p22,2026-08-18,start,"LG엔솔 랜싱 공장 양산 개시, LFP ESS셀·도요타용 NMC셀, 현 900명·완전가동 1,700명",Placera(LGES 보도자료),https://www.placera.se/pressmeddelanden/lg-energy-solution-announces-start-of-production-at-all-new-lansing-battery-plant-20260818,Y
+p23,2023,announce,LG엔솔-혼다 합작 L-H 배터리 설립(2023년 초),Just Auto,https://www.just-auto.com/newsletters/l-h-battery-begins-ess-battery-production-at-its-ohio-plant,Y
+p23,2026-07-02,start,"제퍼슨빌 공장 ESS 셀 양산 개시, 하이브리드용 배터리도 생산 예정",Just Auto,https://www.just-auto.com/newsletters/l-h-battery-begins-ess-battery-production-at-its-ohio-plant,Y
+p24,2025-06,start,홀랜드 공장 LFP ESS 셀 양산 개시,Korea Herald,https://www.koreaherald.com/article/10563938,N
+p24,2026-08-18,other,LGES 보도자료: 홀랜드는 북미 3개 완전 자회사 공장 중 하나(LFP),Placera(LGES 보도자료),https://www.placera.se/pressmeddelanden/lg-energy-solution-announces-start-of-production-at-all-new-lansing-battery-plant-20260818,Y
+p25,2023-12-19,groundbreaking,LG화학 클락스빌 양극재 공장 착공,BEST Magazine,https://www.bestmag.co.uk/lg-chem-breaks-ground-on-new-tennessee-cathode-plant/,N
+p25,2026-01-29,other,"LG화학, 가동 준비 중이나 시점·증설 속도는 수요에 따라 조정",Metal.com,https://news.metal.com/newscontent/103746124,N
+p26,2026-04,sale,"고려아연, 님비스타 미국 자산 인수 완료, 크루서블 법인 출범",S&P Global,https://spglobal.com/energy/en/news-research/latest-news/metals/040226-korea-zinc-launches-crucible-zinc-to-build-us-critical-metals-smelter,N
+p26,2026-09-11,policy,"미 국방부 최종 환경평가 완료, 중대 영향 없음(FONSI) 결정",Skillings,https://www.skillings.net/?p=101855,Y
+p27,2016,groundbreaking,롯데케미칼·액시올 루이지애나 30억 달러 단지 착공,Opportunity Louisiana,https://www.opportunitylouisiana.gov/news/lotte-chemical-axiall-break-ground-on-3-billion-complex-in-louisiana,N
+p27,2019-05,start,"31억 달러 레이크찰스 단지 준공식, 직접고용 265명",Trade and Industry Development,https://www.tradeandindustrydev.com/region/louisiana/news/la-officials-dedicate-31-billion-lotte-chemical-15306,N
+p28,2023-03-27,announce,"한화첨단소재 카터스빌 1억4700만 달러 EVA 봉지재 공장 발표, 160명 이상 고용",Area Development,https://www.areadevelopment.com/newsitems/3-27-2023/hanwha-advanced-materials-cartersville-georgia.shtml,N
+p29,2025-04-28,groundbreaking,LS그린링크 체서피크 해저케이블 공장 1단계 착공,WHRO,https://www.whro.org/business-growth/2025-04-28/700m-subsea-cable-factory-breaks-ground-in-chesapeake-amid-concerns-about-tariffs-energy-policy,N
+p29,2026-05,construction,"201m VCV 타워 수직 건설 시작, 1단계 2027년 4분기 완공·2028년 1분기 생산(6월 26일 보도, 5월 시작)",Let's Data Science,https://letsdatascience.com/news/ls-cable-begins-tower-construction-at-virginia-plant-b7caa839,Y
+p30,2025-12-12,announce,"LS전선, 체서피크에 6억8900만 달러 전선·소재 단지 추가 투자·일자리 430개 발표",Manufacturing Dive,https://www.manufacturingdive.com/news/ls-greenlink-system-additional-680m-virginia/807845/,Y
+p31,2025-05-14,expansion,효성HICO 멤피스 변압기 공장 5100만 달러 증설 발표,Plant Services,https://www.plantservices.com/industry-news/news/55294610/hyosung-hico-invests-51m-to-expand-transformer-manufacturing-facility-in-tennessee,N
+p31,2026-03-12,expansion,"765kV 변압기용 3250만 달러 신규 건물 허가(81,170평방피트)",Transformer Technology,https://transformer-technology.com/hyosung-hico-building-new-32-5m-manufacturing-facility-to-support-765-kv-transformers/,Y
+p32,2025-11-12,announce,"효성HICO 1억5700만 달러 추가 투자, 신규 일자리 240개 발표",Action News 5,https://www.actionnews5.com/2025/11/12/hyosung-hico-expands-again-bringing-240-new-jobs-memphis,N
+p32,2026-03-12,expansion,"신규 765kV 건물 3250만 달러 허가, 누적 증설로 생산능력 약 50% 확대 전망",Transformer Technology,https://transformer-technology.com/hyosung-hico-building-new-32-5m-manufacturing-facility-to-support-765-kv-transformers/,Y
+p36,2019-10-21,expansion,"밥캣 그위너 1,700만 달러 투자(도장라인 등)",Bobcat,https://bobcat.com/na/en/company/news-media/press-releases/bobcat-gwinner-nd-investment,N
+p36,2025-04-29,pause,그위너 공장 일시 생산 중단 확인(시장 전망에 맞춘 조정),KFGO,https://kfgo.com/2025/04/29/bobcat-confirms-temporary-production-pause-at-gwinner-plant/,N
+p37,2026-03-03,other,삼성 오스틴 반도체 가동 30주년,Samsung Newsroom,https://news.samsung.com/us/samsung-austin-semiconductor-celebrates-30-years/,N
+p37,2026-10-13,other,"오스틴 캠퍼스 2025년 직원 3,342명, 전년 대비 32% 감소",Herald Corp,https://mbiz.heraldcorp.com/article/10901328,Y
+p38,2026-02-06,start,"테일러 1공장 약 88,000평방피트 임시 사용승인(TCO)",Korea JoongAng Daily,https://www.koreajoongangdaily.com/business/exclusive-samsung-secures-key-operation-approval-for-37b-taylor-factory/11942522,Y
+p38,2026-07-30,other,"삼성 2분기 컨콜, 테일러 2나노 연내 가동 준비 언급(가동 시점은 보도마다 상이)",Korea Times,https://www.koreajoongangdaily.com/business/korea-zinc-to-build-74b-smelter-in-tennessee-in-rare-partnership-with-washington/11936990,N
+p38,2026-10-13,construction,"테일러, 2나노 하반기 가동 목표 속 장비 반입 4월 중단, 건설 인력 25% 감소",Herald Corp,https://mbiz.heraldcorp.com/article/10901328,Y
+p39,2026-07-30,announce,"삼성, 테일러 2공장 연말 착공·2030년 양산 목표 언급",SamMobile,https://www.sammobile.com/news/samsung-to-build-new-us-chip-fab-at-its-taylor-campus-this-year/,N
+p39,2026-10-17,other,"삼성, 1공장 가동 전 2공장 착공 준비(11월 착공설, 2차 보도)",SammyFans,https://www.sammyfans.com/2026/10/17/samsung-building-another-texas-chip-factory-before-its-first-opens/amp,N
+p40,2017-02-28,announce,"삼성, 사우스캐롤라이나 뉴베리에 3억8000만 달러 가전공장 계획 발표",Samsung Newsroom,https://news.samsung.com/us/380m-investment-manufacturing-plant/,N
+p40,2026-10-05,other,"제조업의 날 뉴베리 학생 견학 행사, 세탁기 공장 가동 중",Samsung Newsroom,https://news.samsung.com/us/?p=87804,N
+p41,2025-12-22,announce,"삼성바이오로직스, GSK 록빌 생산시설 인수 계약 발표",BioSpace,https://www.biospace.com/press-releases/samsung-biologics-completes-acquisition-of-gsks-manufacturing-facility-in-rockville-maryland,Y
+p41,2026-03-31,sale,"록빌 시설 인수 완료, 직원 500명 이상 승계, 6만 리터 원료의약품 생산능력",BioSpace,https://www.biospace.com/press-releases/samsung-biologics-completes-acquisition-of-gsks-manufacturing-facility-in-rockville-maryland,Y
+p42,2024-04-03,announce,"SK하이닉스 인디애나 HBM 패키징 공장 38.7억 달러 투자 발표(2024년 발표, 일자는 보도 요약 기준 미확인)",Korea Herald,https://www.koreaherald.com/article/10840321,N
+p42,2026-08-27,groundbreaking,"웨스트라피엣 공장 기공식, 본격 구조 공사 착수",Korea Herald,https://www.koreaherald.com/article/10840321,Y
+p42,2026-08-28,construction,양산 시기: 한국헤럴드 2028년 하반기 vs 타 매체 클린룸 2028-10·양산 2029년 하반기,Evertiq,https://evertiq.com/news/2026-08-28-sk-hynix-breaks-ground-on-4-billion-packaging-facility-in-indiana,N
+p43,2024,policy,SK실트론CSS 미 에너지부 5.44억 달러 대출 확보,Michigan Public,https://www.michiganpublic.org/economy/2026-07-16/touted-as-a-game-changer-by-former-president-joe-biden-michigan-silicon-chip-manufacturer-closing,Y
+p43,2026-07-16,closure,"베이시티 SiC 웨이퍼 공장 폐쇄 발표, 60일 내 가동 중단, 140명 영향",Michigan Public,https://www.michiganpublic.org/economy/2026-07-16/touted-as-a-game-changer-by-former-president-joe-biden-michigan-silicon-chip-manufacturer-closing,Y
+p43,2026-09-15,closure,WARN 통지상 130명 발효일 2026-09-15(검색 요약 기준),ABC12,https://www.abc12.com/news/business/sk-siltron-to-close-bay-county-operations/article_0e1bad70-8a63-4888-a64b-a2edb3891481.html,N
+p44,2022-11,announce,앱솔릭스 코빙턴 6억 달러 유리기판 공장 발표,Jackson Progress-Argus,https://www.jacksonprogress-argus.com/news/absolics-breaks-ground-on-600-million-glass-substrate-plant/article_870a1253-dacd-522f-b948-425,N
+p44,2026-08-21,other,"SKC, 앱솔릭스에 4011억 원 증자, 고객 인증 최종 단계·상업 출하 2027년 가능",BornCity,https://borncity.com/news/glassubstrate-skc-investiert-290-mio-dollar-in-absolics-werk/,Y
+p45,2021-05,expansion,"AMPAC 피터스버그 2500만 달러 증설, 일자리 156개",VEDP,https://www.vedp.org/press-release/2021-05/ampac-fine-chemicals-petersburg,N
+p46,2025-10-23,expansion,"SK팜테코 랜초코도바 610만 달러 투자, 신규 연구실(2026-01)·kilo-scale 시설(2026 하반기) 계획",PharmTech,https://pharmtech.com/view/sk-pharmteco-strengthens-domestic-api-supply-chain-with-new-peptide-facility,Y
+p47,2024,sale,"한화, 필리조선소를 1억 달러에 인수",Inquirer,https://www.inquirer.com/business/hanwha-philly-shipyard-expansion-lease-pidc-navy-yard-20260923.html,Y
+p47,2025-08-27,announce,한화 필리조선소 50억 달러 투자 발표,FreightWaves,https://www.freightwaves.com/news/south-koreas-hanwha-to-spend-5b-on-philly-shipyard,N
+p47,2026-09-22,expansion,"PAID, 한화에 해군조선소 47에이커 추가 임대 승인(기존 110에이커)",Inquirer,https://www.inquirer.com/business/hanwha-philly-shipyard-expansion-lease-pidc-navy-yard-20260923.html,Y
+p48,2025-08-27,announce,"한화, 필리조선소에 50억 달러 투자해 확장 계획 발표",FreightWaves,https://www.freightwaves.com/news/south-koreas-hanwha-to-spend-5b-on-philly-shipyard,N
+p48,2026-09-22,expansion,"필라델피아 산업개발청, 해군 조선소 부지 47에이커 추가 임대 승인",Philadelphia Inquirer,https://www.inquirer.com/business/hanwha-philly-shipyard-expansion-lease-pidc-navy-yard-20260923.html,Y
+p49,2023-01-11,announce,"큐셀 조지아 25억 달러 증설·2,500명 고용 발표",Georgia.org,https://georgia.org/press-releases/2023/qcells-more-double-production-georgia-create-2500-new-jobs,N
+p49,2025-11-10,pause,"관세 당국 수입품 억류로 달튼·카터스빌 약 1,000명 무급휴직",pv magazine USA,https://pv-magazine-usa.com/2025/11/10/qcells-furloughs-1000-georgia-workers-due-to-u-s-customs-delays/,N
+p49,2026-06-09,start,"카터스빌 태양광 셀 생산 개시, 잉곳·웨이퍼·셀·모듈 수직계열화",CleanTechnica,https://cleantechnica.com/2026/06/09/largest-solar-cell-factory-in-usa-starts-production-in-georgia/,Y
+p50,2023-01-11,expansion,달튼 모듈 생산 확대 포함 조지아 25억 달러 증설 발표,Georgia.org,https://georgia.org/press-releases/2023/qcells-more-double-production-georgia-create-2500-new-jobs,N
+p50,2025-11-10,pause,"달튼·카터스빌 약 1,000명 무급휴직",pv magazine USA,https://pv-magazine-usa.com/2025/11/10/qcells-furloughs-1000-georgia-workers-due-to-u-s-customs-delays/,N
+p50,2026-06-09,other,"조지아 합계 모듈 8.6GW, 달튼 5.1GW 보도",CleanTechnica,https://cleantechnica.com/2026/06/09/largest-solar-cell-factory-in-usa-starts-production-in-georgia/,Y
+p51,2026-01-28,announce,"한화디펜스USA 파인블러프 13억 달러 탄약 시설 계획, 임대 협상 진행 중",KAIT,https://www.kait8.com/2026/01/29/defense-contractor-build-13-billion-munitions-facility-pine-bluff,Y
+p51,2026-09-21,expansion,"투자액 22억 달러로 확대, 7년간 약 400명 고용, 현지 사무소 개소(임대 미확정)",Talk Business & Politics,https://talkbusiness.net/2026/09/hanwha-defense-usa-to-invest-2-2-billion-at-pb-arsenal-for-munitions-manufacturing/,Y
+p52,2026-04-30,announce,"한화디펜스USA, 오펠라이카에 K9 통합·시험 시설 3년 임대, 200만 달러 이상·40명 고용",Opelika 시청,https://www.opelika-al.gov/CivicAlerts.asp?AID=1270,Y
+p53,2026-03-06,expansion,"같은 부지에 약 2억 달러 규모 제2공장 착공, 765kV급 변압기 생산 추가",T&D World,https://www.tdworld.com/substations/news/55362928/hd-hyundai-electric-expands-us-manufacturing-with-new-alabama-facility,Y
+p53,2026-03-08,other,몽고메리 상공회의소: 2011년 진출 이후 총투자 2억7700만 달러 보도(검색 요약),Montgomery Chamber,https://www.mc-ala.org/Home/Components/News/News/292/16,N
+p54,2026-03-06,groundbreaking,"제2공장 착공, 2027년 4월 완공 목표(약 2억 달러)",T&D World,https://www.tdworld.com/substations/news/55362928/hd-hyundai-electric-expands-us-manufacturing-with-new-alabama-facility,Y
+p54,2026-03-08,other,상공회의소 보도자료는 신규 일자리 200개·개장 2027년 중반으로 기술(검색 요약),Montgomery Chamber,https://www.mc-ala.org/Home/Components/News/News/292/16,N
+p56,2022-06-02,expansion,"LS전선 타버러 2,690만 달러 증설 발표(86명 고용)",Wirenet,https://wirenet.org/industry-news/ls-cable-system-plans-expansion-for-the-companys-plant-in-north-carolina/,N
+p56,2026-02-16,announce,"타버러 5,000만 달러 증설 발표: CCV 라인 2기, 고용 250명에서 335명",Pulse 2.0,https://pulse2.com/ls-cable-system-usa-announces-50-million-tarboro-expansion-to-boost-medium-voltage-capacity,Y
+p57,2025-04-14,start,LS일렉트릭 배스트롭 캠퍼스 개소식,Bastrop EDC,https://www.bastropedc.org/media-center/news/p/item/62401/ls-electric-celebrates-grand-opening-of-bastrop-campus,N
+p58,2026-01-12,announce,"MCM Engineering II, 유타 이녹 1억6800만 달러 증설·일자리 250개",Area Development,https://www.areadevelopment.com/newsItems/1-12-2026/mcm-engineering-ii-enoch-utah.shtml,Y
+p58,2026-08,policy,"유타 내륙항만청, 증설에 25년간 인센티브 승인(8월 보도, 일자 미확인)",Trade and Industry Development,https://www.tradeandindustrydev.com/region/utah/news/ut-utah-inland-port-authority-supports-ls-36159,N
+p59,2025-12-31,sale,"셀트리온, 릴리 뉴저지 브랜치버그 공장 인수 완료(3.3억 달러)",Korea Times,https://www.koreatimes.co.kr/business/companies/20260106/celltrion-opens-production-site-in-new-jersey,Y
+p59,2026,expansion,원료의약품 생산능력 6.6만 L에서 14.1만 L로 증설 계획,Celltrion,https://celltrion.com/en-us/company/media-center/press-release/4671,N
+p59,2026-01-05,start,"브랜치버그 공장 가동 개시식, 릴리와 4.73억 달러 원료의약품 위탁생산 계약",Korea Times,https://www.koreatimes.co.kr/business/companies/20260106/celltrion-opens-production-site-in-new-jersey,Y
+p60,2023-01,sale,"롯데바이오로직스, BMS 시러큐스 공장 1.6억 달러에 인수",BioPharm International,https://www.biopharminternational.com/view/alvotech-lotte-biologics-syracuse-biosimilar-antibody-drug-substance,Y
+p60,2026-10-06,other,알보텍과 시러큐스 항체 바이오시밀러 원료 장기 위탁생산 계약,BioPharm International,https://www.biopharminternational.com/view/alvotech-lotte-biologics-syracuse-biosimilar-antibody-drug-substance,Y
+p61,2024-11-14,groundbreaking,CJ 슈완스 수폴스 공장 착공,Dakota News Now,https://www.dakotanewsnow.com/2024/11/14/schwans-breaks-ground-sioux-falls-facility-promises-growth/,N
+p61,2026-03,construction,"수폴스 공장 2027년 중반 가동 목표, 공장장 650명 체제 준비(3월 보도, 정확한 일자 미확인)",Sioux Falls Business,https://siouxfalls.com/nationwide-food-manufacturing-career-leads-cj-schwans-plant-director-to-sioux-falls/,N
+p62,2026-10-02,sale,"CJ제일제당, ADM과 미주 사료용 아미노산 합작법인(CJ바이오아메리카 63%·ADM 37%) 출자 계약",시사저널e,https://www.sidae.com/article/2026101212123135974,Y
+p65,2017-02-28,announce,LG전자 클락스빌 세탁기 공장 유치 발표,Clarksville Partnership,https://clarksvillepartnership.com/news/2017/02/28/aspire/governor-haslam-tnecd-announce-lg-electronics-to-locate-new-u.s.-manufacturing-operations-in-montgomery-county/,N
+p65,2025-04-14,expansion,1억 달러 들여 창고 확장·냉장고 조립라인 공간 마련 계획,Clarksville Partnership,https://clarksvillepartnership.com/news/2025/04/14/all/lg-electronics-plans-expansion-in-clarksville-industrial-park/,N
+p65,2026-08-28,other,"지난해 140만 대 생산, 올해 180만 대 전망, 종업원 약 740명",Clarksville Partnership,https://clarksvillepartnership.com/news/2026/08/28/all/made-in-clarksville-highlights-lg-electronics-and-the-future-of-local-manufacturing/,N

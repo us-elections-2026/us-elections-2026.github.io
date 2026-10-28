@@ -1,0 +1,46 @@
+name: Korea plants weekly review PR
+
+# 주간 점검 루틴(pipeline_prompts/korea_plants_weekly.md)이 korea-weekly/<날짜> 브랜치를 push하면
+# 검사 후 PR을 연다. 조직 설정이 Actions의 PR 생성을 막고 있으면 이슈 알림으로 대신한다.
+on:
+  push:
+    branches: ["korea-weekly/**"]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  open-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Check data/korea
+        run: python3 scripts/check_korea_weekly.py
+      - name: Open PR (fallback to issue)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          RUN="${BRANCH#korea-weekly/}"
+          REPORT="data/korea/weekly/${RUN}.md"
+          [ -f "$REPORT" ] || echo "(보고서 파일 없음: $REPORT)" > /tmp/body.md
+          [ -f "$REPORT" ] && cp "$REPORT" /tmp/body.md
+          printf '\n\n---\n검토 후 병합하면 사이트에 반영됩니다. 새 공장 후보(data/korea/candidates/)는 병합 전 로컬에서 지역구 배정(scripts/build_korea_plants.py)이 필요합니다.\n' >> /tmp/body.md
+          if gh pr view "$BRANCH" --json number >/dev/null 2>&1; then
+            echo "PR already exists"; exit 0
+          fi
+          if gh pr create --base main --head "$BRANCH" --title "주간 점검: 한국 기업 미국 공장 (${RUN})" --body-file /tmp/body.md; then
+            exit 0
+          fi
+          echo "PR 생성 불가 — 이슈 알림으로 대신함"
+          TITLE="한국 기업 미국 공장 주간 점검 — 검토 대기"
+          NUM=$(gh issue list --state open --search "in:title \"$TITLE\"" --json number -q '.[0].number')
+          COMPARE="https://github.com/${GITHUB_REPOSITORY}/compare/main...${BRANCH}?expand=1"
+          printf '## %s\n\nPR 열기: %s\n\n' "$RUN" "$COMPARE" | cat - /tmp/body.md > /tmp/issue.md
+          if [ -n "$NUM" ]; then
+            gh issue comment "$NUM" --body-file /tmp/issue.md
+          else
+            gh issue create --title "$TITLE" --body-file /tmp/issue.md
+          fi
