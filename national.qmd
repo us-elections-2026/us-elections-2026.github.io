@@ -286,7 +286,7 @@ gt_fec_ie_committees()
 cat(money_ledger_md(40))
 ```
 
-후보 계좌의 분기 수치는 각 주 State Focus의 「펀드레이징」 탭에 있습니다. 독립지출 자료는 `scripts/fetch_fec_independent_expenditures.py`가 주 1회 갱신하고, 일일 기록은 상원 일일 정리본의 「자금」 줄과 「전국 자금」 절에서 옵니다.
+후보 계좌의 분기 수치는 각 주 State Focus의 「펀드레이징」 탭에 있습니다. 독립지출 표 두 개는 선거운동 트래커의 FEC 집계를 `scripts/fetch_tracker_senate_ads.py`가 매일 받아 그리고(후보 카드의 '우호 외부지출'과 같은 자료), 아래 누적 추이 그림의 독립지출은 `scripts/fetch_fec_timeline.py`가 주 1회 갱신합니다. 일일 기록은 상원 일일 정리본의 「자금」 줄과 「전국 자금」 절에서 옵니다.
 
 ### 민주당 내부 지형 — DSA와 좌파 flank {#dsa}
 

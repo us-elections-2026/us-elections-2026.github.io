@@ -162,7 +162,7 @@ cat(state_money_html("KS"))
 gt_state_fec("KS")
 ```
 
-이 레이스의 자금은 **도전자가 모금에서 앞서고 현직이 현금에서 앞서는** 구도입니다. Hamilton은 경선 이후 모금에서 Marshall을 앞섰다고 보도됐습니다. 현금 보유는 Marshall이 약 540만 달러로 우위입니다. 외부 자금은 10월 초 급변했습니다. SLF가 노스캐롤라이나에서 뺀 돈으로 캔자스에 약 1,000만 달러를 예약했습니다. Marshall 측도 280만 달러를 더 예약했습니다. Hamilton 측 예약은 59만 달러, 외부 지원은 55.6만 달러에 그칩니다. Senate Majority PAC의 대응 규모는 미확인입니다. ([Semafor](https://www.semafor.com/article/10/02/2026/republicans-pull-ad-spending-from-north-carolina) · [KWCH](https://www.kwch.com/2026/10/02/senate-republicans-move-more-cash-kansas-marshall-hamilton-race-heats-up/))
+이 레이스의 자금은 **도전자가 모금과 현금 모두에서 앞서는** 구도입니다. Hamilton은 경선 이후 모금에서 Marshall을 앞섰다고 보도됐습니다. 앞서 보도된 Marshall의 현금 우위(약 540만 달러)는 9월 말 FEC 보고에서 뒤집혔습니다. 보유현금은 Hamilton 318만 달러, Marshall 92만 달러입니다. 외부 자금은 10월 초 급변했습니다. SLF가 노스캐롤라이나에서 뺀 돈으로 캔자스에 약 1,000만 달러를 예약했습니다. Marshall 측도 280만 달러를 더 예약했습니다. Hamilton 측 예약은 59만 달러, 외부 지원은 55.6만 달러에 그칩니다. Senate Majority PAC의 대응 규모는 미확인입니다. ([Semafor](https://www.semafor.com/article/10/02/2026/republicans-pull-ad-spending-from-north-carolina) · [KWCH](https://www.kwch.com/2026/10/02/senate-republicans-move-more-cash-kansas-marshall-hamilton-race-heats-up/))
 
 ### 자금 투입·지출 — 일일 기록
 

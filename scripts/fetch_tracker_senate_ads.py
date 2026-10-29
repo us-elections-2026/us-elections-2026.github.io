@@ -15,6 +15,7 @@ BASE = "https://woochangkang.github.io/campaign-tracker-2026-site"
 SRC = f"{BASE}/data/ads_fec.json"
 OUT = "data/tracker_senate_ads.json"
 KEYS = ("pro_D", "pro_R", "ads_D", "ads_R", "last_date", "independent_note")
+TOP_KEYS = ("committee_id", "committee", "affiliate_of", "candidate", "so", "side", "total", "last_date")
 
 
 def main() -> int:
@@ -31,6 +32,8 @@ def main() -> int:
         if r:
             races[st] = {k: r.get(k) for k in KEYS}
             races[st]["page"] = f"{BASE}/ads/senate-{st}.html"
+            # 단체×후보 상위 행(트래커가 주마다 15행, 그 주 집행액의 약 9할) — 전국 환경 「독립지출」 표용
+            races[st]["top"] = [{k: t.get(k) for k in TOP_KEYS} for t in r.get("top", [])]
     missing = [st for st in watch if st not in races]
     out = {
         "as_of": src.get("as_of"),
