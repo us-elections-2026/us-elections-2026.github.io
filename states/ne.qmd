@@ -180,7 +180,7 @@ cat(state_money_html("NE"))
 gt_state_fec("NE")
 ```
 
-이 레이스의 자금은 **현직의 자기자금 대 도전자의 소액기부** 구도입니다. Ricketts는 2분기 모금 630만 달러 가운데 520만 달러를 자기 돈으로 넣어 현금 690만 달러를 쌓았고, Osborn은 1분기에 모금액으로 현직을 앞섰지만 현금은 240만 달러에 그칩니다. 외부에서는 SLF 계열 신생 단체 Cornhusker Majority가 9월 중순 140만 달러 광고로 들어와 누적 380만 달러에 이르렀습니다. 네브래스카는 SLF의 당초 우선 5개 주에 없던 곳이라, 이 진입 자체가 공화 지도부가 레이스를 접전으로 본다는 신호로 읽힙니다. ([Nebraska Examiner](https://nebraskaexaminer.com/2026/07/28/ricketts-outraises-osborn-in-latest-report-for-nebraska-us-senate-race/) · [Axios](https://www.axios.com/2026/09/15/gop-super-pac-jumps-into-nebraska-senate-race-with-14m-ad-buy))
+이 레이스의 자금은 **현직의 자기자금 대 도전자의 소액기부** 구도입니다. Ricketts는 2분기 모금 630만 달러 가운데 520만 달러를 자기 돈으로 넣어 현금 690만 달러를 쌓았고, Osborn은 1분기에 모금액으로 현직을 앞섰지만 6월 말 현금은 240만 달러였습니다. 이 격차는 3분기에 뒤집혔습니다. FEC 보고 기준 보유현금은 Osborn 221만 달러(10/14), Ricketts 107만 달러(9/30)입니다. 외부에서는 SLF 계열 신생 단체 Cornhusker Majority가 9월 중순 140만 달러 광고로 들어와 누적 380만 달러에 이르렀습니다. 네브래스카는 SLF의 당초 우선 5개 주에 없던 곳이라, 이 진입 자체가 공화 지도부가 레이스를 접전으로 본다는 신호로 읽힙니다. ([Nebraska Examiner](https://nebraskaexaminer.com/2026/07/28/ricketts-outraises-osborn-in-latest-report-for-nebraska-us-senate-race/) · [Axios](https://www.axios.com/2026/09/15/gop-super-pac-jumps-into-nebraska-senate-race-with-14m-ad-buy))
 
 ### 자금 투입·지출 — 일일 기록
 

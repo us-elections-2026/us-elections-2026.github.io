@@ -2085,24 +2085,41 @@ money_ledger_md <- function(n = 30) {
                  if (is.null(d$as_of)) "" else d$as_of, length(rows), total))
 }
 
-.fec_ie <- function() {
-  path <- file.path("data", "fec_independent_expenditures.json")
+# 2026-10-29: 독립지출 표 두 개는 선거운동 트래커 자료(data/tracker_senate_ads.json, 일일)로 통일 —
+# 후보 카드의 '우호 외부지출'과 같은 원천·같은 기준일. 종전 원천 fec_independent_expenditures.json(주간)은
+# 이 표들에서 더 쓰지 않는다(추이 그림은 fec_timeline.json).
+.tracker_ie <- function() {
+  path <- file.path("data", "tracker_senate_ads.json")
   if (!file.exists(path)) return(NULL)
   jsonlite::read_json(path, simplifyVector = FALSE)
 }
 .m <- function(x) ifelse(is.na(x), "—", paste0("$", formatC(x, format = "f", digits = 1), "M"))
+.ie_nm <- c(GA = "조지아", MI = "미시간", NH = "뉴햄프셔", ME = "메인", NC = "노스캐롤라이나", TX = "텍사스", OH = "오하이오", AK = "알래스카", IA = "아이오와", NE = "네브래스카", KS = "캔자스")
+.ie_side <- c(D = "민주 우호", R = "공화 우호")
+# 한 주의 상위 행(단체×후보)을 단체별로 합친다 — 같은 단체가 한 후보 지지·상대 반대를 함께 신고하므로
+.ie_by_comm <- function(top) {
+  if (!length(top)) return(tibble(committee = character(0), side = character(0), total = numeric(0)))
+  tibble(committee = vapply(top, function(t) t$committee, character(1)),
+         side = vapply(top, function(t) if (is.null(t$side)) NA_character_ else t$side, character(1)),
+         total = vapply(top, function(t) t$total, numeric(1)) / 1e6) |>
+    group_by(committee) |>
+    summarise(side = if (n_distinct(side) == 1) first(side) else "mixed", total = sum(total), .groups = "drop") |>
+    arrange(desc(total))
+}
 
 # 주별 요약: 민주 우호 대 공화 우호 신고 집행액 + 최대 집행 단체
 gt_fec_ie_states <- function() {
-  d <- .fec_ie()
-  if (is.null(d)) return(gt(tibble(안내 = "data/fec_independent_expenditures.json 미생성 — scripts/fetch_fec_independent_expenditures.py 실행 후 채워집니다.")) |> .tbl_opts())
-  nm <- c(GA = "조지아", MI = "미시간", NH = "뉴햄프셔", ME = "메인", NC = "노스캐롤라이나", TX = "텍사스", OH = "오하이오", AK = "알래스카", IA = "아이오와", NE = "네브래스카", KS = "캔자스")
+  d <- .tracker_ie()
+  if (is.null(d)) return(gt(tibble(안내 = "data/tracker_senate_ads.json 미생성 — scripts/fetch_tracker_senate_ads.py 실행 후 채워집니다.")) |> .tbl_opts())
+  nm <- .ie_nm
   rows <- lapply(names(nm), function(st) {
-    x <- d$states[[st]]
+    x <- d$races[[st]]
     if (is.null(x)) return(tibble(주 = nm[[st]], `민주 우호` = NA_real_, `공화 우호` = NA_real_, 합계 = NA_real_, `최대 집행 단체` = "【수집】", `최근 신고` = "—"))
-    top <- if (length(x$rows)) x$rows[[1]] else NULL
-    tibble(주 = nm[[st]], `민주 우호` = x$pro_D, `공화 우호` = x$pro_R, 합계 = x$pro_D + x$pro_R,
-           `최대 집행 단체` = if (is.null(top)) "—" else sprintf("%s (%s %s, $%.1fM)", top$committee, if (identical(top$so, "S")) "지지" else "반대", top$candidate, top$total),
+    top <- .ie_by_comm(x$top)
+    tibble(주 = sprintf("[%s](%s)", nm[[st]], x$page),
+           `민주 우호` = x$pro_D / 1e6, `공화 우호` = x$pro_R / 1e6, 합계 = (x$pro_D + x$pro_R) / 1e6,
+           `최대 집행 단체` = if (!nrow(top)) "—" else sprintf("%s (%s, $%.1fM)", top$committee[1],
+                                                         if (top$side[1] %in% names(.ie_side)) .ie_side[[top$side[1]]] else "혼합", top$total[1]),
            `최근 신고` = if (is.null(x$last_date)) "—" else x$last_date)
   })
   tb <- do.call(rbind, rows)
@@ -2110,33 +2127,34 @@ gt_fec_ie_states <- function() {
   tb |>
     mutate(`민주 우호` = .m(`민주 우호`), `공화 우호` = .m(`공화 우호`), 합계 = .m(합계)) |>
     gt() |>
+    fmt_markdown(columns = 주) |>
     tab_header(title = "슈퍼팩·위원회 독립지출 — 주별 신고 집행액",
-               subtitle = sprintf("FEC Schedule E · 본선 · 단위 $M · 취득 %s", d$as_of)) |>
-    tab_source_note("민주 우호 = 민주 후보 지지 + 공화 후보 반대, 공화 우호는 그 반대. 신고된 집행이므로 언론의 광고 '예약' 총액보다 작다. 24/48시간 통지는 마지막 정기 보고 이후분만 더했다.") |>
+               subtitle = sprintf("FEC Schedule E · 본선 · 단위 $M · 선거운동 트래커 취득 %s", d$as_of)) |>
+    tab_source_note(paste0("민주 우호 = 민주 후보(네브래스카는 무소속 Osborn) 지지 + 공화 후보 반대, 공화 우호는 그 반대. ",
+                           "신고된 집행이므로 언론의 광고 '예약' 총액보다 작다. 24/48시간 통지는 마지막 정기 보고 이후분만 더했다. ",
+                           "자료는 [선거운동 트래커](https://woochangkang.github.io/campaign-tracker-2026-site/ads.html)의 FEC 집계(매일 갱신)이며, 주 이름을 누르면 그 주의 광고 상세 페이지로 갑니다. 후보 카드의 '우호 외부지출'과 같은 자료입니다.")) |>
     .tbl_opts()
 }
 
-# 단체별 상위: 어느 단체가 어느 주에 얼마를 집행했나
+# 단체별 상위: 어느 단체가 어느 주에 얼마를 집행했나 (각 주 상위 15행 = 주별 집행액의 약 9할을 합산)
 gt_fec_ie_committees <- function(n = 15) {
-  d <- .fec_ie()
+  d <- .tracker_ie()
   if (is.null(d)) return(invisible(NULL))
-  cs <- d$committees[seq_len(min(n, length(d$committees)))]
-  side_of <- function(bs) { D <- sum(vapply(bs, function(v) v$D, numeric(1))); R <- sum(vapply(bs, function(v) v$R, numeric(1)))
-    if (D > 0 && R == 0) "민주 우호" else if (R > 0 && D == 0) "공화 우호" else if (D == 0 && R == 0) "—" else "혼합" }
-  tibble(
-    단체 = vapply(cs, function(c) c$name, character(1)),
-    성향 = vapply(cs, function(c) side_of(c$by_state), character(1)),
-    합계 = vapply(cs, function(c) c$total, numeric(1)),
-    `주별 집행` = vapply(cs, function(c) {
-      bs <- c$by_state; ks <- names(bs)
-      v <- vapply(ks, function(k) bs[[k]]$D + bs[[k]]$R, numeric(1))
-      o <- order(-v); paste(sprintf("%s %.1f", ks[o], v[o]), collapse = " · ")
-    }, character(1))
-  ) |>
+  all <- bind_rows(lapply(names(d$races), function(st) mutate(.ie_by_comm(d$races[[st]]$top), st = st)))
+  if (!nrow(all)) return(invisible(NULL))
+  all |>
+    group_by(committee) |>
+    summarise(성향 = if (n_distinct(side) == 1 && first(side) %in% names(.ie_side)) .ie_side[[first(side)]] else "혼합",
+              합계 = sum(total),
+              `주별 집행` = { o <- order(-total); paste(sprintf("%s %.1f", st[o], total[o]), collapse = " · ") },
+              .groups = "drop") |>
+    arrange(desc(합계)) |>
+    slice_head(n = n) |>
+    rename(단체 = committee) |>
     mutate(합계 = .m(합계)) |>
     gt() |>
-    tab_header(title = "독립지출 상위 단체", subtitle = "감시주 합산 · 단위 $M") |>
-    tab_source_note("단체명은 FEC 등록명(예: TEXAS PAC = Senate Leadership Fund의 텍사스 계열, WINSENATE = Senate Majority PAC 계열). 성향은 지지·반대 대상 후보의 정당으로 기계 분류.") |>
+    tab_header(title = "독립지출 상위 단체", subtitle = sprintf("감시주 합산 · 단위 $M · 선거운동 트래커 취득 %s", d$as_of)) |>
+    tab_source_note("단체명은 FEC 등록명(예: TEXAS PAC = Senate Leadership Fund의 텍사스 계열, WINSENATE = Senate Majority PAC 계열). 성향은 지지·반대 대상 후보의 정당으로 기계 분류. 각 주의 상위 15개 단체×후보 행(그 주 집행액의 약 9할)을 합산했다.") |>
     .tbl_opts()
 }
 
