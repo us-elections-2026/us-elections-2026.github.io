@@ -388,7 +388,7 @@
     "2026 상원 민주 지명전당대회(7/25) 566–5 인준 — Platner 사퇴 후 교체후보 확정",
     "전 메인주 상원의장(Senate President)"
    ],
-   "fundraising": null,
+   "fundraising": "사이클 누적 모금 2,043만 달러 · 보유현금 396만 달러 (FEC, 9/30 기준)",
    "strengths": [
     "노동계 기반·주 상원 지도부 경험",
     "사퇴 후 첫 조사 UNH 잭슨 49–콜린스 46(D+3, 무당파 46–42)",
@@ -873,8 +873,8 @@
    "name": "Pete Ricketts",
    "name_kr": "피트 리케츠",
    "incumbent": true,
-   "photo": "",
-   "photo_credit": "",
+   "photo": "assets/candidates/ne_ricketts.jpg",
+   "photo_credit": "U.S. Senate (public domain)",
    "born": 1964,
    "occupation": "현직 상원의원(2023~, 2023년 임명·2024년 특별선거 당선) · 전 주지사(2015~2023) · Ameritrade 전 COO",
    "education": "시카고대 생물학 학사·MBA",
@@ -884,7 +884,7 @@
     "2026 공화 경선(5/12) 81.5%",
     "2014·2018 주지사 당선"
    ],
-   "fundraising": null,
+   "fundraising": "사이클 누적 모금 1,341만 달러 · 보유현금 107만 달러 (FEC, 9/30 기준)",
    "strengths": [
     "현직·자기자금(2분기 630만 중 520만 자기자금)·농업단체 지지",
     "현금 보유 690만 달러로 Osborn의 약 3배",
@@ -914,17 +914,17 @@
    "name": "Dan Osborn",
    "name_kr": "댄 오즈번",
    "incumbent": false,
-   "photo": "",
-   "photo_credit": "",
+   "photo": "assets/candidates/ne_osborn.jpg",
+   "photo_credit": "Ramseywill · CC BY 4.0 (Wikimedia Commons: Osborn_Headshot_2_(cropped).jpg)",
    "born": 1975,
    "occupation": "산업기계공·전 BCTGM Local 50G 노조위원장(2021년 Kellogg's 77일 파업 주도) · 해군·주방위군 복무",
    "education": "미확인",
-   "family": "미확인",
+   "family": "부인 Megan, 자녀 3명",
    "past_elections": [
     "2024 상원(정기) 무소속 46.5% vs Fischer 53.2%",
     "2026: 민주 후보 Burbank 7/17 사퇴로 사실상 양자 구도"
    ],
-   "fundraising": null,
+   "fundraising": "사이클 누적 모금 981만 달러 · 보유현금 221만 달러 (FEC, 10/14 선거 전 보고 기준)",
    "strengths": [
     "2024년 석패로 쌓은 인지도와 소액기부 기반(1분기 모금 Ricketts 상회)",
     "노조·초당파 아웃사이더 이미지",
@@ -954,17 +954,17 @@
    "name": "Roger Marshall",
    "name_kr": "로저 마셜",
    "incumbent": true,
-   "photo": "",
-   "photo_credit": "",
+   "photo": "assets/candidates/ks_marshall.jpg",
+   "photo_credit": "U.S. Senate Photographic Studio (public domain)",
    "born": 1960,
    "occupation": "현직 상원의원(2021~) · 전 연방하원 KS-1(2017~2021) · 산부인과 전문의",
    "education": "캔자스주립대 생화학 학사 · 캔자스대 의대 MD(1987)",
-   "family": "미확인",
+   "family": "부인 Laina(1983년 결혼), 자녀 4명",
    "past_elections": [
     "2020 상원 53.2% vs Bollier 41.8%",
     "2026 공화 경선(8/4) 79.9%"
    ],
-   "fundraising": null,
+   "fundraising": "사이클 누적 모금 701만 달러 · 보유현금 92만 달러 (FEC, 9/30 기준)",
    "strengths": [
     "현직 프리미엄과 현금 보유 약 540만 달러",
     "트럼프·공화 지도부 지원, SLF 약 1,000만 달러 예약(10월 초)",
@@ -983,7 +983,8 @@
    "sources": [
     "https://ballotpedia.org/Roger_Marshall",
     "https://www.kcur.org/politics-elections-and-government/2026-09-29/roger-marshall-defamation-patient-arrested-adam-hamilton",
-    "https://www.marshall.senate.gov/newsroom/press-releases/senator-marshall-applauds-the-trump-administrations-successful-america-first-trade-negotiations/"
+    "https://www.marshall.senate.gov/newsroom/press-releases/senator-marshall-applauds-the-trump-administrations-successful-america-first-trade-negotiations/",
+    "https://en.wikipedia.org/wiki/Roger_Marshall"
    ],
    "status": "nominee"
   },
@@ -993,8 +994,8 @@
    "name": "Adam Hamilton",
    "name_kr": "애덤 해밀턴",
    "incumbent": false,
-   "photo": "",
-   "photo_credit": "",
+   "photo": "assets/candidates/ks_hamilton.jpg",
+   "photo_credit": "Working Preacher · CC BY 4.0 (Wikimedia Commons: Adam_Hamilton_on_the_Courage_to_Preach_(cropped).png)",
    "born": 1964,
    "occupation": "Church of the Resurrection(연합감리교, 전미 최대 교단) 설립·수석목사 · 저서 50여 권",
    "education": "Oral Roberts University 학사 · SMU 신학석사",
@@ -1002,7 +1003,7 @@
    "past_elections": [
     "2026 민주 경선(8/4) 34.6%(11명 중 1위) — 첫 출마"
    ],
-   "fundraising": null,
+   "fundraising": "사이클 누적 모금 1,353만 달러 · 보유현금 318만 달러 (FEC, 9/30 기준)",
    "strengths": [
     "모금에서 Marshall을 앞섬(Sabato 보도 309만 달러 우위)",
     "무당파층 42–27 우위(Emerson)",

@@ -632,6 +632,34 @@ gt_state_fec <- function(code) {
   "assets/candidates/_placeholder.svg" else r$photo
 .c_age <- function(r) if (!is.na(r$born)) paste0(r$born, "년생(", 2026 - r$born, "세) · ") else ""
 
+# 펀드레이징 행 — 2026-10-24부터 자동. 손글(candidates.json fundraising)은 분기가 지나면 낡아서
+#   ① 후보 위원회: data/fec_fundraising.json(FEC 주간 취득). 후보 ID는 fec_timeline.json의 주별 D/R 짝에서 이름으로 찾는다.
+#   ② 우호 외부지출: data/tracker_senate_ads.json(선거운동 트래커 광고 페이지의 FEC 독립지출, 일일 취득) + 그 페이지 링크.
+#   무소속(NE Osborn)은 민주 자리(D)로 본다 — 트래커도 Osborn 지지를 민주 쪽으로 센다.
+#   둘 다 없으면(경선 후보 등) 손글을 그대로 쓴다.
+.c_man <- function(usd) { m <- round(usd / 1e4); e <- m %/% 1e4; m <- m %% 1e4
+  paste0(if (e > 0) paste0(e, "억 ") else "", if (m > 0 || e == 0) paste0(format(m, big.mark = ","), "만 ") else "", "달러") }
+.c_md <- function(d) { d <- as.Date(d); paste0(as.integer(format(d, "%m")), "/", as.integer(format(d, "%d"))) }
+.c_fund <- function(r) {
+  side <- if (r$party == "R") "R" else "D"
+  out <- character(0)
+  tl <- tryCatch(.load_json("fec_timeline")$states[[r$state]], error = function(e) NULL)
+  ff <- tryCatch(.load_json("fec_fundraising")$states[[r$state]], error = function(e) NULL)
+  if (!is.null(tl) && !is.null(ff) && identical(tl[[side]]$name, r$name)) {
+    f <- ff[ff$candidate_id == tl[[side]]$candidate_id, ]
+    if (nrow(f) == 1)
+      out <- c(out, paste0("후보 위원회 누적 모금 ", .c_man(f$receipts * 1e6), " · 보유현금 ",
+                           .c_man(f$cash_on_hand * 1e6), " (FEC, ", .c_md(f$coverage_end), " 보고)"))
+  }
+  ta <- tryCatch(.load_json("tracker_senate_ads"), error = function(e) NULL)
+  tr <- if (is.null(ta)) NULL else ta$races[[r$state]]
+  if (!is.null(tr) && !identical(r$status, "primary"))   # 본선 외부지출은 지명자에게만
+    out <- c(out, paste0("우호 외부지출 ", .c_man(tr[[paste0("pro_", side)]]), " (FEC 독립지출, ",
+                         .c_md(tr$last_date), "까지) · <a href=\"", tr$page,
+                         "\" target=\"_blank\" rel=\"noopener\">선거운동 트래커 광고 상세</a>"))
+  if (length(out)) paste(out, collapse = "<br>") else .c_val(r$fundraising)
+}
+
 # 정식(전체) 카드 — 행 단위 평탄 구조(두 카드 간 subgrid 정렬용).
 # 정렬을 위해 비어 있어도 모든 행(가족/학력/경력/펀드레이징…)을 항상 출력한다.
 .c_val <- function(x) if (length(x) == 0 || is.na(x) || !nzchar(x)) "—" else x
@@ -647,7 +675,7 @@ gt_state_fec <- function(code) {
     '<div class="cand-fact"><b>가족</b> ', .c_val(r$family), '</div>',
     '<div class="cand-fact"><b>학력</b> ', .c_val(r$education), '</div>',
     '<div class="cand-fact"><b>경력</b> ', .c_inline(r$past_elections[[1]]), '</div>',
-    '<div class="cand-fact"><b>펀드레이징</b> ', .c_val(r$fundraising), '</div>',
+    '<div class="cand-fact"><b>펀드레이징</b> ', .c_fund(r), '</div>',
     '<div class="cand-fact cand-divide"><b class="t-str">강점</b>', .c_ul(r$strengths[[1]]), '</div>',
     '<div class="cand-fact"><b class="t-wk">약점</b>', .c_ul(r$weaknesses[[1]]), '</div>',
     '<div class="cand-fact"><b>정책</b> ', .c_inline(r$policy[[1]]), '</div>',
