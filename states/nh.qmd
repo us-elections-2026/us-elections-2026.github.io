@@ -167,6 +167,11 @@ cat(daily_log_md("NH"))
 ## 최신 여론조사
 
 ```{r}
+#| output: asis
+cat(race_snapshot_html("NH"))
+```
+
+```{r}
 gt_state_polls("NH")
 ```
 

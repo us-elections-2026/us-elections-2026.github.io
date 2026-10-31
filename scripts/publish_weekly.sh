@@ -145,7 +145,7 @@ fi
 # 관리 대상으로 명시한 디렉터리인데 스테이징 목록에 없어, 그쪽을 고쳐도 주간 발행에
 # 실리지 않고 조용히 남았다. R/·assets/·theme/ 은 코드·스타일이라 의도적으로 제외한다
 # (사람이 별도 커밋한다).
-git add data/ issues/ states/ governors/ ./*.qmd
+git add data/ issues/ states/ governors/ assets/snapshots/ ./*.qmd
 if git diff --cached --quiet; then
   echo "[weekly] 커밋할 변경 없음 — 종료(이미 최신)"; exit 0
 fi

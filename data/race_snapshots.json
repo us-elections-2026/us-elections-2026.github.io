@@ -1,0 +1,518 @@
+{
+ "as_of": "2026-10-31",
+ "source_label": "data/senate_polls.csv · rating_history.json · senate_ratings_feed.json(270toWin 재게시)",
+ "rule_note": "평균 = 직전 30일 조사 단순 평균(2건 미만이면 최근 3건). 접전 = |평균| < 4%p. 등급 띠는 월말 기준 칸을 기간으로 펼친 것이라 이동 시점은 그 기간 안의 어느 날이다. 큰 점 = 주목 기관(NYT/Siena·Fox·Marist·AARP), 속 빈 점 = 당파 후원 조사.",
+ "states": {
+  "AK": {
+   "name_kr": "알래스카",
+   "matchup": "Peltola(D) 대 Sullivan(R)",
+   "avg": 2.5,
+   "avg_label": "최근 30일 평균",
+   "n_avg": 5,
+   "n_polls": 14,
+   "latest": {
+    "pollster": "Data for Progress",
+    "date": "2026-10-16",
+    "margin": 2.0
+   },
+   "ratings": {
+    "cook": [
+     [
+      "2026-03-01",
+      "2026-06-30",
+      "Lean R"
+     ],
+     [
+      "2026-07-01",
+      "2026-11-01",
+      "Toss-up"
+     ]
+    ],
+    "sabato": [
+     [
+      "2026-03-01",
+      "2026-05-31",
+      "Lean R"
+     ],
+     [
+      "2026-06-01",
+      "2026-10-10",
+      "Toss-up"
+     ],
+     [
+      "2026-10-11",
+      "2026-11-01",
+      "Lean D"
+     ]
+    ]
+   },
+   "bullets": [
+    "최근 30일 평균 D+2.5 (조사 5건)<br><span class='dim'>그 전 30일 D+1.2 → 1.3%p 민주 쪽 이동</span>",
+    "최신 조사 Data for Progress 10/16 D+2.0",
+    "Cook Lean R → Toss-up (마지막 이동 7월)<br><span class='dim'>Sabato Lean R → Toss-up → Lean D (마지막 이동 10월)</span>"
+   ],
+   "takeaway": "조사 평균 D+2.5 — 오차 범위 안의 접전 · Cook Toss-up",
+   "svg": "assets/snapshots/ak.svg"
+  },
+  "GA": {
+   "name_kr": "조지아",
+   "matchup": "Ossoff(D) 대 Collins(R)",
+   "avg": 9.3,
+   "avg_label": "최근 30일 평균",
+   "n_avg": 6,
+   "n_polls": 16,
+   "latest": {
+    "pollster": "Echelon Insights",
+    "date": "2026-10-23",
+    "margin": 15.0
+   },
+   "ratings": {
+    "cook": [
+     [
+      "2026-03-01",
+      "2026-03-31",
+      "Toss-up"
+     ],
+     [
+      "2026-04-01",
+      "2026-09-20",
+      "Lean D"
+     ],
+     [
+      "2026-09-21",
+      "2026-11-01",
+      "Likely D"
+     ]
+    ],
+    "sabato": [
+     [
+      "2026-03-01",
+      "2026-06-30",
+      "Lean D"
+     ],
+     [
+      "2026-07-01",
+      "2026-11-01",
+      "Likely D"
+     ]
+    ]
+   },
+   "bullets": [
+    "최근 30일 평균 D+9.3 (조사 6건)<br><span class='dim'>그 전 30일 D+6.5 → 2.8%p 민주 쪽 이동</span>",
+    "최신 조사 Echelon Insights 10/23 D+15.0",
+    "Cook Toss-up → Lean D → Likely D (마지막 이동 9월)<br><span class='dim'>Sabato Lean D → Likely D (마지막 이동 7월)</span>"
+   ],
+   "takeaway": "조사 평균 D+9.3 — 민주 우세 · Cook Likely D",
+   "svg": "assets/snapshots/ga.svg"
+  },
+  "IA": {
+   "name_kr": "아이오와",
+   "matchup": "Turek(D) 대 Hinson(R)",
+   "avg": 0.0,
+   "avg_label": "최근 30일 평균",
+   "n_avg": 10,
+   "n_polls": 25,
+   "latest": {
+    "pollster": "Echelon Insights",
+    "date": "2026-10-23",
+    "margin": 2.0
+   },
+   "ratings": {
+    "cook": [
+     [
+      "2026-03-01",
+      "2026-05-31",
+      "Likely R"
+     ],
+     [
+      "2026-06-01",
+      "2026-08-15",
+      "Lean R"
+     ],
+     [
+      "2026-08-16",
+      "2026-11-01",
+      "Toss-up"
+     ]
+    ],
+    "sabato": [
+     [
+      "2026-03-01",
+      "2026-05-31",
+      "Likely R"
+     ],
+     [
+      "2026-06-01",
+      "2026-09-20",
+      "Lean R"
+     ],
+     [
+      "2026-09-21",
+      "2026-11-01",
+      "Toss-up"
+     ]
+    ]
+   },
+   "bullets": [
+    "최근 30일 평균 동률 (조사 10건)<br><span class='dim'>그 전 30일 D+2.1 → 2.1%p 공화 쪽 이동</span>",
+    "최신 조사 Echelon Insights 10/23 D+2.0",
+    "Cook Likely R → Lean R → Toss-up (마지막 이동 8월)<br><span class='dim'>Sabato Likely R → Lean R → Toss-up (마지막 이동 9월)</span>"
+   ],
+   "takeaway": "조사 평균 동률 — 오차 범위 안의 접전 · Cook Toss-up",
+   "svg": "assets/snapshots/ia.svg"
+  },
+  "KS": {
+   "name_kr": "캔자스",
+   "matchup": "Hamilton(D) 대 Marshall(R)",
+   "avg": 2.0,
+   "avg_label": "최근 30일 평균",
+   "n_avg": 3,
+   "n_polls": 7,
+   "latest": {
+    "pollster": "InsiderAdvantage",
+    "date": "2026-10-14",
+    "margin": -1.0
+   },
+   "ratings": {
+    "cook": [
+     [
+      "2026-10-23",
+      "2026-10-31",
+      "Toss-up"
+     ]
+    ],
+    "sabato": [
+     [
+      "2026-10-15",
+      "2026-10-31",
+      "Toss-up"
+     ]
+    ]
+   },
+   "bullets": [
+    "최근 30일 평균 D+2.0 (조사 3건)<br><span class='dim'>그 전 30일 D+1.0 → 1.0%p 민주 쪽 이동</span>",
+    "최신 조사 InsiderAdvantage 10/14 R+1.0",
+    "Cook 현재 Toss-up (변화 기록 없음)<br><span class='dim'>Sabato 현재 Toss-up (변화 기록 없음)</span>"
+   ],
+   "takeaway": "조사 평균 D+2.0 — 오차 범위 안의 접전 · Cook Toss-up",
+   "svg": "assets/snapshots/ks.svg"
+  },
+  "ME": {
+   "name_kr": "메인",
+   "matchup": "Jackson(D) 대 Collins(R)",
+   "avg": 3.2,
+   "avg_label": "최근 30일 평균",
+   "n_avg": 6,
+   "n_polls": 23,
+   "latest": {
+    "pollster": "Marist Poll",
+    "date": "2026-10-25",
+    "margin": 2.0
+   },
+   "ratings": {
+    "cook": [
+     [
+      "2026-03-01",
+      "2026-11-01",
+      "Toss-up"
+     ]
+    ],
+    "sabato": [
+     [
+      "2026-03-01",
+      "2026-11-01",
+      "Toss-up"
+     ]
+    ]
+   },
+   "bullets": [
+    "최근 30일 평균 D+3.2 (조사 6건)<br><span class='dim'>그 전 30일 D+1.6 → 1.6%p 민주 쪽 이동</span>",
+    "최신 조사 ★ Marist Poll 10/25 D+2.0",
+    "Cook Toss-up 유지<br><span class='dim'>Sabato Toss-up 유지</span>"
+   ],
+   "takeaway": "조사 평균 D+3.2 — 오차 범위 안의 접전 · Cook Toss-up",
+   "svg": "assets/snapshots/me.svg"
+  },
+  "MI": {
+   "name_kr": "미시간",
+   "matchup": "El-Sayed(D) 대 Rogers(R)",
+   "avg": 1.8,
+   "avg_label": "최근 30일 평균",
+   "n_avg": 9,
+   "n_polls": 39,
+   "latest": {
+    "pollster": "Glengariff",
+    "date": "2026-10-22",
+    "margin": 6.3
+   },
+   "ratings": {
+    "cook": [
+     [
+      "2026-03-01",
+      "2026-11-01",
+      "Toss-up"
+     ]
+    ],
+    "sabato": [
+     [
+      "2026-03-01",
+      "2026-09-20",
+      "Toss-up"
+     ],
+     [
+      "2026-09-21",
+      "2026-11-01",
+      "Lean D"
+     ]
+    ]
+   },
+   "bullets": [
+    "최근 30일 평균 D+1.8 (조사 9건)<br><span class='dim'>그 전 30일 D+3.0 → 1.3%p 공화 쪽 이동</span>",
+    "최신 조사 Glengariff 10/22 D+6.3",
+    "Cook Toss-up 유지<br><span class='dim'>Sabato Toss-up → Lean D (마지막 이동 9월)</span>"
+   ],
+   "takeaway": "조사 평균 D+1.8 — 오차 범위 안의 접전 · Cook Toss-up",
+   "svg": "assets/snapshots/mi.svg"
+  },
+  "NC": {
+   "name_kr": "노스캐롤라이나",
+   "matchup": "Cooper(D) 대 Whatley(R)",
+   "avg": 10.9,
+   "avg_label": "최근 30일 평균",
+   "n_avg": 7,
+   "n_polls": 27,
+   "latest": {
+    "pollster": "Quantus Insights",
+    "date": "2026-10-25",
+    "margin": 8.6
+   },
+   "ratings": {
+    "cook": [
+     [
+      "2026-03-01",
+      "2026-03-31",
+      "Toss-up"
+     ],
+     [
+      "2026-04-01",
+      "2026-10-20",
+      "Lean D"
+     ],
+     [
+      "2026-10-21",
+      "2026-11-01",
+      "Likely D"
+     ]
+    ],
+    "sabato": [
+     [
+      "2026-03-01",
+      "2026-05-31",
+      "Toss-up"
+     ],
+     [
+      "2026-06-01",
+      "2026-11-01",
+      "Lean D"
+     ]
+    ]
+   },
+   "bullets": [
+    "최근 30일 평균 D+10.9 (조사 7건)<br><span class='dim'>그 전 30일 D+10.0 → 0.9%p 민주 쪽 이동</span>",
+    "최신 조사 Quantus Insights 10/25 D+8.6",
+    "Cook Toss-up → Lean D → Likely D (마지막 이동 10월)<br><span class='dim'>Sabato Toss-up → Lean D (마지막 이동 6월)</span>"
+   ],
+   "takeaway": "조사 평균 D+10.9 — 민주 우세 · Cook Likely D",
+   "svg": "assets/snapshots/nc.svg"
+  },
+  "NE": {
+   "name_kr": "네브래스카",
+   "matchup": "Osborn(I) 대 Ricketts(R)",
+   "avg": -1.5,
+   "avg_label": "최근 30일 평균",
+   "n_avg": 4,
+   "n_polls": 8,
+   "latest": {
+    "pollster": "Echelon Insights",
+    "date": "2026-10-23",
+    "margin": -1.0
+   },
+   "ratings": {
+    "cook": [
+     [
+      "2026-10-23",
+      "2026-10-31",
+      "Likely R"
+     ]
+    ],
+    "sabato": [
+     [
+      "2026-10-15",
+      "2026-10-31",
+      "Lean R"
+     ]
+    ]
+   },
+   "bullets": [
+    "최근 30일 평균 R+1.5 (조사 4건)<br><span class='dim'>그 전 30일 R+0.5 → 1.0%p 공화 쪽 이동</span>",
+    "최신 조사 Echelon Insights 10/23 R+1.0",
+    "Cook 현재 Likely R (변화 기록 없음)<br><span class='dim'>Sabato 현재 Lean R (변화 기록 없음)</span>"
+   ],
+   "takeaway": "조사 평균 R+1.5 — 오차 범위 안의 접전 · Cook Likely R",
+   "svg": "assets/snapshots/ne.svg"
+  },
+  "NH": {
+   "name_kr": "뉴햄프셔",
+   "matchup": "Pappas(D) 대 Sununu(R)",
+   "avg": 6.7,
+   "avg_label": "최근 30일 평균",
+   "n_avg": 3,
+   "n_polls": 17,
+   "latest": {
+    "pollster": "Saint Anselm College Survey Center",
+    "date": "2026-10-20",
+    "margin": 7.0
+   },
+   "ratings": {
+    "cook": [
+     [
+      "2026-03-01",
+      "2026-09-10",
+      "Lean D"
+     ],
+     [
+      "2026-09-11",
+      "2026-10-20",
+      "Toss-up"
+     ],
+     [
+      "2026-10-21",
+      "2026-11-01",
+      "Lean D"
+     ]
+    ],
+    "sabato": [
+     [
+      "2026-03-01",
+      "2026-10-20",
+      "Lean D"
+     ],
+     [
+      "2026-10-21",
+      "2026-11-01",
+      "Likely D"
+     ]
+    ]
+   },
+   "bullets": [
+    "최근 30일 평균 D+6.7 (조사 3건)<br><span class='dim'>그 전 30일 D+6.5 — 거의 같음</span>",
+    "최신 조사 Saint Anselm College Survey Center 10/20 D+7.0",
+    "Cook Lean D → Toss-up → Lean D (마지막 이동 10월)<br><span class='dim'>Sabato Lean D → Likely D (마지막 이동 10월)</span>"
+   ],
+   "takeaway": "조사 평균 D+6.7 — 민주 우세 · Cook Lean D",
+   "svg": "assets/snapshots/nh.svg"
+  },
+  "OH": {
+   "name_kr": "오하이오",
+   "matchup": "Brown(D) 대 Husted(R)",
+   "avg": 3.7,
+   "avg_label": "최근 30일 평균",
+   "n_avg": 9,
+   "n_polls": 25,
+   "latest": {
+    "pollster": "Echelon Insights",
+    "date": "2026-10-23",
+    "margin": 0.0
+   },
+   "ratings": {
+    "cook": [
+     [
+      "2026-03-01",
+      "2026-03-31",
+      "Lean R"
+     ],
+     [
+      "2026-04-01",
+      "2026-11-01",
+      "Toss-up"
+     ]
+    ],
+    "sabato": [
+     [
+      "2026-03-01",
+      "2026-05-31",
+      "Lean R"
+     ],
+     [
+      "2026-06-01",
+      "2026-11-01",
+      "Toss-up"
+     ]
+    ]
+   },
+   "bullets": [
+    "최근 30일 평균 D+3.7 (조사 9건)<br><span class='dim'>그 전 30일 D+3.4 — 거의 같음</span>",
+    "최신 조사 Echelon Insights 10/23 동률",
+    "Cook Lean R → Toss-up (마지막 이동 4월)<br><span class='dim'>Sabato Lean R → Toss-up (마지막 이동 6월)</span>"
+   ],
+   "takeaway": "조사 평균 D+3.7 — 오차 범위 안의 접전 · Cook Toss-up",
+   "svg": "assets/snapshots/oh.svg"
+  },
+  "TX": {
+   "name_kr": "텍사스",
+   "matchup": "Talarico(D) 대 Paxton(R)",
+   "avg": 2.9,
+   "avg_label": "최근 30일 평균",
+   "n_avg": 15,
+   "n_polls": 44,
+   "latest": {
+    "pollster": "YouGov",
+    "date": "2026-10-21",
+    "margin": 5.0
+   },
+   "ratings": {
+    "cook": [
+     [
+      "2026-03-01",
+      "2026-04-30",
+      "Likely R"
+     ],
+     [
+      "2026-05-01",
+      "2026-08-15",
+      "Lean R"
+     ],
+     [
+      "2026-08-16",
+      "2026-11-01",
+      "Toss-up"
+     ]
+    ],
+    "sabato": [
+     [
+      "2026-03-01",
+      "2026-04-30",
+      "Likely R"
+     ],
+     [
+      "2026-05-01",
+      "2026-08-15",
+      "Lean R"
+     ],
+     [
+      "2026-08-16",
+      "2026-11-01",
+      "Toss-up"
+     ]
+    ]
+   },
+   "bullets": [
+    "최근 30일 평균 D+2.9 (조사 15건)<br><span class='dim'>그 전 30일 D+2.9 — 거의 같음</span>",
+    "최신 조사 YouGov 10/21 D+5.0",
+    "Cook Likely R → Lean R → Toss-up (마지막 이동 8월)<br><span class='dim'>Sabato Likely R → Lean R → Toss-up (마지막 이동 8월)</span>"
+   ],
+   "takeaway": "조사 평균 D+2.9 — 오차 범위 안의 접전 · Cook Toss-up",
+   "svg": "assets/snapshots/tx.svg"
+  }
+ }
+}

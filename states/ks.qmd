@@ -141,6 +141,11 @@ cat(daily_log_md("KS"))
 ## 최신 여론조사
 
 ```{r}
+#| output: asis
+cat(race_snapshot_html("KS"))
+```
+
+```{r}
 gt_state_polls("KS")
 ```
 
