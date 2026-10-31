@@ -28,6 +28,7 @@ LOG="data/senate_daily_log.json"
 POLLS="data/senate_polls.csv"
 LEDGER="data/state_ledger.json"
 TRACKER="data/tracker_senate_ads.json"   # 선거운동 트래커 FEC 독립지출(후보 카드 펀드레이징 행) — 2026-10-24
+SNAPJ="data/race_snapshots.json"; SNAPD="assets/snapshots"   # 주별 스냅샷(조사 추이+등급 변화) — 2026-10-31
 
 # 실행 기록 — 예약 작업(Cowork VM 샌드박스)의 출력은 대화에만 남아 나중에 볼 수 없다.
 # 어느 단계에서 멈췄는지 파일로 남긴다(2026-09-24 신설). 10줄 남짓, 매 실행 append.
@@ -90,7 +91,7 @@ cleanup() {
     echo "[$(date '+%m-%d %H:%M:%S')] ! 중단(rc=$rc) — 작업트리 되돌림" >> "$LOGF"
     echo "[daily] ! 중단 — 작업트리 되돌림($LOG, $POLLS)"
     find .git -maxdepth 3 -name "*.lock" -delete 2>/dev/null   # 되돌리기가 잠금에 막히지 않게
-    git checkout -- "$LOG" "$POLLS" "$LEDGER" "$TRACKER" 2>/dev/null || echo "[daily] ! 되돌림 실패 — 다음 실행은 PD_RESET=1 필요"
+    git checkout -- "$LOG" "$POLLS" "$LEDGER" "$TRACKER" "$SNAPJ" "$SNAPD" 2>/dev/null || echo "[daily] ! 되돌림 실패 — 다음 실행은 PD_RESET=1 필요"
   fi
 }
 trap cleanup EXIT INT TERM
@@ -202,6 +203,11 @@ if git diff --quiet -- "$LOG" "$POLLS" "$LEDGER" "$TRACKER"; then
   step "로그·조사·장부 변경 없음(이미 적재된 날짜) — 종료"; exit 0
 fi
 
+# 1.5) 주별 스냅샷 — 조사가 반영된 뒤에 만든다. 평균 창이 실행일 기준이라 매일 바뀌므로
+#      위 '변경 없음' 판정에는 넣지 않는다(넣으면 그 종료가 영영 안 걸림).
+step "주별 스냅샷(build_race_snapshots.py)"
+python3 scripts/build_race_snapshots.py 2>&1 | tee -a "$LOGF" || step "! 스냅샷 생성 실패(건너뜀 — 기존 파일 유지)"
+
 if [ "${PD_CI:-0}" = "1" ]; then
   step "CI 모드 — 검증·렌더는 publish.yml 이 수행(여기서는 건너뜀)"
 else
@@ -221,15 +227,15 @@ if [ "${NO_COMMIT:-0}" = "1" ]; then
 fi
 if [ "${DRY_RUN:-0}" = "1" ]; then
   step "DRY_RUN — 커밋·push 생략. 변경 요약:"
-  git --no-pager diff --stat -- "$LOG" "$POLLS" "$LEDGER" "$TRACKER" | sed 's/^/    /'
+  git --no-pager diff --stat -- "$LOG" "$POLLS" "$LEDGER" "$TRACKER" "$SNAPJ" "$SNAPD" | sed 's/^/    /'
   # 되돌려 놓는다 — 그냥 두면 다음 정식 실행이 '미커밋 변경' 가드에 걸린다.
-  git checkout -- "$LOG" "$POLLS" "$LEDGER" "$TRACKER" 2>/dev/null
+  git checkout -- "$LOG" "$POLLS" "$LEDGER" "$TRACKER" "$SNAPJ" "$SNAPD" 2>/dev/null
   step "DRY_RUN — 작업트리 원복 완료"
   exit 0
 fi
 
 # 4) 커밋·push — 로그 + 조사 CSV 두 파일만
-git add "$LOG" "$POLLS" "$LEDGER" "$TRACKER"
+git add "$LOG" "$POLLS" "$LEDGER" "$TRACKER" "$SNAPJ" "$SNAPD"
 NPOLL=$(git diff --cached --numstat -- "$POLLS" | awk '{print $1+0}')
 NDAYS=$(echo $DATES | wc -w | tr -d ' ')
 git commit -m "일일 자동 발행: 상원 일일 로그 ($DATE$([ "$NDAYS" -gt 1 ] && echo " 등 ${NDAYS}일"))${NPOLL:+ · 조사 +${NPOLL}행}" \

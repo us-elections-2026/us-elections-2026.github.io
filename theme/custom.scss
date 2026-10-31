@@ -568,3 +568,15 @@ main table.gt_table th.gt_col_heading { white-space: pre-line; text-align: cente
 .kp-news summary { cursor: pointer; padding: 3px 0; }
 .kp-news ul { margin: 4px 0 8px 1.1rem; padding: 0; }
 .kp-news li { margin: 2px 0; line-height: 1.5; }
+
+/* 주별 스냅샷 카드 (2026-10-31, race_snapshot_html) */
+.snap { border: 1px solid #e5e0d3; border-radius: 10px; padding: 14px 16px 12px; margin: .2rem 0 1.2rem; }
+.snap-hd { font-weight: 700; font-size: 1.02rem; margin-bottom: 8px; }
+.snap-bd { display: flex; flex-wrap: wrap; gap: 14px; align-items: flex-start; }
+.snap-fig { flex: 1 1 520px; min-width: 0; }
+.snap-fig svg { width: 100%; height: auto; }
+.snap-pts { flex: 1 1 220px; margin: 0; padding-left: 1.1rem; font-size: .92rem; line-height: 1.6; }
+.snap-pts li { margin-bottom: .55rem; }
+.snap-pts .dim { color: #6b7280; font-size: .85rem; }
+.snap-take { margin-top: 10px; padding: 10px 14px; background: #222; color: #fff; border-radius: 8px; font-weight: 700; }
+.snap-nt { margin: 6px 0 0; color: #6b7280; font-size: .78rem; }
