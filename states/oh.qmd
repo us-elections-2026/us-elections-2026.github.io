@@ -135,6 +135,11 @@ cat(daily_log_md("OH"))
 ## 최신 여론조사
 
 ```{r}
+#| output: asis
+cat(race_snapshot_html("OH"))
+```
+
+```{r}
 gt_state_polls("OH")
 ```
 

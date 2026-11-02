@@ -445,6 +445,24 @@ gt_state_polls <- function(code) {
     .tbl_opts()
 }
 
+# 주별 스냅샷 카드(2026-10-31) — 조사 격차 추이 + Cook·Sabato 등급 변화 한 장.
+# 그림·요점은 scripts/build_race_snapshots.py가 매일 만든다(강연 덱 부록과 같은 산출물).
+race_snapshot_html <- function(code) {
+  d <- tryCatch(jsonlite::read_json(file.path("data", "race_snapshots.json")), error = function(e) NULL)
+  s <- if (is.null(d)) NULL else d$states[[code]]
+  if (is.null(s)) return("")
+  fig <- paste(readLines(file.path(s$svg), warn = FALSE, encoding = "UTF-8"), collapse = "")
+  paste0(
+    '<div class="snap">',
+    sprintf('<div class="snap-hd">%s · %s <span class="rcard-mu">기준 %s</span></div>', s$name_kr, s$matchup, d$as_of),
+    '<div class="snap-bd"><div class="snap-fig">', fig, '</div><ul class="snap-pts">',
+    paste0("<li>", unlist(s$bullets), "</li>", collapse = ""),
+    '</ul></div>',
+    sprintf('<div class="snap-take">%s</div>', s$takeaway),
+    sprintf('<p class="snap-nt">%s</p>', d$rule_note),
+    '</div>')
+}
+
 # 최신 자금 상황 한 줄 (senate_races.json의 cash_on_hand — 매주 자동 갱신되는 값)
 state_money_html <- function(code) {
   d <- .load_json("senate_races")
