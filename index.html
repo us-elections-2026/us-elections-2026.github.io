@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.20">
+<meta name="generator" content="quarto-1.11.9">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -40,14 +40,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-17888a1159294d3eb470f19f6f52f5a5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-8ad9130a4111117e8f20bed9cfffef61.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4dd7511de67ce0a5f728331481fab1da.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -98,12 +99,6 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
   </script>
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -143,19 +138,18 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light">
+<body class="nav-sidebar docked nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="웹사이트">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">미국 중간선거 한국어 브리핑</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="검색"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="탐색 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="탐색 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -199,15 +193,16 @@ window.Quarto = {
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
+            <div id="quarto-search" class="" title="검색"></div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
+  <nav class="quarto-secondary-nav" aria-label="도구 모음">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">시작</a></li><li class="breadcrumb-item"><a href="./index.html">홈 — 컨트롤 패널</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="사이트 이동 경로"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">시작</a></li><li class="breadcrumb-item"><a href="./index.html">홈 — 컨트롤 패널</a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
@@ -215,18 +210,15 @@ window.Quarto = {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto" aria-label="구역">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">시작</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="토글 섹션">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">시작</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link active">
@@ -237,13 +229,10 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
- <span class="menu-text">전국 환경</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="토글 섹션">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">전국 환경</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./national.html" class="sidebar-item-text sidebar-link">
@@ -272,13 +261,10 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
- <span class="menu-text">상원 Senate</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="토글 섹션">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">상원 Senate</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./dashboard.html" class="sidebar-item-text sidebar-link">
@@ -299,13 +285,10 @@ window.Quarto = {
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
- <span class="menu-text">State Focus (11주)</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="토글 섹션">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-controls="quarto-sidebar-section-4" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-4-label">State Focus (11주)</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-4" aria-labelledby="quarto-sidebar-section-4-label" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./states/ga.html" class="sidebar-item-text sidebar-link">
@@ -378,13 +361,10 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
- <span class="menu-text">하원 House</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="토글 섹션">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-controls="quarto-sidebar-section-5" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-5-label">하원 House</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-5" aria-labelledby="quarto-sidebar-section-5-label" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./house.html" class="sidebar-item-text sidebar-link">
@@ -399,13 +379,10 @@ window.Quarto = {
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
- <span class="menu-text">District Focus</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="토글 섹션">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-controls="quarto-sidebar-section-6" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-6-label">District Focus</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-6" aria-labelledby="quarto-sidebar-section-6-label" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./house/ny17.html" class="sidebar-item-text sidebar-link">
@@ -424,13 +401,10 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false">
- <span class="menu-text">주지사·주의회</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="토글 섹션">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-controls="quarto-sidebar-section-7" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-7-label">주지사·주의회</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-7" aria-labelledby="quarto-sidebar-section-7-label" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./governors.html" class="sidebar-item-text sidebar-link">
@@ -439,13 +413,10 @@ window.Quarto = {
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false">
- <span class="menu-text">State Focus (경합 12주)</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="토글 섹션">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-controls="quarto-sidebar-section-8" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-8-label">State Focus (경합 12주)</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-8" aria-labelledby="quarto-sidebar-section-8-label" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./governors/az.html" class="sidebar-item-text sidebar-link">
@@ -530,13 +501,10 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false">
- <span class="menu-text">Korea Watch</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="토글 섹션">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-controls="quarto-sidebar-section-9" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-9-label">Korea Watch</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-9" aria-labelledby="quarto-sidebar-section-9-label" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./korea-watch.html" class="sidebar-item-text sidebar-link">
@@ -559,13 +527,10 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false">
- <span class="menu-text">데이터·방법론 (부록)</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="토글 섹션">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" aria-controls="quarto-sidebar-section-10" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-10-label">데이터·방법론 (부록)</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-10" aria-labelledby="quarto-sidebar-section-10-label" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./trackers.html" class="sidebar-item-text sidebar-link">
@@ -588,13 +553,10 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false">
- <span class="menu-text">주간 브리핑</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="토글 섹션">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" aria-controls="quarto-sidebar-section-11" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-11-label">주간 브리핑</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-11" aria-labelledby="quarto-sidebar-section-11-label" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./archive.html" class="sidebar-item-text sidebar-link">
@@ -609,7 +571,7 @@ window.Quarto = {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
     <h2 id="toc-title">목차</h2>
    
   <ul>
@@ -623,9 +585,9 @@ window.Quarto = {
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content" tabindex="-1">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">시작</a></li><li class="breadcrumb-item"><a href="./index.html">홈 — 컨트롤 패널</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="사이트 이동 경로"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">시작</a></li><li class="breadcrumb-item"><a href="./index.html">홈 — 컨트롤 패널</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">미국 중간선거 한국어 브리핑</h1>
 <p class="subtitle lead">2026 중간선거 — 데이터·해석·한국 함의 (전문 독자용 상황판)</p>
@@ -884,102 +846,114 @@ Solid·Likely R
 <p>주간 호는 한 호에 <strong>전국 환경 → 상원 → 하원 → Korea Watch</strong> 4개 영역을 모두 담는 통합 리포트입니다(경합주별 <strong>브리핑 카드 + 상세 프로즈</strong>의 2층 구조). 최근 6편:</p>
 <div id="listing-issues" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1792886400000" data-listing-file-modified-sort="1793582546444" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="27" data-listing-word-count-sort="5292">
+<div class="quarto-post image-right" data-index="0" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1792886400000" data-listing-file-modified-sort="1793668797345" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="27" data-listing-word-count-sort="5292">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./issues/2026-10-19.html" class="no-external">31주차 · 10/19~10/25</a>
+<a href="./issues/2026-10-19.html" class="no-external-icon">31주차 · 10/19~10/25</a>
 </h3>
-<div class="delink listing-description"><a href="./issues/2026-10-19.html" class="no-external">
+<div class="listing-description">
+<a href="./issues/2026-10-19.html" class="no-external-icon">
 <p>CPI 쇼크가 여론에 들어온 주였다. 트럼프 순지지는 −22.3에서 −24.3으로 내려 사상 최저를 경신했고, 제너릭 밸럿은 D+9.2로 사이클 최고를 찍은 뒤 D+9.1을 지켰다. 하원은 사바토 28건·IE 22건·Cook 19건이 같은 주에 민주 쪽으로 움직여 세 기관 모두 등급만으로 민주 과반이 됐다. 상원은 법무부가 알래스카 인증을 미리 막아 달라는 소송을 냈고, 메인은 Fox 조사 49–49로 동률이 됐다. 이 사이트 피드로는 상원 감시주의 Cook·사바토 이동이 0건이라 등급가중 순 기대의석은 +3.5석 그대로이고, 예측시장 상원 다수 계약도 62¢ 그대로다.</p>
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./issues/2026-10-19.html" class="no-external">
+<a href="./issues/2026-10-19.html" class="no-external-icon">
 <div class="listing-date">
 2026.10.25
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1792281600000" data-listing-file-modified-sort="1793582546443" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="31" data-listing-word-count-sort="6050">
+<div class="quarto-post image-right" data-index="1" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1792281600000" data-listing-file-modified-sort="1793668797344" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="31" data-listing-word-count-sort="6050">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./issues/2026-10-12.html" class="no-external">30주차 · 10/12~10/18</a>
+<a href="./issues/2026-10-12.html" class="no-external-icon">30주차 · 10/12~10/18</a>
 </h3>
-<div class="delink listing-description"><a href="./issues/2026-10-12.html" class="no-external">
+<div class="listing-description">
+<a href="./issues/2026-10-12.html" class="no-external-icon">
 <p>선거 전 마지막 물가 지표인 9월 CPI가 휘발유 주도로 3.7%까지 재가속했고, 다음날 PPI가 겹치면서 10/28 FOMC 인상 확률이 22%에서 45%로 뛰었다. 그런데 제너릭 밸럿 D+8~9 고원은 CPI 쇼크 주간에도 흔들리지 않았다. 등급 쪽에서는 이 사이트의 Cook 피드가 10/6 이동 3건을 따라왔고, 사바토가 NH·KS·NE 3건을 더 민주 쪽으로 옮겼다 — 등급가중 순 기대의석은 +2.9에서 +3.5로, 필요치 +4에 가장 가까워졌다. 3분기 FEC는 핵심 6개 주에서 민주 후보 3~6배 모금을 실측했고, 예측시장 상원 다수 계약은 61¢에서 62¢로 돌아섰다. 남은 역류는 메인의 접전화와 텍사스의 격차 축소다.</p>
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./issues/2026-10-12.html" class="no-external">
+<a href="./issues/2026-10-12.html" class="no-external-icon">
 <div class="listing-date">
 2026.10.18
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1791676800000" data-listing-file-modified-sort="1793582546443" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="27" data-listing-word-count-sort="5351">
+<div class="quarto-post image-right" data-index="2" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1791676800000" data-listing-file-modified-sort="1793668797344" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="27" data-listing-word-count-sort="5351">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./issues/2026-10-05.html" class="no-external">29주차 · 10/05~10/11</a>
+<a href="./issues/2026-10-05.html" class="no-external-icon">29주차 · 10/05~10/11</a>
 </h3>
-<div class="delink listing-description"><a href="./issues/2026-10-05.html" class="no-external">
+<div class="listing-description">
+<a href="./issues/2026-10-05.html" class="no-external-icon">
 <p>고용 쇼크 이후 실사된 조사들이 제너릭 밸럿 D+8~9 고원을 되돌리지 않고 추인했고, 미시간대 소비자심리 46.3이 그 악화가 유권자 체감에 닿았음을 보여줬다. 등급기관은 그 환경을 따라잡았다 — 상원 4곳, 하원 18곳이 한 주에 모두 민주 쪽으로 옮겨졌다. 그런데 예측시장 상원 다수 계약은 63¢에서 61¢로 내렸다. 이번 주는 등급과 시장이 반대로 움직인 주다.</p>
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./issues/2026-10-05.html" class="no-external">
+<a href="./issues/2026-10-05.html" class="no-external-icon">
 <div class="listing-date">
 2026.10.11
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1791072000000" data-listing-file-modified-sort="1793582546443" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="28" data-listing-word-count-sort="5482">
+<div class="quarto-post image-right" data-index="3" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1791072000000" data-listing-file-modified-sort="1793668797344" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="28" data-listing-word-count-sort="5482">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./issues/2026-09-28.html" class="no-external">28주차 · 09/28~10/04</a>
+<a href="./issues/2026-09-28.html" class="no-external-icon">28주차 · 09/28~10/04</a>
 </h3>
-<div class="delink listing-description"><a href="./issues/2026-09-28.html" class="no-external">
+<div class="listing-description">
+<a href="./issues/2026-09-28.html" class="no-external-icon">
 <p>선거 전 마지막 고용보고서가 +2.9만 명으로 나오면서 ’고용은 견조하다’는 여당의 마지막 방어선이 빠졌다. 트럼프 순지지는 −22.7로 사상 최저를 다시 썼고, 제너릭 밸럿은 D+8~9 고원을 4주째 지켰다. 상원에서는 메인의 판별 조사가 50–50 동률로 나왔고, Fox가 미시간·텍사스·아이오와에서 같은 주에 민주 우위를 실측했으며, 노스캐롤라이나에서는 공화 외곽자금이 10월 지출을 0으로 줄였다. 역류는 알래스카 하나였다 — 그리고 그 알래스카에 한국의 LNG 투자 발표가 얹혔다.</p>
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./issues/2026-09-28.html" class="no-external">
+<a href="./issues/2026-09-28.html" class="no-external-icon">
 <div class="listing-date">
 2026.10.04
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1790467200000" data-listing-file-modified-sort="1793582546443" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="32" data-listing-word-count-sort="6215">
+<div class="quarto-post image-right" data-index="4" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1790467200000" data-listing-file-modified-sort="1793668797344" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="32" data-listing-word-count-sort="6215">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./issues/2026-09-21.html" class="no-external">27주차 · 09/21~09/27</a>
+<a href="./issues/2026-09-21.html" class="no-external-icon">27주차 · 09/21~09/27</a>
 </h3>
-<div class="delink listing-description"><a href="./issues/2026-09-21.html" class="no-external">
+<div class="listing-description">
+<a href="./issues/2026-09-21.html" class="no-external-icon">
 <p>이번 주에는 예측·등급·자금 세 층이 처음으로 같은 방향을 가리켰다. 상원 등급은 세 칸 움직였고 전부 민주 쪽이었다 — Cook이 조지아를 Likely D로, 사바토가 미시간을 Leans D로, 아이오와를 Toss-up으로 옮겨 이 사이트의 등급가중 산수가 +2.125석에서 +2.5석이 됐다. 트럼프 순지지는 사상 최저(−22.4)로 내려갔고 제너릭 밸럿은 같은 날 사이클 최고(D+8.1, LV D+8.8)를 찍었다. 공화당 상원위원회는 조지아·노스캐롤라이나를 방어 명단에서 뺐다는 보도가 나왔다. 그런데 반대 방향의 실측도 정확히 급소에서 나왔다 — 메인에서 후보 확정 후 첫 콜린스 우위 고품질 조사가 나왔고, Kalshi 메인 가격은 한 주에 7센트 내렸다.</p>
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./issues/2026-09-21.html" class="no-external">
+<a href="./issues/2026-09-21.html" class="no-external-icon">
 <div class="listing-date">
 2026.09.27
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1789862400000" data-listing-file-modified-sort="1793582546442" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="37" data-listing-word-count-sort="7235">
+<div class="quarto-post image-right" data-index="5" data-categories="JUVDJUEzJUJDJUVBJUIwJTg0JUVCJUI4JThDJUVCJUE2JUFDJUVEJTk1JTkx" data-listing-date-sort="1789862400000" data-listing-file-modified-sort="1793668797343" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="37" data-listing-word-count-sort="7235">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./issues/2026-09-14.html" class="no-external">26주차 · 09/14~09/20</a>
+<a href="./issues/2026-09-14.html" class="no-external-icon">26주차 · 09/14~09/20</a>
 </h3>
-<div class="delink listing-description"><a href="./issues/2026-09-14.html" class="no-external">
+<div class="listing-description">
+<a href="./issues/2026-09-14.html" class="no-external-icon">
 <p>이번 주에 상원 등급은 딱 한 칸 움직였고, 방향이 민주당 반대쪽이었다. Cook이 뉴햄프셔를 Lean D에서 Toss-up으로 내렸고, 그래서 이 사이트의 등급가중 산수는 3주 만에 처음으로 —그것도 아래로— 움직여 +2.25석에서 +2.125석이 됐다. 그런데 같은 주에 나머지 모든 지표가 반대 방향으로 갔다. 7주간 D+6.0~6.6에 갇혀 있던 제너릭 밸럿이 위로 뚫려 네 집계가 D+7.2~8.6에 안착했고, 알래스카에서 사이클 처음으로 순위선택투표 라운드를 실제로 돌린 초당적 조사가 나왔으며, 예측시장은 한 주에 10센트 올랐다. 그리고 이번 주 데이터에는 아무도 크게 다루지 않은 반대 방향의 실측이 하나 더 있다 — 세 개 주에서 고령층이 공화당 쪽으로 돌아섰다.</p>
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="./issues/2026-09-14.html" class="no-external">
+<a href="./issues/2026-09-14.html" class="no-external-icon">
 <div class="listing-date">
 2026.09.20
 </div>
@@ -1074,7 +1048,8 @@ Solid·Likely R
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
       // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
       for (var i=0; i<links.length; i++) {
         const link = links[i];
         if (!isInternal(link.href)) {
@@ -1083,8 +1058,69 @@ Solid·Likely R
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+          if (!link.classList.contains('no-external-icon')) {
+          }
         }
       }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
       const config = {
         allowHTML: true,
@@ -1098,6 +1134,7 @@ Solid·Likely R
         interactiveBorder: 10,
         theme: 'quarto',
         placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
       };
       if (contentFn) {
         config.content = contentFn;
@@ -1260,44 +1297,54 @@ Solid·Likely R
           const lineIds = lines.map((line) => {
             return targetCell + "-" + line;
           })
-          let top = null;
-          let height = null;
-          let parent = null;
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
           if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
             }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
             }
+            placeBand(gutterDiv, el, lastEl);
             selectedAnnoteEl = annoteEl;
           }
         };
@@ -1395,6 +1442,9 @@ Solid·Likely R
       }
     }
   });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"스크롤 가능한 코드","output":"스크롤 가능한 출력"};
   </script>
 </div> <!-- /content -->
 <footer class="footer">
