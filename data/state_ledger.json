@@ -1,10 +1,16 @@
 {
- "as_of": "2026-11-03",
+ "as_of": "2026-11-04",
  "source_label": "상원 일일 정리본(senate_daily/site)의 주별 태그 줄 — scripts/ingest_senate_daily.py build_ledger()",
  "provenance_note": "여론조사·자금·로컬·주 함의 네 항목. 같은 문장은 처음 본 날짜로 한 번만 싣고 last 에 마지막 언급일. 원문 전재(정리본 이전) 날짜는 제외. states.US.money 는 정리본 v1.2의 「전국 자금」 절, states.US.legal 은 v1.3의 「법·제도」 절.",
  "states": {
   "GA": {
    "polls": [
+    {
+     "date": "2026-11-04",
+     "text": "InsiderAdvantage 오소프 53–46, Research Co. 55–45다. 두 조사 모두 11/2에 공개됐고 270toWin 경유로 미검증이다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
     {
      "date": "2026-10-25",
      "text": "이월: UGA SPIA/AJC(10/7–15; LV 1,000명; ±3.1) 오소프 48, 콜린스 40. AJC의 10/22 정정 내용을 읽지 못해 잠정치다 · Decision Desk HQ(이달 발표) 오소프 52–43([Action Network 10/16](https://www.actionnetwork.com/politics/trumps-georgia-rally-puts-the-ossoff-collins-senate-race-back-in-focus)). 조사 기간·표본 미확인으로 집계에서 뺐다.",
@@ -168,6 +174,14 @@
     }
    ],
    "money": [
+    {
+     "date": "2026-11-04",
+     "text": "AP에 따르면 오소프는 1억 900만 달러 이상을 모금해 콜린스의 10배가 넘고, 공화당은 조지아에서 자금을 철수했다([WRDW/AP](https://www.wrdw.com/2026/11/03/sen-jon-ossoff-tries-hold-key-georgia-seat-democrats-against-republican-rep-mike-collins/)). FOX 5의 자금 수치는 기사 품질 문제로 신중히 다룬다.",
+     "urls": [
+      "https://www.wrdw.com/2026/11/03/sen-jon-ossoff-tries-hold-key-georgia-seat-democrats-against-republican-rep-mike-collins/"
+     ],
+     "last": "2026-11-04"
+    },
     {
      "date": "2026-11-02",
      "text": "Ossoff는 3분기 3,300만 달러를 모금해 2,600만 달러가 남았고, Collins는 270만 달러 모금에 현금 약 100만 달러다([AJC, 10/15](https://www.ajc.com/politics/2026/10/jon-ossoff-hauls-in-33m-as-georgia-senate-race-enters-final-weeks/)).",
@@ -403,6 +417,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-11-04",
+     "text": "사전투표는 280만 명 이상으로 사상 최대다(FOX 5) · 콜린스의 전직 보좌진과 사위가 백인우월주의자와 연관됐다는 논란이 있다 · 풀턴 카운티 선관위가 이의 제기된 유권자 7,000명을 승인했다는 보도는 미검증이다 · 로컬 보도가 빈약하고 반대 성향 매체는 확인하지 못했다. AJC(중도좌), Georgia Star News(우 ⚠)는 미확인이다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
     {
      "date": "2026-11-03",
      "text": "로컬 매체는 WSB-TV(중립)만 확인했다. AJC(중도좌)는 제목만 봤고 Georgia Recorder(좌)·Georgia Star News(우 ⚠)는 확인하지 못했다. 유세: 2026-11-01 · 더글러스빌 · 라파엘 워녹(민주) → 존 오소프 · 일요일 GOTV 일정 동행(Fox 5 Atlanta) · 이월: 카멀라 해리스(민주) → 오소프, 애틀랜타 청년층 행사(날짜 미기재, Rough Draft Atlanta)",
@@ -781,6 +801,12 @@
    ],
    "insight": [
     {
+     "date": "2026-11-04",
+     "text": "원문은 조지아에 별도 판단을 내리지 않는다. 최종 공개 조사 두 건과 자금 격차는 모두 오소프 쪽을 가리키지만, 조사는 미검증이다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
+    {
      "date": "2026-11-03",
      "text": "오늘은 판단을 바꿀 신규 조사·자금 사실이 없다. 원문이 인용한 기사는 최근 조사에서 오소프가 앞선다고 쓴다.",
      "urls": [],
@@ -1140,6 +1166,12 @@
   "MI": {
    "polls": [
     {
+     "date": "2026-11-04",
+     "text": "NYT/Siena 엘사예드 53–42, Emerson/Poll Vault 51–45, AtlasIntel 54–46으로 모두 조사 종료가 11/1이다. 평가는 Cook Lean D, Sabato Leans D, Inside Elections Tilt D다. Polymarket·Kalshi는 엘사예드를 약 81%로 본다(Newsweek, 11/3).",
+     "urls": [],
+     "last": "2026-11-04"
+    },
+    {
      "date": "2026-11-02",
      "text": "신규 Mitchell Research, 10/26–27, LV 636명, ±3.9, 의뢰 CBS Detroit/미시간 TV 방송사: El-Sayed 51, Rogers 44(D+7)([CBS Detroit, 10/28](https://www.cbsnews.com/detroit/news/el-sayed-widens-lead-rogers-michigan-senate-poll/)).",
      "urls": [
@@ -1387,6 +1419,14 @@
    ],
    "money": [
     {
+     "date": "2026-11-04",
+     "text": "엘사예드는 일요일 하루 240만 달러로 최고 모금 기록을 세웠다([Bridge Michigan/AP](https://bridgemi.com/michigan-politics/abdul-el-sayed-mike-rogers-make-final-pitches-in-michigan-us-senate-race/)).",
+     "urls": [
+      "https://bridgemi.com/michigan-politics/abdul-el-sayed-mike-rogers-make-final-pitches-in-michigan-us-senate-race/"
+     ],
+     "last": "2026-11-04"
+    },
+    {
      "date": "2026-10-24",
      "text": "뉴스위크(10/16): 7월 중순~9/30 모금은 엘사이드가 많으나 보유 현금은 로저스가 더 많다 · 금액과 선거 직전 보고는 찾지 못했다.",
      "urls": [],
@@ -1517,6 +1557,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-11-04",
+     "text": "스티븐스 제명 · 사전투표 230만 표 이상(2022년 총 투표자 약 450만 명) · 시나고그 공격 이후 발언에 대한 엘사예드의 사과와 Hasan Piker와의 과거 동반 출연이 다시 거론됐다 · Detroit News(중도우)는 로저스를, 주 최대 일간지는 엘사예드를 지지했다(제목으로만 확인) · Bridge Michigan(MBFC 중도좌 / AllSides 중립)은 확인했다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
     {
      "date": "2026-11-03",
      "text": "스티븐스의 로저스 지지 선언과 그 여파(위 기사)가 있었다. 제목만 확인했지만 Fox News는 하원 민주당 의원들이 스티븐스의 코커스 제명을 요구한다고 보도했다. 이 건은 Bridge Michigan(MBFC 중도좌 / AllSides 중립)과 전국 매체로만 확인했고, Michigan Advance(좌)·Michigan Capitol Confidential(중도우)은 확인하지 못했다. 유세: 이월 2026-10-25 · 그랜드래피즈 · 버니 샌더스(민주) → 엘사예드 · 집회(Detroit News 제목)",
@@ -1922,6 +1968,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-04",
+     "text": "원문에 따르면 스티븐스 파문은 최종 조사에 일부만 반영됐다. 그래도 모든 조사가 엘사예드 우세여서 하방 시나리오는 약해졌다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
     {
      "date": "2026-11-03",
      "text": "스티븐스의 로저스 지지는 미시간의 실제 막판 리스크다. 그러나 확인한 미시간 조사는 그 이전이라 영향이 측정되지 않았다. 원문은 이 분열을 공화당 유지 시나리오 약화에 반대로 작용하는 주된 요소로 본다.",
@@ -2681,6 +2733,12 @@
    ],
    "local": [
     {
+     "date": "2026-11-04",
+     "text": "이월: 익명 우편물 중단 명령 · NHPR(중도좌)만 확인했고 Union Leader(중도우)는 미확인이어서 우측 로컬 시각이 없다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
+    {
      "date": "2026-11-03",
      "text": "[NH 법무부](https://www.nhpr.org/nh-news/2026-11-01/nh-newhampshire-candidates-elections-midterms-senate-pappas-sununu-dilorenzo-shaheen)는 서누누를 공격하거나 헌법당 후보 에드먼드 라플랜트를 홍보하는 익명 우편물의 발송 업체에 중단을 명령했다. 비용을 댄 주체는 공개되지 않았다. 로컬 매체 중 NHPR(중도좌, 공영)은 확인했고, Union Leader(중도우)·WMUR·NH Bulletin(좌)은 재확인하지 못했으며 NH Journal(중도우)은 확인하지 못했다. 유세: 2026-11-01(또는 10/31) · 데리 · 존 린치(민주 전 주지사) → 파파스 · 식당 방문(NHPR)",
      "urls": [
@@ -3011,6 +3069,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-04",
+     "text": "원문은 NH에서 새로 불리한 증거가 없다고 보고, 이를 하방 시나리오가 약해진 근거로 든다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
     {
      "date": "2026-11-03",
      "text": "원문은 뉴햄프셔에 대한 새 근거가 없다고 적는다. 오늘 정보로 판단이 바뀌지 않는다.",
@@ -3371,6 +3435,12 @@
   "ME": {
    "polls": [
     {
+     "date": "2026-11-04",
+     "text": "NYT/Siena 잭슨 51–45다. RealClearPolling 목록의 Emerson/Poll Vault(콜린스 +2)와 Rasmussen(잭슨 +3)은 세부가 미검증이다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
+    {
      "date": "2026-11-03",
      "text": "NYT/Siena 10/27–11/1, 응답자 700명 이상, 잭슨 51–45(이전 NYT/Siena 메인 조사 비교치는 페이지에 없음) · Survey 160 유력 유권자 ±4.1, 잭슨 49–47(기간 미기재)",
      "urls": [],
@@ -3590,6 +3660,14 @@
    ],
    "money": [
     {
+     "date": "2026-11-04",
+     "text": "OpenSecrets 기준 외부 단체 지출은 1억 3,700만 달러 이상이고, 절반 이상이 잭슨 공격용이다. 일론 머스크의 지출이 반복적인 쟁점이다([Boston Globe](https://www.bostonglobe.com/2026/11/02/nation/maine-senate-race-troy-jackson-susan-collins/)).",
+     "urls": [
+      "https://www.bostonglobe.com/2026/11/02/nation/maine-senate-race-troy-jackson-susan-collins/"
+     ],
+     "last": "2026-11-04"
+    },
+    {
      "date": "2026-11-03",
      "text": "Maine Public(6/15)이 광고비 약 5억 달러를 전망했다. 제목만 확인했고 본문은 보지 못했다.",
      "urls": [],
@@ -3739,6 +3817,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-11-04",
+     "text": "사전투표 25만 명 이상 · 투표용지에는 두 후보만 있지만 등록 기명후보 6명 때문에 RCV가 적용되고, 결선 개표 시 확정이 ~11/13로 늦어질 수 있다 · 로컬 보도가 빈약하다. Portland Press Herald(중도좌), The Maine Wire(우 ⚠)는 미확인이다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
     {
      "date": "2026-11-03",
      "text": "투표용지에 기명(write-in) 후보 6명이 있어, 메인 상원 선거가 RCV로 결정되는 첫 사례가 될 수 있다. 기사는 잭슨이 그레이엄 플래트너를 대체했다고 썼고, 플래트너는 본인이 부인하는 의혹으로 물러났다. 로컬 매체 중 Maine Public(중도좌, 공영)은 제목만 봤고, Portland Press Herald(중도좌)·Maine Morning Star(좌)·The Maine Wire(우 ⚠)는 확인하지 못했다.",
@@ -4122,6 +4206,12 @@
    ],
    "insight": [
     {
+     "date": "2026-11-04",
+     "text": "최종 NYT/Siena에서 잭슨이 앞서 원문은 메인을 상방 시나리오의 핵심 목표로 유지한다. RCV 개표가 필요해지면 결과 확정이 늦어진다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
+    {
      "date": "2026-11-03",
      "text": "원문은 메인 NYT/Siena 잭슨 +6을 민주당 상방 시나리오를 강화하는 주된 근거로 든다. 다만 RCV 집계가 늦어질 수 있어 개표 확정 시점은 늦을 수 있다.",
      "urls": [],
@@ -4483,6 +4573,12 @@
   "NC": {
    "polls": [
     {
+     "date": "2026-11-04",
+     "text": "ECU 조사센터(10/26–29) 쿠퍼 54–45로, 직전 D+7에서 격차가 커졌다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
+    {
      "date": "2026-11-02",
      "text": "신규 YouGov LV Cooper 55–44(D+11) · Elon 대학 최종 조사(10/20)는 Cooper의 두 자릿수 우위를 보였다(수치 미확인).",
      "urls": [],
@@ -4643,6 +4739,14 @@
     }
    ],
    "money": [
+    {
+     "date": "2026-11-04",
+     "text": "9/30까지 쿠퍼는 4,720만 달러(현금 1,250만), 왓리는 1,340만(현금 91.6만)을 모금했다. SLF는 7,000만 달러 이상을 약속했지만 NC에는 절반 미만만 집행했다([WRAL](https://www.wral.com/news/nccapitol/roy-cooper-michael-whatley-us-senate-house-congress-fundraising-democrat-republican-october-2026/)) · AP는 공화당이 10월에 NC에서 자금을 뺀 것을 비관적 신호로 해석했다.",
+     "urls": [
+      "https://www.wral.com/news/nccapitol/roy-cooper-michael-whatley-us-senate-house-congress-fundraising-democrat-republican-october-2026/"
+     ],
+     "last": "2026-11-04"
+    },
     {
      "date": "2026-11-03",
      "text": "[WUNC](https://www.wunc.org/2026-10-28/whatley-stops-in-guilford-rockingham-counties-in-final-campaign-push)에 따르면 주요 공화당 슈퍼팩이 몇 주 전 지출을 줄였다. 슈퍼팩 이름은 기사에 없다.",
@@ -4919,6 +5023,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-11-04",
+     "text": "투표소 연장 · 사전투표 280만 표 이상(등록 유권자의 약 36%)이고 민주당 등록자가 우위다(ABC11) · WRAL(중도좌)만 확인했고 Carolina Journal(중도우)은 미확인이어서 우측 로컬 시각이 없다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
     {
      "date": "2026-11-03",
      "text": "로컬 매체는 WUNC만 확인했다. News & Observer·WRAL은 접속에 실패했고, NC Newsline(중도좌~좌)은 과거 제목만 봤으며, Carolina Journal(중도우)은 확인하지 못했다. 유세: 2026-10-28 · 키스턴 · JD 밴스(공화) → 마이클 와틀리 · WUNC가 \"예정\"으로 표기, 실제 개최 미확인",
@@ -5268,6 +5378,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-04",
+     "text": "조사와 자금 흐름 모두 쿠퍼 쪽이다. 주 전체 결과 공표는 투표소 연장으로 늦어진다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
     {
      "date": "2026-11-03",
      "text": "원문은 노스캐롤라이나에 대해 따로 판단을 내리지 않는다. 인용된 WUNC 기사는 여론조사가 쿠퍼의 상당한 우위를 시사한다고 썼다.",
@@ -5628,6 +5744,12 @@
   "TX": {
    "polls": [
     {
+     "date": "2026-11-04",
+     "text": "NYT/Siena 탈라리코 50–43(Fox 7 Austin 경유, 직전 6/19–27 47–47) · Quantus(10/26–28) 팩스턴 48.7–47.6 · RCP 목록 조사는 미검증이다. Kalshi 탈라리코 약 66%(10/21, 오래됨)다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
+    {
      "date": "2026-11-03",
      "text": "NYT/Siena 유력 유권자 ±3.4, 11/1까지, 탈라리코 50–43(종합기사 인용·NYT 원문 미확인, 이전 NYT/Siena 텍사스 조사 확인 못함) · YouGov/Texas Politics Project 10/26–29 탈라리코 51–47 · CNN/SSRS 탈라리코 49–43(기간 미기재)",
      "urls": [],
@@ -5892,6 +6014,14 @@
    ],
    "money": [
     {
+     "date": "2026-11-04",
+     "text": "머스크 자금이 들어간 공화당 단체의 지출은 2억 7,200만 달러 이상이다. 예비선거 이후 광고비는 4억 800만 달러로 역대 가장 비싼 상원 선거다([Texas Tribune](https://www.texastribune.org/2026/10/31/texas-us-senate-election-paxton-talarico-final-push-election-day/)).",
+     "urls": [
+      "https://www.texastribune.org/2026/10/31/texas-us-senate-election-paxton-talarico-final-push-election-day/"
+     ],
+     "last": "2026-11-04"
+    },
+    {
      "date": "2026-11-03",
      "text": "탈라리코는 상대 진영이 자신에게 2억 달러를 쓰고 있다고 주장했으나, 기사에서 검증되지는 않았다. 이월: Texas Tribune(10/31)은 사실상 머스크 자금으로 구성된 공화당 측 단체들이 2.72억 달러 이상을 투입했다고 보도했다.",
      "urls": [],
@@ -6135,6 +6265,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-11-04",
+     "text": "휴스턴 크로니클·댈러스 모닝 뉴스가 탈라리코를 지지했다 · 선거일에 확인된 문제는 없다 · 정정: 10/29 웨더퍼드 밴스 집회는 팩스턴이 아니라 Don Huffines를 위한 것이었다. 알라모 마무리 행사는 취소된 것으로 보도됐다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
     {
      "date": "2026-11-03",
      "text": "알라모 웹사이트는 정치 활동을 금지한다. 알라모 일정 취소가 공식 발표인지 추정인지는 매체마다 다르게 전했다(TPR·KVUE·WaPo 제목). Texas Observer(좌)·Texas Scorecard(우)는 확인하지 못했다. 유세: 이월 2026-10-29 · 웨더퍼드 · JD 밴스(공화) → 켄 팩스턴 · 집회(Texas Tribune; 날짜 추정)",
@@ -6516,6 +6652,12 @@
    ],
    "insight": [
     {
+     "date": "2026-11-04",
+     "text": "원문은 텍사스를 도전 목표로 보며, 최종 NYT/Siena에서 탈라리코가 앞선다. 그러나 NYT 원문은 확인하지 못했다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
+    {
      "date": "2026-11-03",
      "text": "원문은 텍사스(reach)를 메인과 함께 민주당 상방 시나리오를 강화하는 주로 본다. 다만 NYT/Siena 수치는 NYT 원문이 아닌 종합기사에서 인용한 것이다.",
      "urls": [],
@@ -6875,6 +7017,12 @@
   "OH": {
    "polls": [
     {
+     "date": "2026-11-04",
+     "text": "NYT/Siena 브라운 49–44, AtlasIntel 51–44, Suffolk 47–44, Fox News 52–47(10/15–19), Marist 48–44(10/15–18)다. Kalshi(10/27)는 브라운 약 68%로 본다. 평가는 Cook Toss-up이다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
+    {
      "date": "2026-11-03",
      "text": "[ActiVote 10/18–31, 유력 유권자 400명, ±4.9, 브라운 50.2–49.8](https://www.activote.net/polls/2026/oh-u-s-senate/2026-10-31/)(모델/온라인 방식, 의뢰처 미기재·10/18 조사는 허스테드 +0.4). 제목만 확인했지만 Kalshi News는 \"브라운 68% 유지\"라고 보도했다.",
      "urls": [
@@ -7062,6 +7210,12 @@
     }
    ],
    "money": [
+    {
+     "date": "2026-11-04",
+     "text": "외부 지출은 허스테드 1억 9,850만 달러 대 9,470만 달러로 허스테드 우위다. AdImpact 기준 총 광고비는 4억 3,170만 달러다(Kalshi News).",
+     "urls": [],
+     "last": "2026-11-04"
+    },
     {
      "date": "2026-11-03",
      "text": "AdImpact 집계로 광고 집행·예약이 5억 달러를 넘었고, 10/27~선거일에 4천만 달러 이상이 추가됐다(공화 약 2,130만, 민주 약 1,910만). FEC 10/14 기준 모금/현금은 브라운 6,840만/445만, 허스테드 1,990만/424만이다. 외곽 지출은 브라운 반대에 SLF 6,410만·American Crossroads 3,110만, 브라운 지지에 WinSenate 710만이다([WCMH via Yahoo](https://yahoo.com/news/politics/articles/ohio-u-senate-race-tops-103000862.html)).",
@@ -7287,6 +7441,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-11-04",
+     "text": "투표 시간은 오전 6:30~오후 7:30 · 로컬 매체는 확인하지 못했다(Ohio Capital Journal 접근 차단). 우측 로컬 보도도 빈약하다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
     {
      "date": "2026-11-03",
      "text": "로컬 매체는 Hometown Stations/WLIO만 확인했다. Dispatch·Plain Dealer·Statehouse News Bureau·Ohio Capital Journal(좌)은 확인하지 못했고, 우측 로컬 매체도 부족하다. 유세: 이월 2026-10-28 · 칠리코시 · 도널드 트럼프(공화) → 존 허스테드 · 집회(CBS 라이브 블로그; AP via WPXI), 7일 범위 밖",
@@ -7628,6 +7788,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-04",
+     "text": "원문은 오하이오를 상방 시나리오의 핵심 목표로 보며, 최종 조사에서 브라운이 앞선다. 격차가 작아 여론조사 오차라는 꼬리 위험이 남는다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
     {
      "date": "2026-11-03",
      "text": "원문은 오하이오에 대해 따로 판단을 내리지 않는다. 오늘 정보는 ActiVote 박빙 조사와 광고비 5억 달러 초과다.",
@@ -7988,6 +8154,12 @@
   "AK": {
    "polls": [
     {
+     "date": "2026-11-04",
+     "text": "NYT/Siena(10/23–10/30, LV 610) 펠톨라 48–46으로, 직전 9/24–10/1의 50–43 대비 −5%p다. Kalshi는 펠톨라 약 72%(11/1)다. 평가는 Cook Toss-up이고, Sabato는 Leans D로 보도됐다(단일 출처).",
+     "urls": [],
+     "last": "2026-11-04"
+    },
+    {
      "date": "2026-11-03",
      "text": "Alaska Public Media(11/1)는 10/30 발표 조사를 펠톨라 +2, 설리번 Jr. 4% 이상으로 인용했다(조사기관 미기재·확인 불가). 직전 조사는 InsiderAdvantage 10/9–10 유력 유권자 1,200명 4자 펠톨라 48–43, Rasmussen 10/12–15 775명 44–42, PPP 10/14–15 등록유권자 578명 48–47이다. 미확인이던 \"10/30 ASR 51–49\" 행은 삭제됐다.",
      "urls": [],
@@ -8261,6 +8433,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-11-04",
+     "text": "이월: 법무부 소송 기각과 항소 · 10/29 연방 대배심 소환장이 발부됐고, 주지사가 펠톨라 승리 시 인증하지 않을 수 있다고 시사했다(불확실) · Alaska Watchman(우)만 확인해 편향된 단일 시각이다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
     {
      "date": "2026-11-03",
      "text": "이월: 헤이먼 연방검사장은 10/30 형사 조사가 진행 중이라고 말했다. Newsweek는 DOJ 대배심 소환장과, 펠톨라 측 인사들이 후보 영입을 시도했다는 NYT 보도를 전했다. 펠톨라는 이 보도를 부인했다. 던리비는 \"워싱턴에 사기를 보내지 않을 것\"이라고 말했다. 로컬 매체 중 Alaska Public Media(중도좌, 공영)는 확인했고, Alaska Beacon(좌)은 제목만 봤으며, Must Read Alaska(우)는 확인하지 못했다.",
@@ -8683,6 +8861,12 @@
    ],
    "insight": [
     {
+     "date": "2026-11-04",
+     "text": "원문은 NYT/Siena 하락을 공화당 유지 시나리오의 상쇄 요인으로 꼽는다. 늦은 개표와 법적 경로도 남아 있다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
+    {
      "date": "2026-11-03",
      "text": "소송 기각 뒤 DOJ가 곧바로 항소해, 원문은 늦은 개표와 법적 경로가 아직 남아 있다고 본다. 원문은 이 점을 공화당 유지 시나리오가 소폭 약화된 가운데서도 유지되는 변수로 둔다.",
      "urls": [],
@@ -9042,6 +9226,12 @@
   "IA": {
    "polls": [
     {
+     "date": "2026-11-04",
+     "text": "NYT/Siena(10/26–11/1) 투렉 48–47로, 직전 9/22–10/1 힌슨 48–47 대비 민주당이 +2%p 움직였다. YouGov 투렉 50–49 · Kalshi 50대50 · Cook Toss-up이다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
+    {
      "date": "2026-10-30",
      "text": "co/efficient 48–46(+2) · 기타 조사는 InsiderAdvantage 10/23 힌슨 47–45, Cook 게재 10/21 투렉 46–44, Marist [P](9/17–20, 등록유권자 1,050명, Fox Local 인용) 투렉 50–42, Trafalgar 9/16–18 힌슨 44–42.",
      "urls": [],
@@ -9255,6 +9445,14 @@
    ],
    "money": [
     {
+     "date": "2026-11-04",
+     "text": "RNC와 힌슨 캠프가 500만 달러 공동 광고를 집행했다([Kalshi News](https://news.kalshi.com/p/iowa-senate-odds-dead-even-turek-hinson-election-day)).",
+     "urls": [
+      "https://news.kalshi.com/p/iowa-senate-odds-dead-even-turek-hinson-election-day"
+     ],
+     "last": "2026-11-04"
+    },
+    {
      "date": "2026-10-28",
      "text": "3분기 모금액은 투렉 약 1,390만 달러, 힌슨 약 330만 달러(이월, KWQC 10/25).",
      "urls": [],
@@ -9396,6 +9594,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-11-04",
+     "text": "투표 시간은 오전 7시~오후 8시(CT) · 로컬 매체는 검색 제목으로만 확인해 보도가 빈약하다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
     {
      "date": "2026-11-03",
      "text": "Iowa Farmers Union은 11/1 기자회견에서 투렉을 지지하며 힌슨의 이란 전쟁 관련 표결을 비판했다. Latin Times(11/2)는 트럼프가 11/1 수시티에서 집회했다고 썼으나, IPR(더뷰크) 보도와 어긋나 원문은 이를 신뢰하지 않는다. Iowa Capital Dispatch(좌)·The Gazette(중도우)는 제목만 봤고 Iowa Standard(우)는 확인하지 못했다. 유세: 2026-11-01 · 더뷰크 · 도널드 트럼프(공화) → 애슐리 힌슨(및 아이오와 공화당 후보진) · 그래슬리 상원의원·존슨 하원의장 등 동참, 약 2시간, 관중 규모 미기재(Iowa Public Radio, 중도좌)",
@@ -9751,6 +9955,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-04",
+     "text": "최종 NYT/Siena에서 투렉이 앞섰지만 시장가는 50대50이다. 원문은 이를 상쇄 요인으로 함께 적는다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
     {
      "date": "2026-11-03",
      "text": "원문은 트럼프의 아이오와·캔자스 막판 집회를 민주당 reach 지도에 더해지는 요소로 적는다. 11/1–2에 나온 신규 아이오와 조사는 없다.",
@@ -10198,6 +10408,22 @@
    "insight": [],
    "legal": [
     {
+     "date": "2026-11-04",
+     "text": "알래스카: 샤론 글리슨 판사가 투표 비밀을 지키면서 표를 분리할 실행 가능한 방법이 없다며 법무부 소송을 기각했다. 법무부는 제9순회항소법원에 항소할 예정이다. ([AP via Yahoo](https://www.yahoo.com/news/politics/articles/alaskans-preparing-high-stakes-election-045900623.html))",
+     "urls": [
+      "https://www.yahoo.com/news/politics/articles/alaskans-preparing-high-stakes-election-045900623.html"
+     ],
+     "last": "2026-11-04"
+    },
+    {
+     "date": "2026-11-04",
+     "text": "노스캐롤라이나: 기술 문제로 5개 투표소의 투표 시간을 최대 45분 연장했다. ([WFAE](https://www.wfae.org/politics/2026-11-03/nc-extends-voting-hours-at-five-polling-places-after-technical-issues-results-will-be-delayed))",
+     "urls": [
+      "https://www.wfae.org/politics/2026-11-03/nc-extends-voting-hours-at-five-polling-places-after-technical-issues-results-will-be-delayed"
+     ],
+     "last": "2026-11-04"
+    },
+    {
      "date": "2026-11-03",
      "text": "알래스카: 샤론 글리슨 판사가 20쪽 판결로 DOJ의 10/22 소송을 기각했다. 이 소송은 설리번이 지면 선거 결과를 막으려던 것이다. 판사는 투표 비밀을 지키면서 Daniel J. Sullivan Jr.에게 간 표를 분리할 \"실행 가능한 계획\"을 DOJ가 내놓지 못했다고 판단했다. DOJ는 약 1시간 뒤 항소장을 냈다([Alaska Public Media, 11/1](https://alaskapublic.org/news/politics/elections/2026-11-01/judge-tosses-doj-lawsuit-that-sought-to-block-election-results-if-republican-sen-dan-sullivan-loses)).",
      "urls": [
@@ -10374,6 +10600,12 @@
   "NE": {
    "polls": [
     {
+     "date": "2026-11-04",
+     "text": "YouGov(11/1 공개) 리케츠 49, 오스본 49 · Echelon Insights(11/3) 리케츠 +1로, 세부는 누락됐다. 정정: 이월된 \"NYT/Siena 리케츠 49–43\"은 검증할 수 없다. Siena 발표에 네브래스카가 없었다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
+    {
      "date": "2026-11-02",
      "text": "신규 NYT/Siena [P] 10/23–29, LV 809명, Ricketts 49–43(R+6) · 확인된 첫 NYT/Siena 네브래스카 조사로 동일 기관 비교는 불가하다 · 조사기간·표본은 RCP와 신뢰도 낮은 집계 사이트에 의존한다([Siena](https://sri.siena.edu/2026/10/31/nytimes-siena-poll-of-likely-nebraska-voters/)) · Cook은 Likely R에서 Lean R로(10/30), Inside Elections는 Lean R에서 Tilt R로 조정했다(10/31).",
      "urls": [
@@ -10443,6 +10675,12 @@
     }
    ],
    "money": [
+    {
+     "date": "2026-11-04",
+     "text": "오스본은 리케츠의 광고비 6,000만 달러를 거론했다(WOWT) · 정오까지 네브래스카 시장에 약 1,120만 달러가 베팅됐다(Flatwater).",
+     "urls": [],
+     "last": "2026-11-04"
+    },
     {
      "date": "2026-11-02",
      "text": "Nebraska Examiner의 사상 최대급 지출 10/30 기사는 제목만 확인했다.",
@@ -10517,6 +10755,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-11-04",
+     "text": "투표지가 거부됐다는 거짓 문자가 돌았다(선관위는 문자를 발송하지 않음) · 오스본의 코커스 선택 보도는 없다 · Flatwater(중도좌)만 확인해 보도가 한쪽으로 치우쳤다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
     {
      "date": "2026-11-03",
      "text": "별도 WOWT 기사에 따르면 리케츠는 11/1 엘크혼 공화당 모임에서 힐저스 법무장관과 함께 연설했다. 9월 초 주 박람회 토론에서 오스본은 어느 당과도 코커스하지 않겠다고 했고, 리케츠는 이를 \"어리석음\"이라며 \"민주당 댄\"이라 불렀다([Nebraska Examiner](https://nebraskaexaminer.com/?p=43931), 과거 기사). 밴스의 네브래스카 집회는 2026-10-22 노스플랫에서 열렸으며 7일 범위 밖이다([WOWT](https://www.wowt.com/2026/10/22/watch-replay-midterm-rally-featuring-jd-vance-north-platte/)). 로컬 매체 중 Nebraska Examiner(좌)는 확인했고, Omaha World-Herald(중도우)는 제목만 봤다. 우측 성향 로컬 매체가 없어 보도는 일방적이다.",
@@ -10691,6 +10935,12 @@
    ],
    "insight": [
     {
+     "date": "2026-11-04",
+     "text": "원문은 오스본 승리를 \"I +1 (코커스 미정)\"으로 집계한다. 오스본이 코커스를 밝히기 전에는 51석 계산에 넣지 않는다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
+    {
      "date": "2026-11-03",
      "text": "원문은 리케츠가 지면 R −1, 오스본은 \"I +1 (코커스 미선언)\"으로 집계한다. 마지막으로 확인된 NYT/Siena 조사는 리케츠 +6이다.",
      "urls": [],
@@ -10863,6 +11113,12 @@
   },
   "KS": {
    "polls": [
+    {
+     "date": "2026-11-04",
+     "text": "NYT/Siena 해밀턴 49, 마셜 44, 그레이엄 4 · Atlas 해밀턴 52–45(RCP 목록)다. Kalshi 10/28은 마셜 60/해밀턴 40이다. Cook Toss-up(10/6), Sabato Leans R(10/14)이다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
     {
      "date": "2026-11-03",
      "text": "[Emerson 10/26–28, 유력 유권자 800명, ±3.5, 해밀턴 49–45](https://fox4kc.com/wp-content/uploads/sites/16/2026/10/ECP-KS-Poll-10.30.26-9AM-ET-EMBARGO-COPY-2.pdf)(11/2 브리핑은 leaner 포함 50–47로 이월). 직전 Emerson(9월)은 해밀턴 45–43이었다. 등급으로는 [Sabato가 캔자스를 Toss-up으로 상향](https://www.newsweek.com/republicans-get-new-midterm-warning-sign-as-kansas-senate-race-shifts-12569771)하며 \"전면적인 공화당 구조 작전\"이라 표현했다(Newsweek, ~10/14).",
@@ -11090,6 +11346,14 @@
    ],
    "local": [
     {
+     "date": "2026-11-04",
+     "text": "시민권 투표 개헌안과 6억 1,500만 달러 위치토 학교 채권이 함께 투표에 부쳐졌다([KMUW](https://www.kmuw.org/news/2026-11-03/its-election-day-in-kansas-heres-what-you-need-to-know)) · 세지윅 카운티는 긴 줄을 예상하며, 보고된 문제는 없다.",
+     "urls": [
+      "https://www.kmuw.org/news/2026-11-03/its-election-day-in-kansas-heres-what-you-need-to-know"
+     ],
+     "last": "2026-11-04"
+    },
+    {
      "date": "2026-11-03",
      "text": "집회 참석자들은 낙태, 노인 세금 감면, 물가, 관세를 거론했다. 로컬 매체는 KWCH와 KCUR(중도좌, 공영)을 확인했고 Kansas Reflector(좌)·The Sentinel(우)은 확인하지 못했다. 유세: 2026-11-01 · 살라이나 · 도널드 트럼프(공화) → 로저 마셜 · 살라이나 지역공항 집회, \"마지막\" 중간선거 집회, 경제·관세 메시지, 관중 규모 미기재(KWCH)",
      "urls": [],
@@ -11271,6 +11535,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-04",
+     "text": "원문은 캔자스를 도전 목표로 보며, 최종 NYT/Siena에서 해밀턴이 앞선다. 시장가는 마셜 쪽이다.",
+     "urls": [],
+     "last": "2026-11-04"
+    },
     {
      "date": "2026-11-03",
      "text": "원문은 Emerson 해밀턴 +4와 트럼프의 막판 집회를 민주당 reach 지도에 더해지는 요소로 적는다.",

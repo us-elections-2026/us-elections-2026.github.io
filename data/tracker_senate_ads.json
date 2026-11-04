@@ -1,15 +1,15 @@
 {
- "as_of": "2026-11-02",
+ "as_of": "2026-11-03",
  "source_label": "선거운동 트래커 광고 페이지 — FEC Schedule E 독립지출 (api.open.fec.gov) — 2026 상원·하원 본선 신고분",
  "source_url": "https://woochangkang.github.io/campaign-tracker-2026-site/data/ads_fec.json",
  "provenance_note": "pro_D = 민주(무소속 포함, independent_note=true) 지지 + 공화 반대, pro_R = 그 반대. 단위 달러. 후보 캠프 자금이 아니라 외부 단체의 신고 집행액이다.",
  "races": {
   "AK": {
-   "pro_D": 46784507,
-   "pro_R": 49233527,
-   "ads_D": 41072228,
-   "ads_R": 42803812,
-   "last_date": "2026-10-30",
+   "pro_D": 47055776,
+   "pro_R": 49300609,
+   "ads_D": 41103498,
+   "ads_R": 42838812,
+   "last_date": "2026-10-31",
    "independent_note": false,
    "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-AK.html",
    "top": [
@@ -20,8 +20,8 @@
      "candidate": "PELTOLA, MARY",
      "so": "O",
      "side": "R",
-     "total": 15950278,
-     "last_date": "2026-10-30"
+     "total": 15951728,
+     "last_date": "2026-10-31"
     },
     {
      "committee_id": "C00957522",
@@ -30,8 +30,8 @@
      "candidate": "SULLIVAN, DAN",
      "so": "O",
      "side": "D",
-     "total": 15044208,
-     "last_date": "2026-10-27"
+     "total": 15075477,
+     "last_date": "2026-10-30"
     },
     {
      "committee_id": "C00875278",
@@ -40,8 +40,8 @@
      "candidate": "PELTOLA, MARY",
      "so": "O",
      "side": "R",
-     "total": 6907214,
-     "last_date": "2026-10-30"
+     "total": 6913697,
+     "last_date": "2026-10-31"
     },
     {
      "committee_id": "C00960435",
@@ -80,8 +80,8 @@
      "candidate": "PELTOLA, MARY",
      "so": "S",
      "side": "D",
-     "total": 4052122,
-     "last_date": "2026-10-27"
+     "total": 4292122,
+     "last_date": "2026-10-30"
     },
     {
      "committee_id": "C00960435",
@@ -166,10 +166,10 @@
    ]
   },
   "GA": {
-   "pro_D": 20029509,
-   "pro_R": 18187797,
-   "ads_D": 18637788,
-   "ads_R": 15017348,
+   "pro_D": 20031040,
+   "pro_R": 18198886,
+   "ads_D": 18639320,
+   "ads_R": 15028437,
    "last_date": "2026-10-31",
    "independent_note": false,
    "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-GA.html",
@@ -327,11 +327,11 @@
    ]
   },
   "IA": {
-   "pro_D": 99719177,
-   "pro_R": 95289757,
-   "ads_D": 94059694,
-   "ads_R": 79805944,
-   "last_date": "2026-10-30",
+   "pro_D": 99840324,
+   "pro_R": 96051136,
+   "ads_D": 94150697,
+   "ads_R": 80453474,
+   "last_date": "2026-10-31",
    "independent_note": false,
    "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-IA.html",
    "top": [
@@ -342,7 +342,7 @@
      "candidate": "TUREK, JOSHUA",
      "so": "O",
      "side": "R",
-     "total": 48219733,
+     "total": 48730309,
      "last_date": "2026-10-30"
     },
     {
@@ -352,8 +352,8 @@
      "candidate": "ARENHOLZ, ASHLEY HINSON",
      "so": "O",
      "side": "D",
-     "total": 39425192,
-     "last_date": "2026-10-29"
+     "total": 39427192,
+     "last_date": "2026-10-30"
     },
     {
      "committee_id": "C00961276",
@@ -412,8 +412,8 @@
      "candidate": "TUREK, JOSH",
      "so": "S",
      "side": "D",
-     "total": 5261932,
-     "last_date": "2026-10-29"
+     "total": 5273436,
+     "last_date": "2026-10-30"
     },
     {
      "committee_id": "C00904482",
@@ -488,9 +488,9 @@
    ]
   },
   "KS": {
-   "pro_D": 56465495,
-   "pro_R": 35444554,
-   "ads_D": 53935957,
+   "pro_D": 56609882,
+   "pro_R": 35471665,
+   "ads_D": 54035792,
    "ads_R": 33049147,
    "last_date": "2026-10-30",
    "independent_note": false,
@@ -649,9 +649,9 @@
    ]
   },
   "ME": {
-   "pro_D": 52527982,
-   "pro_R": 88660913,
-   "ads_D": 45398450,
+   "pro_D": 52534898,
+   "pro_R": 88677856,
+   "ads_D": 45398950,
    "ads_R": 79377816,
    "last_date": "2026-11-02",
    "independent_note": false,
@@ -674,8 +674,8 @@
      "candidate": "COLLINS, SUSAN",
      "so": "O",
      "side": "D",
-     "total": 32735306,
-     "last_date": "2026-10-29"
+     "total": 32735806,
+     "last_date": "2026-10-30"
     },
     {
      "committee_id": "C00894709",
@@ -714,8 +714,8 @@
      "candidate": "JACKSON, TROY DALE",
      "so": "S",
      "side": "D",
-     "total": 4966791,
-     "last_date": "2026-10-30"
+     "total": 4973207,
+     "last_date": "2026-10-31"
     },
     {
      "committee_id": "C00865444",
@@ -810,10 +810,10 @@
    ]
   },
   "MI": {
-   "pro_D": 94398919,
-   "pro_R": 170853756,
-   "ads_D": 80529929,
-   "ads_R": 132904540,
+   "pro_D": 94538346,
+   "pro_R": 171219195,
+   "ads_D": 80578929,
+   "ads_R": 133159156,
    "last_date": "2026-11-02",
    "independent_note": false,
    "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-MI.html",
@@ -885,8 +885,8 @@
      "candidate": "EL-SAYED, ABDUL",
      "so": "O",
      "side": "R",
-     "total": 11043187,
-     "last_date": "2026-10-29"
+     "total": 11293187,
+     "last_date": "2026-11-02"
     },
     {
      "committee_id": "C00687103",
@@ -965,17 +965,17 @@
      "candidate": "EL-SAYED, ABDUL",
      "so": "O",
      "side": "R",
-     "total": 4503664,
-     "last_date": "2026-10-26"
+     "total": 4553664,
+     "last_date": "2026-10-30"
     }
    ]
   },
   "NC": {
-   "pro_D": 29262386,
-   "pro_R": 46411932,
-   "ads_D": 24567053,
-   "ads_R": 42931480,
-   "last_date": "2026-10-31",
+   "pro_D": 29297630,
+   "pro_R": 46415954,
+   "ads_D": 24570803,
+   "ads_R": 42935502,
+   "last_date": "2026-11-03",
    "independent_note": false,
    "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-NC.html",
    "top": [
@@ -996,8 +996,8 @@
      "candidate": "WHATLEY, MICHAEL",
      "so": "O",
      "side": "D",
-     "total": 21618420,
-     "last_date": "2026-10-26"
+     "total": 21622170,
+     "last_date": "2026-10-30"
     },
     {
      "committee_id": "C00960435",
@@ -1116,8 +1116,8 @@
      "candidate": "COOPER, ROY",
      "so": "S",
      "side": "D",
-     "total": 467050,
-     "last_date": "2026-10-29"
+     "total": 490644,
+     "last_date": "2026-10-30"
     },
     {
      "committee_id": "C00571703",
@@ -1132,11 +1132,11 @@
    ]
   },
   "NE": {
-   "pro_D": 36464634,
-   "pro_R": 32526809,
+   "pro_D": 36536612,
+   "pro_R": 32660553,
    "ads_D": 32971039,
-   "ads_R": 30950523,
-   "last_date": "2026-10-30",
+   "ads_R": 31059898,
+   "last_date": "2026-10-31",
    "independent_note": true,
    "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-NE.html",
    "top": [
@@ -1147,8 +1147,8 @@
      "candidate": "RICKETTS, PETE",
      "so": "O",
      "side": "D",
-     "total": 15815942,
-     "last_date": "2026-10-30"
+     "total": 15857404,
+     "last_date": "2026-10-31"
     },
     {
      "committee_id": "C00836221",
@@ -1167,8 +1167,8 @@
      "candidate": "OSBORN, DAN",
      "so": "O",
      "side": "R",
-     "total": 8516129,
-     "last_date": "2026-10-29"
+     "total": 8625504,
+     "last_date": "2026-10-30"
     },
     {
      "committee_id": "C00954503",
@@ -1257,8 +1257,8 @@
      "candidate": "OSBORN, DAN",
      "so": "S",
      "side": "D",
-     "total": 828928,
-     "last_date": "2026-10-28"
+     "total": 849659,
+     "last_date": "2026-10-31"
     },
     {
      "committee_id": "C00876482",
@@ -1277,8 +1277,8 @@
      "candidate": "OSBORN, DAN",
      "so": "S",
      "side": "D",
-     "total": 672261,
-     "last_date": "2026-10-23"
+     "total": 682046,
+     "last_date": "2026-10-31"
     },
     {
      "committee_id": "C00571703",
@@ -1287,8 +1287,8 @@
      "candidate": "RICKETTS, PETE",
      "so": "S",
      "side": "R",
-     "total": 511054,
-     "last_date": "2026-10-29"
+     "total": 535422,
+     "last_date": "2026-10-30"
     }
    ]
   },
@@ -1454,11 +1454,11 @@
    ]
   },
   "OH": {
-   "pro_D": 156520806,
-   "pro_R": 251011390,
-   "ads_D": 140760228,
-   "ads_R": 206236919,
-   "last_date": "2026-10-30",
+   "pro_D": 156625818,
+   "pro_R": 252044926,
+   "ads_D": 140771228,
+   "ads_R": 206870234,
+   "last_date": "2026-10-31",
    "independent_note": false,
    "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-OH.html",
    "top": [
@@ -1469,7 +1469,7 @@
      "candidate": "BROWN, SHERROD",
      "so": "O",
      "side": "R",
-     "total": 92270823,
+     "total": 92878023,
      "last_date": "2026-10-30"
     },
     {
@@ -1615,11 +1615,11 @@
    ]
   },
   "TX": {
-   "pro_D": 108367281,
-   "pro_R": 315672057,
-   "ads_D": 97886276,
-   "ads_R": 262344197,
-   "last_date": "2026-10-30",
+   "pro_D": 108676610,
+   "pro_R": 315993233,
+   "ads_D": 98160133,
+   "ads_R": 262348317,
+   "last_date": "2026-11-01",
    "independent_note": false,
    "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-TX.html",
    "top": [
