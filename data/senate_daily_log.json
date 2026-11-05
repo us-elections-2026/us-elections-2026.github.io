@@ -1,8 +1,62 @@
 {
- "as_of": "2026-11-04",
+ "as_of": "2026-11-05",
  "source_label": "_NIS 상원 일일 브리핑(KR) — Cowork 예약 작업 산출물을 scripts/ingest_senate_daily.py가 그대로 추출",
  "provenance_note": "본문은 원천 마크다운을 자르지 않고 전재한다(요약·재서술 없음). 종결체는 원천대로 다체. 【수집 필요】 표기도 원천 그대로 남긴다 — 빈 칸을 추정으로 채우지 않는 규약과 같은 이유. 같은 날짜 재실행은 덮어쓴다.",
  "days": [
+  {
+   "date": "2026-11-05",
+   "source_file": "2026-11-05_site_KR.md",
+   "source_kind": "digest",
+   "chars": 8907,
+   "source_validation": {
+    "source_file": "2026-11-05_일일브리핑_KR.md",
+    "checks": [
+     "A 주 소절 1~9 순서",
+     "B [유세] 줄 11/11",
+     "E self-audit 블록 있음(항목 0)",
+     "F EN/KR 주 소절 11개 일치"
+    ],
+    "warnings": [
+     "C §5.1 지정 지역매체 링크 미확인(10/11): ['조지아', '미시간', '메인', '노스캐롤라이나', '알래스카', '오하이오', '텍사스', '아이오와', '뉴햄프셔', '캔자스']",
+     "D 조사 불릿에 기간/격차 누락 2/3: ['Fox [P], Marist [P], AARP [P]: 신규 발표 없음, 해당 기관의 상원 조사 확인되지 않', '캠프 내부 조사: 식별되지 않음.']",
+     "주목 기관이 원문에는 있는데 정리본에 없음: aarp, marist — 원문 대조 필요"
+    ],
+    "missing_local_states": [
+     "조지아",
+     "미시간",
+     "메인",
+     "노스캐롤라이나",
+     "알래스카",
+     "오하이오",
+     "텍사스",
+     "아이오와",
+     "뉴햄프셔",
+     "캔자스"
+    ],
+    "status": "경고 있음"
+   },
+   "lead": "원문: senate_daily/2026-11-05_일일브리핑_KR.md · 정리 원칙: 원문에 없는 사실·수치·링크를 더하지 않는다.",
+   "summary": "- **민주당이 상원 다수당이 됐다.** CBS는 11/3 밤 민주당의 상원 장악을 예측했다. AP 확정 종합(11/4 07:00 ET)은 **민주 54 · 공화 44 · 미확정 2**로, 민주당 순증은 +7이고 잃은 의석은 없다. 뒤집힌 곳은 NC·SC·TX·OH·IA·KS·ME이고, 지킨 곳은 GA·MI·NH(및 MN)다. 트럼프는 \"민주당에 축하\"한다고 했고 이란 전쟁을 \"일부 요인\"으로 꼽았으며 거부권을 예고했다([CBS](https://www.cbsnews.com/news/senate-control-democrats-republicans-2026-midterm-elections/)).\n- **모니터링 11개 주 중 민주당이 9곳(GA·MI·ME·NC·OH·TX·IA·NH·KS)을 가져갔다.** 네브래스카는 공화당이 지켰고 알래스카는 개표 중이다. 캔자스 해밀턴은 1932년 이후 첫 민주당 상원의원이 됐다. \"리치\" 목표였던 텍사스(탈라리코)와 아이오와(투렉)도 민주당이 이겼다([Boston Globe](https://www.bostonglobe.com/2026/11/04/nation/midterm-elections-results-blue-wave/)).\n- **알래스카는 미결이고 출처가 엇갈린다.** 알래스카 비콘 보도는 펠톨라 626표 우세라고 했다([Juneau Empire](https://www.juneauempire.com/2026/11/04/alaskas-us-senate-race-a-tossup-with-many-absentee-and-early-votes-to-be-counted/)). NYT 집계를 인용한 보도는 설리번 1,677표 우세(48.5–47.7)라고 했다([Boston 25](https://www.boston25news.com/news/trending/election-day-2026-alaska-us-senate-race-too-close-call/SX432OUIXRED5CONXA55EGTKBA/)). 펠톨라는 \"몇 주 걸릴 것\"이라고 했다.\n- **NYT/Siena 최종 조사와 대략적 결과를 비교하면 이렇다**: MI D+11 → ≈D+5 · ME D+6 → ≈D+5 · OH D+5 → ≈D+3 · TX D+7 → ≈D+10 · IA D+1 → ≈D+4 · KS D+5 → ≈D+5 · AK D+2 → 미확정. 방향은 맞았고 격차 크기는 엇갈렸다([State Capital](https://statecapitallobbyist.com/elections/2026-midterm-elections-where-things-stand/)).\n- **네브래스카는 최종 조사보다 차이가 크게 났다.** 조사는 동률~리케츠 +1이었는데 결과는 리케츠 ≈+5 승리다. 다만 11/4 02:58 ET Boston Globe 요약은 이 주를 미확정으로 두었다([Nebraska Examiner](https://nebraskaexaminer.com/2026/11/04/pete-ricketts-claims-victory-over-dan-osborn-in-us-senate-race-still-being-counted-tuesday-night/)).",
+   "states": {
+    "GA": "- [Jon Ossoff wins Georgia 2026 Senate election, keeping seat for Democrats](https://www.cbsnews.com/news/senate-control-democrats-republicans-2026-midterm-elections/) (CBS News, 11/3) — 오소프가 결선 없이 마이크 콜린스를 꺾었고 AP가 확정했다. 64–36이라는 수치는 Forbes 단독이라 미검증이다.\n- **여론조사**: 없음(직전: 최종 조사는 오소프 +7~+10).\n- **자금**: 선거 전 오소프는 1억 900만 달러 이상을 모금했다(AP).\n- **로컬**: §5.1 조지아 매체(AJC, WSB-TV, Georgia Recorder, Georgia Star News)를 읽지 못했고, 반대 성향 매체도 확인하지 못해 빈약하다.\n- **주 함의**: 민주당이 조지아를 지켰다. 이 주는 Bear 시나리오를 배제한 방어 성공 지역 가운데 하나다.",
+    "MI": "- [Abdul El-Sayed defeats Mike Rogers](https://www.axios.com/2026/11/04/michigan-senate-results-el-sayed-rogers) (Axios/NPR/NBC/PBS 헤드라인, 11/4) — AP가 약 2:30 am ET에 확정했다(피터스 퇴임 공석). 격차는 ≈5%p(State Capital, 대략치)다. 본문은 열람이 막혀 헤드라인과 AP 확정 종합에 근거한다.\n- **여론조사**: NYT/Siena 최종 D+11 → 결과 ≈D+5. 최종 조사 범위는 +6~+11이었다.\n- **자금**: 없음\n- **로컬**: §5.1 미시간 매체는 읽지 못했다. Detroit News \"El-Sayed claims victory\"는 검색 결과로만 확인했다.\n- **주 함의**: 민주당이 공석을 지켰지만 격차는 조사보다 좁았다. 원문은 막판 스티븐스의 로저스 지지가 영향을 줬을 가능성을 언급했으나, 이를 검증한 출처는 없다.",
+    "NH": "- [Pappas wins New Hampshire Senate seat](https://www.bostonglobe.com/2026/11/04/nation/midterm-elections-results-blue-wave/) (Boston Globe / ABC 예측, 11/3) — 존 E. 서누누가 오후 8시(ET) 직후 승복했고, 곧 AP가 민주당 수성을 확정했다. 개표율 25%에서 ABC는 파파스 59–39를 표시했다. 파파스는 상원에 선출된 첫 공개 동성애자 남성이며, 뉴햄프셔가 \"방향 수정\"을 원했다고 말했다.\n- **여론조사**: 없음(직전: 마지막으로 검증된 조사는 파파스 +7~+8). 최종 격차는 출처에 없다.\n- **자금**: 없음\n- **로컬**: §5.1 뉴햄프셔 매체는 이번에 읽지 못했다.\n- **주 함의**: 민주당이 방어에 성공한 주다. 일찍 승복이 나와 불확실성이 빨리 해소됐다.",
+    "ME": "- [Troy Jackson defeats longtime Maine Sen. Susan Collins](https://www.cbsnews.com/news/senate-control-democrats-republicans-2026-midterm-elections/) (CBS News, 11/3–4) — AP가 새벽 1시(ET) 직후 확정한 공화→민주 탈환이다. 콜린스는 승복하며 메인 주민을 위해 일한 것이 \"내 인생의 영광\"이라고 했다. 잭슨은 X에 \"Maine, I owe you everything\"이라고 올렸다(Boston Globe).\n- **여론조사**: NYT/Siena 최종 D+6 → 결과 ≈D+5.\n- **자금**: 없음\n- **로컬**: §5.1 메인 매체(Press Herald, Maine Public, Maine Morning Star, Maine Wire)를 읽지 못해 빈약하다. 앞서 예상한 11월 13일경 RCV 지연은 출처에서 확인되지 않는다.\n- **주 함의**: 핵심 탈환 목표를 달성했다. 결과는 최종 조사와 거의 같은 수준이다.",
+    "NC": "- [Democrat Roy Cooper projected to win NC Senate race, flipping seat blue](https://abcnews.com/Elections/2026-us-senate-election-results-live-map/) (ABC News, 11/3) — 그날 밤 첫 탈환으로, 약 8:23~8:38 pm ET에 확정됐다. 당시 ABC는 개표율 64%에서 쿠퍼 64% / 와틀리 34%를 표시했다.\n- **여론조사**: 없음(직전: 최종 ECU 조사 D+9). 최종 격차는 출처에 없다.\n- **자금**: 없음\n- **로컬**: §5.1 노스캐롤라이나 매체(WRAL, N&O, NC Newsline, Carolina Journal)를 읽지 못해 빈약하다.\n- **주 함의**: 밤의 첫 탈환으로 핵심 목표를 달성했다. 최종 격차는 아직 확인되지 않았다.",
+    "TX": "- [Talarico flips Texas for Democrats](https://www.cbsnews.com/news/senate-control-democrats-republicans-2026-midterm-elections/) (CBS News, Boston Globe 경유 AP 확정, 11/3–4) — 탈라리코가 켄 팩스턴을 ≈10%p(대략치)로 이겼다. 팩스턴은 화요일 밤 늦게 축하 인사를 했다고 한다(인용문 없음). 자유당 후보의 영향은 보도되지 않았다.\n- **여론조사**: NYT/Siena 최종 D+7 → 결과 ≈D+10.\n- **자금**: 예비선거 이후 광고비가 약 4억 800만 달러로, 역대 최고 비용의 상원 선거였다(Texas Tribune, 선거 전).\n- **로컬**: §5.1 텍사스 매체는 이번에 읽지 못했다.\n- **주 함의**: \"리치\" 목표를 달성했다. 격차는 최종 조사보다 컸다.",
+    "OH": "- [Brown beats Husted — Ohio Senate flips](https://www.bostonglobe.com/2026/11/04/nation/midterm-elections-results-blue-wave/) (Boston Globe / State Capital AP 확정 종합, 11/4) — AP는 텍사스 확정 직후 브라운의 승리를 예측했고, 격차는 ≈3%p(대략치)다. CBS도 오하이오를 민주당 탈환 지역에 넣었다. 허스테드의 입장은 찾지 못했다.\n- **여론조사**: NYT/Siena 최종 D+5 → 결과 ≈D+3.\n- **자금**: 선거 전 외부 지출은 허스테드 쪽이 **1.985억 대 9,470만 달러**로 우세했다(Kalshi News). 결과는 돈의 방향과 반대였다.\n- **로컬**: §5.1 오하이오 매체를 읽지 못했고, 공화 성향 로컬 보도도 빈약하다.\n- **주 함의**: 외부 지출에서 열세였는데도 민주당이 이겨 핵심 탈환 목표를 달성했다.",
+    "AK": "- [Alaska's US Senate race a tossup, with many absentee and early votes to be counted](https://www.juneauempire.com/2026/11/04/alaskas-us-senate-race-a-tossup-with-many-absentee-and-early-votes-to-be-counted/) (Juneau Empire, 알래스카 비콘 바이라인 — 좌, States Newsroom, 11/4) — 401개 선거구 중 394곳 개표 시점에 펠톨라 48.0%, 설리번 47.7%였다(213,873표 중 626표 차). 동명이인 Dan J. Sullivan이 1.7%, Gerald Heikes가 2.3%였다. 누구도 RCV를 피할 득표를 얻지 못했다.\n- [Incumbent Dan Sullivan holds slim lead over Peltola in tight Alaska race](https://www.boston25news.com/news/trending/election-day-2026-alaska-us-senate-race-too-close-call/SX432OUIXRED5CONXA55EGTKBA/) (Boston 25 News, 11/4) — NYT 결과 페이지를 인용해, 약 08:00 ET에 설리번이 1,677표(48.5–47.7) 앞섰다고 보도했다. **두 보도는 서로 맞지 않고 모두 비공식이다.**\n- **여론조사**: NYT/Siena 최종 D+2 → 결과 미확정(1%p 이내). Forbes는 격차가 0.5%p 미만이라고 했다.\n- **자금**: 없음\n- **로컬**: 수천 장의 부재자·조기투표와 일부 농촌 선거구가 남아 있다. 펠톨라는 \"몇 주 걸릴 것\"이라 했고, 설리번은 승리를 자신한다. 트럼프는 NYT에 결과에 이의를 제기하지 않겠다고 했다. 이월: DOJ는 동명이인 영입 의혹 형사 조사를 확대하고 소환장을 발부했다. 연방판사가 DOJ 소송을 기각했고 DOJ는 항소했다. 이전에 알려진 일정(부재자 집계 11/10·11/13, 최종·RCV 11/18, 인증 11/25)은 재확인하지 못했다. Anchorage Daily News, Alaska Public Media, Must Read Alaska(우)를 읽지 못해 우성향 로컬 시각은 확인하지 못했다.\n- **주 함의**: 모니터링 주 중 유일한 미결 지역이다. 출처마다 우세 후보가 다르고 RCV 집계가 예상돼 결과가 확정되려면 시간이 걸린다.",
+    "IA": "- [Josh Turek defeats Ashley Hinson — Iowa flips](https://www.bostonglobe.com/2026/11/04/nation/midterm-elections-results-blue-wave/) (Boston Globe, 11/4) — AP가 약 11:39~11:46 pm ET에 확정했고, 이 확정으로 민주당이 다수당이 됐다. 힌슨의 입장은 찾지 못했다.\n- **여론조사**: NYT/Siena 최종 D+1 → 결과 ≈D+4. 선거일 Kalshi는 50/50이었다.\n- **자금**: 없음\n- **로컬**: §5.1 아이오와 매체는 읽지 못했다.\n- **주 함의**: 다수당을 결정지은 \"리치\" 지역이다. 격차는 최종 조사와 시장가보다 컸다.",
+    "NE": "- [Pete Ricketts defeats Dan Osborn in bitter Nebraska Senate race](https://nebraskaexaminer.com/2026/11/04/pete-ricketts-claims-victory-over-dan-osborn-in-us-senate-race-still-being-counted-tuesday-night/) (Nebraska Examiner 헤드라인, 11/4) — 리케츠가 승리를 선언했다. State Capital의 AP 확정 종합은 ≈5%p 차 공화당 수성으로 표시한다. 11/4 02:58 ET Boston Globe 요약은 이 주를 미확정으로 두었다. 확정이 더 늦었거나 페이지 시점이 다를 수 있다.\n- **여론조사**: 없음(직전: 최종 YouGov 동률, Echelon 리케츠 +1) → 결과 리케츠 ≈+5.\n- **자금**: 없음\n- **로컬**: 오스본의 코커스 선택이나 승복 발언은 찾지 못했다. 공화당이 의석을 유지해 \"I +1\"은 보고할 것이 없다. Nebraska Examiner(좌, States Newsroom)와 Lincoln Journal Star(중립)는 헤드라인만 확인했고, World-Herald(중도우)는 읽지 못해 한쪽 편향 보도다.\n- **주 함의**: 모니터링 주 가운데 공화당이 지킨 유일한 곳이다. 최종 조사는 리케츠의 격차를 과소평가했다.",
+    "KS": "- [Adam Hamilton wins Kansas Senate race, first Democrat elected to seat in nearly a century](https://www.washingtonpost.com/elections/results/2026/11/03/kansas-senate-hamilton-marshall-live-updates/) (Washington Post 헤드라인, 11/3–4) — AP가 약 11:30 pm ET에 확정했다. 해밀턴이 현역 로저 마셜을 ≈5%p(대략치)로 이겼고, 캔자스에서 1932년 이후 첫 민주당 상원 승리다. 마셜의 입장은 찾지 못했다.\n- **여론조사**: NYT/Siena 최종 49–44(D+5) → 결과 ≈D+5.\n- **자금**: 없음\n- **로컬**: §5.1 캔자스 매체는 읽지 못했다. WaPo 본문은 열람하지 못해 헤드라인과 Globe·State Capital 종합에 근거한다.\n- **주 함의**: \"리치\" 목표를 달성했다. 결과는 최종 조사와 부합한다."
+   },
+   "extras": [],
+   "polls": "이번 회차 신규 본선 조사 없음.",
+   "watch": "- 알래스카 부재자·조기투표 개표와 RCV 집계 여부, 엇갈린 두 집계의 정리\n- 알래스카 DOJ 항소와 동명이인 영입 의혹 형사 조사의 진행\n- 미시시피 결과 확정과 최종 상원 의석 수(11/4 07:00 ET 집계 이후 변동 여부)\n- 네브래스카 AP 확정 상태 재확인, 오스본의 승복 발언\n- 미시간·노스캐롤라이나·뉴햄프셔의 최종 격차 확인\n- 트럼프의 거부권 예고 이후 대응",
+   "gaps": "",
+   "national_money": "- 없음",
+   "national_legal": "- 알래스카: 연방판사가 DOJ 소송을 기각했고 DOJ는 항소했다. DOJ는 동명이인 영입 의혹 형사 조사를 확대하고 소환장을 발부했다. 해외 부재자표는 선거일 소인이 찍혀 있으면 선거 후 15일까지 집계된다([Boston 25](https://www.boston25news.com/news/trending/election-day-2026-alaska-us-senate-race-too-close-call/SX432OUIXRED5CONXA55EGTKBA/))."
+  },
   {
    "date": "2026-11-04",
    "source_file": "2026-11-04_site_KR.md",
