@@ -1,8 +1,61 @@
 {
- "as_of": "2026-11-05",
+ "as_of": "2026-11-07",
  "source_label": "_NIS 상원 일일 브리핑(KR) — Cowork 예약 작업 산출물을 scripts/ingest_senate_daily.py가 그대로 추출",
  "provenance_note": "본문은 원천 마크다운을 자르지 않고 전재한다(요약·재서술 없음). 종결체는 원천대로 다체. 【수집 필요】 표기도 원천 그대로 남긴다 — 빈 칸을 추정으로 채우지 않는 규약과 같은 이유. 같은 날짜 재실행은 덮어쓴다.",
  "days": [
+  {
+   "date": "2026-11-07",
+   "source_file": "2026-11-07_site_KR.md",
+   "source_kind": "digest",
+   "chars": 8260,
+   "source_validation": {
+    "source_file": "2026-11-07_일일브리핑_KR.md",
+    "checks": [
+     "A 주 소절 1~9 순서",
+     "B [유세] 줄 11/11",
+     "E self-audit 블록 있음(항목 0)",
+     "F EN/KR 주 소절 11개 일치"
+    ],
+    "warnings": [
+     "C §5.1 지정 지역매체 링크 미확인(9/11): ['조지아', '미시간', '메인', '노스캐롤라이나', '오하이오', '텍사스', '아이오와', '뉴햄프셔', '캔자스']",
+     "D 조사 불릿에 기간/격차 누락 1/1: ['신규 상원 여론조사 없음(선거 종료). 우선 추적 기관(NYT/Siena·Fox·Marist·AARP) 신규']",
+     "주목 기관이 원문에는 있는데 정리본에 없음: aarp, marist, siena — 원문 대조 필요"
+    ],
+    "missing_local_states": [
+     "조지아",
+     "미시간",
+     "메인",
+     "노스캐롤라이나",
+     "오하이오",
+     "텍사스",
+     "아이오와",
+     "뉴햄프셔",
+     "캔자스"
+    ],
+    "status": "경고 있음"
+   },
+   "lead": "원문: senate_daily/2026-11-07_일일브리핑_KR.md · 정리 원칙: 원문에 없는 사실·수치·링크를 더하지 않는다.",
+   "summary": "- **민주당이 1월부터 상원 다수당이 된다.** CBS는 민주당이 최소 54석을 확보했다고 보도했다. Roll Call·Newsweek에 따르면 공화당 의석 7곳(KS·IA·TX·OH·ME·NC, 감시 대상이 아닌 SC)이 민주당으로 넘어갔다. 민주당은 GA·MI·NH를 지켰다. 알래스카와 미시시피는 아직 확정되지 않았다. ([CBS](https://www.cbsnews.com/live-updates/senate-election-results-2026/), [Roll Call](https://rollcall.com/2026/11/04/senate-democrats-majority-midterm-elections-2/))\n- 감시 대상 주의 비공식 득표율은 다음과 같다. 조지아 Ossoff 59–41(+18, 99% 개표), 텍사스 Talarico 55–43(+12), 메인 Jackson 53–47(+6, 92%), 미시간 El-Sayed 52.2–45.8(+6.4, 92%), 캔자스 Hamilton 50.9–46.1(+4.8, 95%), 오하이오 Brown 50–45(+4, 98%), 아이오와 Turek 50.5–46.4(+4.1, 98%). ([ABC News](https://abcnews.com/Politics/democrats-flipped-senate-blue-abc-news-voter-poll/story?id=137840395), [Newsweek](https://www.newsweek.com/midterms-map-shows-senate-before-and-after-abdul-el-sayed-troy-jackson-12656795))\n- **알래스카는 아직 확정되지 않았고 수 주가 걸릴 전망이다.** 확인할 수 있는 최신 집계는 주 정부의 11/4 오후 5:11 ET 발표로, Peltola가 +637표 앞섰다(비공식). 과반 득표자가 없으면 선호순위 집계는 11/18로 예정돼 있다. 목·금 집계는 확인하지 못했다. ([Newsweek](https://www.newsweek.com/alaska-senate-margin-keeps-justice-department-lawsuit-alive-12667820))\n- 미시시피(감시 대상 아님)가 최종 의석수를 좌우할 초접전이다. ABC 표(96% 개표)에서는 Colom이 Hyde-Smith를 1,138표 앞섰고, CBS는 목요일에 격차를 \"1,700표 남짓\"으로 보도했다. 부재자 투표 약 3,600표와 임시투표 수천 장이 남아 있다. 선거일 소인이 찍힌 우편투표는 11/10까지 유효하다. ([Slate](https://slate.com/news-and-politics/2026/11/midterms-election-results-mississippi-alaska-colom-peltola.html))\n- **네브래스카는 공화당이 지켰다.** Nebraska Examiner(좌)는 Ricketts가 무소속 Dan Osborn을 상대로 승리를 선언했다고 보도했다. 득표 격차, Osborn의 승복 여부와 코커스 발언은 확인하지 못했다. 그래서 이 의석은 민주당 칸에 넣지 않는다. ([Nebraska Examiner](https://nebraskaexaminer.com/2026/11/04/pete-ricketts-claims-victory-over-dan-osborn-in-us-senate-race-still-being-counted-tuesday-night/))",
+   "states": {
+    "GA": "- [Democrats flipped the Senate blue: The ABC News Voter Poll tells the story](https://abcnews.com/Politics/democrats-flipped-senate-blue-abc-news-voter-poll/story?id=137840395) (ABC News, 11/4~5): 예상 투표 99% 개표 시점에 Ossoff가 59%(2,466,233표), Collins가 41%(1,712,055표)를 얻었다. 비공식 격차는 약 18%p다. CBS는 Ossoff가 의석을 지켰다고 보도했다.\n- **여론조사**: 없음(선거 종료 · 직전: 선거 직전 여론조사 +7~+10)\n- **자금**: 없음\n- **로컬**: Collins의 승복 원문은 확인하지 못했다.\n- **주 함의**: 민주당이 의석을 지켰다. 비공식 격차 약 18%p는 **선거 직전 여론조사(+7~+10)를 크게 웃돈다.**",
+    "MI": "- [Midterms Map Shows Senate Before And After](https://www.newsweek.com/midterms-map-shows-senate-before-and-after-abdul-el-sayed-troy-jackson-12656795) (Newsweek, 11/4): 92% 개표 시점에 El-Sayed 52.2%, Rogers 45.8%로 격차는 +6.4다. Hillary Scholten 하원의원은 CBS에 나와 격차를 약 7%p라고 말했다. 두 수치 모두 비공식이다.\n- **여론조사**: 없음(선거 종료)\n- **자금**: 없음\n- **로컬**: El-Sayed 당선 확정 보도가 나왔다 · Rogers의 승복은 확인하지 못했다.\n- **주 함의**: 민주당이 의석을 지켰다. 득표 격차는 비공식 수치이며, Newsweek는 +6.4, Scholten 의원은 약 7%p로 서로 다르다.",
+    "NH": "- [Senate Democrats flip the chamber](https://rollcall.com/2026/11/04/senate-democrats-majority-midterm-elections-2/) (Roll Call, 11/4): Pappas가 John E. Sununu를 꺾고 의석을 지켰다.\n- **여론조사**: 없음(선거 종료)\n- **자금**: 없음\n- **로컬**: CBS 페이지 요약(미검증)은 Sununu가 11/3 오후 8:48 ET쯤 승복했다고 전한다.\n- **주 함의**: 민주당이 의석을 지켰다. 득표 격차는 확인하지 못했다.",
+    "ME": "- [Midterms Map Shows Senate Before And After](https://www.newsweek.com/midterms-map-shows-senate-before-and-after-abdul-el-sayed-troy-jackson-12656795) (Newsweek, 11/4): 86% 개표 시점에 Jackson 53.8%, Collins 46.1%였다. 이후 ABC 표에서는 92% 개표 시점에 53%(370,468표) 대 47%(323,515표)다.\n- **여론조사**: 없음(선거 종료)\n- **자금**: 없음\n- **로컬**: CBS 페이지 요약(미검증)에 따르면 Collins는 11/4 오전 0:37 ET쯤 승복했다.\n- **주 함의**: 공화당 의석이 민주당으로 넘어갔다. 격차는 **약 6%p**로, 이전에 이월된 약 5%p를 대체한다.",
+    "NC": "- [Senate Democrats flip the chamber](https://rollcall.com/2026/11/04/senate-democrats-majority-midterm-elections-2/) (Roll Call, 11/4): Cooper가 Whatley를 꺾었다. 이 의석은 민주당이 되찾은 공화당 의석 7곳에 들어간다. 이 기사에는 득표 격차가 나오지 않는다.\n- **여론조사**: 없음(선거 종료)\n- **자금**: 없음\n- **로컬**: Tillis의 축하 발언은 CBS 요약에서 나온 미검증 정보다.\n- **주 함의**: 공화당 의석이 민주당으로 넘어갔다. 득표 격차는 확인하지 못했다.",
+    "TX": "- [Democrats flipped the Senate blue: The ABC News Voter Poll tells the story](https://abcnews.com/Politics/democrats-flipped-senate-blue-abc-news-voter-poll/story?id=137840395) (ABC News, 11/4~5): 99% 개표 시점에 Talarico 55%(5,445,156표), Paxton 43%(4,249,763표)로 격차는 약 12%p다.\n- **여론조사**: 없음(선거 종료)\n- **자금**: 없음\n- **로컬**: CBS에 따르면 Paxton이 Talarico에게 축하를 전했고, Cruz 의원은 전화로 축하했다고 밝혔다.\n- **주 함의**: 공화당 의석이 민주당으로 넘어갔다. 이전 브리핑의 \"약 10\"을 **약 12%p**로 바꾼다.",
+    "OH": "- [Democrats flipped the Senate blue: The ABC News Voter Poll tells the story](https://abcnews.com/Politics/democrats-flipped-senate-blue-abc-news-voter-poll/story?id=137840395) (ABC News, 11/4~5): 98% 개표 시점에 Brown 50%(2,301,042표), Husted 45%(2,077,748표)로 격차는 약 4%p다. Newsweek 수치는 97% 개표 시점 49.7–45.5다.\n- **여론조사**: 없음(선거 종료)\n- **자금**: 없음\n- **로컬**: Husted의 승복은 확인하지 못했다.\n- **주 함의**: 공화당 의석이 민주당으로 넘어갔다. 격차는 약 4%p다(비공식).",
+    "AK": "- [Sullivan and Peltola locked in tight U.S. Senate race as more results come in](https://alaskapublic.org/news/politics/elections/2026-11-03/peltola-takes-early-lead-in-alaskas-u-s-senate-race) (Alaska Public Media, 중도좌, 공영, 11/3): 선거구 98% 이상 개표 시점에 Peltola 48.0%, Sullivan 47.7%, 동명이인 \"Dan J. Sullivan\" 1.7%다. 수요일 아침에는 Peltola가 +626표 앞섰다.\n- [The Lawsuit Over Two Dan Sullivans May Not Be Over Yet](https://www.newsweek.com/alaska-senate-margin-keeps-justice-department-lawsuit-alive-12667820) (Newsweek, 11/5): 수요일 오후 5:11 ET 발표 기준으로 Peltola가 +637표 앞섰다. 동명이인 후보는 약 3,600표를 얻었다. Sullivan 측이 패배를 받아들이겠다는 입장을 유지하는지는 Newsweek도 확인하지 못했다.\n- **여론조사**: 없음(선거 종료)\n- **자금**: 없음\n- **로컬**: 이월: 과반 득표자가 없으면 선호순위 집계는 11/18이다 · 이월: 동명이인 관련 법무부 소송이 이어지고 있다(「법·제도」 참조) · ABC 표의 개표율(예상 투표의 74%)과 Alaska Public Media의 개표율(선거구 98% 이상)이 서로 다르다.\n- **주 함의**: **아직 확정되지 않았다**(Peltola +637, 비공식). 목·금 집계는 확인하지 못했다. 11/5 브리핑에 실은 \"Sullivan +1,677\"은 어디서도 다시 확인되지 않아 지웠다. 우파 현지 매체(Must Read Alaska)를 읽지 못해 한쪽 출처에 치우친 서술이다.",
+    "IA": "- [Midterms Map Shows Senate Before And After](https://www.newsweek.com/midterms-map-shows-senate-before-and-after-abdul-el-sayed-troy-jackson-12656795) (Newsweek, 11/4): 98% 개표 시점에 Turek 50.5%, Hinson 46.4%로 격차는 +4.1이다.\n- **여론조사**: 없음(선거 종료)\n- **자금**: 없음\n- **로컬**: Hinson의 승복은 확인하지 못했다.\n- **주 함의**: 민주당이 의석을 되찾을 것이라던 예측이 확정됐다.",
+    "NE": "- [Pete Ricketts defeats Dan Osborn in bitter Nebraska Senate race](https://nebraskaexaminer.com/2026/11/04/pete-ricketts-claims-victory-over-dan-osborn-in-us-senate-race-still-being-counted-tuesday-night/) (Nebraska Examiner, 좌, States Newsroom, 11/4): 제목과 URL만 확인했고 본문(득표 격차)은 불러오지 못했다. CBS는 11/4 오전 4:02 ET에 Ricketts 당선을 예측했다.\n- **여론조사**: 없음(선거 종료)\n- **자금**: 없음\n- **로컬**: Osborn의 마지막 공개 입장(Newsweek 10/17)은 어느 정당과도 코커스하지 않겠다는 것이었다 · Osborn의 승복 여부와 선거 후 코커스 발언은 확인하지 못했다.\n- **주 함의**: 공화당이 의석을 지켰다. 감시 대상 주 가운데 공화당이 지킨 곳은 이곳뿐이다. 읽은 현지 매체가 좌편향 한 곳뿐이고 우파 성향의 World-Herald는 읽지 못했다. 그래서 보도가 빈약하고 한쪽에 치우쳐 있다.",
+    "KS": "- [Midterms Map Shows Senate Before And After](https://www.newsweek.com/midterms-map-shows-senate-before-and-after-abdul-el-sayed-troy-jackson-12656795) (Newsweek, 11/4): 95% 개표 시점에 Hamilton 50.9%, Marshall 46.1%로 격차는 +4.8이다. ABC는 1932년 이후 캔자스 상원에서 나온 첫 민주당 당선이라고 전했다.\n- **여론조사**: 없음(선거 종료)\n- **자금**: 없음\n- **로컬**: Marshall의 승복은 확인하지 못했다 · Kansas Reflector 홈페이지에는 선거 후 기사가 없었다.\n- **주 함의**: 공화당 의석이 민주당으로 넘어갔다. **1932년 이후 캔자스 상원 첫 민주당 당선**이다(ABC)."
+   },
+   "extras": [],
+   "polls": "이번 회차 신규 본선 조사 없음.",
+   "watch": "- 알래스카 추가 집계 결과와, 과반 득표자가 없을 때 11/18에 할 선호순위 집계\n- 미시시피의 남은 부재자 투표(약 3,600표)·임시투표 처리와 11/10 우편투표 마감\n- 네브래스카 Osborn의 승복 여부와 코커스 입장 표명\n- Rogers·Husted·Hinson·Marshall의 승복 발표 여부\n- 알래스카 동명이인 소송의 법무부 항소 진행\n- 상원 최종 의석수 확정(현재 확인된 것은 CBS의 \"최소 54석\"뿐)",
+   "gaps": "",
+   "national_money": "- 없음",
+   "national_legal": "- 알래스카 동명이인 \"Dan Sullivan\" 관련 법무부 소송은 원고 적격이 없다는 이유로 기각됐다(Gleason 판사). 법무부는 항소했고, 대배심 조사와 주 차원 조사가 진행 중이다. ([Newsweek](https://www.newsweek.com/alaska-senate-margin-keeps-justice-department-lawsuit-alive-12667820))\n- 미시시피에서는 선거일 소인이 찍힌 우편투표가 11/10(화)까지 유효하다. ([Slate](https://slate.com/news-and-politics/2026/11/midterms-election-results-mississippi-alaska-colom-peltola.html))"
+  },
   {
    "date": "2026-11-05",
    "source_file": "2026-11-05_site_KR.md",
