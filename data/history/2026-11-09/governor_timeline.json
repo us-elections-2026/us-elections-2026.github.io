@@ -1,0 +1,981 @@
+{
+  "as_of": "2026-10-11",
+  "source_range": "주간 2026-08-02~10-11",
+  "note": "경합 주지사 레이스의 주요 사건 기록. _NIS 주정부 주간 브리핑에서 출처 링크가 붙은 사건만 옮겼다(사건당 1회, 가장 이른 사건 일자). 8/23호 항목은 본문 인라인 링크가 없어 출처 목록에서 사건과 슬러그가 일치하는 URL을 붙였다. date가 없는 항목은 reported(브리핑 날짜)로 정렬한다. ME는 감시 주라 페이지에 렌더하지 않고 보관만 한다. 공개 문장은 내부 편집 메모를 걸러 다듬었다(2026-10-13).",
+  "states": {
+    "AZ": [
+      {
+        "date": "2026-08-07",
+        "kind": "조사",
+        "text": "AARP 조사에서 Hobbs 52 – Biggs 44(D+8, ±3.2)로 Biggs 지명 후 첫 실측이 나왔다.",
+        "source_url": "https://www.kjzz.org/elections/2026-08-07/poll-shows-hobbs-leading-biggs-in-arizona-governor-race",
+        "caveat": "필드 일자 미공개·유보",
+        "source_brief": "2026-08-16_주간브리핑_주정부.md:11,65"
+      },
+      {
+        "date": "2026-08-11",
+        "kind": "기타",
+        "text": "Hobbs가 전 공화 메사 시장 John Giles(LDS)를 러닝메이트로 발탁해 같은 신앙의 Biggs와의 대결에서 정치적 온도를 낮추려 했다.",
+        "source_url": "https://www.deseret.com/politics/2026/08/12/arizona-governor-katie-hobbs-picks-john-giles-as-running-mate-to-lower-political-temperature-in-showdown-against-fellow-latter-day-saint-andy-biggs/",
+        "source_brief": "2026-08-16_주간브리핑_주정부.md:11,166"
+      },
+      {
+        "date": "2026-08-13",
+        "kind": "조사",
+        "text": "Noble Predictive(비당파, 8/10~13, LV 923)에서 Hobbs 48 – Biggs 35(D+13)가 나왔다.",
+        "source_url": "https://www.noblepredictiveinsights.com/post/katie-hobbs-leads-andy-biggs-in-the-grand-canyon-state",
+        "source_brief": "2026-08-23_주간브리핑_주정부.md:52,101"
+      },
+      {
+        "date": "2026-08-21",
+        "kind": "기타",
+        "text": "애리조나 법무장관이 2년 만에 Hobbs의 '페이투플레이' 수사를 대가성 증거 없음으로 불기소 종결해 공화의 최대 공격 소재가 사라졌다.",
+        "source_url": "https://www.kjzz.org/politics/2026-08-21/arizona-attorney-general-clears-gov-hobbs-in-pay-to-play-investigation",
+        "source_brief": "2026-08-23_주간브리핑_주정부.md:14,100"
+      },
+      {
+        "date": "2026-08-24",
+        "kind": "조사",
+        "text": "HighGround(8/15~18, LV 400)에서 Hobbs 49.5 – Biggs 34.3(D+15.2)이 나왔고, 같은 주 다른 조사는 D+1.5~5로 폭이 크게 벌어졌다.",
+        "source_url": "https://azhighground.com/hobbs-builds-double-digit-lead-in-arizona/",
+        "caveat": "피닉스 컨설팅사 자체 조사",
+        "source_brief": "2026-08-30_주간브리핑_주정부.md:15,56,119"
+      },
+      {
+        "reported": "2026-08-30",
+        "kind": "토론",
+        "text": "Hobbs가 Biggs와의 토론을 공식 거부했습니다(AZ Free News 보도).",
+        "source_url": "https://azfreenews.com/2026/08/hobbs-officially-rejects-debate-with-andy-biggs-in-arizona-governors-race/",
+        "source_brief": "2026-08-30_주간브리핑_주정부.md:15,121"
+      },
+      {
+        "date": "2026-09-17",
+        "kind": "기타",
+        "text": "Biggs가 백신 의무 종료·SNAP 정크푸드 제한·이버멕틴 OTC 등 MAHA 성향 보건 공약 12개를 발표해 AZ 첫 정체성 축을 열었다.",
+        "source_url": "https://www.kjzz.org/elections/2026-09-17/biggs-releases-maha-aligned-health-policy-platform-for-arizona-governor-campaign",
+        "source_brief": "2026-09-20_주간브리핑_주정부.md:39,173"
+      },
+      {
+        "date": "2026-09-22",
+        "kind": "기타",
+        "text": "Biggs가 소득세 폐지·데이터센터 세제 혜택 종료·ESA 확대를 담은 첫 전체 공약을 냈고, Hobbs 캠프는 '사실상 23% 판매세'라고 반박했다.",
+        "source_url": "https://azcapitoltimes.com/news/2026/09/22/biggs-lists-tax-cuts-esa-support-among-priorities-if-elected-governor/",
+        "caveat": "페어택스 산정 대조 필요 (수집)",
+        "source_brief": "2026-09-27_주간브리핑_주정부.md:39,179"
+      }
+    ],
+    "GA": [
+      {
+        "date": "2026-07-24",
+        "kind": "지지",
+        "text": "트럼프가 Rick Jackson(R) 지지를 공식 선언했다 — 예선에서 Jones를 밀었던 입장에서 선회한 것이다.",
+        "source_url": "https://georgiarecorder.com/2026/07/24/trump-makes-if-official-and-endorses-jackson-in-race-for-georgia-governor/",
+        "source_brief": "2026-08-02_주간브리핑_주정부.md:24,40,146"
+      },
+      {
+        "date": "2026-07-28",
+        "kind": "자금",
+        "text": "Jackson 캠프가 조지아 주선거 사상 최대로 추정되는 $87M 광고 구매를 발표했고, 8/1 첫 광고에서 Bottoms의 시장 시절 공금 사용을 공격했다.",
+        "source_url": "https://roughdraftatlanta.com/2026/07/28/rick-jackson-georgia-campaign-ads/",
+        "caveat": "캠프 발표치·유보",
+        "source_brief": "2026-08-02_주간브리핑_주정부.md:12,40,78; 2026-08-09_주간브리핑_주정부.md:15,74"
+      },
+      {
+        "date": "2026-08-05",
+        "kind": "기타",
+        "text": "Bottoms가 Jackson의 트럼프 유착을 겨냥한 첫 공격 광고를 냈고, 상공회의소 오찬에서 데이터센터·메디케이드 확대를 두고 정면 충돌했다.",
+        "source_url": "https://www.atlantanewsfirst.com/2026/08/05/bottoms-fires-back-governors-race-with-attack-ad-spotlighting-trump-interview/",
+        "source_brief": "2026-08-09_주간브리핑_주정부.md:15"
+      },
+      {
+        "date": "2026-08-11",
+        "kind": "자금",
+        "text": "주 공시(5/1~7/31)에서 Jackson 보유 $380만(모금 $410만) 대 Bottoms 보유 $66만(모금 $100만)으로 공화 화력 우위가 공식 수치로 확인됐다.",
+        "source_url": "https://www.northwestgeorgianews.com/state/jackson-leads-bottoms-in-fundraising-for-georgia-governor-s-race/article_03e17fb2-437c-525f-9f7c-f7f12286def4.html",
+        "source_brief": "2026-08-16_주간브리핑_주정부.md:13,79"
+      },
+      {
+        "date": "2026-08-14",
+        "kind": "유세",
+        "text": "Bottoms가 미시간 주지사 Whitmer와 Marietta에서 동반 유세를 벌여 민주 전국 서러게이트를 투입하는 상쇄 전략에 착수했다.",
+        "source_url": "https://www.wctv.tv/2026/08/15/new-business-policies-some-high-powered-help-georgias-gubernatorial-hopefuls/",
+        "source_brief": "2026-08-16_주간브리핑_주정부.md:13"
+      },
+      {
+        "date": "2026-08-17",
+        "kind": "조사",
+        "text": "InsiderAdvantage(8/16~17, LV 800)에서 Jackson 46.3 – Bottoms 46.2로 사실상 동률이었고, 같은 조사의 상원은 Ossoff +7이었다.",
+        "source_url": "https://jamesmagazinega.com/2026/08/18/exclusive-jmo-insideradvantage-georgia-survey-ossoff-leads-jackson-lance-bottoms-tied/",
+        "caveat": "공화계 유의",
+        "source_brief": "2026-08-23_주간브리핑_주정부.md:15,49,98"
+      },
+      {
+        "reported": "2026-09-06",
+        "kind": "토론",
+        "text": "Bottoms가 토론 6건(9/17 메이컨이 첫 시한)을 수락한 반면 Jackson이 수락한 토론은 10/6 1건뿐이어서 토론 공방이 격화됐다.",
+        "source_url": "https://georgiarecorder.com/2026/08/31/bottoms-ups-the-ante-in-feud-over-debates-in-race-for-georgia-governor/",
+        "source_brief": "2026-09-06_주간브리핑_주정부.md:30,136"
+      },
+      {
+        "reported": "2026-09-13",
+        "kind": "자금",
+        "text": "Jackson 총모금 $118M+(자기자금 $100M+, 외부 $13M)·7월까지 지출 $108M 대 Bottoms 약 $6M이다. 외부 모금만 보면 약 2.2:1이다.",
+        "source_url": "https://www.ajc.com/politics/2026/08/georgia-governor-race-rick-jackson-raises-13m-in-outside-money/",
+        "caveat": "윤리위 원문 대조 미완 (수집 필요)",
+        "source_brief": "2026-09-13_주간브리핑_주정부.md:12,87"
+      },
+      {
+        "date": "2026-09-14",
+        "kind": "조사",
+        "text": "Rasmussen(공화 성향, 9/14)에서 Jackson 48 – Bottoms 45로 사이클 첫 Jackson 우위가 나왔고, 같은 기관 상원은 Ossoff 51–42였다.",
+        "source_url": "https://www.ajc.com/politics/2026/09/polls-paint-starkly-different-pictures-of-georgias-top-races/",
+        "caveat": "공화계 단독·오차범위 내로 등급 근거 금지",
+        "source_brief": "2026-09-20_주간브리핑_주정부.md:23,35,89"
+      },
+      {
+        "date": "2026-09-17",
+        "kind": "토론",
+        "text": "메이컨 포럼(9/17)에 Jackson이 불참해 Bottoms 단독 무대가 됐고, 상원 Ossoff·Collins도 불참해 '잭슨 개인 회피'라는 단일 원인 귀속은 철회됐다.",
+        "source_url": "https://www.13wmaz.com/article/news/politics/keisha-lance-bottoms-attend-macon-debate-rick-jacksons-team-says-he-wont-attend/93-8923806b-313d-460e-a642-60aa2eb99f6f",
+        "source_brief": "2026-09-20_주간브리핑_주정부.md:25,35"
+      },
+      {
+        "date": "2026-09-17",
+        "kind": "자금",
+        "text": "AdImpact 기준 친Jackson 지출이 $7,600만 대 Bottoms+우군 $800만(9.5:1)이고, Bottoms 캠프 자체 전통 TV 예약은 $42,000으로 확인됐다.",
+        "source_url": "https://www.ajc.com/politics/2026/09/can-keisha-lance-bottoms-withstand-rick-jacksons-spending-blitz-in-georgia/",
+        "caveat": "AJC 유보: 신규 6자리 광고·비전통 매체 미반영",
+        "source_brief": "2026-09-27_주간브리핑_주정부.md:8,21,95"
+      },
+      {
+        "date": "2026-09-22",
+        "kind": "토론",
+        "text": "11Alive 주최 토론이 Jackson의 참석 거부로 취소됐고, 10/12 APC도 주최 측이 '공식 거부'를 확인해 Jackson 수락 무대는 10/6 ANF 1건뿐이다.",
+        "source_url": "https://www.fox5atlanta.com/news/georgia-gubernatorial-debate-canceled-jackson-declines-face-bottoms",
+        "source_brief": "2026-09-27_주간브리핑_주정부.md:22,35; 2026-09-20_주간브리핑_주정부.md:35"
+      },
+      {
+        "date": "2026-09-23",
+        "kind": "조사",
+        "text": "YouGov(9/15~18, RV 3,447)에서 Jackson 45 – Bottoms 44(RV R+1), LV 47–44(R+3)로 공화계 아닌 조사에서도 같은 방향이 재현됐다.",
+        "source_url": "https://www.atlantanewsfirst.com/2026/09/23/new-poll-ossoff-holds-double-digit-lead-over-collins-governors-race-dead-heat/",
+        "caveat": "의뢰 주체 미상 (수집 필요)",
+        "source_brief": "2026-09-27_주간브리핑_주정부.md:22,35,85"
+      },
+      {
+        "date": "2026-10-06",
+        "kind": "토론",
+        "text": "Bottoms–Jackson ANF 타운홀형 토론(10/6)은 데이터센터·메디케이드·최저임금 정책 공방 속에 결정타 없이 끝났고, 토론 후 조사는 아직 없다.",
+        "source_url": "https://www.ajc.com/politics/2026/10/takeaways-from-georgia-governor-debate/",
+        "source_brief": "2026-10-11_주간브리핑_주정부.md:10,23,109"
+      }
+    ],
+    "IA": [
+      {
+        "date": "2026-07-20",
+        "kind": "자금",
+        "text": "공시(7/14 마감)에서 Sand는 5/27~7/14 모금 $9.38M·현금 $17.95M로 주 기록을 경신했고, Lahn은 모금 $6.3M·현금 $1.04M(RGA 계열 PAC $5M 포함)였다.",
+        "source_url": "https://iowacapitaldispatch.com/briefs/sand-breaks-iowa-fundraising-record-lahn-receives-large-party-pac-donations/",
+        "source_brief": "2026-08-02_주간브리핑_주정부.md:14,41,76"
+      },
+      {
+        "date": "2026-08-06",
+        "kind": "조사",
+        "text": "Emerson(8/2~4, 712 LV)에서 Sand 48 – Lahn 43(D+5)으로 여름 첫 비당파 공개 조사가 나왔고, 무당파에서는 Sand 58-32(D+26)였다.",
+        "source_url": "https://emersoncollegepolling.com/iowa-2026-poll/",
+        "source_brief": "2026-08-09_주간브리핑_주정부.md:13,63,64"
+      },
+      {
+        "date": "2026-08-17",
+        "kind": "등급",
+        "text": "Inside Elections가 IA를 Tilt D로 이동했다(Roll Call 8/17 보도 기준, 이전 등급은 원문에 미기재).",
+        "source_url": "https://rollcall.com/2026/08/17/rating-changes-10-of-11-races-shift-toward-democrats/",
+        "caveat": "IE의 IA·OH 등급 원문 직접 확인 (대조 필요)(9/13호)",
+        "source_brief": "2026-08-30_주간브리핑_주정부.md:14,26,117"
+      },
+      {
+        "date": "2026-08-20",
+        "kind": "등급",
+        "text": "Cook이 7주 침묵을 깨고 IA를 Toss-up에서 Lean Democrat으로 상향했다 — 사이클 첫 '민주 우위' 경합 전환이다.",
+        "source_url": "https://thehill.com/homenews/campaign/6041925-cook-report-iowa-texas-democrat-governor-edge/",
+        "source_brief": "2026-08-23_주간브리핑_주정부.md:11,26,92"
+      },
+      {
+        "date": "2026-08-26",
+        "kind": "조사",
+        "text": "Suffolk(8/20~23, LV 500)에서 Sand 48 – Lahn 44(D+4)였고, 벨웨더인 Muscatine 카운티도 48–44로 같은 마진이었다.",
+        "source_url": "https://iowacapitaldispatch.com/2026/08/26/new-poll-shows-tight-races-for-iowa-governor-u-s-senate-in-2026/",
+        "source_brief": "2026-08-30_주간브리핑_주정부.md:14,55,116"
+      },
+      {
+        "date": "2026-09-03",
+        "kind": "등급",
+        "text": "Sabato가 IA를 Toss-up에서 Lean D로 올려 Cook과 양사 등급이 Lean D로 정렬됐다.",
+        "source_url": "https://centerforpolitics.org/crystalball/the-governors-a-trio-of-rating-changes-toward-democrats-as-they-chase-a-rare-edge-in-overall-seats-held/",
+        "source_brief": "2026-09-06_주간브리핑_주정부.md:9,17,31"
+      },
+      {
+        "reported": "2026-09-06",
+        "kind": "조사",
+        "text": "Emerson/Nexstar에서 Sand 49 – Lahn 46(D+3)이 나왔고 동시 상원은 Hinson 50–Turek 45로, 약 6%가 Hinson+Sand 스플릿 티켓이었다.",
+        "source_url": "https://thehill.com/homenews/campaign/6067538-sand-lahn-turek-hinson-iowa-poll/",
+        "caveat": "필드·표본·오차 수집 필요",
+        "source_brief": "2026-09-06_주간브리핑_주정부.md:31,66,139"
+      },
+      {
+        "date": "2026-09-08",
+        "kind": "조사",
+        "text": "YouGov(9/3~8)에서 LV Sand 51 – Lahn 41(D+10), RV 50–39로 사이클 최대 폭이 나왔으나 Emerson D+3과 오차범위가 겹치지 않는다.",
+        "source_url": "https://www.newsweek.com/democrat-rob-sand-double-digits-ahead-in-state-trump-won-three-times-poll-12433336",
+        "caveat": "의뢰자 미확인 — 등급 근거 사용 금지",
+        "source_brief": "2026-09-13_주간브리핑_주정부.md:19,33,73"
+      },
+      {
+        "date": "2026-10-01",
+        "kind": "조사",
+        "text": "Fox News(9/24~28, LV 1,008)에서 Sand 53 – Lahn 44(D+9)로, Marist D+12와 함께 8월 D+3~4에서 올라선 D+9~12 구간이 형성됐다.",
+        "source_url": "https://static.foxnews.com/foxnews.com/content/uploads/2026/10/fox_september-24-28-2026_iowa_topline_october-1-release.pdf",
+        "source_brief": "2026-10-04_주간브리핑_주정부.md:17,32,64,122"
+      },
+      {
+        "date": "2026-10-03",
+        "kind": "조사",
+        "text": "NYT/Siena에서 Sand 52 – Lahn 41(D+11)이 나왔고, Suffolk D+12·CNN/SSRS D+9로 비당파 D+9~12 군집이 이어졌다(Emerson만 D+4).",
+        "source_url": "https://sri.siena.edu/2026/10/04/nytimes-siena-poll-of-likely-voters-gubernatorial-races-2/",
+        "source_brief": "2026-10-11_주간브리핑_주정부.md:9,24,58,103"
+      },
+      {
+        "date": "2026-10-06",
+        "kind": "토론",
+        "text": "Sand–Lahn 첫 토론(10/6)에서 Lahn의 캔자스 연고(거주) 문제와 가족을 둘러싼 상호 공격이 오갔다.",
+        "source_url": "https://iowacapitaldispatch.com/2026/10/06/sand-lahn-trade-attacks-on-residency-family-at-first-iowa-gubernatorial-debate/",
+        "source_brief": "2026-10-11_주간브리핑_주정부.md:10,110"
+      },
+      {
+        "date": "2026-10-08",
+        "kind": "조사",
+        "text": "CNN/SSRS(9/29~10/5, LV 801)에서 Sand 51 – Lahn 42(D+9)가 나왔고, 같은 보도의 OH도 Acton 우위(D+8)였다.",
+        "source_url": "https://kioncentralcoast.com/politics/cnn-us-politics/2026/10/08/an-ohio-edge-an-iowa-tossup-new-cnn-polls-give-democrats-hope-in-a-pair-of-red-states/",
+        "source_brief": "2026-10-11_주간브리핑_주정부.md:9,58,105"
+      }
+    ],
+    "KS": [
+      {
+        "date": "2026-05-24",
+        "kind": "지지",
+        "text": "트럼프가 주상원의장 Ty Masterson의 공화 주지사 경선 지지를 선언했고, 7/30에는 사전투표 독려 메시지로 이를 재가동했다.",
+        "source_url": "https://kansasreflector.com/2026/05/24/president-donald-trump-endorses-kansas-senate-president-in-gop-campaign-for-governor/",
+        "source_brief": "2026-08-02_주간브리핑_주정부.md:13,39,142"
+      },
+      {
+        "date": "2026-08-04",
+        "kind": "경선",
+        "text": "공화 예선에서 트럼프 지지 Masterson이 43%로 승리했고(Sarnecki 22%·Schmidt 14%·Schwab 11%) 외부단체 지출은 $2,000만+였다.",
+        "source_url": "https://kansasreflector.com/2026/08/04/masterson-scores-win-in-gop-primary-for-kansas-governor-holscher-prevails-in-democratic-race/",
+        "source_brief": "2026-08-09_주간브리핑_주정부.md:12,76"
+      },
+      {
+        "date": "2026-08-04",
+        "kind": "경선",
+        "text": "민주 예선에서 Cindy Holscher가 Kelly 지사가 지지한 Ethan Corson(39%)을 49%로 꺾는 이변을 만들어 본선은 Holscher 대 Masterson으로 확정됐다.",
+        "source_url": "https://kansasreflector.com/2026/08/04/masterson-scores-win-in-gop-primary-for-kansas-governor-holscher-prevails-in-democratic-race/",
+        "source_brief": "2026-08-09_주간브리핑_주정부.md:12,30"
+      },
+      {
+        "date": "2026-08-04",
+        "kind": "기타",
+        "text": "공화 주도의 주대법관 직선제 개헌안이 같은 날 주민투표에서 큰 표차로 부결돼, 오프이어 투표에서 공화 어젠다가 제동됐다.",
+        "source_url": "https://www.kcur.org/politics-elections-and-government/2026-08-04/kansas-voters-reject-electing-state-supreme-court-justices-as-constitutional-amendment-fails",
+        "source_brief": "2026-08-09_주간브리핑_주정부.md:12,54"
+      },
+      {
+        "date": "2026-08-05",
+        "kind": "지지",
+        "text": "Kelly 주지사가 본선에서 Holscher 지지로 돌아섰다. 경선 국면에서는 Corson을 지지했다.",
+        "source_url": "https://www.kwch.com/2026/08/05/gov-kelly-endorses-cindy-holscher-governor/",
+        "source_brief": "2026-08-30_주간브리핑_주정부.md:7,30; 2026-08-23_주간브리핑_주정부.md:30"
+      },
+      {
+        "date": "2026-08-28",
+        "kind": "조사",
+        "text": "민주계 GSG(홀셔 캠프 의뢰, LV 600)가 Holscher 47 – Masterson 46(D+1)을 공개했고, 공화계 co/efficient 조사는 수치가 확보되지 않았다.",
+        "source_url": "https://sunflowerstatejournal.com/a-battle-of-polls-what-is-state-of-the-kansas-governors-race/",
+        "caveat": "co/efficient 수치 미확보 (수집 필요), 의뢰자 편향 병기",
+        "source_brief": "2026-09-06_주간브리핑_주정부.md:19,67,68"
+      },
+      {
+        "date": "2026-09-12",
+        "kind": "토론",
+        "text": "캔자스 주 박람회 토론(사이클 첫 정면 대결)에서 재산세·데이터센터 SB98 모라토리엄을 두고 논쟁했다.",
+        "source_url": "https://johnsoncountypost.com/2026/09/15/kansas-governor-2026-debate-296214/",
+        "source_brief": "2026-09-20_주간브리핑_주정부.md:14,40"
+      },
+      {
+        "date": "2026-09-18",
+        "kind": "조사",
+        "text": "Emerson/Nexstar(9/15~16, LV 750)에서 Masterson 51 – Holscher 44(R+7)로 사이클 첫 비당파 실측이 나왔고 Holscher 미인지는 12%였다.",
+        "source_url": "https://emersoncollegepolling.com/kansas-2026/",
+        "source_brief": "2026-09-20_주간브리핑_주정부.md:22,40,87"
+      },
+      {
+        "date": "2026-10-03",
+        "kind": "조사",
+        "text": "NYT/Siena가 Masterson 49 – Holscher 44(R+5), YouGov(10/6)가 47–44(R+3)를 기록해 비당파 2건 연속 공화 우위가 나왔다.",
+        "source_url": "https://sri.siena.edu/2026/10/04/nytimes-siena-poll-of-likely-voters-gubernatorial-races-2/",
+        "source_brief": "2026-10-11_주간브리핑_주정부.md:9,28,63,103"
+      }
+    ],
+    "MI": [
+      {
+        "date": "2026-07-23",
+        "kind": "등급",
+        "text": "Sabato가 MI를 Leans Democratic으로 조정했다(같은 회차에 NM Safe D·FL Likely R, MI의 이전 등급은 원문에 미기재).",
+        "source_url": "https://centerforpolitics.org/crystalball/three-gubernatorial-rating-changes-michigan-to-leans-democratic-new-mexico-to-safe-democratic-florida-to-likely-republican/",
+        "source_brief": "2026-08-02_주간브리핑_주정부.md:33,159"
+      },
+      {
+        "reported": "2026-08-02",
+        "kind": "지지",
+        "text": "연방하원 John James가 6월 말 트럼프 지지를 얻었고, Cox·Nesbitt는 트럼프 지지 선언 후 하차했다.",
+        "source_url": "https://michiganadvance.com/2026/07/29/state-of-the-race-democrats-line-up-behind-benson-republicans-face-off-in-brutal-two-way-primary/",
+        "source_brief": "2026-08-02_주간브리핑_주정부.md:13,38,140"
+      },
+      {
+        "date": "2026-08-04",
+        "kind": "경선",
+        "text": "민주 예선에서 Jocelyn Benson이 Genesee 카운티 셰리프 Chris Swanson을 약 66pt 차로 압승했다(AP 당일 9시 콜).",
+        "source_url": "https://bridgemi.com/michigan-government/michigan-democratic-governor-primary-results-jocelyn-benson-chris-swanson/",
+        "source_brief": "2026-08-09_주간브리핑_주정부.md:11,145"
+      },
+      {
+        "date": "2026-08-04",
+        "kind": "경선",
+        "text": "공화 예선에서 트럼프 지지 John James가 자비 약 $3,200만을 쓴 Perry Johnson을 약 15pt 차로 꺾었다 — 주 역사상 최고액 주지사 예선이다.",
+        "source_url": "https://bridgemi.com/michigan-government/michigan-republican-governor-primary-results-john-james-perry-johnson/",
+        "source_brief": "2026-08-09_주간브리핑_주정부.md:11,75,144"
+      },
+      {
+        "date": "2026-08-04",
+        "kind": "자금",
+        "text": "Benson 캠프가 9월 개시 본선 TV 광고 $1,000만을 선예약했다고 공개했다 — Lean D 구도의 자금·조직 우위 신호로 읽혔다.",
+        "source_url": "https://bridgemi.com/michigan-government/michigan-democratic-governor-primary-results-jocelyn-benson-chris-swanson/",
+        "source_brief": "2026-08-09_주간브리핑_주정부.md:11,75"
+      },
+      {
+        "date": "2026-08-13",
+        "kind": "조사",
+        "text": "Fox News(8/6~10, RV 1,006)에서 Benson 52 – James 47(D+5)로 첫 대형 비당파 조사가 나왔고, 같은 표본 상원은 Rogers R+4였다.",
+        "source_url": "https://www.foxnews.com/politics/fox-news-poll-senate-battle-looms-michigan",
+        "source_brief": "2026-08-16_주간브리핑_주정부.md:11,63,64"
+      },
+      {
+        "date": "2026-08-14",
+        "kind": "자금",
+        "text": "Benson이 본선 첫 TV 광고를 9월 예정보다 앞당긴 8/14에 개시했다(물량·내용은 확인되지 않았다).",
+        "source_url": "https://www.detroitnews.com/story/news/politics/2026/08/14/jocelyn-benson-michigan-governor-race-tv-ad/91297596007/",
+        "caveat": "물량·내용 (수집 필요)",
+        "source_brief": "2026-08-16_주간브리핑_주정부.md:11,83"
+      },
+      {
+        "date": "2026-09-04",
+        "kind": "자금",
+        "text": "본선 첫 자금 공시(9/4)에서 보유현금 Benson $590만 대 James $150만이었고, 공화 측 Mission Michigan $470만+는 미공시 상쇄분이다.",
+        "source_url": "https://bridgemi.com/michigan-government/jocelyn-benson-outraises-john-james-see-top-donors-in-michigan-governor-race/",
+        "caveat": "Mission Michigan $470만+ 미공시",
+        "source_brief": "2026-09-27_주간브리핑_주정부.md:17,38,95,170"
+      },
+      {
+        "date": "2026-09-08",
+        "kind": "조사",
+        "text": "Glengariff(8/31~9/3, LV 600)에서 Benson 46.8 – James 42.7(D+4.1)로, RCP D+6.7보다 폭이 좁은 작업 구간 하단이 나왔다.",
+        "source_url": "https://www.detroitnews.com/story/news/politics/2026/09/08/michigan-governor-poll-jocelyn-benson-john-james/91653234007/",
+        "source_brief": "2026-09-13_주간브리핑_주정부.md:19,35,72"
+      },
+      {
+        "date": "2026-09-14",
+        "kind": "조사",
+        "text": "Emerson/Nexstar(9/12~14, LV 1,000)에서 Benson 49 – James 42(D+7)로 오차범위 밖 우위가 나왔으나 실사가 FOMC(9/16) 이전에 끝났다.",
+        "source_url": "https://www.wlns.com/your-local-election-hq/benson-leads-james-michigan-poll/",
+        "caveat": "FOMC(9/16) 이전 실사",
+        "source_brief": "2026-09-20_주간브리핑_주정부.md:21,38,88"
+      },
+      {
+        "date": "2026-09-16",
+        "kind": "기타",
+        "text": "Detroit Economic Club에서 캐나다 관세가 정면 쟁점이 됐다 — Benson은 주 단위 협정, James는 관세 수입 환원 입법을 제시했다.",
+        "source_url": "https://michiganadvance.com/2026/09/16/benson-james-pitch-tariff-remedies-business-boosts-data-center-limits-at-detroit-economic-club/",
+        "source_brief": "2026-09-20_주간브리핑_주정부.md:38,165"
+      },
+      {
+        "date": "2026-09-23",
+        "kind": "기타",
+        "text": "공화 다수 하원이 국무장관 출마 시 선거관리 회피를 의무화하는 HB 5968을 발의해 Benson을 겨냥했으나 본회의에는 상정되지 않았다.",
+        "source_url": "https://michiganadvance.com/2026/09/23/house-gop-bill-would-require-secretary-of-state-to-step-aside-from-election-duties-if-on-the-ballot/",
+        "source_brief": "2026-09-27_주간브리핑_주정부.md:38,62,171"
+      },
+      {
+        "date": "2026-09-28",
+        "kind": "조사",
+        "text": "Fox(9/24~28, LV 1,028) Benson 54 – James 45(D+9), Marist(9/24~27, RV 1,235) 53–41(D+12)로 FOMC 이후 8월 D+4~5보다 확대됐다.",
+        "source_url": "https://maristpoll.marist.edu/polls/midterm-elections-in-michigan-september-2026/",
+        "source_brief": "2026-10-04_주간브리핑_주정부.md:9,17,65,66,123"
+      },
+      {
+        "date": "2026-10-06",
+        "kind": "토론",
+        "text": "Benson–James 첫 토론(WOOD TV8, 10/6)에서 물가·연방 관계·관세·휘발유·이민이 주요 쟁점으로 다뤄졌다.",
+        "source_url": "https://michiganadvance.com/2026/10/06/benson-james-tackle-affordability-federal-relations-at-first-gubernatorial-debate/",
+        "source_brief": "2026-10-11_주간브리핑_주정부.md:10,111"
+      }
+    ],
+    "NV": [
+      {
+        "date": "2026-07-27",
+        "kind": "자금",
+        "text": "6월 말 현금 Lombardo $9.2M 대 Ford $2.6M이고, 친Lombardo Better Nevada PAC는 상반기까지 약 $15M을 모금했다(Review-Journal 종합).",
+        "source_url": "https://www.reviewjournal.com/news/politics-and-government/nevada/nevada-governors-race-still-a-dead-heat-as-campaigns-search-for-messages-that-engage-3855453/",
+        "source_brief": "2026-08-02_주간브리핑_주정부.md:14,42,77"
+      },
+      {
+        "date": "2026-07-27",
+        "kind": "조사",
+        "text": "7월 중순 PPP(DGA 의뢰) 동률 조사를 Review-Journal은 41-41로 재보도했으나 원 DGA 공개분은 44-44여서 수치가 갈린다.",
+        "source_url": "https://www.reviewjournal.com/news/politics-and-government/nevada/nevada-governors-race-still-a-dead-heat-as-campaigns-search-for-messages-that-engage-3855453/",
+        "caveat": "정밀치 (수집 필요·당파 조사 유보 유지)",
+        "source_brief": "2026-08-02_주간브리핑_주정부.md:42; 2026-08-16_주간브리핑_주정부.md:68"
+      },
+      {
+        "date": "2026-08-12",
+        "kind": "지지",
+        "text": "Ford·Lombardo 캠프가 상대의 지지선언 진위를 두고 8/12 상호 공격을 벌였으며, 비당파 실측 공백 속에서 공방만 격화됐다.",
+        "source_url": "https://www.reviewjournal.com/news/politics-and-government/nevada/campaigns-of-nevada-governor-candidates-trade-allegations-over-endorsements-3862659/",
+        "source_brief": "2026-08-16_주간브리핑_주정부.md:23,180"
+      },
+      {
+        "reported": "2026-09-06",
+        "kind": "자금",
+        "text": "Lombardo 진영 집행·예약 $18M+(AdImpact)와 스페인어 광고 $1M+ 대 Ford 첫 광고 7/28 $37K 초기 예약 — '168:1'은 누적 집행 시점 비율이다.",
+        "source_url": "https://thenevadaindependent.com/article/lombardo-is-struggling-with-latino-voters-hes-betting-big-to-win-them-over",
+        "caveat": "기준 시점 병기 필수",
+        "source_brief": "2026-09-06_주간브리핑_주정부.md:28,79,145"
+      },
+      {
+        "reported": "2026-09-06",
+        "kind": "조사",
+        "text": "여름 공화 의뢰 조사 3건이 Lombardo +9·+12·+7을 보도했으며 이는 7월 PPP 동률과 상반됐다.",
+        "source_url": "https://thenevadaindependent.com/article/three-gop-polls-show-lombardo-with-sizable-lead-in-nevada-governors-race",
+        "caveat": "당파 의뢰",
+        "source_brief": "2026-09-06_주간브리핑_주정부.md:28,70,146"
+      },
+      {
+        "date": "2026-09-08",
+        "kind": "조사",
+        "text": "Emerson/KLAS(9/5~8, LV 680)에서 Ford 44 – Lombardo 42(D+2)로 사이클 첫 비당파 조사가 8주 공백을 끊었다.",
+        "source_url": "https://emersoncollegepolling.com/nevada-2026-poll-ford-and-lombardo/",
+        "source_brief": "2026-09-13_주간브리핑_주정부.md:19,30,71"
+      },
+      {
+        "date": "2026-09-15",
+        "kind": "지지",
+        "text": "NV 소매업협회가 2022년 Lombardo 지지를 뒤집고 2026년 Ford 지지로 돌아섰다(사유는 비용·관세).",
+        "source_url": "https://lasvegassun.com/news/2026/sep/15/nevada-retailers-group-citing-high-costs-and-tarif/",
+        "source_brief": "2026-09-20_주간브리핑_주정부.md:24,33,163"
+      },
+      {
+        "date": "2026-09-18",
+        "kind": "기타",
+        "text": "Lombardo가 행정명령 EO 2026-005로 데이터센터 감면 조건을 강화했다 — 학교지원세 전액 납부·지역사회 확약을 요구하되 감면 폐지는 아니다.",
+        "source_url": "https://nevadacurrent.com/2026/09/18/lombardo-doubles-down-on-data-centers-offers-trimmed-tax-breaks-commitments-to-wary-public/",
+        "source_brief": "2026-09-20_주간브리핑_주정부.md:24,33,164"
+      },
+      {
+        "date": "2026-09-26",
+        "kind": "조사",
+        "text": "Noble(9/22~26)에서 Lombardo 45 – Ford 43(D−2)로, 5주 만의 비당파 조사가 기준선(Emerson D+2)보다 4pt 공화 쪽으로 나왔다.",
+        "source_url": "https://www.noblepredictiveinsights.com/post/lombardo-tries-to-escape-trump-s-orbit-up-2-over-ford",
+        "caveat": "RCP 표기(42–40) 불일치 미해소",
+        "source_brief": "2026-10-11_주간브리핑_주정부.md:21,59,106"
+      },
+      {
+        "reported": "2026-09-27",
+        "kind": "토론",
+        "text": "Review-Journal이 Lombardo–Ford 토론 성사 여부를 다뤘으나 조기투표 약 3주 전에도 토론은 확정되지 않았다.",
+        "source_url": "https://www.reviewjournal.com/news/politics-and-government/nevada/will-nevadans-see-a-lombardo-ford-debate-3891178/",
+        "caveat": "원문 대조 필요",
+        "source_brief": "2026-09-27_주간브리핑_주정부.md:33,178"
+      }
+    ],
+    "OH": [
+      {
+        "date": "2026-07-28",
+        "kind": "자금",
+        "text": "Acton이 첫 TV 광고를 개시해 공중전 국면에 들어갔다 — 7월 중순 광고비는 Ramaswamy $9M 대 Acton $100K였다.",
+        "source_url": "https://www.statenews.org/government-politics/2026-07-28/democratic-candidate-for-ohio-governor-debuts-her-first-ad",
+        "source_brief": "2026-08-02_주간브리핑_주정부.md:14,23,44,154"
+      },
+      {
+        "date": "2026-08-10",
+        "kind": "조사",
+        "text": "Fox News(8/6~10) 비당파 조사에서 Ramaswamy 우위 R+2가 나왔다.",
+        "source_url": "https://www.newsweek.com/amy-acton-attack-ohio-vivek-ramaswamy-polls-12413129",
+        "caveat": "정확한 서술은 '최신 비당파 실측이 8/6~10 이후 공백'",
+        "source_brief": "2026-09-13_주간브리핑_주정부.md:8,74"
+      },
+      {
+        "date": "2026-08-12",
+        "kind": "조사",
+        "text": "Tulchin(민주계, 7/29~8/4)에서 Acton 46 – Ramaswamy 44(D+2)가 8/12 보도됐고, 의뢰자는 민주 주 법무장관 후보 쿨레비츠로 확인됐다.",
+        "source_url": "https://www.newsweek.com/vivek-ramaswamys-chances-of-losing-to-amy-acton-in-ohio-new-poll-12315220",
+        "caveat": "민주계·유의",
+        "source_brief": "2026-08-16_주간브리핑_주정부.md:66; 2026-09-13_주간브리핑_주정부.md:13"
+      },
+      {
+        "date": "2026-09-04",
+        "kind": "토론",
+        "text": "Acton이 토론을 전면 거부해, Ramaswamy가 수락한 WLWT·CNN 토론이 성사되지 않는 구도가 됐다(OH 토론 성사율 약 50%).",
+        "source_url": "https://ohiocapitaljournal.com/2026/09/04/ohio-democratic-candidate-for-governor-amy-acton-refuses-to-debate/",
+        "source_brief": "2026-09-06_주간브리핑_주정부.md:20,29,129"
+      },
+      {
+        "date": "2026-09-06",
+        "kind": "기타",
+        "text": "캔필드 페어에서 권총 2정을 소지한 무장 남성이 Acton에게 돌진했다가 체포됐다 — 1순위 트랙 첫 후보 대상 물리 위협이며 표심 영향은 미측정이다.",
+        "source_url": "https://www.nbcnews.com/politics/2026-election/armed-person-confronts-ohio-gubernatorial-candidate-amy-acton-event-ca-rcna596395",
+        "source_brief": "2026-09-13_주간브리핑_주정부.md:22,148"
+      },
+      {
+        "date": "2026-09-16",
+        "kind": "조사",
+        "text": "BGSU/YouGov(9/1~10, LV 1,000)에서 Acton 48 – Ramaswamy 45 – 키식(L) 4(D+3)로 5주 비당파 공백이 끊겼다.",
+        "source_url": "https://politicalwire.com/2026/09/16/amy-acton-leads-in-ohio-governors-race/",
+        "caveat": "실사 창이 캔필드 사건(9/6)을 관통 — 사건 효과 측정 불가",
+        "source_brief": "2026-09-20_주간브리핑_주정부.md:25,34,85,158"
+      },
+      {
+        "date": "2026-09-17",
+        "kind": "지지",
+        "text": "OSMA(오하이오 의사협회) PAC가 의사 후보 Acton을 배제하고 Ramaswamy를 지지했다(사유: scope of practice·배상 상한).",
+        "source_url": "https://signalcincinnati.org/2026/09/17/why-a-doctors-pac-chose-vivek-ramaswamy-over-dr-amy-acton/",
+        "source_brief": "2026-09-20_주간브리핑_주정부.md:21,24,34,161"
+      },
+      {
+        "date": "2026-09-22",
+        "kind": "등급",
+        "text": "Sabato가 OH 주지사를 Leans R에서 Toss-up으로 옮겼다.",
+        "source_url": "https://actonforgovernor.com/ratings-change-larry-sabatos-crystal-ball-moves-ohio-governors-race-to-toss-up/",
+        "caveat": "Crystal Ball 원문·270toWin 미러는 403/이미지로 직접 추출 실패",
+        "source_brief": "2026-10-04_주간브리핑_주정부.md:11,18,25,116"
+      },
+      {
+        "reported": "2026-09-27",
+        "kind": "자금",
+        "text": "외부단체 집행은 공화 $8,230만 대 친Acton $1,110만(약 7.4:1)이고, 펜실베이니아 억만장자 Yass의 V-PAC가 $3,000만+를 넣었다.",
+        "source_url": "https://signalohio.org/billionaire-jeff-yass-ohio-governor-race-november-election-2026/",
+        "caveat": "투입 = 양의적 — 공화 우세 신호인지 열세 만회인지 미결정",
+        "source_brief": "2026-09-27_주간브리핑_주정부.md:21,34,95,151"
+      },
+      {
+        "date": "2026-09-27",
+        "kind": "조사",
+        "text": "Marist(9/24~27, RV 1,298)에서 Acton 50 – Ramaswamy 44(D+6), Suffolk/USA Today(9/23~27, LV 500)에서 50–41(D+9)이 나왔다.",
+        "source_url": "https://maristpoll.marist.edu/polls/midterm-elections-in-ohio-september-2026/",
+        "source_brief": "2026-10-04_주간브리핑_주정부.md:9,17,61,62,120"
+      },
+      {
+        "date": "2026-10-03",
+        "kind": "조사",
+        "text": "NYT/Siena(10/3~4)에서 Acton 49 – Ramaswamy 45(D+4)가 나왔고, 같은 시기 5개 주 동시 조사의 하나로 공개됐다.",
+        "source_url": "https://sri.siena.edu/2026/10/04/nytimes-siena-poll-of-likely-voters-gubernatorial-races-2/",
+        "caveat": "표본 (수집 필요)",
+        "source_brief": "2026-10-11_주간브리핑_주정부.md:9,55,103"
+      },
+      {
+        "date": "2026-10-08",
+        "kind": "조사",
+        "text": "CNN/SSRS(9/29~10/5, LV 760)에서 Acton 50 – Ramaswamy 42(D+8)가 나왔고, 공화 성향 co/efficient만 Ramaswamy 45–43(R+2)이었다.",
+        "source_url": "https://kioncentralcoast.com/politics/cnn-us-politics/2026/10/08/an-ohio-edge-an-iowa-tossup-new-cnn-polls-give-democrats-hope-in-a-pair-of-red-states/",
+        "source_brief": "2026-10-11_주간브리핑_주정부.md:9,22,56,57,105"
+      }
+    ],
+    "WI": [
+      {
+        "date": "2026-07-29",
+        "kind": "조사",
+        "text": "Marquette 민주 예선 조사(7/22~27, 407명)에서 Hong 38%·Barnes 16%·Crowley 7% — Hong이 전주 27% 대비 12pt 급등했고 미결정이 절반 가까이였다.",
+        "source_url": "https://urbanmilwaukee.com/2026/07/29/hong-leads-democratic-primary-for-governor-once-again-in-new-marquette-poll/",
+        "source_brief": "2026-08-02_주간브리핑_주정부.md:10,37,72"
+      },
+      {
+        "date": "2026-07-30",
+        "kind": "경선",
+        "text": "Mandela Barnes가 민주 예선에서 중도사퇴해 민주 주자 중 세 번째로 하차했고, 잔류 후보는 Hong·Crowley·Brennan·Roys 4인이 됐다.",
+        "source_url": "https://pbswisconsin.org/news-item/barnes-drops-out-of-wisconsins-2026-democratic-governor-primary/",
+        "source_brief": "2026-08-02_주간브리핑_주정부.md:10,37,75"
+      },
+      {
+        "date": "2026-08-04",
+        "kind": "기타",
+        "text": "Hong의 과거 SNS 게시물('추수감사절 취소' 등)이 전국 이슈화됐고 Evers가 본선 승리 가능성에 '아마 어렵다'고 발언해 Crowley 지원 사격이 이어졌다.",
+        "source_url": "https://www.forbes.com/sites/conormurray/2026/08/04/wisconsin-gov-candidate-hong-faces-backlash-over-cancel-thanksgiving-comment-even-from-democrats/",
+        "source_brief": "2026-08-09_주간브리핑_주정부.md:14"
+      },
+      {
+        "date": "2026-08-04",
+        "kind": "자금",
+        "text": "7월 모금(7/1~27)에서 Crowley $775.8K가 Hong $338.8K를 앞섰고, 공화 Tiffany는 주 공화당 이체 $4M+ 포함 $4.6M+를 확보했다.",
+        "source_url": "https://www.wbay.com/2026/08/04/wisconsin-governors-race-new-campaign-finance-reports-show-crowley-leads-democratic-field-fundraising/",
+        "source_brief": "2026-08-09_주간브리핑_주정부.md:14,73"
+      },
+      {
+        "date": "2026-08-11",
+        "kind": "경선",
+        "text": "민주 예선에서 Crowley가 Hong을 39.8 대 39.4(0.4pt)로 꺾고 지명됐다(개표 98% 기준, Roys 7.5·Brennan 4.7) — Hong은 8/12 승복했다.",
+        "source_url": "https://pbswisconsin.org/news-item/crowley-wins-wisconsins-2026-democratic-primary-for-governor-in-a-photo-finish/",
+        "source_brief": "2026-08-16_주간브리핑_주정부.md:9,70"
+      },
+      {
+        "date": "2026-08-12",
+        "kind": "등급",
+        "text": "Sabato(Crystal Ball)가 WI를 Toss-up에서 Leans Democratic으로 올렸다.",
+        "source_url": "https://x.com/LarrySabato/status/2087455012830032258",
+        "caveat": "Crystal Ball 원문(403)의 WI 등급 이력(7/23 Lean R → 8/12 이전 Toss-up 중간 조정 시점)은 여전히 미확인 (수집 필요)",
+        "source_brief": "2026-08-16_주간브리핑_주정부.md:9,17,19"
+      },
+      {
+        "date": "2026-08-26",
+        "kind": "조사",
+        "text": "Marquette 첫 비당파 본선 조사(8/12~20)에서 LV Crowley 49 – Tiffany 44(D+5), RV는 44–44 동률이었다.",
+        "source_url": "https://www.wpr.org/news/governors-race-poll-tiffany-crowley-marquette",
+        "source_brief": "2026-08-30_주간브리핑_주정부.md:12,54"
+      },
+      {
+        "date": "2026-09-14",
+        "kind": "자금",
+        "text": "Tiffany 측 광고 예약 $1,050만과 AFP 누적 $500만+로 Crowley 대비 약 3:1 초과 집행이 확인됐다 — Crowley 절대액은 미확보 상태다.",
+        "source_url": "https://www.wbay.com/2026/09/14/wisconsin-governors-race-ad-spending-favors-tiffany-over-crowley-data-shows/",
+        "caveat": "크롤리 절대액 미확보(비율 역산 금지) (수집 필요)",
+        "source_brief": "2026-09-27_주간브리핑_주정부.md:21,37,95"
+      },
+      {
+        "date": "2026-09-30",
+        "kind": "조사",
+        "text": "Marquette(9/16~23)에서 LV Crowley 49 – Tiffany 46(D+3), RV 46–45(D+1) — 8월 LV D+5보다 2pt 압축됐고 오차범위 내였다.",
+        "source_url": "https://law.marquette.edu/poll/2026/09/30/mlsp91-press-release/",
+        "source_brief": "2026-10-04_주간브리핑_주정부.md:9,68,124"
+      }
+    ],
+    "AK": [
+      {
+        "date": "2026-08-18",
+        "kind": "경선",
+        "text": "톱4 예비선거에서 Kreiss-Tomkins(D) 21.62%·Begich(D) 20.07%·Wilson(R) 10.44%·Bronson(R) 8.40%로 민주 2명이 나란히 1·2위를 차지했다.",
+        "source_url": "https://alaskapublic.org/news/politics/elections/2026-08-18/kreiss-tomkins-begich-wilson-and-bronson-lead-in-early-governor-primary-results",
+        "source_brief": "2026-08-23_주간브리핑_주정부.md:12,94"
+      },
+      {
+        "date": "2026-08-26",
+        "kind": "경선",
+        "text": "Bronson이 '사퇴하지 않는다'고 공식 선언했고 8지구 공화당 위원장도 사퇴를 기대하지 않는다고 해석을 정리했다.",
+        "source_url": "https://alaskawatchman.com/2026/08/26/bronson-is-not-stepping-aside-in-bid-to-become-alaskas-next-governor/",
+        "source_brief": "2026-08-30_주간브리핑_주정부.md:11,107"
+      },
+      {
+        "date": "2026-08-28",
+        "kind": "경선",
+        "text": "Begich(D)가 8/28 저녁 주지사 레이스 사퇴와 Kreiss-Tomkins 지지를 선언해 민주 단일화가 완성됐다.",
+        "source_url": "https://www.adn.com/politics/2026/08/28/tom-begich-says-he-will-withdraw-from-alaska-governors-race/",
+        "source_brief": "2026-09-06_주간브리핑_주정부.md:8,16"
+      },
+      {
+        "date": "2026-08-31",
+        "kind": "기타",
+        "text": "인증 마감일에 5위 트렉 테일러(R)가 재산공개 위반으로 실격되고 6위 비숍(R)이 자진 사퇴해 잉글리시(R)가 승계하는 삼중 변동이 일어났다.",
+        "source_url": "https://alaskabeacon.com/2026/08/31/last-day-shakeup-in-alaskas-race-for-governor-puts-disqualified-candidates-wife-on-the-ballot/",
+        "source_brief": "2026-09-06_주간브리핑_주정부.md:16,119"
+      },
+      {
+        "date": "2026-09-01",
+        "kind": "등급",
+        "text": "Sabato가 AK를 Likely R에서 Toss-up으로 올려 Cook(Likely R)과 두 칸 차이가 났다.",
+        "source_url": "https://centerforpolitics.org/crystalball/the-governors-a-trio-of-rating-changes-toward-democrats-as-they-chase-a-rare-edge-in-overall-seats-held/",
+        "source_brief": "2026-09-06_주간브리핑_주정부.md:9,17,37"
+      },
+      {
+        "date": "2026-09-04",
+        "kind": "기타",
+        "text": "달스트롬 부지사가 자신의 실격 처분을 번복해 트렉 테일러를 복권시켰다(APOC 4-1 권고 무시, 근거는 미공개 법무부 내부 검토).",
+        "source_url": "https://alaskabeacon.com/2026/09/05/alaska-lt-gov-dahlstrom-reverses-herself-puts-former-attorney-general-treg-taylor-back-in-governors-race/",
+        "caveat": "APOC 재심·소송 리스크 잔존",
+        "source_brief": "2026-09-06_주간브리핑_주정부.md:16,117"
+      },
+      {
+        "date": "2026-09-10",
+        "kind": "등급",
+        "text": "Cook이 AK를 Likely R에서 Lean R로 옮겨 Sabato Toss-up과의 차이가 한 칸으로 줄었다.",
+        "source_url": "https://www.cookpolitical.com/analysis/governors/governors-overview/oregon-governor-shifts-toward-gop-while-alaska-moves",
+        "source_brief": "2026-09-13_주간브리핑_주정부.md:18,39; 2026-09-20_주간브리핑_주정부.md:9"
+      },
+      {
+        "date": "2026-09-11",
+        "kind": "기타",
+        "text": "테일러 복권의 근거였던 법무부 보고서가 부실로 검증됐다 — 파라리걸이 하루 반 작성했고 121명 중 91명을 지목했으며 주지사·부지사 후보 8인 전원이 포함됐다.",
+        "source_url": "https://alaskabeacon.com/2026/09/11/report-used-to-justify-reinstatement-of-alaska-republican-governor-candidate-appears-flawed/",
+        "source_brief": "2026-09-13_주간브리핑_주정부.md:20,39"
+      },
+      {
+        "date": "2026-09-17",
+        "kind": "조사",
+        "text": "AARP 본선 첫 실측(9/8~11, LV 800)에서 JKT 40 – 윌슨 20 – 브론슨 14 – 테일러 7, 민주 40 대 공화 합 41로 나타났다.",
+        "source_url": "https://www.aarp.org/press/releases/2026-09-17-new-aarp-alaska-poll-older-voters-will-be-influential-in-u-s-senate-gubernatorial-and-congressional-races.html",
+        "source_brief": "2026-09-20_주간브리핑_주정부.md:21,42,86"
+      },
+      {
+        "date": "2026-09-17",
+        "kind": "등급",
+        "text": "Cook이 일주일 만에 두 번째로 AK를 Lean R에서 Toss-up으로 이동해 Cook·Sabato 양사 등급이 사이클 처음 완전히 일치했다.",
+        "source_url": "https://thehill.com/homenews/campaign/6096933-alaska-gov-race-cook-tossup/",
+        "source_brief": "2026-09-20_주간브리핑_주정부.md:21,42,143"
+      },
+      {
+        "date": "2026-09-22",
+        "kind": "조사",
+        "text": "AARP 결과 페이지의 RCV 결선 시뮬레이션은 JKT 55 – 윌슨 45(D+10)이나 미결정 18%가 빠진 값이고, 미결정층은 트럼프 +30%p 이상 우편향이라는 설명이 나왔다.",
+        "source_url": "https://alaskapublic.org/news/politics/elections/2026-09-22/poll-shows-democrat-with-lead-in-alaska-governors-race-but-large-swaths-remain-undecided",
+        "caveat": "순방향 불확정",
+        "source_brief": "2026-09-27_주간브리핑_주정부.md:10,23,87"
+      },
+      {
+        "date": "2026-09-27",
+        "kind": "조사",
+        "text": "Cygnal 조사(9/24~27, LV 502)에서 크라이스톰킨스 44 – 윌슨 24 – 기타 공화 합 17 – 미결정 15로 윌슨이 8월 예비 10%에서 24%로 올랐다.",
+        "source_url": "https://www.cygn.al/wp-content/uploads/2026/10/AK_GOV_Memo.pdf",
+        "caveat": "공화 성향 추정·의뢰 미확인",
+        "source_brief": "2026-10-04_주간브리핑_주정부.md:19,71,127"
+      },
+      {
+        "date": "2026-09-30",
+        "kind": "기타",
+        "text": "트럼프가 한국의 알래스카 LNG $540억 투자를 발표했으나 한국 산업부가 '결정된 바 없다'고 즉각 부인했고, 주지사 후보 4인은 모두 사업 자체를 환영했다.",
+        "source_url": "https://adn.com/politics/2026/10/02/south-korean-official-says-trump-announcement-on-alaska-lng-went-far-beyond-what-was-agreed",
+        "source_brief": "2026-10-04_주간브리핑_주정부.md:19,112,130"
+      },
+      {
+        "date": "2026-10-08",
+        "kind": "토론",
+        "text": "'Debate for the State' 4자 토론에 4인 전원이 참석해 사퇴 없이 진행됐고, 윌슨은 JKT를 집중 공격한 반면 브론슨은 JKT를 칭찬했다.",
+        "source_url": "https://www.kyuk.org/alaska-state-news/2026-10-09/alaska-governor-candidates-spar-over-bipartisan-cooperation-among-other-issues-in-debate-for-the-state",
+        "source_brief": "2026-10-11_주간브리핑_주정부.md:10,30,112"
+      },
+      {
+        "date": "2026-10-08",
+        "kind": "유세",
+        "text": "Alaska Beacon 보도로 트럼프의 10/13 워실라 유세(설리번·베기치 지원)가 확정됐다.",
+        "source_url": "https://alaskabeacon.com/2026/10/08/president-trump-to-campaign-for-alaska-republicans-on-oct-13-in-wasilla/",
+        "caveat": "(2차 확인 필요)(단일 매체 Alaska Story 기준 트럼프의 RCV 비판·3인 출마 회의 발언 부분에 한함)",
+        "source_brief": "2026-10-11_주간브리핑_주정부.md:11,114; 2026-10-04_주간브리핑_주정부.md:19"
+      }
+    ],
+    "FL": [
+      {
+        "date": "2026-07-23",
+        "kind": "등급",
+        "text": "Sabato가 FL을 Likely R로 조정했다(같은 회차에 MI Leans D·NM Safe D, FL의 이전 등급은 원문에 미기재).",
+        "source_url": "https://centerforpolitics.org/crystalball/three-gubernatorial-rating-changes-michigan-to-leans-democratic-new-mexico-to-safe-democratic-florida-to-likely-republican/",
+        "source_brief": "2026-08-02_주간브리핑_주정부.md:33,159"
+      },
+      {
+        "date": "2026-08-18",
+        "kind": "경선",
+        "text": "FL 공화 예선에서 트럼프 지지 Donalds가 승리해, 민주당으로 이적한 Jolly와 본선에서 맞붙게 됐다.",
+        "source_url": "https://www.cnn.com/2026/08/18/politics/takeaways-florida-alaska-primaries",
+        "caveat": "전국 트랙 8/20 기록 보강 — 주정부 일일 미수록분",
+        "source_brief": "2026-08-23_주간브리핑_주정부.md:13,106"
+      },
+      {
+        "date": "2026-08-27",
+        "kind": "등급",
+        "text": "Cook이 FL을 Safe R에서 Likely R로 이동했다 — 270toWin 미러 기준 Cook의 마지막 변경(8/27)이다.",
+        "source_url": "https://www.270towin.com/2026-governor-election/cook-political-report-2026-governor",
+        "source_brief": "2026-09-06_주간브리핑_주정부.md:24"
+      },
+      {
+        "date": "2026-09-09",
+        "kind": "조사",
+        "text": "Change Research(민주계, 9/7~9, LV 1,107)에서 Jolly 47 – Donalds 44(D+3)가 나왔으며 정보 제공 후 재질문 50–45는 메시지 테스트다.",
+        "source_url": "https://www.tampafp.com/new-statewide-survey-finds-tight-contests-across-floridas-top-2026-races/",
+        "caveat": "민주계 의뢰 — 하우스 이펙트 가정 의무",
+        "source_brief": "2026-09-13_주간브리핑_주정부.md:43,79,162"
+      },
+      {
+        "date": "2026-09-17",
+        "kind": "조사",
+        "text": "St. Pete Polls(9/15~17, LV 913)에서 Donalds 43.5 – Jolly 43.4(R+0.1)로 사실상 동률이었고 무당파는 Jolly +12였다.",
+        "source_url": "https://floridapolitics.com/archives/820638-poll-byron-donalds-44-david-jolly-43-in-dead-heat-race-for-florida-governor/",
+        "source_brief": "2026-09-20_주간브리핑_주정부.md:25,52,91"
+      },
+      {
+        "date": "2026-09-17",
+        "kind": "등급",
+        "text": "Inside Elections가 FL을 Lean R로 이동했다(이전 등급은 원문에 미기재) — 이때 Sabato·Cook은 Likely R이었다.",
+        "source_url": "https://www.270towin.com/2026-governor-election/inside-elections-governor-2026",
+        "source_brief": "2026-09-20_주간브리핑_주정부.md:29,52"
+      },
+      {
+        "date": "2026-09-22",
+        "kind": "등급",
+        "text": "Sabato가 FL을 Likely R에서 Leans R로 이동했다(Joe.My.God. 등 2차 출처 기준).",
+        "source_url": "https://www.joemygod.com/2026/09/handicapper-shifts-seven-big-races-towards-dems/",
+        "caveat": "Crystal Ball 원문 403 지속 (원문 확인 필요)",
+        "source_brief": "2026-10-11_주간브리핑_주정부.md:12,17,115"
+      },
+      {
+        "date": "2026-10-01",
+        "kind": "등급",
+        "text": "Cook이 FL·TX를 Likely R에서 Lean R로 이동하며 '트럼프 낮은 지지율의 하위 선거 파급'을 근거로 명시했다.",
+        "source_url": "https://thecookpoliticalreport.substack.com/p/texas-and-florida-governors-races",
+        "source_brief": "2026-10-04_주간브리핑_주정부.md:18,25,131"
+      }
+    ],
+    "OR": [
+      {
+        "date": "2026-09-08",
+        "kind": "기타",
+        "text": "Kotek 주지사가 주 소유 부지의 데이터센터 개발을 일시 중단하는 조치를 발표했고, 시위대는 더 나아가라고 요구했다.",
+        "source_url": "https://eastoregonian.com/2026/09/09/gov-kotek-pauses-data-centers-on-state-land-capitol-demonstrators-want-her-to-go-further/",
+        "source_brief": "2026-09-13_주간브리핑_주정부.md:21,163"
+      },
+      {
+        "date": "2026-09-10",
+        "kind": "등급",
+        "text": "Cook이 OR을 Likely D에서 Lean D로 이동했다 — AK 상향과 같은 발표에서 공화 방향으로 움직인 사례다(한 사이클 두 칸 하락).",
+        "source_url": "https://www.cookpolitical.com/analysis/governors/governors-overview/oregon-governor-shifts-toward-gop-while-alaska-moves",
+        "source_brief": "2026-09-13_주간브리핑_주정부.md:18,43; 2026-09-20_주간브리핑_주정부.md:9"
+      }
+    ],
+    "TX": [
+      {
+        "date": "2026-08-20",
+        "kind": "등급",
+        "text": "Cook이 TX 주지사를 Likely R로 조정했다(IA Lean D 상향과 같은 날, 이전 등급은 원문에 미기재).",
+        "source_url": "https://thehill.com/homenews/campaign/6041925-cook-report-iowa-texas-democrat-governor-edge/",
+        "source_brief": "2026-08-30_주간브리핑_주정부.md:19,36; 2026-08-23_주간브리핑_주정부.md:92"
+      },
+      {
+        "date": "2026-08-26",
+        "kind": "등급",
+        "text": "Sabato가 TX를 Safe R에서 Likely R로 이동해 8/20 Cook(Likely R)과 양사 등급이 수렴했다.",
+        "source_url": "https://centerforpolitics.org/crystalball/2026-rating-changes/",
+        "source_brief": "2026-08-30_주간브리핑_주정부.md:19,36,131"
+      },
+      {
+        "date": "2026-09-09",
+        "kind": "조사",
+        "text": "Cook/TelevisaUnivision(YouGov 실사, 8/27~9/4, RV 1,000)에서 애벗 47 – 히노호사 47 동률이 나왔다.",
+        "source_url": "https://corporate.televisaunivision.com/press/2026/09/09/n-univision-news-poll-finds-texas-governors-and-senate-races-deadlocked-ahead-of-2026-midterms/",
+        "source_brief": "2026-09-13_주간브리핑_주정부.md:43,78,161"
+      },
+      {
+        "date": "2026-09-22",
+        "kind": "등급",
+        "text": "Sabato가 TX를 Likely R에서 Leans R로 이동했다(Joe.My.God. 등 2차 출처 기준).",
+        "source_url": "https://www.joemygod.com/2026/09/handicapper-shifts-seven-big-races-towards-dems/",
+        "caveat": "Crystal Ball 원문 403 지속 (원문 확인 필요)",
+        "source_brief": "2026-10-11_주간브리핑_주정부.md:12,17,115"
+      },
+      {
+        "reported": "2026-09-27",
+        "kind": "조사",
+        "text": "9월 비당파 조사 6건(8/27~9/19)의 중앙값은 R+3(범위 D+4~R+7)이고 ReconMR/Siena D+4는 외곽값으로 정리됐다.",
+        "source_url": "https://texaspolitics.utexas.edu/blog/texas-2026-gubernatorial-poll-tracker",
+        "source_brief": "2026-09-27_주간브리핑_주정부.md:12,89,183"
+      },
+      {
+        "date": "2026-10-01",
+        "kind": "등급",
+        "text": "Cook이 FL·TX를 Likely R에서 Lean R로 이동하며 '트럼프 낮은 지지율의 하위 선거 파급'을 근거로 명시했다.",
+        "source_url": "https://thecookpoliticalreport.substack.com/p/texas-and-florida-governors-races",
+        "source_brief": "2026-10-04_주간브리핑_주정부.md:18,25,131"
+      },
+      {
+        "date": "2026-10-03",
+        "kind": "조사",
+        "text": "NYT/Siena에서 히노호사 49 – 애벗 46(D+3)이 나왔고, YouGov D+1과 UMass Lowell R+4·Fox R+5가 섞여 조사가 혼조를 보였다.",
+        "source_url": "https://sri.siena.edu/2026/10/04/nytimes-siena-poll-of-likely-voters-gubernatorial-races-2/",
+        "source_brief": "2026-10-11_주간브리핑_주정부.md:31,67,103"
+      }
+    ],
+    "ME": [
+      {
+        "date": "2026-06-30",
+        "kind": "조사",
+        "text": "NYT/Press Herald/Siena 공동 조사(6월 말 공개)에서 Pingree 50 – Charles 36 – Bennett 8(D+14)로 기준선이 형성됐다.",
+        "source_url": "https://www.mainepublic.org/maine/2026-06-30/poll-of-maine-governors-race-gives-hannah-pingree-comfortable-lead-over-bobby-charles",
+        "source_brief": "2026-09-13_주간브리핑_주정부.md:10,156; 2026-09-20_주간브리핑_주정부.md:11"
+      },
+      {
+        "date": "2026-07-21",
+        "kind": "토론",
+        "text": "Pingree와 Bennett가 4회 토론에 합의했고 Charles는 더 많은 토론을 요구했다(Sun Journal 7/21 보도 기준).",
+        "source_url": "https://www.sunjournal.com/2026/07/21/pingree-bennett-agree-to-four-debates-in-maine-governors-race-bobby-charles-wants-more/",
+        "source_brief": "2026-08-02_주간브리핑_주정부.md:43,153"
+      },
+      {
+        "date": "2026-07-22",
+        "kind": "자금",
+        "text": "Pingree의 모금이 경쟁 후보들을 약 $3M 앞서며 모금을 압도하고 있다는 보도가 7/22 Press Herald에 실렸다.",
+        "source_url": "https://www.pressherald.com/2026/07/22/hannah-pingree-dominates-fundraising-in-maine-governors-race/",
+        "source_brief": "2026-08-02_주간브리핑_주정부.md:43,80,152"
+      },
+      {
+        "date": "2026-09-01",
+        "kind": "토론",
+        "text": "Charles가 9/1 토론을 수락해 3자 4회(10/1·10/8·10/13·10/14) 전원 합의가 이뤄졌고, 잔여 쟁점은 5차(10/20) 1건이다.",
+        "source_url": "https://www.centralmaine.com/2026/09/01/maine-governor-candidates-agree-to-4-debates-ahead-of-election/",
+        "source_brief": "2026-09-06_주간브리핑_주정부.md:36,147"
+      },
+      {
+        "date": "2026-09-17",
+        "kind": "자금",
+        "text": "DGA계 PAC가 메인 주지사 TV 광고 $55만을 철회했다(잔여 계획 $800만+, 연초 $1,100만+에서 축소).",
+        "source_url": "https://www.sunjournal.com/2026/09/17/national-democrats-ease-up-on-maine-governor-spending-due-to-confidence-in-hannah-pingree/",
+        "caveat": "철회분 $55만 행선지 미확보 (수집 필요)",
+        "source_brief": "2026-09-20_주간브리핑_주정부.md:24,41,96,168; 2026-09-27_주간브리핑_주정부.md:41"
+      },
+      {
+        "date": "2026-09-17",
+        "kind": "등급",
+        "text": "Inside Elections가 ME를 Likely D에서 Safe D로 올렸다 — 이로써 Sabato Lean D만 어긋난 값이 됐다.",
+        "source_url": "https://www.270towin.com/2026-governor-election/inside-elections-governor-2026",
+        "source_brief": "2026-09-20_주간브리핑_주정부.md:29,41"
+      },
+      {
+        "date": "2026-09-24",
+        "kind": "유세",
+        "text": "Christie 전 NJ 주지사가 Charles 지원 유세에 나섰고, Charles는 캐나다 관세를 놓고 트럼프와 공개 선긋기를 했다.",
+        "source_url": "https://mainemorningstar.com/2026/09/24/with-christie-by-his-side-bobby-charles-distances-himself-from-trump/",
+        "source_brief": "2026-09-27_주간브리핑_주정부.md:24,162"
+      },
+      {
+        "date": "2026-09-25",
+        "kind": "조사",
+        "text": "NYT/Press Herald/Siena(9/15~17, LV 309)에서 Pingree 48 – Charles 36 – Bennett 8(D+12)로 6월 D+14보다 2pt 압축됐다.",
+        "source_url": "https://www.pressherald.com/2026/09/25/hannah-pingree-continues-to-hold-a-big-lead-in-new-poll-of-maine-governors-race/",
+        "source_brief": "2026-09-27_주간브리핑_주정부.md:24,86"
+      },
+      {
+        "date": "2026-10-01",
+        "kind": "조사",
+        "text": "AARP(9/20~22, LV 982)에서 Pingree 52 – Charles 39 – Bennett 6(D+13)로, 50세 이상에서도 D+7이었다.",
+        "source_url": "https://aarp.org/press/releases/2026-10-01-new-aarp-maine-poll-older-voters-could-play-decisive-role-in-closely-watched-senate-governor-races",
+        "source_brief": "2026-10-04_주간브리핑_주정부.md:37,69,125"
+      },
+      {
+        "date": "2026-10-04",
+        "kind": "조사",
+        "text": "Marist(10/1~4, RV 1,505)에서 52–40(Bennett 6), WaPo/GWU(9/30~10/5)에서 49–36(Bennett 11)으로 D+12~13 군집이 확인됐다.",
+        "source_url": "https://maristpoll.marist.edu/polls/midterm-elections-in-maine-october-2026/",
+        "source_brief": "2026-10-11_주간브리핑_주정부.md:29,60,107"
+      }
+    ]
+  }
+}

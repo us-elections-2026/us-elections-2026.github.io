@@ -1,0 +1,117 @@
+{
+  "as_of": "2026-11-08",
+  "dem_needed_net": 4,
+  "current_balance": "R 53 / D 47",
+  "races": [
+    {
+      "state": "GA",
+      "defense": "D",
+      "incumbent": "Ossoff (D·현직) vs Collins (R)",
+      "rating": "**민주 수성, +18**(59–41, 개표 99%, 비공식 — ABC) · 최종 등급 Likely D(Cook)",
+      "latest_poll": "최종 조사 InsiderAdvantage 53–46(LV 2,500) · Research Co. 55–45 → 결과 +18로 대폭 과소",
+      "poll_source": "**결선 없이 확정.** 최종 조사(+7~10)와 등급을 모두 크게 상회한 감시주 최대 격차다. Forbes 단독 64–36과의 불일치는 미해소(원천 11/8 상원 주간).",
+      "cash_on_hand": "**Ossoff 3분기 $33M · 현금 $26M vs M. Collins 3분기 $2.7M · 현금 $110만**(원천 상원 주간 10/25) · SLF 조지아 예약 $760만 취소(AdImpact, AJC)",
+      "kr_relevance": "통상·반도체"
+    },
+    {
+      "state": "MI",
+      "defense": "D",
+      "incumbent": "공개석 (Peters 은퇴) — El-Sayed (D, 8/4 예비 승 약 1%p) vs Rogers (R)",
+      "rating": "**민주 수성, +6.4**(52.2–45.8, 개표 92%, 비공식) · 최종 등급 Lean D(Cook) / Leans D(Sabato)",
+      "latest_poll": "최종 NYT/Siena(10/23~11/1, 1,011명) 53–42(D+11) → 결과 +6.4 — 감시주 중 유일한 과대평가",
+      "poll_source": "AP 확정 11/4 새벽. 스티븐스 하원의원의 11/1 로저스 지지(→ 민주당 제명) 이탈 효과 가능성이 있으나 검증한 출처는 없다.",
+      "cash_on_hand": "**3분기 El-Sayed 약 $33M vs Rogers $10M**(Punchbowl, 10/15 FEC) · 공개 지출 $2.05억+로 주 기록 · 공화 외부자금 $5,930만 vs 민주 $2,300만(Bridge 10/2) · TV 광고 약 2:1 공화 우위(AP)",
+      "kr_relevance": "자동차·관세"
+    },
+    {
+      "state": "NH",
+      "defense": "D",
+      "incumbent": "공개석 (Shaheen 은퇴) — Pappas (D) vs Sununu (R)",
+      "rating": "**민주 수성**(격차 미확인 — 서누누 11/3 밤 8:48 ET경 승복, 비공식)",
+      "latest_poll": "최종 UMass Lowell/YouGov(10/2~19, LV 600) 48–41(D+7)과 방향 일치",
+      "poll_source": "상원에 선출된 첫 공개 동성애자 남성(Boston Globe). 공식 격차는 수집 과제.",
+      "cash_on_hand": "**Pappas 3분기 $8.1M**(서누누 수치 미확보) · 서누누 지원 외부자금 $5,000만+(SLF $1,700만 · No Going Back $1,000만 · AFP $200만+, TIME 10/5) vs SMP 파파스 $1,000만 약정(이월)",
+      "kr_relevance": "민주 수성 필수 3석 중 하나"
+    },
+    {
+      "state": "ME",
+      "defense": "R",
+      "incumbent": "Jackson (D, 7/25 인준) vs Collins (R·6선)",
+      "rating": "**민주 탈환, +6**(53–47, 개표 92%, 비공식) — RCV 불필요 · 최종 등급 Toss-up(Cook·Sabato)",
+      "latest_poll": "최종 NYT/Siena(10/27~11/1) 51–45(D+6) → 결과 +6 적중",
+      "poll_source": "콜린스 6선 저지, 11/4 새벽 승복. 전주 '가장 약한 고리' 판정은 틀렸다.",
+      "cash_on_hand": "**3분기 Jackson $20.4M vs S. Collins $5.2M(+공동위 $1.5M)**(Punchbowl, 10/15 FEC) — 4:1 우위 · 집행 비대칭(콜린스 진영 약 $8,000만 대 잭슨 진영 약 $4,500만)은 이월",
+      "kr_relevance": "민주 최우선 탈환 표적"
+    },
+    {
+      "state": "NC",
+      "defense": "R",
+      "incumbent": "공석 — Cooper (D) vs Whatley (R)",
+      "rating": "**민주 탈환**(당일 밤 첫 확정, 격차 미확인, 비공식) · 최종 등급 Likely D(Cook)",
+      "latest_poll": "최종 ECU(10/26~29, 1,041명) 54–45(D+9) · YouGov 55–44(D+11)와 방향 일치",
+      "poll_source": "틸리스 공석의 민주 탈환. 5개 투표소 기술 문제로 개표가 ~8:15 pm ET까지 보류됐으나 분쟁 없이 종료. 공식 격차는 수집 과제.",
+      "cash_on_hand": "**Cooper 현금 $12.5M vs Whatley 현금 $91.6만**(WRAL, 원천 상원 주간 10/25) · Cooper 3분기 $19.5M · 와틀리 TV 광고 공백 지속 · SLF 지출 동결(이월)",
+      "kr_relevance": "—"
+    },
+    {
+      "state": "TX",
+      "defense": "R",
+      "incumbent": "Talarico (D) vs Paxton (R)",
+      "rating": "**민주 탈환, +12**(55–43, 개표 99%, 비공식) · 최종 등급 Toss-up(Cook·Sabato) / Tilt D(IE 10/31)",
+      "latest_poll": "최종 NYT/Siena(10/27~11/1) 50–43(D+7) → 결과 +12로 과소 · Quantus(공화 성향) 팩스턴 +1.1이 최대 외차",
+      "poll_source": "사상 최고 비용 상원 선거(예비 후 광고 4.08억 달러+, 머스크 측 2.72억 달러 무위). 팩스턴 당일 밤 승복·축하.",
+      "cash_on_hand": "**3분기 Talarico $60.2M**(원천 상원 주간 10/25; 전주 캠프 발표치 $64M) vs Paxton $18M(Texas Tribune) / $10.2M+공동위 $8.5M(Punchbowl) · 외곽 팩스턴 측 약 $2.39억 vs 민주 성향 $4,500만(AP) · 머스크→SLF→텍사스 PAC $158M",
+      "kr_relevance": "블루웨이브 시 도전"
+    },
+    {
+      "state": "OH",
+      "defense": "R",
+      "incumbent": "Brown (D) vs Husted (R·임명직)",
+      "rating": "**민주 탈환, +4**(50–45, 개표 98%, 비공식) · 최종 등급 Toss-up(Cook·Sabato) / Tilt D(IE 10/31)",
+      "latest_poll": "최종 NYT/Siena(10/26~11/1, LV 717) 49–44(D+5) → 결과 +4로 근접",
+      "poll_source": "외부 지출 허스테드 1.99억 > 브라운 0.95억 달러 — 돈과 반대로 귀결. 허스테드 승복 발언은 미확인.",
+      "cash_on_hand": "**3분기 Brown $23.1M vs Husted $4.8M(+공동위 $3.2M)**(Punchbowl, 10/15 FEC) · SLF 허스테드 지원 $9,300만 증액 · 머스크 슈퍼팩 약 $790만 · 광고 누계 $4.66억(AdImpact)",
+      "kr_relevance": "철강·제조업"
+    },
+    {
+      "state": "AK",
+      "defense": "R",
+      "incumbent": "Peltola (D) vs Sullivan (R·현직)",
+      "rating": "**미확정 — 펠톨라 +637표**(102,962 = 48.02% 대 102,325 = 47.72%, 비공식) · 최종 등급 Toss-up(Cook) / Leans D(Sabato)",
+      "latest_poll": "최종 NYT/Siena(10/23~30, LV 610) 48–46(D+2)",
+      "poll_source": "동명이인 'Dan J. Sullivan' 3,600표. 투표지 약 1/4 미개표(조기 약 2만·부재자 약 2.7만, 11/10·11/13 집계) → **RCV 집계 11/18 → 인증 목표 11/25**. DOJ 인증 차단 소송은 기각·항소 중, 형사 조사는 계속되나 트럼프는 결과에 이의를 제기하지 않겠다고 발언.",
+      "cash_on_hand": "**3분기 Peltola $17M vs Sullivan $2.7M**(Punchbowl, 10/15 FEC) — 6배 · 광고 공화 $4,500만 vs 민주 $3,200만(AdImpact, 이월)",
+      "kr_relevance": "—"
+    },
+    {
+      "state": "IA",
+      "defense": "R",
+      "incumbent": "Turek (D) vs Hinson (R) — 개방석(Ernst 은퇴)",
+      "rating": "**민주 탈환, +4.1**(50.5–46.4, 개표 98%, 비공식) · 최종 등급 Toss-up(IE 10/31)",
+      "latest_poll": "최종 NYT/Siena(10/26~11/1, LV 705) 48–47(D+1) → 결과 +4.1로 과소 · 선거 전 RCP 평균은 힌슨 +0.4",
+      "poll_source": "AP 확정(~11:39 pm ET)이 상원 다수 확정타였다. 트럼프 11/1 더뷰크 유세 무위.",
+      "cash_on_hand": "**3분기 Turek $13.9M vs Hinson $3.3M**(Punchbowl, 10/15 FEC) · 광고비 $9,000만+(이월) · SLF 힌슨 지원 $2,000만(이월)",
+      "kr_relevance": "농업(대두·에탄올) 관세 — 직접 연결은 미확인"
+    },
+    {
+      "state": "NE",
+      "defense": "R",
+      "incumbent": "Osborn (무소속) vs Ricketts (R·현직)",
+      "rating": "**공화 수성, 리케츠 ≈+5**(AP 11/4 새벽 확정, 비공식) · 최종 등급 Lean R(Cook 10/30) / Lean R(Sabato)",
+      "latest_poll": "최종 NYT/Siena(10/23~29, LV 809) 리케츠 49–43(R+6) 근접 · YouGov 동률·Echelon R+1보다 공화 쪽",
+      "poll_source": "감시 11개 주 중 공화가 지킨 유일한 주. 오스본 승복·교섭단체 발언은 미확인 — 'I +1' 집계는 발동하지 않음.",
+      "cash_on_hand": "**3분기 Osborn $410만 vs Ricketts $220만**(원천 상원 주간 10/25) · SLF 네브래스카 누계 $1,500만 · Fairshake $7M(이월)",
+      "kr_relevance": "농축산 수출(쇠고기) · 미확인"
+    },
+    {
+      "state": "KS",
+      "defense": "R",
+      "incumbent": "Hamilton (D) vs Marshall (R·현직)",
+      "rating": "**민주 탈환, +4.8**(50.9–46.1, 개표 95%, 비공식) — 1932년 이후 첫 캔자스 민주 상원의원 · 최종 등급 Toss-up(Cook) / Leans R(Sabato)",
+      "latest_poll": "최종 NYT/Siena 49–44(D+5) → 결과 +4.8 적중 · Emerson 49–45 · WaPo-Schar 54–44",
+      "poll_source": "현직 마셜 낙선. 트럼프 11/1 살라이나 유세 직후의 함락.",
+      "cash_on_hand": "**3분기 Hamilton $9.9M vs Marshall $86.6만**(Punchbowl, 10/15 FEC) · 슈머 연계 PAC $500만 투입 확인(KCUR — 전주 SMP $5M 단일 출처 건의 부분 교차)",
+      "kr_relevance": "항공(위치타)·농산물 수출 · 미확인"
+    }
+  ]
+}

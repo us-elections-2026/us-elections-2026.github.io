@@ -1,0 +1,162 @@
+{
+  "version": "v0.1",
+  "run_date": "2026-11-09",
+  "seed": 20261103,
+  "n_sims": 10000,
+  "assumptions": {
+    "sigma_poll": 6,
+    "half_life_days": 21,
+    "rho": 0.5,
+    "weights": {
+      "rating": 1,
+      "market": 1.2,
+      "poll_max": 1.5
+    }
+  },
+  "method_note": "등급(사전)+시장가+조사(시간감쇠·당파보정) 블렌드 → 가우시안 코퓰러(ρ=0.5) 1만회. 조사·시장 없는 주는 등급만 사용(MI 등). 사퇴 후보 조사 제외(ME=Jackson만). σ·ρ·가중치는 문서화된 가정 — 11월 실측으로 캘리브레이션 예정.",
+  "states": [
+    {
+      "state": "GA",
+      "defense": "D",
+      "rating": "**민주 수성, +18**(59–41, 개표 99%, 비공식 — ABC) · 최종 등급 Likely D(Cook)",
+      "p_rating": 0.9,
+      "p_market": 1,
+      "poll_margin": 8.5,
+      "n_polls": 14,
+      "p_poll": 0.921,
+      "p_blend": 0.941
+    },
+    {
+      "state": "MI",
+      "defense": "D",
+      "rating": "**민주 수성, +6.4**(52.2–45.8, 개표 92%, 비공식) · 최종 등급 Lean D(Cook) / Leans D(Sabato)",
+      "p_rating": 0.75,
+      "p_market": 1,
+      "poll_margin": 4.2,
+      "n_polls": 37,
+      "p_poll": 0.757,
+      "p_blend": 0.834
+    },
+    {
+      "state": "NH",
+      "defense": "D",
+      "rating": "**민주 수성**(격차 미확인 — 서누누 11/3 밤 8:48 ET경 승복, 비공식)",
+      "p_rating": 0.5,
+      "p_market": 1,
+      "poll_margin": 7.2,
+      "n_polls": 15,
+      "p_poll": 0.886,
+      "p_blend": 0.819
+    },
+    {
+      "state": "ME",
+      "defense": "R",
+      "rating": "**민주 탈환, +6**(53–47, 개표 92%, 비공식) — RCV 불필요 · 최종 등급 Toss-up(Cook·Sabato)",
+      "p_rating": 0.5,
+      "p_market": 1,
+      "poll_margin": 3.6,
+      "n_polls": 23,
+      "p_poll": 0.725,
+      "p_blend": 0.753
+    },
+    {
+      "state": "NC",
+      "defense": "R",
+      "rating": "**민주 탈환**(당일 밤 첫 확정, 격차 미확인, 비공식) · 최종 등급 Likely D(Cook)",
+      "p_rating": 0.9,
+      "p_market": 1,
+      "poll_margin": 11.2,
+      "n_polls": 18,
+      "p_poll": 0.97,
+      "p_blend": 0.961
+    },
+    {
+      "state": "TX",
+      "defense": "R",
+      "rating": "**민주 탈환, +12**(55–43, 개표 99%, 비공식) · 최종 등급 Toss-up(Cook·Sabato) / Tilt D(IE 10/31)",
+      "p_rating": 0.5,
+      "p_market": 1,
+      "poll_margin": 3.2,
+      "n_polls": 38,
+      "p_poll": 0.701,
+      "p_blend": 0.744
+    },
+    {
+      "state": "OH",
+      "defense": "R",
+      "rating": "**민주 탈환, +4**(50–45, 개표 98%, 비공식) · 최종 등급 Toss-up(Cook·Sabato) / Tilt D(IE 10/31)",
+      "p_rating": 0.5,
+      "p_market": 1,
+      "poll_margin": 3.7,
+      "n_polls": 24,
+      "p_poll": 0.733,
+      "p_blend": 0.757
+    },
+    {
+      "state": "AK",
+      "defense": "R",
+      "rating": "**미확정 — 펠톨라 +637표**(102,962 = 48.02% 대 102,325 = 47.72%, 비공식) · 최종 등급 Toss-up(Cook) / Leans D(Sabato)",
+      "p_rating": 0.5,
+      "p_market": 0.97,
+      "poll_margin": 2,
+      "n_polls": 13,
+      "p_poll": 0.631,
+      "p_blend": 0.706
+    },
+    {
+      "state": "IA",
+      "defense": "R",
+      "rating": "**민주 탈환, +4.1**(50.5–46.4, 개표 98%, 비공식) · 최종 등급 Toss-up(IE 10/31)",
+      "p_rating": 0.5,
+      "p_market": 1,
+      "poll_margin": -0,
+      "n_polls": 22,
+      "p_poll": 0.498,
+      "p_blend": 0.662
+    },
+    {
+      "state": "NE",
+      "defense": "R",
+      "rating": "**공화 수성, 리케츠 ≈+5**(AP 11/4 새벽 확정, 비공식) · 최종 등급 Lean R(Cook 10/30) / Lean R(Sabato)",
+      "p_rating": 0.25,
+      "poll_margin": -2.5,
+      "n_polls": 9,
+      "p_poll": 0.336,
+      "p_blend": 0.302
+    },
+    {
+      "state": "KS",
+      "defense": "R",
+      "rating": "**민주 탈환, +4.8**(50.9–46.1, 개표 95%, 비공식) — 1932년 이후 첫 캔자스 민주 상원의원 · 최종 등급 Toss-up(Cook) / Leans R(Sabato)",
+      "p_rating": 0.5,
+      "p_market": 1,
+      "poll_margin": 4,
+      "n_polls": 12,
+      "p_poll": 0.745,
+      "p_blend": 0.762
+    }
+  ],
+  "dem_majority_prob": 77.7,
+  "seats": {
+    "mean": 52.25,
+    "p05": 47,
+    "p25": 51,
+    "median": 53,
+    "p75": 54,
+    "p95": 55
+  },
+  "seat_pmf": {
+    "44": 0.0039,
+    "45": 0.0113,
+    "46": 0.0199,
+    "47": 0.0247,
+    "48": 0.0418,
+    "49": 0.0538,
+    "50": 0.0676,
+    "51": 0.0928,
+    "52": 0.1189,
+    "53": 0.1635,
+    "54": 0.2072,
+    "55": 0.1946
+  }
+}

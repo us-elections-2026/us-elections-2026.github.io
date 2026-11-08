@@ -1,0 +1,1779 @@
+{
+ "as_of": "2026-11-07",
+ "source_label": "선거운동 트래커 광고 페이지 — FEC Schedule E 독립지출 (api.open.fec.gov) — 2026 상원·하원 본선 신고분",
+ "source_url": "https://woochangkang.github.io/campaign-tracker-2026-site/data/ads_fec.json",
+ "provenance_note": "pro_D = 민주(무소속 포함, independent_note=true) 지지 + 공화 반대, pro_R = 그 반대. 단위 달러. 후보 캠프 자금이 아니라 외부 단체의 신고 집행액이다.",
+ "races": {
+  "AK": {
+   "pro_D": 48682312,
+   "pro_R": 49516032,
+   "ads_D": 41964802,
+   "ads_R": 42975054,
+   "last_date": "2026-11-03",
+   "independent_note": false,
+   "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-AK.html",
+   "top": [
+    {
+     "committee_id": "C00957522",
+     "committee": "NORTH STAR",
+     "affiliate_of": null,
+     "candidate": "SULLIVAN, DAN",
+     "so": "O",
+     "side": "D",
+     "total": 15986671,
+     "last_date": "2026-10-30"
+    },
+    {
+     "committee_id": "C00571703",
+     "committee": "SLF PAC",
+     "affiliate_of": null,
+     "candidate": "PELTOLA, MARY",
+     "so": "O",
+     "side": "R",
+     "total": 15952902,
+     "last_date": "2026-11-02"
+    },
+    {
+     "committee_id": "C00875278",
+     "committee": "LAST FRONTIER PAC",
+     "affiliate_of": null,
+     "candidate": "PELTOLA, MARY",
+     "so": "O",
+     "side": "R",
+     "total": 6913697,
+     "last_date": "2026-10-31"
+    },
+    {
+     "committee_id": "C00960435",
+     "committee": "NO GOING BACK PAC INC.",
+     "affiliate_of": null,
+     "candidate": "PELTOLA, MARY",
+     "so": "O",
+     "side": "R",
+     "total": 5606392,
+     "last_date": "2026-10-28"
+    },
+    {
+     "committee_id": "C00473918",
+     "committee": "WOMEN VOTE",
+     "affiliate_of": null,
+     "candidate": "SULLIVAN, DAN",
+     "so": "O",
+     "side": "D",
+     "total": 5579352,
+     "last_date": "2026-10-29"
+    },
+    {
+     "committee_id": "C00956284",
+     "committee": "MIDNIGHT SUN PAC",
+     "affiliate_of": null,
+     "candidate": "PELTOLA, MARY",
+     "so": "S",
+     "side": "D",
+     "total": 5052879,
+     "last_date": "2026-10-30"
+    },
+    {
+     "committee_id": "C00865444",
+     "committee": "WINSENATE",
+     "affiliate_of": null,
+     "candidate": "SULLIVAN, DAN",
+     "so": "O",
+     "side": "D",
+     "total": 4713372,
+     "last_date": "2026-10-29"
+    },
+    {
+     "committee_id": "C00960435",
+     "committee": "NO GOING BACK PAC INC.",
+     "affiliate_of": null,
+     "candidate": "SULLIVAN, DAN",
+     "so": "S",
+     "side": "R",
+     "total": 3900924,
+     "last_date": "2026-10-28"
+    },
+    {
+     "committee_id": "C00687103",
+     "committee": "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION",
+     "affiliate_of": null,
+     "candidate": "PELTOLA, MARY",
+     "so": "O",
+     "side": "R",
+     "total": 3831443,
+     "last_date": "2026-10-29"
+    },
+    {
+     "committee_id": "C00961698",
+     "committee": "59 PAC",
+     "affiliate_of": null,
+     "candidate": "PELTOLA, MARY",
+     "so": "O",
+     "side": "R",
+     "total": 3549523,
+     "last_date": "2026-10-30"
+    },
+    {
+     "committee_id": "C00687103",
+     "committee": "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION",
+     "affiliate_of": null,
+     "candidate": "SULLIVAN, DAN",
+     "so": "S",
+     "side": "R",
+     "total": 3245505,
+     "last_date": "2026-10-29"
+    },
+    {
+     "committee_id": "C00666388",
+     "committee": "DUTY AND COUNTRY",
+     "affiliate_of": null,
+     "candidate": "SULLIVAN, DAN",
+     "so": "O",
+     "side": "D",
+     "total": 3115217,
+     "last_date": "2026-10-27"
+    },
+    {
+     "committee_id": "C00961276",
+     "committee": "LOWER COSTS NOW",
+     "affiliate_of": null,
+     "candidate": "PELTOLA, MARY",
+     "so": "S",
+     "side": "D",
+     "total": 2274287,
+     "last_date": "2026-10-25"
+    },
+    {
+     "committee_id": "C00957845",
+     "committee": "FORWARD ALASKA",
+     "affiliate_of": null,
+     "candidate": "PELTOLA, MARY",
+     "so": "S",
+     "side": "D",
+     "total": 1973645,
+     "last_date": "2026-10-25"
+    },
+    {
+     "committee_id": "C00960633",
+     "committee": "ALASKA VALUES PAC",
+     "affiliate_of": null,
+     "candidate": "SULLIVAN, DAN",
+     "so": "O",
+     "side": "D",
+     "total": 1877006,
+     "last_date": "2026-10-29"
+    }
+   ]
+  },
+  "GA": {
+   "pro_D": 20012878,
+   "pro_R": 18317486,
+   "ads_D": 18601881,
+   "ads_R": 15028673,
+   "last_date": "2026-11-03",
+   "independent_note": false,
+   "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-GA.html",
+   "top": [
+    {
+     "committee_id": "C00571703",
+     "committee": "SLF PAC",
+     "affiliate_of": null,
+     "candidate": "OSSOFF, T. JONATHAN",
+     "so": "O",
+     "side": "R",
+     "total": 11511399,
+     "last_date": "2026-10-05"
+    },
+    {
+     "committee_id": "C00953398",
+     "committee": "THE GEORGIA WAY",
+     "affiliate_of": null,
+     "candidate": "COLLINS, MIKE",
+     "so": "O",
+     "side": "D",
+     "total": 7050871,
+     "last_date": "2026-10-06"
+    },
+    {
+     "committee_id": "C00960435",
+     "committee": "NO GOING BACK PAC INC.",
+     "affiliate_of": null,
+     "candidate": "OSSOFF, T. JONATHAN",
+     "so": "O",
+     "side": "R",
+     "total": 4104643,
+     "last_date": "2026-10-06"
+    },
+    {
+     "committee_id": "C00961276",
+     "committee": "LOWER COSTS NOW",
+     "affiliate_of": null,
+     "candidate": "COLLINS, MICHAEL A JR",
+     "so": "O",
+     "side": "D",
+     "total": 3375983,
+     "last_date": "2026-10-13"
+    },
+    {
+     "committee_id": "C00492140",
+     "committee": "AB PAC",
+     "affiliate_of": null,
+     "candidate": "OSSOFF, T. JONATHAN",
+     "so": "S",
+     "side": "D",
+     "total": 2179742,
+     "last_date": "2026-10-27"
+    },
+    {
+     "committee_id": "C00851584",
+     "committee": "NEW ENGAGEMENT PAC",
+     "affiliate_of": null,
+     "candidate": "COLLINS, MICHAEL A. JR.",
+     "so": "O",
+     "side": "D",
+     "total": 2060289,
+     "last_date": "2026-10-27"
+    },
+    {
+     "committee_id": "C00961276",
+     "committee": "LOWER COSTS NOW",
+     "affiliate_of": null,
+     "candidate": "OSSOFF, T. JONATHAN",
+     "so": "S",
+     "side": "D",
+     "total": 1893997,
+     "last_date": "2026-10-13"
+    },
+    {
+     "committee_id": "C00960435",
+     "committee": "NO GOING BACK PAC INC.",
+     "affiliate_of": null,
+     "candidate": "COLLINS, MICHAEL A JR",
+     "so": "S",
+     "side": "R",
+     "total": 1386246,
+     "last_date": "2026-10-28"
+    },
+    {
+     "committee_id": "C00815753",
+     "committee": "J STREET ACTION FUND",
+     "affiliate_of": null,
+     "candidate": "COLLINS, MICHAEL JR",
+     "so": "O",
+     "side": "D",
+     "total": 470000,
+     "last_date": "2026-10-13"
+    },
+    {
+     "committee_id": "C00913699",
+     "committee": "DELIVERING FOR AMERICA PAC",
+     "affiliate_of": null,
+     "candidate": "COLLINS, MICHAEL",
+     "so": "S",
+     "side": "R",
+     "total": 450000,
+     "last_date": "2026-10-27"
+    },
+    {
+     "committee_id": "C00530766",
+     "committee": "WOMEN SPEAK OUT PAC",
+     "affiliate_of": null,
+     "candidate": "OSSOFF, JONATHAN",
+     "so": "O",
+     "side": "R",
+     "total": 377303,
+     "last_date": "2026-10-30"
+    },
+    {
+     "committee_id": "C00747998",
+     "committee": "CARE IN ACTION PAC",
+     "affiliate_of": null,
+     "candidate": "OSSOFF, T. JONATHAN",
+     "so": "S",
+     "side": "D",
+     "total": 372283,
+     "last_date": "2026-11-02"
+    },
+    {
+     "committee_id": "C00961276",
+     "committee": "LOWER COSTS NOW",
+     "affiliate_of": null,
+     "candidate": "OSSOFF, T. JONATHAN",
+     "so": "S",
+     "side": "D",
+     "total": 369651,
+     "last_date": "2026-09-29"
+    },
+    {
+     "committee_id": "C90011156",
+     "committee": "WORKING AMERICA",
+     "affiliate_of": null,
+     "candidate": "COLLINS, MICHAEL JR",
+     "so": "O",
+     "side": "D",
+     "total": 349650,
+     "last_date": "2026-10-26"
+    },
+    {
+     "committee_id": "C90011156",
+     "committee": "WORKING AMERICA",
+     "affiliate_of": null,
+     "candidate": "OSSOFF, JON",
+     "so": "S",
+     "side": "D",
+     "total": 332556,
+     "last_date": "2026-10-29"
+    }
+   ]
+  },
+  "IA": {
+   "pro_D": 103866829,
+   "pro_R": 96160415,
+   "ads_D": 98162883,
+   "ads_R": 80454232,
+   "last_date": "2026-11-03",
+   "independent_note": false,
+   "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-IA.html",
+   "top": [
+    {
+     "committee_id": "C00571703",
+     "committee": "SLF PAC",
+     "affiliate_of": null,
+     "candidate": "TUREK, JOSHUA",
+     "so": "O",
+     "side": "R",
+     "total": 48733814,
+     "last_date": "2026-11-02"
+    },
+    {
+     "committee_id": "C00865444",
+     "committee": "WINSENATE",
+     "affiliate_of": null,
+     "candidate": "ARENHOLZ, ASHLEY HINSON",
+     "so": "O",
+     "side": "D",
+     "total": 42487192,
+     "last_date": "2026-11-01"
+    },
+    {
+     "committee_id": "C00961276",
+     "committee": "LOWER COSTS NOW",
+     "affiliate_of": null,
+     "candidate": "TUREK, JOSHUA",
+     "so": "S",
+     "side": "D",
+     "total": 18405540,
+     "last_date": "2026-10-28"
+    },
+    {
+     "committee_id": "C00904482",
+     "committee": "FIGHT ON IOWA",
+     "affiliate_of": null,
+     "candidate": "TUREK, JOSHUA",
+     "so": "O",
+     "side": "R",
+     "total": 10100473,
+     "last_date": "2026-10-27"
+    },
+    {
+     "committee_id": "C00418897",
+     "committee": "VOTEVETS",
+     "affiliate_of": null,
+     "candidate": "ARENHOLZ, ASHLEY HINSON",
+     "so": "O",
+     "side": "D",
+     "total": 9878589,
+     "last_date": "2026-10-22"
+    },
+    {
+     "committee_id": "C00687103",
+     "committee": "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION",
+     "affiliate_of": null,
+     "candidate": "ARENHOLZ, ASHLEY HINSON",
+     "so": "S",
+     "side": "R",
+     "total": 7684260,
+     "last_date": "2026-10-29"
+    },
+    {
+     "committee_id": "C00687103",
+     "committee": "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION",
+     "affiliate_of": null,
+     "candidate": "TUREK, JOSHUA",
+     "so": "O",
+     "side": "R",
+     "total": 6271217,
+     "last_date": "2026-10-29"
+    },
+    {
+     "committee_id": "C00865444",
+     "committee": "WINSENATE",
+     "affiliate_of": null,
+     "candidate": "TUREK, JOSH",
+     "so": "S",
+     "side": "D",
+     "total": 5273436,
+     "last_date": "2026-10-30"
+    },
+    {
+     "committee_id": "C00904482",
+     "committee": "FIGHT ON IOWA",
+     "affiliate_of": null,
+     "candidate": "ARENHOLZ, ASHLEY HINSON",
+     "so": "S",
+     "side": "R",
+     "total": 4602763,
+     "last_date": "2026-10-26"
+    },
+    {
+     "committee_id": "C00492140",
+     "committee": "AB PAC",
+     "affiliate_of": null,
+     "candidate": "ARENHOLZ, ASHLEY HINSON",
+     "so": "O",
+     "side": "D",
+     "total": 4259746,
+     "last_date": "2026-10-28"
+    },
+    {
+     "committee_id": "C00844613",
+     "committee": "WIN IT BACK PAC",
+     "affiliate_of": null,
+     "candidate": "TUREK, JOSHUA",
+     "so": "O",
+     "side": "R",
+     "total": 3789309,
+     "last_date": "2026-09-23"
+    },
+    {
+     "committee_id": "C00915595",
+     "committee": "GOVERNMENT THAT WORKS PAC",
+     "affiliate_of": null,
+     "candidate": "TUREK, JOSHUA",
+     "so": "S",
+     "side": "D",
+     "total": 3375926,
+     "last_date": "2026-11-01"
+    },
+    {
+     "committee_id": "C00486845",
+     "committee": "LCV VICTORY FUND",
+     "affiliate_of": null,
+     "candidate": "ARENHOLZ, ASHLEY HINSON",
+     "so": "O",
+     "side": "D",
+     "total": 3139422,
+     "last_date": "2026-10-23"
+    },
+    {
+     "committee_id": "C00879510",
+     "committee": "AMERICA PAC",
+     "affiliate_of": null,
+     "candidate": "TUREK, JOSHUA",
+     "so": "O",
+     "side": "R",
+     "total": 2888832,
+     "last_date": "2026-10-30"
+    },
+    {
+     "committee_id": "C00929828",
+     "committee": "AMERICAN MEAT PRODUCERS PAC",
+     "affiliate_of": null,
+     "candidate": "HINSON, ASHLEY REP.",
+     "so": "O",
+     "side": "D",
+     "total": 2713500,
+     "last_date": "2026-10-02"
+    }
+   ]
+  },
+  "KS": {
+   "pro_D": 58477865,
+   "pro_R": 35815480,
+   "ads_D": 55892691,
+   "ads_R": 33331147,
+   "last_date": "2026-11-03",
+   "independent_note": false,
+   "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-KS.html",
+   "top": [
+    {
+     "committee_id": "C00571703",
+     "committee": "SLF PAC",
+     "affiliate_of": null,
+     "candidate": "HAMILTON, ADAM",
+     "so": "O",
+     "side": "R",
+     "total": 16451284,
+     "last_date": "2026-11-02"
+    },
+    {
+     "committee_id": "C00953299",
+     "committee": "PEOPLE OVER POLITICS ACTION FUND",
+     "affiliate_of": null,
+     "candidate": "MARSHALL, ROGER",
+     "so": "O",
+     "side": "D",
+     "total": 14731270,
+     "last_date": "2026-10-28"
+    },
+    {
+     "committee_id": "C00865444",
+     "committee": "WINSENATE",
+     "affiliate_of": null,
+     "candidate": "MARSHALL, ROGER W.",
+     "so": "O",
+     "side": "D",
+     "total": 14054464,
+     "last_date": "2026-10-31"
+    },
+    {
+     "committee_id": "C00961276",
+     "committee": "LOWER COSTS NOW",
+     "affiliate_of": null,
+     "candidate": "MARSHALL, ROGER W",
+     "so": "O",
+     "side": "D",
+     "total": 5966974,
+     "last_date": "2026-10-27"
+    },
+    {
+     "committee_id": "C00961276",
+     "committee": "LOWER COSTS NOW",
+     "affiliate_of": null,
+     "candidate": "HAMILTON, ADAM",
+     "so": "S",
+     "side": "D",
+     "total": 5132165,
+     "last_date": "2026-11-01"
+    },
+    {
+     "committee_id": "C00915595",
+     "committee": "GOVERNMENT THAT WORKS PAC",
+     "affiliate_of": null,
+     "candidate": "HAMILTON, ADAM",
+     "so": "S",
+     "side": "D",
+     "total": 4034207,
+     "last_date": "2026-11-01"
+    },
+    {
+     "committee_id": "C00957928",
+     "committee": "MAIN STREET FUND",
+     "affiliate_of": null,
+     "candidate": "HAMILTON, ADAM",
+     "so": "O",
+     "side": "R",
+     "total": 3786958,
+     "last_date": "2026-10-30"
+    },
+    {
+     "committee_id": "C00915595",
+     "committee": "GOVERNMENT THAT WORKS PAC",
+     "affiliate_of": null,
+     "candidate": "MARSHALL, ROGER W",
+     "so": "O",
+     "side": "D",
+     "total": 2873374,
+     "last_date": "2026-11-01"
+    },
+    {
+     "committee_id": "C00962696",
+     "committee": "NEW DEAL FOR ALL, INC.",
+     "affiliate_of": null,
+     "candidate": "MARSHALL, ROGER W",
+     "so": "O",
+     "side": "D",
+     "total": 2787201,
+     "last_date": "2026-10-30"
+    },
+    {
+     "committee_id": "C00487470",
+     "committee": "CLUB FOR GROWTH ACTION",
+     "affiliate_of": null,
+     "candidate": "HAMILTON, ADAM",
+     "so": "O",
+     "side": "R",
+     "total": 2456460,
+     "last_date": "2026-10-20"
+    },
+    {
+     "committee_id": "C00960435",
+     "committee": "NO GOING BACK PAC INC.",
+     "affiliate_of": null,
+     "candidate": "HAMILTON, ADAM",
+     "so": "O",
+     "side": "R",
+     "total": 2451000,
+     "last_date": "2026-10-29"
+    },
+    {
+     "committee_id": "C00951723",
+     "committee": "THE EDGE ACTION FUND",
+     "affiliate_of": null,
+     "candidate": "MARSHALL, ROGER W",
+     "so": "O",
+     "side": "D",
+     "total": 1980000,
+     "last_date": "2026-10-15"
+    },
+    {
+     "committee_id": "C00945733",
+     "committee": "THE 1861 INITIATIVE",
+     "affiliate_of": null,
+     "candidate": "MARSHALL, ROGER W",
+     "so": "O",
+     "side": "D",
+     "total": 1851031,
+     "last_date": "2026-10-29"
+    },
+    {
+     "committee_id": "C00687103",
+     "committee": "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION",
+     "affiliate_of": null,
+     "candidate": "HAMILTON, ADAM",
+     "so": "O",
+     "side": "R",
+     "total": 1657560,
+     "last_date": "2026-10-29"
+    },
+    {
+     "committee_id": "C00750174",
+     "committee": "PLAINS PAC",
+     "affiliate_of": null,
+     "candidate": "HAMILTON, ADAM",
+     "so": "O",
+     "side": "R",
+     "total": 1600799,
+     "last_date": "2026-10-28"
+    }
+   ]
+  },
+  "ME": {
+   "pro_D": 52556922,
+   "pro_R": 89272767,
+   "ads_D": 45411810,
+   "ads_R": 79861834,
+   "last_date": "2026-11-03",
+   "independent_note": false,
+   "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-ME.html",
+   "top": [
+    {
+     "committee_id": "C00571703",
+     "committee": "SLF PAC",
+     "affiliate_of": null,
+     "candidate": "JACKSON, TROY DALE",
+     "so": "O",
+     "side": "R",
+     "total": 37955048,
+     "last_date": "2026-11-02"
+    },
+    {
+     "committee_id": "C00865444",
+     "committee": "WINSENATE",
+     "affiliate_of": null,
+     "candidate": "COLLINS, SUSAN",
+     "so": "O",
+     "side": "D",
+     "total": 32735806,
+     "last_date": "2026-10-30"
+    },
+    {
+     "committee_id": "C00894709",
+     "committee": "PINE TREE RESULTS PAC",
+     "affiliate_of": null,
+     "candidate": "JACKSON, TROY DALE",
+     "so": "O",
+     "side": "R",
+     "total": 20302237,
+     "last_date": "2026-10-28"
+    },
+    {
+     "committee_id": "C00961342",
+     "committee": "THE MAINE STANDARD",
+     "affiliate_of": null,
+     "candidate": "JACKSON, TROY DALE",
+     "so": "O",
+     "side": "R",
+     "total": 9914100,
+     "last_date": "2026-10-26"
+    },
+    {
+     "committee_id": "C00894709",
+     "committee": "PINE TREE RESULTS PAC",
+     "affiliate_of": null,
+     "candidate": "PLATNER, GRAHAM",
+     "so": "O",
+     "side": "R",
+     "total": 6724548,
+     "last_date": "2026-06-26"
+    },
+    {
+     "committee_id": "C00744920",
+     "committee": "CFFE PAC",
+     "affiliate_of": null,
+     "candidate": "JACKSON, TROY DALE",
+     "so": "S",
+     "side": "D",
+     "total": 4979311,
+     "last_date": "2026-11-01"
+    },
+    {
+     "committee_id": "C00865444",
+     "committee": "WINSENATE",
+     "affiliate_of": null,
+     "candidate": "JACKSON, TROY DALE",
+     "so": "S",
+     "side": "D",
+     "total": 4536736,
+     "last_date": "2026-10-03"
+    },
+    {
+     "committee_id": "C00922294",
+     "committee": "STRONGER MAINE",
+     "affiliate_of": null,
+     "candidate": "JACKSON, TROY DALE",
+     "so": "O",
+     "side": "R",
+     "total": 2331542,
+     "last_date": "2026-11-02"
+    },
+    {
+     "committee_id": "C00922294",
+     "committee": "STRONGER MAINE",
+     "affiliate_of": null,
+     "candidate": "COLLINS, SUSAN M.",
+     "so": "S",
+     "side": "R",
+     "total": 2160042,
+     "last_date": "2026-11-02"
+    },
+    {
+     "committee_id": "C00915595",
+     "committee": "GOVERNMENT THAT WORKS PAC",
+     "affiliate_of": null,
+     "candidate": "JACKSON, TROY DALE",
+     "so": "S",
+     "side": "D",
+     "total": 1760620,
+     "last_date": "2026-08-20"
+    },
+    {
+     "committee_id": "C00879510",
+     "committee": "AMERICA PAC",
+     "affiliate_of": null,
+     "candidate": "JACKSON, TROY DALE",
+     "so": "O",
+     "side": "R",
+     "total": 1544872,
+     "last_date": "2026-10-30"
+    },
+    {
+     "committee_id": "C00946921",
+     "committee": "LEAD MAINE COMMITTEE, INC.",
+     "affiliate_of": null,
+     "candidate": "JACKSON, TROY DALE",
+     "so": "O",
+     "side": "R",
+     "total": 1410091,
+     "last_date": "2026-10-22"
+    },
+    {
+     "committee_id": "C00489799",
+     "committee": "PLANNED PARENTHOOD VOTES",
+     "affiliate_of": null,
+     "candidate": "COLLINS, SUSAN",
+     "so": "O",
+     "side": "D",
+     "total": 1272686,
+     "last_date": "2026-10-14"
+    },
+    {
+     "committee_id": "C90023607",
+     "committee": "END CITIZENS UNITED ACTION FUND",
+     "affiliate_of": null,
+     "candidate": "COLLINS, SUSAN",
+     "so": "O",
+     "side": "D",
+     "total": 1019470,
+     "last_date": "2026-09-24"
+    },
+    {
+     "committee_id": "C90023565",
+     "committee": "AMERICA'S CREDIT UNIONS",
+     "affiliate_of": null,
+     "candidate": "COLLINS, SUSAN",
+     "so": "S",
+     "side": "R",
+     "total": 1000000,
+     "last_date": "2026-10-27"
+    }
+   ]
+  },
+  "MI": {
+   "pro_D": 94702433,
+   "pro_R": 172139893,
+   "ads_D": 80629276,
+   "ads_R": 133264078,
+   "last_date": "2026-11-03",
+   "independent_note": false,
+   "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-MI.html",
+   "top": [
+    {
+     "committee_id": "C00571703",
+     "committee": "SLF PAC",
+     "affiliate_of": null,
+     "candidate": "EL-SAYED, ABDUL",
+     "so": "O",
+     "side": "R",
+     "total": 46213086,
+     "last_date": "2026-10-28"
+    },
+    {
+     "committee_id": "C00865444",
+     "committee": "WINSENATE",
+     "affiliate_of": null,
+     "candidate": "ROGERS, MICHAEL",
+     "so": "O",
+     "side": "D",
+     "total": 33993628,
+     "last_date": "2026-10-29"
+    },
+    {
+     "committee_id": "C00960435",
+     "committee": "NO GOING BACK PAC INC.",
+     "affiliate_of": null,
+     "candidate": "EL-SAYED, ABDUL",
+     "so": "O",
+     "side": "R",
+     "total": 27461681,
+     "last_date": "2026-11-02"
+    },
+    {
+     "committee_id": "C00853861",
+     "committee": "GLCF, INC.",
+     "affiliate_of": null,
+     "candidate": "EL-SAYED, ABDUL",
+     "so": "O",
+     "side": "R",
+     "total": 19557130,
+     "last_date": "2026-11-02"
+    },
+    {
+     "committee_id": "C00865444",
+     "committee": "WINSENATE",
+     "affiliate_of": null,
+     "candidate": "EL-SAYED, ABDUL",
+     "so": "S",
+     "side": "D",
+     "total": 12551320,
+     "last_date": "2026-11-01"
+    },
+    {
+     "committee_id": "C00687103",
+     "committee": "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION",
+     "affiliate_of": null,
+     "candidate": "EL-SAYED, ABDUL",
+     "so": "O",
+     "side": "R",
+     "total": 11880001,
+     "last_date": "2026-10-28"
+    },
+    {
+     "committee_id": "C00960138",
+     "committee": "TFM",
+     "affiliate_of": null,
+     "candidate": "EL-SAYED, ABDUL",
+     "so": "O",
+     "side": "R",
+     "total": 11385687,
+     "last_date": "2026-11-03"
+    },
+    {
+     "committee_id": "C00687103",
+     "committee": "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION",
+     "affiliate_of": null,
+     "candidate": "ROGERS, MICHAEL J",
+     "so": "S",
+     "side": "R",
+     "total": 10456571,
+     "last_date": "2026-10-28"
+    },
+    {
+     "committee_id": "C00960435",
+     "committee": "NO GOING BACK PAC INC.",
+     "affiliate_of": null,
+     "candidate": "ROGERS, MICHAEL J",
+     "so": "S",
+     "side": "R",
+     "total": 8167822,
+     "last_date": "2026-11-02"
+    },
+    {
+     "committee_id": "C00853861",
+     "committee": "GLCF, INC.",
+     "affiliate_of": null,
+     "candidate": "ROGERS, MICHAEL J",
+     "so": "S",
+     "side": "R",
+     "total": 6029993,
+     "last_date": "2026-10-29"
+    },
+    {
+     "committee_id": "C00879510",
+     "committee": "AMERICA PAC",
+     "affiliate_of": null,
+     "candidate": "EL-SAYED, ABDUL",
+     "so": "O",
+     "side": "R",
+     "total": 5479802,
+     "last_date": "2026-10-30"
+    },
+    {
+     "committee_id": "C00486845",
+     "committee": "LCV VICTORY FUND",
+     "affiliate_of": null,
+     "candidate": "EL-SAYED, ABDUL",
+     "so": "S",
+     "side": "D",
+     "total": 5443378,
+     "last_date": "2026-10-30"
+    },
+    {
+     "committee_id": "C00961276",
+     "committee": "LOWER COSTS NOW",
+     "affiliate_of": null,
+     "candidate": "ROGERS, MICHAEL J",
+     "so": "O",
+     "side": "D",
+     "total": 5012036,
+     "last_date": "2026-10-30"
+    },
+    {
+     "committee_id": "C00811166",
+     "committee": "THE SENTINEL ACTION FUND",
+     "affiliate_of": null,
+     "candidate": "EL-SAYED, ABDUL",
+     "so": "O",
+     "side": "R",
+     "total": 4642019,
+     "last_date": "2026-10-30"
+    },
+    {
+     "committee_id": "C00764233",
+     "committee": "DEFEND THE VOTE",
+     "affiliate_of": null,
+     "candidate": "ROGERS, MICHAEL J",
+     "so": "O",
+     "side": "D",
+     "total": 4592976,
+     "last_date": "2026-09-21"
+    }
+   ]
+  },
+  "NC": {
+   "pro_D": 29353449,
+   "pro_R": 46417659,
+   "ads_D": 24585581,
+   "ads_R": 42935520,
+   "last_date": "2026-11-03",
+   "independent_note": false,
+   "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-NC.html",
+   "top": [
+    {
+     "committee_id": "C00571703",
+     "committee": "SLF PAC",
+     "affiliate_of": null,
+     "candidate": "COOPER, ROY",
+     "so": "O",
+     "side": "R",
+     "total": 30040361,
+     "last_date": "2026-09-28"
+    },
+    {
+     "committee_id": "C00865444",
+     "committee": "WINSENATE",
+     "affiliate_of": null,
+     "candidate": "WHATLEY, MICHAEL",
+     "so": "O",
+     "side": "D",
+     "total": 21622170,
+     "last_date": "2026-10-30"
+    },
+    {
+     "committee_id": "C00960435",
+     "committee": "NO GOING BACK PAC INC.",
+     "affiliate_of": null,
+     "candidate": "COOPER, ROY",
+     "so": "O",
+     "side": "R",
+     "total": 9069491,
+     "last_date": "2026-10-28"
+    },
+    {
+     "committee_id": "C00687103",
+     "committee": "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION",
+     "affiliate_of": null,
+     "candidate": "WHATLEY, MICHAEL",
+     "so": "S",
+     "side": "R",
+     "total": 2545772,
+     "last_date": "2026-09-01"
+    },
+    {
+     "committee_id": "C00687103",
+     "committee": "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION",
+     "affiliate_of": null,
+     "candidate": "COOPER, ROY",
+     "so": "O",
+     "side": "R",
+     "total": 1702545,
+     "last_date": "2026-08-19"
+    },
+    {
+     "committee_id": "C00960435",
+     "committee": "NO GOING BACK PAC INC.",
+     "affiliate_of": null,
+     "candidate": "WHATLEY, MICHAEL",
+     "so": "S",
+     "side": "R",
+     "total": 1318500,
+     "last_date": "2026-10-28"
+    },
+    {
+     "committee_id": "C00887182",
+     "committee": "PLANNED PARENTHOOD VOTES NORTH CAROLINA",
+     "affiliate_of": null,
+     "candidate": "COOPER, ROY",
+     "so": "S",
+     "side": "D",
+     "total": 1227889,
+     "last_date": "2026-10-29"
+    },
+    {
+     "committee_id": "C00955575",
+     "committee": "NC FIRST PAC",
+     "affiliate_of": null,
+     "candidate": "COOPER, ROY",
+     "so": "O",
+     "side": "R",
+     "total": 1200000,
+     "last_date": "2026-10-19"
+    },
+    {
+     "committee_id": "C90022427",
+     "committee": "PROGRESS NORTH CAROLINA ACTION",
+     "affiliate_of": null,
+     "candidate": "COOPER, ROY",
+     "so": "S",
+     "side": "D",
+     "total": 966433,
+     "last_date": "2026-10-22"
+    },
+    {
+     "committee_id": "C00492140",
+     "committee": "AB PAC",
+     "affiliate_of": null,
+     "candidate": "COOPER, ROY",
+     "so": "S",
+     "side": "D",
+     "total": 948410,
+     "last_date": "2026-10-27"
+    },
+    {
+     "committee_id": "C00486845",
+     "committee": "LCV VICTORY FUND",
+     "affiliate_of": null,
+     "candidate": "WHATLEY, MICHAEL",
+     "so": "O",
+     "side": "D",
+     "total": 500460,
+     "last_date": "2026-10-07"
+    },
+    {
+     "committee_id": "C00707844",
+     "committee": "EDF ACTION VOTES",
+     "affiliate_of": null,
+     "candidate": "WHATLEY, MICHAEL",
+     "so": "O",
+     "side": "D",
+     "total": 500390,
+     "last_date": "2026-09-17"
+    },
+    {
+     "committee_id": "C00740225",
+     "committee": "NRDC ACTION VOTES",
+     "affiliate_of": null,
+     "candidate": "WHATLEY, MICHAEL",
+     "so": "O",
+     "side": "D",
+     "total": 500000,
+     "last_date": "2026-09-18"
+    },
+    {
+     "committee_id": "C00754051",
+     "committee": "WORKERS VOTE",
+     "affiliate_of": null,
+     "candidate": "COOPER, ROY",
+     "so": "S",
+     "side": "D",
+     "total": 490718,
+     "last_date": "2026-11-02"
+    },
+    {
+     "committee_id": "C00747998",
+     "committee": "CARE IN ACTION PAC",
+     "affiliate_of": null,
+     "candidate": "COOPER, ROY",
+     "so": "S",
+     "side": "D",
+     "total": 369849,
+     "last_date": "2026-11-02"
+    }
+   ]
+  },
+  "NE": {
+   "pro_D": 37390351,
+   "pro_R": 32745582,
+   "ads_D": 33543883,
+   "ads_R": 31060673,
+   "last_date": "2026-11-03",
+   "independent_note": true,
+   "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-NE.html",
+   "top": [
+    {
+     "committee_id": "C00956292",
+     "committee": "NEBRASKA VALUES PAC",
+     "affiliate_of": null,
+     "candidate": "RICKETTS, PETE",
+     "so": "O",
+     "side": "D",
+     "total": 15857404,
+     "last_date": "2026-10-31"
+    },
+    {
+     "committee_id": "C00836221",
+     "committee": "DEFEND AMERICAN JOBS",
+     "affiliate_of": null,
+     "candidate": "OSBORN, DAN",
+     "so": "O",
+     "side": "R",
+     "total": 13476278,
+     "last_date": "2026-10-27"
+    },
+    {
+     "committee_id": "C00571703",
+     "committee": "SLF PAC",
+     "affiliate_of": null,
+     "candidate": "OSBORN, DAN",
+     "so": "O",
+     "side": "R",
+     "total": 8625504,
+     "last_date": "2026-10-30"
+    },
+    {
+     "committee_id": "C00954503",
+     "committee": "WORKING CLASS MAJORITY PAC, INC",
+     "affiliate_of": null,
+     "candidate": "OSBORN, DAN",
+     "so": "S",
+     "side": "D",
+     "total": 8588695,
+     "last_date": "2026-11-03"
+    },
+    {
+     "committee_id": "C00961227",
+     "committee": "CORNHUSKER MAJORITY",
+     "affiliate_of": null,
+     "candidate": "OSBORN, DAN",
+     "so": "O",
+     "side": "R",
+     "total": 6947016,
+     "last_date": "2026-10-09"
+    },
+    {
+     "committee_id": "C00954503",
+     "committee": "WORKING CLASS MAJORITY PAC, INC",
+     "affiliate_of": null,
+     "candidate": "RICKETTS, PETE",
+     "so": "O",
+     "side": "D",
+     "total": 3769331,
+     "last_date": "2026-11-03"
+    },
+    {
+     "committee_id": "C00844613",
+     "committee": "WIN IT BACK PAC",
+     "affiliate_of": null,
+     "candidate": "OSBORN, DAN",
+     "so": "O",
+     "side": "R",
+     "total": 2059628,
+     "last_date": "2026-09-09"
+    },
+    {
+     "committee_id": "C00962704",
+     "committee": "FREEDOM FROM POLITICS, INC.",
+     "affiliate_of": null,
+     "candidate": "RICKETTS, PETE",
+     "so": "O",
+     "side": "D",
+     "total": 2055000,
+     "last_date": "2026-10-20"
+    },
+    {
+     "committee_id": "C00951723",
+     "committee": "THE EDGE ACTION FUND",
+     "affiliate_of": null,
+     "candidate": "OSBORN, DAN",
+     "so": "S",
+     "side": "D",
+     "total": 1361250,
+     "last_date": "2026-10-15"
+    },
+    {
+     "committee_id": "C00951723",
+     "committee": "THE EDGE ACTION FUND",
+     "affiliate_of": null,
+     "candidate": "RICKETTS, PETE",
+     "so": "O",
+     "side": "D",
+     "total": 1113750,
+     "last_date": "2026-10-15"
+    },
+    {
+     "committee_id": "C00961276",
+     "committee": "LOWER COSTS NOW",
+     "affiliate_of": null,
+     "candidate": "OSBORN, DAN",
+     "so": "S",
+     "side": "D",
+     "total": 863829,
+     "last_date": "2026-10-27"
+    },
+    {
+     "committee_id": "C00956292",
+     "committee": "NEBRASKA VALUES PAC",
+     "affiliate_of": null,
+     "candidate": "OSBORN, DAN",
+     "so": "S",
+     "side": "D",
+     "total": 849659,
+     "last_date": "2026-10-31"
+    },
+    {
+     "committee_id": "C00876482",
+     "committee": "RETIRE CAREER POLITICIANS",
+     "affiliate_of": null,
+     "candidate": "RICKETTS, PETE",
+     "so": "O",
+     "side": "D",
+     "total": 736757,
+     "last_date": "2026-10-26"
+    },
+    {
+     "committee_id": "C00960385",
+     "committee": "UNITED FUTURES PAC",
+     "affiliate_of": null,
+     "candidate": "OSBORN, DAN",
+     "so": "S",
+     "side": "D",
+     "total": 682046,
+     "last_date": "2026-10-31"
+    },
+    {
+     "committee_id": "C00571703",
+     "committee": "SLF PAC",
+     "affiliate_of": null,
+     "candidate": "RICKETTS, PETE",
+     "so": "S",
+     "side": "R",
+     "total": 615498,
+     "last_date": "2026-11-03"
+    }
+   ]
+  },
+  "NH": {
+   "pro_D": 24110609,
+   "pro_R": 39288905,
+   "ads_D": 22380746,
+   "ads_R": 32972370,
+   "last_date": "2026-11-03",
+   "independent_note": false,
+   "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-NH.html",
+   "top": [
+    {
+     "committee_id": "C00865444",
+     "committee": "WINSENATE",
+     "affiliate_of": null,
+     "candidate": "SUNUNU, JOHN E.",
+     "so": "O",
+     "side": "D",
+     "total": 17796865,
+     "last_date": "2026-10-27"
+    },
+    {
+     "committee_id": "C00571703",
+     "committee": "SLF PAC",
+     "affiliate_of": null,
+     "candidate": "PAPPAS, CHRIS",
+     "so": "O",
+     "side": "R",
+     "total": 12492895,
+     "last_date": "2026-10-27"
+    },
+    {
+     "committee_id": "C00960435",
+     "committee": "NO GOING BACK PAC INC.",
+     "affiliate_of": null,
+     "candidate": "PAPPAS, CHRIS",
+     "so": "O",
+     "side": "R",
+     "total": 11486584,
+     "last_date": "2026-10-21"
+    },
+    {
+     "committee_id": "C00687103",
+     "committee": "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION",
+     "affiliate_of": null,
+     "candidate": "PAPPAS, CHRIS",
+     "so": "O",
+     "side": "R",
+     "total": 4905621,
+     "last_date": "2026-10-30"
+    },
+    {
+     "committee_id": "C00687103",
+     "committee": "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION",
+     "affiliate_of": null,
+     "candidate": "SUNUNU, JOHN E",
+     "so": "S",
+     "side": "R",
+     "total": 3409941,
+     "last_date": "2026-10-30"
+    },
+    {
+     "committee_id": "C00960435",
+     "committee": "NO GOING BACK PAC INC.",
+     "affiliate_of": null,
+     "candidate": "SUNUNU, JOHN E",
+     "so": "S",
+     "side": "R",
+     "total": 2731582,
+     "last_date": "2026-10-28"
+    },
+    {
+     "committee_id": "C00962860",
+     "committee": "AMERICAN CENTER PAC",
+     "affiliate_of": null,
+     "candidate": "SUNUNU, JOHN E",
+     "so": "O",
+     "side": "D",
+     "total": 2019950,
+     "last_date": "2026-10-27"
+    },
+    {
+     "committee_id": "C00811166",
+     "committee": "THE SENTINEL ACTION FUND",
+     "affiliate_of": null,
+     "candidate": "PAPPAS, CHRIS",
+     "so": "O",
+     "side": "R",
+     "total": 1469235,
+     "last_date": "2026-10-23"
+    },
+    {
+     "committee_id": "C00486845",
+     "committee": "LCV VICTORY FUND",
+     "affiliate_of": null,
+     "candidate": "SUNUNU, JOHN E",
+     "so": "O",
+     "side": "D",
+     "total": 1386567,
+     "last_date": "2026-10-16"
+    },
+    {
+     "committee_id": "C00657866",
+     "committee": "PROTECT FREEDOM POLITICAL ACTION COMMITTEE",
+     "affiliate_of": null,
+     "candidate": "SUNUNU, JOHN E",
+     "so": "S",
+     "side": "R",
+     "total": 946762,
+     "last_date": "2026-10-28"
+    },
+    {
+     "committee_id": "C00568444",
+     "committee": "CENTER FORWARD COMMITTEE",
+     "affiliate_of": null,
+     "candidate": "PAPPAS, CHRIS",
+     "so": "S",
+     "side": "D",
+     "total": 800000,
+     "last_date": "2026-10-26"
+    },
+    {
+     "committee_id": "C00879510",
+     "committee": "AMERICA PAC",
+     "affiliate_of": null,
+     "candidate": "PAPPAS, CHRIS",
+     "so": "O",
+     "side": "R",
+     "total": 682294,
+     "last_date": "2026-10-13"
+    },
+    {
+     "committee_id": "C00492140",
+     "committee": "AB PAC",
+     "affiliate_of": null,
+     "candidate": "PAPPAS, CHRIS",
+     "so": "S",
+     "side": "D",
+     "total": 543110,
+     "last_date": "2026-10-28"
+    },
+    {
+     "committee_id": "C90023565",
+     "committee": "AMERICA'S CREDIT UNIONS",
+     "affiliate_of": null,
+     "candidate": "PAPPAS, CHRIS",
+     "so": "S",
+     "side": "D",
+     "total": 500000,
+     "last_date": "2026-10-14"
+    },
+    {
+     "committee_id": "C00865444",
+     "committee": "WINSENATE",
+     "affiliate_of": null,
+     "candidate": "PAPPAS, CHRIS",
+     "so": "S",
+     "side": "D",
+     "total": 442500,
+     "last_date": "2026-10-26"
+    }
+   ]
+  },
+  "OH": {
+   "pro_D": 157507842,
+   "pro_R": 252373670,
+   "ads_D": 141325745,
+   "ads_R": 206870487,
+   "last_date": "2026-11-03",
+   "independent_note": false,
+   "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-OH.html",
+   "top": [
+    {
+     "committee_id": "C00571703",
+     "committee": "SLF PAC",
+     "affiliate_of": null,
+     "candidate": "BROWN, SHERROD",
+     "so": "O",
+     "side": "R",
+     "total": 92906338,
+     "last_date": "2026-11-03"
+    },
+    {
+     "committee_id": "C00865444",
+     "committee": "WINSENATE",
+     "affiliate_of": null,
+     "candidate": "HUSTED, JON",
+     "so": "O",
+     "side": "D",
+     "total": 78346324,
+     "last_date": "2026-10-31"
+    },
+    {
+     "committee_id": "C00836221",
+     "committee": "DEFEND AMERICAN JOBS",
+     "affiliate_of": null,
+     "candidate": "HUSTED, JON",
+     "so": "S",
+     "side": "R",
+     "total": 36874167,
+     "last_date": "2026-10-20"
+    },
+    {
+     "committee_id": "C00836221",
+     "committee": "DEFEND AMERICAN JOBS",
+     "affiliate_of": null,
+     "candidate": "BROWN, SHERROD",
+     "so": "O",
+     "side": "R",
+     "total": 19706265,
+     "last_date": "2026-10-20"
+    },
+    {
+     "committee_id": "C00960435",
+     "committee": "NO GOING BACK PAC INC.",
+     "affiliate_of": null,
+     "candidate": "BROWN, SHERROD",
+     "so": "O",
+     "side": "R",
+     "total": 17576999,
+     "last_date": "2026-09-28"
+    },
+    {
+     "committee_id": "C00950006",
+     "committee": "75 PAC",
+     "affiliate_of": null,
+     "candidate": "BROWN, SHERROD",
+     "so": "O",
+     "side": "R",
+     "total": 14750600,
+     "last_date": "2026-10-28"
+    },
+    {
+     "committee_id": "C00666388",
+     "committee": "DUTY AND COUNTRY",
+     "affiliate_of": null,
+     "candidate": "HUSTED, JON",
+     "so": "O",
+     "side": "D",
+     "total": 13914744,
+     "last_date": "2026-10-13"
+    },
+    {
+     "committee_id": "C00687103",
+     "committee": "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION",
+     "affiliate_of": null,
+     "candidate": "BROWN, SHERROD",
+     "so": "O",
+     "side": "R",
+     "total": 12696954,
+     "last_date": "2026-10-28"
+    },
+    {
+     "committee_id": "C00687103",
+     "committee": "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION",
+     "affiliate_of": null,
+     "candidate": "HUSTED, JON",
+     "so": "S",
+     "side": "R",
+     "total": 10682016,
+     "last_date": "2026-10-28"
+    },
+    {
+     "committee_id": "C00961276",
+     "committee": "LOWER COSTS NOW",
+     "affiliate_of": null,
+     "candidate": "HUSTED, JON",
+     "so": "O",
+     "side": "D",
+     "total": 9474746,
+     "last_date": "2026-10-30"
+    },
+    {
+     "committee_id": "C00865444",
+     "committee": "WINSENATE",
+     "affiliate_of": null,
+     "candidate": "BROWN, SHERROD",
+     "so": "S",
+     "side": "D",
+     "total": 9095169,
+     "last_date": "2026-10-28"
+    },
+    {
+     "committee_id": "C00912865",
+     "committee": "OHIO FLYER PAC",
+     "affiliate_of": null,
+     "candidate": "BROWN, SHERROD",
+     "so": "O",
+     "side": "R",
+     "total": 7410448,
+     "last_date": "2026-11-02"
+    },
+    {
+     "committee_id": "C00764233",
+     "committee": "DEFEND THE VOTE",
+     "affiliate_of": null,
+     "candidate": "HUSTED, JON",
+     "so": "O",
+     "side": "D",
+     "total": 7055990,
+     "last_date": "2026-10-01"
+    },
+    {
+     "committee_id": "C00879510",
+     "committee": "AMERICA PAC",
+     "affiliate_of": null,
+     "candidate": "BROWN, SHERROD",
+     "so": "O",
+     "side": "R",
+     "total": 6863591,
+     "last_date": "2026-10-30"
+    },
+    {
+     "committee_id": "C00486845",
+     "committee": "LCV VICTORY FUND",
+     "affiliate_of": null,
+     "candidate": "HUSTED, JON",
+     "so": "O",
+     "side": "D",
+     "total": 5897219,
+     "last_date": "2026-10-19"
+    }
+   ]
+  },
+  "TX": {
+   "pro_D": 109270092,
+   "pro_R": 315871543,
+   "ads_D": 98100245,
+   "ads_R": 262186181,
+   "last_date": "2026-11-03",
+   "independent_note": false,
+   "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-TX.html",
+   "top": [
+    {
+     "committee_id": "C00960211",
+     "committee": "TEXAS PAC",
+     "affiliate_of": "C00571703",
+     "candidate": "TALARICO, JAMES",
+     "so": "O",
+     "side": "R",
+     "total": 112153742,
+     "last_date": "2026-10-26"
+    },
+    {
+     "committee_id": "C00960211",
+     "committee": "TEXAS PAC",
+     "affiliate_of": "C00571703",
+     "candidate": "PAXTON, WARREN KENNETH JR.",
+     "so": "S",
+     "side": "R",
+     "total": 69696483,
+     "last_date": "2026-10-15"
+    },
+    {
+     "committee_id": "C00879510",
+     "committee": "AMERICA PAC",
+     "affiliate_of": null,
+     "candidate": "TALARICO, JAMES",
+     "so": "O",
+     "side": "R",
+     "total": 41372027,
+     "last_date": "2026-10-30"
+    },
+    {
+     "committee_id": "C00918268",
+     "committee": "LONE STAR RISING PAC",
+     "affiliate_of": null,
+     "candidate": "PAXTON, WARREN KENNETH JR.",
+     "so": "O",
+     "side": "D",
+     "total": 31157683,
+     "last_date": "2026-10-27"
+    },
+    {
+     "committee_id": "C00892471",
+     "committee": "MAGA INC.",
+     "affiliate_of": null,
+     "candidate": "TALARICO, JAMES",
+     "so": "O",
+     "side": "R",
+     "total": 30117991,
+     "last_date": "2026-10-28"
+    },
+    {
+     "committee_id": "C00962308",
+     "committee": "TEXAS FOREVER",
+     "affiliate_of": null,
+     "candidate": "PAXTON, KENNETH WARREN JR.",
+     "so": "O",
+     "side": "D",
+     "total": 19428285,
+     "last_date": "2026-10-28"
+    },
+    {
+     "committee_id": "C00901223",
+     "committee": "LONE STAR LIBERTY PAC",
+     "affiliate_of": null,
+     "candidate": "TALARICO, JAMES",
+     "so": "O",
+     "side": "R",
+     "total": 16488175,
+     "last_date": "2026-10-19"
+    },
+    {
+     "committee_id": "C00961276",
+     "committee": "LOWER COSTS NOW",
+     "affiliate_of": null,
+     "candidate": "PAXTON, KENNETH WARREN JR.",
+     "so": "O",
+     "side": "D",
+     "total": 11725556,
+     "last_date": "2026-10-30"
+    },
+    {
+     "committee_id": "C00634261",
+     "committee": "DEFEND US PAC",
+     "affiliate_of": null,
+     "candidate": "TALARICO, JAMES",
+     "so": "O",
+     "side": "R",
+     "total": 10483071,
+     "last_date": "2026-10-22"
+    },
+    {
+     "committee_id": "C00962308",
+     "committee": "TEXAS FOREVER",
+     "affiliate_of": null,
+     "candidate": "TALARICO, JAMES",
+     "so": "S",
+     "side": "D",
+     "total": 8032877,
+     "last_date": "2026-10-27"
+    },
+    {
+     "committee_id": "C00892471",
+     "committee": "MAGA INC.",
+     "affiliate_of": null,
+     "candidate": "PAXTON, WARREN KENNETH JR.",
+     "so": "S",
+     "side": "R",
+     "total": 7532500,
+     "last_date": "2026-10-28"
+    },
+    {
+     "committee_id": "C00961276",
+     "committee": "LOWER COSTS NOW",
+     "affiliate_of": null,
+     "candidate": "TALARICO, JAMES",
+     "so": "S",
+     "side": "D",
+     "total": 6702886,
+     "last_date": "2026-10-28"
+    },
+    {
+     "committee_id": "C00879510",
+     "committee": "AMERICA PAC",
+     "affiliate_of": null,
+     "candidate": "PAXTON, WARREN KENNETH JR.",
+     "so": "S",
+     "side": "R",
+     "total": 5892529,
+     "last_date": "2026-10-30"
+    },
+    {
+     "committee_id": "C00918268",
+     "committee": "LONE STAR RISING PAC",
+     "affiliate_of": null,
+     "candidate": "TALARICO, JAMES",
+     "so": "S",
+     "side": "D",
+     "total": 4509404,
+     "last_date": "2026-10-29"
+    },
+    {
+     "committee_id": "C00492140",
+     "committee": "AB PAC",
+     "affiliate_of": null,
+     "candidate": "TALARICO, JAMES",
+     "so": "S",
+     "side": "D",
+     "total": 4170578,
+     "last_date": "2026-10-28"
+    }
+   ]
+  }
+ }
+}
