@@ -3808,7 +3808,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="민주-다수-확률-예측기관별-위치" class="level3">
 <h3 class="anchored" data-anchor-id="민주-다수-확률-예측기관별-위치">민주 다수 확률 — 예측기관별 위치</h3>
-<p><strong>대표값은 예측시장 가격(64%)</strong>입니다(2026-08-06 승격). 현재 네 수치는 높은 순으로 Race to the WH <strong>72.9%</strong> · 예측시장(Kalshi) <strong>64%</strong> · 자체 모델 v0 <strong>60.7%</strong> · Decision Desk HQ <strong>56%</strong> 입니다 — 최고와 최저가 <strong>16.9%p</strong> 벌어져 있습니다.</p>
+<p><strong>대표값은 예측시장 가격(99.9%)</strong>입니다(2026-08-06 승격). 현재 네 수치는 높은 순으로 예측시장(Kalshi) <strong>99.9%</strong> · Race to the WH <strong>81.2%</strong> · 자체 모델 v0 <strong>77.7%</strong> · Decision Desk HQ <strong>56%</strong> 입니다 — 최고와 최저가 <strong>43.9%p</strong> 벌어져 있습니다.</p>
 <p>네 수치 모두 다수 문턱(50%)을 넘습니다.</p>
 <p>어느 쪽이 옳은지는 11월에만 알 수 있습니다. 이 사이트는 <strong>어느 한쪽으로 수렴시키지 않고 그대로 보여주는 쪽</strong>을 택합니다 — 이견의 폭 자체가 이 사이클의 정보입니다. 네 수치는 <strong>종류가 다르므로 평균 내지 마세요</strong>(모델 2 · 시장 1 · 자체 블렌드 1).</p>
 <div id="dash-scenarios">
@@ -3818,7 +3818,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="주별-민주-승리-전망-모델-막대-시장가" class="level3">
 <h3 class="anchored" data-anchor-id="주별-민주-승리-전망-모델-막대-시장가">주별 민주 승리 전망 — 모델 막대 × 시장가 ◆</h3>
 <p>막대 = 자체 모델 v0(등급+시장+조사 블렌드), ◆ = 예측시장 가격(Kalshi 원가격, 감시주 전부). 점선 = 50%.</p>
-<p>두 값이 벌어지는 주를 보세요. 현재 격차가 가장 큰 곳은 <strong>네브래스카</strong>로, 시장 0.1¢ 대 모델 27.5%로 27.4포인트 차이입니다. 반대로 <strong>노스캐롤라이나</strong>는 시장 96.7¢ · 모델 94.9%로 두 값이 가장 가깝습니다. 모델은 조사를 반영하고 시장은 반영하지 않으므로, <strong>조사가 얇거나 오래된 주에서 격차가 벌어지는 경향</strong>이 있습니다.</p>
+<p>두 값이 벌어지는 주를 보세요. 현재 격차가 가장 큰 곳은 <strong>아이오와</strong>로, 시장 99.9¢ 대 모델 66.2%로 33.7포인트 차이입니다. 반대로 <strong>노스캐롤라이나</strong>는 시장 99.8¢ · 모델 96.1%로 두 값이 가장 가깝습니다. 모델은 조사를 반영하고 시장은 반영하지 않으므로, <strong>조사가 얇거나 오래된 주에서 격차가 벌어지는 경향</strong>이 있습니다.</p>
 <div style="height:420px; position:relative;">
 <canvas id="probChart">
 </canvas>
@@ -3828,22 +3828,22 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="market">예측시장이 보는 상원 다수</h3>
 <div class="mkt-control">
 <div class="mkt-row">
-<span class="mkt-lab">예측시장 <b>Kalshi</b> — 민주 상원 다수</span><span class="mkt-val mkt-d">64%</span>
+<span class="mkt-lab">예측시장 <b>Kalshi</b> — 민주 상원 다수</span><span class="mkt-val mkt-d">99.9%</span>
 </div>
 <div class="mkt-bar">
-<i style="width:64%"></i>
+<i style="width:99.9%"></i>
 </div>
 <div class="mkt-row mkt-sub">
-<span>모델 — <b>Race to the WH</b></span><span class="mkt-val">73%</span>
+<span>모델 — <b>Race to the WH</b></span><span class="mkt-val">81%</span>
 </div>
 <div class="mkt-row mkt-sub">
 <span>모델 — <b>Decision Desk HQ</b></span><span class="mkt-val">56%</span>
 </div>
 <p class="mkt-note">
-셋 다 <b>원천에서 직접 받은 값</b>입니다 — 시장은 Kalshi 공개 API의 원가격, 모델은 각 기관 예측 페이지의 산출물. <b>두 모델이 다수 문턱을 사이에 두고 갈리고</b> 시장은 그 사이에 있습니다. 가격은 확률의 근사일 뿐이라(유동성·수수료·거래자 편향) 모델 확률과 평균 내지 마세요. 참고로 270toWin의 “Which Party Will Control the Senate?”는 독립 모델이 아니라 <b>같은 Kalshi 시장 위젯</b>이라 제3의 근거가 되지 못합니다. 계약: “Will Democrats win the U.S. Senate in 2026?” · 거래액 $8,219,404 · 미결제약정 $4,571,744 · 기준 2026-10-25T21:26:15Z(UTC). <a href="https://kalshi.com/markets/controls/senate-winner" rel="nofollow">Kalshi 원장</a>
+셋 다 <b>원천에서 직접 받은 값</b>입니다 — 시장은 Kalshi 공개 API의 원가격, 모델은 각 기관 예측 페이지의 산출물. <b>두 모델이 다수 문턱을 사이에 두고 갈리고</b> 시장은 그 사이에 있습니다. 가격은 확률의 근사일 뿐이라(유동성·수수료·거래자 편향) 모델 확률과 평균 내지 마세요. 참고로 270toWin의 “Which Party Will Control the Senate?”는 독립 모델이 아니라 <b>같은 Kalshi 시장 위젯</b>이라 제3의 근거가 되지 못합니다. 계약: “Will Democrats win the U.S. Senate in 2026?” · 거래액 $32,440,531 · 미결제약정 $21,282,286 · 기준 2026-11-08T21:19:51Z(UTC). <a href="https://kalshi.com/markets/controls/senate-winner" rel="nofollow">Kalshi 원장</a>
 </p>
 </div>
-<p>시장은 민주당의 상원 다수 확률을 <strong>64%</strong>로 매깁니다. Kalshi 공개 API에서 원가격을 직접 받은 값입니다(기준 2026-10-25). <strong>근거는 아래 주별 가격에 있습니다</strong> — 공화 보유석 가운데 시장이 민주 우세(50¢ 이상)로 매기는 곳은 <strong>메인·노스캐롤라이나·텍사스·오하이오·알래스카</strong> 5곳입니다. 민주당에 필요한 순증은 +4석이므로, 시장 가격대로면 이 주들만으로 문턱에 닿습니다.</p>
+<p>시장은 민주당의 상원 다수 확률을 <strong>99.9%</strong>로 매깁니다. Kalshi 공개 API에서 원가격을 직접 받은 값입니다(기준 2026-11-08). <strong>근거는 아래 주별 가격에 있습니다</strong> — 공화 보유석 가운데 시장이 민주 우세(50¢ 이상)로 매기는 곳은 <strong>메인·노스캐롤라이나·텍사스·오하이오·알래스카·아이오와·캔자스</strong> 7곳입니다. 민주당에 필요한 순증은 +4석이므로, 시장 가격대로면 이 주들만으로 문턱에 닿습니다.</p>
 <div class="callout callout-style-simple callout-important">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -3864,24 +3864,24 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div id="iigikxmnbp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="carjxknvyf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#iigikxmnbp table {
+#carjxknvyf table {
   font-family: 'IBM Plex Sans KR', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#iigikxmnbp thead, #iigikxmnbp tbody, #iigikxmnbp tfoot, #iigikxmnbp tr, #iigikxmnbp td, #iigikxmnbp th {
+#carjxknvyf thead, #carjxknvyf tbody, #carjxknvyf tfoot, #carjxknvyf tr, #carjxknvyf td, #carjxknvyf th {
   border-style: none;
 }
 
-#iigikxmnbp p {
+#carjxknvyf p {
   margin: 0;
   padding: 0;
 }
 
-#iigikxmnbp .gt_table {
+#carjxknvyf .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -3907,12 +3907,12 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
-#iigikxmnbp .gt_caption {
+#carjxknvyf .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#iigikxmnbp .gt_title {
+#carjxknvyf .gt_title {
   color: #333333;
   font-size: 16px;
   font-weight: initial;
@@ -3924,7 +3924,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-#iigikxmnbp .gt_subtitle {
+#carjxknvyf .gt_subtitle {
   color: #333333;
   font-size: 12px;
   font-weight: initial;
@@ -3936,7 +3936,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-#iigikxmnbp .gt_heading {
+#carjxknvyf .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -3948,13 +3948,13 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#iigikxmnbp .gt_bottom_border {
+#carjxknvyf .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#iigikxmnbp .gt_col_headings {
+#carjxknvyf .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3969,7 +3969,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#iigikxmnbp .gt_col_heading {
+#carjxknvyf .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3989,7 +3989,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#iigikxmnbp .gt_column_spanner_outer {
+#carjxknvyf .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4001,15 +4001,15 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 4px;
 }
 
-#iigikxmnbp .gt_column_spanner_outer:first-child {
+#carjxknvyf .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#iigikxmnbp .gt_column_spanner_outer:last-child {
+#carjxknvyf .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#iigikxmnbp .gt_column_spanner {
+#carjxknvyf .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -4021,11 +4021,11 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-#iigikxmnbp .gt_spanner_row {
+#carjxknvyf .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#iigikxmnbp .gt_group_heading {
+#carjxknvyf .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4051,7 +4051,7 @@ ul.task-list li input[type="checkbox"] {
   text-align: left;
 }
 
-#iigikxmnbp .gt_empty_group_heading {
+#carjxknvyf .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -4066,15 +4066,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-#iigikxmnbp .gt_from_md > :first-child {
+#carjxknvyf .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#iigikxmnbp .gt_from_md > :last-child {
+#carjxknvyf .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#iigikxmnbp .gt_row {
+#carjxknvyf .gt_row {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 5px;
@@ -4093,7 +4093,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#iigikxmnbp .gt_stub {
+#carjxknvyf .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4106,7 +4106,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#iigikxmnbp .gt_stub_row_group {
+#carjxknvyf .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4120,15 +4120,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-#iigikxmnbp .gt_row_group_first td {
+#carjxknvyf .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#iigikxmnbp .gt_row_group_first th {
+#carjxknvyf .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#iigikxmnbp .gt_summary_row {
+#carjxknvyf .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -4138,16 +4138,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#iigikxmnbp .gt_first_summary_row {
+#carjxknvyf .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#iigikxmnbp .gt_first_summary_row.thick {
+#carjxknvyf .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#iigikxmnbp .gt_last_summary_row {
+#carjxknvyf .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4157,7 +4157,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#iigikxmnbp .gt_grand_summary_row {
+#carjxknvyf .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -4167,7 +4167,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#iigikxmnbp .gt_first_grand_summary_row {
+#carjxknvyf .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4177,7 +4177,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D3D3D3;
 }
 
-#iigikxmnbp .gt_last_grand_summary_row_top {
+#carjxknvyf .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4187,11 +4187,11 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#iigikxmnbp .gt_striped {
+#carjxknvyf .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#iigikxmnbp .gt_table_body {
+#carjxknvyf .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -4200,7 +4200,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#iigikxmnbp .gt_footnotes {
+#carjxknvyf .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -4214,7 +4214,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#iigikxmnbp .gt_footnote {
+#carjxknvyf .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -4223,7 +4223,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#iigikxmnbp .gt_sourcenotes {
+#carjxknvyf .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -4237,7 +4237,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#iigikxmnbp .gt_sourcenote {
+#carjxknvyf .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -4245,72 +4245,72 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#iigikxmnbp .gt_left {
+#carjxknvyf .gt_left {
   text-align: left;
 }
 
-#iigikxmnbp .gt_center {
+#carjxknvyf .gt_center {
   text-align: center;
 }
 
-#iigikxmnbp .gt_right {
+#carjxknvyf .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#iigikxmnbp .gt_font_normal {
+#carjxknvyf .gt_font_normal {
   font-weight: normal;
 }
 
-#iigikxmnbp .gt_font_bold {
+#carjxknvyf .gt_font_bold {
   font-weight: bold;
 }
 
-#iigikxmnbp .gt_font_italic {
+#carjxknvyf .gt_font_italic {
   font-style: italic;
 }
 
-#iigikxmnbp .gt_super {
+#carjxknvyf .gt_super {
   font-size: 65%;
 }
 
-#iigikxmnbp .gt_footnote_marks {
+#carjxknvyf .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#iigikxmnbp .gt_asterisk {
+#carjxknvyf .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#iigikxmnbp .gt_indent_1 {
+#carjxknvyf .gt_indent_1 {
   text-indent: 5px;
 }
 
-#iigikxmnbp .gt_indent_2 {
+#carjxknvyf .gt_indent_2 {
   text-indent: 10px;
 }
 
-#iigikxmnbp .gt_indent_3 {
+#carjxknvyf .gt_indent_3 {
   text-indent: 15px;
 }
 
-#iigikxmnbp .gt_indent_4 {
+#carjxknvyf .gt_indent_4 {
   text-indent: 20px;
 }
 
-#iigikxmnbp .gt_indent_5 {
+#carjxknvyf .gt_indent_5 {
   text-indent: 25px;
 }
 
-#iigikxmnbp .katex-display {
+#carjxknvyf .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#iigikxmnbp div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#carjxknvyf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -4321,7 +4321,7 @@ ul.task-list li input[type="checkbox"] {
 <td colspan="5" class="gt_heading gt_title gt_font_normal">예측시장 Kalshi — 상원 원가격</td>
 </tr>
 <tr class="gt_heading even">
-<td colspan="5" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">기준 2026-10-25T21:26:15Z · 가격(센트)은 확률의 근사일 뿐 확률이 아님</td>
+<td colspan="5" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">기준 2026-11-08T21:19:51Z · 가격(센트)은 확률의 근사일 뿐 확률이 아님</td>
 </tr>
 <tr class="gt_col_headings header">
 <th id="a주" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">주</th>
@@ -4333,81 +4333,81 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody class="gt_table_body">
 <tr class="odd">
-<td class="gt_row gt_left" headers="a주">노스캐롤라이나 (NC)</td>
-<td class="gt_row gt_left" headers="a대진">Roy Cooper vs Michael Whatley</td>
-<td class="gt_row gt_left" headers="a민주-가격">97¢</td>
-<td class="gt_row gt_left" headers="a공화-가격">4¢</td>
-<td class="gt_row gt_right" headers="a누적-거래액">$ 3,880,567</td>
+<td class="gt_row gt_left" headers="a주">뉴햄프셔 (NH)</td>
+<td class="gt_row gt_left" headers="a대진">Chris Pappas vs John E. Sununu</td>
+<td class="gt_row gt_left" headers="a민주-가격">100¢</td>
+<td class="gt_row gt_left" headers="a공화-가격">0¢</td>
+<td class="gt_row gt_right" headers="a누적-거래액">$ 4,272,179</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="a주">미시간 (MI)</td>
+<td class="gt_row gt_left" headers="a대진">Abdul El-Sayed vs Mike Rogers</td>
+<td class="gt_row gt_left" headers="a민주-가격">100¢</td>
+<td class="gt_row gt_left" headers="a공화-가격">0¢</td>
+<td class="gt_row gt_right" headers="a누적-거래액">$ 81,121,868</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="a주">메인 (ME)</td>
+<td class="gt_row gt_left" headers="a대진">Troy Jackson vs Susan Collins</td>
+<td class="gt_row gt_left" headers="a민주-가격">100¢</td>
+<td class="gt_row gt_left" headers="a공화-가격">0¢</td>
+<td class="gt_row gt_right" headers="a누적-거래액">$ 32,230,113</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="a주">아이오와 (IA)</td>
+<td class="gt_row gt_left" headers="a대진">Josh Turek vs Ashley Hinson</td>
+<td class="gt_row gt_left" headers="a민주-가격">100¢</td>
+<td class="gt_row gt_left" headers="a공화-가격">0¢</td>
+<td class="gt_row gt_right" headers="a누적-거래액">$ 18,575,390</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="a주">캔자스 (KS)</td>
+<td class="gt_row gt_left" headers="a대진">Adam Hamilton vs Roger Marshall</td>
+<td class="gt_row gt_left" headers="a민주-가격">100¢</td>
+<td class="gt_row gt_left" headers="a공화-가격">0¢</td>
+<td class="gt_row gt_right" headers="a누적-거래액">$ 14,680,819</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="a주">조지아 (GA)</td>
 <td class="gt_row gt_left" headers="a대진">Jon Ossoff vs Mike Collins</td>
-<td class="gt_row gt_left" headers="a민주-가격">95¢</td>
-<td class="gt_row gt_left" headers="a공화-가격">6¢</td>
-<td class="gt_row gt_right" headers="a누적-거래액">$ 2,555,786</td>
+<td class="gt_row gt_left" headers="a민주-가격">100¢</td>
+<td class="gt_row gt_left" headers="a공화-가격">0¢</td>
+<td class="gt_row gt_right" headers="a누적-거래액">$ 7,317,554</td>
 </tr>
 <tr class="odd">
-<td class="gt_row gt_left" headers="a주">뉴햄프셔 (NH)</td>
-<td class="gt_row gt_left" headers="a대진">Chris Pappas vs John E. Sununu</td>
-<td class="gt_row gt_left" headers="a민주-가격">89¢</td>
-<td class="gt_row gt_left" headers="a공화-가격">11¢</td>
-<td class="gt_row gt_right" headers="a누적-거래액">$ 2,361,941</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="a주">알래스카 (AK)</td>
-<td class="gt_row gt_left" headers="a대진">—</td>
-<td class="gt_row gt_left" headers="a민주-가격">74¢</td>
-<td class="gt_row gt_left" headers="a공화-가격">24¢</td>
-<td class="gt_row gt_right" headers="a누적-거래액">$ 3,338,623</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="a주">미시간 (MI)</td>
-<td class="gt_row gt_left" headers="a대진">Abdul El-Sayed vs Mike Rogers</td>
-<td class="gt_row gt_left" headers="a민주-가격">68¢</td>
-<td class="gt_row gt_left" headers="a공화-가격">33¢</td>
-<td class="gt_row gt_right" headers="a누적-거래액">$ 9,293,288</td>
+<td class="gt_row gt_left" headers="a주">노스캐롤라이나 (NC)</td>
+<td class="gt_row gt_left" headers="a대진">Roy Cooper vs Michael Whatley</td>
+<td class="gt_row gt_left" headers="a민주-가격">100¢</td>
+<td class="gt_row gt_left" headers="a공화-가격">0¢</td>
+<td class="gt_row gt_right" headers="a누적-거래액">$ 7,695,765</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="a주">오하이오 (OH)</td>
 <td class="gt_row gt_left" headers="a대진">Sherrod Brown vs Jon Husted</td>
-<td class="gt_row gt_left" headers="a민주-가격">68¢</td>
-<td class="gt_row gt_left" headers="a공화-가격">34¢</td>
-<td class="gt_row gt_right" headers="a누적-거래액">$ 8,471,437</td>
+<td class="gt_row gt_left" headers="a민주-가격">100¢</td>
+<td class="gt_row gt_left" headers="a공화-가격">0¢</td>
+<td class="gt_row gt_right" headers="a누적-거래액">$ 18,356,108</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="a주">텍사스 (TX)</td>
 <td class="gt_row gt_left" headers="a대진">James Talarico vs Ken Paxton</td>
-<td class="gt_row gt_left" headers="a민주-가격">65¢</td>
-<td class="gt_row gt_left" headers="a공화-가격">36¢</td>
-<td class="gt_row gt_right" headers="a누적-거래액">$41,993,102</td>
+<td class="gt_row gt_left" headers="a민주-가격">100¢</td>
+<td class="gt_row gt_left" headers="a공화-가격">0¢</td>
+<td class="gt_row gt_right" headers="a누적-거래액">$187,268,762</td>
 </tr>
 <tr class="even">
-<td class="gt_row gt_left" headers="a주">메인 (ME)</td>
-<td class="gt_row gt_left" headers="a대진">Troy Jackson vs Susan Collins</td>
-<td class="gt_row gt_left" headers="a민주-가격">61¢</td>
-<td class="gt_row gt_left" headers="a공화-가격">40¢</td>
-<td class="gt_row gt_right" headers="a누적-거래액">$10,622,341</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="a주">아이오와 (IA)</td>
-<td class="gt_row gt_left" headers="a대진">Josh Turek vs Ashley Hinson</td>
-<td class="gt_row gt_left" headers="a민주-가격">41¢</td>
-<td class="gt_row gt_left" headers="a공화-가격">59¢</td>
-<td class="gt_row gt_right" headers="a누적-거래액">$ 6,000,808</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="a주">캔자스 (KS)</td>
-<td class="gt_row gt_left" headers="a대진">Adam Hamilton vs Roger Marshall</td>
-<td class="gt_row gt_left" headers="a민주-가격">40¢</td>
-<td class="gt_row gt_left" headers="a공화-가격">61¢</td>
-<td class="gt_row gt_right" headers="a누적-거래액">$ 4,611,776</td>
+<td class="gt_row gt_left" headers="a주">알래스카 (AK)</td>
+<td class="gt_row gt_left" headers="a대진">—</td>
+<td class="gt_row gt_left" headers="a민주-가격">98¢</td>
+<td class="gt_row gt_left" headers="a공화-가격">3¢</td>
+<td class="gt_row gt_right" headers="a누적-거래액">$ 32,439,423</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="a주">네브래스카 (NE)</td>
 <td class="gt_row gt_left" headers="a대진">Cindy Burbank vs Pete Ricketts</td>
 <td class="gt_row gt_left" headers="a민주-가격">0¢</td>
-<td class="gt_row gt_left" headers="a공화-가격">75¢</td>
-<td class="gt_row gt_right" headers="a누적-거래액">$ 1,982,874</td>
+<td class="gt_row gt_left" headers="a공화-가격">100¢</td>
+<td class="gt_row gt_right" headers="a누적-거래액">$ 8,789,180</td>
 </tr>
 </tbody><tfoot>
 <tr class="gt_sourcenotes odd">
@@ -4420,7 +4420,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p>거래액을 함께 보세요. 감시주 중 가장 두꺼운 시장은 <strong>텍사스</strong>($4,199만)와 <strong>메인</strong>($1,062만), 가장 얇은 곳은 <strong>네브래스카</strong>($198만)입니다 — 얇은 시장은 소수 거래에 흔들립니다. 가격이 반반에 가까운데 거래액까지 큰 곳()이야말로 시장이 “정말 모르겠다”고 말하는 지점입니다.</p>
+<p>거래액을 함께 보세요. 감시주 중 가장 두꺼운 시장은 <strong>텍사스</strong>($18,727만)와 <strong>미시간</strong>($8,112만), 가장 얇은 곳은 <strong>뉴햄프셔</strong>($427만)입니다 — 얇은 시장은 소수 거래에 흔들립니다. 가격이 반반에 가까운데 거래액까지 큰 곳()이야말로 시장이 “정말 모르겠다”고 말하는 지점입니다.</p>
 </section>
 <section id="경합주-등급-cook-sabato-올해-변동-3월-10월-하순" class="level3">
 <h3 class="anchored" data-anchor-id="경합주-등급-cook-sabato-올해-변동-3월-10월-하순">경합주 등급 — Cook · Sabato 올해 변동 (3월 → 10월 하순)</h3>
@@ -5291,24 +5291,24 @@ Toss-up
 <h3 class="anchored" data-anchor-id="현재-등급-9개-기관-비교">현재 등급 — 9개 기관 비교</h3>
 <div class="cell">
 <div class="cell-output-display">
-<div id="hlhornmxqn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="cdlxfahnqk" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#hlhornmxqn table {
+#cdlxfahnqk table {
   font-family: 'IBM Plex Sans KR', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#hlhornmxqn thead, #hlhornmxqn tbody, #hlhornmxqn tfoot, #hlhornmxqn tr, #hlhornmxqn td, #hlhornmxqn th {
+#cdlxfahnqk thead, #cdlxfahnqk tbody, #cdlxfahnqk tfoot, #cdlxfahnqk tr, #cdlxfahnqk td, #cdlxfahnqk th {
   border-style: none;
 }
 
-#hlhornmxqn p {
+#cdlxfahnqk p {
   margin: 0;
   padding: 0;
 }
 
-#hlhornmxqn .gt_table {
+#cdlxfahnqk .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -5334,12 +5334,12 @@ Toss-up
   border-left-color: #D3D3D3;
 }
 
-#hlhornmxqn .gt_caption {
+#cdlxfahnqk .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#hlhornmxqn .gt_title {
+#cdlxfahnqk .gt_title {
   color: #333333;
   font-size: 16px;
   font-weight: initial;
@@ -5351,7 +5351,7 @@ Toss-up
   border-bottom-width: 0;
 }
 
-#hlhornmxqn .gt_subtitle {
+#cdlxfahnqk .gt_subtitle {
   color: #333333;
   font-size: 12px;
   font-weight: initial;
@@ -5363,7 +5363,7 @@ Toss-up
   border-top-width: 0;
 }
 
-#hlhornmxqn .gt_heading {
+#cdlxfahnqk .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -5375,13 +5375,13 @@ Toss-up
   border-right-color: #D3D3D3;
 }
 
-#hlhornmxqn .gt_bottom_border {
+#cdlxfahnqk .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#hlhornmxqn .gt_col_headings {
+#cdlxfahnqk .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -5396,7 +5396,7 @@ Toss-up
   border-right-color: #D3D3D3;
 }
 
-#hlhornmxqn .gt_col_heading {
+#cdlxfahnqk .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -5416,7 +5416,7 @@ Toss-up
   overflow-x: hidden;
 }
 
-#hlhornmxqn .gt_column_spanner_outer {
+#cdlxfahnqk .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -5428,15 +5428,15 @@ Toss-up
   padding-right: 4px;
 }
 
-#hlhornmxqn .gt_column_spanner_outer:first-child {
+#cdlxfahnqk .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#hlhornmxqn .gt_column_spanner_outer:last-child {
+#cdlxfahnqk .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#hlhornmxqn .gt_column_spanner {
+#cdlxfahnqk .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -5448,11 +5448,11 @@ Toss-up
   width: 100%;
 }
 
-#hlhornmxqn .gt_spanner_row {
+#cdlxfahnqk .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#hlhornmxqn .gt_group_heading {
+#cdlxfahnqk .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -5478,7 +5478,7 @@ Toss-up
   text-align: left;
 }
 
-#hlhornmxqn .gt_empty_group_heading {
+#cdlxfahnqk .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -5493,15 +5493,15 @@ Toss-up
   vertical-align: middle;
 }
 
-#hlhornmxqn .gt_from_md > :first-child {
+#cdlxfahnqk .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#hlhornmxqn .gt_from_md > :last-child {
+#cdlxfahnqk .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#hlhornmxqn .gt_row {
+#cdlxfahnqk .gt_row {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 5px;
@@ -5520,7 +5520,7 @@ Toss-up
   overflow-x: hidden;
 }
 
-#hlhornmxqn .gt_stub {
+#cdlxfahnqk .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -5533,7 +5533,7 @@ Toss-up
   padding-right: 5px;
 }
 
-#hlhornmxqn .gt_stub_row_group {
+#cdlxfahnqk .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -5547,15 +5547,15 @@ Toss-up
   vertical-align: top;
 }
 
-#hlhornmxqn .gt_row_group_first td {
+#cdlxfahnqk .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#hlhornmxqn .gt_row_group_first th {
+#cdlxfahnqk .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#hlhornmxqn .gt_summary_row {
+#cdlxfahnqk .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -5565,16 +5565,16 @@ Toss-up
   padding-right: 5px;
 }
 
-#hlhornmxqn .gt_first_summary_row {
+#cdlxfahnqk .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#hlhornmxqn .gt_first_summary_row.thick {
+#cdlxfahnqk .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#hlhornmxqn .gt_last_summary_row {
+#cdlxfahnqk .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -5584,7 +5584,7 @@ Toss-up
   border-bottom-color: #D3D3D3;
 }
 
-#hlhornmxqn .gt_grand_summary_row {
+#cdlxfahnqk .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -5594,7 +5594,7 @@ Toss-up
   padding-right: 5px;
 }
 
-#hlhornmxqn .gt_first_grand_summary_row {
+#cdlxfahnqk .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -5604,7 +5604,7 @@ Toss-up
   border-top-color: #D3D3D3;
 }
 
-#hlhornmxqn .gt_last_grand_summary_row_top {
+#cdlxfahnqk .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -5614,11 +5614,11 @@ Toss-up
   border-bottom-color: #D3D3D3;
 }
 
-#hlhornmxqn .gt_striped {
+#cdlxfahnqk .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#hlhornmxqn .gt_table_body {
+#cdlxfahnqk .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -5627,7 +5627,7 @@ Toss-up
   border-bottom-color: #D3D3D3;
 }
 
-#hlhornmxqn .gt_footnotes {
+#cdlxfahnqk .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -5641,7 +5641,7 @@ Toss-up
   border-right-color: #D3D3D3;
 }
 
-#hlhornmxqn .gt_footnote {
+#cdlxfahnqk .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -5650,7 +5650,7 @@ Toss-up
   padding-right: 5px;
 }
 
-#hlhornmxqn .gt_sourcenotes {
+#cdlxfahnqk .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -5664,7 +5664,7 @@ Toss-up
   border-right-color: #D3D3D3;
 }
 
-#hlhornmxqn .gt_sourcenote {
+#cdlxfahnqk .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -5672,72 +5672,72 @@ Toss-up
   padding-right: 5px;
 }
 
-#hlhornmxqn .gt_left {
+#cdlxfahnqk .gt_left {
   text-align: left;
 }
 
-#hlhornmxqn .gt_center {
+#cdlxfahnqk .gt_center {
   text-align: center;
 }
 
-#hlhornmxqn .gt_right {
+#cdlxfahnqk .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#hlhornmxqn .gt_font_normal {
+#cdlxfahnqk .gt_font_normal {
   font-weight: normal;
 }
 
-#hlhornmxqn .gt_font_bold {
+#cdlxfahnqk .gt_font_bold {
   font-weight: bold;
 }
 
-#hlhornmxqn .gt_font_italic {
+#cdlxfahnqk .gt_font_italic {
   font-style: italic;
 }
 
-#hlhornmxqn .gt_super {
+#cdlxfahnqk .gt_super {
   font-size: 65%;
 }
 
-#hlhornmxqn .gt_footnote_marks {
+#cdlxfahnqk .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#hlhornmxqn .gt_asterisk {
+#cdlxfahnqk .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#hlhornmxqn .gt_indent_1 {
+#cdlxfahnqk .gt_indent_1 {
   text-indent: 5px;
 }
 
-#hlhornmxqn .gt_indent_2 {
+#cdlxfahnqk .gt_indent_2 {
   text-indent: 10px;
 }
 
-#hlhornmxqn .gt_indent_3 {
+#cdlxfahnqk .gt_indent_3 {
   text-indent: 15px;
 }
 
-#hlhornmxqn .gt_indent_4 {
+#cdlxfahnqk .gt_indent_4 {
   text-indent: 20px;
 }
 
-#hlhornmxqn .gt_indent_5 {
+#cdlxfahnqk .gt_indent_5 {
   text-indent: 25px;
 }
 
-#hlhornmxqn .katex-display {
+#cdlxfahnqk .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#hlhornmxqn div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#cdlxfahnqk div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -5769,60 +5769,60 @@ Toss-up
 <tbody class="gt_table_body">
 <tr class="odd">
 <td class="gt_row gt_left" headers="a예측기관">Cook Political Report</td>
-<td class="gt_row gt_right" headers="a기준일">2026-10-23</td>
+<td class="gt_row gt_right" headers="a기준일">2026-11-03</td>
 <td class="gt_row gt_left" headers="a조지아-GA" style="background-color: #6BA3D6; color: #0C2C47; font-weight: 600">Likely D</td>
 <td class="gt_row gt_left" headers="a노스캐롤라이나-NC" style="background-color: #6BA3D6; color: #0C2C47; font-weight: 600">Likely D</td>
 <td class="gt_row gt_left" headers="a뉴햄프셔-NH" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
-<td class="gt_row gt_left" headers="a미시간-MI" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
+<td class="gt_row gt_left" headers="a미시간-MI" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
 <td class="gt_row gt_left" headers="a메인-ME" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
 <td class="gt_row gt_left" headers="a알래스카-AK" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
 <td class="gt_row gt_left" headers="a오하이오-OH" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
 <td class="gt_row gt_left" headers="a텍사스-TX" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
 <td class="gt_row gt_left" headers="a아이오와-IA" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
-<td class="gt_row gt_left" headers="a네브래스카-NE" style="background-color: #D6604D; color: #FFFFFF; font-weight: 600">Likely R</td>
+<td class="gt_row gt_left" headers="a네브래스카-NE" style="background-color: #F6B89C; color: #6B2D12; font-weight: 600">Lean R</td>
 <td class="gt_row gt_left" headers="a캔자스-KS" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="a예측기관">Sabato's Crystal Ball</td>
-<td class="gt_row gt_right" headers="a기준일">2026-10-15</td>
+<td class="gt_row gt_right" headers="a기준일">2026-11-03</td>
 <td class="gt_row gt_left" headers="a조지아-GA" style="background-color: #6BA3D6; color: #0C2C47; font-weight: 600">Likely D</td>
-<td class="gt_row gt_left" headers="a노스캐롤라이나-NC" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
-<td class="gt_row gt_left" headers="a뉴햄프셔-NH" style="background-color: #6BA3D6; color: #0C2C47; font-weight: 600">Likely D</td>
-<td class="gt_row gt_left" headers="a미시간-MI" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
-<td class="gt_row gt_left" headers="a메인-ME" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
-<td class="gt_row gt_left" headers="a알래스카-AK" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
-<td class="gt_row gt_left" headers="a오하이오-OH" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
-<td class="gt_row gt_left" headers="a텍사스-TX" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
-<td class="gt_row gt_left" headers="a아이오와-IA" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
-<td class="gt_row gt_left" headers="a네브래스카-NE" style="background-color: #F6B89C; color: #6B2D12; font-weight: 600">Lean R</td>
-<td class="gt_row gt_left" headers="a캔자스-KS" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="a예측기관">Inside Elections</td>
-<td class="gt_row gt_right" headers="a기준일">2026-10-23</td>
-<td class="gt_row gt_left" headers="a조지아-GA" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
-<td class="gt_row gt_left" headers="a노스캐롤라이나-NC" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
-<td class="gt_row gt_left" headers="a뉴햄프셔-NH" style="background-color: #DCEAF5; color: #1D4A70; font-weight: 600">Tilt D</td>
-<td class="gt_row gt_left" headers="a미시간-MI" style="background-color: #DCEAF5; color: #1D4A70; font-weight: 600">Tilt D</td>
-<td class="gt_row gt_left" headers="a메인-ME" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
-<td class="gt_row gt_left" headers="a알래스카-AK" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
-<td class="gt_row gt_left" headers="a오하이오-OH" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
-<td class="gt_row gt_left" headers="a텍사스-TX" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
-<td class="gt_row gt_left" headers="a아이오와-IA" style="background-color: #FCE0D2; color: #6B2D12; font-weight: 600">Tilt R</td>
-<td class="gt_row gt_left" headers="a네브래스카-NE" style="background-color: #F6B89C; color: #6B2D12; font-weight: 600">Lean R</td>
-<td class="gt_row gt_left" headers="a캔자스-KS" style="background-color: #FCE0D2; color: #6B2D12; font-weight: 600">Tilt R</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="a예측기관">Split Ticket</td>
-<td class="gt_row gt_right" headers="a기준일">2026-10-24</td>
-<td class="gt_row gt_left" headers="a조지아-GA" style="background-color: #2166AC; color: #FFFFFF; font-weight: 600">Solid D</td>
-<td class="gt_row gt_left" headers="a노스캐롤라이나-NC" style="background-color: #2166AC; color: #FFFFFF; font-weight: 600">Solid D</td>
+<td class="gt_row gt_left" headers="a노스캐롤라이나-NC" style="background-color: #6BA3D6; color: #0C2C47; font-weight: 600">Likely D</td>
 <td class="gt_row gt_left" headers="a뉴햄프셔-NH" style="background-color: #6BA3D6; color: #0C2C47; font-weight: 600">Likely D</td>
 <td class="gt_row gt_left" headers="a미시간-MI" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
 <td class="gt_row gt_left" headers="a메인-ME" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
 <td class="gt_row gt_left" headers="a알래스카-AK" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
 <td class="gt_row gt_left" headers="a오하이오-OH" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
 <td class="gt_row gt_left" headers="a텍사스-TX" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
+<td class="gt_row gt_left" headers="a아이오와-IA" style="background-color: #F6B89C; color: #6B2D12; font-weight: 600">Lean R</td>
+<td class="gt_row gt_left" headers="a네브래스카-NE" style="background-color: #F6B89C; color: #6B2D12; font-weight: 600">Lean R</td>
+<td class="gt_row gt_left" headers="a캔자스-KS" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="a예측기관">Inside Elections</td>
+<td class="gt_row gt_right" headers="a기준일">2026-11-03</td>
+<td class="gt_row gt_left" headers="a조지아-GA" style="background-color: #6BA3D6; color: #0C2C47; font-weight: 600">Likely D</td>
+<td class="gt_row gt_left" headers="a노스캐롤라이나-NC" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
+<td class="gt_row gt_left" headers="a뉴햄프셔-NH" style="background-color: #DCEAF5; color: #1D4A70; font-weight: 600">Tilt D</td>
+<td class="gt_row gt_left" headers="a미시간-MI" style="background-color: #DCEAF5; color: #1D4A70; font-weight: 600">Tilt D</td>
+<td class="gt_row gt_left" headers="a메인-ME" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
+<td class="gt_row gt_left" headers="a알래스카-AK" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
+<td class="gt_row gt_left" headers="a오하이오-OH" style="background-color: #DCEAF5; color: #1D4A70; font-weight: 600">Tilt D</td>
+<td class="gt_row gt_left" headers="a텍사스-TX" style="background-color: #DCEAF5; color: #1D4A70; font-weight: 600">Tilt D</td>
+<td class="gt_row gt_left" headers="a아이오와-IA" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
+<td class="gt_row gt_left" headers="a네브래스카-NE" style="background-color: #FCE0D2; color: #6B2D12; font-weight: 600">Tilt R</td>
+<td class="gt_row gt_left" headers="a캔자스-KS" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="a예측기관">Split Ticket</td>
+<td class="gt_row gt_right" headers="a기준일">2026-11-02</td>
+<td class="gt_row gt_left" headers="a조지아-GA" style="background-color: #2166AC; color: #FFFFFF; font-weight: 600">Solid D</td>
+<td class="gt_row gt_left" headers="a노스캐롤라이나-NC" style="background-color: #2166AC; color: #FFFFFF; font-weight: 600">Solid D</td>
+<td class="gt_row gt_left" headers="a뉴햄프셔-NH" style="background-color: #2166AC; color: #FFFFFF; font-weight: 600">Solid D</td>
+<td class="gt_row gt_left" headers="a미시간-MI" style="background-color: #6BA3D6; color: #0C2C47; font-weight: 600">Likely D</td>
+<td class="gt_row gt_left" headers="a메인-ME" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
+<td class="gt_row gt_left" headers="a알래스카-AK" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
+<td class="gt_row gt_left" headers="a오하이오-OH" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
+<td class="gt_row gt_left" headers="a텍사스-TX" style="background-color: #6BA3D6; color: #0C2C47; font-weight: 600">Likely D</td>
 <td class="gt_row gt_left" headers="a아이오와-IA" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
 <td class="gt_row gt_left" headers="a네브래스카-NE" style="background-color: #F6B89C; color: #6B2D12; font-weight: 600">Lean R</td>
 <td class="gt_row gt_left" headers="a캔자스-KS" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
@@ -5844,33 +5844,33 @@ Toss-up
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="a예측기관">Fox News Power Rankings</td>
-<td class="gt_row gt_right" headers="a기준일">2026-10-23</td>
+<td class="gt_row gt_right" headers="a기준일">2026-11-03</td>
 <td class="gt_row gt_left" headers="a조지아-GA" style="background-color: #6BA3D6; color: #0C2C47; font-weight: 600">Likely D</td>
 <td class="gt_row gt_left" headers="a노스캐롤라이나-NC" style="background-color: #6BA3D6; color: #0C2C47; font-weight: 600">Likely D</td>
 <td class="gt_row gt_left" headers="a뉴햄프셔-NH" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
 <td class="gt_row gt_left" headers="a미시간-MI" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
 <td class="gt_row gt_left" headers="a메인-ME" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
 <td class="gt_row gt_left" headers="a알래스카-AK" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
-<td class="gt_row gt_left" headers="a오하이오-OH" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
+<td class="gt_row gt_left" headers="a오하이오-OH" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
 <td class="gt_row gt_left" headers="a텍사스-TX" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
 <td class="gt_row gt_left" headers="a아이오와-IA" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
-<td class="gt_row gt_left" headers="a네브래스카-NE" style="background-color: #D6604D; color: #FFFFFF; font-weight: 600">Likely R</td>
-<td class="gt_row gt_left" headers="a캔자스-KS" style="background-color: #F6B89C; color: #6B2D12; font-weight: 600">Lean R</td>
+<td class="gt_row gt_left" headers="a네브래스카-NE" style="background-color: #F6B89C; color: #6B2D12; font-weight: 600">Lean R</td>
+<td class="gt_row gt_left" headers="a캔자스-KS" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="a예측기관">Decision Desk HQ</td>
-<td class="gt_row gt_right" headers="a기준일">2026-10-05</td>
+<td class="gt_row gt_right" headers="a기준일">2026-11-02</td>
 <td class="gt_row gt_left" headers="a조지아-GA" style="background-color: #6BA3D6; color: #0C2C47; font-weight: 600">Likely D</td>
 <td class="gt_row gt_left" headers="a노스캐롤라이나-NC" style="background-color: #6BA3D6; color: #0C2C47; font-weight: 600">Likely D</td>
 <td class="gt_row gt_left" headers="a뉴햄프셔-NH" style="background-color: #6BA3D6; color: #0C2C47; font-weight: 600">Likely D</td>
-<td class="gt_row gt_left" headers="a미시간-MI" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
-<td class="gt_row gt_left" headers="a메인-ME" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
+<td class="gt_row gt_left" headers="a미시간-MI" style="background-color: #6BA3D6; color: #0C2C47; font-weight: 600">Likely D</td>
+<td class="gt_row gt_left" headers="a메인-ME" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
 <td class="gt_row gt_left" headers="a알래스카-AK" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
 <td class="gt_row gt_left" headers="a오하이오-OH" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
-<td class="gt_row gt_left" headers="a텍사스-TX" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
+<td class="gt_row gt_left" headers="a텍사스-TX" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
 <td class="gt_row gt_left" headers="a아이오와-IA" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
-<td class="gt_row gt_left" headers="a네브래스카-NE" style="background-color: #D6604D; color: #FFFFFF; font-weight: 600">Likely R</td>
-<td class="gt_row gt_left" headers="a캔자스-KS" style="background-color: #F6B89C; color: #6B2D12; font-weight: 600">Lean R</td>
+<td class="gt_row gt_left" headers="a네브래스카-NE" style="background-color: #F6B89C; color: #6B2D12; font-weight: 600">Lean R</td>
+<td class="gt_row gt_left" headers="a캔자스-KS" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="a예측기관">Race to the WH</td>
@@ -5889,22 +5889,22 @@ Toss-up
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="a예측기관">270toWin Consensus</td>
-<td class="gt_row gt_right" headers="a기준일">2026-10-23</td>
+<td class="gt_row gt_right" headers="a기준일">2026-11-03</td>
 <td class="gt_row gt_left" headers="a조지아-GA" style="background-color: #6BA3D6; color: #0C2C47; font-weight: 600">Likely D</td>
 <td class="gt_row gt_left" headers="a노스캐롤라이나-NC" style="background-color: #6BA3D6; color: #0C2C47; font-weight: 600">Likely D</td>
 <td class="gt_row gt_left" headers="a뉴햄프셔-NH" style="background-color: #6BA3D6; color: #0C2C47; font-weight: 600">Likely D</td>
 <td class="gt_row gt_left" headers="a미시간-MI" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
-<td class="gt_row gt_left" headers="a메인-ME" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
+<td class="gt_row gt_left" headers="a메인-ME" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
 <td class="gt_row gt_left" headers="a알래스카-AK" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
-<td class="gt_row gt_left" headers="a오하이오-OH" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
-<td class="gt_row gt_left" headers="a텍사스-TX" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
+<td class="gt_row gt_left" headers="a오하이오-OH" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
+<td class="gt_row gt_left" headers="a텍사스-TX" style="background-color: #B9D9EE; color: #123A5C; font-weight: 600">Lean D</td>
 <td class="gt_row gt_left" headers="a아이오와-IA" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
-<td class="gt_row gt_left" headers="a네브래스카-NE" style="background-color: #D6604D; color: #FFFFFF; font-weight: 600">Likely R</td>
+<td class="gt_row gt_left" headers="a네브래스카-NE" style="background-color: #F6B89C; color: #6B2D12; font-weight: 600">Lean R</td>
 <td class="gt_row gt_left" headers="a캔자스-KS" style="background-color: #E5E7EB; color: #374151; font-weight: 600">Toss-up</td>
 </tr>
 </tbody><tfoot>
 <tr class="gt_sourcenotes odd">
-<td colspan="13" class="gt_sourcenote">재게시 피드 기준일 — Cook Political Report 2026-10-23 (14일 이상 경과) · Sabato's Crystal Ball 2026-10-15 (14일 이상 경과) · Inside Elections 2026-10-23 (14일 이상 경과) · Split Ticket 2026-10-24 (14일 이상 경과) · Almanac of American Politics 2026-10-23 (14일 이상 경과) · Fox News Power Rankings 2026-10-23 (14일 이상 경과) · Decision Desk HQ 2026-10-05 (14일 이상 경과) · Race to the WH 2026-09-17 (14일 이상 경과) · 270toWin Consensus 2026-10-23 (14일 이상 경과). 사이트 취득일 2026-10-25. 취득은 등급 갱신을 뜻하지 않습니다. 피드 날짜는 270towin의 date_created이며 기관 원문 발표일은 별도 확인이 필요합니다.</td>
+<td colspan="13" class="gt_sourcenote">재게시 피드 기준일 — Cook Political Report 2026-11-03 · Sabato's Crystal Ball 2026-11-03 · Inside Elections 2026-11-03 · Split Ticket 2026-11-02 · Almanac of American Politics 2026-10-23 (14일 이상 경과) · Fox News Power Rankings 2026-11-03 · Decision Desk HQ 2026-11-02 · Race to the WH 2026-09-17 (14일 이상 경과) · 270toWin Consensus 2026-11-03. 사이트 취득일 2026-11-08. 취득은 등급 갱신을 뜻하지 않습니다. 피드 날짜는 270towin의 date_created이며 기관 원문 발표일은 별도 확인이 필요합니다.</td>
 </tr>
 <tr class="gt_sourcenotes even">
 <td colspan="13" class="gt_sourcenote">칸 색은 등급의 **방향과 순서**를 나타냅니다(파랑=민주 쪽, 회색=Toss-up, 붉은색=공화 쪽). 색은 서수 인코딩이며 **확률이 아닙니다** — 그래서 연속 그라데이션이 아니라 등급별 이산 계단으로 칠했고, 위 「경합주 등급 변동」 매트릭스와 같은 팔레트를 씁니다. 예측시장 행만 회색 띠로 분리해 색을 칠하지 않았습니다. 같은 주를 기관마다 어떻게 보는지 비교합니다. ※ Kalshi 행만 성격이 다릅니다 — 전문가 등급이 아니라 **예측시장 가격**(민주 승리 계약의 마지막 체결가)이며, Kalshi 공개 API에서 원가격을 직접 받아 싣습니다. 가격은 확률의 근사일 뿐이고(유동성·편향 혼입), Cook·Sabato의 서수적 등급과 같은 잣대로 비교하지 마세요. 'Tilt'는 Lean보다 좁은 등급으로 Inside Elections·RaceToTheWH가 씁니다. '—'는 해당 기관이 경합으로 분류하지 않았거나 시장이 없는 칸(추정으로 채우지 않음). 취득: scripts/fetch_senate_ratings.py · scripts/fetch_kalshi_prices.py</td>
@@ -5916,8 +5916,8 @@ Toss-up
 </div>
 </div>
 </div>
-<p>한 기관만 인용하면 판세가 단정적으로 보이지만, 9곳을 나란히 놓으면 <strong>어디가 진짜 불확실한지</strong>가 드러납니다. 등급 갈래가 몇 개인지는 생각보다 정보가 적습니다 — 조지아도 3가지로 갈리지만 전부 민주 쪽이라 방향에는 이견이 없습니다.</p>
-<p>읽을 값은 <strong>어느 쪽이 유리한지조차 기관마다 다른 주</strong>입니다. 현재 0곳이 여기 해당합니다 — ****. 예를 들어 오하이오 한 줄에는 민주 우세부터 공화 우세까지가 한꺼번에 놓입니다 — Lean D · Tilt D · Toss-up. 이런 주에서 단일 기관만 인용하면 판세를 통째로 잘못 옮기게 됩니다.</p>
+<p>한 기관만 인용하면 판세가 단정적으로 보이지만, 9곳을 나란히 놓으면 <strong>어디가 진짜 불확실한지</strong>가 드러납니다. 등급 갈래가 몇 개인지는 생각보다 정보가 적습니다 — 조지아도 2가지로 갈리지만 전부 민주 쪽이라 방향에는 이견이 없습니다.</p>
+<p>읽을 값은 <strong>어느 쪽이 유리한지조차 기관마다 다른 주</strong>입니다. 현재 1곳이 여기 해당합니다 — <strong>캔자스</strong>. 예를 들어 오하이오 한 줄에는 민주 우세부터 공화 우세까지가 한꺼번에 놓입니다 — Lean D · Tilt D · Toss-up. 이런 주에서 단일 기관만 인용하면 판세를 통째로 잘못 옮기게 됩니다.</p>
 <div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-70-contents" aria-controls="callout-70" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
