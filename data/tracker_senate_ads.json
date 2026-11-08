@@ -1,18 +1,28 @@
 {
- "as_of": "2026-11-06",
+ "as_of": "2026-11-07",
  "source_label": "선거운동 트래커 광고 페이지 — FEC Schedule E 독립지출 (api.open.fec.gov) — 2026 상원·하원 본선 신고분",
  "source_url": "https://woochangkang.github.io/campaign-tracker-2026-site/data/ads_fec.json",
  "provenance_note": "pro_D = 민주(무소속 포함, independent_note=true) 지지 + 공화 반대, pro_R = 그 반대. 단위 달러. 후보 캠프 자금이 아니라 외부 단체의 신고 집행액이다.",
  "races": {
   "AK": {
-   "pro_D": 47060362,
+   "pro_D": 48682312,
    "pro_R": 49516032,
-   "ads_D": 41103609,
+   "ads_D": 41964802,
    "ads_R": 42975054,
    "last_date": "2026-11-03",
    "independent_note": false,
    "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-AK.html",
    "top": [
+    {
+     "committee_id": "C00957522",
+     "committee": "NORTH STAR",
+     "affiliate_of": null,
+     "candidate": "SULLIVAN, DAN",
+     "so": "O",
+     "side": "D",
+     "total": 15986671,
+     "last_date": "2026-10-30"
+    },
     {
      "committee_id": "C00571703",
      "committee": "SLF PAC",
@@ -22,16 +32,6 @@
      "side": "R",
      "total": 15952902,
      "last_date": "2026-11-02"
-    },
-    {
-     "committee_id": "C00957522",
-     "committee": "NORTH STAR",
-     "affiliate_of": null,
-     "candidate": "SULLIVAN, DAN",
-     "so": "O",
-     "side": "D",
-     "total": 15075477,
-     "last_date": "2026-10-30"
     },
     {
      "committee_id": "C00875278",
@@ -64,6 +64,16 @@
      "last_date": "2026-10-29"
     },
     {
+     "committee_id": "C00956284",
+     "committee": "MIDNIGHT SUN PAC",
+     "affiliate_of": null,
+     "candidate": "PELTOLA, MARY",
+     "so": "S",
+     "side": "D",
+     "total": 5052879,
+     "last_date": "2026-10-30"
+    },
+    {
      "committee_id": "C00865444",
      "committee": "WINSENATE",
      "affiliate_of": null,
@@ -72,16 +82,6 @@
      "side": "D",
      "total": 4713372,
      "last_date": "2026-10-29"
-    },
-    {
-     "committee_id": "C00956284",
-     "committee": "MIDNIGHT SUN PAC",
-     "affiliate_of": null,
-     "candidate": "PELTOLA, MARY",
-     "so": "S",
-     "side": "D",
-     "total": 4292122,
-     "last_date": "2026-10-30"
     },
     {
      "committee_id": "C00960435",
@@ -166,9 +166,9 @@
    ]
   },
   "GA": {
-   "pro_D": 20087936,
+   "pro_D": 20012878,
    "pro_R": 18317486,
-   "ads_D": 18643348,
+   "ads_D": 18601881,
    "ads_R": 15028673,
    "last_date": "2026-11-03",
    "independent_note": false,
@@ -215,16 +215,6 @@
      "last_date": "2026-10-13"
     },
     {
-     "committee_id": "C00961276",
-     "committee": "LOWER COSTS NOW",
-     "affiliate_of": null,
-     "candidate": "OSSOFF, T. JONATHAN",
-     "so": "S",
-     "side": "D",
-     "total": 2263647,
-     "last_date": "2026-10-13"
-    },
-    {
      "committee_id": "C00492140",
      "committee": "AB PAC",
      "affiliate_of": null,
@@ -243,6 +233,16 @@
      "side": "D",
      "total": 2060289,
      "last_date": "2026-10-27"
+    },
+    {
+     "committee_id": "C00961276",
+     "committee": "LOWER COSTS NOW",
+     "affiliate_of": null,
+     "candidate": "OSSOFF, T. JONATHAN",
+     "so": "S",
+     "side": "D",
+     "total": 1893997,
+     "last_date": "2026-10-13"
     },
     {
      "committee_id": "C00960435",
@@ -295,6 +295,16 @@
      "last_date": "2026-11-02"
     },
     {
+     "committee_id": "C00961276",
+     "committee": "LOWER COSTS NOW",
+     "affiliate_of": null,
+     "candidate": "OSSOFF, T. JONATHAN",
+     "so": "S",
+     "side": "D",
+     "total": 369651,
+     "last_date": "2026-09-29"
+    },
+    {
      "committee_id": "C90011156",
      "committee": "WORKING AMERICA",
      "affiliate_of": null,
@@ -313,21 +323,11 @@
      "side": "D",
      "total": 332556,
      "last_date": "2026-10-29"
-    },
-    {
-     "committee_id": "C00915595",
-     "committee": "GOVERNMENT THAT WORKS PAC",
-     "affiliate_of": null,
-     "candidate": "OSSOF, JONATHAN T.",
-     "so": "S",
-     "side": "D",
-     "total": 332509,
-     "last_date": "2026-10-28"
     }
    ]
   },
   "IA": {
-   "pro_D": 103865848,
+   "pro_D": 103866829,
    "pro_R": 96160415,
    "ads_D": 98162883,
    "ads_R": 80454232,
@@ -488,9 +488,9 @@
    ]
   },
   "KS": {
-   "pro_D": 58447709,
+   "pro_D": 58477865,
    "pro_R": 35815480,
-   "ads_D": 55864240,
+   "ads_D": 55892691,
    "ads_R": 33331147,
    "last_date": "2026-11-03",
    "independent_note": false,
@@ -649,7 +649,7 @@
    ]
   },
   "ME": {
-   "pro_D": 52554567,
+   "pro_D": 52556922,
    "pro_R": 89272767,
    "ads_D": 45411810,
    "ads_R": 79861834,
@@ -810,9 +810,9 @@
    ]
   },
   "MI": {
-   "pro_D": 94734066,
+   "pro_D": 94702433,
    "pro_R": 172139893,
-   "ads_D": 80681741,
+   "ads_D": 80629276,
    "ads_R": 133264078,
    "last_date": "2026-11-03",
    "independent_note": false,
@@ -945,7 +945,7 @@
      "candidate": "ROGERS, MICHAEL J",
      "so": "O",
      "side": "D",
-     "total": 5046059,
+     "total": 5012036,
      "last_date": "2026-10-30"
     },
     {
@@ -1132,7 +1132,7 @@
    ]
   },
   "NE": {
-   "pro_D": 37389758,
+   "pro_D": 37390351,
    "pro_R": 32745582,
    "ads_D": 33543883,
    "ads_R": 31060673,
@@ -1454,9 +1454,9 @@
    ]
   },
   "OH": {
-   "pro_D": 157533003,
+   "pro_D": 157507842,
    "pro_R": 252373670,
-   "ads_D": 141350905,
+   "ads_D": 141325745,
    "ads_R": 206870487,
    "last_date": "2026-11-03",
    "independent_note": false,
@@ -1559,7 +1559,7 @@
      "candidate": "HUSTED, JON",
      "so": "O",
      "side": "D",
-     "total": 9499907,
+     "total": 9474746,
      "last_date": "2026-10-30"
     },
     {
@@ -1615,10 +1615,10 @@
    ]
   },
   "TX": {
-   "pro_D": 109360450,
-   "pro_R": 316169743,
-   "ads_D": 98190603,
-   "ads_R": 262484381,
+   "pro_D": 109270092,
+   "pro_R": 315871543,
+   "ads_D": 98100245,
+   "ads_R": 262186181,
    "last_date": "2026-11-03",
    "independent_note": false,
    "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-TX.html",
@@ -1660,7 +1660,7 @@
      "candidate": "PAXTON, WARREN KENNETH JR.",
      "so": "O",
      "side": "D",
-     "total": 31248041,
+     "total": 31157683,
      "last_date": "2026-10-27"
     },
     {
