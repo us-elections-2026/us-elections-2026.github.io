@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-07",
+ "as_of": "2026-11-08",
  "source_label": "선거운동 트래커 광고 페이지 — FEC Schedule E 독립지출 (api.open.fec.gov) — 2026 상원·하원 본선 신고분",
  "source_url": "https://woochangkang.github.io/campaign-tracker-2026-site/data/ads_fec.json",
  "provenance_note": "pro_D = 민주(무소속 포함, independent_note=true) 지지 + 공화 반대, pro_R = 그 반대. 단위 달러. 후보 캠프 자금이 아니라 외부 단체의 신고 집행액이다.",
@@ -327,11 +327,11 @@
    ]
   },
   "IA": {
-   "pro_D": 103866829,
+   "pro_D": 103867049,
    "pro_R": 96160415,
    "ads_D": 98162883,
    "ads_R": 80454232,
-   "last_date": "2026-11-03",
+   "last_date": "2026-11-05",
    "independent_note": false,
    "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-IA.html",
    "top": [
@@ -489,7 +489,7 @@
   },
   "KS": {
    "pro_D": 58477865,
-   "pro_R": 35815480,
+   "pro_R": 35856820,
    "ads_D": 55892691,
    "ads_R": 33331147,
    "last_date": "2026-11-03",
@@ -810,11 +810,11 @@
    ]
   },
   "MI": {
-   "pro_D": 94702433,
+   "pro_D": 94704458,
    "pro_R": 172139893,
-   "ads_D": 80629276,
+   "ads_D": 80631276,
    "ads_R": 133264078,
-   "last_date": "2026-11-03",
+   "last_date": "2026-11-05",
    "independent_note": false,
    "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-MI.html",
    "top": [
@@ -971,11 +971,11 @@
    ]
   },
   "NC": {
-   "pro_D": 29353449,
+   "pro_D": 29353467,
    "pro_R": 46417659,
    "ads_D": 24585581,
    "ads_R": 42935520,
-   "last_date": "2026-11-03",
+   "last_date": "2026-11-05",
    "independent_note": false,
    "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-NC.html",
    "top": [
@@ -1132,11 +1132,11 @@
    ]
   },
   "NE": {
-   "pro_D": 37390351,
+   "pro_D": 37390531,
    "pro_R": 32745582,
    "ads_D": 33543883,
    "ads_R": 31060673,
-   "last_date": "2026-11-03",
+   "last_date": "2026-11-05",
    "independent_note": true,
    "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-NE.html",
    "top": [
@@ -1454,11 +1454,11 @@
    ]
   },
   "OH": {
-   "pro_D": 157507842,
+   "pro_D": 157511516,
    "pro_R": 252373670,
-   "ads_D": 141325745,
+   "ads_D": 141328245,
    "ads_R": 206870487,
-   "last_date": "2026-11-03",
+   "last_date": "2026-11-05",
    "independent_note": false,
    "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-OH.html",
    "top": [
@@ -1615,11 +1615,11 @@
    ]
   },
   "TX": {
-   "pro_D": 109270092,
+   "pro_D": 109309172,
    "pro_R": 315871543,
-   "ads_D": 98100245,
+   "ads_D": 98138745,
    "ads_R": 262186181,
-   "last_date": "2026-11-03",
+   "last_date": "2026-11-05",
    "independent_note": false,
    "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-TX.html",
    "top": [
