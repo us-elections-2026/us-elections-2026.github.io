@@ -1,8 +1,63 @@
 {
- "as_of": "2026-11-09",
+ "as_of": "2026-11-10",
  "source_label": "_NIS 상원 일일 브리핑(KR) — Cowork 예약 작업 산출물을 scripts/ingest_senate_daily.py가 그대로 추출",
  "provenance_note": "본문은 원천 마크다운을 자르지 않고 전재한다(요약·재서술 없음). 종결체는 원천대로 다체. 【수집 필요】 표기도 원천 그대로 남긴다 — 빈 칸을 추정으로 채우지 않는 규약과 같은 이유. 같은 날짜 재실행은 덮어쓴다.",
  "days": [
+  {
+   "date": "2026-11-10",
+   "source_file": "2026-11-10_site_KR.md",
+   "source_kind": "digest",
+   "chars": 9036,
+   "source_validation": {
+    "source_file": "2026-11-10_일일브리핑_KR.md",
+    "checks": [
+     "A 주 소절 1~9 순서",
+     "B [유세] 줄 11/11",
+     "D 조사 불릿 0개 기간·격차 확인",
+     "E self-audit 블록 있음(항목 0)",
+     "F EN/KR 주 소절 11개 일치"
+    ],
+    "warnings": [
+     "C §5.1 지정 지역매체 링크 미확인(11/11): ['조지아', '미시간', '메인', '노스캐롤라이나', '알래스카', '오하이오', '텍사스', '아이오와', '뉴햄프셔', '네브래스카', '캔자스']",
+     "주목 기관이 원문에는 있는데 정리본에 없음: aarp, marist, siena — 원문 대조 필요"
+    ],
+    "missing_local_states": [
+     "조지아",
+     "미시간",
+     "메인",
+     "노스캐롤라이나",
+     "알래스카",
+     "오하이오",
+     "텍사스",
+     "아이오와",
+     "뉴햄프셔",
+     "네브래스카",
+     "캔자스"
+    ],
+    "status": "경고 있음"
+   },
+   "lead": "원문: senate_daily/2026-11-10_일일브리핑_KR.md · 정리 원칙: 원문에 없는 사실·수치·링크를 더하지 않는다.",
+   "summary": "- **11/9호 정정: 법무부의 알래스카 인증 저지 소송은 11/1에 기각되었고 법무부는 항소했다.** 글리슨 판사는 연방헌법 3조 당사자적격을 이유로 들었다. 경과는 10/22 제소 → 10/29 수정 소장 → 11/1 기각 → 항소다. 제9순회항소법원 항소는 2차 자료 기준이고 항소심 판단은 확인되지 않았다. ([Alaska's News Source/KTUU](https://www.alaskasnewssource.com/2026/11/01/court-dismisses-doj-lawsuit-attempting-delay-election-certification-separate-ballots/))\n- **알래스카 개표: 펠톨라가 약 700표 미만으로 앞선다(개표율 74%, 11/6 오후 5:06 AKST).** RCV 집계는 11/18 이전에는 없다. 법무부/FBI 수사가 계속되나 기소는 확인되지 않았다. 11/6~11/8 이후의 새 득표 수치는 확보하지 못했다. ([Alaska's News Source/Gray DC](https://www.alaskasnewssource.com/2026/11/07/alaska-senate-race-remains-undecided-days-after-election-day/))\n- **민주당 상원 54석 확정(공화 44석), 알래스카·미시시피 미확정.** States Newsroom 기준 공화당에서 넘어온 7석은 IA, KS, ME, NC, OH, SC, TX다. 미시시피는 11/9호 기준 콜롬이 하이드스미스를 2,574표 앞서며, 11/10 마감이 지나기 전까지 변동 없음으로 간주한다. ([Daily Montanan](https://dailymontanan.com/?p=39937) · [The Hill](https://thehill.com/homenews/senate/6185385-democrats-win-senate-midterms/amp/))\n- **감시 대상 주의 당선자들이 슈머 지도부에 반기를 들었다.** 잭슨(메인)은 \"슈머에게 다른 사람을 지지하겠다고 말했다\"고 했고, 해밀턴(캔자스)은 \"더 젊은 새 지도부\"를 요구했다. 파파스(NH)도 새 지도부를 촉구했다. Fox는 슈머가 \"유력\"하다고 전한다. 지도부 선거는 12월 초로 예상된다. ([Fox News](https://www.foxnews.com/politics/schumer-faces-mutiny-from-newly-elected-senate-dems-party-prepares-seize-power) · [Al-Monitor](https://www.al-monitor.com/originals/2026/11/who-will-lead-congress-democrats-weigh-schumer-alternatives-jeffries-bid))\n- 감시 11개 주 가운데 공화당이 지킨 곳은 네브래스카뿐이다. 오즈번은 \"6%p 이상, 약 49,000표\" 뒤졌고 AP는 선거 당일 밤 확정했다. 시나리오상 Bull(민주 상방)은 초과 달성되었다. ([KUTV](https://kutv.com/news/nation-world/nebraska-independent-dan-osborn-loses-senate-race-republican-pete-ricketts-democrats-2026-midterm-elections-rrt))",
+   "states": {
+    "GA": "- [Democrats flipped the Senate blue: The ABC News Voter Poll tells the story](https://abcnews.com/Politics/democrats-flipped-senate-blue-abc-news-voter-poll/story?id=137840395) (ABC News) — 이월 결과로 오늘 재검증하지 않았다. 오소프가 59–41(+18, 개표 99%, 비공식)로 앞서 민주당이 의석을 지켰다. 더 새로운 조지아 기사는 없었다.\n- **여론조사**: 없음(선거 종료, 신규 조사 없음)\n- **자금**: 없음\n- **로컬**: 없음\n- **주 함의**: 오소프의 수성은 이월 결과 그대로이며 오늘 바뀐 판단은 없다.",
+    "MI": "- [Schumer faces mutiny from newly elected Senate Dems as party prepares to seize power](https://www.foxnews.com/politics/schumer-faces-mutiny-from-newly-elected-senate-dems-party-prepares-seize-power) (Fox News, 11/5) — Fox는 기사 요약부에서만 엘사이드를 슈머에 미온적인 당선자로 거명한다. 엘사이드 등 진보 인사들이 크리스 밴홀런 상원의원을 대안으로 거론했다고도 전한다. 보수 성향 전국 매체 한 곳의 보도이고, 좌성향 대응 매체는 읽지 못했다.\n- **여론조사**: 없음(선거 종료, 신규 조사 없음)\n- **자금**: 없음\n- **로컬**: 이월: 엘사이드 52.2–45.8(개표 92%, +6.4, 비공식; Newsweek)로 민주당 수성 · 엘사이드의 슈머 지도부 회의론(Fox 단독, 요약문)\n- **주 함의**: 결과는 민주당 수성으로 이월된다. 새 이슈는 당선자의 슈머 지도부 회의론이지만 출처가 Fox 단독의 요약문이고, 의석 수에는 영향이 없다.",
+    "NH": "- [Al-Monitor explainer: who will lead congressional Democrats](https://www.al-monitor.com/originals/2026/11/who-will-lead-congress-democrats-weigh-schumer-alternatives-jeffries-bid) (Al-Monitor, 11/7) — 당선자 크리스 파파스가 민주당 새 지도부를 촉구했다. 도입부만 열람할 수 있었고 나머지는 유료다.\n- **여론조사**: 없음(선거 종료, 신규 조사 없음)\n- **자금**: 없음\n- **로컬**: 이월: 파파스가 존 E. 서누누를 꺾고 수성(AP 11/4), 득표 차 미확인 · 파파스의 새 지도부 촉구\n- **주 함의**: 민주당 수성이 이월된다. 당선자의 지도부 교체 요구는 의석 수와 무관하다.",
+    "ME": "- [Schumer faces mutiny from newly elected Senate Dems as party prepares to seize power](https://www.foxnews.com/politics/schumer-faces-mutiny-from-newly-elected-senate-dems-party-prepares-seize-power) (Fox News, 11/5) — 당선자 트로이 잭슨은 \"슈머에게 다른 사람을 지지하겠다고 말했다\"(Fox 직접 인용). States Newsroom(11/3~4)에 따르면 잭슨이 수전 콜린스를 꺾었고 콜린스는 승복했다.\n- **여론조사**: 없음(선거 종료, 신규 조사 없음)\n- **자금**: 없음\n- **로컬**: 이월: 득표 차 약 53–47(Newsweek, 비공식) · 콜린스 승복 · 잭슨의 슈머 반대 발언(Fox 단독)\n- **주 함의**: 민주당 탈환이 확정되었다. 잭슨의 발언은 지도부 경쟁의 변수이지만 의석 판단은 바꾸지 않는다.",
+    "NC": "- [Cooper flips Senate seat in North Carolina as Democrats win in Georgia and New Hampshire](https://www.opb.org/article/2026/11/03/cooper-flips-senate-seat-in-north-carolina-as-democrats-win-in-georgia-and-new-hampshire/) (AP via OPB) — 이월: 쿠퍼가 웨이틀리를 꺾고 틸리스 공석을 탈환했다. The Hill(11/3)은 NC가 가장 먼저 확정된 탈환 지역이고 이어 SC, TX가 확정되었다고 전한다. 득표 차는 확인되지 않았고 오늘 새 NC 기사는 없다.\n- **여론조사**: 없음(선거 종료, 신규 조사 없음)\n- **자금**: 없음\n- **로컬**: 없음\n- **주 함의**: 민주당 탈환이 이월되며 바뀐 판단은 없다. 득표 차는 미확인이다.",
+    "TX": "- [Democrats flipped the Senate blue](https://abcnews.com/Politics/democrats-flipped-senate-blue-abc-news-voter-poll/story?id=137840395) (ABC News) — 이월: 탈라리코 55–43 팩스턴(+12, 개표 99%, 비공식)으로 민주당이 탈환했다.\n- **여론조사**: 없음(선거 종료, 신규 조사 없음)\n- **자금**: 없음\n- **로컬**: 팩스턴 패배를 둘러싼 공화당 내 책임 공방이 이어지고 있다(전국 브리핑)\n- **주 함의**: 민주당 탈환이 이월되며 의석 판단은 바뀌지 않는다.",
+    "OH": "- [Democrats flipped the Senate blue](https://abcnews.com/Politics/democrats-flipped-senate-blue-abc-news-voter-poll/story?id=137840395) (ABC News) — 이월: 브라운 50–45 허스티드(+4, 개표 98%, 비공식)로 민주당이 탈환했다. States Newsroom의 의석 요약에서도 탈환으로 확인된다.\n- **여론조사**: 없음(선거 종료, 신규 조사 없음)\n- **자금**: 없음\n- **로컬**: 없음\n- **주 함의**: 민주당 탈환이 이월되며 바뀐 판단은 없다.",
+    "AK": "- [Alaska Senate race remains undecided days after Election Day](https://www.alaskasnewssource.com/2026/11/07/alaska-senate-race-remains-undecided-days-after-election-day/) (Alaska's News Source / Gray DC, 11/6) — 개표율 74%에서 펠톨라와 설리번의 격차는 700표 미만이며 24시간 이상 변동이 없다. RCV 집계는 11/18 이전에는 불가능하고 법무부/FBI가 수사 중이다. 설리번은 동명이인 건을 \"알래스카인들이 표를 버리게 속여 선거를 조작하려는 것\"이라고 주장했다(본인 주장).\n- [Court dismisses DOJ lawsuit attempting to delay election certification, separate ballots](https://www.alaskasnewssource.com/2026/11/01/court-dismisses-doj-lawsuit-attempting-delay-election-certification-separate-ballots/) (Alaska's News Source / KTUU, 11/1) — 글리슨 판사가 당사자적격 결여를 이유로 기각했고, 법무부는 절차적 판단이라며 항소했다. 펠톨라 측 대변인은 \"엉터리 수사\"라고 비판했다.\n- **여론조사**: 없음(선거 종료, 신규 조사 없음)\n- **자금**: 없음\n- **로컬**: 이월: 11/8호 기준 펠톨라 102,962(48.02%) 대 설리번 102,325(47.72%), +637 · \"Dan J. Sullivan\" 3,600표 · 이월: 법무부/FBI 수사 계속, 연방검사 마이클 헤이먼은 형사 절차 가능성을 \"배제하지 않았으나\" 범죄 성립을 단정하지 않았다 · 던리비 주지사의 주 차원 수사 지시(10/28~29), 기소는 미확인 · 이월: [개표 일정](https://thehill.com/homenews/campaign/6206385-alaska-dunleavy-vote-update/) 11/13 대량, 11/15, 최종 11/25(The Hill 11/8, 재검증 못 함) · Alaska's News Source는 Gray TV 계열사로 §5.1 목록 매체가 아니다. ADN·Alaska Public Media·Must Read Alaska는 읽지 못해 로컬 대 전국 비교가 부실하다.\n- **주 함의**: 펠톨라가 700표 미만으로 앞서며 미정 상태가 이어진다. 법적 위험은 11/9호가 시사한 것보다 낮다. 법무부 소송은 11/1에 기각되어 항소 중이지만 수사는 계속된다. 11/6~11/8 이후 새 수치는 확보하지 못했고, 결과는 11/13·15·25 개표와 11/18 이후 RCV 집계에 달려 있다.",
+    "IA": "- [Midterms Map Shows Senate Before And After](https://www.newsweek.com/midterms-map-shows-senate-before-and-after-abdul-el-sayed-troy-jackson-12656795) (Newsweek) — 이월: 터렉 50.5–46.4 힌슨(+4.1, 개표 98%, 비공식)으로 민주당이 탈환했다. States Newsroom은 이 주를 7개 탈환 지역 중 하나로 명시했다.\n- **여론조사**: 없음(선거 종료, 신규 조사 없음)\n- **자금**: 없음\n- **로컬**: 없음\n- **주 함의**: 민주당 탈환이 이월되며 바뀐 판단은 없다.",
+    "NE": "- [Nebraska independent loses Senate race after strong fall showing](https://kutv.com/news/nation-world/nebraska-independent-dan-osborn-loses-senate-race-republican-pete-ricketts-democrats-2026-midterm-elections-rrt) (The National News Desk via KUTV, 11/4) — 재검증 결과 오즈번은 \"6%p 이상, 약 49,000표\" 뒤졌고 AP는 선거 당일 밤 확정했다. 기사에 승복 발언 인용은 없다. 오즈번이 \"어느 정당과도 코커스하지 않겠다고 단호했다\"고 전한다. 리케츠는 민주당이 오즈번을 도왔다며 그를 \"사회주의자\"라고 불렀다.\n- **여론조사**: 없음(선거 종료, 신규 조사 없음)\n- **자금**: 없음\n- **로컬**: §5.1 로컬 매체는 읽지 못했고, 출처는 신디케이션된 전국 기사 하나다.\n- **주 함의**: 리케츠가 의석을 지켰다. 수집 규칙상 오즈번은 민주당 의석으로 계산하지 않지만, 리케츠 수성으로 이 문제는 의미가 없어졌다. 감시 11개 주 중 공화당이 유지한 유일한 주다.",
+    "KS": "- [Schumer faces mutiny from newly elected Senate Dems as party prepares to seize power](https://www.foxnews.com/politics/schumer-faces-mutiny-from-newly-elected-senate-dems-party-prepares-seize-power) (Fox News, 11/5) — 당선자 애덤 해밀턴은 \"더 젊은 새 지도부, 젊은 피가 필요하다\"고 말했다. 기사 요약부에 따르면 그는 캔자스에서 슈머를 민주당의 부담이라고 불렀다.\n- **여론조사**: 없음(선거 종료, 신규 조사 없음)\n- **자금**: 없음\n- **로컬**: 이월: 해밀턴 50.9–46.1 마셜(+4.8, 개표 95%, 비공식), ABC 기준 1932년 이후 첫 캔자스 민주당 상원 승리 · 해밀턴의 슈머 지도부 비판(Fox 단독, \"부담\" 표현은 요약문)\n- **주 함의**: 민주당 탈환이 이월된다. 당선자의 슈머 비판은 새 이슈지만 의석 판단은 바꾸지 않는다."
+   },
+   "extras": [],
+   "polls": "이번 회차 신규 본선 조사 없음.",
+   "watch": "- 알래스카 개표 일정(11/13 대량, 11/15, 최종 11/25)과 11/18 이후 RCV 집계로 펠톨라의 700표 미만 우위가 유지되는지\n- 미시시피 우편투표 도착 마감(11/10) 경과 뒤 콜롬의 2,574표 우위에 변동이 있는지\n- 알래스카 소송에 대한 법무부 항소심 진행과 법무부/FBI·주 차원 수사의 기소 여부\n- 12월 초로 예상되는 상원 민주당 지도부 선거 일정 확정과 슈머에 대한 당선자들의 반발 확산 여부",
+   "gaps": "",
+   "national_money": "- 없음",
+   "national_legal": "- United States v. State of Alaska, 3:26-cv-00376-SLG: 10/22 제소 → 10/29 수정 소장 → 11/1 글리슨 판사가 당사자적격(구제가능성 입증 실패)을 이유로 기각했다. 판사는 투표용지 분리가 \"유권자 혼란을 초래할 가능성이 크다\"고 밝혔다. 법무부는 \"절차적 사유\"라며 항소했다. 제9순회 항소 통지와 사건번호는 2차 자료 기준이며, 수정 허가 재신청은 기각된 것으로 보도되었다. 항소심 판단은 확인되지 않았다. ([KTUU](https://www.alaskasnewssource.com/2026/11/01/court-dismisses-doj-lawsuit-attempting-delay-election-certification-separate-ballots/) · [All About Lawyer](https://allaboutlawyer.com/alaska-election-lawsuit-doj-amended-complaint-2026/))\n- 미시시피: 전국 브리핑 기준 우편투표 약 3,139표가 남아 있고, 도착 마감은 11/10이며 주 차원 재검표는 없다."
+  },
   {
    "date": "2026-11-09",
    "source_file": "2026-11-09_site_KR.md",

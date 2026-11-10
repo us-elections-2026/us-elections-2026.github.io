@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-08",
+ "as_of": "2026-11-09",
  "source_label": "선거운동 트래커 광고 페이지 — FEC Schedule E 독립지출 (api.open.fec.gov) — 2026 상원·하원 본선 신고분",
  "source_url": "https://woochangkang.github.io/campaign-tracker-2026-site/data/ads_fec.json",
  "provenance_note": "pro_D = 민주(무소속 포함, independent_note=true) 지지 + 공화 반대, pro_R = 그 반대. 단위 달러. 후보 캠프 자금이 아니라 외부 단체의 신고 집행액이다.",
@@ -810,7 +810,7 @@
    ]
   },
   "MI": {
-   "pro_D": 94704458,
+   "pro_D": 94705584,
    "pro_R": 172139893,
    "ads_D": 80631276,
    "ads_R": 133264078,
@@ -1060,16 +1060,6 @@
      "last_date": "2026-10-19"
     },
     {
-     "committee_id": "C90022427",
-     "committee": "PROGRESS NORTH CAROLINA ACTION",
-     "affiliate_of": null,
-     "candidate": "COOPER, ROY",
-     "so": "S",
-     "side": "D",
-     "total": 966433,
-     "last_date": "2026-10-22"
-    },
-    {
      "committee_id": "C00492140",
      "committee": "AB PAC",
      "affiliate_of": null,
@@ -1078,6 +1068,16 @@
      "side": "D",
      "total": 948410,
      "last_date": "2026-10-27"
+    },
+    {
+     "committee_id": "C90022427",
+     "committee": "PROGRESS NORTH CAROLINA ACTION",
+     "affiliate_of": null,
+     "candidate": "COOPER, ROY",
+     "so": "S",
+     "side": "D",
+     "total": 823193,
+     "last_date": "2026-09-30"
     },
     {
      "committee_id": "C00486845",
