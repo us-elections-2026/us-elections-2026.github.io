@@ -1,8 +1,60 @@
 {
- "as_of": "2026-11-10",
+ "as_of": "2026-11-11",
  "source_label": "_NIS 상원 일일 브리핑(KR) — Cowork 예약 작업 산출물을 scripts/ingest_senate_daily.py가 그대로 추출",
  "provenance_note": "본문은 원천 마크다운을 자르지 않고 전재한다(요약·재서술 없음). 종결체는 원천대로 다체. 【수집 필요】 표기도 원천 그대로 남긴다 — 빈 칸을 추정으로 채우지 않는 규약과 같은 이유. 같은 날짜 재실행은 덮어쓴다.",
  "days": [
+  {
+   "date": "2026-11-11",
+   "source_file": "2026-11-11_site_KR.md",
+   "source_kind": "digest",
+   "chars": 7893,
+   "source_validation": {
+    "source_file": "2026-11-11_일일브리핑_KR.md",
+    "checks": [
+     "A 주 소절 1~9 순서",
+     "B [유세] 줄 11/11",
+     "E self-audit 블록 있음(항목 0)",
+     "F EN/KR 주 소절 11개 일치"
+    ],
+    "warnings": [
+     "C §5.1 지정 지역매체 링크 미확인(9/11): ['조지아', '미시간', '메인', '노스캐롤라이나', '알래스카', '오하이오', '텍사스', '아이오와', '네브래스카']",
+     "D 조사 불릿에 기간/격차 누락 1/1: ['신규 상원 여론조사 없음(선거 종료). 우선 추적 기관(NYT/Siena, Fox, Marist, AARP)']"
+    ],
+    "missing_local_states": [
+     "조지아",
+     "미시간",
+     "메인",
+     "노스캐롤라이나",
+     "알래스카",
+     "오하이오",
+     "텍사스",
+     "아이오와",
+     "네브래스카"
+    ],
+    "status": "경고 있음"
+   },
+   "lead": "원문: senate_daily/2026-11-11_일일브리핑_KR.md · 정리 원칙: 원문에 없는 사실·수치·링크를 더하지 않는다.",
+   "summary": "- **알래스카: 펠톨라의 1순위 리드가 637표에서 2,517표로 확대됐다.** 펠톨라 106,321(48.6%), 설리번 103,804(47.5%), 하이크스(공화) 4,865(2.2%)이고 약 75~76%가 개표됐다. 다음 발표는 11/13·11/18, RCV 집계는 11/18, 인증은 11/25다. 수치는 Fox 단일 출처에 의존한다 ([Fox News via Yahoo, 11/10](https://www.yahoo.com/news/politics/articles/peltola-widens-narrow-alaska-senate-194624521.html)).\n- **신규 — 알래스카 소송**: 펠톨라 캠프가 11/6 예비 거부된 부재자 투표 기록을 요구하며 선거관리국을 제소했고, 설리번 측이 11/9 소송 참가를 신청했다. 선거관리국은 유권자 통지가 먼저라며 반대한다. 법원·심리 일정은 기사에 없다 ([Fox News, 11/9](https://www.foxnews.com/politics/alaska-senate-fight-heats-sullivan-moves-block-peltola-lawsuit-rejected-absentee-ballot-records)).\n- **슈머 원내대표 재선출에 공개적 의문이 나왔다.** 샌더스는 \"척을 지지하지 않겠다\"고 했고 밴 홀런은 \"동료들에게 전화하는 중\"이다. 슬롯킨도 \"반대\"했고 질리브랜드는 슈머를 옹호했다. AP는 선출이 \"이달 하순 예정\"이라고 보도해 '12월 초' 표현을 대체했다 ([AP via WKMG, 11/10](https://www.clickorlando.com/news/politics/2026/11/10/bernie-sanders-wont-support-schumer-for-senate-democratic-leader-saying-its-time-for-change/)).\n- 모니터링 주 당선인 가운데 VOZ(우)는 잭슨(ME)·해밀턴(KS)·엘-사예드(MI)를 슈머 반대로 분류했다. 다만 엘-사예드는 ABC에서 \"누가 출마하는지 보고 싶다\"고만 말해 VOZ 표현보다 완곡하다 ([VOZ, 11/5](https://voz.us/en/politics/261106/1000371/el-sayed-and-four-other-democratic-senators-elect-will-not-vote-for-schumer-as-leader.html)).\n- 미시시피(비모니터링 주)는 11/10 우편·보완 마감 시점에 콜럼이 2,536표 앞섰다. 콜럼 467,961(49.1%), 하이드-스미스 465,425(48.8%)다. 카운티 인증은 11/13까지이고 자동 재검표 제도는 없다 ([WLBT, 11/10](https://www.wlbt.com/2026/11/10/colom-leads-hyde-smith-ballot-deadline-arrives/)).\n- **의석 집계는 변동 없다**: 민주 54석 확정(무소속 2명 포함), 공화 44석이며 AK·MS가 미확정이다. 펠톨라와 콜럼이 모두 이기면 민주당 56–44가 된다(조건부 표현) ([Fox 7 Austin, 11/4](https://www.fox7austin.com/news/mississippi-senate-race-democrat-colom-leads-hyde-smith-0-0007)).",
+   "states": {
+    "GA": "- [Senator Ossoff's victory fuels 2028 presidential speculation](https://www.fox5atlanta.com/news/senator-ossoffs-victory-fuels-2028-presidential-speculation) (FOX 5 Atlanta, 11/4) — 콜린스는 패배를 인정하며 트럼프 지지를 재확인했고, 하원 임기는 1월에 끝난다. 오소프는 대선에 \"전혀 관심 없다\"고 밝혔다. 에모리대 정치학자는 2028년 출마를 \"매우 가능성 낮다\"고 평가했다.\n- **여론조사**: 없음(선거 종료, 신규 상원 조사 없음).\n- **자금**: 없음\n- **로컬**: 이월: 오소프 59–41(ABC, 99% 개표, 비공식, 재검증 안 됨). 24시간 내 기사 없음.\n- **주 함의**: 판단 변화 없음. 격차는 이월값이며 재검증되지 않았다.",
+    "MI": "- [Sanders won't support Schumer for Senate Democratic leader](https://www.clickorlando.com/news/politics/2026/11/10/bernie-sanders-wont-support-schumer-for-senate-democratic-leader-saying-its-time-for-change/) (AP via WKMG, 11/10) — 슬롯킨 상원의원은 누구에게서든 변화를 보기 전까지는 \"반대\"라고 했다. AP는 엘-사예드 당선인 등 진보 진영이 밴 홀런을 밀었고, 슈머가 선호한 후보들이 미시간·메인 경선에서 패했다고 전했다.\n- [El-Sayed on ABC's This Week](https://abcnews.com/Politics/abdul-el-sayed-democrats-work-trump-act/story?id=137952241) (ABC News, 11/8) — 엘-사예드는 슈머 지지를 약속하지 않고 밴 홀런 지지를 표명했다. VOZ(우, 11/5)는 그가 CNN에 \"나는 크리스 밴 홀런을 지지한다\"고 말했다고 인용했다.\n- **여론조사**: 없음(선거 종료, 신규 상원 조사 없음).\n- **자금**: 없음\n- **로컬**: 이월: 엘-사예드 52.2–45.8(92% 개표, Newsweek, 비공식).\n- **주 함의**: 의석 판단에는 변화가 없다. 미시간 당선인과 현역 슬롯킨이 모두 원내대표 경선에서 슈머 반대 쪽에 섰다.",
+    "NH": "- [Pappas wins U.S. Senate race, defeating Sununu in marquee matchup](https://www.nhpr.org/nh-news/2026-11-03/pappas-wins-u-s-senate-race-defeating-sununu-in-marquee-matchup) (NHPR, 11/3) — 스누누가 오후 8시 투표 종료 직후 패배를 인정한 사실이 재검증됐다. 파파스는 은퇴하는 샤힌 의원에게 감사를 표했다. NHPR(중도좌, 공영)은 격차를 적지 않았다.\n- **여론조사**: 없음(선거 종료, 신규 상원 조사 없음).\n- **자금**: 없음\n- **로컬**: 이월: 파파스는 민주당 지도부 교체를 요구했다(Al-Monitor, 11/7).\n- **주 함의**: 판단 변화 없음.",
+    "ME": "- ['We Can't Eat Road Salt': Other Maine Takeaways](https://prospect.org/2026/11/05/troy-jackson-susan-collins-senate-maine-takeaways/) (The American Prospect, 11/5) — 잭슨은 1월 제120대 의회 개원 때 취임한다. \"ICE 폐지를 위해 싸우겠다\"고 공약했고, 의료 분야 협력 상대로 투렉·플래너건·탈라리코와 아마도 펠톨라를 거론했다. 포틀랜드에서 84–16으로 이겼다.\n- **여론조사**: 없음(선거 종료, 신규 상원 조사 없음).\n- **자금**: 없음\n- **로컬**: 이월: 주 전체 격차 약 53–47(Newsweek, 비공식) · 잭슨의 슈머 반대 입장(VOZ, Fox 11/5).\n- **주 함의**: 판단 변화 없음. Prospect는 진보 성향 전국 잡지이고 메인 현지 매체는 열람하지 못했다.",
+    "NC": "- [Whatley concedes to Cooper in U.S. Senate race](https://www.wunc.org/2026-11-03/whatley-concedes-to-cooper-in-u-s-senate-race-north-carolina-is-a-state-worth-fighting-for) (WFAE via WUNC, 11/3) — 밤 9시 30분, 약 3분의 2가 개표된 시점에 쿠퍼가 21%p 앞섰다는 것이 재검증됐다. 와틀리는 \"노스캐롤라이나는 싸울 가치가 있는 주\"라고 말했다. 사전투표는 280만 명으로 역대 최다였다.\n- **여론조사**: 없음(선거 종료, 신규 상원 조사 없음).\n- **자금**: 없음\n- **로컬**: AP(11/10)는 슈머가 쿠퍼를 영입했다고 언급했다. 최종 격차는 확보하지 못했다.\n- **주 함의**: 판단 변화 없음. 패배 인정 사실이 재검증됐다.",
+    "TX": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료, 신규 상원 조사 없음).\n- **자금**: 없음\n- **로컬**: 이월: 탈라리코 55–43(ABC, 99% 개표, 비공식, 재검증 안 됨) · 열람한 기사에서 탈라리코의 슈머 관련 입장은 확인되지 않았다.\n- **주 함의**: 판단 변화 없음. 민주당이 탈환했다.",
+    "OH": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료, 신규 상원 조사 없음).\n- **자금**: 없음\n- **로컬**: 이월: 브라운 50–45(ABC, 98% 개표, 비공식, 재검증 안 됨) · AP(11/10)는 슈머가 브라운을 영입했다고 언급했다. 열람한 기사에는 브라운의 원내대표 경선 입장이 없다.\n- **주 함의**: 판단 변화 없음. 민주당이 탈환했다.",
+    "AK": "- [Peltola widens narrow Alaska Senate lead over Sullivan as counting continues](https://www.yahoo.com/news/politics/articles/peltola-widens-narrow-alaska-senate-194624521.html) (Fox News via Yahoo, 11/10) — 월요일 약 5,000장을 추가 개표해 리드가 637표에서 2,517표로 커졌다. 펠톨라 106,321(48.6%), 설리번 103,804(47.5%)이고 약 75~76%가 개표됐다.\n- [Alaska Senate fight heats up as Sullivan moves to block Peltola lawsuit over rejected absentee ballot records](https://www.foxnews.com/politics/alaska-senate-fight-heats-sullivan-moves-block-peltola-lawsuit-rejected-absentee-ballot-records) (Fox News, 11/9) — 펠톨라 측 제소(11/6)에 대해 설리번 측이 소송 참가를 신청했다(11/9).\n- **여론조사**: 없음(선거 종료, 신규 상원 조사 없음).\n- **자금**: 없음\n- **로컬**: 발표 11/13·11/18, RCV 집계 11/18, 인증 11/25 · 던리비는 동명 후보 관련 \"조사가 진행 중\"이라고 했고 기소 사실은 확인되지 않았다 · 이월: 법무부 인증 소송은 11/1 기각, 항소 중 · 읽은 두 기사는 모두 Fox(우)다. ADN·Alaska Beacon(좌)은 제목만 봤다.\n- **주 함의**: 원문은 알래스카가 민주당 쪽으로 더 기울었다고 본다. 약 4분의 1 개표와 11/18 RCV 집계가 남아 있다. 하이크스(2.2%)의 2순위 표가 주된 RCV 리스크라는 판단은 원문이 출처 없는 분석으로 표시했다.",
+    "IA": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료, 신규 상원 조사 없음).\n- **자금**: 없음\n- **로컬**: 이월: 투렉 50.5–46.4(Newsweek, 98% 개표, 비공식, 재검증 안 됨).\n- **주 함의**: 판단 변화 없음. 민주당이 탈환했다.",
+    "NE": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료, 신규 상원 조사 없음).\n- **자금**: 없음\n- **로컬**: 이월(11/10호에서 재검증): 리케츠가 무소속 오스본을 6%p 이상(약 4만9천 표) 차로 이겼다. 오스본은 어느 당과도 코커스를 하지 않겠다고 밝혔었다.\n- **주 함의**: 공화 의석 유지. 모니터링 11개 주 가운데 공화당이 지킨 곳은 네브래스카뿐이다.",
+    "KS": "- [Hamilton wins: Kansans elect Democratic senator for the first time in nearly a century](https://www.kcur.org/politics-elections-and-government/2026-11-03/hamilton-wins-kansans-elect-democratic-senator-for-the-first-time-in-nearly-a-century) (KCUR / Kansas News Service, 11/3) — KCUR(중도좌, 공영)로 재검증했다. 마셜은 패배가 \"겸허하게 만든다\"며 \"답을 모르겠다\"고 말했다. 해밀턴은 \"공화당원과 민주당원이 함께할 때 더 낫다\"고 했고, 원내대표로 슈머를 지지하지 않겠다고 밝혔다.\n- **여론조사**: 없음(선거 종료, 신규 상원 조사 없음).\n- **자금**: 없음\n- **로컬**: 이월 격차: 50.9–46.1(95% 개표, 비공식).\n- **주 함의**: 판단 변화 없음. 패배 인정과 해밀턴의 슈머 반대 입장이 재검증됐다."
+   },
+   "extras": [],
+   "polls": "이번 회차 신규 본선 조사 없음. 주목 기관(NYT/Siena·Fox News·Marist Poll·AARP/Fabrizio Ward·Impact Research)의 신규 조사와 내부 조사도 없다(선거 종료).",
+   "watch": "- 알래스카 11/13(금) 개표 발표와 펠톨라 리드 추이\n- 미시시피 카운티 인증 기한(11/13)과 콜럼 리드 유지 여부\n- 알래스카 11/18 공식 RCV 집계, 11/25 인증\n- 펠톨라 측 부재자 기록 소송의 법원·심리 일정과 법무부 소송 항소 진행\n- 민주당 원내대표 선출(AP 기준 이달 하순): 밴 홀런 출마 여부와 당선인들의 입장",
+   "gaps": "",
+   "national_money": "- 없음",
+   "national_legal": "- 알래스카: 펠톨라 캠프가 11/6 예비 거부된 부재자 투표 기록을 요구하며 선거관리국을 제소했다. 설리번 측은 11/9 소송 참가를 신청했다. 선거관리국은 유권자들이 \"아직 통지받지 못했다\"며 캠프에 먼저 자료를 주는 것은 \"부적절\"하다는 입장이다. 법원·심리 일정은 기사에 없다 ([Fox News, 11/9](https://www.foxnews.com/politics/alaska-senate-fight-heats-sullivan-moves-block-peltola-lawsuit-rejected-absentee-ballot-records)).\n- 알래스카: 법무부의 인증 저지 소송은 11/1 기각됐고 항소 중이다(이월) ([KTUU](https://www.alaskasnewssource.com/2026/11/01/court-dismisses-doj-lawsuit-attempting-delay-election-certification-separate-ballots/))."
+  },
   {
    "date": "2026-11-10",
    "source_file": "2026-11-10_site_KR.md",
