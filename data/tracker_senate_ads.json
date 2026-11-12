@@ -1,13 +1,13 @@
 {
- "as_of": "2026-11-10",
+ "as_of": "2026-11-11",
  "source_label": "선거운동 트래커 광고 페이지 — FEC Schedule E 독립지출 (api.open.fec.gov) — 2026 상원·하원 본선 신고분",
  "source_url": "https://woochangkang.github.io/campaign-tracker-2026-site/data/ads_fec.json",
  "provenance_note": "pro_D = 민주(무소속 포함, independent_note=true) 지지 + 공화 반대, pro_R = 그 반대. 단위 달러. 후보 캠프 자금이 아니라 외부 단체의 신고 집행액이다.",
  "races": {
   "AK": {
-   "pro_D": 48682312,
-   "pro_R": 49516032,
-   "ads_D": 41964802,
+   "pro_D": 48684162,
+   "pro_R": 49521280,
+   "ads_D": 41964853,
    "ads_R": 42975054,
    "last_date": "2026-11-03",
    "independent_note": false,
@@ -60,7 +60,7 @@
      "candidate": "SULLIVAN, DAN",
      "so": "O",
      "side": "D",
-     "total": 5579352,
+     "total": 5579332,
      "last_date": "2026-10-29"
     },
     {
@@ -166,9 +166,9 @@
    ]
   },
   "GA": {
-   "pro_D": 20012878,
-   "pro_R": 18317486,
-   "ads_D": 18601881,
+   "pro_D": 20007686,
+   "pro_R": 18320993,
+   "ads_D": 18602626,
    "ads_R": 15028673,
    "last_date": "2026-11-03",
    "independent_note": false,
@@ -311,7 +311,7 @@
      "candidate": "COLLINS, MICHAEL JR",
      "so": "O",
      "side": "D",
-     "total": 349650,
+     "total": 349825,
      "last_date": "2026-10-26"
     },
     {
@@ -321,15 +321,15 @@
      "candidate": "OSSOFF, JON",
      "so": "S",
      "side": "D",
-     "total": 332556,
+     "total": 333056,
      "last_date": "2026-10-29"
     }
    ]
   },
   "IA": {
-   "pro_D": 103867049,
-   "pro_R": 96160415,
-   "ads_D": 98162883,
+   "pro_D": 103879206,
+   "pro_R": 96165642,
+   "ads_D": 98174025,
    "ads_R": 80454232,
    "last_date": "2026-11-05",
    "independent_note": false,
@@ -488,9 +488,9 @@
    ]
   },
   "KS": {
-   "pro_D": 58477865,
+   "pro_D": 58480628,
    "pro_R": 35856820,
-   "ads_D": 55892691,
+   "ads_D": 55892998,
    "ads_R": 33331147,
    "last_date": "2026-11-03",
    "independent_note": false,
@@ -649,9 +649,9 @@
    ]
   },
   "ME": {
-   "pro_D": 52556922,
-   "pro_R": 89272767,
-   "ads_D": 45411810,
+   "pro_D": 52552621,
+   "pro_R": 88996206,
+   "ads_D": 45405606,
    "ads_R": 79861834,
    "last_date": "2026-11-03",
    "independent_note": false,
@@ -664,7 +664,7 @@
      "candidate": "JACKSON, TROY DALE",
      "so": "O",
      "side": "R",
-     "total": 37955048,
+     "total": 37678487,
      "last_date": "2026-11-02"
     },
     {
@@ -705,7 +705,7 @@
      "so": "O",
      "side": "R",
      "total": 6724548,
-     "last_date": "2026-06-26"
+     "last_date": "2026-07-02"
     },
     {
      "committee_id": "C00744920",
@@ -794,7 +794,7 @@
      "candidate": "COLLINS, SUSAN",
      "so": "O",
      "side": "D",
-     "total": 1019470,
+     "total": 1012809,
      "last_date": "2026-09-24"
     },
     {
@@ -810,9 +810,9 @@
    ]
   },
   "MI": {
-   "pro_D": 94705584,
-   "pro_R": 172139893,
-   "ads_D": 80631276,
+   "pro_D": 94701993,
+   "pro_R": 171840611,
+   "ads_D": 80633442,
    "ads_R": 133264078,
    "last_date": "2026-11-05",
    "independent_note": false,
@@ -825,7 +825,7 @@
      "candidate": "EL-SAYED, ABDUL",
      "so": "O",
      "side": "R",
-     "total": 46213086,
+     "total": 45910297,
      "last_date": "2026-10-28"
     },
     {
@@ -971,9 +971,9 @@
    ]
   },
   "NC": {
-   "pro_D": 29353467,
+   "pro_D": 29343136,
    "pro_R": 46417659,
-   "ads_D": 24585581,
+   "ads_D": 24585816,
    "ads_R": 42935520,
    "last_date": "2026-11-05",
    "independent_note": false,
@@ -1132,9 +1132,9 @@
    ]
   },
   "NE": {
-   "pro_D": 37390531,
-   "pro_R": 32745582,
-   "ads_D": 33543883,
+   "pro_D": 37300637,
+   "pro_R": 32617588,
+   "ads_D": 33544912,
    "ads_R": 31060673,
    "last_date": "2026-11-05",
    "independent_note": true,
@@ -1177,7 +1177,7 @@
      "candidate": "OSBORN, DAN",
      "so": "S",
      "side": "D",
-     "total": 8588695,
+     "total": 8539555,
      "last_date": "2026-11-03"
     },
     {
@@ -1187,7 +1187,7 @@
      "candidate": "OSBORN, DAN",
      "so": "O",
      "side": "R",
-     "total": 6947016,
+     "total": 6815515,
      "last_date": "2026-10-09"
     },
     {
@@ -1197,7 +1197,7 @@
      "candidate": "RICKETTS, PETE",
      "so": "O",
      "side": "D",
-     "total": 3769331,
+     "total": 3720191,
      "last_date": "2026-11-03"
     },
     {
@@ -1454,9 +1454,9 @@
    ]
   },
   "OH": {
-   "pro_D": 157511516,
-   "pro_R": 252373670,
-   "ads_D": 141328245,
+   "pro_D": 157526483,
+   "pro_R": 252378897,
+   "ads_D": 141329959,
    "ads_R": 206870487,
    "last_date": "2026-11-05",
    "independent_note": false,
@@ -1615,9 +1615,9 @@
    ]
   },
   "TX": {
-   "pro_D": 109309172,
-   "pro_R": 315871543,
-   "ads_D": 98138745,
+   "pro_D": 109313823,
+   "pro_R": 315876791,
+   "ads_D": 98143431,
    "ads_R": 262186181,
    "last_date": "2026-11-05",
    "independent_note": false,
