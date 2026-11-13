@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-11",
+ "as_of": "2026-11-12",
  "source_label": "선거운동 트래커 광고 페이지 — FEC Schedule E 독립지출 (api.open.fec.gov) — 2026 상원·하원 본선 신고분",
  "source_url": "https://woochangkang.github.io/campaign-tracker-2026-site/data/ads_fec.json",
  "provenance_note": "pro_D = 민주(무소속 포함, independent_note=true) 지지 + 공화 반대, pro_R = 그 반대. 단위 달러. 후보 캠프 자금이 아니라 외부 단체의 신고 집행액이다.",

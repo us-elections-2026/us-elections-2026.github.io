@@ -1,8 +1,62 @@
 {
- "as_of": "2026-11-12",
+ "as_of": "2026-11-13",
  "source_label": "_NIS 상원 일일 브리핑(KR) — Cowork 예약 작업 산출물을 scripts/ingest_senate_daily.py가 그대로 추출",
  "provenance_note": "본문은 원천 마크다운을 자르지 않고 전재한다(요약·재서술 없음). 종결체는 원천대로 다체. 【수집 필요】 표기도 원천 그대로 남긴다 — 빈 칸을 추정으로 채우지 않는 규약과 같은 이유. 같은 날짜 재실행은 덮어쓴다.",
  "days": [
+  {
+   "date": "2026-11-13",
+   "source_file": "2026-11-13_site_KR.md",
+   "source_kind": "digest",
+   "chars": 7529,
+   "source_validation": {
+    "source_file": "2026-11-13_일일브리핑_KR.md",
+    "checks": [
+     "A 주 소절 1~9 순서",
+     "B [유세] 줄 11/11",
+     "E self-audit 블록 있음(항목 0)",
+     "F EN/KR 주 소절 11개 일치"
+    ],
+    "warnings": [
+     "C §5.1 지정 지역매체 링크 미확인(11/11): ['조지아', '미시간', '메인', '노스캐롤라이나', '알래스카', '오하이오', '텍사스', '아이오와', '뉴햄프셔', '네브래스카', '캔자스']",
+     "D 조사 불릿에 기간/격차 누락 3/3: ['중점 조사기관(NYT/Siena·Fox·Marist·AARP) 조사 없음. 내부 조사 없음.', '여론조사가 아닌 자료: FairVote의 알래스카 예비 RCV 집계(설리번 50.1–49.9)는 실제 투표지', 'JTA는 진보 성향 PAC이 의뢰한 조사를 인용했다. 민주당 지지층의 59%가 슈머 아닌 \"다른 사람\"을, ']"
+    ],
+    "missing_local_states": [
+     "조지아",
+     "미시간",
+     "메인",
+     "노스캐롤라이나",
+     "알래스카",
+     "오하이오",
+     "텍사스",
+     "아이오와",
+     "뉴햄프셔",
+     "네브래스카",
+     "캔자스"
+    ],
+    "status": "경고 있음"
+   },
+   "lead": "원문: senate_daily/2026-11-13_일일브리핑_KR.md · 정리 원칙: 원문에 없는 사실·수치·링크를 더하지 않는다.",
+   "summary": "- **알래스카는 보기보다 접전이다.** 11/11 추가 개표에서는 주로 맷수 지역 표가 들어왔다. 그 결과 펠톨라의 우위가 4,250표에서 **3,975표**로 줄었다([The Hill·Yahoo 전재](https://www.yahoo.com/news/politics/articles/peltola-holds-lead-sullivan-gains-131118055.html)). AP는 아직 당선자를 확정하지 않았다.\n- FairVote는 11/10 기준 투표기록(CVR) 약 23만 6천 장으로 예비 RCV를 돌렸다. 표 이전 후에는 설리번이 **50.1–49.9**로 앞섰다([FairVote](https://fairvote.org/results-and-analysis-from-alaska-2026-elections/)). 원문은 11/12호의 「하이크스 표가 대거 넘어가야만 순위가 뒤집힌다」는 추론을 철회했다.\n- 동명이인 후보를 둘러싼 법무부 소송은 제9연방항소법원에 계류 중이다([Democracy Docket](https://www.democracydocket.com/news-alerts/peltola-leads-both-sullivans-combined-as-she-heads-to-victory-in-alaska-contest/)). 이로써 지난 호에 붙였던 「항소 상태 미확인」 단서가 풀렸다.\n- 미시시피는 모니터링 대상이 아니다. AP는 11/11 콜롬(D)이 하이드스미스에게 49.2–48.7%로 이긴 것으로 예측했다. **원문 계산으로 의석은 민주 55석(무소속 2명 포함), 공화 44석이고 알래스카는 미확정이다.**\n- 슈머 원내대표 경선은 투표가 12월이라는 보도가 둘로 늘었다(Deseret, [JTA](https://www.jta.org/2026/11/12/politics/move-over-schumer-a-new-crop-of-democrats-are-arriving-in-the-senate)). 날짜는 아직 정해지지 않았다. **JTA는 패파스를 유보 입장으로, 브라운을 슈머 지지자로 분류했다.**\n- 주목 기관(NYT/Siena·Fox News·Marist·AARP)의 새 상원 여론조사는 없다. 선거가 끝났기 때문이다.",
+   "states": {
+    "GA": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(직전: 오소프 59–41 승리, ABC, 개표 99%, 비공식).\n- **자금**: 없음\n- **로컬**: 이월: 콜린스가 패배를 인정했다 · 원내대표 경선에 대한 오소프의 입장은 읽은 기사에서 확인되지 않았다(JTA도 언급하지 않았다).\n- **주 함의**: 판단은 바뀌지 않는다. 결과는 이월값이고 오늘 다시 확인하지 않았다.",
+    "MI": "- [Senate Democrats call for new leadership — but no one has an alternative](https://www.deseret.com/politics/2026/11/12/schumer-faces-uphill-battle-in-leadership-race/) (Deseret News, 11/12) — 엘사예드를 「슈머에게 투표하지 않겠다고 밝힌」 신임 의원 가운데 한 명으로 꼽았다. 슬롯킨도 슈머를 지지하지 않지만 출마하지는 않는다고 전했다.\n- [Van Hollen criticizes Schumer](https://www.democracynow.org/2026/11/12/headlines/sen_van_hollen_criticizes_schumer_for_siding_with_aipac_and_crypto_lobbies_in_primaries) (Democracy Now!, 좌, 11/12) — 밴 홀런은 엘사예드와 잭슨을 「슈머와 DSCC 뜻대로 됐다면 그 자리에 없었을」 의원으로 지목했다.\n- **여론조사**: 없음(직전: AP 기준 엘사예드 약 7%p 우세, 개표 약 97%, 비공식).\n- **자금**: 없음\n- **로컬**: JTA(11/12)에 따르면 엘사예드와 샌더스는 밴 홀런이 출마하면 지지할 계획이다 · 이월: 로저스가 패배를 인정했다.\n- **주 함의**: 선거 결과에는 변동이 없다. 엘사예드는 반슈머 진영의 신임 의원으로 보도되고 있다.",
+    "NH": "- [Move over, Schumer. A new crop of Democrats are arriving in the Senate](https://www.jta.org/2026/11/12/politics/move-over-schumer-a-new-crop-of-democrats-are-arriving-in-the-senate) (JTA, 11/12) — **정정:** 패파스 당선인은 슈머 문제에 유보적이다. 인용은 \"this is a moment to see a passing of the torch\"다.\n- **여론조사**: 없음(직전: 득표 격차는 확보하지 못했다).\n- **자금**: 없음\n- **로컬**: 11/12호에 실은 Daily Caller(우)의 「슈머 지지 거부」 요약은 이제 다툼이 있는 내용으로 본다 · 이월: 수누누가 패배를 인정했다(NHPR).\n- **주 함의**: 결과에는 변동이 없다. 패파스의 입장은 거부에서 유보로 정정한다.",
+    "ME": "- [Move over, Schumer. A new crop of Democrats are arriving in the Senate](https://www.jta.org/2026/11/12/politics/move-over-schumer-a-new-crop-of-democrats-are-arriving-in-the-senate) (JTA, 11/12) — 잭슨 당선인이 슈머를 지지하지 않겠다고 명시적으로 밝혔다고 보도했다. 우파 매체가 아닌 곳에서 이 입장을 확인한 것은 처음이다. 잭슨 본인의 직접 인용은 없다.\n- **여론조사**: 없음(직전: 잭슨 약 53–47, Newsweek, 비공식).\n- **자금**: 없음\n- **로컬**: Democracy Now!(좌, 11/12)는 잭슨이 DSCC의 경선 선택과 무관하게 당선됐다는 밴 홀런의 발언을 전했다.\n- **주 함의**: 결과에는 변동이 없다. 11/12호는 Daily Caller·Fox의 요약 보도에 기댔는데, 오늘 그 입장이 JTA에서 확인됐다.",
+    "NC": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(직전: 최종 득표 격차는 확보하지 못했다).\n- **자금**: 없음\n- **로컬**: JTA(11/12)는 쿠퍼를 슈머가 공들여 영입한 후보로 소개했다. 원내대표 투표에 대한 입장은 전하지 않았다 · 이월: 왓틀리는 선거 당일 밤 패배를 인정했다.\n- **주 함의**: 판단은 바뀌지 않는다. NC Newsline 기사는 열리지 않았다.",
+    "TX": "- [Senator-elect James Talarico… pledges to work with Trump on key issues](https://foxnews.com/politics/cornyn-meets-sen-elect-talarico-describes-him-basically-good-person) (Fox News, 우, 11/10) — 코닌이 오스틴과 워싱턴에서 탈라리코를 만났다. Fox에 따르면 탈라리코는 초당적 협력을 약속했고 트럼프의 국경 보안 노력을 지지했다.\n- **여론조사**: 없음(직전: 약 55–43, ABC 수치. Fox도 같은 격차를 전했다).\n- **자금**: 없음\n- **로컬**: 슈머 경선에 대한 탈라리코의 입장은 확인되지 않았다 · 이월: 취임은 2027년 1월 3일이다 · Fox 한 곳만 보도해 출처가 치우쳐 있다.\n- **주 함의**: 결과에는 변동이 없다. 당선인의 초당 행보를 전한 출처는 우파 전국 매체 한 곳뿐이다.",
+    "OH": "- [Move over, Schumer. A new crop of Democrats are arriving in the Senate](https://www.jta.org/2026/11/12/politics/move-over-schumer-a-new-crop-of-democrats-are-arriving-in-the-senate) (JTA, 11/12) — **신규:** 셰러드 브라운을 페터먼·갈레고·화이트하우스와 함께 슈머를 지지하겠다고 밝힌 인사로 분류했다. 브라운의 직접 인용은 없다.\n- **여론조사**: 없음(직전: 국무장관실 비공식 집계 브라운 2,301,042표, 허스테드 2,077,748표, Legis1, 11/4).\n- **자금**: 없음\n- **로컬**: 보궐선거여서 브라운의 취임 시점은 인증 일정에 달려 있다. 날짜는 확인되지 않았다.\n- **주 함의**: 모니터링 대상 주의 민주당 당선인 가운데 슈머 지지로 보도된 사람은 브라운뿐이다. 공화당 쪽 로컬 보도는 여전히 부족하다.",
+    "AK": "- [Peltola holds lead, but Sullivan gains after latest Alaska Senate vote drop](https://www.yahoo.com/news/politics/articles/peltola-holds-lead-sullivan-gains-131118055.html) (The Hill·Yahoo 전재, 11/12) — 펠톨라의 우위가 4,250표에서 **3,975표**로 줄었다. 추가분은 주로 맷수 지역 표다.\n- [Preliminary ranked choice voting results in Alaska's 2026 elections](https://fairvote.org/results-and-analysis-from-alaskas-2026-elections/) (FairVote, 11/11) — 11/10 CVR 약 23만 6천 장을 분석했다. 표 이전 후 설리번이 **50.1–49.9**로 앞섰다. FairVote는 RCV를 옹호하는 단체이고, 이 수치는 공식 집계가 아니다.\n- **여론조사**: 없음(선거 종료). DDHQ 집계는 펠톨라 48.57%, 설리번 46.98%다. Democracy Docket(좌)은 11/10 득표를 펠톨라 118,926표, 설리번 114,676표로 전했다.\n- **자금**: 없음\n- **로컬**: 표 이전 비율을 보면 하이크스 지지표는 설리번 44%, 펠톨라 17%로 갔다. Daniel J. Sullivan Jr. 지지표는 펠톨라 34%, 설리번 23%로 갔다 · 다음 대규모 개표 발표는 11/13(금)이고, 부재자 투표는 11/18까지 받는다(원문 계산) · 이월: 인증일 불일치(Epoch Times 11/18, Fox 11/25)가 아직 해소되지 않았다 · 읽을 수 있는 로컬 매체가 없어 출처가 한쪽에 치우쳐 있다.\n- **주 함의**: 원문은 11/12호의 추론을 철회했다. 하이크스 표가 설리번 쪽으로 기울기 때문에 펠톨라가 두 설리번의 합계보다 많이 얻었다고 해서 RCV 결과가 정해지지는 않는다. 추가 개표 전까지는 사실상 접전으로 본다.",
+    "IA": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(직전: 투렉 50.5–46.4, Newsweek, 개표 98%, 비공식).\n- **자금**: 없음\n- **로컬**: JTA(11/12)는 투렉을 슈머가 영입한 후보로 소개했다. 입장은 전하지 않았다.\n- **주 함의**: 판단은 바뀌지 않는다.",
+    "NE": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(직전: 오즈번이 6%p 넘게 뒤졌다, KATV/TNND, 11/4).\n- **자금**: 없음\n- **로컬**: 이월: 리케츠가 승리했다(AP, 선거 당일 밤 확정).\n- **주 함의**: 공화당 의석으로 변동이 없다. 모니터링 대상 주 가운데 공화당이 지킨 곳은 네브래스카뿐이다.",
+    "KS": "- [Move over, Schumer. A new crop of Democrats are arriving in the Senate](https://www.jta.org/2026/11/12/politics/move-over-schumer-a-new-crop-of-democrats-are-arriving-in-the-senate) (JTA, 11/12) — 해밀턴은 지역 유권자들이 슈머를 「너무 좌파적」으로 본다는 이유로 슈머를 지지하지 않는다. The Hill을 인용한 요약이며 직접 인용은 없다.\n- [Zetik(Fox News 기사 요약)](https://www.zetik.com/news/article/story_id-p008-231296) (11/12) — 슈머를 거부한 당선인으로 해밀턴, 플래너건(MN), 콜롬(MS), 엘사예드(MI)를 꼽았다. 콜롬 부분은 JTA와 엇갈린다. 애그리게이터 요약이므로 비중을 낮게 둔다.\n- **여론조사**: 없음(직전: 50.9–46.1, 개표 95%, 비공식).\n- **자금**: 없음\n- **로컬**: KCUR(중도좌, 공영)의 선거 당일 밤 보도(이월)와 일치한다.\n- **주 함의**: 결과에는 변동이 없다. 해밀턴은 슈머 거부 쪽으로 보도된다."
+   },
+   "extras": [],
+   "polls": "이번 회차 신규 본선 조사 없음.\n\n주목 기관(NYT/Siena·Fox News·Marist·AARP)의 조사도 없다.",
+   "watch": "- 11/13(금)로 예상되는 알래스카 대규모 개표 발표가 3,975표 격차에 어떤 영향을 주는지 본다.\n- AP의 알래스카 당선자 확정 여부와 공식 RCV 집계를 확인한다. 인증일 불일치(11/18 대 11/25)가 풀리는지도 본다.\n- 제9연방항소법원의 법무부 소송 진행을 본다.\n- 미시시피 하이드스미스 측의 확정 후 대응을 확인한다.\n- 슈머 원내대표 경선의 날짜와 밴 홀런의 출마 여부를 본다. 오소프·쿠퍼·투렉·탈라리코의 입장도 확인한다.",
+   "gaps": "",
+   "national_money": "- 없음",
+   "national_legal": "- 알래스카 동명이인 후보를 둘러싼 법무부 소송은 글리슨 판사가 기각했다. 이후 항소돼 제9연방항소법원에서 진행 중이다([Democracy Docket](https://www.democracydocket.com/news-alerts/peltola-leads-both-sullivans-combined-as-she-heads-to-victory-in-alaska-contest/), [The Hill·Yahoo 전재](https://www.yahoo.com/news/politics/articles/peltola-holds-lead-sullivan-gains-131118055.html))."
+  },
   {
    "date": "2026-11-12",
    "source_file": "2026-11-12_site_KR.md",
