@@ -1,8 +1,62 @@
 {
- "as_of": "2026-11-13",
+ "as_of": "2026-11-14",
  "source_label": "_NIS 상원 일일 브리핑(KR) — Cowork 예약 작업 산출물을 scripts/ingest_senate_daily.py가 그대로 추출",
  "provenance_note": "본문은 원천 마크다운을 자르지 않고 전재한다(요약·재서술 없음). 종결체는 원천대로 다체. 【수집 필요】 표기도 원천 그대로 남긴다 — 빈 칸을 추정으로 채우지 않는 규약과 같은 이유. 같은 날짜 재실행은 덮어쓴다.",
  "days": [
+  {
+   "date": "2026-11-14",
+   "source_file": "2026-11-14_site_KR.md",
+   "source_kind": "digest",
+   "chars": 7523,
+   "source_validation": {
+    "source_file": "2026-11-14_일일브리핑_KR.md",
+    "checks": [
+     "A 주 소절 1~9 순서",
+     "B [유세] 줄 11/11",
+     "E self-audit 블록 있음(항목 0)",
+     "F EN/KR 주 소절 11개 일치"
+    ],
+    "warnings": [
+     "C §5.1 지정 지역매체 링크 미확인(11/11): ['조지아', '미시간', '메인', '노스캐롤라이나', '알래스카', '오하이오', '텍사스', '아이오와', '뉴햄프셔', '네브래스카', '캔자스']",
+     "D 조사 불릿에 기간/격차 누락 3/3: ['신규 상원 여론조사 없음; 선거 종료.', '우선 추적 조사기관(NYT/Siena, Fox, Marist, AARP): 없음. 내부 조사: 없음.', '여론조사 아님: FairVote의 갱신된 알래스카 예비 RCV 집계(펠톨라 50.1–49.9, Newswee']"
+    ],
+    "missing_local_states": [
+     "조지아",
+     "미시간",
+     "메인",
+     "노스캐롤라이나",
+     "알래스카",
+     "오하이오",
+     "텍사스",
+     "아이오와",
+     "뉴햄프셔",
+     "네브래스카",
+     "캔자스"
+    ],
+    "status": "경고 있음"
+   },
+   "lead": "원문: senate_daily/2026-11-14_일일브리핑_KR.md · 정리 원칙: 원문에 없는 사실·수치·링크를 더하지 않는다.",
+   "summary": "- **알래스카가 다시 펠톨라 쪽으로 기울었다.** AP 기준 금요일 오전 개표율 88%에서 펠톨라 125,157(49.2%), 설리번 119,357(47.0%)이다. 1순위 격차는 수요일 3,975표에서 약 5,800표로 늘었다. 펠톨라는 두 설리번의 표를 합친 것보다 1,601표 앞서지만 여전히 50%에는 못 미친다 ([Newsweek](https://www.newsweek.com/mary-peltola-path-winning-alaska-senate-race-outright-12709303); [Democracy Docket](https://www.democracydocket.com/news-alerts/democrat-peltola-widens-lead-over-both-sullivans-combined-in-alaska-senate-race/), 좌).\n- **FairVote의 RCV 추정이 뒤집혔다.** 목요일 분석은 최종 라운드에서 펠톨라가 **50.1–49.9**(3,039표 차)로 이긴다고 본다. 11/10 CVR에 기반한 이전 분석은 설리번의 50.1–49.9 우세였다. 두 분석 모두 예비·부분 자료다 ([Newsweek](https://www.newsweek.com/mary-peltola-path-winning-alaska-senate-race-outright-12709303)).\n- **트럼프가 알래스카 개표에 공개적으로 개입했다.** 트루스소셜(11/10)에서 \"가짜 댄 설리번\"에게 간 표를 \"진짜 댄 설리번\"에게 줘야 한다고 썼다. 알래스카 RCV 규정에는 그런 이전 절차가 없다 ([Democracy Docket](https://www.democracydocket.com/news-alerts/democrat-peltola-widens-lead-over-both-sullivans-combined-in-alaska-senate-race/), 좌).\n- **알래스카 일정이 정리됐다.** 국내 우편투표는 11/13, 해외 투표는 11/18까지 접수한다. 11/18에 최종 개표·RCV 집계를 하고, 주 정부 인증 목표일은 11/25다. 앞서 보도된 「11/18 대 11/25」 충돌은 최종 개표와 인증의 차이로 해소됐다 ([Newsweek](https://www.newsweek.com/mary-peltola-path-winning-alaska-senate-race-outright-12709303)).\n- **미시시피(모니터링 외)에서 하이드-스미스가 콜럼에게 패배를 인정했다(11/11).** 의석 집계는 **민주 55 – 공화 44, 알래스카 미확정**으로 유지한다. Al-Monitor는 54–44, 미확정 2석으로 집계해 충돌로 표시만 해 둔다 ([Mississippi Free Press](https://www.mississippifreepress.org/cindy-hyde-smith-concedes-u-s-senate-election-to-scott-colom/)).\n- 슈머 원내대표 문제에서 메인의 잭슨 당선인이 처음으로 직접 발언했다. 슈머에게 \"다른 사람을 지지할 것\"이라고 말했다는 것이다. 캔자스 해밀턴의 비지지 입장은 두 번째 매체로 확인됐고, 뉴햄프셔 파파스는 「새 지도부 요구」 쪽으로 분류됐다. 의석수에는 영향이 없다 ([Al-Monitor](https://www.al-monitor.com/originals/2026/11/who-will-lead-congress-democrats-weigh-schumer-alternatives-jeffries-bid)).",
+   "states": {
+    "GA": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료. 이월된 결과는 오소프 59–41, ABC 개표 99%, 비공식).\n- **자금**: 없음\n- **로컬**: 이월: 콜린스 승복(재확인 안 함). §5.1 매체는 열람하지 못했다.\n- **주 함의**: 오늘 정보로 바뀌는 것은 없다. 민주 의석 결과를 그대로 유지한다.",
+    "MI": "- [Who will lead Congress? Democrats weigh Schumer alternatives, Jeffries bid](https://www.al-monitor.com/originals/2026/11/who-will-lead-congress-democrats-weigh-schumer-alternatives-jeffries-bid) (Al-Monitor, 11/13 추정) — \"미시간 등에서 새로 당선된 민주당 상원의원\"이 슈머를 지지하지 않을 것이라고 썼다. 엘사예드를 실명으로 거론하지는 않았다. 11/13에서 이월된 Deseret/JTA 보도와 일치한다.\n- **여론조사**: 없음(선거 종료. 이월된 결과는 엘사예드 약 7%p 우세, AP 개표 ~97%, 비공식).\n- **자금**: 없음\n- **로컬**: 이월: 로저스 승복 · 슬롯킨과 밴 홀런이 슈머의 잠재적 도전자로 거론된다는 관련 기사가 있다(제목만 확인, 미열람).\n- **주 함의**: 결과는 그대로다. 엘사예드의 지도부 입장은 아직 실명으로 확인되지 않았다.",
+    "NH": "- [Who will lead Congress? Democrats weigh Schumer alternatives, Jeffries bid](https://www.al-monitor.com/originals/2026/11/who-will-lead-congress-democrats-weigh-schumer-alternatives-jeffries-bid) (Al-Monitor, 11/13 추정) — 파파스 당선인을 미네소타의 페기 플래너건과 함께 「새 지도부를 요구하는」 인물로 분류했다. 파파스가 슈머에게 반대표를 던지겠다고 직접 밝힌 발언은 찾지 못했다.\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음\n- **로컬**: 이월: 수누누 승복(NHPR). 득표차는 아직 확보하지 못했다.\n- **주 함의**: 의석 판단에는 변화가 없다. 파파스의 입장은 명시적 반대표 선언보다는 JTA의 표현에 가깝다.",
+    "ME": "- [Who will lead Congress? Democrats weigh Schumer alternatives, Jeffries bid](https://www.al-monitor.com/originals/2026/11/who-will-lead-congress-democrats-weigh-schumer-alternatives-jeffries-bid) (Al-Monitor, 11/13 추정) — 트로이 잭슨 당선인은 슈머에게 \"다른 사람을 지지할 것\"이라고 말했다고 밝혔다. 지금까지 읽은 페이지 가운데 잭슨을 직접 인용한 첫 사례다.\n- **여론조사**: 없음(선거 종료. 이월된 결과는 잭슨 약 53–47, Newsweek, 비공식).\n- **자금**: 없음\n- **로컬**: §5.1 메인 매체는 열람하지 못했다.\n- **주 함의**: 잭슨이 슈머를 지지하지 않는다는 입장이 직접 인용으로 확인됐다. 의석 판단에는 변화가 없다.",
+    "NC": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음\n- **로컬**: States Newsroom 기사(\"The US Senate's 11 Democratic freshmen arrive at the Capitol\", NC Newsline, 중도좌~좌)는 열리지 않았다. 그래서 쿠퍼의 오리엔테이션 활동과 지도부 입장은 확인하지 못했다 · 이월: 와틀리는 선거 당일 밤 승복했다. 최종 득표차는 아직 확보하지 못했다.\n- **주 함의**: 바뀌는 것은 없다. 득표차와 쿠퍼의 지도부 입장은 여전히 미확인이다.",
+    "TX": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료. 이월된 결과는 탈라리코 약 55–43, Fox/ABC, 비공식).\n- **자금**: 없음\n- **로컬**: 이월: 탈라리코가 코닌 의원과 회동했다(Fox, 11/10). 취임은 2027년 1월 3일이다 · 읽은 페이지에서 탈라리코의 지도부 입장은 찾지 못했다.\n- **주 함의**: 바뀌는 것은 없다.",
+    "OH": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료. 이월된 결과는 주무장관 비공식 집계로 브라운 2,301,042 대 허스테드 2,077,748, Legis1, 11/4).\n- **자금**: 없음\n- **로컬**: 이월: JTA(11/12)는 브라운을 슈머 지지자로 분류했다 · 보궐선거 의석의 취임 일자는 미확인이다 · 우파 지역 보도는 여전히 빈약하다.\n- **주 함의**: 바뀌는 것은 없다. 브라운의 취임 일자가 남은 확인 사항이다.",
+    "AK": "- [Peltola, Kreiss-Tomkins grow leads after latest ballot counts in Alaska](https://www.yahoo.com/news/politics/articles/peltola-kreiss-tomkins-grow-leads-145000524.html) (Anchorage Daily News 재게재, 중립, 11/13) — 목요일 약 5,000표를 추가 개표하면서 1순위 격차가 5,800표가 됐다. 최종 개표는 11/18 예정이다.\n- [Mary Peltola's path to winning Alaska Senate race outright](https://www.newsweek.com/mary-peltola-path-winning-alaska-senate-race-outright-12709303) (Newsweek, 11/13) — AP 개표 88%에서 펠톨라 125,157(49.2%), 설리번 119,357(47%)이다. FairVote의 목요일 분석은 최종 라운드에서 펠톨라가 50.1–49.9로 이긴다고 보지만 부분 자료다.\n- [Democrat Peltola widens lead over both Sullivans combined](https://www.democracydocket.com/news-alerts/democrat-peltola-widens-lead-over-both-sullivans-combined-in-alaska-senate-race/) (Democracy Docket, 좌, 11/13) — 펠톨라가 두 설리번의 합계보다 1,601표 앞선다. 이 매체는 펠톨라 캠프를 대리하는 Elias Law Group과 연계돼 있다.\n- **여론조사**: 없음(선거 종료. FairVote의 예비 RCV 집계는 여론조사가 아니다).\n- **자금**: 없음\n- **로컬**: 트럼프가 트루스소셜(11/10)에서 \"가짜 댄 설리번\" 표를 설리번 의원에게 넘기라고 요구했다. RCV 규정에는 그런 절차가 없다 · 해외 투표는 11/18에 접수를 마감하고 최종 개표하며, 인증 목표일은 11/25다 · 이번 회차에 우파 성향 알래스카 매체는 열람하지 못했다.\n- **주 함의**: 목요일 개표 흐름과 갱신된 FairVote 분석 모두 펠톨라 쪽이다. 다만 판정하기에는 너무 접전이다. 결정적 일정은 11/18 최종 개표·RCV 집계와 11/25 인증이다.",
+    "IA": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료. 이월된 결과는 투렉 50.5–46.4, Newsweek 개표 98%, 비공식).\n- **자금**: 없음\n- **로컬**: 투렉의 지도부 입장은 미확인이다.\n- **주 함의**: 바뀌는 것은 없다.",
+    "NE": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료. 이월된 결과는 오스본 6%p 이상 열세, KATV/TNND, 11/4).\n- **자금**: 없음\n- **로컬**: 이월: 리케츠 승리(AP, 선거 당일 밤 확정).\n- **주 함의**: 공화당이 의석을 유지한다는 판단에 변화가 없다.",
+    "KS": "- [Who will lead Congress? Democrats weigh Schumer alternatives, Jeffries bid](https://www.al-monitor.com/originals/2026/11/who-will-lead-congress-democrats-weigh-schumer-alternatives-jeffries-bid) (Al-Monitor, 11/13 추정) — 해밀턴 당선인을 슈머의 원내대표직을 지지하지 않겠다고 밝힌 인물로 분류했다. JTA(11/12)에 이은 두 번째 매체다. 해밀턴을 직접 인용하지는 않았다.\n- **여론조사**: 없음(선거 종료. 이월된 결과는 해밀턴 50.9–46.1, 개표 95%, 비공식).\n- **자금**: 없음\n- **로컬**: 이월: KCUR(중도좌, 공영)의 선거 당일 보도.\n- **주 함의**: 해밀턴의 비지지 입장이 두 번째 매체로 확인됐다. 의석 판단에는 변화가 없다."
+   },
+   "extras": [],
+   "polls": "이번 회차 신규 본선 조사 없음.\n\n- 주목 기관(NYT/Siena·Fox News·Marist Poll·AARP/Fabrizio Ward·Impact Research) 조사도 없고, 내부 조사도 없다.",
+   "watch": "- 알래스카 11/18 해외 투표 접수 마감과 최종 개표·RCV 집계\n- 알래스카 11/25 주 정부 인증과 AP의 당선 확정 여부\n- 설리번 캠프의 대응과 연방 상원 이의 제기 가능성\n- 법무부 동명이인 소송의 항소 진행\n- 슈머 원내대표 경쟁 구도(슬롯킨·밴 홀런 거론)와 당선인들의 입장 표명\n- 의석 집계 충돌(Al-Monitor 54–44 대 자체 집계 55–44)의 해소",
+   "gaps": "",
+   "national_money": "- 없음",
+   "national_legal": "- 알래스카 법무부 동명이인 소송은 11/1에 기각됐고 행정부가 항소했다. 11/13 보도의 제9순회항소법원과 일치한다 ([Newsweek](https://www.newsweek.com/mary-peltola-path-winning-alaska-senate-race-outright-12709303)).\n- 플로리다주립대 법학교수 마이클 몰리는 설리번이 질 경우 최선의 선택지가 연방 상원에 선거 이의를 제기하는 것이라고 본다. 설리번 캠프는 Newsweek에 답하지 않았다 ([Newsweek](https://www.newsweek.com/mary-peltola-path-winning-alaska-senate-race-outright-12709303))."
+  },
   {
    "date": "2026-11-13",
    "source_file": "2026-11-13_site_KR.md",

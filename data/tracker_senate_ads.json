@@ -1,11 +1,11 @@
 {
- "as_of": "2026-11-12",
+ "as_of": "2026-11-13",
  "source_label": "선거운동 트래커 광고 페이지 — FEC Schedule E 독립지출 (api.open.fec.gov) — 2026 상원·하원 본선 신고분",
  "source_url": "https://woochangkang.github.io/campaign-tracker-2026-site/data/ads_fec.json",
  "provenance_note": "pro_D = 민주(무소속 포함, independent_note=true) 지지 + 공화 반대, pro_R = 그 반대. 단위 달러. 후보 캠프 자금이 아니라 외부 단체의 신고 집행액이다.",
  "races": {
   "AK": {
-   "pro_D": 48684162,
+   "pro_D": 48665767,
    "pro_R": 49521280,
    "ads_D": 41964853,
    "ads_R": 42975054,
@@ -150,7 +150,7 @@
      "candidate": "PELTOLA, MARY",
      "so": "S",
      "side": "D",
-     "total": 1973645,
+     "total": 1955251,
      "last_date": "2026-10-25"
     },
     {
@@ -167,9 +167,9 @@
   },
   "GA": {
    "pro_D": 20007686,
-   "pro_R": 18320993,
+   "pro_R": 18322699,
    "ads_D": 18602626,
-   "ads_R": 15028673,
+   "ads_R": 15030379,
    "last_date": "2026-11-03",
    "independent_note": false,
    "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-GA.html",
@@ -327,7 +327,7 @@
    ]
   },
   "IA": {
-   "pro_D": 103879206,
+   "pro_D": 103880256,
    "pro_R": 96165642,
    "ads_D": 98174025,
    "ads_R": 80454232,
@@ -649,10 +649,10 @@
    ]
   },
   "ME": {
-   "pro_D": 52552621,
-   "pro_R": 88996206,
+   "pro_D": 52553287,
+   "pro_R": 88999974,
    "ads_D": 45405606,
-   "ads_R": 79861834,
+   "ads_R": 79865601,
    "last_date": "2026-11-03",
    "independent_note": false,
    "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-ME.html",
@@ -810,11 +810,11 @@
    ]
   },
   "MI": {
-   "pro_D": 94701993,
-   "pro_R": 171840611,
+   "pro_D": 94701996,
+   "pro_R": 171842472,
    "ads_D": 80633442,
-   "ads_R": 133264078,
-   "last_date": "2026-11-05",
+   "ads_R": 133265939,
+   "last_date": "2026-11-09",
    "independent_note": false,
    "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-MI.html",
    "top": [
@@ -971,10 +971,10 @@
    ]
   },
   "NC": {
-   "pro_D": 29343136,
-   "pro_R": 46417659,
+   "pro_D": 29347059,
+   "pro_R": 46420869,
    "ads_D": 24585816,
-   "ads_R": 42935520,
+   "ads_R": 42938730,
    "last_date": "2026-11-05",
    "independent_note": false,
    "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-NC.html",
@@ -1454,7 +1454,7 @@
    ]
   },
   "OH": {
-   "pro_D": 157526483,
+   "pro_D": 157524398,
    "pro_R": 252378897,
    "ads_D": 141329959,
    "ads_R": 206870487,
@@ -1573,16 +1573,6 @@
      "last_date": "2026-10-28"
     },
     {
-     "committee_id": "C00912865",
-     "committee": "OHIO FLYER PAC",
-     "affiliate_of": null,
-     "candidate": "BROWN, SHERROD",
-     "so": "O",
-     "side": "R",
-     "total": 7410448,
-     "last_date": "2026-11-02"
-    },
-    {
      "committee_id": "C00764233",
      "committee": "DEFEND THE VOTE",
      "affiliate_of": null,
@@ -1591,6 +1581,16 @@
      "side": "D",
      "total": 7055990,
      "last_date": "2026-10-01"
+    },
+    {
+     "committee_id": "C00912865",
+     "committee": "OHIO FLYER PAC",
+     "affiliate_of": null,
+     "candidate": "BROWN, SHERROD",
+     "so": "O",
+     "side": "R",
+     "total": 7027331,
+     "last_date": "2026-11-02"
     },
     {
      "committee_id": "C00879510",
@@ -1615,10 +1615,10 @@
    ]
   },
   "TX": {
-   "pro_D": 109313823,
-   "pro_R": 315876791,
-   "ads_D": 98143431,
-   "ads_R": 262186181,
+   "pro_D": 109321561,
+   "pro_R": 315876894,
+   "ads_D": 98171806,
+   "ads_R": 262186285,
    "last_date": "2026-11-05",
    "independent_note": false,
    "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-TX.html",
