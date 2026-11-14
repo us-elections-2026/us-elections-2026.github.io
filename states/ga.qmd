@@ -145,6 +145,11 @@ cat(daily_log_md("GA"))
 ## 최신 여론조사
 
 ```{r}
+#| output: asis
+cat(race_snapshot_html("GA"))
+```
+
+```{r}
 gt_state_polls("GA")
 ```
 

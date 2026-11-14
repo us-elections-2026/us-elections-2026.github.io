@@ -153,6 +153,11 @@ cat(daily_log_md("IA"))
 ## 최신 여론조사
 
 ```{r}
+#| output: asis
+cat(race_snapshot_html("IA"))
+```
+
+```{r}
 gt_state_polls("IA")
 ```
 
