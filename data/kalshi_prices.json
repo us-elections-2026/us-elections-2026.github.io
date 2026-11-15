@@ -1,6 +1,6 @@
 {
- "as_of": "2026-11-08",
- "fetched_at_utc": "2026-11-08T21:19:51Z",
+ "as_of": "2026-11-15",
+ "fetched_at_utc": "2026-11-15T21:21:59Z",
  "type": "market",
  "source_label": "Kalshi (예측시장 가격)",
  "source_url": "https://kalshi.com/",
@@ -25,12 +25,12 @@
  },
  "senate": {
   "AK": {
-   "dem": 97.5,
-   "rep": 2.6,
+   "dem": 99.7,
+   "rep": 0.2,
    "dem_label": "Democratic party",
    "rep_label": "Republican party",
-   "volume": 32439423,
-   "open_interest": 20249839,
+   "volume": 54675651,
+   "open_interest": 34820598,
    "series": "SENATEAK",
    "tickers": [
     "SENATEAK-26-D",
@@ -263,12 +263,12 @@
    "url": "https://kalshi.com/markets/senatemn"
   },
   "MS": {
-   "dem": 98.4,
-   "rep": 1.6,
+   "dem": 99.9,
+   "rep": 0.1,
    "dem_label": "Scott Colom",
    "rep_label": "Cindy Hyde-Smith",
-   "volume": 37966779,
-   "open_interest": 15611350,
+   "volume": 45016590,
+   "open_interest": 17925003,
    "series": "SENATEMS",
    "tickers": [
     "SENATEMS-26-R",
@@ -517,12 +517,12 @@
  },
  "governor": {
   "AK": {
-   "dem": 98.3,
-   "rep": 1.8,
+   "dem": 99.9,
+   "rep": 0.2,
    "dem_label": "Democratic party",
    "rep_label": "Republican party",
-   "volume": 903763,
-   "open_interest": 342783,
+   "volume": 1358604,
+   "open_interest": 659686,
    "series": "KXGOVPARTYAK",
    "tickers": [
     "KXGOVPARTYAK-26-R",
@@ -699,12 +699,12 @@
    "url": "https://kalshi.com/markets/govpartyil"
   },
   "KS": {
-   "dem": 99.7,
-   "rep": 0.3,
+   "dem": 99.9,
+   "rep": 0.1,
    "dem_label": "Cindy Holscher",
    "rep_label": "Ty Masterson",
-   "volume": 3697277,
-   "open_interest": 1303200,
+   "volume": 4029792,
+   "open_interest": 1369853,
    "series": "GOVPARTYKS",
    "tickers": [
     "GOVPARTYKS-27-R",

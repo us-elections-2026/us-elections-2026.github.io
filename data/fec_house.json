@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-09",
+ "as_of": "2026-11-16",
  "source_label": "FEC (api.open.fec.gov) — 후보 분기 보고 + Schedule E 독립지출(본선), 단위 $M",
  "provenance_note": "candidates 는 사이클 누적 모금·현금(coverage_end 기준). ie 는 상원 독립지출 파일과 같은 규칙(정기 보고 + 이후 통지, 예비선거 제외).",
  "districts": {
@@ -79,9 +79,9 @@
     }
    ],
    "ie": {
-    "pro_D": 7.59,
+    "pro_D": 7.83,
     "pro_R": 11.22,
-    "n_rows": 751,
+    "n_rows": 825,
     "last_date": "2026-11-05",
     "rows": [
      {
@@ -182,10 +182,10 @@
       "candidate": "LAWLER, MICHAEL VINCENT",
       "party": "REP",
       "so": "O",
-      "reported": 0.0,
-      "notice_recent": 0.86,
+      "reported": 0.65,
+      "notice_recent": 0.19,
       "last_date": "2026-10-23",
-      "total": 0.86,
+      "total": 0.85,
       "side": "D"
      },
      {
@@ -208,8 +208,8 @@
       "candidate": "LAWLER, MICHAEL VINCENT",
       "party": "REP",
       "so": "S",
-      "reported": 0.0,
-      "notice_recent": 0.43,
+      "reported": 0.2,
+      "notice_recent": 0.23,
       "last_date": "2026-10-16",
       "total": 0.43,
       "side": "R"
@@ -221,8 +221,8 @@
       "candidate": "CONLEY, CAIT",
       "party": "DEM",
       "so": "O",
-      "reported": 0.0,
-      "notice_recent": 0.38,
+      "reported": 0.14,
+      "notice_recent": 0.24,
       "last_date": "2026-10-28",
       "total": 0.38,
       "side": "R"
@@ -234,8 +234,8 @@
       "candidate": "LAWLER, MICHAEL VINCENT",
       "party": "REP",
       "so": "S",
-      "reported": 0.0,
-      "notice_recent": 0.33,
+      "reported": 0.07,
+      "notice_recent": 0.26,
       "last_date": "2026-10-30",
       "total": 0.33,
       "side": "R"
@@ -247,24 +247,11 @@
       "candidate": "CONLEY, CAIT",
       "party": "DEM",
       "so": "O",
-      "reported": 0.0,
-      "notice_recent": 0.31,
+      "reported": 0.05,
+      "notice_recent": 0.26,
       "last_date": "2026-10-21",
       "total": 0.31,
       "side": "R"
-     },
-     {
-      "committee_id": "C00489799",
-      "committee": "PLANNED PARENTHOOD VOTES",
-      "candidate_id": null,
-      "candidate": "LAWLER, MICHAEL",
-      "party": "",
-      "so": "O",
-      "reported": 0.0,
-      "notice_recent": 0.31,
-      "last_date": "2026-10-09",
-      "total": 0.31,
-      "side": null
      },
      {
       "committee_id": "C00747998",
@@ -286,8 +273,8 @@
       "candidate": "LAWLER, MICHAEL VINCENT",
       "party": "REP",
       "so": "S",
-      "reported": 0.0,
-      "notice_recent": 0.29,
+      "reported": 0.29,
+      "notice_recent": 0.0,
       "last_date": "2026-09-08",
       "total": 0.29,
       "side": "R"
@@ -299,8 +286,8 @@
       "candidate": "LAWLER, MICHAEL VINCENT",
       "party": "REP",
       "so": "S",
-      "reported": 0.0,
-      "notice_recent": 0.28,
+      "reported": 0.14,
+      "notice_recent": 0.15,
       "last_date": "2026-10-28",
       "total": 0.28,
       "side": "R"
@@ -315,6 +302,19 @@
       "reported": 0.0,
       "notice_recent": 0.25,
       "last_date": "2026-10-23",
+      "total": 0.25,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00489799",
+      "committee": "PLANNED PARENTHOOD VOTES",
+      "candidate_id": "H2NY17162",
+      "candidate": "LAWLER, MICHAEL",
+      "party": "REP",
+      "so": "O",
+      "reported": 0.25,
+      "notice_recent": 0.0,
+      "last_date": "2026-09-28",
       "total": 0.25,
       "side": "D"
      },
@@ -351,8 +351,8 @@
       "candidate": "CONLEY, CAIT",
       "party": "DEM",
       "so": "O",
-      "reported": 0.03,
-      "notice_recent": 0.12,
+      "reported": 0.07,
+      "notice_recent": 0.09,
       "last_date": "2026-10-27",
       "total": 0.16,
       "side": "R"
@@ -377,8 +377,8 @@
       "candidate": "CONLEY, CAIT",
       "party": "DEM",
       "so": "S",
-      "reported": 0.0,
-      "notice_recent": 0.12,
+      "reported": 0.12,
+      "notice_recent": 0.0,
       "last_date": "2026-10-13",
       "total": 0.12,
       "side": "D"
@@ -390,8 +390,8 @@
       "candidate": "LAWLER, MICHAEL VINCENT",
       "party": "REP",
       "so": "O",
-      "reported": 0.0,
-      "notice_recent": 0.12,
+      "reported": 0.12,
+      "notice_recent": 0.0,
       "last_date": "2026-10-13",
       "total": 0.12,
       "side": "D"
@@ -460,6 +460,19 @@
       "last_date": "2026-10-26",
       "total": 0.06,
       "side": "D"
+     },
+     {
+      "committee_id": "C00489799",
+      "committee": "PLANNED PARENTHOOD VOTES",
+      "candidate_id": null,
+      "candidate": "LAWLER, MICHAEL",
+      "party": "",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.06,
+      "last_date": "2026-10-09",
+      "total": 0.06,
+      "side": null
      },
      {
       "committee_id": "C00963736",
@@ -540,6 +553,19 @@
       "side": "D"
      },
      {
+      "committee_id": "C00647966",
+      "committee": "RURAL FREEDOM NETWORK",
+      "candidate_id": "H6NY17171",
+      "candidate": "CONLEY, CAIT",
+      "party": "DEM",
+      "so": "S",
+      "reported": 0.03,
+      "notice_recent": 0.0,
+      "last_date": "2026-10-14",
+      "total": 0.03,
+      "side": "D"
+     },
+     {
       "committee_id": "C00892471",
       "committee": "MAGA INC.",
       "candidate_id": "H6NY17171",
@@ -601,19 +627,6 @@
       "reported": 0.02,
       "notice_recent": 0.0,
       "last_date": "2026-09-30",
-      "total": 0.02,
-      "side": "D"
-     },
-     {
-      "committee_id": "C00647966",
-      "committee": "RURAL FREEDOM NETWORK",
-      "candidate_id": "H6NY17171",
-      "candidate": "CONLEY, CAIT",
-      "party": "DEM",
-      "so": "S",
-      "reported": 0.02,
-      "notice_recent": 0.0,
-      "last_date": "2026-09-18",
       "total": 0.02,
       "side": "D"
      },
@@ -826,6 +839,19 @@
       "side": null
      },
      {
+      "committee_id": "C00647966",
+      "committee": "RURAL FREEDOM NETWORK",
+      "candidate_id": "H2NY17162",
+      "candidate": "LAWLER, MICHAEL VINCENT",
+      "party": "REP",
+      "so": "O",
+      "reported": 0.0,
+      "notice_recent": 0.0,
+      "last_date": "2026-10-05",
+      "total": 0.0,
+      "side": "D"
+     },
+     {
       "committee_id": "C00943811",
       "committee": "NEW YORKERS FOR A RETURN TO FAIR AND HONEST GOVERNMENT",
       "candidate_id": "H6NY17171",
@@ -839,8 +865,8 @@
       "side": "D"
      },
      {
-      "committee_id": "C00802389",
-      "committee": "GIVEGREEN UNITED ACTION",
+      "committee_id": "C00483693",
+      "committee": "SIERRA CLUB INDEPENDENT ACTION",
       "candidate_id": "H6NY17171",
       "candidate": "CONLEY, CAIT",
       "party": "DEM",
@@ -852,28 +878,15 @@
       "side": "D"
      },
      {
-      "committee_id": "C00647966",
-      "committee": "RURAL FREEDOM NETWORK",
-      "candidate_id": "H2NY17162",
-      "candidate": "LAWLER, MICHAEL VINCENT",
-      "party": "REP",
-      "so": "O",
+      "committee_id": "C00802389",
+      "committee": "GIVEGREEN UNITED ACTION",
+      "candidate_id": "H6NY17171",
+      "candidate": "CONLEY, CAIT",
+      "party": "DEM",
+      "so": "S",
       "reported": 0.0,
       "notice_recent": 0.0,
       "last_date": "2026-09-15",
-      "total": 0.0,
-      "side": "D"
-     },
-     {
-      "committee_id": "C00489799",
-      "committee": "PLANNED PARENTHOOD VOTES",
-      "candidate_id": "H2NY17162",
-      "candidate": "LAWLER, MICHAEL",
-      "party": "REP",
-      "so": "O",
-      "reported": 0.0,
-      "notice_recent": 0.0,
-      "last_date": "2026-07-19",
       "total": 0.0,
       "side": "D"
      },
@@ -978,9 +991,9 @@
    ],
    "ie": {
     "pro_D": 10.36,
-    "pro_R": 3.86,
-    "n_rows": 486,
-    "last_date": "2026-11-05",
+    "pro_R": 3.88,
+    "n_rows": 539,
+    "last_date": "2026-11-13",
     "rows": [
      {
       "committee_id": "C00495028",
@@ -1015,8 +1028,8 @@
       "candidate": "HARVIE, ROBERT J",
       "party": "DEM",
       "so": "O",
-      "reported": 0.01,
-      "notice_recent": 1.47,
+      "reported": 1.31,
+      "notice_recent": 0.17,
       "last_date": "2026-10-27",
       "total": 1.48,
       "side": "R"
@@ -1028,8 +1041,8 @@
       "candidate": "FITZPATRICK, BRIAN",
       "party": "REP",
       "so": "O",
-      "reported": 0.0,
-      "notice_recent": 1.0,
+      "reported": 0.5,
+      "notice_recent": 0.5,
       "last_date": "2026-10-08",
       "total": 1.0,
       "side": "D"
@@ -1054,10 +1067,10 @@
       "candidate": "FITZPATRICK, BRIAN",
       "party": "REP",
       "so": "S",
-      "reported": 0.0,
-      "notice_recent": 0.46,
-      "last_date": "2026-10-23",
-      "total": 0.46,
+      "reported": 0.03,
+      "notice_recent": 0.45,
+      "last_date": "2026-11-13",
+      "total": 0.48,
       "side": "R"
      },
      {
@@ -1093,8 +1106,8 @@
       "candidate": "HARVIE, ROBERT J",
       "party": "DEM",
       "so": "O",
-      "reported": 0.0,
-      "notice_recent": 0.31,
+      "reported": 0.12,
+      "notice_recent": 0.19,
       "last_date": "2026-10-26",
       "total": 0.31,
       "side": "R"
@@ -1106,8 +1119,8 @@
       "candidate": "FITZPATRICK, BRIAN",
       "party": "REP",
       "so": "S",
-      "reported": 0.0,
-      "notice_recent": 0.26,
+      "reported": 0.24,
+      "notice_recent": 0.02,
       "last_date": "2026-10-21",
       "total": 0.26,
       "side": "R"
@@ -1158,8 +1171,8 @@
       "candidate": "FITZPATRICK, BRIAN",
       "party": "REP",
       "so": "S",
-      "reported": 0.0,
-      "notice_recent": 0.16,
+      "reported": 0.16,
+      "notice_recent": 0.0,
       "last_date": "2026-09-04",
       "total": 0.16,
       "side": "R"
@@ -1171,8 +1184,8 @@
       "candidate": "FITZPATRICK, BRIAN",
       "party": "REP",
       "so": "S",
-      "reported": 0.0,
-      "notice_recent": 0.14,
+      "reported": 0.09,
+      "notice_recent": 0.05,
       "last_date": "2026-10-15",
       "total": 0.14,
       "side": "R"
@@ -1185,7 +1198,7 @@
       "party": "DEM",
       "so": "O",
       "reported": 0.0,
-      "notice_recent": 0.1,
+      "notice_recent": 0.09,
       "last_date": "2026-10-23",
       "total": 0.1,
       "side": "R"
@@ -1485,7 +1498,7 @@
       "so": "S",
       "reported": 0.0,
       "notice_recent": 0.0,
-      "last_date": "2026-11-05",
+      "last_date": "2026-11-09",
       "total": 0.0,
       "side": "D"
      },
@@ -1581,6 +1594,19 @@
       "side": "R"
      },
      {
+      "committee_id": "C00909994",
+      "committee": "FIELD TEAM 6, INC.",
+      "candidate_id": "H6PA01181",
+      "candidate": "HARVIE, ROBERT J",
+      "party": "DEM",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.0,
+      "last_date": "2026-10-14",
+      "total": 0.0,
+      "side": "D"
+     },
+     {
       "committee_id": "C00829721",
       "committee": "EARLY VOTE ACTION PAC",
       "candidate_id": null,
@@ -1592,19 +1618,6 @@
       "last_date": "2026-10-02",
       "total": 0.0,
       "side": null
-     },
-     {
-      "committee_id": "C00909994",
-      "committee": "FIELD TEAM 6, INC.",
-      "candidate_id": "H6PA01181",
-      "candidate": "HARVIE, ROBERT J",
-      "party": "DEM",
-      "so": "S",
-      "reported": 0.0,
-      "notice_recent": 0.0,
-      "last_date": "2026-09-30",
-      "total": 0.0,
-      "side": "D"
      },
      {
       "committee_id": "C90020058",
@@ -1655,6 +1668,19 @@
       "reported": 0.0,
       "notice_recent": 0.0,
       "last_date": "2026-09-17",
+      "total": 0.0,
+      "side": "D"
+     },
+     {
+      "committee_id": "C00483693",
+      "committee": "SIERRA CLUB INDEPENDENT ACTION",
+      "candidate_id": "H6PA01181",
+      "candidate": "HARVIE, BOB",
+      "party": "DEM",
+      "so": "S",
+      "reported": 0.0,
+      "notice_recent": 0.0,
+      "last_date": "2026-09-10",
       "total": 0.0,
       "side": "D"
      },
