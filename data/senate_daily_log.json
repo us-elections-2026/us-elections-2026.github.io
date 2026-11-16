@@ -1,8 +1,62 @@
 {
- "as_of": "2026-11-15",
+ "as_of": "2026-11-16",
  "source_label": "_NIS 상원 일일 브리핑(KR) — Cowork 예약 작업 산출물을 scripts/ingest_senate_daily.py가 그대로 추출",
  "provenance_note": "본문은 원천 마크다운을 자르지 않고 전재한다(요약·재서술 없음). 종결체는 원천대로 다체. 【수집 필요】 표기도 원천 그대로 남긴다 — 빈 칸을 추정으로 채우지 않는 규약과 같은 이유. 같은 날짜 재실행은 덮어쓴다.",
  "days": [
+  {
+   "date": "2026-11-16",
+   "source_file": "2026-11-16_site_KR.md",
+   "source_kind": "digest",
+   "chars": 8376,
+   "source_validation": {
+    "source_file": "2026-11-16_일일브리핑_KR.md",
+    "checks": [
+     "A 주 소절 1~9 순서",
+     "B [유세] 줄 11/11",
+     "E self-audit 블록 있음(항목 0)",
+     "F EN/KR 주 소절 11개 일치"
+    ],
+    "warnings": [
+     "C §5.1 지정 지역매체 링크 미확인(11/11): ['조지아', '미시간', '메인', '노스캐롤라이나', '알래스카', '오하이오', '텍사스', '아이오와', '뉴햄프셔', '네브래스카', '캔자스']",
+     "D 조사 불릿에 기간/격차 누락 3/3: ['신규 상원 여론조사는 없다(선거 종료).', '주요 조사기관(NYT/Siena·Fox·Marist·AARP): 없음. 내부 조사: 없음.', '여론조사 아님 — Drop Site 원내대표 표 집계: 슈머 쪽 16, 밴 홀런 쪽 10, 미정 21, 입장']"
+    ],
+    "missing_local_states": [
+     "조지아",
+     "미시간",
+     "메인",
+     "노스캐롤라이나",
+     "알래스카",
+     "오하이오",
+     "텍사스",
+     "아이오와",
+     "뉴햄프셔",
+     "네브래스카",
+     "캔자스"
+    ],
+    "status": "경고 있음"
+   },
+   "lead": "원문: senate_daily/2026-11-16_일일브리핑_KR.md · 정리 원칙: 원문에 없는 사실·수치·링크를 더하지 않는다.",
+   "summary": "- **알래스카: 펠톨라가 나머지 세 후보 득표 합계를 넘어섰다.** ADN 기사에 따르면 펠톨라 **50.1%**, 설리번 46.1%, 하이크스 2.1%, D.J. 설리번 Jr. 1.7%이고 집계된 투표지는 28만 3천 장을 넘는다([ADN 재게재본](https://kittm631.substack.com/p/alaska-senate-election-update)). AP 등 주요 언론의 당선 확정 보도는 아직 없다.\n- Democracy Docket은 DOE 요약 보고서를 인용해 펠톨라 **140,637표**가 나머지 세 후보 합계보다 **559표** 많다고 전했다. 다만 같은 기사에 \"50%에 0.1%p 미만 부족\"이라는 문장도 있다. write-in(약 855표)을 분모에 넣느냐에 따라 50% 돌파 여부가 갈리므로, **RCV 라운드 없이** 확정될지는 아직 알 수 없다([Democracy Docket](https://www.democracydocket.com/news-alerts/as-peltolas-lead-widens-in-alaska-senate-race-trumps-voter-confusion-argument-crumbles/)).\n- 공식 일정을 재검증했다. 해외 우편투표 수령 마감과 지역별 최종 집계, 그리고 RCV 집계 시작이 모두 **11/18**이다. RCV 집계는 필요한 선거에 한해 진행한다. 인증 목표일은 **11/25**다([알래스카 DOE](https://www.elections.alaska.gov/)).\n- 민주당 원내대표 경선(12/1)을 두고 밴 홀런은 지지자가 **15명**으로 늘었다고 말했다. 슈머는 지지 약속을 충분히 확보했다면서도 숫자는 밝히지 않았다([NYT, Sun Bulletin 경유](https://www.thesunbulletin.com/chris-van-hollen-says-his-majority-leader-challenge-to-chuck-schumer-is-gaining-support/)).\n- Drop Site 표 집계(11/13까지 발언 기준)는 슈머 쪽 16명, 밴 홀런 쪽 10명, 미정 21명이고 과반 기준은 55명 중 28명이다. 모니터링 대상 당선인 가운데 엘-사예드·잭슨·해밀턴은 밴 홀런 쪽, 브라운은 슈머 쪽, 오소프·쿠퍼·탈라리코·튜렉·파파스는 미정이다. TNR은 파파스와 탈라리코를 \"슈머 비지지\"로 분류해 Drop Site와 어긋난다([Drop Site](https://whipcount.dropsitenews.com/)).\n- 의석 계산은 변동 없이 **민주 55(무소속 2 포함) – 공화 44**이고, 펠톨라가 이기면 56–44가 된다. 신규 상원 여론조사는 없으며 주요 조사기관(NYT/Siena·Fox·Marist·AARP)의 조사도 없다([DOE 요약 보고서](https://www.elections.alaska.gov/enr/26GENR/results/ElectionSummaryReportRPT.pdf)).",
+   "states": {
+    "GA": "- [Schumer Vs Van Hollen Whip Count](https://whipcount.dropsitenews.com/) (Drop Site News, 11/13) — 오소프는 \"미정\"으로 분류됐다. 알자지라에 따르면 그의 캠프는 선거 전 슈머 지지 여부를 밝히지 않았고, 새로운 발언은 없다.\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음\n- **로컬**: 원내대표 경선에서 오소프는 미정으로 분류됐다 · 이월: 오소프가 콜린스를 약 59–41로 이겼고(ABC, 비공식) 콜린스는 패배를 인정했다 · 조지아 매체는 읽지 못했다.\n- **주 함의**: 결과에 변동은 없다. 남은 관심사는 원내대표 경선에서 오소프가 어떤 입장을 내느냐다.",
+    "MI": "- [Full List of Senators Who Back Van Hollen](https://newrepublic.com/post/217991/full-list-senators-back-chris-van-hollen-leader) (The New Republic, 좌, 11/13) — 엘-사예드는 11/12 성명에서 밴 홀런을 명시적으로 지지했다. Drop Site와 일치해 재검증했다.\n- [Van Hollen says his challenge is gaining support](https://www.thesunbulletin.com/chris-van-hollen-says-his-majority-leader-challenge-to-chuck-schumer-is-gaining-support/) (NYT, Sun Bulletin 경유, 11/15) — 밴 홀런은 슈머의 경선 개입을 비판하면서 엘-사예드를 겨냥한 AIPAC·암호화폐 업계의 자금 지출을 예로 들었다.\n- **여론조사**: 없음(선거 종료).\n- **자금**: 밴 홀런이 엘-사예드를 겨냥한 AIPAC·암호화폐 업계의 자금 지출을 슈머의 경선 개입 비판 사례로 들었다([Sun Bulletin](https://www.thesunbulletin.com/chris-van-hollen-says-his-majority-leader-challenge-to-chuck-schumer-is-gaining-support/)).\n- **로컬**: 엘-사예드는 밴 홀런 지지를 명시했다(11/12 성명) · 이월: 엘-사예드 약 7%p 차 승리(비공식) · 미시간 매체는 읽지 못했다.\n- **주 함의**: 결과에 변동은 없다. 엘-사예드는 밴 홀런 진영의 상징 사례로 쓰이고 있다.",
+    "NH": "- [Full List of Senators Who Back Van Hollen](https://newrepublic.com/post/217991/full-list-senators-back-chris-van-hollen-leader) (The New Republic, 좌, 11/13) — TNR은 파파스를 \"슈머 비지지/새 지도부 원함\"으로 분류했고, Drop Site는 미정으로 분류해 출처가 상충한다.\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음\n- **로컬**: 파파스는 \"유권자들은 새로운 목소리를 갈망한다\"고 말했고(Roll Call, 11/4), 슈머 지지 여부를 묻는 후속 질의에 캠프가 답하지 않았다 · 이월: 파파스가 스누누를 꺾었고 스누누는 패배를 인정했다(NHPR) · 격차는 확보하지 못했다.\n- **주 함의**: 결과에 변동은 없다. 파파스의 입장이 \"불분명\"하다는 어제 판단을 유지한다.",
+    "ME": "- [Schumer Vs Van Hollen Whip Count](https://whipcount.dropsitenews.com/) (Drop Site News, 11/13) — 잭슨은 \"밴 홀런 쪽\"으로 분류됐다. 그는 \"I've told Senator Schumer I'm going to support somebody else\"라고 말했지만(Newsweek, 11/2) 대안 인물은 밝히지 않았다.\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음\n- **로컬**: 잭슨은 슈머 비지지로 분류됐고, TNR 분류도 같다 · 이월: 잭슨 약 53–47(비공식) · 메인 매체는 읽지 못했다.\n- **주 함의**: 결과에 변동은 없다. 잭슨의 슈머 비지지는 전날 브리핑과 일치한다.",
+    "NC": "- [Chris Van Hollen says his majority leader challenge is gaining support](https://www.thesunbulletin.com/chris-van-hollen-says-his-majority-leader-challenge-to-chuck-schumer-is-gaining-support/) (NYT, Sun Bulletin 경유, 11/15) — 기사는 쿠퍼를 슈머 측이 영입한 후보로 언급했다. 이는 영입 이력이지 본인이 밝힌 입장은 아니다.\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음\n- **로컬**: 쿠퍼는 Drop Site에서 \"미정\"으로 분류됐다([Drop Site](https://whipcount.dropsitenews.com/)) · 이월: 쿠퍼가 당선됐고 와틀리는 선거 당일 밤 패배를 인정했다 · 최종 격차는 확보하지 못했다.\n- **주 함의**: 결과에 변동은 없다. 최종 격차는 여전히 미확보다.",
+    "TX": "- [Full List of Senators Who Back Van Hollen](https://newrepublic.com/post/217991/full-list-senators-back-chris-van-hollen-leader) (The New Republic, 좌, 11/13) — TNR은 탈라리코를 \"슈머 비지지/새 지도부 원함\"으로 분류했다. 반면 Drop Site는 미정으로 분류해 두 출처가 상충한다.\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음\n- **로컬**: 탈라리코는 슈머의 \"비전을 들어보겠다\"고 말했다(CBS, 11/4). 본인의 직접 입장 표명은 없다 · 이월: 탈라리코 약 55–43(비공식).\n- **주 함의**: 결과에 변동은 없다. 원내대표 경선에서 탈라리코의 분류는 출처마다 다르다.",
+    "OH": "- [Full List of Senators Who Back Van Hollen](https://newrepublic.com/post/217991/full-list-senators-back-chris-van-hollen-leader) (The New Republic, 좌, 11/13) — 브라운은 슈머 쪽으로 분류됐다. Punchbowl은 그가 11/9 공개적으로 슈머를 지지했다고 보도했고, 3개 출처로 재검증했다.\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음\n- **로컬**: 브라운은 슈머 지지다 · 특별선거 의석의 취임 날짜는 여전히 찾지 못했다 · 이월: 브라운 2,301,042 대 허스테드 2,077,748(Legis1, 11/4, 비공식).\n- **주 함의**: 결과에 변동은 없다. 모니터링 대상 당선인 가운데 슈머 쪽으로 분류된 사람은 브라운뿐이다.",
+    "AK": "- [Peltola now has majority of votes…](https://kittm631.substack.com/p/alaska-senate-election-update) (Anchorage Daily News 재게재, 11/14) — 펠톨라 50.1%, 설리번 46.1%, 하이크스 2.1%, D.J. 설리번 Jr. 1.7%이고 집계된 투표지는 28만 3천 장을 넘는다. ADN 원문이 열리지 않아 재게재본을 썼으므로 신뢰도는 중간이다.\n- [As Peltola's lead widens, Trump's 'voter confusion' argument crumbles](https://www.democracydocket.com/news-alerts/as-peltolas-lead-widens-in-alaska-senate-race-trumps-voter-confusion-argument-crumbles/) (Democracy Docket, 좌, 11/15) — DOE 요약 보고서를 인용해 펠톨라 140,637표, 나머지 세 후보 합계 대비 +559표라고 전했다. 같은 기사의 \"50%에 0.1%p 미만 부족\"은 ADN의 50.1%와 맞지 않는다.\n- **여론조사**: 없음(선거 종료). 주요 조사기관(NYT/Siena·Fox·Marist·AARP)의 조사도 없다.\n- **자금**: 없음\n- **로컬**: 지역별 최종 집계·해외 우편투표 마감과 RCV 집계 시작이 **11/18**, 인증 목표일은 **11/25**다([DOE](https://www.elections.alaska.gov/)) · 이월: 당선 확정 보도는 없고 NBC는 펠톨라를 \"유력\"으로 본다 · 우파 쪽 보도는 신뢰도가 낮은 Next News뿐이다.\n- **주 함의**: 펠톨라의 1순위 득표가 나머지 세 후보 합계와 같거나 약간 많다. 11/18 이후에도 50%에 못 미치면 RCV 라운드가 진행된다. 그래도 하이크스·D.J. 설리번 Jr. 표는 합쳐 약 5,800표뿐이어서 역전 가능성은 낮다. 원문은 판단을 **Likely D(공식 집계 대기)**로 상향했다.",
+    "IA": "- [Schumer Vs Van Hollen Whip Count](https://whipcount.dropsitenews.com/) (Drop Site News, 11/13) — 튜렉은 미정으로 분류됐다. PolitiFact(11/9)에 따르면 그는 슈머 지지 여부를 확인해 주지 않았다.\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음\n- **로컬**: NYT/Sun Bulletin 기사가 튜렉을 슈머 측 영입 후보로 언급했지만 이는 입장 표명이 아니다 · 이월: 튜렉 50.5–46.4(개표 98%, 비공식).\n- **주 함의**: 결과에 변동은 없다. 튜렉은 여전히 미정이다.",
+    "NE": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음\n- **로컬**: 이월: 리케츠 승리(AP가 선거 당일 밤 확정). 오스본은 6%p 넘게 뒤졌다(TNND/KATV, 11/4).\n- **주 함의**: 공화 의석으로 유지한다. 변동은 없다.",
+    "KS": "- [Schumer Vs Van Hollen Whip Count](https://whipcount.dropsitenews.com/) (Drop Site News, 11/13) — 해밀턴은 슈머에 명시적으로 반대해 밴 홀런 쪽으로 분류됐다. 그는 \"I mean no disrespect for Chuck Schumer, but we need new leadership\"이라고 말했다(Daily Wire, 11/4). 이 발언을 직접 인용으로 기록하는 것은 이번이 처음이다.\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음\n- **로컬**: 해밀턴의 발언은 밴 홀런 지지 선언은 아니며, TNR 분류도 같다 · 이월: 해밀턴 50.9–46.1(개표 95%, 비공식) — KCUR(중도좌, 공영) 선거 당일 밤 보도.\n- **주 함의**: 결과에 변동은 없다. 해밀턴은 새 지도부를 요구하는 쪽이다."
+   },
+   "extras": [],
+   "polls": "이번 회차 신규 본선 조사 없음.",
+   "watch": "- 알래스카 11/18: 지역별 최종 집계·해외 우편투표 마감과 RCV 집계 시작. 50% 충족 여부(write-in 분모 문제)가 이때 확인된다.\n- 알래스카 인증 목표일 11/25와 그 전 AP 등 주요 언론의 당선 확정 보도 여부.\n- 알래스카 인증 저지 소송과 법무부 형사수사 서한의 후속 보도.\n- 12/1 민주당 원내대표 경선: 미정으로 분류된 오소프·쿠퍼·탈라리코·튜렉·파파스의 입장 표명.\n- 오하이오 특별선거 의석의 취임 날짜, NC·NH 최종 격차 확보.",
+   "gaps": "",
+   "national_money": "- 없음",
+   "national_legal": "- 알래스카 인증 저지 소송에서 Elias Law Group이 행정부 상대로 펠톨라 측과 DSCC를 대리한다. 본문은 읽지 못해 현황만 적는다([Democracy Docket, 11/13](https://www.democracydocket.com/news-alerts/democrat-peltola-widens-lead-over-both-sullivans-combined-in-alaska-senate-race/)).\n- ADN 정치면 헤드라인(날짜 미표시)에 따르면 법무부 형사수사가 잠재적 수사 대상자에게 서한을 보냈다. 본문은 읽지 못했다([ADN 정치면](https://www.adn.com/politics/)).\n- Democracy Docket은 트럼프의 11/10 게시물(\"Rigged Election\")을 인용했고 법무부 항소도 언급했으나 날짜는 밝히지 않았다([Democracy Docket, 11/15](https://www.democracydocket.com/news-alerts/as-peltolas-lead-widens-in-alaska-senate-race-trumps-voter-confusion-argument-crumbles/))."
+  },
   {
    "date": "2026-11-15",
    "source_file": "2026-11-15_site_KR.md",
