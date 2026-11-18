@@ -1,8 +1,60 @@
 {
- "as_of": "2026-11-17",
+ "as_of": "2026-11-18",
  "source_label": "_NIS 상원 일일 브리핑(KR) — Cowork 예약 작업 산출물을 scripts/ingest_senate_daily.py가 그대로 추출",
  "provenance_note": "본문은 원천 마크다운을 자르지 않고 전재한다(요약·재서술 없음). 종결체는 원천대로 다체. 【수집 필요】 표기도 원천 그대로 남긴다 — 빈 칸을 추정으로 채우지 않는 규약과 같은 이유. 같은 날짜 재실행은 덮어쓴다.",
  "days": [
+  {
+   "date": "2026-11-18",
+   "source_file": "2026-11-18_site_KR.md",
+   "source_kind": "digest",
+   "chars": 6483,
+   "source_validation": {
+    "source_file": "2026-11-18_일일브리핑_KR.md",
+    "checks": [
+     "A 주 소절 1~9 순서",
+     "B [유세] 줄 11/11",
+     "E self-audit 블록 있음(항목 0)",
+     "F EN/KR 주 소절 11개 일치"
+    ],
+    "warnings": [
+     "C §5.1 지정 지역매체 링크 미확인(9/11): ['조지아', '미시간', '메인', '노스캐롤라이나', '알래스카', '오하이오', '텍사스', '아이오와', '네브래스카']",
+     "D 조사 불릿에 기간/격차 누락 3/3: ['선거가 끝나 새 상원 여론조사는 없다.', '우선 추적 조사기관(NYT/Siena·Fox·Marist·AARP): 없음. 내부 조사: 없음.', '여론조사가 아닌 자료: 원내대표 경선 표 계산(Fox 11/17)은 각 진영의 주장이며 검증된 집계가 아니다']"
+    ],
+    "missing_local_states": [
+     "조지아",
+     "미시간",
+     "메인",
+     "노스캐롤라이나",
+     "알래스카",
+     "오하이오",
+     "텍사스",
+     "아이오와",
+     "네브래스카"
+    ],
+    "status": "경고 있음"
+   },
+   "lead": "원문: senate_daily/2026-11-18_일일브리핑_KR.md · 정리 원칙: 원문에 없는 사실·수치·링크를 더하지 않는다.",
+   "summary": "- **알래스카는 아직 당선 확정이 나오지 않았다.** Newsweek가 인용한 수치는 펠톨라 141,637표(49.98%), 설리번 130,162표(45.93%)로 격차는 11,475표다. 1순위 과반까지 **52표**가 모자라며, 직전 호의 157표보다 줄었다. AP는 약 98% 개표 상태에서 아직 당선을 확정하지 않았다([Newsweek](https://www.newsweek.com/dan-sullivan-breaks-silence-as-alaska-senate-race-nears-showdown-12725062)).\n- 수요일 일정은 다음과 같다. 해외 우편투표는 수요일 도착분까지 유효하고, 주 대변인은 \"모든 개표는 수요일에 끝난다\"고 말했다. 사후 감사는 목요일에 시작되고 인증 목표일은 **11/25**다([Democracy Docket](https://www.democracydocket.com/news-alerts/live-updates-alaska-senate-race-set-for-democratic-win-with-gop-set-to-fight-results/)).\n- 설리번은 아직 승복하지 않았다. 대변인 네이트 애덤스는 \"이번 주말까지 추가 입장을 내겠다\"고 말했다([Newsweek](https://www.newsweek.com/dan-sullivan-breaks-silence-as-alaska-senate-race-nears-showdown-12725062)).\n- 인증 저지 소송이 기각되자 DOJ가 항소했다. DD(좌)는 항소 법원을 제9순회항소법원으로 적시했다([Democracy Docket](https://www.democracydocket.com/news-alerts/live-updates-alaska-senate-race-set-for-democratic-win-with-gop-set-to-fight-results/)).\n- 민주당 원내대표 경선은 당선에 28표가 필요하며 12/1 비밀투표로 치러진다. Fox는 엘사예드를 표결권이 있는 반 홀런 공개 지지자 5명 중 한 명으로 꼽았다([Fox News](https://www.foxnews.com/politics/schumer-boasts-early-advantage-senate-power-struggle-dem-rival-warns-against-coronation)).\n- 의석수는 민주 55(무소속 2 포함), 공화 44로 변동이 없고 알래스카는 미확정이다. 펠톨라가 이기면 56–44가 된다. 우선 추적 조사기관(NYT/Siena·Fox News·Marist·AARP)의 신규 조사는 없다([Newsweek](https://www.newsweek.com/dan-sullivan-breaks-silence-as-alaska-senate-race-nears-showdown-12725062)).",
+   "states": {
+    "GA": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료; 직전: 오소프 약 59–41 승리, 비공식·이월).\n- **자금**: 없음\n- **로컬**: 이월: 원내대표 경선에서 오소프는 '미정'이다(Drop Site, 11/13까지의 발언 기준).\n- **주 함의**: 오소프 승리와 콜린스 승복은 이월분이며 재확인하지 않았다. 판단 변동은 없다.",
+    "MI": "- [Schumer boasts early advantage in Senate power struggle as Dem rival warns against coronation](https://www.foxnews.com/politics/schumer-boasts-early-advantage-senate-power-struggle-dem-rival-warns-against-coronation) (Fox News, 11/17) — Fox는 엘사예드 당선인을 샌더스, 머클리, 플래너건과 함께 반 홀런 공개 지지자로 꼽았다. 양측 모두 28표 확보 경로가 있다고 주장하며, 반 홀런은 \"최대 15명\"을 주장한다. 슈머 측 15명이라는 수치는 잘린 페이지를 요약한 데서 나와 신뢰도가 낮다.\n- **여론조사**: 없음(직전: 엘사예드 약 7포인트 차 승리, 비공식·이월).\n- **자금**: 없음\n- **로컬**: 엘사예드의 반 홀런 지지가 ABC(11/13)와 Signal SCV(11/16) 보도에 이어 Fox 11/17에서 재확인됐다. Michigan Advance(좌)의 신임 의원 기사는 새 소식이 아니다.\n- **주 함의**: 선거 결과 판단에는 변동이 없다. 엘사예드는 원내대표 경선에서 반 홀런 진영의 표결권자로 확인됐다.",
+    "NH": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(직전: 패파스가 수누누를 이겼고 수누누는 승복, [NHPR](https://www.nhpr.org/nh-news/2026-11-03/pappas-wins-u-s-senate-race-defeating-sununu-in-marquee-matchup), 중도좌, 공영. 격차는 확보하지 못함).\n- **자금**: 없음\n- **로컬**: 이월: Drop Site는 패파스를 미정으로, TNR은 슈머 비지지로 분류한다. 두 보도는 여전히 엇갈린다.\n- **주 함의**: 판단 변동은 없다.",
+    "ME": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(직전: 잭슨 약 53–47 승리, 비공식·이월).\n- **자금**: 없음\n- **로컬**: 이월: 잭슨은 슈머를 지지하지 않고, 반 홀런 지지도 표명하지 않았다(Signal SCV 11/16). Fox 11/17 기사에는 언급이 없다.\n- **주 함의**: 판단 변동은 없다.",
+    "NC": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(직전: 쿠퍼 승리·와틀리 승복, 최종 격차는 확보하지 못함).\n- **자금**: 없음\n- **로컬**: 이월: 원내대표 경선에서 쿠퍼는 '미정'이다(Drop Site). NC Newsline(좌)의 신임 의원 기사는 새 소식이 아니다.\n- **주 함의**: 판단 변동은 없다. 최종 격차는 여전히 확인하지 못했다.",
+    "TX": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(직전: 탈라리코 약 55–43 승리, 비공식·이월).\n- **자금**: 없음\n- **로컬**: 이월: Drop Site는 탈라리코를 미정으로, TNR(11/13)은 슈머 비지지로 분류한다. 두 보도는 여전히 엇갈린다.\n- **주 함의**: 판단 변동은 없다.",
+    "OH": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(직전: 브라운 2,301,042표, 허스티드 2,077,748표, Legis1 11/4, 비공식).\n- **자금**: 없음\n- **로컬**: 이월: 브라운은 슈머를 지지한다(Signal SCV 11/16). 특별선거 의석의 취임일은 여전히 확인하지 못했다.\n- **주 함의**: 판단 변동은 없다.",
+    "AK": "- [Dan Sullivan Breaks Silence as Alaska Senate Race Nears Showdown](https://www.newsweek.com/dan-sullivan-breaks-silence-as-alaska-senate-race-nears-showdown-12725062) (Newsweek, 11/17) — 선거관리국 비공식 결과를 인용해 펠톨라 141,637표(49.98%), 설리번 130,162표(45.93%)라고 보도했다. 격차는 11,475표, 1순위 과반까지는 52표가 부족하다. 집계 시각은 명시되지 않았다.\n- [Live updates: Alaska Senate race set for Democratic win with GOP poised to fight results](https://www.democracydocket.com/news-alerts/live-updates-alaska-senate-race-set-for-democratic-win-with-gop-set-to-fight-results/) (Democracy Docket, 좌, 11/17) — 주 대변인은 \"모든 개표는 수요일에 끝난다\"고 말했다. 설리번 캠프는 \"모든 합법 투표가 집계·인증될 때까지\" 승복하지 않겠다고 밝혔다. DD의 모회사 Elias Law Group이 펠톨라를 대리한다.\n- **여론조사**: 없음(선거 종료). 격차 11,475표는 11/14 PDF의 11,213표보다 늘었다. 선거관리국 PDF는 여전히 11/14 스탬프여서 공식 대조는 할 수 없다.\n- **자금**: 없음\n- **로컬**: AP는 약 98% 개표 상태에서 아직 당선을 확정하지 않았다 · 부재자·이의제기 투표 최종 집계와 RCV 집계가 수요일에 진행되고, 인증 목표일은 11/25다 · 11/14 기준 우편투표 1,091표가 거부됐고 1,095표가 이의제기 상태다 · 이월: DOJ 항소(→법·제도) · 우파 성향 보도는 찾지 못했다.\n- **주 함의**: 하이크스와 설리번 주니어의 1순위 표는 합쳐서 약 10,700표다. 이 표가 전부 설리번에게 가도 펠톨라에 못 미치므로 현 집계상 RCV에서 설리번이 이길 경로는 없다(원문 자체 계산). 판정은 **민주 우세(Likely D)**이며, 공식 집계를 기다리는 미확정 상태다.",
+    "IA": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(직전: 투렉 50.5–46.4, 98% 개표, 비공식).\n- **자금**: 없음\n- **로컬**: 이월: 투렉은 원내대표 경선에서 미정이다(Drop Site/PolitiFact 11/9).\n- **주 함의**: 판단 변동은 없다.",
+    "NE": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(직전: 리케츠가 이겼고 오스본은 6포인트 넘게 뒤짐, TNND/KATV 11/4).\n- **자금**: 없음\n- **로컬**: 없음\n- **주 함의**: 원문 규칙에 따라 공화 의석 유지로 둔다. 판단 변동은 없다.",
+    "KS": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(직전: 해밀턴 50.9–46.1, 95% 개표, 비공식, [KCUR](https://www.kcur.org/politics-elections-and-government/2026-11-03/hamilton-wins-kansans-elect-democratic-senator-for-the-first-time-in-nearly-a-century), 중도좌, 공영).\n- **자금**: 없음\n- **로컬**: 이월: 해밀턴은 슈머를 지지하지 않고, 반 홀런 지지도 표명하지 않았다(Signal SCV 11/16).\n- **주 함의**: 판단 변동은 없다."
+   },
+   "extras": [],
+   "polls": "이번 회차 신규 본선 조사 없음.\n\n우선 추적 조사기관(NYT/Siena·Fox News·Marist·AARP) 신규 조사도 없고, 내부 조사도 없다.",
+   "watch": "- ET 11/18(수) 알래스카 선거관리국 발표: 해외 우편투표 도착분, 부재자·이의제기 투표 최종 집계, RCV 집계\n- AP의 알래스카 당선 확정 여부\n- 목요일 사후 감사 시작과 11/25 인증 목표일\n- DOJ 항소 진행(제9순회항소법원, DD 적시)\n- 설리번 측이 예고한 이번 주말 추가 입장\n- 12/1 민주당 원내대표 비밀투표 표 계산 변화",
+   "gaps": "",
+   "national_money": "- 없음",
+   "national_legal": "- 알래스카 인증 저지 소송: 연방판사가 11/1 DOJ의 소송을 기각했고 DOJ는 항소했다. Newsweek 기사에는 항소 법원이 명시되지 않았다([Newsweek](https://www.newsweek.com/dan-sullivan-breaks-silence-as-alaska-senate-race-nears-showdown-12725062)).\n- DD는 항소 법원을 제9순회항소법원으로 적시했고, 11/13 의견서(amicus)가 제출됐다고 보도했다. DOJ 형사 조사도 보도했지만 위법은 확인되지 않았다. 제9순회 적시와 형사 조사는 DD 단독 출처다([Democracy Docket](https://www.democracydocket.com/news-alerts/live-updates-alaska-senate-race-set-for-democratic-win-with-gop-set-to-fight-results/))."
+  },
   {
    "date": "2026-11-17",
    "source_file": "2026-11-17_site_KR.md",
