@@ -1,8 +1,59 @@
 {
- "as_of": "2026-11-18",
+ "as_of": "2026-11-19",
  "source_label": "_NIS 상원 일일 브리핑(KR) — Cowork 예약 작업 산출물을 scripts/ingest_senate_daily.py가 그대로 추출",
  "provenance_note": "본문은 원천 마크다운을 자르지 않고 전재한다(요약·재서술 없음). 종결체는 원천대로 다체. 【수집 필요】 표기도 원천 그대로 남긴다 — 빈 칸을 추정으로 채우지 않는 규약과 같은 이유. 같은 날짜 재실행은 덮어쓴다.",
  "days": [
+  {
+   "date": "2026-11-19",
+   "source_file": "2026-11-19_site_KR.md",
+   "source_kind": "digest",
+   "chars": 7462,
+   "source_validation": {
+    "source_file": "2026-11-19_일일브리핑_KR.md",
+    "checks": [
+     "A 주 소절 1~9 순서",
+     "B [유세] 줄 11/11",
+     "E self-audit 블록 있음(항목 0)",
+     "F EN/KR 주 소절 11개 일치"
+    ],
+    "warnings": [
+     "C §5.1 지정 지역매체 링크 미확인(8/11): ['조지아', '미시간', '메인', '노스캐롤라이나', '오하이오', '텍사스', '아이오와', '네브래스카']",
+     "D 조사 불릿에 기간/격차 누락 3/3: ['선거가 끝나 새 상원 여론조사는 없다.', '우선 추적 조사기관(NYT/Siena, Fox, Marist, AARP): 없음. 내부 조사: 없음.', '여론조사 아님: 원내대표 경선 표 주장(슈머 측 \"40표 이상\", 반 홀런 \"약 15표\")은 검증되지 않은 ']"
+    ],
+    "missing_local_states": [
+     "조지아",
+     "미시간",
+     "메인",
+     "노스캐롤라이나",
+     "오하이오",
+     "텍사스",
+     "아이오와",
+     "네브래스카"
+    ],
+    "status": "경고 있음"
+   },
+   "lead": "원문: senate_daily/2026-11-19_일일브리핑_KR.md · 정리 원칙: 원문에 없는 사실·수치·링크를 더하지 않는다.",
+   "summary": "- **AP가 11/17 알래스카 상원 선거를 펠톨라 승리로 판정했다.** 1순위 득표는 펠톨라 144,302표(50.1%), 설리번 131,844표(45.8%)다. 과반을 넘었으므로 RCV 집계는 필요 없다. 판정 시각은 동부시간 오후 10시 19분이다([Newsweek](https://www.newsweek.com/mary-peltola-wins-alaska-senate-race-what-comes-next-12731595)).\n- **상원은 민주 56 – 공화 44로 확정됐다.** 민주당은 공화당이 갖고 있던 9석을 뒤집었다. 알래스카가 마지막으로 판정된 선거였고, 이로써 추적 대상 11개 주가 모두 판정됐다([AP](https://www.yahoo.com/news/politics/articles/democrat-mary-peltola-wins-us-032100323.html)). 펠톨라는 2008년 이후 알래스카 상원 선거에서 이긴 첫 민주당원이다([Alaska Public Media](https://alaskapublic.org/news/politics/elections/2026-11-17/mary-peltola-wins-u-s-senate-seat-in-alaska)).\n- **설리번은 아직 승복하지 않았다.** 대변인 네이트 애덤스와 NRSC는 AP의 문의에 응답하지 않았다. 인증 목표일은 11/25이고 재검표 신청 마감은 11/30이다([Newsweek](https://www.newsweek.com/mary-peltola-wins-alaska-senate-race-what-comes-next-12731595)).\n- **DOJ 항소가 1/3 취임 전에 결과를 바꾸기는 어렵다.** DOJ가 신속 심리를 요청하지 않았기 때문에 새 의회 취임 전에는 결정이 나오기 어려워 보인다([Alaska Public Media](https://alaskapublic.org/news/politics/elections/2026-11-17/mary-peltola-wins-u-s-senate-seat-in-alaska)). 코머 하원의원은 펠톨라의 취임을 \"확신\"하면서도 두 번째 설리번 문제는 \"여전히 사건\"이라고 말했다([Newsweek](https://www.yahoo.com/news/politics/articles/mary-peltola-problems-may-not-082639126.html)).\n- **민주당 원내대표 경선:** 슈머는 \"표가 있다\"고 말했고, 측근들은 \"40표 이상\"을 예상한다. 반 홀런은 약 15표를 주장하지만, 12/1 투표권자 가운데 공개적으로 지지를 밝힌 사람은 4명뿐이다([The Hill](https://www.yahoo.com/news/politics/articles/schumer-declares-votes-beat-van-202305075.html)).",
+   "states": {
+    "GA": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음\n- **로컬**: 이월: 오소프 약 59–41 승리(비공식), 콜린스 승복 · 이월: 원내대표 경선에 대한 오소프의 입장은 \"미정\"(Drop Site)이며 재확인하지 않았다.\n- **주 함의**: 판정에는 변동이 없다. 이 주에 남은 관심사는 원내대표 경선에서 오소프가 어떤 입장을 정하느냐다.",
+    "MI": "- [Schumer declares he has votes to beat Van Hollen](https://www.yahoo.com/news/politics/articles/schumer-declares-votes-beat-van-202305075.html) (The Hill, 11/17) — 슈머는 코커스 오찬 뒤 \"표가 있다\"고 말했다. 측근들은 필요한 28표를 넘는 \"40표 이상\"을 예상한다. 반 홀런은 15표를 주장하지만 공개 지지자는 4명이다.\n- ['This Is a Wide Open Race,' Says Van Hollen](https://www.commondreams.org/news/van-hollen-schumer-vote) (Common Dreams, 좌, 11/16) — 엘사예드 당선인을 \"반 홀런을 지지했거나 새 지도부를 요구한\" 인사로 분류했다. 반 홀런은 슈머 측의 표 수가 \"명백히 틀렸다\"고 반박했다. 지지자 명단은 좌파 성향 매체에서만 나왔다.\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음\n- **로컬**: 이월: 엘사예드 약 7%p 승리(비공식) · 엘사예드는 반 홀런 쪽 또는 새 지도부 요구 쪽으로 분류됐다. 이 분류는 Fox(11/17)·ABC(11/13) 보도와 일치한다([Common Dreams](https://www.commondreams.org/news/van-hollen-schumer-vote)).\n- **주 함의**: 선거 결과는 바뀌지 않았다. 엘사예드가 12/1 원내대표 투표에서 반 홀런 쪽 표로 계산되고 있다는 점이 이 주의 남은 관전 포인트다.",
+    "NH": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음\n- **로컬**: 이월: 패퍼스가 수누누를 이겼고 수누누는 승복했다([NHPR](https://www.nhpr.org/nh-news/2026-11-03/pappas-wins-u-s-senate-race-defeating-sununu-in-marquee-matchup), 중도좌, 공영). 격차는 미확인이다 · 이월: 원내대표 경선 입장은 출처끼리 엇갈린다. Drop Site는 미정으로, TNR은 슈머 비지지로 분류했다.\n- **주 함의**: 판정에는 변동이 없다. 격차는 아직 확인되지 않았다.",
+    "ME": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음\n- **로컬**: 이월: 잭슨 약 53–47 승리(비공식) · 이월: 잭슨은 슈머를 지지하지 않으며 반 홀런 지지도 밝히지 않았다([Signal SCV](https://signalscv.com/2026/11/van-hollen-says-he-has-path-to-beat-schumer-for-senate-majority-leader/), 재확인하지 않음).\n- **주 함의**: 판정에는 변동이 없다.",
+    "NC": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음\n- **로컬**: 이월: 쿠퍼 승리, 와틀리 승복, 최종 격차 미확인 · 이월: 쿠퍼는 원내대표 경선에 \"미정\"(Drop Site)이며 재확인하지 않았다.\n- **주 함의**: 판정에는 변동이 없다. 최종 격차는 아직 확인되지 않았다.",
+    "TX": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음\n- **로컬**: 이월: 탈라리코 약 55–43 승리(비공식) · 이월: 원내대표 경선 입장은 출처끼리 엇갈린다. Drop Site는 미정으로, TNR(11/13)은 슈머 비지지로 분류했다.\n- **주 함의**: 판정에는 변동이 없다.",
+    "OH": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음\n- **로컬**: 이월: 브라운 2,301,042표 대 허스테드 2,077,748표([Legis1](https://legis1.com/news/ohio-senate-race-election-decisions), 비공식) · 이월: 브라운은 슈머 지지(Signal SCV, 재확인하지 않음) · 특별선거 의석의 취임일은 아직 확인되지 않았다.\n- **주 함의**: 판정에는 변동이 없다. 남은 확인 사항은 취임일이다.",
+    "AK": "- [Democrat Mary Peltola wins US Senate race in Alaska, beating incumbent Republican Dan Sullivan](https://www.yahoo.com/news/politics/articles/democrat-mary-peltola-wins-us-032100323.html) (AP, 11/18) — AP가 11/17 펠톨라의 승리를 판정했다. 민주당은 공화당 보유 9석을 뒤집어 56–44가 됐고, 알래스카가 마지막 판정이었다. 설리번 대변인과 NRSC는 응답하지 않았다.\n- [Mary Peltola Wins Alaska Senate Race: What Comes Next](https://www.newsweek.com/mary-peltola-wins-alaska-senate-race-what-comes-next-12731595) (Newsweek, 11/18) — 1순위 득표는 펠톨라 144,302표(50.1%), 설리번 131,844표(45.8%)여서 RCV 집계가 필요 없다. 이후 일정은 인증 11/25, 재검표 신청 마감 11/30, 주 법원 소송 마감 12/5, 취임 1/3이다.\n- **여론조사**: 없음(선거 종료). FairVote가 98% 기준으로 낸 예비 RCV 가상 최종 라운드는 펠톨라 51.9–48.1이다(FairVote는 RCV 옹호 단체다).\n- **자금**: 없음\n- **로컬**: 개표된 287,896표 중 12,458표(약 4.3%p) 차이, AP 추정 약 99% 개표 · 설리번 미승복, 캠프는 인증까지 지켜보겠다는 입장 · 이월: DOJ는 제9순회항소법원에 항소했으나 신속 심리를 요청하지 않아 취임 전 결정은 어렵다(Alaska Public Media) · 코머는 두 번째 설리번 문제가 \"여전히 사건\"이라고 했고, 블랜치 법무장관은 수사가 \"그대로\"라고 했다 · RCV 폐지 주민투표는 46.3–53.7로 부결되는 중이다(예비) · 우파 성향 지역 매체의 판정 후 보도는 없다.\n- **주 함의**: 경합은 끝났다. **민주 탈환(AP 판정)**이며 11/25 인증을 기다린다. 재검표 신청 기간과 DOJ 항소가 남아 있지만, 1/3 이전에 결과를 바꿀 경로를 제시한 출처는 없다.",
+    "IA": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음\n- **로컬**: 이월: 튜렉 50.5–46.4(98% 개표, 비공식) · 이월: 튜렉은 원내대표 경선에 미정(Drop Site/PolitiFact, 11/9).\n- **주 함의**: 판정에는 변동이 없다.",
+    "NE": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음\n- **로컬**: 이월: 리케츠 승리, 오즈번 6%p 이상 열세([TNND/KATV](https://katv.com/news/nation-world/nebraska-independent-dan-osborn-loses-senate-race-republican-pete-ricketts-democrats-2026-midterm-elections-rrt), 11/4).\n- **주 함의**: 공화당이 의석을 유지했다. 변동은 없다.",
+    "KS": "- ['This Is a Wide Open Race,' Says Van Hollen](https://www.commondreams.org/news/van-hollen-schumer-vote) (Common Dreams, 좌, 11/16) — 해밀턴 당선인을 \"반 홀런을 지지했거나 새 지도부를 요구한\" 인사로 묶었다. 반면 Signal SCV(11/16, 이월)는 그가 슈머를 지지하지 않지만 반 홀런 지지도 밝히지 않았다고 보도했다. 원문은 이를 \"새 지도부 요구\"로 보고, 지지 표명은 미확인으로 둔다.\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음\n- **로컬**: 이월: 해밀턴 50.9–46.1(95% 개표, 비공식; [KCUR](https://www.kcur.org/politics-elections-and-government/2026-11-03/hamilton-wins-kansans-elect-democratic-senator-for-the-first-time-in-nearly-a-century), 중도좌, 공영) · 원내대표 경선 입장은 모호하며, 좌파 성향 매체 하나만 출처다.\n- **주 함의**: 판정에는 변동이 없다. 해밀턴의 원내대표 경선 입장은 아직 확인되지 않았다."
+   },
+   "extras": [],
+   "polls": "이번 회차 신규 본선 조사 없음. 우선 추적 조사기관(NYT/Siena·Fox News·Marist Poll·AARP)의 조사와 내부 조사도 없다.",
+   "watch": "- 설리번의 승복 여부와 판정 후 트럼프의 반응\n- 11/25 알래스카 인증, 11/30 재검표 신청 마감\n- 12/1 민주당 원내대표 비밀투표와 미정 당선인들의 입장 표명\n- 제9순회항소법원에 계류 중인 DOJ 항소의 진행\n- 12/5 알래스카 주 법원 소송 마감",
+   "gaps": "",
+   "national_money": "- 없음",
+   "national_legal": "- 알래스카 DOJ 소송: 11/1 기각 결정에 대해 DOJ가 기각 당일 제9순회항소법원에 항소했다. 신속 심리 요청이 없어 \"새 의회 취임 전에는 결정이 나올 것으로 보이지 않는다\"([Alaska Public Media](https://alaskapublic.org/news/politics/elections/2026-11-17/mary-peltola-wins-u-s-senate-seat-in-alaska), [Newsweek](https://www.newsweek.com/mary-peltola-wins-alaska-senate-race-what-comes-next-12731595)).\n- 알래스카 선거 절차 일정: 인증 11/25, 재검표 신청 마감 11/30, 주 법원 소송 마감 12/5([Newsweek](https://www.newsweek.com/mary-peltola-wins-alaska-senate-race-what-comes-next-12731595)).\n- 알래스카 RCV 폐지 주민투표는 46.3–53.7로 부결되는 중이다(예비 결과, [FairVote](https://fairvote.org/results-and-analysis-from-alaskas-2026-elections/); FairVote는 RCV 옹호 단체다)."
+  },
   {
    "date": "2026-11-18",
    "source_file": "2026-11-18_site_KR.md",

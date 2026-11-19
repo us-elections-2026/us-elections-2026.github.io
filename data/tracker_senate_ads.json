@@ -1,13 +1,13 @@
 {
- "as_of": "2026-11-17",
+ "as_of": "2026-11-18",
  "source_label": "선거운동 트래커 광고 페이지 — FEC Schedule E 독립지출 (api.open.fec.gov) — 2026 상원·하원 본선 신고분",
  "source_url": "https://woochangkang.github.io/campaign-tracker-2026-site/data/ads_fec.json",
  "provenance_note": "pro_D = 민주(무소속 포함, independent_note=true) 지지 + 공화 반대, pro_R = 그 반대. 단위 달러. 후보 캠프 자금이 아니라 외부 단체의 신고 집행액이다.",
  "races": {
   "AK": {
-   "pro_D": 48669995,
+   "pro_D": 48670041,
    "pro_R": 49523809,
-   "ads_D": 41961616,
+   "ads_D": 41961621,
    "ads_R": 42977584,
    "last_date": "2026-11-03",
    "independent_note": false,
@@ -166,9 +166,9 @@
    ]
   },
   "GA": {
-   "pro_D": 20482438,
+   "pro_D": 20451689,
    "pro_R": 18322699,
-   "ads_D": 19072626,
+   "ads_D": 19072569,
    "ads_R": 15030379,
    "last_date": "2026-11-03",
    "independent_note": false,
@@ -275,26 +275,6 @@
      "last_date": "2026-10-27"
     },
     {
-     "committee_id": "C00530766",
-     "committee": "WOMEN SPEAK OUT PAC",
-     "affiliate_of": null,
-     "candidate": "OSSOFF, JONATHAN",
-     "so": "O",
-     "side": "R",
-     "total": 377303,
-     "last_date": "2026-10-30"
-    },
-    {
-     "committee_id": "C00747998",
-     "committee": "CARE IN ACTION PAC",
-     "affiliate_of": null,
-     "candidate": "OSSOFF, T. JONATHAN",
-     "so": "S",
-     "side": "D",
-     "total": 372283,
-     "last_date": "2026-11-02"
-    },
-    {
      "committee_id": "C00961276",
      "committee": "LOWER COSTS NOW",
      "affiliate_of": null,
@@ -315,6 +295,16 @@
      "last_date": "2026-10-26"
     },
     {
+     "committee_id": "C00747998",
+     "committee": "CARE IN ACTION PAC",
+     "affiliate_of": null,
+     "candidate": "OSSOFF, T. JONATHAN",
+     "so": "S",
+     "side": "D",
+     "total": 334800,
+     "last_date": "2026-11-02"
+    },
+    {
      "committee_id": "C90011156",
      "committee": "WORKING AMERICA",
      "affiliate_of": null,
@@ -323,13 +313,23 @@
      "side": "D",
      "total": 333056,
      "last_date": "2026-10-29"
+    },
+    {
+     "committee_id": "C00915595",
+     "committee": "GOVERNMENT THAT WORKS PAC",
+     "affiliate_of": null,
+     "candidate": "OSSOF, JONATHAN T.",
+     "so": "S",
+     "side": "D",
+     "total": 332509,
+     "last_date": "2026-10-28"
     }
    ]
   },
   "IA": {
-   "pro_D": 103863325,
-   "pro_R": 96165843,
-   "ads_D": 98147779,
+   "pro_D": 103863350,
+   "pro_R": 96166377,
+   "ads_D": 98147804,
    "ads_R": 80454433,
    "last_date": "2026-11-05",
    "independent_note": false,
@@ -488,9 +488,9 @@
    ]
   },
   "KS": {
-   "pro_D": 58480628,
+   "pro_D": 57357128,
    "pro_R": 35858701,
-   "ads_D": 55892998,
+   "ads_D": 54769498,
    "ads_R": 33331348,
    "last_date": "2026-11-03",
    "independent_note": false,
@@ -577,16 +577,6 @@
      "last_date": "2026-11-01"
     },
     {
-     "committee_id": "C00962696",
-     "committee": "NEW DEAL FOR ALL, INC.",
-     "affiliate_of": null,
-     "candidate": "MARSHALL, ROGER W",
-     "so": "O",
-     "side": "D",
-     "total": 2787201,
-     "last_date": "2026-10-30"
-    },
-    {
      "committee_id": "C00487470",
      "committee": "CLUB FOR GROWTH ACTION",
      "affiliate_of": null,
@@ -627,6 +617,16 @@
      "last_date": "2026-10-29"
     },
     {
+     "committee_id": "C00962696",
+     "committee": "NEW DEAL FOR ALL, INC.",
+     "affiliate_of": null,
+     "candidate": "MARSHALL, ROGER W",
+     "so": "O",
+     "side": "D",
+     "total": 1663701,
+     "last_date": "2026-10-30"
+    },
+    {
      "committee_id": "C00687103",
      "committee": "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION",
      "affiliate_of": null,
@@ -650,7 +650,7 @@
   },
   "ME": {
    "pro_D": 53333655,
-   "pro_R": 89000175,
+   "pro_R": 89000706,
    "ads_D": 46184963,
    "ads_R": 79865802,
    "last_date": "2026-11-03",
@@ -810,10 +810,10 @@
    ]
   },
   "MI": {
-   "pro_D": 94627997,
-   "pro_R": 171842472,
-   "ads_D": 80557693,
-   "ads_R": 133265939,
+   "pro_D": 94628031,
+   "pro_R": 171842186,
+   "ads_D": 80557726,
+   "ads_R": 133265653,
    "last_date": "2026-11-09",
    "independent_note": false,
    "page": "https://woochangkang.github.io/campaign-tracker-2026-site/ads/senate-MI.html",
@@ -971,9 +971,9 @@
    ]
   },
   "NC": {
-   "pro_D": 29329084,
+   "pro_D": 29300870,
    "pro_R": 46421070,
-   "ads_D": 24566963,
+   "ads_D": 24566972,
    "ads_R": 42938931,
    "last_date": "2026-11-05",
    "independent_note": false,
@@ -1120,21 +1120,21 @@
      "last_date": "2026-11-02"
     },
     {
-     "committee_id": "C00747998",
-     "committee": "CARE IN ACTION PAC",
+     "committee_id": "C00571703",
+     "committee": "SLF PAC",
      "affiliate_of": null,
-     "candidate": "COOPER, ROY",
+     "candidate": "WHATLEY, MICHAEL",
      "so": "S",
-     "side": "D",
-     "total": 369849,
-     "last_date": "2026-11-02"
+     "side": "R",
+     "total": 364223,
+     "last_date": "2026-06-04"
     }
    ]
   },
   "NE": {
-   "pro_D": 37301297,
+   "pro_D": 37224581,
    "pro_R": 32617789,
-   "ads_D": 33544912,
+   "ads_D": 33468156,
    "ads_R": 31060874,
    "last_date": "2026-11-05",
    "independent_note": true,
@@ -1217,7 +1217,7 @@
      "candidate": "RICKETTS, PETE",
      "so": "O",
      "side": "D",
-     "total": 2055000,
+     "total": 1978244,
      "last_date": "2026-10-20"
     },
     {
@@ -1293,9 +1293,9 @@
    ]
   },
   "NH": {
-   "pro_D": 24110619,
-   "pro_R": 39289394,
-   "ads_D": 22380746,
+   "pro_D": 24110632,
+   "pro_R": 39289670,
+   "ads_D": 22380760,
    "ads_R": 32972370,
    "last_date": "2026-11-03",
    "independent_note": false,
@@ -1454,9 +1454,9 @@
    ]
   },
   "OH": {
-   "pro_D": 157491229,
+   "pro_D": 157500587,
    "pro_R": 257530243,
-   "ads_D": 141296406,
+   "ads_D": 141296414,
    "ads_R": 212021833,
    "last_date": "2026-11-05",
    "independent_note": false,
@@ -1615,9 +1615,9 @@
    ]
   },
   "TX": {
-   "pro_D": 109273223,
+   "pro_D": 109273353,
    "pro_R": 315877276,
-   "ads_D": 98123458,
+   "ads_D": 98123589,
    "ads_R": 262186667,
    "last_date": "2026-11-05",
    "independent_note": false,
