@@ -1,10 +1,16 @@
 {
- "as_of": "2026-11-19",
+ "as_of": "2026-11-20",
  "source_label": "상원 일일 정리본(senate_daily/site)의 주별 태그 줄 — scripts/ingest_senate_daily.py build_ledger()",
  "provenance_note": "여론조사·자금·로컬·주 함의 네 항목. 같은 문장은 처음 본 날짜로 한 번만 싣고 last 에 마지막 언급일. 원문 전재(정리본 이전) 날짜는 제외. states.US.money 는 정리본 v1.2의 「전국 자금」 절, states.US.legal 은 v1.3의 「법·제도」 절.",
  "states": {
   "GA": {
    "polls": [
+    {
+     "date": "2026-11-20",
+     "text": "없음. 선거가 끝나 신규 상원 조사가 없다.",
+     "urls": [],
+     "last": "2026-11-20"
+    },
     {
      "date": "2026-11-04",
      "text": "InsiderAdvantage 오소프 53–46, Research Co. 55–45다. 두 조사 모두 11/2에 공개됐고 270toWin 경유로 미검증이다.",
@@ -423,6 +429,14 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-11-20",
+     "text": "오소프는 원내대표 경선에서 아직 입장을 정하지 않았고, 모든 후보의 이야기를 듣겠다고 했다(Punchbowl, [Newsweek 명단](https://newsweek.com/full-list-senators-back-chris-van-hollen-chuck-schumer-12728769) 경유).",
+     "urls": [
+      "https://newsweek.com/full-list-senators-back-chris-van-hollen-chuck-schumer-12728769"
+     ],
+     "last": "2026-11-20"
+    },
     {
      "date": "2026-11-19",
      "text": "이월: 오소프 약 59–41 승리(비공식), 콜린스 승복 · 이월: 원내대표 경선에 대한 오소프의 입장은 \"미정\"(Drop Site)이며 재확인하지 않았다.",
@@ -873,6 +887,12 @@
    ],
    "insight": [
     {
+     "date": "2026-11-20",
+     "text": "이월(재확인 안 됨)된 결과는 오소프 약 59–41 승리(비공식)이고, 콜린스는 승복했다. 오늘 정보로 바뀐 판단은 없다.",
+     "urls": [],
+     "last": "2026-11-20"
+    },
+    {
      "date": "2026-11-19",
      "text": "판정에는 변동이 없다. 이 주에 남은 관심사는 원내대표 경선에서 오소프가 어떤 입장을 정하느냐다.",
      "urls": [],
@@ -1322,6 +1342,12 @@
   "MI": {
    "polls": [
     {
+     "date": "2026-11-20",
+     "text": "없음. 선거가 끝나 신규 상원 조사가 없다.",
+     "urls": [],
+     "last": "2026-11-20"
+    },
+    {
      "date": "2026-11-05",
      "text": "NYT/Siena 최종 D+11 → 결과 ≈D+5. 최종 조사 범위는 +6~+11이었다.",
      "urls": [],
@@ -1727,6 +1753,14 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-11-20",
+     "text": "엘사예드의 반 홀렌 지지는 [Newsweek 명단](https://newsweek.com/full-list-senators-back-chris-van-hollen-chuck-schumer-12728769)에서도 확인된다(11/12 성명). 어제 붙였던 '좌측 출처 단독' 표시는 Roll Call(비당파)이 확인하면서 해소됐다.",
+     "urls": [
+      "https://newsweek.com/full-list-senators-back-chris-van-hollen-chuck-schumer-12728769"
+     ],
+     "last": "2026-11-20"
+    },
     {
      "date": "2026-11-19",
      "text": "이월: 엘사예드 약 7%p 승리(비공식) · 엘사예드는 반 홀런 쪽 또는 새 지도부 요구 쪽으로 분류됐다. 이 분류는 Fox(11/17)·ABC(11/13) 보도와 일치한다([Common Dreams](https://www.commondreams.org/news/van-hollen-schumer-vote)).",
@@ -2215,6 +2249,12 @@
    ],
    "insight": [
     {
+     "date": "2026-11-20",
+     "text": "이월된 결과는 엘사예드 약 7%p 승리(비공식)다. 오늘 정보는 원내대표 경선 구도에 관한 것이고, 주 판단은 그대로다.",
+     "urls": [],
+     "last": "2026-11-20"
+    },
+    {
      "date": "2026-11-19",
      "text": "선거 결과는 바뀌지 않았다. 엘사예드가 12/1 원내대표 투표에서 반 홀런 쪽 표로 계산되고 있다는 점이 이 주의 남은 관전 포인트다.",
      "urls": [],
@@ -2666,6 +2706,12 @@
   "NH": {
    "polls": [
     {
+     "date": "2026-11-20",
+     "text": "없음. 선거가 끝나 신규 상원 조사가 없다.",
+     "urls": [],
+     "last": "2026-11-20"
+    },
+    {
      "date": "2026-11-02",
      "text": "신규 UMass Lowell/YouGov 10/2–19, LV 600명, Pappas 48, Sununu 41, LaPlante 4(D+7)([UMass Lowell, 10/28](https://www.uml.edu/news/press-releases/2026/102826-new-england-polls.aspx)) · RCP 평균 Pappas +6.7 · St. Anselm 10/19–20 Pappas 50–43 · Rasmussen 10/20–23 50–44 · NYT/Siena NH는 9/15–22 Pappas 50–45 한 건뿐이다 · Inside Elections의 NH 등급 변경은 없었다.",
      "urls": [
@@ -3062,6 +3108,14 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-11-20",
+     "text": "파파스는 11/12 슈머 지지를 거부하고 새 지도부를 요구했다. 반 홀렌 지지는 표명하지 않았고, 이 내용이 기존 '미정' 분류를 대체한다([Newsweek 명단](https://newsweek.com/full-list-senators-back-chris-van-hollen-chuck-schumer-12728769)).",
+     "urls": [
+      "https://newsweek.com/full-list-senators-back-chris-van-hollen-chuck-schumer-12728769"
+     ],
+     "last": "2026-11-20"
+    },
     {
      "date": "2026-11-19",
      "text": "이월: 패퍼스가 수누누를 이겼고 수누누는 승복했다([NHPR](https://www.nhpr.org/nh-news/2026-11-03/pappas-wins-u-s-senate-race-defeating-sununu-in-marquee-matchup), 중도좌, 공영). 격차는 미확인이다 · 이월: 원내대표 경선 입장은 출처끼리 엇갈린다. Drop Site는 미정으로, TNR은 슈머 비지지로 분류했다.",
@@ -3473,6 +3527,14 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-20",
+     "text": "이월된 결과는 파파스가 스누누에 승리했고 스누누가 승복했다는 것이다([NHPR](https://www.nhpr.org/nh-news/2026-11-03/pappas-wins-u-s-senate-race-defeating-sununu-in-marquee-matchup), 중도좌, 공영). 격차는 여전히 확보하지 못했다.",
+     "urls": [
+      "https://www.nhpr.org/nh-news/2026-11-03/pappas-wins-u-s-senate-race-defeating-sununu-in-marquee-matchup"
+     ],
+     "last": "2026-11-20"
+    },
     {
      "date": "2026-11-19",
      "text": "판정에는 변동이 없다. 격차는 아직 확인되지 않았다.",
@@ -3917,6 +3979,12 @@
   "ME": {
    "polls": [
     {
+     "date": "2026-11-20",
+     "text": "없음. 선거가 끝나 신규 상원 조사가 없다.",
+     "urls": [],
+     "last": "2026-11-20"
+    },
+    {
      "date": "2026-11-05",
      "text": "NYT/Siena 최종 D+6 → 결과 ≈D+5.",
      "urls": [],
@@ -4305,6 +4373,14 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-11-20",
+     "text": "Newsweek는 잭슨을 '슈머 반대, 반 홀렌 지지 표명 없음'으로 분류했다([Newsweek 명단](https://newsweek.com/full-list-senators-back-chris-van-hollen-chuck-schumer-12728769)). 위키피디아는 여전히 미정으로 두지만 구 자료이고, Newsweek가 더 최신이다.",
+     "urls": [
+      "https://newsweek.com/full-list-senators-back-chris-van-hollen-chuck-schumer-12728769"
+     ],
+     "last": "2026-11-20"
+    },
     {
      "date": "2026-11-19",
      "text": "이월: 잭슨 약 53–47 승리(비공식) · 이월: 잭슨은 슈머를 지지하지 않으며 반 홀런 지지도 밝히지 않았다([Signal SCV](https://signalscv.com/2026/11/van-hollen-says-he-has-path-to-beat-schumer-for-senate-majority-leader/), 재확인하지 않음).",
@@ -4768,6 +4844,12 @@
    ],
    "insight": [
     {
+     "date": "2026-11-20",
+     "text": "이월된 결과는 잭슨 약 53–47 승리(비공식)다. 주 판단은 그대로다.",
+     "urls": [],
+     "last": "2026-11-20"
+    },
+    {
      "date": "2026-11-19",
      "text": "판정에는 변동이 없다.",
      "urls": [],
@@ -5212,6 +5294,12 @@
   },
   "NC": {
    "polls": [
+    {
+     "date": "2026-11-20",
+     "text": "없음. 선거가 끝나 신규 상원 조사가 없다.",
+     "urls": [],
+     "last": "2026-11-20"
+    },
     {
      "date": "2026-11-04",
      "text": "ECU 조사센터(10/26–29) 쿠퍼 54–45로, 직전 D+7에서 격차가 커졌다.",
@@ -5664,6 +5752,12 @@
    ],
    "local": [
     {
+     "date": "2026-11-20",
+     "text": "쿠퍼는 Roll Call·Newsweek 명단 어디에도 입장 표명자로 나오지 않는다. 이월: Drop Site의 '미정' 분류는 재확인되지 않았다.",
+     "urls": [],
+     "last": "2026-11-20"
+    },
+    {
      "date": "2026-11-19",
      "text": "이월: 쿠퍼 승리, 와틀리 승복, 최종 격차 미확인 · 이월: 쿠퍼는 원내대표 경선에 \"미정\"(Drop Site)이며 재확인하지 않았다.",
      "urls": [],
@@ -6092,6 +6186,14 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-20",
+     "text": "이월된 결과는 쿠퍼 승리와 와틀리 승복이다([NHPR/NPR, 11/3](https://www.nhpr.org/2026-11-03/democrat-roy-cooper-wins-a-north-carolina-senate-seat)). 최종 격차는 아직 확보하지 못했다.",
+     "urls": [
+      "https://www.nhpr.org/2026-11-03/democrat-roy-cooper-wins-a-north-carolina-senate-seat"
+     ],
+     "last": "2026-11-20"
+    },
     {
      "date": "2026-11-19",
      "text": "판정에는 변동이 없다. 최종 격차는 아직 확인되지 않았다.",
@@ -6541,6 +6643,12 @@
   },
   "TX": {
    "polls": [
+    {
+     "date": "2026-11-20",
+     "text": "없음. 선거가 끝나 신규 상원 조사가 없다.",
+     "urls": [],
+     "last": "2026-11-20"
+    },
     {
      "date": "2026-11-05",
      "text": "NYT/Siena 최종 D+7 → 결과 ≈D+10.",
@@ -7076,6 +7184,14 @@
    ],
    "local": [
     {
+     "date": "2026-11-20",
+     "text": "탈라리코는 Newsweek·위키피디아 모두에서 미정으로 분류된다. 이월된 TNR(11/13)의 '슈머 비지지'는 두 출처 모두 확인하지 않아 미정으로 처리했다([Newsweek 명단](https://newsweek.com/full-list-senators-back-chris-van-hollen-chuck-schumer-12728769)).",
+     "urls": [
+      "https://newsweek.com/full-list-senators-back-chris-van-hollen-chuck-schumer-12728769"
+     ],
+     "last": "2026-11-20"
+    },
+    {
      "date": "2026-11-19",
      "text": "이월: 탈라리코 약 55–43 승리(비공식) · 이월: 원내대표 경선 입장은 출처끼리 엇갈린다. Drop Site는 미정으로, TNR(11/13)은 슈머 비지지로 분류했다.",
      "urls": [],
@@ -7542,6 +7658,12 @@
    ],
    "insight": [
     {
+     "date": "2026-11-20",
+     "text": "이월된 결과는 탈라리코 약 55–43 승리(비공식)다. 주 판단은 그대로다.",
+     "urls": [],
+     "last": "2026-11-20"
+    },
+    {
      "date": "2026-11-19",
      "text": "판정에는 변동이 없다.",
      "urls": [],
@@ -7991,6 +8113,12 @@
   "OH": {
    "polls": [
     {
+     "date": "2026-11-20",
+     "text": "없음. 선거가 끝나 신규 상원 조사가 없다.",
+     "urls": [],
+     "last": "2026-11-20"
+    },
+    {
      "date": "2026-11-05",
      "text": "NYT/Siena 최종 D+5 → 결과 ≈D+3.",
      "urls": [],
@@ -8436,6 +8564,14 @@
    ],
    "local": [
     {
+     "date": "2026-11-20",
+     "text": "브라운은 슈머를 지지한다(Punchbowl, 11/9, [Newsweek 명단](https://newsweek.com/full-list-senators-back-chris-van-hollen-chuck-schumer-12728769) 경유).",
+     "urls": [
+      "https://newsweek.com/full-list-senators-back-chris-van-hollen-chuck-schumer-12728769"
+     ],
+     "last": "2026-11-20"
+    },
+    {
      "date": "2026-11-19",
      "text": "이월: 브라운 2,301,042표 대 허스테드 2,077,748표([Legis1](https://legis1.com/news/ohio-senate-race-election-decisions), 비공식) · 이월: 브라운은 슈머 지지(Signal SCV, 재확인하지 않음) · 특별선거 의석의 취임일은 아직 확인되지 않았다.",
      "urls": [
@@ -8850,6 +8986,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-20",
+     "text": "이월된 결과는 브라운 2,301,042 – 허스티드 2,077,748(Legis1, 11/4, 비공식)이다. 남은 쟁점은 취임 시점이다.",
+     "urls": [],
+     "last": "2026-11-20"
+    },
     {
      "date": "2026-11-19",
      "text": "판정에는 변동이 없다. 남은 확인 사항은 취임일이다.",
@@ -9586,6 +9728,12 @@
    ],
    "local": [
     {
+     "date": "2026-11-20",
+     "text": "이월: 설리번 캠프는 인증 전에는 승복하지 않는다는 입장이다 · 이월: 재검표 요청 기한은 11/30이다 · 오늘 알래스카 로컬 매체의 새 기사는 없고, 인증 발언은 당파적(좌) 매체 단독 보도다.",
+     "urls": [],
+     "last": "2026-11-20"
+    },
+    {
      "date": "2026-11-19",
      "text": "개표된 287,896표 중 12,458표(약 4.3%p) 차이, AP 추정 약 99% 개표 · 설리번 미승복, 캠프는 인증까지 지켜보겠다는 입장 · 이월: DOJ는 제9순회항소법원에 항소했으나 신속 심리를 요청하지 않아 취임 전 결정은 어렵다(Alaska Public Media) · 코머는 두 번째 설리번 문제가 \"여전히 사건\"이라고 했고, 블랜치 법무장관은 수사가 \"그대로\"라고 했다 · RCV 폐지 주민투표는 46.3–53.7로 부결되는 중이다(예비) · 우파 성향 지역 매체의 판정 후 보도는 없다.",
      "urls": [],
@@ -10103,6 +10251,12 @@
    ],
    "insight": [
     {
+     "date": "2026-11-20",
+     "text": "변동 없음 — **민주 탈환(AP 확정), 11/25 인증 대기.** 인증 방침이 확인되면서 절차적 위험은 다소 줄었다. 법무부·주 수사국 수사가 1/3 이전에 결과를 바꿀 경로를 제시한 출처는 없다.",
+     "urls": [],
+     "last": "2026-11-20"
+    },
+    {
      "date": "2026-11-19",
      "text": "경합은 끝났다. **민주 탈환(AP 판정)**이며 11/25 인증을 기다린다. 재검표 신청 기간과 DOJ 항소가 남아 있지만, 1/3 이전에 결과를 바꿀 경로를 제시한 출처는 없다.",
      "urls": [],
@@ -10552,6 +10706,12 @@
   "IA": {
    "polls": [
     {
+     "date": "2026-11-20",
+     "text": "없음. 선거가 끝나 신규 상원 조사가 없다.",
+     "urls": [],
+     "last": "2026-11-20"
+    },
+    {
      "date": "2026-11-05",
      "text": "NYT/Siena 최종 D+1 → 결과 ≈D+4. 선거일 Kalshi는 50/50이었다.",
      "urls": [],
@@ -10926,6 +11086,14 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-11-20",
+     "text": "튜렉은 원내대표 경선 입장을 정하지 않았고, \"아직 커튼 치수를 재고 있지 않다\"고 했다(MS NOW, [Newsweek 명단](https://newsweek.com/full-list-senators-back-chris-van-hollen-chuck-schumer-12728769) 경유).",
+     "urls": [
+      "https://newsweek.com/full-list-senators-back-chris-van-hollen-chuck-schumer-12728769"
+     ],
+     "last": "2026-11-20"
+    },
     {
      "date": "2026-11-19",
      "text": "이월: 튜렉 50.5–46.4(98% 개표, 비공식) · 이월: 튜렉은 원내대표 경선에 미정(Drop Site/PolitiFact, 11/9).",
@@ -11353,6 +11521,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-20",
+     "text": "이월된 결과는 튜렉 50.5–46.4(98% 개표, 비공식)다. 주 판단은 그대로다.",
+     "urls": [],
+     "last": "2026-11-20"
+    },
     {
      "date": "2026-11-19",
      "text": "판정에는 변동이 없다.",
@@ -11884,6 +12058,30 @@
    "insight": [],
    "legal": [
     {
+     "date": "2026-11-20",
+     "text": "알래스카 주 수사국(ABI)은 던리비 주지사 지시로 수사를 시작했다. 공공안전부는 세부 사항을 밝히지 않았다. 던리비는 지난달 부정이 확인되면 인증이 \"중단되거나 변경될\" 수 있다고 말했다([Democracy Docket, 11/19](https://www.democracydocket.com/news-alerts/alaska-will-certify-results-of-u-s-senate-race-election-director-confirms/)).",
+     "urls": [
+      "https://www.democracydocket.com/news-alerts/alaska-will-certify-results-of-u-s-senate-race-election-director-confirms/"
+     ],
+     "last": "2026-11-20"
+    },
+    {
+     "date": "2026-11-20",
+     "text": "법무부의 '또 다른 댄 설리번' 형사 수사: Fox News Digital이 소환장 200건 이상을 보도했으나 Newsweek는 확인하지 못했다. AP는 선거일에 마크 엘리어스 등에게 대상자 통지서가 발송됐다고 보도했다. 법무부는 수사 대상이나 적용 법조를 공개하지 않았다([Newsweek, 11/18](https://www.newsweek.com/dojs-other-dan-sullivan-criminal-probe-widens-after-peltola-win-12737508)).",
+     "urls": [
+      "https://www.newsweek.com/dojs-other-dan-sullivan-criminal-probe-widens-after-peltola-win-12737508"
+     ],
+     "last": "2026-11-20"
+    },
+    {
+     "date": "2026-11-20",
+     "text": "글리슨 판사의 11/1 기각 판결에 대한 법무부 항소가 제9순회항소법원에 계류 중이다. 즉시 확정 신청에 대한 법무부 답변 기한은 11/19였고, 제출 서면 자체는 확인하지 못했다([Newsweek, 11/18](https://www.newsweek.com/dojs-other-dan-sullivan-criminal-probe-widens-after-peltola-win-12737508)).",
+     "urls": [
+      "https://www.newsweek.com/dojs-other-dan-sullivan-criminal-probe-widens-after-peltola-win-12737508"
+     ],
+     "last": "2026-11-20"
+    },
+    {
      "date": "2026-11-19",
      "text": "알래스카 선거 절차 일정: 인증 11/25, 재검표 신청 마감 11/30, 주 법원 소송 마감 12/5([Newsweek](https://www.newsweek.com/mary-peltola-wins-alaska-senate-race-what-comes-next-12731595)).",
      "urls": [
@@ -12298,6 +12496,12 @@
   },
   "NE": {
    "polls": [
+    {
+     "date": "2026-11-20",
+     "text": "없음. 선거가 끝나 신규 상원 조사가 없다.",
+     "urls": [],
+     "last": "2026-11-20"
+    },
     {
      "date": "2026-11-04",
      "text": "YouGov(11/1 공개) 리케츠 49, 오스본 49 · Echelon Insights(11/3) 리케츠 +1로, 세부는 누락됐다. 정정: 이월된 \"NYT/Siena 리케츠 49–43\"은 검증할 수 없다. Siena 발표에 네브래스카가 없었다.",
@@ -12714,6 +12918,14 @@
    ],
    "insight": [
     {
+     "date": "2026-11-20",
+     "text": "이월된 결과는 리케츠 승리다. 오스본은 6%p 이상 뒤졌다([TNND/KATV, 11/4](https://katv.com/news/nation-world/nebraska-independent-dan-osborn-loses-senate-race-republican-pete-ricketts-democrats-2026-midterm-elections-rrt)). 공화당이 의석을 지켰다.",
+     "urls": [
+      "https://katv.com/news/nation-world/nebraska-independent-dan-osborn-loses-senate-race-republican-pete-ricketts-democrats-2026-midterm-elections-rrt"
+     ],
+     "last": "2026-11-20"
+    },
+    {
      "date": "2026-11-19",
      "text": "공화당이 의석을 유지했다. 변동은 없다.",
      "urls": [],
@@ -12977,6 +13189,12 @@
   "KS": {
    "polls": [
     {
+     "date": "2026-11-20",
+     "text": "없음. 선거가 끝나 신규 상원 조사가 없다.",
+     "urls": [],
+     "last": "2026-11-20"
+    },
+    {
      "date": "2026-11-05",
      "text": "NYT/Siena 최종 49–44(D+5) → 결과 ≈D+5.",
      "urls": [],
@@ -13214,6 +13432,14 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-11-20",
+     "text": "해밀턴은 \"새 지도부가 필요하다\"고 했다. 슈머에는 반대하지만 반 홀렌 지지는 표명하지 않은 것으로 분류된다([Newsweek 명단](https://newsweek.com/full-list-senators-back-chris-van-hollen-chuck-schumer-12728769)). 어제 남았던 Common Dreams 관련 모호성은 '지지 표명 없음'으로 해소됐다.",
+     "urls": [
+      "https://newsweek.com/full-list-senators-back-chris-van-hollen-chuck-schumer-12728769"
+     ],
+     "last": "2026-11-20"
+    },
     {
      "date": "2026-11-19",
      "text": "이월: 해밀턴 50.9–46.1(95% 개표, 비공식; [KCUR](https://www.kcur.org/politics-elections-and-government/2026-11-03/hamilton-wins-kansans-elect-democratic-senator-for-the-first-time-in-nearly-a-century), 중도좌, 공영) · 원내대표 경선 입장은 모호하며, 좌파 성향 매체 하나만 출처다.",
@@ -13484,6 +13710,14 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-20",
+     "text": "이월된 결과는 해밀턴 50.9–46.1(95% 개표, 비공식)이다([KCUR](https://www.kcur.org/politics-elections-and-government/2026-11-03/hamilton-wins-kansans-elect-democratic-senator-for-the-first-time-in-nearly-a-century), 중도좌, 공영). 주 판단은 그대로다.",
+     "urls": [
+      "https://www.kcur.org/politics-elections-and-government/2026-11-03/hamilton-wins-kansans-elect-democratic-senator-for-the-first-time-in-nearly-a-century"
+     ],
+     "last": "2026-11-20"
+    },
     {
      "date": "2026-11-19",
      "text": "판정에는 변동이 없다. 해밀턴의 원내대표 경선 입장은 아직 확인되지 않았다.",
