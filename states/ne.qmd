@@ -159,6 +159,11 @@ cat(daily_log_md("NE"))
 ## 최신 여론조사
 
 ```{r}
+#| output: asis
+cat(race_snapshot_html("NE"))
+```
+
+```{r}
 gt_state_polls("NE")
 ```
 
