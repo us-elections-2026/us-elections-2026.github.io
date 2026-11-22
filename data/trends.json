@@ -205,6 +205,12 @@
       "label": "11/9",
       "trump_net": -23.0,
       "generic": 8.8
+    },
+    {
+      "date": "2026-11-16",
+      "label": "11/16",
+      "trump_net": -23.0,
+      "generic": 8.8
     }
   ]
 }

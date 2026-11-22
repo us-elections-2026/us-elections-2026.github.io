@@ -1,6 +1,6 @@
 {
- "as_of": "2026-11-15",
- "fetched_at_utc": "2026-11-15T21:21:59Z",
+ "as_of": "2026-11-22",
+ "fetched_at_utc": "2026-11-22T21:19:48Z",
  "type": "market",
  "source_label": "Kalshi (예측시장 가격)",
  "source_url": "https://kalshi.com/",
@@ -25,12 +25,12 @@
  },
  "senate": {
   "AK": {
-   "dem": 99.7,
-   "rep": 0.2,
+   "dem": 99.9,
+   "rep": 0.1,
    "dem_label": "Democratic party",
    "rep_label": "Republican party",
-   "volume": 54675651,
-   "open_interest": 34820598,
+   "volume": 59671756,
+   "open_interest": 36917011,
    "series": "SENATEAK",
    "tickers": [
     "SENATEAK-26-D",

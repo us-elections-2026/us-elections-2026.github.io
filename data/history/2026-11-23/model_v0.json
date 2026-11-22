@@ -1,0 +1,162 @@
+{
+  "version": "v0.1",
+  "run_date": "2026-11-23",
+  "seed": 20261103,
+  "n_sims": 10000,
+  "assumptions": {
+    "sigma_poll": 6,
+    "half_life_days": 21,
+    "rho": 0.5,
+    "weights": {
+      "rating": 1,
+      "market": 1.2,
+      "poll_max": 1.5
+    }
+  },
+  "method_note": "등급(사전)+시장가+조사(시간감쇠·당파보정) 블렌드 → 가우시안 코퓰러(ρ=0.5) 1만회. 조사·시장 없는 주는 등급만 사용(MI 등). 사퇴 후보 조사 제외(ME=Jackson만). σ·ρ·가중치는 문서화된 가정 — 11월 실측으로 캘리브레이션 예정.",
+  "states": [
+    {
+      "state": "GA",
+      "defense": "D",
+      "rating": "**민주 수성, +18**(59–41, 개표 99%, 비공식 — ABC) · 최종 등급 Cook Likely D / Sabato Likely D(피드 11/3)",
+      "p_rating": 0.9,
+      "p_market": 1,
+      "poll_margin": 8.5,
+      "n_polls": 13,
+      "p_poll": 0.921,
+      "p_blend": 0.941
+    },
+    {
+      "state": "MI",
+      "defense": "D",
+      "rating": "**민주 수성, 약 +7**(AP 약 97% 개표, 비공식. 주초 이월치 52.2–45.8(92%)을 대체). 최종 등급 Cook Lean D / Sabato Lean D(피드 11/3)",
+      "p_rating": 0.75,
+      "p_market": 1,
+      "poll_margin": 4.2,
+      "n_polls": 34,
+      "p_poll": 0.757,
+      "p_blend": 0.834
+    },
+    {
+      "state": "NH",
+      "defense": "D",
+      "rating": "**민주 수성**(격차 미확인 — 서누누 11/3 밤 8:48 ET경 승복, 비공식) · 최종 등급 Cook Lean D / Sabato Likely D(피드 11/3)",
+      "p_rating": 0.75,
+      "p_market": 1,
+      "poll_margin": 7.2,
+      "n_polls": 13,
+      "p_poll": 0.886,
+      "p_blend": 0.886
+    },
+    {
+      "state": "ME",
+      "defense": "R",
+      "rating": "**민주 탈환, +6**(53–47, 개표 92%, 비공식) — RCV 불필요 · 최종 등급 Cook Toss-up / Sabato Lean D(피드 11/3)",
+      "p_rating": 0.5,
+      "p_market": 1,
+      "poll_margin": 3.6,
+      "n_polls": 23,
+      "p_poll": 0.725,
+      "p_blend": 0.753
+    },
+    {
+      "state": "NC",
+      "defense": "R",
+      "rating": "**민주 탈환**(당일 밤 첫 확정, 격차 미확인, 비공식) · 최종 등급 Cook Likely D / Sabato Likely D(피드 11/3)",
+      "p_rating": 0.9,
+      "p_market": 1,
+      "poll_margin": 11.2,
+      "n_polls": 17,
+      "p_poll": 0.97,
+      "p_blend": 0.961
+    },
+    {
+      "state": "TX",
+      "defense": "R",
+      "rating": "**민주 탈환, +12**(55–43, 개표 99%, 비공식) · 최종 등급 Cook Toss-up / Sabato Lean D(피드 11/3)",
+      "p_rating": 0.5,
+      "p_market": 1,
+      "poll_margin": 3.2,
+      "n_polls": 36,
+      "p_poll": 0.701,
+      "p_blend": 0.744
+    },
+    {
+      "state": "OH",
+      "defense": "R",
+      "rating": "**민주 탈환, +223,294표**(2,301,042 대 2,077,748, 주무장관실 비공식 집계. 양자 기준 약 52.5–47.5는 원천 자체 계산). 최종 등급 Cook Toss-up / Sabato Lean D(피드 11/3)",
+      "p_rating": 0.5,
+      "p_market": 1,
+      "poll_margin": 3.7,
+      "n_polls": 23,
+      "p_poll": 0.733,
+      "p_blend": 0.757
+    },
+    {
+      "state": "AK",
+      "defense": "R",
+      "rating": "**민주 탈환, AP 판정 11/17. 펠톨라 1순위 50.12%**(144,302 대 131,844 = 45.80%, +12,458표, 개표 약 99%, 비공식) — 과반으로 RCV 불요. 최종 등급 Cook Toss-up / Sabato Lean D(피드 11/3)",
+      "p_rating": 0.5,
+      "p_market": 1,
+      "poll_margin": 2,
+      "n_polls": 12,
+      "p_poll": 0.631,
+      "p_blend": 0.715
+    },
+    {
+      "state": "IA",
+      "defense": "R",
+      "rating": "**민주 탈환, +4.1**(50.5–46.4, 개표 98%, 비공식) · 최종 등급 Cook Toss-up / Sabato Lean R(피드 11/3)",
+      "p_rating": 0.5,
+      "p_market": 1,
+      "poll_margin": -0,
+      "n_polls": 21,
+      "p_poll": 0.498,
+      "p_blend": 0.662
+    },
+    {
+      "state": "NE",
+      "defense": "R",
+      "rating": "**공화 수성, 리케츠 약 +6p**(약 49,000표, AP 11/4 새벽 확정, 비공식) · 최종 등급 Cook Lean R / Sabato Lean R(피드 11/3)",
+      "p_rating": 0.25,
+      "poll_margin": -2.5,
+      "n_polls": 8,
+      "p_poll": 0.336,
+      "p_blend": 0.302
+    },
+    {
+      "state": "KS",
+      "defense": "R",
+      "rating": "**민주 탈환, +4.8**(50.9–46.1, 개표 95%, 비공식) — 1932년 이후 첫 캔자스 민주 상원의원 · 최종 등급 Cook Toss-up / Sabato Lean D(피드 11/3)",
+      "p_rating": 0.5,
+      "p_market": 1,
+      "poll_margin": 4,
+      "n_polls": 12,
+      "p_poll": 0.745,
+      "p_blend": 0.762
+    }
+  ],
+  "dem_majority_prob": 78.8,
+  "seats": {
+    "mean": 52.33,
+    "p05": 47,
+    "p25": 51,
+    "median": 53,
+    "p75": 54,
+    "p95": 55
+  },
+  "seat_pmf": {
+    "44": 0.0036,
+    "45": 0.0093,
+    "46": 0.0183,
+    "47": 0.0228,
+    "48": 0.0386,
+    "49": 0.0526,
+    "50": 0.0672,
+    "51": 0.0931,
+    "52": 0.1196,
+    "53": 0.1641,
+    "54": 0.2127,
+    "55": 0.1981
+  }
+}
