@@ -1,8 +1,61 @@
 {
- "as_of": "2026-11-21",
+ "as_of": "2026-11-22",
  "source_label": "_NIS 상원 일일 브리핑(KR) — Cowork 예약 작업 산출물을 scripts/ingest_senate_daily.py가 그대로 추출",
  "provenance_note": "본문은 원천 마크다운을 자르지 않고 전재한다(요약·재서술 없음). 종결체는 원천대로 다체. 【수집 필요】 표기도 원천 그대로 남긴다 — 빈 칸을 추정으로 채우지 않는 규약과 같은 이유. 같은 날짜 재실행은 덮어쓴다.",
  "days": [
+  {
+   "date": "2026-11-22",
+   "source_file": "2026-11-22_site_KR.md",
+   "source_kind": "digest",
+   "chars": 8616,
+   "source_validation": {
+    "source_file": "2026-11-22_일일브리핑_KR.md",
+    "checks": [
+     "A 주 소절 1~9 순서",
+     "B [유세] 줄 11/11",
+     "E self-audit 블록 있음(항목 0)",
+     "F EN/KR 주 소절 11개 일치"
+    ],
+    "warnings": [
+     "C §5.1 지정 지역매체 링크 미확인(9/11): ['조지아', '미시간', '메인', '노스캐롤라이나', '알래스카', '오하이오', '텍사스', '아이오와', '네브래스카']",
+     "D 조사 불릿에 기간/격차 누락 3/3: ['새 상원 여론조사는 없다. 선거가 끝났다.', '우선 추적 조사기관(NYT/Siena·Fox·Marist·AARP): 없음. 캠프 내부 조사: 없음.', '여론조사가 아님: 12/1 원내대표 경선의 지지자 수는 각 캠프의 주장이며, 투표는 비밀투표로 진행된다.']",
+     "주목 기관이 원문에는 있는데 정리본에 없음: aarp, marist, siena — 원문 대조 필요"
+    ],
+    "missing_local_states": [
+     "조지아",
+     "미시간",
+     "메인",
+     "노스캐롤라이나",
+     "알래스카",
+     "오하이오",
+     "텍사스",
+     "아이오와",
+     "네브래스카"
+    ],
+    "status": "경고 있음"
+   },
+   "lead": "원문: senate_daily/2026-11-22_일일브리핑_KR.md · 정리 원칙: 원문에 없는 사실·수치·링크를 더하지 않는다.",
+   "summary": "- **알래스카: 던리비 주지사가 펠톨라의 취임을 확언하지 않았다.** 11/19 Newsmax 인터뷰에서 그는 주와 연방의 수사가 설리번의 이의 제기를 뒷받침할 수 있다고 말했다. 인증은 **11/25까지**, 이의 제기 시한은 **12/5**다. 주지사실은 인증 주체가 부지사와 선거국장이라고 밝혔다. 던리비는 12/7 퇴임한다. 이 내용은 좌파 출처 한 곳에만 근거한다([Democracy Docket](https://www.democracydocket.com/news-alerts/alaska-governor-wont-give-up-on-long-shot-bid-to-subvert-democratic-senate-win/), 좌).\n- 원내대표 경선(12/1, 비밀투표)을 앞두고 AP는 신임 민주당 의원 13명 가운데 상당수가 입장을 밝히지 않았다고 11/21 보도했다. 반 홀런 지지는 엘-사예드·플래너건·슬롯킨, 슈머 지지는 브라운이다. 탈라리코·튜렉·오소프는 미정이다([AP via Spectrum News](https://spectrumlocalnews.com/us/snplus/politics/2026/11/21/senate-democrats-leadership-vote)).\n- **오늘 새로 확인: 해밀턴(KS)이 슈머 불지지를 공식화했다.** 다른 후보 지지는 밝히지 않았다. 지금까지 이월해 온 \"새 리더십\" 발언보다 분명한 입장이다. 잭슨(ME)과 앤드루스(SC)도 슈머에 반대하지만 지지 후보는 밝히지 않았다([AP via Spectrum News](https://spectrumlocalnews.com/us/snplus/politics/2026/11/21/senate-democrats-leadership-vote)).\n- 오소프는 공개 발언에서 \"어느 후보에게도 약속하지 않았고 모두의 이야기를 들어보겠다\"고 말했다. 펠톨라는 AP에 경선을 아직 생각해보지 않았다고 했다([AP via Spectrum News](https://spectrumlocalnews.com/us/snplus/politics/2026/11/21/senate-democrats-leadership-vote)).\n- 설리번은 여전히 승복하지 않았다. 이 판단은 Newsweek 11/18 보도에 근거하며, 이후 보도는 없다([Newsweek](https://www.newsweek.com/dojs-other-dan-sullivan-criminal-probe-widens-after-peltola-win-12737508)).\n- 법무부의 알래스카 민사소송은 '무의미(moot)'를 이유로 철회된 상태가 유지된다(11/19, [ABC](https://abcnews.com/Politics/doj-dropping-alaska-midterms-senate-certification-lawsuit-case/story?id=138307517)).",
+   "states": {
+    "GA": "- [Democrats who swept into Senate promised change. Leadership vote tests them](https://spectrumlocalnews.com/us/snplus/politics/2026/11/21/senate-democrats-leadership-vote) (AP via Spectrum News, 11/21) — 오소프는 공개적으로 \"어느 후보에게도 약속하지 않았고 모두의 이야기를 들어보겠다\"고 말했다. Punchbowl 보도를 인용한 Newsweek에서 이월해 온 '미정' 상태와 같다.\n- **여론조사**: 없음(선거 종료로 신규 조사 없음).\n- **자금**: 없음\n- **로컬**: 원내대표 경선(12/1)에서 오소프는 미정이다 · 이월: 오소프 약 59–41 승리(비공식). 오늘 재확인하지 않았다.\n- **주 함의**: 결과는 바뀌지 않았다. 오소프는 원내대표 경선의 미정 표로 남아 있다.",
+    "MI": "- [Democrats who swept into Senate promised change. Leadership vote tests them](https://spectrumlocalnews.com/us/snplus/politics/2026/11/21/senate-democrats-leadership-vote) (AP via Spectrum News, 11/21) — AP가 엘-사예드 당선인의 반 홀런 지지를 확인했다. 슬롯킨 의원은 \"슈머를 지지하지 않는다고 분명히 해왔으므로 크리스 반 홀런을 지지할 것\"이라고 말했다.\n- **여론조사**: 없음(선거 종료로 신규 조사 없음).\n- **자금**: 없음\n- **로컬**: 엘-사예드의 반 홀런 지지는 네 번째 출처로, 슬롯킨의 지지는 11/20 [TIME](https://time.com/article/2026/11/20/chris-van-hollen-chuck-schumer-senate-majority-leader/)에 이어 두 번째 출처로 확인됐다 · 이월: 엘-사예드 약 7%p 차 승리(비공식).\n- **주 함의**: 미시간의 두 의원은 모두 반 홀런 쪽이다. 결과에는 변화가 없다.",
+    "NH": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료로 신규 조사 없음).\n- **자금**: 없음\n- **로컬**: AP(11/21)에서 파파스는 사진에만 등장하고 입장은 소개되지 않았다 · 이월: 슈머는 지지하지 않되 반 홀런 지지도 밝히지 않음(Newsweek 명단) · 이월: 파파스 승리, 수누누 승복([NHPR](https://www.nhpr.org/nh-news/2026-11-03/pappas-wins-u-s-senate-race-defeating-sununu-in-marquee-matchup), 중도좌, 공영). 격차는 아직 확인하지 못했다.\n- **주 함의**: 결과에는 변화가 없다. 최종 격차는 여전히 결손이다.",
+    "ME": "- [Democrats who swept into Senate promised change. Leadership vote tests them](https://spectrumlocalnews.com/us/snplus/politics/2026/11/21/senate-democrats-leadership-vote) (AP via Spectrum News, 11/21) — 잭슨은 슈머를 지지하지 않겠다고 밝혔지만 반 홀런에게 투표하겠다고는 하지 않았다. Newsweek에서 이월해 온 상태와 같다.\n- **여론조사**: 없음(선거 종료로 신규 조사 없음).\n- **자금**: 없음\n- **로컬**: 잭슨은 슈머에 반대하되 지지 후보는 밝히지 않았다 · 이월: 잭슨 약 53–47 승리(비공식).\n- **주 함의**: 결과에는 변화가 없다. 잭슨은 슈머 반대이면서 지지 후보를 밝히지 않은 쪽에 남아 있다.",
+    "NC": "- [Democrats who swept into Senate promised change. Leadership vote tests them](https://spectrumlocalnews.com/us/snplus/politics/2026/11/21/senate-democrats-leadership-vote) (AP via Spectrum News, 11/21) — AP는 쿠퍼를 슈머가 영입한 후보로만 언급했다. 슈머 측은 쿠퍼·브라운·펠톨라 영입을 슈머의 성과로 내세운다.\n- **여론조사**: 없음(선거 종료로 신규 조사 없음).\n- **자금**: 없음\n- **로컬**: 쿠퍼의 원내대표 경선 입장은 보도되지 않았다 · 이월: 쿠퍼 승리, 와틀리 승복(NHPR/NPR, 11/3). 최종 격차는 아직 확인하지 못했다.\n- **주 함의**: 결과에는 변화가 없다. 최종 격차는 여전히 결손이다.",
+    "TX": "- [Democrats who swept into Senate promised change. Leadership vote tests them](https://spectrumlocalnews.com/us/snplus/politics/2026/11/21/senate-democrats-leadership-vote) (AP via Spectrum News, 11/21) — 탈라리코는 슈머를 거부하지 않았고, 두 후보에게 \"까다로운 질문\"을 하겠다고 했다. 미정이다.\n- **여론조사**: 없음(선거 종료로 신규 조사 없음).\n- **자금**: 없음\n- **로컬**: 원내대표 경선에서 미정이다 · 이월: 탈라리코 약 55–43 승리(비공식).\n- **주 함의**: 결과에는 변화가 없다. 탈라리코는 미정 표로 남아 있다.",
+    "OH": "- [Democrats who swept into Senate promised change. Leadership vote tests them](https://spectrumlocalnews.com/us/snplus/politics/2026/11/21/senate-democrats-leadership-vote) (AP via Spectrum News, 11/21) — 브라운은 슈머를 지지한다. AP가 슈머 지지자로 명시한 신임 의원은 브라운이 유일하다.\n- **여론조사**: 없음(선거 종료로 신규 조사 없음).\n- **자금**: 없음\n- **로컬**: 이월: 브라운은 12/15 \"전후\" 취임할 예정이다(WEWS, 11/12) · 이월: 브라운 2,301,042표, 허스테드 2,077,748표(비공식).\n- **주 함의**: 결과에는 변화가 없다. 브라운은 신임 의원 가운데 유일하게 슈머 지지를 밝힌 표다.",
+    "AK": "- [Alaska governor won't give up on long-shot bid to subvert Democratic Senate win](https://www.democracydocket.com/news-alerts/alaska-governor-wont-give-up-on-long-shot-bid-to-subvert-democratic-senate-win/) (Democracy Docket, 좌, 11/20) — 11/19 Newsmax 인터뷰에서 던리비는 알래스카 수사국(ABI)과 법무부의 수사가 설리번의 이의 제기를 뒷받침하는 데 목적이 있다고 말했다. \"표 차이가 앞으로 문제가 된다\"고 했고, 소송이 제기될지에 대해서는 \"아직 모른다\"고 했다. '전복(subvert)'이라는 표현은 Democracy Docket의 프레이밍이다. 우파 매체나 알래스카 매체의 보도는 찾지 못했으므로 **일방 보도(좌파 출처만)**다.\n- **여론조사**: 없음(선거 종료로 신규 조사 없음).\n- **자금**: 없음\n- **로컬**: 인증은 11/25까지 예정이고, 설리번은 12/5까지 선거 이의 소송을 낼 수 있다. 법상 인증서에는 주지사가 서명해야 하지만, 주지사실은 서명 여부를 직접 확인하지 않고 개표 감독과 인증이 부지사와 선거국장 소관이라고만 밝혔다 · 던리비는 12/7 퇴임하고 민주당 조너선 크라이스-톰킨스가 후임이다 · 배경([Newsweek](https://www.newsweek.com/dojs-other-dan-sullivan-criminal-probe-widens-after-peltola-win-12737508), 11/18): 11/17 기준 비공식 집계는 펠톨라 144,302표(50.12%), 설리번 131,844표(45.80%), 대니얼 J. 설리번 Jr. 4,760표(1.65%)다. AP는 11/17 당선을 확정했다 · 이월: 설리번 미승복 · 정정: 어제 쓴 \"재검표 시한 11/30\"은 오늘 재확인되지 않았다.\n- **주 함의**: 결과는 여전히 11/25 인증을 향한다. 새로 생긴 위험은 법적이라기보다 정치적이다. 주지사가 이의 소송 가능성을 거론하지만 그는 12/7 퇴임하고, 수사가 개표 결과를 바꿀 것이라고 연결한 출처는 없다.",
+    "IA": "- [Democrats who swept into Senate promised change. Leadership vote tests them](https://spectrumlocalnews.com/us/snplus/politics/2026/11/21/senate-democrats-leadership-vote) (AP via Spectrum News, 11/21) — 튜렉은 두 후보를 모두 만났고, 자신의 의제에 가장 맞는 후보를 지지하겠다고 했다. 미정이다.\n- **여론조사**: 없음(선거 종료로 신규 조사 없음).\n- **자금**: 없음\n- **로컬**: 원내대표 경선에서 미정이다 · 이월: 튜렉 50.5–46.4(98% 개표, 비공식).\n- **주 함의**: 결과에는 변화가 없다. 튜렉은 미정 표로 남아 있다.",
+    "NE": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료로 신규 조사 없음).\n- **자금**: 없음\n- **로컬**: 이월: 리케츠 승리, 오스본은 6%p 이상 뒤졌다([TNND/KATV](https://katv.com/news/nation-world/nebraska-independent-dan-osborn-loses-senate-race-republican-pete-ricketts-democrats-2026-midterm-elections-rrt), 11/4).\n- **주 함의**: 공화 의석으로 유지한다. 변화는 없다.",
+    "KS": "- [Democrats who swept into Senate promised change. Leadership vote tests them](https://spectrumlocalnews.com/us/snplus/politics/2026/11/21/senate-democrats-leadership-vote) (AP via Spectrum News, 11/21) — 해밀턴은 목요일 **슈머를 지지하지 않겠다**고 밝혔고, 다른 후보 지지는 거부했다. 지금까지 이월해 온 \"새 리더십\" 표현보다 분명한 입장이다.\n- **여론조사**: 없음(선거 종료로 신규 조사 없음).\n- **자금**: 없음\n- **로컬**: 해밀턴은 슈머 불지지를 공식화했다 · 이월: 해밀턴 50.9–46.1(95% 개표, 비공식; [KCUR](https://www.kcur.org/politics-elections-and-government/2026-11-03/hamilton-wins-kansans-elect-democratic-senator-for-the-first-time-in-nearly-a-century), 중도좌, 공영).\n- **주 함의**: 결과에는 변화가 없다. 해밀턴은 슈머 반대이면서 지지 후보를 밝히지 않은 쪽으로 옮겨 갔다."
+   },
+   "extras": [],
+   "polls": "이번 회차 신규 본선 조사 없음.",
+   "watch": "- 알래스카 결과 인증(11/25까지): 주지사 서명 여부와 인증 절차\n- 설리번의 선거 이의 소송 제기 여부(시한 12/5)와 승복 여부\n- 민주당 원내대표 경선(12/1, 비밀투표): 미정인 오소프·탈라리코·튜렉·펠톨라와 슈머에 반대하는 해밀턴·잭슨의 최종 선택\n- 던리비 퇴임(12/7)과 크라이스-톰킨스 취임\n- 노스캐롤라이나·뉴햄프셔 최종 격차 확인",
+   "gaps": "",
+   "national_money": "- 없음",
+   "national_legal": "- 알래스카 상원 선거 인증은 11/25까지 예정이고, 설리번의 선거 이의 소송 시한은 12/5다. 주지사실은 개표 감독과 인증이 부지사와 선거국장 소관이라고 밝혔다([Democracy Docket](https://www.democracydocket.com/news-alerts/alaska-governor-wont-give-up-on-long-shot-bid-to-subvert-democratic-senate-win/), 좌).\n- 법무부의 알래스카 민사소송은 '무의미(moot)'를 이유로 철회된 상태가 유지된다(11/19, [ABC](https://abcnews.com/Politics/doj-dropping-alaska-midterms-senate-certification-lawsuit-case/story?id=138307517)). 항소가 계류 중이라는 Newsweek 보도는 철회 이전 기사여서 더는 유효하지 않다.\n- 알래스카 관련 형사 수사는 여러 주에 걸쳐 있고 대상자도 2명 이상이다. 펠톨라 캠프를 대리하는 법률회사의 마크 엘리아스를 포함한 여러 명에게 수사 대상 통지서가 발송됐다. Fox는 소환장이 200건 이상이라고 보도했지만 Newsweek는 이 수치를 확인하지 못했다([Newsweek](https://www.newsweek.com/dojs-other-dan-sullivan-criminal-probe-widens-after-peltola-win-12737508), 11/18)."
+  },
   {
    "date": "2026-11-21",
    "source_file": "2026-11-21_site_KR.md",

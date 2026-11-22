@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-21",
+ "as_of": "2026-11-22",
  "source_label": "상원 일일 정리본(senate_daily/site)의 주별 태그 줄 — scripts/ingest_senate_daily.py build_ledger()",
  "provenance_note": "여론조사·자금·로컬·주 함의 네 항목. 같은 문장은 처음 본 날짜로 한 번만 싣고 last 에 마지막 언급일. 원문 전재(정리본 이전) 날짜는 제외. states.US.money 는 정리본 v1.2의 「전국 자금」 절, states.US.legal 은 v1.3의 「법·제도」 절.",
  "states": {
@@ -429,6 +429,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-11-22",
+     "text": "원내대표 경선(12/1)에서 오소프는 미정이다 · 이월: 오소프 약 59–41 승리(비공식). 오늘 재확인하지 않았다.",
+     "urls": [],
+     "last": "2026-11-22"
+    },
     {
      "date": "2026-11-21",
      "text": "오소프는 TIME 11/20의 밴 홀런 공개 지지자 명단에 없다. 이월: Punchbowl/Newsweek 기준으로는 미정이다.",
@@ -892,6 +898,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-22",
+     "text": "결과는 바뀌지 않았다. 오소프는 원내대표 경선의 미정 표로 남아 있다.",
+     "urls": [],
+     "last": "2026-11-22"
+    },
     {
      "date": "2026-11-21",
      "text": "결과 판단에 변화는 없다. 원내대표 경선에서 오소프의 입장은 여전히 공개되지 않았다.",
@@ -1766,6 +1778,14 @@
    ],
    "local": [
     {
+     "date": "2026-11-22",
+     "text": "엘-사예드의 반 홀런 지지는 네 번째 출처로, 슬롯킨의 지지는 11/20 [TIME](https://time.com/article/2026/11/20/chris-van-hollen-chuck-schumer-senate-majority-leader/)에 이어 두 번째 출처로 확인됐다 · 이월: 엘-사예드 약 7%p 차 승리(비공식).",
+     "urls": [
+      "https://time.com/article/2026/11/20/chris-van-hollen-chuck-schumer-senate-majority-leader/"
+     ],
+     "last": "2026-11-22"
+    },
+    {
      "date": "2026-11-21",
      "text": "엘-사예드의 입장은 Roll Call(11/17), Newsweek(11/12)과 일치하며, 이번에 세 번째 출처로 확인됐다. 슬롯킨의 공개 지지는 이 브리핑에서 처음 다룬다([TIME](https://time.com/article/2026/11/20/chris-van-hollen-chuck-schumer-senate-majority-leader/)).",
      "urls": [
@@ -2268,6 +2288,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-22",
+     "text": "미시간의 두 의원은 모두 반 홀런 쪽이다. 결과에는 변화가 없다.",
+     "urls": [],
+     "last": "2026-11-22"
+    },
     {
      "date": "2026-11-21",
      "text": "이로써 2027년 미시간 상원의원 두 명이 모두 **공개적으로 밴 홀런 쪽**에 섰다. 결과 판단에는 변화가 없다.",
@@ -3135,6 +3161,14 @@
    ],
    "local": [
     {
+     "date": "2026-11-22",
+     "text": "AP(11/21)에서 파파스는 사진에만 등장하고 입장은 소개되지 않았다 · 이월: 슈머는 지지하지 않되 반 홀런 지지도 밝히지 않음(Newsweek 명단) · 이월: 파파스 승리, 수누누 승복([NHPR](https://www.nhpr.org/nh-news/2026-11-03/pappas-wins-u-s-senate-race-defeating-sununu-in-marquee-matchup), 중도좌, 공영). 격차는 아직 확인하지 못했다.",
+     "urls": [
+      "https://www.nhpr.org/nh-news/2026-11-03/pappas-wins-u-s-senate-race-defeating-sununu-in-marquee-matchup"
+     ],
+     "last": "2026-11-22"
+    },
+    {
      "date": "2026-11-21",
      "text": "이월: 파파스는 슈머를 거부했으나 밴 홀런 지지는 표명하지 않았다(Newsweek 명단). TIME 명단에도 없다.",
      "urls": [],
@@ -3559,6 +3593,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-22",
+     "text": "결과에는 변화가 없다. 최종 격차는 여전히 결손이다.",
+     "urls": [],
+     "last": "2026-11-22"
+    },
     {
      "date": "2026-11-21",
      "text": "변화 없음.",
@@ -4412,6 +4452,12 @@
    ],
    "local": [
     {
+     "date": "2026-11-22",
+     "text": "잭슨은 슈머에 반대하되 지지 후보는 밝히지 않았다 · 이월: 잭슨 약 53–47 승리(비공식).",
+     "urls": [],
+     "last": "2026-11-22"
+    },
+    {
      "date": "2026-11-21",
      "text": "잭슨은 TIME의 밴 홀런 공개 지지자 명단에 없다. 이월: 슈머를 지지하지 않는다고 했으나 밴 홀런 지지 표명은 없다(Newsweek).",
      "urls": [],
@@ -4887,6 +4933,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-22",
+     "text": "결과에는 변화가 없다. 잭슨은 슈머 반대이면서 지지 후보를 밝히지 않은 쪽에 남아 있다.",
+     "urls": [],
+     "last": "2026-11-22"
+    },
     {
      "date": "2026-11-21",
      "text": "변화 없음.",
@@ -5802,6 +5854,12 @@
    ],
    "local": [
     {
+     "date": "2026-11-22",
+     "text": "쿠퍼의 원내대표 경선 입장은 보도되지 않았다 · 이월: 쿠퍼 승리, 와틀리 승복(NHPR/NPR, 11/3). 최종 격차는 아직 확인하지 못했다.",
+     "urls": [],
+     "last": "2026-11-22"
+    },
+    {
      "date": "2026-11-21",
      "text": "오늘 읽은 어떤 명단에도 쿠퍼는 없다.",
      "urls": [],
@@ -6242,6 +6300,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-22",
+     "text": "결과에는 변화가 없다. 최종 격차는 여전히 결손이다.",
+     "urls": [],
+     "last": "2026-11-22"
+    },
     {
      "date": "2026-11-21",
      "text": "변화 없음. 최종 득표차는 여전히 미확보다.",
@@ -7246,6 +7310,12 @@
    ],
    "local": [
     {
+     "date": "2026-11-22",
+     "text": "원내대표 경선에서 미정이다 · 이월: 탈라리코 약 55–43 승리(비공식).",
+     "urls": [],
+     "last": "2026-11-22"
+    },
+    {
      "date": "2026-11-21",
      "text": "탈라리코는 TIME 명단에 없다. 이월: Newsweek·위키피디아 기준으로는 미정이다.",
      "urls": [],
@@ -7725,6 +7795,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-22",
+     "text": "결과에는 변화가 없다. 탈라리코는 미정 표로 남아 있다.",
+     "urls": [],
+     "last": "2026-11-22"
+    },
     {
      "date": "2026-11-21",
      "text": "변화 없음.",
@@ -8638,6 +8714,12 @@
    ],
    "local": [
     {
+     "date": "2026-11-22",
+     "text": "이월: 브라운은 12/15 \"전후\" 취임할 예정이다(WEWS, 11/12) · 이월: 브라운 2,301,042표, 허스테드 2,077,748표(비공식).",
+     "urls": [],
+     "last": "2026-11-22"
+    },
+    {
      "date": "2026-11-21",
      "text": "이월: 브라운은 허스테드의 임명 임기가 끝나는 12/15 \"무렵\" 취임할 것으로 예상된다(WEWS, 11/12). 브라운은 슈머를 지지한다(Punchbowl/Newsweek).",
      "urls": [],
@@ -9066,6 +9148,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-22",
+     "text": "결과에는 변화가 없다. 브라운은 신임 의원 가운데 유일하게 슈머 지지를 밝힌 표다.",
+     "urls": [],
+     "last": "2026-11-22"
+    },
     {
      "date": "2026-11-21",
      "text": "변화 없음.",
@@ -9814,6 +9902,14 @@
    ],
    "local": [
     {
+     "date": "2026-11-22",
+     "text": "인증은 11/25까지 예정이고, 설리번은 12/5까지 선거 이의 소송을 낼 수 있다. 법상 인증서에는 주지사가 서명해야 하지만, 주지사실은 서명 여부를 직접 확인하지 않고 개표 감독과 인증이 부지사와 선거국장 소관이라고만 밝혔다 · 던리비는 12/7 퇴임하고 민주당 조너선 크라이스-톰킨스가 후임이다 · 배경([Newsweek](https://www.newsweek.com/dojs-other-dan-sullivan-criminal-probe-widens-after-peltola-win-12737508), 11/18): 11/17 기준 비공식 집계는 펠톨라 144,302표(50.12%), 설리번 131,844표(45.80%), 대니얼 J. 설리번 Jr. 4,760표(1.65%)다. AP는 11/17 당선을 확정했다 · 이월: 설리번 미승복 · 정정: 어제 쓴 \"재검표 시한 11/30\"은 오늘 재확인되지 않았다.",
+     "urls": [
+      "https://www.newsweek.com/dojs-other-dan-sullivan-criminal-probe-widens-after-peltola-win-12737508"
+     ],
+     "last": "2026-11-22"
+    },
+    {
      "date": "2026-11-21",
      "text": "이월: 11/25 인증 예정(비처, 11/18) · 이월: 재검표 요청 마감 11/30 · 형사 수사와 ABI 수사는 계속된다. 다만 진행 상황은 미확인이다. 오늘 §5.1 알래스카 매체에서는 관련 기사를 찾지 못했다.",
      "urls": [],
@@ -10342,6 +10438,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-22",
+     "text": "결과는 여전히 11/25 인증을 향한다. 새로 생긴 위험은 법적이라기보다 정치적이다. 주지사가 이의 소송 가능성을 거론하지만 그는 12/7 퇴임하고, 수사가 개표 결과를 바꿀 것이라고 연결한 출처는 없다.",
+     "urls": [],
+     "last": "2026-11-22"
+    },
     {
      "date": "2026-11-21",
      "text": "인증을 막던 **연방 차원의 주된 장애가 사라졌다**. 현 상태는 민주 탈환(AP 확정)이며 11/25 인증이 예정돼 있다. 수사들이 결과를 바꿀 수 있다고 연결한 출처는 없다.",
@@ -11185,6 +11287,12 @@
    ],
    "local": [
     {
+     "date": "2026-11-22",
+     "text": "원내대표 경선에서 미정이다 · 이월: 튜렉 50.5–46.4(98% 개표, 비공식).",
+     "urls": [],
+     "last": "2026-11-22"
+    },
+    {
      "date": "2026-11-21",
      "text": "이월: 투렉의 원내대표 경선 입장은 미정이다(MS NOW/Newsweek).",
      "urls": [],
@@ -11625,6 +11733,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-22",
+     "text": "결과에는 변화가 없다. 튜렉은 미정 표로 남아 있다.",
+     "urls": [],
+     "last": "2026-11-22"
+    },
     {
      "date": "2026-11-21",
      "text": "변화 없음.",
@@ -12167,6 +12281,30 @@
    "local": [],
    "insight": [],
    "legal": [
+    {
+     "date": "2026-11-22",
+     "text": "알래스카 상원 선거 인증은 11/25까지 예정이고, 설리번의 선거 이의 소송 시한은 12/5다. 주지사실은 개표 감독과 인증이 부지사와 선거국장 소관이라고 밝혔다([Democracy Docket](https://www.democracydocket.com/news-alerts/alaska-governor-wont-give-up-on-long-shot-bid-to-subvert-democratic-senate-win/), 좌).",
+     "urls": [
+      "https://www.democracydocket.com/news-alerts/alaska-governor-wont-give-up-on-long-shot-bid-to-subvert-democratic-senate-win/"
+     ],
+     "last": "2026-11-22"
+    },
+    {
+     "date": "2026-11-22",
+     "text": "알래스카 관련 형사 수사는 여러 주에 걸쳐 있고 대상자도 2명 이상이다. 펠톨라 캠프를 대리하는 법률회사의 마크 엘리아스를 포함한 여러 명에게 수사 대상 통지서가 발송됐다. Fox는 소환장이 200건 이상이라고 보도했지만 Newsweek는 이 수치를 확인하지 못했다([Newsweek](https://www.newsweek.com/dojs-other-dan-sullivan-criminal-probe-widens-after-peltola-win-12737508), 11/18).",
+     "urls": [
+      "https://www.newsweek.com/dojs-other-dan-sullivan-criminal-probe-widens-after-peltola-win-12737508"
+     ],
+     "last": "2026-11-22"
+    },
+    {
+     "date": "2026-11-22",
+     "text": "법무부의 알래스카 민사소송은 '무의미(moot)'를 이유로 철회된 상태가 유지된다(11/19, [ABC](https://abcnews.com/Politics/doj-dropping-alaska-midterms-senate-certification-lawsuit-case/story?id=138307517)). 항소가 계류 중이라는 Newsweek 보도는 철회 이전 기사여서 더는 유효하지 않다.",
+     "urls": [
+      "https://abcnews.com/Politics/doj-dropping-alaska-midterms-senate-certification-lawsuit-case/story?id=138307517"
+     ],
+     "last": "2026-11-22"
+    },
     {
      "date": "2026-11-21",
      "text": "정부는 Dan J. Sullivan의 출마를 유도한 것이 유권자 혼란을 노린 불법 행위였는지에 대해 별도 형사 수사를 개시했다. 수사 상태는 미확인이다([Reuters via Yahoo](https://www.yahoo.com/news/politics/articles/us-justice-department-drops-appeal-170236121.html)).",
@@ -12786,6 +12924,14 @@
    ],
    "local": [
     {
+     "date": "2026-11-22",
+     "text": "이월: 리케츠 승리, 오스본은 6%p 이상 뒤졌다([TNND/KATV](https://katv.com/news/nation-world/nebraska-independent-dan-osborn-loses-senate-race-republican-pete-ricketts-democrats-2026-midterm-elections-rrt), 11/4).",
+     "urls": [
+      "https://katv.com/news/nation-world/nebraska-independent-dan-osborn-loses-senate-race-republican-pete-ricketts-democrats-2026-midterm-elections-rrt"
+     ],
+     "last": "2026-11-22"
+    },
+    {
      "date": "2026-11-19",
      "text": "이월: 리케츠 승리, 오즈번 6%p 이상 열세([TNND/KATV](https://katv.com/news/nation-world/nebraska-independent-dan-osborn-loses-senate-race-republican-pete-ricketts-democrats-2026-midterm-elections-rrt), 11/4).",
      "urls": [
@@ -13044,6 +13190,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-22",
+     "text": "공화 의석으로 유지한다. 변화는 없다.",
+     "urls": [],
+     "last": "2026-11-22"
+    },
     {
      "date": "2026-11-21",
      "text": "공화 의석 유지에 변화가 없다.",
@@ -13566,6 +13718,14 @@
    ],
    "local": [
     {
+     "date": "2026-11-22",
+     "text": "해밀턴은 슈머 불지지를 공식화했다 · 이월: 해밀턴 50.9–46.1(95% 개표, 비공식; [KCUR](https://www.kcur.org/politics-elections-and-government/2026-11-03/hamilton-wins-kansans-elect-democratic-senator-for-the-first-time-in-nearly-a-century), 중도좌, 공영).",
+     "urls": [
+      "https://www.kcur.org/politics-elections-and-government/2026-11-03/hamilton-wins-kansans-elect-democratic-senator-for-the-first-time-in-nearly-a-century"
+     ],
+     "last": "2026-11-22"
+    },
+    {
      "date": "2026-11-21",
      "text": "이월: 해밀턴은 \"새 리더십이 필요하다\"면서도 밴 홀런 지지는 표명하지 않았다(Newsweek 명단). TIME 명단에도 없다.",
      "urls": [],
@@ -13849,6 +14009,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-22",
+     "text": "결과에는 변화가 없다. 해밀턴은 슈머 반대이면서 지지 후보를 밝히지 않은 쪽으로 옮겨 갔다.",
+     "urls": [],
+     "last": "2026-11-22"
+    },
     {
      "date": "2026-11-21",
      "text": "변화 없음.",
