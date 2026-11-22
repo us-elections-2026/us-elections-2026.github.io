@@ -1,6 +1,6 @@
 {
   "version": "v0.1",
-  "run_date": "2026-11-16",
+  "run_date": "2026-11-23",
   "seed": 20261103,
   "n_sims": 10000,
   "assumptions": {
@@ -33,7 +33,7 @@
       "p_rating": 0.75,
       "p_market": 1,
       "poll_margin": 4.2,
-      "n_polls": 35,
+      "n_polls": 34,
       "p_poll": 0.757,
       "p_blend": 0.834
     },
@@ -44,7 +44,7 @@
       "p_rating": 0.75,
       "p_market": 1,
       "poll_margin": 7.2,
-      "n_polls": 15,
+      "n_polls": 13,
       "p_poll": 0.886,
       "p_blend": 0.886
     },
@@ -77,7 +77,7 @@
       "p_rating": 0.5,
       "p_market": 1,
       "poll_margin": 3.2,
-      "n_polls": 37,
+      "n_polls": 36,
       "p_poll": 0.701,
       "p_blend": 0.744
     },
@@ -95,11 +95,11 @@
     {
       "state": "AK",
       "defense": "R",
-      "rating": "**미확정, 펠톨라 1순위 +10,412표**(138,240 = 49.8% 대 127,828 = 46.1%, 개표 96~98% 보도 상충, 비공식). AP 미판정. 최종 등급 Cook Toss-up / Sabato Lean D(피드 11/3)",
+      "rating": "**민주 탈환, AP 판정 11/17. 펠톨라 1순위 50.12%**(144,302 대 131,844 = 45.80%, +12,458표, 개표 약 99%, 비공식) — 과반으로 RCV 불요. 최종 등급 Cook Toss-up / Sabato Lean D(피드 11/3)",
       "p_rating": 0.5,
       "p_market": 1,
       "poll_margin": 2,
-      "n_polls": 13,
+      "n_polls": 12,
       "p_poll": 0.631,
       "p_blend": 0.715
     },
@@ -110,7 +110,7 @@
       "p_rating": 0.5,
       "p_market": 1,
       "poll_margin": -0,
-      "n_polls": 22,
+      "n_polls": 21,
       "p_poll": 0.498,
       "p_blend": 0.662
     },
@@ -120,7 +120,7 @@
       "rating": "**공화 수성, 리케츠 약 +6p**(약 49,000표, AP 11/4 새벽 확정, 비공식) · 최종 등급 Cook Lean R / Sabato Lean R(피드 11/3)",
       "p_rating": 0.25,
       "poll_margin": -2.5,
-      "n_polls": 9,
+      "n_polls": 8,
       "p_poll": 0.336,
       "p_blend": 0.302
     },
