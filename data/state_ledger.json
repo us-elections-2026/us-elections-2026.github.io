@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-23",
+ "as_of": "2026-11-24",
  "source_label": "상원 일일 정리본(senate_daily/site)의 주별 태그 줄 — scripts/ingest_senate_daily.py build_ledger()",
  "provenance_note": "여론조사·자금·로컬·주 함의 네 항목. 같은 문장은 처음 본 날짜로 한 번만 싣고 last 에 마지막 언급일. 원문 전재(정리본 이전) 날짜는 제외. states.US.money 는 정리본 v1.2의 「전국 자금」 절, states.US.legal 은 v1.3의 「법·제도」 절.",
  "states": {
@@ -429,6 +429,14 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-11-24",
+     "text": "이월: 오소프 약 59–41 승(비공식) · 원내대표 경선에서 오소프는 아직 입장을 정하지 않았다([AP via WSLS](https://www.wsls.com/news/politics/2026/11/17/van-hollens-bid-to-replace-schumer-as-leader-is-putting-pressure-on-democrats-to-take-sides/)).",
+     "urls": [
+      "https://www.wsls.com/news/politics/2026/11/17/van-hollens-bid-to-replace-schumer-as-leader-is-putting-pressure-on-democrats-to-take-sides/"
+     ],
+     "last": "2026-11-24"
+    },
     {
      "date": "2026-11-23",
      "text": "원내대표 경선에서 오소프는 아직 지지 후보를 정하지 않았다([AP 11/21, Spectrum 게재](https://spectrumlocalnews.com/us/snplus/politics/2026/11/21/senate-democrats-leadership-vote)). OnPoint는 오소프를 '슈머, 신뢰도 중간'으로 분류하면서 \"아직 선택 없음\"이라고 적었다. 이는 집계 측의 추정일 뿐 본인 입장이 아니다([OnPoint](https://onpointpolitics.us/majority-tracker)) · 개표 결과(비공식, 원문 이월)는 오소프 약 59–41 승리다.",
@@ -907,6 +915,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-24",
+     "text": "결과 판단에 변화가 없다. 남은 관전점은 12/1 원내대표 경선에서의 오소프 선택이다.",
+     "urls": [],
+     "last": "2026-11-24"
+    },
     {
      "date": "2026-11-23",
      "text": "결과는 확정됐고 오늘 새 정보는 없다. 남은 관심사는 오소프의 원내대표 경선 선택뿐이다. 원문은 OnPoint 분류보다 AP 보도를 따른다.",
@@ -1793,6 +1807,14 @@
    ],
    "local": [
     {
+     "date": "2026-11-24",
+     "text": "CBS(11/19): 42세인 엘사예드는 미국 최초의 무슬림 상원의원이 된다([CBS](https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/)) · 이월: 엘사예드 약 7%p 차 승(비공식) · 미확인(이월): 11/22 저품질 애그리게이터가 전한 엘사예드의 이란전쟁 예산 제한 관련 보도는 신뢰할 만한 매체에서 확인되지 않았다.",
+     "urls": [
+      "https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/"
+     ],
+     "last": "2026-11-24"
+    },
+    {
      "date": "2026-11-23",
      "text": "엘사예드는 밴 홀런을 지지한다. OnPoint는 Roll Call(11/12)을 근거로 '본인 표명'으로 분류했고, AP 11/21 보도와도 일치한다 · 미확인: 엘사예드와 밴 홀런이 이란 전쟁 예산 제한을 요구했다는 11/22 기사가 있다. 출처는 품질 낮은 뉴스 모음 사이트 socialnews.xyz뿐이다. 밴 홀런·샌더스·베넷·덕워스의 11/12 공동성명 보도에는 **엘사예드의 이름이 나오지 않는다** · 개표 결과(비공식, 원문 이월)는 엘사예드 약 7%p 차 승리다.",
      "urls": [],
@@ -2309,6 +2331,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-24",
+     "text": "결과 판단에 변화가 없다. 엘사예드의 반 홀런 지지는 중립 매체(AP)와 오피니언 매체(Reason)가 일치해 전하므로 확인된 입장으로 본다.",
+     "urls": [],
+     "last": "2026-11-24"
+    },
     {
      "date": "2026-11-23",
      "text": "판단은 바뀌지 않는다. 엘사예드의 밴 홀런 지지는 여러 출처로 확인된다. 이란 예산 관련 보도는 확인되지 않은 상태로 둔다.",
@@ -3188,6 +3216,15 @@
    ],
    "local": [
     {
+     "date": "2026-11-24",
+     "text": "CBS(11/19): 46세 파파스는 동성애자임을 공개한 첫 남성 상원의원이 된다([CBS](https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/)). 원내대표 경선에 대한 공개 입장은 없다 · 이월: 파파스가 승리했고 스누누는 패배를 인정했다([NHPR](https://www.nhpr.org/nh-news/2026-11-03/pappas-wins-u-s-senate-race-defeating-sununu-in-marquee-matchup), 중도좌, 공영). 득표 격차는 아직 확인하지 못했다.",
+     "urls": [
+      "https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/",
+      "https://www.nhpr.org/nh-news/2026-11-03/pappas-wins-u-s-senate-race-defeating-sununu-in-marquee-matchup"
+     ],
+     "last": "2026-11-24"
+    },
+    {
      "date": "2026-11-23",
      "text": "패파스는 11/9 슈머와 당선인들의 단체사진에 들어 있다(Little Village 사진 설명). 원내대표 경선에 대한 새 공개 입장은 없다 · 이월: 패파스가 수누누를 이겼고 수누누는 패배를 인정했다([NHPR](https://www.nhpr.org/nh-news/2026-11-03/pappas-wins-u-s-senate-race-defeating-sununu-in-marquee-matchup), 중도좌, 공영). 득표 격차는 아직 확인하지 못했다.",
      "urls": [
@@ -3628,6 +3665,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-24",
+     "text": "결과 판단에 변화가 없다. 득표 격차는 미확인 상태로 이월한다.",
+     "urls": [],
+     "last": "2026-11-24"
+    },
     {
      "date": "2026-11-23",
      "text": "판단은 바뀌지 않는다. 남은 공백은 득표 격차다.",
@@ -4493,6 +4536,14 @@
    ],
    "local": [
     {
+     "date": "2026-11-24",
+     "text": "CBS(11/19): 58세 잭슨이 콜린스를 꺾었다([CBS](https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/)) · 이월: 원내대표 경선에서 슈머에 반대하지만 지지 후보를 밝히지 않았다(AP 11/21) · 이월: 잭슨 약 53–47 승(비공식).",
+     "urls": [
+      "https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/"
+     ],
+     "last": "2026-11-24"
+    },
+    {
      "date": "2026-11-23",
      "text": "OnPoint는 The New Republic(11/13)을 근거로 잭슨을 밴 홀런 쪽으로 분류했다. AP 11/21은 잭슨이 슈머를 지지하지 않겠다고만 했고 특정 후보 지지는 밝히지 않았다고 보도했다 · 개표 결과(비공식, 원문 이월)는 잭슨 약 53–47 승리다.",
      "urls": [],
@@ -4980,6 +5031,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-24",
+     "text": "결과 판단에 변화가 없다.",
+     "urls": [],
+     "last": "2026-11-24"
+    },
     {
      "date": "2026-11-23",
      "text": "판단은 바뀌지 않는다. 원내대표 경선 입장은 AP 표현대로 '슈머 불지지, 특정 후보 미표명'으로 둔다.",
@@ -5907,6 +5964,14 @@
    ],
    "local": [
     {
+     "date": "2026-11-24",
+     "text": "이월: 비공식 개표 기준 쿠퍼 약 59–39([NC Newsline](https://ncnewsline.com/?p=195829), 중도좌~좌). 최종 인증 득표는 아직 확인하지 못했고 중도우 매체(Carolina Journal)의 결과 기사도 찾지 못했다 · 원내대표 경선: 중립 매체 보도에서 공개 입장을 찾지 못했다. 이월된 트래커의 '슈머' 표기는 여전히 미확인이다.",
+     "urls": [
+      "https://ncnewsline.com/?p=195829"
+     ],
+     "last": "2026-11-24"
+    },
+    {
      "date": "2026-11-23",
      "text": "쿠퍼는 은퇴하는 톰 틸리스 의원의 자리를 잇는다 · 득표율 근거는 좌파 성향 States Newsroom 계열 매체와 공영 라디오다. Carolina Journal(중도우)의 결과 기사는 찾지 못해 **우파 쪽 보도는 확인되지 않았다**. 다만 수치 자체를 다투는 보도는 없다 · 원내대표 경선: OnPoint는 The Hill(11/11)을 근거로 쿠퍼를 '슈머, 보도 기준'으로 분류했지만, 해당 기사가 열리지 않아 확인하지 못했다 · 이월: 최종 인증 득표수 미확인.",
      "urls": [],
@@ -6359,6 +6424,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-24",
+     "text": "결과 판단에 변화가 없다. 최종 인증 득표수는 미확인 상태로 이월한다.",
+     "urls": [],
+     "last": "2026-11-24"
+    },
     {
      "date": "2026-11-23",
      "text": "원문은 약 20%p 차 승리여서 이견의 여지가 없다고 판단한다. 남은 공백은 최종 인증 득표수뿐이다.",
@@ -7375,6 +7446,14 @@
    ],
    "local": [
     {
+     "date": "2026-11-24",
+     "text": "CBS(11/19): 37세 탈라리코가 팩스턴 법무장관을 꺾었다([CBS](https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/)) · 이월: 원내대표 경선 입장 미정(AP 11/21) · 이월: 탈라리코 약 55–43 승(비공식).",
+     "urls": [
+      "https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/"
+     ],
+     "last": "2026-11-24"
+    },
+    {
      "date": "2026-11-23",
      "text": "AP 11/21에 따르면 탈라리코는 원내대표 경선 지지 후보를 정하지 않았다. OnPoint의 '밴 홀런, 보도 기준' 분류는 \"새 지도부를 원한다\"는 명단에만 근거한다 · 개표 결과(비공식, 원문 이월)는 탈라리코 약 55–43 승리다.",
      "urls": [],
@@ -7866,6 +7945,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-24",
+     "text": "결과 판단에 변화가 없다.",
+     "urls": [],
+     "last": "2026-11-24"
+    },
     {
      "date": "2026-11-23",
      "text": "판단은 바뀌지 않는다. 원내대표 경선 입장은 AP 표현대로 미정으로 둔다.",
@@ -8791,6 +8876,14 @@
    ],
    "local": [
     {
+     "date": "2026-11-24",
+     "text": "CBS(11/19): 74세 브라운은 밴스 의석의 잔여 임기를 채운다([CBS](https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/)) · 이월: 12/15 \"무렵\" 취임 예상(WEWS, 11/12), 원내대표 경선에서는 슈머 지지 · 이월: 브라운 2,301,042 – 허스테드 2,077,748(비공식).",
+     "urls": [
+      "https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/"
+     ],
+     "last": "2026-11-24"
+    },
+    {
      "date": "2026-11-23",
      "text": "브라운은 슈머를 지지한다. OnPoint는 NBC(11/10)를 근거로 '본인 표명'으로 분류했고, AP 보도와 일치한다 · 개표 결과(비공식, 원문 이월)는 브라운 2,301,042표, 허스티드 2,077,748표다 · 브라운은 12/15 \"무렵\" 취임 선서를 할 것으로 예상했다(WEWS, 11/12).",
      "urls": [],
@@ -9231,6 +9324,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-24",
+     "text": "결과 판단에 변화가 없다. 12/15 무렵 취임 일정을 계속 주시한다.",
+     "urls": [],
+     "last": "2026-11-24"
+    },
     {
      "date": "2026-11-23",
      "text": "판단은 바뀌지 않는다. 브라운은 원내대표 경선에서 슈머 쪽으로 확인된 표다.",
@@ -9991,6 +10090,15 @@
    ],
    "local": [
     {
+     "date": "2026-11-24",
+     "text": "이월: 던리비 주지사는 11/19 Newsmax 인터뷰에서 두 번째 '댄 설리번' 후보 수사가 설리번의 선거 소송을 뒷받침할 수 있다고 말했고, 법무부는 11/19 인증 저지 소송이 실익을 잃었다(moot)고 인정했다([Democracy Docket, 11/20](https://www.democracydocket.com/news-alerts/alaska-governor-wont-give-up-on-long-shot-bid-to-subvert-democratic-senate-win/), 좌). 던리비 임기는 12/7에 끝난다 · CBS(11/19): 펠톨라는 1만 2천 표 이상 차로 이겼고 두 번째 '댄 설리번'은 약 4,800표를 얻었다(인증 전 비공식, [CBS](https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/)).",
+     "urls": [
+      "https://www.democracydocket.com/news-alerts/alaska-governor-wont-give-up-on-long-shot-bid-to-subvert-democratic-senate-win/",
+      "https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/"
+     ],
+     "last": "2026-11-24"
+    },
+    {
      "date": "2026-11-23",
      "text": "이월: 던리비 주지사는 선거 소송 가능성을 열어두고 있으며, 소송 마감은 12/5이고 주지사 임기는 12/7에 끝난다 · 이월: 형사 수사가 진행 중이지만, 수사가 개표 결과와 관련 있다고 보도한 출처는 없다 · 세 건 모두 좌파 성향 매체 한 곳의 보도여서 **한쪽 성향 보도로 표시한다**(ADN 접속 차단). 다만 핵심 사실은 앞서 이월된 ADN·Alaska Beacon 보도와 일치한다.",
      "urls": [],
@@ -10533,6 +10641,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-24",
+     "text": "인증으로 개표 단계의 마지막 불확실성이 사라졌다. 남은 변수는 11/28까지의 재검표 요청과 12/3까지의 선거 소송인데 설리번은 둘 다 발표하지 않았다. 기존 '12/5' 소송 기한은 11/25 인증을 전제한 날짜였으므로 12/3으로 대체한다.",
+     "urls": [],
+     "last": "2026-11-24"
+    },
     {
      "date": "2026-11-23",
      "text": "원문은 인증 확인으로 남은 불확실성이 12/5까지 제기될 수 있는 선거 소송뿐이라고 본다. 시나리오 판단은 바뀌지 않는다.",
@@ -11388,6 +11502,14 @@
    ],
    "local": [
     {
+     "date": "2026-11-24",
+     "text": "투렉은 슈머·반 홀런을 모두 만났고 두 사람의 구상을 더 구체적으로 듣고 싶어 하는 미결정 상태다([AP via WSLS](https://www.wsls.com/news/politics/2026/11/17/van-hollens-bid-to-replace-schumer-as-leader-is-putting-pressure-on-democrats-to-take-sides/)). Little Village(11/17, 이월) 보도와 일치한다 · 이월: 투렉 50.5–46.4(개표율 98%, 비공식).",
+     "urls": [
+      "https://www.wsls.com/news/politics/2026/11/17/van-hollens-bid-to-replace-schumer-as-leader-is-putting-pressure-on-democrats-to-take-sides/"
+     ],
+     "last": "2026-11-24"
+    },
+    {
      "date": "2026-11-23",
      "text": "원내대표 경선: 투렉은 슈머·밴 홀런과 짧게 만났으며, 추가 설명을 기다리겠다며 결정을 미뤘다 · **상충 사항**: OnPoint는 The Hill을 근거로 투렉을 '슈머, 보도 기준'으로 분류했지만, 해당 기사는 열리지 않았다. Little Village(11/17)와 AP(11/21) 모두 결정 보류로 보도했으므로 원문은 OnPoint 분류를 신뢰하기 어렵다고 본다 · 개표 결과(비공식, 원문 이월)는 투렉 50.5–46.4(98% 개표)다.",
      "urls": [],
@@ -11840,6 +11962,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-24",
+     "text": "결과 판단에 변화가 없다. 투렉은 12/1 경선의 미결정표로 남아 있다.",
+     "urls": [],
+     "last": "2026-11-24"
+    },
     {
      "date": "2026-11-23",
      "text": "결과 판단은 바뀌지 않는다. 투렉의 원내대표 경선 표는 미정으로 둔다.",
@@ -12394,6 +12522,22 @@
    "local": [],
    "insight": [],
    "legal": [
+    {
+     "date": "2026-11-24",
+     "text": "**알래스카 선거 인증 완료(11/23).** 선거국 공지는 \"Two days ahead of schedule, the 2026 Alaska General Election has been certified\"다. 재검표 요청 기한은 주지사·부지사 선거가 11/26, 상원을 포함한 나머지 주 전역 선거가 **11/28**이다. 주 1심법원(superior court) 선거 소송 제기 기한은 **12/3**이다([Democracy Docket](https://www.democracydocket.com/news-alerts/alaska-certifies-democratic-senate-win-starting-clock-for-next-wave-of-challenges/), 좌).",
+     "urls": [
+      "https://www.democracydocket.com/news-alerts/alaska-certifies-democratic-senate-win-starting-clock-for-next-wave-of-challenges/"
+     ],
+     "last": "2026-11-24"
+    },
+    {
+     "date": "2026-11-24",
+     "text": "**법무부 인증 저지 소송:** 법무부는 11/19 인증 저지 소송이 실익을 잃었다(moot)고 인정했다. 던리비 주지사는 11/19 Newsmax 인터뷰에서 두 번째 '댄 설리번' 후보 수사가 \"enough smoke to indicate that there may be a fire\"를 보여준다며 펠톨라의 취임을 확언하지 않았다. 주지사실은 인증 권한이 부지사 감독하의 선거국장에게 있다고 밝혔다. 기사는 수사에서 법무부 소환장이 200건을 넘는다는 Fox News 보도를 인용했으나 익명 소식통에 근거한 수치라 미확인이다. 이해관계 고지: Democracy Docket 설립자와 연관된 Elias Law Group이 펠톨라 캠프를 대리한다([Democracy Docket, 11/20](https://www.democracydocket.com/news-alerts/alaska-governor-wont-give-up-on-long-shot-bid-to-subvert-democratic-senate-win/), 좌).",
+     "urls": [
+      "https://www.democracydocket.com/news-alerts/alaska-governor-wont-give-up-on-long-shot-bid-to-subvert-democratic-senate-win/"
+     ],
+     "last": "2026-11-24"
+    },
     {
      "date": "2026-11-23",
      "text": "알래스카 선거 소송 마감은 12/5이며, 던리비 주지사가 소송 가능성을 열어두고 있다(원문 이월). 선거국의 인증 목표일은 11/25다([Democracy Docket](https://www.democracydocket.com/news-alerts/alaska-will-certify-results-of-u-s-senate-race-election-director-confirms/), 좌).",
@@ -13053,6 +13197,14 @@
    ],
    "local": [
     {
+     "date": "2026-11-24",
+     "text": "이월: 리케츠가 무소속 오즈번을 꺾고 재선됐다. 오즈번은 6%p 이상 뒤졌다([KATV/Sinclair](https://katv.com/news/nation-world/nebraska-independent-dan-osborn-loses-senate-race-republican-pete-ricketts-democrats-2026-midterm-elections-rrt), 11/4). 공화 의석 유지로 계산한다.",
+     "urls": [
+      "https://katv.com/news/nation-world/nebraska-independent-dan-osborn-loses-senate-race-republican-pete-ricketts-democrats-2026-midterm-elections-rrt"
+     ],
+     "last": "2026-11-24"
+    },
+    {
      "date": "2026-11-23",
      "text": "이월: 리케츠가 무소속 오즈번을 꺾고 재선됐다([AP, Atlanta News First 게재, 11/4](https://www.atlantanewsfirst.com/2026/11/04/republican-pete-ricketts-wins-reelection-us-senate-over-independent-challenger-nebraska/)). 오즈번은 6%p 넘게 뒤졌다(KATV, 11/4).",
      "urls": [
@@ -13327,6 +13479,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-24",
+     "text": "결과 판단에 변화가 없다.",
+     "urls": [],
+     "last": "2026-11-24"
+    },
     {
      "date": "2026-11-23",
      "text": "판단은 바뀌지 않는다. 원문 기준에 따라 이 의석은 공화당 의석으로 센다.",
@@ -13861,6 +14019,15 @@
    ],
    "local": [
     {
+     "date": "2026-11-24",
+     "text": "CBS(11/19): 62세 해밀턴이 거의 100년 만에 처음으로 이 의석을 민주당으로 가져왔다([CBS](https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/)) · 이월: 원내대표 경선에서 슈머를 지지하지 않겠다고 했고 다른 후보도 지지하지 않았다(AP 11/21) · 이월: 해밀턴 50.9–46.1(개표율 95%, 비공식; [KCUR](https://www.kcur.org/politics-elections-and-government/2026-11-03/hamilton-wins-kansans-elect-democratic-senator-for-the-first-time-in-nearly-a-century), 중도좌, 공영).",
+     "urls": [
+      "https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/",
+      "https://www.kcur.org/politics-elections-and-government/2026-11-03/hamilton-wins-kansans-elect-democratic-senator-for-the-first-time-in-nearly-a-century"
+     ],
+     "last": "2026-11-24"
+    },
+    {
      "date": "2026-11-23",
      "text": "AP 11/21로 재확인한 결과, 해밀턴은 슈머를 지지하지 않겠다고 했고 다른 후보 지지는 밝히지 않았다. OnPoint의 밴 홀런 쪽 분류는 본인 발언을 넘어선 것이다 · 개표 결과(비공식, 원문 이월)는 해밀턴 50.9–46.1(95% 개표)이다([KCUR](https://www.kcur.org/politics-elections-and-government/2026-11-03/hamilton-wins-kansans-elect-democratic-senator-for-the-first-time-in-nearly-a-century), 중도좌, 공영).",
      "urls": [
@@ -14160,6 +14327,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-24",
+     "text": "결과 판단에 변화가 없다.",
+     "urls": [],
+     "last": "2026-11-24"
+    },
     {
      "date": "2026-11-23",
      "text": "판단은 바뀌지 않는다. 원내대표 경선 입장은 AP 표현대로 '슈머 불지지, 특정 후보 미표명'으로 둔다.",

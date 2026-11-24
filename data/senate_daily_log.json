@@ -1,8 +1,59 @@
 {
- "as_of": "2026-11-23",
+ "as_of": "2026-11-24",
  "source_label": "_NIS 상원 일일 브리핑(KR) — Cowork 예약 작업 산출물을 scripts/ingest_senate_daily.py가 그대로 추출",
  "provenance_note": "본문은 원천 마크다운을 자르지 않고 전재한다(요약·재서술 없음). 종결체는 원천대로 다체. 【수집 필요】 표기도 원천 그대로 남긴다 — 빈 칸을 추정으로 채우지 않는 규약과 같은 이유. 같은 날짜 재실행은 덮어쓴다.",
  "days": [
+  {
+   "date": "2026-11-24",
+   "source_file": "2026-11-24_site_KR.md",
+   "source_kind": "digest",
+   "chars": 8911,
+   "source_validation": {
+    "source_file": "2026-11-24_일일브리핑_KR.md",
+    "checks": [
+     "A 주 소절 1~9 순서",
+     "B [유세] 줄 11/11",
+     "E self-audit 블록 있음(항목 0)",
+     "F EN/KR 주 소절 11개 일치"
+    ],
+    "warnings": [
+     "C §5.1 지정 지역매체 링크 미확인(8/11): ['조지아', '미시간', '메인', '알래스카', '오하이오', '텍사스', '아이오와', '네브래스카']",
+     "D 조사 불릿에 기간/격차 누락 3/3: ['신규 상원 여론조사 없음(선거 종료).', '우선 추적 조사기관(NYT/Siena·Fox·Marist·AARP): 없음. 캠프 내부 조사: 없음.', '전국 ARG 지지율 조사(29/68)는 위 전국 스냅샷 항목에 있으며, 상원 경합 조사가 아니다.']"
+    ],
+    "missing_local_states": [
+     "조지아",
+     "미시간",
+     "메인",
+     "알래스카",
+     "오하이오",
+     "텍사스",
+     "아이오와",
+     "네브래스카"
+    ],
+    "status": "경고 있음"
+   },
+   "lead": "원문: senate_daily/2026-11-24_일일브리핑_KR.md · 정리 원칙: 원문에 없는 사실·수치·링크를 더하지 않는다.",
+   "summary": "- **알래스카가 11/23(월) 선거 결과를 인증했다. 목표일 11/25보다 이틀 이르다.** 펠톨라의 상원 승리가 확정됐고 민주 56–44 상원 구도도 서류상 공식화됐다. KTUU는 설리번이 아직 승복하지 않았고 거듭된 논평 요청에도 답하지 않았다고 보도했다([WebCenter Fairbanks/KTUU](https://www.webcenterfairbanks.com/2026/11/23/alaska-certifies-election-locking-wins-peltola-jkt-begich/)).\n- **새 기한:** 주 전역 선거 재검표 요청은 **11/28**, 주 1심법원 선거 소송 제기는 **12/3**까지다([Democracy Docket](https://www.democracydocket.com/news-alerts/alaska-certifies-democratic-senate-win-starting-clock-for-next-wave-of-challenges/), 좌). 기존에 이월해 온 '12/5'는 11/25 인증을 전제로 한 날짜였으므로 이번에 대체한다.\n- **알래스카 공방이 공식적으로 끝난 것은 아니다.** 던리비 주지사는 11/19 Newsmax 인터뷰에서 두 번째 '댄 설리번' 후보에 대한 주·연방 수사가 설리번 의원의 선거 소송을 뒷받침할 수 있다고 말했다. 같은 기사에 따르면 법무부는 11/19 인증 저지 소송이 실익을 잃었다(moot)고 인정했다. 던리비의 임기는 12/7에 끝난다([Democracy Docket, 11/20](https://www.democracydocket.com/news-alerts/alaska-governor-wont-give-up-on-long-shot-bid-to-subvert-democratic-senate-win/), 좌).\n- **원내대표 경선(12/1, 비밀투표):** 가장 최근의 중립적 집계는 AP(11/17)다. 당선자를 포함한 민주당 55명 가운데 약 15명이 공개적으로 슈머를, 4명이 반 홀런을 지지했다. 당선자 중 엘사예드·플래너건은 반 홀런 지지, 투렉·앤드루스는 미결정, 오소프는 입장 보류다([AP via WSLS](https://www.wsls.com/news/politics/2026/11/17/van-hollens-bid-to-replace-schumer-as-leader-is-putting-pressure-on-democrats-to-take-sides/)). Reason 오피니언 칼럼(11/23)은 Time 보도를 인용해 반 홀런 지지가 최소 5명이라고 썼다([Reason](https://reason.com/2026/11/23/are-chris-van-hollen-and-chuck-schumer-really-the-best-that-democrats-can-do/)).\n- 상원 의석은 **민주 56 – 공화 44**로 변동이 없다. 오늘의 변화는 알래스카 인증 완료뿐이다. CBS(11/19) 새 상원의원 프로필에 따르면 엘사예드는 미국 최초의 무슬림 상원의원, 파파스는 동성애자임을 공개한 첫 남성 상원의원이 되고, 해밀턴은 거의 100년 만에 캔자스 의석을 민주당으로 가져왔다([CBS](https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/)).",
+   "states": {
+    "GA": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음.\n- **로컬**: 이월: 오소프 약 59–41 승(비공식) · 원내대표 경선에서 오소프는 아직 입장을 정하지 않았다([AP via WSLS](https://www.wsls.com/news/politics/2026/11/17/van-hollens-bid-to-replace-schumer-as-leader-is-putting-pressure-on-democrats-to-take-sides/)).\n- **주 함의**: 결과 판단에 변화가 없다. 남은 관전점은 12/1 원내대표 경선에서의 오소프 선택이다.",
+    "MI": "- [Are Chris Van Hollen and Chuck Schumer Really the Best That Democrats Can Do?](https://reason.com/2026/11/23/are-chris-van-hollen-and-chuck-schumer-really-the-best-that-democrats-can-do/) (Reason, 오피니언, 11/23) — 자유지상주의 성향 매체의 오피니언 칼럼으로 뉴스 기사가 아니다. 엘사예드 당선자가 반 홀런이 세대교체와 상원 경험 사이에서 \"a really great balance\"를 갖췄다고 평가한 발언을 인용했다. 반 홀런 지지는 AP(11/17) 보도와 일치한다.\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음.\n- **로컬**: CBS(11/19): 42세인 엘사예드는 미국 최초의 무슬림 상원의원이 된다([CBS](https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/)) · 이월: 엘사예드 약 7%p 차 승(비공식) · 미확인(이월): 11/22 저품질 애그리게이터가 전한 엘사예드의 이란전쟁 예산 제한 관련 보도는 신뢰할 만한 매체에서 확인되지 않았다.\n- **주 함의**: 결과 판단에 변화가 없다. 엘사예드의 반 홀런 지지는 중립 매체(AP)와 오피니언 매체(Reason)가 일치해 전하므로 확인된 입장으로 본다.",
+    "NH": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음.\n- **로컬**: CBS(11/19): 46세 파파스는 동성애자임을 공개한 첫 남성 상원의원이 된다([CBS](https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/)). 원내대표 경선에 대한 공개 입장은 없다 · 이월: 파파스가 승리했고 스누누는 패배를 인정했다([NHPR](https://www.nhpr.org/nh-news/2026-11-03/pappas-wins-u-s-senate-race-defeating-sununu-in-marquee-matchup), 중도좌, 공영). 득표 격차는 아직 확인하지 못했다.\n- **주 함의**: 결과 판단에 변화가 없다. 득표 격차는 미확인 상태로 이월한다.",
+    "ME": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음.\n- **로컬**: CBS(11/19): 58세 잭슨이 콜린스를 꺾었다([CBS](https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/)) · 이월: 원내대표 경선에서 슈머에 반대하지만 지지 후보를 밝히지 않았다(AP 11/21) · 이월: 잭슨 약 53–47 승(비공식).\n- **주 함의**: 결과 판단에 변화가 없다.",
+    "NC": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음.\n- **로컬**: 이월: 비공식 개표 기준 쿠퍼 약 59–39([NC Newsline](https://ncnewsline.com/?p=195829), 중도좌~좌). 최종 인증 득표는 아직 확인하지 못했고 중도우 매체(Carolina Journal)의 결과 기사도 찾지 못했다 · 원내대표 경선: 중립 매체 보도에서 공개 입장을 찾지 못했다. 이월된 트래커의 '슈머' 표기는 여전히 미확인이다.\n- **주 함의**: 결과 판단에 변화가 없다. 최종 인증 득표수는 미확인 상태로 이월한다.",
+    "TX": "- **수집 구간 내 유의미한 신규 사안 없음.** 어제 브리핑에 실린 11/21 롱혼스 경기 '야유' 주장은 미확인 소셜미디어 게시물이므로 뉴스로 이월하지 않는다.\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음.\n- **로컬**: CBS(11/19): 37세 탈라리코가 팩스턴 법무장관을 꺾었다([CBS](https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/)) · 이월: 원내대표 경선 입장 미정(AP 11/21) · 이월: 탈라리코 약 55–43 승(비공식).\n- **주 함의**: 결과 판단에 변화가 없다.",
+    "OH": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음.\n- **로컬**: CBS(11/19): 74세 브라운은 밴스 의석의 잔여 임기를 채운다([CBS](https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/)) · 이월: 12/15 \"무렵\" 취임 예상(WEWS, 11/12), 원내대표 경선에서는 슈머 지지 · 이월: 브라운 2,301,042 – 허스테드 2,077,748(비공식).\n- **주 함의**: 결과 판단에 변화가 없다. 12/15 무렵 취임 일정을 계속 주시한다.",
+    "AK": "- [Alaska certifies election, locking in wins for Peltola, JKT and Begich](https://www.webcenterfairbanks.com/2026/11/23/alaska-certifies-election-locking-wins-peltola-jkt-begich/) (KTUU/Alaska's News Source, WebCenter Fairbanks 게재, 11/23) — 알래스카가 월요일 오후 선거 결과를 인증해 펠톨라의 상원 승리가 확정됐다. **설리번은 승복하지 않았고** 캠프는 거듭된 논평 요청에 답하지 않았다. 기사에 인증 득표수는 나오지 않는다.\n- [Alaska certifies Democratic Senate win, starting clock for next wave of challenges](https://www.democracydocket.com/news-alerts/alaska-certifies-democratic-senate-win-starting-clock-for-next-wave-of-challenges/) (Democracy Docket, 좌, 11/23) — 선거국 공지 \"Two days ahead of schedule\"를 인용했다. 상원을 포함한 주 전역 선거의 재검표 요청 기한은 **11/28**, 주 1심법원 선거 소송 제기 기한은 **12/3**이다.\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음.\n- **로컬**: 이월: 던리비 주지사는 11/19 Newsmax 인터뷰에서 두 번째 '댄 설리번' 후보 수사가 설리번의 선거 소송을 뒷받침할 수 있다고 말했고, 법무부는 11/19 인증 저지 소송이 실익을 잃었다(moot)고 인정했다([Democracy Docket, 11/20](https://www.democracydocket.com/news-alerts/alaska-governor-wont-give-up-on-long-shot-bid-to-subvert-democratic-senate-win/), 좌). 던리비 임기는 12/7에 끝난다 · CBS(11/19): 펠톨라는 1만 2천 표 이상 차로 이겼고 두 번째 '댄 설리번'은 약 4,800표를 얻었다(인증 전 비공식, [CBS](https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/)).\n- **주 함의**: 인증으로 개표 단계의 마지막 불확실성이 사라졌다. 남은 변수는 11/28까지의 재검표 요청과 12/3까지의 선거 소송인데 설리번은 둘 다 발표하지 않았다. 기존 '12/5' 소송 기한은 11/25 인증을 전제한 날짜였으므로 12/3으로 대체한다.",
+    "IA": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음.\n- **로컬**: 투렉은 슈머·반 홀런을 모두 만났고 두 사람의 구상을 더 구체적으로 듣고 싶어 하는 미결정 상태다([AP via WSLS](https://www.wsls.com/news/politics/2026/11/17/van-hollens-bid-to-replace-schumer-as-leader-is-putting-pressure-on-democrats-to-take-sides/)). Little Village(11/17, 이월) 보도와 일치한다 · 이월: 투렉 50.5–46.4(개표율 98%, 비공식).\n- **주 함의**: 결과 판단에 변화가 없다. 투렉은 12/1 경선의 미결정표로 남아 있다.",
+    "NE": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음.\n- **로컬**: 이월: 리케츠가 무소속 오즈번을 꺾고 재선됐다. 오즈번은 6%p 이상 뒤졌다([KATV/Sinclair](https://katv.com/news/nation-world/nebraska-independent-dan-osborn-loses-senate-race-republican-pete-ricketts-democrats-2026-midterm-elections-rrt), 11/4). 공화 의석 유지로 계산한다.\n- **주 함의**: 결과 판단에 변화가 없다.",
+    "KS": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음.\n- **로컬**: CBS(11/19): 62세 해밀턴이 거의 100년 만에 처음으로 이 의석을 민주당으로 가져왔다([CBS](https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/)) · 이월: 원내대표 경선에서 슈머를 지지하지 않겠다고 했고 다른 후보도 지지하지 않았다(AP 11/21) · 이월: 해밀턴 50.9–46.1(개표율 95%, 비공식; [KCUR](https://www.kcur.org/politics-elections-and-government/2026-11-03/hamilton-wins-kansans-elect-democratic-senator-for-the-first-time-in-nearly-a-century), 중도좌, 공영).\n- **주 함의**: 결과 판단에 변화가 없다."
+   },
+   "extras": [],
+   "polls": "이번 회차 신규 본선 조사 없음. 우선 추적 기관(NYT/Siena·Fox News·Marist Poll·AARP/Fabrizio Ward·Impact Research) 조사와 캠프 내부 조사도 원문에 없다.",
+   "watch": "- **11/28** 알래스카 주 전역 선거 재검표 요청 기한. 설리번이 요청을 발표하는지.\n- **12/1** 민주당 원내대표 비밀투표(슈머 대 반 홀런). 오소프·투렉·앤드루스 등 미결정 당선자의 입장 공개 여부.\n- **12/3** 알래스카 주 1심법원 선거 소송 제기 기한. 설리번의 승복 여부.\n- **12/7** 던리비 주지사 임기 종료.\n- **12/15 무렵** 브라운 취임 예상(오하이오).\n- 노스캐롤라이나 최종 인증 득표수와 뉴햄프셔 득표 격차 확인.",
+   "gaps": "",
+   "national_money": "- 없음",
+   "national_legal": "- **알래스카 선거 인증 완료(11/23).** 선거국 공지는 \"Two days ahead of schedule, the 2026 Alaska General Election has been certified\"다. 재검표 요청 기한은 주지사·부지사 선거가 11/26, 상원을 포함한 나머지 주 전역 선거가 **11/28**이다. 주 1심법원(superior court) 선거 소송 제기 기한은 **12/3**이다([Democracy Docket](https://www.democracydocket.com/news-alerts/alaska-certifies-democratic-senate-win-starting-clock-for-next-wave-of-challenges/), 좌).\n- **법무부 인증 저지 소송:** 법무부는 11/19 인증 저지 소송이 실익을 잃었다(moot)고 인정했다. 던리비 주지사는 11/19 Newsmax 인터뷰에서 두 번째 '댄 설리번' 후보 수사가 \"enough smoke to indicate that there may be a fire\"를 보여준다며 펠톨라의 취임을 확언하지 않았다. 주지사실은 인증 권한이 부지사 감독하의 선거국장에게 있다고 밝혔다. 기사는 수사에서 법무부 소환장이 200건을 넘는다는 Fox News 보도를 인용했으나 익명 소식통에 근거한 수치라 미확인이다. 이해관계 고지: Democracy Docket 설립자와 연관된 Elias Law Group이 펠톨라 캠프를 대리한다([Democracy Docket, 11/20](https://www.democracydocket.com/news-alerts/alaska-governor-wont-give-up-on-long-shot-bid-to-subvert-democratic-senate-win/), 좌)."
+  },
   {
    "date": "2026-11-23",
    "source_file": "2026-11-23_site_KR.md",
