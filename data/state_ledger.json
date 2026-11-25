@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-24",
+ "as_of": "2026-11-25",
  "source_label": "상원 일일 정리본(senate_daily/site)의 주별 태그 줄 — scripts/ingest_senate_daily.py build_ledger()",
  "provenance_note": "여론조사·자금·로컬·주 함의 네 항목. 같은 문장은 처음 본 날짜로 한 번만 싣고 last 에 마지막 언급일. 원문 전재(정리본 이전) 날짜는 제외. states.US.money 는 정리본 v1.2의 「전국 자금」 절, states.US.legal 은 v1.3의 「법·제도」 절.",
  "states": {
@@ -429,6 +429,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-11-25",
+     "text": "이월: 오소프는 원내대표 경선에서 입장 미정이다(AP 11/17).",
+     "urls": [],
+     "last": "2026-11-25"
+    },
     {
      "date": "2026-11-24",
      "text": "이월: 오소프 약 59–41 승(비공식) · 원내대표 경선에서 오소프는 아직 입장을 정하지 않았다([AP via WSLS](https://www.wsls.com/news/politics/2026/11/17/van-hollens-bid-to-replace-schumer-as-leader-is-putting-pressure-on-democrats-to-take-sides/)).",
@@ -915,6 +921,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-25",
+     "text": "오소프 약 59–41 승(비공식)에 변동이 없다. 남은 관심사는 원내대표 경선에서의 입장이다.",
+     "urls": [],
+     "last": "2026-11-25"
+    },
     {
      "date": "2026-11-24",
      "text": "결과 판단에 변화가 없다. 남은 관전점은 12/1 원내대표 경선에서의 오소프 선택이다.",
@@ -1807,6 +1819,12 @@
    ],
    "local": [
     {
+     "date": "2026-11-25",
+     "text": "이월: 엘사예드는 밴 홀런을 지지한다(AP 11/17; Reason 11/23). 이란전쟁 예산 제한 관련 애그리게이터 항목은 여전히 미확인이어서 삭제했다.",
+     "urls": [],
+     "last": "2026-11-25"
+    },
+    {
      "date": "2026-11-24",
      "text": "CBS(11/19): 42세인 엘사예드는 미국 최초의 무슬림 상원의원이 된다([CBS](https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/)) · 이월: 엘사예드 약 7%p 차 승(비공식) · 미확인(이월): 11/22 저품질 애그리게이터가 전한 엘사예드의 이란전쟁 예산 제한 관련 보도는 신뢰할 만한 매체에서 확인되지 않았다.",
      "urls": [
@@ -2331,6 +2349,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-25",
+     "text": "엘사예드 약 7%p 승(비공식)에 변동이 없다.",
+     "urls": [],
+     "last": "2026-11-25"
+    },
     {
      "date": "2026-11-24",
      "text": "결과 판단에 변화가 없다. 엘사예드의 반 홀런 지지는 중립 매체(AP)와 오피니언 매체(Reason)가 일치해 전하므로 확인된 입장으로 본다.",
@@ -3216,6 +3240,12 @@
    ],
    "local": [
     {
+     "date": "2026-11-25",
+     "text": "이월: 원내대표 입장 공개 기록 없음.",
+     "urls": [],
+     "last": "2026-11-25"
+    },
+    {
      "date": "2026-11-24",
      "text": "CBS(11/19): 46세 파파스는 동성애자임을 공개한 첫 남성 상원의원이 된다([CBS](https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/)). 원내대표 경선에 대한 공개 입장은 없다 · 이월: 파파스가 승리했고 스누누는 패배를 인정했다([NHPR](https://www.nhpr.org/nh-news/2026-11-03/pappas-wins-u-s-senate-race-defeating-sununu-in-marquee-matchup), 중도좌, 공영). 득표 격차는 아직 확인하지 못했다.",
      "urls": [
@@ -3665,6 +3695,14 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-25",
+     "text": "파파스가 누누를 꺾었고 누누는 승복했다 ([NHPR](https://www.nhpr.org/nh-news/2026-11-03/pappas-wins-u-s-senate-race-defeating-sununu-in-marquee-matchup), 중도좌, 공영). 격차는 아직 확보하지 못했다.",
+     "urls": [
+      "https://www.nhpr.org/nh-news/2026-11-03/pappas-wins-u-s-senate-race-defeating-sununu-in-marquee-matchup"
+     ],
+     "last": "2026-11-25"
+    },
     {
      "date": "2026-11-24",
      "text": "결과 판단에 변화가 없다. 득표 격차는 미확인 상태로 이월한다.",
@@ -4378,6 +4416,14 @@
    ],
    "money": [
     {
+     "date": "2026-11-25",
+     "text": "콜럼의 FEC 서류에 잭슨 연결 PAC가 공동모금 참여자로 올라 있다. 단일 출처이며 FEC 원자료와 대조하지 않았다 ([Magnolia Tribune](https://magnoliatribune.com/2026/11/24/colom-just-won-his-bid-to-be-mississippis-next-u-s-senator-he-has-already-filed-to-seek-re-election-in-2032/), 중도우).",
+     "urls": [
+      "https://magnoliatribune.com/2026/11/24/colom-just-won-his-bid-to-be-mississippis-next-u-s-senator-he-has-already-filed-to-seek-re-election-in-2032/"
+     ],
+     "last": "2026-11-25"
+    },
+    {
      "date": "2026-11-04",
      "text": "OpenSecrets 기준 외부 단체 지출은 1억 3,700만 달러 이상이고, 절반 이상이 잭슨 공격용이다. 일론 머스크의 지출이 반복적인 쟁점이다([Boston Globe](https://www.bostonglobe.com/2026/11/02/nation/maine-senate-race-troy-jackson-susan-collins/)).",
      "urls": [
@@ -4535,6 +4581,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-11-25",
+     "text": "이월: 잭슨은 슈머에 반대하지만 지지 후보는 밝히지 않았다(AP 11/21).",
+     "urls": [],
+     "last": "2026-11-25"
+    },
     {
      "date": "2026-11-24",
      "text": "CBS(11/19): 58세 잭슨이 콜린스를 꺾었다([CBS](https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/)) · 이월: 원내대표 경선에서 슈머에 반대하지만 지지 후보를 밝히지 않았다(AP 11/21) · 이월: 잭슨 약 53–47 승(비공식).",
@@ -5031,6 +5083,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-25",
+     "text": "잭슨 약 53–47 승(비공식)에 변동이 없다. 이번 창에서 잭슨 관련 항목은 공동모금 세부 사항 하나뿐이다.",
+     "urls": [],
+     "last": "2026-11-25"
+    },
     {
      "date": "2026-11-24",
      "text": "결과 판단에 변화가 없다.",
@@ -5964,6 +6022,12 @@
    ],
    "local": [
     {
+     "date": "2026-11-25",
+     "text": "주 선관위의 본선거 인증은 검색되지 않았다. 2024년에는 11/26에 인증했으므로 임박했을 수 있다(날짜 미확인) · 이월: 원내대표 입장은 중립 보도로 확인되지 않았다.",
+     "urls": [],
+     "last": "2026-11-25"
+    },
+    {
      "date": "2026-11-24",
      "text": "이월: 비공식 개표 기준 쿠퍼 약 59–39([NC Newsline](https://ncnewsline.com/?p=195829), 중도좌~좌). 최종 인증 득표는 아직 확인하지 못했고 중도우 매체(Carolina Journal)의 결과 기사도 찾지 못했다 · 원내대표 경선: 중립 매체 보도에서 공개 입장을 찾지 못했다. 이월된 트래커의 '슈머' 표기는 여전히 미확인이다.",
      "urls": [
@@ -6424,6 +6488,14 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-25",
+     "text": "쿠퍼 비공식 약 59–39다 ([NC Newsline](https://ncnewsline.com/?p=195829), 중도좌~좌). 우파 쪽 결과 기사는 찾지 못해 한쪽 출처에 의존한다.",
+     "urls": [
+      "https://ncnewsline.com/?p=195829"
+     ],
+     "last": "2026-11-25"
+    },
     {
      "date": "2026-11-24",
      "text": "결과 판단에 변화가 없다. 최종 인증 득표수는 미확인 상태로 이월한다.",
@@ -7188,6 +7260,12 @@
    ],
    "money": [
     {
+     "date": "2026-11-25",
+     "text": "탈라리코는 콜럼 FEC 서류에 공동모금 참여자로만 언급된다(메인 참조).",
+     "urls": [],
+     "last": "2026-11-25"
+    },
+    {
      "date": "2026-11-05",
      "text": "예비선거 이후 광고비가 약 4억 800만 달러로, 역대 최고 비용의 상원 선거였다(Texas Tribune, 선거 전).",
      "urls": [],
@@ -7445,6 +7523,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-11-25",
+     "text": "이월: 원내대표 경선 입장 미정(AP 11/21).",
+     "urls": [],
+     "last": "2026-11-25"
+    },
     {
      "date": "2026-11-24",
      "text": "CBS(11/19): 37세 탈라리코가 팩스턴 법무장관을 꺾었다([CBS](https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/)) · 이월: 원내대표 경선 입장 미정(AP 11/21) · 이월: 탈라리코 약 55–43 승(비공식).",
@@ -7945,6 +8029,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-25",
+     "text": "탈라리코 약 55–43 승(비공식)에 변동이 없다.",
+     "urls": [],
+     "last": "2026-11-25"
+    },
     {
      "date": "2026-11-24",
      "text": "결과 판단에 변화가 없다.",
@@ -8876,6 +8966,12 @@
    ],
    "local": [
     {
+     "date": "2026-11-25",
+     "text": "이월: 12/15 \"전후\" 취임이 예상되고(WEWS, 11/12), 브라운은 슈머를 지지한다.",
+     "urls": [],
+     "last": "2026-11-25"
+    },
+    {
      "date": "2026-11-24",
      "text": "CBS(11/19): 74세 브라운은 밴스 의석의 잔여 임기를 채운다([CBS](https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/)) · 이월: 12/15 \"무렵\" 취임 예상(WEWS, 11/12), 원내대표 경선에서는 슈머 지지 · 이월: 브라운 2,301,042 – 허스테드 2,077,748(비공식).",
      "urls": [
@@ -9324,6 +9420,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-25",
+     "text": "브라운 2,301,042 – 허스테드 2,077,748(비공식)에 변동이 없다.",
+     "urls": [],
+     "last": "2026-11-25"
+    },
     {
      "date": "2026-11-24",
      "text": "결과 판단에 변화가 없다. 12/15 무렵 취임 일정을 계속 주시한다.",
@@ -10090,6 +10192,14 @@
    ],
    "local": [
     {
+     "date": "2026-11-25",
+     "text": "펠톨라는 피터즈버그 후보에 대해 \"그의 출마와 아무 관련이 없다\"고 했고 슈머 지지는 미정이다 ([KTUU](https://www.alaskasnewssource.com/2026/11/24/sexism-price-gouging-child-tax-credits-mary-peltola-alaskas-next-senator/), 11/23) · 이월: 재검표 요청 기한은 11/28, 선거소송 기한은 12/3이며 제기 보도는 없다.",
+     "urls": [
+      "https://www.alaskasnewssource.com/2026/11/24/sexism-price-gouging-child-tax-credits-mary-peltola-alaskas-next-senator/"
+     ],
+     "last": "2026-11-25"
+    },
+    {
      "date": "2026-11-24",
      "text": "이월: 던리비 주지사는 11/19 Newsmax 인터뷰에서 두 번째 '댄 설리번' 후보 수사가 설리번의 선거 소송을 뒷받침할 수 있다고 말했고, 법무부는 11/19 인증 저지 소송이 실익을 잃었다(moot)고 인정했다([Democracy Docket, 11/20](https://www.democracydocket.com/news-alerts/alaska-governor-wont-give-up-on-long-shot-bid-to-subvert-democratic-senate-win/), 좌). 던리비 임기는 12/7에 끝난다 · CBS(11/19): 펠톨라는 1만 2천 표 이상 차로 이겼고 두 번째 '댄 설리번'은 약 4,800표를 얻었다(인증 전 비공식, [CBS](https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/)).",
      "urls": [
@@ -10641,6 +10751,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-25",
+     "text": "승복은 성향이 다른 매체들이 교차 확인했다. 후보 차원의 이의 제기 가능성은 사라졌고, 형사 수사는 인증에 영향이 없다.",
+     "urls": [],
+     "last": "2026-11-25"
+    },
     {
      "date": "2026-11-24",
      "text": "인증으로 개표 단계의 마지막 불확실성이 사라졌다. 남은 변수는 11/28까지의 재검표 요청과 12/3까지의 선거 소송인데 설리번은 둘 다 발표하지 않았다. 기존 '12/5' 소송 기한은 11/25 인증을 전제한 날짜였으므로 12/3으로 대체한다.",
@@ -11352,6 +11468,12 @@
    ],
    "money": [
     {
+     "date": "2026-11-25",
+     "text": "투렉은 콜럼 FEC 서류에 공동모금 참여자로만 언급된다(메인 참조).",
+     "urls": [],
+     "last": "2026-11-25"
+    },
+    {
      "date": "2026-11-04",
      "text": "RNC와 힌슨 캠프가 500만 달러 공동 광고를 집행했다([Kalshi News](https://news.kalshi.com/p/iowa-senate-odds-dead-even-turek-hinson-election-day)).",
      "urls": [
@@ -11501,6 +11623,12 @@
     }
    ],
    "local": [
+    {
+     "date": "2026-11-25",
+     "text": "이월: 원내대표 경선 미정(AP 11/17).",
+     "urls": [],
+     "last": "2026-11-25"
+    },
     {
      "date": "2026-11-24",
      "text": "투렉은 슈머·반 홀런을 모두 만났고 두 사람의 구상을 더 구체적으로 듣고 싶어 하는 미결정 상태다([AP via WSLS](https://www.wsls.com/news/politics/2026/11/17/van-hollens-bid-to-replace-schumer-as-leader-is-putting-pressure-on-democrats-to-take-sides/)). Little Village(11/17, 이월) 보도와 일치한다 · 이월: 투렉 50.5–46.4(개표율 98%, 비공식).",
@@ -11962,6 +12090,12 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-25",
+     "text": "투렉 50.5–46.4(98% 개표, 비공식)에 변동이 없다.",
+     "urls": [],
+     "last": "2026-11-25"
+    },
     {
      "date": "2026-11-24",
      "text": "결과 판단에 변화가 없다. 투렉은 12/1 경선의 미결정표로 남아 있다.",
@@ -12522,6 +12656,20 @@
    "local": [],
    "insight": [],
    "legal": [
+    {
+     "date": "2026-11-25",
+     "text": "알래스카: 법무부가 인증 중단 소송을 냈다가 취하했고(11/20 관련기사: 실익 없음), 이후 법무부와 주 경찰이 '디코이 댄' 출마에 대한 형사 수사에 착수했다. 연방 당국은 범죄 성립 여부에 대해 말하지 않았다 ([The Alaska Current](https://thealaskacurrent.com/2026/11/24/dan-sullivan-finally-concedes-alaska-senate-race-to-mary-peltola/)).",
+     "urls": [
+      "https://thealaskacurrent.com/2026/11/24/dan-sullivan-finally-concedes-alaska-senate-race-to-mary-peltola/"
+     ],
+     "last": "2026-11-25"
+    },
+    {
+     "date": "2026-11-25",
+     "text": "알래스카 기한(이월): 상원 재검표 요청은 11/28, 고등법원 선거소송은 12/3까지다. 제기 보도는 없다. 던리비 주지사(12/7 퇴임)는 11/19 소송 가능성을 언급했으나 새 발언은 찾지 못했다.",
+     "urls": [],
+     "last": "2026-11-25"
+    },
     {
      "date": "2026-11-24",
      "text": "**알래스카 선거 인증 완료(11/23).** 선거국 공지는 \"Two days ahead of schedule, the 2026 Alaska General Election has been certified\"다. 재검표 요청 기한은 주지사·부지사 선거가 11/26, 상원을 포함한 나머지 주 전역 선거가 **11/28**이다. 주 1심법원(superior court) 선거 소송 제기 기한은 **12/3**이다([Democracy Docket](https://www.democracydocket.com/news-alerts/alaska-certifies-democratic-senate-win-starting-clock-for-next-wave-of-challenges/), 좌).",
@@ -13480,6 +13628,12 @@
    ],
    "insight": [
     {
+     "date": "2026-11-25",
+     "text": "리키츠가 무소속 오스본을 6%p 이상 차로 꺾고 재선했다(KATV/Sinclair, 11/4). 공화 의석 유지에 변동이 없다.",
+     "urls": [],
+     "last": "2026-11-25"
+    },
+    {
      "date": "2026-11-24",
      "text": "결과 판단에 변화가 없다.",
      "urls": [],
@@ -14019,6 +14173,12 @@
    ],
    "local": [
     {
+     "date": "2026-11-25",
+     "text": "이월: 해밀턴은 슈머를 지지하지 않으며 지지 후보도 없다(AP 11/21).",
+     "urls": [],
+     "last": "2026-11-25"
+    },
+    {
      "date": "2026-11-24",
      "text": "CBS(11/19): 62세 해밀턴이 거의 100년 만에 처음으로 이 의석을 민주당으로 가져왔다([CBS](https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/)) · 이월: 원내대표 경선에서 슈머를 지지하지 않겠다고 했고 다른 후보도 지지하지 않았다(AP 11/21) · 이월: 해밀턴 50.9–46.1(개표율 95%, 비공식; [KCUR](https://www.kcur.org/politics-elections-and-government/2026-11-03/hamilton-wins-kansans-elect-democratic-senator-for-the-first-time-in-nearly-a-century), 중도좌, 공영).",
      "urls": [
@@ -14327,6 +14487,14 @@
     }
    ],
    "insight": [
+    {
+     "date": "2026-11-25",
+     "text": "해밀턴 50.9–46.1(95% 개표, 비공식)에 변동이 없다 ([KCUR](https://www.kcur.org/politics-elections-and-government/2026-11-03/hamilton-wins-kansans-elect-democratic-senator-for-the-first-time-in-nearly-a-century), 중도좌, 공영).",
+     "urls": [
+      "https://www.kcur.org/politics-elections-and-government/2026-11-03/hamilton-wins-kansans-elect-democratic-senator-for-the-first-time-in-nearly-a-century"
+     ],
+     "last": "2026-11-25"
+    },
     {
      "date": "2026-11-24",
      "text": "결과 판단에 변화가 없다.",
