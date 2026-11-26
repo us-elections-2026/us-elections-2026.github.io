@@ -1,8 +1,60 @@
 {
- "as_of": "2026-11-25",
+ "as_of": "2026-11-26",
  "source_label": "_NIS 상원 일일 브리핑(KR) — Cowork 예약 작업 산출물을 scripts/ingest_senate_daily.py가 그대로 추출",
  "provenance_note": "본문은 원천 마크다운을 자르지 않고 전재한다(요약·재서술 없음). 종결체는 원천대로 다체. 【수집 필요】 표기도 원천 그대로 남긴다 — 빈 칸을 추정으로 채우지 않는 규약과 같은 이유. 같은 날짜 재실행은 덮어쓴다.",
  "days": [
+  {
+   "date": "2026-11-26",
+   "source_file": "2026-11-26_site_KR.md",
+   "source_kind": "digest",
+   "chars": 8457,
+   "source_validation": {
+    "source_file": "2026-11-26_일일브리핑_KR.md",
+    "checks": [
+     "A 주 소절 1~9 순서",
+     "B [유세] 줄 11/11",
+     "F EN/KR 주 소절 11개 일치"
+    ],
+    "warnings": [
+     "C §5.1 지정 지역매체 링크 미확인(8/11): ['조지아', '미시간', '메인', '알래스카', '오하이오', '텍사스', '아이오와', '네브래스카']",
+     "D 조사 불릿에 기간/격차 누락 2/3: ['신규 상원 선거 여론조사 없음. 선거는 끝났다.', '주요 조사기관(NYT/Siena·Fox·Marist·AARP): 없음. 캠프 내부 조사: 없음.']",
+     "E 「## Run self-audit」 블록 없음(v2.8 §13)",
+     "주목 기관이 원문에는 있는데 정리본에 없음: aarp, marist, siena — 원문 대조 필요"
+    ],
+    "missing_local_states": [
+     "조지아",
+     "미시간",
+     "메인",
+     "알래스카",
+     "오하이오",
+     "텍사스",
+     "아이오와",
+     "네브래스카"
+    ],
+    "status": "경고 있음"
+   },
+   "lead": "원문: senate_daily/2026-11-26_일일브리핑_KR.md · 정리 원칙: 원문에 없는 사실·수치·링크를 더하지 않는다.",
+   "summary": "- **노스캐롤라이나가 11/24(화) 2026 중간선거 결과를 인증했다.** 선관위 자체 보도자료에 따르면 전원일치 의결이다([NCSBE](https://ncsbe.gov/news/press-releases)). 이로써 쿠퍼의 승리가 주 차원에서 공식 확정됐다. 인증된 상원 득표수는 목록에 없어 아직 수집하지 못했다.\n- **원내대표 경선(12/1, 비밀투표): Newsweek 11/24는 뉴햄프셔 당선인 크리스 패파스를 슈머를 지지하지 않을 당선인으로 분류했다.** 해밀턴(KS), 잭슨(ME), 스트래턴(IL)과 함께 \"반(反)슈머, 밴 홀런 지지는 미정\" 그룹이다([Newsweek](https://newsweek.com/chuck-schumer-list-celebrities-opposed-senate-leader-12763451)). 본 브리핑에서 패파스의 입장이 확인된 것은 처음이다. 다만 전국 매체 1곳에 근거하며 NH 지역 매체로는 아직 교차 확인되지 않았다. 같은 기사는 엘-사예드(MI)를 밴 홀런 지지자로 명시했는데, 이월된 AP 보도와 일치한다.\n- **표 계산 현황:** 밴 홀런은 11/22 자신이 \"15표 이상\"을 확보했다고 말했다. 승리에는 28표가 필요하다. 보도는 밴 홀런이 표를 확보했다는 슈머의 주장을 반박하지 않는다고 덧붙였다([WBFF/National News Desk](https://foxbaltimore.com/news/nation-world/chris-van-hollen-appears-behind-in-senate-race-to-lead-democrats-chuck-schumer-election-rrt)). Newsweek는 슈머 확고 지지를 최소 15명으로 집계했다. 중립적인 전체 표 계산표는 읽지 못했다. 참고용으로 Economist/YouGov(11/20–23, 미국 성인 1,623명)의 민주당 지지층 원내대표 선호도는 밴 홀런 40%, 슈머 19%, 미정 41%다(Newsweek 11/24 인용). 원내대표는 유권자가 아니라 상원의원들이 선출한다.\n- **알래스카:** 수집 범위 안에서 재검표 청구나 법원 소송 보도는 없었다. 재검표 청구 시한(11/28, KTUU 이월)이 이번 주말 지난다. 설리번은 11/24 승복했다([Alaska Watchman](https://alaskawatchman.com/2026/11/24/sen-sullivan-breaks-silence-concedes-defeat-to-mary-peltola/), 우; 이월).\n- **오하이오 일정(맥락 재확인):** 공식 확정 집계는 11/24, 인증 시한은 12/4다. 주법상 허스테드의 임명 임기는 12/15까지이며, 주 국무장관실은 허스테드가 임기를 채울 것이라고 밝혔다([Ohio Capital Journal](https://www.newsfromthestates.com/article/ohios-us-senator-elect-sherrod-brown-could-get-early-start-washington), 좌, 11/13). 11/24 집계가 실제로 진행됐는지는 확인하지 못했다.\n- 상원 의석 **민주 56 – 공화 44** 유지. 모니터링 대상 전 선거가 승복 또는 당선 확정 상태이며, NC는 인증까지 마쳤다. 시나리오상 Base(공화 과반 유지)·Bear(민주 54-46~55-45)는 배제되고 Bull(50-50~51-49)은 56–44로 초과 달성됐다. 남은 쟁점은 의석수가 아니라 당내 문제(12/1 원내대표 경선)다([NCSBE](https://ncsbe.gov/news/press-releases)).",
+   "states": {
+    "GA": "- [Forget Schumer and Van Hollen. Look to the South for the next Senate leader.](https://bostonglobe.com/2026/11/25/opinion/democrats-south-chuck-schumer-chris-van-hollen) (Boston Globe 칼럼, 11/25) — 보도가 아닌 의견 칼럼이다. 상원 민주당 지도부 상위 4석에 남부 출신이 없다고 지적하고, 워녹·오소프가 지도부에 있었다면 당이 더 나은 성과를 냈을 수 있다고 주장한다. 오소프의 입장이나 행보는 보도하지 않았다.\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음.\n- **로컬**: 이월: 오소프는 원내대표 경선에서 입장을 밝히지 않았다(AP 11/17) · 득표는 약 59–41(비공식) · §5.1 매체는 읽지 못했다.\n- **주 함의**: 오소프의 경선 입장은 여전히 미확인이다. 오늘 칼럼은 남부 출신 지도부 부재를 지적하는 의견이며 오소프의 행보에 관한 보도가 아니므로 주 판단을 바꾸지 않는다.",
+    "MI": "- [Chuck Schumer Update—Full List of Celebrities Opposing Him as Senate Leader](https://newsweek.com/chuck-schumer-list-celebrities-opposed-senate-leader-12763451) (Newsweek, 11/24) — 엘-사예드 당선인과 슬롯킨 상원의원을 밴 홀런 지지자로 명시했다. 민주당 후원자 40명이 밴 홀런 지지를 촉구한 서한도 보도했다. 이월된 엘-사예드 입장을 재확인하는 내용이다.\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음.\n- **로컬**: 이월: 엘-사예드 약 7%p 차 승리(비공식) · §5.1 매체는 읽지 못했다.\n- **주 함의**: 엘-사예드의 밴 홀런 지지는 이월된 AP 보도와 일치하는 재확인이다. 미시간의 판단은 바뀌지 않는다.",
+    "NH": "- [Chuck Schumer Update—Full List of Celebrities Opposing Him as Senate Leader](https://newsweek.com/chuck-schumer-list-celebrities-opposed-senate-leader-12763451) (Newsweek, 11/24) — 크리스 패파스 당선인을 슈머를 \"지지하지 않을\" 당선인으로 분류했다. 밴 홀런 지지는 밝히지 않은 상태다. 이는 **새로운 내용**으로, 이전 브리핑에서는 공개 입장이 없었다. 전국 매체 1곳에 근거하며, NH 지역 매체(WMUR, NHPR, Union Leader)에서는 확인되지 않았다.\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음.\n- **로컬**: 이월: 패파스가 승리했고 수누누는 승복했다([NHPR](https://www.nhpr.org/nh-news/2026-11-03/pappas-wins-u-s-senate-race-defeating-sununu-in-marquee-matchup), 중도좌, 공영) · 득표 격차는 아직 확보하지 못했다.\n- **주 함의**: **패파스의 경선 입장이 처음 확인됐다.** 다만 전국 매체 1곳에만 근거하고 NH 지역 매체 교차 확인이 없어 단일 출처 상태다. 승패 판단에는 변화가 없다.",
+    "ME": "- [Chuck Schumer Update—Full List of Celebrities Opposing Him as Senate Leader](https://newsweek.com/chuck-schumer-list-celebrities-opposed-senate-leader-12763451) (Newsweek, 11/24) — 트로이 잭슨 당선인을 \"반슈머, 밴 홀런 지지는 미정\"으로 분류했다. 이월된 AP 11/21 보도와 일치한다.\n- **여론조사**: 없음(선거 종료).\n- **자금**: 이월: 11/24 Magnolia Tribune 공동모금 관련 내용은 여전히 FEC 자료와 대조하지 못했다.\n- **로컬**: 이월: 잭슨 약 53–47 승리(비공식) · §5.1 매체는 읽지 못했다.\n- **주 함의**: 잭슨의 반슈머·밴 홀런 미정 입장은 재확인이다. 공동모금 건은 미확인 상태로 남아 있어 주 판단에 변화가 없다.",
+    "NC": "- [State Board Unanimously Certifies Midterm Elections](https://ncsbe.gov/news/press-releases) (NCSBE 보도자료, 11/24) — 공식 자료다. 주 선관위가 화요일 2026 본선거 결과를 전원일치로 인증했다. 카운티별 확정 집계(canvass)는 11/13에 끝났으며, [ABC11의 11/5 해설 기사](https://abc11.com/post/when-will-nc-election-results-certified-heres-what-happens-day-matters/20017780/)가 전한 일정과 일치한다. 별도로 지방검사장 선거구 한 곳에 부분 수작업 재검표가 결정됐는데, 상원 선거와는 무관하다. 인증된 상원 득표수는 목록에 없다(【수집 필요】).\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음.\n- **로컬**: 이월: 비공식 집계 쿠퍼 약 59–39([NC Newsline](https://ncnewsline.com/?p=195829), 중도좌~좌) · 인증을 다룬 Carolina Journal(중도우) 기사는 찾지 못해 우파 성향 지역 매체의 시각은 반영되지 않았다. 다만 이 사안의 출처는 공식 선관위이므로 한쪽 당파 매체에만 의존한 보도는 아니다 · 쿠퍼의 원내대표 경선 입장은 확인되지 않았다.\n- **주 함의**: **11/24 인증으로 쿠퍼의 승리가 주 차원에서 공식 확정됐다.** 핵심 탈환 1석이 한층 확정된 것이며, 이미 결론 난 판단에 변화는 없다. 인증된 상원 득표수와 쿠퍼의 경선 입장은 아직 수집하지 못했다.",
+    "TX": "- **수집 구간 내 유의미한 신규 사안 없음.** 오늘 원내대표 경선 보도에 탈라리코는 등장하지 않았다(검색함).\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음.\n- **로컬**: 이월: 탈라리코 약 55–43 승리(비공식) · 경선 입장 미정(AP 11/21).\n- **주 함의**: 변화 없음. 탈라리코의 경선 입장은 여전히 미정이다.",
+    "OH": "- **수집 구간 내 유의미한 신규 사안 없음.** 24시간 내 특이사항 없음(검색함).\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음.\n- **로컬**: 맥락(오늘 재확인): [Ohio Capital Journal, States Newsroom 배포, 11/13](https://www.newsfromthestates.com/article/ohios-us-senator-elect-sherrod-brown-could-get-early-start-washington)(좌) — 오하이오 공식 확정 집계는 11/24, 인증 시한은 12/4다. 주법상 허스테드의 임명 임기는 12/15까지이며, 주 국무장관실은 허스테드가 임기를 채울 것이라고 밝혔다. 취임 선서 날짜는 발표되지 않았다. 이월된 \"12/15 전후\"(WEWS)와 부합한다 · 이월: 11/24 집계가 실제로 진행됐는지는 확인하지 못했다 · 이월: 브라운 2,301,042 – 허스테드 2,077,748(비공식) · 브라운은 슈머 지지.\n- **주 함의**: 인증 일정(11/24 집계, 12/4 시한)과 허스테드 임기 12/15라는 이월 맥락이 재확인됐을 뿐이다. 11/24 집계 결과는 미확인이며 주 판단에 변화가 없다.",
+    "AK": "- **수집 구간 내 유의미한 신규 사안 없음.** 재검표 청구나 고등법원 소송 보도는 없었다(검색함).\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음.\n- **로컬**: 이월: 상원 재검표 시한은 11/28, 소송 시한은 12/3이다(KTUU 11/23) · 인증 전에 쓰인 [Newsweek 해설 기사](https://newsweek.com/mary-peltola-wins-alaska-senate-race-what-comes-next-12731595)는 11/30과 12/5를 제시해, 두 날짜 세트가 서로 다르며 아직 정리되지 않았다. 더 최근 자료는 KTUU 쪽이다 · 이월: 설리번은 11/24 인증 결과를 수용하며 승복했다([Alaska Watchman](https://alaskawatchman.com/2026/11/24/sen-sullivan-breaks-silence-concedes-defeat-to-mary-peltola/), 우; Alaska Current와 일치) · 인증 득표: 펠톨라 144,583(50.14%) – 설리번 132,022(45.78%) · 이월: '두 번째 댄 설리번' 출마에 대한 연방·주 수사는 계속되고 있다 · 펠톨라는 원내대표 경선 입장을 정하지 않았다(KTUU 11/23). 오늘 경선 보도에는 이름이 나오지 않았다.\n- **주 함의**: 설리번 승복 뒤 재검표·소송 움직임은 보도되지 않았다. 재검표 청구 시한(11/28)이 이번 주말 지나므로 그 전후가 관전 지점이며, 주 판단은 바뀌지 않는다.",
+    "IA": "- **수집 구간 내 유의미한 신규 사안 없음.** 오늘 원내대표 경선 보도에 투렉은 등장하지 않았다(검색함).\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음.\n- **로컬**: 이월: 투렉 50.5–46.4(98% 개표, 비공식) · 경선 입장 미정(AP 11/17).\n- **주 함의**: 변화 없음. 투렉의 경선 입장은 여전히 미정이다.",
+    "NE": "- **수집 구간 내 유의미한 신규 사안 없음.** 24시간 및 7일 내 특이사항 없음(검색함).\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음.\n- **로컬**: 이월: 리케츠가 무소속 오즈번에 6%p 넘게 앞서 재선(KATV/Sinclair, 11/4) · §8.1에 따라 공화 의석 유지 · §5.1 매체는 읽지 못했다.\n- **주 함의**: 변화 없음. 공화 의석 유지 판단이 그대로다.",
+    "KS": "- [Chuck Schumer Update—Full List of Celebrities Opposing Him as Senate Leader](https://newsweek.com/chuck-schumer-list-celebrities-opposed-senate-leader-12763451) (Newsweek, 11/24) — 해밀턴 당선인을 다시 \"반슈머, 밴 홀런 지지는 미정\"으로 분류했다. 이월된 AP 11/21 보도와 일치한다.\n- **여론조사**: 없음(선거 종료).\n- **자금**: 없음.\n- **로컬**: 이월: 해밀턴 50.9–46.1(95% 개표, 비공식; [KCUR](https://www.kcur.org/politics-elections-and-government/2026-11-03/hamilton-wins-kansans-elect-democratic-senator-for-the-first-time-in-nearly-a-century), 중도좌, 공영).\n- **주 함의**: 해밀턴의 반슈머·밴 홀런 미정 입장은 재확인이다. 주 판단은 바뀌지 않는다."
+   },
+   "extras": [],
+   "polls": "이번 회차 신규 본선 조사 없음.",
+   "watch": "- **12/1 민주당 원내대표 경선(비밀투표)**: 밴 홀런 \"15표 이상\" 대 승리선 28표, 슈머 확고 지지 최소 15명(Newsweek)의 표 계산이 어떻게 움직이는지. 중립적인 전체 표 계산표 확보.\n- **뉴햄프셔 패파스의 경선 입장**: 전국 매체 1곳에 근거한 분류를 NH 지역 매체(WMUR, NHPR, Union Leader)가 교차 확인하는지.\n- **알래스카 재검표 청구 시한 11/28, 소송 시한 12/3(KTUU)**: 시한 전후 청구·소송 여부. Newsweek 해설(11/30, 12/5)과 다른 날짜 세트의 정리.\n- **노스캐롤라이나 인증 상원 득표수**(【수집 필요】) 확보.\n- **오하이오 11/24 공식 확정 집계 결과와 12/4 인증 시한**, 브라운 취임 선서 날짜 발표 여부.\n- **미정 그룹의 경선 입장**: 오소프(GA)·쿠퍼(NC)·펠톨라(AK)·탈라리코(TX)·투렉(IA)의 공개 입장 표명 여부. 뉴햄프셔 득표 격차 확보.",
+   "gaps": "",
+   "national_money": "- 없음",
+   "national_legal": "- 없음"
+  },
   {
    "date": "2026-11-25",
    "source_file": "2026-11-25_site_KR.md",
