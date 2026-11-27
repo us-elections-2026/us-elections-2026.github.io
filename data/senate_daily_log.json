@@ -1,8 +1,60 @@
 {
- "as_of": "2026-11-26",
+ "as_of": "2026-11-27",
  "source_label": "_NIS 상원 일일 브리핑(KR) — Cowork 예약 작업 산출물을 scripts/ingest_senate_daily.py가 그대로 추출",
  "provenance_note": "본문은 원천 마크다운을 자르지 않고 전재한다(요약·재서술 없음). 종결체는 원천대로 다체. 【수집 필요】 표기도 원천 그대로 남긴다 — 빈 칸을 추정으로 채우지 않는 규약과 같은 이유. 같은 날짜 재실행은 덮어쓴다.",
  "days": [
+  {
+   "date": "2026-11-27",
+   "source_file": "2026-11-27_site_KR.md",
+   "source_kind": "digest",
+   "chars": 8581,
+   "source_validation": {
+    "source_file": "2026-11-27_일일브리핑_KR.md",
+    "checks": [
+     "A 주 소절 1~9 순서",
+     "B [유세] 줄 11/11",
+     "F EN/KR 주 소절 11개 일치"
+    ],
+    "warnings": [
+     "C §5.1 지정 지역매체 링크 미확인(8/11): ['조지아', '미시간', '메인', '알래스카', '오하이오', '텍사스', '아이오와', '네브래스카']",
+     "D 조사 불릿에 기간/격차 누락 2/2: ['신규 상원 경합 조사는 없다(선거 종료).', '우선 추적 기관(NYT/Siena·Fox·Marist·AARP) 조사 없음. 내부 조사 없음.']",
+     "E 「## Run self-audit」 블록 없음(v2.8 §13)",
+     "주목 기관이 원문에는 있는데 정리본에 없음: aarp, marist, siena — 원문 대조 필요"
+    ],
+    "missing_local_states": [
+     "조지아",
+     "미시간",
+     "메인",
+     "알래스카",
+     "오하이오",
+     "텍사스",
+     "아이오와",
+     "네브래스카"
+    ],
+    "status": "경고 있음"
+   },
+   "lead": "원문: senate_daily/2026-11-27_일일브리핑_KR.md · 정리 원칙: 원문에 없는 사실·수치·링크를 더하지 않는다.",
+   "summary": "- **텍사스: 11/25(수) 탈라리코 당선인과 테드 크루즈 의원이 첫 공동성명을 냈다.** NASA 존슨우주센터 인근에 미국 우주사관학교(U.S. Space Academy)를 유치하려는 텍사스의 신청을 지지하는 내용이다. 크루즈는 폭스뉴스에서 탈라리코와 약 30분간 통화했다고 밝혔다([Newsweek](https://newsweek.com/ted-cruz-james-talarico-texas-space-academy-bid-12768803)). 25개 주가 유치를 신청했고 위원회 보고서는 12/26에 나온다. 선거 후 탈라리코가 기록으로 남긴 첫 초당적 행보다.\n- **원내대표 경선(12/1, 비밀투표):** 창 안에서 새로 확인된 당선인 입장은 없다. The Hill 기사 제목(\"여전히 승부가 열려 있다\")을 보면 밴 홀런은 경쟁을 이어가고 있지만 본문은 읽지 못했다. 읽을 수 있는 최신 집계는 여전히 밴 홀런 본인이 밝힌 **\"15표 이상\"**이며, 필요한 표는 28표다(이월, [WBFF 11/23](https://foxbaltimore.com/news/nation-world/chris-van-hollen-appears-behind-in-senate-race-to-lead-democrats-chuck-schumer-election-rrt)).\n- **당선인 9명의 원내대표 경선 입장은 AP/PBS 11/23 기사로 재확인했다**([PBS/AP](https://www.pbs.org/newshour/politics/senate-leadership-vote-tests-newly-elected-democrats-promise-of-change)). 엘사예드는 밴 홀런 지지, 브라운은 슈머 지지, 잭슨·해밀턴은 슈머 불지지이되 밴 홀런 지지 약속은 없음, 오소프·튜렉·펠톨라·탈라리코는 미정 또는 유보다.\n- **뉴햄프셔 파파스 입장 — 출처 상충.** Newsweek(11/24, 이월)는 파파스를 '슈머 불지지'로 분류했다. 반면 [NHPR](https://www.nhpr.org/nh-news/2026-11-16/hassan-and-pappas-newhampshire-senate-majority-leader-schumer-vanhollen)(11/16, 중도좌, 공영)은 파파스가 어느 쪽인지 밝히지 않고 \"유권자는 새 세대 지도자를 원한다\"고만 했다고 보도했다. 뉴햄프셔 매체 중 Newsweek의 분류를 확인한 곳은 없어 **미확인**으로 처리한다.\n- **알래스카:** 재검표 요청이나 소송 제기 보도는 없다. KTUU가 전한 재검표 마감일 **11/28**이 내일이다. 설리번은 11/24 승복했고, 인증 결과는 펠톨라 144,583(50.14%) – 설리번 132,022(45.78%)다([Alaska Watchman](https://alaskawatchman.com/2026/11/24/sen-sullivan-breaks-silence-concedes-defeat-to-mary-peltola/), 우, 이월).\n- 상원 의석은 **민주 56 – 공화 44**를 유지한다. 모니터링 대상 전 경합이 승복 또는 당선 확정 상태이며, NC(11/24, [NCSBE](https://ncsbe.gov/news/press-releases) 만장일치 인증)와 AK는 공식 인증까지 끝났다.",
+   "states": {
+    "GA": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료, 신규 본선 조사 없음).\n- **자금**: 없음\n- **로컬**: 이월: 오소프는 원내대표 경선에서 \"어느 후보에게도 약속하지 않았고 모두의 이야기를 들어보겠다\"고 말했다([PBS/AP](https://www.pbs.org/newshour/politics/senate-leadership-vote-tests-newly-elected-democrats-promise-of-change), 11/23 재확인) · 이월: 약 59–41로 승리(비공식). §5.1 매체는 읽지 못했다.\n- **주 함의**: 의석은 확정 상태이며 오늘 정보로 바뀌는 판단은 없다. 남은 관전 포인트는 12/1 원내대표 경선에서 오소프가 어느 쪽을 택하는지다.",
+    "MI": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료, 신규 본선 조사 없음).\n- **자금**: 없음\n- **로컬**: 이월: 엘사예드는 밴 홀런을 지지하고, 슬롯킨 의원도 밴 홀런을 지지한다([PBS/AP](https://www.pbs.org/newshour/politics/senate-leadership-vote-tests-newly-elected-democrats-promise-of-change), 11/23 재확인) · 이월: 약 7%p 차로 승리(비공식). §5.1 매체는 읽지 못했다.\n- **주 함의**: 의석은 확정 상태이며 오늘 정보로 바뀌는 판단은 없다. 미시간 두 상원의원은 원내대표 경선에서 밴 홀런 쪽으로 정리돼 있다.",
+    "NH": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료, 신규 본선 조사 없음).\n- **자금**: 없음\n- **로컬**: **출처 상충:** [NHPR, 11/16](https://www.nhpr.org/nh-news/2026-11-16/hassan-and-pappas-newhampshire-senate-majority-leader-schumer-vanhollen)(중도좌, 공영)은 \"해선과 파파스, 선택에 침묵\"이라고 보도했다. 파파스는 유권자가 새 세대 지도자를 원한다고만 했고 어느 쪽인지 밝히지 않았다. 반면 Newsweek(11/24, 이월)는 그를 '슈머 불지지'로 분류했다 · Grabien에 \"Pappas Says He Wouldn't Support Schumer as the Majority Leader\"라는 클립이 있지만 날짜를 확인하지 못했고 선거운동 기간 발언일 수 있다. 파파스 입장은 **미확인**으로 처리한다 · 이월: 파파스가 승리했고 수누누는 승복했다. 득표 격차는 아직 확보하지 못했다.\n- **주 함의**: 의석 판단은 바뀌지 않는다. 파파스의 원내대표 경선 입장은 두 출처가 엇갈려 미확인이며, 뉴햄프셔 매체의 확인이 필요하다. 득표 격차도 아직 확보하지 못했다.",
+    "ME": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료, 신규 본선 조사 없음).\n- **자금**: 없음\n- **로컬**: 이월: 잭슨은 슈머를 지지하지 않지만 밴 홀런 지지를 약속하지도 않았다([PBS/AP](https://www.pbs.org/newshour/politics/senate-leadership-vote-tests-newly-elected-democrats-promise-of-change), 11/23 재확인) · 이월: 약 53–47로 승리(비공식) · 이월: Magnolia Tribune의 FEC 관련 항목은 아직 확인하지 못했다. §5.1 매체는 읽지 못했다.\n- **주 함의**: 의석은 확정 상태이며 오늘 정보로 바뀌는 판단은 없다. 잭슨의 원내대표 경선 선택과 Magnolia Tribune FEC 항목은 미결로 남는다.",
+    "NC": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료, 신규 본선 조사 없음).\n- **자금**: 없음\n- **로컬**: 이월: NCSBE가 11/24 만장일치로 인증했다([NCSBE](https://ncsbe.gov/news/press-releases), 공식) · 쿠퍼는 비공식 약 59–39로 승리했다([NC Newsline](https://ncnewsline.com/?p=195829), 중도좌~좌) · 11/24 주 인증의 상원 확정 득표수는 검색으로 찾지 못했다【수집 필요】 · Carolina Journal(중도우) 기사는 찾지 못했다 · AP 11/23은 쿠퍼를 '슈머가 영입한 후보'로만 언급했고 원내대표 경선 입장은 나오지 않는다.\n- **주 함의**: 공식 인증까지 끝나 의석 판단은 바뀌지 않는다. 확정 득표수와 쿠퍼의 원내대표 경선 입장만 수집 과제로 남는다.",
+    "TX": "- [Ted Cruz and James Talarico Back Texas Space Academy Bid](https://newsweek.com/ted-cruz-james-talarico-texas-space-academy-bid-12768803) (Newsweek, 11/25) — 크루즈와 탈라리코가 존슨우주센터 옆 우주사관학교 유치를 지지하는 공동성명을 냈고, 유치하면 \"수천 개의 일자리\"가 생긴다고 밝혔다. 크루즈는 폭스뉴스에서 탈라리코가 \"열의를 보였다\"고 했고, 2026년 선거를 \"단순한 블루 웨이브가 아니라 블루 쓰나미\"라고 표현했다. 크루즈는 선거운동 기간에 탈라리코를 \"급진적\"이라고 공격했었다. Newsweek은 탈라리코가 팩스턴을 12%p 넘게 이겼고 중도층의 약 3분의 2를 얻었다고 전한다(AP VoterPoll).\n- **여론조사**: 없음(선거 종료, 신규 본선 조사 없음).\n- **자금**: 없음\n- **로컬**: 크루즈–탈라리코 공동성명(11/25, [Newsweek](https://newsweek.com/ted-cruz-james-talarico-texas-space-academy-bid-12768803)) — 텍사스 §5.1 매체(Texas Tribune, Texas Scorecard 등)의 보도는 아직 없어 전국 매체 한 곳에 의존한다 · 이월: 탈라리코는 슈머를 거부하지 않았고, 원내대표 후보들에게 \"어려운 질문\"을 하겠다고 했다([PBS/AP](https://www.pbs.org/newshour/politics/senate-leadership-vote-tests-newly-elected-democrats-promise-of-change), 11/23 재확인).\n- **주 함의**: 선거 후 탈라리코가 기록으로 남긴 **첫 초당적 행보**다. 선거운동 기간 \"급진적\"이라고 공격했던 크루즈와의 공동성명이라는 점에서 눈에 띄지만, 텍사스 로컬 매체의 확인은 아직 없다. 의석 판단은 바뀌지 않는다.",
+    "OH": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료, 신규 본선 조사 없음).\n- **자금**: 없음\n- **로컬**: 이월: 브라운은 슈머를 지지한다([PBS/AP](https://www.pbs.org/newshour/politics/senate-leadership-vote-tests-newly-elected-democrats-promise-of-change), 11/23 재확인) · 이월: 브라운 2,301,042 – 허스테드 2,077,748(비공식) · 허스테드의 임명 임기는 12/15까지다([Ohio Capital Journal](https://www.newsfromthestates.com/article/ohios-us-senator-elect-sherrod-brown-could-get-early-start-washington), 좌, 11/13) · 11/24 공식 개표 집계가 실제로 이뤄졌는지와 인증 시점(12/4까지)은 창 안에서 확인되지 않았다. 오하이오에는 우파 성향 매체가 없다(§5.1).\n- **주 함의**: 의석 판단은 바뀌지 않는다. 공식 집계·인증 상태(12/4까지)와 허스테드 임기 종료(12/15) 이후 브라운의 조기 취임 여부가 남은 확인 사항이다.",
+    "AK": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료, 신규 본선 조사 없음).\n- **자금**: 없음\n- **로컬**: 재검표 요청이나 소송 보도는 없다. 재검표 마감 **11/28**, 소송 마감 12/3(이월, KTUU 11/23) · 이전 Newsweek 해설은 11/30과 12/5로 적어 상충이 아직 풀리지 않았다 · 검색에 걸린 Juneau Empire \"Election certified but challenges pending\"은 2022년 기사로 확인돼 제외했다 · 이월: 설리번이 11/24 승복했다. 인증 결과는 펠톨라 144,583(50.14%) – 설리번 132,022(45.78%)([Alaska Watchman](https://alaskawatchman.com/2026/11/24/sen-sullivan-breaks-silence-concedes-defeat-to-mary-peltola/), 우) · 이월: 펠톨라는 원내대표 경선을 \"아직 생각해보지 않았다\"고 했다([PBS/AP](https://www.pbs.org/newshour/politics/senate-leadership-vote-tests-newly-elected-democrats-promise-of-change), 11/23 재확인).\n- **주 함의**: 승복과 공식 인증이 끝났고 재검표 요청은 없어 의석 판단은 바뀌지 않는다. 내일 11/28 재검표 마감이 지나면 남는 것은 12/3 소송 마감이며, 둘 다 의석수를 바꿀 수 없다.",
+    "IA": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료, 신규 본선 조사 없음).\n- **자금**: 없음\n- **로컬**: 이월: 튜렉은 미정이며, 자신의 \"프레리 포퓰리즘 의제\"에 가장 맞는 후보를 지지하겠다고 했다([PBS/AP](https://www.pbs.org/newshour/politics/senate-leadership-vote-tests-newly-elected-democrats-promise-of-change), 11/23 재확인) · 이월: 50.5–46.4(98% 개표, 비공식).\n- **주 함의**: 의석 판단은 바뀌지 않는다. 튜렉의 원내대표 경선 선택이 남은 관전 포인트다.",
+    "NE": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료, 신규 본선 조사 없음).\n- **자금**: 없음\n- **로컬**: 이월: 리케츠가 무소속 오스본을 6%p 이상 차로 이기고 재선했다(KATV/Sinclair, 11/4). §8.1 규칙에 따라 공화 의석을 유지한다. §5.1 매체는 읽지 못했다. 24시간 및 7일 내 특이사항 없음.\n- **주 함의**: 공화 의석 유지로 판단이 확정돼 있고 오늘 바뀌는 것은 없다.",
+    "KS": "- **수집 구간 내 유의미한 신규 사안 없음.**\n- **여론조사**: 없음(선거 종료, 신규 본선 조사 없음).\n- **자금**: 없음\n- **로컬**: 이월: 해밀턴은 슈머를 지지하지 않고 아무도 지지 선언하지 않았다. 그는 \"사람들을 하나로 모을 사람을 찾고 있다\"고 말했다([PBS/AP](https://www.pbs.org/newshour/politics/senate-leadership-vote-tests-newly-elected-democrats-promise-of-change), 11/23 재확인) · 이월: 50.9–46.1(95% 개표, 비공식; [KCUR](https://www.kcur.org/politics-elections-and-government/2026-11-03/hamilton-wins-kansans-elect-democratic-senator-for-the-first-time-in-nearly-a-century), 중도좌, 공영).\n- **주 함의**: 의석 판단은 바뀌지 않는다. 해밀턴은 슈머 불지지이되 대안을 정하지 않은 상태로 12/1 경선을 맞는다."
+   },
+   "extras": [],
+   "polls": "이번 회차 신규 본선 조사 없음.",
+   "watch": "- **11/28 알래스카 재검표 요청 마감**(KTUU 11/23). 요청·소송 보도가 나오는지, 그리고 Newsweek 해설의 11/30과의 상충이 풀리는지.\n- **12/1 민주당 원내대표 경선(비밀투표).** 밴 홀런 측 집계 \"15표 이상\" 대 필요 표 28표. 미정인 오소프·튜렉·펠톨라·탈라리코·잭슨·해밀턴의 선택.\n- **뉴햄프셔 파파스 입장 확인.** NHPR(침묵)과 Newsweek('슈머 불지지') 상충을 뉴햄프셔 매체가 정리하는지.\n- **미수집 수치 보강**: NC 11/24 인증의 상원 확정 득표수【수집 필요】, NH 득표 격차, OH 공식 개표 집계·인증 상태(12/4까지).\n- **텍사스 로컬 매체의 크루즈–탈라리코 공동성명 보도** 여부(현재 Newsweek 한 곳 의존).\n- 알래스카 소송 마감 12/3(이월, KTUU).",
+   "gaps": "",
+   "national_money": "- 없음",
+   "national_legal": "- 없음"
+  },
   {
    "date": "2026-11-26",
    "source_file": "2026-11-26_site_KR.md",
