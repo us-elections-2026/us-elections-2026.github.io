@@ -139,6 +139,11 @@ cat(daily_log_md("TX"))
 ## 최신 여론조사
 
 ```{r}
+#| output: asis
+cat(race_snapshot_html("TX"))
+```
+
+```{r}
 gt_state_polls("TX")
 ```
 
